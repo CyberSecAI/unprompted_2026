@@ -1,0 +1,2935 @@
+1
+00:00:06,080 --> 00:00:09,190
+
+Now moving on to the last part of this.
+
+2
+00:00:09,190 --> 00:00:09,200
+Now moving on to the last part of this.
+ 
+
+3
+00:00:09,200 --> 00:00:11,749
+Now moving on to the last part of this.
+Quite a few people vibecoded this con
+
+4
+00:00:11,749 --> 00:00:11,759
+Quite a few people vibecoded this con
+ 
+
+5
+00:00:11,759 --> 00:00:14,070
+Quite a few people vibecoded this con
+and are still creating things on the fly
+
+6
+00:00:14,070 --> 00:00:14,080
+and are still creating things on the fly
+ 
+
+7
+00:00:14,080 --> 00:00:16,630
+and are still creating things on the fly
+and have announcements. So I would like
+
+8
+00:00:16,630 --> 00:00:16,640
+and have announcements. So I would like
+ 
+
+9
+00:00:16,640 --> 00:00:19,189
+and have announcements. So I would like
+to start with Rob Lee who has done some
+
+10
+00:00:19,189 --> 00:00:19,199
+to start with Rob Lee who has done some
+ 
+
+11
+00:00:19,199 --> 00:00:20,950
+to start with Rob Lee who has done some
+pretty cool work for us making us more
+
+12
+00:00:20,950 --> 00:00:20,960
+pretty cool work for us making us more
+ 
+
+13
+00:00:20,960 --> 00:00:23,109
+pretty cool work for us making us more
+of an online AI powered AI native
+
+14
+00:00:23,109 --> 00:00:23,119
+of an online AI powered AI native
+ 
+
+15
+00:00:23,119 --> 00:00:25,509
+of an online AI powered AI native
+conference or whatever. So let's start
+
+16
+00:00:25,509 --> 00:00:25,519
+conference or whatever. So let's start
+ 
+
+17
+00:00:25,519 --> 00:00:27,109
+conference or whatever. So let's start
+with that and then we'll go to Dan
+
+18
+00:00:27,109 --> 00:00:27,119
+with that and then we'll go to Dan
+ 
+
+19
+00:00:27,119 --> 00:00:30,310
+with that and then we'll go to Dan
+Hubard and then to Glen Thorp.
+
+20
+00:00:30,310 --> 00:00:30,320
+Hubard and then to Glen Thorp.
+ 
+
+21
+00:00:30,320 --> 00:00:33,590
+Hubard and then to Glen Thorp.
+All right, I think you got to eat. Love
+
+22
+00:00:33,590 --> 00:00:33,600
+All right, I think you got to eat. Love
+ 
+
+23
+00:00:33,600 --> 00:00:35,670
+All right, I think you got to eat. Love
+the questions.
+
+24
+00:00:35,670 --> 00:00:35,680
+the questions.
+ 
+
+25
+00:00:35,680 --> 00:00:37,350
+the questions.
+All right, let me get plugged in here.
+
+26
+00:00:37,350 --> 00:00:37,360
+All right, let me get plugged in here.
+ 
+
+27
+00:00:37,360 --> 00:00:40,790
+All right, let me get plugged in here.
+My name is Rob Lee.
+
+28
+00:00:40,790 --> 00:00:40,800
+My name is Rob Lee.
+ 
+
+29
+00:00:40,800 --> 00:00:43,750
+My name is Rob Lee.
+I'm with the SANS Institute
+
+30
+00:00:43,750 --> 00:00:43,760
+I'm with the SANS Institute
+ 
+
+31
+00:00:43,760 --> 00:00:45,750
+I'm with the SANS Institute
+and I'm going to get the video kicked
+
+32
+00:00:45,750 --> 00:00:45,760
+and I'm going to get the video kicked
+ 
+
+33
+00:00:45,760 --> 00:00:56,470
+and I'm going to get the video kicked
+off and I'll start.
+
+34
+00:00:56,470 --> 00:00:56,480
+
+ 
+
+35
+00:00:56,480 --> 00:00:58,630
+
+So starting off with the question going
+
+36
+00:00:58,630 --> 00:00:58,640
+So starting off with the question going
+ 
+
+37
+00:00:58,640 --> 00:01:00,549
+So starting off with the question going
+back to what Gotti just said, I
+
+38
+00:01:00,549 --> 00:01:00,559
+back to what Gotti just said, I
+ 
+
+39
+00:01:00,559 --> 00:01:02,630
+back to what Gotti just said, I
+developed the SIFT workstation 18 years
+
+40
+00:01:02,630 --> 00:01:02,640
+developed the SIFT workstation 18 years
+ 
+
+41
+00:01:02,640 --> 00:01:06,950
+developed the SIFT workstation 18 years
+ago and in working with AI as little as
+
+42
+00:01:06,950 --> 00:01:06,960
+ago and in working with AI as little as
+ 
+
+43
+00:01:06,960 --> 00:01:08,950
+ago and in working with AI as little as
+possible and trying to learn as much as
+
+44
+00:01:08,950 --> 00:01:08,960
+possible and trying to learn as much as
+ 
+
+45
+00:01:08,960 --> 00:01:13,030
+possible and trying to learn as much as
+possible over the past 2 to 3 years, it
+
+46
+00:01:13,030 --> 00:01:13,040
+possible over the past 2 to 3 years, it
+ 
+
+47
+00:01:13,040 --> 00:01:15,030
+possible over the past 2 to 3 years, it
+occurred to me about 3 months ago, why
+
+48
+00:01:15,030 --> 00:01:15,040
+occurred to me about 3 months ago, why
+ 
+
+49
+00:01:15,040 --> 00:01:17,590
+occurred to me about 3 months ago, why
+haven't I not installed cloud code on
+
+50
+00:01:17,590 --> 00:01:17,600
+haven't I not installed cloud code on
+ 
+
+51
+00:01:17,600 --> 00:01:20,390
+haven't I not installed cloud code on
+top of the SIFT workstation, did about
+
+52
+00:01:20,390 --> 00:01:20,400
+top of the SIFT workstation, did about
+ 
+
+53
+00:01:20,400 --> 00:01:22,630
+top of the SIFT workstation, did about
+45 minutes to an hour worth of work
+
+54
+00:01:22,630 --> 00:01:22,640
+45 minutes to an hour worth of work
+ 
+
+55
+00:01:22,640 --> 00:01:24,310
+45 minutes to an hour worth of work
+configuring the cloud MD file and
+
+56
+00:01:24,310 --> 00:01:24,320
+configuring the cloud MD file and
+ 
+
+57
+00:01:24,320 --> 00:01:25,270
+configuring the cloud MD file and
+skills.
+
+58
+00:01:25,270 --> 00:01:25,280
+skills.
+ 
+
+59
+00:01:25,280 --> 00:01:27,350
+skills.
+And I essentially went into cloud code
+
+60
+00:01:27,350 --> 00:01:27,360
+And I essentially went into cloud code
+ 
+
+61
+00:01:27,360 --> 00:01:29,830
+And I essentially went into cloud code
+and I said here's a hard drive find
+
+62
+00:01:29,830 --> 00:01:29,840
+and I said here's a hard drive find
+ 
+
+63
+00:01:29,840 --> 00:01:31,670
+and I said here's a hard drive find
+evil.
+
+64
+00:01:31,670 --> 00:01:31,680
+evil.
+ 
+
+65
+00:01:31,680 --> 00:01:34,069
+evil.
+This is the command essentially you type
+
+66
+00:01:34,069 --> 00:01:34,079
+This is the command essentially you type
+ 
+
+67
+00:01:34,079 --> 00:01:37,190
+This is the command essentially you type
+into cloud code once this is configured
+
+68
+00:01:37,190 --> 00:01:37,200
+into cloud code once this is configured
+ 
+
+69
+00:01:37,200 --> 00:01:39,190
+into cloud code once this is configured
+on top of the inst response toolkit that
+
+70
+00:01:39,190 --> 00:01:39,200
+on top of the inst response toolkit that
+ 
+
+71
+00:01:39,200 --> 00:01:42,630
+on top of the inst response toolkit that
+we developed and it of course kicks off
+
+72
+00:01:42,630 --> 00:01:42,640
+we developed and it of course kicks off
+ 
+
+73
+00:01:42,640 --> 00:01:44,069
+we developed and it of course kicks off
+starts cranking through. Now, this is
+
+74
+00:01:44,069 --> 00:01:44,079
+starts cranking through. Now, this is
+ 
+
+75
+00:01:44,079 --> 00:01:47,510
+starts cranking through. Now, this is
+like 16x speed because what you're about
+
+76
+00:01:47,510 --> 00:01:47,520
+like 16x speed because what you're about
+ 
+
+77
+00:01:47,520 --> 00:01:50,950
+like 16x speed because what you're about
+to see is a 14minute processing time
+
+78
+00:01:50,950 --> 00:01:50,960
+to see is a 14minute processing time
+ 
+
+79
+00:01:50,960 --> 00:01:52,950
+to see is a 14minute processing time
+that basically at the end of this, which
+
+80
+00:01:52,950 --> 00:01:52,960
+that basically at the end of this, which
+ 
+
+81
+00:01:52,960 --> 00:01:54,950
+that basically at the end of this, which
+typically takes an instant responder,
+
+82
+00:01:54,950 --> 00:01:54,960
+typically takes an instant responder,
+ 
+
+83
+00:01:54,960 --> 00:01:58,469
+typically takes an instant responder,
+and I asked yesterday as a poll, about 3
+
+84
+00:01:58,469 --> 00:01:58,479
+and I asked yesterday as a poll, about 3
+ 
+
+85
+00:01:58,479 --> 00:02:02,630
+and I asked yesterday as a poll, about 3
+days to get from initial C drive of an
+
+86
+00:02:02,630 --> 00:02:02,640
+days to get from initial C drive of an
+ 
+
+87
+00:02:02,640 --> 00:02:05,830
+days to get from initial C drive of an
+intrusion into a full report. And I'm
+
+88
+00:02:05,830 --> 00:02:05,840
+intrusion into a full report. And I'm
+ 
+
+89
+00:02:05,840 --> 00:02:07,350
+intrusion into a full report. And I'm
+going to put all these resources online
+
+90
+00:02:07,350 --> 00:02:07,360
+going to put all these resources online
+ 
+
+91
+00:02:07,360 --> 00:02:09,190
+going to put all these resources online
+in the general chat so everyone could
+
+92
+00:02:09,190 --> 00:02:09,200
+in the general chat so everyone could
+ 
+
+93
+00:02:09,200 --> 00:02:10,710
+in the general chat so everyone could
+download them, get access to the report,
+
+94
+00:02:10,710 --> 00:02:10,720
+download them, get access to the report,
+ 
+
+95
+00:02:10,720 --> 00:02:12,630
+download them, get access to the report,
+get access to the sift workstation, even
+
+96
+00:02:12,630 --> 00:02:12,640
+get access to the sift workstation, even
+ 
+
+97
+00:02:12,640 --> 00:02:14,550
+get access to the sift workstation, even
+the notebook LM I have set up so you
+
+98
+00:02:14,550 --> 00:02:14,560
+the notebook LM I have set up so you
+ 
+
+99
+00:02:14,560 --> 00:02:16,390
+the notebook LM I have set up so you
+could ask basic questions. How do I
+
+100
+00:02:16,390 --> 00:02:16,400
+could ask basic questions. How do I
+ 
+
+101
+00:02:16,400 --> 00:02:19,030
+could ask basic questions. How do I
+start? So 14 minutes later, I'm going to
+
+102
+00:02:19,030 --> 00:02:19,040
+start? So 14 minutes later, I'm going to
+ 
+
+103
+00:02:19,040 --> 00:02:20,229
+start? So 14 minutes later, I'm going to
+go ahead and skip to the end of this
+
+104
+00:02:20,229 --> 00:02:20,239
+go ahead and skip to the end of this
+ 
+
+105
+00:02:20,239 --> 00:02:22,070
+go ahead and skip to the end of this
+just so everyone could see that it
+
+106
+00:02:22,070 --> 00:02:22,080
+just so everyone could see that it
+ 
+
+107
+00:02:22,080 --> 00:02:24,869
+just so everyone could see that it
+definitely took 14 minutes. 14 minutes
+
+108
+00:02:24,869 --> 00:02:24,879
+definitely took 14 minutes. 14 minutes
+ 
+
+109
+00:02:24,879 --> 00:02:28,309
+definitely took 14 minutes. 14 minutes
+27 seconds. Think about this for one
+
+110
+00:02:28,309 --> 00:02:28,319
+27 seconds. Think about this for one
+ 
+
+111
+00:02:28,319 --> 00:02:31,030
+27 seconds. Think about this for one
+second. And I'm going to go in 2x on the
+
+112
+00:02:31,030 --> 00:02:31,040
+second. And I'm going to go in 2x on the
+ 
+
+113
+00:02:31,040 --> 00:02:32,790
+second. And I'm going to go in 2x on the
+report. This is the report it
+
+114
+00:02:32,790 --> 00:02:32,800
+report. This is the report it
+ 
+
+115
+00:02:32,800 --> 00:02:34,949
+report. This is the report it
+automatically generated with no other
+
+116
+00:02:34,949 --> 00:02:34,959
+automatically generated with no other
+ 
+
+117
+00:02:34,959 --> 00:02:37,190
+automatically generated with no other
+input and comments.
+
+118
+00:02:37,190 --> 00:02:37,200
+input and comments.
+ 
+
+119
+00:02:37,200 --> 00:02:40,470
+input and comments.
+Go ahead and click go.
+
+120
+00:02:40,470 --> 00:02:40,480
+Go ahead and click go.
+ 
+
+121
+00:02:40,480 --> 00:02:45,030
+Go ahead and click go.
+Nailing the full intrusion analysis of a
+
+122
+00:02:45,030 --> 00:02:45,040
+Nailing the full intrusion analysis of a
+ 
+
+123
+00:02:45,040 --> 00:02:47,509
+Nailing the full intrusion analysis of a
+single system in a compromise. Now the
+
+124
+00:02:47,509 --> 00:02:47,519
+single system in a compromise. Now the
+ 
+
+125
+00:02:47,519 --> 00:02:49,110
+single system in a compromise. Now the
+reason we need to accelerate to the
+
+126
+00:02:49,110 --> 00:02:49,120
+reason we need to accelerate to the
+ 
+
+127
+00:02:49,120 --> 00:02:51,110
+reason we need to accelerate to the
+speed, it does not mean we remove the
+
+128
+00:02:51,110 --> 00:02:51,120
+speed, it does not mean we remove the
+ 
+
+129
+00:02:51,120 --> 00:02:54,150
+speed, it does not mean we remove the
+human investigator from the intrusion
+
+130
+00:02:54,150 --> 00:02:54,160
+human investigator from the intrusion
+ 
+
+131
+00:02:54,160 --> 00:02:56,630
+human investigator from the intrusion
+analysis. All the artifacts that are in
+
+132
+00:02:56,630 --> 00:02:56,640
+analysis. All the artifacts that are in
+ 
+
+133
+00:02:56,640 --> 00:02:59,589
+analysis. All the artifacts that are in
+here require that baseline knowledge.
+
+134
+00:02:59,589 --> 00:02:59,599
+here require that baseline knowledge.
+ 
+
+135
+00:02:59,599 --> 00:03:02,309
+here require that baseline knowledge.
+But with offensive teams out there able
+
+136
+00:03:02,309 --> 00:03:02,319
+But with offensive teams out there able
+ 
+
+137
+00:03:02,319 --> 00:03:04,390
+But with offensive teams out there able
+to accelerate from things that took
+
+138
+00:03:04,390 --> 00:03:04,400
+to accelerate from things that took
+ 
+
+139
+00:03:04,400 --> 00:03:07,509
+to accelerate from things that took
+months down to days or minutes, it is
+
+140
+00:03:07,509 --> 00:03:07,519
+months down to days or minutes, it is
+ 
+
+141
+00:03:07,519 --> 00:03:09,750
+months down to days or minutes, it is
+now essential that we're able to meet
+
+142
+00:03:09,750 --> 00:03:09,760
+now essential that we're able to meet
+ 
+
+143
+00:03:09,760 --> 00:03:12,550
+now essential that we're able to meet
+that speed with intrusion analysis.
+
+144
+00:03:12,550 --> 00:03:12,560
+that speed with intrusion analysis.
+ 
+
+145
+00:03:12,560 --> 00:03:15,270
+that speed with intrusion analysis.
+Thank you.
+
+146
+00:03:15,270 --> 00:03:15,280
+Thank you.
+ 
+
+147
+00:03:15,280 --> 00:03:17,589
+Thank you.
+>> So, as mentioned, was not prepared for
+
+148
+00:03:17,589 --> 00:03:17,599
+>> So, as mentioned, was not prepared for
+ 
+
+149
+00:03:17,599 --> 00:03:19,910
+>> So, as mentioned, was not prepared for
+this at all, but it's fun to wake up to
+
+150
+00:03:19,910 --> 00:03:19,920
+this at all, but it's fun to wake up to
+ 
+
+151
+00:03:19,920 --> 00:03:21,910
+this at all, but it's fun to wake up to
+a surprise message for
+
+152
+00:03:21,910 --> 00:03:21,920
+a surprise message for
+ 
+
+153
+00:03:21,920 --> 00:03:25,110
+a surprise message for
+>> Oh, I'm Glenn Thorp uh with great noise.
+
+154
+00:03:25,110 --> 00:03:25,120
+>> Oh, I'm Glenn Thorp uh with great noise.
+ 
+
+155
+00:03:25,120 --> 00:03:27,750
+>> Oh, I'm Glenn Thorp uh with great noise.
+Um, yeah. So, woke up, opened Slack, saw
+
+156
+00:03:27,750 --> 00:03:27,760
+Um, yeah. So, woke up, opened Slack, saw
+ 
+
+157
+00:03:27,760 --> 00:03:29,910
+Um, yeah. So, woke up, opened Slack, saw
+a message from God saying, "Hey, you
+
+158
+00:03:29,910 --> 00:03:29,920
+a message from God saying, "Hey, you
+ 
+
+159
+00:03:29,920 --> 00:03:31,670
+a message from God saying, "Hey, you
+want to just jump on stage for a few
+
+160
+00:03:31,670 --> 00:03:31,680
+want to just jump on stage for a few
+ 
+
+161
+00:03:31,680 --> 00:03:32,869
+want to just jump on stage for a few
+minutes and show a thing that you made."
+
+162
+00:03:32,869 --> 00:03:32,879
+minutes and show a thing that you made."
+ 
+
+163
+00:03:32,879 --> 00:03:35,270
+minutes and show a thing that you made."
+So, that's cool. Um, it's not really a
+
+164
+00:03:35,270 --> 00:03:35,280
+So, that's cool. Um, it's not really a
+ 
+
+165
+00:03:35,280 --> 00:03:37,270
+So, that's cool. Um, it's not really a
+great story except for the side quest
+
+166
+00:03:37,270 --> 00:03:37,280
+great story except for the side quest
+ 
+
+167
+00:03:37,280 --> 00:03:40,470
+great story except for the side quest
+that it created. Uh, Sunday night I was
+
+168
+00:03:40,470 --> 00:03:40,480
+that it created. Uh, Sunday night I was
+ 
+
+169
+00:03:40,480 --> 00:03:41,750
+that it created. Uh, Sunday night I was
+getting ready for the conference and
+
+170
+00:03:41,750 --> 00:03:41,760
+getting ready for the conference and
+ 
+
+171
+00:03:41,760 --> 00:03:43,990
+getting ready for the conference and
+kind of like, uh, they shared a G sheet.
+
+172
+00:03:43,990 --> 00:03:44,000
+kind of like, uh, they shared a G sheet.
+ 
+
+173
+00:03:44,000 --> 00:03:46,550
+kind of like, uh, they shared a G sheet.
+I'm OCD. I wanted like a personalized
+
+174
+00:03:46,550 --> 00:03:46,560
+I'm OCD. I wanted like a personalized
+ 
+
+175
+00:03:46,560 --> 00:03:50,229
+I'm OCD. I wanted like a personalized
+agenda. So went to cloud code as we all
+
+176
+00:03:50,229 --> 00:03:50,239
+agenda. So went to cloud code as we all
+ 
+
+177
+00:03:50,239 --> 00:03:54,710
+agenda. So went to cloud code as we all
+do and vibe coded what's a pretty cool
+
+178
+00:03:54,710 --> 00:03:54,720
+do and vibe coded what's a pretty cool
+ 
+
+179
+00:03:54,720 --> 00:03:57,830
+do and vibe coded what's a pretty cool
+interface like your talks right you can
+
+180
+00:03:57,830 --> 00:03:57,840
+interface like your talks right you can
+ 
+
+181
+00:03:57,840 --> 00:04:00,630
+interface like your talks right you can
+take some notes uh gives you a a
+
+182
+00:04:00,630 --> 00:04:00,640
+take some notes uh gives you a a
+ 
+
+183
+00:04:00,640 --> 00:04:03,270
+take some notes uh gives you a a
+customized agenda you can export it
+
+184
+00:04:03,270 --> 00:04:03,280
+customized agenda you can export it
+ 
+
+185
+00:04:03,280 --> 00:04:05,750
+customized agenda you can export it
+share it whatever so that's not really
+
+186
+00:04:05,750 --> 00:04:05,760
+share it whatever so that's not really
+ 
+
+187
+00:04:05,760 --> 00:04:07,190
+share it whatever so that's not really
+the fun part though because I think we
+
+188
+00:04:07,190 --> 00:04:07,200
+the fun part though because I think we
+ 
+
+189
+00:04:07,200 --> 00:04:09,750
+the fun part though because I think we
+can all do that here by now what was
+
+190
+00:04:09,750 --> 00:04:09,760
+can all do that here by now what was
+ 
+
+191
+00:04:09,760 --> 00:04:11,750
+can all do that here by now what was
+funny is I made it I was really excited
+
+192
+00:04:11,750 --> 00:04:11,760
+funny is I made it I was really excited
+ 
+
+193
+00:04:11,760 --> 00:04:15,429
+funny is I made it I was really excited
+about it I shared it with my boss and I
+
+194
+00:04:15,429 --> 00:04:15,439
+about it I shared it with my boss and I
+ 
+
+195
+00:04:15,439 --> 00:04:17,430
+about it I shared it with my boss and I
+was all proud and then I started Ed
+
+196
+00:04:17,430 --> 00:04:17,440
+was all proud and then I started Ed
+ 
+
+197
+00:04:17,440 --> 00:04:20,069
+was all proud and then I started Ed
+looking at it after I had posted it
+
+198
+00:04:20,069 --> 00:04:20,079
+looking at it after I had posted it
+ 
+
+199
+00:04:20,079 --> 00:04:24,710
+looking at it after I had posted it
+online and the LLM had confused some of
+
+200
+00:04:24,710 --> 00:04:24,720
+online and the LLM had confused some of
+ 
+
+201
+00:04:24,720 --> 00:04:26,950
+online and the LLM had confused some of
+the talks and so it caught my surprise
+
+202
+00:04:26,950 --> 00:04:26,960
+the talks and so it caught my surprise
+ 
+
+203
+00:04:26,960 --> 00:04:28,469
+the talks and so it caught my surprise
+when I saw that there was a talk with
+
+204
+00:04:28,469 --> 00:04:28,479
+when I saw that there was a talk with
+ 
+
+205
+00:04:28,479 --> 00:04:31,590
+when I saw that there was a talk with
+another uh speaker here and the very end
+
+206
+00:04:31,590 --> 00:04:31,600
+another uh speaker here and the very end
+ 
+
+207
+00:04:31,600 --> 00:04:35,749
+another uh speaker here and the very end
+of the talk said and we will display or
+
+208
+00:04:35,749 --> 00:04:35,759
+of the talk said and we will display or
+ 
+
+209
+00:04:35,759 --> 00:04:37,670
+of the talk said and we will display or
+show how we integrated this into great
+
+210
+00:04:37,670 --> 00:04:37,680
+show how we integrated this into great
+ 
+
+211
+00:04:37,680 --> 00:04:40,710
+show how we integrated this into great
+noise intelligence.
+
+212
+00:04:40,710 --> 00:04:40,720
+noise intelligence.
+ 
+
+213
+00:04:40,720 --> 00:04:43,270
+noise intelligence.
+That was news and I was actually pretty
+
+214
+00:04:43,270 --> 00:04:43,280
+That was news and I was actually pretty
+ 
+
+215
+00:04:43,280 --> 00:04:44,469
+That was news and I was actually pretty
+interested with it but I was like I
+
+216
+00:04:44,469 --> 00:04:44,479
+interested with it but I was like I
+ 
+
+217
+00:04:44,479 --> 00:04:45,749
+interested with it but I was like I
+don't think that's right. So went back
+
+218
+00:04:45,749 --> 00:04:45,759
+don't think that's right. So went back
+ 
+
+219
+00:04:45,759 --> 00:04:47,670
+don't think that's right. So went back
+to the actual Google sheet. Obviously it
+
+220
+00:04:47,670 --> 00:04:47,680
+to the actual Google sheet. Obviously it
+ 
+
+221
+00:04:47,680 --> 00:04:51,830
+to the actual Google sheet. Obviously it
+was wrong. I was like, "Oh man." So went
+
+222
+00:04:51,830 --> 00:04:51,840
+was wrong. I was like, "Oh man." So went
+ 
+
+223
+00:04:51,840 --> 00:04:53,189
+was wrong. I was like, "Oh man." So went
+through, got the, you know, just
+
+224
+00:04:53,189 --> 00:04:53,199
+through, got the, you know, just
+ 
+
+225
+00:04:53,199 --> 00:04:55,670
+through, got the, you know, just
+basically reverified it and shared it
+
+226
+00:04:55,670 --> 00:04:55,680
+basically reverified it and shared it
+ 
+
+227
+00:04:55,680 --> 00:04:57,430
+basically reverified it and shared it
+and gave it more explicit instructions
+
+228
+00:04:57,430 --> 00:04:57,440
+and gave it more explicit instructions
+ 
+
+229
+00:04:57,440 --> 00:05:00,150
+and gave it more explicit instructions
+as we've learned this week to verify,
+
+230
+00:05:00,150 --> 00:05:00,160
+as we've learned this week to verify,
+ 
+
+231
+00:05:00,160 --> 00:05:02,550
+as we've learned this week to verify,
+validate, whatever, share. Um, so then
+
+232
+00:05:02,550 --> 00:05:02,560
+validate, whatever, share. Um, so then
+ 
+
+233
+00:05:02,560 --> 00:05:04,390
+validate, whatever, share. Um, so then
+it corrected it. So if you look in the
+
+234
+00:05:04,390 --> 00:05:04,400
+it corrected it. So if you look in the
+ 
+
+235
+00:05:04,400 --> 00:05:06,870
+it corrected it. So if you look in the
+PR for this, it's pretty funny. Also,
+
+236
+00:05:06,870 --> 00:05:06,880
+PR for this, it's pretty funny. Also,
+ 
+
+237
+00:05:06,880 --> 00:05:09,430
+PR for this, it's pretty funny. Also,
+Wi-Fi is not
+
+238
+00:05:09,430 --> 00:05:09,440
+Wi-Fi is not
+ 
+
+239
+00:05:09,440 --> 00:05:12,870
+Wi-Fi is not
+uh being super
+
+240
+00:05:12,870 --> 00:05:12,880
+uh being super
+ 
+
+241
+00:05:12,880 --> 00:05:17,350
+uh being super
+speedy. Anyway, so in the end, 25% of
+
+242
+00:05:17,350 --> 00:05:17,360
+speedy. Anyway, so in the end, 25% of
+ 
+
+243
+00:05:17,360 --> 00:05:20,469
+speedy. Anyway, so in the end, 25% of
+the talk descriptions were correct, 75%
+
+244
+00:05:20,469 --> 00:05:20,479
+the talk descriptions were correct, 75%
+ 
+
+245
+00:05:20,479 --> 00:05:22,310
+the talk descriptions were correct, 75%
+were wrong. So it's kind of a funny
+
+246
+00:05:22,310 --> 00:05:22,320
+were wrong. So it's kind of a funny
+ 
+
+247
+00:05:22,320 --> 00:05:26,390
+were wrong. So it's kind of a funny
+story for a bcoded AI uh thing, but it
+
+248
+00:05:26,390 --> 00:05:26,400
+story for a bcoded AI uh thing, but it
+ 
+
+249
+00:05:26,400 --> 00:05:29,270
+story for a bcoded AI uh thing, but it
+worked out in the end. And uh you'll see
+
+250
+00:05:29,270 --> 00:05:29,280
+worked out in the end. And uh you'll see
+ 
+
+251
+00:05:29,280 --> 00:05:31,670
+worked out in the end. And uh you'll see
+on our talk later, the irony will come
+
+252
+00:05:31,670 --> 00:05:31,680
+on our talk later, the irony will come
+ 
+
+253
+00:05:31,680 --> 00:05:33,909
+on our talk later, the irony will come
+when we talk about what we're presenting
+
+254
+00:05:33,909 --> 00:05:33,919
+when we talk about what we're presenting
+ 
+
+255
+00:05:33,919 --> 00:05:36,150
+when we talk about what we're presenting
+and how my focus of that project was on
+
+256
+00:05:36,150 --> 00:05:36,160
+and how my focus of that project was on
+ 
+
+257
+00:05:36,160 --> 00:05:38,870
+and how my focus of that project was on
+the validation skill. So you know, a
+
+258
+00:05:38,870 --> 00:05:38,880
+the validation skill. So you know, a
+ 
+
+259
+00:05:38,880 --> 00:05:42,469
+the validation skill. So you know, a
+little humbling, but it's pretty cool.
+
+260
+00:05:42,469 --> 00:05:42,479
+little humbling, but it's pretty cool.
+ 
+
+261
+00:05:42,479 --> 00:05:46,550
+little humbling, but it's pretty cool.
+All right. So, yesterday um I was trying
+
+262
+00:05:46,550 --> 00:05:46,560
+All right. So, yesterday um I was trying
+ 
+
+263
+00:05:46,560 --> 00:05:49,029
+All right. So, yesterday um I was trying
+to find kind of all the comments on
+
+264
+00:05:49,029 --> 00:05:49,039
+to find kind of all the comments on
+ 
+
+265
+00:05:49,039 --> 00:05:52,950
+to find kind of all the comments on
+social media um from the conference and
+
+266
+00:05:52,950 --> 00:05:52,960
+social media um from the conference and
+ 
+
+267
+00:05:52,960 --> 00:05:55,189
+social media um from the conference and
+uh which is not super easy to do across
+
+268
+00:05:55,189 --> 00:05:55,199
+uh which is not super easy to do across
+ 
+
+269
+00:05:55,199 --> 00:05:58,150
+uh which is not super easy to do across
+all the platforms. Is this coming up
+
+270
+00:05:58,150 --> 00:05:58,160
+all the platforms. Is this coming up
+ 
+
+271
+00:05:58,160 --> 00:06:00,310
+all the platforms. Is this coming up
+yet? [clears throat]
+
+272
+00:06:00,310 --> 00:06:00,320
+yet? [clears throat]
+ 
+
+273
+00:06:00,320 --> 00:06:03,590
+yet? [clears throat]
+There we go. Um
+
+274
+00:06:03,590 --> 00:06:03,600
+There we go. Um
+ 
+
+275
+00:06:03,600 --> 00:06:06,390
+There we go. Um
+and uh
+
+276
+00:06:06,390 --> 00:06:06,400
+and uh
+ 
+
+277
+00:06:06,400 --> 00:06:08,550
+and uh
+and we'll make this a little simpler.
+
+278
+00:06:08,550 --> 00:06:08,560
+and we'll make this a little simpler.
+ 
+
+279
+00:06:08,560 --> 00:06:10,230
+and we'll make this a little simpler.
+Um,
+
+280
+00:06:10,230 --> 00:06:10,240
+Um,
+ 
+
+281
+00:06:10,240 --> 00:06:12,870
+Um,
+and uh, so
+
+282
+00:06:12,870 --> 00:06:12,880
+and uh, so
+ 
+
+283
+00:06:12,880 --> 00:06:15,430
+and uh, so
+because it was hard to find, why can't I
+
+284
+00:06:15,430 --> 00:06:15,440
+because it was hard to find, why can't I
+ 
+
+285
+00:06:15,440 --> 00:06:18,469
+because it was hard to find, why can't I
+scroll down? Um, I just vibe coded up a
+
+286
+00:06:18,469 --> 00:06:18,479
+scroll down? Um, I just vibe coded up a
+ 
+
+287
+00:06:18,479 --> 00:06:19,909
+scroll down? Um, I just vibe coded up a
+little thing that scrolls all the
+
+288
+00:06:19,909 --> 00:06:19,919
+little thing that scrolls all the
+ 
+
+289
+00:06:19,919 --> 00:06:21,830
+little thing that scrolls all the
+comments from all the major social media
+
+290
+00:06:21,830 --> 00:06:21,840
+comments from all the major social media
+ 
+
+291
+00:06:21,840 --> 00:06:24,870
+comments from all the major social media
+networks. Um, and you can actually go
+
+292
+00:06:24,870 --> 00:06:24,880
+networks. Um, and you can actually go
+ 
+
+293
+00:06:24,880 --> 00:06:27,430
+networks. Um, and you can actually go
+and give kudos to the presenters and add
+
+294
+00:06:27,430 --> 00:06:27,440
+and give kudos to the presenters and add
+ 
+
+295
+00:06:27,440 --> 00:06:31,590
+and give kudos to the presenters and add
+comments. Um, but the the real kind of I
+
+296
+00:06:31,590 --> 00:06:31,600
+comments. Um, but the the real kind of I
+ 
+
+297
+00:06:31,600 --> 00:06:32,950
+comments. Um, but the the real kind of I
+guess more fascinating thing from a
+
+298
+00:06:32,950 --> 00:06:32,960
+guess more fascinating thing from a
+ 
+
+299
+00:06:32,960 --> 00:06:34,790
+guess more fascinating thing from a
+security perspective is I looked up the
+
+300
+00:06:34,790 --> 00:06:34,800
+security perspective is I looked up the
+ 
+
+301
+00:06:34,800 --> 00:06:36,629
+security perspective is I looked up the
+the actual amount of code that it
+
+302
+00:06:36,629 --> 00:06:36,639
+the actual amount of code that it
+ 
+
+303
+00:06:36,639 --> 00:06:38,790
+the actual amount of code that it
+created. This took like 8 minutes and it
+
+304
+00:06:38,790 --> 00:06:38,800
+created. This took like 8 minutes and it
+ 
+
+305
+00:06:38,800 --> 00:06:41,189
+created. This took like 8 minutes and it
+was 6,800 lines of code that was created
+
+306
+00:06:41,189 --> 00:06:41,199
+was 6,800 lines of code that was created
+ 
+
+307
+00:06:41,199 --> 00:06:45,670
+was 6,800 lines of code that was created
+in 8 minutes to do this. Um, and uh, I
+
+308
+00:06:45,670 --> 00:06:45,680
+in 8 minutes to do this. Um, and uh, I
+ 
+
+309
+00:06:45,680 --> 00:06:48,230
+in 8 minutes to do this. Um, and uh, I
+think there was uh, something like 17
+
+310
+00:06:48,230 --> 00:06:48,240
+think there was uh, something like 17
+ 
+
+311
+00:06:48,240 --> 00:06:50,070
+think there was uh, something like 17
+different dependencies
+
+312
+00:06:50,070 --> 00:06:50,080
+different dependencies
+ 
+
+313
+00:06:50,080 --> 00:06:51,909
+different dependencies
+um, that were part of it. Um, but
+
+314
+00:06:51,909 --> 00:06:51,919
+um, that were part of it. Um, but
+ 
+
+315
+00:06:51,919 --> 00:06:53,749
+um, that were part of it. Um, but
+because this is a security conference, I
+
+316
+00:06:53,749 --> 00:06:53,759
+because this is a security conference, I
+ 
+
+317
+00:06:53,759 --> 00:06:55,909
+because this is a security conference, I
+also thought, well, wow, what if Oh, by
+
+318
+00:06:55,909 --> 00:06:55,919
+also thought, well, wow, what if Oh, by
+ 
+
+319
+00:06:55,919 --> 00:06:57,510
+also thought, well, wow, what if Oh, by
+the way, this crawled the website and
+
+320
+00:06:57,510 --> 00:06:57,520
+the way, this crawled the website and
+ 
+
+321
+00:06:57,520 --> 00:06:59,430
+the way, this crawled the website and
+mimicked the exact website is
+
+322
+00:06:59,430 --> 00:06:59,440
+mimicked the exact website is
+ 
+
+323
+00:06:59,440 --> 00:07:01,270
+mimicked the exact website is
+unprompted. As you can see, it looks a
+
+324
+00:07:01,270 --> 00:07:01,280
+unprompted. As you can see, it looks a
+ 
+
+325
+00:07:01,280 --> 00:07:04,070
+unprompted. As you can see, it looks a
+lot like it. Um, but I thought, well,
+
+326
+00:07:04,070 --> 00:07:04,080
+lot like it. Um, but I thought, well,
+ 
+
+327
+00:07:04,080 --> 00:07:05,990
+lot like it. Um, but I thought, well,
+wouldn't it be fun to actually see how
+
+328
+00:07:05,990 --> 00:07:06,000
+wouldn't it be fun to actually see how
+ 
+
+329
+00:07:06,000 --> 00:07:07,749
+wouldn't it be fun to actually see how
+many people actually registered for next
+
+330
+00:07:07,749 --> 00:07:07,759
+many people actually registered for next
+ 
+
+331
+00:07:07,759 --> 00:07:09,589
+many people actually registered for next
+year's event?
+
+332
+00:07:09,589 --> 00:07:09,599
+year's event?
+ 
+
+333
+00:07:09,599 --> 00:07:13,510
+year's event?
+Um, so you actually can go on um and uh
+
+334
+00:07:13,510 --> 00:07:13,520
+Um, so you actually can go on um and uh
+ 
+
+335
+00:07:13,520 --> 00:07:15,510
+Um, so you actually can go on um and uh
+add your password, your credit card, and
+
+336
+00:07:15,510 --> 00:07:15,520
+add your password, your credit card, and
+ 
+
+337
+00:07:15,520 --> 00:07:17,430
+add your password, your credit card, and
+your details for next year's, which is
+
+338
+00:07:17,430 --> 00:07:17,440
+your details for next year's, which is
+ 
+
+339
+00:07:17,440 --> 00:07:21,350
+your details for next year's, which is
+$7.99. Um, not not uh 179 if you're
+
+340
+00:07:21,350 --> 00:07:21,360
+$7.99. Um, not not uh 179 if you're
+ 
+
+341
+00:07:21,360 --> 00:07:23,189
+$7.99. Um, not not uh 179 if you're
+interested. Um, so you can think about
+
+342
+00:07:23,189 --> 00:07:23,199
+interested. Um, so you can think about
+ 
+
+343
+00:07:23,199 --> 00:07:25,189
+interested. Um, so you can think about
+how easy it is to do this across your
+
+344
+00:07:25,189 --> 00:07:25,199
+how easy it is to do this across your
+ 
+
+345
+00:07:25,199 --> 00:07:27,909
+how easy it is to do this across your
+favorite other site on the internet and
+
+346
+00:07:27,909 --> 00:07:27,919
+favorite other site on the internet and
+ 
+
+347
+00:07:27,919 --> 00:07:30,950
+favorite other site on the internet and
+make this happen. Um, so that's the
+
+348
+00:07:30,950 --> 00:07:30,960
+make this happen. Um, so that's the
+ 
+
+349
+00:07:30,960 --> 00:07:33,029
+make this happen. Um, so that's the
+demo. It was made with lovable. I'll put
+
+350
+00:07:33,029 --> 00:07:33,039
+demo. It was made with lovable. I'll put
+ 
+
+351
+00:07:33,039 --> 00:07:35,029
+demo. It was made with lovable. I'll put
+the prompt in the uh in the chat notes.
+
+352
+00:07:35,029 --> 00:07:35,039
+the prompt in the uh in the chat notes.
+ 
+
+353
+00:07:35,039 --> 00:07:36,469
+the prompt in the uh in the chat notes.
+And the good thing about lovable is at
+
+354
+00:07:36,469 --> 00:07:36,479
+And the good thing about lovable is at
+ 
+
+355
+00:07:36,479 --> 00:07:38,469
+And the good thing about lovable is at
+the very bottom right you can actually
+
+356
+00:07:38,469 --> 00:07:38,479
+the very bottom right you can actually
+ 
+
+357
+00:07:38,479 --> 00:07:40,629
+the very bottom right you can actually
+um edit somebody else's lovable and fork
+
+358
+00:07:40,629 --> 00:07:40,639
+um edit somebody else's lovable and fork
+ 
+
+359
+00:07:40,639 --> 00:07:42,309
+um edit somebody else's lovable and fork
+and create your own really easily if you
+
+360
+00:07:42,309 --> 00:07:42,319
+and create your own really easily if you
+ 
+
+361
+00:07:42,319 --> 00:07:44,870
+and create your own really easily if you
+want to do that. So thank you.
+
+362
+00:07:44,870 --> 00:07:44,880
+want to do that. So thank you.
+ 
+
+363
+00:07:44,880 --> 00:07:46,950
+want to do that. So thank you.
+>> My name is Seapik.
+
+364
+00:07:46,950 --> 00:07:46,960
+>> My name is Seapik.
+ 
+
+365
+00:07:46,960 --> 00:07:48,390
+>> My name is Seapik.
+So I wanted to say first of all thank
+
+366
+00:07:48,390 --> 00:07:48,400
+So I wanted to say first of all thank
+ 
+
+367
+00:07:48,400 --> 00:07:50,070
+So I wanted to say first of all thank
+you to Gaddy and thank you to all of you
+
+368
+00:07:50,070 --> 00:07:50,080
+you to Gaddy and thank you to all of you
+ 
+
+369
+00:07:50,080 --> 00:07:51,830
+you to Gaddy and thank you to all of you
+for being such an incredible community.
+
+370
+00:07:51,830 --> 00:07:51,840
+for being such an incredible community.
+ 
+
+371
+00:07:51,840 --> 00:07:53,990
+for being such an incredible community.
+And you know I think we have to realize
+
+372
+00:07:53,990 --> 00:07:54,000
+And you know I think we have to realize
+ 
+
+373
+00:07:54,000 --> 00:07:56,869
+And you know I think we have to realize
+that we are all you are all very special
+
+374
+00:07:56,869 --> 00:07:56,879
+that we are all you are all very special
+ 
+
+375
+00:07:56,879 --> 00:07:58,790
+that we are all you are all very special
+because you have some insights which
+
+376
+00:07:58,790 --> 00:07:58,800
+because you have some insights which
+ 
+
+377
+00:07:58,800 --> 00:08:00,790
+because you have some insights which
+most of the people out there don't have
+
+378
+00:08:00,790 --> 00:08:00,800
+most of the people out there don't have
+ 
+
+379
+00:08:00,800 --> 00:08:03,990
+most of the people out there don't have
+yet. And the question is just how do we
+
+380
+00:08:03,990 --> 00:08:04,000
+yet. And the question is just how do we
+ 
+
+381
+00:08:04,000 --> 00:08:05,589
+yet. And the question is just how do we
+communicate this in a proper way because
+
+382
+00:08:05,589 --> 00:08:05,599
+communicate this in a proper way because
+ 
+
+383
+00:08:05,599 --> 00:08:10,150
+communicate this in a proper way because
+that's the only thing on how we can make
+
+384
+00:08:10,150 --> 00:08:10,160
+that's the only thing on how we can make
+ 
+
+385
+00:08:10,160 --> 00:08:12,150
+that's the only thing on how we can make
+make uh you know bring a positive world
+
+386
+00:08:12,150 --> 00:08:12,160
+make uh you know bring a positive world
+ 
+
+387
+00:08:12,160 --> 00:08:15,909
+make uh you know bring a positive world
+into um um into the world out there. And
+
+388
+00:08:15,909 --> 00:08:15,919
+into um um into the world out there. And
+ 
+
+389
+00:08:15,919 --> 00:08:18,230
+into um um into the world out there. And
+the same you know as some of you tried
+
+390
+00:08:18,230 --> 00:08:18,240
+the same you know as some of you tried
+ 
+
+391
+00:08:18,240 --> 00:08:20,390
+the same you know as some of you tried
+tried out already playing with a lot of
+
+392
+00:08:20,390 --> 00:08:20,400
+tried out already playing with a lot of
+ 
+
+393
+00:08:20,400 --> 00:08:22,469
+tried out already playing with a lot of
+offensive tools. I've I've did the same
+
+394
+00:08:22,469 --> 00:08:22,479
+offensive tools. I've I've did the same
+ 
+
+395
+00:08:22,479 --> 00:08:24,790
+offensive tools. I've I've did the same
+a couple of uh weeks ago. Just built a
+
+396
+00:08:24,790 --> 00:08:24,800
+a couple of uh weeks ago. Just built a
+ 
+
+397
+00:08:24,800 --> 00:08:27,350
+a couple of uh weeks ago. Just built a
+small all day lab and literally I've not
+
+398
+00:08:27,350 --> 00:08:27,360
+small all day lab and literally I've not
+ 
+
+399
+00:08:27,360 --> 00:08:29,589
+small all day lab and literally I've not
+touched uh you know father any tools for
+
+400
+00:08:29,589 --> 00:08:29,599
+touched uh you know father any tools for
+ 
+
+401
+00:08:29,599 --> 00:08:32,630
+touched uh you know father any tools for
+the last 8 10 years and I was able to
+
+402
+00:08:32,630 --> 00:08:32,640
+the last 8 10 years and I was able to
+ 
+
+403
+00:08:32,640 --> 00:08:34,469
+the last 8 10 years and I was able to
+find a lot of very interesting stuff and
+
+404
+00:08:34,469 --> 00:08:34,479
+find a lot of very interesting stuff and
+ 
+
+405
+00:08:34,479 --> 00:08:36,790
+find a lot of very interesting stuff and
+some of this is already validated. So my
+
+406
+00:08:36,790 --> 00:08:36,800
+some of this is already validated. So my
+ 
+
+407
+00:08:36,800 --> 00:08:38,310
+some of this is already validated. So my
+question was how do we really build
+
+408
+00:08:38,310 --> 00:08:38,320
+question was how do we really build
+ 
+
+409
+00:08:38,320 --> 00:08:41,430
+question was how do we really build
+build this as a um you know as a
+
+410
+00:08:41,430 --> 00:08:41,440
+build this as a um you know as a
+ 
+
+411
+00:08:41,440 --> 00:08:42,870
+build this as a um you know as a
+communication platform? How can we
+
+412
+00:08:42,870 --> 00:08:42,880
+communication platform? How can we
+ 
+
+413
+00:08:42,880 --> 00:08:45,990
+communication platform? How can we
+transfer this um this uh this message on
+
+414
+00:08:45,990 --> 00:08:46,000
+transfer this um this uh this message on
+ 
+
+415
+00:08:46,000 --> 00:08:47,430
+transfer this um this uh this message on
+what's happening out there? And the
+
+416
+00:08:47,430 --> 00:08:47,440
+what's happening out there? And the
+ 
+
+417
+00:08:47,440 --> 00:08:49,030
+what's happening out there? And the
+first thing I did is just to go back and
+
+418
+00:08:49,030 --> 00:08:49,040
+first thing I did is just to go back and
+ 
+
+419
+00:08:49,040 --> 00:08:52,389
+first thing I did is just to go back and
+look back on what kind of research was
+
+420
+00:08:52,389 --> 00:08:52,399
+look back on what kind of research was
+ 
+
+421
+00:08:52,399 --> 00:08:53,990
+look back on what kind of research was
+happening in the past around
+
+422
+00:08:53,990 --> 00:08:54,000
+happening in the past around
+ 
+
+423
+00:08:54,000 --> 00:08:55,350
+happening in the past around
+vulnerability disclosure around
+
+424
+00:08:55,350 --> 00:08:55,360
+vulnerability disclosure around
+ 
+
+425
+00:08:55,360 --> 00:08:58,470
+vulnerability disclosure around
+vulnerability exploitation and so on and
+
+426
+00:08:58,470 --> 00:08:58,480
+vulnerability exploitation and so on and
+ 
+
+427
+00:08:58,480 --> 00:09:00,550
+vulnerability exploitation and so on and
+just looking back obviously at the
+
+428
+00:09:00,550 --> 00:09:00,560
+just looking back obviously at the
+ 
+
+429
+00:09:00,560 --> 00:09:02,070
+just looking back obviously at the
+foundational problem cyber security
+
+430
+00:09:02,070 --> 00:09:02,080
+foundational problem cyber security
+ 
+
+431
+00:09:02,080 --> 00:09:04,389
+foundational problem cyber security
+being an econ economics problem looking
+
+432
+00:09:04,389 --> 00:09:04,399
+being an econ economics problem looking
+ 
+
+433
+00:09:04,399 --> 00:09:05,829
+being an econ economics problem looking
+back at some of the research around
+
+434
+00:09:05,829 --> 00:09:05,839
+back at some of the research around
+ 
+
+435
+00:09:05,839 --> 00:09:07,670
+back at some of the research around
+patchiff for instance right so what's
+
+436
+00:09:07,670 --> 00:09:07,680
+patchiff for instance right so what's
+ 
+
+437
+00:09:07,680 --> 00:09:09,590
+patchiff for instance right so what's
+going to happen if machines are going to
+
+438
+00:09:09,590 --> 00:09:09,600
+going to happen if machines are going to
+ 
+
+439
+00:09:09,600 --> 00:09:11,590
+going to happen if machines are going to
+be able to reconstruct patches and build
+
+440
+00:09:11,590 --> 00:09:11,600
+be able to reconstruct patches and build
+ 
+
+441
+00:09:11,600 --> 00:09:13,990
+be able to reconstruct patches and build
+exploits automatically uh within a
+
+442
+00:09:13,990 --> 00:09:14,000
+exploits automatically uh within a
+ 
+
+443
+00:09:14,000 --> 00:09:16,710
+exploits automatically uh within a
+couple of minutes and not hours or case.
+
+444
+00:09:16,710 --> 00:09:16,720
+couple of minutes and not hours or case.
+ 
+
+445
+00:09:16,720 --> 00:09:19,269
+couple of minutes and not hours or case.
+My question was how do we visualize this
+
+446
+00:09:19,269 --> 00:09:19,279
+My question was how do we visualize this
+ 
+
+447
+00:09:19,279 --> 00:09:21,430
+My question was how do we visualize this
+and how do we transport as well the call
+
+448
+00:09:21,430 --> 00:09:21,440
+and how do we transport as well the call
+ 
+
+449
+00:09:21,440 --> 00:09:25,590
+and how do we transport as well the call
+to action um on how we can you know do
+
+450
+00:09:25,590 --> 00:09:25,600
+to action um on how we can you know do
+ 
+
+451
+00:09:25,600 --> 00:09:27,910
+to action um on how we can you know do
+something against that going forward. So
+
+452
+00:09:27,910 --> 00:09:27,920
+something against that going forward. So
+ 
+
+453
+00:09:27,920 --> 00:09:29,829
+something against that going forward. So
+this is a small project which was um
+
+454
+00:09:29,829 --> 00:09:29,839
+this is a small project which was um
+ 
+
+455
+00:09:29,839 --> 00:09:31,590
+this is a small project which was um
+vibe coded pretty much over the weekend
+
+456
+00:09:31,590 --> 00:09:31,600
+vibe coded pretty much over the weekend
+ 
+
+457
+00:09:31,600 --> 00:09:35,110
+vibe coded pretty much over the weekend
+as well including some um selection of
+
+458
+00:09:35,110 --> 00:09:35,120
+as well including some um selection of
+ 
+
+459
+00:09:35,120 --> 00:09:39,509
+as well including some um selection of
+call to actions on what we can do and um
+
+460
+00:09:39,509 --> 00:09:39,519
+call to actions on what we can do and um
+ 
+
+461
+00:09:39,519 --> 00:09:41,430
+call to actions on what we can do and um
+you know visualization of one single
+
+462
+00:09:41,430 --> 00:09:41,440
+you know visualization of one single
+ 
+
+463
+00:09:41,440 --> 00:09:44,870
+you know visualization of one single
+metric and the metric is time to
+
+464
+00:09:44,870 --> 00:09:44,880
+metric and the metric is time to
+ 
+
+465
+00:09:44,880 --> 00:09:46,630
+metric and the metric is time to
+exploitation.
+
+466
+00:09:46,630 --> 00:09:46,640
+exploitation.
+ 
+
+467
+00:09:46,640 --> 00:09:49,269
+exploitation.
+You want to see it?
+
+468
+00:09:49,269 --> 00:09:49,279
+You want to see it?
+ 
+
+469
+00:09:49,279 --> 00:09:50,870
+You want to see it?
+All right.
+
+470
+00:09:50,870 --> 00:09:50,880
+All right.
+ 
+
+471
+00:09:50,880 --> 00:09:53,426
+All right.
+So
+
+472
+00:09:53,426 --> 00:09:53,436
+So
+ 
+
+473
+00:09:53,436 --> 00:09:53,990
+So
+[snorts]
+
+474
+00:09:53,990 --> 00:09:54,000
+[snorts]
+ 
+
+475
+00:09:54,000 --> 00:09:57,910
+[snorts]
+there we go.
+
+476
+00:09:57,910 --> 00:09:57,920
+
+ 
+
+477
+00:09:57,920 --> 00:10:07,269
+
+What's happening with Wi-Fi?
+
+478
+00:10:07,269 --> 00:10:07,279
+
+ 
+
+479
+00:10:07,279 --> 00:10:08,790
+
+>> We're all talking about AI, but Wi-Fi
+
+480
+00:10:08,790 --> 00:10:08,800
+>> We're all talking about AI, but Wi-Fi
+ 
+
+481
+00:10:08,800 --> 00:10:10,550
+>> We're all talking about AI, but Wi-Fi
+doesn't work.
+
+482
+00:10:10,550 --> 00:10:10,560
+doesn't work.
+ 
+
+483
+00:10:10,560 --> 00:10:12,790
+doesn't work.
+All right. Um, I can I can talk through
+
+484
+00:10:12,790 --> 00:10:12,800
+All right. Um, I can I can talk through
+ 
+
+485
+00:10:12,800 --> 00:10:14,870
+All right. Um, I can I can talk through
+that. So
+
+486
+00:10:14,870 --> 00:10:14,880
+that. So
+ 
+
+487
+00:10:14,880 --> 00:10:17,590
+that. So
+what I did is I just have agents to go
+
+488
+00:10:17,590 --> 00:10:17,600
+what I did is I just have agents to go
+ 
+
+489
+00:10:17,600 --> 00:10:19,110
+what I did is I just have agents to go
+out and research all the different
+
+490
+00:10:19,110 --> 00:10:19,120
+out and research all the different
+ 
+
+491
+00:10:19,120 --> 00:10:21,829
+out and research all the different
+trusted data sources like uh CISA like
+
+492
+00:10:21,829 --> 00:10:21,839
+trusted data sources like uh CISA like
+ 
+
+493
+00:10:21,839 --> 00:10:23,509
+trusted data sources like uh CISA like
+uh some commercial data sources
+
+494
+00:10:23,509 --> 00:10:23,519
+uh some commercial data sources
+ 
+
+495
+00:10:23,519 --> 00:10:27,350
+uh some commercial data sources
+vulnerability check um NVD collect all
+
+496
+00:10:27,350 --> 00:10:27,360
+vulnerability check um NVD collect all
+ 
+
+497
+00:10:27,360 --> 00:10:29,509
+vulnerability check um NVD collect all
+the information together and try to
+
+498
+00:10:29,509 --> 00:10:29,519
+the information together and try to
+ 
+
+499
+00:10:29,519 --> 00:10:32,230
+the information together and try to
+understand how we can measure time to
+
+500
+00:10:32,230 --> 00:10:32,240
+understand how we can measure time to
+ 
+
+501
+00:10:32,240 --> 00:10:35,990
+understand how we can measure time to
+exploitation and Safari was faster. Oh
+
+502
+00:10:35,990 --> 00:10:36,000
+exploitation and Safari was faster. Oh
+ 
+
+503
+00:10:36,000 --> 00:10:40,230
+exploitation and Safari was faster. Oh
+my god, look at that.
+
+504
+00:10:40,230 --> 00:10:40,240
+my god, look at that.
+ 
+
+505
+00:10:40,240 --> 00:10:41,990
+my god, look at that.
+And and this is the result what we've
+
+506
+00:10:41,990 --> 00:10:42,000
+And and this is the result what we've
+ 
+
+507
+00:10:42,000 --> 00:10:44,310
+And and this is the result what we've
+got from that. So just looking back at
+
+508
+00:10:44,310 --> 00:10:44,320
+got from that. So just looking back at
+ 
+
+509
+00:10:44,320 --> 00:10:47,190
+got from that. So just looking back at
+the data in 2020, the time to
+
+510
+00:10:47,190 --> 00:10:47,200
+the data in 2020, the time to
+ 
+
+511
+00:10:47,200 --> 00:10:51,910
+the data in 2020, the time to
+exploitation was more than a year.
+
+512
+00:10:51,910 --> 00:10:51,920
+exploitation was more than a year.
+ 
+
+513
+00:10:51,920 --> 00:10:55,590
+exploitation was more than a year.
+Just last year we've crossed months and
+
+514
+00:10:55,590 --> 00:10:55,600
+Just last year we've crossed months and
+ 
+
+515
+00:10:55,600 --> 00:10:58,230
+Just last year we've crossed months and
+now it's just about a day.
+
+516
+00:10:58,230 --> 00:10:58,240
+now it's just about a day.
+ 
+
+517
+00:10:58,240 --> 00:10:59,829
+now it's just about a day.
+So
+
+518
+00:10:59,829 --> 00:10:59,839
+So
+ 
+
+519
+00:10:59,839 --> 00:11:01,910
+So
+how did it change our patching
+
+520
+00:11:01,910 --> 00:11:01,920
+how did it change our patching
+ 
+
+521
+00:11:01,920 --> 00:11:04,069
+how did it change our patching
+processes? How quickly are we patching
+
+522
+00:11:04,069 --> 00:11:04,079
+processes? How quickly are we patching
+ 
+
+523
+00:11:04,079 --> 00:11:05,670
+processes? How quickly are we patching
+today?
+
+524
+00:11:05,670 --> 00:11:05,680
+today?
+ 
+
+525
+00:11:05,680 --> 00:11:07,910
+today?
+It's still not change like everybody
+
+526
+00:11:07,910 --> 00:11:07,920
+It's still not change like everybody
+ 
+
+527
+00:11:07,920 --> 00:11:09,509
+It's still not change like everybody
+who's working in a big company there's
+
+528
+00:11:09,509 --> 00:11:09,519
+who's working in a big company there's
+ 
+
+529
+00:11:09,519 --> 00:11:11,590
+who's working in a big company there's
+still a lot of challenges around how you
+
+530
+00:11:11,590 --> 00:11:11,600
+still a lot of challenges around how you
+ 
+
+531
+00:11:11,600 --> 00:11:13,590
+still a lot of challenges around how you
+can patch. We're not going to change
+
+532
+00:11:13,590 --> 00:11:13,600
+can patch. We're not going to change
+ 
+
+533
+00:11:13,600 --> 00:11:15,670
+can patch. We're not going to change
+this in a foundational way. And now just
+
+534
+00:11:15,670 --> 00:11:15,680
+this in a foundational way. And now just
+ 
+
+535
+00:11:15,680 --> 00:11:18,389
+this in a foundational way. And now just
+looking at the number of um looking at
+
+536
+00:11:18,389 --> 00:11:18,399
+looking at the number of um looking at
+ 
+
+537
+00:11:18,399 --> 00:11:20,790
+looking at the number of um looking at
+the number of zero days on this
+
+538
+00:11:20,790 --> 00:11:20,800
+the number of zero days on this
+ 
+
+539
+00:11:20,800 --> 00:11:24,389
+the number of zero days on this
+weaponized exploits you see that more
+
+540
+00:11:24,389 --> 00:11:24,399
+weaponized exploits you see that more
+ 
+
+541
+00:11:24,399 --> 00:11:27,190
+weaponized exploits you see that more
+more than half of them started to be
+
+542
+00:11:27,190 --> 00:11:27,200
+more than half of them started to be
+ 
+
+543
+00:11:27,200 --> 00:11:28,870
+more than half of them started to be
+already zero days. So they either
+
+544
+00:11:28,870 --> 00:11:28,880
+already zero days. So they either
+ 
+
+545
+00:11:28,880 --> 00:11:31,269
+already zero days. So they either
+exploited before patches being released
+
+546
+00:11:31,269 --> 00:11:31,279
+exploited before patches being released
+ 
+
+547
+00:11:31,279 --> 00:11:35,430
+exploited before patches being released
+um or the same day. Now what can happen
+
+548
+00:11:35,430 --> 00:11:35,440
+um or the same day. Now what can happen
+ 
+
+549
+00:11:35,440 --> 00:11:37,509
+um or the same day. Now what can happen
+without creating too much foot but
+
+550
+00:11:37,509 --> 00:11:37,519
+without creating too much foot but
+ 
+
+551
+00:11:37,519 --> 00:11:40,069
+without creating too much foot but
+looking at all the CES out there we see
+
+552
+00:11:40,069 --> 00:11:40,079
+looking at all the CES out there we see
+ 
+
+553
+00:11:40,079 --> 00:11:43,509
+looking at all the CES out there we see
+that the rate of the weaponized exploits
+
+554
+00:11:43,509 --> 00:11:43,519
+that the rate of the weaponized exploits
+ 
+
+555
+00:11:43,519 --> 00:11:47,269
+that the rate of the weaponized exploits
+is pretty constant around 2%.
+
+556
+00:11:47,269 --> 00:11:47,279
+is pretty constant around 2%.
+ 
+
+557
+00:11:47,279 --> 00:11:50,230
+is pretty constant around 2%.
+So if finding exploit building exploits
+
+558
+00:11:50,230 --> 00:11:50,240
+So if finding exploit building exploits
+ 
+
+559
+00:11:50,240 --> 00:11:52,630
+So if finding exploit building exploits
+finding CVE is going to be as cheap as
+
+560
+00:11:52,630 --> 00:11:52,640
+finding CVE is going to be as cheap as
+ 
+
+561
+00:11:52,640 --> 00:11:54,230
+finding CVE is going to be as cheap as
+we believe this is going to be
+
+562
+00:11:54,230 --> 00:11:54,240
+we believe this is going to be
+ 
+
+563
+00:11:54,240 --> 00:11:56,710
+we believe this is going to be
+dramatically um dangerous for the world
+
+564
+00:11:56,710 --> 00:11:56,720
+dramatically um dangerous for the world
+ 
+
+565
+00:11:56,720 --> 00:12:00,389
+dramatically um dangerous for the world
+and for all of us. So what um yeah what
+
+566
+00:12:00,389 --> 00:12:00,399
+and for all of us. So what um yeah what
+ 
+
+567
+00:12:00,399 --> 00:12:02,550
+and for all of us. So what um yeah what
+I'd like to actually all of you to to do
+
+568
+00:12:02,550 --> 00:12:02,560
+I'd like to actually all of you to to do
+ 
+
+569
+00:12:02,560 --> 00:12:04,470
+I'd like to actually all of you to to do
+is if you're looking for one single
+
+570
+00:12:04,470 --> 00:12:04,480
+is if you're looking for one single
+ 
+
+571
+00:12:04,480 --> 00:12:07,030
+is if you're looking for one single
+slide to transfer this to to communicate
+
+572
+00:12:07,030 --> 00:12:07,040
+slide to transfer this to to communicate
+ 
+
+573
+00:12:07,040 --> 00:12:09,110
+slide to transfer this to to communicate
+this to your board to your Caesars this
+
+574
+00:12:09,110 --> 00:12:09,120
+this to your board to your Caesars this
+ 
+
+575
+00:12:09,120 --> 00:12:11,430
+this to your board to your Caesars this
+is what you can use. I'm very glad that
+
+576
+00:12:11,430 --> 00:12:11,440
+is what you can use. I'm very glad that
+ 
+
+577
+00:12:11,440 --> 00:12:12,949
+is what you can use. I'm very glad that
+a lot of people here are supporting this
+
+578
+00:12:12,949 --> 00:12:12,959
+a lot of people here are supporting this
+ 
+
+579
+00:12:12,959 --> 00:12:15,430
+a lot of people here are supporting this
+we've got Phil we've got Bruce Schneia
+
+580
+00:12:15,430 --> 00:12:15,440
+we've got Phil we've got Bruce Schneia
+ 
+
+581
+00:12:15,440 --> 00:12:17,269
+we've got Phil we've got Bruce Schneia
+we've got Heather uh if you want to
+
+582
+00:12:17,269 --> 00:12:17,279
+we've got Heather uh if you want to
+ 
+
+583
+00:12:17,279 --> 00:12:18,710
+we've got Heather uh if you want to
+leave a comment please go on the website
+
+584
+00:12:18,710 --> 00:12:18,720
+leave a comment please go on the website
+ 
+
+585
+00:12:18,720 --> 00:12:20,230
+leave a comment please go on the website
+and leave a comment around this. Thank
+
+586
+00:12:20,230 --> 00:12:20,240
+and leave a comment around this. Thank
+ 
+
+587
+00:12:20,240 --> 00:12:23,560
+and leave a comment around this. Thank
+you very much.
+

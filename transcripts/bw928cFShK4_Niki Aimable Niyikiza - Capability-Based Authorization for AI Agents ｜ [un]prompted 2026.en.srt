@@ -1,0 +1,6805 @@
+1
+00:00:04,400 --> 00:00:08,310
+
+Thank you. Um, my name is Nikki Amab.
+
+2
+00:00:08,310 --> 00:00:08,320
+Thank you. Um, my name is Nikki Amab.
+ 
+
+3
+00:00:08,320 --> 00:00:10,390
+Thank you. Um, my name is Nikki Amab.
+I've been doing uh infrastructure
+
+4
+00:00:10,390 --> 00:00:10,400
+I've been doing uh infrastructure
+ 
+
+5
+00:00:10,400 --> 00:00:12,790
+I've been doing uh infrastructure
+security for the last 10 years. Uh, we
+
+6
+00:00:12,790 --> 00:00:12,800
+security for the last 10 years. Uh, we
+ 
+
+7
+00:00:12,800 --> 00:00:16,310
+security for the last 10 years. Uh, we
+built security tools at Google, Data
+
+8
+00:00:16,310 --> 00:00:16,320
+built security tools at Google, Data
+ 
+
+9
+00:00:16,320 --> 00:00:18,550
+built security tools at Google, Data
+Dog, and Snapchat.
+
+10
+00:00:18,550 --> 00:00:18,560
+Dog, and Snapchat.
+ 
+
+11
+00:00:18,560 --> 00:00:21,029
+Dog, and Snapchat.
+Um, today I'm going to be talking about
+
+12
+00:00:21,029 --> 00:00:21,039
+Um, today I'm going to be talking about
+ 
+
+13
+00:00:21,039 --> 00:00:24,550
+Um, today I'm going to be talking about
+a problem that I saw when multi- aenic
+
+14
+00:00:24,550 --> 00:00:24,560
+a problem that I saw when multi- aenic
+ 
+
+15
+00:00:24,560 --> 00:00:26,870
+a problem that I saw when multi- aenic
+workflows started appearing in the
+
+16
+00:00:26,870 --> 00:00:26,880
+workflows started appearing in the
+ 
+
+17
+00:00:26,880 --> 00:00:29,349
+workflows started appearing in the
+enterprise scene. uh we talk about some
+
+18
+00:00:29,349 --> 00:00:29,359
+enterprise scene. uh we talk about some
+ 
+
+19
+00:00:29,359 --> 00:00:32,229
+enterprise scene. uh we talk about some
+of the research and implementation we've
+
+20
+00:00:32,229 --> 00:00:32,239
+of the research and implementation we've
+ 
+
+21
+00:00:32,239 --> 00:00:34,549
+of the research and implementation we've
+done with a group of my collaborators at
+
+22
+00:00:34,549 --> 00:00:34,559
+done with a group of my collaborators at
+ 
+
+23
+00:00:34,559 --> 00:00:37,590
+done with a group of my collaborators at
+tenure and a new primitive we've
+
+24
+00:00:37,590 --> 00:00:37,600
+tenure and a new primitive we've
+ 
+
+25
+00:00:37,600 --> 00:00:41,350
+tenure and a new primitive we've
+implemented to solve the problem.
+
+26
+00:00:41,350 --> 00:00:41,360
+implemented to solve the problem.
+ 
+
+27
+00:00:41,360 --> 00:00:43,830
+implemented to solve the problem.
+Uh over the last 5 10 years in the
+
+28
+00:00:43,830 --> 00:00:43,840
+Uh over the last 5 10 years in the
+ 
+
+29
+00:00:43,840 --> 00:00:45,110
+Uh over the last 5 10 years in the
+industry we've been talking about
+
+30
+00:00:45,110 --> 00:00:45,120
+industry we've been talking about
+ 
+
+31
+00:00:45,120 --> 00:00:46,869
+industry we've been talking about
+workload identity. The whole point of
+
+32
+00:00:46,869 --> 00:00:46,879
+workload identity. The whole point of
+ 
+
+33
+00:00:46,879 --> 00:00:49,190
+workload identity. The whole point of
+local identity was that if you pull a
+
+34
+00:00:49,190 --> 00:00:49,200
+local identity was that if you pull a
+ 
+
+35
+00:00:49,200 --> 00:00:52,470
+local identity was that if you pull a
+pod on a nod, you have to make sure that
+
+36
+00:00:52,470 --> 00:00:52,480
+pod on a nod, you have to make sure that
+ 
+
+37
+00:00:52,480 --> 00:00:55,430
+pod on a nod, you have to make sure that
+it's the authorization it's using is
+
+38
+00:00:55,430 --> 00:00:55,440
+it's the authorization it's using is
+ 
+
+39
+00:00:55,440 --> 00:00:57,270
+it's the authorization it's using is
+actually matching the intent of who
+
+40
+00:00:57,270 --> 00:00:57,280
+actually matching the intent of who
+ 
+
+41
+00:00:57,280 --> 00:00:59,349
+actually matching the intent of who
+deployed that pod. The point was that
+
+42
+00:00:59,349 --> 00:00:59,359
+deployed that pod. The point was that
+ 
+
+43
+00:00:59,359 --> 00:01:01,349
+deployed that pod. The point was that
+the lifetime of a pod doesn't always
+
+44
+00:01:01,349 --> 00:01:01,359
+the lifetime of a pod doesn't always
+ 
+
+45
+00:01:01,359 --> 00:01:03,910
+the lifetime of a pod doesn't always
+match with the lifetime of the node. The
+
+46
+00:01:03,910 --> 00:01:03,920
+match with the lifetime of the node. The
+ 
+
+47
+00:01:03,920 --> 00:01:07,510
+match with the lifetime of the node. The
+problem is again the workload was a
+
+48
+00:01:07,510 --> 00:01:07,520
+problem is again the workload was a
+ 
+
+49
+00:01:07,520 --> 00:01:09,429
+problem is again the workload was a
+deterministic
+
+50
+00:01:09,429 --> 00:01:09,439
+deterministic
+ 
+
+51
+00:01:09,439 --> 00:01:11,190
+deterministic
+service. We knew what was going to do
+
+52
+00:01:11,190 --> 00:01:11,200
+service. We knew what was going to do
+ 
+
+53
+00:01:11,200 --> 00:01:13,590
+service. We knew what was going to do
+and there was no surprises. With a
+
+54
+00:01:13,590 --> 00:01:13,600
+and there was no surprises. With a
+ 
+
+55
+00:01:13,600 --> 00:01:16,070
+and there was no surprises. With a
+genenic workflows, we have these pieces
+
+56
+00:01:16,070 --> 00:01:16,080
+genenic workflows, we have these pieces
+ 
+
+57
+00:01:16,080 --> 00:01:18,469
+genenic workflows, we have these pieces
+of software that can reason at runtime.
+
+58
+00:01:18,469 --> 00:01:18,479
+of software that can reason at runtime.
+ 
+
+59
+00:01:18,479 --> 00:01:21,190
+of software that can reason at runtime.
+They can spawn other sub aents and when
+
+60
+00:01:21,190 --> 00:01:21,200
+They can spawn other sub aents and when
+ 
+
+61
+00:01:21,200 --> 00:01:23,109
+They can spawn other sub aents and when
+you're deploying them, you have no idea
+
+62
+00:01:23,109 --> 00:01:23,119
+you're deploying them, you have no idea
+ 
+
+63
+00:01:23,119 --> 00:01:26,789
+you're deploying them, you have no idea
+what's going to happen at runtime. We
+
+64
+00:01:26,789 --> 00:01:26,799
+what's going to happen at runtime. We
+ 
+
+65
+00:01:26,799 --> 00:01:28,710
+what's going to happen at runtime. We
+think this is one of the fundamental
+
+66
+00:01:28,710 --> 00:01:28,720
+think this is one of the fundamental
+ 
+
+67
+00:01:28,720 --> 00:01:31,429
+think this is one of the fundamental
+reason why we end up with confused the
+
+68
+00:01:31,429 --> 00:01:31,439
+reason why we end up with confused the
+ 
+
+69
+00:01:31,439 --> 00:01:33,830
+reason why we end up with confused the
+problem when we deploying a genic
+
+70
+00:01:33,830 --> 00:01:33,840
+problem when we deploying a genic
+ 
+
+71
+00:01:33,840 --> 00:01:36,390
+problem when we deploying a genic
+workflows on the infrastructure that
+
+72
+00:01:36,390 --> 00:01:36,400
+workflows on the infrastructure that
+ 
+
+73
+00:01:36,400 --> 00:01:37,990
+workflows on the infrastructure that
+we've been building for the last couple
+
+74
+00:01:37,990 --> 00:01:38,000
+we've been building for the last couple
+ 
+
+75
+00:01:38,000 --> 00:01:40,469
+we've been building for the last couple
+of decades.
+
+76
+00:01:40,469 --> 00:01:40,479
+of decades.
+ 
+
+77
+00:01:40,479 --> 00:01:43,270
+of decades.
+Now the reason this happens is because
+
+78
+00:01:43,270 --> 00:01:43,280
+Now the reason this happens is because
+ 
+
+79
+00:01:43,280 --> 00:01:46,950
+Now the reason this happens is because
+we're giving them um ambient authority
+
+80
+00:01:46,950 --> 00:01:46,960
+we're giving them um ambient authority
+ 
+
+81
+00:01:46,960 --> 00:01:50,469
+we're giving them um ambient authority
+when their architectural fundamentals
+
+82
+00:01:50,469 --> 00:01:50,479
+when their architectural fundamentals
+ 
+
+83
+00:01:50,479 --> 00:01:53,030
+when their architectural fundamentals
+are built on derived authority. The
+
+84
+00:01:53,030 --> 00:01:53,040
+are built on derived authority. The
+ 
+
+85
+00:01:53,040 --> 00:01:54,469
+are built on derived authority. The
+concept of dergation I'm going to give
+
+86
+00:01:54,469 --> 00:01:54,479
+concept of dergation I'm going to give
+ 
+
+87
+00:01:54,479 --> 00:01:57,510
+concept of dergation I'm going to give
+an example of our valet experience. When
+
+88
+00:01:57,510 --> 00:01:57,520
+an example of our valet experience. When
+ 
+
+89
+00:01:57,520 --> 00:01:59,749
+an example of our valet experience. When
+you go to a valet there's two ways to go
+
+90
+00:01:59,749 --> 00:01:59,759
+you go to a valet there's two ways to go
+ 
+
+91
+00:01:59,759 --> 00:02:01,429
+you go to a valet there's two ways to go
+about it. Either you check the badge of
+
+92
+00:02:01,429 --> 00:02:01,439
+about it. Either you check the badge of
+ 
+
+93
+00:02:01,439 --> 00:02:03,270
+about it. Either you check the badge of
+the valet and you're like okay they work
+
+94
+00:02:03,270 --> 00:02:03,280
+the valet and you're like okay they work
+ 
+
+95
+00:02:03,280 --> 00:02:04,789
+the valet and you're like okay they work
+at this company. I'm going to give them
+
+96
+00:02:04,789 --> 00:02:04,799
+at this company. I'm going to give them
+ 
+
+97
+00:02:04,799 --> 00:02:08,469
+at this company. I'm going to give them
+the key of my car. Except this key can
+
+98
+00:02:08,469 --> 00:02:08,479
+the key of my car. Except this key can
+ 
+
+99
+00:02:08,479 --> 00:02:10,150
+the key of my car. Except this key can
+allow them to drive the car around the
+
+100
+00:02:10,150 --> 00:02:10,160
+allow them to drive the car around the
+ 
+
+101
+00:02:10,160 --> 00:02:11,750
+allow them to drive the car around the
+city. They can open the trunk of the
+
+102
+00:02:11,750 --> 00:02:11,760
+city. They can open the trunk of the
+ 
+
+103
+00:02:11,760 --> 00:02:15,190
+city. They can open the trunk of the
+key. They can open the uh glove box.
+
+104
+00:02:15,190 --> 00:02:15,200
+key. They can open the uh glove box.
+ 
+
+105
+00:02:15,200 --> 00:02:17,830
+key. They can open the uh glove box.
+Anything that you do with your car. But
+
+106
+00:02:17,830 --> 00:02:17,840
+Anything that you do with your car. But
+ 
+
+107
+00:02:17,840 --> 00:02:19,910
+Anything that you do with your car. But
+none of these has anything to do with
+
+108
+00:02:19,910 --> 00:02:19,920
+none of these has anything to do with
+ 
+
+109
+00:02:19,920 --> 00:02:21,910
+none of these has anything to do with
+the actual valet service you're looking
+
+110
+00:02:21,910 --> 00:02:21,920
+the actual valet service you're looking
+ 
+
+111
+00:02:21,920 --> 00:02:24,070
+the actual valet service you're looking
+for. What if there was another option of
+
+112
+00:02:24,070 --> 00:02:24,080
+for. What if there was another option of
+ 
+
+113
+00:02:24,080 --> 00:02:27,190
+for. What if there was another option of
+a valet key? This key is geoenced. They
+
+114
+00:02:27,190 --> 00:02:27,200
+a valet key? This key is geoenced. They
+ 
+
+115
+00:02:27,200 --> 00:02:29,190
+a valet key? This key is geoenced. They
+can't drive for more than 2 kilometers
+
+116
+00:02:29,190 --> 00:02:29,200
+can't drive for more than 2 kilometers
+ 
+
+117
+00:02:29,200 --> 00:02:31,990
+can't drive for more than 2 kilometers
+from where you are. it is the speed is
+
+118
+00:02:31,990 --> 00:02:32,000
+from where you are. it is the speed is
+ 
+
+119
+00:02:32,000 --> 00:02:34,710
+from where you are. it is the speed is
+capped at 40 kilometers or miles per
+
+120
+00:02:34,710 --> 00:02:34,720
+capped at 40 kilometers or miles per
+ 
+
+121
+00:02:34,720 --> 00:02:38,790
+capped at 40 kilometers or miles per
+hour. Um the key can only
+
+122
+00:02:38,790 --> 00:02:38,800
+hour. Um the key can only
+ 
+
+123
+00:02:38,800 --> 00:02:40,630
+hour. Um the key can only
+uh allow them to drive the car but they
+
+124
+00:02:40,630 --> 00:02:40,640
+uh allow them to drive the car but they
+ 
+
+125
+00:02:40,640 --> 00:02:42,790
+uh allow them to drive the car but they
+won't be able to open the glove box or
+
+126
+00:02:42,790 --> 00:02:42,800
+won't be able to open the glove box or
+ 
+
+127
+00:02:42,800 --> 00:02:46,470
+won't be able to open the glove box or
+the trunk or any other auxiliary uh
+
+128
+00:02:46,470 --> 00:02:46,480
+the trunk or any other auxiliary uh
+ 
+
+129
+00:02:46,480 --> 00:02:48,710
+the trunk or any other auxiliary uh
+features you have in your car. We
+
+130
+00:02:48,710 --> 00:02:48,720
+features you have in your car. We
+ 
+
+131
+00:02:48,720 --> 00:02:50,550
+features you have in your car. We
+believe this is how proper delegation
+
+132
+00:02:50,550 --> 00:02:50,560
+believe this is how proper delegation
+ 
+
+133
+00:02:50,560 --> 00:02:52,150
+believe this is how proper delegation
+should happen for agents. You should
+
+134
+00:02:52,150 --> 00:02:52,160
+should happen for agents. You should
+ 
+
+135
+00:02:52,160 --> 00:02:56,309
+should happen for agents. You should
+give an agent the authority that is um
+
+136
+00:02:56,309 --> 00:02:56,319
+give an agent the authority that is um
+ 
+
+137
+00:02:56,319 --> 00:02:58,949
+give an agent the authority that is um
+specific to the task you want them to do
+
+138
+00:02:58,949 --> 00:02:58,959
+specific to the task you want them to do
+ 
+
+139
+00:02:58,959 --> 00:03:00,790
+specific to the task you want them to do
+in the moment.
+
+140
+00:03:00,790 --> 00:03:00,800
+in the moment.
+ 
+
+141
+00:03:00,800 --> 00:03:03,350
+in the moment.
+uh the
+
+142
+00:03:03,350 --> 00:03:03,360
+uh the
+ 
+
+143
+00:03:03,360 --> 00:03:05,190
+uh the
+what we call the containment problem is
+
+144
+00:03:05,190 --> 00:03:05,200
+what we call the containment problem is
+ 
+
+145
+00:03:05,200 --> 00:03:07,990
+what we call the containment problem is
+that when you use the valet key, you
+
+146
+00:03:07,990 --> 00:03:08,000
+that when you use the valet key, you
+ 
+
+147
+00:03:08,000 --> 00:03:09,670
+that when you use the valet key, you
+don't have to trust the valet who is
+
+148
+00:03:09,670 --> 00:03:09,680
+don't have to trust the valet who is
+ 
+
+149
+00:03:09,680 --> 00:03:11,910
+don't have to trust the valet who is
+helping you. You don't you don't have to
+
+150
+00:03:11,910 --> 00:03:11,920
+helping you. You don't you don't have to
+ 
+
+151
+00:03:11,920 --> 00:03:13,750
+helping you. You don't you don't have to
+check you know it's great if they did
+
+152
+00:03:13,750 --> 00:03:13,760
+check you know it's great if they did
+ 
+
+153
+00:03:13,760 --> 00:03:15,350
+check you know it's great if they did
+the background check if it's great if
+
+154
+00:03:15,350 --> 00:03:15,360
+the background check if it's great if
+ 
+
+155
+00:03:15,360 --> 00:03:17,430
+the background check if it's great if
+it's a nice guy. It's great if you you
+
+156
+00:03:17,430 --> 00:03:17,440
+it's a nice guy. It's great if you you
+ 
+
+157
+00:03:17,440 --> 00:03:18,949
+it's a nice guy. It's great if you you
+have a good feeling about them but you
+
+158
+00:03:18,949 --> 00:03:18,959
+have a good feeling about them but you
+ 
+
+159
+00:03:18,959 --> 00:03:21,110
+have a good feeling about them but you
+don't have to trust them. The delegation
+
+160
+00:03:21,110 --> 00:03:21,120
+don't have to trust them. The delegation
+ 
+
+161
+00:03:21,120 --> 00:03:23,830
+don't have to trust them. The delegation
+key is the enforcement. Now the valet
+
+162
+00:03:23,830 --> 00:03:23,840
+key is the enforcement. Now the valet
+ 
+
+163
+00:03:23,840 --> 00:03:26,790
+key is the enforcement. Now the valet
+can have ideas, the valet can have uh
+
+164
+00:03:26,790 --> 00:03:26,800
+can have ideas, the valet can have uh
+ 
+
+165
+00:03:26,800 --> 00:03:28,949
+can have ideas, the valet can have uh
+suggestions from their friends but they
+
+166
+00:03:28,949 --> 00:03:28,959
+suggestions from their friends but they
+ 
+
+167
+00:03:28,959 --> 00:03:31,190
+suggestions from their friends but they
+won't be able to go beyond the authority
+
+168
+00:03:31,190 --> 00:03:31,200
+won't be able to go beyond the authority
+ 
+
+169
+00:03:31,200 --> 00:03:33,509
+won't be able to go beyond the authority
+you gave them with the key. We want to
+
+170
+00:03:33,509 --> 00:03:33,519
+you gave them with the key. We want to
+ 
+
+171
+00:03:33,519 --> 00:03:35,830
+you gave them with the key. We want to
+bring that to aic workflows. We believe
+
+172
+00:03:35,830 --> 00:03:35,840
+bring that to aic workflows. We believe
+ 
+
+173
+00:03:35,840 --> 00:03:40,949
+bring that to aic workflows. We believe
+that uh while uh we can have a way to
+
+174
+00:03:40,949 --> 00:03:40,959
+that uh while uh we can have a way to
+ 
+
+175
+00:03:40,959 --> 00:03:43,430
+that uh while uh we can have a way to
+improve the thought process of the valid
+
+176
+00:03:43,430 --> 00:03:43,440
+improve the thought process of the valid
+ 
+
+177
+00:03:43,440 --> 00:03:46,309
+improve the thought process of the valid
+the thought process of the model we for
+
+178
+00:03:46,309 --> 00:03:46,319
+the thought process of the model we for
+ 
+
+179
+00:03:46,319 --> 00:03:48,149
+the thought process of the model we for
+having proper security we need
+
+180
+00:03:48,149 --> 00:03:48,159
+having proper security we need
+ 
+
+181
+00:03:48,159 --> 00:03:51,670
+having proper security we need
+deterministic controls that can actually
+
+182
+00:03:51,670 --> 00:03:51,680
+deterministic controls that can actually
+ 
+
+183
+00:03:51,680 --> 00:03:54,710
+deterministic controls that can actually
+constrain what the agent can do when we
+
+184
+00:03:54,710 --> 00:03:54,720
+constrain what the agent can do when we
+ 
+
+185
+00:03:54,720 --> 00:03:57,509
+constrain what the agent can do when we
+use uh a filter or a model gradually
+
+186
+00:03:57,509 --> 00:03:57,519
+use uh a filter or a model gradually
+ 
+
+187
+00:03:57,519 --> 00:03:59,110
+use uh a filter or a model gradually
+what we what we're trying to do is look
+
+188
+00:03:59,110 --> 00:03:59,120
+what we what we're trying to do is look
+ 
+
+189
+00:03:59,120 --> 00:04:02,070
+what we what we're trying to do is look
+at the model output uh use probabilistic
+
+190
+00:04:02,070 --> 00:04:02,080
+at the model output uh use probabilistic
+ 
+
+191
+00:04:02,080 --> 00:04:05,350
+at the model output uh use probabilistic
+approach to suggest really to the model
+
+192
+00:04:05,350 --> 00:04:05,360
+approach to suggest really to the model
+ 
+
+193
+00:04:05,360 --> 00:04:07,350
+approach to suggest really to the model
+what can and what cannot do. You're
+
+194
+00:04:07,350 --> 00:04:07,360
+what can and what cannot do. You're
+ 
+
+195
+00:04:07,360 --> 00:04:09,350
+what can and what cannot do. You're
+looking at the content layer. But the
+
+196
+00:04:09,350 --> 00:04:09,360
+looking at the content layer. But the
+ 
+
+197
+00:04:09,360 --> 00:04:12,149
+looking at the content layer. But the
+problem here is that you don't have you
+
+198
+00:04:12,149 --> 00:04:12,159
+problem here is that you don't have you
+ 
+
+199
+00:04:12,159 --> 00:04:14,070
+problem here is that you don't have you
+you you basically working with
+
+200
+00:04:14,070 --> 00:04:14,080
+you you basically working with
+ 
+
+201
+00:04:14,080 --> 00:04:17,670
+you you basically working with
+confidence levels. You can't really
+
+202
+00:04:17,670 --> 00:04:17,680
+confidence levels. You can't really
+ 
+
+203
+00:04:17,680 --> 00:04:19,909
+confidence levels. You can't really
+audit and know why it made the decision
+
+204
+00:04:19,909 --> 00:04:19,919
+audit and know why it made the decision
+ 
+
+205
+00:04:19,919 --> 00:04:22,230
+audit and know why it made the decision
+that it made. And when you get into
+
+206
+00:04:22,230 --> 00:04:22,240
+that it made. And when you get into
+ 
+
+207
+00:04:22,240 --> 00:04:24,469
+that it made. And when you get into
+enterprise when we start having a
+
+208
+00:04:24,469 --> 00:04:24,479
+enterprise when we start having a
+ 
+
+209
+00:04:24,479 --> 00:04:27,110
+enterprise when we start having a
+genenic workflows touch infra touch pi
+
+210
+00:04:27,110 --> 00:04:27,120
+genenic workflows touch infra touch pi
+ 
+
+211
+00:04:27,120 --> 00:04:30,629
+genenic workflows touch infra touch pi
+data touch money we're going to need
+
+212
+00:04:30,629 --> 00:04:30,639
+data touch money we're going to need
+ 
+
+213
+00:04:30,639 --> 00:04:34,150
+data touch money we're going to need
+deterministic predictable and auditable
+
+214
+00:04:34,150 --> 00:04:34,160
+deterministic predictable and auditable
+ 
+
+215
+00:04:34,160 --> 00:04:36,950
+deterministic predictable and auditable
+authorization that that's where we think
+
+216
+00:04:36,950 --> 00:04:36,960
+authorization that that's where we think
+ 
+
+217
+00:04:36,960 --> 00:04:40,710
+authorization that that's where we think
+the uh the end game of authorization of
+
+218
+00:04:40,710 --> 00:04:40,720
+the uh the end game of authorization of
+ 
+
+219
+00:04:40,720 --> 00:04:42,950
+the uh the end game of authorization of
+agents should be on the execution layer
+
+220
+00:04:42,950 --> 00:04:42,960
+agents should be on the execution layer
+ 
+
+221
+00:04:42,960 --> 00:04:45,590
+agents should be on the execution layer
+when the agents actually meets the real
+
+222
+00:04:45,590 --> 00:04:45,600
+when the agents actually meets the real
+ 
+
+223
+00:04:45,600 --> 00:04:47,510
+when the agents actually meets the real
+world.
+
+224
+00:04:47,510 --> 00:04:47,520
+world.
+ 
+
+225
+00:04:47,520 --> 00:04:50,469
+world.
+If you go in many enterprise uh
+
+226
+00:04:50,469 --> 00:04:50,479
+If you go in many enterprise uh
+ 
+
+227
+00:04:50,479 --> 00:04:52,230
+If you go in many enterprise uh
+infrastructure today, you will see that
+
+228
+00:04:52,230 --> 00:04:52,240
+infrastructure today, you will see that
+ 
+
+229
+00:04:52,240 --> 00:04:55,270
+infrastructure today, you will see that
+yes, we have workload identity. Great.
+
+230
+00:04:55,270 --> 00:04:55,280
+yes, we have workload identity. Great.
+ 
+
+231
+00:04:55,280 --> 00:04:57,510
+yes, we have workload identity. Great.
+Uh we deciding what agent can do based
+
+232
+00:04:57,510 --> 00:04:57,520
+Uh we deciding what agent can do based
+ 
+
+233
+00:04:57,520 --> 00:04:59,350
+Uh we deciding what agent can do based
+on the identity it was given at the
+
+234
+00:04:59,350 --> 00:04:59,360
+on the identity it was given at the
+ 
+
+235
+00:04:59,360 --> 00:05:02,629
+on the identity it was given at the
+deploy time. We have policy engine which
+
+236
+00:05:02,629 --> 00:05:02,639
+deploy time. We have policy engine which
+ 
+
+237
+00:05:02,639 --> 00:05:04,870
+deploy time. We have policy engine which
+are very valuable. They can define what
+
+238
+00:05:04,870 --> 00:05:04,880
+are very valuable. They can define what
+ 
+
+239
+00:05:04,880 --> 00:05:06,390
+are very valuable. They can define what
+the agent can do and what the agent
+
+240
+00:05:06,390 --> 00:05:06,400
+the agent can do and what the agent
+ 
+
+241
+00:05:06,400 --> 00:05:09,670
+the agent can do and what the agent
+can't do. We have model output filters
+
+242
+00:05:09,670 --> 00:05:09,680
+can't do. We have model output filters
+ 
+
+243
+00:05:09,680 --> 00:05:13,590
+can't do. We have model output filters
+which can um filter and see if the
+
+244
+00:05:13,590 --> 00:05:13,600
+which can um filter and see if the
+ 
+
+245
+00:05:13,600 --> 00:05:15,830
+which can um filter and see if the
+output of the model is safe or not. We
+
+246
+00:05:15,830 --> 00:05:15,840
+output of the model is safe or not. We
+ 
+
+247
+00:05:15,840 --> 00:05:19,430
+output of the model is safe or not. We
+have sandboxes which uh have uh a global
+
+248
+00:05:19,430 --> 00:05:19,440
+have sandboxes which uh have uh a global
+ 
+
+249
+00:05:19,440 --> 00:05:21,990
+have sandboxes which uh have uh a global
+limitation of the possibilities that of
+
+250
+00:05:21,990 --> 00:05:22,000
+limitation of the possibilities that of
+ 
+
+251
+00:05:22,000 --> 00:05:24,150
+limitation of the possibilities that of
+what can happen at the execution time.
+
+252
+00:05:24,150 --> 00:05:24,160
+what can happen at the execution time.
+ 
+
+253
+00:05:24,160 --> 00:05:26,310
+what can happen at the execution time.
+However, we don't really have a
+
+254
+00:05:26,310 --> 00:05:26,320
+However, we don't really have a
+ 
+
+255
+00:05:26,320 --> 00:05:28,469
+However, we don't really have a
+primitive that addresses the fundamental
+
+256
+00:05:28,469 --> 00:05:28,479
+primitive that addresses the fundamental
+ 
+
+257
+00:05:28,479 --> 00:05:30,629
+primitive that addresses the fundamental
+architecture of multi- aents which is
+
+258
+00:05:30,629 --> 00:05:30,639
+architecture of multi- aents which is
+ 
+
+259
+00:05:30,639 --> 00:05:33,430
+architecture of multi- aents which is
+delegation. when when a given task goes
+
+260
+00:05:33,430 --> 00:05:33,440
+delegation. when when a given task goes
+ 
+
+261
+00:05:33,440 --> 00:05:35,670
+delegation. when when a given task goes
+to agent A and agent A delegates to
+
+262
+00:05:35,670 --> 00:05:35,680
+to agent A and agent A delegates to
+ 
+
+263
+00:05:35,680 --> 00:05:37,990
+to agent A and agent A delegates to
+agent B at the execution time we don't
+
+264
+00:05:37,990 --> 00:05:38,000
+agent B at the execution time we don't
+ 
+
+265
+00:05:38,000 --> 00:05:40,629
+agent B at the execution time we don't
+really have a primitive that can express
+
+266
+00:05:40,629 --> 00:05:40,639
+really have a primitive that can express
+ 
+
+267
+00:05:40,639 --> 00:05:43,110
+really have a primitive that can express
+the delegation chain the authority that
+
+268
+00:05:43,110 --> 00:05:43,120
+the delegation chain the authority that
+ 
+
+269
+00:05:43,120 --> 00:05:46,310
+the delegation chain the authority that
+came with the task all the primitives we
+
+270
+00:05:46,310 --> 00:05:46,320
+came with the task all the primitives we
+ 
+
+271
+00:05:46,320 --> 00:05:48,550
+came with the task all the primitives we
+have are relying on the identity of the
+
+272
+00:05:48,550 --> 00:05:48,560
+have are relying on the identity of the
+ 
+
+273
+00:05:48,560 --> 00:05:51,590
+have are relying on the identity of the
+workload in the moment or the output of
+
+274
+00:05:51,590 --> 00:05:51,600
+workload in the moment or the output of
+ 
+
+275
+00:05:51,600 --> 00:05:54,310
+workload in the moment or the output of
+the model without the context of the
+
+276
+00:05:54,310 --> 00:05:54,320
+the model without the context of the
+ 
+
+277
+00:05:54,320 --> 00:05:56,950
+the model without the context of the
+flow of the task up to the execution
+
+278
+00:05:56,950 --> 00:05:56,960
+flow of the task up to the execution
+ 
+
+279
+00:05:56,960 --> 00:05:59,830
+flow of the task up to the execution
+point we missing that deterministic
+
+280
+00:05:59,830 --> 00:05:59,840
+point we missing that deterministic
+ 
+
+281
+00:05:59,840 --> 00:06:01,749
+point we missing that deterministic
+delegation aware
+
+282
+00:06:01,749 --> 00:06:01,759
+delegation aware
+ 
+
+283
+00:06:01,759 --> 00:06:04,469
+delegation aware
+uh authorization that can actually
+
+284
+00:06:04,469 --> 00:06:04,479
+uh authorization that can actually
+ 
+
+285
+00:06:04,479 --> 00:06:07,590
+uh authorization that can actually
+encode all these properties. The idea of
+
+286
+00:06:07,590 --> 00:06:07,600
+encode all these properties. The idea of
+ 
+
+287
+00:06:07,600 --> 00:06:11,029
+encode all these properties. The idea of
+capabilities which we are uh basing our
+
+288
+00:06:11,029 --> 00:06:11,039
+capabilities which we are uh basing our
+ 
+
+289
+00:06:11,039 --> 00:06:12,710
+capabilities which we are uh basing our
+primitive on is not new. It's been
+
+290
+00:06:12,710 --> 00:06:12,720
+primitive on is not new. It's been
+ 
+
+291
+00:06:12,720 --> 00:06:14,870
+primitive on is not new. It's been
+around for around more than 60 years. In
+
+292
+00:06:14,870 --> 00:06:14,880
+around for around more than 60 years. In
+ 
+
+293
+00:06:14,880 --> 00:06:18,790
+around for around more than 60 years. In
+the 60s Dennis and Vanhan uh brought the
+
+294
+00:06:18,790 --> 00:06:18,800
+the 60s Dennis and Vanhan uh brought the
+ 
+
+295
+00:06:18,800 --> 00:06:21,590
+the 60s Dennis and Vanhan uh brought the
+idea uh as one of the ways really to
+
+296
+00:06:21,590 --> 00:06:21,600
+idea uh as one of the ways really to
+ 
+
+297
+00:06:21,600 --> 00:06:23,510
+idea uh as one of the ways really to
+address the problem of confused deputy
+
+298
+00:06:23,510 --> 00:06:23,520
+address the problem of confused deputy
+ 
+
+299
+00:06:23,520 --> 00:06:24,950
+address the problem of confused deputy
+there's been a lot of research and
+
+300
+00:06:24,950 --> 00:06:24,960
+there's been a lot of research and
+ 
+
+301
+00:06:24,960 --> 00:06:27,749
+there's been a lot of research and
+application different areas. of 2014 uh
+
+302
+00:06:27,749 --> 00:06:27,759
+application different areas. of 2014 uh
+ 
+
+303
+00:06:27,759 --> 00:06:30,469
+application different areas. of 2014 uh
+Google released macaroons which was a
+
+304
+00:06:30,469 --> 00:06:30,479
+Google released macaroons which was a
+ 
+
+305
+00:06:30,479 --> 00:06:36,150
+Google released macaroons which was a
+which uh introduced now um applying uh
+
+306
+00:06:36,150 --> 00:06:36,160
+which uh introduced now um applying uh
+ 
+
+307
+00:06:36,160 --> 00:06:38,710
+which uh introduced now um applying uh
+science applying these tokens with
+
+308
+00:06:38,710 --> 00:06:38,720
+science applying these tokens with
+ 
+
+309
+00:06:38,720 --> 00:06:41,110
+science applying these tokens with
+caveats that that's where now the idea
+
+310
+00:06:41,110 --> 00:06:41,120
+caveats that that's where now the idea
+ 
+
+311
+00:06:41,120 --> 00:06:45,270
+caveats that that's where now the idea
+of actually attenuating what these uh
+
+312
+00:06:45,270 --> 00:06:45,280
+of actually attenuating what these uh
+ 
+
+313
+00:06:45,280 --> 00:06:48,390
+of actually attenuating what these uh
+tokens can do started appearing in um in
+
+314
+00:06:48,390 --> 00:06:48,400
+tokens can do started appearing in um in
+ 
+
+315
+00:06:48,400 --> 00:06:51,670
+tokens can do started appearing in um in
+in late 2010s and early 2020s you can
+
+316
+00:06:51,670 --> 00:06:51,680
+in late 2010s and early 2020s you can
+ 
+
+317
+00:06:51,680 --> 00:06:54,870
+in late 2010s and early 2020s you can
+and the biscuits uh added the idea of
+
+318
+00:06:54,870 --> 00:06:54,880
+and the biscuits uh added the idea of
+ 
+
+319
+00:06:54,880 --> 00:06:58,629
+and the biscuits uh added the idea of
+cryptographic tokens uh following the uh
+
+320
+00:06:58,629 --> 00:06:58,639
+cryptographic tokens uh following the uh
+ 
+
+321
+00:06:58,639 --> 00:07:01,670
+cryptographic tokens uh following the uh
+the capabilities model. Uh very recently
+
+322
+00:07:01,670 --> 00:07:01,680
+the capabilities model. Uh very recently
+ 
+
+323
+00:07:01,680 --> 00:07:03,990
+the capabilities model. Uh very recently
+last year in March uh deep mind team
+
+324
+00:07:03,990 --> 00:07:04,000
+last year in March uh deep mind team
+ 
+
+325
+00:07:04,000 --> 00:07:06,629
+last year in March uh deep mind team
+released a paper um famously known as
+
+326
+00:07:06,629 --> 00:07:06,639
+released a paper um famously known as
+ 
+
+327
+00:07:06,639 --> 00:07:09,350
+released a paper um famously known as
+the chem paper. Uh I believe the name
+
+328
+00:07:09,350 --> 00:07:09,360
+the chem paper. Uh I believe the name
+ 
+
+329
+00:07:09,360 --> 00:07:11,270
+the chem paper. Uh I believe the name
+was defeating prompt injection by
+
+330
+00:07:11,270 --> 00:07:11,280
+was defeating prompt injection by
+ 
+
+331
+00:07:11,280 --> 00:07:13,110
+was defeating prompt injection by
+design. It was the first time they
+
+332
+00:07:13,110 --> 00:07:13,120
+design. It was the first time they
+ 
+
+333
+00:07:13,120 --> 00:07:16,150
+design. It was the first time they
+suggested that capability authority
+
+334
+00:07:16,150 --> 00:07:16,160
+suggested that capability authority
+ 
+
+335
+00:07:16,160 --> 00:07:18,629
+suggested that capability authority
+capability based authorization is the
+
+336
+00:07:18,629 --> 00:07:18,639
+capability based authorization is the
+ 
+
+337
+00:07:18,639 --> 00:07:21,350
+capability based authorization is the
+model that can help address the problem
+
+338
+00:07:21,350 --> 00:07:21,360
+model that can help address the problem
+ 
+
+339
+00:07:21,360 --> 00:07:23,670
+model that can help address the problem
+of prompt injection. Today they were
+
+340
+00:07:23,670 --> 00:07:23,680
+of prompt injection. Today they were
+ 
+
+341
+00:07:23,680 --> 00:07:27,110
+of prompt injection. Today they were
+using a two agent model or they call
+
+342
+00:07:27,110 --> 00:07:27,120
+using a two agent model or they call
+ 
+
+343
+00:07:27,120 --> 00:07:29,510
+using a two agent model or they call
+they call PQ model where you have a
+
+344
+00:07:29,510 --> 00:07:29,520
+they call PQ model where you have a
+ 
+
+345
+00:07:29,520 --> 00:07:32,230
+they call PQ model where you have a
+privilege agent and the actual worker
+
+346
+00:07:32,230 --> 00:07:32,240
+privilege agent and the actual worker
+ 
+
+347
+00:07:32,240 --> 00:07:34,870
+privilege agent and the actual worker
+and they were mostly looking at the data
+
+348
+00:07:34,870 --> 00:07:34,880
+and they were mostly looking at the data
+ 
+
+349
+00:07:34,880 --> 00:07:37,749
+and they were mostly looking at the data
+flow during the agenic workflow. very
+
+350
+00:07:37,749 --> 00:07:37,759
+flow during the agenic workflow. very
+ 
+
+351
+00:07:37,759 --> 00:07:40,150
+flow during the agenic workflow. very
+recently u February 12th they released
+
+352
+00:07:40,150 --> 00:07:40,160
+recently u February 12th they released
+ 
+
+353
+00:07:40,160 --> 00:07:41,990
+recently u February 12th they released
+another paper they called it intelligent
+
+354
+00:07:41,990 --> 00:07:42,000
+another paper they called it intelligent
+ 
+
+355
+00:07:42,000 --> 00:07:45,110
+another paper they called it intelligent
+AI design reiterating the same idea that
+
+356
+00:07:45,110 --> 00:07:45,120
+AI design reiterating the same idea that
+ 
+
+357
+00:07:45,120 --> 00:07:47,270
+AI design reiterating the same idea that
+the proper framework to breed
+
+358
+00:07:47,270 --> 00:07:47,280
+the proper framework to breed
+ 
+
+359
+00:07:47,280 --> 00:07:49,830
+the proper framework to breed
+authorization for multi-agenic
+
+360
+00:07:49,830 --> 00:07:49,840
+authorization for multi-agenic
+ 
+
+361
+00:07:49,840 --> 00:07:52,950
+authorization for multi-agenic
+workflows is to use capability systems.
+
+362
+00:07:52,950 --> 00:07:52,960
+workflows is to use capability systems.
+ 
+
+363
+00:07:52,960 --> 00:07:54,390
+workflows is to use capability systems.
+So that's what we've been building at
+
+364
+00:07:54,390 --> 00:07:54,400
+So that's what we've been building at
+ 
+
+365
+00:07:54,400 --> 00:07:57,990
+So that's what we've been building at
+tenure uh applying capability uh
+
+366
+00:07:57,990 --> 00:07:58,000
+tenure uh applying capability uh
+ 
+
+367
+00:07:58,000 --> 00:08:01,110
+tenure uh applying capability uh
+principles uh building upon the proven
+
+368
+00:08:01,110 --> 00:08:01,120
+principles uh building upon the proven
+ 
+
+369
+00:08:01,120 --> 00:08:03,670
+principles uh building upon the proven
+primitive and now applying them to the
+
+370
+00:08:03,670 --> 00:08:03,680
+primitive and now applying them to the
+ 
+
+371
+00:08:03,680 --> 00:08:06,710
+primitive and now applying them to the
+reality of aenic workflows. Now the
+
+372
+00:08:06,710 --> 00:08:06,720
+reality of aenic workflows. Now the
+ 
+
+373
+00:08:06,720 --> 00:08:08,150
+reality of aenic workflows. Now the
+primitive what we call the tenual
+
+374
+00:08:08,150 --> 00:08:08,160
+primitive what we call the tenual
+ 
+
+375
+00:08:08,160 --> 00:08:11,189
+primitive what we call the tenual
+warrant has six properties. One, it is
+
+376
+00:08:11,189 --> 00:08:11,199
+warrant has six properties. One, it is
+ 
+
+377
+00:08:11,199 --> 00:08:14,309
+warrant has six properties. One, it is
+signed by the issuer. Uh that's where
+
+378
+00:08:14,309 --> 00:08:14,319
+signed by the issuer. Uh that's where
+ 
+
+379
+00:08:14,319 --> 00:08:16,150
+signed by the issuer. Uh that's where
+the cryptography piece comes in. It's
+
+380
+00:08:16,150 --> 00:08:16,160
+the cryptography piece comes in. It's
+ 
+
+381
+00:08:16,160 --> 00:08:19,270
+the cryptography piece comes in. It's
+signed by the issuer. It is sculpted to
+
+382
+00:08:19,270 --> 00:08:19,280
+signed by the issuer. It is sculpted to
+ 
+
+383
+00:08:19,280 --> 00:08:22,150
+signed by the issuer. It is sculpted to
+the the task at hand explicitly. If a
+
+384
+00:08:22,150 --> 00:08:22,160
+the the task at hand explicitly. If a
+ 
+
+385
+00:08:22,160 --> 00:08:24,469
+the the task at hand explicitly. If a
+task is not encoded in the warrant, the
+
+386
+00:08:24,469 --> 00:08:24,479
+task is not encoded in the warrant, the
+ 
+
+387
+00:08:24,479 --> 00:08:26,869
+task is not encoded in the warrant, the
+agent is not going to be able to do it.
+
+388
+00:08:26,869 --> 00:08:26,879
+agent is not going to be able to do it.
+ 
+
+389
+00:08:26,879 --> 00:08:29,830
+agent is not going to be able to do it.
+It is ephemeral. Uh short TTLs are part
+
+390
+00:08:29,830 --> 00:08:29,840
+It is ephemeral. Uh short TTLs are part
+ 
+
+391
+00:08:29,840 --> 00:08:31,990
+It is ephemeral. Uh short TTLs are part
+of the design. It's customizable but we
+
+392
+00:08:31,990 --> 00:08:32,000
+of the design. It's customizable but we
+ 
+
+393
+00:08:32,000 --> 00:08:34,790
+of the design. It's customizable but we
+believe it should not really give the
+
+394
+00:08:34,790 --> 00:08:34,800
+believe it should not really give the
+ 
+
+395
+00:08:34,800 --> 00:08:37,029
+believe it should not really give the
+agent authority beyond the temporal
+
+396
+00:08:37,029 --> 00:08:37,039
+agent authority beyond the temporal
+ 
+
+397
+00:08:37,039 --> 00:08:39,909
+agent authority beyond the temporal
+scope of the task that it's doing. It is
+
+398
+00:08:39,909 --> 00:08:39,919
+scope of the task that it's doing. It is
+ 
+
+399
+00:08:39,919 --> 00:08:43,430
+scope of the task that it's doing. It is
+hold the the proof of possession is a
+
+400
+00:08:43,430 --> 00:08:43,440
+hold the the proof of possession is a
+ 
+
+401
+00:08:43,440 --> 00:08:45,750
+hold the the proof of possession is a
+fundamental principle of this primitive
+
+402
+00:08:45,750 --> 00:08:45,760
+fundamental principle of this primitive
+ 
+
+403
+00:08:45,760 --> 00:08:47,910
+fundamental principle of this primitive
+unlike some of the previous uh designs
+
+404
+00:08:47,910 --> 00:08:47,920
+unlike some of the previous uh designs
+ 
+
+405
+00:08:47,920 --> 00:08:50,389
+unlike some of the previous uh designs
+that were mostly relying on or of
+
+406
+00:08:50,389 --> 00:08:50,399
+that were mostly relying on or of
+ 
+
+407
+00:08:50,399 --> 00:08:53,750
+that were mostly relying on or of
+tokens. Uh it is verifiable offline. You
+
+408
+00:08:53,750 --> 00:08:53,760
+tokens. Uh it is verifiable offline. You
+ 
+
+409
+00:08:53,760 --> 00:08:55,670
+tokens. Uh it is verifiable offline. You
+don't have to rely on a central server
+
+410
+00:08:55,670 --> 00:08:55,680
+don't have to rely on a central server
+ 
+
+411
+00:08:55,680 --> 00:08:58,630
+don't have to rely on a central server
+to call to check if the the artifact is
+
+412
+00:08:58,630 --> 00:08:58,640
+to call to check if the the artifact is
+ 
+
+413
+00:08:58,640 --> 00:09:01,590
+to call to check if the the artifact is
+valid or not to to do any of this
+
+414
+00:09:01,590 --> 00:09:01,600
+valid or not to to do any of this
+ 
+
+415
+00:09:01,600 --> 00:09:04,070
+valid or not to to do any of this
+verification. It can all happen by any
+
+416
+00:09:04,070 --> 00:09:04,080
+verification. It can all happen by any
+ 
+
+417
+00:09:04,080 --> 00:09:07,030
+verification. It can all happen by any
+implementation of the of the verifier
+
+418
+00:09:07,030 --> 00:09:07,040
+implementation of the of the verifier
+ 
+
+419
+00:09:07,040 --> 00:09:09,350
+implementation of the of the verifier
+offline anywhere in the world. It is
+
+420
+00:09:09,350 --> 00:09:09,360
+offline anywhere in the world. It is
+ 
+
+421
+00:09:09,360 --> 00:09:11,350
+offline anywhere in the world. It is
+delegation aware. It encodes the whole
+
+422
+00:09:11,350 --> 00:09:11,360
+delegation aware. It encodes the whole
+ 
+
+423
+00:09:11,360 --> 00:09:14,070
+delegation aware. It encodes the whole
+delegation chain from the original
+
+424
+00:09:14,070 --> 00:09:14,080
+delegation chain from the original
+ 
+
+425
+00:09:14,080 --> 00:09:16,949
+delegation chain from the original
+mentor of the original warrant to every
+
+426
+00:09:16,949 --> 00:09:16,959
+mentor of the original warrant to every
+ 
+
+427
+00:09:16,959 --> 00:09:19,990
+mentor of the original warrant to every
+agent in between. As you can see, this
+
+428
+00:09:19,990 --> 00:09:20,000
+agent in between. As you can see, this
+ 
+
+429
+00:09:20,000 --> 00:09:22,870
+agent in between. As you can see, this
+is an example of a more representation
+
+430
+00:09:22,870 --> 00:09:22,880
+is an example of a more representation
+ 
+
+431
+00:09:22,880 --> 00:09:26,389
+is an example of a more representation
+of of the um of the warrant primitive.
+
+432
+00:09:26,389 --> 00:09:26,399
+of of the um of the warrant primitive.
+ 
+
+433
+00:09:26,399 --> 00:09:27,910
+of of the um of the warrant primitive.
+But an example I like to give is that of
+
+434
+00:09:27,910 --> 00:09:27,920
+But an example I like to give is that of
+ 
+
+435
+00:09:27,920 --> 00:09:29,829
+But an example I like to give is that of
+a corporate debit card. If you have an
+
+436
+00:09:29,829 --> 00:09:29,839
+a corporate debit card. If you have an
+ 
+
+437
+00:09:29,839 --> 00:09:31,750
+a corporate debit card. If you have an
+intern that's going on a business trip,
+
+438
+00:09:31,750 --> 00:09:31,760
+intern that's going on a business trip,
+ 
+
+439
+00:09:31,760 --> 00:09:34,310
+intern that's going on a business trip,
+you don't give them the corporate MX
+
+440
+00:09:34,310 --> 00:09:34,320
+you don't give them the corporate MX
+ 
+
+441
+00:09:34,320 --> 00:09:36,630
+you don't give them the corporate MX
+with all the spending limits. You give
+
+442
+00:09:36,630 --> 00:09:36,640
+with all the spending limits. You give
+ 
+
+443
+00:09:36,640 --> 00:09:39,990
+with all the spending limits. You give
+them a task specific card with limited
+
+444
+00:09:39,990 --> 00:09:40,000
+them a task specific card with limited
+ 
+
+445
+00:09:40,000 --> 00:09:42,150
+them a task specific card with limited
+number of vendors that can be used for
+
+446
+00:09:42,150 --> 00:09:42,160
+number of vendors that can be used for
+ 
+
+447
+00:09:42,160 --> 00:09:44,710
+number of vendors that can be used for
+transportation and uh and dining. Maybe
+
+448
+00:09:44,710 --> 00:09:44,720
+transportation and uh and dining. Maybe
+ 
+
+449
+00:09:44,720 --> 00:09:46,790
+transportation and uh and dining. Maybe
+that that will expire at the end of the
+
+450
+00:09:46,790 --> 00:09:46,800
+that that will expire at the end of the
+ 
+
+451
+00:09:46,800 --> 00:09:49,590
+that that will expire at the end of the
+week, at the end of the trip and uh it
+
+452
+00:09:49,590 --> 00:09:49,600
+week, at the end of the trip and uh it
+ 
+
+453
+00:09:49,600 --> 00:09:51,269
+week, at the end of the trip and uh it
+is bound to them. They can't give it to
+
+454
+00:09:51,269 --> 00:09:51,279
+is bound to them. They can't give it to
+ 
+
+455
+00:09:51,279 --> 00:09:54,070
+is bound to them. They can't give it to
+nobody else. They can't spend more than
+
+456
+00:09:54,070 --> 00:09:54,080
+nobody else. They can't spend more than
+ 
+
+457
+00:09:54,080 --> 00:09:56,630
+nobody else. They can't spend more than
+a set limit and uh when they going to
+
+458
+00:09:56,630 --> 00:09:56,640
+a set limit and uh when they going to
+ 
+
+459
+00:09:56,640 --> 00:09:58,150
+a set limit and uh when they going to
+pay, they don't have to call you to
+
+460
+00:09:58,150 --> 00:09:58,160
+pay, they don't have to call you to
+ 
+
+461
+00:09:58,160 --> 00:10:00,710
+pay, they don't have to call you to
+validate the warrant that you gave them.
+
+462
+00:10:00,710 --> 00:10:00,720
+validate the warrant that you gave them.
+ 
+
+463
+00:10:00,720 --> 00:10:02,070
+validate the warrant that you gave them.
+So this is the same model that we
+
+464
+00:10:02,070 --> 00:10:02,080
+So this is the same model that we
+ 
+
+465
+00:10:02,080 --> 00:10:05,509
+So this is the same model that we
+applying here and uh making sure that
+
+466
+00:10:05,509 --> 00:10:05,519
+applying here and uh making sure that
+ 
+
+467
+00:10:05,519 --> 00:10:08,470
+applying here and uh making sure that
+across the protocol we make sure that
+
+468
+00:10:08,470 --> 00:10:08,480
+across the protocol we make sure that
+ 
+
+469
+00:10:08,480 --> 00:10:10,550
+across the protocol we make sure that
+the warrant has these six properties.
+
+470
+00:10:10,550 --> 00:10:10,560
+the warrant has these six properties.
+ 
+
+471
+00:10:10,560 --> 00:10:13,590
+the warrant has these six properties.
+How does that fit into the delegation uh
+
+472
+00:10:13,590 --> 00:10:13,600
+How does that fit into the delegation uh
+ 
+
+473
+00:10:13,600 --> 00:10:17,990
+How does that fit into the delegation uh
+workflow? The idea here is that the top
+
+474
+00:10:17,990 --> 00:10:18,000
+workflow? The idea here is that the top
+ 
+
+475
+00:10:18,000 --> 00:10:22,389
+workflow? The idea here is that the top
+warrant can mint the agent
+
+476
+00:10:22,389 --> 00:10:22,399
+warrant can mint the agent
+ 
+
+477
+00:10:22,399 --> 00:10:24,949
+warrant can mint the agent
+can meet a warrant with broad access
+
+478
+00:10:24,949 --> 00:10:24,959
+can meet a warrant with broad access
+ 
+
+479
+00:10:24,959 --> 00:10:27,269
+can meet a warrant with broad access
+depending on what the task needs. But uh
+
+480
+00:10:27,269 --> 00:10:27,279
+depending on what the task needs. But uh
+ 
+
+481
+00:10:27,279 --> 00:10:30,389
+depending on what the task needs. But uh
+it can set it can say create and
+
+482
+00:10:30,389 --> 00:10:30,399
+it can set it can say create and
+ 
+
+483
+00:10:30,399 --> 00:10:33,430
+it can set it can say create and
+delegate to multiple sub aents with
+
+484
+00:10:33,430 --> 00:10:33,440
+delegate to multiple sub aents with
+ 
+
+485
+00:10:33,440 --> 00:10:36,230
+delegate to multiple sub aents with
+scoped subw warrants. The idea here the
+
+486
+00:10:36,230 --> 00:10:36,240
+scoped subw warrants. The idea here the
+ 
+
+487
+00:10:36,240 --> 00:10:38,310
+scoped subw warrants. The idea here the
+mathematical principle is that the
+
+488
+00:10:38,310 --> 00:10:38,320
+mathematical principle is that the
+ 
+
+489
+00:10:38,320 --> 00:10:40,470
+mathematical principle is that the
+warrant of the child agent can never
+
+490
+00:10:40,470 --> 00:10:40,480
+warrant of the child agent can never
+ 
+
+491
+00:10:40,480 --> 00:10:44,550
+warrant of the child agent can never
+exceed the scope of the parent agent. So
+
+492
+00:10:44,550 --> 00:10:44,560
+exceed the scope of the parent agent. So
+ 
+
+493
+00:10:44,560 --> 00:10:47,430
+exceed the scope of the parent agent. So
+we it's the principle commonly known as
+
+494
+00:10:47,430 --> 00:10:47,440
+we it's the principle commonly known as
+ 
+
+495
+00:10:47,440 --> 00:10:49,430
+we it's the principle commonly known as
+monotonic attenuation. So as you
+
+496
+00:10:49,430 --> 00:10:49,440
+monotonic attenuation. So as you
+ 
+
+497
+00:10:49,440 --> 00:10:51,590
+monotonic attenuation. So as you
+delegate further downstream in your
+
+498
+00:10:51,590 --> 00:10:51,600
+delegate further downstream in your
+ 
+
+499
+00:10:51,600 --> 00:10:55,110
+delegate further downstream in your
+multi- agent workflow the capabilities
+
+500
+00:10:55,110 --> 00:10:55,120
+multi- agent workflow the capabilities
+ 
+
+501
+00:10:55,120 --> 00:10:58,710
+multi- agent workflow the capabilities
+of the agent can only shrink and uh we
+
+502
+00:10:58,710 --> 00:10:58,720
+of the agent can only shrink and uh we
+ 
+
+503
+00:10:58,720 --> 00:11:00,310
+of the agent can only shrink and uh we
+also making sure that we have that
+
+504
+00:11:00,310 --> 00:11:00,320
+also making sure that we have that
+ 
+
+505
+00:11:00,320 --> 00:11:02,630
+also making sure that we have that
+cryptographic provenence of the
+
+506
+00:11:02,630 --> 00:11:02,640
+cryptographic provenence of the
+ 
+
+507
+00:11:02,640 --> 00:11:05,509
+cryptographic provenence of the
+delegation chain both at which are
+
+508
+00:11:05,509 --> 00:11:05,519
+delegation chain both at which are
+ 
+
+509
+00:11:05,519 --> 00:11:08,710
+delegation chain both at which are
+checked at the uh execution at the
+
+510
+00:11:08,710 --> 00:11:08,720
+checked at the uh execution at the
+ 
+
+511
+00:11:08,720 --> 00:11:10,790
+checked at the uh execution at the
+verification phase but also as a
+
+512
+00:11:10,790 --> 00:11:10,800
+verification phase but also as a
+ 
+
+513
+00:11:10,800 --> 00:11:13,269
+verification phase but also as a
+byproduct of this design we ended up
+
+514
+00:11:13,269 --> 00:11:13,279
+byproduct of this design we ended up
+ 
+
+515
+00:11:13,279 --> 00:11:16,389
+byproduct of this design we ended up
+having now cryptographic audit logs
+
+516
+00:11:16,389 --> 00:11:16,399
+having now cryptographic audit logs
+ 
+
+517
+00:11:16,399 --> 00:11:18,230
+having now cryptographic audit logs
+tempor
+
+518
+00:11:18,230 --> 00:11:18,240
+tempor
+ 
+
+519
+00:11:18,240 --> 00:11:20,550
+tempor
+that that that can prove who approved
+
+520
+00:11:20,550 --> 00:11:20,560
+that that that can prove who approved
+ 
+
+521
+00:11:20,560 --> 00:11:22,550
+that that that can prove who approved
+the what, who initiated the task, who
+
+522
+00:11:22,550 --> 00:11:22,560
+the what, who initiated the task, who
+ 
+
+523
+00:11:22,560 --> 00:11:24,949
+the what, who initiated the task, who
+delegated to what agent and you don't
+
+524
+00:11:24,949 --> 00:11:24,959
+delegated to what agent and you don't
+ 
+
+525
+00:11:24,959 --> 00:11:26,949
+delegated to what agent and you don't
+have to trust anybody in between because
+
+526
+00:11:26,949 --> 00:11:26,959
+have to trust anybody in between because
+ 
+
+527
+00:11:26,959 --> 00:11:30,069
+have to trust anybody in between because
+you have uh the cryptographic receipts
+
+528
+00:11:30,069 --> 00:11:30,079
+you have uh the cryptographic receipts
+ 
+
+529
+00:11:30,079 --> 00:11:32,630
+you have uh the cryptographic receipts
+of the action that took place and why it
+
+530
+00:11:32,630 --> 00:11:32,640
+of the action that took place and why it
+ 
+
+531
+00:11:32,640 --> 00:11:34,870
+of the action that took place and why it
+was authorized. Uh the idea here again
+
+532
+00:11:34,870 --> 00:11:34,880
+was authorized. Uh the idea here again
+ 
+
+533
+00:11:34,880 --> 00:11:37,829
+was authorized. Uh the idea here again
+is that at least you are sure that the
+
+534
+00:11:37,829 --> 00:11:37,839
+is that at least you are sure that the
+ 
+
+535
+00:11:37,839 --> 00:11:41,430
+is that at least you are sure that the
+blast radius is frozen when you're
+
+536
+00:11:41,430 --> 00:11:41,440
+blast radius is frozen when you're
+ 
+
+537
+00:11:41,440 --> 00:11:43,750
+blast radius is frozen when you're
+starting your task. You bounding what
+
+538
+00:11:43,750 --> 00:11:43,760
+starting your task. You bounding what
+ 
+
+539
+00:11:43,760 --> 00:11:46,230
+starting your task. You bounding what
+your flow can never do. your open claw,
+
+540
+00:11:46,230 --> 00:11:46,240
+your flow can never do. your open claw,
+ 
+
+541
+00:11:46,240 --> 00:11:49,670
+your flow can never do. your open claw,
+you can be sure that it can only do what
+
+542
+00:11:49,670 --> 00:11:49,680
+you can be sure that it can only do what
+ 
+
+543
+00:11:49,680 --> 00:11:51,509
+you can be sure that it can only do what
+you intended from the top warrant. No
+
+544
+00:11:51,509 --> 00:11:51,519
+you intended from the top warrant. No
+ 
+
+545
+00:11:51,519 --> 00:11:54,230
+you intended from the top warrant. No
+matter how many agents it it spawns
+
+546
+00:11:54,230 --> 00:11:54,240
+matter how many agents it it spawns
+ 
+
+547
+00:11:54,240 --> 00:11:56,389
+matter how many agents it it spawns
+downstream, they can never have more
+
+548
+00:11:56,389 --> 00:11:56,399
+downstream, they can never have more
+ 
+
+549
+00:11:56,399 --> 00:12:00,310
+downstream, they can never have more
+authority than what you gave the um the
+
+550
+00:12:00,310 --> 00:12:00,320
+authority than what you gave the um the
+ 
+
+551
+00:12:00,320 --> 00:12:03,030
+authority than what you gave the um the
+top parent agent. And uh there is more
+
+552
+00:12:03,030 --> 00:12:03,040
+top parent agent. And uh there is more
+ 
+
+553
+00:12:03,040 --> 00:12:05,750
+top parent agent. And uh there is more
+to this than some of the uh features
+
+554
+00:12:05,750 --> 00:12:05,760
+to this than some of the uh features
+ 
+
+555
+00:12:05,760 --> 00:12:07,430
+to this than some of the uh features
+we've been putting in place of approval
+
+556
+00:12:07,430 --> 00:12:07,440
+we've been putting in place of approval
+ 
+
+557
+00:12:07,440 --> 00:12:10,069
+we've been putting in place of approval
+processes. Uh but I I just want to go
+
+558
+00:12:10,069 --> 00:12:10,079
+processes. Uh but I I just want to go
+ 
+
+559
+00:12:10,079 --> 00:12:13,590
+processes. Uh but I I just want to go
+straight to the uh to demo and uh and
+
+560
+00:12:13,590 --> 00:12:13,600
+straight to the uh to demo and uh and
+ 
+
+561
+00:12:13,600 --> 00:12:22,629
+straight to the uh to demo and uh and
+show you how this looks in practice.
+
+562
+00:12:22,629 --> 00:12:22,639
+
+ 
+
+563
+00:12:22,639 --> 00:12:24,310
+
+So what I'm going to show you in this
+
+564
+00:12:24,310 --> 00:12:24,320
+So what I'm going to show you in this
+ 
+
+565
+00:12:24,320 --> 00:12:29,350
+So what I'm going to show you in this
+demo is a scenario. Say you are um you
+
+566
+00:12:29,350 --> 00:12:29,360
+demo is a scenario. Say you are um you
+ 
+
+567
+00:12:29,360 --> 00:12:31,509
+demo is a scenario. Say you are um you
+are a detection and response team. What
+
+568
+00:12:31,509 --> 00:12:31,519
+are a detection and response team. What
+ 
+
+569
+00:12:31,519 --> 00:12:34,629
+are a detection and response team. What
+you're doing here is you are you there
+
+570
+00:12:34,629 --> 00:12:34,639
+you're doing here is you are you there
+ 
+
+571
+00:12:34,639 --> 00:12:36,710
+you're doing here is you are you there
+is an incident and you have an agenic
+
+572
+00:12:36,710 --> 00:12:36,720
+is an incident and you have an agenic
+ 
+
+573
+00:12:36,720 --> 00:12:39,910
+is an incident and you have an agenic
+workflow that can help you triage and
+
+574
+00:12:39,910 --> 00:12:39,920
+workflow that can help you triage and
+ 
+
+575
+00:12:39,920 --> 00:12:41,590
+workflow that can help you triage and
+investigate the incident. You have two
+
+576
+00:12:41,590 --> 00:12:41,600
+investigate the incident. You have two
+ 
+
+577
+00:12:41,600 --> 00:12:44,069
+investigate the incident. You have two
+agents. One is a triage agent. Another
+
+578
+00:12:44,069 --> 00:12:44,079
+agents. One is a triage agent. Another
+ 
+
+579
+00:12:44,079 --> 00:12:46,310
+agents. One is a triage agent. Another
+one I'll show you here. One is a triage
+
+580
+00:12:46,310 --> 00:12:46,320
+one I'll show you here. One is a triage
+ 
+
+581
+00:12:46,320 --> 00:12:47,990
+one I'll show you here. One is a triage
+agent, another one is an investigation
+
+582
+00:12:47,990 --> 00:12:48,000
+agent, another one is an investigation
+ 
+
+583
+00:12:48,000 --> 00:12:51,190
+agent, another one is an investigation
+agent. So you mint a broad warrant on
+
+584
+00:12:51,190 --> 00:12:51,200
+agent. So you mint a broad warrant on
+ 
+
+585
+00:12:51,200 --> 00:12:53,190
+agent. So you mint a broad warrant on
+the top. You give it to the triage agent
+
+586
+00:12:53,190 --> 00:12:53,200
+the top. You give it to the triage agent
+ 
+
+587
+00:12:53,200 --> 00:12:55,030
+the top. You give it to the triage agent
+and depending on what it need from the
+
+588
+00:12:55,030 --> 00:12:55,040
+and depending on what it need from the
+ 
+
+589
+00:12:55,040 --> 00:12:58,310
+and depending on what it need from the
+investigation agent, it will um it will
+
+590
+00:12:58,310 --> 00:12:58,320
+investigation agent, it will um it will
+ 
+
+591
+00:12:58,320 --> 00:13:00,870
+investigation agent, it will um it will
+mint the warrant for the task. So you
+
+592
+00:13:00,870 --> 00:13:00,880
+mint the warrant for the task. So you
+ 
+
+593
+00:13:00,880 --> 00:13:04,310
+mint the warrant for the task. So you
+have uh you have your setup here. I'm
+
+594
+00:13:04,310 --> 00:13:04,320
+have uh you have your setup here. I'm
+ 
+
+595
+00:13:04,320 --> 00:13:06,150
+have uh you have your setup here. I'm
+using real agents actually I'm using
+
+596
+00:13:06,150 --> 00:13:06,160
+using real agents actually I'm using
+ 
+
+597
+00:13:06,160 --> 00:13:09,750
+using real agents actually I'm using
+lang graph uh here as an an example and
+
+598
+00:13:09,750 --> 00:13:09,760
+lang graph uh here as an an example and
+ 
+
+599
+00:13:09,760 --> 00:13:11,509
+lang graph uh here as an an example and
+in this scenario here we are
+
+600
+00:13:11,509 --> 00:13:11,519
+in this scenario here we are
+ 
+
+601
+00:13:11,519 --> 00:13:15,030
+in this scenario here we are
+investigating the author service. Um the
+
+602
+00:13:15,030 --> 00:13:15,040
+investigating the author service. Um the
+ 
+
+603
+00:13:15,040 --> 00:13:17,509
+investigating the author service. Um the
+integration we're using with langraph is
+
+604
+00:13:17,509 --> 00:13:17,519
+integration we're using with langraph is
+ 
+
+605
+00:13:17,519 --> 00:13:19,430
+integration we're using with langraph is
+so we built the core in rust which is
+
+606
+00:13:19,430 --> 00:13:19,440
+so we built the core in rust which is
+ 
+
+607
+00:13:19,440 --> 00:13:23,110
+so we built the core in rust which is
+open source by the way and uh we we we
+
+608
+00:13:23,110 --> 00:13:23,120
+open source by the way and uh we we we
+ 
+
+609
+00:13:23,120 --> 00:13:25,269
+open source by the way and uh we we we
+added python bindings to make it easier
+
+610
+00:13:25,269 --> 00:13:25,279
+added python bindings to make it easier
+ 
+
+611
+00:13:25,279 --> 00:13:27,269
+added python bindings to make it easier
+to integrate with different frameworks.
+
+612
+00:13:27,269 --> 00:13:27,279
+to integrate with different frameworks.
+ 
+
+613
+00:13:27,279 --> 00:13:29,190
+to integrate with different frameworks.
+In this case with lang graph it's just
+
+614
+00:13:29,190 --> 00:13:29,200
+In this case with lang graph it's just
+ 
+
+615
+00:13:29,200 --> 00:13:31,670
+In this case with lang graph it's just
+one line to replace the tool node with
+
+616
+00:13:31,670 --> 00:13:31,680
+one line to replace the tool node with
+ 
+
+617
+00:13:31,680 --> 00:13:33,990
+one line to replace the tool node with
+10 tool node and at the execution it
+
+618
+00:13:33,990 --> 00:13:34,000
+10 tool node and at the execution it
+ 
+
+619
+00:13:34,000 --> 00:13:36,389
+10 tool node and at the execution it
+will make sure it checks the warrant.
+
+620
+00:13:36,389 --> 00:13:36,399
+will make sure it checks the warrant.
+ 
+
+621
+00:13:36,399 --> 00:13:38,790
+will make sure it checks the warrant.
+Now the example here we're starting with
+
+622
+00:13:38,790 --> 00:13:38,800
+Now the example here we're starting with
+ 
+
+623
+00:13:38,800 --> 00:13:40,790
+Now the example here we're starting with
+is how the dgation goes from the sock
+
+624
+00:13:40,790 --> 00:13:40,800
+is how the dgation goes from the sock
+ 
+
+625
+00:13:40,800 --> 00:13:42,550
+is how the dgation goes from the sock
+lead who means a warrant to the triage
+
+626
+00:13:42,550 --> 00:13:42,560
+lead who means a warrant to the triage
+ 
+
+627
+00:13:42,560 --> 00:13:45,030
+lead who means a warrant to the triage
+agent who who means now another warrant
+
+628
+00:13:45,030 --> 00:13:45,040
+agent who who means now another warrant
+ 
+
+629
+00:13:45,040 --> 00:13:47,509
+agent who who means now another warrant
+to the investigation. When the sock lead
+
+630
+00:13:47,509 --> 00:13:47,519
+to the investigation. When the sock lead
+ 
+
+631
+00:13:47,519 --> 00:13:49,350
+to the investigation. When the sock lead
+gives a warrant to the triage agent it
+
+632
+00:13:49,350 --> 00:13:49,360
+gives a warrant to the triage agent it
+ 
+
+633
+00:13:49,360 --> 00:13:51,430
+gives a warrant to the triage agent it
+drops the capability to isolate the
+
+634
+00:13:51,430 --> 00:13:51,440
+drops the capability to isolate the
+ 
+
+635
+00:13:51,440 --> 00:13:52,870
+drops the capability to isolate the
+host. just gives it okay you can send
+
+636
+00:13:52,870 --> 00:13:52,880
+host. just gives it okay you can send
+ 
+
+637
+00:13:52,880 --> 00:13:54,870
+host. just gives it okay you can send
+HTTP you can read config you can read
+
+638
+00:13:54,870 --> 00:13:54,880
+HTTP you can read config you can read
+ 
+
+639
+00:13:54,880 --> 00:13:58,470
+HTTP you can read config you can read
+logs to this particular service and then
+
+640
+00:13:58,470 --> 00:13:58,480
+logs to this particular service and then
+ 
+
+641
+00:13:58,480 --> 00:14:00,550
+logs to this particular service and then
+we have this is an example of how
+
+642
+00:14:00,550 --> 00:14:00,560
+we have this is an example of how
+ 
+
+643
+00:14:00,560 --> 00:14:01,990
+we have this is an example of how
+warrant looks like we have a playground
+
+644
+00:14:01,990 --> 00:14:02,000
+warrant looks like we have a playground
+ 
+
+645
+00:14:02,000 --> 00:14:04,230
+warrant looks like we have a playground
+online teno.ai AI you can see like
+
+646
+00:14:04,230 --> 00:14:04,240
+online teno.ai AI you can see like
+ 
+
+647
+00:14:04,240 --> 00:14:06,629
+online teno.ai AI you can see like
+playground to actually put in a uh a
+
+648
+00:14:06,629 --> 00:14:06,639
+playground to actually put in a uh a
+ 
+
+649
+00:14:06,639 --> 00:14:09,030
+playground to actually put in a uh a
+warrant to to decode it and see what it
+
+650
+00:14:09,030 --> 00:14:09,040
+warrant to to decode it and see what it
+ 
+
+651
+00:14:09,040 --> 00:14:11,509
+warrant to to decode it and see what it
+is supposed to do. Um but here I just
+
+652
+00:14:11,509 --> 00:14:11,519
+is supposed to do. Um but here I just
+ 
+
+653
+00:14:11,519 --> 00:14:14,550
+is supposed to do. Um but here I just
+want to show one case where the happy
+
+654
+00:14:14,550 --> 00:14:14,560
+want to show one case where the happy
+ 
+
+655
+00:14:14,560 --> 00:14:16,710
+want to show one case where the happy
+path it goes from the so to the triage
+
+656
+00:14:16,710 --> 00:14:16,720
+path it goes from the so to the triage
+ 
+
+657
+00:14:16,720 --> 00:14:18,949
+path it goes from the so to the triage
+agent to the investigation agent. It
+
+658
+00:14:18,949 --> 00:14:18,959
+agent to the investigation agent. It
+ 
+
+659
+00:14:18,959 --> 00:14:22,389
+agent to the investigation agent. It
+reads the logs all the uh actions it
+
+660
+00:14:22,389 --> 00:14:22,399
+reads the logs all the uh actions it
+ 
+
+661
+00:14:22,399 --> 00:14:24,550
+reads the logs all the uh actions it
+tries to do are encoded in the wallet.
+
+662
+00:14:24,550 --> 00:14:24,560
+tries to do are encoded in the wallet.
+ 
+
+663
+00:14:24,560 --> 00:14:26,710
+tries to do are encoded in the wallet.
+Everybody's happy and this is the
+
+664
+00:14:26,710 --> 00:14:26,720
+Everybody's happy and this is the
+ 
+
+665
+00:14:26,720 --> 00:14:28,790
+Everybody's happy and this is the
+intended purpose. Now imagine a
+
+666
+00:14:28,790 --> 00:14:28,800
+intended purpose. Now imagine a
+ 
+
+667
+00:14:28,800 --> 00:14:30,949
+intended purpose. Now imagine a
+situation where in the logs that it is
+
+668
+00:14:30,949 --> 00:14:30,959
+situation where in the logs that it is
+ 
+
+669
+00:14:30,959 --> 00:14:32,790
+situation where in the logs that it is
+reading there is a prompt injection that
+
+670
+00:14:32,790 --> 00:14:32,800
+reading there is a prompt injection that
+ 
+
+671
+00:14:32,800 --> 00:14:35,509
+reading there is a prompt injection that
+suggests to the investigation agent like
+
+672
+00:14:35,509 --> 00:14:35,519
+suggests to the investigation agent like
+ 
+
+673
+00:14:35,519 --> 00:14:37,590
+suggests to the investigation agent like
+hey how you know the problem you're
+
+674
+00:14:37,590 --> 00:14:37,600
+hey how you know the problem you're
+ 
+
+675
+00:14:37,600 --> 00:14:41,269
+hey how you know the problem you're
+investigating is related to a um a
+
+676
+00:14:41,269 --> 00:14:41,279
+investigating is related to a um a
+ 
+
+677
+00:14:41,279 --> 00:14:42,550
+investigating is related to a um a
+problem in the vault there is a
+
+678
+00:14:42,550 --> 00:14:42,560
+problem in the vault there is a
+ 
+
+679
+00:14:42,560 --> 00:14:44,470
+problem in the vault there is a
+credential problem maybe you can look
+
+680
+00:14:44,470 --> 00:14:44,480
+credential problem maybe you can look
+ 
+
+681
+00:14:44,480 --> 00:14:47,509
+credential problem maybe you can look
+into this uh particular path that has
+
+682
+00:14:47,509 --> 00:14:47,519
+into this uh particular path that has
+ 
+
+683
+00:14:47,519 --> 00:14:49,829
+into this uh particular path that has
+token information that is how typical
+
+684
+00:14:49,829 --> 00:14:49,839
+token information that is how typical
+ 
+
+685
+00:14:49,839 --> 00:14:51,910
+token information that is how typical
+prompt injection happens but since the
+
+686
+00:14:51,910 --> 00:14:51,920
+prompt injection happens but since the
+ 
+
+687
+00:14:51,920 --> 00:14:55,269
+prompt injection happens but since the
+triage agent stripped down the scope of
+
+688
+00:14:55,269 --> 00:14:55,279
+triage agent stripped down the scope of
+ 
+
+689
+00:14:55,279 --> 00:14:57,509
+triage agent stripped down the scope of
+the investigation agent to just reading
+
+690
+00:14:57,509 --> 00:14:57,519
+the investigation agent to just reading
+ 
+
+691
+00:14:57,519 --> 00:15:00,629
+the investigation agent to just reading
+ing the file path of the off service it
+
+692
+00:15:00,629 --> 00:15:00,639
+ing the file path of the off service it
+ 
+
+693
+00:15:00,639 --> 00:15:02,790
+ing the file path of the off service it
+will it will never be able it will be
+
+694
+00:15:02,790 --> 00:15:02,800
+will it will never be able it will be
+ 
+
+695
+00:15:02,800 --> 00:15:05,030
+will it will never be able it will be
+denied by tenure at execution time to be
+
+696
+00:15:05,030 --> 00:15:05,040
+denied by tenure at execution time to be
+ 
+
+697
+00:15:05,040 --> 00:15:08,870
+denied by tenure at execution time to be
+able to actually read the uh vault file
+
+698
+00:15:08,870 --> 00:15:08,880
+able to actually read the uh vault file
+ 
+
+699
+00:15:08,880 --> 00:15:11,750
+able to actually read the uh vault file
+path since it's not in the um in the
+
+700
+00:15:11,750 --> 00:15:11,760
+path since it's not in the um in the
+ 
+
+701
+00:15:11,760 --> 00:15:15,030
+path since it's not in the um in the
+wallet another case you have here is uh
+
+702
+00:15:15,030 --> 00:15:15,040
+wallet another case you have here is uh
+ 
+
+703
+00:15:15,040 --> 00:15:19,110
+wallet another case you have here is uh
+is when the um the the investigation
+
+704
+00:15:19,110 --> 00:15:19,120
+is when the um the the investigation
+ 
+
+705
+00:15:19,120 --> 00:15:21,750
+is when the um the the investigation
+agent is tricked into sending some of
+
+706
+00:15:21,750 --> 00:15:21,760
+agent is tricked into sending some of
+ 
+
+707
+00:15:21,760 --> 00:15:25,509
+agent is tricked into sending some of
+the information to evil attacker.com
+
+708
+00:15:25,509 --> 00:15:25,519
+the information to evil attacker.com
+ 
+
+709
+00:15:25,519 --> 00:15:27,509
+the information to evil attacker.com
+again as you remember when we were
+
+710
+00:15:27,509 --> 00:15:27,519
+again as you remember when we were
+ 
+
+711
+00:15:27,519 --> 00:15:29,030
+again as you remember when we were
+delegating from the triage to the
+
+712
+00:15:29,030 --> 00:15:29,040
+delegating from the triage to the
+ 
+
+713
+00:15:29,040 --> 00:15:31,189
+delegating from the triage to the
+investigation agent, we stripped down
+
+714
+00:15:31,189 --> 00:15:31,199
+investigation agent, we stripped down
+ 
+
+715
+00:15:31,199 --> 00:15:36,069
+investigation agent, we stripped down
+send HTTP capabilities. The the um the
+
+716
+00:15:36,069 --> 00:15:36,079
+send HTTP capabilities. The the um the
+ 
+
+717
+00:15:36,079 --> 00:15:38,470
+send HTTP capabilities. The the um the
+uh investigation agent in this
+
+718
+00:15:38,470 --> 00:15:38,480
+uh investigation agent in this
+ 
+
+719
+00:15:38,480 --> 00:15:39,829
+uh investigation agent in this
+particular moment doesn't have a
+
+720
+00:15:39,829 --> 00:15:39,839
+particular moment doesn't have a
+ 
+
+721
+00:15:39,839 --> 00:15:41,269
+particular moment doesn't have a
+warrant. The task it's been given, the
+
+722
+00:15:41,269 --> 00:15:41,279
+warrant. The task it's been given, the
+ 
+
+723
+00:15:41,279 --> 00:15:43,829
+warrant. The task it's been given, the
+warrant is been given doesn't allow it
+
+724
+00:15:43,829 --> 00:15:43,839
+warrant is been given doesn't allow it
+ 
+
+725
+00:15:43,839 --> 00:15:47,030
+warrant is been given doesn't allow it
+to be able to actually send HTTP. So,
+
+726
+00:15:47,030 --> 00:15:47,040
+to be able to actually send HTTP. So,
+ 
+
+727
+00:15:47,040 --> 00:15:48,550
+to be able to actually send HTTP. So,
+it's going to be denied
+
+728
+00:15:48,550 --> 00:15:48,560
+it's going to be denied
+ 
+
+729
+00:15:48,560 --> 00:15:51,670
+it's going to be denied
+deterministically and uh and with
+
+730
+00:15:51,670 --> 00:15:51,680
+deterministically and uh and with
+ 
+
+731
+00:15:51,680 --> 00:15:53,670
+deterministically and uh and with
+cryptographic proof by the tenual
+
+732
+00:15:53,670 --> 00:15:53,680
+cryptographic proof by the tenual
+ 
+
+733
+00:15:53,680 --> 00:15:57,910
+cryptographic proof by the tenual
+verifier. Now if it for example if the u
+
+734
+00:15:57,910 --> 00:15:57,920
+verifier. Now if it for example if the u
+ 
+
+735
+00:15:57,920 --> 00:16:00,710
+verifier. Now if it for example if the u
+the triage agents want to send sim logs
+
+736
+00:16:00,710 --> 00:16:00,720
+the triage agents want to send sim logs
+ 
+
+737
+00:16:00,720 --> 00:16:02,790
+the triage agents want to send sim logs
+to the sim yeah yeah it has the send
+
+738
+00:16:02,790 --> 00:16:02,800
+to the sim yeah yeah it has the send
+ 
+
+739
+00:16:02,800 --> 00:16:04,949
+to the sim yeah yeah it has the send
+http capability and this happens to be
+
+740
+00:16:04,949 --> 00:16:04,959
+http capability and this happens to be
+ 
+
+741
+00:16:04,959 --> 00:16:07,590
+http capability and this happens to be
+an internal URL that that is in the
+
+742
+00:16:07,590 --> 00:16:07,600
+an internal URL that that is in the
+ 
+
+743
+00:16:07,600 --> 00:16:09,350
+an internal URL that that is in the
+warrant great there is there's a happy
+
+744
+00:16:09,350 --> 00:16:09,360
+warrant great there is there's a happy
+ 
+
+745
+00:16:09,360 --> 00:16:11,990
+warrant great there is there's a happy
+path there but uh again even if it has
+
+746
+00:16:11,990 --> 00:16:12,000
+path there but uh again even if it has
+ 
+
+747
+00:16:12,000 --> 00:16:14,470
+path there but uh again even if it has
+this capability if it tries to the path
+
+748
+00:16:14,470 --> 00:16:14,480
+this capability if it tries to the path
+ 
+
+749
+00:16:14,480 --> 00:16:17,030
+this capability if it tries to the path
+that wasn't specified in the warrant
+
+750
+00:16:17,030 --> 00:16:17,040
+that wasn't specified in the warrant
+ 
+
+751
+00:16:17,040 --> 00:16:21,269
+that wasn't specified in the warrant
+it's going to fail and be denied by um
+
+752
+00:16:21,269 --> 00:16:21,279
+it's going to fail and be denied by um
+ 
+
+753
+00:16:21,279 --> 00:16:24,949
+it's going to fail and be denied by um
+by tenure verifier the Last case I want
+
+754
+00:16:24,949 --> 00:16:24,959
+by tenure verifier the Last case I want
+ 
+
+755
+00:16:24,959 --> 00:16:27,110
+by tenure verifier the Last case I want
+to show is the the property I mentioned
+
+756
+00:16:27,110 --> 00:16:27,120
+to show is the the property I mentioned
+ 
+
+757
+00:16:27,120 --> 00:16:28,870
+to show is the the property I mentioned
+of being holder bound proof of
+
+758
+00:16:28,870 --> 00:16:28,880
+of being holder bound proof of
+ 
+
+759
+00:16:28,880 --> 00:16:31,670
+of being holder bound proof of
+possession. If uh we don't consider a
+
+760
+00:16:31,670 --> 00:16:31,680
+possession. If uh we don't consider a
+ 
+
+761
+00:16:31,680 --> 00:16:34,550
+possession. If uh we don't consider a
+warrant to be a a a secret credential.
+
+762
+00:16:34,550 --> 00:16:34,560
+warrant to be a a a secret credential.
+ 
+
+763
+00:16:34,560 --> 00:16:36,949
+warrant to be a a a secret credential.
+So if you have a warrant and it's stolen
+
+764
+00:16:36,949 --> 00:16:36,959
+So if you have a warrant and it's stolen
+ 
+
+765
+00:16:36,959 --> 00:16:40,069
+So if you have a warrant and it's stolen
+and you don't have the the private key
+
+766
+00:16:40,069 --> 00:16:40,079
+and you don't have the the private key
+ 
+
+767
+00:16:40,079 --> 00:16:42,230
+and you don't have the the private key
+of the holder, it's going to be denied.
+
+768
+00:16:42,230 --> 00:16:42,240
+of the holder, it's going to be denied.
+ 
+
+769
+00:16:42,240 --> 00:16:44,550
+of the holder, it's going to be denied.
+That is the last case we have here. And
+
+770
+00:16:44,550 --> 00:16:44,560
+That is the last case we have here. And
+ 
+
+771
+00:16:44,560 --> 00:16:46,389
+That is the last case we have here. And
+with all these cases, we have audit
+
+772
+00:16:46,389 --> 00:16:46,399
+with all these cases, we have audit
+ 
+
+773
+00:16:46,399 --> 00:16:48,310
+with all these cases, we have audit
+trays. We have what we call a
+
+774
+00:16:48,310 --> 00:16:48,320
+trays. We have what we call a
+ 
+
+775
+00:16:48,320 --> 00:16:51,030
+trays. We have what we call a
+cryptographic receipt that you can send
+
+776
+00:16:51,030 --> 00:16:51,040
+cryptographic receipt that you can send
+ 
+
+777
+00:16:51,040 --> 00:16:54,389
+cryptographic receipt that you can send
+to the control plane and have them uh be
+
+778
+00:16:54,389 --> 00:16:54,399
+to the control plane and have them uh be
+ 
+
+779
+00:16:54,399 --> 00:16:56,470
+to the control plane and have them uh be
+uh cryptographically verifiable audit
+
+780
+00:16:56,470 --> 00:16:56,480
+uh cryptographically verifiable audit
+ 
+
+781
+00:16:56,480 --> 00:16:57,829
+uh cryptographically verifiable audit
+logs of all the events that are
+
+782
+00:16:57,829 --> 00:16:57,839
+logs of all the events that are
+ 
+
+783
+00:16:57,839 --> 00:17:00,150
+logs of all the events that are
+happening in infrastructure. This is
+
+784
+00:17:00,150 --> 00:17:00,160
+happening in infrastructure. This is
+ 
+
+785
+00:17:00,160 --> 00:17:03,509
+happening in infrastructure. This is
+just an example of how these uh receipts
+
+786
+00:17:03,509 --> 00:17:03,519
+just an example of how these uh receipts
+ 
+
+787
+00:17:03,519 --> 00:17:05,990
+just an example of how these uh receipts
+looks like but the idea here you can all
+
+788
+00:17:05,990 --> 00:17:06,000
+looks like but the idea here you can all
+ 
+
+789
+00:17:06,000 --> 00:17:07,990
+looks like but the idea here you can all
+play in different environments. This is
+
+790
+00:17:07,990 --> 00:17:08,000
+play in different environments. This is
+ 
+
+791
+00:17:08,000 --> 00:17:11,590
+play in different environments. This is
+the core is open source and uh we talk
+
+792
+00:17:11,590 --> 00:17:11,600
+the core is open source and uh we talk
+ 
+
+793
+00:17:11,600 --> 00:17:13,510
+the core is open source and uh we talk
+more now about some of the lessons we've
+
+794
+00:17:13,510 --> 00:17:13,520
+more now about some of the lessons we've
+ 
+
+795
+00:17:13,520 --> 00:17:15,990
+more now about some of the lessons we've
+learned around the way. The first
+
+796
+00:17:15,990 --> 00:17:16,000
+learned around the way. The first
+ 
+
+797
+00:17:16,000 --> 00:17:17,429
+learned around the way. The first
+question that comes here is like how
+
+798
+00:17:17,429 --> 00:17:17,439
+question that comes here is like how
+ 
+
+799
+00:17:17,439 --> 00:17:19,270
+question that comes here is like how
+does this fit into my infrastructure? We
+
+800
+00:17:19,270 --> 00:17:19,280
+does this fit into my infrastructure? We
+ 
+
+801
+00:17:19,280 --> 00:17:21,429
+does this fit into my infrastructure? We
+have four deployment models we've been
+
+802
+00:17:21,429 --> 00:17:21,439
+have four deployment models we've been
+ 
+
+803
+00:17:21,439 --> 00:17:23,510
+have four deployment models we've been
+looking at. One is in process like the
+
+804
+00:17:23,510 --> 00:17:23,520
+looking at. One is in process like the
+ 
+
+805
+00:17:23,520 --> 00:17:25,750
+looking at. One is in process like the
+example I gave with lang graph. Uh some
+
+806
+00:17:25,750 --> 00:17:25,760
+example I gave with lang graph. Uh some
+ 
+
+807
+00:17:25,760 --> 00:17:28,069
+example I gave with lang graph. Uh some
+different um
+
+808
+00:17:28,069 --> 00:17:28,079
+different um
+ 
+
+809
+00:17:28,079 --> 00:17:30,789
+different um
+frameworks have middleware hooks that we
+
+810
+00:17:30,789 --> 00:17:30,799
+frameworks have middleware hooks that we
+ 
+
+811
+00:17:30,799 --> 00:17:32,630
+frameworks have middleware hooks that we
+we've been plugging in. So far we have
+
+812
+00:17:32,630 --> 00:17:32,640
+we've been plugging in. So far we have
+ 
+
+813
+00:17:32,640 --> 00:17:35,750
+we've been plugging in. So far we have
+nine framework support including crew AI
+
+814
+00:17:35,750 --> 00:17:35,760
+nine framework support including crew AI
+ 
+
+815
+00:17:35,760 --> 00:17:40,310
+nine framework support including crew AI
+including A2A uh we have um temporal and
+
+816
+00:17:40,310 --> 00:17:40,320
+including A2A uh we have um temporal and
+ 
+
+817
+00:17:40,320 --> 00:17:42,230
+including A2A uh we have um temporal and
+many other frameworks. Another
+
+818
+00:17:42,230 --> 00:17:42,240
+many other frameworks. Another
+ 
+
+819
+00:17:42,240 --> 00:17:44,710
+many other frameworks. Another
+deployment mode is side the car we have
+
+820
+00:17:44,710 --> 00:17:44,720
+deployment mode is side the car we have
+ 
+
+821
+00:17:44,720 --> 00:17:47,029
+deployment mode is side the car we have
+you can if you have like a mesh service
+
+822
+00:17:47,029 --> 00:17:47,039
+you can if you have like a mesh service
+ 
+
+823
+00:17:47,039 --> 00:17:49,750
+you can if you have like a mesh service
+for example you can have tenure as one
+
+824
+00:17:49,750 --> 00:17:49,760
+for example you can have tenure as one
+ 
+
+825
+00:17:49,760 --> 00:17:52,789
+for example you can have tenure as one
+of the extension of your envoy so that
+
+826
+00:17:52,789 --> 00:17:52,799
+of the extension of your envoy so that
+ 
+
+827
+00:17:52,799 --> 00:17:55,750
+of the extension of your envoy so that
+before you hit actual APIs tenure can
+
+828
+00:17:55,750 --> 00:17:55,760
+before you hit actual APIs tenure can
+ 
+
+829
+00:17:55,760 --> 00:17:58,789
+before you hit actual APIs tenure can
+actually verify your the warrant of the
+
+830
+00:17:58,789 --> 00:17:58,799
+actually verify your the warrant of the
+ 
+
+831
+00:17:58,799 --> 00:18:01,190
+actually verify your the warrant of the
+agent running on that particular pod. We
+
+832
+00:18:01,190 --> 00:18:01,200
+agent running on that particular pod. We
+ 
+
+833
+00:18:01,200 --> 00:18:03,909
+agent running on that particular pod. We
+have the gateway approach. If you
+
+834
+00:18:03,909 --> 00:18:03,919
+have the gateway approach. If you
+ 
+
+835
+00:18:03,919 --> 00:18:05,270
+have the gateway approach. If you
+already have an infrastructure of
+
+836
+00:18:05,270 --> 00:18:05,280
+already have an infrastructure of
+ 
+
+837
+00:18:05,280 --> 00:18:08,710
+already have an infrastructure of
+agents, all you have to do is send 10
+
+838
+00:18:08,710 --> 00:18:08,720
+agents, all you have to do is send 10
+ 
+
+839
+00:18:08,720 --> 00:18:10,870
+agents, all you have to do is send 10
+warrants in headers. They are no secret.
+
+840
+00:18:10,870 --> 00:18:10,880
+warrants in headers. They are no secret.
+ 
+
+841
+00:18:10,880 --> 00:18:12,630
+warrants in headers. They are no secret.
+They can go in HTTP headers. And when
+
+842
+00:18:12,630 --> 00:18:12,640
+They can go in HTTP headers. And when
+ 
+
+843
+00:18:12,640 --> 00:18:15,510
+They can go in HTTP headers. And when
+you actually uh calling remote APIs, the
+
+844
+00:18:15,510 --> 00:18:15,520
+you actually uh calling remote APIs, the
+ 
+
+845
+00:18:15,520 --> 00:18:19,909
+you actually uh calling remote APIs, the
+gateway is going to be stopping um is
+
+846
+00:18:19,909 --> 00:18:19,919
+gateway is going to be stopping um is
+ 
+
+847
+00:18:19,919 --> 00:18:22,549
+gateway is going to be stopping um is
+going to be stopping the
+
+848
+00:18:22,549 --> 00:18:22,559
+going to be stopping the
+ 
+
+849
+00:18:22,559 --> 00:18:24,150
+going to be stopping the
+um
+
+850
+00:18:24,150 --> 00:18:24,160
+um
+ 
+
+851
+00:18:24,160 --> 00:18:26,150
+um
+the execution if they are not in the
+
+852
+00:18:26,150 --> 00:18:26,160
+the execution if they are not in the
+ 
+
+853
+00:18:26,160 --> 00:18:28,950
+the execution if they are not in the
+warrant. The idea here is to look at all
+
+854
+00:18:28,950 --> 00:18:28,960
+warrant. The idea here is to look at all
+ 
+
+855
+00:18:28,960 --> 00:18:31,110
+warrant. The idea here is to look at all
+deployment modes that real companies are
+
+856
+00:18:31,110 --> 00:18:31,120
+deployment modes that real companies are
+ 
+
+857
+00:18:31,120 --> 00:18:34,310
+deployment modes that real companies are
+actually uh using and most companies are
+
+858
+00:18:34,310 --> 00:18:34,320
+actually uh using and most companies are
+ 
+
+859
+00:18:34,320 --> 00:18:35,830
+actually uh using and most companies are
+now afraid to go to production because
+
+860
+00:18:35,830 --> 00:18:35,840
+now afraid to go to production because
+ 
+
+861
+00:18:35,840 --> 00:18:37,909
+now afraid to go to production because
+they don't have these primitives to help
+
+862
+00:18:37,909 --> 00:18:37,919
+they don't have these primitives to help
+ 
+
+863
+00:18:37,919 --> 00:18:40,549
+they don't have these primitives to help
+them really express their policies in
+
+864
+00:18:40,549 --> 00:18:40,559
+them really express their policies in
+ 
+
+865
+00:18:40,559 --> 00:18:42,789
+them really express their policies in
+the infrastructure architecture of
+
+866
+00:18:42,789 --> 00:18:42,799
+the infrastructure architecture of
+ 
+
+867
+00:18:42,799 --> 00:18:44,950
+the infrastructure architecture of
+multi- aent. Another one we have is MCP
+
+868
+00:18:44,950 --> 00:18:44,960
+multi- aent. Another one we have is MCP
+ 
+
+869
+00:18:44,960 --> 00:18:47,190
+multi- aent. Another one we have is MCP
+proxy either as on the client side or on
+
+870
+00:18:47,190 --> 00:18:47,200
+proxy either as on the client side or on
+ 
+
+871
+00:18:47,200 --> 00:18:50,310
+proxy either as on the client side or on
+the server side or both for the fencing
+
+872
+00:18:50,310 --> 00:18:50,320
+the server side or both for the fencing
+ 
+
+873
+00:18:50,320 --> 00:18:52,070
+the server side or both for the fencing
+depth. Again the idea here is that
+
+874
+00:18:52,070 --> 00:18:52,080
+depth. Again the idea here is that
+ 
+
+875
+00:18:52,080 --> 00:18:54,150
+depth. Again the idea here is that
+before it hits your proxy tool. This is
+
+876
+00:18:54,150 --> 00:18:54,160
+before it hits your proxy tool. This is
+ 
+
+877
+00:18:54,160 --> 00:18:55,029
+before it hits your proxy tool. This is
+actually one of the easiest
+
+878
+00:18:55,029 --> 00:18:55,039
+actually one of the easiest
+ 
+
+879
+00:18:55,039 --> 00:18:57,909
+actually one of the easiest
+implementation we have because proxy uh
+
+880
+00:18:57,909 --> 00:18:57,919
+implementation we have because proxy uh
+ 
+
+881
+00:18:57,919 --> 00:19:01,110
+implementation we have because proxy uh
+MCP has a structured uh tool and
+
+882
+00:19:01,110 --> 00:19:01,120
+MCP has a structured uh tool and
+ 
+
+883
+00:19:01,120 --> 00:19:02,870
+MCP has a structured uh tool and
+argument definition. So it's easier for
+
+884
+00:19:02,870 --> 00:19:02,880
+argument definition. So it's easier for
+ 
+
+885
+00:19:02,880 --> 00:19:06,230
+argument definition. So it's easier for
+us to express that when one thing I want
+
+886
+00:19:06,230 --> 00:19:06,240
+us to express that when one thing I want
+ 
+
+887
+00:19:06,240 --> 00:19:08,390
+us to express that when one thing I want
+to be clear about is that tenure is not
+
+888
+00:19:08,390 --> 00:19:08,400
+to be clear about is that tenure is not
+ 
+
+889
+00:19:08,400 --> 00:19:11,830
+to be clear about is that tenure is not
+trying to solve prompt injection. We're
+
+890
+00:19:11,830 --> 00:19:11,840
+trying to solve prompt injection. We're
+ 
+
+891
+00:19:11,840 --> 00:19:14,789
+trying to solve prompt injection. We're
+trying to constrain the agent at
+
+892
+00:19:14,789 --> 00:19:14,799
+trying to constrain the agent at
+ 
+
+893
+00:19:14,799 --> 00:19:17,190
+trying to constrain the agent at
+execution time even if it is prompt
+
+894
+00:19:17,190 --> 00:19:17,200
+execution time even if it is prompt
+ 
+
+895
+00:19:17,200 --> 00:19:18,710
+execution time even if it is prompt
+injected.
+
+896
+00:19:18,710 --> 00:19:18,720
+injected.
+ 
+
+897
+00:19:18,720 --> 00:19:20,870
+injected.
+We we we are not trying to be like
+
+898
+00:19:20,870 --> 00:19:20,880
+We we we are not trying to be like
+ 
+
+899
+00:19:20,880 --> 00:19:21,830
+We we we are not trying to be like
+there's not going to be prompt
+
+900
+00:19:21,830 --> 00:19:21,840
+there's not going to be prompt
+ 
+
+901
+00:19:21,840 --> 00:19:23,029
+there's not going to be prompt
+injection. I'm not trying to say there's
+
+902
+00:19:23,029 --> 00:19:23,039
+injection. I'm not trying to say there's
+ 
+
+903
+00:19:23,039 --> 00:19:24,789
+injection. I'm not trying to say there's
+no going to be house nation but we are
+
+904
+00:19:24,789 --> 00:19:24,799
+no going to be house nation but we are
+ 
+
+905
+00:19:24,799 --> 00:19:27,669
+no going to be house nation but we are
+making sure that the authorization is
+
+906
+00:19:27,669 --> 00:19:27,679
+making sure that the authorization is
+ 
+
+907
+00:19:27,679 --> 00:19:30,710
+making sure that the authorization is
+frozen even if your agent is prompt
+
+908
+00:19:30,710 --> 00:19:30,720
+frozen even if your agent is prompt
+ 
+
+909
+00:19:30,720 --> 00:19:34,150
+frozen even if your agent is prompt
+injected. We've been uh one of the
+
+910
+00:19:34,150 --> 00:19:34,160
+injected. We've been uh one of the
+ 
+
+911
+00:19:34,160 --> 00:19:36,070
+injected. We've been uh one of the
+challenges we run into is that there
+
+912
+00:19:36,070 --> 00:19:36,080
+challenges we run into is that there
+ 
+
+913
+00:19:36,080 --> 00:19:39,350
+challenges we run into is that there
+isn't really a a public benchmark for
+
+914
+00:19:39,350 --> 00:19:39,360
+isn't really a a public benchmark for
+ 
+
+915
+00:19:39,360 --> 00:19:41,990
+isn't really a a public benchmark for
+multi-agentic workflows that can test
+
+916
+00:19:41,990 --> 00:19:42,000
+multi-agentic workflows that can test
+ 
+
+917
+00:19:42,000 --> 00:19:44,549
+multi-agentic workflows that can test
+authorization in multiple hubs. We've
+
+918
+00:19:44,549 --> 00:19:44,559
+authorization in multiple hubs. We've
+ 
+
+919
+00:19:44,559 --> 00:19:47,909
+authorization in multiple hubs. We've
+built a custom one. Uh the cryptography
+
+920
+00:19:47,909 --> 00:19:47,919
+built a custom one. Uh the cryptography
+ 
+
+921
+00:19:47,919 --> 00:19:51,190
+built a custom one. Uh the cryptography
+side we had uh 53 test with more than
+
+922
+00:19:51,190 --> 00:19:51,200
+side we had uh 53 test with more than
+ 
+
+923
+00:19:51,200 --> 00:19:53,750
+side we had uh 53 test with more than
+5,000 fuzzing scenarios. We basically
+
+924
+00:19:53,750 --> 00:19:53,760
+5,000 fuzzing scenarios. We basically
+ 
+
+925
+00:19:53,760 --> 00:19:56,549
+5,000 fuzzing scenarios. We basically
+trying to make a NLM come up with
+
+926
+00:19:56,549 --> 00:19:56,559
+trying to make a NLM come up with
+ 
+
+927
+00:19:56,559 --> 00:19:59,430
+trying to make a NLM come up with
+adversarial situations that can actually
+
+928
+00:19:59,430 --> 00:19:59,440
+adversarial situations that can actually
+ 
+
+929
+00:19:59,440 --> 00:20:03,350
+adversarial situations that can actually
+trick Tenu into allowing it to to to do
+
+930
+00:20:03,350 --> 00:20:03,360
+trick Tenu into allowing it to to to do
+ 
+
+931
+00:20:03,360 --> 00:20:05,350
+trick Tenu into allowing it to to to do
+unauthorized actions. And we've seen
+
+932
+00:20:05,350 --> 00:20:05,360
+unauthorized actions. And we've seen
+ 
+
+933
+00:20:05,360 --> 00:20:08,150
+unauthorized actions. And we've seen
+that with tenure versus uh tenure
+
+934
+00:20:08,150 --> 00:20:08,160
+that with tenure versus uh tenure
+ 
+
+935
+00:20:08,160 --> 00:20:09,909
+that with tenure versus uh tenure
+deployment when you have cleared the
+
+936
+00:20:09,909 --> 00:20:09,919
+deployment when you have cleared the
+ 
+
+937
+00:20:09,919 --> 00:20:12,230
+deployment when you have cleared the
+definition of scope. we moved the attack
+
+938
+00:20:12,230 --> 00:20:12,240
+definition of scope. we moved the attack
+ 
+
+939
+00:20:12,240 --> 00:20:15,990
+definition of scope. we moved the attack
+surface to from from 90% to 0% when you
+
+940
+00:20:15,990 --> 00:20:16,000
+surface to from from 90% to 0% when you
+ 
+
+941
+00:20:16,000 --> 00:20:17,909
+surface to from from 90% to 0% when you
+have tenure on the performance side like
+
+942
+00:20:17,909 --> 00:20:17,919
+have tenure on the performance side like
+ 
+
+943
+00:20:17,919 --> 00:20:20,310
+have tenure on the performance side like
+I mentioned earlier we've been you we we
+
+944
+00:20:20,310 --> 00:20:20,320
+I mentioned earlier we've been you we we
+ 
+
+945
+00:20:20,320 --> 00:20:23,190
+I mentioned earlier we've been you we we
+use uh rasco for actual authorization
+
+946
+00:20:23,190 --> 00:20:23,200
+use uh rasco for actual authorization
+ 
+
+947
+00:20:23,200 --> 00:20:25,909
+use uh rasco for actual authorization
+and cryptography verification and we
+
+948
+00:20:25,909 --> 00:20:25,919
+and cryptography verification and we
+ 
+
+949
+00:20:25,919 --> 00:20:29,350
+and cryptography verification and we
+make sure uh that uh everything every
+
+950
+00:20:29,350 --> 00:20:29,360
+make sure uh that uh everything every
+ 
+
+951
+00:20:29,360 --> 00:20:31,909
+make sure uh that uh everything every
+authorization action happens in the core
+
+952
+00:20:31,909 --> 00:20:31,919
+authorization action happens in the core
+ 
+
+953
+00:20:31,919 --> 00:20:34,070
+authorization action happens in the core
+a big lesson we learned is not is that
+
+954
+00:20:34,070 --> 00:20:34,080
+a big lesson we learned is not is that
+ 
+
+955
+00:20:34,080 --> 00:20:36,230
+a big lesson we learned is not is that
+the map is not the territory when you
+
+956
+00:20:36,230 --> 00:20:36,240
+the map is not the territory when you
+ 
+
+957
+00:20:36,240 --> 00:20:38,390
+the map is not the territory when you
+run into the real world since CVS in
+
+958
+00:20:38,390 --> 00:20:38,400
+run into the real world since CVS in
+ 
+
+959
+00:20:38,400 --> 00:20:40,789
+run into the real world since CVS in
+this space if you only stay in the
+
+960
+00:20:40,789 --> 00:20:40,799
+this space if you only stay in the
+ 
+
+961
+00:20:40,799 --> 00:20:42,870
+this space if you only stay in the
+constraint logic, you're going to find
+
+962
+00:20:42,870 --> 00:20:42,880
+constraint logic, you're going to find
+ 
+
+963
+00:20:42,880 --> 00:20:46,470
+constraint logic, you're going to find
+issues of um path traversals. You're
+
+964
+00:20:46,470 --> 00:20:46,480
+issues of um path traversals. You're
+ 
+
+965
+00:20:46,480 --> 00:20:48,310
+issues of um path traversals. You're
+going to find issues with encoding your
+
+966
+00:20:48,310 --> 00:20:48,320
+going to find issues with encoding your
+ 
+
+967
+00:20:48,320 --> 00:20:51,029
+going to find issues with encoding your
+URLs. So, we've been moving a step
+
+968
+00:20:51,029 --> 00:20:51,039
+URLs. So, we've been moving a step
+ 
+
+969
+00:20:51,039 --> 00:20:53,350
+URLs. So, we've been moving a step
+further to look at three layers. One is
+
+970
+00:20:53,350 --> 00:20:53,360
+further to look at three layers. One is
+ 
+
+971
+00:20:53,360 --> 00:20:55,669
+further to look at three layers. One is
+what we call the map uh where you have
+
+972
+00:20:55,669 --> 00:20:55,679
+what we call the map uh where you have
+ 
+
+973
+00:20:55,679 --> 00:20:57,669
+what we call the map uh where you have
+your logic, your rejects, your globe
+
+974
+00:20:57,669 --> 00:20:57,679
+your logic, your rejects, your globe
+ 
+
+975
+00:20:57,679 --> 00:21:00,230
+your logic, your rejects, your globe
+matching logic, beautiful, it's a gray.
+
+976
+00:21:00,230 --> 00:21:00,240
+matching logic, beautiful, it's a gray.
+ 
+
+977
+00:21:00,240 --> 00:21:03,029
+matching logic, beautiful, it's a gray.
+But we learn that the all those logic
+
+978
+00:21:03,029 --> 00:21:03,039
+But we learn that the all those logic
+ 
+
+979
+00:21:03,039 --> 00:21:04,789
+But we learn that the all those logic
+and your cryptography are not really the
+
+980
+00:21:04,789 --> 00:21:04,799
+and your cryptography are not really the
+ 
+
+981
+00:21:04,799 --> 00:21:06,149
+and your cryptography are not really the
+botonic. We have to look at the real
+
+982
+00:21:06,149 --> 00:21:06,159
+botonic. We have to look at the real
+ 
+
+983
+00:21:06,159 --> 00:21:08,390
+botonic. We have to look at the real
+world. The other layer we call it the
+
+984
+00:21:08,390 --> 00:21:08,400
+world. The other layer we call it the
+ 
+
+985
+00:21:08,400 --> 00:21:10,630
+world. The other layer we call it the
+attenuated map where we have now
+
+986
+00:21:10,630 --> 00:21:10,640
+attenuated map where we have now
+ 
+
+987
+00:21:10,640 --> 00:21:12,630
+attenuated map where we have now
+constraints that can actually understand
+
+988
+00:21:12,630 --> 00:21:12,640
+constraints that can actually understand
+ 
+
+989
+00:21:12,640 --> 00:21:15,669
+constraints that can actually understand
+the target if it we have uh one that can
+
+990
+00:21:15,669 --> 00:21:15,679
+the target if it we have uh one that can
+ 
+
+991
+00:21:15,679 --> 00:21:18,710
+the target if it we have uh one that can
+actually normalize paths and URLs. But
+
+992
+00:21:18,710 --> 00:21:18,720
+actually normalize paths and URLs. But
+ 
+
+993
+00:21:18,720 --> 00:21:20,390
+actually normalize paths and URLs. But
+we believe that there is another area
+
+994
+00:21:20,390 --> 00:21:20,400
+we believe that there is another area
+ 
+
+995
+00:21:20,400 --> 00:21:22,950
+we believe that there is another area
+what we call the actual map where you
+
+996
+00:21:22,950 --> 00:21:22,960
+what we call the actual map where you
+ 
+
+997
+00:21:22,960 --> 00:21:26,149
+what we call the actual map where you
+have to actually be have your logic and
+
+998
+00:21:26,149 --> 00:21:26,159
+have to actually be have your logic and
+ 
+
+999
+00:21:26,159 --> 00:21:28,149
+have to actually be have your logic and
+you run the time environment speak the
+
+1000
+00:21:28,149 --> 00:21:28,159
+you run the time environment speak the
+ 
+
+1001
+00:21:28,159 --> 00:21:29,909
+you run the time environment speak the
+same language. That's where we've built
+
+1002
+00:21:29,909 --> 00:21:29,919
+same language. That's where we've built
+ 
+
+1003
+00:21:29,919 --> 00:21:31,350
+same language. That's where we've built
+some tooling some open source tooling
+
+1004
+00:21:31,350 --> 00:21:31,360
+some tooling some open source tooling
+ 
+
+1005
+00:21:31,360 --> 00:21:35,110
+some tooling some open source tooling
+around it on um execution guards for
+
+1006
+00:21:35,110 --> 00:21:35,120
+around it on um execution guards for
+ 
+
+1007
+00:21:35,120 --> 00:21:37,909
+around it on um execution guards for
+file system and uh and process running.
+
+1008
+00:21:37,909 --> 00:21:37,919
+file system and uh and process running.
+ 
+
+1009
+00:21:37,919 --> 00:21:39,750
+file system and uh and process running.
+But uh eventually to get this right
+
+1010
+00:21:39,750 --> 00:21:39,760
+But uh eventually to get this right
+ 
+
+1011
+00:21:39,760 --> 00:21:42,230
+But uh eventually to get this right
+believe it's matching the warrant system
+
+1012
+00:21:42,230 --> 00:21:42,240
+believe it's matching the warrant system
+ 
+
+1013
+00:21:42,240 --> 00:21:45,270
+believe it's matching the warrant system
+onto a sandbox that can actually uh
+
+1014
+00:21:45,270 --> 00:21:45,280
+onto a sandbox that can actually uh
+ 
+
+1015
+00:21:45,280 --> 00:21:46,870
+onto a sandbox that can actually uh
+understand
+
+1016
+00:21:46,870 --> 00:21:46,880
+understand
+ 
+
+1017
+00:21:46,880 --> 00:21:48,710
+understand
+what the warrant is trying to say. So
+
+1018
+00:21:48,710 --> 00:21:48,720
+what the warrant is trying to say. So
+ 
+
+1019
+00:21:48,720 --> 00:21:49,990
+what the warrant is trying to say. So
+one of the things we are looking for
+
+1020
+00:21:49,990 --> 00:21:50,000
+one of the things we are looking for
+ 
+
+1021
+00:21:50,000 --> 00:21:51,909
+one of the things we are looking for
+what is next we are looking for
+
+1022
+00:21:51,909 --> 00:21:51,919
+what is next we are looking for
+ 
+
+1023
+00:21:51,919 --> 00:21:53,510
+what is next we are looking for
+researchers who want to collaborate on
+
+1024
+00:21:53,510 --> 00:21:53,520
+researchers who want to collaborate on
+ 
+
+1025
+00:21:53,520 --> 00:21:55,270
+researchers who want to collaborate on
+breeding benchmarks for multi-agent
+
+1026
+00:21:55,270 --> 00:21:55,280
+breeding benchmarks for multi-agent
+ 
+
+1027
+00:21:55,280 --> 00:21:57,430
+breeding benchmarks for multi-agent
+authorization. There isn't really good
+
+1028
+00:21:57,430 --> 00:21:57,440
+authorization. There isn't really good
+ 
+
+1029
+00:21:57,440 --> 00:21:59,029
+authorization. There isn't really good
+benchmarks out there. We're looking for
+
+1030
+00:21:59,029 --> 00:21:59,039
+benchmarks out there. We're looking for
+ 
+
+1031
+00:21:59,039 --> 00:22:00,230
+benchmarks out there. We're looking for
+people who are actually running a
+
+1032
+00:22:00,230 --> 00:22:00,240
+people who are actually running a
+ 
+
+1033
+00:22:00,240 --> 00:22:02,390
+people who are actually running a
+genenical workflows in practice who want
+
+1034
+00:22:02,390 --> 00:22:02,400
+genenical workflows in practice who want
+ 
+
+1035
+00:22:02,400 --> 00:22:05,270
+genenical workflows in practice who want
+to uh stress test this model. We're
+
+1036
+00:22:05,270 --> 00:22:05,280
+to uh stress test this model. We're
+ 
+
+1037
+00:22:05,280 --> 00:22:08,789
+to uh stress test this model. We're
+looking for uh people who want to
+
+1038
+00:22:08,789 --> 00:22:08,799
+looking for uh people who want to
+ 
+
+1039
+00:22:08,799 --> 00:22:12,310
+looking for uh people who want to
+explore uh further way that this
+
+1040
+00:22:12,310 --> 00:22:12,320
+explore uh further way that this
+ 
+
+1041
+00:22:12,320 --> 00:22:14,390
+explore uh further way that this
+primitive can be applied in different
+
+1042
+00:22:14,390 --> 00:22:14,400
+primitive can be applied in different
+ 
+
+1043
+00:22:14,400 --> 00:22:16,070
+primitive can be applied in different
+frameworks. If your company has a
+
+1044
+00:22:16,070 --> 00:22:16,080
+frameworks. If your company has a
+ 
+
+1045
+00:22:16,080 --> 00:22:19,029
+frameworks. If your company has a
+framework, if your company is coming up
+
+1046
+00:22:19,029 --> 00:22:19,039
+framework, if your company is coming up
+ 
+
+1047
+00:22:19,039 --> 00:22:21,990
+framework, if your company is coming up
+with new architecture and wants to have
+
+1048
+00:22:21,990 --> 00:22:22,000
+with new architecture and wants to have
+ 
+
+1049
+00:22:22,000 --> 00:22:24,149
+with new architecture and wants to have
+capability based authorization in place,
+
+1050
+00:22:24,149 --> 00:22:24,159
+capability based authorization in place,
+ 
+
+1051
+00:22:24,159 --> 00:22:26,630
+capability based authorization in place,
+be our friend. We can talk. And more
+
+1052
+00:22:26,630 --> 00:22:26,640
+be our friend. We can talk. And more
+ 
+
+1053
+00:22:26,640 --> 00:22:28,710
+be our friend. We can talk. And more
+importantly, we want the open source
+
+1054
+00:22:28,710 --> 00:22:28,720
+importantly, we want the open source
+ 
+
+1055
+00:22:28,720 --> 00:22:31,590
+importantly, we want the open source
+community to help validate the primitive
+
+1056
+00:22:31,590 --> 00:22:31,600
+community to help validate the primitive
+ 
+
+1057
+00:22:31,600 --> 00:22:35,270
+community to help validate the primitive
+and uh either build with it or break it.
+
+1058
+00:22:35,270 --> 00:22:35,280
+and uh either build with it or break it.
+ 
+
+1059
+00:22:35,280 --> 00:22:44,870
+and uh either build with it or break it.
+Thank you so much.
+
+1060
+00:22:44,870 --> 00:22:44,880
+
+ 
+
+1061
+00:22:44,880 --> 00:22:46,710
+
+All right. Well done, Nikki. I love it.
+
+1062
+00:22:46,710 --> 00:22:46,720
+All right. Well done, Nikki. I love it.
+ 
+
+1063
+00:22:46,720 --> 00:22:48,310
+All right. Well done, Nikki. I love it.
+Um let's do some questions from the
+
+1064
+00:22:48,310 --> 00:22:48,320
+Um let's do some questions from the
+ 
+
+1065
+00:22:48,320 --> 00:22:51,430
+Um let's do some questions from the
+online crowd just real quick. Um Kayn's
+
+1066
+00:22:51,430 --> 00:22:51,440
+online crowd just real quick. Um Kayn's
+ 
+
+1067
+00:22:51,440 --> 00:22:54,710
+online crowd just real quick. Um Kayn's
+asking, "Very cool talk. In practice,
+
+1068
+00:22:54,710 --> 00:22:54,720
+asking, "Very cool talk. In practice,
+ 
+
+1069
+00:22:54,720 --> 00:22:56,310
+asking, "Very cool talk. In practice,
+how do you determine the scope of the
+
+1070
+00:22:56,310 --> 00:22:56,320
+how do you determine the scope of the
+ 
+
+1071
+00:22:56,320 --> 00:22:58,310
+how do you determine the scope of the
+token issued to the child agent at
+
+1072
+00:22:58,310 --> 00:22:58,320
+token issued to the child agent at
+ 
+
+1073
+00:22:58,320 --> 00:23:01,029
+token issued to the child agent at
+runtime? Is that scope determined
+
+1074
+00:23:01,029 --> 00:23:01,039
+runtime? Is that scope determined
+ 
+
+1075
+00:23:01,039 --> 00:23:03,750
+runtime? Is that scope determined
+deterministically by the system or can
+
+1076
+00:23:03,750 --> 00:23:03,760
+deterministically by the system or can
+ 
+
+1077
+00:23:03,760 --> 00:23:05,909
+deterministically by the system or can
+the LLM interpret what that scope is
+
+1078
+00:23:05,909 --> 00:23:05,919
+the LLM interpret what that scope is
+ 
+
+1079
+00:23:05,919 --> 00:23:07,750
+the LLM interpret what that scope is
+needed for the task?
+
+1080
+00:23:07,750 --> 00:23:07,760
+needed for the task?
+ 
+
+1081
+00:23:07,760 --> 00:23:09,750
+needed for the task?
+>> Uh that is a very good question. How you
+
+1082
+00:23:09,750 --> 00:23:09,760
+>> Uh that is a very good question. How you
+ 
+
+1083
+00:23:09,760 --> 00:23:12,310
+>> Uh that is a very good question. How you
+define the scope? Uh so the idea here
+
+1084
+00:23:12,310 --> 00:23:12,320
+define the scope? Uh so the idea here
+ 
+
+1085
+00:23:12,320 --> 00:23:14,710
+define the scope? Uh so the idea here
+again is that the policy is going to be
+
+1086
+00:23:14,710 --> 00:23:14,720
+again is that the policy is going to be
+ 
+
+1087
+00:23:14,720 --> 00:23:16,070
+again is that the policy is going to be
+deterministic. That's the goal. And at
+
+1088
+00:23:16,070 --> 00:23:16,080
+deterministic. That's the goal. And at
+ 
+
+1089
+00:23:16,080 --> 00:23:17,830
+deterministic. That's the goal. And at
+least as you start your delegation chain
+
+1090
+00:23:17,830 --> 00:23:17,840
+least as you start your delegation chain
+ 
+
+1091
+00:23:17,840 --> 00:23:19,430
+least as you start your delegation chain
+from the human or from another
+
+1092
+00:23:19,430 --> 00:23:19,440
+from the human or from another
+ 
+
+1093
+00:23:19,440 --> 00:23:21,430
+from the human or from another
+deterministic process, you could have a
+
+1094
+00:23:21,430 --> 00:23:21,440
+deterministic process, you could have a
+ 
+
+1095
+00:23:21,440 --> 00:23:23,990
+deterministic process, you could have a
+simple web who could start from like a
+
+1096
+00:23:23,990 --> 00:23:24,000
+simple web who could start from like a
+ 
+
+1097
+00:23:24,000 --> 00:23:26,950
+simple web who could start from like a
+certain alert. You can have the initial
+
+1098
+00:23:26,950 --> 00:23:26,960
+certain alert. You can have the initial
+ 
+
+1099
+00:23:26,960 --> 00:23:30,310
+certain alert. You can have the initial
+uh walrant defined by a human and uh at
+
+1100
+00:23:30,310 --> 00:23:30,320
+uh walrant defined by a human and uh at
+ 
+
+1101
+00:23:30,320 --> 00:23:31,750
+uh walrant defined by a human and uh at
+the runtime there are two ways you can
+
+1102
+00:23:31,750 --> 00:23:31,760
+the runtime there are two ways you can
+ 
+
+1103
+00:23:31,760 --> 00:23:34,310
+the runtime there are two ways you can
+go about it. One first of all since you
+
+1104
+00:23:34,310 --> 00:23:34,320
+go about it. One first of all since you
+ 
+
+1105
+00:23:34,320 --> 00:23:37,270
+go about it. One first of all since you
+are sure that no sub agent can ever do
+
+1106
+00:23:37,270 --> 00:23:37,280
+are sure that no sub agent can ever do
+ 
+
+1107
+00:23:37,280 --> 00:23:39,830
+are sure that no sub agent can ever do
+more than the parent you have already
+
+1108
+00:23:39,830 --> 00:23:39,840
+more than the parent you have already
+ 
+
+1109
+00:23:39,840 --> 00:23:41,510
+more than the parent you have already
+frozen the capability of the whole
+
+1110
+00:23:41,510 --> 00:23:41,520
+frozen the capability of the whole
+ 
+
+1111
+00:23:41,520 --> 00:23:43,590
+frozen the capability of the whole
+workflow. Two ways you can go about one
+
+1112
+00:23:43,590 --> 00:23:43,600
+workflow. Two ways you can go about one
+ 
+
+1113
+00:23:43,600 --> 00:23:45,750
+workflow. Two ways you can go about one
+is like having the orchestrator which is
+
+1114
+00:23:45,750 --> 00:23:45,760
+is like having the orchestrator which is
+ 
+
+1115
+00:23:45,760 --> 00:23:48,070
+is like having the orchestrator which is
+a typical design the orchestrator at
+
+1116
+00:23:48,070 --> 00:23:48,080
+a typical design the orchestrator at
+ 
+
+1117
+00:23:48,080 --> 00:23:50,470
+a typical design the orchestrator at
+runtime itself decide which task it
+
+1118
+00:23:50,470 --> 00:23:50,480
+runtime itself decide which task it
+ 
+
+1119
+00:23:50,480 --> 00:23:52,789
+runtime itself decide which task it
+wants the sub agent to do the child
+
+1120
+00:23:52,789 --> 00:23:52,799
+wants the sub agent to do the child
+ 
+
+1121
+00:23:52,799 --> 00:23:54,710
+wants the sub agent to do the child
+agent. Again the guarantee you have at
+
+1122
+00:23:54,710 --> 00:23:54,720
+agent. Again the guarantee you have at
+ 
+
+1123
+00:23:54,720 --> 00:23:56,470
+agent. Again the guarantee you have at
+the top is that the whole workflow will
+
+1124
+00:23:56,470 --> 00:23:56,480
+the top is that the whole workflow will
+ 
+
+1125
+00:23:56,480 --> 00:23:58,950
+the top is that the whole workflow will
+never go beyond the frozen scope you've
+
+1126
+00:23:58,950 --> 00:23:58,960
+never go beyond the frozen scope you've
+ 
+
+1127
+00:23:58,960 --> 00:24:01,590
+never go beyond the frozen scope you've
+defined. Another way we have that we
+
+1128
+00:24:01,590 --> 00:24:01,600
+defined. Another way we have that we
+ 
+
+1129
+00:24:01,600 --> 00:24:03,590
+defined. Another way we have that we
+didn't have time to go into is having
+
+1130
+00:24:03,590 --> 00:24:03,600
+didn't have time to go into is having
+ 
+
+1131
+00:24:03,600 --> 00:24:07,830
+didn't have time to go into is having
+some of the constraints be uh added with
+
+1132
+00:24:07,830 --> 00:24:07,840
+some of the constraints be uh added with
+ 
+
+1133
+00:24:07,840 --> 00:24:09,830
+some of the constraints be uh added with
+approval considerations where you're
+
+1134
+00:24:09,830 --> 00:24:09,840
+approval considerations where you're
+ 
+
+1135
+00:24:09,840 --> 00:24:11,909
+approval considerations where you're
+like okay you can do this action and uh
+
+1136
+00:24:11,909 --> 00:24:11,919
+like okay you can do this action and uh
+ 
+
+1137
+00:24:11,919 --> 00:24:13,990
+like okay you can do this action and uh
+this argument but only if this
+
+1138
+00:24:13,990 --> 00:24:14,000
+this argument but only if this
+ 
+
+1139
+00:24:14,000 --> 00:24:17,510
+this argument but only if this
+particular key pair approves the uh that
+
+1140
+00:24:17,510 --> 00:24:17,520
+particular key pair approves the uh that
+ 
+
+1141
+00:24:17,520 --> 00:24:19,110
+particular key pair approves the uh that
+action at runtime. So we have the
+
+1142
+00:24:19,110 --> 00:24:19,120
+action at runtime. So we have the
+ 
+
+1143
+00:24:19,120 --> 00:24:21,909
+action at runtime. So we have the
+approval processes but we we started
+
+1144
+00:24:21,909 --> 00:24:21,919
+approval processes but we we started
+ 
+
+1145
+00:24:21,919 --> 00:24:25,430
+approval processes but we we started
+with uh the uh the orchestrator deciding
+
+1146
+00:24:25,430 --> 00:24:25,440
+with uh the uh the orchestrator deciding
+ 
+
+1147
+00:24:25,440 --> 00:24:27,430
+with uh the uh the orchestrator deciding
+at runtime what task it wants to give to
+
+1148
+00:24:27,430 --> 00:24:27,440
+at runtime what task it wants to give to
+ 
+
+1149
+00:24:27,440 --> 00:24:29,190
+at runtime what task it wants to give to
+the agents and if you want more human in
+
+1150
+00:24:29,190 --> 00:24:29,200
+the agents and if you want more human in
+ 
+
+1151
+00:24:29,200 --> 00:24:30,950
+the agents and if you want more human in
+the loop control we also have the
+
+1152
+00:24:30,950 --> 00:24:30,960
+the loop control we also have the
+ 
+
+1153
+00:24:30,960 --> 00:24:34,070
+the loop control we also have the
+approval process. Thank you.
+
+1154
+00:24:34,070 --> 00:24:34,080
+approval process. Thank you.
+ 
+
+1155
+00:24:34,080 --> 00:24:36,549
+approval process. Thank you.
+>> Uh great talk just a real quick question
+
+1156
+00:24:36,549 --> 00:24:36,559
+>> Uh great talk just a real quick question
+ 
+
+1157
+00:24:36,559 --> 00:24:40,390
+>> Uh great talk just a real quick question
+on um you mentioning that warrants
+
+1158
+00:24:40,390 --> 00:24:40,400
+on um you mentioning that warrants
+ 
+
+1159
+00:24:40,400 --> 00:24:42,310
+on um you mentioning that warrants
+aren't secrets
+
+1160
+00:24:42,310 --> 00:24:42,320
+aren't secrets
+ 
+
+1161
+00:24:42,320 --> 00:24:44,070
+aren't secrets
+um and how you go about uh
+
+1162
+00:24:44,070 --> 00:24:44,080
+um and how you go about uh
+ 
+
+1163
+00:24:44,080 --> 00:24:46,630
+um and how you go about uh
+authenticating the the agents.
+
+1164
+00:24:46,630 --> 00:24:46,640
+authenticating the the agents.
+ 
+
+1165
+00:24:46,640 --> 00:24:49,669
+authenticating the the agents.
+>> Thank you. So the warrant itself is that
+
+1166
+00:24:49,669 --> 00:24:49,679
+>> Thank you. So the warrant itself is that
+ 
+
+1167
+00:24:49,679 --> 00:24:53,029
+>> Thank you. So the warrant itself is that
+artifact that the agent shows to the
+
+1168
+00:24:53,029 --> 00:24:53,039
+artifact that the agent shows to the
+ 
+
+1169
+00:24:53,039 --> 00:24:54,950
+artifact that the agent shows to the
+verifier. As a matter of fact, like I
+
+1170
+00:24:54,950 --> 00:24:54,960
+verifier. As a matter of fact, like I
+ 
+
+1171
+00:24:54,960 --> 00:24:57,909
+verifier. As a matter of fact, like I
+mentioned earlier, you can go to our
+
+1172
+00:24:57,909 --> 00:24:57,919
+mentioned earlier, you can go to our
+ 
+
+1173
+00:24:57,919 --> 00:24:59,990
+mentioned earlier, you can go to our
+playground. We have it here. You can
+
+1174
+00:24:59,990 --> 00:25:00,000
+playground. We have it here. You can
+ 
+
+1175
+00:25:00,000 --> 00:25:01,269
+playground. We have it here. You can
+paste any warrant. This is the client
+
+1176
+00:25:01,269 --> 00:25:01,279
+paste any warrant. This is the client
+ 
+
+1177
+00:25:01,279 --> 00:25:03,269
+paste any warrant. This is the client
+side. It's a was we built on the top of
+
+1178
+00:25:03,269 --> 00:25:03,279
+side. It's a was we built on the top of
+ 
+
+1179
+00:25:03,279 --> 00:25:05,750
+side. It's a was we built on the top of
+the Rascal. And when it's present to the
+
+1180
+00:25:05,750 --> 00:25:05,760
+the Rascal. And when it's present to the
+ 
+
+1181
+00:25:05,760 --> 00:25:07,590
+the Rascal. And when it's present to the
+uh the verifier, what the verifier does,
+
+1182
+00:25:07,590 --> 00:25:07,600
+uh the verifier, what the verifier does,
+ 
+
+1183
+00:25:07,600 --> 00:25:09,110
+uh the verifier, what the verifier does,
+there are two steps. There are there's
+
+1184
+00:25:09,110 --> 00:25:09,120
+there are two steps. There are there's
+ 
+
+1185
+00:25:09,120 --> 00:25:11,190
+there are two steps. There are there's
+the authorization step to actually check
+
+1186
+00:25:11,190 --> 00:25:11,200
+the authorization step to actually check
+ 
+
+1187
+00:25:11,200 --> 00:25:12,789
+the authorization step to actually check
+the constraints versus what it's trying
+
+1188
+00:25:12,789 --> 00:25:12,799
+the constraints versus what it's trying
+ 
+
+1189
+00:25:12,799 --> 00:25:13,669
+the constraints versus what it's trying
+to do. And then there is the
+
+1190
+00:25:13,669 --> 00:25:13,679
+to do. And then there is the
+ 
+
+1191
+00:25:13,679 --> 00:25:16,549
+to do. And then there is the
+cryptographic check to confirm that it
+
+1192
+00:25:16,549 --> 00:25:16,559
+cryptographic check to confirm that it
+ 
+
+1193
+00:25:16,559 --> 00:25:18,950
+cryptographic check to confirm that it
+was signed by the issuer to confirm that
+
+1194
+00:25:18,950 --> 00:25:18,960
+was signed by the issuer to confirm that
+ 
+
+1195
+00:25:18,960 --> 00:25:21,190
+was signed by the issuer to confirm that
+it was coming from the provenence from
+
+1196
+00:25:21,190 --> 00:25:21,200
+it was coming from the provenence from
+ 
+
+1197
+00:25:21,200 --> 00:25:23,269
+it was coming from the provenence from
+the root key of the chain and to confirm
+
+1198
+00:25:23,269 --> 00:25:23,279
+the root key of the chain and to confirm
+ 
+
+1199
+00:25:23,279 --> 00:25:26,789
+the root key of the chain and to confirm
+that it is being sent by the the right
+
+1200
+00:25:26,789 --> 00:25:26,799
+that it is being sent by the the right
+ 
+
+1201
+00:25:26,799 --> 00:25:29,590
+that it is being sent by the the right
+agent. So we have an envelope um an
+
+1202
+00:25:29,590 --> 00:25:29,600
+agent. So we have an envelope um an
+ 
+
+1203
+00:25:29,600 --> 00:25:31,110
+agent. So we have an envelope um an
+envelope structure where you have the
+
+1204
+00:25:31,110 --> 00:25:31,120
+envelope structure where you have the
+ 
+
+1205
+00:25:31,120 --> 00:25:32,710
+envelope structure where you have the
+warranty self which is not a secret but
+
+1206
+00:25:32,710 --> 00:25:32,720
+warranty self which is not a secret but
+ 
+
+1207
+00:25:32,720 --> 00:25:34,070
+warranty self which is not a secret but
+in the envelope you have all those
+
+1208
+00:25:34,070 --> 00:25:34,080
+in the envelope you have all those
+ 
+
+1209
+00:25:34,080 --> 00:25:35,830
+in the envelope you have all those
+signatures and the other evidence that
+
+1210
+00:25:35,830 --> 00:25:35,840
+signatures and the other evidence that
+ 
+
+1211
+00:25:35,840 --> 00:25:37,909
+signatures and the other evidence that
+prove that the agent is supposed to do
+
+1212
+00:25:37,909 --> 00:25:37,919
+prove that the agent is supposed to do
+ 
+
+1213
+00:25:37,919 --> 00:25:39,909
+prove that the agent is supposed to do
+what it is doing. Uh did I answer the
+
+1214
+00:25:39,909 --> 00:25:39,919
+what it is doing. Uh did I answer the
+ 
+
+1215
+00:25:39,919 --> 00:25:43,750
+what it is doing. Uh did I answer the
+question?
+
+1216
+00:25:43,750 --> 00:25:43,760
+
+ 
+
+1217
+00:25:43,760 --> 00:25:52,950
+
+All right, any other questions?
+
+1218
+00:25:52,950 --> 00:25:52,960
+
+ 
+
+1219
+00:25:52,960 --> 00:25:55,909
+
+>> Hey, great talk Nikki. Um, so I'm
+
+1220
+00:25:55,909 --> 00:25:55,919
+>> Hey, great talk Nikki. Um, so I'm
+ 
+
+1221
+00:25:55,919 --> 00:25:57,750
+>> Hey, great talk Nikki. Um, so I'm
+wondering how do you map these
+
+1222
+00:25:57,750 --> 00:25:57,760
+wondering how do you map these
+ 
+
+1223
+00:25:57,760 --> 00:26:00,549
+wondering how do you map these
+capabilities to my domain specific
+
+1224
+00:26:00,549 --> 00:26:00,559
+capabilities to my domain specific
+ 
+
+1225
+00:26:00,559 --> 00:26:02,630
+capabilities to my domain specific
+permissions? Like for example, I might
+
+1226
+00:26:02,630 --> 00:26:02,640
+permissions? Like for example, I might
+ 
+
+1227
+00:26:02,640 --> 00:26:05,830
+permissions? Like for example, I might
+be using oath related on my applications
+
+1228
+00:26:05,830 --> 00:26:05,840
+be using oath related on my applications
+ 
+
+1229
+00:26:05,840 --> 00:26:09,430
+be using oath related on my applications
+or AWS or any of the other things. So
+
+1230
+00:26:09,430 --> 00:26:09,440
+or AWS or any of the other things. So
+ 
+
+1231
+00:26:09,440 --> 00:26:11,909
+or AWS or any of the other things. So
+how is that capability translated into
+
+1232
+00:26:11,909 --> 00:26:11,919
+how is that capability translated into
+ 
+
+1233
+00:26:11,919 --> 00:26:15,510
+how is that capability translated into
+actual action uh permissions?
+
+1234
+00:26:15,510 --> 00:26:15,520
+actual action uh permissions?
+ 
+
+1235
+00:26:15,520 --> 00:26:17,110
+actual action uh permissions?
+>> Okay. Yeah. So to talk about our
+
+1236
+00:26:17,110 --> 00:26:17,120
+>> Okay. Yeah. So to talk about our
+ 
+
+1237
+00:26:17,120 --> 00:26:18,870
+>> Okay. Yeah. So to talk about our
+constraint language actually which is
+
+1238
+00:26:18,870 --> 00:26:18,880
+constraint language actually which is
+ 
+
+1239
+00:26:18,880 --> 00:26:21,029
+constraint language actually which is
+was which was a a big discussion because
+
+1240
+00:26:21,029 --> 00:26:21,039
+was which was a a big discussion because
+ 
+
+1241
+00:26:21,039 --> 00:26:23,669
+was which was a a big discussion because
+we were optimizing for expressivity
+
+1242
+00:26:23,669 --> 00:26:23,679
+we were optimizing for expressivity
+ 
+
+1243
+00:26:23,679 --> 00:26:26,390
+we were optimizing for expressivity
+security and and uh performance. So our
+
+1244
+00:26:26,390 --> 00:26:26,400
+security and and uh performance. So our
+ 
+
+1245
+00:26:26,400 --> 00:26:28,310
+security and and uh performance. So our
+constraint language has the basic
+
+1246
+00:26:28,310 --> 00:26:28,320
+constraint language has the basic
+ 
+
+1247
+00:26:28,320 --> 00:26:30,230
+constraint language has the basic
+logical operations the rejects I
+
+1248
+00:26:30,230 --> 00:26:30,240
+logical operations the rejects I
+ 
+
+1249
+00:26:30,240 --> 00:26:32,950
+logical operations the rejects I
+mentioned about and we also support CL
+
+1250
+00:26:32,950 --> 00:26:32,960
+mentioned about and we also support CL
+ 
+
+1251
+00:26:32,960 --> 00:26:35,110
+mentioned about and we also support CL
+so that you can express uh everything
+
+1252
+00:26:35,110 --> 00:26:35,120
+so that you can express uh everything
+ 
+
+1253
+00:26:35,120 --> 00:26:37,669
+so that you can express uh everything
+you want. Now if there are two pieces of
+
+1254
+00:26:37,669 --> 00:26:37,679
+you want. Now if there are two pieces of
+ 
+
+1255
+00:26:37,679 --> 00:26:39,510
+you want. Now if there are two pieces of
+the question if I understand well one is
+
+1256
+00:26:39,510 --> 00:26:39,520
+the question if I understand well one is
+ 
+
+1257
+00:26:39,520 --> 00:26:42,230
+the question if I understand well one is
+the API call uh that is typically like
+
+1258
+00:26:42,230 --> 00:26:42,240
+the API call uh that is typically like
+ 
+
+1259
+00:26:42,240 --> 00:26:44,710
+the API call uh that is typically like
+any other tool call that you can do if
+
+1260
+00:26:44,710 --> 00:26:44,720
+any other tool call that you can do if
+ 
+
+1261
+00:26:44,720 --> 00:26:47,590
+any other tool call that you can do if
+you're using MCP we we can map to the
+
+1262
+00:26:47,590 --> 00:26:47,600
+you're using MCP we we can map to the
+ 
+
+1263
+00:26:47,600 --> 00:26:49,350
+you're using MCP we we can map to the
+tool and the argument if you're calling
+
+1264
+00:26:49,350 --> 00:26:49,360
+tool and the argument if you're calling
+ 
+
+1265
+00:26:49,360 --> 00:26:53,110
+tool and the argument if you're calling
+a a random URL we can do the the uh the
+
+1266
+00:26:53,110 --> 00:26:53,120
+a a random URL we can do the the uh the
+ 
+
+1267
+00:26:53,120 --> 00:26:55,669
+a a random URL we can do the the uh the
+host and the the path or the other
+
+1268
+00:26:55,669 --> 00:26:55,679
+host and the the path or the other
+ 
+
+1269
+00:26:55,679 --> 00:26:58,390
+host and the the path or the other
+arguments if you're calling any IP API
+
+1270
+00:26:58,390 --> 00:26:58,400
+arguments if you're calling any IP API
+ 
+
+1271
+00:26:58,400 --> 00:27:00,230
+arguments if you're calling any IP API
+we can there are two ways to go about it
+
+1272
+00:27:00,230 --> 00:27:00,240
+we can there are two ways to go about it
+ 
+
+1273
+00:27:00,240 --> 00:27:03,990
+we can there are two ways to go about it
+either you can uh have teno what we
+
+1274
+00:27:03,990 --> 00:27:04,000
+either you can uh have teno what we
+ 
+
+1275
+00:27:04,000 --> 00:27:06,710
+either you can uh have teno what we
+prefer is that teno sits on the top of
+
+1276
+00:27:06,710 --> 00:27:06,720
+prefer is that teno sits on the top of
+ 
+
+1277
+00:27:06,720 --> 00:27:08,630
+prefer is that teno sits on the top of
+your actual authorization in the system.
+
+1278
+00:27:08,630 --> 00:27:08,640
+your actual authorization in the system.
+ 
+
+1279
+00:27:08,640 --> 00:27:11,350
+your actual authorization in the system.
+So before actually you hit your IM on
+
+1280
+00:27:11,350 --> 00:27:11,360
+So before actually you hit your IM on
+ 
+
+1281
+00:27:11,360 --> 00:27:15,029
+So before actually you hit your IM on
+GCP or IM on AWS, you check that the API
+
+1282
+00:27:15,029 --> 00:27:15,039
+GCP or IM on AWS, you check that the API
+ 
+
+1283
+00:27:15,039 --> 00:27:17,110
+GCP or IM on AWS, you check that the API
+call is in the orient, we express it
+
+1284
+00:27:17,110 --> 00:27:17,120
+call is in the orient, we express it
+ 
+
+1285
+00:27:17,120 --> 00:27:19,190
+call is in the orient, we express it
+just like you would do any other API
+
+1286
+00:27:19,190 --> 00:27:19,200
+just like you would do any other API
+ 
+
+1287
+00:27:19,200 --> 00:27:21,350
+just like you would do any other API
+call and when it hits the authorization
+
+1288
+00:27:21,350 --> 00:27:21,360
+call and when it hits the authorization
+ 
+
+1289
+00:27:21,360 --> 00:27:23,590
+call and when it hits the authorization
+system of your your cloud, it does
+
+1290
+00:27:23,590 --> 00:27:23,600
+system of your your cloud, it does
+ 
+
+1291
+00:27:23,600 --> 00:27:25,350
+system of your your cloud, it does
+whatever it wants. But in most of the
+
+1292
+00:27:25,350 --> 00:27:25,360
+whatever it wants. But in most of the
+ 
+
+1293
+00:27:25,360 --> 00:27:28,310
+whatever it wants. But in most of the
+cases because the workload identity is
+
+1294
+00:27:28,310 --> 00:27:28,320
+cases because the workload identity is
+ 
+
+1295
+00:27:28,320 --> 00:27:29,750
+cases because the workload identity is
+scoped to the workload, the
+
+1296
+00:27:29,750 --> 00:27:29,760
+scoped to the workload, the
+ 
+
+1297
+00:27:29,760 --> 00:27:31,750
+scoped to the workload, the
+infrastructure, it is way wider than
+
+1298
+00:27:31,750 --> 00:27:31,760
+infrastructure, it is way wider than
+ 
+
+1299
+00:27:31,760 --> 00:27:33,430
+infrastructure, it is way wider than
+individual task that you're doing. So if
+
+1300
+00:27:33,430 --> 00:27:33,440
+individual task that you're doing. So if
+ 
+
+1301
+00:27:33,440 --> 00:27:35,750
+individual task that you're doing. So if
+that task is not in the wallet, the ten
+
+1302
+00:27:35,750 --> 00:27:35,760
+that task is not in the wallet, the ten
+ 
+
+1303
+00:27:35,760 --> 00:27:37,510
+that task is not in the wallet, the ten
+tenno is going to stop it in the moment.
+
+1304
+00:27:37,510 --> 00:27:37,520
+tenno is going to stop it in the moment.
+ 
+
+1305
+00:27:37,520 --> 00:27:39,750
+tenno is going to stop it in the moment.
+But there's another question I think I
+
+1306
+00:27:39,750 --> 00:27:39,760
+But there's another question I think I
+ 
+
+1307
+00:27:39,760 --> 00:27:41,590
+But there's another question I think I
+want to address there where like
+
+1308
+00:27:41,590 --> 00:27:41,600
+want to address there where like
+ 
+
+1309
+00:27:41,600 --> 00:27:42,950
+want to address there where like
+especially when it comes to approvers
+
+1310
+00:27:42,950 --> 00:27:42,960
+especially when it comes to approvers
+ 
+
+1311
+00:27:42,960 --> 00:27:44,710
+especially when it comes to approvers
+and all like you have real human
+
+1312
+00:27:44,710 --> 00:27:44,720
+and all like you have real human
+ 
+
+1313
+00:27:44,720 --> 00:27:48,470
+and all like you have real human
+identities and uh that is more on the uh
+
+1314
+00:27:48,470 --> 00:27:48,480
+identities and uh that is more on the uh
+ 
+
+1315
+00:27:48,480 --> 00:27:49,590
+identities and uh that is more on the uh
+enterprise design that we've been
+
+1316
+00:27:49,590 --> 00:27:49,600
+enterprise design that we've been
+ 
+
+1317
+00:27:49,600 --> 00:27:50,950
+enterprise design that we've been
+working on as well where you can
+
+1318
+00:27:50,950 --> 00:27:50,960
+working on as well where you can
+ 
+
+1319
+00:27:50,960 --> 00:27:52,789
+working on as well where you can
+actually have those approver key pair be
+
+1320
+00:27:52,789 --> 00:27:52,799
+actually have those approver key pair be
+ 
+
+1321
+00:27:52,799 --> 00:27:56,070
+actually have those approver key pair be
+mapped to real human identities that u
+
+1322
+00:27:56,070 --> 00:27:56,080
+mapped to real human identities that u
+ 
+
+1323
+00:27:56,080 --> 00:27:59,430
+mapped to real human identities that u
+your Google ID or your uh actor SSO can
+
+1324
+00:27:59,430 --> 00:27:59,440
+your Google ID or your uh actor SSO can
+ 
+
+1325
+00:27:59,440 --> 00:28:01,190
+your Google ID or your uh actor SSO can
+actually be used to make those approval
+
+1326
+00:28:01,190 --> 00:28:01,200
+actually be used to make those approval
+ 
+
+1327
+00:28:01,200 --> 00:28:04,230
+actually be used to make those approval
+without losing the cryptographic purity
+
+1328
+00:28:04,230 --> 00:28:04,240
+without losing the cryptographic purity
+ 
+
+1329
+00:28:04,240 --> 00:28:09,909
+without losing the cryptographic purity
+of the protocol itself. Yeah,
+
+1330
+00:28:09,909 --> 00:28:09,919
+
+ 
+
+1331
+00:28:09,919 --> 00:28:11,909
+
+>> thanks a lot. I really love this idea of
+
+1332
+00:28:11,909 --> 00:28:11,919
+>> thanks a lot. I really love this idea of
+ 
+
+1333
+00:28:11,919 --> 00:28:13,909
+>> thanks a lot. I really love this idea of
+warrants. I've had the idea the uh
+
+1334
+00:28:13,909 --> 00:28:13,919
+warrants. I've had the idea the uh
+ 
+
+1335
+00:28:13,919 --> 00:28:16,070
+warrants. I've had the idea the uh
+thought for the past couple months after
+
+1336
+00:28:16,070 --> 00:28:16,080
+thought for the past couple months after
+ 
+
+1337
+00:28:16,080 --> 00:28:17,669
+thought for the past couple months after
+doing a bunch of prompter GTFO and
+
+1338
+00:28:17,669 --> 00:28:17,679
+doing a bunch of prompter GTFO and
+ 
+
+1339
+00:28:17,679 --> 00:28:20,149
+doing a bunch of prompter GTFO and
+seeing the havoc where I was like we
+
+1340
+00:28:20,149 --> 00:28:20,159
+seeing the havoc where I was like we
+ 
+
+1341
+00:28:20,159 --> 00:28:22,470
+seeing the havoc where I was like we
+need to like wrap the actions of the AI
+
+1342
+00:28:22,470 --> 00:28:22,480
+need to like wrap the actions of the AI
+ 
+
+1343
+00:28:22,480 --> 00:28:24,470
+need to like wrap the actions of the AI
+agents into like a finite state automa.
+
+1344
+00:28:24,470 --> 00:28:24,480
+agents into like a finite state automa.
+ 
+
+1345
+00:28:24,480 --> 00:28:25,510
+agents into like a finite state automa.
+You know, there's too many horror
+
+1346
+00:28:25,510 --> 00:28:25,520
+You know, there's too many horror
+ 
+
+1347
+00:28:25,520 --> 00:28:27,350
+You know, there's too many horror
+stories out there of like, oh my god, it
+
+1348
+00:28:27,350 --> 00:28:27,360
+stories out there of like, oh my god, it
+ 
+
+1349
+00:28:27,360 --> 00:28:28,549
+stories out there of like, oh my god, it
+did this, it did this, it did this. And
+
+1350
+00:28:28,549 --> 00:28:28,559
+did this, it did this, it did this. And
+ 
+
+1351
+00:28:28,559 --> 00:28:30,070
+did this, it did this, it did this. And
+it seems like this is, especially the
+
+1352
+00:28:30,070 --> 00:28:30,080
+it seems like this is, especially the
+ 
+
+1353
+00:28:30,080 --> 00:28:31,350
+it seems like this is, especially the
+open source section, it seems like this
+
+1354
+00:28:31,350 --> 00:28:31,360
+open source section, it seems like this
+ 
+
+1355
+00:28:31,360 --> 00:28:32,710
+open source section, it seems like this
+is one of the first steps towards like
+
+1356
+00:28:32,710 --> 00:28:32,720
+is one of the first steps towards like
+ 
+
+1357
+00:28:32,720 --> 00:28:34,070
+is one of the first steps towards like
+actually creating that boundary. I
+
+1358
+00:28:34,070 --> 00:28:34,080
+actually creating that boundary. I
+ 
+
+1359
+00:28:34,080 --> 00:28:35,029
+actually creating that boundary. I
+really like it.
+
+1360
+00:28:35,029 --> 00:28:35,039
+really like it.
+ 
+
+1361
+00:28:35,039 --> 00:28:38,919
+really like it.
+>> Thank you very much. Thank you.
+

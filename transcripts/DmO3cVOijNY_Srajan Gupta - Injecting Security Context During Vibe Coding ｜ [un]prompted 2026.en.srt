@@ -1,0 +1,4945 @@
+1
+00:00:05,920 --> 00:00:08,470
+
+Hey everyone. Uh good morning. My name
+
+2
+00:00:08,470 --> 00:00:08,480
+Hey everyone. Uh good morning. My name
+ 
+
+3
+00:00:08,480 --> 00:00:12,150
+Hey everyone. Uh good morning. My name
+is Rajan. Um and I'm going to be talking
+
+4
+00:00:12,150 --> 00:00:12,160
+is Rajan. Um and I'm going to be talking
+ 
+
+5
+00:00:12,160 --> 00:00:14,629
+is Rajan. Um and I'm going to be talking
+about uh injecting security context
+
+6
+00:00:14,629 --> 00:00:14,639
+about uh injecting security context
+ 
+
+7
+00:00:14,639 --> 00:00:17,269
+about uh injecting security context
+during wipe coding.
+
+8
+00:00:17,269 --> 00:00:17,279
+during wipe coding.
+ 
+
+9
+00:00:17,279 --> 00:00:19,910
+during wipe coding.
+Um I'm a senior security engineer at
+
+10
+00:00:19,910 --> 00:00:19,920
+Um I'm a senior security engineer at
+ 
+
+11
+00:00:19,920 --> 00:00:23,509
+Um I'm a senior security engineer at
+Dave. Uh it is a fintech company and my
+
+12
+00:00:23,509 --> 00:00:23,519
+Dave. Uh it is a fintech company and my
+ 
+
+13
+00:00:23,519 --> 00:00:25,509
+Dave. Uh it is a fintech company and my
+focus areas mostly are on threat
+
+14
+00:00:25,509 --> 00:00:25,519
+focus areas mostly are on threat
+ 
+
+15
+00:00:25,519 --> 00:00:27,349
+focus areas mostly are on threat
+modeling, secure by design, secure by
+
+16
+00:00:27,349 --> 00:00:27,359
+modeling, secure by design, secure by
+ 
+
+17
+00:00:27,359 --> 00:00:29,589
+modeling, secure by design, secure by
+defaults. If you guys want to connect
+
+18
+00:00:29,589 --> 00:00:29,599
+defaults. If you guys want to connect
+ 
+
+19
+00:00:29,599 --> 00:00:31,669
+defaults. If you guys want to connect
+with me, LinkedIn is the bless place. I
+
+20
+00:00:31,669 --> 00:00:31,679
+with me, LinkedIn is the bless place. I
+ 
+
+21
+00:00:31,679 --> 00:00:33,750
+with me, LinkedIn is the bless place. I
+also do write a little bit about
+
+22
+00:00:33,750 --> 00:00:33,760
+also do write a little bit about
+ 
+
+23
+00:00:33,760 --> 00:00:35,990
+also do write a little bit about
+security. Those are mostly my 2 a.m.
+
+24
+00:00:35,990 --> 00:00:36,000
+security. Those are mostly my 2 a.m.
+ 
+
+25
+00:00:36,000 --> 00:00:38,470
+security. Those are mostly my 2 a.m.
+thoughts. So if you want to read those,
+
+26
+00:00:38,470 --> 00:00:38,480
+thoughts. So if you want to read those,
+ 
+
+27
+00:00:38,480 --> 00:00:42,069
+thoughts. So if you want to read those,
+uh do subscribe.
+
+28
+00:00:42,069 --> 00:00:42,079
+
+ 
+
+29
+00:00:42,079 --> 00:00:43,670
+
+What are we going to talk about? A
+
+30
+00:00:43,670 --> 00:00:43,680
+What are we going to talk about? A
+ 
+
+31
+00:00:43,680 --> 00:00:45,990
+What are we going to talk about? A
+little bit about the problem. Uh what
+
+32
+00:00:45,990 --> 00:00:46,000
+little bit about the problem. Uh what
+ 
+
+33
+00:00:46,000 --> 00:00:49,029
+little bit about the problem. Uh what
+exactly we are solving, my approach,
+
+34
+00:00:49,029 --> 00:00:49,039
+exactly we are solving, my approach,
+ 
+
+35
+00:00:49,039 --> 00:00:51,830
+exactly we are solving, my approach,
+um how it works and why it works and
+
+36
+00:00:51,830 --> 00:00:51,840
+um how it works and why it works and
+ 
+
+37
+00:00:51,840 --> 00:00:54,389
+um how it works and why it works and
+small walk through and then how you can
+
+38
+00:00:54,389 --> 00:00:54,399
+small walk through and then how you can
+ 
+
+39
+00:00:54,399 --> 00:00:59,110
+small walk through and then how you can
+use it uh yourself.
+
+40
+00:00:59,110 --> 00:00:59,120
+
+ 
+
+41
+00:00:59,120 --> 00:01:02,069
+
+But first, let me take you a year back
+
+42
+00:01:02,069 --> 00:01:02,079
+But first, let me take you a year back
+ 
+
+43
+00:01:02,079 --> 00:01:05,590
+But first, let me take you a year back
+uh March 2025. Um how many guys have
+
+44
+00:01:05,590 --> 00:01:05,600
+uh March 2025. Um how many guys have
+ 
+
+45
+00:01:05,600 --> 00:01:08,550
+uh March 2025. Um how many guys have
+seen this Twitter post? Pretty much.
+
+46
+00:01:08,550 --> 00:01:08,560
+seen this Twitter post? Pretty much.
+ 
+
+47
+00:01:08,560 --> 00:01:12,550
+seen this Twitter post? Pretty much.
+Okay. Um this guy, he wipe coded an app
+
+48
+00:01:12,550 --> 00:01:12,560
+Okay. Um this guy, he wipe coded an app
+ 
+
+49
+00:01:12,560 --> 00:01:15,109
+Okay. Um this guy, he wipe coded an app
+uh for a few days and then he shared a
+
+50
+00:01:15,109 --> 00:01:15,119
+uh for a few days and then he shared a
+ 
+
+51
+00:01:15,119 --> 00:01:17,590
+uh for a few days and then he shared a
+lot about his app, but after I think a
+
+52
+00:01:17,590 --> 00:01:17,600
+lot about his app, but after I think a
+ 
+
+53
+00:01:17,600 --> 00:01:21,510
+lot about his app, but after I think a
+week, he received some attacks uh and he
+
+54
+00:01:21,510 --> 00:01:21,520
+week, he received some attacks uh and he
+ 
+
+55
+00:01:21,520 --> 00:01:24,469
+week, he received some attacks uh and he
+did not know what to do.
+
+56
+00:01:24,469 --> 00:01:24,479
+did not know what to do.
+ 
+
+57
+00:01:24,479 --> 00:01:26,230
+did not know what to do.
+um and then he eventually has to shut
+
+58
+00:01:26,230 --> 00:01:26,240
+um and then he eventually has to shut
+ 
+
+59
+00:01:26,240 --> 00:01:28,630
+um and then he eventually has to shut
+down his app.
+
+60
+00:01:28,630 --> 00:01:28,640
+down his app.
+ 
+
+61
+00:01:28,640 --> 00:01:31,990
+down his app.
+So we are today in March 2026 and we're
+
+62
+00:01:31,990 --> 00:01:32,000
+So we are today in March 2026 and we're
+ 
+
+63
+00:01:32,000 --> 00:01:34,710
+So we are today in March 2026 and we're
+still talking about uh wipe coding and
+
+64
+00:01:34,710 --> 00:01:34,720
+still talking about uh wipe coding and
+ 
+
+65
+00:01:34,720 --> 00:01:37,990
+still talking about uh wipe coding and
+the challenges of uh security context
+
+66
+00:01:37,990 --> 00:01:38,000
+the challenges of uh security context
+ 
+
+67
+00:01:38,000 --> 00:01:42,390
+the challenges of uh security context
+within the within the wipe coding.
+
+68
+00:01:42,390 --> 00:01:42,400
+within the within the wipe coding.
+ 
+
+69
+00:01:42,400 --> 00:01:44,390
+within the within the wipe coding.
+I want to I want to also talk about how
+
+70
+00:01:44,390 --> 00:01:44,400
+I want to I want to also talk about how
+ 
+
+71
+00:01:44,400 --> 00:01:46,870
+I want to I want to also talk about how
+we actually got here. Uh in the old days
+
+72
+00:01:46,870 --> 00:01:46,880
+we actually got here. Uh in the old days
+ 
+
+73
+00:01:46,880 --> 00:01:49,510
+we actually got here. Uh in the old days
+we were probably using Stack Overflow to
+
+74
+00:01:49,510 --> 00:01:49,520
+we were probably using Stack Overflow to
+ 
+
+75
+00:01:49,520 --> 00:01:52,310
+we were probably using Stack Overflow to
+copy paste a lot of code. Uh but these
+
+76
+00:01:52,310 --> 00:01:52,320
+copy paste a lot of code. Uh but these
+ 
+
+77
+00:01:52,320 --> 00:01:54,950
+copy paste a lot of code. Uh but these
+days um we do a lot of prompt
+
+78
+00:01:54,950 --> 00:01:54,960
+days um we do a lot of prompt
+ 
+
+79
+00:01:54,960 --> 00:01:57,910
+days um we do a lot of prompt
+engineering. Um the current workflow
+
+80
+00:01:57,910 --> 00:01:57,920
+engineering. Um the current workflow
+ 
+
+81
+00:01:57,920 --> 00:02:00,469
+engineering. Um the current workflow
+that we follow right now is we see stuff
+
+82
+00:02:00,469 --> 00:02:00,479
+that we follow right now is we see stuff
+ 
+
+83
+00:02:00,479 --> 00:02:03,670
+that we follow right now is we see stuff
+or probably think stuff uh we say or
+
+84
+00:02:03,670 --> 00:02:03,680
+or probably think stuff uh we say or
+ 
+
+85
+00:02:03,680 --> 00:02:07,109
+or probably think stuff uh we say or
+prompt uh we click on accept all and
+
+86
+00:02:07,109 --> 00:02:07,119
+prompt uh we click on accept all and
+ 
+
+87
+00:02:07,119 --> 00:02:10,070
+prompt uh we click on accept all and
+then we basically run stuff. The focus
+
+88
+00:02:10,070 --> 00:02:10,080
+then we basically run stuff. The focus
+ 
+
+89
+00:02:10,080 --> 00:02:12,869
+then we basically run stuff. The focus
+these days is mostly around uh is my
+
+90
+00:02:12,869 --> 00:02:12,879
+these days is mostly around uh is my
+ 
+
+91
+00:02:12,879 --> 00:02:15,190
+these days is mostly around uh is my
+code working rather than is my code
+
+92
+00:02:15,190 --> 00:02:15,200
+code working rather than is my code
+ 
+
+93
+00:02:15,200 --> 00:02:17,190
+code working rather than is my code
+secure.
+
+94
+00:02:17,190 --> 00:02:17,200
+secure.
+ 
+
+95
+00:02:17,200 --> 00:02:19,350
+secure.
+Due to this whole workflow, one of my
+
+96
+00:02:19,350 --> 00:02:19,360
+Due to this whole workflow, one of my
+ 
+
+97
+00:02:19,360 --> 00:02:22,790
+Due to this whole workflow, one of my
+biggest fears is that one day my grandma
+
+98
+00:02:22,790 --> 00:02:22,800
+biggest fears is that one day my grandma
+ 
+
+99
+00:02:22,800 --> 00:02:24,949
+biggest fears is that one day my grandma
+will call me and say that I have built
+
+100
+00:02:24,949 --> 00:02:24,959
+will call me and say that I have built
+ 
+
+101
+00:02:24,959 --> 00:02:27,350
+will call me and say that I have built
+this new dog walking app. Can you please
+
+102
+00:02:27,350 --> 00:02:27,360
+this new dog walking app. Can you please
+ 
+
+103
+00:02:27,360 --> 00:02:30,309
+this new dog walking app. Can you please
+use it? And I'm actually not ready for
+
+104
+00:02:30,309 --> 00:02:30,319
+use it? And I'm actually not ready for
+ 
+
+105
+00:02:30,319 --> 00:02:33,110
+use it? And I'm actually not ready for
+that.
+
+106
+00:02:33,110 --> 00:02:33,120
+that.
+ 
+
+107
+00:02:33,120 --> 00:02:36,309
+that.
+Now the challenge is um
+
+108
+00:02:36,309 --> 00:02:36,319
+Now the challenge is um
+ 
+
+109
+00:02:36,319 --> 00:02:39,350
+Now the challenge is um
+in the appsac world um we know like all
+
+110
+00:02:39,350 --> 00:02:39,360
+in the appsac world um we know like all
+ 
+
+111
+00:02:39,360 --> 00:02:41,110
+in the appsac world um we know like all
+of the vendors probably are shouting
+
+112
+00:02:41,110 --> 00:02:41,120
+of the vendors probably are shouting
+ 
+
+113
+00:02:41,120 --> 00:02:43,350
+of the vendors probably are shouting
+that the developer to security ratio is
+
+114
+00:02:43,350 --> 00:02:43,360
+that the developer to security ratio is
+ 
+
+115
+00:02:43,360 --> 00:02:47,589
+that the developer to security ratio is
+100 is to1. Um there are thousands of
+
+116
+00:02:47,589 --> 00:02:47,599
+100 is to1. Um there are thousands of
+ 
+
+117
+00:02:47,599 --> 00:02:50,550
+100 is to1. Um there are thousands of
+issues that we have to deal with but the
+
+118
+00:02:50,550 --> 00:02:50,560
+issues that we have to deal with but the
+ 
+
+119
+00:02:50,560 --> 00:02:53,589
+issues that we have to deal with but the
+main challenge is with the increase in
+
+120
+00:02:53,589 --> 00:02:53,599
+main challenge is with the increase in
+ 
+
+121
+00:02:53,599 --> 00:02:55,509
+main challenge is with the increase in
+the code development
+
+122
+00:02:55,509 --> 00:02:55,519
+the code development
+ 
+
+123
+00:02:55,519 --> 00:02:59,190
+the code development
+um we are we will only be able to catch
+
+124
+00:02:59,190 --> 00:02:59,200
+um we are we will only be able to catch
+ 
+
+125
+00:02:59,200 --> 00:03:04,390
+um we are we will only be able to catch
+40% of the uh bugs or security flaws.
+
+126
+00:03:04,390 --> 00:03:04,400
+40% of the uh bugs or security flaws.
+ 
+
+127
+00:03:04,400 --> 00:03:07,990
+40% of the uh bugs or security flaws.
+So uh can we what what exactly are we
+
+128
+00:03:07,990 --> 00:03:08,000
+So uh can we what what exactly are we
+ 
+
+129
+00:03:08,000 --> 00:03:11,589
+So uh can we what what exactly are we
+missing in those 60% of the flaws? Um
+
+130
+00:03:11,589 --> 00:03:11,599
+missing in those 60% of the flaws? Um
+ 
+
+131
+00:03:11,599 --> 00:03:13,270
+missing in those 60% of the flaws? Um
+these are basically when we don't really
+
+132
+00:03:13,270 --> 00:03:13,280
+these are basically when we don't really
+ 
+
+133
+00:03:13,280 --> 00:03:14,869
+these are basically when we don't really
+have a deep understanding of our
+
+134
+00:03:14,869 --> 00:03:14,879
+have a deep understanding of our
+ 
+
+135
+00:03:14,879 --> 00:03:18,550
+have a deep understanding of our
+security requirements. Um the accept all
+
+136
+00:03:18,550 --> 00:03:18,560
+security requirements. Um the accept all
+ 
+
+137
+00:03:18,560 --> 00:03:20,229
+security requirements. Um the accept all
+culture leads to hidden bugs and
+
+138
+00:03:20,229 --> 00:03:20,239
+culture leads to hidden bugs and
+ 
+
+139
+00:03:20,239 --> 00:03:23,750
+culture leads to hidden bugs and
+structural mess. Um there's a there's a
+
+140
+00:03:23,750 --> 00:03:23,760
+structural mess. Um there's a there's a
+ 
+
+141
+00:03:23,760 --> 00:03:25,910
+structural mess. Um there's a there's a
+ton of code that has been written and we
+
+142
+00:03:25,910 --> 00:03:25,920
+ton of code that has been written and we
+ 
+
+143
+00:03:25,920 --> 00:03:27,670
+ton of code that has been written and we
+don't know really why it has been
+
+144
+00:03:27,670 --> 00:03:27,680
+don't know really why it has been
+ 
+
+145
+00:03:27,680 --> 00:03:31,190
+don't know really why it has been
+written. um AI also replicate insecure
+
+146
+00:03:31,190 --> 00:03:31,200
+written. um AI also replicate insecure
+ 
+
+147
+00:03:31,200 --> 00:03:33,190
+written. um AI also replicate insecure
+patterns that are available from the
+
+148
+00:03:33,190 --> 00:03:33,200
+patterns that are available from the
+ 
+
+149
+00:03:33,200 --> 00:03:34,949
+patterns that are available from the
+public repositories
+
+150
+00:03:34,949 --> 00:03:34,959
+public repositories
+ 
+
+151
+00:03:34,959 --> 00:03:38,789
+public repositories
+and the fact that the code that is that
+
+152
+00:03:38,789 --> 00:03:38,799
+and the fact that the code that is that
+ 
+
+153
+00:03:38,799 --> 00:03:41,589
+and the fact that the code that is that
+is generated seems plausible but it is
+
+154
+00:03:41,589 --> 00:03:41,599
+is generated seems plausible but it is
+ 
+
+155
+00:03:41,599 --> 00:03:44,550
+is generated seems plausible but it is
+actually insecure code.
+
+156
+00:03:44,550 --> 00:03:44,560
+actually insecure code.
+ 
+
+157
+00:03:44,560 --> 00:03:47,910
+actually insecure code.
+Now the challenge really is that why
+
+158
+00:03:47,910 --> 00:03:47,920
+Now the challenge really is that why
+ 
+
+159
+00:03:47,920 --> 00:03:50,789
+Now the challenge really is that why
+can't we use the traditional methods of
+
+160
+00:03:50,789 --> 00:03:50,799
+can't we use the traditional methods of
+ 
+
+161
+00:03:50,799 --> 00:03:52,550
+can't we use the traditional methods of
+you know security detection and
+
+162
+00:03:52,550 --> 00:03:52,560
+you know security detection and
+ 
+
+163
+00:03:52,560 --> 00:03:55,270
+you know security detection and
+everything um
+
+164
+00:03:55,270 --> 00:03:55,280
+everything um
+ 
+
+165
+00:03:55,280 --> 00:03:58,309
+everything um
+with within white coding as well. Well,
+
+166
+00:03:58,309 --> 00:03:58,319
+with within white coding as well. Well,
+ 
+
+167
+00:03:58,319 --> 00:04:01,350
+with within white coding as well. Well,
+we can still use it, but the speed at
+
+168
+00:04:01,350 --> 00:04:01,360
+we can still use it, but the speed at
+ 
+
+169
+00:04:01,360 --> 00:04:03,350
+we can still use it, but the speed at
+which the code is being developed is
+
+170
+00:04:03,350 --> 00:04:03,360
+which the code is being developed is
+ 
+
+171
+00:04:03,360 --> 00:04:07,830
+which the code is being developed is
+really uh not up to the mark uh with
+
+172
+00:04:07,830 --> 00:04:07,840
+really uh not up to the mark uh with
+ 
+
+173
+00:04:07,840 --> 00:04:11,910
+really uh not up to the mark uh with
+with VIP coding. Not only that, but uh
+
+174
+00:04:11,910 --> 00:04:11,920
+with VIP coding. Not only that, but uh
+ 
+
+175
+00:04:11,920 --> 00:04:14,070
+with VIP coding. Not only that, but uh
+the design flaws they are basically not
+
+176
+00:04:14,070 --> 00:04:14,080
+the design flaws they are basically not
+ 
+
+177
+00:04:14,080 --> 00:04:16,310
+the design flaws they are basically not
+going to be caught in the traditional uh
+
+178
+00:04:16,310 --> 00:04:16,320
+going to be caught in the traditional uh
+ 
+
+179
+00:04:16,320 --> 00:04:19,430
+going to be caught in the traditional uh
+CI/CD scans.
+
+180
+00:04:19,430 --> 00:04:19,440
+CI/CD scans.
+ 
+
+181
+00:04:19,440 --> 00:04:21,590
+CI/CD scans.
+Well, you can you can argue that we can
+
+182
+00:04:21,590 --> 00:04:21,600
+Well, you can you can argue that we can
+ 
+
+183
+00:04:21,600 --> 00:04:23,350
+Well, you can you can argue that we can
+review we can threat model every
+
+184
+00:04:23,350 --> 00:04:23,360
+review we can threat model every
+ 
+
+185
+00:04:23,360 --> 00:04:26,790
+review we can threat model every
+feature, every new endpoint, uh every
+
+186
+00:04:26,790 --> 00:04:26,800
+feature, every new endpoint, uh every
+ 
+
+187
+00:04:26,800 --> 00:04:30,629
+feature, every new endpoint, uh every
+new system um and then
+
+188
+00:04:30,629 --> 00:04:30,639
+new system um and then
+ 
+
+189
+00:04:30,639 --> 00:04:32,550
+new system um and then
+create new tickets, new prompts and then
+
+190
+00:04:32,550 --> 00:04:32,560
+create new tickets, new prompts and then
+ 
+
+191
+00:04:32,560 --> 00:04:35,189
+create new tickets, new prompts and then
+feed them during web coding. But and
+
+192
+00:04:35,189 --> 00:04:35,199
+feed them during web coding. But and
+ 
+
+193
+00:04:35,199 --> 00:04:36,950
+feed them during web coding. But and
+there are actually companies that are
+
+194
+00:04:36,950 --> 00:04:36,960
+there are actually companies that are
+ 
+
+195
+00:04:36,960 --> 00:04:39,670
+there are actually companies that are
+working on this on automating this whole
+
+196
+00:04:39,670 --> 00:04:39,680
+working on this on automating this whole
+ 
+
+197
+00:04:39,680 --> 00:04:42,870
+working on this on automating this whole
+workflow. But the challenge there is
+
+198
+00:04:42,870 --> 00:04:42,880
+workflow. But the challenge there is
+ 
+
+199
+00:04:42,880 --> 00:04:45,670
+workflow. But the challenge there is
+accuracy. uh how accurately they can
+
+200
+00:04:45,670 --> 00:04:45,680
+accuracy. uh how accurately they can
+ 
+
+201
+00:04:45,680 --> 00:04:50,390
+accuracy. uh how accurately they can
+detect what uh security context we need
+
+202
+00:04:50,390 --> 00:04:50,400
+detect what uh security context we need
+ 
+
+203
+00:04:50,400 --> 00:04:52,710
+detect what uh security context we need
+and because of that it makes them
+
+204
+00:04:52,710 --> 00:04:52,720
+and because of that it makes them
+ 
+
+205
+00:04:52,720 --> 00:04:55,749
+and because of that it makes them
+unscalable as well.
+
+206
+00:04:55,749 --> 00:04:55,759
+unscalable as well.
+ 
+
+207
+00:04:55,759 --> 00:04:58,629
+unscalable as well.
+So the real question is can we wipe
+
+208
+00:04:58,629 --> 00:04:58,639
+So the real question is can we wipe
+ 
+
+209
+00:04:58,639 --> 00:05:01,510
+So the real question is can we wipe
+securely given the constraints that the
+
+210
+00:05:01,510 --> 00:05:01,520
+securely given the constraints that the
+ 
+
+211
+00:05:01,520 --> 00:05:03,909
+securely given the constraints that the
+current approach doesn't scale. It has
+
+212
+00:05:03,909 --> 00:05:03,919
+current approach doesn't scale. It has
+ 
+
+213
+00:05:03,919 --> 00:05:06,550
+current approach doesn't scale. It has
+to match with the dev speed and it has
+
+214
+00:05:06,550 --> 00:05:06,560
+to match with the dev speed and it has
+ 
+
+215
+00:05:06,560 --> 00:05:09,350
+to match with the dev speed and it has
+to be within the dev workflow. The apps
+
+216
+00:05:09,350 --> 00:05:09,360
+to be within the dev workflow. The apps
+ 
+
+217
+00:05:09,360 --> 00:05:11,590
+to be within the dev workflow. The apps
+folks really care about developer not
+
+218
+00:05:11,590 --> 00:05:11,600
+folks really care about developer not
+ 
+
+219
+00:05:11,600 --> 00:05:14,070
+folks really care about developer not
+leaving their workflows. So that is one
+
+220
+00:05:14,070 --> 00:05:14,080
+leaving their workflows. So that is one
+ 
+
+221
+00:05:14,080 --> 00:05:16,790
+leaving their workflows. So that is one
+of the biggest constraints here.
+
+222
+00:05:16,790 --> 00:05:16,800
+of the biggest constraints here.
+ 
+
+223
+00:05:16,800 --> 00:05:18,950
+of the biggest constraints here.
+One of the approaches that I have been
+
+224
+00:05:18,950 --> 00:05:18,960
+One of the approaches that I have been
+ 
+
+225
+00:05:18,960 --> 00:05:21,189
+One of the approaches that I have been
+uh following is can we put the security
+
+226
+00:05:21,189 --> 00:05:21,199
+uh following is can we put the security
+ 
+
+227
+00:05:21,199 --> 00:05:23,749
+uh following is can we put the security
+context within the code generation loop
+
+228
+00:05:23,749 --> 00:05:23,759
+context within the code generation loop
+ 
+
+229
+00:05:23,759 --> 00:05:27,189
+context within the code generation loop
+itself. Uh what I mean by that is find
+
+230
+00:05:27,189 --> 00:05:27,199
+itself. Uh what I mean by that is find
+ 
+
+231
+00:05:27,199 --> 00:05:29,590
+itself. Uh what I mean by that is find
+what the security context that is needed
+
+232
+00:05:29,590 --> 00:05:29,600
+what the security context that is needed
+ 
+
+233
+00:05:29,600 --> 00:05:32,070
+what the security context that is needed
+and put it before when the code is being
+
+234
+00:05:32,070 --> 00:05:32,080
+and put it before when the code is being
+ 
+
+235
+00:05:32,080 --> 00:05:33,990
+and put it before when the code is being
+written or the code is being generated
+
+236
+00:05:33,990 --> 00:05:34,000
+written or the code is being generated
+ 
+
+237
+00:05:34,000 --> 00:05:37,830
+written or the code is being generated
+by our AI agents. Can we actually verify
+
+238
+00:05:37,830 --> 00:05:37,840
+by our AI agents. Can we actually verify
+ 
+
+239
+00:05:37,840 --> 00:05:40,390
+by our AI agents. Can we actually verify
+uh the output uh immediately after the
+
+240
+00:05:40,390 --> 00:05:40,400
+uh the output uh immediately after the
+ 
+
+241
+00:05:40,400 --> 00:05:43,430
+uh the output uh immediately after the
+generation and can we fix the fix that
+
+242
+00:05:43,430 --> 00:05:43,440
+generation and can we fix the fix that
+ 
+
+243
+00:05:43,440 --> 00:05:46,950
+generation and can we fix the fix that
+code in line within while the intent or
+
+244
+00:05:46,950 --> 00:05:46,960
+code in line within while the intent or
+ 
+
+245
+00:05:46,960 --> 00:05:49,909
+code in line within while the intent or
+the context is still fresh.
+
+246
+00:05:49,909 --> 00:05:49,919
+the context is still fresh.
+ 
+
+247
+00:05:49,919 --> 00:05:51,590
+the context is still fresh.
+What I mean by that is we have the
+
+248
+00:05:51,590 --> 00:05:51,600
+What I mean by that is we have the
+ 
+
+249
+00:05:51,600 --> 00:05:53,909
+What I mean by that is we have the
+context, generate the secure code with
+
+250
+00:05:53,909 --> 00:05:53,919
+context, generate the secure code with
+ 
+
+251
+00:05:53,919 --> 00:05:57,189
+context, generate the secure code with
+that context, scan it right there and
+
+252
+00:05:57,189 --> 00:05:57,199
+that context, scan it right there and
+ 
+
+253
+00:05:57,199 --> 00:05:59,430
+that context, scan it right there and
+patch it immediately.
+
+254
+00:05:59,430 --> 00:05:59,440
+patch it immediately.
+ 
+
+255
+00:05:59,440 --> 00:06:02,070
+patch it immediately.
+The result for that is uh we have fewer
+
+256
+00:06:02,070 --> 00:06:02,080
+The result for that is uh we have fewer
+ 
+
+257
+00:06:02,080 --> 00:06:06,309
+The result for that is uh we have fewer
+findings. We have faster fixes. There's
+
+258
+00:06:06,309 --> 00:06:06,319
+findings. We have faster fixes. There's
+ 
+
+259
+00:06:06,319 --> 00:06:08,070
+findings. We have faster fixes. There's
+not a lot of rework would would be
+
+260
+00:06:08,070 --> 00:06:08,080
+not a lot of rework would would be
+ 
+
+261
+00:06:08,080 --> 00:06:10,309
+not a lot of rework would would be
+needed both from the developers and from
+
+262
+00:06:10,309 --> 00:06:10,319
+needed both from the developers and from
+ 
+
+263
+00:06:10,319 --> 00:06:14,390
+needed both from the developers and from
+the apps folks. Um and it is it is
+
+264
+00:06:14,390 --> 00:06:14,400
+the apps folks. Um and it is it is
+ 
+
+265
+00:06:14,400 --> 00:06:18,230
+the apps folks. Um and it is it is
+within the dev workflow as well.
+
+266
+00:06:18,230 --> 00:06:18,240
+within the dev workflow as well.
+ 
+
+267
+00:06:18,240 --> 00:06:21,270
+within the dev workflow as well.
+Now we talk a lot about context and we
+
+268
+00:06:21,270 --> 00:06:21,280
+Now we talk a lot about context and we
+ 
+
+269
+00:06:21,280 --> 00:06:23,110
+Now we talk a lot about context and we
+all know about context engineering these
+
+270
+00:06:23,110 --> 00:06:23,120
+all know about context engineering these
+ 
+
+271
+00:06:23,120 --> 00:06:27,270
+all know about context engineering these
+days but uh what really uh comprises a
+
+272
+00:06:27,270 --> 00:06:27,280
+days but uh what really uh comprises a
+ 
+
+273
+00:06:27,280 --> 00:06:30,710
+days but uh what really uh comprises a
+security context for wipe coding. Now a
+
+274
+00:06:30,710 --> 00:06:30,720
+security context for wipe coding. Now a
+ 
+
+275
+00:06:30,720 --> 00:06:33,510
+security context for wipe coding. Now a
+dev probably is working on a jet ticket
+
+276
+00:06:33,510 --> 00:06:33,520
+dev probably is working on a jet ticket
+ 
+
+277
+00:06:33,520 --> 00:06:37,029
+dev probably is working on a jet ticket
+u maybe on a PR for a new change that is
+
+278
+00:06:37,029 --> 00:06:37,039
+u maybe on a PR for a new change that is
+ 
+
+279
+00:06:37,039 --> 00:06:40,390
+u maybe on a PR for a new change that is
+a security context. Um, anything that is
+
+280
+00:06:40,390 --> 00:06:40,400
+a security context. Um, anything that is
+ 
+
+281
+00:06:40,400 --> 00:06:42,230
+a security context. Um, anything that is
+specific to the feature that the dev is
+
+282
+00:06:42,230 --> 00:06:42,240
+specific to the feature that the dev is
+ 
+
+283
+00:06:42,240 --> 00:06:45,110
+specific to the feature that the dev is
+working, any relevant best practices or
+
+284
+00:06:45,110 --> 00:06:45,120
+working, any relevant best practices or
+ 
+
+285
+00:06:45,120 --> 00:06:47,510
+working, any relevant best practices or
+internal policies or standards or
+
+286
+00:06:47,510 --> 00:06:47,520
+internal policies or standards or
+ 
+
+287
+00:06:47,520 --> 00:06:49,990
+internal policies or standards or
+compliance requirements. What I call
+
+288
+00:06:49,990 --> 00:06:50,000
+compliance requirements. What I call
+ 
+
+289
+00:06:50,000 --> 00:06:54,230
+compliance requirements. What I call
+them is a security context back
+
+290
+00:06:54,230 --> 00:06:54,240
+them is a security context back
+ 
+
+291
+00:06:54,240 --> 00:06:57,110
+them is a security context back
+and the the code that is generated is
+
+292
+00:06:57,110 --> 00:06:57,120
+and the the code that is generated is
+ 
+
+293
+00:06:57,120 --> 00:06:59,670
+and the the code that is generated is
+constrained by that security context
+
+294
+00:06:59,670 --> 00:06:59,680
+constrained by that security context
+ 
+
+295
+00:06:59,680 --> 00:07:01,749
+constrained by that security context
+back. What I mean by a security context
+
+296
+00:07:01,749 --> 00:07:01,759
+back. What I mean by a security context
+ 
+
+297
+00:07:01,759 --> 00:07:03,990
+back. What I mean by a security context
+is like the data classification
+
+298
+00:07:03,990 --> 00:07:04,000
+is like the data classification
+ 
+
+299
+00:07:04,000 --> 00:07:07,029
+is like the data classification
+policies. For example, let's say if if a
+
+300
+00:07:07,029 --> 00:07:07,039
+policies. For example, let's say if if a
+ 
+
+301
+00:07:07,039 --> 00:07:09,909
+policies. For example, let's say if if a
+developer is working on a PCI
+
+302
+00:07:09,909 --> 00:07:09,919
+developer is working on a PCI
+ 
+
+303
+00:07:09,919 --> 00:07:12,230
+developer is working on a PCI
+application where it has to deal with
+
+304
+00:07:12,230 --> 00:07:12,240
+application where it has to deal with
+ 
+
+305
+00:07:12,240 --> 00:07:15,110
+application where it has to deal with
+card ID. Now your your compliance policy
+
+306
+00:07:15,110 --> 00:07:15,120
+card ID. Now your your compliance policy
+ 
+
+307
+00:07:15,120 --> 00:07:19,029
+card ID. Now your your compliance policy
+says that uh we don't log that card ID
+
+308
+00:07:19,029 --> 00:07:19,039
+says that uh we don't log that card ID
+ 
+
+309
+00:07:19,039 --> 00:07:21,589
+says that uh we don't log that card ID
+in the error messages. Now AI possibly
+
+310
+00:07:21,589 --> 00:07:21,599
+in the error messages. Now AI possibly
+ 
+
+311
+00:07:21,599 --> 00:07:25,029
+in the error messages. Now AI possibly
+doesn't know all of this. U so that data
+
+312
+00:07:25,029 --> 00:07:25,039
+doesn't know all of this. U so that data
+ 
+
+313
+00:07:25,039 --> 00:07:26,870
+doesn't know all of this. U so that data
+classification policies that is written
+
+314
+00:07:26,870 --> 00:07:26,880
+classification policies that is written
+ 
+
+315
+00:07:26,880 --> 00:07:29,510
+classification policies that is written
+in the internal docs will come in handy
+
+316
+00:07:29,510 --> 00:07:29,520
+in the internal docs will come in handy
+ 
+
+317
+00:07:29,520 --> 00:07:33,909
+in the internal docs will come in handy
+at the in the security context pack.
+
+318
+00:07:33,909 --> 00:07:33,919
+at the in the security context pack.
+ 
+
+319
+00:07:33,919 --> 00:07:37,670
+at the in the security context pack.
+what I'm using uh to implement this is
+
+320
+00:07:37,670 --> 00:07:37,680
+what I'm using uh to implement this is
+ 
+
+321
+00:07:37,680 --> 00:07:40,550
+what I'm using uh to implement this is
+uh MCP and I'm going to mention uh some
+
+322
+00:07:40,550 --> 00:07:40,560
+uh MCP and I'm going to mention uh some
+ 
+
+323
+00:07:40,560 --> 00:07:45,909
+uh MCP and I'm going to mention uh some
+other uh possible um tools as well.
+
+324
+00:07:45,909 --> 00:07:45,919
+other uh possible um tools as well.
+ 
+
+325
+00:07:45,919 --> 00:07:49,350
+other uh possible um tools as well.
+Uh the reason why I'm using MCP is uh it
+
+326
+00:07:49,350 --> 00:07:49,360
+Uh the reason why I'm using MCP is uh it
+ 
+
+327
+00:07:49,360 --> 00:07:51,350
+Uh the reason why I'm using MCP is uh it
+is pretty standard protocol that is
+
+328
+00:07:51,350 --> 00:07:51,360
+is pretty standard protocol that is
+ 
+
+329
+00:07:51,360 --> 00:07:54,309
+is pretty standard protocol that is
+being used by multiple different uh
+
+330
+00:07:54,309 --> 00:07:54,319
+being used by multiple different uh
+ 
+
+331
+00:07:54,319 --> 00:07:57,270
+being used by multiple different uh
+coding agents. Um you can also enforce
+
+332
+00:07:57,270 --> 00:07:57,280
+coding agents. Um you can also enforce
+ 
+
+333
+00:07:57,280 --> 00:07:59,990
+coding agents. Um you can also enforce
+permission and uh make it auditable as
+
+334
+00:07:59,990 --> 00:08:00,000
+permission and uh make it auditable as
+ 
+
+335
+00:08:00,000 --> 00:08:03,350
+permission and uh make it auditable as
+well. Um it is composible. You can uh
+
+336
+00:08:03,350 --> 00:08:03,360
+well. Um it is composible. You can uh
+ 
+
+337
+00:08:03,360 --> 00:08:06,710
+well. Um it is composible. You can uh
+plug and play with different uh uh APIs
+
+338
+00:08:06,710 --> 00:08:06,720
+plug and play with different uh uh APIs
+ 
+
+339
+00:08:06,720 --> 00:08:08,790
+plug and play with different uh uh APIs
+like Jira, Confluence, your internal
+
+340
+00:08:08,790 --> 00:08:08,800
+like Jira, Confluence, your internal
+ 
+
+341
+00:08:08,800 --> 00:08:11,110
+like Jira, Confluence, your internal
+policies, even your scanners like
+
+342
+00:08:11,110 --> 00:08:11,120
+policies, even your scanners like
+ 
+
+343
+00:08:11,120 --> 00:08:14,710
+policies, even your scanners like
+security scanners uh as well.
+
+344
+00:08:14,710 --> 00:08:14,720
+security scanners uh as well.
+ 
+
+345
+00:08:14,720 --> 00:08:17,430
+security scanners uh as well.
+It is also within the IDE which means
+
+346
+00:08:17,430 --> 00:08:17,440
+It is also within the IDE which means
+ 
+
+347
+00:08:17,440 --> 00:08:19,430
+It is also within the IDE which means
+like it is within the dev workflow as
+
+348
+00:08:19,430 --> 00:08:19,440
+like it is within the dev workflow as
+ 
+
+349
+00:08:19,440 --> 00:08:22,710
+like it is within the dev workflow as
+well. And one of the biggest thing I
+
+350
+00:08:22,710 --> 00:08:22,720
+well. And one of the biggest thing I
+ 
+
+351
+00:08:22,720 --> 00:08:24,869
+well. And one of the biggest thing I
+like about MCP is basically context on
+
+352
+00:08:24,869 --> 00:08:24,879
+like about MCP is basically context on
+ 
+
+353
+00:08:24,879 --> 00:08:29,430
+like about MCP is basically context on
+demand. If the context is properly
+
+354
+00:08:29,430 --> 00:08:29,440
+demand. If the context is properly
+ 
+
+355
+00:08:29,440 --> 00:08:31,749
+demand. If the context is properly
+um written down,
+
+356
+00:08:31,749 --> 00:08:31,759
+um written down,
+ 
+
+357
+00:08:31,759 --> 00:08:33,829
+um written down,
+it it will not it will not create
+
+358
+00:08:33,829 --> 00:08:33,839
+it it will not it will not create
+ 
+
+359
+00:08:33,839 --> 00:08:38,949
+it it will not it will not create
+monolithic monolithic prompts.
+
+360
+00:08:38,949 --> 00:08:38,959
+monolithic monolithic prompts.
+ 
+
+361
+00:08:38,959 --> 00:08:42,949
+monolithic monolithic prompts.
+>> Here's a highle workflow. Uh what
+
+362
+00:08:42,949 --> 00:08:42,959
+>> Here's a highle workflow. Uh what
+ 
+
+363
+00:08:42,959 --> 00:08:45,670
+>> Here's a highle workflow. Uh what
+>> my tool will probably follow. So there's
+
+364
+00:08:45,670 --> 00:08:45,680
+>> my tool will probably follow. So there's
+ 
+
+365
+00:08:45,680 --> 00:08:48,630
+>> my tool will probably follow. So there's
+a developer who is working on a task. It
+
+366
+00:08:48,630 --> 00:08:48,640
+a developer who is working on a task. It
+ 
+
+367
+00:08:48,640 --> 00:08:50,870
+a developer who is working on a task. It
+provides the task requirements to the
+
+368
+00:08:50,870 --> 00:08:50,880
+provides the task requirements to the
+ 
+
+369
+00:08:50,880 --> 00:08:53,829
+provides the task requirements to the
+agent. Um agent understands the scope,
+
+370
+00:08:53,829 --> 00:08:53,839
+agent. Um agent understands the scope,
+ 
+
+371
+00:08:53,839 --> 00:08:55,750
+agent. Um agent understands the scope,
+the data flows and everything.
+
+372
+00:08:55,750 --> 00:08:55,760
+the data flows and everything.
+ 
+
+373
+00:08:55,760 --> 00:08:59,190
+the data flows and everything.
+uh it calls the MCP for security review
+
+374
+00:08:59,190 --> 00:08:59,200
+uh it calls the MCP for security review
+ 
+
+375
+00:08:59,200 --> 00:09:01,590
+uh it calls the MCP for security review
+which does the pre-coding analysis via
+
+376
+00:09:01,590 --> 00:09:01,600
+which does the pre-coding analysis via
+ 
+
+377
+00:09:01,600 --> 00:09:04,790
+which does the pre-coding analysis via
+the MCP server. It identifies what are
+
+378
+00:09:04,790 --> 00:09:04,800
+the MCP server. It identifies what are
+ 
+
+379
+00:09:04,800 --> 00:09:06,470
+the MCP server. It identifies what are
+the risk, what are the security
+
+380
+00:09:06,470 --> 00:09:06,480
+the risk, what are the security
+ 
+
+381
+00:09:06,480 --> 00:09:09,910
+the risk, what are the security
+guidance, uh all the advices. Uh and
+
+382
+00:09:09,910 --> 00:09:09,920
+guidance, uh all the advices. Uh and
+ 
+
+383
+00:09:09,920 --> 00:09:11,269
+guidance, uh all the advices. Uh and
+then it identify the security
+
+384
+00:09:11,269 --> 00:09:11,279
+then it identify the security
+ 
+
+385
+00:09:11,279 --> 00:09:13,430
+then it identify the security
+requirements and put them into the
+
+386
+00:09:13,430 --> 00:09:13,440
+requirements and put them into the
+ 
+
+387
+00:09:13,440 --> 00:09:15,190
+requirements and put them into the
+prompt which will be used for code
+
+388
+00:09:15,190 --> 00:09:15,200
+prompt which will be used for code
+ 
+
+389
+00:09:15,200 --> 00:09:18,230
+prompt which will be used for code
+generation. Now the code now the agent
+
+390
+00:09:18,230 --> 00:09:18,240
+generation. Now the code now the agent
+ 
+
+391
+00:09:18,240 --> 00:09:20,630
+generation. Now the code now the agent
+actually writes the code um with the
+
+392
+00:09:20,630 --> 00:09:20,640
+actually writes the code um with the
+ 
+
+393
+00:09:20,640 --> 00:09:23,350
+actually writes the code um with the
+security context that has been provided.
+
+394
+00:09:23,350 --> 00:09:23,360
+security context that has been provided.
+ 
+
+395
+00:09:23,360 --> 00:09:26,790
+security context that has been provided.
+Um we run some security scan uh see if
+
+396
+00:09:26,790 --> 00:09:26,800
+Um we run some security scan uh see if
+ 
+
+397
+00:09:26,800 --> 00:09:29,030
+Um we run some security scan uh see if
+we have any vulnerabilities
+
+398
+00:09:29,030 --> 00:09:29,040
+we have any vulnerabilities
+ 
+
+399
+00:09:29,040 --> 00:09:31,670
+we have any vulnerabilities
+uh if there are any vulnerabilities or
+
+400
+00:09:31,670 --> 00:09:31,680
+uh if there are any vulnerabilities or
+ 
+
+401
+00:09:31,680 --> 00:09:35,670
+uh if there are any vulnerabilities or
+design flaws we fix them in line um and
+
+402
+00:09:35,670 --> 00:09:35,680
+design flaws we fix them in line um and
+ 
+
+403
+00:09:35,680 --> 00:09:38,230
+design flaws we fix them in line um and
+they are applied immediately.
+
+404
+00:09:38,230 --> 00:09:38,240
+they are applied immediately.
+ 
+
+405
+00:09:38,240 --> 00:09:41,590
+they are applied immediately.
+We reverify and then our code is
+
+406
+00:09:41,590 --> 00:09:41,600
+We reverify and then our code is
+ 
+
+407
+00:09:41,600 --> 00:09:44,230
+We reverify and then our code is
+actually PR ready and then when our CS
+
+408
+00:09:44,230 --> 00:09:44,240
+actually PR ready and then when our CS
+ 
+
+409
+00:09:44,240 --> 00:09:46,550
+actually PR ready and then when our CS
+scans kicks in there are actually no
+
+410
+00:09:46,550 --> 00:09:46,560
+scans kicks in there are actually no
+ 
+
+411
+00:09:46,560 --> 00:09:48,710
+scans kicks in there are actually no
+issues. So this actually increases the
+
+412
+00:09:48,710 --> 00:09:48,720
+issues. So this actually increases the
+ 
+
+413
+00:09:48,720 --> 00:09:52,870
+issues. So this actually increases the
+speed of the of the developer.
+
+414
+00:09:52,870 --> 00:09:52,880
+speed of the of the developer.
+ 
+
+415
+00:09:52,880 --> 00:09:55,829
+speed of the of the developer.
+These are the general tools that I build
+
+416
+00:09:55,829 --> 00:09:55,839
+These are the general tools that I build
+ 
+
+417
+00:09:55,839 --> 00:09:59,269
+These are the general tools that I build
+uh in my u in my project in case you
+
+418
+00:09:59,269 --> 00:09:59,279
+uh in my u in my project in case you
+ 
+
+419
+00:09:59,279 --> 00:10:04,550
+uh in my u in my project in case you
+guys are interested. Here's the repo. Um
+
+420
+00:10:04,550 --> 00:10:04,560
+
+ 
+
+421
+00:10:04,560 --> 00:10:09,910
+
+to keep the demo uh uh small uh I'll be
+
+422
+00:10:09,910 --> 00:10:09,920
+to keep the demo uh uh small uh I'll be
+ 
+
+423
+00:10:09,920 --> 00:10:12,790
+to keep the demo uh uh small uh I'll be
+following three uh steps uh secure
+
+424
+00:10:12,790 --> 00:10:12,800
+following three uh steps uh secure
+ 
+
+425
+00:10:12,800 --> 00:10:15,350
+following three uh steps uh secure
+coding workflow where we are doing uh a
+
+426
+00:10:15,350 --> 00:10:15,360
+coding workflow where we are doing uh a
+ 
+
+427
+00:10:15,360 --> 00:10:17,750
+coding workflow where we are doing uh a
+lightweight security review before the
+
+428
+00:10:17,750 --> 00:10:17,760
+lightweight security review before the
+ 
+
+429
+00:10:17,760 --> 00:10:20,069
+lightweight security review before the
+code is actually written. Uh we'll write
+
+430
+00:10:20,069 --> 00:10:20,079
+code is actually written. Uh we'll write
+ 
+
+431
+00:10:20,079 --> 00:10:22,069
+code is actually written. Uh we'll write
+the code. We'll not write but the agent
+
+432
+00:10:22,069 --> 00:10:22,079
+the code. We'll not write but the agent
+ 
+
+433
+00:10:22,079 --> 00:10:24,870
+the code. We'll not write but the agent
+will write. Um and then we'll actually
+
+434
+00:10:24,870 --> 00:10:24,880
+will write. Um and then we'll actually
+ 
+
+435
+00:10:24,880 --> 00:10:28,870
+will write. Um and then we'll actually
+run uh verify code security which will
+
+436
+00:10:28,870 --> 00:10:28,880
+run uh verify code security which will
+ 
+
+437
+00:10:28,880 --> 00:10:31,350
+run uh verify code security which will
+try to verify all the requirements that
+
+438
+00:10:31,350 --> 00:10:31,360
+try to verify all the requirements that
+ 
+
+439
+00:10:31,360 --> 00:10:34,630
+try to verify all the requirements that
+are identified in step one.
+
+440
+00:10:34,630 --> 00:10:34,640
+are identified in step one.
+ 
+
+441
+00:10:34,640 --> 00:10:38,470
+are identified in step one.
+For the demo purposes I'm using a um
+
+442
+00:10:38,470 --> 00:10:38,480
+For the demo purposes I'm using a um
+ 
+
+443
+00:10:38,480 --> 00:10:41,990
+For the demo purposes I'm using a um
+open-source MCB observability tool OTO.
+
+444
+00:10:41,990 --> 00:10:42,000
+open-source MCB observability tool OTO.
+ 
+
+445
+00:10:42,000 --> 00:10:45,030
+open-source MCB observability tool OTO.
+Um I'm not associated with it anyways.
+
+446
+00:10:45,030 --> 00:10:45,040
+Um I'm not associated with it anyways.
+ 
+
+447
+00:10:45,040 --> 00:10:47,509
+Um I'm not associated with it anyways.
+Uh but I like the tool. So I cloned it.
+
+448
+00:10:47,509 --> 00:10:47,519
+Uh but I like the tool. So I cloned it.
+ 
+
+449
+00:10:47,519 --> 00:10:49,269
+Uh but I like the tool. So I cloned it.
+I use it and I wanted to implement
+
+450
+00:10:49,269 --> 00:10:49,279
+I use it and I wanted to implement
+ 
+
+451
+00:10:49,279 --> 00:10:51,269
+I use it and I wanted to implement
+something that is based on my
+
+452
+00:10:51,269 --> 00:10:51,279
+something that is based on my
+ 
+
+453
+00:10:51,279 --> 00:10:52,710
+something that is based on my
+requirement.
+
+454
+00:10:52,710 --> 00:10:52,720
+requirement.
+ 
+
+455
+00:10:52,720 --> 00:10:56,870
+requirement.
+Um so I asked the coding agent to give
+
+456
+00:10:56,870 --> 00:10:56,880
+Um so I asked the coding agent to give
+ 
+
+457
+00:10:56,880 --> 00:11:00,150
+Um so I asked the coding agent to give
+me to to build a web hook receiver
+
+458
+00:11:00,150 --> 00:11:00,160
+me to to build a web hook receiver
+ 
+
+459
+00:11:00,160 --> 00:11:02,550
+me to to build a web hook receiver
+endpoint that will that will accept any
+
+460
+00:11:02,550 --> 00:11:02,560
+endpoint that will that will accept any
+ 
+
+461
+00:11:02,560 --> 00:11:04,470
+endpoint that will that will accept any
+incoming web hook from external services
+
+462
+00:11:04,470 --> 00:11:04,480
+incoming web hook from external services
+ 
+
+463
+00:11:04,480 --> 00:11:07,350
+incoming web hook from external services
+like GitHub or Slack and that triggers
+
+464
+00:11:07,350 --> 00:11:07,360
+like GitHub or Slack and that triggers
+ 
+
+465
+00:11:07,360 --> 00:11:09,350
+like GitHub or Slack and that triggers
+uh some other agent agentic workflow
+
+466
+00:11:09,350 --> 00:11:09,360
+uh some other agent agentic workflow
+ 
+
+467
+00:11:09,360 --> 00:11:12,069
+uh some other agent agentic workflow
+executions. I also asked him just to
+
+468
+00:11:12,069 --> 00:11:12,079
+executions. I also asked him just to
+ 
+
+469
+00:11:12,079 --> 00:11:16,069
+executions. I also asked him just to
+simplify uh where to add all of this um
+
+470
+00:11:16,069 --> 00:11:16,079
+simplify uh where to add all of this um
+ 
+
+471
+00:11:16,079 --> 00:11:19,030
+simplify uh where to add all of this um
+and then the new route and just to try
+
+472
+00:11:19,030 --> 00:11:19,040
+and then the new route and just to try
+ 
+
+473
+00:11:19,040 --> 00:11:21,430
+and then the new route and just to try
+to be very specific.
+
+474
+00:11:21,430 --> 00:11:21,440
+to be very specific.
+ 
+
+475
+00:11:21,440 --> 00:11:25,509
+to be very specific.
+Now I did it in uh two flow. So once I
+
+476
+00:11:25,509 --> 00:11:25,519
+Now I did it in uh two flow. So once I
+ 
+
+477
+00:11:25,519 --> 00:11:28,230
+Now I did it in uh two flow. So once I
+disabled my tools and try to generate
+
+478
+00:11:28,230 --> 00:11:28,240
+disabled my tools and try to generate
+ 
+
+479
+00:11:28,240 --> 00:11:32,710
+disabled my tools and try to generate
+the code and do a security review.
+
+480
+00:11:32,710 --> 00:11:32,720
+the code and do a security review.
+ 
+
+481
+00:11:32,720 --> 00:11:34,870
+the code and do a security review.
+During that security review uh you can
+
+482
+00:11:34,870 --> 00:11:34,880
+During that security review uh you can
+ 
+
+483
+00:11:34,880 --> 00:11:37,670
+During that security review uh you can
+see that there are
+
+484
+00:11:37,670 --> 00:11:37,680
+see that there are
+ 
+
+485
+00:11:37,680 --> 00:11:40,790
+see that there are
+um two issues that are identified uh
+
+486
+00:11:40,790 --> 00:11:40,800
+um two issues that are identified uh
+ 
+
+487
+00:11:40,800 --> 00:11:43,110
+um two issues that are identified uh
+which were after the code has been
+
+488
+00:11:43,110 --> 00:11:43,120
+which were after the code has been
+ 
+
+489
+00:11:43,120 --> 00:11:45,350
+which were after the code has been
+generated. So header forwarding
+
+490
+00:11:45,350 --> 00:11:45,360
+generated. So header forwarding
+ 
+
+491
+00:11:45,360 --> 00:11:47,190
+generated. So header forwarding
+sensitive header header forwarding leak
+
+492
+00:11:47,190 --> 00:11:47,200
+sensitive header header forwarding leak
+ 
+
+493
+00:11:47,200 --> 00:11:49,750
+sensitive header header forwarding leak
+sensitive data and then authorization
+
+494
+00:11:49,750 --> 00:11:49,760
+sensitive data and then authorization
+ 
+
+495
+00:11:49,760 --> 00:11:51,829
+sensitive data and then authorization
+tokens that are being passed around in
+
+496
+00:11:51,829 --> 00:11:51,839
+tokens that are being passed around in
+ 
+
+497
+00:11:51,839 --> 00:11:55,430
+tokens that are being passed around in
+the entire workflow.
+
+498
+00:11:55,430 --> 00:11:55,440
+
+ 
+
+499
+00:11:55,440 --> 00:11:58,949
+
+I'm sorry.
+
+500
+00:11:58,949 --> 00:11:58,959
+
+ 
+
+501
+00:11:58,959 --> 00:12:02,790
+
+Um but once I enable my tools uh and
+
+502
+00:12:02,790 --> 00:12:02,800
+Um but once I enable my tools uh and
+ 
+
+503
+00:12:02,800 --> 00:12:05,750
+Um but once I enable my tools uh and
+perform a security review before the
+
+504
+00:12:05,750 --> 00:12:05,760
+perform a security review before the
+ 
+
+505
+00:12:05,760 --> 00:12:08,710
+perform a security review before the
+code is being written um you can see in
+
+506
+00:12:08,710 --> 00:12:08,720
+code is being written um you can see in
+ 
+
+507
+00:12:08,720 --> 00:12:13,110
+code is being written um you can see in
+the screenshot um it tells you what the
+
+508
+00:12:13,110 --> 00:12:13,120
+the screenshot um it tells you what the
+ 
+
+509
+00:12:13,120 --> 00:12:15,670
+the screenshot um it tells you what the
+what the task is which is basically uh
+
+510
+00:12:15,670 --> 00:12:15,680
+what the task is which is basically uh
+ 
+
+511
+00:12:15,680 --> 00:12:18,710
+what the task is which is basically uh
+the requirement uh what technologies uh
+
+512
+00:12:18,710 --> 00:12:18,720
+the requirement uh what technologies uh
+ 
+
+513
+00:12:18,720 --> 00:12:20,710
+the requirement uh what technologies uh
+it is using so that it can pull in
+
+514
+00:12:20,710 --> 00:12:20,720
+it is using so that it can pull in
+ 
+
+515
+00:12:20,720 --> 00:12:23,430
+it is using so that it can pull in
+relevant security context relevant to go
+
+516
+00:12:23,430 --> 00:12:23,440
+relevant security context relevant to go
+ 
+
+517
+00:12:23,440 --> 00:12:27,110
+relevant security context relevant to go
+kubernetes and rest apis. Um it
+
+518
+00:12:27,110 --> 00:12:27,120
+kubernetes and rest apis. Um it
+ 
+
+519
+00:12:27,120 --> 00:12:29,910
+kubernetes and rest apis. Um it
+specifically mentions to include the
+
+520
+00:12:29,910 --> 00:12:29,920
+specifically mentions to include the
+ 
+
+521
+00:12:29,920 --> 00:12:32,230
+specifically mentions to include the
+guidelines and then include prompt
+
+522
+00:12:32,230 --> 00:12:32,240
+guidelines and then include prompt
+ 
+
+523
+00:12:32,240 --> 00:12:33,990
+guidelines and then include prompt
+injection which is which means that
+
+524
+00:12:33,990 --> 00:12:34,000
+injection which is which means that
+ 
+
+525
+00:12:34,000 --> 00:12:35,829
+injection which is which means that
+whatever the security guidelines are
+
+526
+00:12:35,829 --> 00:12:35,839
+whatever the security guidelines are
+ 
+
+527
+00:12:35,839 --> 00:12:38,550
+whatever the security guidelines are
+include that into inject them in into
+
+528
+00:12:38,550 --> 00:12:38,560
+include that into inject them in into
+ 
+
+529
+00:12:38,560 --> 00:12:40,230
+include that into inject them in into
+the prompt that is being used for the
+
+530
+00:12:40,230 --> 00:12:40,240
+the prompt that is being used for the
+ 
+
+531
+00:12:40,240 --> 00:12:43,590
+the prompt that is being used for the
+code generation.
+
+532
+00:12:43,590 --> 00:12:43,600
+
+ 
+
+533
+00:12:43,600 --> 00:12:45,910
+
+After the pre-coding analysis, it
+
+534
+00:12:45,910 --> 00:12:45,920
+After the pre-coding analysis, it
+ 
+
+535
+00:12:45,920 --> 00:12:48,949
+After the pre-coding analysis, it
+identified that this is a high-risk uh
+
+536
+00:12:48,949 --> 00:12:48,959
+identified that this is a high-risk uh
+ 
+
+537
+00:12:48,959 --> 00:12:51,430
+identified that this is a high-risk uh
+uh requirement uh and with the key CA
+
+538
+00:12:51,430 --> 00:12:51,440
+uh requirement uh and with the key CA
+ 
+
+539
+00:12:51,440 --> 00:12:53,910
+uh requirement uh and with the key CA
+categories as API security, data
+
+540
+00:12:53,910 --> 00:12:53,920
+categories as API security, data
+ 
+
+541
+00:12:53,920 --> 00:12:57,190
+categories as API security, data
+validation and some web security uh uh
+
+542
+00:12:57,190 --> 00:12:57,200
+validation and some web security uh uh
+ 
+
+543
+00:12:57,200 --> 00:12:59,430
+validation and some web security uh uh
+requirement. So it pulls in all the
+
+544
+00:12:59,430 --> 00:12:59,440
+requirement. So it pulls in all the
+ 
+
+545
+00:12:59,440 --> 00:13:01,030
+requirement. So it pulls in all the
+guidelines related to those uh
+
+546
+00:13:01,030 --> 00:13:01,040
+guidelines related to those uh
+ 
+
+547
+00:13:01,040 --> 00:13:04,710
+guidelines related to those uh
+categories and and you you can see that
+
+548
+00:13:04,710 --> 00:13:04,720
+categories and and you you can see that
+ 
+
+549
+00:13:04,720 --> 00:13:07,430
+categories and and you you can see that
+the key takeaways to build into the code
+
+550
+00:13:07,430 --> 00:13:07,440
+the key takeaways to build into the code
+ 
+
+551
+00:13:07,440 --> 00:13:10,310
+the key takeaways to build into the code
+from the start are validating all inputs
+
+552
+00:13:10,310 --> 00:13:10,320
+from the start are validating all inputs
+ 
+
+553
+00:13:10,320 --> 00:13:12,230
+from the start are validating all inputs
+filtering out sensitive headers that
+
+554
+00:13:12,230 --> 00:13:12,240
+filtering out sensitive headers that
+ 
+
+555
+00:13:12,240 --> 00:13:14,629
+filtering out sensitive headers that
+were actually a finding if we have not
+
+556
+00:13:14,629 --> 00:13:14,639
+were actually a finding if we have not
+ 
+
+557
+00:13:14,639 --> 00:13:16,550
+were actually a finding if we have not
+done this
+
+558
+00:13:16,550 --> 00:13:16,560
+done this
+ 
+
+559
+00:13:16,560 --> 00:13:19,030
+done this
+proper and handling body size limits and
+
+560
+00:13:19,030 --> 00:13:19,040
+proper and handling body size limits and
+ 
+
+561
+00:13:19,040 --> 00:13:22,230
+proper and handling body size limits and
+following uh least privilege.
+
+562
+00:13:22,230 --> 00:13:22,240
+following uh least privilege.
+ 
+
+563
+00:13:22,240 --> 00:13:24,310
+following uh least privilege.
+Step two is pretty simple. Based on all
+
+564
+00:13:24,310 --> 00:13:24,320
+Step two is pretty simple. Based on all
+ 
+
+565
+00:13:24,320 --> 00:13:25,910
+Step two is pretty simple. Based on all
+the requirements, the agent actually
+
+566
+00:13:25,910 --> 00:13:25,920
+the requirements, the agent actually
+ 
+
+567
+00:13:25,920 --> 00:13:28,790
+the requirements, the agent actually
+generates uh uh generates the code with
+
+568
+00:13:28,790 --> 00:13:28,800
+generates uh uh generates the code with
+ 
+
+569
+00:13:28,800 --> 00:13:31,430
+generates uh uh generates the code with
+the security guidance and it actually
+
+570
+00:13:31,430 --> 00:13:31,440
+the security guidance and it actually
+ 
+
+571
+00:13:31,440 --> 00:13:33,910
+the security guidance and it actually
+has header block list baked into baked
+
+572
+00:13:33,910 --> 00:13:33,920
+has header block list baked into baked
+ 
+
+573
+00:13:33,920 --> 00:13:36,470
+has header block list baked into baked
+into from the start.
+
+574
+00:13:36,470 --> 00:13:36,480
+into from the start.
+ 
+
+575
+00:13:36,480 --> 00:13:38,310
+into from the start.
+Once the code is generated, we actually
+
+576
+00:13:38,310 --> 00:13:38,320
+Once the code is generated, we actually
+ 
+
+577
+00:13:38,320 --> 00:13:41,509
+Once the code is generated, we actually
+perform another code analysis
+
+578
+00:13:41,509 --> 00:13:41,519
+perform another code analysis
+ 
+
+579
+00:13:41,519 --> 00:13:44,550
+perform another code analysis
+um where you can see uh it passes passes
+
+580
+00:13:44,550 --> 00:13:44,560
+um where you can see uh it passes passes
+ 
+
+581
+00:13:44,560 --> 00:13:47,990
+um where you can see uh it passes passes
+in the uh the code whatever the file
+
+582
+00:13:47,990 --> 00:13:48,000
+in the uh the code whatever the file
+ 
+
+583
+00:13:48,000 --> 00:13:51,110
+in the uh the code whatever the file
+path is and the security context u based
+
+584
+00:13:51,110 --> 00:13:51,120
+path is and the security context u based
+ 
+
+585
+00:13:51,120 --> 00:13:54,629
+path is and the security context u based
+on the the the analysis that we did in
+
+586
+00:13:54,629 --> 00:13:54,639
+on the the the analysis that we did in
+ 
+
+587
+00:13:54,639 --> 00:13:56,629
+on the the the analysis that we did in
+step one. It passes all of those
+
+588
+00:13:56,629 --> 00:13:56,639
+step one. It passes all of those
+ 
+
+589
+00:13:56,639 --> 00:13:59,189
+step one. It passes all of those
+guidance and verifies if the code
+
+590
+00:13:59,189 --> 00:13:59,199
+guidance and verifies if the code
+ 
+
+591
+00:13:59,199 --> 00:14:01,590
+guidance and verifies if the code
+actually matches all of these best
+
+592
+00:14:01,590 --> 00:14:01,600
+actually matches all of these best
+ 
+
+593
+00:14:01,600 --> 00:14:03,750
+actually matches all of these best
+practices.
+
+594
+00:14:03,750 --> 00:14:03,760
+practices.
+ 
+
+595
+00:14:03,760 --> 00:14:05,910
+practices.
+Now there one of the major advantage of
+
+596
+00:14:05,910 --> 00:14:05,920
+Now there one of the major advantage of
+ 
+
+597
+00:14:05,920 --> 00:14:07,910
+Now there one of the major advantage of
+this is basically the feedback is
+
+598
+00:14:07,910 --> 00:14:07,920
+this is basically the feedback is
+ 
+
+599
+00:14:07,920 --> 00:14:10,310
+this is basically the feedback is
+immediate when the context and the
+
+600
+00:14:10,310 --> 00:14:10,320
+immediate when the context and the
+ 
+
+601
+00:14:10,320 --> 00:14:12,629
+immediate when the context and the
+requirement the developer requirement is
+
+602
+00:14:12,629 --> 00:14:12,639
+requirement the developer requirement is
+ 
+
+603
+00:14:12,639 --> 00:14:15,189
+requirement the developer requirement is
+still fresh still in the chat window and
+
+604
+00:14:15,189 --> 00:14:15,199
+still fresh still in the chat window and
+ 
+
+605
+00:14:15,199 --> 00:14:17,590
+still fresh still in the chat window and
+it is not somewhere in the CI uh
+
+606
+00:14:17,590 --> 00:14:17,600
+it is not somewhere in the CI uh
+ 
+
+607
+00:14:17,600 --> 00:14:20,069
+it is not somewhere in the CI uh
+pipeline.
+
+608
+00:14:20,069 --> 00:14:20,079
+pipeline.
+ 
+
+609
+00:14:20,079 --> 00:14:21,829
+pipeline.
+Um this is the thought process of
+
+610
+00:14:21,829 --> 00:14:21,839
+Um this is the thought process of
+ 
+
+611
+00:14:21,839 --> 00:14:24,870
+Um this is the thought process of
+cursor. I know it is a little bit later
+
+612
+00:14:24,870 --> 00:14:24,880
+cursor. I know it is a little bit later
+ 
+
+613
+00:14:24,880 --> 00:14:28,470
+cursor. I know it is a little bit later
+um but if you can see it performs a
+
+614
+00:14:28,470 --> 00:14:28,480
+um but if you can see it performs a
+ 
+
+615
+00:14:28,480 --> 00:14:31,189
+um but if you can see it performs a
+security review no hardcoded password no
+
+616
+00:14:31,189 --> 00:14:31,199
+security review no hardcoded password no
+ 
+
+617
+00:14:31,199 --> 00:14:32,949
+security review no hardcoded password no
+SQL queries pass pass pass pass pass
+
+618
+00:14:32,949 --> 00:14:32,959
+
+ 
+
+619
+00:14:32,959 --> 00:14:33,910
+pass pass pass pass pass pass pass pass
+pass pass pass pass pass pass pass pass
+
+620
+00:14:33,910 --> 00:14:33,920
+pass pass pass pass pass pass pass pass
+ 
+
+621
+00:14:33,920 --> 00:14:36,389
+pass pass pass pass pass pass pass pass
+uh at the bottom you can see the last
+
+622
+00:14:36,389 --> 00:14:36,399
+uh at the bottom you can see the last
+ 
+
+623
+00:14:36,399 --> 00:14:38,069
+uh at the bottom you can see the last
+line it says no critical or high
+
+624
+00:14:38,069 --> 00:14:38,079
+line it says no critical or high
+ 
+
+625
+00:14:38,079 --> 00:14:41,030
+line it says no critical or high
+severity issues found and uh the
+
+626
+00:14:41,030 --> 00:14:41,040
+severity issues found and uh the
+ 
+
+627
+00:14:41,040 --> 00:14:42,710
+severity issues found and uh the
+implementation aligns well with security
+
+628
+00:14:42,710 --> 00:14:42,720
+implementation aligns well with security
+ 
+
+629
+00:14:42,720 --> 00:14:46,230
+implementation aligns well with security
+review guidance
+
+630
+00:14:46,230 --> 00:14:46,240
+
+ 
+
+631
+00:14:46,240 --> 00:14:51,030
+
+uh okay this is a much better view um
+
+632
+00:14:51,030 --> 00:14:51,040
+uh okay this is a much better view um
+ 
+
+633
+00:14:51,040 --> 00:14:52,710
+uh okay this is a much better view um
+it's basically gives gives you a table
+
+634
+00:14:52,710 --> 00:14:52,720
+it's basically gives gives you a table
+ 
+
+635
+00:14:52,720 --> 00:14:56,790
+it's basically gives gives you a table
+format uh and saying that all the uh
+
+636
+00:14:56,790 --> 00:14:56,800
+format uh and saying that all the uh
+ 
+
+637
+00:14:56,800 --> 00:14:59,670
+format uh and saying that all the uh
+checklist items are basically passing
+
+638
+00:14:59,670 --> 00:14:59,680
+checklist items are basically passing
+ 
+
+639
+00:14:59,680 --> 00:15:02,150
+checklist items are basically passing
+and there are no critical high or medium
+
+640
+00:15:02,150 --> 00:15:02,160
+and there are no critical high or medium
+ 
+
+641
+00:15:02,160 --> 00:15:06,230
+and there are no critical high or medium
+security issues. Now um
+
+642
+00:15:06,230 --> 00:15:06,240
+security issues. Now um
+ 
+
+643
+00:15:06,240 --> 00:15:08,790
+security issues. Now um
+just to reiterate the what the workflow
+
+644
+00:15:08,790 --> 00:15:08,800
+just to reiterate the what the workflow
+ 
+
+645
+00:15:08,800 --> 00:15:11,509
+just to reiterate the what the workflow
+was uh we ran a lightweight security
+
+646
+00:15:11,509 --> 00:15:11,519
+was uh we ran a lightweight security
+ 
+
+647
+00:15:11,519 --> 00:15:13,189
+was uh we ran a lightweight security
+review initially before the code
+
+648
+00:15:13,189 --> 00:15:13,199
+review initially before the code
+ 
+
+649
+00:15:13,199 --> 00:15:16,949
+review initially before the code
+generation um it returned high risk uh
+
+650
+00:15:16,949 --> 00:15:16,959
+generation um it returned high risk uh
+ 
+
+651
+00:15:16,959 --> 00:15:18,629
+generation um it returned high risk uh
+flagged all the security guidelines that
+
+652
+00:15:18,629 --> 00:15:18,639
+flagged all the security guidelines that
+ 
+
+653
+00:15:18,639 --> 00:15:21,509
+flagged all the security guidelines that
+we need to pull in. uh it generates the
+
+654
+00:15:21,509 --> 00:15:21,519
+we need to pull in. uh it generates the
+ 
+
+655
+00:15:21,519 --> 00:15:24,790
+we need to pull in. uh it generates the
+code with proper security guidance like
+
+656
+00:15:24,790 --> 00:15:24,800
+code with proper security guidance like
+ 
+
+657
+00:15:24,800 --> 00:15:26,629
+code with proper security guidance like
+uh header block list authorization
+
+658
+00:15:26,629 --> 00:15:26,639
+uh header block list authorization
+ 
+
+659
+00:15:26,639 --> 00:15:29,990
+uh header block list authorization
+cookies u x forwarded for header and xre
+
+660
+00:15:29,990 --> 00:15:30,000
+cookies u x forwarded for header and xre
+ 
+
+661
+00:15:30,000 --> 00:15:34,790
+cookies u x forwarded for header and xre
+ips that are built in from line one um
+
+662
+00:15:34,790 --> 00:15:34,800
+ips that are built in from line one um
+ 
+
+663
+00:15:34,800 --> 00:15:36,870
+ips that are built in from line one um
+and other stuff as well and then it
+
+664
+00:15:36,870 --> 00:15:36,880
+and other stuff as well and then it
+ 
+
+665
+00:15:36,880 --> 00:15:39,269
+and other stuff as well and then it
+actually verifies if the code that is
+
+666
+00:15:39,269 --> 00:15:39,279
+actually verifies if the code that is
+ 
+
+667
+00:15:39,279 --> 00:15:42,150
+actually verifies if the code that is
+being generated align with the security
+
+668
+00:15:42,150 --> 00:15:42,160
+being generated align with the security
+ 
+
+669
+00:15:42,160 --> 00:15:46,150
+being generated align with the security
+guidance that was provided in step one.
+
+670
+00:15:46,150 --> 00:15:46,160
+guidance that was provided in step one.
+ 
+
+671
+00:15:46,160 --> 00:15:49,829
+guidance that was provided in step one.
+Well, um you might think like this is so
+
+672
+00:15:49,829 --> 00:15:49,839
+Well, um you might think like this is so
+ 
+
+673
+00:15:49,839 --> 00:15:52,629
+Well, um you might think like this is so
+easy, but it isn't. Uh the security
+
+674
+00:15:52,629 --> 00:15:52,639
+easy, but it isn't. Uh the security
+ 
+
+675
+00:15:52,639 --> 00:15:55,030
+easy, but it isn't. Uh the security
+guidelines that work for humans does not
+
+676
+00:15:55,030 --> 00:15:55,040
+guidelines that work for humans does not
+ 
+
+677
+00:15:55,040 --> 00:15:59,350
+guidelines that work for humans does not
+work very well with uh with our AI.
+
+678
+00:15:59,350 --> 00:15:59,360
+work very well with uh with our AI.
+ 
+
+679
+00:15:59,360 --> 00:16:04,230
+work very well with uh with our AI.
+So, couple of things to notice here is
+
+680
+00:16:04,230 --> 00:16:04,240
+So, couple of things to notice here is
+ 
+
+681
+00:16:04,240 --> 00:16:06,949
+So, couple of things to notice here is
+um we have all the security guidelines
+
+682
+00:16:06,949 --> 00:16:06,959
+um we have all the security guidelines
+ 
+
+683
+00:16:06,959 --> 00:16:09,829
+um we have all the security guidelines
+uh available right there uh within the
+
+684
+00:16:09,829 --> 00:16:09,839
+uh available right there uh within the
+ 
+
+685
+00:16:09,839 --> 00:16:12,150
+uh available right there uh within the
+context at the time of generation. These
+
+686
+00:16:12,150 --> 00:16:12,160
+context at the time of generation. These
+ 
+
+687
+00:16:12,160 --> 00:16:15,350
+context at the time of generation. These
+are some of the OASP uh cheat sheet and
+
+688
+00:16:15,350 --> 00:16:15,360
+are some of the OASP uh cheat sheet and
+ 
+
+689
+00:16:15,360 --> 00:16:17,910
+are some of the OASP uh cheat sheet and
+best practices that I have put into the
+
+690
+00:16:17,910 --> 00:16:17,920
+best practices that I have put into the
+ 
+
+691
+00:16:17,920 --> 00:16:22,310
+best practices that I have put into the
+tool itself. Um you can also u add your
+
+692
+00:16:22,310 --> 00:16:22,320
+tool itself. Um you can also u add your
+ 
+
+693
+00:16:22,320 --> 00:16:25,430
+tool itself. Um you can also u add your
+own or pull in directly from Confluence
+
+694
+00:16:25,430 --> 00:16:25,440
+own or pull in directly from Confluence
+ 
+
+695
+00:16:25,440 --> 00:16:29,509
+own or pull in directly from Confluence
+for example or some other Google docs.
+
+696
+00:16:29,509 --> 00:16:29,519
+for example or some other Google docs.
+ 
+
+697
+00:16:29,519 --> 00:16:31,829
+for example or some other Google docs.
+Another key thing is uh intelligent
+
+698
+00:16:31,829 --> 00:16:31,839
+Another key thing is uh intelligent
+ 
+
+699
+00:16:31,839 --> 00:16:34,230
+Another key thing is uh intelligent
+filtering while labels to prevent
+
+700
+00:16:34,230 --> 00:16:34,240
+filtering while labels to prevent
+ 
+
+701
+00:16:34,240 --> 00:16:38,550
+filtering while labels to prevent
+context blo. um all all of these uh
+
+702
+00:16:38,550 --> 00:16:38,560
+context blo. um all all of these uh
+ 
+
+703
+00:16:38,560 --> 00:16:41,670
+context blo. um all all of these uh
+guidelines they have a proper category
+
+704
+00:16:41,670 --> 00:16:41,680
+guidelines they have a proper category
+ 
+
+705
+00:16:41,680 --> 00:16:43,910
+guidelines they have a proper category
+uh so that the AI agent can actually
+
+706
+00:16:43,910 --> 00:16:43,920
+uh so that the AI agent can actually
+ 
+
+707
+00:16:43,920 --> 00:16:48,949
+uh so that the AI agent can actually
+filter it out pretty clearly and uh what
+
+708
+00:16:48,949 --> 00:16:48,959
+filter it out pretty clearly and uh what
+ 
+
+709
+00:16:48,959 --> 00:16:51,509
+filter it out pretty clearly and uh what
+where exactly it needs to identify all
+
+710
+00:16:51,509 --> 00:16:51,519
+where exactly it needs to identify all
+ 
+
+711
+00:16:51,519 --> 00:16:53,110
+where exactly it needs to identify all
+of these. So for for example if you're
+
+712
+00:16:53,110 --> 00:16:53,120
+of these. So for for example if you're
+ 
+
+713
+00:16:53,120 --> 00:16:55,670
+of these. So for for example if you're
+talking about authentication
+
+714
+00:16:55,670 --> 00:16:55,680
+talking about authentication
+ 
+
+715
+00:16:55,680 --> 00:16:57,590
+talking about authentication
+um and you're building or you're working
+
+716
+00:16:57,590 --> 00:16:57,600
+um and you're building or you're working
+ 
+
+717
+00:16:57,600 --> 00:17:01,509
+um and you're building or you're working
+towards JWT um it will actually pull in
+
+718
+00:17:01,509 --> 00:17:01,519
+towards JWT um it will actually pull in
+ 
+
+719
+00:17:01,519 --> 00:17:06,069
+towards JWT um it will actually pull in
+this uh guide. So remember if you're uh
+
+720
+00:17:06,069 --> 00:17:06,079
+this uh guide. So remember if you're uh
+ 
+
+721
+00:17:06,079 --> 00:17:09,510
+this uh guide. So remember if you're uh
+using this and using your own internal
+
+722
+00:17:09,510 --> 00:17:09,520
+using this and using your own internal
+ 
+
+723
+00:17:09,520 --> 00:17:12,150
+using this and using your own internal
+standards or guidelines uh make sure to
+
+724
+00:17:12,150 --> 00:17:12,160
+standards or guidelines uh make sure to
+ 
+
+725
+00:17:12,160 --> 00:17:18,470
+standards or guidelines uh make sure to
+add these three uh tags.
+
+726
+00:17:18,470 --> 00:17:18,480
+
+ 
+
+727
+00:17:18,480 --> 00:17:20,949
+
+Yeah. So if you want to make it your uh
+
+728
+00:17:20,949 --> 00:17:20,959
+Yeah. So if you want to make it your uh
+ 
+
+729
+00:17:20,959 --> 00:17:22,789
+Yeah. So if you want to make it your uh
+if you want to use it internally, you
+
+730
+00:17:22,789 --> 00:17:22,799
+if you want to use it internally, you
+ 
+
+731
+00:17:22,799 --> 00:17:25,029
+if you want to use it internally, you
+can also inject your own threat models
+
+732
+00:17:25,029 --> 00:17:25,039
+can also inject your own threat models
+ 
+
+733
+00:17:25,039 --> 00:17:28,950
+can also inject your own threat models
+here. Um you can have your own internal
+
+734
+00:17:28,950 --> 00:17:28,960
+here. Um you can have your own internal
+ 
+
+735
+00:17:28,960 --> 00:17:31,430
+here. Um you can have your own internal
+uh secure coding guidelines uh your
+
+736
+00:17:31,430 --> 00:17:31,440
+uh secure coding guidelines uh your
+ 
+
+737
+00:17:31,440 --> 00:17:33,669
+uh secure coding guidelines uh your
+golden paths. what you think are the
+
+738
+00:17:33,669 --> 00:17:33,679
+golden paths. what you think are the
+ 
+
+739
+00:17:33,679 --> 00:17:35,750
+golden paths. what you think are the
+best practices or any approved
+
+740
+00:17:35,750 --> 00:17:35,760
+best practices or any approved
+ 
+
+741
+00:17:35,760 --> 00:17:39,350
+best practices or any approved
+libraries. Um, SCA is like a big thing
+
+742
+00:17:39,350 --> 00:17:39,360
+libraries. Um, SCA is like a big thing
+ 
+
+743
+00:17:39,360 --> 00:17:42,230
+libraries. Um, SCA is like a big thing
+with white coding. And then you can also
+
+744
+00:17:42,230 --> 00:17:42,240
+with white coding. And then you can also
+ 
+
+745
+00:17:42,240 --> 00:17:45,430
+with white coding. And then you can also
+define what uh is the definition of done
+
+746
+00:17:45,430 --> 00:17:45,440
+define what uh is the definition of done
+ 
+
+747
+00:17:45,440 --> 00:17:48,630
+define what uh is the definition of done
+in this.
+
+748
+00:17:48,630 --> 00:17:48,640
+in this.
+ 
+
+749
+00:17:48,640 --> 00:17:52,230
+in this.
+Uh where it helps um it helps in uh
+
+750
+00:17:52,230 --> 00:17:52,240
+Uh where it helps um it helps in uh
+ 
+
+751
+00:17:52,240 --> 00:17:55,110
+Uh where it helps um it helps in uh
+repetitive work and identifying known
+
+752
+00:17:55,110 --> 00:17:55,120
+repetitive work and identifying known
+ 
+
+753
+00:17:55,120 --> 00:17:59,350
+repetitive work and identifying known
+patterns. um it can identify common uh
+
+754
+00:17:59,350 --> 00:17:59,360
+patterns. um it can identify common uh
+ 
+
+755
+00:17:59,360 --> 00:18:01,270
+patterns. um it can identify common uh
+vulnerabilities very early. So the
+
+756
+00:18:01,270 --> 00:18:01,280
+vulnerabilities very early. So the
+ 
+
+757
+00:18:01,280 --> 00:18:03,110
+vulnerabilities very early. So the
+developer don't have to wait for the CI
+
+758
+00:18:03,110 --> 00:18:03,120
+developer don't have to wait for the CI
+ 
+
+759
+00:18:03,120 --> 00:18:06,710
+developer don't have to wait for the CI
+scans to to to uh trigger.
+
+760
+00:18:06,710 --> 00:18:06,720
+scans to to to uh trigger.
+ 
+
+761
+00:18:06,720 --> 00:18:08,630
+scans to to to uh trigger.
+However, it doesn't replace uh any
+
+762
+00:18:08,630 --> 00:18:08,640
+However, it doesn't replace uh any
+ 
+
+763
+00:18:08,640 --> 00:18:10,630
+However, it doesn't replace uh any
+threat modeling that is uh being done
+
+764
+00:18:10,630 --> 00:18:10,640
+threat modeling that is uh being done
+ 
+
+765
+00:18:10,640 --> 00:18:12,310
+threat modeling that is uh being done
+for the new systems. You should
+
+766
+00:18:12,310 --> 00:18:12,320
+for the new systems. You should
+ 
+
+767
+00:18:12,320 --> 00:18:15,909
+for the new systems. You should
+absolutely do it and uh for big systems
+
+768
+00:18:15,909 --> 00:18:15,919
+absolutely do it and uh for big systems
+ 
+
+769
+00:18:15,919 --> 00:18:18,390
+absolutely do it and uh for big systems
+or big changes, you absolutely do a
+
+770
+00:18:18,390 --> 00:18:18,400
+or big changes, you absolutely do a
+ 
+
+771
+00:18:18,400 --> 00:18:22,310
+or big changes, you absolutely do a
+human review as well.
+
+772
+00:18:22,310 --> 00:18:22,320
+
+ 
+
+773
+00:18:22,320 --> 00:18:27,669
+
+Cool. Um finally um I believe that pipe
+
+774
+00:18:27,669 --> 00:18:27,679
+Cool. Um finally um I believe that pipe
+ 
+
+775
+00:18:27,679 --> 00:18:30,310
+Cool. Um finally um I believe that pipe
+coding uh fails when the context is
+
+776
+00:18:30,310 --> 00:18:30,320
+coding uh fails when the context is
+ 
+
+777
+00:18:30,320 --> 00:18:33,909
+coding uh fails when the context is
+missing. We will always have some some
+
+778
+00:18:33,909 --> 00:18:33,919
+missing. We will always have some some
+ 
+
+779
+00:18:33,919 --> 00:18:36,230
+missing. We will always have some some
+flaw uh if we do not provide the correct
+
+780
+00:18:36,230 --> 00:18:36,240
+flaw uh if we do not provide the correct
+ 
+
+781
+00:18:36,240 --> 00:18:39,990
+flaw uh if we do not provide the correct
+context. Um the way to solve is uh we
+
+782
+00:18:39,990 --> 00:18:40,000
+context. Um the way to solve is uh we
+ 
+
+783
+00:18:40,000 --> 00:18:41,590
+context. Um the way to solve is uh we
+can inject security requirements right
+
+784
+00:18:41,590 --> 00:18:41,600
+can inject security requirements right
+ 
+
+785
+00:18:41,600 --> 00:18:45,750
+can inject security requirements right
+before the code is generated.
+
+786
+00:18:45,750 --> 00:18:45,760
+
+ 
+
+787
+00:18:45,760 --> 00:18:48,470
+
+We can also verify and patch immediately
+
+788
+00:18:48,470 --> 00:18:48,480
+We can also verify and patch immediately
+ 
+
+789
+00:18:48,480 --> 00:18:51,029
+We can also verify and patch immediately
+after the code is generated. So that
+
+790
+00:18:51,029 --> 00:18:51,039
+after the code is generated. So that
+ 
+
+791
+00:18:51,039 --> 00:18:53,510
+after the code is generated. So that
+that would remove a lot of developer
+
+792
+00:18:53,510 --> 00:18:53,520
+that would remove a lot of developer
+ 
+
+793
+00:18:53,520 --> 00:18:57,190
+that would remove a lot of developer
+time and that is one way to for security
+
+794
+00:18:57,190 --> 00:18:57,200
+time and that is one way to for security
+ 
+
+795
+00:18:57,200 --> 00:19:00,390
+time and that is one way to for security
+to match the speed of developers
+
+796
+00:19:00,390 --> 00:19:00,400
+to match the speed of developers
+ 
+
+797
+00:19:00,400 --> 00:19:01,990
+to match the speed of developers
+and
+
+798
+00:19:01,990 --> 00:19:02,000
+and
+ 
+
+799
+00:19:02,000 --> 00:19:05,909
+and
+use MCP for uh providing the context.
+
+800
+00:19:05,909 --> 00:19:05,919
+use MCP for uh providing the context.
+ 
+
+801
+00:19:05,919 --> 00:19:10,710
+use MCP for uh providing the context.
+You can also use hooks uh which makes um
+
+802
+00:19:10,710 --> 00:19:10,720
+You can also use hooks uh which makes um
+ 
+
+803
+00:19:10,720 --> 00:19:12,789
+You can also use hooks uh which makes um
+all of these tools calling very
+
+804
+00:19:12,789 --> 00:19:12,799
+all of these tools calling very
+ 
+
+805
+00:19:12,799 --> 00:19:14,310
+all of these tools calling very
+deterministic.
+
+806
+00:19:14,310 --> 00:19:14,320
+deterministic.
+ 
+
+807
+00:19:14,320 --> 00:19:16,870
+deterministic.
+uh however tools uh hooks are not
+
+808
+00:19:16,870 --> 00:19:16,880
+uh however tools uh hooks are not
+ 
+
+809
+00:19:16,880 --> 00:19:19,590
+uh however tools uh hooks are not
+supported by all the IDEs and it's only
+
+810
+00:19:19,590 --> 00:19:19,600
+supported by all the IDEs and it's only
+ 
+
+811
+00:19:19,600 --> 00:19:22,470
+supported by all the IDEs and it's only
+by claude and cursor.
+
+812
+00:19:22,470 --> 00:19:22,480
+by claude and cursor.
+ 
+
+813
+00:19:22,480 --> 00:19:24,630
+by claude and cursor.
+It also MCP also makes it audible as
+
+814
+00:19:24,630 --> 00:19:24,640
+It also MCP also makes it audible as
+ 
+
+815
+00:19:24,640 --> 00:19:29,110
+It also MCP also makes it audible as
+well. So uh that's why I chose MCP
+
+816
+00:19:29,110 --> 00:19:29,120
+well. So uh that's why I chose MCP
+ 
+
+817
+00:19:29,120 --> 00:19:41,430
+well. So uh that's why I chose MCP
+and that's it. Thank you.
+
+818
+00:19:41,430 --> 00:19:41,440
+
+ 
+
+819
+00:19:41,440 --> 00:19:43,590
+
+I got a first question. Do you think
+
+820
+00:19:43,590 --> 00:19:43,600
+I got a first question. Do you think
+ 
+
+821
+00:19:43,600 --> 00:19:45,909
+I got a first question. Do you think
+this will be initially or sorry
+
+822
+00:19:45,909 --> 00:19:45,919
+this will be initially or sorry
+ 
+
+823
+00:19:45,919 --> 00:19:49,190
+this will be initially or sorry
+eventually just adapted in as a skill
+
+824
+00:19:49,190 --> 00:19:49,200
+eventually just adapted in as a skill
+ 
+
+825
+00:19:49,200 --> 00:19:50,870
+eventually just adapted in as a skill
+like when I make a request I'm like hey
+
+826
+00:19:50,870 --> 00:19:50,880
+like when I make a request I'm like hey
+ 
+
+827
+00:19:50,880 --> 00:19:51,990
+like when I make a request I'm like hey
+I'm doing a feature here's what the
+
+828
+00:19:51,990 --> 00:19:52,000
+I'm doing a feature here's what the
+ 
+
+829
+00:19:52,000 --> 00:19:53,350
+I'm doing a feature here's what the
+feature looks like blah blah blah prompt
+
+830
+00:19:53,350 --> 00:19:53,360
+feature looks like blah blah blah prompt
+ 
+
+831
+00:19:53,360 --> 00:19:55,110
+feature looks like blah blah blah prompt
+do you think they'll just be a sub agent
+
+832
+00:19:55,110 --> 00:19:55,120
+do you think they'll just be a sub agent
+ 
+
+833
+00:19:55,120 --> 00:19:57,110
+do you think they'll just be a sub agent
+skill automatically very quickly here to
+
+834
+00:19:57,110 --> 00:19:57,120
+skill automatically very quickly here to
+ 
+
+835
+00:19:57,120 --> 00:19:57,669
+skill automatically very quickly here to
+do this
+
+836
+00:19:57,669 --> 00:19:57,679
+do this
+ 
+
+837
+00:19:57,679 --> 00:20:01,029
+do this
+>> you you can make it a skill but for big
+
+838
+00:20:01,029 --> 00:20:01,039
+>> you you can make it a skill but for big
+ 
+
+839
+00:20:01,039 --> 00:20:03,350
+>> you you can make it a skill but for big
+organizations like how much how much of
+
+840
+00:20:03,350 --> 00:20:03,360
+organizations like how much how much of
+ 
+
+841
+00:20:03,360 --> 00:20:04,789
+organizations like how much how much of
+the context within the scale are you
+
+842
+00:20:04,789 --> 00:20:04,799
+the context within the scale are you
+ 
+
+843
+00:20:04,799 --> 00:20:06,789
+the context within the scale are you
+going to put in plus are you going to
+
+844
+00:20:06,789 --> 00:20:06,799
+going to put in plus are you going to
+ 
+
+845
+00:20:06,799 --> 00:20:09,510
+going to put in plus are you going to
+put in to every repo let's say an
+
+846
+00:20:09,510 --> 00:20:09,520
+put in to every repo let's say an
+ 
+
+847
+00:20:09,520 --> 00:20:11,750
+put in to every repo let's say an
+organization has thousand repos so you
+
+848
+00:20:11,750 --> 00:20:11,760
+organization has thousand repos so you
+ 
+
+849
+00:20:11,760 --> 00:20:13,750
+organization has thousand repos so you
+would have to put in uh the scale
+
+850
+00:20:13,750 --> 00:20:13,760
+would have to put in uh the scale
+ 
+
+851
+00:20:13,760 --> 00:20:16,070
+would have to put in uh the scale
+requirements into thousand repos. So you
+
+852
+00:20:16,070 --> 00:20:16,080
+requirements into thousand repos. So you
+ 
+
+853
+00:20:16,080 --> 00:20:18,789
+requirements into thousand repos. So you
+need a centralized place uh where you I
+
+854
+00:20:18,789 --> 00:20:18,799
+need a centralized place uh where you I
+ 
+
+855
+00:20:18,799 --> 00:20:20,789
+need a centralized place uh where you I
+can actually pull in all of this context
+
+856
+00:20:20,789 --> 00:20:20,799
+can actually pull in all of this context
+ 
+
+857
+00:20:20,799 --> 00:20:23,669
+can actually pull in all of this context
+plus the changes that you make if you're
+
+858
+00:20:23,669 --> 00:20:23,679
+plus the changes that you make if you're
+ 
+
+859
+00:20:23,679 --> 00:20:25,110
+plus the changes that you make if you're
+putting it into the skills you would now
+
+860
+00:20:25,110 --> 00:20:25,120
+putting it into the skills you would now
+ 
+
+861
+00:20:25,120 --> 00:20:26,630
+putting it into the skills you would now
+have to make into thousand repos which
+
+862
+00:20:26,630 --> 00:20:26,640
+have to make into thousand repos which
+ 
+
+863
+00:20:26,640 --> 00:20:29,430
+have to make into thousand repos which
+doesn't which makes it non-scalable.
+
+864
+00:20:29,430 --> 00:20:29,440
+doesn't which makes it non-scalable.
+ 
+
+865
+00:20:29,440 --> 00:20:29,990
+doesn't which makes it non-scalable.
+>> Perfect.
+
+866
+00:20:29,990 --> 00:20:30,000
+>> Perfect.
+ 
+
+867
+00:20:30,000 --> 00:20:30,310
+>> Perfect.
+>> Yeah.
+
+868
+00:20:30,310 --> 00:20:30,320
+>> Yeah.
+ 
+
+869
+00:20:30,320 --> 00:20:33,270
+>> Yeah.
+>> Uh does anyone have a question?
+
+870
+00:20:33,270 --> 00:20:33,280
+>> Uh does anyone have a question?
+ 
+
+871
+00:20:33,280 --> 00:20:41,430
+>> Uh does anyone have a question?
+>> Perfect. I'm coming to you.
+
+872
+00:20:41,430 --> 00:20:41,440
+
+ 
+
+873
+00:20:41,440 --> 00:20:42,549
+
+>> Thank you. Thank you. It was a great
+
+874
+00:20:42,549 --> 00:20:42,559
+>> Thank you. Thank you. It was a great
+ 
+
+875
+00:20:42,559 --> 00:20:46,549
+>> Thank you. Thank you. It was a great
+talk. Um my question is about when does
+
+876
+00:20:46,549 --> 00:20:46,559
+talk. Um my question is about when does
+ 
+
+877
+00:20:46,559 --> 00:20:48,630
+talk. Um my question is about when does
+this trigger like security review
+
+878
+00:20:48,630 --> 00:20:48,640
+this trigger like security review
+ 
+
+879
+00:20:48,640 --> 00:20:51,350
+this trigger like security review
+trigger? Would it trigger when code is
+
+880
+00:20:51,350 --> 00:20:51,360
+trigger? Would it trigger when code is
+ 
+
+881
+00:20:51,360 --> 00:20:53,270
+trigger? Would it trigger when code is
+committed to the code repository or
+
+882
+00:20:53,270 --> 00:20:53,280
+committed to the code repository or
+ 
+
+883
+00:20:53,280 --> 00:20:55,350
+committed to the code repository or
+before that during the ID?
+
+884
+00:20:55,350 --> 00:20:55,360
+before that during the ID?
+ 
+
+885
+00:20:55,360 --> 00:20:56,870
+before that during the ID?
+>> It's it's within the ID.
+
+886
+00:20:56,870 --> 00:20:56,880
+>> It's it's within the ID.
+ 
+
+887
+00:20:56,880 --> 00:20:57,590
+>> It's it's within the ID.
+>> Within the ID.
+
+888
+00:20:57,590 --> 00:20:57,600
+>> Within the ID.
+ 
+
+889
+00:20:57,600 --> 00:20:58,870
+>> Within the ID.
+>> Yeah, at when the code is being
+
+890
+00:20:58,870 --> 00:20:58,880
+>> Yeah, at when the code is being
+ 
+
+891
+00:20:58,880 --> 00:20:59,909
+>> Yeah, at when the code is being
+generated.
+
+892
+00:20:59,909 --> 00:20:59,919
+generated.
+ 
+
+893
+00:20:59,919 --> 00:21:06,149
+generated.
+>> Great. Thank you.
+
+894
+00:21:06,149 --> 00:21:06,159
+
+ 
+
+895
+00:21:06,159 --> 00:21:08,549
+
+>> Yeah, awesome talk. Thanks. So, how do
+
+896
+00:21:08,549 --> 00:21:08,559
+>> Yeah, awesome talk. Thanks. So, how do
+ 
+
+897
+00:21:08,559 --> 00:21:10,549
+>> Yeah, awesome talk. Thanks. So, how do
+you make sure that this actually
+
+898
+00:21:10,549 --> 00:21:10,559
+you make sure that this actually
+ 
+
+899
+00:21:10,559 --> 00:21:11,669
+you make sure that this actually
+happens?
+
+900
+00:21:11,669 --> 00:21:11,679
+happens?
+ 
+
+901
+00:21:11,679 --> 00:21:13,750
+happens?
+Right. Um like do you have telemetry
+
+902
+00:21:13,750 --> 00:21:13,760
+Right. Um like do you have telemetry
+ 
+
+903
+00:21:13,760 --> 00:21:15,510
+Right. Um like do you have telemetry
+about how often developers are doing
+
+904
+00:21:15,510 --> 00:21:15,520
+about how often developers are doing
+ 
+
+905
+00:21:15,520 --> 00:21:16,630
+about how often developers are doing
+things and then how often they're
+
+906
+00:21:16,630 --> 00:21:16,640
+things and then how often they're
+ 
+
+907
+00:21:16,640 --> 00:21:18,149
+things and then how often they're
+calling the tool and like cross compare
+
+908
+00:21:18,149 --> 00:21:18,159
+calling the tool and like cross compare
+ 
+
+909
+00:21:18,159 --> 00:21:19,830
+calling the tool and like cross compare
+or you mentioned hooks earlier. I know
+
+910
+00:21:19,830 --> 00:21:19,840
+or you mentioned hooks earlier. I know
+ 
+
+911
+00:21:19,840 --> 00:21:21,350
+or you mentioned hooks earlier. I know
+you can use those to just gather
+
+912
+00:21:21,350 --> 00:21:21,360
+you can use those to just gather
+ 
+
+913
+00:21:21,360 --> 00:21:22,549
+you can use those to just gather
+information like when people submit
+
+914
+00:21:22,549 --> 00:21:22,559
+information like when people submit
+ 
+
+915
+00:21:22,559 --> 00:21:24,230
+information like when people submit
+prompts and things like that but like
+
+916
+00:21:24,230 --> 00:21:24,240
+prompts and things like that but like
+ 
+
+917
+00:21:24,240 --> 00:21:26,870
+prompts and things like that but like
+and like how do you even encourage the
+
+918
+00:21:26,870 --> 00:21:26,880
+and like how do you even encourage the
+ 
+
+919
+00:21:26,880 --> 00:21:29,350
+and like how do you even encourage the
+local IDEs to call the MCP server.
+
+920
+00:21:29,350 --> 00:21:29,360
+local IDEs to call the MCP server.
+ 
+
+921
+00:21:29,360 --> 00:21:31,350
+local IDEs to call the MCP server.
+>> Yeah. So a lot of it depends upon your
+
+922
+00:21:31,350 --> 00:21:31,360
+>> Yeah. So a lot of it depends upon your
+ 
+
+923
+00:21:31,360 --> 00:21:34,950
+>> Yeah. So a lot of it depends upon your
+tool description. Um so you have to make
+
+924
+00:21:34,950 --> 00:21:34,960
+tool description. Um so you have to make
+ 
+
+925
+00:21:34,960 --> 00:21:38,310
+tool description. Um so you have to make
+the tool description of uh your MCPS uh
+
+926
+00:21:38,310 --> 00:21:38,320
+the tool description of uh your MCPS uh
+ 
+
+927
+00:21:38,320 --> 00:21:41,750
+the tool description of uh your MCPS uh
+so that in such a way that the uh your
+
+928
+00:21:41,750 --> 00:21:41,760
+so that in such a way that the uh your
+ 
+
+929
+00:21:41,760 --> 00:21:44,549
+so that in such a way that the uh your
+agent actually calls them. Um that is
+
+930
+00:21:44,549 --> 00:21:44,559
+agent actually calls them. Um that is
+ 
+
+931
+00:21:44,559 --> 00:21:48,070
+agent actually calls them. Um that is
+one of the functionalities of MCPS that
+
+932
+00:21:48,070 --> 00:21:48,080
+one of the functionalities of MCPS that
+ 
+
+933
+00:21:48,080 --> 00:21:50,710
+one of the functionalities of MCPS that
+you know you can you you can make it
+
+934
+00:21:50,710 --> 00:21:50,720
+you know you can you you can make it
+ 
+
+935
+00:21:50,720 --> 00:21:55,190
+you know you can you you can make it
+call every time but um it it's I would
+
+936
+00:21:55,190 --> 00:21:55,200
+call every time but um it it's I would
+ 
+
+937
+00:21:55,200 --> 00:21:57,590
+call every time but um it it's I would
+say it's not 100% time and that's why
+
+938
+00:21:57,590 --> 00:21:57,600
+say it's not 100% time and that's why
+ 
+
+939
+00:21:57,600 --> 00:21:59,590
+say it's not 100% time and that's why
+you can use hooks uh to make it
+
+940
+00:21:59,590 --> 00:21:59,600
+you can use hooks uh to make it
+ 
+
+941
+00:21:59,600 --> 00:22:01,510
+you can use hooks uh to make it
+deterministic. So with hooks you can
+
+942
+00:22:01,510 --> 00:22:01,520
+deterministic. So with hooks you can
+ 
+
+943
+00:22:01,520 --> 00:22:04,950
+deterministic. So with hooks you can
+actually call it like every time.
+
+944
+00:22:04,950 --> 00:22:04,960
+actually call it like every time.
+ 
+
+945
+00:22:04,960 --> 00:22:09,110
+actually call it like every time.
+>> We got time for one more.
+
+946
+00:22:09,110 --> 00:22:09,120
+
+ 
+
+947
+00:22:09,120 --> 00:22:11,750
+
+>> Hi. Um have you measured how well it's
+
+948
+00:22:11,750 --> 00:22:11,760
+>> Hi. Um have you measured how well it's
+ 
+
+949
+00:22:11,760 --> 00:22:13,590
+>> Hi. Um have you measured how well it's
+working? Like what residual security
+
+950
+00:22:13,590 --> 00:22:13,600
+working? Like what residual security
+ 
+
+951
+00:22:13,600 --> 00:22:15,669
+working? Like what residual security
+bugs are found after using this process?
+
+952
+00:22:15,669 --> 00:22:15,679
+bugs are found after using this process?
+ 
+
+953
+00:22:15,679 --> 00:22:19,510
+bugs are found after using this process?
+Yeah, it definitely helps in a lot of
+
+954
+00:22:19,510 --> 00:22:19,520
+Yeah, it definitely helps in a lot of
+ 
+
+955
+00:22:19,520 --> 00:22:21,990
+Yeah, it definitely helps in a lot of
+sorry
+
+956
+00:22:21,990 --> 00:22:22,000
+sorry
+ 
+
+957
+00:22:22,000 --> 00:22:24,789
+sorry
+it definitely helps in a lot of uh
+
+958
+00:22:24,789 --> 00:22:24,799
+it definitely helps in a lot of uh
+ 
+
+959
+00:22:24,799 --> 00:22:27,990
+it definitely helps in a lot of uh
+business logic issues uh compared to the
+
+960
+00:22:27,990 --> 00:22:28,000
+business logic issues uh compared to the
+ 
+
+961
+00:22:28,000 --> 00:22:29,830
+business logic issues uh compared to the
+things that are not identified with the
+
+962
+00:22:29,830 --> 00:22:29,840
+things that are not identified with the
+ 
+
+963
+00:22:29,840 --> 00:22:31,990
+things that are not identified with the
+security scanners. So it has been very
+
+964
+00:22:31,990 --> 00:22:32,000
+security scanners. So it has been very
+ 
+
+965
+00:22:32,000 --> 00:22:35,750
+security scanners. So it has been very
+helpful there. Plus um like I mentioned
+
+966
+00:22:35,750 --> 00:22:35,760
+helpful there. Plus um like I mentioned
+ 
+
+967
+00:22:35,760 --> 00:22:38,070
+helpful there. Plus um like I mentioned
+developers work on geo digits. So they
+
+968
+00:22:38,070 --> 00:22:38,080
+developers work on geo digits. So they
+ 
+
+969
+00:22:38,080 --> 00:22:40,470
+developers work on geo digits. So they
+don't have to come to us. Uh if we
+
+970
+00:22:40,470 --> 00:22:40,480
+don't have to come to us. Uh if we
+ 
+
+971
+00:22:40,480 --> 00:22:42,390
+don't have to come to us. Uh if we
+provide them certain guidance and if
+
+972
+00:22:42,390 --> 00:22:42,400
+provide them certain guidance and if
+ 
+
+973
+00:22:42,400 --> 00:22:45,350
+provide them certain guidance and if
+they're using uh this tool the agent
+
+974
+00:22:45,350 --> 00:22:45,360
+they're using uh this tool the agent
+ 
+
+975
+00:22:45,360 --> 00:22:47,270
+they're using uh this tool the agent
+automatically pulls all the
+
+976
+00:22:47,270 --> 00:22:47,280
+automatically pulls all the
+ 
+
+977
+00:22:47,280 --> 00:22:49,350
+automatically pulls all the
+requirements. So that has been one of
+
+978
+00:22:49,350 --> 00:22:49,360
+requirements. So that has been one of
+ 
+
+979
+00:22:49,360 --> 00:22:52,149
+requirements. So that has been one of
+the advantage as well. And depending
+
+980
+00:22:52,149 --> 00:22:52,159
+the advantage as well. And depending
+ 
+
+981
+00:22:52,159 --> 00:22:55,830
+the advantage as well. And depending
+upon uh the tool description it calls in
+
+982
+00:22:55,830 --> 00:22:55,840
+upon uh the tool description it calls in
+ 
+
+983
+00:22:55,840 --> 00:22:57,430
+upon uh the tool description it calls in
+the security review and the code
+
+984
+00:22:57,430 --> 00:22:57,440
+the security review and the code
+ 
+
+985
+00:22:57,440 --> 00:23:00,549
+the security review and the code
+verifier as well.
+
+986
+00:23:00,549 --> 00:23:00,559
+verifier as well.
+ 
+
+987
+00:23:00,559 --> 00:23:01,990
+verifier as well.
+Perfect. Thank you very much.
+
+988
+00:23:01,990 --> 00:23:02,000
+Perfect. Thank you very much.
+ 
+
+989
+00:23:02,000 --> 00:23:05,159
+Perfect. Thank you very much.
+>> Thank you.
+

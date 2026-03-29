@@ -1,0 +1,6485 @@
+1
+00:00:06,080 --> 00:00:08,470
+
+Thank you. Uh, hi everyone. This is
+
+2
+00:00:08,470 --> 00:00:08,480
+Thank you. Uh, hi everyone. This is
+ 
+
+3
+00:00:08,480 --> 00:00:10,070
+Thank you. Uh, hi everyone. This is
+going to be a bit of whiplash moving
+
+4
+00:00:10,070 --> 00:00:10,080
+going to be a bit of whiplash moving
+ 
+
+5
+00:00:10,080 --> 00:00:11,990
+going to be a bit of whiplash moving
+from hardware hacking to whatever I'm
+
+6
+00:00:11,990 --> 00:00:12,000
+from hardware hacking to whatever I'm
+ 
+
+7
+00:00:12,000 --> 00:00:13,669
+from hardware hacking to whatever I'm
+about to talk about, but stick with me.
+
+8
+00:00:13,669 --> 00:00:13,679
+about to talk about, but stick with me.
+ 
+
+9
+00:00:13,679 --> 00:00:16,150
+about to talk about, but stick with me.
+We'll get there. Um, I'm Rammy. I'm a
+
+10
+00:00:16,150 --> 00:00:16,160
+We'll get there. Um, I'm Rammy. I'm a
+ 
+
+11
+00:00:16,160 --> 00:00:18,390
+We'll get there. Um, I'm Rammy. I'm a
+security researcher at Whiz. And this
+
+12
+00:00:18,390 --> 00:00:18,400
+security researcher at Whiz. And this
+ 
+
+13
+00:00:18,400 --> 00:00:21,429
+security researcher at Whiz. And this
+talk is about the series of supply chain
+
+14
+00:00:21,429 --> 00:00:21,439
+talk is about the series of supply chain
+ 
+
+15
+00:00:21,439 --> 00:00:23,670
+talk is about the series of supply chain
+attacks that have been crossing npm and
+
+16
+00:00:23,670 --> 00:00:23,680
+attacks that have been crossing npm and
+ 
+
+17
+00:00:23,680 --> 00:00:25,590
+attacks that have been crossing npm and
+GitHub in the past year. But it's not
+
+18
+00:00:25,590 --> 00:00:25,600
+GitHub in the past year. But it's not
+ 
+
+19
+00:00:25,600 --> 00:00:28,070
+GitHub in the past year. But it's not
+really about that. It's about how AI has
+
+20
+00:00:28,070 --> 00:00:28,080
+really about that. It's about how AI has
+ 
+
+21
+00:00:28,080 --> 00:00:30,390
+really about that. It's about how AI has
+developed in the past year. How models
+
+22
+00:00:30,390 --> 00:00:30,400
+developed in the past year. How models
+ 
+
+23
+00:00:30,400 --> 00:00:31,750
+developed in the past year. How models
+have improved, how harnesses have
+
+24
+00:00:31,750 --> 00:00:31,760
+have improved, how harnesses have
+ 
+
+25
+00:00:31,760 --> 00:00:33,190
+have improved, how harnesses have
+improved, and how your practices should
+
+26
+00:00:33,190 --> 00:00:33,200
+improved, and how your practices should
+ 
+
+27
+00:00:33,200 --> 00:00:35,110
+improved, and how your practices should
+have improved as well. And it's not
+
+28
+00:00:35,110 --> 00:00:35,120
+have improved as well. And it's not
+ 
+
+29
+00:00:35,120 --> 00:00:37,110
+have improved as well. And it's not
+really that as well. It's just basically
+
+30
+00:00:37,110 --> 00:00:37,120
+really that as well. It's just basically
+ 
+
+31
+00:00:37,120 --> 00:00:39,430
+really that as well. It's just basically
+me showing a bunch of things I've done
+
+32
+00:00:39,430 --> 00:00:39,440
+me showing a bunch of things I've done
+ 
+
+33
+00:00:39,440 --> 00:00:41,750
+me showing a bunch of things I've done
+with AI around these attacks and talking
+
+34
+00:00:41,750 --> 00:00:41,760
+with AI around these attacks and talking
+ 
+
+35
+00:00:41,760 --> 00:00:43,350
+with AI around these attacks and talking
+about what I've learned, the intuition
+
+36
+00:00:43,350 --> 00:00:43,360
+about what I've learned, the intuition
+ 
+
+37
+00:00:43,360 --> 00:00:45,670
+about what I've learned, the intuition
+I've built about how to use AI, where it
+
+38
+00:00:45,670 --> 00:00:45,680
+I've built about how to use AI, where it
+ 
+
+39
+00:00:45,680 --> 00:00:48,069
+I've built about how to use AI, where it
+fails, where it succeeds, and hopefully
+
+40
+00:00:48,069 --> 00:00:48,079
+fails, where it succeeds, and hopefully
+ 
+
+41
+00:00:48,079 --> 00:00:49,830
+fails, where it succeeds, and hopefully
+you can take away uh something to do
+
+42
+00:00:49,830 --> 00:00:49,840
+you can take away uh something to do
+ 
+
+43
+00:00:49,840 --> 00:00:52,470
+you can take away uh something to do
+with it as well. So with that being
+
+44
+00:00:52,470 --> 00:00:52,480
+with it as well. So with that being
+ 
+
+45
+00:00:52,480 --> 00:00:55,110
+with it as well. So with that being
+said, um the past year is something I've
+
+46
+00:00:55,110 --> 00:00:55,120
+said, um the past year is something I've
+ 
+
+47
+00:00:55,120 --> 00:00:56,229
+said, um the past year is something I've
+been talking about as the year of the
+
+48
+00:00:56,229 --> 00:00:56,239
+been talking about as the year of the
+ 
+
+49
+00:00:56,239 --> 00:00:57,830
+been talking about as the year of the
+worm. There were series of supply chain
+
+50
+00:00:57,830 --> 00:00:57,840
+worm. There were series of supply chain
+ 
+
+51
+00:00:57,840 --> 00:00:59,670
+worm. There were series of supply chain
+attacks, right? Uh Singularity, Shy
+
+52
+00:00:59,670 --> 00:00:59,680
+attacks, right? Uh Singularity, Shy
+ 
+
+53
+00:00:59,680 --> 00:01:02,389
+attacks, right? Uh Singularity, Shy
+Halude, the npm chalk attack uh hitting
+
+54
+00:01:02,389 --> 00:01:02,399
+Halude, the npm chalk attack uh hitting
+ 
+
+55
+00:01:02,399 --> 00:01:04,950
+Halude, the npm chalk attack uh hitting
+mostly the npm ecosystem and in many
+
+56
+00:01:04,950 --> 00:01:04,960
+mostly the npm ecosystem and in many
+ 
+
+57
+00:01:04,960 --> 00:01:06,789
+mostly the npm ecosystem and in many
+cases starting in August resulting in
+
+58
+00:01:06,789 --> 00:01:06,799
+cases starting in August resulting in
+ 
+
+59
+00:01:06,799 --> 00:01:09,270
+cases starting in August resulting in
+large amounts of data leaking out onto
+
+60
+00:01:09,270 --> 00:01:09,280
+large amounts of data leaking out onto
+ 
+
+61
+00:01:09,280 --> 00:01:11,910
+large amounts of data leaking out onto
+GitHub uh with Singularity. And our
+
+62
+00:01:11,910 --> 00:01:11,920
+GitHub uh with Singularity. And our
+ 
+
+63
+00:01:11,920 --> 00:01:13,910
+GitHub uh with Singularity. And our
+problem here, right, is that we need to
+
+64
+00:01:13,910 --> 00:01:13,920
+problem here, right, is that we need to
+ 
+
+65
+00:01:13,920 --> 00:01:16,070
+problem here, right, is that we need to
+capture this data, analyze it, and
+
+66
+00:01:16,070 --> 00:01:16,080
+capture this data, analyze it, and
+ 
+
+67
+00:01:16,080 --> 00:01:17,670
+capture this data, analyze it, and
+figure out who it belongs to so that we
+
+68
+00:01:17,670 --> 00:01:17,680
+figure out who it belongs to so that we
+ 
+
+69
+00:01:17,680 --> 00:01:19,510
+figure out who it belongs to so that we
+can notify victims so that companies can
+
+70
+00:01:19,510 --> 00:01:19,520
+can notify victims so that companies can
+ 
+
+71
+00:01:19,520 --> 00:01:22,310
+can notify victims so that companies can
+respond and recover. However, uh the
+
+72
+00:01:22,310 --> 00:01:22,320
+respond and recover. However, uh the
+ 
+
+73
+00:01:22,320 --> 00:01:23,990
+respond and recover. However, uh the
+data is ephemeral. GitHub cleans it up,
+
+74
+00:01:23,990 --> 00:01:24,000
+data is ephemeral. GitHub cleans it up,
+ 
+
+75
+00:01:24,000 --> 00:01:26,070
+data is ephemeral. GitHub cleans it up,
+victims clean it up. Uh the data is
+
+76
+00:01:26,070 --> 00:01:26,080
+victims clean it up. Uh the data is
+ 
+
+77
+00:01:26,080 --> 00:01:27,590
+victims clean it up. Uh the data is
+going to go away and once it's gone, it
+
+78
+00:01:27,590 --> 00:01:27,600
+going to go away and once it's gone, it
+ 
+
+79
+00:01:27,600 --> 00:01:28,789
+going to go away and once it's gone, it
+becomes very hard to answer those
+
+80
+00:01:28,789 --> 00:01:28,799
+becomes very hard to answer those
+ 
+
+81
+00:01:28,799 --> 00:01:30,710
+becomes very hard to answer those
+questions of was I impacted. And these
+
+82
+00:01:30,710 --> 00:01:30,720
+questions of was I impacted. And these
+ 
+
+83
+00:01:30,720 --> 00:01:32,149
+questions of was I impacted. And these
+challenges are AI shaped, right?
+
+84
+00:01:32,149 --> 00:01:32,159
+challenges are AI shaped, right?
+ 
+
+85
+00:01:32,159 --> 00:01:34,149
+challenges are AI shaped, right?
+Scaling, collection, analyzing the data
+
+86
+00:01:34,149 --> 00:01:34,159
+Scaling, collection, analyzing the data
+ 
+
+87
+00:01:34,159 --> 00:01:36,870
+Scaling, collection, analyzing the data
+at high speed, doing victim attribution.
+
+88
+00:01:36,870 --> 00:01:36,880
+at high speed, doing victim attribution.
+ 
+
+89
+00:01:36,880 --> 00:01:37,990
+at high speed, doing victim attribution.
+And I'm going to talk about all the ways
+
+90
+00:01:37,990 --> 00:01:38,000
+And I'm going to talk about all the ways
+ 
+
+91
+00:01:38,000 --> 00:01:40,550
+And I'm going to talk about all the ways
+that that's true. So like goal one is
+
+92
+00:01:40,550 --> 00:01:40,560
+that that's true. So like goal one is
+ 
+
+93
+00:01:40,560 --> 00:01:42,950
+that that's true. So like goal one is
+how do we get this data? Um like the
+
+94
+00:01:42,950 --> 00:01:42,960
+how do we get this data? Um like the
+ 
+
+95
+00:01:42,960 --> 00:01:44,390
+how do we get this data? Um like the
+data is still leaking. I know it's going
+
+96
+00:01:44,390 --> 00:01:44,400
+data is still leaking. I know it's going
+ 
+
+97
+00:01:44,400 --> 00:01:46,230
+data is still leaking. I know it's going
+to be ephemeral. I want to move quickly
+
+98
+00:01:46,230 --> 00:01:46,240
+to be ephemeral. I want to move quickly
+ 
+
+99
+00:01:46,240 --> 00:01:48,069
+to be ephemeral. I want to move quickly
+and collect as much data as I can. Not
+
+100
+00:01:48,069 --> 00:01:48,079
+and collect as much data as I can. Not
+ 
+
+101
+00:01:48,079 --> 00:01:49,910
+and collect as much data as I can. Not
+because I enjoy having gigabytes of
+
+102
+00:01:49,910 --> 00:01:49,920
+because I enjoy having gigabytes of
+ 
+
+103
+00:01:49,920 --> 00:01:51,510
+because I enjoy having gigabytes of
+secrets on my disc, but because I want
+
+104
+00:01:51,510 --> 00:01:51,520
+secrets on my disc, but because I want
+ 
+
+105
+00:01:51,520 --> 00:01:54,149
+secrets on my disc, but because I want
+to help people. And like just to flash
+
+106
+00:01:54,149 --> 00:01:54,159
+to help people. And like just to flash
+ 
+
+107
+00:01:54,159 --> 00:01:55,270
+to help people. And like just to flash
+up what it looked like in the
+
+108
+00:01:55,270 --> 00:01:55,280
+up what it looked like in the
+ 
+
+109
+00:01:55,280 --> 00:01:57,670
+up what it looked like in the
+Singularity attack, um what we had was
+
+110
+00:01:57,670 --> 00:01:57,680
+Singularity attack, um what we had was
+ 
+
+111
+00:01:57,680 --> 00:01:59,350
+Singularity attack, um what we had was
+these GitHub repositories called
+
+112
+00:01:59,350 --> 00:01:59,360
+these GitHub repositories called
+ 
+
+113
+00:01:59,360 --> 00:02:02,149
+these GitHub repositories called
+Singularity repository. Uh that's a
+
+114
+00:02:02,149 --> 00:02:02,159
+Singularity repository. Uh that's a
+ 
+
+115
+00:02:02,159 --> 00:02:03,670
+Singularity repository. Uh that's a
+encoded data, but you just have to
+
+116
+00:02:03,670 --> 00:02:03,680
+encoded data, but you just have to
+ 
+
+117
+00:02:03,680 --> 00:02:05,190
+encoded data, but you just have to
+believe me that there's a whole bunch of
+
+118
+00:02:05,190 --> 00:02:05,200
+believe me that there's a whole bunch of
+ 
+
+119
+00:02:05,200 --> 00:02:07,749
+believe me that there's a whole bunch of
+secrets in there. Um and so what do we
+
+120
+00:02:07,749 --> 00:02:07,759
+secrets in there. Um and so what do we
+ 
+
+121
+00:02:07,759 --> 00:02:09,910
+secrets in there. Um and so what do we
+do? Right. This isn't a data scraping
+
+122
+00:02:09,910 --> 00:02:09,920
+do? Right. This isn't a data scraping
+ 
+
+123
+00:02:09,920 --> 00:02:11,270
+do? Right. This isn't a data scraping
+talk, so I'm just going to give you the
+
+124
+00:02:11,270 --> 00:02:11,280
+talk, so I'm just going to give you the
+ 
+
+125
+00:02:11,280 --> 00:02:14,309
+talk, so I'm just going to give you the
+naive example. Uh, you go to Claude. Um,
+
+126
+00:02:14,309 --> 00:02:14,319
+naive example. Uh, you go to Claude. Um,
+ 
+
+127
+00:02:14,319 --> 00:02:15,910
+naive example. Uh, you go to Claude. Um,
+and I recreated this last week. I
+
+128
+00:02:15,910 --> 00:02:15,920
+and I recreated this last week. I
+ 
+
+129
+00:02:15,920 --> 00:02:17,350
+and I recreated this last week. I
+originally did this in August just so
+
+130
+00:02:17,350 --> 00:02:17,360
+originally did this in August just so
+ 
+
+131
+00:02:17,360 --> 00:02:19,190
+originally did this in August just so
+that folks couldn't tell me it was using
+
+132
+00:02:19,190 --> 00:02:19,200
+that folks couldn't tell me it was using
+ 
+
+133
+00:02:19,200 --> 00:02:21,510
+that folks couldn't tell me it was using
+an old model or an old coding harness,
+
+134
+00:02:21,510 --> 00:02:21,520
+an old model or an old coding harness,
+ 
+
+135
+00:02:21,520 --> 00:02:23,510
+an old model or an old coding harness,
+right? And you say, "Hey, you know, use
+
+136
+00:02:23,510 --> 00:02:23,520
+right? And you say, "Hey, you know, use
+ 
+
+137
+00:02:23,520 --> 00:02:25,830
+right? And you say, "Hey, you know, use
+the GitHub Cly to grab all of these
+
+138
+00:02:25,830 --> 00:02:25,840
+the GitHub Cly to grab all of these
+ 
+
+139
+00:02:25,840 --> 00:02:28,630
+the GitHub Cly to grab all of these
+repositories by name." And what's
+
+140
+00:02:28,630 --> 00:02:28,640
+repositories by name." And what's
+ 
+
+141
+00:02:28,640 --> 00:02:30,070
+repositories by name." And what's
+interesting when you do this is it
+
+142
+00:02:30,070 --> 00:02:30,080
+interesting when you do this is it
+ 
+
+143
+00:02:30,080 --> 00:02:31,510
+interesting when you do this is it
+totally works, right? It's still magic
+
+144
+00:02:31,510 --> 00:02:31,520
+totally works, right? It's still magic
+ 
+
+145
+00:02:31,520 --> 00:02:33,190
+totally works, right? It's still magic
+that AI generates code that works at
+
+146
+00:02:33,190 --> 00:02:33,200
+that AI generates code that works at
+ 
+
+147
+00:02:33,200 --> 00:02:35,110
+that AI generates code that works at
+all. But there's a whole bunch of things
+
+148
+00:02:35,110 --> 00:02:35,120
+all. But there's a whole bunch of things
+ 
+
+149
+00:02:35,120 --> 00:02:36,949
+all. But there's a whole bunch of things
+missing when you ask such a simple
+
+150
+00:02:36,949 --> 00:02:36,959
+missing when you ask such a simple
+ 
+
+151
+00:02:36,959 --> 00:02:38,790
+missing when you ask such a simple
+stupid question. You're missing
+
+152
+00:02:38,790 --> 00:02:38,800
+stupid question. You're missing
+ 
+
+153
+00:02:38,800 --> 00:02:40,070
+stupid question. You're missing
+non-functional and functional
+
+154
+00:02:40,070 --> 00:02:40,080
+non-functional and functional
+ 
+
+155
+00:02:40,080 --> 00:02:41,830
+non-functional and functional
+requirements. You're missing things like
+
+156
+00:02:41,830 --> 00:02:41,840
+requirements. You're missing things like
+ 
+
+157
+00:02:41,840 --> 00:02:43,990
+requirements. You're missing things like
+caching, like it impotency, like
+
+158
+00:02:43,990 --> 00:02:44,000
+caching, like it impotency, like
+ 
+
+159
+00:02:44,000 --> 00:02:45,990
+caching, like it impotency, like
+handling of search rate limiting, um
+
+160
+00:02:45,990 --> 00:02:46,000
+handling of search rate limiting, um
+ 
+
+161
+00:02:46,000 --> 00:02:47,430
+handling of search rate limiting, um
+creative approaches to scraping,
+
+162
+00:02:47,430 --> 00:02:47,440
+creative approaches to scraping,
+ 
+
+163
+00:02:47,440 --> 00:02:49,030
+creative approaches to scraping,
+parallelization,
+
+164
+00:02:49,030 --> 00:02:49,040
+parallelization,
+ 
+
+165
+00:02:49,040 --> 00:02:50,710
+parallelization,
+backoffs. There are all these things
+
+166
+00:02:50,710 --> 00:02:50,720
+backoffs. There are all these things
+ 
+
+167
+00:02:50,720 --> 00:02:52,630
+backoffs. There are all these things
+that AI does not solve for you or give
+
+168
+00:02:52,630 --> 00:02:52,640
+that AI does not solve for you or give
+ 
+
+169
+00:02:52,640 --> 00:02:54,710
+that AI does not solve for you or give
+you unless you are using it right. And
+
+170
+00:02:54,710 --> 00:02:54,720
+you unless you are using it right. And
+ 
+
+171
+00:02:54,720 --> 00:02:57,589
+you unless you are using it right. And
+so like one is you can't just assume you
+
+172
+00:02:57,589 --> 00:02:57,599
+so like one is you can't just assume you
+ 
+
+173
+00:02:57,599 --> 00:02:59,190
+so like one is you can't just assume you
+can give a dumb prompt and AI will pop
+
+174
+00:02:59,190 --> 00:02:59,200
+can give a dumb prompt and AI will pop
+ 
+
+175
+00:02:59,200 --> 00:03:01,110
+can give a dumb prompt and AI will pop
+out magic. you have to be thoughtful.
+
+176
+00:03:01,110 --> 00:03:01,120
+out magic. you have to be thoughtful.
+ 
+
+177
+00:03:01,120 --> 00:03:03,270
+out magic. you have to be thoughtful.
+Um, but you also can build harnesses and
+
+178
+00:03:03,270 --> 00:03:03,280
+Um, but you also can build harnesses and
+ 
+
+179
+00:03:03,280 --> 00:03:05,509
+Um, but you also can build harnesses and
+processes and approaches that bake this
+
+180
+00:03:05,509 --> 00:03:05,519
+processes and approaches that bake this
+ 
+
+181
+00:03:05,519 --> 00:03:07,990
+processes and approaches that bake this
+in. So, one thing to think about is the
+
+182
+00:03:07,990 --> 00:03:08,000
+in. So, one thing to think about is the
+ 
+
+183
+00:03:08,000 --> 00:03:10,790
+in. So, one thing to think about is the
+idea of an RPI loop. Um, you should be
+
+184
+00:03:10,790 --> 00:03:10,800
+idea of an RPI loop. Um, you should be
+ 
+
+185
+00:03:10,800 --> 00:03:13,430
+idea of an RPI loop. Um, you should be
+asking AI to research, asking AI to plan
+
+186
+00:03:13,430 --> 00:03:13,440
+asking AI to research, asking AI to plan
+ 
+
+187
+00:03:13,440 --> 00:03:14,550
+asking AI to research, asking AI to plan
+and then finally going to
+
+188
+00:03:14,550 --> 00:03:14,560
+and then finally going to
+ 
+
+189
+00:03:14,560 --> 00:03:17,030
+and then finally going to
+implementation. Don't just jump to uh,
+
+190
+00:03:17,030 --> 00:03:17,040
+implementation. Don't just jump to uh,
+ 
+
+191
+00:03:17,040 --> 00:03:19,110
+implementation. Don't just jump to uh,
+you know, please write this script. Um,
+
+192
+00:03:19,110 --> 00:03:19,120
+you know, please write this script. Um,
+ 
+
+193
+00:03:19,120 --> 00:03:20,309
+you know, please write this script. Um,
+this is also something that can be
+
+194
+00:03:20,309 --> 00:03:20,319
+this is also something that can be
+ 
+
+195
+00:03:20,319 --> 00:03:22,070
+this is also something that can be
+encoded in the tools. Claude has plan
+
+196
+00:03:22,070 --> 00:03:22,080
+encoded in the tools. Claude has plan
+ 
+
+197
+00:03:22,080 --> 00:03:23,830
+encoded in the tools. Claude has plan
+mode. Plan mode is like a couple lines
+
+198
+00:03:23,830 --> 00:03:23,840
+mode. Plan mode is like a couple lines
+ 
+
+199
+00:03:23,840 --> 00:03:26,309
+mode. Plan mode is like a couple lines
+of prompt that says stop and plan and
+
+200
+00:03:26,309 --> 00:03:26,319
+of prompt that says stop and plan and
+ 
+
+201
+00:03:26,319 --> 00:03:29,110
+of prompt that says stop and plan and
+don't write any code yet. Um, you can
+
+202
+00:03:29,110 --> 00:03:29,120
+don't write any code yet. Um, you can
+ 
+
+203
+00:03:29,120 --> 00:03:31,350
+don't write any code yet. Um, you can
+also build your own harnesses or adopt
+
+204
+00:03:31,350 --> 00:03:31,360
+also build your own harnesses or adopt
+ 
+
+205
+00:03:31,360 --> 00:03:32,869
+also build your own harnesses or adopt
+alternative ones, whatever platform
+
+206
+00:03:32,869 --> 00:03:32,879
+alternative ones, whatever platform
+ 
+
+207
+00:03:32,879 --> 00:03:34,710
+alternative ones, whatever platform
+you're in. Going a bit further, there's
+
+208
+00:03:34,710 --> 00:03:34,720
+you're in. Going a bit further, there's
+ 
+
+209
+00:03:34,720 --> 00:03:36,789
+you're in. Going a bit further, there's
+a repository called superpowers that
+
+210
+00:03:36,789 --> 00:03:36,799
+a repository called superpowers that
+ 
+
+211
+00:03:36,799 --> 00:03:38,789
+a repository called superpowers that
+tries to encode a seven-step process for
+
+212
+00:03:38,789 --> 00:03:38,799
+tries to encode a seven-step process for
+ 
+
+213
+00:03:38,799 --> 00:03:40,789
+tries to encode a seven-step process for
+developing code. And this talk is not
+
+214
+00:03:40,789 --> 00:03:40,799
+developing code. And this talk is not
+ 
+
+215
+00:03:40,799 --> 00:03:42,149
+developing code. And this talk is not
+telling you like go pull down
+
+216
+00:03:42,149 --> 00:03:42,159
+telling you like go pull down
+ 
+
+217
+00:03:42,159 --> 00:03:43,830
+telling you like go pull down
+superpowers and and start using it to
+
+218
+00:03:43,830 --> 00:03:43,840
+superpowers and and start using it to
+ 
+
+219
+00:03:43,840 --> 00:03:45,430
+superpowers and and start using it to
+solve all your problems. But I really
+
+220
+00:03:45,430 --> 00:03:45,440
+solve all your problems. But I really
+ 
+
+221
+00:03:45,440 --> 00:03:47,110
+solve all your problems. But I really
+want to emphasize that you need to be
+
+222
+00:03:47,110 --> 00:03:47,120
+want to emphasize that you need to be
+ 
+
+223
+00:03:47,120 --> 00:03:49,430
+want to emphasize that you need to be
+thinking about how you are engaging with
+
+224
+00:03:49,430 --> 00:03:49,440
+thinking about how you are engaging with
+ 
+
+225
+00:03:49,440 --> 00:03:51,509
+thinking about how you are engaging with
+these tools because the magic of code
+
+226
+00:03:51,509 --> 00:03:51,519
+these tools because the magic of code
+ 
+
+227
+00:03:51,519 --> 00:03:53,589
+these tools because the magic of code
+generation is one thing, but actually
+
+228
+00:03:53,589 --> 00:03:53,599
+generation is one thing, but actually
+ 
+
+229
+00:03:53,599 --> 00:03:55,750
+generation is one thing, but actually
+using them in practice is another. Um,
+
+230
+00:03:55,750 --> 00:03:55,760
+using them in practice is another. Um,
+ 
+
+231
+00:03:55,760 --> 00:03:57,509
+using them in practice is another. Um,
+and so superpowers gives you a
+
+232
+00:03:57,509 --> 00:03:57,519
+and so superpowers gives you a
+ 
+
+233
+00:03:57,519 --> 00:03:59,750
+and so superpowers gives you a
+brainstorming as stage one, which is
+
+234
+00:03:59,750 --> 00:03:59,760
+brainstorming as stage one, which is
+ 
+
+235
+00:03:59,760 --> 00:04:02,949
+brainstorming as stage one, which is
+again very similar to that RPI loop. Um,
+
+236
+00:04:02,949 --> 00:04:02,959
+again very similar to that RPI loop. Um,
+ 
+
+237
+00:04:02,959 --> 00:04:04,550
+again very similar to that RPI loop. Um,
+and there's another thing about like
+
+238
+00:04:04,550 --> 00:04:04,560
+and there's another thing about like
+ 
+
+239
+00:04:04,560 --> 00:04:07,509
+and there's another thing about like
+working in rapid iteration with these AI
+
+240
+00:04:07,509 --> 00:04:07,519
+working in rapid iteration with these AI
+ 
+
+241
+00:04:07,519 --> 00:04:09,110
+working in rapid iteration with these AI
+tools. Uh, this is something I stole
+
+242
+00:04:09,110 --> 00:04:09,120
+tools. Uh, this is something I stole
+ 
+
+243
+00:04:09,120 --> 00:04:10,789
+tools. Uh, this is something I stole
+from Simon. I think he wrote it like 3
+
+244
+00:04:10,789 --> 00:04:10,799
+from Simon. I think he wrote it like 3
+ 
+
+245
+00:04:10,799 --> 00:04:12,710
+from Simon. I think he wrote it like 3
+days ago, so it's pretty fresh, but he
+
+246
+00:04:12,710 --> 00:04:12,720
+days ago, so it's pretty fresh, but he
+ 
+
+247
+00:04:12,720 --> 00:04:14,309
+days ago, so it's pretty fresh, but he
+wrote it called hoarde things you know
+
+248
+00:04:14,309 --> 00:04:14,319
+wrote it called hoarde things you know
+ 
+
+249
+00:04:14,319 --> 00:04:16,390
+wrote it called hoarde things you know
+how to do. And I think about it as
+
+250
+00:04:16,390 --> 00:04:16,400
+how to do. And I think about it as
+ 
+
+251
+00:04:16,400 --> 00:04:19,270
+how to do. And I think about it as
+building composable utilities. As you're
+
+252
+00:04:19,270 --> 00:04:19,280
+building composable utilities. As you're
+ 
+
+253
+00:04:19,280 --> 00:04:21,509
+building composable utilities. As you're
+vibe coding, as you're working with AI,
+
+254
+00:04:21,509 --> 00:04:21,519
+vibe coding, as you're working with AI,
+ 
+
+255
+00:04:21,519 --> 00:04:22,950
+vibe coding, as you're working with AI,
+people are telling you code is free.
+
+256
+00:04:22,950 --> 00:04:22,960
+people are telling you code is free.
+ 
+
+257
+00:04:22,960 --> 00:04:24,150
+people are telling you code is free.
+People are telling you you can throw
+
+258
+00:04:24,150 --> 00:04:24,160
+People are telling you you can throw
+ 
+
+259
+00:04:24,160 --> 00:04:26,710
+People are telling you you can throw
+away code. I somewhat agree, but it took
+
+260
+00:04:26,710 --> 00:04:26,720
+away code. I somewhat agree, but it took
+ 
+
+261
+00:04:26,720 --> 00:04:28,790
+away code. I somewhat agree, but it took
+you effort to get there. The effort's
+
+262
+00:04:28,790 --> 00:04:28,800
+you effort to get there. The effort's
+ 
+
+263
+00:04:28,800 --> 00:04:30,310
+you effort to get there. The effort's
+going to get lower and lower over time,
+
+264
+00:04:30,310 --> 00:04:30,320
+going to get lower and lower over time,
+ 
+
+265
+00:04:30,320 --> 00:04:31,990
+going to get lower and lower over time,
+but as you build some of these
+
+266
+00:04:31,990 --> 00:04:32,000
+but as you build some of these
+ 
+
+267
+00:04:32,000 --> 00:04:33,430
+but as you build some of these
+utilities, you're going to find yourself
+
+268
+00:04:33,430 --> 00:04:33,440
+utilities, you're going to find yourself
+ 
+
+269
+00:04:33,440 --> 00:04:35,030
+utilities, you're going to find yourself
+wanting to reach back for them. And the
+
+270
+00:04:35,030 --> 00:04:35,040
+wanting to reach back for them. And the
+ 
+
+271
+00:04:35,040 --> 00:04:36,629
+wanting to reach back for them. And the
+vibe coding patterns, for me at least,
+
+272
+00:04:36,629 --> 00:04:36,639
+vibe coding patterns, for me at least,
+ 
+
+273
+00:04:36,639 --> 00:04:38,310
+vibe coding patterns, for me at least,
+result in a whole bunch of data strewn
+
+274
+00:04:38,310 --> 00:04:38,320
+result in a whole bunch of data strewn
+ 
+
+275
+00:04:38,320 --> 00:04:39,749
+result in a whole bunch of data strewn
+around my disc that I don't know how to
+
+276
+00:04:39,749 --> 00:04:39,759
+around my disc that I don't know how to
+ 
+
+277
+00:04:39,759 --> 00:04:41,830
+around my disc that I don't know how to
+reference in the future. Um, so thinking
+
+278
+00:04:41,830 --> 00:04:41,840
+reference in the future. Um, so thinking
+ 
+
+279
+00:04:41,840 --> 00:04:43,189
+reference in the future. Um, so thinking
+about how you're going to do management
+
+280
+00:04:43,189 --> 00:04:43,199
+about how you're going to do management
+ 
+
+281
+00:04:43,199 --> 00:04:45,749
+about how you're going to do management
+of all these small utilities, skills,
+
+282
+00:04:45,749 --> 00:04:45,759
+of all these small utilities, skills,
+ 
+
+283
+00:04:45,759 --> 00:04:47,430
+of all these small utilities, skills,
+the things you're building so that your
+
+284
+00:04:47,430 --> 00:04:47,440
+the things you're building so that your
+ 
+
+285
+00:04:47,440 --> 00:04:49,030
+the things you're building so that your
+investment can compound is really
+
+286
+00:04:49,030 --> 00:04:49,040
+investment can compound is really
+ 
+
+287
+00:04:49,040 --> 00:04:51,110
+investment can compound is really
+important.
+
+288
+00:04:51,110 --> 00:04:51,120
+important.
+ 
+
+289
+00:04:51,120 --> 00:04:53,350
+important.
+So, we scrape the data and what do we
+
+290
+00:04:53,350 --> 00:04:53,360
+So, we scrape the data and what do we
+ 
+
+291
+00:04:53,360 --> 00:04:55,110
+So, we scrape the data and what do we
+end up with? Well, like poor man's data
+
+292
+00:04:55,110 --> 00:04:55,120
+end up with? Well, like poor man's data
+ 
+
+293
+00:04:55,120 --> 00:04:57,430
+end up with? Well, like poor man's data
+lake, right? Um, a quarter of a million
+
+294
+00:04:57,430 --> 00:04:57,440
+lake, right? Um, a quarter of a million
+ 
+
+295
+00:04:57,440 --> 00:04:59,830
+lake, right? Um, a quarter of a million
+flat files, 30 gigabytes, by no means
+
+296
+00:04:59,830 --> 00:04:59,840
+flat files, 30 gigabytes, by no means
+ 
+
+297
+00:04:59,840 --> 00:05:01,830
+flat files, 30 gigabytes, by no means
+big data. Um, you know, you can work
+
+298
+00:05:01,830 --> 00:05:01,840
+big data. Um, you know, you can work
+ 
+
+299
+00:05:01,840 --> 00:05:04,390
+big data. Um, you know, you can work
+with it on your laptop. Uh, but enough
+
+300
+00:05:04,390 --> 00:05:04,400
+with it on your laptop. Uh, but enough
+ 
+
+301
+00:05:04,400 --> 00:05:07,830
+with it on your laptop. Uh, but enough
+data that linear scanning gets IO bound.
+
+302
+00:05:07,830 --> 00:05:07,840
+data that linear scanning gets IO bound.
+ 
+
+303
+00:05:07,840 --> 00:05:09,590
+data that linear scanning gets IO bound.
+I I like talk about the shape of the
+
+304
+00:05:09,590 --> 00:05:09,600
+I I like talk about the shape of the
+ 
+
+305
+00:05:09,600 --> 00:05:11,270
+I I like talk about the shape of the
+data here because what's interesting is
+
+306
+00:05:11,270 --> 00:05:11,280
+data here because what's interesting is
+ 
+
+307
+00:05:11,280 --> 00:05:13,590
+data here because what's interesting is
+despite um, you know, several iterations
+
+308
+00:05:13,590 --> 00:05:13,600
+despite um, you know, several iterations
+ 
+
+309
+00:05:13,600 --> 00:05:15,029
+despite um, you know, several iterations
+of working with data of this shape with
+
+310
+00:05:15,029 --> 00:05:15,039
+of working with data of this shape with
+ 
+
+311
+00:05:15,039 --> 00:05:17,430
+of working with data of this shape with
+AI, I noticed that AI is actually never
+
+312
+00:05:17,430 --> 00:05:17,440
+AI, I noticed that AI is actually never
+ 
+
+313
+00:05:17,440 --> 00:05:19,350
+AI, I noticed that AI is actually never
+going to question the abstraction you
+
+314
+00:05:19,350 --> 00:05:19,360
+going to question the abstraction you
+ 
+
+315
+00:05:19,360 --> 00:05:21,270
+going to question the abstraction you
+give it. So when you give it flat files
+
+316
+00:05:21,270 --> 00:05:21,280
+give it. So when you give it flat files
+ 
+
+317
+00:05:21,280 --> 00:05:23,350
+give it. So when you give it flat files
+on disk, that is what AI assumes to work
+
+318
+00:05:23,350 --> 00:05:23,360
+on disk, that is what AI assumes to work
+ 
+
+319
+00:05:23,360 --> 00:05:24,950
+on disk, that is what AI assumes to work
+with. And you're not going to get to
+
+320
+00:05:24,950 --> 00:05:24,960
+with. And you're not going to get to
+ 
+
+321
+00:05:24,960 --> 00:05:26,469
+with. And you're not going to get to
+that point where it's questioning
+
+322
+00:05:26,469 --> 00:05:26,479
+that point where it's questioning
+ 
+
+323
+00:05:26,479 --> 00:05:28,469
+that point where it's questioning
+whether this should be indexed, whether
+
+324
+00:05:28,469 --> 00:05:28,479
+whether this should be indexed, whether
+ 
+
+325
+00:05:28,479 --> 00:05:30,790
+whether this should be indexed, whether
+this should be SQL parquet, right? Um so
+
+326
+00:05:30,790 --> 00:05:30,800
+this should be SQL parquet, right? Um so
+ 
+
+327
+00:05:30,800 --> 00:05:32,870
+this should be SQL parquet, right? Um so
+again, a thing you have to pull back and
+
+328
+00:05:32,870 --> 00:05:32,880
+again, a thing you have to pull back and
+ 
+
+329
+00:05:32,880 --> 00:05:35,670
+again, a thing you have to pull back and
+plan for. Uh and fundamentally the idea
+
+330
+00:05:35,670 --> 00:05:35,680
+plan for. Uh and fundamentally the idea
+ 
+
+331
+00:05:35,680 --> 00:05:37,270
+plan for. Uh and fundamentally the idea
+that like flat files are the final
+
+332
+00:05:37,270 --> 00:05:37,280
+that like flat files are the final
+ 
+
+333
+00:05:37,280 --> 00:05:39,749
+that like flat files are the final
+abstraction of AI, I think is is untrue.
+
+334
+00:05:39,749 --> 00:05:39,759
+abstraction of AI, I think is is untrue.
+ 
+
+335
+00:05:39,759 --> 00:05:40,870
+abstraction of AI, I think is is untrue.
+Um, and there's been some recent
+
+336
+00:05:40,870 --> 00:05:40,880
+Um, and there's been some recent
+ 
+
+337
+00:05:40,880 --> 00:05:43,029
+Um, and there's been some recent
+analysis from Verscell and Brain Trust,
+
+338
+00:05:43,029 --> 00:05:43,039
+analysis from Verscell and Brain Trust,
+ 
+
+339
+00:05:43,039 --> 00:05:44,629
+analysis from Verscell and Brain Trust,
+for example, that that talks about this
+
+340
+00:05:44,629 --> 00:05:44,639
+for example, that that talks about this
+ 
+
+341
+00:05:44,639 --> 00:05:46,550
+for example, that that talks about this
+idea that there are things that AI is
+
+342
+00:05:46,550 --> 00:05:46,560
+idea that there are things that AI is
+ 
+
+343
+00:05:46,560 --> 00:05:48,310
+idea that there are things that AI is
+good with bash and flat files. And there
+
+344
+00:05:48,310 --> 00:05:48,320
+good with bash and flat files. And there
+ 
+
+345
+00:05:48,320 --> 00:05:49,670
+good with bash and flat files. And there
+are times when you want to start to move
+
+346
+00:05:49,670 --> 00:05:49,680
+are times when you want to start to move
+ 
+
+347
+00:05:49,680 --> 00:05:52,310
+are times when you want to start to move
+into um, you know, more indexed database
+
+348
+00:05:52,310 --> 00:05:52,320
+into um, you know, more indexed database
+ 
+
+349
+00:05:52,320 --> 00:05:56,629
+into um, you know, more indexed database
+querying patterns. Uh, okay, we have a
+
+350
+00:05:56,629 --> 00:05:56,639
+querying patterns. Uh, okay, we have a
+ 
+
+351
+00:05:56,639 --> 00:05:58,469
+querying patterns. Uh, okay, we have a
+whole bunch of data. What is the shape
+
+352
+00:05:58,469 --> 00:05:58,479
+whole bunch of data. What is the shape
+ 
+
+353
+00:05:58,479 --> 00:06:00,469
+whole bunch of data. What is the shape
+of the data? How do we analyze it? How
+
+354
+00:06:00,469 --> 00:06:00,479
+of the data? How do we analyze it? How
+ 
+
+355
+00:06:00,479 --> 00:06:02,469
+of the data? How do we analyze it? How
+do we understand what happened here? Um,
+
+356
+00:06:02,469 --> 00:06:02,479
+do we understand what happened here? Um,
+ 
+
+357
+00:06:02,479 --> 00:06:05,270
+do we understand what happened here? Um,
+and what's going on? So, the first thing
+
+358
+00:06:05,270 --> 00:06:05,280
+and what's going on? So, the first thing
+ 
+
+359
+00:06:05,280 --> 00:06:07,430
+and what's going on? So, the first thing
+that was a really cool oneshot from AI
+
+360
+00:06:07,430 --> 00:06:07,440
+that was a really cool oneshot from AI
+ 
+
+361
+00:06:07,440 --> 00:06:09,189
+that was a really cool oneshot from AI
+was the concept of fingerprinting. So we
+
+362
+00:06:09,189 --> 00:06:09,199
+was the concept of fingerprinting. So we
+ 
+
+363
+00:06:09,199 --> 00:06:12,629
+was the concept of fingerprinting. So we
+had 30,000 leaked repositories full of
+
+364
+00:06:12,629 --> 00:06:12,639
+had 30,000 leaked repositories full of
+ 
+
+365
+00:06:12,639 --> 00:06:14,469
+had 30,000 leaked repositories full of
+data from various machines, right? So it
+
+366
+00:06:14,469 --> 00:06:14,479
+data from various machines, right? So it
+ 
+
+367
+00:06:14,479 --> 00:06:15,990
+data from various machines, right? So it
+would be environment files, the results
+
+368
+00:06:15,990 --> 00:06:16,000
+would be environment files, the results
+ 
+
+369
+00:06:16,000 --> 00:06:17,749
+would be environment files, the results
+of truffle hog scans, a whole lot of
+
+370
+00:06:17,749 --> 00:06:17,759
+of truffle hog scans, a whole lot of
+ 
+
+371
+00:06:17,759 --> 00:06:20,950
+of truffle hog scans, a whole lot of
+data. Um, but in looking at the data,
+
+372
+00:06:20,950 --> 00:06:20,960
+data. Um, but in looking at the data,
+ 
+
+373
+00:06:20,960 --> 00:06:22,950
+data. Um, but in looking at the data,
+you could see things like CI/CD runs
+
+374
+00:06:22,950 --> 00:06:22,960
+you could see things like CI/CD runs
+ 
+
+375
+00:06:22,960 --> 00:06:24,870
+you could see things like CI/CD runs
+having duplicate data. So it wasn't
+
+376
+00:06:24,870 --> 00:06:24,880
+having duplicate data. So it wasn't
+ 
+
+377
+00:06:24,880 --> 00:06:28,390
+having duplicate data. So it wasn't
+actually 30,000 victims. Um, and being
+
+378
+00:06:28,390 --> 00:06:28,400
+actually 30,000 victims. Um, and being
+ 
+
+379
+00:06:28,400 --> 00:06:30,629
+actually 30,000 victims. Um, and being
+able to use Claude to derive signals is
+
+380
+00:06:30,629 --> 00:06:30,639
+able to use Claude to derive signals is
+ 
+
+381
+00:06:30,639 --> 00:06:31,909
+able to use Claude to derive signals is
+a huge part of it. being able to use
+
+382
+00:06:31,909 --> 00:06:31,919
+a huge part of it. being able to use
+ 
+
+383
+00:06:31,919 --> 00:06:34,070
+a huge part of it. being able to use
+these AI tools. And so being able to
+
+384
+00:06:34,070 --> 00:06:34,080
+these AI tools. And so being able to
+ 
+
+385
+00:06:34,080 --> 00:06:36,550
+these AI tools. And so being able to
+like oneshot a fingerprint that would
+
+386
+00:06:36,550 --> 00:06:36,560
+like oneshot a fingerprint that would
+ 
+
+387
+00:06:36,560 --> 00:06:39,270
+like oneshot a fingerprint that would
+let me dduplicate machines uh lets you
+
+388
+00:06:39,270 --> 00:06:39,280
+let me dduplicate machines uh lets you
+ 
+
+389
+00:06:39,280 --> 00:06:40,629
+let me dduplicate machines uh lets you
+think more critically about the
+
+390
+00:06:40,629 --> 00:06:40,639
+think more critically about the
+ 
+
+391
+00:06:40,639 --> 00:06:42,710
+think more critically about the
+underlying data. And so when you're
+
+392
+00:06:42,710 --> 00:06:42,720
+underlying data. And so when you're
+ 
+
+393
+00:06:42,720 --> 00:06:44,629
+underlying data. And so when you're
+analyzing data with AI, I would say
+
+394
+00:06:44,629 --> 00:06:44,639
+analyzing data with AI, I would say
+ 
+
+395
+00:06:44,639 --> 00:06:46,710
+analyzing data with AI, I would say
+think about dduplication,
+
+396
+00:06:46,710 --> 00:06:46,720
+think about dduplication,
+ 
+
+397
+00:06:46,720 --> 00:06:49,990
+think about dduplication,
+fingerprinting, but especially um AI is
+
+398
+00:06:49,990 --> 00:06:50,000
+fingerprinting, but especially um AI is
+ 
+
+399
+00:06:50,000 --> 00:06:51,590
+fingerprinting, but especially um AI is
+really good at signal extraction,
+
+400
+00:06:51,590 --> 00:06:51,600
+really good at signal extraction,
+ 
+
+401
+00:06:51,600 --> 00:06:53,430
+really good at signal extraction,
+pattern matching, identifying the shape
+
+402
+00:06:53,430 --> 00:06:53,440
+pattern matching, identifying the shape
+ 
+
+403
+00:06:53,440 --> 00:06:57,270
+pattern matching, identifying the shape
+of the data, and that ports as well to
+
+404
+00:06:57,270 --> 00:06:57,280
+of the data, and that ports as well to
+ 
+
+405
+00:06:57,280 --> 00:06:59,270
+of the data, and that ports as well to
+identifying like useful metadata. So we
+
+406
+00:06:59,270 --> 00:06:59,280
+identifying like useful metadata. So we
+ 
+
+407
+00:06:59,280 --> 00:07:01,589
+identifying like useful metadata. So we
+were looking at this data. It's uh you
+
+408
+00:07:01,589 --> 00:07:01,599
+were looking at this data. It's uh you
+ 
+
+409
+00:07:01,599 --> 00:07:03,189
+were looking at this data. It's uh you
+know malware had run on machines and
+
+410
+00:07:03,189 --> 00:07:03,199
+know malware had run on machines and
+ 
+
+411
+00:07:03,199 --> 00:07:05,270
+know malware had run on machines and
+leaked data. Were those machines user
+
+412
+00:07:05,270 --> 00:07:05,280
+leaked data. Were those machines user
+ 
+
+413
+00:07:05,280 --> 00:07:07,350
+leaked data. Were those machines user
+laptops or were they CI/CD systems? Were
+
+414
+00:07:07,350 --> 00:07:07,360
+laptops or were they CI/CD systems? Were
+ 
+
+415
+00:07:07,360 --> 00:07:09,270
+laptops or were they CI/CD systems? Were
+those systems containerized? What sort
+
+416
+00:07:09,270 --> 00:07:09,280
+those systems containerized? What sort
+ 
+
+417
+00:07:09,280 --> 00:07:10,790
+those systems containerized? What sort
+of programming languages were running?
+
+418
+00:07:10,790 --> 00:07:10,800
+of programming languages were running?
+ 
+
+419
+00:07:10,800 --> 00:07:12,870
+of programming languages were running?
+What sort of packaging ecosystems? Could
+
+420
+00:07:12,870 --> 00:07:12,880
+What sort of packaging ecosystems? Could
+ 
+
+421
+00:07:12,880 --> 00:07:15,589
+What sort of packaging ecosystems? Could
+we analyze the packages that had been
+
+422
+00:07:15,589 --> 00:07:15,599
+we analyze the packages that had been
+ 
+
+423
+00:07:15,599 --> 00:07:18,070
+we analyze the packages that had been
+the initial root cause of this incident?
+
+424
+00:07:18,070 --> 00:07:18,080
+the initial root cause of this incident?
+ 
+
+425
+00:07:18,080 --> 00:07:20,950
+the initial root cause of this incident?
+Um, and again, the ability to jump from
+
+426
+00:07:20,950 --> 00:07:20,960
+Um, and again, the ability to jump from
+ 
+
+427
+00:07:20,960 --> 00:07:22,469
+Um, and again, the ability to jump from
+a human trying to identify these
+
+428
+00:07:22,469 --> 00:07:22,479
+a human trying to identify these
+ 
+
+429
+00:07:22,479 --> 00:07:24,870
+a human trying to identify these
+patterns to Claude kicking out um, you
+
+430
+00:07:24,870 --> 00:07:24,880
+patterns to Claude kicking out um, you
+ 
+
+431
+00:07:24,880 --> 00:07:26,629
+patterns to Claude kicking out um, you
+know, 25 different environment variables
+
+432
+00:07:26,629 --> 00:07:26,639
+know, 25 different environment variables
+ 
+
+433
+00:07:26,639 --> 00:07:28,710
+know, 25 different environment variables
+that signify various CI/CD platforms
+
+434
+00:07:28,710 --> 00:07:28,720
+that signify various CI/CD platforms
+ 
+
+435
+00:07:28,720 --> 00:07:32,710
+that signify various CI/CD platforms
+I've never heard of is a big level up.
+
+436
+00:07:32,710 --> 00:07:32,720
+I've never heard of is a big level up.
+ 
+
+437
+00:07:32,720 --> 00:07:34,950
+I've never heard of is a big level up.
+But like I've been talking about
+
+438
+00:07:34,950 --> 00:07:34,960
+But like I've been talking about
+ 
+
+439
+00:07:34,960 --> 00:07:37,189
+But like I've been talking about
+patterns AI can recognize, but I also
+
+440
+00:07:37,189 --> 00:07:37,199
+patterns AI can recognize, but I also
+ 
+
+441
+00:07:37,199 --> 00:07:39,430
+patterns AI can recognize, but I also
+want to talk about approach um, and
+
+442
+00:07:39,430 --> 00:07:39,440
+want to talk about approach um, and
+ 
+
+443
+00:07:39,440 --> 00:07:41,589
+want to talk about approach um, and
+really advocate for this idea of
+
+444
+00:07:41,589 --> 00:07:41,599
+really advocate for this idea of
+ 
+
+445
+00:07:41,599 --> 00:07:44,070
+really advocate for this idea of
+feedback loops and codification. So when
+
+446
+00:07:44,070 --> 00:07:44,080
+feedback loops and codification. So when
+ 
+
+447
+00:07:44,080 --> 00:07:46,070
+feedback loops and codification. So when
+you're working with AI for data
+
+448
+00:07:46,070 --> 00:07:46,080
+you're working with AI for data
+ 
+
+449
+00:07:46,080 --> 00:07:47,670
+you're working with AI for data
+analysis, when you're building an AI
+
+450
+00:07:47,670 --> 00:07:47,680
+analysis, when you're building an AI
+ 
+
+451
+00:07:47,680 --> 00:07:51,110
+analysis, when you're building an AI
+process, I always try and get to more
+
+452
+00:07:51,110 --> 00:07:51,120
+process, I always try and get to more
+ 
+
+453
+00:07:51,120 --> 00:07:53,029
+process, I always try and get to more
+deterministic methods where possible,
+
+454
+00:07:53,029 --> 00:07:53,039
+deterministic methods where possible,
+ 
+
+455
+00:07:53,039 --> 00:07:54,629
+deterministic methods where possible,
+right? So like we're trying to analyze
+
+456
+00:07:54,629 --> 00:07:54,639
+right? So like we're trying to analyze
+ 
+
+457
+00:07:54,639 --> 00:07:57,350
+right? So like we're trying to analyze
+this data. Instead of asking an AI to
+
+458
+00:07:57,350 --> 00:07:57,360
+this data. Instead of asking an AI to
+ 
+
+459
+00:07:57,360 --> 00:08:00,629
+this data. Instead of asking an AI to
+iteratively analyze 30 GB, you want to
+
+460
+00:08:00,629 --> 00:08:00,639
+iteratively analyze 30 GB, you want to
+ 
+
+461
+00:08:00,639 --> 00:08:01,990
+iteratively analyze 30 GB, you want to
+use the AI to generate a more
+
+462
+00:08:01,990 --> 00:08:02,000
+use the AI to generate a more
+ 
+
+463
+00:08:02,000 --> 00:08:04,550
+use the AI to generate a more
+deterministic script, um to encode some
+
+464
+00:08:04,550 --> 00:08:04,560
+deterministic script, um to encode some
+ 
+
+465
+00:08:04,560 --> 00:08:06,070
+deterministic script, um to encode some
+patterns, some signatures for
+
+466
+00:08:06,070 --> 00:08:06,080
+patterns, some signatures for
+ 
+
+467
+00:08:06,080 --> 00:08:08,230
+patterns, some signatures for
+scalability, consistency, iteration,
+
+468
+00:08:08,230 --> 00:08:08,240
+scalability, consistency, iteration,
+ 
+
+469
+00:08:08,240 --> 00:08:10,230
+scalability, consistency, iteration,
+back testing. If you're asking AI to
+
+470
+00:08:10,230 --> 00:08:10,240
+back testing. If you're asking AI to
+ 
+
+471
+00:08:10,240 --> 00:08:11,670
+back testing. If you're asking AI to
+analyze the data over and over again,
+
+472
+00:08:11,670 --> 00:08:11,680
+analyze the data over and over again,
+ 
+
+473
+00:08:11,680 --> 00:08:12,710
+analyze the data over and over again,
+you're going to get different small
+
+474
+00:08:12,710 --> 00:08:12,720
+you're going to get different small
+ 
+
+475
+00:08:12,720 --> 00:08:15,270
+you're going to get different small
+samples. Um, and so instead, you can
+
+476
+00:08:15,270 --> 00:08:15,280
+samples. Um, and so instead, you can
+ 
+
+477
+00:08:15,280 --> 00:08:16,869
+samples. Um, and so instead, you can
+distill the learnings and codify them
+
+478
+00:08:16,869 --> 00:08:16,879
+distill the learnings and codify them
+ 
+
+479
+00:08:16,879 --> 00:08:18,390
+distill the learnings and codify them
+into something more deterministic. And
+
+480
+00:08:18,390 --> 00:08:18,400
+into something more deterministic. And
+ 
+
+481
+00:08:18,400 --> 00:08:19,749
+into something more deterministic. And
+so in this case, we found out from that
+
+482
+00:08:19,749 --> 00:08:19,759
+so in this case, we found out from that
+ 
+
+483
+00:08:19,759 --> 00:08:21,749
+so in this case, we found out from that
+fingerprinting, there were 13,000 unique
+
+484
+00:08:21,749 --> 00:08:21,759
+fingerprinting, there were 13,000 unique
+ 
+
+485
+00:08:21,759 --> 00:08:25,430
+fingerprinting, there were 13,000 unique
+machines, not 30. Um, 77% of CI/CD
+
+486
+00:08:25,430 --> 00:08:25,440
+machines, not 30. Um, 77% of CI/CD
+ 
+
+487
+00:08:25,440 --> 00:08:27,589
+machines, not 30. Um, 77% of CI/CD
+runners.
+
+488
+00:08:27,589 --> 00:08:27,599
+runners.
+ 
+
+489
+00:08:27,599 --> 00:08:30,150
+runners.
+Okay, so we know the shape of the data.
+
+490
+00:08:30,150 --> 00:08:30,160
+Okay, so we know the shape of the data.
+ 
+
+491
+00:08:30,160 --> 00:08:32,709
+Okay, so we know the shape of the data.
+We've started to look at it. Um, the big
+
+492
+00:08:32,709 --> 00:08:32,719
+We've started to look at it. Um, the big
+ 
+
+493
+00:08:32,719 --> 00:08:35,190
+We've started to look at it. Um, the big
+question here really and like where I
+
+494
+00:08:35,190 --> 00:08:35,200
+question here really and like where I
+ 
+
+495
+00:08:35,200 --> 00:08:37,269
+question here really and like where I
+really had to lean on AI was trying to
+
+496
+00:08:37,269 --> 00:08:37,279
+really had to lean on AI was trying to
+ 
+
+497
+00:08:37,279 --> 00:08:38,709
+really had to lean on AI was trying to
+attribute it. I have 13,000
+
+498
+00:08:38,709 --> 00:08:38,719
+attribute it. I have 13,000
+ 
+
+499
+00:08:38,719 --> 00:08:41,110
+attribute it. I have 13,000
+repositories. Um, how do I find out who
+
+500
+00:08:41,110 --> 00:08:41,120
+repositories. Um, how do I find out who
+ 
+
+501
+00:08:41,120 --> 00:08:43,029
+repositories. Um, how do I find out who
+the heck's data this is and maybe give
+
+502
+00:08:43,029 --> 00:08:43,039
+the heck's data this is and maybe give
+ 
+
+503
+00:08:43,039 --> 00:08:45,509
+the heck's data this is and maybe give
+it back to them?
+
+504
+00:08:45,509 --> 00:08:45,519
+it back to them?
+ 
+
+505
+00:08:45,519 --> 00:08:47,910
+it back to them?
+And uh, like in increasing order of
+
+506
+00:08:47,910 --> 00:08:47,920
+And uh, like in increasing order of
+ 
+
+507
+00:08:47,920 --> 00:08:49,670
+And uh, like in increasing order of
+sophistication,
+
+508
+00:08:49,670 --> 00:08:49,680
+sophistication,
+ 
+
+509
+00:08:49,680 --> 00:08:52,310
+sophistication,
+I would start from this idea of uh, like
+
+510
+00:08:52,310 --> 00:08:52,320
+I would start from this idea of uh, like
+ 
+
+511
+00:08:52,320 --> 00:08:53,910
+I would start from this idea of uh, like
+the magic of reasoning models, something
+
+512
+00:08:53,910 --> 00:08:53,920
+the magic of reasoning models, something
+ 
+
+513
+00:08:53,920 --> 00:08:57,829
+the magic of reasoning models, something
+we're all familiar with. Um, this is me
+
+514
+00:08:57,829 --> 00:08:57,839
+we're all familiar with. Um, this is me
+ 
+
+515
+00:08:57,839 --> 00:09:01,430
+we're all familiar with. Um, this is me
+being abusive towards Gemini. I took uh,
+
+516
+00:09:01,430 --> 00:09:01,440
+being abusive towards Gemini. I took uh,
+ 
+
+517
+00:09:01,440 --> 00:09:03,829
+being abusive towards Gemini. I took uh,
+every GitHub repository name from this
+
+518
+00:09:03,829 --> 00:09:03,839
+every GitHub repository name from this
+ 
+
+519
+00:09:03,839 --> 00:09:06,310
+every GitHub repository name from this
+data set. I forgot to add new lines, so
+
+520
+00:09:06,310 --> 00:09:06,320
+data set. I forgot to add new lines, so
+ 
+
+521
+00:09:06,320 --> 00:09:07,750
+data set. I forgot to add new lines, so
+they were all merged into a single
+
+522
+00:09:07,750 --> 00:09:07,760
+they were all merged into a single
+ 
+
+523
+00:09:07,760 --> 00:09:10,630
+they were all merged into a single
+string. I fed them into Gemini and I
+
+524
+00:09:10,630 --> 00:09:10,640
+string. I fed them into Gemini and I
+ 
+
+525
+00:09:10,640 --> 00:09:12,230
+string. I fed them into Gemini and I
+provided garbage and got back gold.
+
+526
+00:09:12,230 --> 00:09:12,240
+provided garbage and got back gold.
+ 
+
+527
+00:09:12,240 --> 00:09:13,350
+provided garbage and got back gold.
+Right? You're able to ask questions
+
+528
+00:09:13,350 --> 00:09:13,360
+Right? You're able to ask questions
+ 
+
+529
+00:09:13,360 --> 00:09:15,430
+Right? You're able to ask questions
+like, "Find me the 10 major companies."
+
+530
+00:09:15,430 --> 00:09:15,440
+like, "Find me the 10 major companies."
+ 
+
+531
+00:09:15,440 --> 00:09:17,509
+like, "Find me the 10 major companies."
+Now, you can't ask, "Find me every
+
+532
+00:09:17,509 --> 00:09:17,519
+Now, you can't ask, "Find me every
+ 
+
+533
+00:09:17,519 --> 00:09:19,430
+Now, you can't ask, "Find me every
+company, but you can start to take
+
+534
+00:09:19,430 --> 00:09:19,440
+company, but you can start to take
+ 
+
+535
+00:09:19,440 --> 00:09:21,910
+company, but you can start to take
+samples at very high signal. Reasoning
+
+536
+00:09:21,910 --> 00:09:21,920
+samples at very high signal. Reasoning
+ 
+
+537
+00:09:21,920 --> 00:09:23,670
+samples at very high signal. Reasoning
+models have really changed this game."
+
+538
+00:09:23,670 --> 00:09:23,680
+models have really changed this game."
+ 
+
+539
+00:09:23,680 --> 00:09:26,870
+models have really changed this game."
+Um, for like processing bulkaned data.
+
+540
+00:09:26,870 --> 00:09:26,880
+Um, for like processing bulkaned data.
+ 
+
+541
+00:09:26,880 --> 00:09:29,030
+Um, for like processing bulkaned data.
+Um, and you also need to think about the
+
+542
+00:09:29,030 --> 00:09:29,040
+Um, and you also need to think about the
+ 
+
+543
+00:09:29,040 --> 00:09:30,710
+Um, and you also need to think about the
+approximate knowledge of many things
+
+544
+00:09:30,710 --> 00:09:30,720
+approximate knowledge of many things
+ 
+
+545
+00:09:30,720 --> 00:09:33,190
+approximate knowledge of many things
+present in AI. like it's not just the
+
+546
+00:09:33,190 --> 00:09:33,200
+present in AI. like it's not just the
+ 
+
+547
+00:09:33,200 --> 00:09:35,269
+present in AI. like it's not just the
+fact that it can analyze this data, but
+
+548
+00:09:35,269 --> 00:09:35,279
+fact that it can analyze this data, but
+ 
+
+549
+00:09:35,279 --> 00:09:37,030
+fact that it can analyze this data, but
+it's the fact that so much knowledge is
+
+550
+00:09:37,030 --> 00:09:37,040
+it's the fact that so much knowledge is
+ 
+
+551
+00:09:37,040 --> 00:09:38,310
+it's the fact that so much knowledge is
+encoded that you can start doing
+
+552
+00:09:38,310 --> 00:09:38,320
+encoded that you can start doing
+ 
+
+553
+00:09:38,320 --> 00:09:40,389
+encoded that you can start doing
+different pattern matching, right? So,
+
+554
+00:09:40,389 --> 00:09:40,399
+different pattern matching, right? So,
+ 
+
+555
+00:09:40,399 --> 00:09:43,670
+different pattern matching, right? So,
+it knows what uh companies or or domains
+
+556
+00:09:43,670 --> 00:09:43,680
+it knows what uh companies or or domains
+ 
+
+557
+00:09:43,680 --> 00:09:45,590
+it knows what uh companies or or domains
+are associated with government entities.
+
+558
+00:09:45,590 --> 00:09:45,600
+are associated with government entities.
+ 
+
+559
+00:09:45,600 --> 00:09:47,509
+are associated with government entities.
+Um, and it was even familiar with things
+
+560
+00:09:47,509 --> 00:09:47,519
+Um, and it was even familiar with things
+ 
+
+561
+00:09:47,519 --> 00:09:49,430
+Um, and it was even familiar with things
+like the Fortune 100 or you could do the
+
+562
+00:09:49,430 --> 00:09:49,440
+like the Fortune 100 or you could do the
+ 
+
+563
+00:09:49,440 --> 00:09:52,470
+like the Fortune 100 or you could do the
+AI top 50 or you could ask about the top
+
+564
+00:09:52,470 --> 00:09:52,480
+AI top 50 or you could ask about the top
+ 
+
+565
+00:09:52,480 --> 00:09:54,389
+AI top 50 or you could ask about the top
+VC fundraises of the last year, right?
+
+566
+00:09:54,389 --> 00:09:54,399
+VC fundraises of the last year, right?
+ 
+
+567
+00:09:54,399 --> 00:09:55,910
+VC fundraises of the last year, right?
+There's all sorts of ways to slice this
+
+568
+00:09:55,910 --> 00:09:55,920
+There's all sorts of ways to slice this
+ 
+
+569
+00:09:55,920 --> 00:09:58,710
+There's all sorts of ways to slice this
+data with reasoning models. And the
+
+570
+00:09:58,710 --> 00:09:58,720
+data with reasoning models. And the
+ 
+
+571
+00:09:58,720 --> 00:10:01,430
+data with reasoning models. And the
+upside is creativity. Um, one of the
+
+572
+00:10:01,430 --> 00:10:01,440
+upside is creativity. Um, one of the
+ 
+
+573
+00:10:01,440 --> 00:10:03,509
+upside is creativity. Um, one of the
+things that surprised me and and maybe I
+
+574
+00:10:03,509 --> 00:10:03,519
+things that surprised me and and maybe I
+ 
+
+575
+00:10:03,519 --> 00:10:06,230
+things that surprised me and and maybe I
+was naive, but uh, you know, claude
+
+576
+00:10:06,230 --> 00:10:06,240
+was naive, but uh, you know, claude
+ 
+
+577
+00:10:06,240 --> 00:10:08,150
+was naive, but uh, you know, claude
+analyzing this data, uh, anthropic
+
+578
+00:10:08,150 --> 00:10:08,160
+analyzing this data, uh, anthropic
+ 
+
+579
+00:10:08,160 --> 00:10:10,710
+analyzing this data, uh, anthropic
+models, uh, other models, right, can
+
+580
+00:10:10,710 --> 00:10:10,720
+models, uh, other models, right, can
+ 
+
+581
+00:10:10,720 --> 00:10:12,949
+models, uh, other models, right, can
+identify that an encoded JWT is likely
+
+582
+00:10:12,949 --> 00:10:12,959
+identify that an encoded JWT is likely
+ 
+
+583
+00:10:12,959 --> 00:10:14,790
+identify that an encoded JWT is likely
+to contain claims that had signal worth
+
+584
+00:10:14,790 --> 00:10:14,800
+to contain claims that had signal worth
+ 
+
+585
+00:10:14,800 --> 00:10:16,550
+to contain claims that had signal worth
+extracting, right? Looking at an encoded
+
+586
+00:10:16,550 --> 00:10:16,560
+extracting, right? Looking at an encoded
+ 
+
+587
+00:10:16,560 --> 00:10:18,389
+extracting, right? Looking at an encoded
+string as an LLM and pulling out that
+
+588
+00:10:18,389 --> 00:10:18,399
+string as an LLM and pulling out that
+ 
+
+589
+00:10:18,399 --> 00:10:19,829
+string as an LLM and pulling out that
+sort of signal was surprising and
+
+590
+00:10:19,829 --> 00:10:19,839
+sort of signal was surprising and
+ 
+
+591
+00:10:19,839 --> 00:10:21,750
+sort of signal was surprising and
+creative and something maybe I wouldn't
+
+592
+00:10:21,750 --> 00:10:21,760
+creative and something maybe I wouldn't
+ 
+
+593
+00:10:21,760 --> 00:10:23,910
+creative and something maybe I wouldn't
+have thought of. But the downside is
+
+594
+00:10:23,910 --> 00:10:23,920
+have thought of. But the downside is
+ 
+
+595
+00:10:23,920 --> 00:10:26,230
+have thought of. But the downside is
+credul, especially for security use
+
+596
+00:10:26,230 --> 00:10:26,240
+credul, especially for security use
+ 
+
+597
+00:10:26,240 --> 00:10:28,949
+credul, especially for security use
+cases. the culity the gullibility of
+
+598
+00:10:28,949 --> 00:10:28,959
+cases. the culity the gullibility of
+ 
+
+599
+00:10:28,959 --> 00:10:31,670
+cases. the culity the gullibility of
+LLMs becomes really dangerous. So these
+
+600
+00:10:31,670 --> 00:10:31,680
+LLMs becomes really dangerous. So these
+ 
+
+601
+00:10:31,680 --> 00:10:34,069
+LLMs becomes really dangerous. So these
+were cases where like the string nucleus
+
+602
+00:10:34,069 --> 00:10:34,079
+were cases where like the string nucleus
+ 
+
+603
+00:10:34,079 --> 00:10:36,470
+were cases where like the string nucleus
+appeared in some data and somehow it
+
+604
+00:10:36,470 --> 00:10:36,480
+appeared in some data and somehow it
+ 
+
+605
+00:10:36,480 --> 00:10:38,630
+appeared in some data and somehow it
+connected it to a specific company that
+
+606
+00:10:38,630 --> 00:10:38,640
+connected it to a specific company that
+ 
+
+607
+00:10:38,640 --> 00:10:40,630
+connected it to a specific company that
+uses a platform named Nucleus which is I
+
+608
+00:10:40,630 --> 00:10:40,640
+uses a platform named Nucleus which is I
+ 
+
+609
+00:10:40,640 --> 00:10:42,150
+uses a platform named Nucleus which is I
+think an incredibly common name for
+
+610
+00:10:42,150 --> 00:10:42,160
+think an incredibly common name for
+ 
+
+611
+00:10:42,160 --> 00:10:45,110
+think an incredibly common name for
+platforms. Um anyone using uh you know
+
+612
+00:10:45,110 --> 00:10:45,120
+platforms. Um anyone using uh you know
+ 
+
+613
+00:10:45,120 --> 00:10:47,110
+platforms. Um anyone using uh you know
+Azure DevOps must mean they work at
+
+614
+00:10:47,110 --> 00:10:47,120
+Azure DevOps must mean they work at
+ 
+
+615
+00:10:47,120 --> 00:10:49,190
+Azure DevOps must mean they work at
+Microsoft and are a a Microsoft uh
+
+616
+00:10:49,190 --> 00:10:49,200
+Microsoft and are a a Microsoft uh
+ 
+
+617
+00:10:49,200 --> 00:10:51,910
+Microsoft and are a a Microsoft uh
+victim. Um and similarly like finding
+
+618
+00:10:51,910 --> 00:10:51,920
+victim. Um and similarly like finding
+ 
+
+619
+00:10:51,920 --> 00:10:54,389
+victim. Um and similarly like finding
+JWTs that have login to consumer
+
+620
+00:10:54,389 --> 00:10:54,399
+JWTs that have login to consumer
+ 
+
+621
+00:10:54,399 --> 00:10:57,269
+JWTs that have login to consumer
+Microsoft services and attributing that
+
+622
+00:10:57,269 --> 00:10:57,279
+Microsoft services and attributing that
+ 
+
+623
+00:10:57,279 --> 00:10:59,110
+Microsoft services and attributing that
+uh so the double-edged sword here
+
+624
+00:10:59,110 --> 00:10:59,120
+uh so the double-edged sword here
+ 
+
+625
+00:10:59,120 --> 00:11:02,949
+uh so the double-edged sword here
+creativity and credul
+
+626
+00:11:02,949 --> 00:11:02,959
+creativity and credul
+ 
+
+627
+00:11:02,959 --> 00:11:06,150
+creativity and credul
+there's also a challenge with um like
+
+628
+00:11:06,150 --> 00:11:06,160
+there's also a challenge with um like
+ 
+
+629
+00:11:06,160 --> 00:11:08,230
+there's also a challenge with um like
+exploring the entire coverage coverage
+
+630
+00:11:08,230 --> 00:11:08,240
+exploring the entire coverage coverage
+ 
+
+631
+00:11:08,240 --> 00:11:09,910
+exploring the entire coverage coverage
+is really hard when you're building some
+
+632
+00:11:09,910 --> 00:11:09,920
+is really hard when you're building some
+ 
+
+633
+00:11:09,920 --> 00:11:11,190
+is really hard when you're building some
+of these systems and it's all about the
+
+634
+00:11:11,190 --> 00:11:11,200
+of these systems and it's all about the
+ 
+
+635
+00:11:11,200 --> 00:11:14,630
+of these systems and it's all about the
+harnesses not the models I think um AI
+
+636
+00:11:14,630 --> 00:11:14,640
+harnesses not the models I think um AI
+ 
+
+637
+00:11:14,640 --> 00:11:16,550
+harnesses not the models I think um AI
+will almost always take a shortcut and a
+
+638
+00:11:16,550 --> 00:11:16,560
+will almost always take a shortcut and a
+ 
+
+639
+00:11:16,560 --> 00:11:18,550
+will almost always take a shortcut and a
+sample if you ask AI to analyze all of
+
+640
+00:11:18,550 --> 00:11:18,560
+sample if you ask AI to analyze all of
+ 
+
+641
+00:11:18,560 --> 00:11:20,150
+sample if you ask AI to analyze all of
+something write me every rule rule,
+
+642
+00:11:20,150 --> 00:11:20,160
+something write me every rule rule,
+ 
+
+643
+00:11:20,160 --> 00:11:21,910
+something write me every rule rule,
+cover all of this data, give me every
+
+644
+00:11:21,910 --> 00:11:21,920
+cover all of this data, give me every
+ 
+
+645
+00:11:21,920 --> 00:11:23,910
+cover all of this data, give me every
+company, you're going to get back, you
+
+646
+00:11:23,910 --> 00:11:23,920
+company, you're going to get back, you
+ 
+
+647
+00:11:23,920 --> 00:11:25,990
+company, you're going to get back, you
+know, oh, I decided to to pick the top
+
+648
+00:11:25,990 --> 00:11:26,000
+know, oh, I decided to to pick the top
+ 
+
+649
+00:11:26,000 --> 00:11:28,630
+know, oh, I decided to to pick the top
+10 for you. Aren't I so helpful? Um,
+
+650
+00:11:28,630 --> 00:11:28,640
+10 for you. Aren't I so helpful? Um,
+ 
+
+651
+00:11:28,640 --> 00:11:30,470
+10 for you. Aren't I so helpful? Um,
+this is where like Ralph loops come in,
+
+652
+00:11:30,470 --> 00:11:30,480
+this is where like Ralph loops come in,
+ 
+
+653
+00:11:30,480 --> 00:11:32,069
+this is where like Ralph loops come in,
+something very trendy recently, but this
+
+654
+00:11:32,069 --> 00:11:32,079
+something very trendy recently, but this
+ 
+
+655
+00:11:32,079 --> 00:11:33,910
+something very trendy recently, but this
+idea that you just like keep an
+
+656
+00:11:33,910 --> 00:11:33,920
+idea that you just like keep an
+ 
+
+657
+00:11:33,920 --> 00:11:35,590
+idea that you just like keep an
+automated harness that reprompts it to
+
+658
+00:11:35,590 --> 00:11:35,600
+automated harness that reprompts it to
+ 
+
+659
+00:11:35,600 --> 00:11:37,030
+automated harness that reprompts it to
+keep going, keep going, keep going until
+
+660
+00:11:37,030 --> 00:11:37,040
+keep going, keep going, keep going until
+ 
+
+661
+00:11:37,040 --> 00:11:39,670
+keep going, keep going, keep going until
+it hits exit criteria. And that's a
+
+662
+00:11:39,670 --> 00:11:39,680
+it hits exit criteria. And that's a
+ 
+
+663
+00:11:39,680 --> 00:11:42,389
+it hits exit criteria. And that's a
+simple wow loop. The idea is sound that
+
+664
+00:11:42,389 --> 00:11:42,399
+simple wow loop. The idea is sound that
+ 
+
+665
+00:11:42,399 --> 00:11:44,069
+simple wow loop. The idea is sound that
+you need to be thinking about how you're
+
+666
+00:11:44,069 --> 00:11:44,079
+you need to be thinking about how you're
+ 
+
+667
+00:11:44,079 --> 00:11:45,990
+you need to be thinking about how you're
+harnessing these models into your
+
+668
+00:11:45,990 --> 00:11:46,000
+harnessing these models into your
+ 
+
+669
+00:11:46,000 --> 00:11:47,990
+harnessing these models into your
+processes and what the behaviors you
+
+670
+00:11:47,990 --> 00:11:48,000
+processes and what the behaviors you
+ 
+
+671
+00:11:48,000 --> 00:11:49,990
+processes and what the behaviors you
+want are. If you want coverage, you have
+
+672
+00:11:49,990 --> 00:11:50,000
+want are. If you want coverage, you have
+ 
+
+673
+00:11:50,000 --> 00:11:51,269
+want are. If you want coverage, you have
+to know that that's not something you
+
+674
+00:11:51,269 --> 00:11:51,279
+to know that that's not something you
+ 
+
+675
+00:11:51,279 --> 00:11:53,910
+to know that that's not something you
+get by default.
+
+676
+00:11:53,910 --> 00:11:53,920
+get by default.
+ 
+
+677
+00:11:53,920 --> 00:11:56,630
+get by default.
+Okay, pivoting a little on examples.
+
+678
+00:11:56,630 --> 00:11:56,640
+Okay, pivoting a little on examples.
+ 
+
+679
+00:11:56,640 --> 00:11:58,870
+Okay, pivoting a little on examples.
+Another place that uh we thought of to
+
+680
+00:11:58,870 --> 00:11:58,880
+Another place that uh we thought of to
+ 
+
+681
+00:11:58,880 --> 00:12:00,949
+Another place that uh we thought of to
+mine signal was enriching secrets.
+
+682
+00:12:00,949 --> 00:12:00,959
+mine signal was enriching secrets.
+ 
+
+683
+00:12:00,959 --> 00:12:02,389
+mine signal was enriching secrets.
+Right? There are a bunch of secrets in
+
+684
+00:12:02,389 --> 00:12:02,399
+Right? There are a bunch of secrets in
+ 
+
+685
+00:12:02,399 --> 00:12:04,630
+Right? There are a bunch of secrets in
+this data. If we enrich and validate the
+
+686
+00:12:04,630 --> 00:12:04,640
+this data. If we enrich and validate the
+ 
+
+687
+00:12:04,640 --> 00:12:06,790
+this data. If we enrich and validate the
+secrets, we can find potentially the
+
+688
+00:12:06,790 --> 00:12:06,800
+secrets, we can find potentially the
+ 
+
+689
+00:12:06,800 --> 00:12:08,949
+secrets, we can find potentially the
+user it belongs to or the company and
+
+690
+00:12:08,949 --> 00:12:08,959
+user it belongs to or the company and
+ 
+
+691
+00:12:08,959 --> 00:12:10,790
+user it belongs to or the company and
+use that information as attribution
+
+692
+00:12:10,790 --> 00:12:10,800
+use that information as attribution
+ 
+
+693
+00:12:10,800 --> 00:12:12,629
+use that information as attribution
+signal. There are a lot of secrets
+
+694
+00:12:12,629 --> 00:12:12,639
+signal. There are a lot of secrets
+ 
+
+695
+00:12:12,639 --> 00:12:14,470
+signal. There are a lot of secrets
+tools. Um I've frequently used truffle
+
+696
+00:12:14,470 --> 00:12:14,480
+tools. Um I've frequently used truffle
+ 
+
+697
+00:12:14,480 --> 00:12:16,629
+tools. Um I've frequently used truffle
+hog in the past. It's a been a very
+
+698
+00:12:16,629 --> 00:12:16,639
+hog in the past. It's a been a very
+ 
+
+699
+00:12:16,639 --> 00:12:18,870
+hog in the past. It's a been a very
+popular tool for a long time partially
+
+700
+00:12:18,870 --> 00:12:18,880
+popular tool for a long time partially
+ 
+
+701
+00:12:18,880 --> 00:12:20,790
+popular tool for a long time partially
+because it has a really robust library
+
+702
+00:12:20,790 --> 00:12:20,800
+because it has a really robust library
+ 
+
+703
+00:12:20,800 --> 00:12:22,870
+because it has a really robust library
+of detectors. It has almost 800
+
+704
+00:12:22,870 --> 00:12:22,880
+of detectors. It has almost 800
+ 
+
+705
+00:12:22,880 --> 00:12:25,269
+of detectors. It has almost 800
+detectors I think. Uh and for a long
+
+706
+00:12:25,269 --> 00:12:25,279
+detectors I think. Uh and for a long
+ 
+
+707
+00:12:25,279 --> 00:12:26,870
+detectors I think. Uh and for a long
+time in security picking a tool was
+
+708
+00:12:26,870 --> 00:12:26,880
+time in security picking a tool was
+ 
+
+709
+00:12:26,880 --> 00:12:29,110
+time in security picking a tool was
+about picking your rule set, right? like
+
+710
+00:12:29,110 --> 00:12:29,120
+about picking your rule set, right? like
+ 
+
+711
+00:12:29,120 --> 00:12:31,030
+about picking your rule set, right? like
+you would pick up bandit or something
+
+712
+00:12:31,030 --> 00:12:31,040
+you would pick up bandit or something
+ 
+
+713
+00:12:31,040 --> 00:12:32,470
+you would pick up bandit or something
+because you knew it had the best rules
+
+714
+00:12:32,470 --> 00:12:32,480
+because you knew it had the best rules
+ 
+
+715
+00:12:32,480 --> 00:12:35,190
+because you knew it had the best rules
+for for that SAS language and that's not
+
+716
+00:12:35,190 --> 00:12:35,200
+for for that SAS language and that's not
+ 
+
+717
+00:12:35,200 --> 00:12:37,750
+for for that SAS language and that's not
+true anymore. So in this case uh truffle
+
+718
+00:12:37,750 --> 00:12:37,760
+true anymore. So in this case uh truffle
+ 
+
+719
+00:12:37,760 --> 00:12:39,030
+true anymore. So in this case uh truffle
+hog had characteristics that were
+
+720
+00:12:39,030 --> 00:12:39,040
+hog had characteristics that were
+ 
+
+721
+00:12:39,040 --> 00:12:40,710
+hog had characteristics that were
+undesirable. It's uh commonly
+
+722
+00:12:40,710 --> 00:12:40,720
+undesirable. It's uh commonly
+ 
+
+723
+00:12:40,720 --> 00:12:42,470
+undesirable. It's uh commonly
+fingerprinted and causes alerts which
+
+724
+00:12:42,470 --> 00:12:42,480
+fingerprinted and causes alerts which
+ 
+
+725
+00:12:42,480 --> 00:12:44,710
+fingerprinted and causes alerts which
+can cause noise for teams. Validation
+
+726
+00:12:44,710 --> 00:12:44,720
+can cause noise for teams. Validation
+ 
+
+727
+00:12:44,720 --> 00:12:46,230
+can cause noise for teams. Validation
+has a high rate of false negatives I'd
+
+728
+00:12:46,230 --> 00:12:46,240
+has a high rate of false negatives I'd
+ 
+
+729
+00:12:46,240 --> 00:12:48,389
+has a high rate of false negatives I'd
+seen in past research. It's relatively
+
+730
+00:12:48,389 --> 00:12:48,399
+seen in past research. It's relatively
+ 
+
+731
+00:12:48,399 --> 00:12:52,550
+seen in past research. It's relatively
+slow. And so you know 253 I'd just say
+
+732
+00:12:52,550 --> 00:12:52,560
+slow. And so you know 253 I'd just say
+ 
+
+733
+00:12:52,560 --> 00:12:54,310
+slow. And so you know 253 I'd just say
+hey go find all of the rules here that
+
+734
+00:12:54,310 --> 00:12:54,320
+hey go find all of the rules here that
+ 
+
+735
+00:12:54,320 --> 00:12:56,230
+hey go find all of the rules here that
+are are trivial rules that have secrets
+
+736
+00:12:56,230 --> 00:12:56,240
+are are trivial rules that have secrets
+ 
+
+737
+00:12:56,240 --> 00:12:57,990
+are are trivial rules that have secrets
+that have prefixes. it's a get request
+
+738
+00:12:57,990 --> 00:12:58,000
+that have prefixes. it's a get request
+ 
+
+739
+00:12:58,000 --> 00:12:59,509
+that have prefixes. it's a get request
+or a post request to validate the
+
+740
+00:12:59,509 --> 00:12:59,519
+or a post request to validate the
+ 
+
+741
+00:12:59,519 --> 00:13:01,670
+or a post request to validate the
+secret. It's really easy for an LLM to
+
+742
+00:13:01,670 --> 00:13:01,680
+secret. It's really easy for an LLM to
+ 
+
+743
+00:13:01,680 --> 00:13:05,269
+secret. It's really easy for an LLM to
+port that over and uh 30 minutes later I
+
+744
+00:13:05,269 --> 00:13:05,279
+port that over and uh 30 minutes later I
+ 
+
+745
+00:13:05,279 --> 00:13:07,430
+port that over and uh 30 minutes later I
+have 58 new rules in a totally different
+
+746
+00:13:07,430 --> 00:13:07,440
+have 58 new rules in a totally different
+ 
+
+747
+00:13:07,440 --> 00:13:10,069
+have 58 new rules in a totally different
+engine. And it's less so about like what
+
+748
+00:13:10,069 --> 00:13:10,079
+engine. And it's less so about like what
+ 
+
+749
+00:13:10,079 --> 00:13:11,430
+engine. And it's less so about like what
+secret scanning tool you should be
+
+750
+00:13:11,430 --> 00:13:11,440
+secret scanning tool you should be
+ 
+
+751
+00:13:11,440 --> 00:13:13,750
+secret scanning tool you should be
+using. Uh and it's very much about this
+
+752
+00:13:13,750 --> 00:13:13,760
+using. Uh and it's very much about this
+ 
+
+753
+00:13:13,760 --> 00:13:17,829
+using. Uh and it's very much about this
+idea that product content rules uh
+
+754
+00:13:17,829 --> 00:13:17,839
+idea that product content rules uh
+ 
+
+755
+00:13:17,839 --> 00:13:19,990
+idea that product content rules uh
+detectors are becoming fungeible and the
+
+756
+00:13:19,990 --> 00:13:20,000
+detectors are becoming fungeible and the
+ 
+
+757
+00:13:20,000 --> 00:13:21,509
+detectors are becoming fungeible and the
+engines are really what's starting to
+
+758
+00:13:21,509 --> 00:13:21,519
+engines are really what's starting to
+ 
+
+759
+00:13:21,519 --> 00:13:23,190
+engines are really what's starting to
+matter because you can start porting
+
+760
+00:13:23,190 --> 00:13:23,200
+matter because you can start porting
+ 
+
+761
+00:13:23,200 --> 00:13:24,470
+matter because you can start porting
+around content and you should be
+
+762
+00:13:24,470 --> 00:13:24,480
+around content and you should be
+ 
+
+763
+00:13:24,480 --> 00:13:25,430
+around content and you should be
+thinking about the engine
+
+764
+00:13:25,430 --> 00:13:25,440
+thinking about the engine
+ 
+
+765
+00:13:25,440 --> 00:13:26,870
+thinking about the engine
+characteristics. Do you want something
+
+766
+00:13:26,870 --> 00:13:26,880
+characteristics. Do you want something
+ 
+
+767
+00:13:26,880 --> 00:13:29,430
+characteristics. Do you want something
+that's fast? Do you want something that
+
+768
+00:13:29,430 --> 00:13:29,440
+that's fast? Do you want something that
+ 
+
+769
+00:13:29,440 --> 00:13:32,150
+that's fast? Do you want something that
+has a low rate of uh false positives or
+
+770
+00:13:32,150 --> 00:13:32,160
+has a low rate of uh false positives or
+ 
+
+771
+00:13:32,160 --> 00:13:34,230
+has a low rate of uh false positives or
+a low rate of false negatives? What are
+
+772
+00:13:34,230 --> 00:13:34,240
+a low rate of false negatives? What are
+ 
+
+773
+00:13:34,240 --> 00:13:36,389
+a low rate of false negatives? What are
+you optimizing for? And pick your engine
+
+774
+00:13:36,389 --> 00:13:36,399
+you optimizing for? And pick your engine
+ 
+
+775
+00:13:36,399 --> 00:13:38,230
+you optimizing for? And pick your engine
+and just assume you can move the rules
+
+776
+00:13:38,230 --> 00:13:38,240
+and just assume you can move the rules
+ 
+
+777
+00:13:38,240 --> 00:13:40,310
+and just assume you can move the rules
+around between tools. Uh whether that's
+
+778
+00:13:40,310 --> 00:13:40,320
+around between tools. Uh whether that's
+ 
+
+779
+00:13:40,320 --> 00:13:42,949
+around between tools. Uh whether that's
+in open- source or um you know maybe
+
+780
+00:13:42,949 --> 00:13:42,959
+in open- source or um you know maybe
+ 
+
+781
+00:13:42,959 --> 00:13:44,949
+in open- source or um you know maybe
+porting something like sigma rules to a
+
+782
+00:13:44,949 --> 00:13:44,959
+porting something like sigma rules to a
+ 
+
+783
+00:13:44,959 --> 00:13:46,550
+porting something like sigma rules to a
+proprietary platform, right? I think
+
+784
+00:13:46,550 --> 00:13:46,560
+proprietary platform, right? I think
+ 
+
+785
+00:13:46,560 --> 00:13:49,910
+proprietary platform, right? I think
+rules are becoming much more funible.
+
+786
+00:13:49,910 --> 00:13:49,920
+rules are becoming much more funible.
+ 
+
+787
+00:13:49,920 --> 00:13:52,790
+rules are becoming much more funible.
+So when I talked about the victimology,
+
+788
+00:13:52,790 --> 00:13:52,800
+So when I talked about the victimology,
+ 
+
+789
+00:13:52,800 --> 00:13:54,550
+So when I talked about the victimology,
+I talked a little bit about codifying
+
+790
+00:13:54,550 --> 00:13:54,560
+I talked a little bit about codifying
+ 
+
+791
+00:13:54,560 --> 00:13:56,389
+I talked a little bit about codifying
+things in scripts and moving towards
+
+792
+00:13:56,389 --> 00:13:56,399
+things in scripts and moving towards
+ 
+
+793
+00:13:56,399 --> 00:13:59,350
+things in scripts and moving towards
+determinism. I also have been talking a
+
+794
+00:13:59,350 --> 00:13:59,360
+determinism. I also have been talking a
+ 
+
+795
+00:13:59,360 --> 00:14:01,590
+determinism. I also have been talking a
+lot with folks about this idea of
+
+796
+00:14:01,590 --> 00:14:01,600
+lot with folks about this idea of
+ 
+
+797
+00:14:01,600 --> 00:14:04,310
+lot with folks about this idea of
+feedback loops with how we use AI. Um AI
+
+798
+00:14:04,310 --> 00:14:04,320
+feedback loops with how we use AI. Um AI
+ 
+
+799
+00:14:04,320 --> 00:14:06,470
+feedback loops with how we use AI. Um AI
+is a tool that's part of a toolkit. And
+
+800
+00:14:06,470 --> 00:14:06,480
+is a tool that's part of a toolkit. And
+ 
+
+801
+00:14:06,480 --> 00:14:08,150
+is a tool that's part of a toolkit. And
+so I really like to think about it as
+
+802
+00:14:08,150 --> 00:14:08,160
+so I really like to think about it as
+ 
+
+803
+00:14:08,160 --> 00:14:09,670
+so I really like to think about it as
+how it fits in the overall ecosystem.
+
+804
+00:14:09,670 --> 00:14:09,680
+how it fits in the overall ecosystem.
+ 
+
+805
+00:14:09,680 --> 00:14:11,670
+how it fits in the overall ecosystem.
+And so what that process looks like here
+
+806
+00:14:11,670 --> 00:14:11,680
+And so what that process looks like here
+ 
+
+807
+00:14:11,680 --> 00:14:15,269
+And so what that process looks like here
+was taking AI based analysis samples and
+
+808
+00:14:15,269 --> 00:14:15,279
+was taking AI based analysis samples and
+ 
+
+809
+00:14:15,279 --> 00:14:17,910
+was taking AI based analysis samples and
+running it through an attribution scale
+
+810
+00:14:17,910 --> 00:14:17,920
+running it through an attribution scale
+ 
+
+811
+00:14:17,920 --> 00:14:19,990
+running it through an attribution scale
+and then taking that result, that new
+
+812
+00:14:19,990 --> 00:14:20,000
+and then taking that result, that new
+ 
+
+813
+00:14:20,000 --> 00:14:22,310
+and then taking that result, that new
+signal, and identifying new
+
+814
+00:14:22,310 --> 00:14:22,320
+signal, and identifying new
+ 
+
+815
+00:14:22,320 --> 00:14:24,310
+signal, and identifying new
+deterministic rules we could add that we
+
+816
+00:14:24,310 --> 00:14:24,320
+deterministic rules we could add that we
+ 
+
+817
+00:14:24,320 --> 00:14:26,310
+deterministic rules we could add that we
+could then run and see the uplift. Did
+
+818
+00:14:26,310 --> 00:14:26,320
+could then run and see the uplift. Did
+ 
+
+819
+00:14:26,320 --> 00:14:28,150
+could then run and see the uplift. Did
+this increase our coverage? And so
+
+820
+00:14:28,150 --> 00:14:28,160
+this increase our coverage? And so
+ 
+
+821
+00:14:28,160 --> 00:14:30,470
+this increase our coverage? And so
+here's an example where it identified a
+
+822
+00:14:30,470 --> 00:14:30,480
+here's an example where it identified a
+ 
+
+823
+00:14:30,480 --> 00:14:32,629
+here's an example where it identified a
+a new variable that hosted what appeared
+
+824
+00:14:32,629 --> 00:14:32,639
+a new variable that hosted what appeared
+ 
+
+825
+00:14:32,639 --> 00:14:35,269
+a new variable that hosted what appeared
+to be self-hosted Git instances. Um, and
+
+826
+00:14:35,269 --> 00:14:35,279
+to be self-hosted Git instances. Um, and
+ 
+
+827
+00:14:35,279 --> 00:14:37,030
+to be self-hosted Git instances. Um, and
+then after we ran this, we found, you
+
+828
+00:14:37,030 --> 00:14:37,040
+then after we ran this, we found, you
+ 
+
+829
+00:14:37,040 --> 00:14:39,269
+then after we ran this, we found, you
+know, a major Russian e-commerce company
+
+830
+00:14:39,269 --> 00:14:39,279
+know, a major Russian e-commerce company
+ 
+
+831
+00:14:39,279 --> 00:14:41,110
+know, a major Russian e-commerce company
+that I've failed to censor there because
+
+832
+00:14:41,110 --> 00:14:41,120
+that I've failed to censor there because
+ 
+
+833
+00:14:41,120 --> 00:14:43,590
+that I've failed to censor there because
+I don't really want to. Uh, but also
+
+834
+00:14:43,590 --> 00:14:43,600
+I don't really want to. Uh, but also
+ 
+
+835
+00:14:43,600 --> 00:14:45,269
+I don't really want to. Uh, but also
+like a Portuguese company, a Thai
+
+836
+00:14:45,269 --> 00:14:45,279
+like a Portuguese company, a Thai
+ 
+
+837
+00:14:45,279 --> 00:14:47,269
+like a Portuguese company, a Thai
+fintech, a US fortune 500. And this is
+
+838
+00:14:47,269 --> 00:14:47,279
+fintech, a US fortune 500. And this is
+ 
+
+839
+00:14:47,279 --> 00:14:49,990
+fintech, a US fortune 500. And this is
+just one signal. And so this pattern of
+
+840
+00:14:49,990 --> 00:14:50,000
+just one signal. And so this pattern of
+ 
+
+841
+00:14:50,000 --> 00:14:51,910
+just one signal. And so this pattern of
+taking samples, but then having the
+
+842
+00:14:51,910 --> 00:14:51,920
+taking samples, but then having the
+ 
+
+843
+00:14:51,920 --> 00:14:54,150
+taking samples, but then having the
+feedback loop into uh, you know, more
+
+844
+00:14:54,150 --> 00:14:54,160
+feedback loop into uh, you know, more
+ 
+
+845
+00:14:54,160 --> 00:14:56,790
+feedback loop into uh, you know, more
+concrete rules then improves your
+
+846
+00:14:56,790 --> 00:14:56,800
+concrete rules then improves your
+ 
+
+847
+00:14:56,800 --> 00:14:58,710
+concrete rules then improves your
+ability on future scans to sort of
+
+848
+00:14:58,710 --> 00:14:58,720
+ability on future scans to sort of
+ 
+
+849
+00:14:58,720 --> 00:15:00,069
+ability on future scans to sort of
+repeat the cycle. And I think this is
+
+850
+00:15:00,069 --> 00:15:00,079
+repeat the cycle. And I think this is
+ 
+
+851
+00:15:00,079 --> 00:15:01,990
+repeat the cycle. And I think this is
+true outside of this like data analysis
+
+852
+00:15:01,990 --> 00:15:02,000
+true outside of this like data analysis
+ 
+
+853
+00:15:02,000 --> 00:15:04,310
+true outside of this like data analysis
+space. If you're building detections,
+
+854
+00:15:04,310 --> 00:15:04,320
+space. If you're building detections,
+ 
+
+855
+00:15:04,320 --> 00:15:06,069
+space. If you're building detections,
+right? If you're building um
+
+856
+00:15:06,069 --> 00:15:06,079
+right? If you're building um
+ 
+
+857
+00:15:06,079 --> 00:15:08,069
+right? If you're building um
+configuration rules, I think the same
+
+858
+00:15:08,069 --> 00:15:08,079
+configuration rules, I think the same
+ 
+
+859
+00:15:08,079 --> 00:15:10,949
+configuration rules, I think the same
+loop of using AI but trying to use AI to
+
+860
+00:15:10,949 --> 00:15:10,959
+loop of using AI but trying to use AI to
+ 
+
+861
+00:15:10,959 --> 00:15:13,269
+loop of using AI but trying to use AI to
+get to determinism really applies. Um
+
+862
+00:15:13,269 --> 00:15:13,279
+get to determinism really applies. Um
+ 
+
+863
+00:15:13,279 --> 00:15:15,030
+get to determinism really applies. Um
+use AI for the things that it's uniquely
+
+864
+00:15:15,030 --> 00:15:15,040
+use AI for the things that it's uniquely
+ 
+
+865
+00:15:15,040 --> 00:15:17,110
+use AI for the things that it's uniquely
+good at. Uh don't necessarily like rip
+
+866
+00:15:17,110 --> 00:15:17,120
+good at. Uh don't necessarily like rip
+ 
+
+867
+00:15:17,120 --> 00:15:18,629
+good at. Uh don't necessarily like rip
+and replace all your deterministic
+
+868
+00:15:18,629 --> 00:15:18,639
+and replace all your deterministic
+ 
+
+869
+00:15:18,639 --> 00:15:20,790
+and replace all your deterministic
+methods.
+
+870
+00:15:20,790 --> 00:15:20,800
+methods.
+ 
+
+871
+00:15:20,800 --> 00:15:23,670
+methods.
+So the end result here was like a aentic
+
+872
+00:15:23,670 --> 00:15:23,680
+So the end result here was like a aentic
+ 
+
+873
+00:15:23,680 --> 00:15:26,629
+So the end result here was like a aentic
+analysis tool. Um this was something
+
+874
+00:15:26,629 --> 00:15:26,639
+analysis tool. Um this was something
+ 
+
+875
+00:15:26,639 --> 00:15:29,509
+analysis tool. Um this was something
+where I had 69 different attribution
+
+876
+00:15:29,509 --> 00:15:29,519
+where I had 69 different attribution
+ 
+
+877
+00:15:29,519 --> 00:15:31,910
+where I had 69 different attribution
+methods that had been built um mostly by
+
+878
+00:15:31,910 --> 00:15:31,920
+methods that had been built um mostly by
+ 
+
+879
+00:15:31,920 --> 00:15:34,230
+methods that had been built um mostly by
+AI at this point. Uh and so you would
+
+880
+00:15:34,230 --> 00:15:34,240
+AI at this point. Uh and so you would
+ 
+
+881
+00:15:34,240 --> 00:15:36,310
+AI at this point. Uh and so you would
+like extract a bunch of signals, take
+
+882
+00:15:36,310 --> 00:15:36,320
+like extract a bunch of signals, take
+ 
+
+883
+00:15:36,320 --> 00:15:38,150
+like extract a bunch of signals, take
+those signals and use them to guess at
+
+884
+00:15:38,150 --> 00:15:38,160
+those signals and use them to guess at
+ 
+
+885
+00:15:38,160 --> 00:15:40,150
+those signals and use them to guess at
+the company um and then do some
+
+886
+00:15:40,150 --> 00:15:40,160
+the company um and then do some
+ 
+
+887
+00:15:40,160 --> 00:15:42,069
+the company um and then do some
+enrichment from secrets enrichment,
+
+888
+00:15:42,069 --> 00:15:42,079
+enrichment from secrets enrichment,
+ 
+
+889
+00:15:42,079 --> 00:15:44,710
+enrichment from secrets enrichment,
+GitHub API lookups, etc. And so like
+
+890
+00:15:44,710 --> 00:15:44,720
+GitHub API lookups, etc. And so like
+ 
+
+891
+00:15:44,720 --> 00:15:46,230
+GitHub API lookups, etc. And so like
+just as an example here, right, like we
+
+892
+00:15:46,230 --> 00:15:46,240
+just as an example here, right, like we
+ 
+
+893
+00:15:46,240 --> 00:15:47,829
+just as an example here, right, like we
+have everything from GitHub enterprise
+
+894
+00:15:47,829 --> 00:15:47,839
+have everything from GitHub enterprise
+ 
+
+895
+00:15:47,839 --> 00:15:50,310
+have everything from GitHub enterprise
+instances to orgs to extracting things
+
+896
+00:15:50,310 --> 00:15:50,320
+instances to orgs to extracting things
+ 
+
+897
+00:15:50,320 --> 00:15:52,949
+instances to orgs to extracting things
+from JWTs. Um again, this isn't about
+
+898
+00:15:52,949 --> 00:15:52,959
+from JWTs. Um again, this isn't about
+ 
+
+899
+00:15:52,959 --> 00:15:55,110
+from JWTs. Um again, this isn't about
+how to do attribution necessarily. So
+
+900
+00:15:55,110 --> 00:15:55,120
+how to do attribution necessarily. So
+ 
+
+901
+00:15:55,120 --> 00:15:57,430
+how to do attribution necessarily. So
+going through all 69 isn't interesting,
+
+902
+00:15:57,430 --> 00:15:57,440
+going through all 69 isn't interesting,
+ 
+
+903
+00:15:57,440 --> 00:15:59,189
+going through all 69 isn't interesting,
+but it's worth pointing out that there's
+
+904
+00:15:59,189 --> 00:15:59,199
+but it's worth pointing out that there's
+ 
+
+905
+00:15:59,199 --> 00:16:01,269
+but it's worth pointing out that there's
+a long tale here, which is where that AI
+
+906
+00:16:01,269 --> 00:16:01,279
+a long tale here, which is where that AI
+ 
+
+907
+00:16:01,279 --> 00:16:04,150
+a long tale here, which is where that AI
+loop comes into play.
+
+908
+00:16:04,150 --> 00:16:04,160
+loop comes into play.
+ 
+
+909
+00:16:04,160 --> 00:16:07,670
+loop comes into play.
+So credul was something I mentioned
+
+910
+00:16:07,670 --> 00:16:07,680
+So credul was something I mentioned
+ 
+
+911
+00:16:07,680 --> 00:16:09,829
+So credul was something I mentioned
+earlier. Uh, and I want to talk about
+
+912
+00:16:09,829 --> 00:16:09,839
+earlier. Uh, and I want to talk about
+ 
+
+913
+00:16:09,839 --> 00:16:13,030
+earlier. Uh, and I want to talk about
+like the most basic counterpoint to
+
+914
+00:16:13,030 --> 00:16:13,040
+like the most basic counterpoint to
+ 
+
+915
+00:16:13,040 --> 00:16:14,790
+like the most basic counterpoint to
+cruel you can do is to inject
+
+916
+00:16:14,790 --> 00:16:14,800
+cruel you can do is to inject
+ 
+
+917
+00:16:14,800 --> 00:16:17,269
+cruel you can do is to inject
+skepticism. So in a naive way, injecting
+
+918
+00:16:17,269 --> 00:16:17,279
+skepticism. So in a naive way, injecting
+ 
+
+919
+00:16:17,279 --> 00:16:19,430
+skepticism. So in a naive way, injecting
+skepticism into the system is just
+
+920
+00:16:19,430 --> 00:16:19,440
+skepticism into the system is just
+ 
+
+921
+00:16:19,440 --> 00:16:22,069
+skepticism into the system is just
+stopping yourself in a, you know, in a
+
+922
+00:16:22,069 --> 00:16:22,079
+stopping yourself in a, you know, in a
+ 
+
+923
+00:16:22,079 --> 00:16:23,749
+stopping yourself in a, you know, in a
+chat session with a coding agent and
+
+924
+00:16:23,749 --> 00:16:23,759
+chat session with a coding agent and
+ 
+
+925
+00:16:23,759 --> 00:16:25,910
+chat session with a coding agent and
+saying, "Hey, let's slow down. Let's
+
+926
+00:16:25,910 --> 00:16:25,920
+saying, "Hey, let's slow down. Let's
+ 
+
+927
+00:16:25,920 --> 00:16:27,269
+saying, "Hey, let's slow down. Let's
+check if these are true positives,
+
+928
+00:16:27,269 --> 00:16:27,279
+check if these are true positives,
+ 
+
+929
+00:16:27,279 --> 00:16:28,949
+check if these are true positives,
+right?" Creating an attribution skill,
+
+930
+00:16:28,949 --> 00:16:28,959
+right?" Creating an attribution skill,
+ 
+
+931
+00:16:28,959 --> 00:16:31,350
+right?" Creating an attribution skill,
+running it through. Um, there's also way
+
+932
+00:16:31,350 --> 00:16:31,360
+running it through. Um, there's also way
+ 
+
+933
+00:16:31,360 --> 00:16:32,790
+running it through. Um, there's also way
+more sophisticated harness-based
+
+934
+00:16:32,790 --> 00:16:32,800
+more sophisticated harness-based
+ 
+
+935
+00:16:32,800 --> 00:16:34,230
+more sophisticated harness-based
+approaches you can take. You could
+
+936
+00:16:34,230 --> 00:16:34,240
+approaches you can take. You could
+ 
+
+937
+00:16:34,240 --> 00:16:37,189
+approaches you can take. You could
+actually write a skeptical persona and
+
+938
+00:16:37,189 --> 00:16:37,199
+actually write a skeptical persona and
+ 
+
+939
+00:16:37,199 --> 00:16:40,150
+actually write a skeptical persona and
+run, you know, a mix of agents who are
+
+940
+00:16:40,150 --> 00:16:40,160
+run, you know, a mix of agents who are
+ 
+
+941
+00:16:40,160 --> 00:16:42,230
+run, you know, a mix of agents who are
+sort of balancing each other out. Um,
+
+942
+00:16:42,230 --> 00:16:42,240
+sort of balancing each other out. Um,
+ 
+
+943
+00:16:42,240 --> 00:16:44,230
+sort of balancing each other out. Um,
+but fundamentally I think that you need
+
+944
+00:16:44,230 --> 00:16:44,240
+but fundamentally I think that you need
+ 
+
+945
+00:16:44,240 --> 00:16:46,230
+but fundamentally I think that you need
+to inject skepticism when doing these
+
+946
+00:16:46,230 --> 00:16:46,240
+to inject skepticism when doing these
+ 
+
+947
+00:16:46,240 --> 00:16:48,629
+to inject skepticism when doing these
+cases because the baseline alignment
+
+948
+00:16:48,629 --> 00:16:48,639
+cases because the baseline alignment
+ 
+
+949
+00:16:48,639 --> 00:16:50,550
+cases because the baseline alignment
+feels a little credulous for a lot of
+
+950
+00:16:50,550 --> 00:16:50,560
+feels a little credulous for a lot of
+ 
+
+951
+00:16:50,560 --> 00:16:53,829
+feels a little credulous for a lot of
+security purposes.
+
+952
+00:16:53,829 --> 00:16:53,839
+security purposes.
+ 
+
+953
+00:16:53,839 --> 00:16:55,590
+security purposes.
+Human in the loop. So we talked a lot
+
+954
+00:16:55,590 --> 00:16:55,600
+Human in the loop. So we talked a lot
+ 
+
+955
+00:16:55,600 --> 00:16:57,030
+Human in the loop. So we talked a lot
+about how to do these feedback loops
+
+956
+00:16:57,030 --> 00:16:57,040
+about how to do these feedback loops
+ 
+
+957
+00:16:57,040 --> 00:16:59,430
+about how to do these feedback loops
+with AI, right? Like AI for analysis,
+
+958
+00:16:59,430 --> 00:16:59,440
+with AI, right? Like AI for analysis,
+ 
+
+959
+00:16:59,440 --> 00:17:01,430
+with AI, right? Like AI for analysis,
+distilled deterministic rules, but at
+
+960
+00:17:01,430 --> 00:17:01,440
+distilled deterministic rules, but at
+ 
+
+961
+00:17:01,440 --> 00:17:02,870
+distilled deterministic rules, but at
+some point I also was seeing that there
+
+962
+00:17:02,870 --> 00:17:02,880
+some point I also was seeing that there
+ 
+
+963
+00:17:02,880 --> 00:17:04,390
+some point I also was seeing that there
+were just patterns I could identify that
+
+964
+00:17:04,390 --> 00:17:04,400
+were just patterns I could identify that
+ 
+
+965
+00:17:04,400 --> 00:17:06,390
+were just patterns I could identify that
+AI wasn't pulling out, right? Like there
+
+966
+00:17:06,390 --> 00:17:06,400
+AI wasn't pulling out, right? Like there
+ 
+
+967
+00:17:06,400 --> 00:17:08,390
+AI wasn't pulling out, right? Like there
+were short terms that I knew that AI
+
+968
+00:17:08,390 --> 00:17:08,400
+were short terms that I knew that AI
+ 
+
+969
+00:17:08,400 --> 00:17:10,630
+were short terms that I knew that AI
+wasn't identifying. Um, and what's
+
+970
+00:17:10,630 --> 00:17:10,640
+wasn't identifying. Um, and what's
+ 
+
+971
+00:17:10,640 --> 00:17:12,789
+wasn't identifying. Um, and what's
+really cool here actually is the new
+
+972
+00:17:12,789 --> 00:17:12,799
+really cool here actually is the new
+ 
+
+973
+00:17:12,799 --> 00:17:15,510
+really cool here actually is the new
+concept of just in time programs. So
+
+974
+00:17:15,510 --> 00:17:15,520
+concept of just in time programs. So
+ 
+
+975
+00:17:15,520 --> 00:17:16,870
+concept of just in time programs. So
+when you're working with AI for
+
+976
+00:17:16,870 --> 00:17:16,880
+when you're working with AI for
+ 
+
+977
+00:17:16,880 --> 00:17:18,870
+when you're working with AI for
+analysis, what's really cool is that
+
+978
+00:17:18,870 --> 00:17:18,880
+analysis, what's really cool is that
+ 
+
+979
+00:17:18,880 --> 00:17:20,789
+analysis, what's really cool is that
+instead of like manually looking at
+
+980
+00:17:20,789 --> 00:17:20,799
+instead of like manually looking at
+ 
+
+981
+00:17:20,799 --> 00:17:22,390
+instead of like manually looking at
+data, it's almost always more efficient
+
+982
+00:17:22,390 --> 00:17:22,400
+data, it's almost always more efficient
+ 
+
+983
+00:17:22,400 --> 00:17:24,150
+data, it's almost always more efficient
+these days to just prompt up a throwaway
+
+984
+00:17:24,150 --> 00:17:24,160
+these days to just prompt up a throwaway
+ 
+
+985
+00:17:24,160 --> 00:17:25,829
+these days to just prompt up a throwaway
+tool, right? Like you can just create a
+
+986
+00:17:25,829 --> 00:17:25,839
+tool, right? Like you can just create a
+ 
+
+987
+00:17:25,839 --> 00:17:27,990
+tool, right? Like you can just create a
+tool here in this case that let me skim
+
+988
+00:17:27,990 --> 00:17:28,000
+tool here in this case that let me skim
+ 
+
+989
+00:17:28,000 --> 00:17:30,950
+tool here in this case that let me skim
+the data uh identify the attributes that
+
+990
+00:17:30,950 --> 00:17:30,960
+the data uh identify the attributes that
+ 
+
+991
+00:17:30,960 --> 00:17:32,870
+the data uh identify the attributes that
+I thought had signal and then feed those
+
+992
+00:17:32,870 --> 00:17:32,880
+I thought had signal and then feed those
+ 
+
+993
+00:17:32,880 --> 00:17:35,430
+I thought had signal and then feed those
+to the LM to do iterative cycles. And so
+
+994
+00:17:35,430 --> 00:17:35,440
+to the LM to do iterative cycles. And so
+ 
+
+995
+00:17:35,440 --> 00:17:37,190
+to the LM to do iterative cycles. And so
+being able to build these throwaway
+
+996
+00:17:37,190 --> 00:17:37,200
+being able to build these throwaway
+ 
+
+997
+00:17:37,200 --> 00:17:39,029
+being able to build these throwaway
+tools is something you should be
+
+998
+00:17:39,029 --> 00:17:39,039
+tools is something you should be
+ 
+
+999
+00:17:39,039 --> 00:17:40,630
+tools is something you should be
+reaching for all the time. It's one of
+
+1000
+00:17:40,630 --> 00:17:40,640
+reaching for all the time. It's one of
+ 
+
+1001
+00:17:40,640 --> 00:17:42,470
+reaching for all the time. It's one of
+those things in your tool belt that once
+
+1002
+00:17:42,470 --> 00:17:42,480
+those things in your tool belt that once
+ 
+
+1003
+00:17:42,480 --> 00:17:43,990
+those things in your tool belt that once
+you know it exists, all of a sudden you
+
+1004
+00:17:43,990 --> 00:17:44,000
+you know it exists, all of a sudden you
+ 
+
+1005
+00:17:44,000 --> 00:17:47,430
+you know it exists, all of a sudden you
+find uh a lot of hammer-shaped nails or
+
+1006
+00:17:47,430 --> 00:17:47,440
+find uh a lot of hammer-shaped nails or
+ 
+
+1007
+00:17:47,440 --> 00:17:49,830
+find uh a lot of hammer-shaped nails or
+what have you.
+
+1008
+00:17:49,830 --> 00:17:49,840
+what have you.
+ 
+
+1009
+00:17:49,840 --> 00:17:52,310
+what have you.
+And like this was the case here where um
+
+1010
+00:17:52,310 --> 00:17:52,320
+And like this was the case here where um
+ 
+
+1011
+00:17:52,320 --> 00:17:54,549
+And like this was the case here where um
+I noticed that there were Azure DevOps
+
+1012
+00:17:54,549 --> 00:17:54,559
+I noticed that there were Azure DevOps
+ 
+
+1013
+00:17:54,559 --> 00:17:57,430
+I noticed that there were Azure DevOps
+or slugs. Um and I happened to know that
+
+1014
+00:17:57,430 --> 00:17:57,440
+or slugs. Um and I happened to know that
+ 
+
+1015
+00:17:57,440 --> 00:17:59,190
+or slugs. Um and I happened to know that
+you can actually transit from those
+
+1016
+00:17:59,190 --> 00:17:59,200
+you can actually transit from those
+ 
+
+1017
+00:17:59,200 --> 00:18:01,909
+you can actually transit from those
+through to tenant ids through into
+
+1018
+00:18:01,909 --> 00:18:01,919
+through to tenant ids through into
+ 
+
+1019
+00:18:01,919 --> 00:18:04,070
+through to tenant ids through into
+actual domains through like some poorly
+
+1020
+00:18:04,070 --> 00:18:04,080
+actual domains through like some poorly
+ 
+
+1021
+00:18:04,080 --> 00:18:05,750
+actual domains through like some poorly
+documented APIs. Something I'd been
+
+1022
+00:18:05,750 --> 00:18:05,760
+documented APIs. Something I'd been
+ 
+
+1023
+00:18:05,760 --> 00:18:07,190
+documented APIs. Something I'd been
+looking at recently. This was something
+
+1024
+00:18:07,190 --> 00:18:07,200
+looking at recently. This was something
+ 
+
+1025
+00:18:07,200 --> 00:18:09,029
+looking at recently. This was something
+AI didn't pull out. Like props to me.
+
+1026
+00:18:09,029 --> 00:18:09,039
+AI didn't pull out. Like props to me.
+ 
+
+1027
+00:18:09,039 --> 00:18:11,750
+AI didn't pull out. Like props to me.
+Pat myself on the back. Um but then you
+
+1028
+00:18:11,750 --> 00:18:11,760
+Pat myself on the back. Um but then you
+ 
+
+1029
+00:18:11,760 --> 00:18:13,430
+Pat myself on the back. Um but then you
+just feed it to an LM and all of a
+
+1030
+00:18:13,430 --> 00:18:13,440
+just feed it to an LM and all of a
+ 
+
+1031
+00:18:13,440 --> 00:18:15,270
+just feed it to an LM and all of a
+sudden you have a six-stage enrichment
+
+1032
+00:18:15,270 --> 00:18:15,280
+sudden you have a six-stage enrichment
+ 
+
+1033
+00:18:15,280 --> 00:18:17,590
+sudden you have a six-stage enrichment
+as one of the 69 different enrichments
+
+1034
+00:18:17,590 --> 00:18:17,600
+as one of the 69 different enrichments
+ 
+
+1035
+00:18:17,600 --> 00:18:20,070
+as one of the 69 different enrichments
+in this engine, right? um you know
+
+1036
+00:18:20,070 --> 00:18:20,080
+in this engine, right? um you know
+ 
+
+1037
+00:18:20,080 --> 00:18:23,110
+in this engine, right? um you know
+transiting through oi uh open ID lookups
+
+1038
+00:18:23,110 --> 00:18:23,120
+transiting through oi uh open ID lookups
+ 
+
+1039
+00:18:23,120 --> 00:18:25,909
+transiting through oi uh open ID lookups
+through API calls and then actually
+
+1040
+00:18:25,909 --> 00:18:25,919
+through API calls and then actually
+ 
+
+1041
+00:18:25,919 --> 00:18:27,510
+through API calls and then actually
+distilling what the most likely match
+
+1042
+00:18:27,510 --> 00:18:27,520
+distilling what the most likely match
+ 
+
+1043
+00:18:27,520 --> 00:18:30,950
+distilling what the most likely match
+is.
+
+1044
+00:18:30,950 --> 00:18:30,960
+
+ 
+
+1045
+00:18:30,960 --> 00:18:34,789
+
+So what did this all get me? Well um the
+
+1046
+00:18:34,789 --> 00:18:34,799
+So what did this all get me? Well um the
+ 
+
+1047
+00:18:34,799 --> 00:18:36,310
+So what did this all get me? Well um the
+headline number I've been using is that
+
+1048
+00:18:36,310 --> 00:18:36,320
+headline number I've been using is that
+ 
+
+1049
+00:18:36,320 --> 00:18:38,710
+headline number I've been using is that
+the Shylude 2.0 incident concretely
+
+1050
+00:18:38,710 --> 00:18:38,720
+the Shylude 2.0 incident concretely
+ 
+
+1051
+00:18:38,720 --> 00:18:41,830
+the Shylude 2.0 incident concretely
+impacted at least 37 of the Fortune 100.
+
+1052
+00:18:41,830 --> 00:18:41,840
+impacted at least 37 of the Fortune 100.
+ 
+
+1053
+00:18:41,840 --> 00:18:43,669
+impacted at least 37 of the Fortune 100.
+I have manually confirmed all of those
+
+1054
+00:18:43,669 --> 00:18:43,679
+I have manually confirmed all of those
+ 
+
+1055
+00:18:43,679 --> 00:18:45,590
+I have manually confirmed all of those
+cases. I'm not relying on LM to tell me
+
+1056
+00:18:45,590 --> 00:18:45,600
+cases. I'm not relying on LM to tell me
+ 
+
+1057
+00:18:45,600 --> 00:18:48,630
+cases. I'm not relying on LM to tell me
+that. um 37 of the Fortune 100 had some
+
+1058
+00:18:48,630 --> 00:18:48,640
+that. um 37 of the Fortune 100 had some
+ 
+
+1059
+00:18:48,640 --> 00:18:51,029
+that. um 37 of the Fortune 100 had some
+level of impact from this incident. But
+
+1060
+00:18:51,029 --> 00:18:51,039
+level of impact from this incident. But
+ 
+
+1061
+00:18:51,039 --> 00:18:53,669
+level of impact from this incident. But
+more importantly uh the agentic analysis
+
+1062
+00:18:53,669 --> 00:18:53,679
+more importantly uh the agentic analysis
+ 
+
+1063
+00:18:53,679 --> 00:18:57,830
+more importantly uh the agentic analysis
+found over 2400 impacted companies and
+
+1064
+00:18:57,830 --> 00:18:57,840
+found over 2400 impacted companies and
+ 
+
+1065
+00:18:57,840 --> 00:18:59,350
+found over 2400 impacted companies and
+this was after sort of two days of
+
+1066
+00:18:59,350 --> 00:18:59,360
+this was after sort of two days of
+ 
+
+1067
+00:18:59,360 --> 00:19:01,350
+this was after sort of two days of
+building this engine heavily leveraging
+
+1068
+00:19:01,350 --> 00:19:01,360
+building this engine heavily leveraging
+ 
+
+1069
+00:19:01,360 --> 00:19:04,470
+building this engine heavily leveraging
+AI. Uh the two weeks prior I had done a
+
+1070
+00:19:04,470 --> 00:19:04,480
+AI. Uh the two weeks prior I had done a
+ 
+
+1071
+00:19:04,480 --> 00:19:07,350
+AI. Uh the two weeks prior I had done a
+lot of this manually um and I had found
+
+1072
+00:19:07,350 --> 00:19:07,360
+lot of this manually um and I had found
+ 
+
+1073
+00:19:07,360 --> 00:19:09,590
+lot of this manually um and I had found
+200 impacted companies. Uh and so an
+
+1074
+00:19:09,590 --> 00:19:09,600
+200 impacted companies. Uh and so an
+ 
+
+1075
+00:19:09,600 --> 00:19:11,110
+200 impacted companies. Uh and so an
+idea of scale. Now this doesn't solve
+
+1076
+00:19:11,110 --> 00:19:11,120
+idea of scale. Now this doesn't solve
+ 
+
+1077
+00:19:11,120 --> 00:19:14,150
+idea of scale. Now this doesn't solve
+all your problems but uh it you know
+
+1078
+00:19:14,150 --> 00:19:14,160
+all your problems but uh it you know
+ 
+
+1079
+00:19:14,160 --> 00:19:15,990
+all your problems but uh it you know
+really goes to show the argument for
+
+1080
+00:19:15,990 --> 00:19:16,000
+really goes to show the argument for
+ 
+
+1081
+00:19:16,000 --> 00:19:19,830
+really goes to show the argument for
+relative investment to relative output
+
+1082
+00:19:19,830 --> 00:19:19,840
+relative investment to relative output
+ 
+
+1083
+00:19:19,840 --> 00:19:24,549
+relative investment to relative output
+and we will see. Oh no.
+
+1084
+00:19:24,549 --> 00:19:24,559
+and we will see. Oh no.
+ 
+
+1085
+00:19:24,559 --> 00:19:26,870
+and we will see. Oh no.
+Okay.
+
+1086
+00:19:26,870 --> 00:19:26,880
+Okay.
+ 
+
+1087
+00:19:26,880 --> 00:19:29,029
+Okay.
+Okay. Okay. So quick demo here and
+
+1088
+00:19:29,029 --> 00:19:29,039
+Okay. Okay. So quick demo here and
+ 
+
+1089
+00:19:29,039 --> 00:19:30,950
+Okay. Okay. So quick demo here and
+something to take away. Um this is not
+
+1090
+00:19:30,950 --> 00:19:30,960
+something to take away. Um this is not
+ 
+
+1091
+00:19:30,960 --> 00:19:32,549
+something to take away. Um this is not
+the point of the talk but I figured why
+
+1092
+00:19:32,549 --> 00:19:32,559
+the point of the talk but I figured why
+ 
+
+1093
+00:19:32,559 --> 00:19:34,630
+the point of the talk but I figured why
+not. Uh here's an example of an
+
+1094
+00:19:34,630 --> 00:19:34,640
+not. Uh here's an example of an
+ 
+
+1095
+00:19:34,640 --> 00:19:36,950
+not. Uh here's an example of an
+attribution skill that encodes a lot of
+
+1096
+00:19:36,950 --> 00:19:36,960
+attribution skill that encodes a lot of
+ 
+
+1097
+00:19:36,960 --> 00:19:38,630
+attribution skill that encodes a lot of
+the generalist knowledge that was
+
+1098
+00:19:38,630 --> 00:19:38,640
+the generalist knowledge that was
+ 
+
+1099
+00:19:38,640 --> 00:19:40,310
+the generalist knowledge that was
+relevant. not this specific instance
+
+1100
+00:19:40,310 --> 00:19:40,320
+relevant. not this specific instance
+ 
+
+1101
+00:19:40,320 --> 00:19:43,190
+relevant. not this specific instance
+like uh 69 attribution methods but just
+
+1102
+00:19:43,190 --> 00:19:43,200
+like uh 69 attribution methods but just
+ 
+
+1103
+00:19:43,200 --> 00:19:44,950
+like uh 69 attribution methods but just
+this idea of given a directory full of
+
+1104
+00:19:44,950 --> 00:19:44,960
+this idea of given a directory full of
+ 
+
+1105
+00:19:44,960 --> 00:19:47,430
+this idea of given a directory full of
+data whose is it um and so I'm running
+
+1106
+00:19:47,430 --> 00:19:47,440
+data whose is it um and so I'm running
+ 
+
+1107
+00:19:47,440 --> 00:19:49,430
+data whose is it um and so I'm running
+here just the attribution skill against
+
+1108
+00:19:49,430 --> 00:19:49,440
+here just the attribution skill against
+ 
+
+1109
+00:19:49,440 --> 00:19:52,390
+here just the attribution skill against
+a uh a random repository and apologies
+
+1110
+00:19:52,390 --> 00:19:52,400
+a uh a random repository and apologies
+ 
+
+1111
+00:19:52,400 --> 00:19:54,870
+a uh a random repository and apologies
+if it's a little blurry um you never
+
+1112
+00:19:54,870 --> 00:19:54,880
+if it's a little blurry um you never
+ 
+
+1113
+00:19:54,880 --> 00:19:57,669
+if it's a little blurry um you never
+know but what is going to be sort of
+
+1114
+00:19:57,669 --> 00:19:57,679
+know but what is going to be sort of
+ 
+
+1115
+00:19:57,679 --> 00:20:00,950
+know but what is going to be sort of
+evident in 3 seconds or so um is that it
+
+1116
+00:20:00,950 --> 00:20:00,960
+evident in 3 seconds or so um is that it
+ 
+
+1117
+00:20:00,960 --> 00:20:03,510
+evident in 3 seconds or so um is that it
+will kick out the actual victim here um
+
+1118
+00:20:03,510 --> 00:20:03,520
+will kick out the actual victim here um
+ 
+
+1119
+00:20:03,520 --> 00:20:04,789
+will kick out the actual victim here um
+and what is going to be really
+
+1120
+00:20:04,789 --> 00:20:04,799
+and what is going to be really
+ 
+
+1121
+00:20:04,799 --> 00:20:06,150
+and what is going to be really
+interesting is this victim was the
+
+1122
+00:20:06,150 --> 00:20:06,160
+interesting is this victim was the
+ 
+
+1123
+00:20:06,160 --> 00:20:08,310
+interesting is this victim was the
+Alibaba example but it actually
+
+1124
+00:20:08,310 --> 00:20:08,320
+Alibaba example but it actually
+ 
+
+1125
+00:20:08,320 --> 00:20:10,789
+Alibaba example but it actually
+identified inside the truffle secrets
+
+1126
+00:20:10,789 --> 00:20:10,799
+identified inside the truffle secrets
+ 
+
+1127
+00:20:10,799 --> 00:20:12,950
+identified inside the truffle secrets
+that one of the secrets was sourced from
+
+1128
+00:20:12,950 --> 00:20:12,960
+that one of the secrets was sourced from
+ 
+
+1129
+00:20:12,960 --> 00:20:15,750
+that one of the secrets was sourced from
+a uh dot file that is used by an
+
+1130
+00:20:15,750 --> 00:20:15,760
+a uh dot file that is used by an
+ 
+
+1131
+00:20:15,760 --> 00:20:18,230
+a uh dot file that is used by an
+internal developer tool for Alibaba AI.
+
+1132
+00:20:18,230 --> 00:20:18,240
+internal developer tool for Alibaba AI.
+ 
+
+1133
+00:20:18,240 --> 00:20:20,070
+internal developer tool for Alibaba AI.
+Um so this like these connections that
+
+1134
+00:20:20,070 --> 00:20:20,080
+Um so this like these connections that
+ 
+
+1135
+00:20:20,080 --> 00:20:21,750
+Um so this like these connections that
+it's making are something that you can't
+
+1136
+00:20:21,750 --> 00:20:21,760
+it's making are something that you can't
+ 
+
+1137
+00:20:21,760 --> 00:20:23,590
+it's making are something that you can't
+necessarily do yourself. And the second
+
+1138
+00:20:23,590 --> 00:20:23,600
+necessarily do yourself. And the second
+ 
+
+1139
+00:20:23,600 --> 00:20:26,310
+necessarily do yourself. And the second
+skill here is a security contact skill.
+
+1140
+00:20:26,310 --> 00:20:26,320
+skill here is a security contact skill.
+ 
+
+1141
+00:20:26,320 --> 00:20:27,750
+skill here is a security contact skill.
+How do you know who to tell about these
+
+1142
+00:20:27,750 --> 00:20:27,760
+How do you know who to tell about these
+ 
+
+1143
+00:20:27,760 --> 00:20:30,789
+How do you know who to tell about these
+2000 instance? Well, you can Google like
+
+1144
+00:20:30,789 --> 00:20:30,799
+2000 instance? Well, you can Google like
+ 
+
+1145
+00:20:30,799 --> 00:20:32,710
+2000 instance? Well, you can Google like
+company name bug bounty company name
+
+1146
+00:20:32,710 --> 00:20:32,720
+company name bug bounty company name
+ 
+
+1147
+00:20:32,720 --> 00:20:35,029
+company name bug bounty company name
+security.ext company name how do I
+
+1148
+00:20:35,029 --> 00:20:35,039
+security.ext company name how do I
+ 
+
+1149
+00:20:35,039 --> 00:20:37,110
+security.ext company name how do I
+report a security issue? Company name.
+
+1150
+00:20:37,110 --> 00:20:37,120
+report a security issue? Company name.
+ 
+
+1151
+00:20:37,120 --> 00:20:39,590
+report a security issue? Company name.
+Um, it takes a minute to run a skill
+
+1152
+00:20:39,590 --> 00:20:39,600
+Um, it takes a minute to run a skill
+ 
+
+1153
+00:20:39,600 --> 00:20:41,350
+Um, it takes a minute to run a skill
+here, but the skill will check all of
+
+1154
+00:20:41,350 --> 00:20:41,360
+here, but the skill will check all of
+ 
+
+1155
+00:20:41,360 --> 00:20:43,669
+here, but the skill will check all of
+those things for you in parallel. Um,
+
+1156
+00:20:43,669 --> 00:20:43,679
+those things for you in parallel. Um,
+ 
+
+1157
+00:20:43,679 --> 00:20:45,830
+those things for you in parallel. Um,
+and for Alibaba will end up kicking out
+
+1158
+00:20:45,830 --> 00:20:45,840
+and for Alibaba will end up kicking out
+ 
+
+1159
+00:20:45,840 --> 00:20:50,230
+and for Alibaba will end up kicking out
+their bug bounty and VW uh, VDP. So,
+
+1160
+00:20:50,230 --> 00:20:50,240
+their bug bounty and VW uh, VDP. So,
+ 
+
+1161
+00:20:50,240 --> 00:20:51,669
+their bug bounty and VW uh, VDP. So,
+this was something where I constantly
+
+1162
+00:20:51,669 --> 00:20:51,679
+this was something where I constantly
+ 
+
+1163
+00:20:51,679 --> 00:20:53,830
+this was something where I constantly
+find myself just like hoping that the
+
+1164
+00:20:53,830 --> 00:20:53,840
+find myself just like hoping that the
+ 
+
+1165
+00:20:53,840 --> 00:20:55,190
+find myself just like hoping that the
+first Google result is correct,
+
+1166
+00:20:55,190 --> 00:20:55,200
+first Google result is correct,
+ 
+
+1167
+00:20:55,200 --> 00:20:56,870
+first Google result is correct,
+otherwise it turns into 30 minutes of
+
+1168
+00:20:56,870 --> 00:20:56,880
+otherwise it turns into 30 minutes of
+ 
+
+1169
+00:20:56,880 --> 00:20:59,270
+otherwise it turns into 30 minutes of
+stalking people on LinkedIn. Um, and so
+
+1170
+00:20:59,270 --> 00:20:59,280
+stalking people on LinkedIn. Um, and so
+ 
+
+1171
+00:20:59,280 --> 00:21:00,789
+stalking people on LinkedIn. Um, and so
+I wanted to save some peel some time.
+
+1172
+00:21:00,789 --> 00:21:00,799
+I wanted to save some peel some time.
+ 
+
+1173
+00:21:00,799 --> 00:21:02,630
+I wanted to save some peel some time.
+So, that is what I will leave you with.
+
+1174
+00:21:02,630 --> 00:21:02,640
+So, that is what I will leave you with.
+ 
+
+1175
+00:21:02,640 --> 00:21:04,070
+So, that is what I will leave you with.
+There's a repository there that has
+
+1176
+00:21:04,070 --> 00:21:04,080
+There's a repository there that has
+ 
+
+1177
+00:21:04,080 --> 00:21:07,350
+There's a repository there that has
+those two skills. take them uh you know,
+
+1178
+00:21:07,350 --> 00:21:07,360
+those two skills. take them uh you know,
+ 
+
+1179
+00:21:07,360 --> 00:21:10,630
+those two skills. take them uh you know,
+use them, mix them up. Um and that's
+
+1180
+00:21:10,630 --> 00:21:10,640
+use them, mix them up. Um and that's
+ 
+
+1181
+00:21:10,640 --> 00:21:19,590
+use them, mix them up. Um and that's
+what I got.
+
+1182
+00:21:19,590 --> 00:21:19,600
+
+ 
+
+1183
+00:21:19,600 --> 00:21:23,270
+
+It's like a many like a fractal set of
+
+1184
+00:21:23,270 --> 00:21:23,280
+It's like a many like a fractal set of
+ 
+
+1185
+00:21:23,280 --> 00:21:24,950
+It's like a many like a fractal set of
+tools in there. I'm excited to put this
+
+1186
+00:21:24,950 --> 00:21:24,960
+tools in there. I'm excited to put this
+ 
+
+1187
+00:21:24,960 --> 00:21:28,789
+tools in there. I'm excited to put this
+to use. Questions? Questions for Army?
+
+1188
+00:21:28,789 --> 00:21:28,799
+to use. Questions? Questions for Army?
+ 
+
+1189
+00:21:28,799 --> 00:21:30,470
+to use. Questions? Questions for Army?
+Must do. Oh, okay. All the way back
+
+1190
+00:21:30,470 --> 00:21:30,480
+Must do. Oh, okay. All the way back
+ 
+
+1191
+00:21:30,480 --> 00:21:32,549
+Must do. Oh, okay. All the way back
+there. Oh, that's inconvenient. All
+
+1192
+00:21:32,549 --> 00:21:32,559
+there. Oh, that's inconvenient. All
+ 
+
+1193
+00:21:32,559 --> 00:21:35,190
+there. Oh, that's inconvenient. All
+right. Uh, while we're going and setting
+
+1194
+00:21:35,190 --> 00:21:35,200
+right. Uh, while we're going and setting
+ 
+
+1195
+00:21:35,200 --> 00:21:38,789
+right. Uh, while we're going and setting
+up for Daniel's talk, um, yeah, I'll go
+
+1196
+00:21:38,789 --> 00:21:38,799
+up for Daniel's talk, um, yeah, I'll go
+ 
+
+1197
+00:21:38,799 --> 00:21:40,789
+up for Daniel's talk, um, yeah, I'll go
+where where's the hand? I lost the hand.
+
+1198
+00:21:40,789 --> 00:21:40,799
+where where's the hand? I lost the hand.
+ 
+
+1199
+00:21:40,799 --> 00:21:43,590
+where where's the hand? I lost the hand.
+Thank you.
+
+1200
+00:21:43,590 --> 00:21:43,600
+Thank you.
+ 
+
+1201
+00:21:43,600 --> 00:21:45,270
+Thank you.
+>> Awesome. Thank you. Uh, really
+
+1202
+00:21:45,270 --> 00:21:45,280
+>> Awesome. Thank you. Uh, really
+ 
+
+1203
+00:21:45,280 --> 00:21:47,590
+>> Awesome. Thank you. Uh, really
+appreciate the talk, Ramy. Uh, one of
+
+1204
+00:21:47,590 --> 00:21:47,600
+appreciate the talk, Ramy. Uh, one of
+ 
+
+1205
+00:21:47,600 --> 00:21:49,190
+appreciate the talk, Ramy. Uh, one of
+the things that you mentioned though was
+
+1206
+00:21:49,190 --> 00:21:49,200
+the things that you mentioned though was
+ 
+
+1207
+00:21:49,200 --> 00:21:52,630
+the things that you mentioned though was
+the value of these ephemeral tools that
+
+1208
+00:21:52,630 --> 00:21:52,640
+the value of these ephemeral tools that
+ 
+
+1209
+00:21:52,640 --> 00:21:55,110
+the value of these ephemeral tools that
+you're creating on the fly. I'm curious
+
+1210
+00:21:55,110 --> 00:21:55,120
+you're creating on the fly. I'm curious
+ 
+
+1211
+00:21:55,120 --> 00:21:57,590
+you're creating on the fly. I'm curious
+if you see like any tension there and
+
+1212
+00:21:57,590 --> 00:21:57,600
+if you see like any tension there and
+ 
+
+1213
+00:21:57,600 --> 00:22:00,310
+if you see like any tension there and
+how you may handle it as far as
+
+1214
+00:22:00,310 --> 00:22:00,320
+how you may handle it as far as
+ 
+
+1215
+00:22:00,320 --> 00:22:02,950
+how you may handle it as far as
+maintaining the reusability of those
+
+1216
+00:22:02,950 --> 00:22:02,960
+maintaining the reusability of those
+ 
+
+1217
+00:22:02,960 --> 00:22:05,350
+maintaining the reusability of those
+tools. not reinventing the wheel, so to
+
+1218
+00:22:05,350 --> 00:22:05,360
+tools. not reinventing the wheel, so to
+ 
+
+1219
+00:22:05,360 --> 00:22:06,310
+tools. not reinventing the wheel, so to
+speak.
+
+1220
+00:22:06,310 --> 00:22:06,320
+speak.
+ 
+
+1221
+00:22:06,320 --> 00:22:07,990
+speak.
+>> Yeah, it's a great question. I mean, to
+
+1222
+00:22:07,990 --> 00:22:08,000
+>> Yeah, it's a great question. I mean, to
+ 
+
+1223
+00:22:08,000 --> 00:22:09,990
+>> Yeah, it's a great question. I mean, to
+quote uh the wonderful folks at OpenAI
+
+1224
+00:22:09,990 --> 00:22:10,000
+quote uh the wonderful folks at OpenAI
+ 
+
+1225
+00:22:10,000 --> 00:22:12,230
+quote uh the wonderful folks at OpenAI
+from this morning, code is free. Um, I'm
+
+1226
+00:22:12,230 --> 00:22:12,240
+from this morning, code is free. Um, I'm
+ 
+
+1227
+00:22:12,240 --> 00:22:14,149
+from this morning, code is free. Um, I'm
+not too worried about throwing away code
+
+1228
+00:22:14,149 --> 00:22:14,159
+not too worried about throwing away code
+ 
+
+1229
+00:22:14,159 --> 00:22:16,710
+not too worried about throwing away code
+these days because I can do the work to
+
+1230
+00:22:16,710 --> 00:22:16,720
+these days because I can do the work to
+ 
+
+1231
+00:22:16,720 --> 00:22:18,950
+these days because I can do the work to
+get it back. I think you should think
+
+1232
+00:22:18,950 --> 00:22:18,960
+get it back. I think you should think
+ 
+
+1233
+00:22:18,960 --> 00:22:20,470
+get it back. I think you should think
+about your stakeholders and purpose,
+
+1234
+00:22:20,470 --> 00:22:20,480
+about your stakeholders and purpose,
+ 
+
+1235
+00:22:20,480 --> 00:22:21,830
+about your stakeholders and purpose,
+right? If you are building a tool for
+
+1236
+00:22:21,830 --> 00:22:21,840
+right? If you are building a tool for
+ 
+
+1237
+00:22:21,840 --> 00:22:24,230
+right? If you are building a tool for
+your team to use in a weekly process,
+
+1238
+00:22:24,230 --> 00:22:24,240
+your team to use in a weekly process,
+ 
+
+1239
+00:22:24,240 --> 00:22:25,990
+your team to use in a weekly process,
+put a little more thought into it. But
+
+1240
+00:22:25,990 --> 00:22:26,000
+put a little more thought into it. But
+ 
+
+1241
+00:22:26,000 --> 00:22:27,590
+put a little more thought into it. But
+this is really about the fact that you
+
+1242
+00:22:27,590 --> 00:22:27,600
+this is really about the fact that you
+ 
+
+1243
+00:22:27,600 --> 00:22:30,549
+this is really about the fact that you
+can now trivially put an a guey on any
+
+1244
+00:22:30,549 --> 00:22:30,559
+can now trivially put an a guey on any
+ 
+
+1245
+00:22:30,559 --> 00:22:32,070
+can now trivially put an a guey on any
+process you're about to do. If you're
+
+1246
+00:22:32,070 --> 00:22:32,080
+process you're about to do. If you're
+ 
+
+1247
+00:22:32,080 --> 00:22:33,350
+process you're about to do. If you're
+about to sit down and do something for
+
+1248
+00:22:33,350 --> 00:22:33,360
+about to sit down and do something for
+ 
+
+1249
+00:22:33,360 --> 00:22:35,190
+about to sit down and do something for
+an hour, think about whether 10 minutes
+
+1250
+00:22:35,190 --> 00:22:35,200
+an hour, think about whether 10 minutes
+ 
+
+1251
+00:22:35,200 --> 00:22:36,789
+an hour, think about whether 10 minutes
+of that would be better served by making
+
+1252
+00:22:36,789 --> 00:22:36,799
+of that would be better served by making
+ 
+
+1253
+00:22:36,799 --> 00:22:39,590
+of that would be better served by making
+a clean UX that isn't necessarily a
+
+1254
+00:22:39,590 --> 00:22:39,600
+a clean UX that isn't necessarily a
+ 
+
+1255
+00:22:39,600 --> 00:22:43,350
+a clean UX that isn't necessarily a
+terminal.
+
+1256
+00:22:43,350 --> 00:22:43,360
+
+ 
+
+1257
+00:22:43,360 --> 00:22:46,630
+
+Anything else?
+
+1258
+00:22:46,630 --> 00:22:46,640
+Anything else?
+ 
+
+1259
+00:22:46,640 --> 00:22:49,750
+Anything else?
+>> Uh because a lot of people are asking AI
+
+1260
+00:22:49,750 --> 00:22:49,760
+>> Uh because a lot of people are asking AI
+ 
+
+1261
+00:22:49,760 --> 00:22:51,510
+>> Uh because a lot of people are asking AI
+question uh excuse me, cost of AI
+
+1262
+00:22:51,510 --> 00:22:51,520
+question uh excuse me, cost of AI
+ 
+
+1263
+00:22:51,520 --> 00:22:53,430
+question uh excuse me, cost of AI
+questions like any sense of what the
+
+1264
+00:22:53,430 --> 00:22:53,440
+questions like any sense of what the
+ 
+
+1265
+00:22:53,440 --> 00:22:55,110
+questions like any sense of what the
+token burn is for this? Is it sort of
+
+1266
+00:22:55,110 --> 00:22:55,120
+token burn is for this? Is it sort of
+ 
+
+1267
+00:22:55,120 --> 00:22:57,190
+token burn is for this? Is it sort of
+one time or do you find it negligible?
+
+1268
+00:22:57,190 --> 00:22:57,200
+one time or do you find it negligible?
+ 
+
+1269
+00:22:57,200 --> 00:22:59,350
+one time or do you find it negligible?
+>> Yeah. Um, I find it negligible because
+
+1270
+00:22:59,350 --> 00:22:59,360
+>> Yeah. Um, I find it negligible because
+ 
+
+1271
+00:22:59,360 --> 00:23:02,070
+>> Yeah. Um, I find it negligible because
+I'm not paying to be honest. But, uh, I
+
+1272
+00:23:02,070 --> 00:23:02,080
+I'm not paying to be honest. But, uh, I
+ 
+
+1273
+00:23:02,080 --> 00:23:03,909
+I'm not paying to be honest. But, uh, I
+think something like this on the order
+
+1274
+00:23:03,909 --> 00:23:03,919
+think something like this on the order
+ 
+
+1275
+00:23:03,919 --> 00:23:06,149
+think something like this on the order
+of 80 bucks. Um, I think is where it
+
+1276
+00:23:06,149 --> 00:23:06,159
+of 80 bucks. Um, I think is where it
+ 
+
+1277
+00:23:06,159 --> 00:23:07,990
+of 80 bucks. Um, I think is where it
+works out to. And again, that's cuz I'm
+
+1278
+00:23:07,990 --> 00:23:08,000
+works out to. And again, that's cuz I'm
+ 
+
+1279
+00:23:08,000 --> 00:23:10,549
+works out to. And again, that's cuz I'm
+not feeding 30 GB to the context window
+
+1280
+00:23:10,549 --> 00:23:10,559
+not feeding 30 GB to the context window
+ 
+
+1281
+00:23:10,559 --> 00:23:12,549
+not feeding 30 GB to the context window
+every time. Uh, that is where using some
+
+1282
+00:23:12,549 --> 00:23:12,559
+every time. Uh, that is where using some
+ 
+
+1283
+00:23:12,559 --> 00:23:14,230
+every time. Uh, that is where using some
+of these deterministic methods can
+
+1284
+00:23:14,230 --> 00:23:14,240
+of these deterministic methods can
+ 
+
+1285
+00:23:14,240 --> 00:23:17,029
+of these deterministic methods can
+shortcut some of the uh, you know, token
+
+1286
+00:23:17,029 --> 00:23:17,039
+shortcut some of the uh, you know, token
+ 
+
+1287
+00:23:17,039 --> 00:23:19,270
+shortcut some of the uh, you know, token
+usage. Um, especially when you're taking
+
+1288
+00:23:19,270 --> 00:23:19,280
+usage. Um, especially when you're taking
+ 
+
+1289
+00:23:19,280 --> 00:23:20,950
+usage. Um, especially when you're taking
+samples and that would scale up linearly
+
+1290
+00:23:20,950 --> 00:23:20,960
+samples and that would scale up linearly
+ 
+
+1291
+00:23:20,960 --> 00:23:22,950
+samples and that would scale up linearly
+if you were taking more samples and sort
+
+1292
+00:23:22,950 --> 00:23:22,960
+if you were taking more samples and sort
+ 
+
+1293
+00:23:22,960 --> 00:23:24,630
+if you were taking more samples and sort
+of repeating add infinium.
+
+1294
+00:23:24,630 --> 00:23:24,640
+of repeating add infinium.
+ 
+
+1295
+00:23:24,640 --> 00:23:25,990
+of repeating add infinium.
+>> Cool. Awesome. Thank you very much.
+
+1296
+00:23:25,990 --> 00:23:26,000
+>> Cool. Awesome. Thank you very much.
+ 
+
+1297
+00:23:26,000 --> 00:23:28,799
+>> Cool. Awesome. Thank you very much.
+>> Yeah. Thank you.
+

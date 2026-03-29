@@ -1,0 +1,5675 @@
+1
+00:00:05,359 --> 00:00:07,510
+
+Uh yeah. Yeah. Thank you. Um I'm Brooks.
+
+2
+00:00:07,510 --> 00:00:07,520
+Uh yeah. Yeah. Thank you. Um I'm Brooks.
+ 
+
+3
+00:00:07,520 --> 00:00:10,230
+Uh yeah. Yeah. Thank you. Um I'm Brooks.
+I do work at Dropbox as a um
+
+4
+00:00:10,230 --> 00:00:10,240
+I do work at Dropbox as a um
+ 
+
+5
+00:00:10,240 --> 00:00:12,549
+I do work at Dropbox as a um
+infrastructure cloud security engineer.
+
+6
+00:00:12,549 --> 00:00:12,559
+infrastructure cloud security engineer.
+ 
+
+7
+00:00:12,559 --> 00:00:14,629
+infrastructure cloud security engineer.
+But this presentation is more about the
+
+8
+00:00:14,629 --> 00:00:14,639
+But this presentation is more about the
+ 
+
+9
+00:00:14,639 --> 00:00:17,670
+But this presentation is more about the
+agents I've been building um on my own,
+
+10
+00:00:17,670 --> 00:00:17,680
+agents I've been building um on my own,
+ 
+
+11
+00:00:17,680 --> 00:00:20,390
+agents I've been building um on my own,
+the ones I run every day. Um kind of the
+
+12
+00:00:20,390 --> 00:00:20,400
+the ones I run every day. Um kind of the
+ 
+
+13
+00:00:20,400 --> 00:00:21,830
+the ones I run every day. Um kind of the
+things I've been building and breaking
+
+14
+00:00:21,830 --> 00:00:21,840
+things I've been building and breaking
+ 
+
+15
+00:00:21,840 --> 00:00:23,830
+things I've been building and breaking
+and uh the issues I've run into and
+
+16
+00:00:23,830 --> 00:00:23,840
+and uh the issues I've run into and
+ 
+
+17
+00:00:23,840 --> 00:00:25,750
+and uh the issues I've run into and
+lessons learned and uh fun things like
+
+18
+00:00:25,750 --> 00:00:25,760
+lessons learned and uh fun things like
+ 
+
+19
+00:00:25,760 --> 00:00:27,750
+lessons learned and uh fun things like
+that. So everything I'm going to
+
+20
+00:00:27,750 --> 00:00:27,760
+that. So everything I'm going to
+ 
+
+21
+00:00:27,760 --> 00:00:29,830
+that. So everything I'm going to
+reference here is uh open source on my
+
+22
+00:00:29,830 --> 00:00:29,840
+reference here is uh open source on my
+ 
+
+23
+00:00:29,840 --> 00:00:31,750
+reference here is uh open source on my
+GitHub. Um it's not really the open
+
+24
+00:00:31,750 --> 00:00:31,760
+GitHub. Um it's not really the open
+ 
+
+25
+00:00:31,760 --> 00:00:33,190
+GitHub. Um it's not really the open
+source that you can just download and
+
+26
+00:00:33,190 --> 00:00:33,200
+source that you can just download and
+ 
+
+27
+00:00:33,200 --> 00:00:34,549
+source that you can just download and
+run. It's open source like you can look
+
+28
+00:00:34,549 --> 00:00:34,559
+run. It's open source like you can look
+ 
+
+29
+00:00:34,559 --> 00:00:35,910
+run. It's open source like you can look
+at the code and try to figure out how to
+
+30
+00:00:35,910 --> 00:00:35,920
+at the code and try to figure out how to
+ 
+
+31
+00:00:35,920 --> 00:00:38,389
+at the code and try to figure out how to
+do it. But it does all run for me. So
+
+32
+00:00:38,389 --> 00:00:38,399
+do it. But it does all run for me. So
+ 
+
+33
+00:00:38,399 --> 00:00:41,590
+do it. But it does all run for me. So
+good luck if you want to go try.
+
+34
+00:00:41,590 --> 00:00:41,600
+good luck if you want to go try.
+ 
+
+35
+00:00:41,600 --> 00:00:43,270
+good luck if you want to go try.
+So this is uh I did update all these
+
+36
+00:00:43,270 --> 00:00:43,280
+So this is uh I did update all these
+ 
+
+37
+00:00:43,280 --> 00:00:44,470
+So this is uh I did update all these
+numbers last night and I think it's
+
+38
+00:00:44,470 --> 00:00:44,480
+numbers last night and I think it's
+ 
+
+39
+00:00:44,480 --> 00:00:46,709
+numbers last night and I think it's
+already out of date again. Um but I have
+
+40
+00:00:46,709 --> 00:00:46,719
+already out of date again. Um but I have
+ 
+
+41
+00:00:46,719 --> 00:00:49,029
+already out of date again. Um but I have
+like 19 different agents. Um agent is
+
+42
+00:00:49,029 --> 00:00:49,039
+like 19 different agents. Um agent is
+ 
+
+43
+00:00:49,039 --> 00:00:51,510
+like 19 different agents. Um agent is
+kind of a catchall here. There's, I
+
+44
+00:00:51,510 --> 00:00:51,520
+kind of a catchall here. There's, I
+ 
+
+45
+00:00:51,520 --> 00:00:53,910
+kind of a catchall here. There's, I
+think, 13ish interactive ones, a few
+
+46
+00:00:53,910 --> 00:00:53,920
+think, 13ish interactive ones, a few
+ 
+
+47
+00:00:53,920 --> 00:00:56,069
+think, 13ish interactive ones, a few
+other that are more like service agents,
+
+48
+00:00:56,069 --> 00:00:56,079
+other that are more like service agents,
+ 
+
+49
+00:00:56,079 --> 00:00:58,549
+other that are more like service agents,
+kind of cron jobs that call either cloud
+
+50
+00:00:58,549 --> 00:00:58,559
+kind of cron jobs that call either cloud
+ 
+
+51
+00:00:58,559 --> 00:01:01,590
+kind of cron jobs that call either cloud
+code or a different agent. Um, 73
+
+52
+00:01:01,590 --> 00:01:01,600
+code or a different agent. Um, 73
+ 
+
+53
+00:01:01,600 --> 00:01:03,830
+code or a different agent. Um, 73
+different MCP tools uh just on a local
+
+54
+00:01:03,830 --> 00:01:03,840
+different MCP tools uh just on a local
+ 
+
+55
+00:01:03,840 --> 00:01:08,149
+different MCP tools uh just on a local
+stddio um MCP server. So, that that has
+
+56
+00:01:08,149 --> 00:01:08,159
+stddio um MCP server. So, that that has
+ 
+
+57
+00:01:08,159 --> 00:01:10,870
+stddio um MCP server. So, that that has
+things like um email that I've been
+
+58
+00:01:10,870 --> 00:01:10,880
+things like um email that I've been
+ 
+
+59
+00:01:10,880 --> 00:01:13,190
+things like um email that I've been
+playing around with a little bit. um
+
+60
+00:01:13,190 --> 00:01:13,200
+playing around with a little bit. um
+ 
+
+61
+00:01:13,200 --> 00:01:14,870
+playing around with a little bit. um
+creating files, reading from the file
+
+62
+00:01:14,870 --> 00:01:14,880
+creating files, reading from the file
+ 
+
+63
+00:01:14,880 --> 00:01:16,710
+creating files, reading from the file
+system
+
+64
+00:01:16,710 --> 00:01:16,720
+system
+ 
+
+65
+00:01:16,720 --> 00:01:18,710
+system
+uh different
+
+66
+00:01:18,710 --> 00:01:18,720
+uh different
+ 
+
+67
+00:01:18,720 --> 00:01:21,190
+uh different
+tools around uh the OS that I want to
+
+68
+00:01:21,190 --> 00:01:21,200
+tools around uh the OS that I want to
+ 
+
+69
+00:01:21,200 --> 00:01:23,670
+tools around uh the OS that I want to
+give them access to and just anytime I
+
+70
+00:01:23,670 --> 00:01:23,680
+give them access to and just anytime I
+ 
+
+71
+00:01:23,680 --> 00:01:25,030
+give them access to and just anytime I
+want to create another tool, put it in
+
+72
+00:01:25,030 --> 00:01:25,040
+want to create another tool, put it in
+ 
+
+73
+00:01:25,040 --> 00:01:28,149
+want to create another tool, put it in
+there and then I uh
+
+74
+00:01:28,149 --> 00:01:28,159
+there and then I uh
+ 
+
+75
+00:01:28,159 --> 00:01:29,749
+there and then I uh
+I'll get into the capability system in a
+
+76
+00:01:29,749 --> 00:01:29,759
+I'll get into the capability system in a
+ 
+
+77
+00:01:29,759 --> 00:01:31,030
+I'll get into the capability system in a
+little bit. But then I try to scope it
+
+78
+00:01:31,030 --> 00:01:31,040
+little bit. But then I try to scope it
+ 
+
+79
+00:01:31,040 --> 00:01:33,429
+little bit. But then I try to scope it
+down so every agent doesn't have to see
+
+80
+00:01:33,429 --> 00:01:33,439
+down so every agent doesn't have to see
+ 
+
+81
+00:01:33,439 --> 00:01:36,390
+down so every agent doesn't have to see
+every um MCP tool. I mean that that's uh
+
+82
+00:01:36,390 --> 00:01:36,400
+every um MCP tool. I mean that that's uh
+ 
+
+83
+00:01:36,400 --> 00:01:38,469
+every um MCP tool. I mean that that's uh
+just pretty much good security and also
+
+84
+00:01:38,469 --> 00:01:38,479
+just pretty much good security and also
+ 
+
+85
+00:01:38,479 --> 00:01:40,390
+just pretty much good security and also
+good for the functionality so we're not
+
+86
+00:01:40,390 --> 00:01:40,400
+good for the functionality so we're not
+ 
+
+87
+00:01:40,400 --> 00:01:42,870
+good for the functionality so we're not
+uh polluting the context.
+
+88
+00:01:42,870 --> 00:01:42,880
+uh polluting the context.
+ 
+
+89
+00:01:42,880 --> 00:01:44,789
+uh polluting the context.
+Um I also created several different ways
+
+90
+00:01:44,789 --> 00:01:44,799
+Um I also created several different ways
+ 
+
+91
+00:01:44,799 --> 00:01:47,830
+Um I also created several different ways
+to start these agents. I typically do
+
+92
+00:01:47,830 --> 00:01:47,840
+to start these agents. I typically do
+ 
+
+93
+00:01:47,840 --> 00:01:50,550
+to start these agents. I typically do
+use CLI tools for a lot of this stuff
+
+94
+00:01:50,550 --> 00:01:50,560
+use CLI tools for a lot of this stuff
+ 
+
+95
+00:01:50,560 --> 00:01:53,190
+use CLI tools for a lot of this stuff
+but I have thrown in like a web UI um
+
+96
+00:01:53,190 --> 00:01:53,200
+but I have thrown in like a web UI um
+ 
+
+97
+00:01:53,200 --> 00:01:56,310
+but I have thrown in like a web UI um
+voice kind of wrapper both in the web UI
+
+98
+00:01:56,310 --> 00:01:56,320
+voice kind of wrapper both in the web UI
+ 
+
+99
+00:01:56,320 --> 00:01:59,510
+voice kind of wrapper both in the web UI
+and kind of a standalone app and um also
+
+100
+00:01:59,510 --> 00:01:59,520
+and kind of a standalone app and um also
+ 
+
+101
+00:01:59,520 --> 00:02:01,109
+and kind of a standalone app and um also
+have it connected just to my personal
+
+102
+00:02:01,109 --> 00:02:01,119
+have it connected just to my personal
+ 
+
+103
+00:02:01,119 --> 00:02:04,550
+have it connected just to my personal
+Slack so I can add a specific agent. it
+
+104
+00:02:04,550 --> 00:02:04,560
+Slack so I can add a specific agent. it
+ 
+
+105
+00:02:04,560 --> 00:02:06,069
+Slack so I can add a specific agent. it
+kind of goes through a filtering system,
+
+106
+00:02:06,069 --> 00:02:06,079
+kind of goes through a filtering system,
+ 
+
+107
+00:02:06,079 --> 00:02:07,910
+kind of goes through a filtering system,
+sends it to the right place and uh I get
+
+108
+00:02:07,910 --> 00:02:07,920
+sends it to the right place and uh I get
+ 
+
+109
+00:02:07,920 --> 00:02:10,630
+sends it to the right place and uh I get
+a response.
+
+110
+00:02:10,630 --> 00:02:10,640
+a response.
+ 
+
+111
+00:02:10,640 --> 00:02:13,990
+a response.
+Uh so through all this um I I do also
+
+112
+00:02:13,990 --> 00:02:14,000
+Uh so through all this um I I do also
+ 
+
+113
+00:02:14,000 --> 00:02:16,229
+Uh so through all this um I I do also
+interact with a couple remote MCP
+
+114
+00:02:16,229 --> 00:02:16,239
+interact with a couple remote MCP
+ 
+
+115
+00:02:16,239 --> 00:02:17,990
+interact with a couple remote MCP
+servers that are also permissioned
+
+116
+00:02:17,990 --> 00:02:18,000
+servers that are also permissioned
+ 
+
+117
+00:02:18,000 --> 00:02:20,070
+servers that are also permissioned
+different ways, mainly the personal ones
+
+118
+00:02:20,070 --> 00:02:20,080
+different ways, mainly the personal ones
+ 
+
+119
+00:02:20,080 --> 00:02:22,229
+different ways, mainly the personal ones
+I've been building for myself and uh
+
+120
+00:02:22,229 --> 00:02:22,239
+I've been building for myself and uh
+ 
+
+121
+00:02:22,239 --> 00:02:24,470
+I've been building for myself and uh
+GitHub, but I'll get into some of that
+
+122
+00:02:24,470 --> 00:02:24,480
+GitHub, but I'll get into some of that
+ 
+
+123
+00:02:24,480 --> 00:02:27,670
+GitHub, but I'll get into some of that
+permissioning uh in a little bit. And
+
+124
+00:02:27,670 --> 00:02:27,680
+permissioning uh in a little bit. And
+ 
+
+125
+00:02:27,680 --> 00:02:29,110
+permissioning uh in a little bit. And
+then also just uh some of the security
+
+126
+00:02:29,110 --> 00:02:29,120
+then also just uh some of the security
+ 
+
+127
+00:02:29,120 --> 00:02:30,550
+then also just uh some of the security
+controls I've been putting in place
+
+128
+00:02:30,550 --> 00:02:30,560
+controls I've been putting in place
+ 
+
+129
+00:02:30,560 --> 00:02:32,710
+controls I've been putting in place
+capabilities bounding like I mentioned
+
+130
+00:02:32,710 --> 00:02:32,720
+capabilities bounding like I mentioned
+ 
+
+131
+00:02:32,720 --> 00:02:34,949
+capabilities bounding like I mentioned
+making sure there's um each MCP tool has
+
+132
+00:02:34,949 --> 00:02:34,959
+making sure there's um each MCP tool has
+ 
+
+133
+00:02:34,959 --> 00:02:38,710
+making sure there's um each MCP tool has
+a permission scope so read write admin
+
+134
+00:02:38,710 --> 00:02:38,720
+a permission scope so read write admin
+ 
+
+135
+00:02:38,720 --> 00:02:41,910
+a permission scope so read write admin
+etc. Make sure memory is isolated and um
+
+136
+00:02:41,910 --> 00:02:41,920
+etc. Make sure memory is isolated and um
+ 
+
+137
+00:02:41,920 --> 00:02:44,390
+etc. Make sure memory is isolated and um
+observability and then also yeah the the
+
+138
+00:02:44,390 --> 00:02:44,400
+observability and then also yeah the the
+ 
+
+139
+00:02:44,400 --> 00:02:46,150
+observability and then also yeah the the
+max iterations per turn ended up being
+
+140
+00:02:46,150 --> 00:02:46,160
+max iterations per turn ended up being
+ 
+
+141
+00:02:46,160 --> 00:02:48,470
+max iterations per turn ended up being
+very helpful. I've optimized it down to
+
+142
+00:02:48,470 --> 00:02:48,480
+very helpful. I've optimized it down to
+ 
+
+143
+00:02:48,480 --> 00:02:50,390
+very helpful. I've optimized it down to
+probably about three or four iterations
+
+144
+00:02:50,390 --> 00:02:50,400
+probably about three or four iterations
+ 
+
+145
+00:02:50,400 --> 00:02:52,309
+probably about three or four iterations
+that I'm normally hitting now, but
+
+146
+00:02:52,309 --> 00:02:52,319
+that I'm normally hitting now, but
+ 
+
+147
+00:02:52,319 --> 00:02:54,630
+that I'm normally hitting now, but
+that's a good way to kind of make sure
+
+148
+00:02:54,630 --> 00:02:54,640
+that's a good way to kind of make sure
+ 
+
+149
+00:02:54,640 --> 00:02:57,350
+that's a good way to kind of make sure
+you don't end up spending too much.
+
+150
+00:02:57,350 --> 00:02:57,360
+you don't end up spending too much.
+ 
+
+151
+00:02:57,360 --> 00:02:59,430
+you don't end up spending too much.
+Uh so I can actually go through and show
+
+152
+00:02:59,430 --> 00:02:59,440
+Uh so I can actually go through and show
+ 
+
+153
+00:02:59,440 --> 00:03:01,430
+Uh so I can actually go through and show
+some of the um workflows that I do do
+
+154
+00:03:01,430 --> 00:03:01,440
+some of the um workflows that I do do
+ 
+
+155
+00:03:01,440 --> 00:03:03,750
+some of the um workflows that I do do
+with it. So right now I automate a lot
+
+156
+00:03:03,750 --> 00:03:03,760
+with it. So right now I automate a lot
+ 
+
+157
+00:03:03,760 --> 00:03:06,309
+with it. So right now I automate a lot
+of uh coding processes. So I have kind
+
+158
+00:03:06,309 --> 00:03:06,319
+of uh coding processes. So I have kind
+ 
+
+159
+00:03:06,319 --> 00:03:08,710
+of uh coding processes. So I have kind
+of a custom task management system here
+
+160
+00:03:08,710 --> 00:03:08,720
+of a custom task management system here
+ 
+
+161
+00:03:08,720 --> 00:03:10,229
+of a custom task management system here
+where I just pretty much have a cron job
+
+162
+00:03:10,229 --> 00:03:10,239
+where I just pretty much have a cron job
+ 
+
+163
+00:03:10,239 --> 00:03:13,430
+where I just pretty much have a cron job
+that's a cloud-p
+
+164
+00:03:13,430 --> 00:03:13,440
+that's a cloud-p
+ 
+
+165
+00:03:13,440 --> 00:03:15,190
+that's a cloud-p
+command that goes through and it will
+
+166
+00:03:15,190 --> 00:03:15,200
+command that goes through and it will
+ 
+
+167
+00:03:15,200 --> 00:03:17,350
+command that goes through and it will
+start getting
+
+168
+00:03:17,350 --> 00:03:17,360
+start getting
+ 
+
+169
+00:03:17,360 --> 00:03:19,670
+start getting
+uh things fixed or optimized for me. So
+
+170
+00:03:19,670 --> 00:03:19,680
+uh things fixed or optimized for me. So
+ 
+
+171
+00:03:19,680 --> 00:03:21,270
+uh things fixed or optimized for me. So
+you can see um this is just kind of a
+
+172
+00:03:21,270 --> 00:03:21,280
+you can see um this is just kind of a
+ 
+
+173
+00:03:21,280 --> 00:03:22,630
+you can see um this is just kind of a
+report from it. You can see kind of the
+
+174
+00:03:22,630 --> 00:03:22,640
+report from it. You can see kind of the
+ 
+
+175
+00:03:22,640 --> 00:03:24,550
+report from it. You can see kind of the
+things it does.
+
+176
+00:03:24,550 --> 00:03:24,560
+things it does.
+ 
+
+177
+00:03:24,560 --> 00:03:27,350
+things it does.
+But then um you might ask what happens
+
+178
+00:03:27,350 --> 00:03:27,360
+But then um you might ask what happens
+ 
+
+179
+00:03:27,360 --> 00:03:30,070
+But then um you might ask what happens
+if we run out of tasks. If it does that
+
+180
+00:03:30,070 --> 00:03:30,080
+if we run out of tasks. If it does that
+ 
+
+181
+00:03:30,080 --> 00:03:33,990
+if we run out of tasks. If it does that
+then it runs I have a few code review um
+
+182
+00:03:33,990 --> 00:03:34,000
+then it runs I have a few code review um
+ 
+
+183
+00:03:34,000 --> 00:03:36,149
+then it runs I have a few code review um
+sub aents. So like it'll do security
+
+184
+00:03:36,149 --> 00:03:36,159
+sub aents. So like it'll do security
+ 
+
+185
+00:03:36,159 --> 00:03:38,710
+sub aents. So like it'll do security
+auditing, testing, that's like test
+
+186
+00:03:38,710 --> 00:03:38,720
+auditing, testing, that's like test
+ 
+
+187
+00:03:38,720 --> 00:03:41,110
+auditing, testing, that's like test
+coverage, code quality, documentation,
+
+188
+00:03:41,110 --> 00:03:41,120
+coverage, code quality, documentation,
+ 
+
+189
+00:03:41,120 --> 00:03:43,990
+coverage, code quality, documentation,
+etc. And then it will uh make more tasks
+
+190
+00:03:43,990 --> 00:03:44,000
+etc. And then it will uh make more tasks
+ 
+
+191
+00:03:44,000 --> 00:03:47,030
+etc. And then it will uh make more tasks
+for those. So pretty much I have a a
+
+192
+00:03:47,030 --> 00:03:47,040
+for those. So pretty much I have a a
+ 
+
+193
+00:03:47,040 --> 00:03:48,949
+for those. So pretty much I have a a
+kind of a self-sustaining code
+
+194
+00:03:48,949 --> 00:03:48,959
+kind of a self-sustaining code
+ 
+
+195
+00:03:48,959 --> 00:03:52,149
+kind of a self-sustaining code
+optimization ecosystem that will keep
+
+196
+00:03:52,149 --> 00:03:52,159
+optimization ecosystem that will keep
+ 
+
+197
+00:03:52,159 --> 00:03:53,830
+optimization ecosystem that will keep
+running until it maxes out my credit
+
+198
+00:03:53,830 --> 00:03:53,840
+running until it maxes out my credit
+ 
+
+199
+00:03:53,840 --> 00:03:58,309
+running until it maxes out my credit
+card and Claude uh cuts me off.
+
+200
+00:03:58,309 --> 00:03:58,319
+card and Claude uh cuts me off.
+ 
+
+201
+00:03:58,319 --> 00:04:00,470
+card and Claude uh cuts me off.
+And then um through this though I am
+
+202
+00:04:00,470 --> 00:04:00,480
+And then um through this though I am
+ 
+
+203
+00:04:00,480 --> 00:04:02,470
+And then um through this though I am
+getting you know into the place where
+
+204
+00:04:02,470 --> 00:04:02,480
+getting you know into the place where
+ 
+
+205
+00:04:02,480 --> 00:04:04,710
+getting you know into the place where
+there's a lot less human in the loop for
+
+206
+00:04:04,710 --> 00:04:04,720
+there's a lot less human in the loop for
+ 
+
+207
+00:04:04,720 --> 00:04:07,750
+there's a lot less human in the loop for
+a lot of this which is definitely a
+
+208
+00:04:07,750 --> 00:04:07,760
+a lot of this which is definitely a
+ 
+
+209
+00:04:07,760 --> 00:04:10,949
+a lot of this which is definitely a
+scary place to be. Uh I I have been
+
+210
+00:04:10,949 --> 00:04:10,959
+scary place to be. Uh I I have been
+ 
+
+211
+00:04:10,959 --> 00:04:12,869
+scary place to be. Uh I I have been
+trying to put together like weekly PR
+
+212
+00:04:12,869 --> 00:04:12,879
+trying to put together like weekly PR
+ 
+
+213
+00:04:12,879 --> 00:04:15,350
+trying to put together like weekly PR
+reviews. So I'll go through and um go
+
+214
+00:04:15,350 --> 00:04:15,360
+reviews. So I'll go through and um go
+ 
+
+215
+00:04:15,360 --> 00:04:17,030
+reviews. So I'll go through and um go
+through all the reviews or go through
+
+216
+00:04:17,030 --> 00:04:17,040
+through all the reviews or go through
+ 
+
+217
+00:04:17,040 --> 00:04:20,069
+through all the reviews or go through
+all the PRs. uh try to analyze what
+
+218
+00:04:20,069 --> 00:04:20,079
+all the PRs. uh try to analyze what
+ 
+
+219
+00:04:20,079 --> 00:04:22,150
+all the PRs. uh try to analyze what
+might be good, what might be bad, what
+
+220
+00:04:22,150 --> 00:04:22,160
+might be good, what might be bad, what
+ 
+
+221
+00:04:22,160 --> 00:04:25,270
+might be good, what might be bad, what
+process I should ina be put in place and
+
+222
+00:04:25,270 --> 00:04:25,280
+process I should ina be put in place and
+ 
+
+223
+00:04:25,280 --> 00:04:28,469
+process I should ina be put in place and
+then um each PR review or each PR
+
+224
+00:04:28,469 --> 00:04:28,479
+then um each PR review or each PR
+ 
+
+225
+00:04:28,479 --> 00:04:30,629
+then um each PR review or each PR
+already has like CI tests. I have two
+
+226
+00:04:30,629 --> 00:04:30,639
+already has like CI tests. I have two
+ 
+
+227
+00:04:30,639 --> 00:04:32,710
+already has like CI tests. I have two
+cloud review agents that go through and
+
+228
+00:04:32,710 --> 00:04:32,720
+cloud review agents that go through and
+ 
+
+229
+00:04:32,720 --> 00:04:34,950
+cloud review agents that go through and
+I've set it up so that way the automated
+
+230
+00:04:34,950 --> 00:04:34,960
+I've set it up so that way the automated
+ 
+
+231
+00:04:34,960 --> 00:04:37,830
+I've set it up so that way the automated
+tasks um they have to keep iterating
+
+232
+00:04:37,830 --> 00:04:37,840
+tasks um they have to keep iterating
+ 
+
+233
+00:04:37,840 --> 00:04:40,790
+tasks um they have to keep iterating
+until the cloud review bots pretty much
+
+234
+00:04:40,790 --> 00:04:40,800
+until the cloud review bots pretty much
+ 
+
+235
+00:04:40,800 --> 00:04:42,950
+until the cloud review bots pretty much
+say that it's good to go. So try to have
+
+236
+00:04:42,950 --> 00:04:42,960
+say that it's good to go. So try to have
+ 
+
+237
+00:04:42,960 --> 00:04:44,950
+say that it's good to go. So try to have
+some safe checks or safety checks to
+
+238
+00:04:44,950 --> 00:04:44,960
+some safe checks or safety checks to
+ 
+
+239
+00:04:44,960 --> 00:04:47,830
+some safe checks or safety checks to
+make sure LLM isn't uh just giving me
+
+240
+00:04:47,830 --> 00:04:47,840
+make sure LLM isn't uh just giving me
+ 
+
+241
+00:04:47,840 --> 00:04:49,590
+make sure LLM isn't uh just giving me
+complete garbage. And so far it has been
+
+242
+00:04:49,590 --> 00:04:49,600
+complete garbage. And so far it has been
+ 
+
+243
+00:04:49,600 --> 00:04:51,990
+complete garbage. And so far it has been
+working fairly well. Definitely um some
+
+244
+00:04:51,990 --> 00:04:52,000
+working fairly well. Definitely um some
+ 
+
+245
+00:04:52,000 --> 00:04:54,550
+working fairly well. Definitely um some
+things that I'd like to optimize a bit
+
+246
+00:04:54,550 --> 00:04:54,560
+things that I'd like to optimize a bit
+ 
+
+247
+00:04:54,560 --> 00:04:58,550
+things that I'd like to optimize a bit
+more, but definitely uh not a bad place
+
+248
+00:04:58,550 --> 00:04:58,560
+more, but definitely uh not a bad place
+ 
+
+249
+00:04:58,560 --> 00:05:02,230
+more, but definitely uh not a bad place
+to be.
+
+250
+00:05:02,230 --> 00:05:02,240
+
+ 
+
+251
+00:05:02,240 --> 00:05:03,749
+
+So yeah, as I mentioned, I have a
+
+252
+00:05:03,749 --> 00:05:03,759
+So yeah, as I mentioned, I have a
+ 
+
+253
+00:05:03,759 --> 00:05:05,110
+So yeah, as I mentioned, I have a
+capabilities bounding and permission
+
+254
+00:05:05,110 --> 00:05:05,120
+capabilities bounding and permission
+ 
+
+255
+00:05:05,120 --> 00:05:07,909
+capabilities bounding and permission
+control system set up. So each agent has
+
+256
+00:05:07,909 --> 00:05:07,919
+control system set up. So each agent has
+ 
+
+257
+00:05:07,919 --> 00:05:12,310
+control system set up. So each agent has
+um both uh both allowed tools that it's
+
+258
+00:05:12,310 --> 00:05:12,320
+um both uh both allowed tools that it's
+ 
+
+259
+00:05:12,320 --> 00:05:14,550
+um both uh both allowed tools that it's
+allowed to have and also the permissions
+
+260
+00:05:14,550 --> 00:05:14,560
+allowed to have and also the permissions
+ 
+
+261
+00:05:14,560 --> 00:05:17,830
+allowed to have and also the permissions
+um for those tools that it can use. So
+
+262
+00:05:17,830 --> 00:05:17,840
+um for those tools that it can use. So
+ 
+
+263
+00:05:17,840 --> 00:05:19,749
+um for those tools that it can use. So
+the task manager agent is definitely
+
+264
+00:05:19,749 --> 00:05:19,759
+the task manager agent is definitely
+ 
+
+265
+00:05:19,759 --> 00:05:21,590
+the task manager agent is definitely
+kind of my daily driver that goes
+
+266
+00:05:21,590 --> 00:05:21,600
+kind of my daily driver that goes
+ 
+
+267
+00:05:21,600 --> 00:05:23,670
+kind of my daily driver that goes
+through and helps me automatically
+
+268
+00:05:23,670 --> 00:05:23,680
+through and helps me automatically
+ 
+
+269
+00:05:23,680 --> 00:05:25,909
+through and helps me automatically
+complete tasks, break things down, um
+
+270
+00:05:25,909 --> 00:05:25,919
+complete tasks, break things down, um
+ 
+
+271
+00:05:25,919 --> 00:05:27,749
+complete tasks, break things down, um
+reschedules when I haven't updated tasks
+
+272
+00:05:27,749 --> 00:05:27,759
+reschedules when I haven't updated tasks
+ 
+
+273
+00:05:27,759 --> 00:05:29,430
+reschedules when I haven't updated tasks
+in a while.
+
+274
+00:05:29,430 --> 00:05:29,440
+in a while.
+ 
+
+275
+00:05:29,440 --> 00:05:31,909
+in a while.
+So that has uh you know the permissions
+
+276
+00:05:31,909 --> 00:05:31,919
+So that has uh you know the permissions
+ 
+
+277
+00:05:31,919 --> 00:05:33,909
+So that has uh you know the permissions
+to go search for stuff, message me in
+
+278
+00:05:33,909 --> 00:05:33,919
+to go search for stuff, message me in
+ 
+
+279
+00:05:33,919 --> 00:05:37,270
+to go search for stuff, message me in
+Slack, email me, memory obviously. Then
+
+280
+00:05:37,270 --> 00:05:37,280
+Slack, email me, memory obviously. Then
+ 
+
+281
+00:05:37,280 --> 00:05:38,390
+Slack, email me, memory obviously. Then
+I have some things like security
+
+282
+00:05:38,390 --> 00:05:38,400
+I have some things like security
+ 
+
+283
+00:05:38,400 --> 00:05:40,230
+I have some things like security
+researcher readon. It's just kind of I
+
+284
+00:05:40,230 --> 00:05:40,240
+researcher readon. It's just kind of I
+ 
+
+285
+00:05:40,240 --> 00:05:42,550
+researcher readon. It's just kind of I
+ask it questions about you know blog
+
+286
+00:05:42,550 --> 00:05:42,560
+ask it questions about you know blog
+ 
+
+287
+00:05:42,560 --> 00:05:44,870
+ask it questions about you know blog
+posts or um different things and it goes
+
+288
+00:05:44,870 --> 00:05:44,880
+posts or um different things and it goes
+ 
+
+289
+00:05:44,880 --> 00:05:46,070
+posts or um different things and it goes
+through kind of the rag I've been
+
+290
+00:05:46,070 --> 00:05:46,080
+through kind of the rag I've been
+ 
+
+291
+00:05:46,080 --> 00:05:48,710
+through kind of the rag I've been
+setting up the web answers things there.
+
+292
+00:05:48,710 --> 00:05:48,720
+setting up the web answers things there.
+ 
+
+293
+00:05:48,720 --> 00:05:50,629
+setting up the web answers things there.
+And then I do have just a chatbot that
+
+294
+00:05:50,629 --> 00:05:50,639
+And then I do have just a chatbot that
+ 
+
+295
+00:05:50,639 --> 00:05:52,790
+And then I do have just a chatbot that
+has everything. That's kind of my um
+
+296
+00:05:52,790 --> 00:05:52,800
+has everything. That's kind of my um
+ 
+
+297
+00:05:52,800 --> 00:05:56,150
+has everything. That's kind of my um
+test. Um, but of of course I want to set
+
+298
+00:05:56,150 --> 00:05:56,160
+test. Um, but of of course I want to set
+ 
+
+299
+00:05:56,160 --> 00:05:58,469
+test. Um, but of of course I want to set
+up this up to be secure by default as I
+
+300
+00:05:58,469 --> 00:05:58,479
+up this up to be secure by default as I
+ 
+
+301
+00:05:58,479 --> 00:06:00,950
+up this up to be secure by default as I
+add more tools to the everexpanding MCP
+
+302
+00:06:00,950 --> 00:06:00,960
+add more tools to the everexpanding MCP
+ 
+
+303
+00:06:00,960 --> 00:06:03,110
+add more tools to the everexpanding MCP
+server. So definitely need to make sure
+
+304
+00:06:03,110 --> 00:06:03,120
+server. So definitely need to make sure
+ 
+
+305
+00:06:03,120 --> 00:06:05,189
+server. So definitely need to make sure
+that uh tools are locked down by
+
+306
+00:06:05,189 --> 00:06:05,199
+that uh tools are locked down by
+ 
+
+307
+00:06:05,199 --> 00:06:06,870
+that uh tools are locked down by
+default. You know, you have to go
+
+308
+00:06:06,870 --> 00:06:06,880
+default. You know, you have to go
+ 
+
+309
+00:06:06,880 --> 00:06:08,790
+default. You know, you have to go
+specifically add tools or add
+
+310
+00:06:08,790 --> 00:06:08,800
+specifically add tools or add
+ 
+
+311
+00:06:08,800 --> 00:06:10,309
+specifically add tools or add
+permissions. Everything is going to be
+
+312
+00:06:10,309 --> 00:06:10,319
+permissions. Everything is going to be
+ 
+
+313
+00:06:10,319 --> 00:06:12,790
+permissions. Everything is going to be
+locked down to admin otherwise. And I
+
+314
+00:06:12,790 --> 00:06:12,800
+locked down to admin otherwise. And I
+ 
+
+315
+00:06:12,800 --> 00:06:15,909
+locked down to admin otherwise. And I
+have a quick kind of demo on how that
+
+316
+00:06:15,909 --> 00:06:15,919
+have a quick kind of demo on how that
+ 
+
+317
+00:06:15,919 --> 00:06:18,870
+have a quick kind of demo on how that
+works.
+
+318
+00:06:18,870 --> 00:06:18,880
+works.
+ 
+
+319
+00:06:18,880 --> 00:06:30,469
+works.
+There we go.
+
+320
+00:06:30,469 --> 00:06:30,479
+
+ 
+
+321
+00:06:30,479 --> 00:06:32,550
+
+Um, so it's just going to go through
+
+322
+00:06:32,550 --> 00:06:32,560
+Um, so it's just going to go through
+ 
+
+323
+00:06:32,560 --> 00:06:34,150
+Um, so it's just going to go through
+here's kind of how I can run the chatbot
+
+324
+00:06:34,150 --> 00:06:34,160
+here's kind of how I can run the chatbot
+ 
+
+325
+00:06:34,160 --> 00:06:36,469
+here's kind of how I can run the chatbot
+agent. Um, give it specific permissions.
+
+326
+00:06:36,469 --> 00:06:36,479
+agent. Um, give it specific permissions.
+ 
+
+327
+00:06:36,479 --> 00:06:39,590
+agent. Um, give it specific permissions.
+So here read send. Uh, so here it has no
+
+328
+00:06:39,590 --> 00:06:39,600
+So here read send. Uh, so here it has no
+ 
+
+329
+00:06:39,600 --> 00:06:41,430
+So here read send. Uh, so here it has no
+write privileges to memory and we're
+
+330
+00:06:41,430 --> 00:06:41,440
+write privileges to memory and we're
+ 
+
+331
+00:06:41,440 --> 00:06:43,990
+write privileges to memory and we're
+asking it to try to save memories and
+
+332
+00:06:43,990 --> 00:06:44,000
+asking it to try to save memories and
+ 
+
+333
+00:06:44,000 --> 00:06:46,790
+asking it to try to save memories and
+kind of see the denial. the agent's
+
+334
+00:06:46,790 --> 00:06:46,800
+kind of see the denial. the agent's
+ 
+
+335
+00:06:46,800 --> 00:06:49,990
+kind of see the denial. the agent's
+aware that okay, you know, it has a a um
+
+336
+00:06:49,990 --> 00:06:50,000
+aware that okay, you know, it has a a um
+ 
+
+337
+00:06:50,000 --> 00:06:51,430
+aware that okay, you know, it has a a um
+verbose enough error message that it
+
+338
+00:06:51,430 --> 00:06:51,440
+verbose enough error message that it
+ 
+
+339
+00:06:51,440 --> 00:06:53,110
+verbose enough error message that it
+knows what's going on. It can tell me,
+
+340
+00:06:53,110 --> 00:06:53,120
+knows what's going on. It can tell me,
+ 
+
+341
+00:06:53,120 --> 00:06:54,629
+knows what's going on. It can tell me,
+you know, what I might be doing wrong,
+
+342
+00:06:54,629 --> 00:06:54,639
+you know, what I might be doing wrong,
+ 
+
+343
+00:06:54,639 --> 00:06:57,590
+you know, what I might be doing wrong,
+what I can fix. Um and then if you do,
+
+344
+00:06:57,590 --> 00:06:57,600
+what I can fix. Um and then if you do,
+ 
+
+345
+00:06:57,600 --> 00:06:58,870
+what I can fix. Um and then if you do,
+you know, not restrict it because this
+
+346
+00:06:58,870 --> 00:06:58,880
+you know, not restrict it because this
+ 
+
+347
+00:06:58,880 --> 00:07:00,390
+you know, not restrict it because this
+is the chatbot that has all the
+
+348
+00:07:00,390 --> 00:07:00,400
+is the chatbot that has all the
+ 
+
+349
+00:07:00,400 --> 00:07:03,749
+is the chatbot that has all the
+permissions or all the MCP tools, then
+
+350
+00:07:03,749 --> 00:07:03,759
+permissions or all the MCP tools, then
+ 
+
+351
+00:07:03,759 --> 00:07:06,230
+permissions or all the MCP tools, then
+memory works fine, you kind of see how
+
+352
+00:07:06,230 --> 00:07:06,240
+memory works fine, you kind of see how
+ 
+
+353
+00:07:06,240 --> 00:07:08,629
+memory works fine, you kind of see how
+I've uh been storing the memory, which
+
+354
+00:07:08,629 --> 00:07:08,639
+I've uh been storing the memory, which
+ 
+
+355
+00:07:08,639 --> 00:07:10,950
+I've uh been storing the memory, which
+I'll I'll go into a little bit later as
+
+356
+00:07:10,950 --> 00:07:10,960
+I'll I'll go into a little bit later as
+ 
+
+357
+00:07:10,960 --> 00:07:16,629
+I'll I'll go into a little bit later as
+well. And um yeah, the the Wi-Fi here is
+
+358
+00:07:16,629 --> 00:07:16,639
+well. And um yeah, the the Wi-Fi here is
+ 
+
+359
+00:07:16,639 --> 00:07:18,150
+well. And um yeah, the the Wi-Fi here is
+definitely leaves a little bit to be
+
+360
+00:07:18,150 --> 00:07:18,160
+definitely leaves a little bit to be
+ 
+
+361
+00:07:18,160 --> 00:07:20,790
+definitely leaves a little bit to be
+desired. Just a little slow, but here it
+
+362
+00:07:20,790 --> 00:07:20,800
+desired. Just a little slow, but here it
+ 
+
+363
+00:07:20,800 --> 00:07:22,230
+desired. Just a little slow, but here it
+just shows key value. Sometimes it'll
+
+364
+00:07:22,230 --> 00:07:22,240
+just shows key value. Sometimes it'll
+ 
+
+365
+00:07:22,240 --> 00:07:24,070
+just shows key value. Sometimes it'll
+print out the whole JSON, which is nice.
+
+366
+00:07:24,070 --> 00:07:24,080
+print out the whole JSON, which is nice.
+ 
+
+367
+00:07:24,080 --> 00:07:28,629
+print out the whole JSON, which is nice.
+And then um that will get cleaned up.
+
+368
+00:07:28,629 --> 00:07:28,639
+And then um that will get cleaned up.
+ 
+
+369
+00:07:28,639 --> 00:07:31,589
+And then um that will get cleaned up.
+So, one thing uh I'm also been working
+
+370
+00:07:31,589 --> 00:07:31,599
+So, one thing uh I'm also been working
+ 
+
+371
+00:07:31,599 --> 00:07:32,950
+So, one thing uh I'm also been working
+on which is kind of a preview of
+
+372
+00:07:32,950 --> 00:07:32,960
+on which is kind of a preview of
+ 
+
+373
+00:07:32,960 --> 00:07:36,950
+on which is kind of a preview of
+mistakes I'm definitely going to make is
+
+374
+00:07:36,950 --> 00:07:36,960
+mistakes I'm definitely going to make is
+ 
+
+375
+00:07:36,960 --> 00:07:41,270
+mistakes I'm definitely going to make is
+this uh MCP kind of relay or it's a MCP
+
+376
+00:07:41,270 --> 00:07:41,280
+this uh MCP kind of relay or it's a MCP
+ 
+
+377
+00:07:41,280 --> 00:07:43,990
+this uh MCP kind of relay or it's a MCP
+server that's more or less a chat room
+
+378
+00:07:43,990 --> 00:07:44,000
+server that's more or less a chat room
+ 
+
+379
+00:07:44,000 --> 00:07:49,749
+server that's more or less a chat room
+for my um for my LLMs. So I originally
+
+380
+00:07:49,749 --> 00:07:49,759
+for my um for my LLMs. So I originally
+ 
+
+381
+00:07:49,759 --> 00:07:51,749
+for my um for my LLMs. So I originally
+created it just to kind of help debug
+
+382
+00:07:51,749 --> 00:07:51,759
+created it just to kind of help debug
+ 
+
+383
+00:07:51,759 --> 00:07:54,150
+created it just to kind of help debug
+server client communic or servant
+
+384
+00:07:54,150 --> 00:07:54,160
+server client communic or servant
+ 
+
+385
+00:07:54,160 --> 00:07:57,110
+server client communic or servant
+clients uh interactions because got
+
+386
+00:07:57,110 --> 00:07:57,120
+clients uh interactions because got
+ 
+
+387
+00:07:57,120 --> 00:07:59,670
+clients uh interactions because got
+really tired of uh copying and pasting
+
+388
+00:07:59,670 --> 00:07:59,680
+really tired of uh copying and pasting
+ 
+
+389
+00:07:59,680 --> 00:08:01,749
+really tired of uh copying and pasting
+between cloud code on the server cloud
+
+390
+00:08:01,749 --> 00:08:01,759
+between cloud code on the server cloud
+ 
+
+391
+00:08:01,759 --> 00:08:05,350
+between cloud code on the server cloud
+code on the client. So here we have the
+
+392
+00:08:05,350 --> 00:08:05,360
+code on the client. So here we have the
+ 
+
+393
+00:08:05,360 --> 00:08:08,150
+code on the client. So here we have the
+MC P or the plot is trying to debug kind
+
+394
+00:08:08,150 --> 00:08:08,160
+MC P or the plot is trying to debug kind
+ 
+
+395
+00:08:08,160 --> 00:08:11,350
+MC P or the plot is trying to debug kind
+of a local uh clients
+
+396
+00:08:11,350 --> 00:08:11,360
+of a local uh clients
+ 
+
+397
+00:08:11,360 --> 00:08:13,589
+of a local uh clients
+uh let's see we can have the server
+
+398
+00:08:13,589 --> 00:08:13,599
+uh let's see we can have the server
+ 
+
+399
+00:08:13,599 --> 00:08:17,189
+uh let's see we can have the server
+session uh say like you know here's the
+
+400
+00:08:17,189 --> 00:08:17,199
+session uh say like you know here's the
+ 
+
+401
+00:08:17,199 --> 00:08:19,029
+session uh say like you know here's the
+source code so the client is trying to
+
+402
+00:08:19,029 --> 00:08:19,039
+source code so the client is trying to
+ 
+
+403
+00:08:19,039 --> 00:08:20,950
+source code so the client is trying to
+get debugged and then then they'll start
+
+404
+00:08:20,950 --> 00:08:20,960
+get debugged and then then they'll start
+ 
+
+405
+00:08:20,960 --> 00:08:22,710
+get debugged and then then they'll start
+uh chatting back and forth and sending
+
+406
+00:08:22,710 --> 00:08:22,720
+uh chatting back and forth and sending
+ 
+
+407
+00:08:22,720 --> 00:08:24,950
+uh chatting back and forth and sending
+messages to each other so that way they
+
+408
+00:08:24,950 --> 00:08:24,960
+messages to each other so that way they
+ 
+
+409
+00:08:24,960 --> 00:08:27,589
+messages to each other so that way they
+can uh debug it even though all the
+
+410
+00:08:27,589 --> 00:08:27,599
+can uh debug it even though all the
+ 
+
+411
+00:08:27,599 --> 00:08:29,909
+can uh debug it even though all the
+server code might not be accessible to
+
+412
+00:08:29,909 --> 00:08:29,919
+server code might not be accessible to
+ 
+
+413
+00:08:29,919 --> 00:08:31,830
+server code might not be accessible to
+the client. So it's been yeah super
+
+414
+00:08:31,830 --> 00:08:31,840
+the client. So it's been yeah super
+ 
+
+415
+00:08:31,840 --> 00:08:35,029
+the client. So it's been yeah super
+helpful in uh making client server
+
+416
+00:08:35,029 --> 00:08:35,039
+helpful in uh making client server
+ 
+
+417
+00:08:35,039 --> 00:08:36,709
+helpful in uh making client server
+connections work better especially as a
+
+418
+00:08:36,709 --> 00:08:36,719
+connections work better especially as a
+ 
+
+419
+00:08:36,719 --> 00:08:39,029
+connections work better especially as a
+lot of this is uh internet MCP traffic
+
+420
+00:08:39,029 --> 00:08:39,039
+lot of this is uh internet MCP traffic
+ 
+
+421
+00:08:39,039 --> 00:08:42,469
+lot of this is uh internet MCP traffic
+now but of course this is uh not the
+
+422
+00:08:42,469 --> 00:08:42,479
+now but of course this is uh not the
+ 
+
+423
+00:08:42,479 --> 00:08:44,070
+now but of course this is uh not the
+most secure setup right now it is
+
+424
+00:08:44,070 --> 00:08:44,080
+most secure setup right now it is
+ 
+
+425
+00:08:44,080 --> 00:08:47,269
+most secure setup right now it is
+running on my home lab where only I uh
+
+426
+00:08:47,269 --> 00:08:47,279
+running on my home lab where only I uh
+ 
+
+427
+00:08:47,279 --> 00:08:49,750
+running on my home lab where only I uh
+interact with it but it's definitely not
+
+428
+00:08:49,750 --> 00:08:49,760
+interact with it but it's definitely not
+ 
+
+429
+00:08:49,760 --> 00:08:51,990
+interact with it but it's definitely not
+production ready we're injecting context
+
+430
+00:08:51,990 --> 00:08:52,000
+production ready we're injecting context
+ 
+
+431
+00:08:52,000 --> 00:08:55,110
+production ready we're injecting context
+from one LM to another uh capabilities
+
+432
+00:08:55,110 --> 00:08:55,120
+from one LM to another uh capabilities
+ 
+
+433
+00:08:55,120 --> 00:08:57,350
+from one LM to another uh capabilities
+are not being scoped down but that
+
+434
+00:08:57,350 --> 00:08:57,360
+are not being scoped down but that
+ 
+
+435
+00:08:57,360 --> 00:08:58,870
+are not being scoped down but that
+that's other things I'm working on
+
+436
+00:08:58,870 --> 00:08:58,880
+that's other things I'm working on
+ 
+
+437
+00:08:58,880 --> 00:09:00,949
+that's other things I'm working on
+there.
+
+438
+00:09:00,949 --> 00:09:00,959
+there.
+ 
+
+439
+00:09:00,959 --> 00:09:02,710
+there.
+And with that, I've also just given
+
+440
+00:09:02,710 --> 00:09:02,720
+And with that, I've also just given
+ 
+
+441
+00:09:02,720 --> 00:09:05,190
+And with that, I've also just given
+myself a web interface so you can kind
+
+442
+00:09:05,190 --> 00:09:05,200
+myself a web interface so you can kind
+ 
+
+443
+00:09:05,200 --> 00:09:07,430
+myself a web interface so you can kind
+of see the kind of discussions between
+
+444
+00:09:07,430 --> 00:09:07,440
+of see the kind of discussions between
+ 
+
+445
+00:09:07,440 --> 00:09:09,829
+of see the kind of discussions between
+them. Uh right now, this is all just in
+
+446
+00:09:09,829 --> 00:09:09,839
+them. Uh right now, this is all just in
+ 
+
+447
+00:09:09,839 --> 00:09:11,590
+them. Uh right now, this is all just in
+memory on the server. Like right when
+
+448
+00:09:11,590 --> 00:09:11,600
+memory on the server. Like right when
+ 
+
+449
+00:09:11,600 --> 00:09:12,630
+memory on the server. Like right when
+this is over, I'm going to start putting
+
+450
+00:09:12,630 --> 00:09:12,640
+this is over, I'm going to start putting
+ 
+
+451
+00:09:12,640 --> 00:09:15,269
+this is over, I'm going to start putting
+a Reddus back end in for it as well and
+
+452
+00:09:15,269 --> 00:09:15,279
+a Reddus back end in for it as well and
+ 
+
+453
+00:09:15,279 --> 00:09:18,070
+a Reddus back end in for it as well and
+uh continue on there. But then that also
+
+454
+00:09:18,070 --> 00:09:18,080
+uh continue on there. But then that also
+ 
+
+455
+00:09:18,080 --> 00:09:20,070
+uh continue on there. But then that also
+leads to the question uh what if I want
+
+456
+00:09:20,070 --> 00:09:20,080
+leads to the question uh what if I want
+ 
+
+457
+00:09:20,080 --> 00:09:21,350
+leads to the question uh what if I want
+to debug something on a server that
+
+458
+00:09:21,350 --> 00:09:21,360
+to debug something on a server that
+ 
+
+459
+00:09:21,360 --> 00:09:23,190
+to debug something on a server that
+doesn't have like clog code or LLM on
+
+460
+00:09:23,190 --> 00:09:23,200
+doesn't have like clog code or LLM on
+ 
+
+461
+00:09:23,200 --> 00:09:26,470
+doesn't have like clog code or LLM on
+it. So I have also put together a remote
+
+462
+00:09:26,470 --> 00:09:26,480
+it. So I have also put together a remote
+ 
+
+463
+00:09:26,480 --> 00:09:28,710
+it. So I have also put together a remote
+agent
+
+464
+00:09:28,710 --> 00:09:28,720
+agent
+ 
+
+465
+00:09:28,720 --> 00:09:30,949
+agent
+uh
+
+466
+00:09:30,949 --> 00:09:30,959
+uh
+ 
+
+467
+00:09:30,959 --> 00:09:33,350
+uh
+that can run on like say one of my
+
+468
+00:09:33,350 --> 00:09:33,360
+that can run on like say one of my
+ 
+
+469
+00:09:33,360 --> 00:09:36,470
+that can run on like say one of my
+Proxmox LXC containers that have half a
+
+470
+00:09:36,470 --> 00:09:36,480
+Proxmox LXC containers that have half a
+ 
+
+471
+00:09:36,480 --> 00:09:39,030
+Proxmox LXC containers that have half a
+gig of RAM. So you can run it. Uh right
+
+472
+00:09:39,030 --> 00:09:39,040
+gig of RAM. So you can run it. Uh right
+ 
+
+473
+00:09:39,040 --> 00:09:40,630
+gig of RAM. So you can run it. Uh right
+now I just set it up with OOTH because
+
+474
+00:09:40,630 --> 00:09:40,640
+now I just set it up with OOTH because
+ 
+
+475
+00:09:40,640 --> 00:09:44,150
+now I just set it up with OOTH because
+that's the authentication I use for all
+
+476
+00:09:44,150 --> 00:09:44,160
+that's the authentication I use for all
+ 
+
+477
+00:09:44,160 --> 00:09:46,150
+that's the authentication I use for all
+agents
+
+478
+00:09:46,150 --> 00:09:46,160
+agents
+ 
+
+479
+00:09:46,160 --> 00:09:50,790
+agents
+because it's set up and it works.
+
+480
+00:09:50,790 --> 00:09:50,800
+
+ 
+
+481
+00:09:50,800 --> 00:09:53,269
+
+And then it will also just go to a chat
+
+482
+00:09:53,269 --> 00:09:53,279
+And then it will also just go to a chat
+ 
+
+483
+00:09:53,279 --> 00:09:55,269
+And then it will also just go to a chat
+room window and pull and wait for
+
+484
+00:09:55,269 --> 00:09:55,279
+room window and pull and wait for
+ 
+
+485
+00:09:55,279 --> 00:09:58,070
+room window and pull and wait for
+commands. So this is pretty much uh for
+
+486
+00:09:58,070 --> 00:09:58,080
+commands. So this is pretty much uh for
+ 
+
+487
+00:09:58,080 --> 00:10:00,150
+commands. So this is pretty much uh for
+me it's a good debugging tool. Other
+
+488
+00:10:00,150 --> 00:10:00,160
+me it's a good debugging tool. Other
+ 
+
+489
+00:10:00,160 --> 00:10:04,389
+me it's a good debugging tool. Other
+people might see it as a um implant.
+
+490
+00:10:04,389 --> 00:10:04,399
+people might see it as a um implant.
+ 
+
+491
+00:10:04,399 --> 00:10:06,949
+people might see it as a um implant.
+It it again very insecure. Don't use
+
+492
+00:10:06,949 --> 00:10:06,959
+It it again very insecure. Don't use
+ 
+
+493
+00:10:06,959 --> 00:10:09,750
+It it again very insecure. Don't use
+this right now at least. But one one of
+
+494
+00:10:09,750 --> 00:10:09,760
+this right now at least. But one one of
+ 
+
+495
+00:10:09,760 --> 00:10:11,990
+this right now at least. But one one of
+my goals is to see how I can transfer
+
+496
+00:10:11,990 --> 00:10:12,000
+my goals is to see how I can transfer
+ 
+
+497
+00:10:12,000 --> 00:10:13,910
+my goals is to see how I can transfer
+capabilities from the agent to Linux
+
+498
+00:10:13,910 --> 00:10:13,920
+capabilities from the agent to Linux
+ 
+
+499
+00:10:13,920 --> 00:10:16,790
+capabilities from the agent to Linux
+permissions or do some sort of uh
+
+500
+00:10:16,790 --> 00:10:16,800
+permissions or do some sort of uh
+ 
+
+501
+00:10:16,800 --> 00:10:18,870
+permissions or do some sort of uh
+permissions bounding put it up in like a
+
+502
+00:10:18,870 --> 00:10:18,880
+permissions bounding put it up in like a
+ 
+
+503
+00:10:18,880 --> 00:10:21,350
+permissions bounding put it up in like a
+restricted user and uh go from there.
+
+504
+00:10:21,350 --> 00:10:21,360
+restricted user and uh go from there.
+ 
+
+505
+00:10:21,360 --> 00:10:23,990
+restricted user and uh go from there.
+And similarly you can see like the uh
+
+506
+00:10:23,990 --> 00:10:24,000
+And similarly you can see like the uh
+ 
+
+507
+00:10:24,000 --> 00:10:26,230
+And similarly you can see like the uh
+LLM is debugging. at sending commands.
+
+508
+00:10:26,230 --> 00:10:26,240
+LLM is debugging. at sending commands.
+ 
+
+509
+00:10:26,240 --> 00:10:28,550
+LLM is debugging. at sending commands.
+You can see what's getting sent here.
+
+510
+00:10:28,550 --> 00:10:28,560
+You can see what's getting sent here.
+ 
+
+511
+00:10:28,560 --> 00:10:31,430
+You can see what's getting sent here.
+And uh we're also keeping these logs on
+
+512
+00:10:31,430 --> 00:10:31,440
+And uh we're also keeping these logs on
+ 
+
+513
+00:10:31,440 --> 00:10:35,670
+And uh we're also keeping these logs on
+the um MCP relay on the
+
+514
+00:10:35,670 --> 00:10:35,680
+the um MCP relay on the
+ 
+
+515
+00:10:35,680 --> 00:10:38,389
+the um MCP relay on the
+uh soon to be Reddus server.
+
+516
+00:10:38,389 --> 00:10:38,399
+uh soon to be Reddus server.
+ 
+
+517
+00:10:38,399 --> 00:10:41,269
+uh soon to be Reddus server.
+Let's see a wrong one. Yes. So you can
+
+518
+00:10:41,269 --> 00:10:41,279
+Let's see a wrong one. Yes. So you can
+ 
+
+519
+00:10:41,279 --> 00:10:42,710
+Let's see a wrong one. Yes. So you can
+see the commands and everything being
+
+520
+00:10:42,710 --> 00:10:42,720
+see the commands and everything being
+ 
+
+521
+00:10:42,720 --> 00:10:47,110
+see the commands and everything being
+sent there.
+
+522
+00:10:47,110 --> 00:10:47,120
+
+ 
+
+523
+00:10:47,120 --> 00:10:48,870
+
+So just some videos in case that didn't
+
+524
+00:10:48,870 --> 00:10:48,880
+So just some videos in case that didn't
+ 
+
+525
+00:10:48,880 --> 00:10:51,269
+So just some videos in case that didn't
+work, but thankfully it did. So yeah,
+
+526
+00:10:51,269 --> 00:10:51,279
+work, but thankfully it did. So yeah,
+ 
+
+527
+00:10:51,279 --> 00:10:52,870
+work, but thankfully it did. So yeah,
+one of the issues I ran out ran into
+
+528
+00:10:52,870 --> 00:10:52,880
+one of the issues I ran out ran into
+ 
+
+529
+00:10:52,880 --> 00:10:55,829
+one of the issues I ran out ran into
+with memory is that um I knew obviously
+
+530
+00:10:55,829 --> 00:10:55,839
+with memory is that um I knew obviously
+ 
+
+531
+00:10:55,839 --> 00:10:57,110
+with memory is that um I knew obviously
+for different like clients or different
+
+532
+00:10:57,110 --> 00:10:57,120
+for different like clients or different
+ 
+
+533
+00:10:57,120 --> 00:10:59,269
+for different like clients or different
+users, you want to isolate memory. But
+
+534
+00:10:59,269 --> 00:10:59,279
+users, you want to isolate memory. But
+ 
+
+535
+00:10:59,279 --> 00:11:00,710
+users, you want to isolate memory. But
+for when I was just creating agents for
+
+536
+00:11:00,710 --> 00:11:00,720
+for when I was just creating agents for
+ 
+
+537
+00:11:00,720 --> 00:11:02,790
+for when I was just creating agents for
+myself, I was like, you know, just just
+
+538
+00:11:02,790 --> 00:11:02,800
+myself, I was like, you know, just just
+ 
+
+539
+00:11:02,800 --> 00:11:04,710
+myself, I was like, you know, just just
+create a postcrest table, throw memories
+
+540
+00:11:04,710 --> 00:11:04,720
+create a postcrest table, throw memories
+ 
+
+541
+00:11:04,720 --> 00:11:08,150
+create a postcrest table, throw memories
+in there and uh it should work. Uh which
+
+542
+00:11:08,150 --> 00:11:08,160
+in there and uh it should work. Uh which
+ 
+
+543
+00:11:08,160 --> 00:11:10,230
+in there and uh it should work. Uh which
+it does work. They do remember stuff.
+
+544
+00:11:10,230 --> 00:11:10,240
+it does work. They do remember stuff.
+ 
+
+545
+00:11:10,240 --> 00:11:12,630
+it does work. They do remember stuff.
+But I ran into a lot of kind of uh
+
+546
+00:11:12,630 --> 00:11:12,640
+But I ran into a lot of kind of uh
+ 
+
+547
+00:11:12,640 --> 00:11:15,030
+But I ran into a lot of kind of uh
+annoying functionality issues. Like uh
+
+548
+00:11:15,030 --> 00:11:15,040
+annoying functionality issues. Like uh
+ 
+
+549
+00:11:15,040 --> 00:11:17,030
+annoying functionality issues. Like uh
+the one that kind of really led to me
+
+550
+00:11:17,030 --> 00:11:17,040
+the one that kind of really led to me
+ 
+
+551
+00:11:17,040 --> 00:11:19,269
+the one that kind of really led to me
+fixing it was this first one where I
+
+552
+00:11:19,269 --> 00:11:19,279
+fixing it was this first one where I
+ 
+
+553
+00:11:19,279 --> 00:11:20,710
+fixing it was this first one where I
+asked my task manager to break down
+
+554
+00:11:20,710 --> 00:11:20,720
+asked my task manager to break down
+ 
+
+555
+00:11:20,720 --> 00:11:23,430
+asked my task manager to break down
+tasks for me and it would take um I also
+
+556
+00:11:23,430 --> 00:11:23,440
+tasks for me and it would take um I also
+ 
+
+557
+00:11:23,440 --> 00:11:25,350
+tasks for me and it would take um I also
+threw together a business agent that was
+
+558
+00:11:25,350 --> 00:11:25,360
+threw together a business agent that was
+ 
+
+559
+00:11:25,360 --> 00:11:27,110
+threw together a business agent that was
+just like look through my GitHub see how
+
+560
+00:11:27,110 --> 00:11:27,120
+just like look through my GitHub see how
+ 
+
+561
+00:11:27,120 --> 00:11:29,590
+just like look through my GitHub see how
+I can make money and I was like telling
+
+562
+00:11:29,590 --> 00:11:29,600
+I can make money and I was like telling
+ 
+
+563
+00:11:29,600 --> 00:11:31,670
+I can make money and I was like telling
+that to optimize try to get $1,000 a
+
+564
+00:11:31,670 --> 00:11:31,680
+that to optimize try to get $1,000 a
+ 
+
+565
+00:11:31,680 --> 00:11:33,430
+that to optimize try to get $1,000 a
+month see what you can do. So then every
+
+566
+00:11:33,430 --> 00:11:33,440
+month see what you can do. So then every
+ 
+
+567
+00:11:33,440 --> 00:11:35,190
+month see what you can do. So then every
+time I'd ask my task manager to break
+
+568
+00:11:35,190 --> 00:11:35,200
+time I'd ask my task manager to break
+ 
+
+569
+00:11:35,200 --> 00:11:36,790
+time I'd ask my task manager to break
+stuff down it would mention that it's
+
+570
+00:11:36,790 --> 00:11:36,800
+stuff down it would mention that it's
+ 
+
+571
+00:11:36,800 --> 00:11:38,949
+stuff down it would mention that it's
+optimizing for this $1,000 month goal
+
+572
+00:11:38,949 --> 00:11:38,959
+optimizing for this $1,000 month goal
+ 
+
+573
+00:11:38,959 --> 00:11:41,190
+optimizing for this $1,000 month goal
+which was very frustrating to me because
+
+574
+00:11:41,190 --> 00:11:41,200
+which was very frustrating to me because
+ 
+
+575
+00:11:41,200 --> 00:11:42,949
+which was very frustrating to me because
+that was kind of just aside kind of for
+
+576
+00:11:42,949 --> 00:11:42,959
+that was kind of just aside kind of for
+ 
+
+577
+00:11:42,959 --> 00:11:45,750
+that was kind of just aside kind of for
+fun. let's see what happens thing. And
+
+578
+00:11:45,750 --> 00:11:45,760
+fun. let's see what happens thing. And
+ 
+
+579
+00:11:45,760 --> 00:11:48,550
+fun. let's see what happens thing. And
+after a bunch of these leakages between
+
+580
+00:11:48,550 --> 00:11:48,560
+after a bunch of these leakages between
+ 
+
+581
+00:11:48,560 --> 00:11:50,790
+after a bunch of these leakages between
+different uh agents and you know other
+
+582
+00:11:50,790 --> 00:11:50,800
+different uh agents and you know other
+ 
+
+583
+00:11:50,800 --> 00:11:53,269
+different uh agents and you know other
+agents memories, it did really lead me
+
+584
+00:11:53,269 --> 00:11:53,279
+agents memories, it did really lead me
+ 
+
+585
+00:11:53,279 --> 00:11:54,790
+agents memories, it did really lead me
+to kind of trying to set up a better
+
+586
+00:11:54,790 --> 00:11:54,800
+to kind of trying to set up a better
+ 
+
+587
+00:11:54,800 --> 00:11:57,590
+to kind of trying to set up a better
+memory isolation system
+
+588
+00:11:57,590 --> 00:11:57,600
+memory isolation system
+ 
+
+589
+00:11:57,600 --> 00:11:59,829
+memory isolation system
+so that way each agent could have its
+
+590
+00:11:59,829 --> 00:11:59,839
+so that way each agent could have its
+ 
+
+591
+00:11:59,839 --> 00:12:02,310
+so that way each agent could have its
+own identity and that identity would be
+
+592
+00:12:02,310 --> 00:12:02,320
+own identity and that identity would be
+ 
+
+593
+00:12:02,320 --> 00:12:05,590
+own identity and that identity would be
+mapped to a kind of memory name space.
+
+594
+00:12:05,590 --> 00:12:05,600
+mapped to a kind of memory name space.
+ 
+
+595
+00:12:05,600 --> 00:12:07,750
+mapped to a kind of memory name space.
+Uh so currently identity is only pretty
+
+596
+00:12:07,750 --> 00:12:07,760
+Uh so currently identity is only pretty
+ 
+
+597
+00:12:07,760 --> 00:12:11,110
+Uh so currently identity is only pretty
+much set up by the like each um agent is
+
+598
+00:12:11,110 --> 00:12:11,120
+much set up by the like each um agent is
+ 
+
+599
+00:12:11,120 --> 00:12:13,030
+much set up by the like each um agent is
+just a Python subclass of my agent
+
+600
+00:12:13,030 --> 00:12:13,040
+just a Python subclass of my agent
+ 
+
+601
+00:12:13,040 --> 00:12:16,629
+just a Python subclass of my agent
+framework uh agent class. So that they
+
+602
+00:12:16,629 --> 00:12:16,639
+framework uh agent class. So that they
+ 
+
+603
+00:12:16,639 --> 00:12:18,870
+framework uh agent class. So that they
+take that class name and then that when
+
+604
+00:12:18,870 --> 00:12:18,880
+take that class name and then that when
+ 
+
+605
+00:12:18,880 --> 00:12:21,030
+take that class name and then that when
+they uh set up their local MCP server
+
+606
+00:12:21,030 --> 00:12:21,040
+they uh set up their local MCP server
+ 
+
+607
+00:12:21,040 --> 00:12:23,269
+they uh set up their local MCP server
+that class name gets sent to the MCP
+
+608
+00:12:23,269 --> 00:12:23,279
+that class name gets sent to the MCP
+ 
+
+609
+00:12:23,279 --> 00:12:25,670
+that class name gets sent to the MCP
+server and is uh just translated into
+
+610
+00:12:25,670 --> 00:12:25,680
+server and is uh just translated into
+ 
+
+611
+00:12:25,680 --> 00:12:27,509
+server and is uh just translated into
+the name space here. So that way LLMs
+
+612
+00:12:27,509 --> 00:12:27,519
+the name space here. So that way LLMs
+ 
+
+613
+00:12:27,519 --> 00:12:29,910
+the name space here. So that way LLMs
+have no control over what their
+
+614
+00:12:29,910 --> 00:12:29,920
+have no control over what their
+ 
+
+615
+00:12:29,920 --> 00:12:31,910
+have no control over what their
+namespace key is. They can't you know
+
+616
+00:12:31,910 --> 00:12:31,920
+namespace key is. They can't you know
+ 
+
+617
+00:12:31,920 --> 00:12:33,350
+namespace key is. They can't you know
+try to decide there's somebody else get
+
+618
+00:12:33,350 --> 00:12:33,360
+try to decide there's somebody else get
+ 
+
+619
+00:12:33,360 --> 00:12:35,670
+try to decide there's somebody else get
+memories. So that is kind of the
+
+620
+00:12:35,670 --> 00:12:35,680
+memories. So that is kind of the
+ 
+
+621
+00:12:35,680 --> 00:12:37,829
+memories. So that is kind of the
+identity setup I have. It's definitely
+
+622
+00:12:37,829 --> 00:12:37,839
+identity setup I have. It's definitely
+ 
+
+623
+00:12:37,839 --> 00:12:39,350
+identity setup I have. It's definitely
+pretty simple and probably needs
+
+624
+00:12:39,350 --> 00:12:39,360
+pretty simple and probably needs
+ 
+
+625
+00:12:39,360 --> 00:12:41,509
+pretty simple and probably needs
+expanding fairly soon, but it has been
+
+626
+00:12:41,509 --> 00:12:41,519
+expanding fairly soon, but it has been
+ 
+
+627
+00:12:41,519 --> 00:12:44,629
+expanding fairly soon, but it has been
+working pretty well um off the bat.
+
+628
+00:12:44,629 --> 00:12:44,639
+working pretty well um off the bat.
+ 
+
+629
+00:12:44,639 --> 00:12:47,990
+working pretty well um off the bat.
+So yeah, I have a quick uh demo for that
+
+630
+00:12:47,990 --> 00:12:48,000
+So yeah, I have a quick uh demo for that
+ 
+
+631
+00:12:48,000 --> 00:12:50,550
+So yeah, I have a quick uh demo for that
+as well.
+
+632
+00:12:50,550 --> 00:12:50,560
+as well.
+ 
+
+633
+00:12:50,560 --> 00:12:52,790
+as well.
+Um
+
+634
+00:12:52,790 --> 00:12:52,800
+Um
+ 
+
+635
+00:12:52,800 --> 00:12:55,110
+Um
+but so pretty much we'll show you how
+
+636
+00:12:55,110 --> 00:12:55,120
+but so pretty much we'll show you how
+ 
+
+637
+00:12:55,120 --> 00:12:56,710
+but so pretty much we'll show you how
+you can like save a memory. So here we
+
+638
+00:12:56,710 --> 00:12:56,720
+you can like save a memory. So here we
+ 
+
+639
+00:12:56,720 --> 00:12:58,230
+you can like save a memory. So here we
+have I just have a kind of a test memory
+
+640
+00:12:58,230 --> 00:12:58,240
+have I just have a kind of a test memory
+ 
+
+641
+00:12:58,240 --> 00:13:00,949
+have I just have a kind of a test memory
+script which we'll save. Oh yeah, here's
+
+642
+00:13:00,949 --> 00:13:00,959
+script which we'll save. Oh yeah, here's
+ 
+
+643
+00:13:00,959 --> 00:13:03,829
+script which we'll save. Oh yeah, here's
+the kind of memory format um right here.
+
+644
+00:13:03,829 --> 00:13:03,839
+the kind of memory format um right here.
+ 
+
+645
+00:13:03,839 --> 00:13:06,150
+the kind of memory format um right here.
+So you see see there's a key, we have a
+
+646
+00:13:06,150 --> 00:13:06,160
+So you see see there's a key, we have a
+ 
+
+647
+00:13:06,160 --> 00:13:09,030
+So you see see there's a key, we have a
+value, you can categorize it, put
+
+648
+00:13:09,030 --> 00:13:09,040
+value, you can categorize it, put
+ 
+
+649
+00:13:09,040 --> 00:13:12,710
+value, you can categorize it, put
+importance, etc.
+
+650
+00:13:12,710 --> 00:13:12,720
+importance, etc.
+ 
+
+651
+00:13:12,720 --> 00:13:16,069
+importance, etc.
+And um go through and see if it can find
+
+652
+00:13:16,069 --> 00:13:16,079
+And um go through and see if it can find
+ 
+
+653
+00:13:16,079 --> 00:13:18,069
+And um go through and see if it can find
+its own memory and then we'll see that
+
+654
+00:13:18,069 --> 00:13:18,079
+its own memory and then we'll see that
+ 
+
+655
+00:13:18,079 --> 00:13:20,230
+its own memory and then we'll see that
+another agent cannot find this memory.
+
+656
+00:13:20,230 --> 00:13:20,240
+another agent cannot find this memory.
+ 
+
+657
+00:13:20,240 --> 00:13:21,910
+another agent cannot find this memory.
+But like another issue I ran into at the
+
+658
+00:13:21,910 --> 00:13:21,920
+But like another issue I ran into at the
+ 
+
+659
+00:13:21,920 --> 00:13:23,110
+But like another issue I ran into at the
+beginning was I was injecting all the
+
+660
+00:13:23,110 --> 00:13:23,120
+beginning was I was injecting all the
+ 
+
+661
+00:13:23,120 --> 00:13:25,750
+beginning was I was injecting all the
+memories which um can be helpful but you
+
+662
+00:13:25,750 --> 00:13:25,760
+memories which um can be helpful but you
+ 
+
+663
+00:13:25,760 --> 00:13:27,269
+memories which um can be helpful but you
+start filling up your context really
+
+664
+00:13:27,269 --> 00:13:27,279
+start filling up your context really
+ 
+
+665
+00:13:27,279 --> 00:13:29,509
+start filling up your context really
+fast and a lot of times agents don't
+
+666
+00:13:29,509 --> 00:13:29,519
+fast and a lot of times agents don't
+ 
+
+667
+00:13:29,519 --> 00:13:30,710
+fast and a lot of times agents don't
+need to know everything that they've
+
+668
+00:13:30,710 --> 00:13:30,720
+need to know everything that they've
+ 
+
+669
+00:13:30,720 --> 00:13:33,430
+need to know everything that they've
+remembered. So I did go through and set
+
+670
+00:13:33,430 --> 00:13:33,440
+remembered. So I did go through and set
+ 
+
+671
+00:13:33,440 --> 00:13:35,030
+remembered. So I did go through and set
+it up so that way only the important
+
+672
+00:13:35,030 --> 00:13:35,040
+it up so that way only the important
+ 
+
+673
+00:13:35,040 --> 00:13:36,470
+it up so that way only the important
+memories I think like importance eight
+
+674
+00:13:36,470 --> 00:13:36,480
+memories I think like importance eight
+ 
+
+675
+00:13:36,480 --> 00:13:39,910
+memories I think like importance eight
+or above uh gets uh auto injected. They
+
+676
+00:13:39,910 --> 00:13:39,920
+or above uh gets uh auto injected. They
+ 
+
+677
+00:13:39,920 --> 00:13:41,269
+or above uh gets uh auto injected. They
+also have search memory functions so
+
+678
+00:13:41,269 --> 00:13:41,279
+also have search memory functions so
+ 
+
+679
+00:13:41,279 --> 00:13:42,629
+also have search memory functions so
+they can go and search for anything
+
+680
+00:13:42,629 --> 00:13:42,639
+they can go and search for anything
+ 
+
+681
+00:13:42,639 --> 00:13:44,389
+they can go and search for anything
+specific. So you can see like it can
+
+682
+00:13:44,389 --> 00:13:44,399
+specific. So you can see like it can
+ 
+
+683
+00:13:44,399 --> 00:13:47,110
+specific. So you can see like it can
+find it. You have some you know agentic
+
+684
+00:13:47,110 --> 00:13:47,120
+find it. You have some you know agentic
+ 
+
+685
+00:13:47,120 --> 00:13:48,710
+find it. You have some you know agentic
+response it wants to throw emojis in
+
+686
+00:13:48,710 --> 00:13:48,720
+response it wants to throw emojis in
+ 
+
+687
+00:13:48,720 --> 00:13:50,949
+response it wants to throw emojis in
+there. Um, and then the security agent
+
+688
+00:13:50,949 --> 00:13:50,959
+there. Um, and then the security agent
+ 
+
+689
+00:13:50,959 --> 00:13:52,550
+there. Um, and then the security agent
+will go look for it and it won't
+
+690
+00:13:52,550 --> 00:13:52,560
+will go look for it and it won't
+ 
+
+691
+00:13:52,560 --> 00:13:54,629
+will go look for it and it won't
+shouldn't find anything. And actually,
+
+692
+00:13:54,629 --> 00:13:54,639
+shouldn't find anything. And actually,
+ 
+
+693
+00:13:54,639 --> 00:13:58,150
+shouldn't find anything. And actually,
+it's getting caught by my uh LM firewall
+
+694
+00:13:58,150 --> 00:13:58,160
+it's getting caught by my uh LM firewall
+ 
+
+695
+00:13:58,160 --> 00:13:59,829
+it's getting caught by my uh LM firewall
+there, which is also another issue that
+
+696
+00:13:59,829 --> 00:13:59,839
+there, which is also another issue that
+ 
+
+697
+00:13:59,839 --> 00:14:03,990
+there, which is also another issue that
+I'll I'll talk about in just a second.
+
+698
+00:14:03,990 --> 00:14:04,000
+I'll I'll talk about in just a second.
+ 
+
+699
+00:14:04,000 --> 00:14:06,470
+I'll I'll talk about in just a second.
+So, as you can see there, the memory
+
+700
+00:14:06,470 --> 00:14:06,480
+So, as you can see there, the memory
+ 
+
+701
+00:14:06,480 --> 00:14:09,110
+So, as you can see there, the memory
+called got uh blocked, which was not
+
+702
+00:14:09,110 --> 00:14:09,120
+called got uh blocked, which was not
+ 
+
+703
+00:14:09,120 --> 00:14:11,590
+called got uh blocked, which was not
+what I intended, and it's still, you
+
+704
+00:14:11,590 --> 00:14:11,600
+what I intended, and it's still, you
+ 
+
+705
+00:14:11,600 --> 00:14:12,949
+what I intended, and it's still, you
+know, prompt injection detection, not
+
+706
+00:14:12,949 --> 00:14:12,959
+know, prompt injection detection, not
+ 
+
+707
+00:14:12,959 --> 00:14:14,870
+know, prompt injection detection, not
+plug-and-play, uh, still needs more
+
+708
+00:14:14,870 --> 00:14:14,880
+plug-and-play, uh, still needs more
+ 
+
+709
+00:14:14,880 --> 00:14:17,750
+plug-and-play, uh, still needs more
+tuning. And uh it was just kind of I
+
+710
+00:14:17,750 --> 00:14:17,760
+tuning. And uh it was just kind of I
+ 
+
+711
+00:14:17,760 --> 00:14:19,910
+tuning. And uh it was just kind of I
+wanted to put in some prompt scanning
+
+712
+00:14:19,910 --> 00:14:19,920
+wanted to put in some prompt scanning
+ 
+
+713
+00:14:19,920 --> 00:14:22,710
+wanted to put in some prompt scanning
+see you know add some security to this
+
+714
+00:14:22,710 --> 00:14:22,720
+see you know add some security to this
+ 
+
+715
+00:14:22,720 --> 00:14:25,430
+see you know add some security to this
+as I went. But uh like the most annoying
+
+716
+00:14:25,430 --> 00:14:25,440
+as I went. But uh like the most annoying
+ 
+
+717
+00:14:25,440 --> 00:14:28,790
+as I went. But uh like the most annoying
+thing here is I'd have uh like this last
+
+718
+00:14:28,790 --> 00:14:28,800
+thing here is I'd have uh like this last
+ 
+
+719
+00:14:28,800 --> 00:14:30,470
+thing here is I'd have uh like this last
+one include a server time field in every
+
+720
+00:14:30,470 --> 00:14:30,480
+one include a server time field in every
+ 
+
+721
+00:14:30,480 --> 00:14:32,230
+one include a server time field in every
+API response. That was an actual task I
+
+722
+00:14:32,230 --> 00:14:32,240
+API response. That was an actual task I
+ 
+
+723
+00:14:32,240 --> 00:14:33,590
+API response. That was an actual task I
+wanted to do. So I was like go create
+
+724
+00:14:33,590 --> 00:14:33,600
+wanted to do. So I was like go create
+ 
+
+725
+00:14:33,600 --> 00:14:35,590
+wanted to do. So I was like go create
+this task for me so I remember to do it.
+
+726
+00:14:35,590 --> 00:14:35,600
+this task for me so I remember to do it.
+ 
+
+727
+00:14:35,600 --> 00:14:36,870
+this task for me so I remember to do it.
+And then like two weeks later I was
+
+728
+00:14:36,870 --> 00:14:36,880
+And then like two weeks later I was
+ 
+
+729
+00:14:36,880 --> 00:14:38,310
+And then like two weeks later I was
+checking through the LM firewall logs
+
+730
+00:14:38,310 --> 00:14:38,320
+checking through the LM firewall logs
+ 
+
+731
+00:14:38,320 --> 00:14:40,150
+checking through the LM firewall logs
+and I saw that was blocked along with
+
+732
+00:14:40,150 --> 00:14:40,160
+and I saw that was blocked along with
+ 
+
+733
+00:14:40,160 --> 00:14:41,590
+and I saw that was blocked along with
+like a couple dozen other tasks. So then
+
+734
+00:14:41,590 --> 00:14:41,600
+like a couple dozen other tasks. So then
+ 
+
+735
+00:14:41,600 --> 00:14:43,110
+like a couple dozen other tasks. So then
+all of a sudden I'm missing out on this
+
+736
+00:14:43,110 --> 00:14:43,120
+all of a sudden I'm missing out on this
+ 
+
+737
+00:14:43,120 --> 00:14:45,509
+all of a sudden I'm missing out on this
+stuff. So out of the box configuration
+
+738
+00:14:45,509 --> 00:14:45,519
+stuff. So out of the box configuration
+ 
+
+739
+00:14:45,519 --> 00:14:48,310
+stuff. So out of the box configuration
+way too aggressive. Um had to go tune
+
+740
+00:14:48,310 --> 00:14:48,320
+way too aggressive. Um had to go tune
+ 
+
+741
+00:14:48,320 --> 00:14:50,310
+way too aggressive. Um had to go tune
+that down and still trying to figure out
+
+742
+00:14:50,310 --> 00:14:50,320
+that down and still trying to figure out
+ 
+
+743
+00:14:50,320 --> 00:14:52,069
+that down and still trying to figure out
+what kind of custom customizations I
+
+744
+00:14:52,069 --> 00:14:52,079
+what kind of custom customizations I
+ 
+
+745
+00:14:52,079 --> 00:14:54,069
+what kind of custom customizations I
+want. Like obviously security research
+
+746
+00:14:54,069 --> 00:14:54,079
+want. Like obviously security research
+ 
+
+747
+00:14:54,079 --> 00:14:55,750
+want. Like obviously security research
+queries are going to have more stuff. So
+
+748
+00:14:55,750 --> 00:14:55,760
+queries are going to have more stuff. So
+ 
+
+749
+00:14:55,760 --> 00:14:58,870
+queries are going to have more stuff. So
+that needs to be very insensitive if
+
+750
+00:14:58,870 --> 00:14:58,880
+that needs to be very insensitive if
+ 
+
+751
+00:14:58,880 --> 00:15:00,389
+that needs to be very insensitive if
+it's there at all and then kind of
+
+752
+00:15:00,389 --> 00:15:00,399
+it's there at all and then kind of
+ 
+
+753
+00:15:00,399 --> 00:15:02,389
+it's there at all and then kind of
+figure out where the accepted risk
+
+754
+00:15:02,389 --> 00:15:02,399
+figure out where the accepted risk
+ 
+
+755
+00:15:02,399 --> 00:15:05,910
+figure out where the accepted risk
+tolerance is for each um setting there.
+
+756
+00:15:05,910 --> 00:15:05,920
+tolerance is for each um setting there.
+ 
+
+757
+00:15:05,920 --> 00:15:08,310
+tolerance is for each um setting there.
+Another thing that I at least think is
+
+758
+00:15:08,310 --> 00:15:08,320
+Another thing that I at least think is
+ 
+
+759
+00:15:08,320 --> 00:15:10,710
+Another thing that I at least think is
+pretty cool is I have a kind of a
+
+760
+00:15:10,710 --> 00:15:10,720
+pretty cool is I have a kind of a
+ 
+
+761
+00:15:10,720 --> 00:15:12,949
+pretty cool is I have a kind of a
+context aware trimming uh thing set up.
+
+762
+00:15:12,949 --> 00:15:12,959
+context aware trimming uh thing set up.
+ 
+
+763
+00:15:12,959 --> 00:15:15,509
+context aware trimming uh thing set up.
+This is mainly for log analysis because
+
+764
+00:15:15,509 --> 00:15:15,519
+This is mainly for log analysis because
+ 
+
+765
+00:15:15,519 --> 00:15:18,870
+This is mainly for log analysis because
+the um problem it solves is if I have an
+
+766
+00:15:18,870 --> 00:15:18,880
+the um problem it solves is if I have an
+ 
+
+767
+00:15:18,880 --> 00:15:21,030
+the um problem it solves is if I have an
+LLM that is going through say security
+
+768
+00:15:21,030 --> 00:15:21,040
+LLM that is going through say security
+ 
+
+769
+00:15:21,040 --> 00:15:23,430
+LLM that is going through say security
+logs in this example, it's contact is
+
+770
+00:15:23,430 --> 00:15:23,440
+logs in this example, it's contact is
+ 
+
+771
+00:15:23,440 --> 00:15:24,949
+logs in this example, it's contact is
+going to get filled up. It's going to uh
+
+772
+00:15:24,949 --> 00:15:24,959
+going to get filled up. It's going to uh
+ 
+
+773
+00:15:24,959 --> 00:15:26,389
+going to get filled up. It's going to uh
+trim the context, start throwing stuff
+
+774
+00:15:26,389 --> 00:15:26,399
+trim the context, start throwing stuff
+ 
+
+775
+00:15:26,399 --> 00:15:28,870
+trim the context, start throwing stuff
+away, but I don't want uh like an
+
+776
+00:15:28,870 --> 00:15:28,880
+away, but I don't want uh like an
+ 
+
+777
+00:15:28,880 --> 00:15:30,470
+away, but I don't want uh like an
+attacker to be able to just send an
+
+778
+00:15:30,470 --> 00:15:30,480
+attacker to be able to just send an
+ 
+
+779
+00:15:30,480 --> 00:15:32,949
+attacker to be able to just send an
+attack every 200,000 tokens and then I
+
+780
+00:15:32,949 --> 00:15:32,959
+attack every 200,000 tokens and then I
+ 
+
+781
+00:15:32,959 --> 00:15:35,189
+attack every 200,000 tokens and then I
+only see, you know, one at a time. So,
+
+782
+00:15:35,189 --> 00:15:35,199
+only see, you know, one at a time. So,
+ 
+
+783
+00:15:35,199 --> 00:15:37,829
+only see, you know, one at a time. So,
+I've set up a way so I can uh tag uh
+
+784
+00:15:37,829 --> 00:15:37,839
+I've set up a way so I can uh tag uh
+ 
+
+785
+00:15:37,839 --> 00:15:39,990
+I've set up a way so I can uh tag uh
+different messages as different things.
+
+786
+00:15:39,990 --> 00:15:40,000
+different messages as different things.
+ 
+
+787
+00:15:40,000 --> 00:15:42,550
+different messages as different things.
+So that way uh I can say this is a
+
+788
+00:15:42,550 --> 00:15:42,560
+So that way uh I can say this is a
+ 
+
+789
+00:15:42,560 --> 00:15:45,030
+So that way uh I can say this is a
+security like in this case the SSRF
+
+790
+00:15:45,030 --> 00:15:45,040
+security like in this case the SSRF
+ 
+
+791
+00:15:45,040 --> 00:15:47,030
+security like in this case the SSRF
+server side request forgery was blocked
+
+792
+00:15:47,030 --> 00:15:47,040
+server side request forgery was blocked
+ 
+
+793
+00:15:47,040 --> 00:15:48,470
+server side request forgery was blocked
+permission to deny those are important
+
+794
+00:15:48,470 --> 00:15:48,480
+permission to deny those are important
+ 
+
+795
+00:15:48,480 --> 00:15:50,389
+permission to deny those are important
+security events let's make sure whenever
+
+796
+00:15:50,389 --> 00:15:50,399
+security events let's make sure whenever
+ 
+
+797
+00:15:50,399 --> 00:15:51,749
+security events let's make sure whenever
+the context is trimmed we keep these
+
+798
+00:15:51,749 --> 00:15:51,759
+the context is trimmed we keep these
+ 
+
+799
+00:15:51,759 --> 00:15:56,790
+the context is trimmed we keep these
+around and uh use use them for our
+
+800
+00:15:56,790 --> 00:15:56,800
+around and uh use use them for our
+ 
+
+801
+00:15:56,800 --> 00:15:59,590
+around and uh use use them for our
+security analysis there. So this is
+
+802
+00:15:59,590 --> 00:15:59,600
+security analysis there. So this is
+ 
+
+803
+00:15:59,600 --> 00:16:02,069
+security analysis there. So this is
+definitely still not, you know, 100%
+
+804
+00:16:02,069 --> 00:16:02,079
+definitely still not, you know, 100%
+ 
+
+805
+00:16:02,079 --> 00:16:05,829
+definitely still not, you know, 100%
+perfect. Um, and as the logs increase,
+
+806
+00:16:05,829 --> 00:16:05,839
+perfect. Um, and as the logs increase,
+ 
+
+807
+00:16:05,839 --> 00:16:07,269
+perfect. Um, and as the logs increase,
+contacts get longer, I'm running these
+
+808
+00:16:07,269 --> 00:16:07,279
+contacts get longer, I'm running these
+ 
+
+809
+00:16:07,279 --> 00:16:10,710
+contacts get longer, I'm running these
+agents for longer times, uh, the context
+
+810
+00:16:10,710 --> 00:16:10,720
+agents for longer times, uh, the context
+ 
+
+811
+00:16:10,720 --> 00:16:12,629
+agents for longer times, uh, the context
+can still fill up. So it's just figuring
+
+812
+00:16:12,629 --> 00:16:12,639
+can still fill up. So it's just figuring
+ 
+
+813
+00:16:12,639 --> 00:16:16,949
+can still fill up. So it's just figuring
+out, uh, how to adjust that as we go is
+
+814
+00:16:16,949 --> 00:16:16,959
+out, uh, how to adjust that as we go is
+ 
+
+815
+00:16:16,959 --> 00:16:19,269
+out, uh, how to adjust that as we go is
+another fun challenge. So I can show
+
+816
+00:16:19,269 --> 00:16:19,279
+another fun challenge. So I can show
+ 
+
+817
+00:16:19,279 --> 00:16:21,829
+another fun challenge. So I can show
+kind of yeah how that works
+
+818
+00:16:21,829 --> 00:16:21,839
+kind of yeah how that works
+ 
+
+819
+00:16:21,839 --> 00:16:23,269
+kind of yeah how that works
+because pretty much what happens is just
+
+820
+00:16:23,269 --> 00:16:23,279
+because pretty much what happens is just
+ 
+
+821
+00:16:23,279 --> 00:16:25,509
+because pretty much what happens is just
+with the oh
+
+822
+00:16:25,509 --> 00:16:25,519
+with the oh
+ 
+
+823
+00:16:25,519 --> 00:16:28,150
+with the oh
+with the um
+
+824
+00:16:28,150 --> 00:16:28,160
+with the um
+ 
+
+825
+00:16:28,160 --> 00:16:31,189
+with the um
+the logs that come back they get tagged
+
+826
+00:16:31,189 --> 00:16:31,199
+the logs that come back they get tagged
+ 
+
+827
+00:16:31,199 --> 00:16:33,430
+the logs that come back they get tagged
+with different security events. So you
+
+828
+00:16:33,430 --> 00:16:33,440
+with different security events. So you
+ 
+
+829
+00:16:33,440 --> 00:16:35,430
+with different security events. So you
+can see we have like uh some metadata
+
+830
+00:16:35,430 --> 00:16:35,440
+can see we have like uh some metadata
+ 
+
+831
+00:16:35,440 --> 00:16:37,189
+can see we have like uh some metadata
+set for as like server side request
+
+832
+00:16:37,189 --> 00:16:37,199
+set for as like server side request
+ 
+
+833
+00:16:37,199 --> 00:16:39,590
+set for as like server side request
+forgery blocked or permission denied. Um
+
+834
+00:16:39,590 --> 00:16:39,600
+forgery blocked or permission denied. Um
+ 
+
+835
+00:16:39,600 --> 00:16:41,509
+forgery blocked or permission denied. Um
+and then I'll go trim the messages and
+
+836
+00:16:41,509 --> 00:16:41,519
+and then I'll go trim the messages and
+ 
+
+837
+00:16:41,519 --> 00:16:43,030
+and then I'll go trim the messages and
+you know we make sure we keep the the
+
+838
+00:16:43,030 --> 00:16:43,040
+you know we make sure we keep the the
+ 
+
+839
+00:16:43,040 --> 00:16:46,949
+you know we make sure we keep the the
+security one relevant ones there.
+
+840
+00:16:46,949 --> 00:16:46,959
+security one relevant ones there.
+ 
+
+841
+00:16:46,959 --> 00:16:50,870
+security one relevant ones there.
+And there's demo reporting. So of course
+
+842
+00:16:50,870 --> 00:16:50,880
+And there's demo reporting. So of course
+ 
+
+843
+00:16:50,880 --> 00:16:53,910
+And there's demo reporting. So of course
+uh observability is key. It's um very
+
+844
+00:16:53,910 --> 00:16:53,920
+uh observability is key. It's um very
+ 
+
+845
+00:16:53,920 --> 00:16:56,230
+uh observability is key. It's um very
+hard to do or very hard to do thoroughly
+
+846
+00:16:56,230 --> 00:16:56,240
+hard to do or very hard to do thoroughly
+ 
+
+847
+00:16:56,240 --> 00:16:58,710
+hard to do or very hard to do thoroughly
+enough. But like right when I started up
+
+848
+00:16:58,710 --> 00:16:58,720
+enough. But like right when I started up
+ 
+
+849
+00:16:58,720 --> 00:17:00,550
+enough. But like right when I started up
+uh cost tracking I did see I was wasting
+
+850
+00:17:00,550 --> 00:17:00,560
+uh cost tracking I did see I was wasting
+ 
+
+851
+00:17:00,560 --> 00:17:03,110
+uh cost tracking I did see I was wasting
+tons of tokens on both uh injecting all
+
+852
+00:17:03,110 --> 00:17:03,120
+tons of tokens on both uh injecting all
+ 
+
+853
+00:17:03,120 --> 00:17:04,949
+tons of tokens on both uh injecting all
+the memories all at once which they
+
+854
+00:17:04,949 --> 00:17:04,959
+the memories all at once which they
+ 
+
+855
+00:17:04,959 --> 00:17:07,110
+the memories all at once which they
+didn't need and was actually um hurting
+
+856
+00:17:07,110 --> 00:17:07,120
+didn't need and was actually um hurting
+ 
+
+857
+00:17:07,120 --> 00:17:10,069
+didn't need and was actually um hurting
+functionality as well. Um, I had like
+
+858
+00:17:10,069 --> 00:17:10,079
+functionality as well. Um, I had like
+ 
+
+859
+00:17:10,079 --> 00:17:11,669
+functionality as well. Um, I had like
+the coding agents always try to run all
+
+860
+00:17:11,669 --> 00:17:11,679
+the coding agents always try to run all
+ 
+
+861
+00:17:11,679 --> 00:17:13,110
+the coding agents always try to run all
+the review agents all the time because
+
+862
+00:17:13,110 --> 00:17:13,120
+the review agents all the time because
+ 
+
+863
+00:17:13,120 --> 00:17:15,110
+the review agents all the time because
+it uh when I was coding that that's what
+
+864
+00:17:15,110 --> 00:17:15,120
+it uh when I was coding that that's what
+ 
+
+865
+00:17:15,120 --> 00:17:17,189
+it uh when I was coding that that's what
+the LM thought would be helpful which
+
+866
+00:17:17,189 --> 00:17:17,199
+the LM thought would be helpful which
+ 
+
+867
+00:17:17,199 --> 00:17:19,270
+the LM thought would be helpful which
+was also like every time you run those
+
+868
+00:17:19,270 --> 00:17:19,280
+was also like every time you run those
+ 
+
+869
+00:17:19,280 --> 00:17:21,429
+was also like every time you run those
+five uh review agents it's like 250k
+
+870
+00:17:21,429 --> 00:17:21,439
+five uh review agents it's like 250k
+ 
+
+871
+00:17:21,439 --> 00:17:23,510
+five uh review agents it's like 250k
+tokens. So I was just running that way
+
+872
+00:17:23,510 --> 00:17:23,520
+tokens. So I was just running that way
+ 
+
+873
+00:17:23,520 --> 00:17:25,829
+tokens. So I was just running that way
+more often than I needed to. Right now I
+
+874
+00:17:25,829 --> 00:17:25,839
+more often than I needed to. Right now I
+ 
+
+875
+00:17:25,839 --> 00:17:29,110
+more often than I needed to. Right now I
+have langfuse traces um that are super
+
+876
+00:17:29,110 --> 00:17:29,120
+have langfuse traces um that are super
+ 
+
+877
+00:17:29,120 --> 00:17:31,430
+have langfuse traces um that are super
+helpful to kind of see which agents are
+
+878
+00:17:31,430 --> 00:17:31,440
+helpful to kind of see which agents are
+ 
+
+879
+00:17:31,440 --> 00:17:33,750
+helpful to kind of see which agents are
+doing what. I've accidentally uh used
+
+880
+00:17:33,750 --> 00:17:33,760
+doing what. I've accidentally uh used
+ 
+
+881
+00:17:33,760 --> 00:17:35,430
+doing what. I've accidentally uh used
+opus where I meant to use sonnet in
+
+882
+00:17:35,430 --> 00:17:35,440
+opus where I meant to use sonnet in
+ 
+
+883
+00:17:35,440 --> 00:17:37,430
+opus where I meant to use sonnet in
+several places and langfuse helps kind
+
+884
+00:17:37,430 --> 00:17:37,440
+several places and langfuse helps kind
+ 
+
+885
+00:17:37,440 --> 00:17:39,909
+several places and langfuse helps kind
+of debug where that is. Graphana
+
+886
+00:17:39,909 --> 00:17:39,919
+of debug where that is. Graphana
+ 
+
+887
+00:17:39,919 --> 00:17:42,470
+of debug where that is. Graphana
+dashboards for cost daily breakdown um
+
+888
+00:17:42,470 --> 00:17:42,480
+dashboards for cost daily breakdown um
+ 
+
+889
+00:17:42,480 --> 00:17:44,230
+dashboards for cost daily breakdown um
+making sure that you do have a security
+
+890
+00:17:44,230 --> 00:17:44,240
+making sure that you do have a security
+ 
+
+891
+00:17:44,240 --> 00:17:47,029
+making sure that you do have a security
+audit trail and because a lot of this a
+
+892
+00:17:47,029 --> 00:17:47,039
+audit trail and because a lot of this a
+ 
+
+893
+00:17:47,039 --> 00:17:49,909
+audit trail and because a lot of this a
+lot of uh my auto agent automations are
+
+894
+00:17:49,909 --> 00:17:49,919
+lot of uh my auto agent automations are
+ 
+
+895
+00:17:49,919 --> 00:17:53,669
+lot of uh my auto agent automations are
+running like 24/7 or uh at least cron
+
+896
+00:17:53,669 --> 00:17:53,679
+running like 24/7 or uh at least cron
+ 
+
+897
+00:17:53,679 --> 00:17:57,590
+running like 24/7 or uh at least cron
+jobs every hour or two. And uh I do want
+
+898
+00:17:57,590 --> 00:17:57,600
+jobs every hour or two. And uh I do want
+ 
+
+899
+00:17:57,600 --> 00:17:59,750
+jobs every hour or two. And uh I do want
+to know like if I wake up and I have an
+
+900
+00:17:59,750 --> 00:17:59,760
+to know like if I wake up and I have an
+ 
+
+901
+00:17:59,760 --> 00:18:01,669
+to know like if I wake up and I have an
+extra $100 bill, why did that happen?
+
+902
+00:18:01,669 --> 00:18:01,679
+extra $100 bill, why did that happen?
+ 
+
+903
+00:18:01,679 --> 00:18:04,310
+extra $100 bill, why did that happen?
+how can I trace that down? So, yeah, a
+
+904
+00:18:04,310 --> 00:18:04,320
+how can I trace that down? So, yeah, a
+ 
+
+905
+00:18:04,320 --> 00:18:06,549
+how can I trace that down? So, yeah, a
+lot of uh lessons learned. So,
+
+906
+00:18:06,549 --> 00:18:06,559
+lot of uh lessons learned. So,
+ 
+
+907
+00:18:06,559 --> 00:18:07,590
+lot of uh lessons learned. So,
+thankfully being a security
+
+908
+00:18:07,590 --> 00:18:07,600
+thankfully being a security
+ 
+
+909
+00:18:07,600 --> 00:18:10,070
+thankfully being a security
+practitioner, I did uh put a lot of
+
+910
+00:18:10,070 --> 00:18:10,080
+practitioner, I did uh put a lot of
+ 
+
+911
+00:18:10,080 --> 00:18:12,070
+practitioner, I did uh put a lot of
+security stuff in place for early on
+
+912
+00:18:12,070 --> 00:18:12,080
+security stuff in place for early on
+ 
+
+913
+00:18:12,080 --> 00:18:13,669
+security stuff in place for early on
+like permission systems, tool allow
+
+914
+00:18:13,669 --> 00:18:13,679
+like permission systems, tool allow
+ 
+
+915
+00:18:13,679 --> 00:18:16,310
+like permission systems, tool allow
+lists. That was kind of a I know this is
+
+916
+00:18:16,310 --> 00:18:16,320
+lists. That was kind of a I know this is
+ 
+
+917
+00:18:16,320 --> 00:18:17,909
+lists. That was kind of a I know this is
+important. Let's go see what I can do
+
+918
+00:18:17,909 --> 00:18:17,919
+important. Let's go see what I can do
+ 
+
+919
+00:18:17,919 --> 00:18:21,029
+important. Let's go see what I can do
+with it. Um
+
+920
+00:18:21,029 --> 00:18:21,039
+with it. Um
+ 
+
+921
+00:18:21,039 --> 00:18:24,310
+with it. Um
+and that's like a great example of how
+
+922
+00:18:24,310 --> 00:18:24,320
+and that's like a great example of how
+ 
+
+923
+00:18:24,320 --> 00:18:26,310
+and that's like a great example of how
+improved security also improves actual
+
+924
+00:18:26,310 --> 00:18:26,320
+improved security also improves actual
+ 
+
+925
+00:18:26,320 --> 00:18:29,270
+improved security also improves actual
+functionality. Um because with like 73
+
+926
+00:18:29,270 --> 00:18:29,280
+functionality. Um because with like 73
+ 
+
+927
+00:18:29,280 --> 00:18:31,990
+functionality. Um because with like 73
+MCP tools, if we're injecting that into
+
+928
+00:18:31,990 --> 00:18:32,000
+MCP tools, if we're injecting that into
+ 
+
+929
+00:18:32,000 --> 00:18:33,909
+MCP tools, if we're injecting that into
+every LLM, they're going to have so much
+
+930
+00:18:33,909 --> 00:18:33,919
+every LLM, they're going to have so much
+ 
+
+931
+00:18:33,919 --> 00:18:35,430
+every LLM, they're going to have so much
+both context is wasted and they're going
+
+932
+00:18:35,430 --> 00:18:35,440
+both context is wasted and they're going
+ 
+
+933
+00:18:35,440 --> 00:18:36,789
+both context is wasted and they're going
+to have so much extra information that's
+
+934
+00:18:36,789 --> 00:18:36,799
+to have so much extra information that's
+ 
+
+935
+00:18:36,799 --> 00:18:38,630
+to have so much extra information that's
+just not going to be helpful for
+
+936
+00:18:38,630 --> 00:18:38,640
+just not going to be helpful for
+ 
+
+937
+00:18:38,640 --> 00:18:40,549
+just not going to be helpful for
+whatever their mission is. And then
+
+938
+00:18:40,549 --> 00:18:40,559
+whatever their mission is. And then
+ 
+
+939
+00:18:40,559 --> 00:18:42,070
+whatever their mission is. And then
+also, yeah, just making sure agents are
+
+940
+00:18:42,070 --> 00:18:42,080
+also, yeah, just making sure agents are
+ 
+
+941
+00:18:42,080 --> 00:18:44,470
+also, yeah, just making sure agents are
+scoped down as much as possible. Uh so
+
+942
+00:18:44,470 --> 00:18:44,480
+scoped down as much as possible. Uh so
+ 
+
+943
+00:18:44,480 --> 00:18:47,029
+scoped down as much as possible. Uh so
+that way they do have kind of distinct
+
+944
+00:18:47,029 --> 00:18:47,039
+that way they do have kind of distinct
+ 
+
+945
+00:18:47,039 --> 00:18:48,390
+that way they do have kind of distinct
+things they're trying to do. You can
+
+946
+00:18:48,390 --> 00:18:48,400
+things they're trying to do. You can
+ 
+
+947
+00:18:48,400 --> 00:18:51,270
+things they're trying to do. You can
+limit, you know, MCP tools a bit more.
+
+948
+00:18:51,270 --> 00:18:51,280
+limit, you know, MCP tools a bit more.
+ 
+
+949
+00:18:51,280 --> 00:18:53,110
+limit, you know, MCP tools a bit more.
+you can kind of limit all the additional
+
+950
+00:18:53,110 --> 00:18:53,120
+you can kind of limit all the additional
+ 
+
+951
+00:18:53,120 --> 00:18:54,390
+you can kind of limit all the additional
+context that might lead them different
+
+952
+00:18:54,390 --> 00:18:54,400
+context that might lead them different
+ 
+
+953
+00:18:54,400 --> 00:18:56,310
+context that might lead them different
+directions and kind of keep them focused
+
+954
+00:18:56,310 --> 00:18:56,320
+directions and kind of keep them focused
+ 
+
+955
+00:18:56,320 --> 00:18:57,669
+directions and kind of keep them focused
+just like you'd want to keep a human
+
+956
+00:18:57,669 --> 00:18:57,679
+just like you'd want to keep a human
+ 
+
+957
+00:18:57,679 --> 00:19:00,310
+just like you'd want to keep a human
+focused and uh yeah just natural chest
+
+958
+00:19:00,310 --> 00:19:00,320
+focused and uh yeah just natural chest
+ 
+
+959
+00:19:00,320 --> 00:19:03,270
+focused and uh yeah just natural chest
+brown bounties contextware trimming etc.
+
+960
+00:19:03,270 --> 00:19:03,280
+brown bounties contextware trimming etc.
+ 
+
+961
+00:19:03,280 --> 00:19:05,110
+brown bounties contextware trimming etc.
+And then um a lot of things I should
+
+962
+00:19:05,110 --> 00:19:05,120
+And then um a lot of things I should
+ 
+
+963
+00:19:05,120 --> 00:19:08,310
+And then um a lot of things I should
+have done differently. Uh cost tracking,
+
+964
+00:19:08,310 --> 00:19:08,320
+have done differently. Uh cost tracking,
+ 
+
+965
+00:19:08,320 --> 00:19:09,590
+have done differently. Uh cost tracking,
+you know, tune some of the stuff before
+
+966
+00:19:09,590 --> 00:19:09,600
+you know, tune some of the stuff before
+ 
+
+967
+00:19:09,600 --> 00:19:11,190
+you know, tune some of the stuff before
+I'm deploying. Since it is just my home
+
+968
+00:19:11,190 --> 00:19:11,200
+I'm deploying. Since it is just my home
+ 
+
+969
+00:19:11,200 --> 00:19:13,190
+I'm deploying. Since it is just my home
+lab, I just push stuff out. Uh if I
+
+970
+00:19:13,190 --> 00:19:13,200
+lab, I just push stuff out. Uh if I
+ 
+
+971
+00:19:13,200 --> 00:19:15,190
+lab, I just push stuff out. Uh if I
+break it, then I go fix it. And then
+
+972
+00:19:15,190 --> 00:19:15,200
+break it, then I go fix it. And then
+ 
+
+973
+00:19:15,200 --> 00:19:17,029
+break it, then I go fix it. And then
+also just yeah, delegation chains is
+
+974
+00:19:17,029 --> 00:19:17,039
+also just yeah, delegation chains is
+ 
+
+975
+00:19:17,039 --> 00:19:19,110
+also just yeah, delegation chains is
+something I still need to work on. Uh
+
+976
+00:19:19,110 --> 00:19:19,120
+something I still need to work on. Uh
+ 
+
+977
+00:19:19,120 --> 00:19:22,230
+something I still need to work on. Uh
+identity type stuff. I'm I'm sure like
+
+978
+00:19:22,230 --> 00:19:22,240
+identity type stuff. I'm I'm sure like
+ 
+
+979
+00:19:22,240 --> 00:19:24,070
+identity type stuff. I'm I'm sure like
+the SANS talk later will will help with
+
+980
+00:19:24,070 --> 00:19:24,080
+the SANS talk later will will help with
+ 
+
+981
+00:19:24,080 --> 00:19:25,590
+the SANS talk later will will help with
+that, but trying to go figure out the
+
+982
+00:19:25,590 --> 00:19:25,600
+that, but trying to go figure out the
+ 
+
+983
+00:19:25,600 --> 00:19:27,190
+that, but trying to go figure out the
+best way to do that and pass the same
+
+984
+00:19:27,190 --> 00:19:27,200
+best way to do that and pass the same
+ 
+
+985
+00:19:27,200 --> 00:19:30,630
+best way to do that and pass the same
+identity everywhere we can. Um so that's
+
+986
+00:19:30,630 --> 00:19:30,640
+identity everywhere we can. Um so that's
+ 
+
+987
+00:19:30,640 --> 00:19:32,390
+identity everywhere we can. Um so that's
+pretty much what I have. Feel free to
+
+988
+00:19:32,390 --> 00:19:32,400
+pretty much what I have. Feel free to
+ 
+
+989
+00:19:32,400 --> 00:19:34,630
+pretty much what I have. Feel free to
+reach out to me, LinkedIn, uh send me an
+
+990
+00:19:34,630 --> 00:19:34,640
+reach out to me, LinkedIn, uh send me an
+ 
+
+991
+00:19:34,640 --> 00:19:37,270
+reach out to me, LinkedIn, uh send me an
+email. I have a whatever those
+
+992
+00:19:37,270 --> 00:19:37,280
+email. I have a whatever those
+ 
+
+993
+00:19:37,280 --> 00:19:39,270
+email. I have a whatever those
+PowerPoint cards were called. Uh but
+
+994
+00:19:39,270 --> 00:19:39,280
+PowerPoint cards were called. Uh but
+ 
+
+995
+00:19:39,280 --> 00:19:42,150
+PowerPoint cards were called. Uh but
+yeah, and uh there's the code's all on
+
+996
+00:19:42,150 --> 00:19:42,160
+yeah, and uh there's the code's all on
+ 
+
+997
+00:19:42,160 --> 00:19:43,430
+yeah, and uh there's the code's all on
+GitHub if you want to just go look at
+
+998
+00:19:43,430 --> 00:19:43,440
+GitHub if you want to just go look at
+ 
+
+999
+00:19:43,440 --> 00:19:51,270
+GitHub if you want to just go look at
+it.
+
+1000
+00:19:51,270 --> 00:19:51,280
+
+ 
+
+1001
+00:19:51,280 --> 00:19:53,669
+
+I will definitely look at your code. Um
+
+1002
+00:19:53,669 --> 00:19:53,679
+I will definitely look at your code. Um
+ 
+
+1003
+00:19:53,679 --> 00:19:55,270
+I will definitely look at your code. Um
+are you looking for sort of pull
+
+1004
+00:19:55,270 --> 00:19:55,280
+are you looking for sort of pull
+ 
+
+1005
+00:19:55,280 --> 00:19:57,750
+are you looking for sort of pull
+requests, changes, or just this is just
+
+1006
+00:19:57,750 --> 00:19:57,760
+requests, changes, or just this is just
+ 
+
+1007
+00:19:57,760 --> 00:19:59,510
+requests, changes, or just this is just
+this is just your project? Uh yeah, this
+
+1008
+00:19:59,510 --> 00:19:59,520
+this is just your project? Uh yeah, this
+ 
+
+1009
+00:19:59,520 --> 00:20:01,190
+this is just your project? Uh yeah, this
+is just kind of the the project I've
+
+1010
+00:20:01,190 --> 00:20:01,200
+is just kind of the the project I've
+ 
+
+1011
+00:20:01,200 --> 00:20:02,549
+is just kind of the the project I've
+been enjoying doing. So it's kind of
+
+1012
+00:20:02,549 --> 00:20:02,559
+been enjoying doing. So it's kind of
+ 
+
+1013
+00:20:02,559 --> 00:20:07,510
+been enjoying doing. So it's kind of
+like I no I enjoy having no pressure to
+
+1014
+00:20:07,510 --> 00:20:07,520
+like I no I enjoy having no pressure to
+ 
+
+1015
+00:20:07,520 --> 00:20:09,350
+like I no I enjoy having no pressure to
+get stuff done and you know if I break
+
+1016
+00:20:09,350 --> 00:20:09,360
+get stuff done and you know if I break
+ 
+
+1017
+00:20:09,360 --> 00:20:11,430
+get stuff done and you know if I break
+it then I'm only affecting myself. So
+
+1018
+00:20:11,430 --> 00:20:11,440
+it then I'm only affecting myself. So
+ 
+
+1019
+00:20:11,440 --> 00:20:12,710
+it then I'm only affecting myself. So
+it's just kind of my personal project
+
+1020
+00:20:12,710 --> 00:20:12,720
+it's just kind of my personal project
+ 
+
+1021
+00:20:12,720 --> 00:20:14,390
+it's just kind of my personal project
+that if you want to go see it you can
+
+1022
+00:20:14,390 --> 00:20:14,400
+that if you want to go see it you can
+ 
+
+1023
+00:20:14,400 --> 00:20:15,110
+that if you want to go see it you can
+see it.
+
+1024
+00:20:15,110 --> 00:20:15,120
+see it.
+ 
+
+1025
+00:20:15,120 --> 00:20:16,150
+see it.
+>> Cool.
+
+1026
+00:20:16,150 --> 00:20:16,160
+>> Cool.
+ 
+
+1027
+00:20:16,160 --> 00:20:24,150
+>> Cool.
+>> Uh other questions.
+
+1028
+00:20:24,150 --> 00:20:24,160
+
+ 
+
+1029
+00:20:24,160 --> 00:20:25,830
+
+>> Thanks for sharing that. That was great.
+
+1030
+00:20:25,830 --> 00:20:25,840
+>> Thanks for sharing that. That was great.
+ 
+
+1031
+00:20:25,840 --> 00:20:28,390
+>> Thanks for sharing that. That was great.
+Um I was curious you mentioned the uh
+
+1032
+00:20:28,390 --> 00:20:28,400
+Um I was curious you mentioned the uh
+ 
+
+1033
+00:20:28,400 --> 00:20:31,350
+Um I was curious you mentioned the uh
+the everex expanding MCP server. Is it
+
+1034
+00:20:31,350 --> 00:20:31,360
+the everex expanding MCP server. Is it
+ 
+
+1035
+00:20:31,360 --> 00:20:33,350
+the everex expanding MCP server. Is it
+you just have one that you're putting
+
+1036
+00:20:33,350 --> 00:20:33,360
+you just have one that you're putting
+ 
+
+1037
+00:20:33,360 --> 00:20:35,190
+you just have one that you're putting
+all the tools in and that's your single
+
+1038
+00:20:35,190 --> 00:20:35,200
+all the tools in and that's your single
+ 
+
+1039
+00:20:35,200 --> 00:20:36,870
+all the tools in and that's your single
+boundary. Is that how you've designed
+
+1040
+00:20:36,870 --> 00:20:36,880
+boundary. Is that how you've designed
+ 
+
+1041
+00:20:36,880 --> 00:20:37,110
+boundary. Is that how you've designed
+it?
+
+1042
+00:20:37,110 --> 00:20:37,120
+it?
+ 
+
+1043
+00:20:37,120 --> 00:20:38,870
+it?
+>> Yeah. So that's just the local MCP
+
+1044
+00:20:38,870 --> 00:20:38,880
+>> Yeah. So that's just the local MCP
+ 
+
+1045
+00:20:38,880 --> 00:20:41,029
+>> Yeah. So that's just the local MCP
+server. So each time an agent runs it'll
+
+1046
+00:20:41,029 --> 00:20:41,039
+server. So each time an agent runs it'll
+ 
+
+1047
+00:20:41,039 --> 00:20:43,029
+server. So each time an agent runs it'll
+spawn its own kind of local uh standard
+
+1048
+00:20:43,029 --> 00:20:43,039
+spawn its own kind of local uh standard
+ 
+
+1049
+00:20:43,039 --> 00:20:45,190
+spawn its own kind of local uh standard
+IO server and that's just how I can
+
+1050
+00:20:45,190 --> 00:20:45,200
+IO server and that's just how I can
+ 
+
+1051
+00:20:45,200 --> 00:20:50,149
+IO server and that's just how I can
+define like um here's you know for for
+
+1052
+00:20:50,149 --> 00:20:50,159
+define like um here's you know for for
+ 
+
+1053
+00:20:50,159 --> 00:20:52,070
+define like um here's you know for for
+example for the like markdown file read
+
+1054
+00:20:52,070 --> 00:20:52,080
+example for the like markdown file read
+ 
+
+1055
+00:20:52,080 --> 00:20:53,750
+example for the like markdown file read
+write I can say here here's the
+
+1056
+00:20:53,750 --> 00:20:53,760
+write I can say here here's the
+ 
+
+1057
+00:20:53,760 --> 00:20:55,110
+write I can say here here's the
+directory that it's allowed to go. here
+
+1058
+00:20:55,110 --> 00:20:55,120
+directory that it's allowed to go. here
+ 
+
+1059
+00:20:55,120 --> 00:20:56,630
+directory that it's allowed to go. here
+are the file types that it's allowed to
+
+1060
+00:20:56,630 --> 00:20:56,640
+are the file types that it's allowed to
+ 
+
+1061
+00:20:56,640 --> 00:20:58,789
+are the file types that it's allowed to
+do and then when it calls to try to make
+
+1062
+00:20:58,789 --> 00:20:58,799
+do and then when it calls to try to make
+ 
+
+1063
+00:20:58,799 --> 00:21:01,750
+do and then when it calls to try to make
+a like create a file on my file system,
+
+1064
+00:21:01,750 --> 00:21:01,760
+a like create a file on my file system,
+ 
+
+1065
+00:21:01,760 --> 00:21:03,510
+a like create a file on my file system,
+the MCP server will make sure those
+
+1066
+00:21:03,510 --> 00:21:03,520
+the MCP server will make sure those
+ 
+
+1067
+00:21:03,520 --> 00:21:04,950
+the MCP server will make sure those
+restrictions are put in place and that's
+
+1068
+00:21:04,950 --> 00:21:04,960
+restrictions are put in place and that's
+ 
+
+1069
+00:21:04,960 --> 00:21:07,350
+restrictions are put in place and that's
+just kind of the locally running kind of
+
+1070
+00:21:07,350 --> 00:21:07,360
+just kind of the locally running kind of
+ 
+
+1071
+00:21:07,360 --> 00:21:10,789
+just kind of the locally running kind of
+MCP sidecar more or less that that is
+
+1072
+00:21:10,789 --> 00:21:10,799
+MCP sidecar more or less that that is
+ 
+
+1073
+00:21:10,799 --> 00:21:14,230
+MCP sidecar more or less that that is
+scoped down to only which MCP MCP
+
+1074
+00:21:14,230 --> 00:21:14,240
+scoped down to only which MCP MCP
+ 
+
+1075
+00:21:14,240 --> 00:21:16,390
+scoped down to only which MCP MCP
+functions the agent is allowed to use,
+
+1076
+00:21:16,390 --> 00:21:16,400
+functions the agent is allowed to use,
+ 
+
+1077
+00:21:16,400 --> 00:21:18,710
+functions the agent is allowed to use,
+but also lets me build in restrictions
+
+1078
+00:21:18,710 --> 00:21:18,720
+but also lets me build in restrictions
+ 
+
+1079
+00:21:18,720 --> 00:21:21,590
+but also lets me build in restrictions
+as each MCP call is done. So that's not
+
+1080
+00:21:21,590 --> 00:21:21,600
+as each MCP call is done. So that's not
+ 
+
+1081
+00:21:21,600 --> 00:21:24,149
+as each MCP call is done. So that's not
+way it's not just like cloud code with
+
+1082
+00:21:24,149 --> 00:21:24,159
+way it's not just like cloud code with
+ 
+
+1083
+00:21:24,159 --> 00:21:28,390
+way it's not just like cloud code with
+access to everything.
+
+1084
+00:21:28,390 --> 00:21:28,400
+
+ 
+
+1085
+00:21:28,400 --> 00:21:31,750
+
+>> All right. Oh, all right. One followup
+
+1086
+00:21:31,750 --> 00:21:31,760
+>> All right. Oh, all right. One followup
+ 
+
+1087
+00:21:31,760 --> 00:21:33,990
+>> All right. Oh, all right. One followup
+>> that that's really interesting. Um and
+
+1088
+00:21:33,990 --> 00:21:34,000
+>> that that's really interesting. Um and
+ 
+
+1089
+00:21:34,000 --> 00:21:35,510
+>> that that's really interesting. Um and
+you mentioned sidecar. I mean another
+
+1090
+00:21:35,510 --> 00:21:35,520
+you mentioned sidecar. I mean another
+ 
+
+1091
+00:21:35,520 --> 00:21:37,590
+you mentioned sidecar. I mean another
+way I've seen is is to do this outside
+
+1092
+00:21:37,590 --> 00:21:37,600
+way I've seen is is to do this outside
+ 
+
+1093
+00:21:37,600 --> 00:21:39,909
+way I've seen is is to do this outside
+the bounds of the context window through
+
+1094
+00:21:39,909 --> 00:21:39,919
+the bounds of the context window through
+ 
+
+1095
+00:21:39,919 --> 00:21:42,470
+the bounds of the context window through
+you know envoy and and OPA where you can
+
+1096
+00:21:42,470 --> 00:21:42,480
+you know envoy and and OPA where you can
+ 
+
+1097
+00:21:42,480 --> 00:21:43,830
+you know envoy and and OPA where you can
+put the boundaries so you're not
+
+1098
+00:21:43,830 --> 00:21:43,840
+put the boundaries so you're not
+ 
+
+1099
+00:21:43,840 --> 00:21:45,350
+put the boundaries so you're not
+consuming context through the the
+
+1100
+00:21:45,350 --> 00:21:45,360
+consuming context through the the
+ 
+
+1101
+00:21:45,360 --> 00:21:47,190
+consuming context through the the
+bloated MCB. Have you thought about that
+
+1102
+00:21:47,190 --> 00:21:47,200
+bloated MCB. Have you thought about that
+ 
+
+1103
+00:21:47,200 --> 00:21:48,390
+bloated MCB. Have you thought about that
+or tried that? I don't know if that
+
+1104
+00:21:48,390 --> 00:21:48,400
+or tried that? I don't know if that
+ 
+
+1105
+00:21:48,400 --> 00:21:48,789
+or tried that? I don't know if that
+would work.
+
+1106
+00:21:48,789 --> 00:21:48,799
+would work.
+ 
+
+1107
+00:21:48,799 --> 00:21:51,350
+would work.
+>> Yeah. So right now, uh, infrastructure-
+
+1108
+00:21:51,350 --> 00:21:51,360
+>> Yeah. So right now, uh, infrastructure-
+ 
+
+1109
+00:21:51,360 --> 00:21:53,110
+>> Yeah. So right now, uh, infrastructure-
+wise, this is still fairly immature. I
+
+1110
+00:21:53,110 --> 00:21:53,120
+wise, this is still fairly immature. I
+ 
+
+1111
+00:21:53,120 --> 00:21:54,310
+wise, this is still fairly immature. I
+run a lot of these agents just on my
+
+1112
+00:21:54,310 --> 00:21:54,320
+run a lot of these agents just on my
+ 
+
+1113
+00:21:54,320 --> 00:21:55,750
+run a lot of these agents just on my
+like personal desktop is kind of where
+
+1114
+00:21:55,750 --> 00:21:55,760
+like personal desktop is kind of where
+ 
+
+1115
+00:21:55,760 --> 00:21:57,669
+like personal desktop is kind of where
+they're running now. I have a web server
+
+1116
+00:21:57,669 --> 00:21:57,679
+they're running now. I have a web server
+ 
+
+1117
+00:21:57,679 --> 00:22:00,310
+they're running now. I have a web server
+that hosts like my external MTP servers.
+
+1118
+00:22:00,310 --> 00:22:00,320
+that hosts like my external MTP servers.
+ 
+
+1119
+00:22:00,320 --> 00:22:01,750
+that hosts like my external MTP servers.
+Um, I'm gradually right now actually
+
+1120
+00:22:01,750 --> 00:22:01,760
+Um, I'm gradually right now actually
+ 
+
+1121
+00:22:01,760 --> 00:22:03,750
+Um, I'm gradually right now actually
+working to move that to the like a K3
+
+1122
+00:22:03,750 --> 00:22:03,760
+working to move that to the like a K3
+ 
+
+1123
+00:22:03,760 --> 00:22:05,669
+working to move that to the like a K3
+setup. So working on just setting up
+
+1124
+00:22:05,669 --> 00:22:05,679
+setup. So working on just setting up
+ 
+
+1125
+00:22:05,679 --> 00:22:07,270
+setup. So working on just setting up
+containers I can actually run agents in
+
+1126
+00:22:07,270 --> 00:22:07,280
+containers I can actually run agents in
+ 
+
+1127
+00:22:07,280 --> 00:22:09,510
+containers I can actually run agents in
+and then I can throw in some um like
+
+1128
+00:22:09,510 --> 00:22:09,520
+and then I can throw in some um like
+ 
+
+1129
+00:22:09,520 --> 00:22:11,430
+and then I can throw in some um like
+service mesh type controls as well and
+
+1130
+00:22:11,430 --> 00:22:11,440
+service mesh type controls as well and
+ 
+
+1131
+00:22:11,440 --> 00:22:14,950
+service mesh type controls as well and
+see what I can do there.
+
+1132
+00:22:14,950 --> 00:22:14,960
+see what I can do there.
+ 
+
+1133
+00:22:14,960 --> 00:22:16,630
+see what I can do there.
+>> All right.
+
+1134
+00:22:16,630 --> 00:22:16,640
+>> All right.
+ 
+
+1135
+00:22:16,640 --> 00:22:20,240
+>> All right.
+Thanks very much. Yeah.
+

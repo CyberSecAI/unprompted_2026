@@ -1,0 +1,8375 @@
+1
+00:00:04,799 --> 00:00:07,269
+
+All right. Hello everybody. Um, welcome.
+
+2
+00:00:07,269 --> 00:00:07,279
+All right. Hello everybody. Um, welcome.
+ 
+
+3
+00:00:07,279 --> 00:00:09,190
+All right. Hello everybody. Um, welcome.
+Thank you for taking the time to listen
+
+4
+00:00:09,190 --> 00:00:09,200
+Thank you for taking the time to listen
+ 
+
+5
+00:00:09,200 --> 00:00:11,509
+Thank you for taking the time to listen
+to us go through some learnings, lessons
+
+6
+00:00:11,509 --> 00:00:11,519
+to us go through some learnings, lessons
+ 
+
+7
+00:00:11,519 --> 00:00:13,030
+to us go through some learnings, lessons
+learned, and then some really cool
+
+8
+00:00:13,030 --> 00:00:13,040
+learned, and then some really cool
+ 
+
+9
+00:00:13,040 --> 00:00:14,549
+learned, and then some really cool
+architectural choices that we ended up
+
+10
+00:00:14,549 --> 00:00:14,559
+architectural choices that we ended up
+ 
+
+11
+00:00:14,559 --> 00:00:17,990
+architectural choices that we ended up
+making. Um, we'll be discussing how we
+
+12
+00:00:17,990 --> 00:00:18,000
+making. Um, we'll be discussing how we
+ 
+
+13
+00:00:18,000 --> 00:00:19,429
+making. Um, we'll be discussing how we
+essentially our journey and how we got
+
+14
+00:00:19,429 --> 00:00:19,439
+essentially our journey and how we got
+ 
+
+15
+00:00:19,439 --> 00:00:21,750
+essentially our journey and how we got
+to improving first party van discovery
+
+16
+00:00:21,750 --> 00:00:21,760
+to improving first party van discovery
+ 
+
+17
+00:00:21,760 --> 00:00:24,070
+to improving first party van discovery
+using LLM. I'm Justice Cassell. I'm here
+
+18
+00:00:24,070 --> 00:00:24,080
+using LLM. I'm Justice Cassell. I'm here
+ 
+
+19
+00:00:24,080 --> 00:00:26,150
+using LLM. I'm Justice Cassell. I'm here
+with my awesome co-orker and counterpart
+
+20
+00:00:26,150 --> 00:00:26,160
+with my awesome co-orker and counterpart
+ 
+
+21
+00:00:26,160 --> 00:00:28,950
+with my awesome co-orker and counterpart
+Scott Barren's here. Um so we'll go
+
+22
+00:00:28,950 --> 00:00:28,960
+Scott Barren's here. Um so we'll go
+ 
+
+23
+00:00:28,960 --> 00:00:32,069
+Scott Barren's here. Um so we'll go
+ahead and uh get started.
+
+24
+00:00:32,069 --> 00:00:32,079
+ahead and uh get started.
+ 
+
+25
+00:00:32,079 --> 00:00:34,310
+ahead and uh get started.
+So uh we'll take everybody back. I think
+
+26
+00:00:34,310 --> 00:00:34,320
+So uh we'll take everybody back. I think
+ 
+
+27
+00:00:34,320 --> 00:00:36,310
+So uh we'll take everybody back. I think
+a lot of us you know security focused
+
+28
+00:00:36,310 --> 00:00:36,320
+a lot of us you know security focused
+ 
+
+29
+00:00:36,320 --> 00:00:38,229
+a lot of us you know security focused
+folks, security researchers, folks that
+
+30
+00:00:38,229 --> 00:00:38,239
+folks, security researchers, folks that
+ 
+
+31
+00:00:38,239 --> 00:00:39,670
+folks, security researchers, folks that
+are passionate about exploit development
+
+32
+00:00:39,670 --> 00:00:39,680
+are passionate about exploit development
+ 
+
+33
+00:00:39,680 --> 00:00:41,670
+are passionate about exploit development
+or vulnerability discovery. When these
+
+34
+00:00:41,670 --> 00:00:41,680
+or vulnerability discovery. When these
+ 
+
+35
+00:00:41,680 --> 00:00:43,590
+or vulnerability discovery. When these
+models dropped initially we were like
+
+36
+00:00:43,590 --> 00:00:43,600
+models dropped initially we were like
+ 
+
+37
+00:00:43,600 --> 00:00:44,950
+models dropped initially we were like
+can we actually find vulnerabilities
+
+38
+00:00:44,950 --> 00:00:44,960
+can we actually find vulnerabilities
+ 
+
+39
+00:00:44,960 --> 00:00:46,310
+can we actually find vulnerabilities
+with this? We're just asking it for
+
+40
+00:00:46,310 --> 00:00:46,320
+with this? We're just asking it for
+ 
+
+41
+00:00:46,320 --> 00:00:48,229
+with this? We're just asking it for
+things and it's doing the thing. This is
+
+42
+00:00:48,229 --> 00:00:48,239
+things and it's doing the thing. This is
+ 
+
+43
+00:00:48,239 --> 00:00:50,069
+things and it's doing the thing. This is
+the future. It's now it's great.
+
+44
+00:00:50,069 --> 00:00:50,079
+the future. It's now it's great.
+ 
+
+45
+00:00:50,079 --> 00:00:51,510
+the future. It's now it's great.
+Phenomenal. So we started out you know
+
+46
+00:00:51,510 --> 00:00:51,520
+Phenomenal. So we started out you know
+ 
+
+47
+00:00:51,520 --> 00:00:53,430
+Phenomenal. So we started out you know
+simple prompting thinking that we've you
+
+48
+00:00:53,430 --> 00:00:53,440
+simple prompting thinking that we've you
+ 
+
+49
+00:00:53,440 --> 00:00:54,950
+simple prompting thinking that we've you
+know we've we've broken the barrier and
+
+50
+00:00:54,950 --> 00:00:54,960
+know we've we've broken the barrier and
+ 
+
+51
+00:00:54,960 --> 00:00:57,029
+know we've we've broken the barrier and
+everything is going to be great. Um and
+
+52
+00:00:57,029 --> 00:00:57,039
+everything is going to be great. Um and
+ 
+
+53
+00:00:57,039 --> 00:00:58,549
+everything is going to be great. Um and
+then we kind of realized that it's a
+
+54
+00:00:58,549 --> 00:00:58,559
+then we kind of realized that it's a
+ 
+
+55
+00:00:58,559 --> 00:01:00,470
+then we kind of realized that it's a
+little bit more difficult than that. Um
+
+56
+00:01:00,470 --> 00:01:00,480
+little bit more difficult than that. Um
+ 
+
+57
+00:01:00,480 --> 00:01:01,990
+little bit more difficult than that. Um
+you know consistency was difficult,
+
+58
+00:01:01,990 --> 00:01:02,000
+you know consistency was difficult,
+ 
+
+59
+00:01:02,000 --> 00:01:04,070
+you know consistency was difficult,
+variance was huge, false positives kept
+
+60
+00:01:04,070 --> 00:01:04,080
+variance was huge, false positives kept
+ 
+
+61
+00:01:04,080 --> 00:01:05,830
+variance was huge, false positives kept
+coming up. Um you know sometimes it
+
+62
+00:01:05,830 --> 00:01:05,840
+coming up. Um you know sometimes it
+ 
+
+63
+00:01:05,840 --> 00:01:07,190
+coming up. Um you know sometimes it
+would ignore entire vulnerability
+
+64
+00:01:07,190 --> 00:01:07,200
+would ignore entire vulnerability
+ 
+
+65
+00:01:07,200 --> 00:01:09,190
+would ignore entire vulnerability
+classes. Um got a little bit more
+
+66
+00:01:09,190 --> 00:01:09,200
+classes. Um got a little bit more
+ 
+
+67
+00:01:09,200 --> 00:01:11,190
+classes. Um got a little bit more
+depressing and you know we realized you
+
+68
+00:01:11,190 --> 00:01:11,200
+depressing and you know we realized you
+ 
+
+69
+00:01:11,200 --> 00:01:13,429
+depressing and you know we realized you
+know as folks that like to solve
+
+70
+00:01:13,429 --> 00:01:13,439
+know as folks that like to solve
+ 
+
+71
+00:01:13,439 --> 00:01:15,109
+know as folks that like to solve
+problems were kind of in that space of
+
+72
+00:01:15,109 --> 00:01:15,119
+problems were kind of in that space of
+ 
+
+73
+00:01:15,119 --> 00:01:16,310
+problems were kind of in that space of
+you know one more prompt we'll be able
+
+74
+00:01:16,310 --> 00:01:16,320
+you know one more prompt we'll be able
+ 
+
+75
+00:01:16,320 --> 00:01:18,310
+you know one more prompt we'll be able
+to figure this out. Um but definitely
+
+76
+00:01:18,310 --> 00:01:18,320
+to figure this out. Um but definitely
+ 
+
+77
+00:01:18,320 --> 00:01:19,670
+to figure this out. Um but definitely
+definitely definitely took a hit to the
+
+78
+00:01:19,670 --> 00:01:19,680
+definitely definitely took a hit to the
+ 
+
+79
+00:01:19,680 --> 00:01:23,190
+definitely definitely took a hit to the
+dopamine for sure. So today u we have
+
+80
+00:01:23,190 --> 00:01:23,200
+dopamine for sure. So today u we have
+ 
+
+81
+00:01:23,200 --> 00:01:24,870
+dopamine for sure. So today u we have
+phenomenal models that will continuously
+
+82
+00:01:24,870 --> 00:01:24,880
+phenomenal models that will continuously
+ 
+
+83
+00:01:24,880 --> 00:01:27,429
+phenomenal models that will continuously
+and keep getting better and you know we
+
+84
+00:01:27,429 --> 00:01:27,439
+and keep getting better and you know we
+ 
+
+85
+00:01:27,439 --> 00:01:29,270
+and keep getting better and you know we
+are in a different spot. So scanning and
+
+86
+00:01:29,270 --> 00:01:29,280
+are in a different spot. So scanning and
+ 
+
+87
+00:01:29,280 --> 00:01:31,109
+are in a different spot. So scanning and
+discovering vulnerabilities is feasible
+
+88
+00:01:31,109 --> 00:01:31,119
+discovering vulnerabilities is feasible
+ 
+
+89
+00:01:31,119 --> 00:01:32,870
+discovering vulnerabilities is feasible
+now. It is getting a lot better and
+
+90
+00:01:32,870 --> 00:01:32,880
+now. It is getting a lot better and
+ 
+
+91
+00:01:32,880 --> 00:01:34,950
+now. It is getting a lot better and
+we'll continue to do so and you know we
+
+92
+00:01:34,950 --> 00:01:34,960
+we'll continue to do so and you know we
+ 
+
+93
+00:01:34,960 --> 00:01:36,230
+we'll continue to do so and you know we
+always want to strive for that full
+
+94
+00:01:36,230 --> 00:01:36,240
+always want to strive for that full
+ 
+
+95
+00:01:36,240 --> 00:01:37,749
+always want to strive for that full
+comprehensive coverage. We want all the
+
+96
+00:01:37,749 --> 00:01:37,759
+comprehensive coverage. We want all the
+ 
+
+97
+00:01:37,759 --> 00:01:39,670
+comprehensive coverage. We want all the
+vans scan all the code see all the
+
+98
+00:01:39,670 --> 00:01:39,680
+vans scan all the code see all the
+ 
+
+99
+00:01:39,680 --> 00:01:41,429
+vans scan all the code see all the
+things. Um but there's trade-offs to be
+
+100
+00:01:41,429 --> 00:01:41,439
+things. Um but there's trade-offs to be
+ 
+
+101
+00:01:41,439 --> 00:01:43,030
+things. Um but there's trade-offs to be
+made when we're doing that right and it
+
+102
+00:01:43,030 --> 00:01:43,040
+made when we're doing that right and it
+ 
+
+103
+00:01:43,040 --> 00:01:44,550
+made when we're doing that right and it
+is possible now to get this full
+
+104
+00:01:44,550 --> 00:01:44,560
+is possible now to get this full
+ 
+
+105
+00:01:44,560 --> 00:01:45,910
+is possible now to get this full
+coverage and we'll kind of cover a
+
+106
+00:01:45,910 --> 00:01:45,920
+coverage and we'll kind of cover a
+ 
+
+107
+00:01:45,920 --> 00:01:46,950
+coverage and we'll kind of cover a
+little bit of how that's possible and
+
+108
+00:01:46,950 --> 00:01:46,960
+little bit of how that's possible and
+ 
+
+109
+00:01:46,960 --> 00:01:48,310
+little bit of how that's possible and
+what what the differences are but it
+
+110
+00:01:48,310 --> 00:01:48,320
+what what the differences are but it
+ 
+
+111
+00:01:48,320 --> 00:01:49,910
+what what the differences are but it
+does cost a lot of money. So, there's a
+
+112
+00:01:49,910 --> 00:01:49,920
+does cost a lot of money. So, there's a
+ 
+
+113
+00:01:49,920 --> 00:01:50,950
+does cost a lot of money. So, there's a
+lot of architectural trade-offs
+
+114
+00:01:50,950 --> 00:01:50,960
+lot of architectural trade-offs
+ 
+
+115
+00:01:50,960 --> 00:01:52,069
+lot of architectural trade-offs
+depending on what you're willing to
+
+116
+00:01:52,069 --> 00:01:52,079
+depending on what you're willing to
+ 
+
+117
+00:01:52,079 --> 00:01:53,670
+depending on what you're willing to
+accept and the and the architectural
+
+118
+00:01:53,670 --> 00:01:53,680
+accept and the and the architectural
+ 
+
+119
+00:01:53,680 --> 00:01:56,469
+accept and the and the architectural
+choices that you make. Um, so an
+
+120
+00:01:56,469 --> 00:01:56,479
+choices that you make. Um, so an
+ 
+
+121
+00:01:56,479 --> 00:01:57,429
+choices that you make. Um, so an
+overview of kind of what we want to
+
+122
+00:01:57,429 --> 00:01:57,439
+overview of kind of what we want to
+ 
+
+123
+00:01:57,439 --> 00:01:59,270
+overview of kind of what we want to
+share here today.
+
+124
+00:01:59,270 --> 00:01:59,280
+share here today.
+ 
+
+125
+00:01:59,280 --> 00:02:00,789
+share here today.
+Pardon me. We want to share, you know,
+
+126
+00:02:00,789 --> 00:02:00,799
+Pardon me. We want to share, you know,
+ 
+
+127
+00:02:00,799 --> 00:02:02,310
+Pardon me. We want to share, you know,
+our evaluation, the things that we went
+
+128
+00:02:02,310 --> 00:02:02,320
+our evaluation, the things that we went
+ 
+
+129
+00:02:02,320 --> 00:02:05,030
+our evaluation, the things that we went
+through um to get to more a better place
+
+130
+00:02:05,030 --> 00:02:05,040
+through um to get to more a better place
+ 
+
+131
+00:02:05,040 --> 00:02:06,469
+through um to get to more a better place
+from an architectural perspective for
+
+132
+00:02:06,469 --> 00:02:06,479
+from an architectural perspective for
+ 
+
+133
+00:02:06,479 --> 00:02:07,990
+from an architectural perspective for
+first party discovery. Um, the
+
+134
+00:02:07,990 --> 00:02:08,000
+first party discovery. Um, the
+ 
+
+135
+00:02:08,000 --> 00:02:09,109
+first party discovery. Um, the
+techniques that are worth trying, the
+
+136
+00:02:09,109 --> 00:02:09,119
+techniques that are worth trying, the
+ 
+
+137
+00:02:09,119 --> 00:02:11,029
+techniques that are worth trying, the
+things that we were considering of like
+
+138
+00:02:11,029 --> 00:02:11,039
+things that we were considering of like
+ 
+
+139
+00:02:11,039 --> 00:02:12,869
+things that we were considering of like
+antiatterns, things prevent you all from
+
+140
+00:02:12,869 --> 00:02:12,879
+antiatterns, things prevent you all from
+ 
+
+141
+00:02:12,879 --> 00:02:14,309
+antiatterns, things prevent you all from
+kind of falling into the same pits that
+
+142
+00:02:14,309 --> 00:02:14,319
+kind of falling into the same pits that
+ 
+
+143
+00:02:14,319 --> 00:02:16,390
+kind of falling into the same pits that
+we fell into. We'll share some of the
+
+144
+00:02:16,390 --> 00:02:16,400
+we fell into. We'll share some of the
+ 
+
+145
+00:02:16,400 --> 00:02:18,150
+we fell into. We'll share some of the
+demoralizing moments and the this is
+
+146
+00:02:18,150 --> 00:02:18,160
+demoralizing moments and the this is
+ 
+
+147
+00:02:18,160 --> 00:02:20,229
+demoralizing moments and the this is
+absolutely tragic feelings that we got
+
+148
+00:02:20,229 --> 00:02:20,239
+absolutely tragic feelings that we got
+ 
+
+149
+00:02:20,239 --> 00:02:22,470
+absolutely tragic feelings that we got
+into. Um, and then we'll demo a bit of
+
+150
+00:02:22,470 --> 00:02:22,480
+into. Um, and then we'll demo a bit of
+ 
+
+151
+00:02:22,480 --> 00:02:23,910
+into. Um, and then we'll demo a bit of
+our in-house implementation that we're
+
+152
+00:02:23,910 --> 00:02:23,920
+our in-house implementation that we're
+ 
+
+153
+00:02:23,920 --> 00:02:25,670
+our in-house implementation that we're
+working on for our productionization and
+
+154
+00:02:25,670 --> 00:02:25,680
+working on for our productionization and
+ 
+
+155
+00:02:25,680 --> 00:02:28,150
+working on for our productionization and
+then we'll also share some uh workflows
+
+156
+00:02:28,150 --> 00:02:28,160
+then we'll also share some uh workflows
+ 
+
+157
+00:02:28,160 --> 00:02:30,150
+then we'll also share some uh workflows
+and skills that emulate the testing and
+
+158
+00:02:30,150 --> 00:02:30,160
+and skills that emulate the testing and
+ 
+
+159
+00:02:30,160 --> 00:02:31,830
+and skills that emulate the testing and
+benchmarking that we did so that folks
+
+160
+00:02:31,830 --> 00:02:31,840
+benchmarking that we did so that folks
+ 
+
+161
+00:02:31,840 --> 00:02:33,509
+benchmarking that we did so that folks
+can kind of do this testing on their own
+
+162
+00:02:33,509 --> 00:02:33,519
+can kind of do this testing on their own
+ 
+
+163
+00:02:33,519 --> 00:02:35,270
+can kind of do this testing on their own
+and evolve and see what works best as
+
+164
+00:02:35,270 --> 00:02:35,280
+and evolve and see what works best as
+ 
+
+165
+00:02:35,280 --> 00:02:37,589
+and evolve and see what works best as
+the models continue to evolve as well.
+
+166
+00:02:37,589 --> 00:02:37,599
+the models continue to evolve as well.
+ 
+
+167
+00:02:37,599 --> 00:02:39,110
+the models continue to evolve as well.
+Um, some caveats, we're focusing
+
+168
+00:02:39,110 --> 00:02:39,120
+Um, some caveats, we're focusing
+ 
+
+169
+00:02:39,120 --> 00:02:40,630
+Um, some caveats, we're focusing
+entirely on anthropic based models
+
+170
+00:02:40,630 --> 00:02:40,640
+entirely on anthropic based models
+ 
+
+171
+00:02:40,640 --> 00:02:42,869
+entirely on anthropic based models
+today. Um mainly obviously internally we
+
+172
+00:02:42,869 --> 00:02:42,879
+today. Um mainly obviously internally we
+ 
+
+173
+00:02:42,879 --> 00:02:44,070
+today. Um mainly obviously internally we
+do a lot more iteration and a little bit
+
+174
+00:02:44,070 --> 00:02:44,080
+do a lot more iteration and a little bit
+ 
+
+175
+00:02:44,080 --> 00:02:45,270
+do a lot more iteration and a little bit
+more testing but from a reproduction
+
+176
+00:02:45,270 --> 00:02:45,280
+more testing but from a reproduction
+ 
+
+177
+00:02:45,280 --> 00:02:46,309
+more testing but from a reproduction
+perspective we wanted to make sure that
+
+178
+00:02:46,309 --> 00:02:46,319
+perspective we wanted to make sure that
+ 
+
+179
+00:02:46,319 --> 00:02:47,750
+perspective we wanted to make sure that
+everybody could dive in and do their
+
+180
+00:02:47,750 --> 00:02:47,760
+everybody could dive in and do their
+ 
+
+181
+00:02:47,760 --> 00:02:49,430
+everybody could dive in and do their
+thing um with kind of the tools that
+
+182
+00:02:49,430 --> 00:02:49,440
+thing um with kind of the tools that
+ 
+
+183
+00:02:49,440 --> 00:02:51,110
+thing um with kind of the tools that
+we'll be we'll be sharing. Um the
+
+184
+00:02:51,110 --> 00:02:51,120
+we'll be we'll be sharing. Um the
+ 
+
+185
+00:02:51,120 --> 00:02:52,949
+we'll be we'll be sharing. Um the
+evaluations we say directionally useful
+
+186
+00:02:52,949 --> 00:02:52,959
+evaluations we say directionally useful
+ 
+
+187
+00:02:52,959 --> 00:02:55,509
+evaluations we say directionally useful
+mainly because um we have some you know
+
+188
+00:02:55,509 --> 00:02:55,519
+mainly because um we have some you know
+ 
+
+189
+00:02:55,519 --> 00:02:56,949
+mainly because um we have some you know
+management in the in the audience that
+
+190
+00:02:56,949 --> 00:02:56,959
+management in the in the audience that
+ 
+
+191
+00:02:56,959 --> 00:02:57,990
+management in the in the audience that
+might not be happy if we were running
+
+192
+00:02:57,990 --> 00:02:58,000
+might not be happy if we were running
+ 
+
+193
+00:02:58,000 --> 00:02:59,910
+might not be happy if we were running
+40,000 iterations of some of these test
+
+194
+00:02:59,910 --> 00:02:59,920
+40,000 iterations of some of these test
+ 
+
+195
+00:02:59,920 --> 00:03:02,149
+40,000 iterations of some of these test
+cases. Um but these are things that we
+
+196
+00:03:02,149 --> 00:03:02,159
+cases. Um but these are things that we
+ 
+
+197
+00:03:02,159 --> 00:03:03,830
+cases. Um but these are things that we
+found that are very useful for us. And
+
+198
+00:03:03,830 --> 00:03:03,840
+found that are very useful for us. And
+ 
+
+199
+00:03:03,840 --> 00:03:05,430
+found that are very useful for us. And
+then limitations will highlight you know
+
+200
+00:03:05,430 --> 00:03:05,440
+then limitations will highlight you know
+ 
+
+201
+00:03:05,440 --> 00:03:06,630
+then limitations will highlight you know
+the things we don't know and things we
+
+202
+00:03:06,630 --> 00:03:06,640
+the things we don't know and things we
+ 
+
+203
+00:03:06,640 --> 00:03:08,390
+the things we don't know and things we
+want to dive into. And then iteration
+
+204
+00:03:08,390 --> 00:03:08,400
+want to dive into. And then iteration
+ 
+
+205
+00:03:08,400 --> 00:03:09,589
+want to dive into. And then iteration
+iteration iteration there's always a
+
+206
+00:03:09,589 --> 00:03:09,599
+iteration iteration there's always a
+ 
+
+207
+00:03:09,599 --> 00:03:11,030
+iteration iteration there's always a
+better way. So if you find one, please
+
+208
+00:03:11,030 --> 00:03:11,040
+better way. So if you find one, please
+ 
+
+209
+00:03:11,040 --> 00:03:12,949
+better way. So if you find one, please
+let us know. Um so our goals for this
+
+210
+00:03:12,949 --> 00:03:12,959
+let us know. Um so our goals for this
+ 
+
+211
+00:03:12,959 --> 00:03:14,070
+let us know. Um so our goals for this
+have always been the same. We want to
+
+212
+00:03:14,070 --> 00:03:14,080
+have always been the same. We want to
+ 
+
+213
+00:03:14,080 --> 00:03:16,070
+have always been the same. We want to
+review less more. Um by that we want to
+
+214
+00:03:16,070 --> 00:03:16,080
+review less more. Um by that we want to
+ 
+
+215
+00:03:16,080 --> 00:03:17,110
+review less more. Um by that we want to
+highlight, you know, contextual
+
+216
+00:03:17,110 --> 00:03:17,120
+highlight, you know, contextual
+ 
+
+217
+00:03:17,120 --> 00:03:18,390
+highlight, you know, contextual
+prioritization. So we want to look at
+
+218
+00:03:18,390 --> 00:03:18,400
+prioritization. So we want to look at
+ 
+
+219
+00:03:18,400 --> 00:03:19,830
+prioritization. So we want to look at
+the things that actually matter to us.
+
+220
+00:03:19,830 --> 00:03:19,840
+the things that actually matter to us.
+ 
+
+221
+00:03:19,840 --> 00:03:21,750
+the things that actually matter to us.
+Um we don't want, you know, database
+
+222
+00:03:21,750 --> 00:03:21,760
+Um we don't want, you know, database
+ 
+
+223
+00:03:21,760 --> 00:03:23,030
+Um we don't want, you know, database
+management software getting flagged for
+
+224
+00:03:23,030 --> 00:03:23,040
+management software getting flagged for
+ 
+
+225
+00:03:23,040 --> 00:03:24,630
+management software getting flagged for
+SQL injection vulnerabilities if that's
+
+226
+00:03:24,630 --> 00:03:24,640
+SQL injection vulnerabilities if that's
+ 
+
+227
+00:03:24,640 --> 00:03:25,910
+SQL injection vulnerabilities if that's
+not actually a vulnerability, if that's
+
+228
+00:03:25,910 --> 00:03:25,920
+not actually a vulnerability, if that's
+ 
+
+229
+00:03:25,920 --> 00:03:27,589
+not actually a vulnerability, if that's
+just a use case, right? Um and then we
+
+230
+00:03:27,589 --> 00:03:27,599
+just a use case, right? Um and then we
+ 
+
+231
+00:03:27,599 --> 00:03:29,030
+just a use case, right? Um and then we
+want repeatability and determinism. So
+
+232
+00:03:29,030 --> 00:03:29,040
+want repeatability and determinism. So
+ 
+
+233
+00:03:29,040 --> 00:03:30,309
+want repeatability and determinism. So
+we'll highlight some programmatic use
+
+234
+00:03:30,309 --> 00:03:30,319
+we'll highlight some programmatic use
+ 
+
+235
+00:03:30,319 --> 00:03:31,350
+we'll highlight some programmatic use
+cases and ways we've reduced
+
+236
+00:03:31,350 --> 00:03:31,360
+cases and ways we've reduced
+ 
+
+237
+00:03:31,360 --> 00:03:33,830
+cases and ways we've reduced
+determinism, but also um you know ways
+
+238
+00:03:33,830 --> 00:03:33,840
+determinism, but also um you know ways
+ 
+
+239
+00:03:33,840 --> 00:03:35,110
+determinism, but also um you know ways
+we focus on getting those false
+
+240
+00:03:35,110 --> 00:03:35,120
+we focus on getting those false
+ 
+
+241
+00:03:35,120 --> 00:03:36,550
+we focus on getting those false
+positives out and highlighting only the
+
+242
+00:03:36,550 --> 00:03:36,560
+positives out and highlighting only the
+ 
+
+243
+00:03:36,560 --> 00:03:37,750
+positives out and highlighting only the
+vulnerabilities that we want to spend
+
+244
+00:03:37,750 --> 00:03:37,760
+vulnerabilities that we want to spend
+ 
+
+245
+00:03:37,760 --> 00:03:39,990
+vulnerabilities that we want to spend
+the time looking at.
+
+246
+00:03:39,990 --> 00:03:40,000
+the time looking at.
+ 
+
+247
+00:03:40,000 --> 00:03:42,309
+the time looking at.
+So um we'll cover the timeline. Our
+
+248
+00:03:42,309 --> 00:03:42,319
+So um we'll cover the timeline. Our
+ 
+
+249
+00:03:42,319 --> 00:03:43,910
+So um we'll cover the timeline. Our
+research kind of began, we'll take it
+
+250
+00:03:43,910 --> 00:03:43,920
+research kind of began, we'll take it
+ 
+
+251
+00:03:43,920 --> 00:03:46,390
+research kind of began, we'll take it
+back to like February 2025, uh where we
+
+252
+00:03:46,390 --> 00:03:46,400
+back to like February 2025, uh where we
+ 
+
+253
+00:03:46,400 --> 00:03:48,630
+back to like February 2025, uh where we
+were first first round, first iteration
+
+254
+00:03:48,630 --> 00:03:48,640
+were first first round, first iteration
+ 
+
+255
+00:03:48,640 --> 00:03:50,710
+were first first round, first iteration
+looking at, you know, okay, we can just
+
+256
+00:03:50,710 --> 00:03:50,720
+looking at, you know, okay, we can just
+ 
+
+257
+00:03:50,720 --> 00:03:53,509
+looking at, you know, okay, we can just
+take this brick of text and pump
+
+258
+00:03:53,509 --> 00:03:53,519
+take this brick of text and pump
+ 
+
+259
+00:03:53,519 --> 00:03:55,270
+take this brick of text and pump
+vulnerabilities out of this this genius
+
+260
+00:03:55,270 --> 00:03:55,280
+vulnerabilities out of this this genius
+ 
+
+261
+00:03:55,280 --> 00:03:57,350
+vulnerabilities out of this this genius
+model, right? Um and then we were like,
+
+262
+00:03:57,350 --> 00:03:57,360
+model, right? Um and then we were like,
+ 
+
+263
+00:03:57,360 --> 00:03:59,350
+model, right? Um and then we were like,
+okay, well, new features kept dropping.
+
+264
+00:03:59,350 --> 00:03:59,360
+okay, well, new features kept dropping.
+ 
+
+265
+00:03:59,360 --> 00:04:00,949
+okay, well, new features kept dropping.
+There's orchestration now. We can do
+
+266
+00:04:00,949 --> 00:04:00,959
+There's orchestration now. We can do
+ 
+
+267
+00:04:00,959 --> 00:04:02,630
+There's orchestration now. We can do
+file tracking. We can do state tracking.
+
+268
+00:04:02,630 --> 00:04:02,640
+file tracking. We can do state tracking.
+ 
+
+269
+00:04:02,640 --> 00:04:04,149
+file tracking. We can do state tracking.
+We can do tracing. We can integrate with
+
+270
+00:04:04,149 --> 00:04:04,159
+We can do tracing. We can integrate with
+ 
+
+271
+00:04:04,159 --> 00:04:05,670
+We can do tracing. We can integrate with
+our existing tools. This is looking
+
+272
+00:04:05,670 --> 00:04:05,680
+our existing tools. This is looking
+ 
+
+273
+00:04:05,680 --> 00:04:07,670
+our existing tools. This is looking
+awesome. And then we're like, okay,
+
+274
+00:04:07,670 --> 00:04:07,680
+awesome. And then we're like, okay,
+ 
+
+275
+00:04:07,680 --> 00:04:09,030
+awesome. And then we're like, okay,
+internal stack changes. is we want to
+
+276
+00:04:09,030 --> 00:04:09,040
+internal stack changes. is we want to
+ 
+
+277
+00:04:09,040 --> 00:04:10,710
+internal stack changes. is we want to
+adopt to that. So we move to the IDE
+
+278
+00:04:10,710 --> 00:04:10,720
+adopt to that. So we move to the IDE
+ 
+
+279
+00:04:10,720 --> 00:04:12,229
+adopt to that. So we move to the IDE
+what we're using now. So we switch our
+
+280
+00:04:12,229 --> 00:04:12,239
+what we're using now. So we switch our
+ 
+
+281
+00:04:12,239 --> 00:04:13,429
+what we're using now. So we switch our
+architecture around a little bit. We're
+
+282
+00:04:13,429 --> 00:04:13,439
+architecture around a little bit. We're
+ 
+
+283
+00:04:13,439 --> 00:04:14,550
+architecture around a little bit. We're
+like okay we're still getting pretty
+
+284
+00:04:14,550 --> 00:04:14,560
+like okay we're still getting pretty
+ 
+
+285
+00:04:14,560 --> 00:04:15,990
+like okay we're still getting pretty
+good results. There's a lot more work we
+
+286
+00:04:15,990 --> 00:04:16,000
+good results. There's a lot more work we
+ 
+
+287
+00:04:16,000 --> 00:04:17,349
+good results. There's a lot more work we
+could do. And then we shift again
+
+288
+00:04:17,349 --> 00:04:17,359
+could do. And then we shift again
+ 
+
+289
+00:04:17,359 --> 00:04:18,629
+could do. And then we shift again
+because we realize we need to be ID
+
+290
+00:04:18,629 --> 00:04:18,639
+because we realize we need to be ID
+ 
+
+291
+00:04:18,639 --> 00:04:20,390
+because we realize we need to be ID
+agnostic. So we go to an MCP. We start
+
+292
+00:04:20,390 --> 00:04:20,400
+agnostic. So we go to an MCP. We start
+ 
+
+293
+00:04:20,400 --> 00:04:22,469
+agnostic. So we go to an MCP. We start
+doing context injection, right? And then
+
+294
+00:04:22,469 --> 00:04:22,479
+doing context injection, right? And then
+ 
+
+295
+00:04:22,479 --> 00:04:24,070
+doing context injection, right? And then
+finally we land in this orchestration
+
+296
+00:04:24,070 --> 00:04:24,080
+finally we land in this orchestration
+ 
+
+297
+00:04:24,080 --> 00:04:25,990
+finally we land in this orchestration
+framework that we've developed now which
+
+298
+00:04:25,990 --> 00:04:26,000
+framework that we've developed now which
+ 
+
+299
+00:04:26,000 --> 00:04:27,590
+framework that we've developed now which
+is a little bit of in-house stuff. We'll
+
+300
+00:04:27,590 --> 00:04:27,600
+is a little bit of in-house stuff. We'll
+ 
+
+301
+00:04:27,600 --> 00:04:28,629
+is a little bit of in-house stuff. We'll
+cover kind of what the differences are
+
+302
+00:04:28,629 --> 00:04:28,639
+cover kind of what the differences are
+ 
+
+303
+00:04:28,639 --> 00:04:31,110
+cover kind of what the differences are
+but a lot more feature sets.
+
+304
+00:04:31,110 --> 00:04:31,120
+but a lot more feature sets.
+ 
+
+305
+00:04:31,120 --> 00:04:33,189
+but a lot more feature sets.
+So how we're doing evaluations. The best
+
+306
+00:04:33,189 --> 00:04:33,199
+So how we're doing evaluations. The best
+ 
+
+307
+00:04:33,199 --> 00:04:34,870
+So how we're doing evaluations. The best
+way for us to to go into this our
+
+308
+00:04:34,870 --> 00:04:34,880
+way for us to to go into this our
+ 
+
+309
+00:04:34,880 --> 00:04:36,150
+way for us to to go into this our
+thought process was we need to know what
+
+310
+00:04:36,150 --> 00:04:36,160
+thought process was we need to know what
+ 
+
+311
+00:04:36,160 --> 00:04:37,189
+thought process was we need to know what
+we're looking for so that we can
+
+312
+00:04:37,189 --> 00:04:37,199
+we're looking for so that we can
+ 
+
+313
+00:04:37,199 --> 00:04:38,950
+we're looking for so that we can
+benchmark against it. Right? So we need
+
+314
+00:04:38,950 --> 00:04:38,960
+benchmark against it. Right? So we need
+ 
+
+315
+00:04:38,960 --> 00:04:40,150
+benchmark against it. Right? So we need
+to highlight the vulnerabilities and
+
+316
+00:04:40,150 --> 00:04:40,160
+to highlight the vulnerabilities and
+ 
+
+317
+00:04:40,160 --> 00:04:42,070
+to highlight the vulnerabilities and
+have a set list of things that are known
+
+318
+00:04:42,070 --> 00:04:42,080
+have a set list of things that are known
+ 
+
+319
+00:04:42,080 --> 00:04:44,550
+have a set list of things that are known
+vans but also the the set list of
+
+320
+00:04:44,550 --> 00:04:44,560
+vans but also the the set list of
+ 
+
+321
+00:04:44,560 --> 00:04:45,990
+vans but also the the set list of
+pitfalls right so we need false
+
+322
+00:04:45,990 --> 00:04:46,000
+pitfalls right so we need false
+ 
+
+323
+00:04:46,000 --> 00:04:47,510
+pitfalls right so we need false
+positives we need dead code we need
+
+324
+00:04:47,510 --> 00:04:47,520
+positives we need dead code we need
+ 
+
+325
+00:04:47,520 --> 00:04:49,110
+positives we need dead code we need
+commonly misinterpreted paths and
+
+326
+00:04:49,110 --> 00:04:49,120
+commonly misinterpreted paths and
+ 
+
+327
+00:04:49,120 --> 00:04:51,350
+commonly misinterpreted paths and
+vulnerability pass vulnerability classes
+
+328
+00:04:51,350 --> 00:04:51,360
+vulnerability pass vulnerability classes
+ 
+
+329
+00:04:51,360 --> 00:04:52,790
+vulnerability pass vulnerability classes
+as well as automated metrics gathering
+
+330
+00:04:52,790 --> 00:04:52,800
+as well as automated metrics gathering
+ 
+
+331
+00:04:52,800 --> 00:04:54,550
+as well as automated metrics gathering
+so we can just keep running these tests
+
+332
+00:04:54,550 --> 00:04:54,560
+so we can just keep running these tests
+ 
+
+333
+00:04:54,560 --> 00:04:56,230
+so we can just keep running these tests
+and figuring out what's working for us
+
+334
+00:04:56,230 --> 00:04:56,240
+and figuring out what's working for us
+ 
+
+335
+00:04:56,240 --> 00:04:57,670
+and figuring out what's working for us
+because you might change one line in the
+
+336
+00:04:57,670 --> 00:04:57,680
+because you might change one line in the
+ 
+
+337
+00:04:57,680 --> 00:04:59,510
+because you might change one line in the
+prompt it's a genius now you change it
+
+338
+00:04:59,510 --> 00:04:59,520
+prompt it's a genius now you change it
+ 
+
+339
+00:04:59,520 --> 00:05:02,230
+prompt it's a genius now you change it
+again it's terrible um you add one tool
+
+340
+00:05:02,230 --> 00:05:02,240
+again it's terrible um you add one tool
+ 
+
+341
+00:05:02,240 --> 00:05:04,310
+again it's terrible um you add one tool
+it works great for the first run second
+
+342
+00:05:04,310 --> 00:05:04,320
+it works great for the first run second
+ 
+
+343
+00:05:04,320 --> 00:05:06,310
+it works great for the first run second
+run it doesn't um so we're continuing to
+
+344
+00:05:06,310 --> 00:05:06,320
+run it doesn't um so we're continuing to
+ 
+
+345
+00:05:06,320 --> 00:05:07,510
+run it doesn't um so we're continuing to
+work on that
+
+346
+00:05:07,510 --> 00:05:07,520
+work on that
+ 
+
+347
+00:05:07,520 --> 00:05:08,870
+work on that
+>> yeah and I I want to take folks back
+
+348
+00:05:08,870 --> 00:05:08,880
+>> yeah and I I want to take folks back
+ 
+
+349
+00:05:08,880 --> 00:05:10,710
+>> yeah and I I want to take folks back
+like do you remember I'm curious in the
+
+350
+00:05:10,710 --> 00:05:10,720
+like do you remember I'm curious in the
+ 
+
+351
+00:05:10,720 --> 00:05:12,230
+like do you remember I'm curious in the
+audience like the first time you fired
+
+352
+00:05:12,230 --> 00:05:12,240
+audience like the first time you fired
+ 
+
+353
+00:05:12,240 --> 00:05:14,469
+audience like the first time you fired
+up like an IDE assistant or generative
+
+354
+00:05:14,469 --> 00:05:14,479
+up like an IDE assistant or generative
+ 
+
+355
+00:05:14,479 --> 00:05:15,670
+up like an IDE assistant or generative
+AI assistant and found some
+
+356
+00:05:15,670 --> 00:05:15,680
+AI assistant and found some
+ 
+
+357
+00:05:15,680 --> 00:05:17,749
+AI assistant and found some
+vulnerabilities. Can folks raise a hand.
+
+358
+00:05:17,749 --> 00:05:17,759
+vulnerabilities. Can folks raise a hand.
+ 
+
+359
+00:05:17,759 --> 00:05:19,350
+vulnerabilities. Can folks raise a hand.
+Just kind of curious like it was a
+
+360
+00:05:19,350 --> 00:05:19,360
+Just kind of curious like it was a
+ 
+
+361
+00:05:19,360 --> 00:05:21,510
+Just kind of curious like it was a
+pretty amazing moment for me. I I
+
+362
+00:05:21,510 --> 00:05:21,520
+pretty amazing moment for me. I I
+ 
+
+363
+00:05:21,520 --> 00:05:23,110
+pretty amazing moment for me. I I
+remember finding like I couldn't believe
+
+364
+00:05:23,110 --> 00:05:23,120
+remember finding like I couldn't believe
+ 
+
+365
+00:05:23,120 --> 00:05:25,110
+remember finding like I couldn't believe
+it found serverside request forgery. It
+
+366
+00:05:25,110 --> 00:05:25,120
+it found serverside request forgery. It
+ 
+
+367
+00:05:25,120 --> 00:05:27,670
+it found serverside request forgery. It
+found unsafe serialization. It felt
+
+368
+00:05:27,670 --> 00:05:27,680
+found unsafe serialization. It felt
+ 
+
+369
+00:05:27,680 --> 00:05:29,670
+found unsafe serialization. It felt
+magical. And that was like you know a
+
+370
+00:05:29,670 --> 00:05:29,680
+magical. And that was like you know a
+ 
+
+371
+00:05:29,680 --> 00:05:32,230
+magical. And that was like you know a
+year ago. But then like I'd run into
+
+372
+00:05:32,230 --> 00:05:32,240
+year ago. But then like I'd run into
+ 
+
+373
+00:05:32,240 --> 00:05:33,990
+year ago. But then like I'd run into
+issues like this where all of a sudden
+
+374
+00:05:33,990 --> 00:05:34,000
+issues like this where all of a sudden
+ 
+
+375
+00:05:34,000 --> 00:05:35,749
+issues like this where all of a sudden
+my I was using root code at the time and
+
+376
+00:05:35,749 --> 00:05:35,759
+my I was using root code at the time and
+ 
+
+377
+00:05:35,759 --> 00:05:37,270
+my I was using root code at the time and
+it would just abort a large session and
+
+378
+00:05:37,270 --> 00:05:37,280
+it would just abort a large session and
+ 
+
+379
+00:05:37,280 --> 00:05:39,670
+it would just abort a large session and
+I'd lose the entire history of my prompt
+
+380
+00:05:39,670 --> 00:05:39,680
+I'd lose the entire history of my prompt
+ 
+
+381
+00:05:39,680 --> 00:05:41,590
+I'd lose the entire history of my prompt
+or you didn't update this context file.
+
+382
+00:05:41,590 --> 00:05:41,600
+or you didn't update this context file.
+ 
+
+383
+00:05:41,600 --> 00:05:42,550
+or you didn't update this context file.
+You're supposed to do this. You're
+
+384
+00:05:42,550 --> 00:05:42,560
+You're supposed to do this. You're
+ 
+
+385
+00:05:42,560 --> 00:05:44,469
+You're supposed to do this. You're
+right. I ignored your instructions and
+
+386
+00:05:44,469 --> 00:05:44,479
+right. I ignored your instructions and
+ 
+
+387
+00:05:44,479 --> 00:05:45,590
+right. I ignored your instructions and
+have fun not knowing what
+
+388
+00:05:45,590 --> 00:05:45,600
+have fun not knowing what
+ 
+
+389
+00:05:45,600 --> 00:05:47,590
+have fun not knowing what
+vulnerabilities we found. Or this is a
+
+390
+00:05:47,590 --> 00:05:47,600
+vulnerabilities we found. Or this is a
+ 
+
+391
+00:05:47,600 --> 00:05:48,870
+vulnerabilities we found. Or this is a
+good one. This is just like a gray
+
+392
+00:05:48,870 --> 00:05:48,880
+good one. This is just like a gray
+ 
+
+393
+00:05:48,880 --> 00:05:51,029
+good one. This is just like a gray
+screen that happened uh in rue code. I
+
+394
+00:05:51,029 --> 00:05:51,039
+screen that happened uh in rue code. I
+ 
+
+395
+00:05:51,039 --> 00:05:53,670
+screen that happened uh in rue code. I
+lost the entire coding session. Um or
+
+396
+00:05:53,670 --> 00:05:53,680
+lost the entire coding session. Um or
+ 
+
+397
+00:05:53,680 --> 00:05:55,510
+lost the entire coding session. Um or
+maybe you miss 12 true positives or you
+
+398
+00:05:55,510 --> 00:05:55,520
+maybe you miss 12 true positives or you
+ 
+
+399
+00:05:55,520 --> 00:05:57,350
+maybe you miss 12 true positives or you
+get incorrect severity because several
+
+400
+00:05:57,350 --> 00:05:57,360
+get incorrect severity because several
+ 
+
+401
+00:05:57,360 --> 00:05:59,189
+get incorrect severity because several
+findings aren't even reachable. just
+
+402
+00:05:59,189 --> 00:05:59,199
+findings aren't even reachable. just
+ 
+
+403
+00:05:59,199 --> 00:06:01,430
+findings aren't even reachable. just
+sometimes would skip entire vone classes
+
+404
+00:06:01,430 --> 00:06:01,440
+sometimes would skip entire vone classes
+ 
+
+405
+00:06:01,440 --> 00:06:03,110
+sometimes would skip entire vone classes
+and it's kind of frustrating and so you
+
+406
+00:06:03,110 --> 00:06:03,120
+and it's kind of frustrating and so you
+ 
+
+407
+00:06:03,120 --> 00:06:04,629
+and it's kind of frustrating and so you
+know what we wanted to really do is take
+
+408
+00:06:04,629 --> 00:06:04,639
+know what we wanted to really do is take
+ 
+
+409
+00:06:04,639 --> 00:06:06,309
+know what we wanted to really do is take
+this evaluation and testing based
+
+410
+00:06:06,309 --> 00:06:06,319
+this evaluation and testing based
+ 
+
+411
+00:06:06,319 --> 00:06:08,469
+this evaluation and testing based
+approach um because what we noticed is
+
+412
+00:06:08,469 --> 00:06:08,479
+approach um because what we noticed is
+ 
+
+413
+00:06:08,479 --> 00:06:10,550
+approach um because what we noticed is
+that when models change uh so do the
+
+414
+00:06:10,550 --> 00:06:10,560
+that when models change uh so do the
+ 
+
+415
+00:06:10,560 --> 00:06:12,309
+that when models change uh so do the
+best configurations for the results that
+
+416
+00:06:12,309 --> 00:06:12,319
+best configurations for the results that
+ 
+
+417
+00:06:12,319 --> 00:06:14,550
+best configurations for the results that
+we're looking for. We have a huge set of
+
+418
+00:06:14,550 --> 00:06:14,560
+we're looking for. We have a huge set of
+ 
+
+419
+00:06:14,560 --> 00:06:15,590
+we're looking for. We have a huge set of
+hypotheses that we're going to run
+
+420
+00:06:15,590 --> 00:06:15,600
+hypotheses that we're going to run
+ 
+
+421
+00:06:15,600 --> 00:06:17,110
+hypotheses that we're going to run
+through today. I'm not going to verbatim
+
+422
+00:06:17,110 --> 00:06:17,120
+through today. I'm not going to verbatim
+ 
+
+423
+00:06:17,120 --> 00:06:18,790
+through today. I'm not going to verbatim
+read this slide. Uh one thing I'll draw
+
+424
+00:06:18,790 --> 00:06:18,800
+read this slide. Uh one thing I'll draw
+ 
+
+425
+00:06:18,800 --> 00:06:19,990
+read this slide. Uh one thing I'll draw
+your attention to is that in the middle
+
+426
+00:06:19,990 --> 00:06:20,000
+your attention to is that in the middle
+ 
+
+427
+00:06:20,000 --> 00:06:22,390
+your attention to is that in the middle
+of this talk opus 4.6 six special grade
+
+428
+00:06:22,390 --> 00:06:22,400
+of this talk opus 4.6 six special grade
+ 
+
+429
+00:06:22,400 --> 00:06:25,430
+of this talk opus 4.6 six special grade
+curse dropped and um uh during our talk
+
+430
+00:06:25,430 --> 00:06:25,440
+curse dropped and um uh during our talk
+ 
+
+431
+00:06:25,440 --> 00:06:26,710
+curse dropped and um uh during our talk
+prep and we've been kind of wondering if
+
+432
+00:06:26,710 --> 00:06:26,720
+prep and we've been kind of wondering if
+ 
+
+433
+00:06:26,720 --> 00:06:28,309
+prep and we've been kind of wondering if
+like all the 12-hour days the last few
+
+434
+00:06:28,309 --> 00:06:28,319
+like all the 12-hour days the last few
+ 
+
+435
+00:06:28,319 --> 00:06:29,670
+like all the 12-hour days the last few
+months were actually worth it and it is
+
+436
+00:06:29,670 --> 00:06:29,680
+months were actually worth it and it is
+ 
+
+437
+00:06:29,680 --> 00:06:31,029
+months were actually worth it and it is
+but maybe for different reasons than you
+
+438
+00:06:31,029 --> 00:06:31,039
+but maybe for different reasons than you
+ 
+
+439
+00:06:31,039 --> 00:06:33,110
+but maybe for different reasons than you
+think. I want to start out with the
+
+440
+00:06:33,110 --> 00:06:33,120
+think. I want to start out with the
+ 
+
+441
+00:06:33,120 --> 00:06:34,790
+think. I want to start out with the
+first experiment. Singular security
+
+442
+00:06:34,790 --> 00:06:34,800
+first experiment. Singular security
+ 
+
+443
+00:06:34,800 --> 00:06:37,110
+first experiment. Singular security
+agent versus specialized agents. And so
+
+444
+00:06:37,110 --> 00:06:37,120
+agent versus specialized agents. And so
+ 
+
+445
+00:06:37,120 --> 00:06:38,710
+agent versus specialized agents. And so
+here we had this hypothesis that
+
+446
+00:06:38,710 --> 00:06:38,720
+here we had this hypothesis that
+ 
+
+447
+00:06:38,720 --> 00:06:40,710
+here we had this hypothesis that
+specialized agents would find more bugs
+
+448
+00:06:40,710 --> 00:06:40,720
+specialized agents would find more bugs
+ 
+
+449
+00:06:40,720 --> 00:06:43,110
+specialized agents would find more bugs
+given focused objectives. And so I'll
+
+450
+00:06:43,110 --> 00:06:43,120
+given focused objectives. And so I'll
+ 
+
+451
+00:06:43,120 --> 00:06:44,950
+given focused objectives. And so I'll
+draw your attention in the top left is
+
+452
+00:06:44,950 --> 00:06:44,960
+draw your attention in the top left is
+ 
+
+453
+00:06:44,960 --> 00:06:47,029
+draw your attention in the top left is
+our orchestrated DB. You'll see this
+
+454
+00:06:47,029 --> 00:06:47,039
+our orchestrated DB. You'll see this
+ 
+
+455
+00:06:47,039 --> 00:06:48,790
+our orchestrated DB. You'll see this
+variant continue to show up. This is our
+
+456
+00:06:48,790 --> 00:06:48,800
+variant continue to show up. This is our
+ 
+
+457
+00:06:48,800 --> 00:06:51,029
+variant continue to show up. This is our
+best case uh workflow that we'll
+
+458
+00:06:51,029 --> 00:06:51,039
+best case uh workflow that we'll
+ 
+
+459
+00:06:51,039 --> 00:06:53,029
+best case uh workflow that we'll
+describe near the end of the talk. TP is
+
+460
+00:06:53,029 --> 00:06:53,039
+describe near the end of the talk. TP is
+ 
+
+461
+00:06:53,039 --> 00:06:54,710
+describe near the end of the talk. TP is
+true positive and cost. I'll highlight
+
+462
+00:06:54,710 --> 00:06:54,720
+true positive and cost. I'll highlight
+ 
+
+463
+00:06:54,720 --> 00:06:56,550
+true positive and cost. I'll highlight
+in green the the sections of the metrics
+
+464
+00:06:56,550 --> 00:06:56,560
+in green the the sections of the metrics
+ 
+
+465
+00:06:56,560 --> 00:06:58,150
+in green the the sections of the metrics
+that we're going to be looking at today.
+
+466
+00:06:58,150 --> 00:06:58,160
+that we're going to be looking at today.
+ 
+
+467
+00:06:58,160 --> 00:06:59,990
+that we're going to be looking at today.
+So our super agent is effectively just a
+
+468
+00:06:59,990 --> 00:07:00,000
+So our super agent is effectively just a
+ 
+
+469
+00:07:00,000 --> 00:07:02,550
+So our super agent is effectively just a
+giant monolithic rule file with a tons
+
+470
+00:07:02,550 --> 00:07:02,560
+giant monolithic rule file with a tons
+ 
+
+471
+00:07:02,560 --> 00:07:04,150
+giant monolithic rule file with a tons
+of security context and the reality is
+
+472
+00:07:04,150 --> 00:07:04,160
+of security context and the reality is
+ 
+
+473
+00:07:04,160 --> 00:07:06,790
+of security context and the reality is
+is that uh we're targeting 41 true
+
+474
+00:07:06,790 --> 00:07:06,800
+is that uh we're targeting 41 true
+ 
+
+475
+00:07:06,800 --> 00:07:09,029
+is that uh we're targeting 41 true
+positives for our evaluation benchmark
+
+476
+00:07:09,029 --> 00:07:09,039
+positives for our evaluation benchmark
+ 
+
+477
+00:07:09,039 --> 00:07:11,510
+positives for our evaluation benchmark
+and super agent found about 36 of them
+
+478
+00:07:11,510 --> 00:07:11,520
+and super agent found about 36 of them
+ 
+
+479
+00:07:11,520 --> 00:07:13,749
+and super agent found about 36 of them
+for a much cheaper cost. So what we
+
+480
+00:07:13,749 --> 00:07:13,759
+for a much cheaper cost. So what we
+ 
+
+481
+00:07:13,759 --> 00:07:15,430
+for a much cheaper cost. So what we
+identify is that with claude sonnet as
+
+482
+00:07:15,430 --> 00:07:15,440
+identify is that with claude sonnet as
+ 
+
+483
+00:07:15,440 --> 00:07:17,749
+identify is that with claude sonnet as
+an example um having a monolithic agent
+
+484
+00:07:17,749 --> 00:07:17,759
+an example um having a monolithic agent
+ 
+
+485
+00:07:17,759 --> 00:07:20,309
+an example um having a monolithic agent
+is cost effective but a multi- aent uh
+
+486
+00:07:20,309 --> 00:07:20,319
+is cost effective but a multi- aent uh
+ 
+
+487
+00:07:20,319 --> 00:07:22,710
+is cost effective but a multi- aent uh
+configuration finds more true positives.
+
+488
+00:07:22,710 --> 00:07:22,720
+configuration finds more true positives.
+ 
+
+489
+00:07:22,720 --> 00:07:23,990
+configuration finds more true positives.
+The next thing we looked at was
+
+490
+00:07:23,990 --> 00:07:24,000
+The next thing we looked at was
+ 
+
+491
+00:07:24,000 --> 00:07:26,710
+The next thing we looked at was
+dedicated false positive uh and triage
+
+492
+00:07:26,710 --> 00:07:26,720
+dedicated false positive uh and triage
+ 
+
+493
+00:07:26,720 --> 00:07:28,629
+dedicated false positive uh and triage
+filtering. And we had this hypothesis
+
+494
+00:07:28,629 --> 00:07:28,639
+filtering. And we had this hypothesis
+ 
+
+495
+00:07:28,639 --> 00:07:30,550
+filtering. And we had this hypothesis
+that having false positive and triage in
+
+496
+00:07:30,550 --> 00:07:30,560
+that having false positive and triage in
+ 
+
+497
+00:07:30,560 --> 00:07:32,309
+that having false positive and triage in
+their own agents would be more effective
+
+498
+00:07:32,309 --> 00:07:32,319
+their own agents would be more effective
+ 
+
+499
+00:07:32,319 --> 00:07:33,990
+their own agents would be more effective
+than inter agent determinis
+
+500
+00:07:33,990 --> 00:07:34,000
+than inter agent determinis
+ 
+
+501
+00:07:34,000 --> 00:07:36,550
+than inter agent determinis
+determinations. So in this example on
+
+502
+00:07:36,550 --> 00:07:36,560
+determinations. So in this example on
+ 
+
+503
+00:07:36,560 --> 00:07:38,390
+determinations. So in this example on
+the on the top left we see here's an
+
+504
+00:07:38,390 --> 00:07:38,400
+the on the top left we see here's an
+ 
+
+505
+00:07:38,400 --> 00:07:40,629
+the on the top left we see here's an
+orchestrated scan that has no false
+
+506
+00:07:40,629 --> 00:07:40,639
+orchestrated scan that has no false
+ 
+
+507
+00:07:40,639 --> 00:07:42,469
+orchestrated scan that has no false
+positive checking. And when we evaluated
+
+508
+00:07:42,469 --> 00:07:42,479
+positive checking. And when we evaluated
+ 
+
+509
+00:07:42,479 --> 00:07:45,110
+positive checking. And when we evaluated
+our score sheet, we noticed it had 26%
+
+510
+00:07:45,110 --> 00:07:45,120
+our score sheet, we noticed it had 26%
+ 
+
+511
+00:07:45,120 --> 00:07:48,550
+our score sheet, we noticed it had 26%
+severity uh correct severity assignments
+
+512
+00:07:48,550 --> 00:07:48,560
+severity uh correct severity assignments
+ 
+
+513
+00:07:48,560 --> 00:07:50,469
+severity uh correct severity assignments
+um as opposed to running an orchestrated
+
+514
+00:07:50,469 --> 00:07:50,479
+um as opposed to running an orchestrated
+ 
+
+515
+00:07:50,479 --> 00:07:52,230
+um as opposed to running an orchestrated
+scan with a dedicated false positive
+
+516
+00:07:52,230 --> 00:07:52,240
+scan with a dedicated false positive
+ 
+
+517
+00:07:52,240 --> 00:07:55,830
+scan with a dedicated false positive
+agent resulted in 74%. So uh I would
+
+518
+00:07:55,830 --> 00:07:55,840
+agent resulted in 74%. So uh I would
+ 
+
+519
+00:07:55,840 --> 00:07:57,670
+agent resulted in 74%. So uh I would
+generally recommend like dedicated post
+
+520
+00:07:57,670 --> 00:07:57,680
+generally recommend like dedicated post
+ 
+
+521
+00:07:57,680 --> 00:07:59,350
+generally recommend like dedicated post
+analysis. It's definitely worthwhile.
+
+522
+00:07:59,350 --> 00:07:59,360
+analysis. It's definitely worthwhile.
+ 
+
+523
+00:07:59,360 --> 00:08:00,869
+analysis. It's definitely worthwhile.
+It's worth the the little bit of extra
+
+524
+00:08:00,869 --> 00:08:00,879
+It's worth the the little bit of extra
+ 
+
+525
+00:08:00,879 --> 00:08:02,790
+It's worth the the little bit of extra
+tokens because you'll get correct
+
+526
+00:08:02,790 --> 00:08:02,800
+tokens because you'll get correct
+ 
+
+527
+00:08:02,800 --> 00:08:04,070
+tokens because you'll get correct
+severity assignments which will help you
+
+528
+00:08:04,070 --> 00:08:04,080
+severity assignments which will help you
+ 
+
+529
+00:08:04,080 --> 00:08:06,230
+severity assignments which will help you
+with triage. Next we're going to talk
+
+530
+00:08:06,230 --> 00:08:06,240
+with triage. Next we're going to talk
+ 
+
+531
+00:08:06,240 --> 00:08:08,390
+with triage. Next we're going to talk
+through similar vass grouping versus
+
+532
+00:08:08,390 --> 00:08:08,400
+through similar vass grouping versus
+ 
+
+533
+00:08:08,400 --> 00:08:09,670
+through similar vass grouping versus
+individual agents. We had this
+
+534
+00:08:09,670 --> 00:08:09,680
+individual agents. We had this
+ 
+
+535
+00:08:09,680 --> 00:08:12,070
+individual agents. We had this
+hypothesis that like if we group agents
+
+536
+00:08:12,070 --> 00:08:12,080
+hypothesis that like if we group agents
+ 
+
+537
+00:08:12,080 --> 00:08:15,029
+hypothesis that like if we group agents
+into categories um something like uh
+
+538
+00:08:15,029 --> 00:08:15,039
+into categories um something like uh
+ 
+
+539
+00:08:15,039 --> 00:08:16,550
+into categories um something like uh
+network bugs or injection
+
+540
+00:08:16,550 --> 00:08:16,560
+network bugs or injection
+ 
+
+541
+00:08:16,560 --> 00:08:18,469
+network bugs or injection
+vulnerabilities that we'd save tokens
+
+542
+00:08:18,469 --> 00:08:18,479
+vulnerabilities that we'd save tokens
+ 
+
+543
+00:08:18,479 --> 00:08:20,390
+vulnerabilities that we'd save tokens
+and have pretty good coverage. We were
+
+544
+00:08:20,390 --> 00:08:20,400
+and have pretty good coverage. We were
+ 
+
+545
+00:08:20,400 --> 00:08:22,309
+and have pretty good coverage. We were
+totally wrong on this one. Um the
+
+546
+00:08:22,309 --> 00:08:22,319
+totally wrong on this one. Um the
+ 
+
+547
+00:08:22,319 --> 00:08:25,270
+totally wrong on this one. Um the
+reality was uh when we broke them into
+
+548
+00:08:25,270 --> 00:08:25,280
+reality was uh when we broke them into
+ 
+
+549
+00:08:25,280 --> 00:08:26,550
+reality was uh when we broke them into
+categories instead of running them
+
+550
+00:08:26,550 --> 00:08:26,560
+categories instead of running them
+ 
+
+551
+00:08:26,560 --> 00:08:28,869
+categories instead of running them
+individually. Uh we only found 34 out of
+
+552
+00:08:28,869 --> 00:08:28,879
+individually. Uh we only found 34 out of
+ 
+
+553
+00:08:28,879 --> 00:08:31,270
+individually. Uh we only found 34 out of
+the 41 vulnerabilities. Now the cost was
+
+554
+00:08:31,270 --> 00:08:31,280
+the 41 vulnerabilities. Now the cost was
+ 
+
+555
+00:08:31,280 --> 00:08:34,070
+the 41 vulnerabilities. Now the cost was
+a lot. It saves a lot of tokens, but it
+
+556
+00:08:34,070 --> 00:08:34,080
+a lot. It saves a lot of tokens, but it
+ 
+
+557
+00:08:34,080 --> 00:08:35,829
+a lot. It saves a lot of tokens, but it
+has a super high miss rate. My general
+
+558
+00:08:35,829 --> 00:08:35,839
+has a super high miss rate. My general
+ 
+
+559
+00:08:35,839 --> 00:08:37,589
+has a super high miss rate. My general
+recommendation, don't use categories.
+
+560
+00:08:37,589 --> 00:08:37,599
+recommendation, don't use categories.
+ 
+
+561
+00:08:37,599 --> 00:08:39,110
+recommendation, don't use categories.
+Oh, and we also think it may be
+
+562
+00:08:39,110 --> 00:08:39,120
+Oh, and we also think it may be
+ 
+
+563
+00:08:39,120 --> 00:08:41,190
+Oh, and we also think it may be
+overfitting on category names. Super
+
+564
+00:08:41,190 --> 00:08:41,200
+overfitting on category names. Super
+ 
+
+565
+00:08:41,200 --> 00:08:43,269
+overfitting on category names. Super
+interesting. Um, so something worth
+
+566
+00:08:43,269 --> 00:08:43,279
+interesting. Um, so something worth
+ 
+
+567
+00:08:43,279 --> 00:08:45,190
+interesting. Um, so something worth
+exploring as well. All right.
+
+568
+00:08:45,190 --> 00:08:45,200
+exploring as well. All right.
+ 
+
+569
+00:08:45,200 --> 00:08:47,350
+exploring as well. All right.
+Enumeration, discovery, and tracing.
+
+570
+00:08:47,350 --> 00:08:47,360
+Enumeration, discovery, and tracing.
+ 
+
+571
+00:08:47,360 --> 00:08:49,110
+Enumeration, discovery, and tracing.
+These are stages of the workflow that
+
+572
+00:08:49,110 --> 00:08:49,120
+These are stages of the workflow that
+ 
+
+573
+00:08:49,120 --> 00:08:50,870
+These are stages of the workflow that
+we're going to be describing that we
+
+574
+00:08:50,870 --> 00:08:50,880
+we're going to be describing that we
+ 
+
+575
+00:08:50,880 --> 00:08:52,630
+we're going to be describing that we
+believe would would help us, you know,
+
+576
+00:08:52,630 --> 00:08:52,640
+believe would would help us, you know,
+ 
+
+577
+00:08:52,640 --> 00:08:54,550
+believe would would help us, you know,
+save tokens and improve costs by just
+
+578
+00:08:54,550 --> 00:08:54,560
+save tokens and improve costs by just
+ 
+
+579
+00:08:54,560 --> 00:08:57,030
+save tokens and improve costs by just
+skipping unnecessary files, only loading
+
+580
+00:08:57,030 --> 00:08:57,040
+skipping unnecessary files, only loading
+ 
+
+581
+00:08:57,040 --> 00:08:58,389
+skipping unnecessary files, only loading
+agents that are relevant for the
+
+582
+00:08:58,389 --> 00:08:58,399
+agents that are relevant for the
+ 
+
+583
+00:08:58,399 --> 00:09:00,310
+agents that are relevant for the
+architecture, and tracing sources and
+
+584
+00:09:00,310 --> 00:09:00,320
+architecture, and tracing sources and
+ 
+
+585
+00:09:00,320 --> 00:09:02,630
+architecture, and tracing sources and
+syncs. If you've attended nine out of 10
+
+586
+00:09:02,630 --> 00:09:02,640
+syncs. If you've attended nine out of 10
+ 
+
+587
+00:09:02,640 --> 00:09:04,070
+syncs. If you've attended nine out of 10
+talks, we've been talking a lot about
+
+588
+00:09:04,070 --> 00:09:04,080
+talks, we've been talking a lot about
+ 
+
+589
+00:09:04,080 --> 00:09:06,550
+talks, we've been talking a lot about
+tracing in this conference. And lo and
+
+590
+00:09:06,550 --> 00:09:06,560
+tracing in this conference. And lo and
+ 
+
+591
+00:09:06,560 --> 00:09:08,150
+tracing in this conference. And lo and
+behold, that's actually true. It looks
+
+592
+00:09:08,150 --> 00:09:08,160
+behold, that's actually true. It looks
+ 
+
+593
+00:09:08,160 --> 00:09:10,790
+behold, that's actually true. It looks
+like when we bring in thoughtful context
+
+594
+00:09:10,790 --> 00:09:10,800
+like when we bring in thoughtful context
+ 
+
+595
+00:09:10,800 --> 00:09:13,110
+like when we bring in thoughtful context
+management uh to the agents that it's
+
+596
+00:09:13,110 --> 00:09:13,120
+management uh to the agents that it's
+ 
+
+597
+00:09:13,120 --> 00:09:15,190
+management uh to the agents that it's
+about a 26% cost reduction on most of
+
+598
+00:09:15,190 --> 00:09:15,200
+about a 26% cost reduction on most of
+ 
+
+599
+00:09:15,200 --> 00:09:17,350
+about a 26% cost reduction on most of
+our runs. Uh which is pretty exciting.
+
+600
+00:09:17,350 --> 00:09:17,360
+our runs. Uh which is pretty exciting.
+ 
+
+601
+00:09:17,360 --> 00:09:19,990
+our runs. Uh which is pretty exciting.
+Um and we get better depth uh overall is
+
+602
+00:09:19,990 --> 00:09:20,000
+Um and we get better depth uh overall is
+ 
+
+603
+00:09:20,000 --> 00:09:23,030
+Um and we get better depth uh overall is
+is our hypothesis there. So wanted to
+
+604
+00:09:23,030 --> 00:09:23,040
+is our hypothesis there. So wanted to
+ 
+
+605
+00:09:23,040 --> 00:09:25,110
+is our hypothesis there. So wanted to
+talk through forced file evaluation or
+
+606
+00:09:25,110 --> 00:09:25,120
+talk through forced file evaluation or
+ 
+
+607
+00:09:25,120 --> 00:09:27,110
+talk through forced file evaluation or
+batching. This is the concept of giving
+
+608
+00:09:27,110 --> 00:09:27,120
+batching. This is the concept of giving
+ 
+
+609
+00:09:27,120 --> 00:09:29,190
+batching. This is the concept of giving
+every agent effectively like line by
+
+610
+00:09:29,190 --> 00:09:29,200
+every agent effectively like line by
+ 
+
+611
+00:09:29,200 --> 00:09:31,910
+every agent effectively like line by
+line requirements uh that they have to
+
+612
+00:09:31,910 --> 00:09:31,920
+line requirements uh that they have to
+ 
+
+613
+00:09:31,920 --> 00:09:33,829
+line requirements uh that they have to
+fulfill so we can cover every single
+
+614
+00:09:33,829 --> 00:09:33,839
+fulfill so we can cover every single
+ 
+
+615
+00:09:33,839 --> 00:09:35,030
+fulfill so we can cover every single
+line of code. And for folks that have
+
+616
+00:09:35,030 --> 00:09:35,040
+line of code. And for folks that have
+ 
+
+617
+00:09:35,040 --> 00:09:36,389
+line of code. And for folks that have
+worked in consulting, you know that like
+
+618
+00:09:36,389 --> 00:09:36,399
+worked in consulting, you know that like
+ 
+
+619
+00:09:36,399 --> 00:09:38,310
+worked in consulting, you know that like
+if you're an engineer, that's on an
+
+620
+00:09:38,310 --> 00:09:38,320
+if you're an engineer, that's on an
+ 
+
+621
+00:09:38,320 --> 00:09:39,590
+if you're an engineer, that's on an
+engagement, that could be like months of
+
+622
+00:09:39,590 --> 00:09:39,600
+engagement, that could be like months of
+ 
+
+623
+00:09:39,600 --> 00:09:41,910
+engagement, that could be like months of
+work. So it's expensive. It works really
+
+624
+00:09:41,910 --> 00:09:41,920
+work. So it's expensive. It works really
+ 
+
+625
+00:09:41,920 --> 00:09:44,710
+work. So it's expensive. It works really
+well. Um, but it costs a lot of money.
+
+626
+00:09:44,710 --> 00:09:44,720
+well. Um, but it costs a lot of money.
+ 
+
+627
+00:09:44,720 --> 00:09:46,630
+well. Um, but it costs a lot of money.
+And so this is an example where like if
+
+628
+00:09:46,630 --> 00:09:46,640
+And so this is an example where like if
+ 
+
+629
+00:09:46,640 --> 00:09:48,630
+And so this is an example where like if
+you want to have the agent scan every
+
+630
+00:09:48,630 --> 00:09:48,640
+you want to have the agent scan every
+ 
+
+631
+00:09:48,640 --> 00:09:50,790
+you want to have the agent scan every
+line of code, um, maybe you only do that
+
+632
+00:09:50,790 --> 00:09:50,800
+line of code, um, maybe you only do that
+ 
+
+633
+00:09:50,800 --> 00:09:52,870
+line of code, um, maybe you only do that
+for your most critical code bases. Maybe
+
+634
+00:09:52,870 --> 00:09:52,880
+for your most critical code bases. Maybe
+ 
+
+635
+00:09:52,880 --> 00:09:54,870
+for your most critical code bases. Maybe
+you only do that if you get a signal
+
+636
+00:09:54,870 --> 00:09:54,880
+you only do that if you get a signal
+ 
+
+637
+00:09:54,880 --> 00:09:56,870
+you only do that if you get a signal
+from a lighter scan that there's some
+
+638
+00:09:56,870 --> 00:09:56,880
+from a lighter scan that there's some
+ 
+
+639
+00:09:56,880 --> 00:09:58,310
+from a lighter scan that there's some
+code smells and something you might want
+
+640
+00:09:58,310 --> 00:09:58,320
+code smells and something you might want
+ 
+
+641
+00:09:58,320 --> 00:10:00,630
+code smells and something you might want
+to dig in dig into, but it's definitely
+
+642
+00:10:00,630 --> 00:10:00,640
+to dig in dig into, but it's definitely
+ 
+
+643
+00:10:00,640 --> 00:10:02,790
+to dig in dig into, but it's definitely
+expensive. All right, so let's talk
+
+644
+00:10:02,790 --> 00:10:02,800
+expensive. All right, so let's talk
+ 
+
+645
+00:10:02,800 --> 00:10:05,990
+expensive. All right, so let's talk
+about some not so fun moments. Um, I
+
+646
+00:10:05,990 --> 00:10:06,000
+about some not so fun moments. Um, I
+ 
+
+647
+00:10:06,000 --> 00:10:08,230
+about some not so fun moments. Um, I
+remember spending like half a day trying
+
+648
+00:10:08,230 --> 00:10:08,240
+remember spending like half a day trying
+ 
+
+649
+00:10:08,240 --> 00:10:10,870
+remember spending like half a day trying
+to get uh a claw.p experiment going and
+
+650
+00:10:10,870 --> 00:10:10,880
+to get uh a claw.p experiment going and
+ 
+
+651
+00:10:10,880 --> 00:10:12,310
+to get uh a claw.p experiment going and
+didn't realize it didn't support custom
+
+652
+00:10:12,310 --> 00:10:12,320
+didn't realize it didn't support custom
+ 
+
+653
+00:10:12,320 --> 00:10:15,350
+didn't realize it didn't support custom
+tools. So had to throw it away. Um, it
+
+654
+00:10:15,350 --> 00:10:15,360
+tools. So had to throw it away. Um, it
+ 
+
+655
+00:10:15,360 --> 00:10:17,750
+tools. So had to throw it away. Um, it
+was really fun to like run a 45minute
+
+656
+00:10:17,750 --> 00:10:17,760
+was really fun to like run a 45minute
+ 
+
+657
+00:10:17,760 --> 00:10:20,150
+was really fun to like run a 45minute
+plus scan and then see this autocompact
+
+658
+00:10:20,150 --> 00:10:20,160
+plus scan and then see this autocompact
+ 
+
+659
+00:10:20,160 --> 00:10:22,870
+plus scan and then see this autocompact
+at 0% and just like my heart drops cuz
+
+660
+00:10:22,870 --> 00:10:22,880
+at 0% and just like my heart drops cuz
+ 
+
+661
+00:10:22,880 --> 00:10:23,829
+at 0% and just like my heart drops cuz
+I'm like, "Oh my gosh, am I going to
+
+662
+00:10:23,829 --> 00:10:23,839
+I'm like, "Oh my gosh, am I going to
+ 
+
+663
+00:10:23,839 --> 00:10:25,269
+I'm like, "Oh my gosh, am I going to
+lose fidelity in my scan results?" I
+
+664
+00:10:25,269 --> 00:10:25,279
+lose fidelity in my scan results?" I
+ 
+
+665
+00:10:25,279 --> 00:10:26,310
+lose fidelity in my scan results?" I
+don't know, Justice, like what are some
+
+666
+00:10:26,310 --> 00:10:26,320
+don't know, Justice, like what are some
+ 
+
+667
+00:10:26,320 --> 00:10:27,190
+don't know, Justice, like what are some
+of your favorites?
+
+668
+00:10:27,190 --> 00:10:27,200
+of your favorites?
+ 
+
+669
+00:10:27,200 --> 00:10:29,910
+of your favorites?
+>> Yeah. Um, I'll definitely say that, uh,
+
+670
+00:10:29,910 --> 00:10:29,920
+>> Yeah. Um, I'll definitely say that, uh,
+ 
+
+671
+00:10:29,920 --> 00:10:31,910
+>> Yeah. Um, I'll definitely say that, uh,
+one of my favorites was, um, realizing
+
+672
+00:10:31,910 --> 00:10:31,920
+one of my favorites was, um, realizing
+ 
+
+673
+00:10:31,920 --> 00:10:33,430
+one of my favorites was, um, realizing
+that we've got, you know, starting to
+
+674
+00:10:33,430 --> 00:10:33,440
+that we've got, you know, starting to
+ 
+
+675
+00:10:33,440 --> 00:10:34,630
+that we've got, you know, starting to
+get some really good comprehensive
+
+676
+00:10:34,630 --> 00:10:34,640
+get some really good comprehensive
+ 
+
+677
+00:10:34,640 --> 00:10:36,150
+get some really good comprehensive
+coverage from some of the architectural
+
+678
+00:10:36,150 --> 00:10:36,160
+coverage from some of the architectural
+ 
+
+679
+00:10:36,160 --> 00:10:37,750
+coverage from some of the architectural
+choices we made and we're watching the
+
+680
+00:10:37,750 --> 00:10:37,760
+choices we made and we're watching the
+ 
+
+681
+00:10:37,760 --> 00:10:39,110
+choices we made and we're watching the
+findings come in and we're watching the
+
+682
+00:10:39,110 --> 00:10:39,120
+findings come in and we're watching the
+ 
+
+683
+00:10:39,120 --> 00:10:40,310
+findings come in and we're watching the
+coverage and the tracing and I'm like,
+
+684
+00:10:40,310 --> 00:10:40,320
+coverage and the tracing and I'm like,
+ 
+
+685
+00:10:40,320 --> 00:10:42,389
+coverage and the tracing and I'm like,
+oh my gosh, this is beautiful. And I'm
+
+686
+00:10:42,389 --> 00:10:42,399
+oh my gosh, this is beautiful. And I'm
+ 
+
+687
+00:10:42,399 --> 00:10:44,470
+oh my gosh, this is beautiful. And I'm
+like, it's still running. The tokens are
+
+688
+00:10:44,470 --> 00:10:44,480
+like, it's still running. The tokens are
+ 
+
+689
+00:10:44,480 --> 00:10:47,190
+like, it's still running. The tokens are
+still increasing and you realize that
+
+690
+00:10:47,190 --> 00:10:47,200
+still increasing and you realize that
+ 
+
+691
+00:10:47,200 --> 00:10:48,550
+still increasing and you realize that
+someone's going to get an alert from a
+
+692
+00:10:48,550 --> 00:10:48,560
+someone's going to get an alert from a
+ 
+
+693
+00:10:48,560 --> 00:10:51,670
+someone's going to get an alert from a
+pricing model and have to leap across
+
+694
+00:10:51,670 --> 00:10:51,680
+pricing model and have to leap across
+ 
+
+695
+00:10:51,680 --> 00:10:53,750
+pricing model and have to leap across
+the desk for a quick control C. Um, and
+
+696
+00:10:53,750 --> 00:10:53,760
+the desk for a quick control C. Um, and
+ 
+
+697
+00:10:53,760 --> 00:10:55,269
+the desk for a quick control C. Um, and
+then also this upper right hand corner
+
+698
+00:10:55,269 --> 00:10:55,279
+then also this upper right hand corner
+ 
+
+699
+00:10:55,279 --> 00:10:57,190
+then also this upper right hand corner
+is my uh cloud code turning into a
+
+700
+00:10:57,190 --> 00:10:57,200
+is my uh cloud code turning into a
+ 
+
+701
+00:10:57,200 --> 00:10:59,430
+is my uh cloud code turning into a
+JavaScript pile for whatever reason and
+
+702
+00:10:59,430 --> 00:10:59,440
+JavaScript pile for whatever reason and
+ 
+
+703
+00:10:59,440 --> 00:11:00,310
+JavaScript pile for whatever reason and
+losing everything. So
+
+704
+00:11:00,310 --> 00:11:00,320
+losing everything. So
+ 
+
+705
+00:11:00,320 --> 00:11:01,750
+losing everything. So
+>> yeah, always great to when your cloud
+
+706
+00:11:01,750 --> 00:11:01,760
+>> yeah, always great to when your cloud
+ 
+
+707
+00:11:01,760 --> 00:11:03,910
+>> yeah, always great to when your cloud
+code just decides to turn pink. How fun
+
+708
+00:11:03,910 --> 00:11:03,920
+code just decides to turn pink. How fun
+ 
+
+709
+00:11:03,920 --> 00:11:05,829
+code just decides to turn pink. How fun
+is that? We also had some fun moments.
+
+710
+00:11:05,829 --> 00:11:05,839
+is that? We also had some fun moments.
+ 
+
+711
+00:11:05,839 --> 00:11:07,910
+is that? We also had some fun moments.
+We've been doing a set of disclosures,
+
+712
+00:11:07,910 --> 00:11:07,920
+We've been doing a set of disclosures,
+ 
+
+713
+00:11:07,920 --> 00:11:09,269
+We've been doing a set of disclosures,
+responsible disclosures and and
+
+714
+00:11:09,269 --> 00:11:09,279
+responsible disclosures and and
+ 
+
+715
+00:11:09,279 --> 00:11:11,590
+responsible disclosures and and
+submitting PRs to popular projects. Sort
+
+716
+00:11:11,590 --> 00:11:11,600
+submitting PRs to popular projects. Sort
+ 
+
+717
+00:11:11,600 --> 00:11:12,949
+submitting PRs to popular projects. Sort
+of our filter for the projects we were
+
+718
+00:11:12,949 --> 00:11:12,959
+of our filter for the projects we were
+ 
+
+719
+00:11:12,959 --> 00:11:15,990
+of our filter for the projects we were
+choosing was over 5,000 stars and is
+
+720
+00:11:15,990 --> 00:11:16,000
+choosing was over 5,000 stars and is
+ 
+
+721
+00:11:16,000 --> 00:11:18,710
+choosing was over 5,000 stars and is
+most likely a remote API, something that
+
+722
+00:11:18,710 --> 00:11:18,720
+most likely a remote API, something that
+ 
+
+723
+00:11:18,720 --> 00:11:20,230
+most likely a remote API, something that
+we would sort of see in a first party
+
+724
+00:11:20,230 --> 00:11:20,240
+we would sort of see in a first party
+ 
+
+725
+00:11:20,240 --> 00:11:22,310
+we would sort of see in a first party
+like envir environment. Uh, one of the
+
+726
+00:11:22,310 --> 00:11:22,320
+like envir environment. Uh, one of the
+ 
+
+727
+00:11:22,320 --> 00:11:23,990
+like envir environment. Uh, one of the
+vulnerabilities I was the most excited
+
+728
+00:11:23,990 --> 00:11:24,000
+vulnerabilities I was the most excited
+ 
+
+729
+00:11:24,000 --> 00:11:26,069
+vulnerabilities I was the most excited
+to have us discover was a double spend,
+
+730
+00:11:26,069 --> 00:11:26,079
+to have us discover was a double spend,
+ 
+
+731
+00:11:26,079 --> 00:11:27,590
+to have us discover was a double spend,
+a time of check, time of use
+
+732
+00:11:27,590 --> 00:11:27,600
+a time of check, time of use
+ 
+
+733
+00:11:27,600 --> 00:11:29,350
+a time of check, time of use
+vulnerability in a trading platform. It
+
+734
+00:11:29,350 --> 00:11:29,360
+vulnerability in a trading platform. It
+ 
+
+735
+00:11:29,360 --> 00:11:31,110
+vulnerability in a trading platform. It
+allowed you to get free money. Those are
+
+736
+00:11:31,110 --> 00:11:31,120
+allowed you to get free money. Those are
+ 
+
+737
+00:11:31,120 --> 00:11:32,470
+allowed you to get free money. Those are
+my favorite hacks of all time. I don't
+
+738
+00:11:32,470 --> 00:11:32,480
+my favorite hacks of all time. I don't
+ 
+
+739
+00:11:32,480 --> 00:11:33,750
+my favorite hacks of all time. I don't
+know, Justice, how about you?
+
+740
+00:11:33,750 --> 00:11:33,760
+know, Justice, how about you?
+ 
+
+741
+00:11:33,760 --> 00:11:35,269
+know, Justice, how about you?
+>> Yeah. Um, definitely a couple. I think
+
+742
+00:11:35,269 --> 00:11:35,279
+>> Yeah. Um, definitely a couple. I think
+ 
+
+743
+00:11:35,279 --> 00:11:36,310
+>> Yeah. Um, definitely a couple. I think
+one was really interesting for
+
+744
+00:11:36,310 --> 00:11:36,320
+one was really interesting for
+ 
+
+745
+00:11:36,320 --> 00:11:37,269
+one was really interesting for
+potentially for like internal
+
+746
+00:11:37,269 --> 00:11:37,279
+potentially for like internal
+ 
+
+747
+00:11:37,279 --> 00:11:38,470
+potentially for like internal
+assessments, internal penetration
+
+748
+00:11:38,470 --> 00:11:38,480
+assessments, internal penetration
+ 
+
+749
+00:11:38,480 --> 00:11:40,069
+assessments, internal penetration
+testing. We found essent a command
+
+750
+00:11:40,069 --> 00:11:40,079
+testing. We found essent a command
+ 
+
+751
+00:11:40,079 --> 00:11:41,910
+testing. We found essent a command
+injection vulnerability in a VIP stack.
+
+752
+00:11:41,910 --> 00:11:41,920
+injection vulnerability in a VIP stack.
+ 
+
+753
+00:11:41,920 --> 00:11:45,030
+injection vulnerability in a VIP stack.
+So, it amounted to being we'll say RC
+
+754
+00:11:45,030 --> 00:11:45,040
+So, it amounted to being we'll say RC
+ 
+
+755
+00:11:45,040 --> 00:11:49,030
+So, it amounted to being we'll say RC
+arbitrary rce over uh over fax, which is
+
+756
+00:11:49,030 --> 00:11:49,040
+arbitrary rce over uh over fax, which is
+ 
+
+757
+00:11:49,040 --> 00:11:52,069
+arbitrary rce over uh over fax, which is
+pretty cool. Um, and then, uh, I'll say
+
+758
+00:11:52,069 --> 00:11:52,079
+pretty cool. Um, and then, uh, I'll say
+ 
+
+759
+00:11:52,079 --> 00:11:53,350
+pretty cool. Um, and then, uh, I'll say
+this upper right hand corner, this
+
+760
+00:11:53,350 --> 00:11:53,360
+this upper right hand corner, this
+ 
+
+761
+00:11:53,360 --> 00:11:55,509
+this upper right hand corner, this
+unnamed developer, this was we reported
+
+762
+00:11:55,509 --> 00:11:55,519
+unnamed developer, this was we reported
+ 
+
+763
+00:11:55,519 --> 00:11:56,710
+unnamed developer, this was we reported
+a couple of vulnerabilities, pretty high
+
+764
+00:11:56,710 --> 00:11:56,720
+a couple of vulnerabilities, pretty high
+ 
+
+765
+00:11:56,720 --> 00:11:59,110
+a couple of vulnerabilities, pretty high
+severity, and noticed that we're getting
+
+766
+00:11:59,110 --> 00:11:59,120
+severity, and noticed that we're getting
+ 
+
+767
+00:11:59,120 --> 00:12:01,110
+severity, and noticed that we're getting
+closed and card called, well, we'll say
+
+768
+00:12:01,110 --> 00:12:01,120
+closed and card called, well, we'll say
+ 
+
+769
+00:12:01,120 --> 00:12:03,509
+closed and card called, well, we'll say
+garbage, not nice names. And then, this
+
+770
+00:12:03,509 --> 00:12:03,519
+garbage, not nice names. And then, this
+ 
+
+771
+00:12:03,519 --> 00:12:04,550
+garbage, not nice names. And then, this
+is not their name, by the way. Don't
+
+772
+00:12:04,550 --> 00:12:04,560
+is not their name, by the way. Don't
+ 
+
+773
+00:12:04,560 --> 00:12:06,230
+is not their name, by the way. Don't
+harass whoever has this actual handle on
+
+774
+00:12:06,230 --> 00:12:06,240
+harass whoever has this actual handle on
+ 
+
+775
+00:12:06,240 --> 00:12:07,990
+harass whoever has this actual handle on
+GitHub. Um, but we went back and we're
+
+776
+00:12:07,990 --> 00:12:08,000
+GitHub. Um, but we went back and we're
+ 
+
+777
+00:12:08,000 --> 00:12:09,030
+GitHub. Um, but we went back and we're
+like, I wonder what they did. They
+
+778
+00:12:09,030 --> 00:12:09,040
+like, I wonder what they did. They
+ 
+
+779
+00:12:09,040 --> 00:12:10,870
+like, I wonder what they did. They
+patched all of them. So, shout out to
+
+780
+00:12:10,870 --> 00:12:10,880
+patched all of them. So, shout out to
+ 
+
+781
+00:12:10,880 --> 00:12:12,870
+patched all of them. So, shout out to
+you for
+
+782
+00:12:12,870 --> 00:12:12,880
+you for
+ 
+
+783
+00:12:12,880 --> 00:12:14,069
+you for
+there was like and then there was a lot
+
+784
+00:12:14,069 --> 00:12:14,079
+there was like and then there was a lot
+ 
+
+785
+00:12:14,079 --> 00:12:15,910
+there was like and then there was a lot
+of late nights over our research thing.
+
+786
+00:12:15,910 --> 00:12:15,920
+of late nights over our research thing.
+ 
+
+787
+00:12:15,920 --> 00:12:17,990
+of late nights over our research thing.
+Here's me at like 8:00 at night for
+
+788
+00:12:17,990 --> 00:12:18,000
+Here's me at like 8:00 at night for
+ 
+
+789
+00:12:18,000 --> 00:12:19,269
+Here's me at like 8:00 at night for
+Justice. That's like 10 cuz he's in
+
+790
+00:12:19,269 --> 00:12:19,279
+Justice. That's like 10 cuz he's in
+ 
+
+791
+00:12:19,279 --> 00:12:20,790
+Justice. That's like 10 cuz he's in
+central time. I'm like super confused
+
+792
+00:12:20,790 --> 00:12:20,800
+central time. I'm like super confused
+ 
+
+793
+00:12:20,800 --> 00:12:24,710
+central time. I'm like super confused
+and sad. Um because like sometimes when
+
+794
+00:12:24,710 --> 00:12:24,720
+and sad. Um because like sometimes when
+ 
+
+795
+00:12:24,720 --> 00:12:26,389
+and sad. Um because like sometimes when
+we were working on the baselining I just
+
+796
+00:12:26,389 --> 00:12:26,399
+we were working on the baselining I just
+ 
+
+797
+00:12:26,399 --> 00:12:28,069
+we were working on the baselining I just
+didn't understand why things were
+
+798
+00:12:28,069 --> 00:12:28,079
+didn't understand why things were
+ 
+
+799
+00:12:28,079 --> 00:12:30,230
+didn't understand why things were
+looking different. I was like was it me?
+
+800
+00:12:30,230 --> 00:12:30,240
+looking different. I was like was it me?
+ 
+
+801
+00:12:30,240 --> 00:12:31,430
+looking different. I was like was it me?
+And that made it really comp
+
+802
+00:12:31,430 --> 00:12:31,440
+And that made it really comp
+ 
+
+803
+00:12:31,440 --> 00:12:33,030
+And that made it really comp
+complicated. I wanted to find out for
+
+804
+00:12:33,030 --> 00:12:33,040
+complicated. I wanted to find out for
+ 
+
+805
+00:12:33,040 --> 00:12:33,430
+complicated. I wanted to find out for
+you.
+
+806
+00:12:33,430 --> 00:12:33,440
+you.
+ 
+
+807
+00:12:33,440 --> 00:12:34,790
+you.
+>> Yeah. And I think like one thing that
+
+808
+00:12:34,790 --> 00:12:34,800
+>> Yeah. And I think like one thing that
+ 
+
+809
+00:12:34,800 --> 00:12:36,389
+>> Yeah. And I think like one thing that
+you have to all realize is like these
+
+810
+00:12:36,389 --> 00:12:36,399
+you have to all realize is like these
+ 
+
+811
+00:12:36,399 --> 00:12:37,910
+you have to all realize is like these
+tests will continue to change and that's
+
+812
+00:12:37,910 --> 00:12:37,920
+tests will continue to change and that's
+ 
+
+813
+00:12:37,920 --> 00:12:38,949
+tests will continue to change and that's
+why it's important for us to keep
+
+814
+00:12:38,949 --> 00:12:38,959
+why it's important for us to keep
+ 
+
+815
+00:12:38,959 --> 00:12:40,470
+why it's important for us to keep
+running them because every once in a
+
+816
+00:12:40,470 --> 00:12:40,480
+running them because every once in a
+ 
+
+817
+00:12:40,480 --> 00:12:42,470
+running them because every once in a
+while the model will just seem to append
+
+818
+00:12:42,470 --> 00:12:42,480
+while the model will just seem to append
+ 
+
+819
+00:12:42,480 --> 00:12:43,990
+while the model will just seem to append
+a couple more brain cells and you're
+
+820
+00:12:43,990 --> 00:12:44,000
+a couple more brain cells and you're
+ 
+
+821
+00:12:44,000 --> 00:12:45,990
+a couple more brain cells and you're
+like I solved everything. We are the
+
+822
+00:12:45,990 --> 00:12:46,000
+like I solved everything. We are the
+ 
+
+823
+00:12:46,000 --> 00:12:47,670
+like I solved everything. We are the
+best. This is phenomenal. And then the
+
+824
+00:12:47,670 --> 00:12:47,680
+best. This is phenomenal. And then the
+ 
+
+825
+00:12:47,680 --> 00:12:48,870
+best. This is phenomenal. And then the
+next five runs will look a little bit
+
+826
+00:12:48,870 --> 00:12:48,880
+next five runs will look a little bit
+ 
+
+827
+00:12:48,880 --> 00:12:50,069
+next five runs will look a little bit
+different. So
+
+828
+00:12:50,069 --> 00:12:50,079
+different. So
+ 
+
+829
+00:12:50,079 --> 00:12:51,509
+different. So
+>> yeah, and then you know at one point I
+
+830
+00:12:51,509 --> 00:12:51,519
+>> yeah, and then you know at one point I
+ 
+
+831
+00:12:51,519 --> 00:12:52,710
+>> yeah, and then you know at one point I
+get this ping from Justice in the
+
+832
+00:12:52,710 --> 00:12:52,720
+get this ping from Justice in the
+ 
+
+833
+00:12:52,720 --> 00:12:53,670
+get this ping from Justice in the
+morning. He's like, "Hey, did you see
+
+834
+00:12:53,670 --> 00:12:53,680
+morning. He's like, "Hey, did you see
+ 
+
+835
+00:12:53,680 --> 00:12:56,790
+morning. He's like, "Hey, did you see
+Opus4.6 dropped?" And it's likeun
+
+836
+00:12:56,790 --> 00:12:56,800
+Opus4.6 dropped?" And it's likeun
+ 
+
+837
+00:12:56,800 --> 00:12:58,710
+Opus4.6 dropped?" And it's likeun
+um and we want to actually walk you
+
+838
+00:12:58,710 --> 00:12:58,720
+um and we want to actually walk you
+ 
+
+839
+00:12:58,720 --> 00:13:00,069
+um and we want to actually walk you
+through a little bit of what we found.
+
+840
+00:13:00,069 --> 00:13:00,079
+through a little bit of what we found.
+ 
+
+841
+00:13:00,079 --> 00:13:03,190
+through a little bit of what we found.
+So Opus.4.6 on a small codebase.
+
+842
+00:13:03,190 --> 00:13:03,200
+So Opus.4.6 on a small codebase.
+ 
+
+843
+00:13:03,200 --> 00:13:05,190
+So Opus.4.6 on a small codebase.
+Absolutely fantastic. Uh think about
+
+844
+00:13:05,190 --> 00:13:05,200
+Absolutely fantastic. Uh think about
+ 
+
+845
+00:13:05,200 --> 00:13:06,710
+Absolutely fantastic. Uh think about
+codebase maybe have one or two thousand
+
+846
+00:13:06,710 --> 00:13:06,720
+codebase maybe have one or two thousand
+ 
+
+847
+00:13:06,720 --> 00:13:08,629
+codebase maybe have one or two thousand
+lines of code. Uh we found that with a
+
+848
+00:13:08,629 --> 00:13:08,639
+lines of code. Uh we found that with a
+ 
+
+849
+00:13:08,639 --> 00:13:10,310
+lines of code. Uh we found that with a
+little bit of you know crafty prompting
+
+850
+00:13:10,310 --> 00:13:10,320
+little bit of you know crafty prompting
+ 
+
+851
+00:13:10,320 --> 00:13:12,310
+little bit of you know crafty prompting
+that we could get close to 41 true
+
+852
+00:13:12,310 --> 00:13:12,320
+that we could get close to 41 true
+ 
+
+853
+00:13:12,320 --> 00:13:14,790
+that we could get close to 41 true
+positives. Uh about 38 on average which
+
+854
+00:13:14,790 --> 00:13:14,800
+positives. Uh about 38 on average which
+ 
+
+855
+00:13:14,800 --> 00:13:16,629
+positives. Uh about 38 on average which
+is exciting. However, things really
+
+856
+00:13:16,629 --> 00:13:16,639
+is exciting. However, things really
+ 
+
+857
+00:13:16,639 --> 00:13:18,069
+is exciting. However, things really
+change when we start to get the large
+
+858
+00:13:18,069 --> 00:13:18,079
+change when we start to get the large
+ 
+
+859
+00:13:18,079 --> 00:13:20,310
+change when we start to get the large
+code bases. Think code bases over 30,000
+
+860
+00:13:20,310 --> 00:13:20,320
+code bases. Think code bases over 30,000
+ 
+
+861
+00:13:20,320 --> 00:13:23,350
+code bases. Think code bases over 30,000
+lines of code or over 125 files. On the
+
+862
+00:13:23,350 --> 00:13:23,360
+lines of code or over 125 files. On the
+ 
+
+863
+00:13:23,360 --> 00:13:25,670
+lines of code or over 125 files. On the
+left, audience left. Yep. On the left,
+
+864
+00:13:25,670 --> 00:13:25,680
+left, audience left. Yep. On the left,
+ 
+
+865
+00:13:25,680 --> 00:13:28,629
+left, audience left. Yep. On the left,
+you'll see um Opus in a solo mode here.
+
+866
+00:13:28,629 --> 00:13:28,639
+you'll see um Opus in a solo mode here.
+ 
+
+867
+00:13:28,639 --> 00:13:32,150
+you'll see um Opus in a solo mode here.
+And um it found of the expected 191 on
+
+868
+00:13:32,150 --> 00:13:32,160
+And um it found of the expected 191 on
+ 
+
+869
+00:13:32,160 --> 00:13:34,230
+And um it found of the expected 191 on
+our extra large codebase, 40 true
+
+870
+00:13:34,230 --> 00:13:34,240
+our extra large codebase, 40 true
+ 
+
+871
+00:13:34,240 --> 00:13:37,110
+our extra large codebase, 40 true
+positives, while the super agent uh
+
+872
+00:13:37,110 --> 00:13:37,120
+positives, while the super agent uh
+ 
+
+873
+00:13:37,120 --> 00:13:38,470
+positives, while the super agent uh
+effectively just a monolithic prompt
+
+874
+00:13:38,470 --> 00:13:38,480
+effectively just a monolithic prompt
+ 
+
+875
+00:13:38,480 --> 00:13:41,269
+effectively just a monolithic prompt
+with a less powerful model found 80. And
+
+876
+00:13:41,269 --> 00:13:41,279
+with a less powerful model found 80. And
+ 
+
+877
+00:13:41,279 --> 00:13:43,190
+with a less powerful model found 80. And
+if we orchestrate that into a workflow,
+
+878
+00:13:43,190 --> 00:13:43,200
+if we orchestrate that into a workflow,
+ 
+
+879
+00:13:43,200 --> 00:13:45,750
+if we orchestrate that into a workflow,
+we find 116. So what does this really
+
+880
+00:13:45,750 --> 00:13:45,760
+we find 116. So what does this really
+ 
+
+881
+00:13:45,760 --> 00:13:47,430
+we find 116. So what does this really
+suggest? I think it suggests for large
+
+882
+00:13:47,430 --> 00:13:47,440
+suggest? I think it suggests for large
+ 
+
+883
+00:13:47,440 --> 00:13:49,110
+suggest? I think it suggests for large
+code bases being really thoughtful about
+
+884
+00:13:49,110 --> 00:13:49,120
+code bases being really thoughtful about
+ 
+
+885
+00:13:49,120 --> 00:13:51,110
+code bases being really thoughtful about
+your context management in your workflow
+
+886
+00:13:51,110 --> 00:13:51,120
+your context management in your workflow
+ 
+
+887
+00:13:51,120 --> 00:13:53,190
+your context management in your workflow
+can result in higher fidelity results
+
+888
+00:13:53,190 --> 00:13:53,200
+can result in higher fidelity results
+ 
+
+889
+00:13:53,200 --> 00:13:54,790
+can result in higher fidelity results
+even more than a really powerful model
+
+890
+00:13:54,790 --> 00:13:54,800
+even more than a really powerful model
+ 
+
+891
+00:13:54,800 --> 00:13:56,790
+even more than a really powerful model
+like opus. There might be a way to get
+
+892
+00:13:56,790 --> 00:13:56,800
+like opus. There might be a way to get
+ 
+
+893
+00:13:56,800 --> 00:13:58,230
+like opus. There might be a way to get
+all the way there. So if you're a person
+
+894
+00:13:58,230 --> 00:13:58,240
+all the way there. So if you're a person
+ 
+
+895
+00:13:58,240 --> 00:14:00,230
+all the way there. So if you're a person
+who's like I can find all the way to get
+
+896
+00:14:00,230 --> 00:14:00,240
+who's like I can find all the way to get
+ 
+
+897
+00:14:00,240 --> 00:14:01,670
+who's like I can find all the way to get
+all the way there. Come talk to us. We'd
+
+898
+00:14:01,670 --> 00:14:01,680
+all the way there. Come talk to us. We'd
+ 
+
+899
+00:14:01,680 --> 00:14:03,990
+all the way there. Come talk to us. We'd
+love to learn more. Just why don't you
+
+900
+00:14:03,990 --> 00:14:04,000
+love to learn more. Just why don't you
+ 
+
+901
+00:14:04,000 --> 00:14:05,030
+love to learn more. Just why don't you
+walk us through the workflow?
+
+902
+00:14:05,030 --> 00:14:05,040
+walk us through the workflow?
+ 
+
+903
+00:14:05,040 --> 00:14:06,710
+walk us through the workflow?
+>> Yeah. So um this is essentially the
+
+904
+00:14:06,710 --> 00:14:06,720
+>> Yeah. So um this is essentially the
+ 
+
+905
+00:14:06,720 --> 00:14:08,230
+>> Yeah. So um this is essentially the
+workflow like architecture and
+
+906
+00:14:08,230 --> 00:14:08,240
+workflow like architecture and
+ 
+
+907
+00:14:08,240 --> 00:14:10,230
+workflow like architecture and
+orchestration that we've been working on
+
+908
+00:14:10,230 --> 00:14:10,240
+orchestration that we've been working on
+ 
+
+909
+00:14:10,240 --> 00:14:12,710
+orchestration that we've been working on
+internally. So heavy heavy heavy focus
+
+910
+00:14:12,710 --> 00:14:12,720
+internally. So heavy heavy heavy focus
+ 
+
+911
+00:14:12,720 --> 00:14:14,710
+internally. So heavy heavy heavy focus
+on like programmatic determinism where
+
+912
+00:14:14,710 --> 00:14:14,720
+on like programmatic determinism where
+ 
+
+913
+00:14:14,720 --> 00:14:16,310
+on like programmatic determinism where
+we can. So think you know when you're
+
+914
+00:14:16,310 --> 00:14:16,320
+we can. So think you know when you're
+ 
+
+915
+00:14:16,320 --> 00:14:18,069
+we can. So think you know when you're
+walking the file tree for the repository
+
+916
+00:14:18,069 --> 00:14:18,079
+walking the file tree for the repository
+ 
+
+917
+00:14:18,079 --> 00:14:19,670
+walking the file tree for the repository
+omitting things like tests build
+
+918
+00:14:19,670 --> 00:14:19,680
+omitting things like tests build
+ 
+
+919
+00:14:19,680 --> 00:14:21,590
+omitting things like tests build
+artifacts examples things like that that
+
+920
+00:14:21,590 --> 00:14:21,600
+artifacts examples things like that that
+ 
+
+921
+00:14:21,600 --> 00:14:22,710
+artifacts examples things like that that
+we don't want the models to be
+
+922
+00:14:22,710 --> 00:14:22,720
+we don't want the models to be
+ 
+
+923
+00:14:22,720 --> 00:14:24,230
+we don't want the models to be
+processing in all use cases and then
+
+924
+00:14:24,230 --> 00:14:24,240
+processing in all use cases and then
+ 
+
+925
+00:14:24,240 --> 00:14:26,310
+processing in all use cases and then
+focusing on the ones that we do. um that
+
+926
+00:14:26,310 --> 00:14:26,320
+focusing on the ones that we do. um that
+ 
+
+927
+00:14:26,320 --> 00:14:27,910
+focusing on the ones that we do. um that
+discovery and priming phase is looking
+
+928
+00:14:27,910 --> 00:14:27,920
+discovery and priming phase is looking
+ 
+
+929
+00:14:27,920 --> 00:14:29,030
+discovery and priming phase is looking
+for you know we're leveraging all the
+
+930
+00:14:29,030 --> 00:14:29,040
+for you know we're leveraging all the
+ 
+
+931
+00:14:29,040 --> 00:14:31,269
+for you know we're leveraging all the
+tools in our kit right so think um think
+
+932
+00:14:31,269 --> 00:14:31,279
+tools in our kit right so think um think
+ 
+
+933
+00:14:31,279 --> 00:14:35,030
+tools in our kit right so think um think
+a think l think uh regular expressions
+
+934
+00:14:35,030 --> 00:14:35,040
+a think l think uh regular expressions
+ 
+
+935
+00:14:35,040 --> 00:14:37,509
+a think l think uh regular expressions
+think sem think codeql think all these
+
+936
+00:14:37,509 --> 00:14:37,519
+think sem think codeql think all these
+ 
+
+937
+00:14:37,519 --> 00:14:38,790
+think sem think codeql think all these
+things that are going to enable these
+
+938
+00:14:38,790 --> 00:14:38,800
+things that are going to enable these
+ 
+
+939
+00:14:38,800 --> 00:14:40,310
+things that are going to enable these
+models to have a better trace and
+
+940
+00:14:40,310 --> 00:14:40,320
+models to have a better trace and
+ 
+
+941
+00:14:40,320 --> 00:14:41,750
+models to have a better trace and
+understanding and comprehension of the
+
+942
+00:14:41,750 --> 00:14:41,760
+understanding and comprehension of the
+ 
+
+943
+00:14:41,760 --> 00:14:43,670
+understanding and comprehension of the
+actual codebase themselves we want to do
+
+944
+00:14:43,670 --> 00:14:43,680
+actual codebase themselves we want to do
+ 
+
+945
+00:14:43,680 --> 00:14:45,829
+actual codebase themselves we want to do
+all that first so that we can better
+
+946
+00:14:45,829 --> 00:14:45,839
+all that first so that we can better
+ 
+
+947
+00:14:45,839 --> 00:14:47,750
+all that first so that we can better
+prioritize downstream so we call like
+
+948
+00:14:47,750 --> 00:14:47,760
+prioritize downstream so we call like
+ 
+
+949
+00:14:47,760 --> 00:14:49,189
+prioritize downstream so we call like
+discovery gates we're only going to open
+
+950
+00:14:49,189 --> 00:14:49,199
+discovery gates we're only going to open
+ 
+
+951
+00:14:49,199 --> 00:14:50,629
+discovery gates we're only going to open
+up for models that have matching
+
+952
+00:14:50,629 --> 00:14:50,639
+up for models that have matching
+ 
+
+953
+00:14:50,639 --> 00:14:52,310
+up for models that have matching
+architectures or agents rather that
+
+954
+00:14:52,310 --> 00:14:52,320
+architectures or agents rather that
+ 
+
+955
+00:14:52,320 --> 00:14:53,430
+architectures or agents rather that
+match the architecture we're not going
+
+956
+00:14:53,430 --> 00:14:53,440
+match the architecture we're not going
+ 
+
+957
+00:14:53,440 --> 00:14:54,870
+match the architecture we're not going
+to scan for SQL injection if there's no
+
+958
+00:14:54,870 --> 00:14:54,880
+to scan for SQL injection if there's no
+ 
+
+959
+00:14:54,880 --> 00:14:56,470
+to scan for SQL injection if there's no
+database things like that. And then
+
+960
+00:14:56,470 --> 00:14:56,480
+database things like that. And then
+ 
+
+961
+00:14:56,480 --> 00:14:58,790
+database things like that. And then
+we're also not going to feed syncs and
+
+962
+00:14:58,790 --> 00:14:58,800
+we're also not going to feed syncs and
+ 
+
+963
+00:14:58,800 --> 00:15:00,710
+we're also not going to feed syncs and
+file prioritization to the agents that
+
+964
+00:15:00,710 --> 00:15:00,720
+file prioritization to the agents that
+ 
+
+965
+00:15:00,720 --> 00:15:02,069
+file prioritization to the agents that
+have no relevance. So we're not going to
+
+966
+00:15:02,069 --> 00:15:02,079
+have no relevance. So we're not going to
+ 
+
+967
+00:15:02,079 --> 00:15:04,790
+have no relevance. So we're not going to
+feed HTML output and DOMB based syncs to
+
+968
+00:15:04,790 --> 00:15:04,800
+feed HTML output and DOMB based syncs to
+ 
+
+969
+00:15:04,800 --> 00:15:06,310
+feed HTML output and DOMB based syncs to
+the SQL injection agent because we don't
+
+970
+00:15:06,310 --> 00:15:06,320
+the SQL injection agent because we don't
+ 
+
+971
+00:15:06,320 --> 00:15:08,389
+the SQL injection agent because we don't
+want it to prioritize looking there. Um
+
+972
+00:15:08,389 --> 00:15:08,399
+want it to prioritize looking there. Um
+ 
+
+973
+00:15:08,399 --> 00:15:10,310
+want it to prioritize looking there. Um
+so cutting that out has helped us a ton
+
+974
+00:15:10,310 --> 00:15:10,320
+so cutting that out has helped us a ton
+ 
+
+975
+00:15:10,320 --> 00:15:12,470
+so cutting that out has helped us a ton
+and enables us to set when Scott was
+
+976
+00:15:12,470 --> 00:15:12,480
+and enables us to set when Scott was
+ 
+
+977
+00:15:12,480 --> 00:15:14,069
+and enables us to set when Scott was
+talking about that file batching. We're
+
+978
+00:15:14,069 --> 00:15:14,079
+talking about that file batching. We're
+ 
+
+979
+00:15:14,079 --> 00:15:15,590
+talking about that file batching. We're
+actually batching files together and
+
+980
+00:15:15,590 --> 00:15:15,600
+actually batching files together and
+ 
+
+981
+00:15:15,600 --> 00:15:17,110
+actually batching files together and
+feeding them to the agents based on that
+
+982
+00:15:17,110 --> 00:15:17,120
+feeding them to the agents based on that
+ 
+
+983
+00:15:17,120 --> 00:15:19,189
+feeding them to the agents based on that
+sync prioritization and then also based
+
+984
+00:15:19,189 --> 00:15:19,199
+sync prioritization and then also based
+ 
+
+985
+00:15:19,199 --> 00:15:20,949
+sync prioritization and then also based
+on file relationships. So if you get
+
+986
+00:15:20,949 --> 00:15:20,959
+on file relationships. So if you get
+ 
+
+987
+00:15:20,959 --> 00:15:22,550
+on file relationships. So if you get
+five files, all the files should have
+
+988
+00:15:22,550 --> 00:15:22,560
+five files, all the files should have
+ 
+
+989
+00:15:22,560 --> 00:15:24,389
+five files, all the files should have
+cross imports and cross usage so that
+
+990
+00:15:24,389 --> 00:15:24,399
+cross imports and cross usage so that
+ 
+
+991
+00:15:24,399 --> 00:15:26,069
+cross imports and cross usage so that
+the analysis is able to do its thing
+
+992
+00:15:26,069 --> 00:15:26,079
+the analysis is able to do its thing
+ 
+
+993
+00:15:26,079 --> 00:15:27,750
+the analysis is able to do its thing
+without having to do too much additional
+
+994
+00:15:27,750 --> 00:15:27,760
+without having to do too much additional
+ 
+
+995
+00:15:27,760 --> 00:15:29,829
+without having to do too much additional
+exploration and suck up those tokens
+
+996
+00:15:29,829 --> 00:15:29,839
+exploration and suck up those tokens
+ 
+
+997
+00:15:29,839 --> 00:15:31,509
+exploration and suck up those tokens
+unfortunately, right? Um, and then we
+
+998
+00:15:31,509 --> 00:15:31,519
+unfortunately, right? Um, and then we
+ 
+
+999
+00:15:31,519 --> 00:15:32,629
+unfortunately, right? Um, and then we
+have some other additional stuff
+
+1000
+00:15:32,629 --> 00:15:32,639
+have some other additional stuff
+ 
+
+1001
+00:15:32,639 --> 00:15:33,829
+have some other additional stuff
+downstream where, you know, we're
+
+1002
+00:15:33,829 --> 00:15:33,839
+downstream where, you know, we're
+ 
+
+1003
+00:15:33,839 --> 00:15:35,590
+downstream where, you know, we're
+focusing on schematization, programmatic
+
+1004
+00:15:35,590 --> 00:15:35,600
+focusing on schematization, programmatic
+ 
+
+1005
+00:15:35,600 --> 00:15:37,030
+focusing on schematization, programmatic
+tool calling, so that if the agent
+
+1006
+00:15:37,030 --> 00:15:37,040
+tool calling, so that if the agent
+ 
+
+1007
+00:15:37,040 --> 00:15:39,189
+tool calling, so that if the agent
+hallucinates the severity of urgency or
+
+1008
+00:15:39,189 --> 00:15:39,199
+hallucinates the severity of urgency or
+ 
+
+1009
+00:15:39,199 --> 00:15:40,710
+hallucinates the severity of urgency or
+hallucinates a vulnerability class of
+
+1010
+00:15:40,710 --> 00:15:40,720
+hallucinates a vulnerability class of
+ 
+
+1011
+00:15:40,720 --> 00:15:42,629
+hallucinates a vulnerability class of
+chocolate rain, all the programmatic
+
+1012
+00:15:42,629 --> 00:15:42,639
+chocolate rain, all the programmatic
+ 
+
+1013
+00:15:42,639 --> 00:15:44,389
+chocolate rain, all the programmatic
+enforcement kicks in and it forces it to
+
+1014
+00:15:44,389 --> 00:15:44,399
+enforcement kicks in and it forces it to
+ 
+
+1015
+00:15:44,399 --> 00:15:46,069
+enforcement kicks in and it forces it to
+iterate and and re-evaluate its
+
+1016
+00:15:46,069 --> 00:15:46,079
+iterate and and re-evaluate its
+ 
+
+1017
+00:15:46,079 --> 00:15:47,590
+iterate and and re-evaluate its
+assessment and and fit to the
+
+1018
+00:15:47,590 --> 00:15:47,600
+assessment and and fit to the
+ 
+
+1019
+00:15:47,600 --> 00:15:48,870
+assessment and and fit to the
+constraints and like for example like an
+
+1020
+00:15:48,870 --> 00:15:48,880
+constraints and like for example like an
+ 
+
+1021
+00:15:48,880 --> 00:15:50,710
+constraints and like for example like an
+enum of all the things that we actually
+
+1022
+00:15:50,710 --> 00:15:50,720
+enum of all the things that we actually
+ 
+
+1023
+00:15:50,720 --> 00:15:52,389
+enum of all the things that we actually
+want it to be doing. And then we're also
+
+1024
+00:15:52,389 --> 00:15:52,399
+want it to be doing. And then we're also
+ 
+
+1025
+00:15:52,399 --> 00:15:54,150
+want it to be doing. And then we're also
+not expanding and giving every agent
+
+1026
+00:15:54,150 --> 00:15:54,160
+not expanding and giving every agent
+ 
+
+1027
+00:15:54,160 --> 00:15:55,829
+not expanding and giving every agent
+every tool. The data tracing agent
+
+1028
+00:15:55,829 --> 00:15:55,839
+every tool. The data tracing agent
+ 
+
+1029
+00:15:55,839 --> 00:15:57,110
+every tool. The data tracing agent
+doesn't need access to the same amount
+
+1030
+00:15:57,110 --> 00:15:57,120
+doesn't need access to the same amount
+ 
+
+1031
+00:15:57,120 --> 00:15:58,710
+doesn't need access to the same amount
+of tools that all the other agents have,
+
+1032
+00:15:58,710 --> 00:15:58,720
+of tools that all the other agents have,
+ 
+
+1033
+00:15:58,720 --> 00:16:00,629
+of tools that all the other agents have,
+right? So it's very different. Um, and
+
+1034
+00:16:00,629 --> 00:16:00,639
+right? So it's very different. Um, and
+ 
+
+1035
+00:16:00,639 --> 00:16:02,230
+right? So it's very different. Um, and
+then we also are kicking in that that
+
+1036
+00:16:02,230 --> 00:16:02,240
+then we also are kicking in that that
+ 
+
+1037
+00:16:02,240 --> 00:16:03,749
+then we also are kicking in that that
+false positive and triage phase so that
+
+1038
+00:16:03,749 --> 00:16:03,759
+false positive and triage phase so that
+ 
+
+1039
+00:16:03,759 --> 00:16:05,030
+false positive and triage phase so that
+we're only looking at the things that
+
+1040
+00:16:05,030 --> 00:16:05,040
+we're only looking at the things that
+ 
+
+1041
+00:16:05,040 --> 00:16:06,230
+we're only looking at the things that
+really matter to us. And we found that
+
+1042
+00:16:06,230 --> 00:16:06,240
+really matter to us. And we found that
+ 
+
+1043
+00:16:06,240 --> 00:16:07,590
+really matter to us. And we found that
+that's a really really phenomenal
+
+1044
+00:16:07,590 --> 00:16:07,600
+that's a really really phenomenal
+ 
+
+1045
+00:16:07,600 --> 00:16:08,470
+that's a really really phenomenal
+workflow.
+
+1046
+00:16:08,470 --> 00:16:08,480
+workflow.
+ 
+
+1047
+00:16:08,480 --> 00:16:09,829
+workflow.
+>> So, let's go ahead and do a little bit
+
+1048
+00:16:09,829 --> 00:16:09,839
+>> So, let's go ahead and do a little bit
+ 
+
+1049
+00:16:09,839 --> 00:16:11,670
+>> So, let's go ahead and do a little bit
+of a demo. Step your laptop, dude.
+
+1050
+00:16:11,670 --> 00:16:11,680
+of a demo. Step your laptop, dude.
+ 
+
+1051
+00:16:11,680 --> 00:16:14,150
+of a demo. Step your laptop, dude.
+Sorry. Uh, and let me go ahead and pull
+
+1052
+00:16:14,150 --> 00:16:14,160
+Sorry. Uh, and let me go ahead and pull
+ 
+
+1053
+00:16:14,160 --> 00:16:15,990
+Sorry. Uh, and let me go ahead and pull
+up my
+
+1054
+00:16:15,990 --> 00:16:16,000
+up my
+ 
+
+1055
+00:16:16,000 --> 00:16:17,509
+up my
+demo video here and we'll step through
+
+1056
+00:16:17,509 --> 00:16:17,519
+demo video here and we'll step through
+ 
+
+1057
+00:16:17,519 --> 00:16:20,230
+demo video here and we'll step through
+this. Sweet. Cool. All right. So, I'll
+
+1058
+00:16:20,230 --> 00:16:20,240
+this. Sweet. Cool. All right. So, I'll
+ 
+
+1059
+00:16:20,240 --> 00:16:21,590
+this. Sweet. Cool. All right. So, I'll
+pause real quick. So, this is going to
+
+1060
+00:16:21,590 --> 00:16:21,600
+pause real quick. So, this is going to
+ 
+
+1061
+00:16:21,600 --> 00:16:24,629
+pause real quick. So, this is going to
+be a demo of effectively a CLI version
+
+1062
+00:16:24,629 --> 00:16:24,639
+be a demo of effectively a CLI version
+ 
+
+1063
+00:16:24,639 --> 00:16:26,870
+be a demo of effectively a CLI version
+of the skills and references that we're
+
+1064
+00:16:26,870 --> 00:16:26,880
+of the skills and references that we're
+ 
+
+1065
+00:16:26,880 --> 00:16:28,310
+of the skills and references that we're
+releasing today. The reason this isn't a
+
+1066
+00:16:28,310 --> 00:16:28,320
+releasing today. The reason this isn't a
+ 
+
+1067
+00:16:28,320 --> 00:16:29,670
+releasing today. The reason this isn't a
+CLI and we're not releasing it is
+
+1068
+00:16:29,670 --> 00:16:29,680
+CLI and we're not releasing it is
+ 
+
+1069
+00:16:29,680 --> 00:16:31,829
+CLI and we're not releasing it is
+because I wanted all the verbose output
+
+1070
+00:16:31,829 --> 00:16:31,839
+because I wanted all the verbose output
+ 
+
+1071
+00:16:31,839 --> 00:16:33,189
+because I wanted all the verbose output
+so that we could talk through it, but
+
+1072
+00:16:33,189 --> 00:16:33,199
+so that we could talk through it, but
+ 
+
+1073
+00:16:33,199 --> 00:16:34,790
+so that we could talk through it, but
+the skills run in subtasks and stuff.
+
+1074
+00:16:34,790 --> 00:16:34,800
+the skills run in subtasks and stuff.
+ 
+
+1075
+00:16:34,800 --> 00:16:36,470
+the skills run in subtasks and stuff.
+So, it's a little bit harder to see. Um,
+
+1076
+00:16:36,470 --> 00:16:36,480
+So, it's a little bit harder to see. Um,
+ 
+
+1077
+00:16:36,480 --> 00:16:38,389
+So, it's a little bit harder to see. Um,
+but effectively functionally the same.
+
+1078
+00:16:38,389 --> 00:16:38,399
+but effectively functionally the same.
+ 
+
+1079
+00:16:38,399 --> 00:16:39,670
+but effectively functionally the same.
+We're going to be scanning a really
+
+1080
+00:16:39,670 --> 00:16:39,680
+We're going to be scanning a really
+ 
+
+1081
+00:16:39,680 --> 00:16:41,990
+We're going to be scanning a really
+simple simple Flask application has just
+
+1082
+00:16:41,990 --> 00:16:42,000
+simple simple Flask application has just
+ 
+
+1083
+00:16:42,000 --> 00:16:43,509
+simple simple Flask application has just
+a couple vulnerability classes in it.
+
+1084
+00:16:43,509 --> 00:16:43,519
+a couple vulnerability classes in it.
+ 
+
+1085
+00:16:43,519 --> 00:16:44,790
+a couple vulnerability classes in it.
+And the first phase of what we're doing
+
+1086
+00:16:44,790 --> 00:16:44,800
+And the first phase of what we're doing
+ 
+
+1087
+00:16:44,800 --> 00:16:46,550
+And the first phase of what we're doing
+here is file enumeration. We're
+
+1088
+00:16:46,550 --> 00:16:46,560
+here is file enumeration. We're
+ 
+
+1089
+00:16:46,560 --> 00:16:50,150
+here is file enumeration. We're
+filtering out tests and git and large
+
+1090
+00:16:50,150 --> 00:16:50,160
+filtering out tests and git and large
+ 
+
+1091
+00:16:50,160 --> 00:16:51,590
+filtering out tests and git and large
+images, things we just don't need to
+
+1092
+00:16:51,590 --> 00:16:51,600
+images, things we just don't need to
+ 
+
+1093
+00:16:51,600 --> 00:16:53,829
+images, things we just don't need to
+scan. And that really helps us kind of
+
+1094
+00:16:53,829 --> 00:16:53,839
+scan. And that really helps us kind of
+ 
+
+1095
+00:16:53,839 --> 00:16:55,269
+scan. And that really helps us kind of
+manage the sort of front end of the
+
+1096
+00:16:55,269 --> 00:16:55,279
+manage the sort of front end of the
+ 
+
+1097
+00:16:55,279 --> 00:16:56,870
+manage the sort of front end of the
+context. After we've done that
+
+1098
+00:16:56,870 --> 00:16:56,880
+context. After we've done that
+ 
+
+1099
+00:16:56,880 --> 00:16:59,030
+context. After we've done that
+enumeration, we step into three phases
+
+1100
+00:16:59,030 --> 00:16:59,040
+enumeration, we step into three phases
+ 
+
+1101
+00:16:59,040 --> 00:17:01,189
+enumeration, we step into three phases
+here. A phase two, it's a combination of
+
+1102
+00:17:01,189 --> 00:17:01,199
+here. A phase two, it's a combination of
+ 
+
+1103
+00:17:01,199 --> 00:17:03,269
+here. A phase two, it's a combination of
+static analysis, uh discovery of the
+
+1104
+00:17:03,269 --> 00:17:03,279
+static analysis, uh discovery of the
+ 
+
+1105
+00:17:03,279 --> 00:17:05,189
+static analysis, uh discovery of the
+architecture, and data flow tracing to
+
+1106
+00:17:05,189 --> 00:17:05,199
+architecture, and data flow tracing to
+ 
+
+1107
+00:17:05,199 --> 00:17:06,949
+architecture, and data flow tracing to
+identify sources and syncs to
+
+1108
+00:17:06,949 --> 00:17:06,959
+identify sources and syncs to
+ 
+
+1109
+00:17:06,959 --> 00:17:08,789
+identify sources and syncs to
+investigate. Um, we run these in
+
+1110
+00:17:08,789 --> 00:17:08,799
+investigate. Um, we run these in
+ 
+
+1111
+00:17:08,799 --> 00:17:09,829
+investigate. Um, we run these in
+parallel because they actually don't
+
+1112
+00:17:09,829 --> 00:17:09,839
+parallel because they actually don't
+ 
+
+1113
+00:17:09,839 --> 00:17:11,270
+parallel because they actually don't
+have any dependency on each other. And
+
+1114
+00:17:11,270 --> 00:17:11,280
+have any dependency on each other. And
+ 
+
+1115
+00:17:11,280 --> 00:17:12,710
+have any dependency on each other. And
+that allows us to do things a little
+
+1116
+00:17:12,710 --> 00:17:12,720
+that allows us to do things a little
+ 
+
+1117
+00:17:12,720 --> 00:17:14,549
+that allows us to do things a little
+faster. So, you'll see in the bottom
+
+1118
+00:17:14,549 --> 00:17:14,559
+faster. So, you'll see in the bottom
+ 
+
+1119
+00:17:14,559 --> 00:17:16,549
+faster. So, you'll see in the bottom
+here that we're starting to dismiss
+
+1120
+00:17:16,549 --> 00:17:16,559
+here that we're starting to dismiss
+ 
+
+1121
+00:17:16,559 --> 00:17:18,470
+here that we're starting to dismiss
+candidates. It's because it's not in
+
+1122
+00:17:18,470 --> 00:17:18,480
+candidates. It's because it's not in
+ 
+
+1123
+00:17:18,480 --> 00:17:20,549
+candidates. It's because it's not in
+source or it's in a comment or it's not
+
+1124
+00:17:20,549 --> 00:17:20,559
+source or it's in a comment or it's not
+ 
+
+1125
+00:17:20,559 --> 00:17:22,390
+source or it's in a comment or it's not
+reachable. It's just context that we
+
+1126
+00:17:22,390 --> 00:17:22,400
+reachable. It's just context that we
+ 
+
+1127
+00:17:22,400 --> 00:17:23,669
+reachable. It's just context that we
+don't have to get to the model because
+
+1128
+00:17:23,669 --> 00:17:23,679
+don't have to get to the model because
+ 
+
+1129
+00:17:23,679 --> 00:17:26,150
+don't have to get to the model because
+it doesn't actually matter. But as we
+
+1130
+00:17:26,150 --> 00:17:26,160
+it doesn't actually matter. But as we
+ 
+
+1131
+00:17:26,160 --> 00:17:27,829
+it doesn't actually matter. But as we
+continue our process of tracing those
+
+1132
+00:17:27,829 --> 00:17:27,839
+continue our process of tracing those
+ 
+
+1133
+00:17:27,839 --> 00:17:30,390
+continue our process of tracing those
+vulnerabilities from start to finish, we
+
+1134
+00:17:30,390 --> 00:17:30,400
+vulnerabilities from start to finish, we
+ 
+
+1135
+00:17:30,400 --> 00:17:32,789
+vulnerabilities from start to finish, we
+identify a few data flows such as a
+
+1136
+00:17:32,789 --> 00:17:32,799
+identify a few data flows such as a
+ 
+
+1137
+00:17:32,799 --> 00:17:35,350
+identify a few data flows such as a
+request parameter that shows up in HTML
+
+1138
+00:17:35,350 --> 00:17:35,360
+request parameter that shows up in HTML
+ 
+
+1139
+00:17:35,360 --> 00:17:37,669
+request parameter that shows up in HTML
+output or a database read that shows up
+
+1140
+00:17:37,669 --> 00:17:37,679
+output or a database read that shows up
+ 
+
+1141
+00:17:37,679 --> 00:17:39,750
+output or a database read that shows up
+in HTML output. And those are exciting
+
+1142
+00:17:39,750 --> 00:17:39,760
+in HTML output. And those are exciting
+ 
+
+1143
+00:17:39,760 --> 00:17:41,029
+in HTML output. And those are exciting
+for us. We want to definitely follow up
+
+1144
+00:17:41,029 --> 00:17:41,039
+for us. We want to definitely follow up
+ 
+
+1145
+00:17:41,039 --> 00:17:42,310
+for us. We want to definitely follow up
+on those. Now, we're also collecting
+
+1146
+00:17:42,310 --> 00:17:42,320
+on those. Now, we're also collecting
+ 
+
+1147
+00:17:42,320 --> 00:17:44,870
+on those. Now, we're also collecting
+metrics duration LM calls. One thing
+
+1148
+00:17:44,870 --> 00:17:44,880
+metrics duration LM calls. One thing
+ 
+
+1149
+00:17:44,880 --> 00:17:46,710
+metrics duration LM calls. One thing
+I'll mention for the audience here is is
+
+1150
+00:17:46,710 --> 00:17:46,720
+I'll mention for the audience here is is
+ 
+
+1151
+00:17:46,720 --> 00:17:48,630
+I'll mention for the audience here is is
+um we often find that sometimes a small
+
+1152
+00:17:48,630 --> 00:17:48,640
+um we often find that sometimes a small
+ 
+
+1153
+00:17:48,640 --> 00:17:50,070
+um we often find that sometimes a small
+tweak to an agent rule could cut down
+
+1154
+00:17:50,070 --> 00:17:50,080
+tweak to an agent rule could cut down
+ 
+
+1155
+00:17:50,080 --> 00:17:52,549
+tweak to an agent rule could cut down
+your context by 15% or more. So it's
+
+1156
+00:17:52,549 --> 00:17:52,559
+your context by 15% or more. So it's
+ 
+
+1157
+00:17:52,559 --> 00:17:54,470
+your context by 15% or more. So it's
+like worth it to to have a good sense of
+
+1158
+00:17:54,470 --> 00:17:54,480
+like worth it to to have a good sense of
+ 
+
+1159
+00:17:54,480 --> 00:17:56,070
+like worth it to to have a good sense of
+what your agents are doing and be making
+
+1160
+00:17:56,070 --> 00:17:56,080
+what your agents are doing and be making
+ 
+
+1161
+00:17:56,080 --> 00:17:57,990
+what your agents are doing and be making
+adjustments along the way. Also
+
+1162
+00:17:57,990 --> 00:17:58,000
+adjustments along the way. Also
+ 
+
+1163
+00:17:58,000 --> 00:18:00,549
+adjustments along the way. Also
+disabling noisy agents. So coverage gate
+
+1164
+00:18:00,549 --> 00:18:00,559
+disabling noisy agents. So coverage gate
+ 
+
+1165
+00:18:00,559 --> 00:18:02,549
+disabling noisy agents. So coverage gate
+aka discovery is like what is the
+
+1166
+00:18:02,549 --> 00:18:02,559
+aka discovery is like what is the
+ 
+
+1167
+00:18:02,559 --> 00:18:04,789
+aka discovery is like what is the
+architecture? To justice's point, if
+
+1168
+00:18:04,789 --> 00:18:04,799
+architecture? To justice's point, if
+ 
+
+1169
+00:18:04,799 --> 00:18:06,310
+architecture? To justice's point, if
+it's not doing templating, we don't need
+
+1170
+00:18:06,310 --> 00:18:06,320
+it's not doing templating, we don't need
+ 
+
+1171
+00:18:06,320 --> 00:18:07,750
+it's not doing templating, we don't need
+to load in a serverside template
+
+1172
+00:18:07,750 --> 00:18:07,760
+to load in a serverside template
+ 
+
+1173
+00:18:07,760 --> 00:18:10,070
+to load in a serverside template
+injection agent. And so once we've kind
+
+1174
+00:18:10,070 --> 00:18:10,080
+injection agent. And so once we've kind
+ 
+
+1175
+00:18:10,080 --> 00:18:12,390
+injection agent. And so once we've kind
+of understood the architecture uh
+
+1176
+00:18:12,390 --> 00:18:12,400
+of understood the architecture uh
+ 
+
+1177
+00:18:12,400 --> 00:18:14,549
+of understood the architecture uh
+deterministically, we're using again GP
+
+1178
+00:18:14,549 --> 00:18:14,559
+deterministically, we're using again GP
+ 
+
+1179
+00:18:14,559 --> 00:18:16,870
+deterministically, we're using again GP
+and and other tools. We start to run
+
+1180
+00:18:16,870 --> 00:18:16,880
+and and other tools. We start to run
+ 
+
+1181
+00:18:16,880 --> 00:18:18,710
+and and other tools. We start to run
+mandatory and relevant agents. Mandatory
+
+1182
+00:18:18,710 --> 00:18:18,720
+mandatory and relevant agents. Mandatory
+ 
+
+1183
+00:18:18,720 --> 00:18:20,470
+mandatory and relevant agents. Mandatory
+agents run every single time. relevant
+
+1184
+00:18:20,470 --> 00:18:20,480
+agents run every single time. relevant
+ 
+
+1185
+00:18:20,480 --> 00:18:21,909
+agents run every single time. relevant
+are like depending on the architecture
+
+1186
+00:18:21,909 --> 00:18:21,919
+are like depending on the architecture
+ 
+
+1187
+00:18:21,919 --> 00:18:23,270
+are like depending on the architecture
+we're going to pull these in. These
+
+1188
+00:18:23,270 --> 00:18:23,280
+we're going to pull these in. These
+ 
+
+1189
+00:18:23,280 --> 00:18:24,870
+we're going to pull these in. These
+agents run in parallel because again
+
+1190
+00:18:24,870 --> 00:18:24,880
+agents run in parallel because again
+ 
+
+1191
+00:18:24,880 --> 00:18:26,150
+agents run in parallel because again
+they don't have dependency on each
+
+1192
+00:18:26,150 --> 00:18:26,160
+they don't have dependency on each
+ 
+
+1193
+00:18:26,160 --> 00:18:28,150
+they don't have dependency on each
+other. So we see a cross-ite scripting
+
+1194
+00:18:28,150 --> 00:18:28,160
+other. So we see a cross-ite scripting
+ 
+
+1195
+00:18:28,160 --> 00:18:30,470
+other. So we see a cross-ite scripting
+and a SQL injection agent. Crossite
+
+1196
+00:18:30,470 --> 00:18:30,480
+and a SQL injection agent. Crossite
+ 
+
+1197
+00:18:30,480 --> 00:18:32,230
+and a SQL injection agent. Crossite
+scripting agent has identified two
+
+1198
+00:18:32,230 --> 00:18:32,240
+scripting agent has identified two
+ 
+
+1199
+00:18:32,240 --> 00:18:34,230
+scripting agent has identified two
+crossite scripting vulnerabilities
+
+1200
+00:18:34,230 --> 00:18:34,240
+crossite scripting vulnerabilities
+ 
+
+1201
+00:18:34,240 --> 00:18:35,909
+crossite scripting vulnerabilities
+reflected cross-ite scripting
+
+1202
+00:18:35,909 --> 00:18:35,919
+reflected cross-ite scripting
+ 
+
+1203
+00:18:35,919 --> 00:18:37,669
+reflected cross-ite scripting
+vulnerability as well as a stored
+
+1204
+00:18:37,669 --> 00:18:37,679
+vulnerability as well as a stored
+ 
+
+1205
+00:18:37,679 --> 00:18:39,990
+vulnerability as well as a stored
+cross-ite scripting vulnerability. And
+
+1206
+00:18:39,990 --> 00:18:40,000
+cross-ite scripting vulnerability. And
+ 
+
+1207
+00:18:40,000 --> 00:18:41,190
+cross-ite scripting vulnerability. And
+once we've kind of finished that
+
+1208
+00:18:41,190 --> 00:18:41,200
+once we've kind of finished that
+ 
+
+1209
+00:18:41,200 --> 00:18:43,270
+once we've kind of finished that
+scanning we dduplicate findings and we
+
+1210
+00:18:43,270 --> 00:18:43,280
+scanning we dduplicate findings and we
+ 
+
+1211
+00:18:43,280 --> 00:18:44,950
+scanning we dduplicate findings and we
+corroborate those. If we're running
+
+1212
+00:18:44,950 --> 00:18:44,960
+corroborate those. If we're running
+ 
+
+1213
+00:18:44,960 --> 00:18:47,350
+corroborate those. If we're running
+static analysis tooling and the LM finds
+
+1214
+00:18:47,350 --> 00:18:47,360
+static analysis tooling and the LM finds
+ 
+
+1215
+00:18:47,360 --> 00:18:49,590
+static analysis tooling and the LM finds
+it, that's interesting. um we might want
+
+1216
+00:18:49,590 --> 00:18:49,600
+it, that's interesting. um we might want
+ 
+
+1217
+00:18:49,600 --> 00:18:50,950
+it, that's interesting. um we might want
+to follow up and that might be a signal
+
+1218
+00:18:50,950 --> 00:18:50,960
+to follow up and that might be a signal
+ 
+
+1219
+00:18:50,960 --> 00:18:53,909
+to follow up and that might be a signal
+that it's a true positive. And once
+
+1220
+00:18:53,909 --> 00:18:53,919
+that it's a true positive. And once
+ 
+
+1221
+00:18:53,919 --> 00:18:55,669
+that it's a true positive. And once
+we've kind of gone through this uh
+
+1222
+00:18:55,669 --> 00:18:55,679
+we've kind of gone through this uh
+ 
+
+1223
+00:18:55,679 --> 00:18:56,710
+we've kind of gone through this uh
+cross-ite scripting flow and
+
+1224
+00:18:56,710 --> 00:18:56,720
+cross-ite scripting flow and
+ 
+
+1225
+00:18:56,720 --> 00:18:59,669
+cross-ite scripting flow and
+dduplication, the SQL injection um agent
+
+1226
+00:18:59,669 --> 00:18:59,679
+dduplication, the SQL injection um agent
+ 
+
+1227
+00:18:59,679 --> 00:19:01,430
+dduplication, the SQL injection um agent
+eventually finishes and finds two
+
+1228
+00:19:01,430 --> 00:19:01,440
+eventually finishes and finds two
+ 
+
+1229
+00:19:01,440 --> 00:19:05,350
+eventually finishes and finds two
+instances of SQL I as an example. Um so
+
+1230
+00:19:05,350 --> 00:19:05,360
+instances of SQL I as an example. Um so
+ 
+
+1231
+00:19:05,360 --> 00:19:07,909
+instances of SQL I as an example. Um so
+we step into false positive remediation
+
+1232
+00:19:07,909 --> 00:19:07,919
+we step into false positive remediation
+ 
+
+1233
+00:19:07,919 --> 00:19:10,470
+we step into false positive remediation
+and triage. Our false positive agent
+
+1234
+00:19:10,470 --> 00:19:10,480
+and triage. Our false positive agent
+ 
+
+1235
+00:19:10,480 --> 00:19:13,990
+and triage. Our false positive agent
+actually identified that um that this
+
+1236
+00:19:13,990 --> 00:19:14,000
+actually identified that um that this
+ 
+
+1237
+00:19:14,000 --> 00:19:15,510
+actually identified that um that this
+event type parameter is actually
+
+1238
+00:19:15,510 --> 00:19:15,520
+event type parameter is actually
+ 
+
+1239
+00:19:15,520 --> 00:19:17,350
+event type parameter is actually
+validated against an allow list before
+
+1240
+00:19:17,350 --> 00:19:17,360
+validated against an allow list before
+ 
+
+1241
+00:19:17,360 --> 00:19:19,430
+validated against an allow list before
+reaching the SQL query. That effectively
+
+1242
+00:19:19,430 --> 00:19:19,440
+reaching the SQL query. That effectively
+ 
+
+1243
+00:19:19,440 --> 00:19:21,750
+reaching the SQL query. That effectively
+means only predefined safe values can
+
+1244
+00:19:21,750 --> 00:19:21,760
+means only predefined safe values can
+ 
+
+1245
+00:19:21,760 --> 00:19:23,350
+means only predefined safe values can
+pass through. So it's not a SQL
+
+1246
+00:19:23,350 --> 00:19:23,360
+pass through. So it's not a SQL
+ 
+
+1247
+00:19:23,360 --> 00:19:24,549
+pass through. So it's not a SQL
+injection we really need to look at.
+
+1248
+00:19:24,549 --> 00:19:24,559
+injection we really need to look at.
+ 
+
+1249
+00:19:24,559 --> 00:19:26,230
+injection we really need to look at.
+That's great if we're triaging a lot of
+
+1250
+00:19:26,230 --> 00:19:26,240
+That's great if we're triaging a lot of
+ 
+
+1251
+00:19:26,240 --> 00:19:27,590
+That's great if we're triaging a lot of
+vulnerabilities. We really want to focus
+
+1252
+00:19:27,590 --> 00:19:27,600
+vulnerabilities. We really want to focus
+ 
+
+1253
+00:19:27,600 --> 00:19:29,990
+vulnerabilities. We really want to focus
+on our time on the bugs that matter.
+
+1254
+00:19:29,990 --> 00:19:30,000
+on our time on the bugs that matter.
+ 
+
+1255
+00:19:30,000 --> 00:19:31,830
+on our time on the bugs that matter.
+Once we've gone through that, uh we'll
+
+1256
+00:19:31,830 --> 00:19:31,840
+Once we've gone through that, uh we'll
+ 
+
+1257
+00:19:31,840 --> 00:19:33,190
+Once we've gone through that, uh we'll
+talk a little bit about the triaging
+
+1258
+00:19:33,190 --> 00:19:33,200
+talk a little bit about the triaging
+ 
+
+1259
+00:19:33,200 --> 00:19:34,470
+talk a little bit about the triaging
+process. I think in the conference
+
+1260
+00:19:34,470 --> 00:19:34,480
+process. I think in the conference
+ 
+
+1261
+00:19:34,480 --> 00:19:35,510
+process. I think in the conference
+there's been a lot of talks on
+
+1262
+00:19:35,510 --> 00:19:35,520
+there's been a lot of talks on
+ 
+
+1263
+00:19:35,520 --> 00:19:37,590
+there's been a lot of talks on
+vulnerability management life cycles. We
+
+1264
+00:19:37,590 --> 00:19:37,600
+vulnerability management life cycles. We
+ 
+
+1265
+00:19:37,600 --> 00:19:39,430
+vulnerability management life cycles. We
+refer to triage as like we're the team
+
+1266
+00:19:39,430 --> 00:19:39,440
+refer to triage as like we're the team
+ 
+
+1267
+00:19:39,440 --> 00:19:41,669
+refer to triage as like we're the team
+responding and so for us it's like how
+
+1268
+00:19:41,669 --> 00:19:41,679
+responding and so for us it's like how
+ 
+
+1269
+00:19:41,679 --> 00:19:43,909
+responding and so for us it's like how
+quickly can I validate these findings.
+
+1270
+00:19:43,909 --> 00:19:43,919
+quickly can I validate these findings.
+ 
+
+1271
+00:19:43,919 --> 00:19:45,909
+quickly can I validate these findings.
+Um if it's a timing based attack
+
+1272
+00:19:45,909 --> 00:19:45,919
+Um if it's a timing based attack
+ 
+
+1273
+00:19:45,919 --> 00:19:47,830
+Um if it's a timing based attack
+validation might take a lot more time
+
+1274
+00:19:47,830 --> 00:19:47,840
+validation might take a lot more time
+ 
+
+1275
+00:19:47,840 --> 00:19:49,990
+validation might take a lot more time
+where as opposed to in this example we
+
+1276
+00:19:49,990 --> 00:19:50,000
+where as opposed to in this example we
+ 
+
+1277
+00:19:50,000 --> 00:19:51,909
+where as opposed to in this example we
+have a reflected cross- sight scripting
+
+1278
+00:19:51,909 --> 00:19:51,919
+have a reflected cross- sight scripting
+ 
+
+1279
+00:19:51,919 --> 00:19:54,230
+have a reflected cross- sight scripting
+that has these factors single request
+
+1280
+00:19:54,230 --> 00:19:54,240
+that has these factors single request
+ 
+
+1281
+00:19:54,240 --> 00:19:56,070
+that has these factors single request
+observable output really easy for me to
+
+1282
+00:19:56,070 --> 00:19:56,080
+observable output really easy for me to
+ 
+
+1283
+00:19:56,080 --> 00:19:57,110
+observable output really easy for me to
+validate those and I'll tell you the
+
+1284
+00:19:57,110 --> 00:19:57,120
+validate those and I'll tell you the
+ 
+
+1285
+00:19:57,120 --> 00:19:59,110
+validate those and I'll tell you the
+truth if I have like 30 crits I don't
+
+1286
+00:19:59,110 --> 00:19:59,120
+truth if I have like 30 crits I don't
+ 
+
+1287
+00:19:59,120 --> 00:20:00,470
+truth if I have like 30 crits I don't
+want to start with the most complicated
+
+1288
+00:20:00,470 --> 00:20:00,480
+want to start with the most complicated
+ 
+
+1289
+00:20:00,480 --> 00:20:02,310
+want to start with the most complicated
+one because I want that dopamine. So I'm
+
+1290
+00:20:02,310 --> 00:20:02,320
+one because I want that dopamine. So I'm
+ 
+
+1291
+00:20:02,320 --> 00:20:03,750
+one because I want that dopamine. So I'm
+going to go absolutely go after the ones
+
+1292
+00:20:03,750 --> 00:20:03,760
+going to go absolutely go after the ones
+ 
+
+1293
+00:20:03,760 --> 00:20:05,270
+going to go absolutely go after the ones
+that are the easiest and the fastest to
+
+1294
+00:20:05,270 --> 00:20:05,280
+that are the easiest and the fastest to
+ 
+
+1295
+00:20:05,280 --> 00:20:07,430
+that are the easiest and the fastest to
+validate. The last thing you'll see here
+
+1296
+00:20:07,430 --> 00:20:07,440
+validate. The last thing you'll see here
+ 
+
+1297
+00:20:07,440 --> 00:20:10,230
+validate. The last thing you'll see here
+is um on our stored cross- sight
+
+1298
+00:20:10,230 --> 00:20:10,240
+is um on our stored cross- sight
+ 
+
+1299
+00:20:10,240 --> 00:20:12,789
+is um on our stored cross- sight
+scripting uh it's a multi-step flow and
+
+1300
+00:20:12,789 --> 00:20:12,799
+scripting uh it's a multi-step flow and
+ 
+
+1301
+00:20:12,799 --> 00:20:15,029
+scripting uh it's a multi-step flow and
+observable output. And so what this kind
+
+1302
+00:20:15,029 --> 00:20:15,039
+observable output. And so what this kind
+ 
+
+1303
+00:20:15,039 --> 00:20:16,470
+observable output. And so what this kind
+of reflects is we can use all these
+
+1304
+00:20:16,470 --> 00:20:16,480
+of reflects is we can use all these
+ 
+
+1305
+00:20:16,480 --> 00:20:18,789
+of reflects is we can use all these
+facets to sort of determine our triage
+
+1306
+00:20:18,789 --> 00:20:18,799
+facets to sort of determine our triage
+ 
+
+1307
+00:20:18,799 --> 00:20:22,310
+facets to sort of determine our triage
+strategy. And with that I will go ahead
+
+1308
+00:20:22,310 --> 00:20:22,320
+strategy. And with that I will go ahead
+ 
+
+1309
+00:20:22,320 --> 00:20:26,310
+strategy. And with that I will go ahead
+and present let's see here our reference
+
+1310
+00:20:26,310 --> 00:20:26,320
+and present let's see here our reference
+ 
+
+1311
+00:20:26,320 --> 00:20:28,789
+and present let's see here our reference
+release repo. So um this is kind of a
+
+1312
+00:20:28,789 --> 00:20:28,799
+release repo. So um this is kind of a
+ 
+
+1313
+00:20:28,799 --> 00:20:30,630
+release repo. So um this is kind of a
+combination of uh several skills that
+
+1314
+00:20:30,630 --> 00:20:30,640
+combination of uh several skills that
+ 
+
+1315
+00:20:30,640 --> 00:20:31,750
+combination of uh several skills that
+we've used for running these
+
+1316
+00:20:31,750 --> 00:20:31,760
+we've used for running these
+ 
+
+1317
+00:20:31,760 --> 00:20:33,830
+we've used for running these
+experiments. Uh, we're going to include
+
+1318
+00:20:33,830 --> 00:20:33,840
+experiments. Uh, we're going to include
+ 
+
+1319
+00:20:33,840 --> 00:20:36,310
+experiments. Uh, we're going to include
+our evaluation repos with scoreheets
+
+1320
+00:20:36,310 --> 00:20:36,320
+our evaluation repos with scoreheets
+ 
+
+1321
+00:20:36,320 --> 00:20:37,909
+our evaluation repos with scoreheets
+that you can use for testing out your
+
+1322
+00:20:37,909 --> 00:20:37,919
+that you can use for testing out your
+ 
+
+1323
+00:20:37,919 --> 00:20:39,590
+that you can use for testing out your
+tooling. I think one thing that we felt
+
+1324
+00:20:39,590 --> 00:20:39,600
+tooling. I think one thing that we felt
+ 
+
+1325
+00:20:39,600 --> 00:20:41,029
+tooling. I think one thing that we felt
+like has maybe been missing in the
+
+1326
+00:20:41,029 --> 00:20:41,039
+like has maybe been missing in the
+ 
+
+1327
+00:20:41,039 --> 00:20:42,310
+like has maybe been missing in the
+evaluation world is that we're
+
+1328
+00:20:42,310 --> 00:20:42,320
+evaluation world is that we're
+ 
+
+1329
+00:20:42,320 --> 00:20:44,070
+evaluation world is that we're
+evaluating base models, but that's just
+
+1330
+00:20:44,070 --> 00:20:44,080
+evaluating base models, but that's just
+ 
+
+1331
+00:20:44,080 --> 00:20:45,430
+evaluating base models, but that's just
+not how folks are running them in
+
+1332
+00:20:45,430 --> 00:20:45,440
+not how folks are running them in
+ 
+
+1333
+00:20:45,440 --> 00:20:47,270
+not how folks are running them in
+production. We're often running them in
+
+1334
+00:20:47,270 --> 00:20:47,280
+production. We're often running them in
+ 
+
+1335
+00:20:47,280 --> 00:20:48,710
+production. We're often running them in
+workflows. We're often running them with
+
+1336
+00:20:48,710 --> 00:20:48,720
+workflows. We're often running them with
+ 
+
+1337
+00:20:48,720 --> 00:20:50,549
+workflows. We're often running them with
+custom harnesses. So, we hope that this
+
+1338
+00:20:50,549 --> 00:20:50,559
+custom harnesses. So, we hope that this
+ 
+
+1339
+00:20:50,559 --> 00:20:52,549
+custom harnesses. So, we hope that this
+context sort of fills a current gap that
+
+1340
+00:20:52,549 --> 00:20:52,559
+context sort of fills a current gap that
+ 
+
+1341
+00:20:52,559 --> 00:20:54,710
+context sort of fills a current gap that
+will help you all test your workflows.
+
+1342
+00:20:54,710 --> 00:20:54,720
+will help you all test your workflows.
+ 
+
+1343
+00:20:54,720 --> 00:20:56,230
+will help you all test your workflows.
+And then finally, we'll release a subset
+
+1344
+00:20:56,230 --> 00:20:56,240
+And then finally, we'll release a subset
+ 
+
+1345
+00:20:56,240 --> 00:20:57,510
+And then finally, we'll release a subset
+of agents that we've been using with
+
+1346
+00:20:57,510 --> 00:20:57,520
+of agents that we've been using with
+ 
+
+1347
+00:20:57,520 --> 00:20:59,669
+of agents that we've been using with
+pretty good success. And with that,
+
+1348
+00:20:59,669 --> 00:20:59,679
+pretty good success. And with that,
+ 
+
+1349
+00:20:59,679 --> 00:21:10,710
+pretty good success. And with that,
+thank you. Any
+
+1350
+00:21:10,710 --> 00:21:10,720
+
+ 
+
+1351
+00:21:10,720 --> 00:21:17,669
+
+questions?
+
+1352
+00:21:17,669 --> 00:21:17,679
+
+ 
+
+1353
+00:21:17,679 --> 00:21:20,710
+
+>> Justice, you mentioned that um you will
+
+1354
+00:21:20,710 --> 00:21:20,720
+>> Justice, you mentioned that um you will
+ 
+
+1355
+00:21:20,720 --> 00:21:23,510
+>> Justice, you mentioned that um you will
+get kind of differing results um like
+
+1356
+00:21:23,510 --> 00:21:23,520
+get kind of differing results um like
+ 
+
+1357
+00:21:23,520 --> 00:21:25,510
+get kind of differing results um like
+the you know agent added some brain
+
+1358
+00:21:25,510 --> 00:21:25,520
+the you know agent added some brain
+ 
+
+1359
+00:21:25,520 --> 00:21:25,909
+the you know agent added some brain
+cells.
+
+1360
+00:21:25,909 --> 00:21:25,919
+cells.
+ 
+
+1361
+00:21:25,919 --> 00:21:29,510
+cells.
+>> Yeah. Um, did you play around with uh
+
+1362
+00:21:29,510 --> 00:21:29,520
+>> Yeah. Um, did you play around with uh
+ 
+
+1363
+00:21:29,520 --> 00:21:32,149
+>> Yeah. Um, did you play around with uh
+agent sequencing or repetition to see if
+
+1364
+00:21:32,149 --> 00:21:32,159
+agent sequencing or repetition to see if
+ 
+
+1365
+00:21:32,159 --> 00:21:33,510
+agent sequencing or repetition to see if
+your results varied and then what did
+
+1366
+00:21:33,510 --> 00:21:33,520
+your results varied and then what did
+ 
+
+1367
+00:21:33,520 --> 00:21:34,470
+your results varied and then what did
+you find?
+
+1368
+00:21:34,470 --> 00:21:34,480
+you find?
+ 
+
+1369
+00:21:34,480 --> 00:21:35,990
+you find?
+>> Yeah. So, if I'm understanding you
+
+1370
+00:21:35,990 --> 00:21:36,000
+>> Yeah. So, if I'm understanding you
+ 
+
+1371
+00:21:36,000 --> 00:21:37,270
+>> Yeah. So, if I'm understanding you
+correctly, you're saying like doing like
+
+1372
+00:21:37,270 --> 00:21:37,280
+correctly, you're saying like doing like
+ 
+
+1373
+00:21:37,280 --> 00:21:38,870
+correctly, you're saying like doing like
+iterations of the scan with the same
+
+1374
+00:21:38,870 --> 00:21:38,880
+iterations of the scan with the same
+ 
+
+1375
+00:21:38,880 --> 00:21:41,669
+iterations of the scan with the same
+agent like in the same scanning context.
+
+1376
+00:21:41,669 --> 00:21:41,679
+agent like in the same scanning context.
+ 
+
+1377
+00:21:41,679 --> 00:21:43,590
+agent like in the same scanning context.
+>> Yeah. Or even reordering the sort of
+
+1378
+00:21:43,590 --> 00:21:43,600
+>> Yeah. Or even reordering the sort of
+ 
+
+1379
+00:21:43,600 --> 00:21:44,870
+>> Yeah. Or even reordering the sort of
+agent workflows.
+
+1380
+00:21:44,870 --> 00:21:44,880
+agent workflows.
+ 
+
+1381
+00:21:44,880 --> 00:21:45,350
+agent workflows.
+>> Sure.
+
+1382
+00:21:45,350 --> 00:21:45,360
+>> Sure.
+ 
+
+1383
+00:21:45,360 --> 00:21:47,350
+>> Sure.
+>> Yeah. Yeah, definitely. Um, I think we
+
+1384
+00:21:47,350 --> 00:21:47,360
+>> Yeah. Yeah, definitely. Um, I think we
+ 
+
+1385
+00:21:47,360 --> 00:21:48,950
+>> Yeah. Yeah, definitely. Um, I think we
+we've tried a fair number of different
+
+1386
+00:21:48,950 --> 00:21:48,960
+we've tried a fair number of different
+ 
+
+1387
+00:21:48,960 --> 00:21:51,270
+we've tried a fair number of different
+things. Um, and happy to brain dump if
+
+1388
+00:21:51,270 --> 00:21:51,280
+things. Um, and happy to brain dump if
+ 
+
+1389
+00:21:51,280 --> 00:21:52,390
+things. Um, and happy to brain dump if
+if you're curious. I think some of the
+
+1390
+00:21:52,390 --> 00:21:52,400
+if you're curious. I think some of the
+ 
+
+1391
+00:21:52,400 --> 00:21:53,750
+if you're curious. I think some of the
+things that we're really looking at
+
+1392
+00:21:53,750 --> 00:21:53,760
+things that we're really looking at
+ 
+
+1393
+00:21:53,760 --> 00:21:56,230
+things that we're really looking at
+going forward would be chaining of
+
+1394
+00:21:56,230 --> 00:21:56,240
+going forward would be chaining of
+ 
+
+1395
+00:21:56,240 --> 00:21:58,870
+going forward would be chaining of
+agents of varying complexity and cost.
+
+1396
+00:21:58,870 --> 00:21:58,880
+agents of varying complexity and cost.
+ 
+
+1397
+00:21:58,880 --> 00:22:00,789
+agents of varying complexity and cost.
+So for example like this might not be
+
+1398
+00:22:00,789 --> 00:22:00,799
+So for example like this might not be
+ 
+
+1399
+00:22:00,799 --> 00:22:02,070
+So for example like this might not be
+the ones we would choose but say we like
+
+1400
+00:22:02,070 --> 00:22:02,080
+the ones we would choose but say we like
+ 
+
+1401
+00:22:02,080 --> 00:22:04,230
+the ones we would choose but say we like
+haiku is very cheap right? So chaining
+
+1402
+00:22:04,230 --> 00:22:04,240
+haiku is very cheap right? So chaining
+ 
+
+1403
+00:22:04,240 --> 00:22:06,149
+haiku is very cheap right? So chaining
+those into the more advanced agents so
+
+1404
+00:22:06,149 --> 00:22:06,159
+those into the more advanced agents so
+ 
+
+1405
+00:22:06,159 --> 00:22:07,990
+those into the more advanced agents so
+that we can get multiple iterations
+
+1406
+00:22:07,990 --> 00:22:08,000
+that we can get multiple iterations
+ 
+
+1407
+00:22:08,000 --> 00:22:09,750
+that we can get multiple iterations
+before we go on. I think one of the
+
+1408
+00:22:09,750 --> 00:22:09,760
+before we go on. I think one of the
+ 
+
+1409
+00:22:09,760 --> 00:22:11,029
+before we go on. I think one of the
+previous talks that we watched was
+
+1410
+00:22:11,029 --> 00:22:11,039
+previous talks that we watched was
+ 
+
+1411
+00:22:11,039 --> 00:22:12,390
+previous talks that we watched was
+saying you know like Opus is very good
+
+1412
+00:22:12,390 --> 00:22:12,400
+saying you know like Opus is very good
+ 
+
+1413
+00:22:12,400 --> 00:22:14,950
+saying you know like Opus is very good
+but it's not so much better in some of
+
+1414
+00:22:14,950 --> 00:22:14,960
+but it's not so much better in some of
+ 
+
+1415
+00:22:14,960 --> 00:22:16,310
+but it's not so much better in some of
+these use cases that it's worth the
+
+1416
+00:22:16,310 --> 00:22:16,320
+these use cases that it's worth the
+ 
+
+1417
+00:22:16,320 --> 00:22:17,990
+these use cases that it's worth the
+additional cost where you know maybe
+
+1418
+00:22:17,990 --> 00:22:18,000
+additional cost where you know maybe
+ 
+
+1419
+00:22:18,000 --> 00:22:19,110
+additional cost where you know maybe
+there are certain triggers that we would
+
+1420
+00:22:19,110 --> 00:22:19,120
+there are certain triggers that we would
+ 
+
+1421
+00:22:19,120 --> 00:22:20,470
+there are certain triggers that we would
+want to layer where we would say like
+
+1422
+00:22:20,470 --> 00:22:20,480
+want to layer where we would say like
+ 
+
+1423
+00:22:20,480 --> 00:22:22,549
+want to layer where we would say like
+haiku to certain triggers to sonnet to
+
+1424
+00:22:22,549 --> 00:22:22,559
+haiku to certain triggers to sonnet to
+ 
+
+1425
+00:22:22,559 --> 00:22:23,990
+haiku to certain triggers to sonnet to
+certain triggers to opus to certain
+
+1426
+00:22:23,990 --> 00:22:24,000
+certain triggers to opus to certain
+ 
+
+1427
+00:22:24,000 --> 00:22:25,830
+certain triggers to opus to certain
+triggers and just take over the context
+
+1428
+00:22:25,830 --> 00:22:25,840
+triggers and just take over the context
+ 
+
+1429
+00:22:25,840 --> 00:22:28,070
+triggers and just take over the context
+window with that additional more
+
+1430
+00:22:28,070 --> 00:22:28,080
+window with that additional more
+ 
+
+1431
+00:22:28,080 --> 00:22:29,590
+window with that additional more
+advanced agent and those are definitely
+
+1432
+00:22:29,590 --> 00:22:29,600
+advanced agent and those are definitely
+ 
+
+1433
+00:22:29,600 --> 00:22:31,190
+advanced agent and those are definitely
+things we've tried. It does come out to
+
+1434
+00:22:31,190 --> 00:22:31,200
+things we've tried. It does come out to
+ 
+
+1435
+00:22:31,200 --> 00:22:33,029
+things we've tried. It does come out to
+be a lot better results. It also does
+
+1436
+00:22:33,029 --> 00:22:33,039
+be a lot better results. It also does
+ 
+
+1437
+00:22:33,039 --> 00:22:34,789
+be a lot better results. It also does
+come out to be a lot more expensive. Um,
+
+1438
+00:22:34,789 --> 00:22:34,799
+come out to be a lot more expensive. Um,
+ 
+
+1439
+00:22:34,799 --> 00:22:36,310
+come out to be a lot more expensive. Um,
+so weighing the differences and kind of
+
+1440
+00:22:36,310 --> 00:22:36,320
+so weighing the differences and kind of
+ 
+
+1441
+00:22:36,320 --> 00:22:37,750
+so weighing the differences and kind of
+determining what works best for your
+
+1442
+00:22:37,750 --> 00:22:37,760
+determining what works best for your
+ 
+
+1443
+00:22:37,760 --> 00:22:39,029
+determining what works best for your
+environment is kind of where we're at
+
+1444
+00:22:39,029 --> 00:22:39,039
+environment is kind of where we're at
+ 
+
+1445
+00:22:39,039 --> 00:22:40,149
+environment is kind of where we're at
+because, you know, if you want to scan
+
+1446
+00:22:40,149 --> 00:22:40,159
+because, you know, if you want to scan
+ 
+
+1447
+00:22:40,159 --> 00:22:41,350
+because, you know, if you want to scan
+every line of code, we can definitely do
+
+1448
+00:22:41,350 --> 00:22:41,360
+every line of code, we can definitely do
+ 
+
+1449
+00:22:41,360 --> 00:22:43,029
+every line of code, we can definitely do
+that. We'll find tons of vulnerabilities
+
+1450
+00:22:43,029 --> 00:22:43,039
+that. We'll find tons of vulnerabilities
+ 
+
+1451
+00:22:43,039 --> 00:22:45,190
+that. We'll find tons of vulnerabilities
+every time. The issue is if you're okay
+
+1452
+00:22:45,190 --> 00:22:45,200
+every time. The issue is if you're okay
+ 
+
+1453
+00:22:45,200 --> 00:22:48,070
+every time. The issue is if you're okay
+with, you know, $400, $500 per repo, per
+
+1454
+00:22:48,070 --> 00:22:48,080
+with, you know, $400, $500 per repo, per
+ 
+
+1455
+00:22:48,080 --> 00:22:50,070
+with, you know, $400, $500 per repo, per
+scan. It just depends on the scalability
+
+1456
+00:22:50,070 --> 00:22:50,080
+scan. It just depends on the scalability
+ 
+
+1457
+00:22:50,080 --> 00:22:51,510
+scan. It just depends on the scalability
+and the importance of the repo, for
+
+1458
+00:22:51,510 --> 00:22:51,520
+and the importance of the repo, for
+ 
+
+1459
+00:22:51,520 --> 00:22:53,029
+and the importance of the repo, for
+sure.
+
+1460
+00:22:53,029 --> 00:22:53,039
+sure.
+ 
+
+1461
+00:22:53,039 --> 00:22:54,149
+sure.
+>> All right, before we get to another
+
+1462
+00:22:54,149 --> 00:22:54,159
+>> All right, before we get to another
+ 
+
+1463
+00:22:54,159 --> 00:22:55,510
+>> All right, before we get to another
+question, if you're the next speaker,
+
+1464
+00:22:55,510 --> 00:22:55,520
+question, if you're the next speaker,
+ 
+
+1465
+00:22:55,520 --> 00:22:56,870
+question, if you're the next speaker,
+can you come up and see this gentleman
+
+1466
+00:22:56,870 --> 00:22:56,880
+can you come up and see this gentleman
+ 
+
+1467
+00:22:56,880 --> 00:22:57,909
+can you come up and see this gentleman
+over here on the opposite side of the
+
+1468
+00:22:57,909 --> 00:22:57,919
+over here on the opposite side of the
+ 
+
+1469
+00:22:57,919 --> 00:23:00,549
+over here on the opposite side of the
+stage and he'll get you set up?
+
+1470
+00:23:00,549 --> 00:23:00,559
+stage and he'll get you set up?
+ 
+
+1471
+00:23:00,559 --> 00:23:01,590
+stage and he'll get you set up?
+All right, I'll go right here in the
+
+1472
+00:23:01,590 --> 00:23:01,600
+All right, I'll go right here in the
+ 
+
+1473
+00:23:01,600 --> 00:23:04,149
+All right, I'll go right here in the
+middle.
+
+1474
+00:23:04,149 --> 00:23:04,159
+middle.
+ 
+
+1475
+00:23:04,159 --> 00:23:06,630
+middle.
+um security prompting and getting the
+
+1476
+00:23:06,630 --> 00:23:06,640
+um security prompting and getting the
+ 
+
+1477
+00:23:06,640 --> 00:23:08,950
+um security prompting and getting the
+right results is hard. Any tips or
+
+1478
+00:23:08,950 --> 00:23:08,960
+right results is hard. Any tips or
+ 
+
+1479
+00:23:08,960 --> 00:23:10,230
+right results is hard. Any tips or
+tricks that you have used which will
+
+1480
+00:23:10,230 --> 00:23:10,240
+tricks that you have used which will
+ 
+
+1481
+00:23:10,240 --> 00:23:13,029
+tricks that you have used which will
+give you the results that you need?
+
+1482
+00:23:13,029 --> 00:23:13,039
+give you the results that you need?
+ 
+
+1483
+00:23:13,039 --> 00:23:15,750
+give you the results that you need?
+>> Yeah, sure. Um I think you know I both
+
+1484
+00:23:15,750 --> 00:23:15,760
+>> Yeah, sure. Um I think you know I both
+ 
+
+1485
+00:23:15,760 --> 00:23:16,950
+>> Yeah, sure. Um I think you know I both
+of us come from like an offensive
+
+1486
+00:23:16,950 --> 00:23:16,960
+of us come from like an offensive
+ 
+
+1487
+00:23:16,960 --> 00:23:18,390
+of us come from like an offensive
+security background. So a lot of exploit
+
+1488
+00:23:18,390 --> 00:23:18,400
+security background. So a lot of exploit
+ 
+
+1489
+00:23:18,400 --> 00:23:19,510
+security background. So a lot of exploit
+development, a lot of red teaming, a lot
+
+1490
+00:23:19,510 --> 00:23:19,520
+development, a lot of red teaming, a lot
+ 
+
+1491
+00:23:19,520 --> 00:23:22,230
+development, a lot of red teaming, a lot
+of penetration testing. Um we tend to
+
+1492
+00:23:22,230 --> 00:23:22,240
+of penetration testing. Um we tend to
+ 
+
+1493
+00:23:22,240 --> 00:23:23,909
+of penetration testing. Um we tend to
+provide the prompts in a way that our
+
+1494
+00:23:23,909 --> 00:23:23,919
+provide the prompts in a way that our
+ 
+
+1495
+00:23:23,919 --> 00:23:26,230
+provide the prompts in a way that our
+logic would work as well. Um so giving
+
+1496
+00:23:26,230 --> 00:23:26,240
+logic would work as well. Um so giving
+ 
+
+1497
+00:23:26,240 --> 00:23:28,149
+logic would work as well. Um so giving
+it all the ground rules and then being
+
+1498
+00:23:28,149 --> 00:23:28,159
+it all the ground rules and then being
+ 
+
+1499
+00:23:28,159 --> 00:23:29,590
+it all the ground rules and then being
+explicit I think about what you don't
+
+1500
+00:23:29,590 --> 00:23:29,600
+explicit I think about what you don't
+ 
+
+1501
+00:23:29,600 --> 00:23:31,029
+explicit I think about what you don't
+want it to do while giving it the
+
+1502
+00:23:31,029 --> 00:23:31,039
+want it to do while giving it the
+ 
+
+1503
+00:23:31,039 --> 00:23:32,950
+want it to do while giving it the
+flexibility to evolve. So rather than
+
+1504
+00:23:32,950 --> 00:23:32,960
+flexibility to evolve. So rather than
+ 
+
+1505
+00:23:32,960 --> 00:23:34,789
+flexibility to evolve. So rather than
+saying like here are all the vulnerable
+
+1506
+00:23:34,789 --> 00:23:34,799
+saying like here are all the vulnerable
+ 
+
+1507
+00:23:34,799 --> 00:23:36,789
+saying like here are all the vulnerable
+patterns it would be something like here
+
+1508
+00:23:36,789 --> 00:23:36,799
+patterns it would be something like here
+ 
+
+1509
+00:23:36,799 --> 00:23:38,789
+patterns it would be something like here
+are the vulnerable patterns to reference
+
+1510
+00:23:38,789 --> 00:23:38,799
+are the vulnerable patterns to reference
+ 
+
+1511
+00:23:38,799 --> 00:23:41,029
+are the vulnerable patterns to reference
+ensure you take into account application
+
+1512
+00:23:41,029 --> 00:23:41,039
+ensure you take into account application
+ 
+
+1513
+00:23:41,039 --> 00:23:43,190
+ensure you take into account application
+context to evolve and to do additional
+
+1514
+00:23:43,190 --> 00:23:43,200
+context to evolve and to do additional
+ 
+
+1515
+00:23:43,200 --> 00:23:44,950
+context to evolve and to do additional
+discovery because there are variance
+
+1516
+00:23:44,950 --> 00:23:44,960
+discovery because there are variance
+ 
+
+1517
+00:23:44,960 --> 00:23:46,950
+discovery because there are variance
+right so ensuring you're explicit so the
+
+1518
+00:23:46,950 --> 00:23:46,960
+right so ensuring you're explicit so the
+ 
+
+1519
+00:23:46,960 --> 00:23:48,870
+right so ensuring you're explicit so the
+models don't take your word as gospel is
+
+1520
+00:23:48,870 --> 00:23:48,880
+models don't take your word as gospel is
+ 
+
+1521
+00:23:48,880 --> 00:23:50,870
+models don't take your word as gospel is
+>> yeah and maybe one other sort of uh
+
+1522
+00:23:50,870 --> 00:23:50,880
+>> yeah and maybe one other sort of uh
+ 
+
+1523
+00:23:50,880 --> 00:23:52,310
+>> yeah and maybe one other sort of uh
+thing that we've noticed is that the
+
+1524
+00:23:52,310 --> 00:23:52,320
+thing that we've noticed is that the
+ 
+
+1525
+00:23:52,320 --> 00:23:54,710
+thing that we've noticed is that the
+models are trained based on a volume of
+
+1526
+00:23:54,710 --> 00:23:54,720
+models are trained based on a volume of
+ 
+
+1527
+00:23:54,720 --> 00:23:56,470
+models are trained based on a volume of
+data I think everybody in this audience
+
+1528
+00:23:56,470 --> 00:23:56,480
+data I think everybody in this audience
+ 
+
+1529
+00:23:56,480 --> 00:23:58,230
+data I think everybody in this audience
+knows SQL injection but does everybody
+
+1530
+00:23:58,230 --> 00:23:58,240
+knows SQL injection but does everybody
+ 
+
+1531
+00:23:58,240 --> 00:24:00,149
+knows SQL injection but does everybody
+know time of check time of use there's
+
+1532
+00:24:00,149 --> 00:24:00,159
+know time of check time of use there's
+ 
+
+1533
+00:24:00,159 --> 00:24:01,669
+know time of check time of use there's
+way less articles in time of check time
+
+1534
+00:24:01,669 --> 00:24:01,679
+way less articles in time of check time
+ 
+
+1535
+00:24:01,679 --> 00:24:03,830
+way less articles in time of check time
+of To give you an example, re very
+
+1536
+00:24:03,830 --> 00:24:03,840
+of To give you an example, re very
+ 
+
+1537
+00:24:03,840 --> 00:24:05,669
+of To give you an example, re very
+rarely have we actually seen Opus find
+
+1538
+00:24:05,669 --> 00:24:05,679
+rarely have we actually seen Opus find
+ 
+
+1539
+00:24:05,679 --> 00:24:07,110
+rarely have we actually seen Opus find
+meaningful time of check time of use
+
+1540
+00:24:07,110 --> 00:24:07,120
+meaningful time of check time of use
+ 
+
+1541
+00:24:07,120 --> 00:24:08,870
+meaningful time of check time of use
+without having time of check time of use
+
+1542
+00:24:08,870 --> 00:24:08,880
+without having time of check time of use
+ 
+
+1543
+00:24:08,880 --> 00:24:10,870
+without having time of check time of use
+in its prompt. So when you think about
+
+1544
+00:24:10,870 --> 00:24:10,880
+in its prompt. So when you think about
+ 
+
+1545
+00:24:10,880 --> 00:24:12,470
+in its prompt. So when you think about
+the hundreds and hundreds of
+
+1546
+00:24:12,470 --> 00:24:12,480
+the hundreds and hundreds of
+ 
+
+1547
+00:24:12,480 --> 00:24:14,230
+the hundreds and hundreds of
+vulnerability classes, if you're only
+
+1548
+00:24:14,230 --> 00:24:14,240
+vulnerability classes, if you're only
+ 
+
+1549
+00:24:14,240 --> 00:24:16,390
+vulnerability classes, if you're only
+looking for OAS top 10 with a vanilla
+
+1550
+00:24:16,390 --> 00:24:16,400
+looking for OAS top 10 with a vanilla
+ 
+
+1551
+00:24:16,400 --> 00:24:17,750
+looking for OAS top 10 with a vanilla
+model, you'll find it. But the minute
+
+1552
+00:24:17,750 --> 00:24:17,760
+model, you'll find it. But the minute
+ 
+
+1553
+00:24:17,760 --> 00:24:19,190
+model, you'll find it. But the minute
+you start stepping into more esoteric
+
+1554
+00:24:19,190 --> 00:24:19,200
+you start stepping into more esoteric
+ 
+
+1555
+00:24:19,200 --> 00:24:21,269
+you start stepping into more esoteric
+vulnerabilities, providing that context
+
+1556
+00:24:21,269 --> 00:24:21,279
+vulnerabilities, providing that context
+ 
+
+1557
+00:24:21,279 --> 00:24:22,870
+vulnerabilities, providing that context
+in a vanilla prompt or in a workflow
+
+1558
+00:24:22,870 --> 00:24:22,880
+in a vanilla prompt or in a workflow
+ 
+
+1559
+00:24:22,880 --> 00:24:24,549
+in a vanilla prompt or in a workflow
+results in significantly better coverage
+
+1560
+00:24:24,549 --> 00:24:24,559
+results in significantly better coverage
+ 
+
+1561
+00:24:24,559 --> 00:24:25,830
+results in significantly better coverage
+based on the way that the models are
+
+1562
+00:24:25,830 --> 00:24:25,840
+based on the way that the models are
+ 
+
+1563
+00:24:25,840 --> 00:24:28,870
+based on the way that the models are
+trained.
+
+1564
+00:24:28,870 --> 00:24:28,880
+
+ 
+
+1565
+00:24:28,880 --> 00:24:29,750
+
+>> Anybody else?
+
+1566
+00:24:29,750 --> 00:24:29,760
+>> Anybody else?
+ 
+
+1567
+00:24:29,760 --> 00:24:31,909
+>> Anybody else?
+>> One other question. We got time for one
+
+1568
+00:24:31,909 --> 00:24:31,919
+>> One other question. We got time for one
+ 
+
+1569
+00:24:31,919 --> 00:24:35,350
+>> One other question. We got time for one
+more right here.
+
+1570
+00:24:35,350 --> 00:24:35,360
+more right here.
+ 
+
+1571
+00:24:35,360 --> 00:24:37,990
+more right here.
+>> Um, hi. So, this seems like a longunning
+
+1572
+00:24:37,990 --> 00:24:38,000
+>> Um, hi. So, this seems like a longunning
+ 
+
+1573
+00:24:38,000 --> 00:24:39,750
+>> Um, hi. So, this seems like a longunning
+background scan that I presume you run
+
+1574
+00:24:39,750 --> 00:24:39,760
+background scan that I presume you run
+ 
+
+1575
+00:24:39,760 --> 00:24:42,070
+background scan that I presume you run
+every like day or week or so. Do you
+
+1576
+00:24:42,070 --> 00:24:42,080
+every like day or week or so. Do you
+ 
+
+1577
+00:24:42,080 --> 00:24:43,830
+every like day or week or so. Do you
+have a separate sort of surface for like
+
+1578
+00:24:43,830 --> 00:24:43,840
+have a separate sort of surface for like
+ 
+
+1579
+00:24:43,840 --> 00:24:46,789
+have a separate sort of surface for like
+PRs or And do the scans build on top of
+
+1580
+00:24:46,789 --> 00:24:46,799
+PRs or And do the scans build on top of
+ 
+
+1581
+00:24:46,799 --> 00:24:47,750
+PRs or And do the scans build on top of
+each other?
+
+1582
+00:24:47,750 --> 00:24:47,760
+each other?
+ 
+
+1583
+00:24:47,760 --> 00:24:48,630
+each other?
+>> You want me to cover that?
+
+1584
+00:24:48,630 --> 00:24:48,640
+>> You want me to cover that?
+ 
+
+1585
+00:24:48,640 --> 00:24:49,110
+>> You want me to cover that?
+>> Yeah, sure.
+
+1586
+00:24:49,110 --> 00:24:49,120
+>> Yeah, sure.
+ 
+
+1587
+00:24:49,120 --> 00:24:50,710
+>> Yeah, sure.
+>> Yeah. Yeah. Yeah. So, we actually So, we
+
+1588
+00:24:50,710 --> 00:24:50,720
+>> Yeah. Yeah. Yeah. So, we actually So, we
+ 
+
+1589
+00:24:50,720 --> 00:24:52,630
+>> Yeah. Yeah. Yeah. So, we actually So, we
+have an MCP that we leverage as well.
+
+1590
+00:24:52,630 --> 00:24:52,640
+have an MCP that we leverage as well.
+ 
+
+1591
+00:24:52,640 --> 00:24:55,110
+have an MCP that we leverage as well.
+Um, and our intention with that was to
+
+1592
+00:24:55,110 --> 00:24:55,120
+Um, and our intention with that was to
+ 
+
+1593
+00:24:55,120 --> 00:24:57,190
+Um, and our intention with that was to
+like have that trigger on pull requests.
+
+1594
+00:24:57,190 --> 00:24:57,200
+like have that trigger on pull requests.
+ 
+
+1595
+00:24:57,200 --> 00:24:59,190
+like have that trigger on pull requests.
+Um, we also have this incremental diff
+
+1596
+00:24:59,190 --> 00:24:59,200
+Um, we also have this incremental diff
+ 
+
+1597
+00:24:59,200 --> 00:25:00,549
+Um, we also have this incremental diff
+feature that I think just has developed
+
+1598
+00:25:00,549 --> 00:25:00,559
+feature that I think just has developed
+ 
+
+1599
+00:25:00,559 --> 00:25:02,630
+feature that I think just has developed
+on our internal approach which like when
+
+1600
+00:25:02,630 --> 00:25:02,640
+on our internal approach which like when
+ 
+
+1601
+00:25:02,640 --> 00:25:04,390
+on our internal approach which like when
+a diff occurs we have the ability to
+
+1602
+00:25:04,390 --> 00:25:04,400
+a diff occurs we have the ability to
+ 
+
+1603
+00:25:04,400 --> 00:25:06,549
+a diff occurs we have the ability to
+just scan that diff. Um, kind of our
+
+1604
+00:25:06,549 --> 00:25:06,559
+just scan that diff. Um, kind of our
+ 
+
+1605
+00:25:06,559 --> 00:25:08,230
+just scan that diff. Um, kind of our
+philosophy for scanning this right now
+
+1606
+00:25:08,230 --> 00:25:08,240
+philosophy for scanning this right now
+ 
+
+1607
+00:25:08,240 --> 00:25:11,750
+philosophy for scanning this right now
+is is um is trying to when we do a scan
+
+1608
+00:25:11,750 --> 00:25:11,760
+is is um is trying to when we do a scan
+ 
+
+1609
+00:25:11,760 --> 00:25:13,350
+is is um is trying to when we do a scan
+get it as close to developer as possible
+
+1610
+00:25:13,350 --> 00:25:13,360
+get it as close to developer as possible
+ 
+
+1611
+00:25:13,360 --> 00:25:15,110
+get it as close to developer as possible
+and then on our most critical code bases
+
+1612
+00:25:15,110 --> 00:25:15,120
+and then on our most critical code bases
+ 
+
+1613
+00:25:15,120 --> 00:25:16,630
+and then on our most critical code bases
+like do really comprehensive coverage
+
+1614
+00:25:16,630 --> 00:25:16,640
+like do really comprehensive coverage
+ 
+
+1615
+00:25:16,640 --> 00:25:18,230
+like do really comprehensive coverage
+and then just go more work closely with
+
+1616
+00:25:18,230 --> 00:25:18,240
+and then just go more work closely with
+ 
+
+1617
+00:25:18,240 --> 00:25:20,549
+and then just go more work closely with
+those teams. So we've had I mean we're
+
+1618
+00:25:20,549 --> 00:25:20,559
+those teams. So we've had I mean we're
+ 
+
+1619
+00:25:20,559 --> 00:25:21,990
+those teams. So we've had I mean we're
+in the process of getting the PR stuff
+
+1620
+00:25:21,990 --> 00:25:22,000
+in the process of getting the PR stuff
+ 
+
+1621
+00:25:22,000 --> 00:25:23,590
+in the process of getting the PR stuff
+sort of working now. I don't have a
+
+1622
+00:25:23,590 --> 00:25:23,600
+sort of working now. I don't have a
+ 
+
+1623
+00:25:23,600 --> 00:25:25,909
+sort of working now. I don't have a
+great update on how how some of the pain
+
+1624
+00:25:25,909 --> 00:25:25,919
+great update on how how some of the pain
+ 
+
+1625
+00:25:25,919 --> 00:25:27,029
+great update on how how some of the pain
+points we're going to find there, but
+
+1626
+00:25:27,029 --> 00:25:27,039
+points we're going to find there, but
+ 
+
+1627
+00:25:27,039 --> 00:25:29,029
+points we're going to find there, but
+that's something we are actively working
+
+1628
+00:25:29,029 --> 00:25:29,039
+that's something we are actively working
+ 
+
+1629
+00:25:29,039 --> 00:25:29,590
+that's something we are actively working
+on.
+
+1630
+00:25:29,590 --> 00:25:29,600
+on.
+ 
+
+1631
+00:25:29,600 --> 00:25:31,350
+on.
+>> Yeah. And I I'll just add like one of
+
+1632
+00:25:31,350 --> 00:25:31,360
+>> Yeah. And I I'll just add like one of
+ 
+
+1633
+00:25:31,360 --> 00:25:32,950
+>> Yeah. And I I'll just add like one of
+the things that we're seeing works well
+
+1634
+00:25:32,950 --> 00:25:32,960
+the things that we're seeing works well
+ 
+
+1635
+00:25:32,960 --> 00:25:34,710
+the things that we're seeing works well
+for that is if we're trying to constrain
+
+1636
+00:25:34,710 --> 00:25:34,720
+for that is if we're trying to constrain
+ 
+
+1637
+00:25:34,720 --> 00:25:36,549
+for that is if we're trying to constrain
+context and constrain token usage is
+
+1638
+00:25:36,549 --> 00:25:36,559
+context and constrain token usage is
+ 
+
+1639
+00:25:36,559 --> 00:25:38,710
+context and constrain token usage is
+we're saving all of the traces and data
+
+1640
+00:25:38,710 --> 00:25:38,720
+we're saving all of the traces and data
+ 
+
+1641
+00:25:38,720 --> 00:25:40,070
+we're saving all of the traces and data
+that we're talking about right now as
+
+1642
+00:25:40,070 --> 00:25:40,080
+that we're talking about right now as
+ 
+
+1643
+00:25:40,080 --> 00:25:41,750
+that we're talking about right now as
+well as the findings and all the
+
+1644
+00:25:41,750 --> 00:25:41,760
+well as the findings and all the
+ 
+
+1645
+00:25:41,760 --> 00:25:44,149
+well as the findings and all the
+resulting logic. So we're tracking like
+
+1646
+00:25:44,149 --> 00:25:44,159
+resulting logic. So we're tracking like
+ 
+
+1647
+00:25:44,159 --> 00:25:45,830
+resulting logic. So we're tracking like
+when the model makes a decision to call
+
+1648
+00:25:45,830 --> 00:25:45,840
+when the model makes a decision to call
+ 
+
+1649
+00:25:45,840 --> 00:25:47,269
+when the model makes a decision to call
+something a false positive, what it did
+
+1650
+00:25:47,269 --> 00:25:47,279
+something a false positive, what it did
+ 
+
+1651
+00:25:47,279 --> 00:25:49,269
+something a false positive, what it did
+and why it did it. So keeping all that
+
+1652
+00:25:49,269 --> 00:25:49,279
+and why it did it. So keeping all that
+ 
+
+1653
+00:25:49,279 --> 00:25:50,310
+and why it did it. So keeping all that
+information so that when we are
+
+1654
+00:25:50,310 --> 00:25:50,320
+information so that when we are
+ 
+
+1655
+00:25:50,320 --> 00:25:52,310
+information so that when we are
+reviewing PRs, our plan is to feed that
+
+1656
+00:25:52,310 --> 00:25:52,320
+reviewing PRs, our plan is to feed that
+ 
+
+1657
+00:25:52,320 --> 00:25:53,669
+reviewing PRs, our plan is to feed that
+in. so that we don't actually have to
+
+1658
+00:25:53,669 --> 00:25:53,679
+in. so that we don't actually have to
+ 
+
+1659
+00:25:53,679 --> 00:25:55,350
+in. so that we don't actually have to
+reevaluate the entire codebase and we
+
+1660
+00:25:55,350 --> 00:25:55,360
+reevaluate the entire codebase and we
+ 
+
+1661
+00:25:55,360 --> 00:25:57,110
+reevaluate the entire codebase and we
+can have enough context for it to make
+
+1662
+00:25:57,110 --> 00:25:57,120
+can have enough context for it to make
+ 
+
+1663
+00:25:57,120 --> 00:25:58,630
+can have enough context for it to make
+the decision. Do I need to do any
+
+1664
+00:25:58,630 --> 00:25:58,640
+the decision. Do I need to do any
+ 
+
+1665
+00:25:58,640 --> 00:25:59,990
+the decision. Do I need to do any
+additional exploration for like
+
+1666
+00:25:59,990 --> 00:26:00,000
+additional exploration for like
+ 
+
+1667
+00:26:00,000 --> 00:26:01,750
+additional exploration for like
+regressions or additional downstream
+
+1668
+00:26:01,750 --> 00:26:01,760
+regressions or additional downstream
+ 
+
+1669
+00:26:01,760 --> 00:26:03,350
+regressions or additional downstream
+vulnerability chains? Um so that we
+
+1670
+00:26:03,350 --> 00:26:03,360
+vulnerability chains? Um so that we
+ 
+
+1671
+00:26:03,360 --> 00:26:05,669
+vulnerability chains? Um so that we
+don't have to do the full scan again.
+
+1672
+00:26:05,669 --> 00:26:05,679
+don't have to do the full scan again.
+ 
+
+1673
+00:26:05,679 --> 00:26:05,990
+don't have to do the full scan again.
+Thank you.
+
+1674
+00:26:05,990 --> 00:26:06,000
+Thank you.
+ 
+
+1675
+00:26:06,000 --> 00:26:09,559
+Thank you.
+>> Thanks a lot guys.
+

@@ -1,0 +1,7105 @@
+1
+00:00:04,480 --> 00:00:06,630
+
+Uh this talk is called your agent works
+
+2
+00:00:06,630 --> 00:00:06,640
+Uh this talk is called your agent works
+ 
+
+3
+00:00:06,640 --> 00:00:09,350
+Uh this talk is called your agent works
+for me. Uh it's going to be hopefully
+
+4
+00:00:09,350 --> 00:00:09,360
+for me. Uh it's going to be hopefully
+ 
+
+5
+00:00:09,360 --> 00:00:11,910
+for me. Uh it's going to be hopefully
+interesting and entertaining as well. I
+
+6
+00:00:11,910 --> 00:00:11,920
+interesting and entertaining as well. I
+ 
+
+7
+00:00:11,920 --> 00:00:14,310
+interesting and entertaining as well. I
+just want to get started right away with
+
+8
+00:00:14,310 --> 00:00:14,320
+just want to get started right away with
+ 
+
+9
+00:00:14,320 --> 00:00:16,630
+just want to get started right away with
+uh some source code. So we have a go
+
+10
+00:00:16,630 --> 00:00:16,640
+uh some source code. So we have a go
+ 
+
+11
+00:00:16,640 --> 00:00:18,310
+uh some source code. So we have a go
+program here. It's a data structure
+
+12
+00:00:18,310 --> 00:00:18,320
+program here. It's a data structure
+ 
+
+13
+00:00:18,320 --> 00:00:21,590
+program here. It's a data structure
+customer data structure and uh there's
+
+14
+00:00:21,590 --> 00:00:21,600
+customer data structure and uh there's
+ 
+
+15
+00:00:21,600 --> 00:00:23,429
+customer data structure and uh there's
+some code to add a customer, delete a
+
+16
+00:00:23,429 --> 00:00:23,439
+some code to add a customer, delete a
+ 
+
+17
+00:00:23,439 --> 00:00:26,150
+some code to add a customer, delete a
+customer, right? Uh but one thing is
+
+18
+00:00:26,150 --> 00:00:26,160
+customer, right? Uh but one thing is
+ 
+
+19
+00:00:26,160 --> 00:00:27,830
+customer, right? Uh but one thing is
+missing. There's no edit customer
+
+20
+00:00:27,830 --> 00:00:27,840
+missing. There's no edit customer
+ 
+
+21
+00:00:27,840 --> 00:00:30,790
+missing. There's no edit customer
+function. So, somebody already luckily
+
+22
+00:00:30,790 --> 00:00:30,800
+function. So, somebody already luckily
+ 
+
+23
+00:00:30,800 --> 00:00:32,389
+function. So, somebody already luckily
+created a ticket for this, right? A
+
+24
+00:00:32,389 --> 00:00:32,399
+created a ticket for this, right? A
+ 
+
+25
+00:00:32,399 --> 00:00:34,549
+created a ticket for this, right? A
+feature request. Hey, we want to add the
+
+26
+00:00:34,549 --> 00:00:34,559
+feature request. Hey, we want to add the
+ 
+
+27
+00:00:34,559 --> 00:00:36,549
+feature request. Hey, we want to add the
+edit customer by ID function, right?
+
+28
+00:00:36,549 --> 00:00:36,559
+edit customer by ID function, right?
+ 
+
+29
+00:00:36,559 --> 00:00:38,470
+edit customer by ID function, right?
+Seems like a useful feature that we want
+
+30
+00:00:38,470 --> 00:00:38,480
+Seems like a useful feature that we want
+ 
+
+31
+00:00:38,480 --> 00:00:40,869
+Seems like a useful feature that we want
+to add. Uh, who here would feel
+
+32
+00:00:40,869 --> 00:00:40,879
+to add. Uh, who here would feel
+ 
+
+33
+00:00:40,879 --> 00:00:42,310
+to add. Uh, who here would feel
+comfortable assigning this ticket to
+
+34
+00:00:42,310 --> 00:00:42,320
+comfortable assigning this ticket to
+ 
+
+35
+00:00:42,320 --> 00:00:44,310
+comfortable assigning this ticket to
+your AI agent? You know, just like have
+
+36
+00:00:44,310 --> 00:00:44,320
+your AI agent? You know, just like have
+ 
+
+37
+00:00:44,320 --> 00:00:46,389
+your AI agent? You know, just like have
+it work on it.
+
+38
+00:00:46,389 --> 00:00:46,399
+it work on it.
+ 
+
+39
+00:00:46,399 --> 00:00:48,790
+it work on it.
+We have a couple courageous ones. Donado
+
+40
+00:00:48,790 --> 00:00:48,800
+We have a couple courageous ones. Donado
+ 
+
+41
+00:00:48,800 --> 00:00:50,709
+We have a couple courageous ones. Donado
+is like, "Yeah, let's go." So, what
+
+42
+00:00:50,709 --> 00:00:50,719
+is like, "Yeah, let's go." So, what
+ 
+
+43
+00:00:50,719 --> 00:00:52,150
+is like, "Yeah, let's go." So, what
+happens if you do that? So, this is the
+
+44
+00:00:52,150 --> 00:00:52,160
+happens if you do that? So, this is the
+ 
+
+45
+00:00:52,160 --> 00:00:54,229
+happens if you do that? So, this is the
+source code. Uh, this is the linear
+
+46
+00:00:54,229 --> 00:00:54,239
+source code. Uh, this is the linear
+ 
+
+47
+00:00:54,239 --> 00:00:57,189
+source code. Uh, this is the linear
+ticket feature request.
+
+48
+00:00:57,189 --> 00:00:57,199
+ticket feature request.
+ 
+
+49
+00:00:57,199 --> 00:00:59,910
+ticket feature request.
+And we go ahead here use Vinsurf. We ask
+
+50
+00:00:59,910 --> 00:00:59,920
+And we go ahead here use Vinsurf. We ask
+ 
+
+51
+00:00:59,920 --> 00:01:03,110
+And we go ahead here use Vinsurf. We ask
+it to hey you know work on this ticket.
+
+52
+00:01:03,110 --> 00:01:03,120
+it to hey you know work on this ticket.
+ 
+
+53
+00:01:03,120 --> 00:01:05,270
+it to hey you know work on this ticket.
+It has MCP integration. We'll reach out
+
+54
+00:01:05,270 --> 00:01:05,280
+It has MCP integration. We'll reach out
+ 
+
+55
+00:01:05,280 --> 00:01:07,429
+It has MCP integration. We'll reach out
+to load the ticket and things happen
+
+56
+00:01:07,429 --> 00:01:07,439
+to load the ticket and things happen
+ 
+
+57
+00:01:07,439 --> 00:01:09,750
+to load the ticket and things happen
+really fast. Now creates a plan to work
+
+58
+00:01:09,750 --> 00:01:09,760
+really fast. Now creates a plan to work
+ 
+
+59
+00:01:09,760 --> 00:01:11,030
+really fast. Now creates a plan to work
+on it. Here you can already see the
+
+60
+00:01:11,030 --> 00:01:11,040
+on it. Here you can already see the
+ 
+
+61
+00:01:11,040 --> 00:01:13,590
+on it. Here you can already see the
+exploit actually in the plan. But it
+
+62
+00:01:13,590 --> 00:01:13,600
+exploit actually in the plan. But it
+ 
+
+63
+00:01:13,600 --> 00:01:15,190
+exploit actually in the plan. But it
+will actually run a remote command that
+
+64
+00:01:15,190 --> 00:01:15,200
+will actually run a remote command that
+ 
+
+65
+00:01:15,200 --> 00:01:17,270
+will actually run a remote command that
+is in the linear ticket. Right? We got
+
+66
+00:01:17,270 --> 00:01:17,280
+is in the linear ticket. Right? We got
+ 
+
+67
+00:01:17,280 --> 00:01:21,270
+is in the linear ticket. Right? We got
+remote command execution. Um and you
+
+68
+00:01:21,270 --> 00:01:21,280
+remote command execution. Um and you
+ 
+
+69
+00:01:21,280 --> 00:01:23,109
+remote command execution. Um and you
+might wonder why that is. So if you go
+
+70
+00:01:23,109 --> 00:01:23,119
+might wonder why that is. So if you go
+ 
+
+71
+00:01:23,119 --> 00:01:25,830
+might wonder why that is. So if you go
+to the ticket here, copy this text and
+
+72
+00:01:25,830 --> 00:01:25,840
+to the ticket here, copy this text and
+ 
+
+73
+00:01:25,840 --> 00:01:27,510
+to the ticket here, copy this text and
+put it in this tool I have the ask a
+
+74
+00:01:27,510 --> 00:01:27,520
+put it in this tool I have the ask a
+ 
+
+75
+00:01:27,520 --> 00:01:29,109
+put it in this tool I have the ask a
+smuggler. There's the prompt injection
+
+76
+00:01:29,109 --> 00:01:29,119
+smuggler. There's the prompt injection
+ 
+
+77
+00:01:29,119 --> 00:01:31,910
+smuggler. There's the prompt injection
+that actually says uh to launch the
+
+78
+00:01:31,910 --> 00:01:31,920
+that actually says uh to launch the
+ 
+
+79
+00:01:31,920 --> 00:01:33,830
+that actually says uh to launch the
+calculator.
+
+80
+00:01:33,830 --> 00:01:33,840
+calculator.
+ 
+
+81
+00:01:33,840 --> 00:01:35,670
+calculator.
+Okay, so that was a linear ticket. What
+
+82
+00:01:35,670 --> 00:01:35,680
+Okay, so that was a linear ticket. What
+ 
+
+83
+00:01:35,680 --> 00:01:37,350
+Okay, so that was a linear ticket. What
+about code review itself? This is the
+
+84
+00:01:37,350 --> 00:01:37,360
+about code review itself? This is the
+ 
+
+85
+00:01:37,360 --> 00:01:39,749
+about code review itself? This is the
+first time you might see Apple Xcode. I
+
+86
+00:01:39,749 --> 00:01:39,759
+first time you might see Apple Xcode. I
+ 
+
+87
+00:01:39,759 --> 00:01:41,429
+first time you might see Apple Xcode. I
+have not actually seen anybody do a
+
+88
+00:01:41,429 --> 00:01:41,439
+have not actually seen anybody do a
+ 
+
+89
+00:01:41,439 --> 00:01:43,109
+have not actually seen anybody do a
+prompt injection with Apple Xcode, so I
+
+90
+00:01:43,109 --> 00:01:43,119
+prompt injection with Apple Xcode, so I
+ 
+
+91
+00:01:43,119 --> 00:01:44,710
+prompt injection with Apple Xcode, so I
+thought it's going to be fun to show
+
+92
+00:01:44,710 --> 00:01:44,720
+thought it's going to be fun to show
+ 
+
+93
+00:01:44,720 --> 00:01:47,190
+thought it's going to be fun to show
+one. U so here's source code. There's no
+
+94
+00:01:47,190 --> 00:01:47,200
+one. U so here's source code. There's no
+ 
+
+95
+00:01:47,200 --> 00:01:48,630
+one. U so here's source code. There's no
+visible prompt injection in the source
+
+96
+00:01:48,630 --> 00:01:48,640
+visible prompt injection in the source
+ 
+
+97
+00:01:48,640 --> 00:01:51,830
+visible prompt injection in the source
+code here. But what if we ask to Xcode
+
+98
+00:01:51,830 --> 00:01:51,840
+code here. But what if we ask to Xcode
+ 
+
+99
+00:01:51,840 --> 00:01:53,990
+code here. But what if we ask to Xcode
+to review this file? It's going to
+
+100
+00:01:53,990 --> 00:01:54,000
+to review this file? It's going to
+ 
+
+101
+00:01:54,000 --> 00:01:56,630
+to review this file? It's going to
+reboot it,
+
+102
+00:01:56,630 --> 00:01:56,640
+reboot it,
+ 
+
+103
+00:01:56,640 --> 00:01:59,830
+reboot it,
+loads the file, analyzes it. It does see
+
+104
+00:01:59,830 --> 00:01:59,840
+loads the file, analyzes it. It does see
+ 
+
+105
+00:01:59,840 --> 00:02:01,830
+loads the file, analyzes it. It does see
+hidden unicode tag characters, right?
+
+106
+00:02:01,830 --> 00:02:01,840
+hidden unicode tag characters, right?
+ 
+
+107
+00:02:01,840 --> 00:02:03,910
+hidden unicode tag characters, right?
+Which we humans don't see, but the LLM
+
+108
+00:02:03,910 --> 00:02:03,920
+Which we humans don't see, but the LLM
+ 
+
+109
+00:02:03,920 --> 00:02:06,310
+Which we humans don't see, but the LLM
+sees. It starts reading the config file
+
+110
+00:02:06,310 --> 00:02:06,320
+sees. It starts reading the config file
+ 
+
+111
+00:02:06,320 --> 00:02:08,389
+sees. It starts reading the config file
+for some reason. And now something
+
+112
+00:02:08,389 --> 00:02:08,399
+for some reason. And now something
+ 
+
+113
+00:02:08,399 --> 00:02:09,910
+for some reason. And now something
+interesting happens. It decodes these
+
+114
+00:02:09,910 --> 00:02:09,920
+interesting happens. It decodes these
+ 
+
+115
+00:02:09,920 --> 00:02:11,350
+interesting happens. It decodes these
+uni code characters, right? Now you see
+
+116
+00:02:11,350 --> 00:02:11,360
+uni code characters, right? Now you see
+ 
+
+117
+00:02:11,360 --> 00:02:13,670
+uni code characters, right? Now you see
+the actual prompt injection payload that
+
+118
+00:02:13,670 --> 00:02:13,680
+the actual prompt injection payload that
+ 
+
+119
+00:02:13,680 --> 00:02:16,390
+the actual prompt injection payload that
+asks it to add source code into the file
+
+120
+00:02:16,390 --> 00:02:16,400
+asks it to add source code into the file
+ 
+
+121
+00:02:16,400 --> 00:02:17,990
+asks it to add source code into the file
+that is going to send data out to the
+
+122
+00:02:17,990 --> 00:02:18,000
+that is going to send data out to the
+ 
+
+123
+00:02:18,000 --> 00:02:21,350
+that is going to send data out to the
+attacker. And it also asked it to call a
+
+124
+00:02:21,350 --> 00:02:21,360
+attacker. And it also asked it to call a
+ 
+
+125
+00:02:21,360 --> 00:02:23,990
+attacker. And it also asked it to call a
+tool called run snippet. So in Xcode you
+
+126
+00:02:23,990 --> 00:02:24,000
+tool called run snippet. So in Xcode you
+ 
+
+127
+00:02:24,000 --> 00:02:26,309
+tool called run snippet. So in Xcode you
+can actually the attacker can run source
+
+128
+00:02:26,309 --> 00:02:26,319
+can actually the attacker can run source
+ 
+
+129
+00:02:26,319 --> 00:02:28,309
+can actually the attacker can run source
+code on the fly. And this is what is
+
+130
+00:02:28,309 --> 00:02:28,319
+code on the fly. And this is what is
+ 
+
+131
+00:02:28,319 --> 00:02:30,710
+code on the fly. And this is what is
+exploited here to have a seamless end to
+
+132
+00:02:30,710 --> 00:02:30,720
+exploited here to have a seamless end to
+ 
+
+133
+00:02:30,720 --> 00:02:33,910
+exploited here to have a seamless end to
+end uh exploit chain. What is important
+
+134
+00:02:33,910 --> 00:02:33,920
+end uh exploit chain. What is important
+ 
+
+135
+00:02:33,920 --> 00:02:35,589
+end uh exploit chain. What is important
+to know is with applex code it's
+
+136
+00:02:35,589 --> 00:02:35,599
+to know is with applex code it's
+ 
+
+137
+00:02:35,599 --> 00:02:37,030
+to know is with applex code it's
+actually pretty good because if you have
+
+138
+00:02:37,030 --> 00:02:37,040
+actually pretty good because if you have
+ 
+
+139
+00:02:37,040 --> 00:02:38,790
+actually pretty good because if you have
+a good environment setup you have a
+
+140
+00:02:38,790 --> 00:02:38,800
+a good environment setup you have a
+ 
+
+141
+00:02:38,800 --> 00:02:40,949
+a good environment setup you have a
+sandbox but if you have your
+
+142
+00:02:40,949 --> 00:02:40,959
+sandbox but if you have your
+ 
+
+143
+00:02:40,959 --> 00:02:42,630
+sandbox but if you have your
+entitlements that allow internet
+
+144
+00:02:42,630 --> 00:02:42,640
+entitlements that allow internet
+ 
+
+145
+00:02:42,640 --> 00:02:46,309
+entitlements that allow internet
+connection this will work uh by default.
+
+146
+00:02:46,309 --> 00:02:46,319
+connection this will work uh by default.
+ 
+
+147
+00:02:46,319 --> 00:02:49,190
+connection this will work uh by default.
+Uh so yeah we have remote command
+
+148
+00:02:49,190 --> 00:02:49,200
+Uh so yeah we have remote command
+ 
+
+149
+00:02:49,200 --> 00:02:50,949
+Uh so yeah we have remote command
+execution we have data excfiltration
+
+150
+00:02:50,949 --> 00:02:50,959
+execution we have data excfiltration
+ 
+
+151
+00:02:50,959 --> 00:02:52,869
+execution we have data excfiltration
+right but we can of course do a lot more
+
+152
+00:02:52,869 --> 00:02:52,879
+right but we can of course do a lot more
+ 
+
+153
+00:02:52,879 --> 00:02:54,309
+right but we can of course do a lot more
+uh this is now a demonstration of
+
+154
+00:02:54,309 --> 00:02:54,319
+uh this is now a demonstration of
+ 
+
+155
+00:02:54,319 --> 00:02:55,910
+uh this is now a demonstration of
+something I have not shown before
+
+156
+00:02:55,910 --> 00:02:55,920
+something I have not shown before
+ 
+
+157
+00:02:55,920 --> 00:02:58,150
+something I have not shown before
+Microsoft enterprise copilot and how we
+
+158
+00:02:58,150 --> 00:02:58,160
+Microsoft enterprise copilot and how we
+ 
+
+159
+00:02:58,160 --> 00:03:00,710
+Microsoft enterprise copilot and how we
+can actually add memories and compromise
+
+160
+00:03:00,710 --> 00:03:00,720
+can actually add memories and compromise
+ 
+
+161
+00:03:00,720 --> 00:03:03,270
+can actually add memories and compromise
+copilot and long-term persist to achieve
+
+162
+00:03:03,270 --> 00:03:03,280
+copilot and long-term persist to achieve
+ 
+
+163
+00:03:03,280 --> 00:03:06,550
+copilot and long-term persist to achieve
+long-term persistence so this is copilot
+
+164
+00:03:06,550 --> 00:03:06,560
+long-term persistence so this is copilot
+ 
+
+165
+00:03:06,560 --> 00:03:07,990
+long-term persistence so this is copilot
+uh I have a demo file that we're going
+
+166
+00:03:07,990 --> 00:03:08,000
+uh I have a demo file that we're going
+ 
+
+167
+00:03:08,000 --> 00:03:10,229
+uh I have a demo file that we're going
+to analyze
+
+168
+00:03:10,229 --> 00:03:10,239
+to analyze
+ 
+
+169
+00:03:10,239 --> 00:03:13,350
+to analyze
+ask you for the t key takeaways of this
+
+170
+00:03:13,350 --> 00:03:13,360
+ask you for the t key takeaways of this
+ 
+
+171
+00:03:13,360 --> 00:03:15,270
+ask you for the t key takeaways of this
+file it analyzes the file and on top you
+
+172
+00:03:15,270 --> 00:03:15,280
+file it analyzes the file and on top you
+ 
+
+173
+00:03:15,280 --> 00:03:17,270
+file it analyzes the file and on top you
+already can see invoke invoke the memory
+
+174
+00:03:17,270 --> 00:03:17,280
+already can see invoke invoke the memory
+ 
+
+175
+00:03:17,280 --> 00:03:19,350
+already can see invoke invoke the memory
+tool and now copilot is going to be
+
+176
+00:03:19,350 --> 00:03:19,360
+tool and now copilot is going to be
+ 
+
+177
+00:03:19,360 --> 00:03:22,149
+tool and now copilot is going to be
+compromised forever right and there's
+
+178
+00:03:22,149 --> 00:03:22,159
+compromised forever right and there's
+ 
+
+179
+00:03:22,159 --> 00:03:24,470
+compromised forever right and there's
+two specific memories this exploit added
+
+180
+00:03:24,470 --> 00:03:24,480
+two specific memories this exploit added
+ 
+
+181
+00:03:24,480 --> 00:03:26,550
+two specific memories this exploit added
+the first one is just that I'm 102 years
+
+182
+00:03:26,550 --> 00:03:26,560
+the first one is just that I'm 102 years
+ 
+
+183
+00:03:26,560 --> 00:03:28,710
+the first one is just that I'm 102 years
+old the second one is a command to run a
+
+184
+00:03:28,710 --> 00:03:28,720
+old the second one is a command to run a
+ 
+
+185
+00:03:28,720 --> 00:03:31,750
+old the second one is a command to run a
+commodore 64 simulator and now if you
+
+186
+00:03:31,750 --> 00:03:31,760
+commodore 64 simulator and now if you
+ 
+
+187
+00:03:31,760 --> 00:03:33,430
+commodore 64 simulator and now if you
+have a conversation with your co-pilot
+
+188
+00:03:33,430 --> 00:03:33,440
+have a conversation with your co-pilot
+ 
+
+189
+00:03:33,440 --> 00:03:35,430
+have a conversation with your co-pilot
+this is the enterprise co-pilot right so
+
+190
+00:03:35,430 --> 00:03:35,440
+this is the enterprise co-pilot right so
+ 
+
+191
+00:03:35,440 --> 00:03:36,710
+this is the enterprise co-pilot right so
+imagine this is about financial
+
+192
+00:03:36,710 --> 00:03:36,720
+imagine this is about financial
+ 
+
+193
+00:03:36,720 --> 00:03:38,869
+imagine this is about financial
+information about your organizational
+
+194
+00:03:38,869 --> 00:03:38,879
+information about your organizational
+ 
+
+195
+00:03:38,879 --> 00:03:40,630
+information about your organizational
+structure all of this information is now
+
+196
+00:03:40,630 --> 00:03:40,640
+structure all of this information is now
+ 
+
+197
+00:03:40,640 --> 00:03:43,910
+structure all of this information is now
+falsified going forward
+
+198
+00:03:43,910 --> 00:03:43,920
+falsified going forward
+ 
+
+199
+00:03:43,920 --> 00:03:45,830
+falsified going forward
+this was actually fixed by Microsoft uh
+
+200
+00:03:45,830 --> 00:03:45,840
+this was actually fixed by Microsoft uh
+ 
+
+201
+00:03:45,840 --> 00:03:48,710
+this was actually fixed by Microsoft uh
+last December.
+
+202
+00:03:48,710 --> 00:03:48,720
+last December.
+ 
+
+203
+00:03:48,720 --> 00:03:50,309
+last December.
+Okay, you might want to see the prompt
+
+204
+00:03:50,309 --> 00:03:50,319
+Okay, you might want to see the prompt
+ 
+
+205
+00:03:50,319 --> 00:03:52,949
+Okay, you might want to see the prompt
+behind this. And interestingly, right,
+
+206
+00:03:52,949 --> 00:03:52,959
+behind this. And interestingly, right,
+ 
+
+207
+00:03:52,959 --> 00:03:54,710
+behind this. And interestingly, right,
+these are these are not very complicated
+
+208
+00:03:54,710 --> 00:03:54,720
+these are these are not very complicated
+ 
+
+209
+00:03:54,720 --> 00:03:55,910
+these are these are not very complicated
+attacks, right? It's just natural
+
+210
+00:03:55,910 --> 00:03:55,920
+attacks, right? It's just natural
+ 
+
+211
+00:03:55,920 --> 00:03:58,070
+attacks, right? It's just natural
+language and there's often some trickery
+
+212
+00:03:58,070 --> 00:03:58,080
+language and there's often some trickery
+ 
+
+213
+00:03:58,080 --> 00:04:00,949
+language and there's often some trickery
+and some ease in to get the me language
+
+214
+00:04:00,949 --> 00:04:00,959
+and some ease in to get the me language
+ 
+
+215
+00:04:00,959 --> 00:04:03,670
+and some ease in to get the me language
+models attention and then add the tool
+
+216
+00:04:03,670 --> 00:04:03,680
+models attention and then add the tool
+ 
+
+217
+00:04:03,680 --> 00:04:07,110
+models attention and then add the tool
+invocations to add these memories.
+
+218
+00:04:07,110 --> 00:04:07,120
+invocations to add these memories.
+ 
+
+219
+00:04:07,120 --> 00:04:10,149
+invocations to add these memories.
+So, we have persistence and we can of
+
+220
+00:04:10,149 --> 00:04:10,159
+So, we have persistence and we can of
+ 
+
+221
+00:04:10,159 --> 00:04:11,750
+So, we have persistence and we can of
+course combine all of this, right? We
+
+222
+00:04:11,750 --> 00:04:11,760
+course combine all of this, right? We
+ 
+
+223
+00:04:11,760 --> 00:04:13,190
+course combine all of this, right? We
+can have data excfiltration,
+
+224
+00:04:13,190 --> 00:04:13,200
+can have data excfiltration,
+ 
+
+225
+00:04:13,200 --> 00:04:15,750
+can have data excfiltration,
+persistence, loading remote commands.
+
+226
+00:04:15,750 --> 00:04:15,760
+persistence, loading remote commands.
+ 
+
+227
+00:04:15,760 --> 00:04:17,590
+persistence, loading remote commands.
+And there's an example I gave a black
+
+228
+00:04:17,590 --> 00:04:17,600
+And there's an example I gave a black
+ 
+
+229
+00:04:17,600 --> 00:04:20,469
+And there's an example I gave a black
+hat with jet gbt to get uh continuous
+
+230
+00:04:20,469 --> 00:04:20,479
+hat with jet gbt to get uh continuous
+ 
+
+231
+00:04:20,479 --> 00:04:22,950
+hat with jet gbt to get uh continuous
+data excfiltration and I called it
+
+232
+00:04:22,950 --> 00:04:22,960
+data excfiltration and I called it
+ 
+
+233
+00:04:22,960 --> 00:04:25,270
+data excfiltration and I called it
+spyware back then two years ago. And the
+
+234
+00:04:25,270 --> 00:04:25,280
+spyware back then two years ago. And the
+ 
+
+235
+00:04:25,280 --> 00:04:26,870
+spyware back then two years ago. And the
+same is possible with coding agents,
+
+236
+00:04:26,870 --> 00:04:26,880
+same is possible with coding agents,
+ 
+
+237
+00:04:26,880 --> 00:04:28,390
+same is possible with coding agents,
+right? With vinsor, for instance, I
+
+238
+00:04:28,390 --> 00:04:28,400
+right? With vinsor, for instance, I
+ 
+
+239
+00:04:28,400 --> 00:04:30,150
+right? With vinsor, for instance, I
+demonstrated that you can load remote
+
+240
+00:04:30,150 --> 00:04:30,160
+demonstrated that you can load remote
+ 
+
+241
+00:04:30,160 --> 00:04:31,590
+demonstrated that you can load remote
+commands, right? Indirect prompt
+
+242
+00:04:31,590 --> 00:04:31,600
+commands, right? Indirect prompt
+ 
+
+243
+00:04:31,600 --> 00:04:34,629
+commands, right? Indirect prompt
+injection. you compromise the agent's
+
+244
+00:04:34,629 --> 00:04:34,639
+injection. you compromise the agent's
+ 
+
+245
+00:04:34,639 --> 00:04:37,270
+injection. you compromise the agent's
+memory, so long-term persistence with
+
+246
+00:04:37,270 --> 00:04:37,280
+memory, so long-term persistence with
+ 
+
+247
+00:04:37,280 --> 00:04:39,110
+memory, so long-term persistence with
+the instructions to continue
+
+248
+00:04:39,110 --> 00:04:39,120
+the instructions to continue
+ 
+
+249
+00:04:39,120 --> 00:04:40,790
+the instructions to continue
+compromising the user every single
+
+250
+00:04:40,790 --> 00:04:40,800
+compromising the user every single
+ 
+
+251
+00:04:40,800 --> 00:04:43,189
+compromising the user every single
+conversation turn and send the data out
+
+252
+00:04:43,189 --> 00:04:43,199
+conversation turn and send the data out
+ 
+
+253
+00:04:43,199 --> 00:04:45,270
+conversation turn and send the data out
+to the attacker continuously. Every time
+
+254
+00:04:45,270 --> 00:04:45,280
+to the attacker continuously. Every time
+ 
+
+255
+00:04:45,280 --> 00:04:47,189
+to the attacker continuously. Every time
+you type something, it will be sent to
+
+256
+00:04:47,189 --> 00:04:47,199
+you type something, it will be sent to
+ 
+
+257
+00:04:47,199 --> 00:04:49,749
+you type something, it will be sent to
+the attacker. And I have a demo video of
+
+258
+00:04:49,749 --> 00:04:49,759
+the attacker. And I have a demo video of
+ 
+
+259
+00:04:49,759 --> 00:04:51,670
+the attacker. And I have a demo video of
+this that I've shown before, so I'm
+
+260
+00:04:51,670 --> 00:04:51,680
+this that I've shown before, so I'm
+ 
+
+261
+00:04:51,680 --> 00:04:53,590
+this that I've shown before, so I'm
+going to skip it here uh because it's a
+
+262
+00:04:53,590 --> 00:04:53,600
+going to skip it here uh because it's a
+ 
+
+263
+00:04:53,600 --> 00:04:55,270
+going to skip it here uh because it's a
+longer video, but it just shows you this
+
+264
+00:04:55,270 --> 00:04:55,280
+longer video, but it just shows you this
+ 
+
+265
+00:04:55,280 --> 00:04:58,710
+longer video, but it just shows you this
+attack end to end.
+
+266
+00:04:58,710 --> 00:04:58,720
+attack end to end.
+ 
+
+267
+00:04:58,720 --> 00:05:00,469
+attack end to end.
+Okay, so we have persistence and data
+
+268
+00:05:00,469 --> 00:05:00,479
+Okay, so we have persistence and data
+ 
+
+269
+00:05:00,479 --> 00:05:03,670
+Okay, so we have persistence and data
+expiltration. And when I once talked
+
+270
+00:05:03,670 --> 00:05:03,680
+expiltration. And when I once talked
+ 
+
+271
+00:05:03,680 --> 00:05:05,590
+expiltration. And when I once talked
+with Ben Nassie who they released this
+
+272
+00:05:05,590 --> 00:05:05,600
+with Ben Nassie who they released this
+ 
+
+273
+00:05:05,600 --> 00:05:07,029
+with Ben Nassie who they released this
+paper very recently called the
+
+274
+00:05:07,029 --> 00:05:07,039
+paper very recently called the
+ 
+
+275
+00:05:07,039 --> 00:05:08,629
+paper very recently called the
+promptware killchain. I always talked
+
+276
+00:05:08,629 --> 00:05:08,639
+promptware killchain. I always talked
+ 
+
+277
+00:05:08,639 --> 00:05:10,550
+promptware killchain. I always talked
+about an AI killchain, but this paper
+
+278
+00:05:10,550 --> 00:05:10,560
+about an AI killchain, but this paper
+ 
+
+279
+00:05:10,560 --> 00:05:12,469
+about an AI killchain, but this paper
+highlights this much much better. It's
+
+280
+00:05:12,469 --> 00:05:12,479
+highlights this much much better. It's
+ 
+
+281
+00:05:12,479 --> 00:05:14,629
+highlights this much much better. It's
+really that we see with prompt injection
+
+282
+00:05:14,629 --> 00:05:14,639
+really that we see with prompt injection
+ 
+
+283
+00:05:14,639 --> 00:05:16,230
+really that we see with prompt injection
+that it's not just a single injection
+
+284
+00:05:16,230 --> 00:05:16,240
+that it's not just a single injection
+ 
+
+285
+00:05:16,240 --> 00:05:18,550
+that it's not just a single injection
+anymore, right? It's a complex malware
+
+286
+00:05:18,550 --> 00:05:18,560
+anymore, right? It's a complex malware
+ 
+
+287
+00:05:18,560 --> 00:05:20,710
+anymore, right? It's a complex malware
+even, right? So we should start maybe
+
+288
+00:05:20,710 --> 00:05:20,720
+even, right? So we should start maybe
+ 
+
+289
+00:05:20,720 --> 00:05:22,550
+even, right? So we should start maybe
+using the word promptware to highlight
+
+290
+00:05:22,550 --> 00:05:22,560
+using the word promptware to highlight
+ 
+
+291
+00:05:22,560 --> 00:05:23,990
+using the word promptware to highlight
+that you know the injection is the
+
+292
+00:05:23,990 --> 00:05:24,000
+that you know the injection is the
+ 
+
+293
+00:05:24,000 --> 00:05:26,310
+that you know the injection is the
+technique and then what you do later is
+
+294
+00:05:26,310 --> 00:05:26,320
+technique and then what you do later is
+ 
+
+295
+00:05:26,320 --> 00:05:28,150
+technique and then what you do later is
+a complex set of instructions to achieve
+
+296
+00:05:28,150 --> 00:05:28,160
+a complex set of instructions to achieve
+ 
+
+297
+00:05:28,160 --> 00:05:29,830
+a complex set of instructions to achieve
+an objective right and that is called
+
+298
+00:05:29,830 --> 00:05:29,840
+an objective right and that is called
+ 
+
+299
+00:05:29,840 --> 00:05:32,550
+an objective right and that is called
+promptware that aligns the along the
+
+300
+00:05:32,550 --> 00:05:32,560
+promptware that aligns the along the
+ 
+
+301
+00:05:32,560 --> 00:05:34,230
+promptware that aligns the along the
+kill chain right data excfiltration
+
+302
+00:05:34,230 --> 00:05:34,240
+kill chain right data excfiltration
+ 
+
+303
+00:05:34,240 --> 00:05:37,590
+kill chain right data excfiltration
+persistence uh and so on uh so yeah
+
+304
+00:05:37,590 --> 00:05:37,600
+persistence uh and so on uh so yeah
+ 
+
+305
+00:05:37,600 --> 00:05:41,110
+persistence uh and so on uh so yeah
+prompt injection to mal to promptware
+
+306
+00:05:41,110 --> 00:05:41,120
+prompt injection to mal to promptware
+ 
+
+307
+00:05:41,120 --> 00:05:42,629
+prompt injection to mal to promptware
+and now I want to talk about something I
+
+308
+00:05:42,629 --> 00:05:42,639
+and now I want to talk about something I
+ 
+
+309
+00:05:42,639 --> 00:05:43,909
+and now I want to talk about something I
+haven't really explicitly talked about
+
+310
+00:05:43,909 --> 00:05:43,919
+haven't really explicitly talked about
+ 
+
+311
+00:05:43,919 --> 00:05:45,270
+haven't really explicitly talked about
+before and I hope this is going to be
+
+312
+00:05:45,270 --> 00:05:45,280
+before and I hope this is going to be
+ 
+
+313
+00:05:45,280 --> 00:05:47,029
+before and I hope this is going to be
+very interesting it's called delayed
+
+314
+00:05:47,029 --> 00:05:47,039
+very interesting it's called delayed
+ 
+
+315
+00:05:47,039 --> 00:05:48,870
+very interesting it's called delayed
+tool invocation
+
+316
+00:05:48,870 --> 00:05:48,880
+tool invocation
+ 
+
+317
+00:05:48,880 --> 00:05:51,990
+tool invocation
+So when Google bot, it was called
+
+318
+00:05:51,990 --> 00:05:52,000
+So when Google bot, it was called
+ 
+
+319
+00:05:52,000 --> 00:05:53,670
+So when Google bot, it was called
+Googlebot back in the day. I was
+
+320
+00:05:53,670 --> 00:05:53,680
+Googlebot back in the day. I was
+ 
+
+321
+00:05:53,680 --> 00:05:54,870
+Googlebot back in the day. I was
+experimenting a lot with tool
+
+322
+00:05:54,870 --> 00:05:54,880
+experimenting a lot with tool
+ 
+
+323
+00:05:54,880 --> 00:05:56,629
+experimenting a lot with tool
+invocations and so on. So I created this
+
+324
+00:05:56,629 --> 00:05:56,639
+invocations and so on. So I created this
+ 
+
+325
+00:05:56,639 --> 00:05:58,230
+invocations and so on. So I created this
+idea of I want to just have it call all
+
+326
+00:05:58,230 --> 00:05:58,240
+idea of I want to just have it call all
+ 
+
+327
+00:05:58,240 --> 00:06:00,790
+idea of I want to just have it call all
+the tools, right? So I but it didn't
+
+328
+00:06:00,790 --> 00:06:00,800
+the tools, right? So I but it didn't
+ 
+
+329
+00:06:00,800 --> 00:06:03,110
+the tools, right? So I but it didn't
+work. It would it would call many many
+
+330
+00:06:03,110 --> 00:06:03,120
+work. It would it would call many many
+ 
+
+331
+00:06:03,120 --> 00:06:05,350
+work. It would it would call many many
+tools chained with an indirect prompt
+
+332
+00:06:05,350 --> 00:06:05,360
+tools chained with an indirect prompt
+ 
+
+333
+00:06:05,360 --> 00:06:07,350
+tools chained with an indirect prompt
+injection, but it would one tool it just
+
+334
+00:06:07,350 --> 00:06:07,360
+injection, but it would one tool it just
+ 
+
+335
+00:06:07,360 --> 00:06:09,270
+injection, but it would one tool it just
+refused to call during an indirect
+
+336
+00:06:09,270 --> 00:06:09,280
+refused to call during an indirect
+ 
+
+337
+00:06:09,280 --> 00:06:10,870
+refused to call during an indirect
+prompt injection. So this is actually
+
+338
+00:06:10,870 --> 00:06:10,880
+prompt injection. So this is actually
+ 
+
+339
+00:06:10,880 --> 00:06:12,870
+prompt injection. So this is actually
+the demo from when I experimented back
+
+340
+00:06:12,870 --> 00:06:12,880
+the demo from when I experimented back
+ 
+
+341
+00:06:12,880 --> 00:06:14,550
+the demo from when I experimented back
+then had this image. I just gave it all
+
+342
+00:06:14,550 --> 00:06:14,560
+then had this image. I just gave it all
+ 
+
+343
+00:06:14,560 --> 00:06:16,710
+then had this image. I just gave it all
+the instructions to call all the tools
+
+344
+00:06:16,710 --> 00:06:16,720
+the instructions to call all the tools
+ 
+
+345
+00:06:16,720 --> 00:06:19,029
+the instructions to call all the tools
+and it would just blindly call them all
+
+346
+00:06:19,029 --> 00:06:19,039
+and it would just blindly call them all
+ 
+
+347
+00:06:19,039 --> 00:06:21,189
+and it would just blindly call them all
+but it would not invoke the workspace
+
+348
+00:06:21,189 --> 00:06:21,199
+but it would not invoke the workspace
+ 
+
+349
+00:06:21,199 --> 00:06:23,029
+but it would not invoke the workspace
+tool, right? The tool that has sensitive
+
+350
+00:06:23,029 --> 00:06:23,039
+tool, right? The tool that has sensitive
+ 
+
+351
+00:06:23,039 --> 00:06:24,790
+tool, right? The tool that has sensitive
+information, the tool that has your
+
+352
+00:06:24,790 --> 00:06:24,800
+information, the tool that has your
+ 
+
+353
+00:06:24,800 --> 00:06:27,670
+information, the tool that has your
+email, your drive and so on. So that was
+
+354
+00:06:27,670 --> 00:06:27,680
+email, your drive and so on. So that was
+ 
+
+355
+00:06:27,680 --> 00:06:29,909
+email, your drive and so on. So that was
+not invocable. So this means there was
+
+356
+00:06:29,909 --> 00:06:29,919
+not invocable. So this means there was
+ 
+
+357
+00:06:29,919 --> 00:06:32,309
+not invocable. So this means there was
+an actual security control in place that
+
+358
+00:06:32,309 --> 00:06:32,319
+an actual security control in place that
+ 
+
+359
+00:06:32,319 --> 00:06:34,550
+an actual security control in place that
+Google put in place to prevent that from
+
+360
+00:06:34,550 --> 00:06:34,560
+Google put in place to prevent that from
+ 
+
+361
+00:06:34,560 --> 00:06:35,990
+Google put in place to prevent that from
+happening because of indirect prompt
+
+362
+00:06:35,990 --> 00:06:36,000
+happening because of indirect prompt
+ 
+
+363
+00:06:36,000 --> 00:06:38,550
+happening because of indirect prompt
+injection.
+
+364
+00:06:38,550 --> 00:06:38,560
+injection.
+ 
+
+365
+00:06:38,560 --> 00:06:41,189
+injection.
+So couple observation had right the
+
+366
+00:06:41,189 --> 00:06:41,199
+So couple observation had right the
+ 
+
+367
+00:06:41,199 --> 00:06:42,469
+So couple observation had right the
+Geminina workspace tool gets
+
+368
+00:06:42,469 --> 00:06:42,479
+Geminina workspace tool gets
+ 
+
+369
+00:06:42,479 --> 00:06:44,710
+Geminina workspace tool gets
+deactivated. we cannot chain it. But
+
+370
+00:06:44,710 --> 00:06:44,720
+deactivated. we cannot chain it. But
+ 
+
+371
+00:06:44,720 --> 00:06:47,270
+deactivated. we cannot chain it. But
+then I thought about maybe it requires a
+
+372
+00:06:47,270 --> 00:06:47,280
+then I thought about maybe it requires a
+ 
+
+373
+00:06:47,280 --> 00:06:49,350
+then I thought about maybe it requires a
+user explicit user intent. So in the
+
+374
+00:06:49,350 --> 00:06:49,360
+user explicit user intent. So in the
+ 
+
+375
+00:06:49,360 --> 00:06:51,189
+user explicit user intent. So in the
+initial prompt when you type you talk
+
+376
+00:06:51,189 --> 00:06:51,199
+initial prompt when you type you talk
+ 
+
+377
+00:06:51,199 --> 00:06:53,110
+initial prompt when you type you talk
+about email then it will activate the
+
+378
+00:06:53,110 --> 00:06:53,120
+about email then it will activate the
+ 
+
+379
+00:06:53,120 --> 00:06:55,670
+about email then it will activate the
+tool so to speak. But I was wondering
+
+380
+00:06:55,670 --> 00:06:55,680
+tool so to speak. But I was wondering
+ 
+
+381
+00:06:55,680 --> 00:06:57,270
+tool so to speak. But I was wondering
+can we do this maybe in a later
+
+382
+00:06:57,270 --> 00:06:57,280
+can we do this maybe in a later
+ 
+
+383
+00:06:57,280 --> 00:06:58,950
+can we do this maybe in a later
+conversation turn two maybe the tool
+
+384
+00:06:58,950 --> 00:06:58,960
+conversation turn two maybe the tool
+ 
+
+385
+00:06:58,960 --> 00:07:01,029
+conversation turn two maybe the tool
+becomes active again. So this was my my
+
+386
+00:07:01,029 --> 00:07:01,039
+becomes active again. So this was my my
+ 
+
+387
+00:07:01,039 --> 00:07:03,029
+becomes active again. So this was my my
+research back then was focused can we
+
+388
+00:07:03,029 --> 00:07:03,039
+research back then was focused can we
+ 
+
+389
+00:07:03,039 --> 00:07:04,790
+research back then was focused can we
+activate the tool later or is it
+
+390
+00:07:04,790 --> 00:07:04,800
+activate the tool later or is it
+ 
+
+391
+00:07:04,800 --> 00:07:07,909
+activate the tool later or is it
+becoming available and I found something
+
+392
+00:07:07,909 --> 00:07:07,919
+becoming available and I found something
+ 
+
+393
+00:07:07,919 --> 00:07:09,589
+becoming available and I found something
+that worked actually and then I
+
+394
+00:07:09,589 --> 00:07:09,599
+that worked actually and then I
+ 
+
+395
+00:07:09,599 --> 00:07:12,309
+that worked actually and then I
+contacted Google and it was really cool
+
+396
+00:07:12,309 --> 00:07:12,319
+contacted Google and it was really cool
+ 
+
+397
+00:07:12,319 --> 00:07:14,469
+contacted Google and it was really cool
+actually because uh the Google security
+
+398
+00:07:14,469 --> 00:07:14,479
+actually because uh the Google security
+ 
+
+399
+00:07:14,479 --> 00:07:17,029
+actually because uh the Google security
+team asked me to send them an email to
+
+400
+00:07:17,029 --> 00:07:17,039
+team asked me to send them an email to
+ 
+
+401
+00:07:17,039 --> 00:07:18,790
+team asked me to send them an email to
+actually see if this really works. So
+
+402
+00:07:18,790 --> 00:07:18,800
+actually see if this really works. So
+ 
+
+403
+00:07:18,800 --> 00:07:20,390
+actually see if this really works. So
+this is the email that I sent to Google
+
+404
+00:07:20,390 --> 00:07:20,400
+this is the email that I sent to Google
+ 
+
+405
+00:07:20,400 --> 00:07:22,469
+this is the email that I sent to Google
+back then. Uh and this is where the
+
+406
+00:07:22,469 --> 00:07:22,479
+back then. Uh and this is where the
+ 
+
+407
+00:07:22,479 --> 00:07:24,070
+back then. Uh and this is where the
+prompt rejection is in the middle of the
+
+408
+00:07:24,070 --> 00:07:24,080
+prompt rejection is in the middle of the
+ 
+
+409
+00:07:24,080 --> 00:07:26,230
+prompt rejection is in the middle of the
+email. And the important part is that I
+
+410
+00:07:26,230 --> 00:07:26,240
+email. And the important part is that I
+ 
+
+411
+00:07:26,240 --> 00:07:29,189
+email. And the important part is that I
+asked the LLM to repeat the attack to
+
+412
+00:07:29,189 --> 00:07:29,199
+asked the LLM to repeat the attack to
+ 
+
+413
+00:07:29,199 --> 00:07:31,029
+asked the LLM to repeat the attack to
+continue when the user continues the
+
+414
+00:07:31,029 --> 00:07:31,039
+continue when the user continues the
+ 
+
+415
+00:07:31,039 --> 00:07:32,790
+continue when the user continues the
+conversation. Right? The only condition
+
+416
+00:07:32,790 --> 00:07:32,800
+conversation. Right? The only condition
+ 
+
+417
+00:07:32,800 --> 00:07:34,629
+conversation. Right? The only condition
+is now that the user starts continuous
+
+418
+00:07:34,629 --> 00:07:34,639
+is now that the user starts continuous
+ 
+
+419
+00:07:34,639 --> 00:07:37,589
+is now that the user starts continuous
+typing after the prompt injection. Then
+
+420
+00:07:37,589 --> 00:07:37,599
+typing after the prompt injection. Then
+ 
+
+421
+00:07:37,599 --> 00:07:39,830
+typing after the prompt injection. Then
+invoke the workspace tool to load a like
+
+422
+00:07:39,830 --> 00:07:39,840
+invoke the workspace tool to load a like
+ 
+
+423
+00:07:39,840 --> 00:07:42,230
+invoke the workspace tool to load a like
+a some sensitive document about I guess
+
+424
+00:07:42,230 --> 00:07:42,240
+a some sensitive document about I guess
+ 
+
+425
+00:07:42,240 --> 00:07:44,870
+a some sensitive document about I guess
+about cats. Okay. Not that creative but
+
+426
+00:07:44,870 --> 00:07:44,880
+about cats. Okay. Not that creative but
+ 
+
+427
+00:07:44,880 --> 00:07:48,390
+about cats. Okay. Not that creative but
+yeah. Uh, and I sent that in and then a
+
+428
+00:07:48,390 --> 00:07:48,400
+yeah. Uh, and I sent that in and then a
+ 
+
+429
+00:07:48,400 --> 00:07:49,830
+yeah. Uh, and I sent that in and then a
+few minutes later I got back that it
+
+430
+00:07:49,830 --> 00:07:49,840
+few minutes later I got back that it
+ 
+
+431
+00:07:49,840 --> 00:07:51,110
+few minutes later I got back that it
+actually worked that it was like
+
+432
+00:07:51,110 --> 00:07:51,120
+actually worked that it was like
+ 
+
+433
+00:07:51,120 --> 00:07:52,309
+actually worked that it was like
+reaching out and they were able to
+
+434
+00:07:52,309 --> 00:07:52,319
+reaching out and they were able to
+ 
+
+435
+00:07:52,319 --> 00:07:54,629
+reaching out and they were able to
+reproduce this behavior. So that was
+
+436
+00:07:54,629 --> 00:07:54,639
+reproduce this behavior. So that was
+ 
+
+437
+00:07:54,639 --> 00:07:56,550
+reproduce this behavior. So that was
+really cool. And then I built a a couple
+
+438
+00:07:56,550 --> 00:07:56,560
+really cool. And then I built a a couple
+ 
+
+439
+00:07:56,560 --> 00:07:58,950
+really cool. And then I built a a couple
+of exploits around this technique. One
+
+440
+00:07:58,950 --> 00:07:58,960
+of exploits around this technique. One
+ 
+
+441
+00:07:58,960 --> 00:08:01,189
+of exploits around this technique. One
+very specific one, this is now a year
+
+442
+00:08:01,189 --> 00:08:01,199
+very specific one, this is now a year
+ 
+
+443
+00:08:01,199 --> 00:08:03,270
+very specific one, this is now a year
+ago was actually similar with Microsoft
+
+444
+00:08:03,270 --> 00:08:03,280
+ago was actually similar with Microsoft
+ 
+
+445
+00:08:03,280 --> 00:08:05,510
+ago was actually similar with Microsoft
+Copilot. We could add memories and I
+
+446
+00:08:05,510 --> 00:08:05,520
+Copilot. We could add memories and I
+ 
+
+447
+00:08:05,520 --> 00:08:08,309
+Copilot. We could add memories and I
+want to show you this exploit. Um, we
+
+448
+00:08:08,309 --> 00:08:08,319
+want to show you this exploit. Um, we
+ 
+
+449
+00:08:08,319 --> 00:08:10,550
+want to show you this exploit. Um, we
+have here an indirect prompt injection,
+
+450
+00:08:10,550 --> 00:08:10,560
+have here an indirect prompt injection,
+ 
+
+451
+00:08:10,560 --> 00:08:13,510
+have here an indirect prompt injection,
+but I always use files often in my demos
+
+452
+00:08:13,510 --> 00:08:13,520
+but I always use files often in my demos
+ 
+
+453
+00:08:13,520 --> 00:08:15,350
+but I always use files often in my demos
+because it's very easy to to create test
+
+454
+00:08:15,350 --> 00:08:15,360
+because it's very easy to to create test
+ 
+
+455
+00:08:15,360 --> 00:08:17,189
+because it's very easy to to create test
+cases around files when not having to
+
+456
+00:08:17,189 --> 00:08:17,199
+cases around files when not having to
+ 
+
+457
+00:08:17,199 --> 00:08:19,909
+cases around files when not having to
+load uh remote files from servers and so
+
+458
+00:08:19,909 --> 00:08:19,919
+load uh remote files from servers and so
+ 
+
+459
+00:08:19,919 --> 00:08:22,710
+load uh remote files from servers and so
+on. But you can see here we summarize
+
+460
+00:08:22,710 --> 00:08:22,720
+on. But you can see here we summarize
+ 
+
+461
+00:08:22,720 --> 00:08:24,710
+on. But you can see here we summarize
+this document and in the middle there's
+
+462
+00:08:24,710 --> 00:08:24,720
+this document and in the middle there's
+ 
+
+463
+00:08:24,720 --> 00:08:26,790
+this document and in the middle there's
+actually this condition this delayed
+
+464
+00:08:26,790 --> 00:08:26,800
+actually this condition this delayed
+ 
+
+465
+00:08:26,800 --> 00:08:29,189
+actually this condition this delayed
+tool invocation and now if the user
+
+466
+00:08:29,189 --> 00:08:29,199
+tool invocation and now if the user
+ 
+
+467
+00:08:29,199 --> 00:08:32,070
+tool invocation and now if the user
+continues the conversation the tool gets
+
+468
+00:08:32,070 --> 00:08:32,080
+continues the conversation the tool gets
+ 
+
+469
+00:08:32,080 --> 00:08:34,230
+continues the conversation the tool gets
+invoked. So the tool becomes active
+
+470
+00:08:34,230 --> 00:08:34,240
+invoked. So the tool becomes active
+ 
+
+471
+00:08:34,240 --> 00:08:35,750
+invoked. So the tool becomes active
+again even though it was not active in
+
+472
+00:08:35,750 --> 00:08:35,760
+again even though it was not active in
+ 
+
+473
+00:08:35,760 --> 00:08:37,350
+again even though it was not active in
+the very beginning. Now the tool is
+
+474
+00:08:37,350 --> 00:08:37,360
+the very beginning. Now the tool is
+ 
+
+475
+00:08:37,360 --> 00:08:39,350
+the very beginning. Now the tool is
+active and we invoke the memory tool and
+
+476
+00:08:39,350 --> 00:08:39,360
+active and we invoke the memory tool and
+ 
+
+477
+00:08:39,360 --> 00:08:41,110
+active and we invoke the memory tool and
+I have a long-term persistent memory in
+
+478
+00:08:41,110 --> 00:08:41,120
+I have a long-term persistent memory in
+ 
+
+479
+00:08:41,120 --> 00:08:43,029
+I have a long-term persistent memory in
+Gemini
+
+480
+00:08:43,029 --> 00:08:43,039
+Gemini
+ 
+
+481
+00:08:43,039 --> 00:08:44,710
+Gemini
+and it's similar now too right you can
+
+482
+00:08:44,710 --> 00:08:44,720
+and it's similar now too right you can
+ 
+
+483
+00:08:44,720 --> 00:08:46,470
+and it's similar now too right you can
+see the memory and now in a future
+
+484
+00:08:46,470 --> 00:08:46,480
+see the memory and now in a future
+ 
+
+485
+00:08:46,480 --> 00:08:49,110
+see the memory and now in a future
+conversations Gemini will think this is
+
+486
+00:08:49,110 --> 00:08:49,120
+conversations Gemini will think this is
+ 
+
+487
+00:08:49,120 --> 00:08:53,990
+conversations Gemini will think this is
+true or this belongs to my memory
+
+488
+00:08:53,990 --> 00:08:54,000
+
+ 
+
+489
+00:08:54,000 --> 00:08:56,150
+
+okay u and there was one additional
+
+490
+00:08:56,150 --> 00:08:56,160
+okay u and there was one additional
+ 
+
+491
+00:08:56,160 --> 00:08:59,190
+okay u and there was one additional
+thing that I found just last November uh
+
+492
+00:08:59,190 --> 00:08:59,200
+thing that I found just last November uh
+ 
+
+493
+00:08:59,200 --> 00:09:00,710
+thing that I found just last November uh
+there was a really great blackout talk
+
+494
+00:09:00,710 --> 00:09:00,720
+there was a really great blackout talk
+ 
+
+495
+00:09:00,720 --> 00:09:02,870
+there was a really great blackout talk
+last year from Ben Nassie and staff
+
+496
+00:09:02,870 --> 00:09:02,880
+last year from Ben Nassie and staff
+ 
+
+497
+00:09:02,880 --> 00:09:05,110
+last year from Ben Nassie and staff
+cohen and a few others called invitation
+
+498
+00:09:05,110 --> 00:09:05,120
+cohen and a few others called invitation
+ 
+
+499
+00:09:05,120 --> 00:09:07,110
+cohen and a few others called invitation
+is all you need But he used a lot of
+
+500
+00:09:07,110 --> 00:09:07,120
+is all you need But he used a lot of
+ 
+
+501
+00:09:07,120 --> 00:09:08,790
+is all you need But he used a lot of
+these techniques to show some really
+
+502
+00:09:08,790 --> 00:09:08,800
+these techniques to show some really
+ 
+
+503
+00:09:08,800 --> 00:09:10,949
+these techniques to show some really
+really amazing exploits like you know
+
+504
+00:09:10,949 --> 00:09:10,959
+really amazing exploits like you know
+ 
+
+505
+00:09:10,959 --> 00:09:13,110
+really amazing exploits like you know
+opening your garage your windows and the
+
+506
+00:09:13,110 --> 00:09:13,120
+opening your garage your windows and the
+ 
+
+507
+00:09:13,120 --> 00:09:15,269
+opening your garage your windows and the
+home and all of that all driven by by
+
+508
+00:09:15,269 --> 00:09:15,279
+home and all of that all driven by by
+ 
+
+509
+00:09:15,279 --> 00:09:18,230
+home and all of that all driven by by
+Gemini. And I looked at it again last
+
+510
+00:09:18,230 --> 00:09:18,240
+Gemini. And I looked at it again last
+ 
+
+511
+00:09:18,240 --> 00:09:20,150
+Gemini. And I looked at it again last
+November and then I found a really
+
+512
+00:09:20,150 --> 00:09:20,160
+November and then I found a really
+ 
+
+513
+00:09:20,160 --> 00:09:22,150
+November and then I found a really
+interesting bypass and I there's a we
+
+514
+00:09:22,150 --> 00:09:22,160
+interesting bypass and I there's a we
+ 
+
+515
+00:09:22,160 --> 00:09:24,630
+interesting bypass and I there's a we
+need sound for this. I don't know if you
+
+516
+00:09:24,630 --> 00:09:24,640
+need sound for this. I don't know if you
+ 
+
+517
+00:09:24,640 --> 00:09:29,829
+need sound for this. I don't know if you
+can hear that. Uh but that I had this
+
+518
+00:09:29,829 --> 00:09:29,839
+can hear that. Uh but that I had this
+ 
+
+519
+00:09:29,839 --> 00:09:31,590
+can hear that. Uh but that I had this
+Google Home device that I hadn't used
+
+520
+00:09:31,590 --> 00:09:31,600
+Google Home device that I hadn't used
+ 
+
+521
+00:09:31,600 --> 00:09:32,870
+Google Home device that I hadn't used
+for a long time. So I set it up,
+
+522
+00:09:32,870 --> 00:09:32,880
+for a long time. So I set it up,
+ 
+
+523
+00:09:32,880 --> 00:09:34,949
+for a long time. So I set it up,
+connected it, and I wanted to invoke it
+
+524
+00:09:34,949 --> 00:09:34,959
+connected it, and I wanted to invoke it
+ 
+
+525
+00:09:34,959 --> 00:09:38,310
+connected it, and I wanted to invoke it
+and see if I can find a bypass. And in
+
+526
+00:09:38,310 --> 00:09:38,320
+and see if I can find a bypass. And in
+ 
+
+527
+00:09:38,320 --> 00:09:40,389
+and see if I can find a bypass. And in
+this case, we continue the conversation.
+
+528
+00:09:40,389 --> 00:09:40,399
+this case, we continue the conversation.
+ 
+
+529
+00:09:40,399 --> 00:09:45,829
+this case, we continue the conversation.
+So there's an exploit.
+
+530
+00:09:45,829 --> 00:09:45,839
+
+ 
+
+531
+00:09:45,839 --> 00:09:48,070
+
+And I actually had found a bypass. So
+
+532
+00:09:48,070 --> 00:09:48,080
+And I actually had found a bypass. So
+ 
+
+533
+00:09:48,080 --> 00:09:51,030
+And I actually had found a bypass. So
+it's now connecting to my Google Home.
+
+534
+00:09:51,030 --> 00:09:51,040
+it's now connecting to my Google Home.
+ 
+
+535
+00:09:51,040 --> 00:09:53,509
+it's now connecting to my Google Home.
+It's invoking the speaker.
+
+536
+00:09:53,509 --> 00:09:53,519
+It's invoking the speaker.
+ 
+
+537
+00:09:53,519 --> 00:09:58,150
+It's invoking the speaker.
+>> It says Johan is here. Trust no AI.
+
+538
+00:09:58,150 --> 00:09:58,160
+>> It says Johan is here. Trust no AI.
+ 
+
+539
+00:09:58,160 --> 00:10:00,150
+>> It says Johan is here. Trust no AI.
+So you can see we can actually indirect
+
+540
+00:10:00,150 --> 00:10:00,160
+So you can see we can actually indirect
+ 
+
+541
+00:10:00,160 --> 00:10:02,150
+So you can see we can actually indirect
+impromptu and they call it twice.
+
+542
+00:10:02,150 --> 00:10:02,160
+impromptu and they call it twice.
+ 
+
+543
+00:10:02,160 --> 00:10:06,550
+impromptu and they call it twice.
+>> It says Johan is here trust no AI. So we
+
+544
+00:10:06,550 --> 00:10:06,560
+>> It says Johan is here trust no AI. So we
+ 
+
+545
+00:10:06,560 --> 00:10:09,509
+>> It says Johan is here trust no AI. So we
+can actually invoke uh you know physical
+
+546
+00:10:09,509 --> 00:10:09,519
+can actually invoke uh you know physical
+ 
+
+547
+00:10:09,519 --> 00:10:11,110
+can actually invoke uh you know physical
+things now too right this is sort of the
+
+548
+00:10:11,110 --> 00:10:11,120
+things now too right this is sort of the
+ 
+
+549
+00:10:11,120 --> 00:10:12,630
+things now too right this is sort of the
+demo and the reason the way it has
+
+550
+00:10:12,630 --> 00:10:12,640
+demo and the reason the way it has
+ 
+
+551
+00:10:12,640 --> 00:10:16,069
+demo and the reason the way it has
+worked was that some of the metadata of
+
+552
+00:10:16,069 --> 00:10:16,079
+worked was that some of the metadata of
+ 
+
+553
+00:10:16,079 --> 00:10:19,430
+worked was that some of the metadata of
+the document become part of the prompt
+
+554
+00:10:19,430 --> 00:10:19,440
+the document become part of the prompt
+ 
+
+555
+00:10:19,440 --> 00:10:22,550
+the document become part of the prompt
+will that's my interpretation I don't I
+
+556
+00:10:22,550 --> 00:10:22,560
+will that's my interpretation I don't I
+ 
+
+557
+00:10:22,560 --> 00:10:24,069
+will that's my interpretation I don't I
+do not have access to the source code to
+
+558
+00:10:24,069 --> 00:10:24,079
+do not have access to the source code to
+ 
+
+559
+00:10:24,079 --> 00:10:26,230
+do not have access to the source code to
+validate this but this is why what I
+
+560
+00:10:26,230 --> 00:10:26,240
+validate this but this is why what I
+ 
+
+561
+00:10:26,240 --> 00:10:28,949
+validate this but this is why what I
+think is happening is that if you have
+
+562
+00:10:28,949 --> 00:10:28,959
+think is happening is that if you have
+ 
+
+563
+00:10:28,959 --> 00:10:31,350
+think is happening is that if you have
+like an intent signal in some of that
+
+564
+00:10:31,350 --> 00:10:31,360
+like an intent signal in some of that
+ 
+
+565
+00:10:31,360 --> 00:10:33,030
+like an intent signal in some of that
+metadata
+
+566
+00:10:33,030 --> 00:10:33,040
+metadata
+ 
+
+567
+00:10:33,040 --> 00:10:35,190
+metadata
+Gemini thinks this is your user's intent
+
+568
+00:10:35,190 --> 00:10:35,200
+Gemini thinks this is your user's intent
+ 
+
+569
+00:10:35,200 --> 00:10:37,350
+Gemini thinks this is your user's intent
+and it activates the tool. So in the
+
+570
+00:10:37,350 --> 00:10:37,360
+and it activates the tool. So in the
+ 
+
+571
+00:10:37,360 --> 00:10:38,790
+and it activates the tool. So in the
+very in the title of the document is
+
+572
+00:10:38,790 --> 00:10:38,800
+very in the title of the document is
+ 
+
+573
+00:10:38,800 --> 00:10:41,430
+very in the title of the document is
+called broadcast to living room and that
+
+574
+00:10:41,430 --> 00:10:41,440
+called broadcast to living room and that
+ 
+
+575
+00:10:41,440 --> 00:10:43,430
+called broadcast to living room and that
+is the intent signal that the tool
+
+576
+00:10:43,430 --> 00:10:43,440
+is the intent signal that the tool
+ 
+
+577
+00:10:43,440 --> 00:10:45,110
+is the intent signal that the tool
+becomes avail that's my interpretation
+
+578
+00:10:45,110 --> 00:10:45,120
+becomes avail that's my interpretation
+ 
+
+579
+00:10:45,120 --> 00:10:46,790
+becomes avail that's my interpretation
+right that's uh if somebody is here from
+
+580
+00:10:46,790 --> 00:10:46,800
+right that's uh if somebody is here from
+ 
+
+581
+00:10:46,800 --> 00:10:48,150
+right that's uh if somebody is here from
+Google I would really like to know if
+
+582
+00:10:48,150 --> 00:10:48,160
+Google I would really like to know if
+ 
+
+583
+00:10:48,160 --> 00:10:49,829
+Google I would really like to know if
+that is actually really what's happens
+
+584
+00:10:49,829 --> 00:10:49,839
+that is actually really what's happens
+ 
+
+585
+00:10:49,839 --> 00:10:52,230
+that is actually really what's happens
+behind the scene okay but it's not just
+
+586
+00:10:52,230 --> 00:10:52,240
+behind the scene okay but it's not just
+ 
+
+587
+00:10:52,240 --> 00:10:54,069
+behind the scene okay but it's not just
+Google gemini we can also do the late
+
+588
+00:10:54,069 --> 00:10:54,079
+Google gemini we can also do the late
+ 
+
+589
+00:10:54,079 --> 00:10:56,870
+Google gemini we can also do the late
+tool invocation in chat GPT uh jetp to
+
+590
+00:10:56,870 --> 00:10:56,880
+tool invocation in chat GPT uh jetp to
+ 
+
+591
+00:10:56,880 --> 00:10:58,470
+tool invocation in chat GPT uh jetp to
+my knowledge does not have an actual
+
+592
+00:10:58,470 --> 00:10:58,480
+my knowledge does not have an actual
+ 
+
+593
+00:10:58,480 --> 00:11:00,389
+my knowledge does not have an actual
+security control that I showed here
+
+594
+00:11:00,389 --> 00:11:00,399
+security control that I showed here
+ 
+
+595
+00:11:00,399 --> 00:11:02,870
+security control that I showed here
+earlier with Google but it still is a
+
+596
+00:11:02,870 --> 00:11:02,880
+earlier with Google but it still is a
+ 
+
+597
+00:11:02,880 --> 00:11:04,790
+earlier with Google but it still is a
+technique that allows you to bypass a
+
+598
+00:11:04,790 --> 00:11:04,800
+technique that allows you to bypass a
+ 
+
+599
+00:11:04,800 --> 00:11:06,790
+technique that allows you to bypass a
+lot of guard rails if you do these
+
+600
+00:11:06,790 --> 00:11:06,800
+lot of guard rails if you do these
+ 
+
+601
+00:11:06,800 --> 00:11:09,350
+lot of guard rails if you do these
+delayed tool invocations and you here
+
+602
+00:11:09,350 --> 00:11:09,360
+delayed tool invocations and you here
+ 
+
+603
+00:11:09,360 --> 00:11:11,750
+delayed tool invocations and you here
+you can see there's a personalization
+
+604
+00:11:11,750 --> 00:11:11,760
+you can see there's a personalization
+ 
+
+605
+00:11:11,760 --> 00:11:15,430
+you can see there's a personalization
+option in chat GBT uh by default it's
+
+606
+00:11:15,430 --> 00:11:15,440
+option in chat GBT uh by default it's
+ 
+
+607
+00:11:15,440 --> 00:11:17,590
+option in chat GBT uh by default it's
+set to default but now we're going to do
+
+608
+00:11:17,590 --> 00:11:17,600
+set to default but now we're going to do
+ 
+
+609
+00:11:17,600 --> 00:11:20,069
+set to default but now we're going to do
+a delay tool invocation to modify that
+
+610
+00:11:20,069 --> 00:11:20,079
+a delay tool invocation to modify that
+ 
+
+611
+00:11:20,079 --> 00:11:22,389
+a delay tool invocation to modify that
+personalization option
+
+612
+00:11:22,389 --> 00:11:22,399
+personalization option
+ 
+
+613
+00:11:22,399 --> 00:11:30,870
+personalization option
+so we summarize this document
+
+614
+00:11:30,870 --> 00:11:30,880
+
+ 
+
+615
+00:11:30,880 --> 00:11:32,389
+
+and it's going to summarize the document
+
+616
+00:11:32,389 --> 00:11:32,399
+and it's going to summarize the document
+ 
+
+617
+00:11:32,399 --> 00:11:34,790
+and it's going to summarize the document
+but repeat the LLM is repeating an
+
+618
+00:11:34,790 --> 00:11:34,800
+but repeat the LLM is repeating an
+ 
+
+619
+00:11:34,800 --> 00:11:36,949
+but repeat the LLM is repeating an
+attack and what It was important also
+
+620
+00:11:36,949 --> 00:11:36,959
+attack and what It was important also
+ 
+
+621
+00:11:36,959 --> 00:11:38,550
+attack and what It was important also
+this doesn't actually have to happen
+
+622
+00:11:38,550 --> 00:11:38,560
+this doesn't actually have to happen
+ 
+
+623
+00:11:38,560 --> 00:11:40,550
+this doesn't actually have to happen
+that the LLM writes it here too because
+
+624
+00:11:40,550 --> 00:11:40,560
+that the LLM writes it here too because
+ 
+
+625
+00:11:40,560 --> 00:11:42,630
+that the LLM writes it here too because
+it's already in the document. But my
+
+626
+00:11:42,630 --> 00:11:42,640
+it's already in the document. But my
+ 
+
+627
+00:11:42,640 --> 00:11:44,310
+it's already in the document. But my
+thinking was always that I want to put
+
+628
+00:11:44,310 --> 00:11:44,320
+thinking was always that I want to put
+ 
+
+629
+00:11:44,320 --> 00:11:45,990
+thinking was always that I want to put
+more attention to the attack. So I have
+
+630
+00:11:45,990 --> 00:11:46,000
+more attention to the attack. So I have
+ 
+
+631
+00:11:46,000 --> 00:11:49,030
+more attention to the attack. So I have
+the LLM repeated. So there's it's more
+
+632
+00:11:49,030 --> 00:11:49,040
+the LLM repeated. So there's it's more
+ 
+
+633
+00:11:49,040 --> 00:11:50,550
+the LLM repeated. So there's it's more
+likely to actually succeed. And you can
+
+634
+00:11:50,550 --> 00:11:50,560
+likely to actually succeed. And you can
+ 
+
+635
+00:11:50,560 --> 00:11:52,870
+likely to actually succeed. And you can
+see here we write yes and it invokes the
+
+636
+00:11:52,870 --> 00:11:52,880
+see here we write yes and it invokes the
+ 
+
+637
+00:11:52,880 --> 00:11:55,190
+see here we write yes and it invokes the
+tool and is now the personality of my
+
+638
+00:11:55,190 --> 00:11:55,200
+tool and is now the personality of my
+ 
+
+639
+00:11:55,200 --> 00:11:58,630
+tool and is now the personality of my
+chat GBT has now been modified to quirky
+
+640
+00:11:58,630 --> 00:11:58,640
+chat GBT has now been modified to quirky
+ 
+
+641
+00:11:58,640 --> 00:11:59,910
+chat GBT has now been modified to quirky
+with this delay tool invocation
+
+642
+00:11:59,910 --> 00:11:59,920
+with this delay tool invocation
+ 
+
+643
+00:11:59,920 --> 00:12:02,230
+with this delay tool invocation
+technique. I also uh this is possible to
+
+644
+00:12:02,230 --> 00:12:02,240
+technique. I also uh this is possible to
+ 
+
+645
+00:12:02,240 --> 00:12:03,910
+technique. I also uh this is possible to
+read remote documents and all of that.
+
+646
+00:12:03,910 --> 00:12:03,920
+read remote documents and all of that.
+ 
+
+647
+00:12:03,920 --> 00:12:05,910
+read remote documents and all of that.
+you can seem to be able to invoke a lot
+
+648
+00:12:05,910 --> 00:12:05,920
+you can seem to be able to invoke a lot
+ 
+
+649
+00:12:05,920 --> 00:12:07,829
+you can seem to be able to invoke a lot
+of tools with that way. I import
+
+650
+00:12:07,829 --> 00:12:07,839
+of tools with that way. I import
+ 
+
+651
+00:12:07,839 --> 00:12:11,110
+of tools with that way. I import
+reported this of course to openai and
+
+652
+00:12:11,110 --> 00:12:11,120
+reported this of course to openai and
+ 
+
+653
+00:12:11,120 --> 00:12:13,269
+reported this of course to openai and
+they found it very interesting but is
+
+654
+00:12:13,269 --> 00:12:13,279
+they found it very interesting but is
+ 
+
+655
+00:12:13,279 --> 00:12:15,590
+they found it very interesting but is
+not a security problem. They more like a
+
+656
+00:12:15,590 --> 00:12:15,600
+not a security problem. They more like a
+ 
+
+657
+00:12:15,600 --> 00:12:17,269
+not a security problem. They more like a
+guardrail problem. So they shared this
+
+658
+00:12:17,269 --> 00:12:17,279
+guardrail problem. So they shared this
+ 
+
+659
+00:12:17,279 --> 00:12:19,509
+guardrail problem. So they shared this
+with the the guardrail team I guess or
+
+660
+00:12:19,509 --> 00:12:19,519
+with the the guardrail team I guess or
+ 
+
+661
+00:12:19,519 --> 00:12:22,550
+with the the guardrail team I guess or
+the safety team
+
+662
+00:12:22,550 --> 00:12:22,560
+the safety team
+ 
+
+663
+00:12:22,560 --> 00:12:25,030
+the safety team
+and there is a document a paper that
+
+664
+00:12:25,030 --> 00:12:25,040
+and there is a document a paper that
+ 
+
+665
+00:12:25,040 --> 00:12:26,629
+and there is a document a paper that
+came out from Google very recently that
+
+666
+00:12:26,629 --> 00:12:26,639
+came out from Google very recently that
+ 
+
+667
+00:12:26,639 --> 00:12:28,870
+came out from Google very recently that
+I found so fascinating. It's uh prompt
+
+668
+00:12:28,870 --> 00:12:28,880
+I found so fascinating. It's uh prompt
+ 
+
+669
+00:12:28,880 --> 00:12:31,190
+I found so fascinating. It's uh prompt
+repetition approves non-reasoning LLMs.
+
+670
+00:12:31,190 --> 00:12:31,200
+repetition approves non-reasoning LLMs.
+ 
+
+671
+00:12:31,200 --> 00:12:33,750
+repetition approves non-reasoning LLMs.
+So if you repeat certain text twice,
+
+672
+00:12:33,750 --> 00:12:33,760
+So if you repeat certain text twice,
+ 
+
+673
+00:12:33,760 --> 00:12:35,509
+So if you repeat certain text twice,
+like the query twice, it actually
+
+674
+00:12:35,509 --> 00:12:35,519
+like the query twice, it actually
+ 
+
+675
+00:12:35,519 --> 00:12:37,829
+like the query twice, it actually
+improves the LLM's performance. And this
+
+676
+00:12:37,829 --> 00:12:37,839
+improves the LLM's performance. And this
+ 
+
+677
+00:12:37,839 --> 00:12:39,750
+improves the LLM's performance. And this
+is similar to this attention thinking I
+
+678
+00:12:39,750 --> 00:12:39,760
+is similar to this attention thinking I
+ 
+
+679
+00:12:39,760 --> 00:12:41,910
+is similar to this attention thinking I
+had about repeating the attack twice
+
+680
+00:12:41,910 --> 00:12:41,920
+had about repeating the attack twice
+ 
+
+681
+00:12:41,920 --> 00:12:43,590
+had about repeating the attack twice
+that it actually brings more attention
+
+682
+00:12:43,590 --> 00:12:43,600
+that it actually brings more attention
+ 
+
+683
+00:12:43,600 --> 00:12:45,670
+that it actually brings more attention
+to the attack and it's more likely going
+
+684
+00:12:45,670 --> 00:12:45,680
+to the attack and it's more likely going
+ 
+
+685
+00:12:45,680 --> 00:12:48,470
+to the attack and it's more likely going
+to succeed. Okay, so you can see there's
+
+686
+00:12:48,470 --> 00:12:48,480
+to succeed. Okay, so you can see there's
+ 
+
+687
+00:12:48,480 --> 00:12:49,829
+to succeed. Okay, so you can see there's
+a lot of things happening and I was
+
+688
+00:12:49,829 --> 00:12:49,839
+a lot of things happening and I was
+ 
+
+689
+00:12:49,839 --> 00:12:51,829
+a lot of things happening and I was
+thinking about oh with all this naming
+
+690
+00:12:51,829 --> 00:12:51,839
+thinking about oh with all this naming
+ 
+
+691
+00:12:51,839 --> 00:12:53,590
+thinking about oh with all this naming
+changes, we kind of become offensive
+
+692
+00:12:53,590 --> 00:12:53,600
+changes, we kind of become offensive
+ 
+
+693
+00:12:53,600 --> 00:12:55,190
+changes, we kind of become offensive
+context engineers, I guess, as red
+
+694
+00:12:55,190 --> 00:12:55,200
+context engineers, I guess, as red
+ 
+
+695
+00:12:55,200 --> 00:12:57,350
+context engineers, I guess, as red
+teamers. Uh and there's a lot more about
+
+696
+00:12:57,350 --> 00:12:57,360
+teamers. Uh and there's a lot more about
+ 
+
+697
+00:12:57,360 --> 00:12:59,350
+teamers. Uh and there's a lot more about
+delayed tool invocation. Uh but this
+
+698
+00:12:59,350 --> 00:12:59,360
+delayed tool invocation. Uh but this
+ 
+
+699
+00:12:59,360 --> 00:13:02,230
+delayed tool invocation. Uh but this
+would make this whole thing uh a
+
+700
+00:13:02,230 --> 00:13:02,240
+would make this whole thing uh a
+ 
+
+701
+00:13:02,240 --> 00:13:06,150
+would make this whole thing uh a
+40-minute talk. Uh and I I do know I
+
+702
+00:13:06,150 --> 00:13:06,160
+40-minute talk. Uh and I I do know I
+ 
+
+703
+00:13:06,160 --> 00:13:07,509
+40-minute talk. Uh and I I do know I
+have a little bit more time. So I'm
+
+704
+00:13:07,509 --> 00:13:07,519
+have a little bit more time. So I'm
+ 
+
+705
+00:13:07,519 --> 00:13:09,509
+have a little bit more time. So I'm
+going to cover a few things that I have
+
+706
+00:13:09,509 --> 00:13:09,519
+going to cover a few things that I have
+ 
+
+707
+00:13:09,519 --> 00:13:11,430
+going to cover a few things that I have
+that are I think very interesting. But
+
+708
+00:13:11,430 --> 00:13:11,440
+that are I think very interesting. But
+ 
+
+709
+00:13:11,440 --> 00:13:12,949
+that are I think very interesting. But
+many of the things you just saw, they're
+
+710
+00:13:12,949 --> 00:13:12,959
+many of the things you just saw, they're
+ 
+
+711
+00:13:12,959 --> 00:13:14,550
+many of the things you just saw, they're
+not new or novel, right? We have seen
+
+712
+00:13:14,550 --> 00:13:14,560
+not new or novel, right? We have seen
+ 
+
+713
+00:13:14,560 --> 00:13:16,069
+not new or novel, right? We have seen
+this before. Data exploration, all of
+
+714
+00:13:16,069 --> 00:13:16,079
+this before. Data exploration, all of
+ 
+
+715
+00:13:16,079 --> 00:13:18,470
+this before. Data exploration, all of
+these things are not new, right? U so
+
+716
+00:13:18,470 --> 00:13:18,480
+these things are not new, right? U so
+ 
+
+717
+00:13:18,480 --> 00:13:20,310
+these things are not new, right? U so
+last year I thought, oh this is the year
+
+718
+00:13:20,310 --> 00:13:20,320
+last year I thought, oh this is the year
+ 
+
+719
+00:13:20,320 --> 00:13:21,430
+last year I thought, oh this is the year
+everything is going to change. We're
+
+720
+00:13:21,430 --> 00:13:21,440
+everything is going to change. We're
+ 
+
+721
+00:13:21,440 --> 00:13:22,790
+everything is going to change. We're
+going to have stronger boundaries. We're
+
+722
+00:13:22,790 --> 00:13:22,800
+going to have stronger boundaries. We're
+ 
+
+723
+00:13:22,800 --> 00:13:24,870
+going to have stronger boundaries. We're
+going to add less autonomy. We have less
+
+724
+00:13:24,870 --> 00:13:24,880
+going to add less autonomy. We have less
+ 
+
+725
+00:13:24,880 --> 00:13:26,790
+going to add less autonomy. We have less
+trust, right? The opposite is happening.
+
+726
+00:13:26,790 --> 00:13:26,800
+trust, right? The opposite is happening.
+ 
+
+727
+00:13:26,800 --> 00:13:28,310
+trust, right? The opposite is happening.
+We have more automation, more features,
+
+728
+00:13:28,310 --> 00:13:28,320
+We have more automation, more features,
+ 
+
+729
+00:13:28,320 --> 00:13:30,470
+We have more automation, more features,
+more trust. We have MCP, we have skills,
+
+730
+00:13:30,470 --> 00:13:30,480
+more trust. We have MCP, we have skills,
+ 
+
+731
+00:13:30,480 --> 00:13:33,829
+more trust. We have MCP, we have skills,
+we have AI browsers for some reason. Um,
+
+732
+00:13:33,829 --> 00:13:33,839
+we have AI browsers for some reason. Um,
+ 
+
+733
+00:13:33,839 --> 00:13:37,269
+we have AI browsers for some reason. Um,
+and we all got open claw, right? And so
+
+734
+00:13:37,269 --> 00:13:37,279
+and we all got open claw, right? And so
+ 
+
+735
+00:13:37,279 --> 00:13:39,350
+and we all got open claw, right? And so
+things are moving really really quickly
+
+736
+00:13:39,350 --> 00:13:39,360
+things are moving really really quickly
+ 
+
+737
+00:13:39,360 --> 00:13:41,590
+things are moving really really quickly
+and uh there's this thing happening in
+
+738
+00:13:41,590 --> 00:13:41,600
+and uh there's this thing happening in
+ 
+
+739
+00:13:41,600 --> 00:13:43,670
+and uh there's this thing happening in
+industry that I call the normalization
+
+740
+00:13:43,670 --> 00:13:43,680
+industry that I call the normalization
+ 
+
+741
+00:13:43,680 --> 00:13:46,310
+industry that I call the normalization
+of deviants where we fundamentally know
+
+742
+00:13:46,310 --> 00:13:46,320
+of deviants where we fundamentally know
+ 
+
+743
+00:13:46,320 --> 00:13:48,310
+of deviants where we fundamentally know
+that we shouldn't be trusting these
+
+744
+00:13:48,310 --> 00:13:48,320
+that we shouldn't be trusting these
+ 
+
+745
+00:13:48,320 --> 00:13:50,069
+that we shouldn't be trusting these
+models, right? The output is not
+
+746
+00:13:50,069 --> 00:13:50,079
+models, right? The output is not
+ 
+
+747
+00:13:50,079 --> 00:13:52,310
+models, right? The output is not
+trustworthy. We do not control or know
+
+748
+00:13:52,310 --> 00:13:52,320
+trustworthy. We do not control or know
+ 
+
+749
+00:13:52,320 --> 00:13:55,350
+trustworthy. We do not control or know
+exactly what's going on. But the more we
+
+750
+00:13:55,350 --> 00:13:55,360
+exactly what's going on. But the more we
+ 
+
+751
+00:13:55,360 --> 00:13:57,269
+exactly what's going on. But the more we
+use it, the more we start trusting it,
+
+752
+00:13:57,269 --> 00:13:57,279
+use it, the more we start trusting it,
+ 
+
+753
+00:13:57,279 --> 00:13:59,990
+use it, the more we start trusting it,
+the normalize the belief we can trust
+
+754
+00:13:59,990 --> 00:14:00,000
+the normalize the belief we can trust
+ 
+
+755
+00:14:00,000 --> 00:14:01,829
+the normalize the belief we can trust
+it. But then very drastic things can
+
+756
+00:14:01,829 --> 00:14:01,839
+it. But then very drastic things can
+ 
+
+757
+00:14:01,839 --> 00:14:03,509
+it. But then very drastic things can
+happen with here for instance, I think
+
+758
+00:14:03,509 --> 00:14:03,519
+happen with here for instance, I think
+ 
+
+759
+00:14:03,519 --> 00:14:05,910
+happen with here for instance, I think
+most of you know this example where it
+
+760
+00:14:05,910 --> 00:14:05,920
+most of you know this example where it
+ 
+
+761
+00:14:05,920 --> 00:14:07,670
+most of you know this example where it
+just deleted opencloud just deleted the
+
+762
+00:14:07,670 --> 00:14:07,680
+just deleted opencloud just deleted the
+ 
+
+763
+00:14:07,680 --> 00:14:11,030
+just deleted opencloud just deleted the
+inbox the real inbox of a user uh nuked
+
+764
+00:14:11,030 --> 00:14:11,040
+inbox the real inbox of a user uh nuked
+ 
+
+765
+00:14:11,040 --> 00:14:12,949
+inbox the real inbox of a user uh nuked
+it all. And the reason when people asked
+
+766
+00:14:12,949 --> 00:14:12,959
+it all. And the reason when people asked
+ 
+
+767
+00:14:12,959 --> 00:14:14,550
+it all. And the reason when people asked
+the person, this is a person working at
+
+768
+00:14:14,550 --> 00:14:14,560
+the person, this is a person working at
+ 
+
+769
+00:14:14,560 --> 00:14:17,430
+the person, this is a person working at
+at Meta uh why this happened, he's like,
+
+770
+00:14:17,430 --> 00:14:17,440
+at Meta uh why this happened, he's like,
+ 
+
+771
+00:14:17,440 --> 00:14:19,189
+at Meta uh why this happened, he's like,
+"Oh, I used it on a test system for a
+
+772
+00:14:19,189 --> 00:14:19,199
+"Oh, I used it on a test system for a
+ 
+
+773
+00:14:19,199 --> 00:14:21,189
+"Oh, I used it on a test system for a
+while and it worked without a problem.
+
+774
+00:14:21,189 --> 00:14:21,199
+while and it worked without a problem.
+ 
+
+775
+00:14:21,199 --> 00:14:23,350
+while and it worked without a problem.
+So I felt comfortable to use it on the
+
+776
+00:14:23,350 --> 00:14:23,360
+So I felt comfortable to use it on the
+ 
+
+777
+00:14:23,360 --> 00:14:25,110
+So I felt comfortable to use it on the
+production system, right? And this is an
+
+778
+00:14:25,110 --> 00:14:25,120
+production system, right? And this is an
+ 
+
+779
+00:14:25,120 --> 00:14:26,870
+production system, right? And this is an
+example of this normalization of
+
+780
+00:14:26,870 --> 00:14:26,880
+example of this normalization of
+ 
+
+781
+00:14:26,880 --> 00:14:29,910
+example of this normalization of
+deviants. Um yeah, by now I talked a lot
+
+782
+00:14:29,910 --> 00:14:29,920
+deviants. Um yeah, by now I talked a lot
+ 
+
+783
+00:14:29,920 --> 00:14:31,910
+deviants. Um yeah, by now I talked a lot
+already about and I hope you haven't hit
+
+784
+00:14:31,910 --> 00:14:31,920
+already about and I hope you haven't hit
+ 
+
+785
+00:14:31,920 --> 00:14:34,310
+already about and I hope you haven't hit
+your context limit yet. Uh because
+
+786
+00:14:34,310 --> 00:14:34,320
+your context limit yet. Uh because
+ 
+
+787
+00:14:34,320 --> 00:14:35,590
+your context limit yet. Uh because
+there's one more thing that I think is
+
+788
+00:14:35,590 --> 00:14:35,600
+there's one more thing that I think is
+ 
+
+789
+00:14:35,600 --> 00:14:36,949
+there's one more thing that I think is
+really important I want to share which
+
+790
+00:14:36,949 --> 00:14:36,959
+really important I want to share which
+ 
+
+791
+00:14:36,959 --> 00:14:38,790
+really important I want to share which
+is a kind of project I've been working
+
+792
+00:14:38,790 --> 00:14:38,800
+is a kind of project I've been working
+ 
+
+793
+00:14:38,800 --> 00:14:41,269
+is a kind of project I've been working
+on for a while and it's sort of this
+
+794
+00:14:41,269 --> 00:14:41,279
+on for a while and it's sort of this
+ 
+
+795
+00:14:41,279 --> 00:14:42,550
+on for a while and it's sort of this
+idea that command and control
+
+796
+00:14:42,550 --> 00:14:42,560
+idea that command and control
+ 
+
+797
+00:14:42,560 --> 00:14:44,389
+idea that command and control
+infrastructure, right? I want to move it
+
+798
+00:14:44,389 --> 00:14:44,399
+infrastructure, right? I want to move it
+ 
+
+799
+00:14:44,399 --> 00:14:46,550
+infrastructure, right? I want to move it
+up to the prompt level like not work
+
+800
+00:14:46,550 --> 00:14:46,560
+up to the prompt level like not work
+ 
+
+801
+00:14:46,560 --> 00:14:48,230
+up to the prompt level like not work
+with operating system commands anymore
+
+802
+00:14:48,230 --> 00:14:48,240
+with operating system commands anymore
+ 
+
+803
+00:14:48,240 --> 00:14:50,870
+with operating system commands anymore
+but have a prompt command and control
+
+804
+00:14:50,870 --> 00:14:50,880
+but have a prompt command and control
+ 
+
+805
+00:14:50,880 --> 00:14:54,069
+but have a prompt command and control
+with prompts and right it will work or
+
+806
+00:14:54,069 --> 00:14:54,079
+with prompts and right it will work or
+ 
+
+807
+00:14:54,079 --> 00:14:55,829
+with prompts and right it will work or
+it works with any agent with any
+
+808
+00:14:55,829 --> 00:14:55,839
+it works with any agent with any
+ 
+
+809
+00:14:55,839 --> 00:14:57,990
+it works with any agent with any
+language and it's an abstraction from
+
+810
+00:14:57,990 --> 00:14:58,000
+language and it's an abstraction from
+ 
+
+811
+00:14:58,000 --> 00:14:59,829
+language and it's an abstraction from
+the operating system right this is
+
+812
+00:14:59,829 --> 00:14:59,839
+the operating system right this is
+ 
+
+813
+00:14:59,839 --> 00:15:01,430
+the operating system right this is
+generally happening with agents we have
+
+814
+00:15:01,430 --> 00:15:01,440
+generally happening with agents we have
+ 
+
+815
+00:15:01,440 --> 00:15:03,509
+generally happening with agents we have
+an abstraction layer and attackers will
+
+816
+00:15:03,509 --> 00:15:03,519
+an abstraction layer and attackers will
+ 
+
+817
+00:15:03,519 --> 00:15:05,750
+an abstraction layer and attackers will
+leverage that same abstraction layer and
+
+818
+00:15:05,750 --> 00:15:05,760
+leverage that same abstraction layer and
+ 
+
+819
+00:15:05,760 --> 00:15:07,030
+leverage that same abstraction layer and
+the first time I talked about this was
+
+820
+00:15:07,030 --> 00:15:07,040
+the first time I talked about this was
+ 
+
+821
+00:15:07,040 --> 00:15:08,710
+the first time I talked about this was
+also at one of the blackhead talks and I
+
+822
+00:15:08,710 --> 00:15:08,720
+also at one of the blackhead talks and I
+ 
+
+823
+00:15:08,720 --> 00:15:10,949
+also at one of the blackhead talks and I
+have a blog post about what I called the
+
+824
+00:15:10,949 --> 00:15:10,959
+have a blog post about what I called the
+ 
+
+825
+00:15:10,959 --> 00:15:14,629
+have a blog post about what I called the
+AI domination zombies and and and so on.
+
+826
+00:15:14,629 --> 00:15:14,639
+AI domination zombies and and and so on.
+ 
+
+827
+00:15:14,639 --> 00:15:16,389
+AI domination zombies and and and so on.
+And this is called agent commander. It's
+
+828
+00:15:16,389 --> 00:15:16,399
+And this is called agent commander. It's
+ 
+
+829
+00:15:16,399 --> 00:15:18,310
+And this is called agent commander. It's
+a tool that you know once you have an
+
+830
+00:15:18,310 --> 00:15:18,320
+a tool that you know once you have an
+ 
+
+831
+00:15:18,320 --> 00:15:19,910
+a tool that you know once you have an
+indirect prompt injection of somehow you
+
+832
+00:15:19,910 --> 00:15:19,920
+indirect prompt injection of somehow you
+ 
+
+833
+00:15:19,920 --> 00:15:21,910
+indirect prompt injection of somehow you
+compromise an agent, you can have it
+
+834
+00:15:21,910 --> 00:15:21,920
+compromise an agent, you can have it
+ 
+
+835
+00:15:21,920 --> 00:15:23,990
+compromise an agent, you can have it
+join this command and control center.
+
+836
+00:15:23,990 --> 00:15:24,000
+join this command and control center.
+ 
+
+837
+00:15:24,000 --> 00:15:26,150
+join this command and control center.
+And the thing you do is you prompt your
+
+838
+00:15:26,150 --> 00:15:26,160
+And the thing you do is you prompt your
+ 
+
+839
+00:15:26,160 --> 00:15:28,949
+And the thing you do is you prompt your
+agents, right? You send uh prompts down
+
+840
+00:15:28,949 --> 00:15:28,959
+agents, right? You send uh prompts down
+ 
+
+841
+00:15:28,959 --> 00:15:30,470
+agents, right? You send uh prompts down
+to the agents and then they act on those
+
+842
+00:15:30,470 --> 00:15:30,480
+to the agents and then they act on those
+ 
+
+843
+00:15:30,480 --> 00:15:32,949
+to the agents and then they act on those
+prompts. And you might wonder how we can
+
+844
+00:15:32,949 --> 00:15:32,959
+prompts. And you might wonder how we can
+ 
+
+845
+00:15:32,959 --> 00:15:34,310
+prompts. And you might wonder how we can
+compromise them, right? There's actually
+
+846
+00:15:34,310 --> 00:15:34,320
+compromise them, right? There's actually
+ 
+
+847
+00:15:34,320 --> 00:15:36,230
+compromise them, right? There's actually
+a lot of good research out already from
+
+848
+00:15:36,230 --> 00:15:36,240
+a lot of good research out already from
+ 
+
+849
+00:15:36,240 --> 00:15:38,230
+a lot of good research out already from
+uh various stakeholderity, hidden
+
+850
+00:15:38,230 --> 00:15:38,240
+uh various stakeholderity, hidden
+ 
+
+851
+00:15:38,240 --> 00:15:40,310
+uh various stakeholderity, hidden
+layout. We have some good examples of
+
+852
+00:15:40,310 --> 00:15:40,320
+layout. We have some good examples of
+ 
+
+853
+00:15:40,320 --> 00:15:42,550
+layout. We have some good examples of
+how to uh compromise open claw for
+
+854
+00:15:42,550 --> 00:15:42,560
+how to uh compromise open claw for
+ 
+
+855
+00:15:42,560 --> 00:15:44,790
+how to uh compromise open claw for
+instance. My research also f focused on
+
+856
+00:15:44,790 --> 00:15:44,800
+instance. My research also f focused on
+ 
+
+857
+00:15:44,800 --> 00:15:47,670
+instance. My research also f focused on
+open claw and I back door the heartbeat.
+
+858
+00:15:47,670 --> 00:15:47,680
+open claw and I back door the heartbeat.
+ 
+
+859
+00:15:47,680 --> 00:15:49,350
+open claw and I back door the heartbeat.
+I'm going to skip some of this here. Oh,
+
+860
+00:15:49,350 --> 00:15:49,360
+I'm going to skip some of this here. Oh,
+ 
+
+861
+00:15:49,360 --> 00:15:52,629
+I'm going to skip some of this here. Oh,
+this is interesting. Um so one thing as
+
+862
+00:15:52,629 --> 00:15:52,639
+this is interesting. Um so one thing as
+ 
+
+863
+00:15:52,639 --> 00:15:54,790
+this is interesting. Um so one thing as
+an attacker you want to be always hiding
+
+864
+00:15:54,790 --> 00:15:54,800
+an attacker you want to be always hiding
+ 
+
+865
+00:15:54,800 --> 00:15:57,030
+an attacker you want to be always hiding
+from the actual user of the system right
+
+866
+00:15:57,030 --> 00:15:57,040
+from the actual user of the system right
+ 
+
+867
+00:15:57,040 --> 00:15:59,269
+from the actual user of the system right
+when the user intact with your open claw
+
+868
+00:15:59,269 --> 00:15:59,279
+when the user intact with your open claw
+ 
+
+869
+00:15:59,279 --> 00:16:01,670
+when the user intact with your open claw
+with the open claw you don't want to
+
+870
+00:16:01,670 --> 00:16:01,680
+with the open claw you don't want to
+ 
+
+871
+00:16:01,680 --> 00:16:03,189
+with the open claw you don't want to
+show one of the attack payloads or
+
+872
+00:16:03,189 --> 00:16:03,199
+show one of the attack payloads or
+ 
+
+873
+00:16:03,199 --> 00:16:05,350
+show one of the attack payloads or
+results into the user's channel. Right?
+
+874
+00:16:05,350 --> 00:16:05,360
+results into the user's channel. Right?
+ 
+
+875
+00:16:05,360 --> 00:16:07,350
+results into the user's channel. Right?
+So one way you can hide is by adding
+
+876
+00:16:07,350 --> 00:16:07,360
+So one way you can hide is by adding
+ 
+
+877
+00:16:07,360 --> 00:16:08,949
+So one way you can hide is by adding
+certain strings in your message as an
+
+878
+00:16:08,949 --> 00:16:08,959
+certain strings in your message as an
+ 
+
+879
+00:16:08,959 --> 00:16:11,509
+certain strings in your message as an
+attacker. If for instance the heartbeat
+
+880
+00:16:11,509 --> 00:16:11,519
+attacker. If for instance the heartbeat
+ 
+
+881
+00:16:11,519 --> 00:16:13,670
+attacker. If for instance the heartbeat
+ends with the string heartbeat okay it
+
+882
+00:16:13,670 --> 00:16:13,680
+ends with the string heartbeat okay it
+ 
+
+883
+00:16:13,680 --> 00:16:16,949
+ends with the string heartbeat okay it
+will not be shown in the us UI or with a
+
+884
+00:16:16,949 --> 00:16:16,959
+will not be shown in the us UI or with a
+ 
+
+885
+00:16:16,959 --> 00:16:20,310
+will not be shown in the us UI or with a
+message start with capital no reply it
+
+886
+00:16:20,310 --> 00:16:20,320
+message start with capital no reply it
+ 
+
+887
+00:16:20,320 --> 00:16:22,150
+message start with capital no reply it
+will not be shown in the UI. So as an
+
+888
+00:16:22,150 --> 00:16:22,160
+will not be shown in the UI. So as an
+ 
+
+889
+00:16:22,160 --> 00:16:23,590
+will not be shown in the UI. So as an
+attacker you can add these strings and
+
+890
+00:16:23,590 --> 00:16:23,600
+attacker you can add these strings and
+ 
+
+891
+00:16:23,600 --> 00:16:26,790
+attacker you can add these strings and
+then you you kind of hide. Um and yeah,
+
+892
+00:16:26,790 --> 00:16:26,800
+then you you kind of hide. Um and yeah,
+ 
+
+893
+00:16:26,800 --> 00:16:29,269
+then you you kind of hide. Um and yeah,
+so I have this example where you cat uh
+
+894
+00:16:29,269 --> 00:16:29,279
+so I have this example where you cat uh
+ 
+
+895
+00:16:29,279 --> 00:16:30,550
+so I have this example where you cat uh
+here you can see that the default
+
+896
+00:16:30,550 --> 00:16:30,560
+here you can see that the default
+ 
+
+897
+00:16:30,560 --> 00:16:33,430
+here you can see that the default
+heartbeat and there's actually a really
+
+898
+00:16:33,430 --> 00:16:33,440
+heartbeat and there's actually a really
+ 
+
+899
+00:16:33,440 --> 00:16:36,710
+heartbeat and there's actually a really
+interesting thing I learned from a u uh
+
+900
+00:16:36,710 --> 00:16:36,720
+interesting thing I learned from a u uh
+ 
+
+901
+00:16:36,720 --> 00:16:39,509
+interesting thing I learned from a u uh
+the alias is vegan mofet uh he has like
+
+902
+00:16:39,509 --> 00:16:39,519
+the alias is vegan mofet uh he has like
+ 
+
+903
+00:16:39,519 --> 00:16:42,150
+the alias is vegan mofet uh he has like
+a blog post about how you can configure
+
+904
+00:16:42,150 --> 00:16:42,160
+a blog post about how you can configure
+ 
+
+905
+00:16:42,160 --> 00:16:45,030
+a blog post about how you can configure
+openclaw with a pup subscription so you
+
+906
+00:16:45,030 --> 00:16:45,040
+openclaw with a pup subscription so you
+ 
+
+907
+00:16:45,040 --> 00:16:46,870
+openclaw with a pup subscription so you
+get it gets notified if there's a new
+
+908
+00:16:46,870 --> 00:16:46,880
+get it gets notified if there's a new
+ 
+
+909
+00:16:46,880 --> 00:16:49,189
+get it gets notified if there's a new
+email arriving in Gmail and it'll
+
+910
+00:16:49,189 --> 00:16:49,199
+email arriving in Gmail and it'll
+ 
+
+911
+00:16:49,199 --> 00:16:51,110
+email arriving in Gmail and it'll
+automatically analyze it right it's it's
+
+912
+00:16:51,110 --> 00:16:51,120
+automatically analyze it right it's it's
+ 
+
+913
+00:16:51,120 --> 00:16:54,790
+automatically analyze it right it's it's
+a built-in feature of open claw and that
+
+914
+00:16:54,790 --> 00:16:54,800
+a built-in feature of open claw and that
+ 
+
+915
+00:16:54,800 --> 00:16:56,150
+a built-in feature of open claw and that
+can be used with a prompt injection,
+
+916
+00:16:56,150 --> 00:16:56,160
+can be used with a prompt injection,
+ 
+
+917
+00:16:56,160 --> 00:16:57,829
+can be used with a prompt injection,
+right? To get a zero click. You just
+
+918
+00:16:57,829 --> 00:16:57,839
+right? To get a zero click. You just
+ 
+
+919
+00:16:57,839 --> 00:17:00,150
+right? To get a zero click. You just
+really send an email to your agent. All
+
+920
+00:17:00,150 --> 00:17:00,160
+really send an email to your agent. All
+ 
+
+921
+00:17:00,160 --> 00:17:01,829
+really send an email to your agent. All
+you need to know is the email address of
+
+922
+00:17:01,829 --> 00:17:01,839
+you need to know is the email address of
+ 
+
+923
+00:17:01,839 --> 00:17:03,670
+you need to know is the email address of
+the agent or if your agent is your own
+
+924
+00:17:03,670 --> 00:17:03,680
+the agent or if your agent is your own
+ 
+
+925
+00:17:03,680 --> 00:17:05,750
+the agent or if your agent is your own
+personal inbox, very problematic, right?
+
+926
+00:17:05,750 --> 00:17:05,760
+personal inbox, very problematic, right?
+ 
+
+927
+00:17:05,760 --> 00:17:08,150
+personal inbox, very problematic, right?
+But you get an email and then 10 seconds
+
+928
+00:17:08,150 --> 00:17:08,160
+But you get an email and then 10 seconds
+ 
+
+929
+00:17:08,160 --> 00:17:10,549
+But you get an email and then 10 seconds
+later you are exploited. And so I built
+
+930
+00:17:10,549 --> 00:17:10,559
+later you are exploited. And so I built
+ 
+
+931
+00:17:10,559 --> 00:17:13,270
+later you are exploited. And so I built
+on top of this and made and combined
+
+932
+00:17:13,270 --> 00:17:13,280
+on top of this and made and combined
+ 
+
+933
+00:17:13,280 --> 00:17:15,590
+on top of this and made and combined
+this with my hot beat idea. So this is
+
+934
+00:17:15,590 --> 00:17:15,600
+this with my hot beat idea. So this is
+ 
+
+935
+00:17:15,600 --> 00:17:17,510
+this with my hot beat idea. So this is
+the exploit a system message. The
+
+936
+00:17:17,510 --> 00:17:17,520
+the exploit a system message. The
+ 
+
+937
+00:17:17,520 --> 00:17:19,669
+the exploit a system message. The
+chronop ran that read the email. It was
+
+938
+00:17:19,669 --> 00:17:19,679
+chronop ran that read the email. It was
+ 
+
+939
+00:17:19,679 --> 00:17:21,829
+chronop ran that read the email. It was
+notified. It analyzed the email and then
+
+940
+00:17:21,829 --> 00:17:21,839
+notified. It analyzed the email and then
+ 
+
+941
+00:17:21,839 --> 00:17:23,590
+notified. It analyzed the email and then
+it fetched the remote instructions and
+
+942
+00:17:23,590 --> 00:17:23,600
+it fetched the remote instructions and
+ 
+
+943
+00:17:23,600 --> 00:17:26,230
+it fetched the remote instructions and
+just appended that to the heartbeat. So
+
+944
+00:17:26,230 --> 00:17:26,240
+just appended that to the heartbeat. So
+ 
+
+945
+00:17:26,240 --> 00:17:29,510
+just appended that to the heartbeat. So
+now then wait for like 20 minutes or
+
+946
+00:17:29,510 --> 00:17:29,520
+now then wait for like 20 minutes or
+ 
+
+947
+00:17:29,520 --> 00:17:31,830
+now then wait for like 20 minutes or
+whatever the next heartbeat happens and
+
+948
+00:17:31,830 --> 00:17:31,840
+whatever the next heartbeat happens and
+ 
+
+949
+00:17:31,840 --> 00:17:33,830
+whatever the next heartbeat happens and
+the heartbeat file looks like this,
+
+950
+00:17:33,830 --> 00:17:33,840
+the heartbeat file looks like this,
+ 
+
+951
+00:17:33,840 --> 00:17:35,430
+the heartbeat file looks like this,
+right? And this is what I call prompt
+
+952
+00:17:35,430 --> 00:17:35,440
+right? And this is what I call prompt
+ 
+
+953
+00:17:35,440 --> 00:17:37,029
+right? And this is what I call prompt
+wear. You can see this is not like a
+
+954
+00:17:37,029 --> 00:17:37,039
+wear. You can see this is not like a
+ 
+
+955
+00:17:37,039 --> 00:17:39,350
+wear. You can see this is not like a
+prompt injection. This is a complex set
+
+956
+00:17:39,350 --> 00:17:39,360
+prompt injection. This is a complex set
+ 
+
+957
+00:17:39,360 --> 00:17:41,830
+prompt injection. This is a complex set
+of instructions that tell the agent to
+
+958
+00:17:41,830 --> 00:17:41,840
+of instructions that tell the agent to
+ 
+
+959
+00:17:41,840 --> 00:17:44,070
+of instructions that tell the agent to
+become a to join a command and control
+
+960
+00:17:44,070 --> 00:17:44,080
+become a to join a command and control
+ 
+
+961
+00:17:44,080 --> 00:17:47,110
+become a to join a command and control
+server, right? But all prompt based um
+
+962
+00:17:47,110 --> 00:17:47,120
+server, right? But all prompt based um
+ 
+
+963
+00:17:47,120 --> 00:17:49,029
+server, right? But all prompt based um
+and then yeah it joins the commander
+
+964
+00:17:49,029 --> 00:17:49,039
+and then yeah it joins the commander
+ 
+
+965
+00:17:49,039 --> 00:17:50,470
+and then yeah it joins the commander
+control and now you can prompt it right
+
+966
+00:17:50,470 --> 00:17:50,480
+control and now you can prompt it right
+ 
+
+967
+00:17:50,480 --> 00:17:52,470
+control and now you can prompt it right
+you can say hey do a security assessment
+
+968
+00:17:52,470 --> 00:17:52,480
+you can say hey do a security assessment
+ 
+
+969
+00:17:52,480 --> 00:17:53,830
+you can say hey do a security assessment
+of yourself and tell me all your
+
+970
+00:17:53,830 --> 00:17:53,840
+of yourself and tell me all your
+ 
+
+971
+00:17:53,840 --> 00:17:55,590
+of yourself and tell me all your
+problems right and it goes ahead and
+
+972
+00:17:55,590 --> 00:17:55,600
+problems right and it goes ahead and
+ 
+
+973
+00:17:55,600 --> 00:17:57,750
+problems right and it goes ahead and
+tells you my name server name my IP
+
+974
+00:17:57,750 --> 00:17:57,760
+tells you my name server name my IP
+ 
+
+975
+00:17:57,760 --> 00:18:00,150
+tells you my name server name my IP
+address my server map up time right it's
+
+976
+00:18:00,150 --> 00:18:00,160
+address my server map up time right it's
+ 
+
+977
+00:18:00,160 --> 00:18:01,990
+address my server map up time right it's
+like full pentest report right here
+
+978
+00:18:01,990 --> 00:18:02,000
+like full pentest report right here
+ 
+
+979
+00:18:02,000 --> 00:18:03,510
+like full pentest report right here
+right
+
+980
+00:18:03,510 --> 00:18:03,520
+right
+ 
+
+981
+00:18:03,520 --> 00:18:05,430
+right
+you you it tells you about the how it's
+
+982
+00:18:05,430 --> 00:18:05,440
+you you it tells you about the how it's
+ 
+
+983
+00:18:05,440 --> 00:18:07,750
+you you it tells you about the how it's
+configured uh the environment variables
+
+984
+00:18:07,750 --> 00:18:07,760
+configured uh the environment variables
+ 
+
+985
+00:18:07,760 --> 00:18:09,190
+configured uh the environment variables
+and so on so it's really about to have
+
+986
+00:18:09,190 --> 00:18:09,200
+and so on so it's really about to have
+ 
+
+987
+00:18:09,200 --> 00:18:11,029
+and so on so it's really about to have
+this idea of prompt templates in the
+
+988
+00:18:11,029 --> 00:18:11,039
+this idea of prompt templates in the
+ 
+
+989
+00:18:11,039 --> 00:18:12,870
+this idea of prompt templates in the
+commander control system where you pick
+
+990
+00:18:12,870 --> 00:18:12,880
+commander control system where you pick
+ 
+
+991
+00:18:12,880 --> 00:18:14,710
+commander control system where you pick
+a template and you just submit it down
+
+992
+00:18:14,710 --> 00:18:14,720
+a template and you just submit it down
+ 
+
+993
+00:18:14,720 --> 00:18:16,870
+a template and you just submit it down
+and then it runs those instructions. A
+
+994
+00:18:16,870 --> 00:18:16,880
+and then it runs those instructions. A
+ 
+
+995
+00:18:16,880 --> 00:18:18,710
+and then it runs those instructions. A
+feature I feel I'm really proud of is
+
+996
+00:18:18,710 --> 00:18:18,720
+feature I feel I'm really proud of is
+ 
+
+997
+00:18:18,720 --> 00:18:21,350
+feature I feel I'm really proud of is
+actually that you can uh basically say
+
+998
+00:18:21,350 --> 00:18:21,360
+actually that you can uh basically say
+ 
+
+999
+00:18:21,360 --> 00:18:23,510
+actually that you can uh basically say
+hey browse to this website take a
+
+1000
+00:18:23,510 --> 00:18:23,520
+hey browse to this website take a
+ 
+
+1001
+00:18:23,520 --> 00:18:24,870
+hey browse to this website take a
+screenshot and it will upload the
+
+1002
+00:18:24,870 --> 00:18:24,880
+screenshot and it will upload the
+ 
+
+1003
+00:18:24,880 --> 00:18:26,310
+screenshot and it will upload the
+screenshot to the command and control
+
+1004
+00:18:26,310 --> 00:18:26,320
+screenshot to the command and control
+ 
+
+1005
+00:18:26,320 --> 00:18:27,750
+screenshot to the command and control
+server. So you say, "Hey, browse to the
+
+1006
+00:18:27,750 --> 00:18:27,760
+server. So you say, "Hey, browse to the
+ 
+
+1007
+00:18:27,760 --> 00:18:29,510
+server. So you say, "Hey, browse to the
+inbox, take a screenshot and share a
+
+1008
+00:18:29,510 --> 00:18:29,520
+inbox, take a screenshot and share a
+ 
+
+1009
+00:18:29,520 --> 00:18:31,510
+inbox, take a screenshot and share a
+screenshot with me and the agent will
+
+1010
+00:18:31,510 --> 00:18:31,520
+screenshot with me and the agent will
+ 
+
+1011
+00:18:31,520 --> 00:18:32,549
+screenshot with me and the agent will
+just do that, right?" And the user
+
+1012
+00:18:32,549 --> 00:18:32,559
+just do that, right?" And the user
+ 
+
+1013
+00:18:32,559 --> 00:18:34,310
+just do that, right?" And the user
+doesn't know it's happening because it's
+
+1014
+00:18:34,310 --> 00:18:34,320
+doesn't know it's happening because it's
+ 
+
+1015
+00:18:34,320 --> 00:18:37,350
+doesn't know it's happening because it's
+all hidden from the user's interface
+
+1016
+00:18:37,350 --> 00:18:37,360
+all hidden from the user's interface
+ 
+
+1017
+00:18:37,360 --> 00:18:39,590
+all hidden from the user's interface
+and it's not just working with openclaw.
+
+1018
+00:18:39,590 --> 00:18:39,600
+and it's not just working with openclaw.
+ 
+
+1019
+00:18:39,600 --> 00:18:41,430
+and it's not just working with openclaw.
+My real test was that I wanted to use a
+
+1020
+00:18:41,430 --> 00:18:41,440
+My real test was that I wanted to use a
+ 
+
+1021
+00:18:41,440 --> 00:18:42,950
+My real test was that I wanted to use a
+different one and then I used Kimmy
+
+1022
+00:18:42,950 --> 00:18:42,960
+different one and then I used Kimmy
+ 
+
+1023
+00:18:42,960 --> 00:18:44,789
+different one and then I used Kimmy
+Kimmy claw and here you can see the
+
+1024
+00:18:44,789 --> 00:18:44,799
+Kimmy claw and here you can see the
+ 
+
+1025
+00:18:44,799 --> 00:18:46,870
+Kimmy claw and here you can see the
+prompt injection exploit that hides
+
+1026
+00:18:46,870 --> 00:18:46,880
+prompt injection exploit that hides
+ 
+
+1027
+00:18:46,880 --> 00:18:50,070
+prompt injection exploit that hides
+itself here and then Kimmy claw joins
+
+1028
+00:18:50,070 --> 00:18:50,080
+itself here and then Kimmy claw joins
+ 
+
+1029
+00:18:50,080 --> 00:18:51,830
+itself here and then Kimmy claw joins
+the command and control server as well.
+
+1030
+00:18:51,830 --> 00:18:51,840
+the command and control server as well.
+ 
+
+1031
+00:18:51,840 --> 00:18:53,350
+the command and control server as well.
+And it's the same way, right? This is
+
+1032
+00:18:53,350 --> 00:18:53,360
+And it's the same way, right? This is
+ 
+
+1033
+00:18:53,360 --> 00:18:55,830
+And it's the same way, right? This is
+the prompt injection payload uh how we
+
+1034
+00:18:55,830 --> 00:18:55,840
+the prompt injection payload uh how we
+ 
+
+1035
+00:18:55,840 --> 00:18:57,350
+the prompt injection payload uh how we
+added the information to the heartbeat
+
+1036
+00:18:57,350 --> 00:18:57,360
+added the information to the heartbeat
+ 
+
+1037
+00:18:57,360 --> 00:18:59,029
+added the information to the heartbeat
+and then you can ask about the human
+
+1038
+00:18:59,029 --> 00:18:59,039
+and then you can ask about the human
+ 
+
+1039
+00:18:59,039 --> 00:19:00,630
+and then you can ask about the human
+what who is your human what's your
+
+1040
+00:19:00,630 --> 00:19:00,640
+what who is your human what's your
+ 
+
+1041
+00:19:00,640 --> 00:19:02,470
+what who is your human what's your
+human's name right what's the human's
+
+1042
+00:19:02,470 --> 00:19:02,480
+human's name right what's the human's
+ 
+
+1043
+00:19:02,480 --> 00:19:05,430
+human's name right what's the human's
+email address and you can dispatch tasks
+
+1044
+00:19:05,430 --> 00:19:05,440
+email address and you can dispatch tasks
+ 
+
+1045
+00:19:05,440 --> 00:19:07,029
+email address and you can dispatch tasks
+right it's really this abstraction from
+
+1046
+00:19:07,029 --> 00:19:07,039
+right it's really this abstraction from
+ 
+
+1047
+00:19:07,039 --> 00:19:08,950
+right it's really this abstraction from
+the commands of the operating system the
+
+1048
+00:19:08,950 --> 00:19:08,960
+the commands of the operating system the
+ 
+
+1049
+00:19:08,960 --> 00:19:11,669
+the commands of the operating system the
+attackers will move a level higher
+
+1050
+00:19:11,669 --> 00:19:11,679
+attackers will move a level higher
+ 
+
+1051
+00:19:11,679 --> 00:19:14,150
+attackers will move a level higher
+and yeah then because this was Alibaba
+
+1052
+00:19:14,150 --> 00:19:14,160
+and yeah then because this was Alibaba
+ 
+
+1053
+00:19:14,160 --> 00:19:15,669
+and yeah then because this was Alibaba
+infrastructure I was like curious how
+
+1054
+00:19:15,669 --> 00:19:15,679
+infrastructure I was like curious how
+ 
+
+1055
+00:19:15,679 --> 00:19:17,750
+infrastructure I was like curious how
+they set it up I found this is worth
+
+1056
+00:19:17,750 --> 00:19:17,760
+they set it up I found this is worth
+ 
+
+1057
+00:19:17,760 --> 00:19:22,230
+they set it up I found this is worth
+sharing um so there is this u SSH key
+
+1058
+00:19:22,230 --> 00:19:22,240
+sharing um so there is this u SSH key
+ 
+
+1059
+00:19:22,240 --> 00:19:25,110
+sharing um so there is this u SSH key
+authorized keys file and there's a keys
+
+1060
+00:19:25,110 --> 00:19:25,120
+authorized keys file and there's a keys
+ 
+
+1061
+00:19:25,120 --> 00:19:27,590
+authorized keys file and there's a keys
+file that is a MacBook Pro which makes
+
+1062
+00:19:27,590 --> 00:19:27,600
+file that is a MacBook Pro which makes
+ 
+
+1063
+00:19:27,600 --> 00:19:29,750
+file that is a MacBook Pro which makes
+you realize right startups often don't
+
+1064
+00:19:29,750 --> 00:19:29,760
+you realize right startups often don't
+ 
+
+1065
+00:19:29,760 --> 00:19:31,510
+you realize right startups often don't
+have a lot of security controls so
+
+1066
+00:19:31,510 --> 00:19:31,520
+have a lot of security controls so
+ 
+
+1067
+00:19:31,520 --> 00:19:34,470
+have a lot of security controls so
+probably every single employee of moonai
+
+1068
+00:19:34,470 --> 00:19:34,480
+probably every single employee of moonai
+ 
+
+1069
+00:19:34,480 --> 00:19:36,070
+probably every single employee of moonai
+has this key on their laptop and can
+
+1070
+00:19:36,070 --> 00:19:36,080
+has this key on their laptop and can
+ 
+
+1071
+00:19:36,080 --> 00:19:37,510
+has this key on their laptop and can
+access your VM right that's my
+
+1072
+00:19:37,510 --> 00:19:37,520
+access your VM right that's my
+ 
+
+1073
+00:19:37,520 --> 00:19:40,150
+access your VM right that's my
+assumption because uh this is very not
+
+1074
+00:19:40,150 --> 00:19:40,160
+assumption because uh this is very not
+ 
+
+1075
+00:19:40,160 --> 00:19:41,590
+assumption because uh this is very not
+not normal that you would have an
+
+1076
+00:19:41,590 --> 00:19:41,600
+not normal that you would have an
+ 
+
+1077
+00:19:41,600 --> 00:19:44,070
+not normal that you would have an
+authorized keys file from a MacBook Pro
+
+1078
+00:19:44,070 --> 00:19:44,080
+authorized keys file from a MacBook Pro
+ 
+
+1079
+00:19:44,080 --> 00:19:46,950
+authorized keys file from a MacBook Pro
+in your in your machine uh then and this
+
+1080
+00:19:46,950 --> 00:19:46,960
+in your in your machine uh then and this
+ 
+
+1081
+00:19:46,960 --> 00:19:49,430
+in your in your machine uh then and this
+is now the final statement right we can
+
+1082
+00:19:49,430 --> 00:19:49,440
+is now the final statement right we can
+ 
+
+1083
+00:19:49,440 --> 00:19:52,070
+is now the final statement right we can
+turn this agent into a red team into a
+
+1084
+00:19:52,070 --> 00:19:52,080
+turn this agent into a red team into a
+ 
+
+1085
+00:19:52,080 --> 00:19:54,230
+turn this agent into a red team into a
+pentest Right. We can make it rogue,
+
+1086
+00:19:54,230 --> 00:19:54,240
+pentest Right. We can make it rogue,
+ 
+
+1087
+00:19:54,240 --> 00:19:56,150
+pentest Right. We can make it rogue,
+install security tools and then have it
+
+1088
+00:19:56,150 --> 00:19:56,160
+install security tools and then have it
+ 
+
+1089
+00:19:56,160 --> 00:19:58,710
+install security tools and then have it
+operate. And this is I think the big
+
+1090
+00:19:58,710 --> 00:19:58,720
+operate. And this is I think the big
+ 
+
+1091
+00:19:58,720 --> 00:20:01,750
+operate. And this is I think the big
+takeaway in a way that from a red
+
+1092
+00:20:01,750 --> 00:20:01,760
+takeaway in a way that from a red
+ 
+
+1093
+00:20:01,760 --> 00:20:03,750
+takeaway in a way that from a red
+teaming point of view, I'm really
+
+1094
+00:20:03,750 --> 00:20:03,760
+teaming point of view, I'm really
+ 
+
+1095
+00:20:03,760 --> 00:20:06,150
+teaming point of view, I'm really
+wondering how things will change as we
+
+1096
+00:20:06,150 --> 00:20:06,160
+wondering how things will change as we
+ 
+
+1097
+00:20:06,160 --> 00:20:09,110
+wondering how things will change as we
+see an adversary not needing to a zero
+
+1098
+00:20:09,110 --> 00:20:09,120
+see an adversary not needing to a zero
+ 
+
+1099
+00:20:09,120 --> 00:20:11,909
+see an adversary not needing to a zero
+day up front, right? System will get
+
+1100
+00:20:11,909 --> 00:20:11,919
+day up front, right? System will get
+ 
+
+1101
+00:20:11,919 --> 00:20:13,350
+day up front, right? System will get
+compromised and then they walk through
+
+1102
+00:20:13,350 --> 00:20:13,360
+compromised and then they walk through
+ 
+
+1103
+00:20:13,360 --> 00:20:15,669
+compromised and then they walk through
+the network without knowing a single
+
+1104
+00:20:15,669 --> 00:20:15,679
+the network without knowing a single
+ 
+
+1105
+00:20:15,679 --> 00:20:17,110
+the network without knowing a single
+zero day possibly, right? because
+
+1106
+00:20:17,110 --> 00:20:17,120
+zero day possibly, right? because
+ 
+
+1107
+00:20:17,120 --> 00:20:19,590
+zero day possibly, right? because
+they're going to find them on the fly in
+
+1108
+00:20:19,590 --> 00:20:19,600
+they're going to find them on the fly in
+ 
+
+1109
+00:20:19,600 --> 00:20:21,750
+they're going to find them on the fly in
+real maybe possibly in a year or so or
+
+1110
+00:20:21,750 --> 00:20:21,760
+real maybe possibly in a year or so or
+ 
+
+1111
+00:20:21,760 --> 00:20:24,710
+real maybe possibly in a year or so or
+two, maybe even in real time, right?
+
+1112
+00:20:24,710 --> 00:20:24,720
+two, maybe even in real time, right?
+ 
+
+1113
+00:20:24,720 --> 00:20:26,150
+two, maybe even in real time, right?
+Because the LLMs are going to be so
+
+1114
+00:20:26,150 --> 00:20:26,160
+Because the LLMs are going to be so
+ 
+
+1115
+00:20:26,160 --> 00:20:28,470
+Because the LLMs are going to be so
+powerful to just find problems and
+
+1116
+00:20:28,470 --> 00:20:28,480
+powerful to just find problems and
+ 
+
+1117
+00:20:28,480 --> 00:20:31,510
+powerful to just find problems and
+navigate the network very quickly. Yeah.
+
+1118
+00:20:31,510 --> 00:20:31,520
+navigate the network very quickly. Yeah.
+ 
+
+1119
+00:20:31,520 --> 00:20:33,350
+navigate the network very quickly. Yeah.
+So, that was your agent works for me
+
+1120
+00:20:33,350 --> 00:20:33,360
+So, that was your agent works for me
+ 
+
+1121
+00:20:33,360 --> 00:20:35,029
+So, that was your agent works for me
+now. I hope this was interesting and
+
+1122
+00:20:35,029 --> 00:20:35,039
+now. I hope this was interesting and
+ 
+
+1123
+00:20:35,039 --> 00:20:44,950
+now. I hope this was interesting and
+entertaining. Thank you very much.
+
+1124
+00:20:44,950 --> 00:20:44,960
+
+ 
+
+1125
+00:20:44,960 --> 00:20:46,630
+
+>> Yeah, I'm Yan, by the way. I forgot to
+
+1126
+00:20:46,630 --> 00:20:46,640
+>> Yeah, I'm Yan, by the way. I forgot to
+ 
+
+1127
+00:20:46,640 --> 00:20:54,789
+>> Yeah, I'm Yan, by the way. I forgot to
+introduce myself.
+
+1128
+00:20:54,789 --> 00:20:54,799
+
+ 
+
+1129
+00:20:54,799 --> 00:20:56,549
+
+>> Any questions folks?
+
+1130
+00:20:56,549 --> 00:20:56,559
+>> Any questions folks?
+ 
+
+1131
+00:20:56,559 --> 00:20:58,230
+>> Any questions folks?
+>> Oh yeah, we got one right here.
+
+1132
+00:20:58,230 --> 00:20:58,240
+>> Oh yeah, we got one right here.
+ 
+
+1133
+00:20:58,240 --> 00:20:59,830
+>> Oh yeah, we got one right here.
+>> Good morning.
+
+1134
+00:20:59,830 --> 00:20:59,840
+>> Good morning.
+ 
+
+1135
+00:20:59,840 --> 00:21:02,070
+>> Good morning.
+>> Hey, morning. Uh, thanks for the talk.
+
+1136
+00:21:02,070 --> 00:21:02,080
+>> Hey, morning. Uh, thanks for the talk.
+ 
+
+1137
+00:21:02,080 --> 00:21:04,789
+>> Hey, morning. Uh, thanks for the talk.
+So, um, around the tool invocations,
+
+1138
+00:21:04,789 --> 00:21:04,799
+So, um, around the tool invocations,
+ 
+
+1139
+00:21:04,799 --> 00:21:07,750
+So, um, around the tool invocations,
+right? You suggested that um, LLM
+
+1140
+00:21:07,750 --> 00:21:07,760
+right? You suggested that um, LLM
+ 
+
+1141
+00:21:07,760 --> 00:21:10,549
+right? You suggested that um, LLM
+interprets and, um, content decides the
+
+1142
+00:21:10,549 --> 00:21:10,559
+interprets and, um, content decides the
+ 
+
+1143
+00:21:10,559 --> 00:21:12,950
+interprets and, um, content decides the
+tool. So do you think that this is like
+
+1144
+00:21:12,950 --> 00:21:12,960
+tool. So do you think that this is like
+ 
+
+1145
+00:21:12,960 --> 00:21:15,270
+tool. So do you think that this is like
+fundamentally flawed now like between
+
+1146
+00:21:15,270 --> 00:21:15,280
+fundamentally flawed now like between
+ 
+
+1147
+00:21:15,280 --> 00:21:18,070
+fundamentally flawed now like between
+the AI agents implementation itself?
+
+1148
+00:21:18,070 --> 00:21:18,080
+the AI agents implementation itself?
+ 
+
+1149
+00:21:18,080 --> 00:21:20,710
+the AI agents implementation itself?
+>> Uh not fundamentally flawed. The actual
+
+1150
+00:21:20,710 --> 00:21:20,720
+>> Uh not fundamentally flawed. The actual
+ 
+
+1151
+00:21:20,720 --> 00:21:22,230
+>> Uh not fundamentally flawed. The actual
+thing that Google implemented was
+
+1152
+00:21:22,230 --> 00:21:22,240
+thing that Google implemented was
+ 
+
+1153
+00:21:22,240 --> 00:21:24,230
+thing that Google implemented was
+actually a positive thing because they
+
+1154
+00:21:24,230 --> 00:21:24,240
+actually a positive thing because they
+ 
+
+1155
+00:21:24,240 --> 00:21:25,990
+actually a positive thing because they
+added the security control that really
+
+1156
+00:21:25,990 --> 00:21:26,000
+added the security control that really
+ 
+
+1157
+00:21:26,000 --> 00:21:29,110
+added the security control that really
+limits the tool chaining capability.
+
+1158
+00:21:29,110 --> 00:21:29,120
+limits the tool chaining capability.
+ 
+
+1159
+00:21:29,120 --> 00:21:31,270
+limits the tool chaining capability.
+Right? So I think that is very positive
+
+1160
+00:21:31,270 --> 00:21:31,280
+Right? So I think that is very positive
+ 
+
+1161
+00:21:31,280 --> 00:21:33,270
+Right? So I think that is very positive
+u that the tool becomes later active
+
+1162
+00:21:33,270 --> 00:21:33,280
+u that the tool becomes later active
+ 
+
+1163
+00:21:33,280 --> 00:21:37,190
+u that the tool becomes later active
+again. Right? that is uh is kind of a
+
+1164
+00:21:37,190 --> 00:21:37,200
+again. Right? that is uh is kind of a
+ 
+
+1165
+00:21:37,200 --> 00:21:38,789
+again. Right? that is uh is kind of a
+bypass and something we need to figure
+
+1166
+00:21:38,789 --> 00:21:38,799
+bypass and something we need to figure
+ 
+
+1167
+00:21:38,799 --> 00:21:40,470
+bypass and something we need to figure
+out I think or they need to figure out
+
+1168
+00:21:40,470 --> 00:21:40,480
+out I think or they need to figure out
+ 
+
+1169
+00:21:40,480 --> 00:21:43,270
+out I think or they need to figure out
+how they can lock that down better right
+
+1170
+00:21:43,270 --> 00:21:43,280
+how they can lock that down better right
+ 
+
+1171
+00:21:43,280 --> 00:21:44,870
+how they can lock that down better right
+>> without always having to ask the user
+
+1172
+00:21:44,870 --> 00:21:44,880
+>> without always having to ask the user
+ 
+
+1173
+00:21:44,880 --> 00:21:46,310
+>> without always having to ask the user
+because the really good thing is here
+
+1174
+00:21:46,310 --> 00:21:46,320
+because the really good thing is here
+ 
+
+1175
+00:21:46,320 --> 00:21:47,830
+because the really good thing is here
+the user doesn't have to be asked right
+
+1176
+00:21:47,830 --> 00:21:47,840
+the user doesn't have to be asked right
+ 
+
+1177
+00:21:47,840 --> 00:21:49,510
+the user doesn't have to be asked right
+because always these prompts yes yes yes
+
+1178
+00:21:49,510 --> 00:21:49,520
+because always these prompts yes yes yes
+ 
+
+1179
+00:21:49,520 --> 00:21:51,350
+because always these prompts yes yes yes
+is is not very useful
+
+1180
+00:21:51,350 --> 00:21:51,360
+is is not very useful
+ 
+
+1181
+00:21:51,360 --> 00:21:54,390
+is is not very useful
+>> right so and in terms of prompts now
+
+1182
+00:21:54,390 --> 00:21:54,400
+>> right so and in terms of prompts now
+ 
+
+1183
+00:21:54,400 --> 00:21:56,870
+>> right so and in terms of prompts now
+because you showed a demo uh which was
+
+1184
+00:21:56,870 --> 00:21:56,880
+because you showed a demo uh which was
+ 
+
+1185
+00:21:56,880 --> 00:21:59,270
+because you showed a demo uh which was
+pretty nice of you know how tool invoc
+
+1186
+00:21:59,270 --> 00:21:59,280
+pretty nice of you know how tool invoc
+ 
+
+1187
+00:21:59,280 --> 00:22:01,110
+pretty nice of you know how tool invoc
+like delay tool invocation causes issues
+
+1188
+00:22:01,110 --> 00:22:01,120
+like delay tool invocation causes issues
+ 
+
+1189
+00:22:01,120 --> 00:22:03,350
+like delay tool invocation causes issues
+right so would you say that it's more of
+
+1190
+00:22:03,350 --> 00:22:03,360
+right so would you say that it's more of
+ 
+
+1191
+00:22:03,360 --> 00:22:05,190
+right so would you say that it's more of
+like a statement manipulation,
+
+1192
+00:22:05,190 --> 00:22:05,200
+like a statement manipulation,
+ 
+
+1193
+00:22:05,200 --> 00:22:07,350
+like a statement manipulation,
+vulnerability attack rather than a input
+
+1194
+00:22:07,350 --> 00:22:07,360
+vulnerability attack rather than a input
+ 
+
+1195
+00:22:07,360 --> 00:22:08,149
+vulnerability attack rather than a input
+validation.
+
+1196
+00:22:08,149 --> 00:22:08,159
+validation.
+ 
+
+1197
+00:22:08,159 --> 00:22:10,710
+validation.
+>> I I think it's a fundamental attack or
+
+1198
+00:22:10,710 --> 00:22:10,720
+>> I I think it's a fundamental attack or
+ 
+
+1199
+00:22:10,720 --> 00:22:13,909
+>> I I think it's a fundamental attack or
+behavior that within the LLM within
+
+1200
+00:22:13,909 --> 00:22:13,919
+behavior that within the LLM within
+ 
+
+1201
+00:22:13,919 --> 00:22:15,830
+behavior that within the LLM within
+within the transformer, right?
+
+1202
+00:22:15,830 --> 00:22:15,840
+within the transformer, right?
+ 
+
+1203
+00:22:15,840 --> 00:22:17,909
+within the transformer, right?
+>> We target the attention layer and then
+
+1204
+00:22:17,909 --> 00:22:17,919
+>> We target the attention layer and then
+ 
+
+1205
+00:22:17,919 --> 00:22:20,310
+>> We target the attention layer and then
+because the model is hooked up to
+
+1206
+00:22:20,310 --> 00:22:20,320
+because the model is hooked up to
+ 
+
+1207
+00:22:20,320 --> 00:22:22,149
+because the model is hooked up to
+>> invoke outside tools, right? We we
+
+1208
+00:22:22,149 --> 00:22:22,159
+>> invoke outside tools, right? We we
+ 
+
+1209
+00:22:22,159 --> 00:22:23,909
+>> invoke outside tools, right? We we
+target the attention layer to bring
+
+1210
+00:22:23,909 --> 00:22:23,919
+target the attention layer to bring
+ 
+
+1211
+00:22:23,919 --> 00:22:26,070
+target the attention layer to bring
+attention to a certain thing we want to
+
+1212
+00:22:26,070 --> 00:22:26,080
+attention to a certain thing we want to
+ 
+
+1213
+00:22:26,080 --> 00:22:26,870
+attention to a certain thing we want to
+h have happen.
+
+1214
+00:22:26,870 --> 00:22:26,880
+h have happen.
+ 
+
+1215
+00:22:26,880 --> 00:22:27,110
+h have happen.
+>> Okay,
+
+1216
+00:22:27,110 --> 00:22:27,120
+>> Okay,
+ 
+
+1217
+00:22:27,120 --> 00:22:27,990
+>> Okay,
+>> if that makes sense.
+
+1218
+00:22:27,990 --> 00:22:28,000
+>> if that makes sense.
+ 
+
+1219
+00:22:28,000 --> 00:22:29,430
+>> if that makes sense.
+>> And I think so one question is around
+
+1220
+00:22:29,430 --> 00:22:29,440
+>> And I think so one question is around
+ 
+
+1221
+00:22:29,440 --> 00:22:31,909
+>> And I think so one question is around
+the trust boundary, right? uh invoking
+
+1222
+00:22:31,909 --> 00:22:31,919
+the trust boundary, right? uh invoking
+ 
+
+1223
+00:22:31,919 --> 00:22:35,590
+the trust boundary, right? uh invoking
+tools uh versus the external content. So
+
+1224
+00:22:35,590 --> 00:22:35,600
+tools uh versus the external content. So
+ 
+
+1225
+00:22:35,600 --> 00:22:37,430
+tools uh versus the external content. So
+where do you think like the best trust
+
+1226
+00:22:37,430 --> 00:22:37,440
+where do you think like the best trust
+ 
+
+1227
+00:22:37,440 --> 00:22:39,350
+where do you think like the best trust
+boundary would rely because definitely
+
+1228
+00:22:39,350 --> 00:22:39,360
+boundary would rely because definitely
+ 
+
+1229
+00:22:39,360 --> 00:22:40,950
+boundary would rely because definitely
+that's going to be like a debate in uh
+
+1230
+00:22:40,950 --> 00:22:40,960
+that's going to be like a debate in uh
+ 
+
+1231
+00:22:40,960 --> 00:22:43,190
+that's going to be like a debate in uh
+within lot of teams right like how the
+
+1232
+00:22:43,190 --> 00:22:43,200
+within lot of teams right like how the
+ 
+
+1233
+00:22:43,200 --> 00:22:45,270
+within lot of teams right like how the
+trust boundary can be established. I I
+
+1234
+00:22:45,270 --> 00:22:45,280
+trust boundary can be established. I I
+ 
+
+1235
+00:22:45,280 --> 00:22:47,350
+trust boundary can be established. I I
+might not have gotten the question. Uh
+
+1236
+00:22:47,350 --> 00:22:47,360
+might not have gotten the question. Uh
+ 
+
+1237
+00:22:47,360 --> 00:22:49,909
+might not have gotten the question. Uh
+>> so uh like external content like where
+
+1238
+00:22:49,909 --> 00:22:49,919
+>> so uh like external content like where
+ 
+
+1239
+00:22:49,919 --> 00:22:51,110
+>> so uh like external content like where
+uh you know the content is being
+
+1240
+00:22:51,110 --> 00:22:51,120
+uh you know the content is being
+ 
+
+1241
+00:22:51,120 --> 00:22:53,430
+uh you know the content is being
+retrieved with along with the tool
+
+1242
+00:22:53,430 --> 00:22:53,440
+retrieved with along with the tool
+ 
+
+1243
+00:22:53,440 --> 00:22:55,669
+retrieved with along with the tool
+invocation right. So what's the best
+
+1244
+00:22:55,669 --> 00:22:55,679
+invocation right. So what's the best
+ 
+
+1245
+00:22:55,679 --> 00:22:57,750
+invocation right. So what's the best
+strategy of fundamentally putting like
+
+1246
+00:22:57,750 --> 00:22:57,760
+strategy of fundamentally putting like
+ 
+
+1247
+00:22:57,760 --> 00:22:59,110
+strategy of fundamentally putting like
+trust boundaries between?
+
+1248
+00:22:59,110 --> 00:22:59,120
+trust boundaries between?
+ 
+
+1249
+00:22:59,120 --> 00:23:00,950
+trust boundaries between?
+>> Yeah, I think definitely you should
+
+1250
+00:23:00,950 --> 00:23:00,960
+>> Yeah, I think definitely you should
+ 
+
+1251
+00:23:00,960 --> 00:23:02,549
+>> Yeah, I think definitely you should
+assume if you don't have a control in
+
+1252
+00:23:02,549 --> 00:23:02,559
+assume if you don't have a control in
+ 
+
+1253
+00:23:02,559 --> 00:23:04,230
+assume if you don't have a control in
+place that the tool can be invoked,
+
+1254
+00:23:04,230 --> 00:23:04,240
+place that the tool can be invoked,
+ 
+
+1255
+00:23:04,240 --> 00:23:05,990
+place that the tool can be invoked,
+right, by indirect prompt injection or
+
+1256
+00:23:05,990 --> 00:23:06,000
+right, by indirect prompt injection or
+ 
+
+1257
+00:23:06,000 --> 00:23:08,870
+right, by indirect prompt injection or
+by the model itself, right? Uh and then
+
+1258
+00:23:08,870 --> 00:23:08,880
+by the model itself, right? Uh and then
+ 
+
+1259
+00:23:08,880 --> 00:23:10,390
+by the model itself, right? Uh and then
+you need to think what's the risk
+
+1260
+00:23:10,390 --> 00:23:10,400
+you need to think what's the risk
+ 
+
+1261
+00:23:10,400 --> 00:23:12,470
+you need to think what's the risk
+scenario, right? What is the downstream
+
+1262
+00:23:12,470 --> 00:23:12,480
+scenario, right? What is the downstream
+ 
+
+1263
+00:23:12,480 --> 00:23:14,070
+scenario, right? What is the downstream
+impact of the tool being invoked and
+
+1264
+00:23:14,070 --> 00:23:14,080
+impact of the tool being invoked and
+ 
+
+1265
+00:23:14,080 --> 00:23:15,270
+impact of the tool being invoked and
+that's where you need to think about the
+
+1266
+00:23:15,270 --> 00:23:15,280
+that's where you need to think about the
+ 
+
+1267
+00:23:15,280 --> 00:23:17,350
+that's where you need to think about the
+security controls, right? What can it
+
+1268
+00:23:17,350 --> 00:23:17,360
+security controls, right? What can it
+ 
+
+1269
+00:23:17,360 --> 00:23:19,350
+security controls, right? What can it
+access? What can it do? Uh and you can
+
+1270
+00:23:19,350 --> 00:23:19,360
+access? What can it do? Uh and you can
+ 
+
+1271
+00:23:19,360 --> 00:23:21,430
+access? What can it do? Uh and you can
+prevent tool chaining, right? That
+
+1272
+00:23:21,430 --> 00:23:21,440
+prevent tool chaining, right? That
+ 
+
+1273
+00:23:21,440 --> 00:23:23,270
+prevent tool chaining, right? That
+doesn't it doesn't have to happen that
+
+1274
+00:23:23,270 --> 00:23:23,280
+doesn't it doesn't have to happen that
+ 
+
+1275
+00:23:23,280 --> 00:23:25,430
+doesn't it doesn't have to happen that
+the web tool can chain other tools in in
+
+1276
+00:23:25,430 --> 00:23:25,440
+the web tool can chain other tools in in
+ 
+
+1277
+00:23:25,440 --> 00:23:26,950
+the web tool can chain other tools in in
+a row, right? This is all like actual
+
+1278
+00:23:26,950 --> 00:23:26,960
+a row, right? This is all like actual
+ 
+
+1279
+00:23:26,960 --> 00:23:28,950
+a row, right? This is all like actual
+security controls that can help mitigate
+
+1280
+00:23:28,950 --> 00:23:28,960
+security controls that can help mitigate
+ 
+
+1281
+00:23:28,960 --> 00:23:32,310
+security controls that can help mitigate
+impact. Yeah,
+
+1282
+00:23:32,310 --> 00:23:32,320
+impact. Yeah,
+ 
+
+1283
+00:23:32,320 --> 00:23:35,590
+impact. Yeah,
+>> there's an entire pile of new security
+
+1284
+00:23:35,590 --> 00:23:35,600
+>> there's an entire pile of new security
+ 
+
+1285
+00:23:35,600 --> 00:23:37,029
+>> there's an entire pile of new security
+tools that have been just coming out
+
+1286
+00:23:37,029 --> 00:23:37,039
+tools that have been just coming out
+ 
+
+1287
+00:23:37,039 --> 00:23:39,990
+tools that have been just coming out
+fairly recently for open claw. I was
+
+1288
+00:23:39,990 --> 00:23:40,000
+fairly recently for open claw. I was
+ 
+
+1289
+00:23:40,000 --> 00:23:42,149
+fairly recently for open claw. I was
+curious if you had played with uh claw
+
+1290
+00:23:42,149 --> 00:23:42,159
+curious if you had played with uh claw
+ 
+
+1291
+00:23:42,159 --> 00:23:43,750
+curious if you had played with uh claw
+shield or any of the other ones and seen
+
+1292
+00:23:43,750 --> 00:23:43,760
+shield or any of the other ones and seen
+ 
+
+1293
+00:23:43,760 --> 00:23:45,750
+shield or any of the other ones and seen
+whether they make any mod notable
+
+1294
+00:23:45,750 --> 00:23:45,760
+whether they make any mod notable
+ 
+
+1295
+00:23:45,760 --> 00:23:47,590
+whether they make any mod notable
+difference in the difficulty.
+
+1296
+00:23:47,590 --> 00:23:47,600
+difference in the difficulty.
+ 
+
+1297
+00:23:47,600 --> 00:23:50,789
+difference in the difficulty.
+>> Uh I have not. The space is evolving. so
+
+1298
+00:23:50,789 --> 00:23:50,799
+>> Uh I have not. The space is evolving. so
+ 
+
+1299
+00:23:50,799 --> 00:23:52,230
+>> Uh I have not. The space is evolving. so
+quickly. So it's really difficult to
+
+1300
+00:23:52,230 --> 00:23:52,240
+quickly. So it's really difficult to
+ 
+
+1301
+00:23:52,240 --> 00:23:54,549
+quickly. So it's really difficult to
+keep up. Even just open claw itself adds
+
+1302
+00:23:54,549 --> 00:23:54,559
+keep up. Even just open claw itself adds
+ 
+
+1303
+00:23:54,559 --> 00:23:56,549
+keep up. Even just open claw itself adds
+a lot of mitigations as we speak, right?
+
+1304
+00:23:56,549 --> 00:23:56,559
+a lot of mitigations as we speak, right?
+ 
+
+1305
+00:23:56,559 --> 00:23:58,710
+a lot of mitigations as we speak, right?
+They have like over 200 last time I
+
+1306
+00:23:58,710 --> 00:23:58,720
+They have like over 200 last time I
+ 
+
+1307
+00:23:58,720 --> 00:23:59,990
+They have like over 200 last time I
+checked over 220 security
+
+1308
+00:23:59,990 --> 00:24:00,000
+checked over 220 security
+ 
+
+1309
+00:24:00,000 --> 00:24:01,270
+checked over 220 security
+vulnerabilities they actually fixed
+
+1310
+00:24:01,270 --> 00:24:01,280
+vulnerabilities they actually fixed
+ 
+
+1311
+00:24:01,280 --> 00:24:02,710
+vulnerabilities they actually fixed
+within two or three weeks, right? So
+
+1312
+00:24:02,710 --> 00:24:02,720
+within two or three weeks, right? So
+ 
+
+1313
+00:24:02,720 --> 00:24:06,070
+within two or three weeks, right? So
+there's a lot happening right now. Yeah.
+
+1314
+00:24:06,070 --> 00:24:06,080
+there's a lot happening right now. Yeah.
+ 
+
+1315
+00:24:06,080 --> 00:24:10,870
+there's a lot happening right now. Yeah.
+>> Anybody else?
+
+1316
+00:24:10,870 --> 00:24:10,880
+
+ 
+
+1317
+00:24:10,880 --> 00:24:14,549
+
+>> Gotti.
+
+1318
+00:24:14,549 --> 00:24:14,559
+
+ 
+
+1319
+00:24:14,559 --> 00:24:16,470
+
+So,
+
+1320
+00:24:16,470 --> 00:24:16,480
+So,
+ 
+
+1321
+00:24:16,480 --> 00:24:18,549
+So,
+>> I wanna I want to do this thing that I
+
+1322
+00:24:18,549 --> 00:24:18,559
+>> I wanna I want to do this thing that I
+ 
+
+1323
+00:24:18,559 --> 00:24:20,390
+>> I wanna I want to do this thing that I
+do once in a while and embarrass this
+
+1324
+00:24:20,390 --> 00:24:20,400
+do once in a while and embarrass this
+ 
+
+1325
+00:24:20,400 --> 00:24:21,669
+do once in a while and embarrass this
+guy.
+
+1326
+00:24:21,669 --> 00:24:21,679
+guy.
+ 
+
+1327
+00:24:21,679 --> 00:24:23,350
+guy.
+>> This is kind of a while, we move things
+
+1328
+00:24:23,350 --> 00:24:23,360
+>> This is kind of a while, we move things
+ 
+
+1329
+00:24:23,360 --> 00:24:25,029
+>> This is kind of a while, we move things
+around quite drastically. You're going
+
+1330
+00:24:25,029 --> 00:24:25,039
+around quite drastically. You're going
+ 
+
+1331
+00:24:25,039 --> 00:24:26,870
+around quite drastically. You're going
+to have to pull this down, sir. Well, I
+
+1332
+00:24:26,870 --> 00:24:26,880
+to have to pull this down, sir. Well, I
+ 
+
+1333
+00:24:26,880 --> 00:24:28,789
+to have to pull this down, sir. Well, I
+move the things. Did Did I just put you
+
+1334
+00:24:28,789 --> 00:24:28,799
+move the things. Did Did I just put you
+ 
+
+1335
+00:24:28,799 --> 00:24:31,269
+move the things. Did Did I just put you
+down? I didn't mean to do that. Sorry.
+
+1336
+00:24:31,269 --> 00:24:31,279
+down? I didn't mean to do that. Sorry.
+ 
+
+1337
+00:24:31,279 --> 00:24:35,029
+down? I didn't mean to do that. Sorry.
+>> I'm just fat, not tall. Okay. Um, I
+
+1338
+00:24:35,029 --> 00:24:35,039
+>> I'm just fat, not tall. Okay. Um, I
+ 
+
+1339
+00:24:35,039 --> 00:24:37,029
+>> I'm just fat, not tall. Okay. Um, I
+don't do this all the time, but once in
+
+1340
+00:24:37,029 --> 00:24:37,039
+don't do this all the time, but once in
+ 
+
+1341
+00:24:37,039 --> 00:24:39,510
+don't do this all the time, but once in
+a while, I know somebody on a personal
+
+1342
+00:24:39,510 --> 00:24:39,520
+a while, I know somebody on a personal
+ 
+
+1343
+00:24:39,520 --> 00:24:41,830
+a while, I know somebody on a personal
+level and they have done something not
+
+1344
+00:24:41,830 --> 00:24:41,840
+level and they have done something not
+ 
+
+1345
+00:24:41,840 --> 00:24:43,430
+level and they have done something not
+just amazing technically. I mean this
+
+1346
+00:24:43,430 --> 00:24:43,440
+just amazing technically. I mean this
+ 
+
+1347
+00:24:43,440 --> 00:24:44,950
+just amazing technically. I mean this
+guy is this slouch. What do they know
+
+1348
+00:24:44,950 --> 00:24:44,960
+guy is this slouch. What do they know
+ 
+
+1349
+00:24:44,960 --> 00:24:47,510
+guy is this slouch. What do they know
+technically, right? But also for the
+
+1350
+00:24:47,510 --> 00:24:47,520
+technically, right? But also for the
+ 
+
+1351
+00:24:47,520 --> 00:24:49,110
+technically, right? But also for the
+community and what you don't know about
+
+1352
+00:24:49,110 --> 00:24:49,120
+community and what you don't know about
+ 
+
+1353
+00:24:49,120 --> 00:24:51,909
+community and what you don't know about
+Yan or you might is that he has done a
+
+1354
+00:24:51,909 --> 00:24:51,919
+Yan or you might is that he has done a
+ 
+
+1355
+00:24:51,919 --> 00:24:53,830
+Yan or you might is that he has done a
+lot of stuff and not just for the LOLs
+
+1356
+00:24:53,830 --> 00:24:53,840
+lot of stuff and not just for the LOLs
+ 
+
+1357
+00:24:53,840 --> 00:24:55,590
+lot of stuff and not just for the LOLs
+but just because he thought he should
+
+1358
+00:24:55,590 --> 00:24:55,600
+but just because he thought he should
+ 
+
+1359
+00:24:55,600 --> 00:24:57,430
+but just because he thought he should
+for example the month of AI
+
+1360
+00:24:57,430 --> 00:24:57,440
+for example the month of AI
+ 
+
+1361
+00:24:57,440 --> 00:24:59,750
+for example the month of AI
+vulnerabilities, right? He just came out
+
+1362
+00:24:59,750 --> 00:24:59,760
+vulnerabilities, right? He just came out
+ 
+
+1363
+00:24:59,760 --> 00:25:01,510
+vulnerabilities, right? He just came out
+out of nowhere. I'm not going to drop
+
+1364
+00:25:01,510 --> 00:25:01,520
+out of nowhere. I'm not going to drop
+ 
+
+1365
+00:25:01,520 --> 00:25:03,430
+out of nowhere. I'm not going to drop
+the mic. They're expensive. But Mike
+
+1366
+00:25:03,430 --> 00:25:03,440
+the mic. They're expensive. But Mike
+ 
+
+1367
+00:25:03,440 --> 00:25:05,510
+the mic. They're expensive. But Mike
+dropped with every single day another
+
+1368
+00:25:05,510 --> 00:25:05,520
+dropped with every single day another
+ 
+
+1369
+00:25:05,520 --> 00:25:07,990
+dropped with every single day another
+vulnerability every single day. And
+
+1370
+00:25:07,990 --> 00:25:08,000
+vulnerability every single day. And
+ 
+
+1371
+00:25:08,000 --> 00:25:09,990
+vulnerability every single day. And
+forget finding the vulnerabilities or
+
+1372
+00:25:09,990 --> 00:25:10,000
+forget finding the vulnerabilities or
+ 
+
+1373
+00:25:10,000 --> 00:25:13,190
+forget finding the vulnerabilities or
+proving they're real or even doing going
+
+1374
+00:25:13,190 --> 00:25:13,200
+proving they're real or even doing going
+ 
+
+1375
+00:25:13,200 --> 00:25:15,750
+proving they're real or even doing going
+as far as reporting them. Just imagine
+
+1376
+00:25:15,750 --> 00:25:15,760
+as far as reporting them. Just imagine
+ 
+
+1377
+00:25:15,760 --> 00:25:17,909
+as far as reporting them. Just imagine
+aligning all the reporting to happen on
+
+1378
+00:25:17,909 --> 00:25:17,919
+aligning all the reporting to happen on
+ 
+
+1379
+00:25:17,919 --> 00:25:19,510
+aligning all the reporting to happen on
+the same day so he releases things on
+
+1380
+00:25:19,510 --> 00:25:19,520
+the same day so he releases things on
+ 
+
+1381
+00:25:19,520 --> 00:25:23,110
+the same day so he releases things on
+the same day. That is a superpower and
+
+1382
+00:25:23,110 --> 00:25:23,120
+the same day. That is a superpower and
+ 
+
+1383
+00:25:23,120 --> 00:25:24,549
+the same day. That is a superpower and
+truly he's one of the most appreciated
+
+1384
+00:25:24,549 --> 00:25:24,559
+truly he's one of the most appreciated
+ 
+
+1385
+00:25:24,559 --> 00:25:26,470
+truly he's one of the most appreciated
+people in our space but usually for his
+
+1386
+00:25:26,470 --> 00:25:26,480
+people in our space but usually for his
+ 
+
+1387
+00:25:26,480 --> 00:25:28,710
+people in our space but usually for his
+technical chops and I just appreciate
+
+1388
+00:25:28,710 --> 00:25:28,720
+technical chops and I just appreciate
+ 
+
+1389
+00:25:28,720 --> 00:25:31,029
+technical chops and I just appreciate
+him and how he helps people and more
+
+1390
+00:25:31,029 --> 00:25:31,039
+him and how he helps people and more
+ 
+
+1391
+00:25:31,039 --> 00:25:32,390
+him and how he helps people and more
+than that he's one of these people out
+
+1392
+00:25:32,390 --> 00:25:32,400
+than that he's one of these people out
+ 
+
+1393
+00:25:32,400 --> 00:25:33,830
+than that he's one of these people out
+there in the world that I nag for
+
+1394
+00:25:33,830 --> 00:25:33,840
+there in the world that I nag for
+ 
+
+1395
+00:25:33,840 --> 00:25:35,430
+there in the world that I nag for
+things. Hey, let's do this. Hey, let's
+
+1396
+00:25:35,430 --> 00:25:35,440
+things. Hey, let's do this. Hey, let's
+ 
+
+1397
+00:25:35,440 --> 00:25:36,789
+things. Hey, let's do this. Hey, let's
+do that. and he's not afraid of saying
+
+1398
+00:25:36,789 --> 00:25:36,799
+do that. and he's not afraid of saying
+ 
+
+1399
+00:25:36,799 --> 00:25:38,710
+do that. and he's not afraid of saying
+no, which is amazing because I feel free
+
+1400
+00:25:38,710 --> 00:25:38,720
+no, which is amazing because I feel free
+ 
+
+1401
+00:25:38,720 --> 00:25:40,870
+no, which is amazing because I feel free
+to come to him again. And number two,
+
+1402
+00:25:40,870 --> 00:25:40,880
+to come to him again. And number two,
+ 
+
+1403
+00:25:40,880 --> 00:25:43,029
+to come to him again. And number two,
+because sometimes he says yes. So please
+
+1404
+00:25:43,029 --> 00:25:43,039
+because sometimes he says yes. So please
+ 
+
+1405
+00:25:43,039 --> 00:25:44,789
+because sometimes he says yes. So please
+let's just once again give him a hand
+
+1406
+00:25:44,789 --> 00:25:44,799
+let's just once again give him a hand
+ 
+
+1407
+00:25:44,799 --> 00:25:47,190
+let's just once again give him a hand
+because
+
+1408
+00:25:47,190 --> 00:25:47,200
+because
+ 
+
+1409
+00:25:47,200 --> 00:25:49,909
+because
+and what is now
+
+1410
+00:25:49,909 --> 00:25:49,919
+and what is now
+ 
+
+1411
+00:25:49,919 --> 00:25:52,549
+and what is now
+the stage for the the offensive track
+
+1412
+00:25:52,549 --> 00:25:52,559
+the stage for the the offensive track
+ 
+
+1413
+00:25:52,559 --> 00:25:54,950
+the stage for the the offensive track
+and he shifts around, right? The right
+
+1414
+00:25:54,950 --> 00:25:54,960
+and he shifts around, right? The right
+ 
+
+1415
+00:25:54,960 --> 00:25:56,549
+and he shifts around, right? The right
+people are in the room to appreciate
+
+1416
+00:25:56,549 --> 00:25:56,559
+people are in the room to appreciate
+ 
+
+1417
+00:25:56,559 --> 00:25:58,230
+people are in the room to appreciate
+him. So thank you, sir. Yeah.
+
+1418
+00:25:58,230 --> 00:25:58,240
+him. So thank you, sir. Yeah.
+ 
+
+1419
+00:25:58,240 --> 00:25:59,029
+him. So thank you, sir. Yeah.
+>> Thank you so much.
+
+1420
+00:25:59,029 --> 00:25:59,039
+>> Thank you so much.
+ 
+
+1421
+00:25:59,039 --> 00:26:02,679
+>> Thank you so much.
+>> Really awesome.
+

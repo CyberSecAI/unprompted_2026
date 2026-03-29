@@ -1,0 +1,7285 @@
+1
+00:00:06,080 --> 00:00:09,669
+
+All right. So before Nicholas speaks, I
+
+2
+00:00:09,669 --> 00:00:09,679
+All right. So before Nicholas speaks, I
+ 
+
+3
+00:00:09,679 --> 00:00:12,470
+All right. So before Nicholas speaks, I
+want to say a couple of words as well.
+
+4
+00:00:12,470 --> 00:00:12,480
+want to say a couple of words as well.
+ 
+
+5
+00:00:12,480 --> 00:00:14,150
+want to say a couple of words as well.
+I think that there are not that there
+
+6
+00:00:14,150 --> 00:00:14,160
+I think that there are not that there
+ 
+
+7
+00:00:14,160 --> 00:00:15,270
+I think that there are not that there
+there are people in this industry who
+
+8
+00:00:15,270 --> 00:00:15,280
+there are people in this industry who
+ 
+
+9
+00:00:15,280 --> 00:00:17,510
+there are people in this industry who
+have been doing this for a long long
+
+10
+00:00:17,510 --> 00:00:17,520
+have been doing this for a long long
+ 
+
+11
+00:00:17,520 --> 00:00:21,670
+have been doing this for a long long
+time truly understand this and can be
+
+12
+00:00:21,670 --> 00:00:21,680
+time truly understand this and can be
+ 
+
+13
+00:00:21,680 --> 00:00:23,189
+time truly understand this and can be
+considered the best. Now who is the best
+
+14
+00:00:23,189 --> 00:00:23,199
+considered the best. Now who is the best
+ 
+
+15
+00:00:23,199 --> 00:00:24,710
+considered the best. Now who is the best
+one, the best two, the best three? I
+
+16
+00:00:24,710 --> 00:00:24,720
+one, the best two, the best three? I
+ 
+
+17
+00:00:24,720 --> 00:00:26,710
+one, the best two, the best three? I
+don't really know. But we have the
+
+18
+00:00:26,710 --> 00:00:26,720
+don't really know. But we have the
+ 
+
+19
+00:00:26,720 --> 00:00:28,070
+don't really know. But we have the
+opportunity right now to listen to
+
+20
+00:00:28,070 --> 00:00:28,080
+opportunity right now to listen to
+ 
+
+21
+00:00:28,080 --> 00:00:29,429
+opportunity right now to listen to
+somebody who has not just been the best
+
+22
+00:00:29,429 --> 00:00:29,439
+somebody who has not just been the best
+ 
+
+23
+00:00:29,439 --> 00:00:31,109
+somebody who has not just been the best
+at this for the past year or the past
+
+24
+00:00:31,109 --> 00:00:31,119
+at this for the past year or the past
+ 
+
+25
+00:00:31,119 --> 00:00:33,350
+at this for the past year or the past
+two years but for a long while and
+
+26
+00:00:33,350 --> 00:00:33,360
+two years but for a long while and
+ 
+
+27
+00:00:33,360 --> 00:00:36,229
+two years but for a long while and
+consistently makes the industry better
+
+28
+00:00:36,229 --> 00:00:36,239
+consistently makes the industry better
+ 
+
+29
+00:00:36,239 --> 00:00:38,150
+consistently makes the industry better
+just by doing his research regardless of
+
+30
+00:00:38,150 --> 00:00:38,160
+just by doing his research regardless of
+ 
+
+31
+00:00:38,160 --> 00:00:40,549
+just by doing his research regardless of
+how much of that comes out. And I'll
+
+32
+00:00:40,549 --> 00:00:40,559
+how much of that comes out. And I'll
+ 
+
+33
+00:00:40,559 --> 00:00:42,389
+how much of that comes out. And I'll
+also tell you that he agreed last second
+
+34
+00:00:42,389 --> 00:00:42,399
+also tell you that he agreed last second
+ 
+
+35
+00:00:42,399 --> 00:00:45,110
+also tell you that he agreed last second
+and went through all the corporate uh PR
+
+36
+00:00:45,110 --> 00:00:45,120
+and went through all the corporate uh PR
+ 
+
+37
+00:00:45,120 --> 00:00:46,470
+and went through all the corporate uh PR
+analysis that I don't know how much you
+
+38
+00:00:46,470 --> 00:00:46,480
+analysis that I don't know how much you
+ 
+
+39
+00:00:46,480 --> 00:00:47,590
+analysis that I don't know how much you
+have to do in anthropic. It seems like
+
+40
+00:00:47,590 --> 00:00:47,600
+have to do in anthropic. It seems like
+ 
+
+41
+00:00:47,600 --> 00:00:49,430
+have to do in anthropic. It seems like
+you guys are easier than other people to
+
+42
+00:00:49,430 --> 00:00:49,440
+you guys are easier than other people to
+ 
+
+43
+00:00:49,440 --> 00:00:51,029
+you guys are easier than other people to
+manage to come here and give this talk
+
+44
+00:00:51,029 --> 00:00:51,039
+manage to come here and give this talk
+ 
+
+45
+00:00:51,039 --> 00:00:54,229
+manage to come here and give this talk
+to you today. So I just want to get a
+
+46
+00:00:54,229 --> 00:00:54,239
+to you today. So I just want to get a
+ 
+
+47
+00:00:54,239 --> 00:00:55,590
+to you today. So I just want to get a
+second for everybody for the last
+
+48
+00:00:55,590 --> 00:00:55,600
+second for everybody for the last
+ 
+
+49
+00:00:55,600 --> 00:00:58,549
+second for everybody for the last
+second, last minute getting into a thing
+
+50
+00:00:58,549 --> 00:00:58,559
+second, last minute getting into a thing
+ 
+
+51
+00:00:58,559 --> 00:01:00,869
+second, last minute getting into a thing
+and coming on stage and rushing in for
+
+52
+00:01:00,869 --> 00:01:00,879
+and coming on stage and rushing in for
+ 
+
+53
+00:01:00,879 --> 00:01:03,270
+and coming on stage and rushing in for
+handling truly an a global level of
+
+54
+00:01:03,270 --> 00:01:03,280
+handling truly an a global level of
+ 
+
+55
+00:01:03,280 --> 00:01:05,109
+handling truly an a global level of
+urgency or situation just to come and
+
+56
+00:01:05,109 --> 00:01:05,119
+urgency or situation just to come and
+ 
+
+57
+00:01:05,119 --> 00:01:07,270
+urgency or situation just to come and
+speak to us all. So please let's give it
+
+58
+00:01:07,270 --> 00:01:07,280
+speak to us all. So please let's give it
+ 
+
+59
+00:01:07,280 --> 00:01:14,230
+speak to us all. So please let's give it
+to Nicholas.
+
+60
+00:01:14,230 --> 00:01:14,240
+
+ 
+
+61
+00:01:14,240 --> 00:01:17,190
+
+Okay, thanks. Um yeah, so I'm Nicholas.
+
+62
+00:01:17,190 --> 00:01:17,200
+Okay, thanks. Um yeah, so I'm Nicholas.
+ 
+
+63
+00:01:17,200 --> 00:01:19,510
+Okay, thanks. Um yeah, so I'm Nicholas.
+Um I'm at Anthropic and I'm going to
+
+64
+00:01:19,510 --> 00:01:19,520
+Um I'm at Anthropic and I'm going to
+ 
+
+65
+00:01:19,520 --> 00:01:21,350
+Um I'm at Anthropic and I'm going to
+spend a little bit of time um just
+
+66
+00:01:21,350 --> 00:01:21,360
+spend a little bit of time um just
+ 
+
+67
+00:01:21,360 --> 00:01:23,190
+spend a little bit of time um just
+talking about some of the things that
+
+68
+00:01:23,190 --> 00:01:23,200
+talking about some of the things that
+ 
+
+69
+00:01:23,200 --> 00:01:25,590
+talking about some of the things that
+I'm interested in in in language model
+
+70
+00:01:25,590 --> 00:01:25,600
+I'm interested in in in language model
+ 
+
+71
+00:01:25,600 --> 00:01:27,670
+I'm interested in in in language model
+security. Um and I guess the thing that
+
+72
+00:01:27,670 --> 00:01:27,680
+security. Um and I guess the thing that
+ 
+
+73
+00:01:27,680 --> 00:01:30,310
+security. Um and I guess the thing that
+I've been caring about most recently has
+
+74
+00:01:30,310 --> 00:01:30,320
+I've been caring about most recently has
+ 
+
+75
+00:01:30,320 --> 00:01:32,710
+I've been caring about most recently has
+been I I guess I don't know calling it
+
+76
+00:01:32,710 --> 00:01:32,720
+been I I guess I don't know calling it
+ 
+
+77
+00:01:32,720 --> 00:01:34,710
+been I I guess I don't know calling it
+black hat language models but just
+
+78
+00:01:34,710 --> 00:01:34,720
+black hat language models but just
+ 
+
+79
+00:01:34,720 --> 00:01:37,190
+black hat language models but just
+trying to understand how we can use
+
+80
+00:01:37,190 --> 00:01:37,200
+trying to understand how we can use
+ 
+
+81
+00:01:37,200 --> 00:01:39,270
+trying to understand how we can use
+language models in order to make them
+
+82
+00:01:39,270 --> 00:01:39,280
+language models in order to make them
+ 
+
+83
+00:01:39,280 --> 00:01:41,350
+language models in order to make them
+cause harm. Not because I I want this to
+
+84
+00:01:41,350 --> 00:01:41,360
+cause harm. Not because I I want this to
+ 
+
+85
+00:01:41,360 --> 00:01:43,350
+cause harm. Not because I I want this to
+happen right that that would be bad. Um
+
+86
+00:01:43,350 --> 00:01:43,360
+happen right that that would be bad. Um
+ 
+
+87
+00:01:43,360 --> 00:01:45,910
+happen right that that would be bad. Um
+but I want to understand what bad things
+
+88
+00:01:45,910 --> 00:01:45,920
+but I want to understand what bad things
+ 
+
+89
+00:01:45,920 --> 00:01:48,069
+but I want to understand what bad things
+people who wanted to cause harm would do
+
+90
+00:01:48,069 --> 00:01:48,079
+people who wanted to cause harm would do
+ 
+
+91
+00:01:48,079 --> 00:01:49,910
+people who wanted to cause harm would do
+so that then we can make that not
+
+92
+00:01:49,910 --> 00:01:49,920
+so that then we can make that not
+ 
+
+93
+00:01:49,920 --> 00:01:55,190
+so that then we can make that not
+possible. Okay. Um basic lesson I hope
+
+94
+00:01:55,190 --> 00:01:55,200
+possible. Okay. Um basic lesson I hope
+ 
+
+95
+00:01:55,200 --> 00:01:57,429
+possible. Okay. Um basic lesson I hope
+you take away from this talk is um
+
+96
+00:01:57,429 --> 00:01:57,439
+you take away from this talk is um
+ 
+
+97
+00:01:57,439 --> 00:02:01,190
+you take away from this talk is um
+relatively simple. Um today it is true
+
+98
+00:02:01,190 --> 00:02:01,200
+relatively simple. Um today it is true
+ 
+
+99
+00:02:01,200 --> 00:02:04,149
+relatively simple. Um today it is true
+that language models can autonomously
+
+100
+00:02:04,149 --> 00:02:04,159
+that language models can autonomously
+ 
+
+101
+00:02:04,159 --> 00:02:07,350
+that language models can autonomously
+and without fancy scaffolding um find
+
+102
+00:02:07,350 --> 00:02:07,360
+and without fancy scaffolding um find
+ 
+
+103
+00:02:07,360 --> 00:02:10,710
+and without fancy scaffolding um find
+and exploit zero day vulnerabilities in
+
+104
+00:02:10,710 --> 00:02:10,720
+and exploit zero day vulnerabilities in
+ 
+
+105
+00:02:10,720 --> 00:02:12,949
+and exploit zero day vulnerabilities in
+very important pieces of software. Uh
+
+106
+00:02:12,949 --> 00:02:12,959
+very important pieces of software. Uh
+ 
+
+107
+00:02:12,959 --> 00:02:15,190
+very important pieces of software. Uh
+this is not something that was true even
+
+108
+00:02:15,190 --> 00:02:15,200
+this is not something that was true even
+ 
+
+109
+00:02:15,200 --> 00:02:18,070
+this is not something that was true even
+let's say 3 or 4 months ago. Um but it
+
+110
+00:02:18,070 --> 00:02:18,080
+let's say 3 or 4 months ago. Um but it
+ 
+
+111
+00:02:18,080 --> 00:02:19,670
+let's say 3 or 4 months ago. Um but it
+is now becoming true and I think it will
+
+112
+00:02:19,670 --> 00:02:19,680
+is now becoming true and I think it will
+ 
+
+113
+00:02:19,680 --> 00:02:21,670
+is now becoming true and I think it will
+become only more true over the next
+
+114
+00:02:21,670 --> 00:02:21,680
+become only more true over the next
+ 
+
+115
+00:02:21,680 --> 00:02:24,710
+become only more true over the next
+couple of years. And so the like I don't
+
+116
+00:02:24,710 --> 00:02:24,720
+couple of years. And so the like I don't
+ 
+
+117
+00:02:24,720 --> 00:02:26,710
+couple of years. And so the like I don't
+know if this is like the main lesson.
+
+118
+00:02:26,710 --> 00:02:26,720
+know if this is like the main lesson.
+ 
+
+119
+00:02:26,720 --> 00:02:28,550
+know if this is like the main lesson.
+The real thing I want you to take away
+
+120
+00:02:28,550 --> 00:02:28,560
+The real thing I want you to take away
+ 
+
+121
+00:02:28,560 --> 00:02:30,550
+The real thing I want you to take away
+is that like they're getting really
+
+122
+00:02:30,550 --> 00:02:30,560
+is that like they're getting really
+ 
+
+123
+00:02:30,560 --> 00:02:33,509
+is that like they're getting really
+really good really fast. And this means
+
+124
+00:02:33,509 --> 00:02:33,519
+really good really fast. And this means
+ 
+
+125
+00:02:33,519 --> 00:02:36,150
+really good really fast. And this means
+that the like nice balance we had
+
+126
+00:02:36,150 --> 00:02:36,160
+that the like nice balance we had
+ 
+
+127
+00:02:36,160 --> 00:02:38,150
+that the like nice balance we had
+between attackers and defenders over the
+
+128
+00:02:38,150 --> 00:02:38,160
+between attackers and defenders over the
+ 
+
+129
+00:02:38,160 --> 00:02:41,030
+between attackers and defenders over the
+last 20 years or so uh seems like it's
+
+130
+00:02:41,030 --> 00:02:41,040
+last 20 years or so uh seems like it's
+ 
+
+131
+00:02:41,040 --> 00:02:43,430
+last 20 years or so uh seems like it's
+probably coming to an end. And it really
+
+132
+00:02:43,430 --> 00:02:43,440
+probably coming to an end. And it really
+ 
+
+133
+00:02:43,440 --> 00:02:46,630
+probably coming to an end. And it really
+seems to me like the language models
+
+134
+00:02:46,630 --> 00:02:46,640
+seems to me like the language models
+ 
+
+135
+00:02:46,640 --> 00:02:48,869
+seems to me like the language models
+that we have now are probably like the
+
+136
+00:02:48,869 --> 00:02:48,879
+that we have now are probably like the
+ 
+
+137
+00:02:48,879 --> 00:02:50,229
+that we have now are probably like the
+most significant thing to happen in
+
+138
+00:02:50,229 --> 00:02:50,239
+most significant thing to happen in
+ 
+
+139
+00:02:50,239 --> 00:02:52,790
+most significant thing to happen in
+security um since we got the internet.
+
+140
+00:02:52,790 --> 00:02:52,800
+security um since we got the internet.
+ 
+
+141
+00:02:52,800 --> 00:02:54,229
+security um since we got the internet.
+Um you know like before we had the
+
+142
+00:02:54,229 --> 00:02:54,239
+Um you know like before we had the
+ 
+
+143
+00:02:54,239 --> 00:02:56,630
+Um you know like before we had the
+internet there was like not that much
+
+144
+00:02:56,630 --> 00:02:56,640
+internet there was like not that much
+ 
+
+145
+00:02:56,640 --> 00:02:57,830
+internet there was like not that much
+that you could do to attack someone
+
+146
+00:02:57,830 --> 00:02:57,840
+that you could do to attack someone
+ 
+
+147
+00:02:57,840 --> 00:02:58,949
+that you could do to attack someone
+else. Like you'd have to like send them
+
+148
+00:02:58,949 --> 00:02:58,959
+else. Like you'd have to like send them
+ 
+
+149
+00:02:58,959 --> 00:03:01,750
+else. Like you'd have to like send them
+a floppy disc or something. Um you have
+
+150
+00:03:01,750 --> 00:03:01,760
+a floppy disc or something. Um you have
+ 
+
+151
+00:03:01,760 --> 00:03:03,190
+a floppy disc or something. Um you have
+now the internet you can do remote
+
+152
+00:03:03,190 --> 00:03:03,200
+now the internet you can do remote
+ 
+
+153
+00:03:03,200 --> 00:03:05,350
+now the internet you can do remote
+attacks. language models really feel to
+
+154
+00:03:05,350 --> 00:03:05,360
+attacks. language models really feel to
+ 
+
+155
+00:03:05,360 --> 00:03:06,790
+attacks. language models really feel to
+me to be something that's like roughly
+
+156
+00:03:06,790 --> 00:03:06,800
+me to be something that's like roughly
+ 
+
+157
+00:03:06,800 --> 00:03:08,949
+me to be something that's like roughly
+on this order of importance which is not
+
+158
+00:03:08,949 --> 00:03:08,959
+on this order of importance which is not
+ 
+
+159
+00:03:08,959 --> 00:03:11,030
+on this order of importance which is not
+something that I believed like I don't
+
+160
+00:03:11,030 --> 00:03:11,040
+something that I believed like I don't
+ 
+
+161
+00:03:11,040 --> 00:03:12,949
+something that I believed like I don't
+know three or four years ago but the
+
+162
+00:03:12,949 --> 00:03:12,959
+know three or four years ago but the
+ 
+
+163
+00:03:12,959 --> 00:03:14,309
+know three or four years ago but the
+models have gotten really really good
+
+164
+00:03:14,309 --> 00:03:14,319
+models have gotten really really good
+ 
+
+165
+00:03:14,319 --> 00:03:15,589
+models have gotten really really good
+and I want to just give you a couple
+
+166
+00:03:15,589 --> 00:03:15,599
+and I want to just give you a couple
+ 
+
+167
+00:03:15,599 --> 00:03:17,990
+and I want to just give you a couple
+examples of what this is looking like
+
+168
+00:03:17,990 --> 00:03:18,000
+examples of what this is looking like
+ 
+
+169
+00:03:18,000 --> 00:03:22,149
+examples of what this is looking like
+okay so um
+
+170
+00:03:22,149 --> 00:03:22,159
+okay so um
+ 
+
+171
+00:03:22,159 --> 00:03:23,990
+okay so um
+let me show you how we've been finding
+
+172
+00:03:23,990 --> 00:03:24,000
+let me show you how we've been finding
+ 
+
+173
+00:03:24,000 --> 00:03:25,670
+let me show you how we've been finding
+some bugs in some really important
+
+174
+00:03:25,670 --> 00:03:25,680
+some bugs in some really important
+ 
+
+175
+00:03:25,680 --> 00:03:27,430
+some bugs in some really important
+software um and I'll show you what we
+
+176
+00:03:27,430 --> 00:03:27,440
+software um and I'll show you what we
+ 
+
+177
+00:03:27,440 --> 00:03:28,710
+software um and I'll show you what we
+found in just a second but let me just
+
+178
+00:03:28,710 --> 00:03:28,720
+found in just a second but let me just
+ 
+
+179
+00:03:28,720 --> 00:03:29,910
+found in just a second but let me just
+like show you the scaffold that we've
+
+180
+00:03:29,910 --> 00:03:29,920
+like show you the scaffold that we've
+ 
+
+181
+00:03:29,920 --> 00:03:33,350
+like show you the scaffold that we've
+been using um uh here it is um this This
+
+182
+00:03:33,350 --> 00:03:33,360
+been using um uh here it is um this This
+ 
+
+183
+00:03:33,360 --> 00:03:35,830
+been using um uh here it is um this This
+is basically the entirety of it. Um, you
+
+184
+00:03:35,830 --> 00:03:35,840
+is basically the entirety of it. Um, you
+ 
+
+185
+00:03:35,840 --> 00:03:37,509
+is basically the entirety of it. Um, you
+know, we we have a couple more sentences
+
+186
+00:03:37,509 --> 00:03:37,519
+know, we we have a couple more sentences
+ 
+
+187
+00:03:37,519 --> 00:03:39,430
+know, we we have a couple more sentences
+here and there. Um, but basically we run
+
+188
+00:03:39,430 --> 00:03:39,440
+here and there. Um, but basically we run
+ 
+
+189
+00:03:39,440 --> 00:03:42,470
+here and there. Um, but basically we run
+claude cloud code and we run it in a VM
+
+190
+00:03:42,470 --> 00:03:42,480
+claude cloud code and we run it in a VM
+ 
+
+191
+00:03:42,480 --> 00:03:43,830
+claude cloud code and we run it in a VM
+dangerously skip permissions. Just like
+
+192
+00:03:43,830 --> 00:03:43,840
+dangerously skip permissions. Just like
+ 
+
+193
+00:03:43,840 --> 00:03:45,430
+dangerously skip permissions. Just like
+let it do whatever it wants. And then we
+
+194
+00:03:45,430 --> 00:03:45,440
+let it do whatever it wants. And then we
+ 
+
+195
+00:03:45,440 --> 00:03:47,990
+let it do whatever it wants. And then we
+say, "Hey, um, you're playing in a CTF.
+
+196
+00:03:47,990 --> 00:03:48,000
+say, "Hey, um, you're playing in a CTF.
+ 
+
+197
+00:03:48,000 --> 00:03:50,229
+say, "Hey, um, you're playing in a CTF.
+Um, please find a vulnerability and put
+
+198
+00:03:50,229 --> 00:03:50,239
+Um, please find a vulnerability and put
+ 
+
+199
+00:03:50,239 --> 00:03:51,830
+Um, please find a vulnerability and put
+the most serious one to this output
+
+200
+00:03:51,830 --> 00:03:51,840
+the most serious one to this output
+ 
+
+201
+00:03:51,840 --> 00:03:54,470
+the most serious one to this output
+file. Um, go." And then we sort of walk
+
+202
+00:03:54,470 --> 00:03:54,480
+file. Um, go." And then we sort of walk
+ 
+
+203
+00:03:54,480 --> 00:03:56,149
+file. Um, go." And then we sort of walk
+away and we come back and we read the we
+
+204
+00:03:56,149 --> 00:03:56,159
+away and we come back and we read the we
+ 
+
+205
+00:03:56,159 --> 00:03:57,270
+away and we come back and we read the we
+read the vulnerability report and
+
+206
+00:03:57,270 --> 00:03:57,280
+read the vulnerability report and
+ 
+
+207
+00:03:57,280 --> 00:03:58,550
+read the vulnerability report and
+usually it's like pretty good and has
+
+208
+00:03:58,550 --> 00:03:58,560
+usually it's like pretty good and has
+ 
+
+209
+00:03:58,560 --> 00:04:01,270
+usually it's like pretty good and has
+found some pretty severe things.
+
+210
+00:04:01,270 --> 00:04:01,280
+found some pretty severe things.
+ 
+
+211
+00:04:01,280 --> 00:04:03,750
+found some pretty severe things.
+And and this basically works like you
+
+212
+00:04:03,750 --> 00:04:03,760
+And and this basically works like you
+ 
+
+213
+00:04:03,760 --> 00:04:05,270
+And and this basically works like you
+can definitely do much better if you
+
+214
+00:04:05,270 --> 00:04:05,280
+can definitely do much better if you
+ 
+
+215
+00:04:05,280 --> 00:04:07,670
+can definitely do much better if you
+have fancier scaffolding. You can
+
+216
+00:04:07,670 --> 00:04:07,680
+have fancier scaffolding. You can
+ 
+
+217
+00:04:07,680 --> 00:04:09,270
+have fancier scaffolding. You can
+definitely do it cheaper if you have
+
+218
+00:04:09,270 --> 00:04:09,280
+definitely do it cheaper if you have
+ 
+
+219
+00:04:09,280 --> 00:04:12,070
+definitely do it cheaper if you have
+fancier scaffolding. Um but you can do
+
+220
+00:04:12,070 --> 00:04:12,080
+fancier scaffolding. Um but you can do
+ 
+
+221
+00:04:12,080 --> 00:04:14,070
+fancier scaffolding. Um but you can do
+it just by like asking the model to find
+
+222
+00:04:14,070 --> 00:04:14,080
+it just by like asking the model to find
+ 
+
+223
+00:04:14,080 --> 00:04:15,670
+it just by like asking the model to find
+these bugs. And the reason why that
+
+224
+00:04:15,670 --> 00:04:15,680
+these bugs. And the reason why that
+ 
+
+225
+00:04:15,680 --> 00:04:17,110
+these bugs. And the reason why that
+matters to me is because what I care
+
+226
+00:04:17,110 --> 00:04:17,120
+matters to me is because what I care
+ 
+
+227
+00:04:17,120 --> 00:04:18,229
+matters to me is because what I care
+about is like what is the base
+
+228
+00:04:18,229 --> 00:04:18,239
+about is like what is the base
+ 
+
+229
+00:04:18,239 --> 00:04:20,710
+about is like what is the base
+capability of the model because if
+
+230
+00:04:20,710 --> 00:04:20,720
+capability of the model because if
+ 
+
+231
+00:04:20,720 --> 00:04:22,550
+capability of the model because if
+someone who's malicious wants to go
+
+232
+00:04:22,550 --> 00:04:22,560
+someone who's malicious wants to go
+ 
+
+233
+00:04:22,560 --> 00:04:24,469
+someone who's malicious wants to go
+cause some harm and they don't have to
+
+234
+00:04:24,469 --> 00:04:24,479
+cause some harm and they don't have to
+ 
+
+235
+00:04:24,479 --> 00:04:26,629
+cause some harm and they don't have to
+spend 6 months designing some fancy
+
+236
+00:04:26,629 --> 00:04:26,639
+spend 6 months designing some fancy
+ 
+
+237
+00:04:26,639 --> 00:04:27,909
+spend 6 months designing some fancy
+fuzzing harness or something and they
+
+238
+00:04:27,909 --> 00:04:27,919
+fuzzing harness or something and they
+ 
+
+239
+00:04:27,919 --> 00:04:29,510
+fuzzing harness or something and they
+can just go do bad things with it like
+
+240
+00:04:29,510 --> 00:04:29,520
+can just go do bad things with it like
+ 
+
+241
+00:04:29,520 --> 00:04:32,310
+can just go do bad things with it like
+this. This is quite quite scary. Um
+
+242
+00:04:32,310 --> 00:04:32,320
+this. This is quite quite scary. Um
+ 
+
+243
+00:04:32,320 --> 00:04:34,790
+this. This is quite quite scary. Um
+okay. Um small little problem though
+
+244
+00:04:34,790 --> 00:04:34,800
+okay. Um small little problem though
+ 
+
+245
+00:04:34,800 --> 00:04:37,909
+okay. Um small little problem though
+with this. Um it's like a little
+
+246
+00:04:37,909 --> 00:04:37,919
+with this. Um it's like a little
+ 
+
+247
+00:04:37,919 --> 00:04:40,230
+with this. Um it's like a little
+deficient in two ways. One way is that
+
+248
+00:04:40,230 --> 00:04:40,240
+deficient in two ways. One way is that
+ 
+
+249
+00:04:40,240 --> 00:04:42,550
+deficient in two ways. One way is that
+um I can't do this at large scale. Like
+
+250
+00:04:42,550 --> 00:04:42,560
+um I can't do this at large scale. Like
+ 
+
+251
+00:04:42,560 --> 00:04:45,189
+um I can't do this at large scale. Like
+if I if I take a piece of software and I
+
+252
+00:04:45,189 --> 00:04:45,199
+if I if I take a piece of software and I
+ 
+
+253
+00:04:45,199 --> 00:04:47,510
+if I if I take a piece of software and I
+ask quad to find the same vulner find a
+
+254
+00:04:47,510 --> 00:04:47,520
+ask quad to find the same vulner find a
+ 
+
+255
+00:04:47,520 --> 00:04:49,030
+ask quad to find the same vulner find a
+bunch of vulnerabilities and run it
+
+256
+00:04:49,030 --> 00:04:49,040
+bunch of vulnerabilities and run it
+ 
+
+257
+00:04:49,040 --> 00:04:50,390
+bunch of vulnerabilities and run it
+multiple times, it will probably find
+
+258
+00:04:50,390 --> 00:04:50,400
+multiple times, it will probably find
+ 
+
+259
+00:04:50,400 --> 00:04:53,189
+multiple times, it will probably find
+the same bug each time. Um I don't know.
+
+260
+00:04:53,189 --> 00:04:53,199
+the same bug each time. Um I don't know.
+ 
+
+261
+00:04:53,199 --> 00:04:54,310
+the same bug each time. Um I don't know.
+It just turns out to be the case that
+
+262
+00:04:54,310 --> 00:04:54,320
+It just turns out to be the case that
+ 
+
+263
+00:04:54,320 --> 00:04:55,990
+It just turns out to be the case that
+this is what happens. Um also like it's
+
+264
+00:04:55,990 --> 00:04:56,000
+this is what happens. Um also like it's
+ 
+
+265
+00:04:56,000 --> 00:04:58,390
+this is what happens. Um also like it's
+just not very thorough. um it will
+
+266
+00:04:58,390 --> 00:04:58,400
+just not very thorough. um it will
+ 
+
+267
+00:04:58,400 --> 00:05:00,230
+just not very thorough. um it will
+review some of the code but not all of
+
+268
+00:05:00,230 --> 00:05:00,240
+review some of the code but not all of
+ 
+
+269
+00:05:00,240 --> 00:05:02,790
+review some of the code but not all of
+the code and so we have a very simple
+
+270
+00:05:02,790 --> 00:05:02,800
+the code and so we have a very simple
+ 
+
+271
+00:05:02,800 --> 00:05:05,270
+the code and so we have a very simple
+trick for this um which is I'm just
+
+272
+00:05:05,270 --> 00:05:05,280
+trick for this um which is I'm just
+ 
+
+273
+00:05:05,280 --> 00:05:07,029
+trick for this um which is I'm just
+going to add one more line um and I'm
+
+274
+00:05:07,029 --> 00:05:07,039
+going to add one more line um and I'm
+ 
+
+275
+00:05:07,039 --> 00:05:09,189
+going to add one more line um and I'm
+gonna say like hint please look at this
+
+276
+00:05:09,189 --> 00:05:09,199
+gonna say like hint please look at this
+ 
+
+277
+00:05:09,199 --> 00:05:11,909
+gonna say like hint please look at this
+file fuc and then what I can do is I
+
+278
+00:05:11,909 --> 00:05:11,919
+file fuc and then what I can do is I
+ 
+
+279
+00:05:11,919 --> 00:05:13,749
+file fuc and then what I can do is I
+wanted to like okay now look at barc now
+
+280
+00:05:13,749 --> 00:05:13,759
+wanted to like okay now look at barc now
+ 
+
+281
+00:05:13,759 --> 00:05:14,870
+wanted to like okay now look at barc now
+look at some other file and I can just
+
+282
+00:05:14,870 --> 00:05:14,880
+look at some other file and I can just
+ 
+
+283
+00:05:14,880 --> 00:05:16,150
+look at some other file and I can just
+like do this for like all of the files
+
+284
+00:05:16,150 --> 00:05:16,160
+like do this for like all of the files
+ 
+
+285
+00:05:16,160 --> 00:05:18,710
+like do this for like all of the files
+in the project and then it will find and
+
+286
+00:05:18,710 --> 00:05:18,720
+in the project and then it will find and
+ 
+
+287
+00:05:18,720 --> 00:05:20,150
+in the project and then it will find and
+like look at least at all of them and
+
+288
+00:05:20,150 --> 00:05:20,160
+like look at least at all of them and
+ 
+
+289
+00:05:20,160 --> 00:05:24,790
+like look at least at all of them and
+like this works quite well okay
+
+290
+00:05:24,790 --> 00:05:24,800
+like this works quite well okay
+ 
+
+291
+00:05:24,800 --> 00:05:26,870
+like this works quite well okay
+um
+
+292
+00:05:26,870 --> 00:05:26,880
+um
+ 
+
+293
+00:05:26,880 --> 00:05:29,189
+um
+We wrote a blog post where we talked
+
+294
+00:05:29,189 --> 00:05:29,199
+We wrote a blog post where we talked
+ 
+
+295
+00:05:29,199 --> 00:05:31,830
+We wrote a blog post where we talked
+about some things that we can find. Um
+
+296
+00:05:31,830 --> 00:05:31,840
+about some things that we can find. Um
+ 
+
+297
+00:05:31,840 --> 00:05:34,870
+about some things that we can find. Um
+uh the blog post exists. So I I'm not
+
+298
+00:05:34,870 --> 00:05:34,880
+uh the blog post exists. So I I'm not
+ 
+
+299
+00:05:34,880 --> 00:05:36,310
+uh the blog post exists. So I I'm not
+going to tell you about the bugs that we
+
+300
+00:05:36,310 --> 00:05:36,320
+going to tell you about the bugs that we
+ 
+
+301
+00:05:36,320 --> 00:05:38,390
+going to tell you about the bugs that we
+had in there. Um we talked about a bunch
+
+302
+00:05:38,390 --> 00:05:38,400
+had in there. Um we talked about a bunch
+ 
+
+303
+00:05:38,400 --> 00:05:41,350
+had in there. Um we talked about a bunch
+of them. Um but it's been now roughly a
+
+304
+00:05:41,350 --> 00:05:41,360
+of them. Um but it's been now roughly a
+ 
+
+305
+00:05:41,360 --> 00:05:42,710
+of them. Um but it's been now roughly a
+couple weeks since this blog post came
+
+306
+00:05:42,710 --> 00:05:42,720
+couple weeks since this blog post came
+ 
+
+307
+00:05:42,720 --> 00:05:44,310
+couple weeks since this blog post came
+out. So I'd like to tell you about a
+
+308
+00:05:44,310 --> 00:05:44,320
+out. So I'd like to tell you about a
+ 
+
+309
+00:05:44,320 --> 00:05:45,830
+out. So I'd like to tell you about a
+couple new ones that have been fixed
+
+310
+00:05:45,830 --> 00:05:45,840
+couple new ones that have been fixed
+ 
+
+311
+00:05:45,840 --> 00:05:47,749
+couple new ones that have been fixed
+that now we can talk about because um
+
+312
+00:05:47,749 --> 00:05:47,759
+that now we can talk about because um
+ 
+
+313
+00:05:47,759 --> 00:05:50,310
+that now we can talk about because um
+yeah, they've been patched. Um so I'm
+
+314
+00:05:50,310 --> 00:05:50,320
+yeah, they've been patched. Um so I'm
+ 
+
+315
+00:05:50,320 --> 00:05:51,590
+yeah, they've been patched. Um so I'm
+going to tell you in particular about
+
+316
+00:05:51,590 --> 00:05:51,600
+going to tell you in particular about
+ 
+
+317
+00:05:51,600 --> 00:05:53,830
+going to tell you in particular about
+two that I think are interesting. one
+
+318
+00:05:53,830 --> 00:05:53,840
+two that I think are interesting. one
+ 
+
+319
+00:05:53,840 --> 00:05:55,510
+two that I think are interesting. one
+interesting because of how Claude could
+
+320
+00:05:55,510 --> 00:05:55,520
+interesting because of how Claude could
+ 
+
+321
+00:05:55,520 --> 00:05:57,430
+interesting because of how Claude could
+find an autonomous exploit and one
+
+322
+00:05:57,430 --> 00:05:57,440
+find an autonomous exploit and one
+ 
+
+323
+00:05:57,440 --> 00:05:58,790
+find an autonomous exploit and one
+because of the vulnerability that it
+
+324
+00:05:58,790 --> 00:05:58,800
+because of the vulnerability that it
+ 
+
+325
+00:05:58,800 --> 00:06:01,510
+because of the vulnerability that it
+found is quite interesting. So, first
+
+326
+00:06:01,510 --> 00:06:01,520
+found is quite interesting. So, first
+ 
+
+327
+00:06:01,520 --> 00:06:03,990
+found is quite interesting. So, first
+one, web apps. Um, okay. So, I used to
+
+328
+00:06:03,990 --> 00:06:04,000
+one, web apps. Um, okay. So, I used to
+ 
+
+329
+00:06:04,000 --> 00:06:06,790
+one, web apps. Um, okay. So, I used to
+be a security person. Um, web apps is
+
+330
+00:06:06,790 --> 00:06:06,800
+be a security person. Um, web apps is
+ 
+
+331
+00:06:06,800 --> 00:06:07,830
+be a security person. Um, web apps is
+like the thing that every security
+
+332
+00:06:07,830 --> 00:06:07,840
+like the thing that every security
+ 
+
+333
+00:06:07,840 --> 00:06:09,430
+like the thing that every security
+person always finds bugs in. They're
+
+334
+00:06:09,430 --> 00:06:09,440
+person always finds bugs in. They're
+ 
+
+335
+00:06:09,440 --> 00:06:12,390
+person always finds bugs in. They're
+really bad. Um, here's this content
+
+336
+00:06:12,390 --> 00:06:12,400
+really bad. Um, here's this content
+ 
+
+337
+00:06:12,400 --> 00:06:14,469
+really bad. Um, here's this content
+management system called Ghost. Um, I I
+
+338
+00:06:14,469 --> 00:06:14,479
+management system called Ghost. Um, I I
+ 
+
+339
+00:06:14,479 --> 00:06:16,309
+management system called Ghost. Um, I I
+hadn't seen it before, but like 50,000
+
+340
+00:06:16,309 --> 00:06:16,319
+hadn't seen it before, but like 50,000
+ 
+
+341
+00:06:16,319 --> 00:06:17,749
+hadn't seen it before, but like 50,000
+stars on GitHub. It's like I don't know
+
+342
+00:06:17,749 --> 00:06:17,759
+stars on GitHub. It's like I don't know
+ 
+
+343
+00:06:17,759 --> 00:06:20,230
+stars on GitHub. It's like I don't know
+apparently quite quite popular. Um, has
+
+344
+00:06:20,230 --> 00:06:20,240
+apparently quite quite popular. Um, has
+ 
+
+345
+00:06:20,240 --> 00:06:21,510
+apparently quite quite popular. Um, has
+never had a critical security
+
+346
+00:06:21,510 --> 00:06:21,520
+never had a critical security
+ 
+
+347
+00:06:21,520 --> 00:06:22,550
+never had a critical security
+vulnerability in the history of the
+
+348
+00:06:22,550 --> 00:06:22,560
+vulnerability in the history of the
+ 
+
+349
+00:06:22,560 --> 00:06:25,270
+vulnerability in the history of the
+project. We found the first one. Um,
+
+350
+00:06:25,270 --> 00:06:25,280
+project. We found the first one. Um,
+ 
+
+351
+00:06:25,280 --> 00:06:27,029
+project. We found the first one. Um,
+what's the vulnerability? The
+
+352
+00:06:27,029 --> 00:06:27,039
+what's the vulnerability? The
+ 
+
+353
+00:06:27,039 --> 00:06:29,990
+what's the vulnerability? The
+vulnerability um is SQL injection. It
+
+354
+00:06:29,990 --> 00:06:30,000
+vulnerability um is SQL injection. It
+ 
+
+355
+00:06:30,000 --> 00:06:31,270
+vulnerability um is SQL injection. It
+turns out that they were concatenating
+
+356
+00:06:31,270 --> 00:06:31,280
+turns out that they were concatenating
+ 
+
+357
+00:06:31,280 --> 00:06:33,029
+turns out that they were concatenating
+some strings and some user input went
+
+358
+00:06:33,029 --> 00:06:33,039
+some strings and some user input went
+ 
+
+359
+00:06:33,039 --> 00:06:35,430
+some strings and some user input went
+into some SQL query.
+
+360
+00:06:35,430 --> 00:06:35,440
+into some SQL query.
+ 
+
+361
+00:06:35,440 --> 00:06:37,270
+into some SQL query.
+Everyone knows that this is like a
+
+362
+00:06:37,270 --> 00:06:37,280
+Everyone knows that this is like a
+ 
+
+363
+00:06:37,280 --> 00:06:38,870
+Everyone knows that this is like a
+problem. It's like not really a surprise
+
+364
+00:06:38,870 --> 00:06:38,880
+problem. It's like not really a surprise
+ 
+
+365
+00:06:38,880 --> 00:06:41,029
+problem. It's like not really a surprise
+to anyone. And yet like I don't know
+
+366
+00:06:41,029 --> 00:06:41,039
+to anyone. And yet like I don't know
+ 
+
+367
+00:06:41,039 --> 00:06:42,870
+to anyone. And yet like I don't know
+like they've been around for 20 years
+
+368
+00:06:42,870 --> 00:06:42,880
+like they've been around for 20 years
+ 
+
+369
+00:06:42,880 --> 00:06:43,909
+like they've been around for 20 years
+and they're going to be around for
+
+370
+00:06:43,909 --> 00:06:43,919
+and they're going to be around for
+ 
+
+371
+00:06:43,919 --> 00:06:46,309
+and they're going to be around for
+another 20, right? Like this is not that
+
+372
+00:06:46,309 --> 00:06:46,319
+another 20, right? Like this is not that
+ 
+
+373
+00:06:46,319 --> 00:06:47,670
+another 20, right? Like this is not that
+surprising that the model can find these
+
+374
+00:06:47,670 --> 00:06:47,680
+surprising that the model can find these
+ 
+
+375
+00:06:47,680 --> 00:06:49,350
+surprising that the model can find these
+bugs. But what's interesting to me is
+
+376
+00:06:49,350 --> 00:06:49,360
+bugs. But what's interesting to me is
+ 
+
+377
+00:06:49,360 --> 00:06:51,029
+bugs. But what's interesting to me is
+that this particular vulnerability you
+
+378
+00:06:51,029 --> 00:06:51,039
+that this particular vulnerability you
+ 
+
+379
+00:06:51,039 --> 00:06:52,870
+that this particular vulnerability you
+can only exploit with a blind SQL
+
+380
+00:06:52,870 --> 00:06:52,880
+can only exploit with a blind SQL
+ 
+
+381
+00:06:52,880 --> 00:06:54,870
+can only exploit with a blind SQL
+injection, meaning I don't actually see
+
+382
+00:06:54,870 --> 00:06:54,880
+injection, meaning I don't actually see
+ 
+
+383
+00:06:54,880 --> 00:06:56,550
+injection, meaning I don't actually see
+the output. I can only observe like how
+
+384
+00:06:56,550 --> 00:06:56,560
+the output. I can only observe like how
+ 
+
+385
+00:06:56,560 --> 00:06:58,710
+the output. I can only observe like how
+long it takes in time or crashes or not
+
+386
+00:06:58,710 --> 00:06:58,720
+long it takes in time or crashes or not
+ 
+
+387
+00:06:58,720 --> 00:07:01,749
+long it takes in time or crashes or not
+crashes. And uh I I wasn't sure if this
+
+388
+00:07:01,749 --> 00:07:01,759
+crashes. And uh I I wasn't sure if this
+ 
+
+389
+00:07:01,759 --> 00:07:04,230
+crashes. And uh I I wasn't sure if this
+was exploitable. And so I wanted to, you
+
+390
+00:07:04,230 --> 00:07:04,240
+was exploitable. And so I wanted to, you
+ 
+
+391
+00:07:04,240 --> 00:07:05,270
+was exploitable. And so I wanted to, you
+know, send a good report to the
+
+392
+00:07:05,270 --> 00:07:05,280
+know, send a good report to the
+ 
+
+393
+00:07:05,280 --> 00:07:06,790
+know, send a good report to the
+maintainers. And so I was like, okay,
+
+394
+00:07:06,790 --> 00:07:06,800
+maintainers. And so I was like, okay,
+ 
+
+395
+00:07:06,800 --> 00:07:08,070
+maintainers. And so I was like, okay,
+like is this some low severity thing
+
+396
+00:07:08,070 --> 00:07:08,080
+like is this some low severity thing
+ 
+
+397
+00:07:08,080 --> 00:07:09,830
+like is this some low severity thing
+that like, you know, maybe I can like
+
+398
+00:07:09,830 --> 00:07:09,840
+that like, you know, maybe I can like
+ 
+
+399
+00:07:09,840 --> 00:07:11,350
+that like, you know, maybe I can like
+leak a couple bits here and there or is
+
+400
+00:07:11,350 --> 00:07:11,360
+leak a couple bits here and there or is
+ 
+
+401
+00:07:11,360 --> 00:07:13,029
+leak a couple bits here and there or is
+this really important? I asked the model
+
+402
+00:07:13,029 --> 00:07:13,039
+this really important? I asked the model
+ 
+
+403
+00:07:13,039 --> 00:07:14,150
+this really important? I asked the model
+like, you know, give me the worst that
+
+404
+00:07:14,150 --> 00:07:14,160
+like, you know, give me the worst that
+ 
+
+405
+00:07:14,160 --> 00:07:17,589
+like, you know, give me the worst that
+you can. Um and so it wrote me this. Um
+
+406
+00:07:17,589 --> 00:07:17,599
+you can. Um and so it wrote me this. Um
+ 
+
+407
+00:07:17,599 --> 00:07:20,629
+you can. Um and so it wrote me this. Um
+so okay here let me play a demo. Um I'm
+
+408
+00:07:20,629 --> 00:07:20,639
+so okay here let me play a demo. Um I'm
+ 
+
+409
+00:07:20,639 --> 00:07:22,629
+so okay here let me play a demo. Um I'm
+going to launch um on this one window
+
+410
+00:07:22,629 --> 00:07:22,639
+going to launch um on this one window
+ 
+
+411
+00:07:22,639 --> 00:07:24,309
+going to launch um on this one window
+here a docker container that just is
+
+412
+00:07:24,309 --> 00:07:24,319
+here a docker container that just is
+ 
+
+413
+00:07:24,319 --> 00:07:26,790
+here a docker container that just is
+running ghost. Um I have my own instance
+
+414
+00:07:26,790 --> 00:07:26,800
+running ghost. Um I have my own instance
+ 
+
+415
+00:07:26,800 --> 00:07:29,270
+running ghost. Um I have my own instance
+of it running now. I've logged in with
+
+416
+00:07:29,270 --> 00:07:29,280
+of it running now. I've logged in with
+ 
+
+417
+00:07:29,280 --> 00:07:33,189
+of it running now. I've logged in with
+admin um at example. Yeah with some some
+
+418
+00:07:33,189 --> 00:07:33,199
+admin um at example. Yeah with some some
+ 
+
+419
+00:07:33,199 --> 00:07:36,150
+admin um at example. Yeah with some some
+yeah admin here. And then I run the
+
+420
+00:07:36,150 --> 00:07:36,160
+yeah admin here. And then I run the
+ 
+
+421
+00:07:36,160 --> 00:07:39,110
+yeah admin here. And then I run the
+exploit on uh this thing. Um and like I
+
+422
+00:07:39,110 --> 00:07:39,120
+exploit on uh this thing. Um and like I
+ 
+
+423
+00:07:39,120 --> 00:07:41,510
+exploit on uh this thing. Um and like I
+wrote none of this code um and blind SQL
+
+424
+00:07:41,510 --> 00:07:41,520
+wrote none of this code um and blind SQL
+ 
+
+425
+00:07:41,520 --> 00:07:44,230
+wrote none of this code um and blind SQL
+injection it just reads off the like
+
+426
+00:07:44,230 --> 00:07:44,240
+injection it just reads off the like
+ 
+
+427
+00:07:44,240 --> 00:07:45,909
+injection it just reads off the like
+complete credentials from the production
+
+428
+00:07:45,909 --> 00:07:45,919
+complete credentials from the production
+ 
+
+429
+00:07:45,919 --> 00:07:49,189
+complete credentials from the production
+database. um no authentication. Um it
+
+430
+00:07:49,189 --> 00:07:49,199
+database. um no authentication. Um it
+ 
+
+431
+00:07:49,199 --> 00:07:52,230
+database. um no authentication. Um it
+reads the admin API key and secret which
+
+432
+00:07:52,230 --> 00:07:52,240
+reads the admin API key and secret which
+ 
+
+433
+00:07:52,240 --> 00:07:54,070
+reads the admin API key and secret which
+lets me mint arbitrarily new things that
+
+434
+00:07:54,070 --> 00:07:54,080
+lets me mint arbitrarily new things that
+ 
+
+435
+00:07:54,080 --> 00:07:55,589
+lets me mint arbitrarily new things that
+I want. I can do now anything that I
+
+436
+00:07:55,589 --> 00:07:55,599
+I want. I can do now anything that I
+ 
+
+437
+00:07:55,599 --> 00:07:57,670
+I want. I can do now anything that I
+want to for the production app and it
+
+438
+00:07:57,670 --> 00:07:57,680
+want to for the production app and it
+ 
+
+439
+00:07:57,680 --> 00:08:00,469
+want to for the production app and it
+reads off the hash of the password. Um
+
+440
+00:08:00,469 --> 00:08:00,479
+reads off the hash of the password. Um
+ 
+
+441
+00:08:00,479 --> 00:08:02,390
+reads off the hash of the password. Um
+okay, fortunately it's brypt. Um you
+
+442
+00:08:02,390 --> 00:08:02,400
+okay, fortunately it's brypt. Um you
+ 
+
+443
+00:08:02,400 --> 00:08:03,990
+okay, fortunately it's brypt. Um you
+know so that's good. But again like it
+
+444
+00:08:03,990 --> 00:08:04,000
+know so that's good. But again like it
+ 
+
+445
+00:08:04,000 --> 00:08:05,350
+know so that's good. But again like it
+sort of like it gives you literally
+
+446
+00:08:05,350 --> 00:08:05,360
+sort of like it gives you literally
+ 
+
+447
+00:08:05,360 --> 00:08:06,550
+sort of like it gives you literally
+everything you could want from
+
+448
+00:08:06,550 --> 00:08:06,560
+everything you could want from
+ 
+
+449
+00:08:06,560 --> 00:08:09,670
+everything you could want from
+unauthenticated accounts. Um, and like I
+
+450
+00:08:09,670 --> 00:08:09,680
+unauthenticated accounts. Um, and like I
+ 
+
+451
+00:08:09,680 --> 00:08:10,869
+unauthenticated accounts. Um, and like I
+probably could have built this attack.
+
+452
+00:08:10,869 --> 00:08:10,879
+probably could have built this attack.
+ 
+
+453
+00:08:10,879 --> 00:08:13,510
+probably could have built this attack.
+Like this attack is not super hard, but
+
+454
+00:08:13,510 --> 00:08:13,520
+Like this attack is not super hard, but
+ 
+
+455
+00:08:13,520 --> 00:08:15,430
+Like this attack is not super hard, but
+like there's some amount of nuance you
+
+456
+00:08:15,430 --> 00:08:15,440
+like there's some amount of nuance you
+ 
+
+457
+00:08:15,440 --> 00:08:16,869
+like there's some amount of nuance you
+need in order to get this to go right.
+
+458
+00:08:16,869 --> 00:08:16,879
+need in order to get this to go right.
+ 
+
+459
+00:08:16,879 --> 00:08:18,710
+need in order to get this to go right.
+And like I didn't need any security
+
+460
+00:08:18,710 --> 00:08:18,720
+And like I didn't need any security
+ 
+
+461
+00:08:18,720 --> 00:08:21,110
+And like I didn't need any security
+experience in order to have this happen.
+
+462
+00:08:21,110 --> 00:08:21,120
+experience in order to have this happen.
+ 
+
+463
+00:08:21,120 --> 00:08:23,110
+experience in order to have this happen.
+So these models like are really quite
+
+464
+00:08:23,110 --> 00:08:23,120
+So these models like are really quite
+ 
+
+465
+00:08:23,120 --> 00:08:25,430
+So these models like are really quite
+good at actually implementing um these
+
+466
+00:08:25,430 --> 00:08:25,440
+good at actually implementing um these
+ 
+
+467
+00:08:25,440 --> 00:08:27,029
+good at actually implementing um these
+exploits now. And this sort of
+
+468
+00:08:27,029 --> 00:08:27,039
+exploits now. And this sort of
+ 
+
+469
+00:08:27,039 --> 00:08:28,230
+exploits now. And this sort of
+fundamentally changes the way that
+
+470
+00:08:28,230 --> 00:08:28,240
+fundamentally changes the way that
+ 
+
+471
+00:08:28,240 --> 00:08:30,309
+fundamentally changes the way that
+things these things go. Um, so this is
+
+472
+00:08:30,309 --> 00:08:30,319
+things these things go. Um, so this is
+ 
+
+473
+00:08:30,319 --> 00:08:32,389
+things these things go. Um, so this is
+one example of an attack that was
+
+474
+00:08:32,389 --> 00:08:32,399
+one example of an attack that was
+ 
+
+475
+00:08:32,399 --> 00:08:34,230
+one example of an attack that was
+possible because the model was
+
+476
+00:08:34,230 --> 00:08:34,240
+possible because the model was
+ 
+
+477
+00:08:34,240 --> 00:08:35,430
+possible because the model was
+particularly good at doing the
+
+478
+00:08:35,430 --> 00:08:35,440
+particularly good at doing the
+ 
+
+479
+00:08:35,440 --> 00:08:38,230
+particularly good at doing the
+exploitation piece. Um let me now spend
+
+480
+00:08:38,230 --> 00:08:38,240
+exploitation piece. Um let me now spend
+ 
+
+481
+00:08:38,240 --> 00:08:40,790
+exploitation piece. Um let me now spend
+a couple of minutes on another side
+
+482
+00:08:40,790 --> 00:08:40,800
+a couple of minutes on another side
+ 
+
+483
+00:08:40,800 --> 00:08:42,389
+a couple of minutes on another side
+where it's particularly good because of
+
+484
+00:08:42,389 --> 00:08:42,399
+where it's particularly good because of
+ 
+
+485
+00:08:42,399 --> 00:08:46,230
+where it's particularly good because of
+the bugs it can find. Um so Linux kernel
+
+486
+00:08:46,230 --> 00:08:46,240
+the bugs it can find. Um so Linux kernel
+ 
+
+487
+00:08:46,240 --> 00:08:48,150
+the bugs it can find. Um so Linux kernel
+um one of like the most important pieces
+
+488
+00:08:48,150 --> 00:08:48,160
+um one of like the most important pieces
+ 
+
+489
+00:08:48,160 --> 00:08:50,470
+um one of like the most important pieces
+of software that we all use every day.
+
+490
+00:08:50,470 --> 00:08:50,480
+of software that we all use every day.
+ 
+
+491
+00:08:50,480 --> 00:08:54,550
+of software that we all use every day.
+Um very very very hardened. Um we now
+
+492
+00:08:54,550 --> 00:08:54,560
+Um very very very hardened. Um we now
+ 
+
+493
+00:08:54,560 --> 00:08:57,509
+Um very very very hardened. Um we now
+have a number of remotely exploitable um
+
+494
+00:08:57,509 --> 00:08:57,519
+have a number of remotely exploitable um
+ 
+
+495
+00:08:57,519 --> 00:08:59,030
+have a number of remotely exploitable um
+heat buffer overflows in the Linux
+
+496
+00:08:59,030 --> 00:08:59,040
+heat buffer overflows in the Linux
+ 
+
+497
+00:08:59,040 --> 00:09:00,870
+heat buffer overflows in the Linux
+kernel. Um I have never found one of
+
+498
+00:09:00,870 --> 00:09:00,880
+kernel. Um I have never found one of
+ 
+
+499
+00:09:00,880 --> 00:09:03,030
+kernel. Um I have never found one of
+these in my life before. This is like I
+
+500
+00:09:03,030 --> 00:09:03,040
+these in my life before. This is like I
+ 
+
+501
+00:09:03,040 --> 00:09:05,750
+these in my life before. This is like I
+don't know very very very hard to do. Um
+
+502
+00:09:05,750 --> 00:09:05,760
+don't know very very very hard to do. Um
+ 
+
+503
+00:09:05,760 --> 00:09:07,590
+don't know very very very hard to do. Um
+with these language models I have a
+
+504
+00:09:07,590 --> 00:09:07,600
+with these language models I have a
+ 
+
+505
+00:09:07,600 --> 00:09:10,070
+with these language models I have a
+bunch like this is I don't know quite
+
+506
+00:09:10,070 --> 00:09:10,080
+bunch like this is I don't know quite
+ 
+
+507
+00:09:10,080 --> 00:09:12,470
+bunch like this is I don't know quite
+quite scary to me. Um let me walk you
+
+508
+00:09:12,470 --> 00:09:12,480
+quite scary to me. Um let me walk you
+ 
+
+509
+00:09:12,480 --> 00:09:15,030
+quite scary to me. Um let me walk you
+through one of them which is in the NFS
+
+510
+00:09:15,030 --> 00:09:15,040
+through one of them which is in the NFS
+ 
+
+511
+00:09:15,040 --> 00:09:18,790
+through one of them which is in the NFS
+um V4 demon and the kernel and um pay
+
+512
+00:09:18,790 --> 00:09:18,800
+um V4 demon and the kernel and um pay
+ 
+
+513
+00:09:18,800 --> 00:09:20,470
+um V4 demon and the kernel and um pay
+attention to sort of how this attack
+
+514
+00:09:20,470 --> 00:09:20,480
+attention to sort of how this attack
+ 
+
+515
+00:09:20,480 --> 00:09:22,470
+attention to sort of how this attack
+works and then remember in the back of
+
+516
+00:09:22,470 --> 00:09:22,480
+works and then remember in the back of
+ 
+
+517
+00:09:22,480 --> 00:09:23,990
+works and then remember in the back of
+your mind that a language model found
+
+518
+00:09:23,990 --> 00:09:24,000
+your mind that a language model found
+ 
+
+519
+00:09:24,000 --> 00:09:26,949
+your mind that a language model found
+this. Okay. So um you have a client
+
+520
+00:09:26,949 --> 00:09:26,959
+this. Okay. So um you have a client
+ 
+
+521
+00:09:26,959 --> 00:09:28,949
+this. Okay. So um you have a client
+connecting to the NFS server and it sort
+
+522
+00:09:28,949 --> 00:09:28,959
+connecting to the NFS server and it sort
+ 
+
+523
+00:09:28,959 --> 00:09:30,710
+connecting to the NFS server and it sort
+of does the three-way thing like hello I
+
+524
+00:09:30,710 --> 00:09:30,720
+of does the three-way thing like hello I
+ 
+
+525
+00:09:30,720 --> 00:09:31,829
+of does the three-way thing like hello I
+would like to talk to you. The service
+
+526
+00:09:31,829 --> 00:09:31,839
+would like to talk to you. The service
+ 
+
+527
+00:09:31,839 --> 00:09:34,070
+would like to talk to you. The service
+says okay and then it responds and the
+
+528
+00:09:34,070 --> 00:09:34,080
+says okay and then it responds and the
+ 
+
+529
+00:09:34,080 --> 00:09:35,990
+says okay and then it responds and the
+client it's you know talking to NFS so
+
+530
+00:09:35,990 --> 00:09:36,000
+client it's you know talking to NFS so
+ 
+
+531
+00:09:36,000 --> 00:09:37,990
+client it's you know talking to NFS so
+it says I'd like to open up this lock
+
+532
+00:09:37,990 --> 00:09:38,000
+it says I'd like to open up this lock
+ 
+
+533
+00:09:38,000 --> 00:09:40,070
+it says I'd like to open up this lock
+file and the server says great and the
+
+534
+00:09:40,070 --> 00:09:40,080
+file and the server says great and the
+ 
+
+535
+00:09:40,080 --> 00:09:42,310
+file and the server says great and the
+client acknowledges that um and then it
+
+536
+00:09:42,310 --> 00:09:42,320
+client acknowledges that um and then it
+ 
+
+537
+00:09:42,320 --> 00:09:45,990
+client acknowledges that um and then it
+takes out a lock and puts um as its name
+
+538
+00:09:45,990 --> 00:09:46,000
+takes out a lock and puts um as its name
+ 
+
+539
+00:09:46,000 --> 00:09:48,870
+takes out a lock and puts um as its name
+um a 1024 byt um sort of value of who
+
+540
+00:09:48,870 --> 00:09:48,880
+um a 1024 byt um sort of value of who
+ 
+
+541
+00:09:48,880 --> 00:09:51,190
+um a 1024 byt um sort of value of who
+the person is who owns the lock. Uh the
+
+542
+00:09:51,190 --> 00:09:51,200
+the person is who owns the lock. Uh the
+ 
+
+543
+00:09:51,200 --> 00:09:52,870
+the person is who owns the lock. Uh the
+server says it's granted and so we're
+
+544
+00:09:52,870 --> 00:09:52,880
+server says it's granted and so we're
+ 
+
+545
+00:09:52,880 --> 00:09:55,269
+server says it's granted and so we're
+good here. Um then what the attacker
+
+546
+00:09:55,269 --> 00:09:55,279
+good here. Um then what the attacker
+ 
+
+547
+00:09:55,279 --> 00:09:56,870
+good here. Um then what the attacker
+does is it creates a second client
+
+548
+00:09:56,870 --> 00:09:56,880
+does is it creates a second client
+ 
+
+549
+00:09:56,880 --> 00:09:59,269
+does is it creates a second client
+client B that talks to the server. Um
+
+550
+00:09:59,269 --> 00:09:59,279
+client B that talks to the server. Um
+ 
+
+551
+00:09:59,279 --> 00:10:02,230
+client B that talks to the server. Um
+which again says hello um I'd like to go
+
+552
+00:10:02,230 --> 00:10:02,240
+which again says hello um I'd like to go
+ 
+
+553
+00:10:02,240 --> 00:10:03,990
+which again says hello um I'd like to go
+talk to you. The server says great um
+
+554
+00:10:03,990 --> 00:10:04,000
+talk to you. The server says great um
+ 
+
+555
+00:10:04,000 --> 00:10:06,389
+talk to you. The server says great um
+I've acknowledged you as client B.
+
+556
+00:10:06,389 --> 00:10:06,399
+I've acknowledged you as client B.
+ 
+
+557
+00:10:06,399 --> 00:10:08,230
+I've acknowledged you as client B.
+Client B says I'd also like to take an
+
+558
+00:10:08,230 --> 00:10:08,240
+Client B says I'd also like to take an
+ 
+
+559
+00:10:08,240 --> 00:10:10,630
+Client B says I'd also like to take an
+um an open on this other lock. And the
+
+560
+00:10:10,630 --> 00:10:10,640
+um an open on this other lock. And the
+ 
+
+561
+00:10:10,640 --> 00:10:13,269
+um an open on this other lock. And the
+server says great you can do that. Um
+
+562
+00:10:13,269 --> 00:10:13,279
+server says great you can do that. Um
+ 
+
+563
+00:10:13,279 --> 00:10:16,230
+server says great you can do that. Um
+and um then takes the lock here. And at
+
+564
+00:10:16,230 --> 00:10:16,240
+and um then takes the lock here. And at
+ 
+
+565
+00:10:16,240 --> 00:10:18,069
+and um then takes the lock here. And at
+this point client A already owns this
+
+566
+00:10:18,069 --> 00:10:18,079
+this point client A already owns this
+ 
+
+567
+00:10:18,079 --> 00:10:20,310
+this point client A already owns this
+lock. So you can't grant the lock also
+
+568
+00:10:20,310 --> 00:10:20,320
+lock. So you can't grant the lock also
+ 
+
+569
+00:10:20,320 --> 00:10:22,470
+lock. So you can't grant the lock also
+to client B. And so the server says
+
+570
+00:10:22,470 --> 00:10:22,480
+to client B. And so the server says
+ 
+
+571
+00:10:22,480 --> 00:10:24,389
+to client B. And so the server says
+like, okay, like deny the lock. This is
+
+572
+00:10:24,389 --> 00:10:24,399
+like, okay, like deny the lock. This is
+ 
+
+573
+00:10:24,399 --> 00:10:26,150
+like, okay, like deny the lock. This is
+not something that's allowed. Except
+
+574
+00:10:26,150 --> 00:10:26,160
+not something that's allowed. Except
+ 
+
+575
+00:10:26,160 --> 00:10:29,750
+not something that's allowed. Except
+what happens is that the response that
+
+576
+00:10:29,750 --> 00:10:29,760
+what happens is that the response that
+ 
+
+577
+00:10:29,760 --> 00:10:32,630
+what happens is that the response that
+it's going to now send to client B is
+
+578
+00:10:32,630 --> 00:10:32,640
+it's going to now send to client B is
+ 
+
+579
+00:10:32,640 --> 00:10:34,470
+it's going to now send to client B is
+going to be something that's going to be
+
+580
+00:10:34,470 --> 00:10:34,480
+going to be something that's going to be
+ 
+
+581
+00:10:34,480 --> 00:10:37,829
+going to be something that's going to be
+um a,56 bytes long. Um it's going to
+
+582
+00:10:37,829 --> 00:10:37,839
+um a,56 bytes long. Um it's going to
+ 
+
+583
+00:10:37,839 --> 00:10:39,190
+um a,56 bytes long. Um it's going to
+have some offset and some length. And
+
+584
+00:10:39,190 --> 00:10:39,200
+have some offset and some length. And
+ 
+
+585
+00:10:39,200 --> 00:10:41,190
+have some offset and some length. And
+then it has this owner. Um and the owner
+
+586
+00:10:41,190 --> 00:10:41,200
+then it has this owner. Um and the owner
+ 
+
+587
+00:10:41,200 --> 00:10:42,790
+then it has this owner. Um and the owner
+is the bytes that came from the first
+
+588
+00:10:42,790 --> 00:10:42,800
+is the bytes that came from the first
+ 
+
+589
+00:10:42,800 --> 00:10:45,030
+is the bytes that came from the first
+attacker. And so those bytes are now
+
+590
+00:10:45,030 --> 00:10:45,040
+attacker. And so those bytes are now
+ 
+
+591
+00:10:45,040 --> 00:10:47,190
+attacker. And so those bytes are now
+copied here. And it turns out that it's
+
+592
+00:10:47,190 --> 00:10:47,200
+copied here. And it turns out that it's
+ 
+
+593
+00:10:47,200 --> 00:10:49,430
+copied here. And it turns out that it's
+going to write this into a buffer of
+
+594
+00:10:49,430 --> 00:10:49,440
+going to write this into a buffer of
+ 
+
+595
+00:10:49,440 --> 00:10:51,990
+going to write this into a buffer of
+size 112 which gives you now heap buffer
+
+596
+00:10:51,990 --> 00:10:52,000
+size 112 which gives you now heap buffer
+ 
+
+597
+00:10:52,000 --> 00:10:54,069
+size 112 which gives you now heap buffer
+overflow in the kernel. Okay, not that
+
+598
+00:10:54,069 --> 00:10:54,079
+overflow in the kernel. Okay, not that
+ 
+
+599
+00:10:54,079 --> 00:10:58,230
+overflow in the kernel. Okay, not that
+great. um
+
+600
+00:10:58,230 --> 00:10:58,240
+great. um
+ 
+
+601
+00:10:58,240 --> 00:11:01,190
+great. um
+a language model found this like this is
+
+602
+00:11:01,190 --> 00:11:01,200
+a language model found this like this is
+ 
+
+603
+00:11:01,200 --> 00:11:04,389
+a language model found this like this is
+not like a like trivial bug like you
+
+604
+00:11:04,389 --> 00:11:04,399
+not like a like trivial bug like you
+ 
+
+605
+00:11:04,399 --> 00:11:06,069
+not like a like trivial bug like you
+have to like understand that there are
+
+606
+00:11:06,069 --> 00:11:06,079
+have to like understand that there are
+ 
+
+607
+00:11:06,079 --> 00:11:08,069
+have to like understand that there are
+like two competing two cooperating
+
+608
+00:11:08,069 --> 00:11:08,079
+like two competing two cooperating
+ 
+
+609
+00:11:08,079 --> 00:11:10,150
+like two competing two cooperating
+adversaries you know like who are like
+
+610
+00:11:10,150 --> 00:11:10,160
+adversaries you know like who are like
+ 
+
+611
+00:11:10,160 --> 00:11:12,389
+adversaries you know like who are like
+you know one of them has a long thing
+
+612
+00:11:12,389 --> 00:11:12,399
+you know one of them has a long thing
+ 
+
+613
+00:11:12,399 --> 00:11:13,910
+you know one of them has a long thing
+here and you send like you know a bunch
+
+614
+00:11:13,910 --> 00:11:13,920
+here and you send like you know a bunch
+ 
+
+615
+00:11:13,920 --> 00:11:15,750
+here and you send like you know a bunch
+of packets over there like you would
+
+616
+00:11:15,750 --> 00:11:15,760
+of packets over there like you would
+ 
+
+617
+00:11:15,760 --> 00:11:18,470
+of packets over there like you would
+never find this by fuzzing um and by the
+
+618
+00:11:18,470 --> 00:11:18,480
+never find this by fuzzing um and by the
+ 
+
+619
+00:11:18,480 --> 00:11:20,470
+never find this by fuzzing um and by the
+way this entire slide was copy and
+
+620
+00:11:20,470 --> 00:11:20,480
+way this entire slide was copy and
+ 
+
+621
+00:11:20,480 --> 00:11:21,910
+way this entire slide was copy and
+pasted from the report that the language
+
+622
+00:11:21,910 --> 00:11:21,920
+pasted from the report that the language
+ 
+
+623
+00:11:21,920 --> 00:11:23,910
+pasted from the report that the language
+model wrote
+
+624
+00:11:23,910 --> 00:11:23,920
+model wrote
+ 
+
+625
+00:11:23,920 --> 00:11:26,150
+model wrote
+like it like it produced this very nice
+
+626
+00:11:26,150 --> 00:11:26,160
+like it like it produced this very nice
+ 
+
+627
+00:11:26,160 --> 00:11:27,750
+like it like it produced this very nice
+flow schematic. Like I I literally just
+
+628
+00:11:27,750 --> 00:11:27,760
+flow schematic. Like I I literally just
+ 
+
+629
+00:11:27,760 --> 00:11:29,509
+flow schematic. Like I I literally just
+copied and pasted this. The model
+
+630
+00:11:29,509 --> 00:11:29,519
+copied and pasted this. The model
+ 
+
+631
+00:11:29,519 --> 00:11:31,030
+copied and pasted this. The model
+produced this schematic explaining to me
+
+632
+00:11:31,030 --> 00:11:31,040
+produced this schematic explaining to me
+ 
+
+633
+00:11:31,040 --> 00:11:33,430
+produced this schematic explaining to me
+how the attack works. Um and so like
+
+634
+00:11:33,430 --> 00:11:33,440
+how the attack works. Um and so like
+ 
+
+635
+00:11:33,440 --> 00:11:35,590
+how the attack works. Um and so like
+it's really quite good at doing these
+
+636
+00:11:35,590 --> 00:11:35,600
+it's really quite good at doing these
+ 
+
+637
+00:11:35,600 --> 00:11:38,150
+it's really quite good at doing these
+kinds of things. Um far better than I
+
+638
+00:11:38,150 --> 00:11:38,160
+kinds of things. Um far better than I
+ 
+
+639
+00:11:38,160 --> 00:11:39,990
+kinds of things. Um far better than I
+think people give them credit for. Um,
+
+640
+00:11:39,990 --> 00:11:40,000
+think people give them credit for. Um,
+ 
+
+641
+00:11:40,000 --> 00:11:41,590
+think people give them credit for. Um,
+and so like when when you're finding
+
+642
+00:11:41,590 --> 00:11:41,600
+and so like when when you're finding
+ 
+
+643
+00:11:41,600 --> 00:11:43,350
+and so like when when you're finding
+these these bugs with these things, it's
+
+644
+00:11:43,350 --> 00:11:43,360
+these these bugs with these things, it's
+ 
+
+645
+00:11:43,360 --> 00:11:45,910
+these these bugs with these things, it's
+like we used to live in a world where we
+
+646
+00:11:45,910 --> 00:11:45,920
+like we used to live in a world where we
+ 
+
+647
+00:11:45,920 --> 00:11:48,389
+like we used to live in a world where we
+assumed that like we had to like hold
+
+648
+00:11:48,389 --> 00:11:48,399
+assumed that like we had to like hold
+ 
+
+649
+00:11:48,399 --> 00:11:50,389
+assumed that like we had to like hold
+their hand in order to help them. Kind
+
+650
+00:11:50,389 --> 00:11:50,399
+their hand in order to help them. Kind
+ 
+
+651
+00:11:50,399 --> 00:11:51,990
+their hand in order to help them. Kind
+of like, you know, a fuzzer, you know,
+
+652
+00:11:51,990 --> 00:11:52,000
+of like, you know, a fuzzer, you know,
+ 
+
+653
+00:11:52,000 --> 00:11:53,430
+of like, you know, a fuzzer, you know,
+like it can sort of do a little things
+
+654
+00:11:53,430 --> 00:11:53,440
+like it can sort of do a little things
+ 
+
+655
+00:11:53,440 --> 00:11:55,829
+like it can sort of do a little things
+here and there, but no, like it it's it
+
+656
+00:11:55,829 --> 00:11:55,839
+here and there, but no, like it it's it
+ 
+
+657
+00:11:55,839 --> 00:11:58,870
+here and there, but no, like it it's it
+this is a bug. Um, here's the commit
+
+658
+00:11:58,870 --> 00:11:58,880
+this is a bug. Um, here's the commit
+ 
+
+659
+00:11:58,880 --> 00:12:01,590
+this is a bug. Um, here's the commit
+that introduced the bug. Um, sorry, it's
+
+660
+00:12:01,590 --> 00:12:01,600
+that introduced the bug. Um, sorry, it's
+ 
+
+661
+00:12:01,600 --> 00:12:03,829
+that introduced the bug. Um, sorry, it's
+not a commit, it's a change set. Why is
+
+662
+00:12:03,829 --> 00:12:03,839
+not a commit, it's a change set. Why is
+ 
+
+663
+00:12:03,839 --> 00:12:05,430
+not a commit, it's a change set. Why is
+it a change set that that introduced
+
+664
+00:12:05,430 --> 00:12:05,440
+it a change set that that introduced
+ 
+
+665
+00:12:05,440 --> 00:12:08,550
+it a change set that that introduced
+this bug? Because this bug predates git.
+
+666
+00:12:08,550 --> 00:12:08,560
+this bug? Because this bug predates git.
+ 
+
+667
+00:12:08,560 --> 00:12:10,550
+this bug? Because this bug predates git.
+Like this bug has been in the kernel
+
+668
+00:12:10,550 --> 00:12:10,560
+Like this bug has been in the kernel
+ 
+
+669
+00:12:10,560 --> 00:12:12,790
+Like this bug has been in the kernel
+since 2003 and it's older than some of
+
+670
+00:12:12,790 --> 00:12:12,800
+since 2003 and it's older than some of
+ 
+
+671
+00:12:12,800 --> 00:12:15,190
+since 2003 and it's older than some of
+you in this room, right? Like like this
+
+672
+00:12:15,190 --> 00:12:15,200
+you in this room, right? Like like this
+ 
+
+673
+00:12:15,200 --> 00:12:17,190
+you in this room, right? Like like this
+is like a really old bug that has been
+
+674
+00:12:17,190 --> 00:12:17,200
+is like a really old bug that has been
+ 
+
+675
+00:12:17,200 --> 00:12:19,269
+is like a really old bug that has been
+found by this by the language models,
+
+676
+00:12:19,269 --> 00:12:19,279
+found by this by the language models,
+ 
+
+677
+00:12:19,279 --> 00:12:21,590
+found by this by the language models,
+right? Like it's like a very non-trivial
+
+678
+00:12:21,590 --> 00:12:21,600
+right? Like it's like a very non-trivial
+ 
+
+679
+00:12:21,600 --> 00:12:23,110
+right? Like it's like a very non-trivial
+kind of thing that like the language
+
+680
+00:12:23,110 --> 00:12:23,120
+kind of thing that like the language
+ 
+
+681
+00:12:23,120 --> 00:12:25,269
+kind of thing that like the language
+models have been able to do here, right?
+
+682
+00:12:25,269 --> 00:12:25,279
+models have been able to do here, right?
+ 
+
+683
+00:12:25,279 --> 00:12:28,310
+models have been able to do here, right?
+like I
+
+684
+00:12:28,310 --> 00:12:28,320
+like I
+ 
+
+685
+00:12:28,320 --> 00:12:30,150
+like I
+speechless like like is like does not
+
+686
+00:12:30,150 --> 00:12:30,160
+speechless like like is like does not
+ 
+
+687
+00:12:30,160 --> 00:12:32,470
+speechless like like is like does not
+begin to describe like these models like
+
+688
+00:12:32,470 --> 00:12:32,480
+begin to describe like these models like
+ 
+
+689
+00:12:32,480 --> 00:12:34,150
+begin to describe like these models like
+really can do some some very impressive
+
+690
+00:12:34,150 --> 00:12:34,160
+really can do some some very impressive
+ 
+
+691
+00:12:34,160 --> 00:12:35,670
+really can do some some very impressive
+things and it's like you know we we
+
+692
+00:12:35,670 --> 00:12:35,680
+things and it's like you know we we
+ 
+
+693
+00:12:35,680 --> 00:12:37,430
+things and it's like you know we we
+really need to start rethinking um the
+
+694
+00:12:37,430 --> 00:12:37,440
+really need to start rethinking um the
+ 
+
+695
+00:12:37,440 --> 00:12:38,870
+really need to start rethinking um the
+kinds of things that that we should
+
+696
+00:12:38,870 --> 00:12:38,880
+kinds of things that that we should
+ 
+
+697
+00:12:38,880 --> 00:12:42,629
+kinds of things that that we should
+expect um because um I don't know spend
+
+698
+00:12:42,629 --> 00:12:42,639
+expect um because um I don't know spend
+ 
+
+699
+00:12:42,639 --> 00:12:43,590
+expect um because um I don't know spend
+like a little bit of time thinking
+
+700
+00:12:43,590 --> 00:12:43,600
+like a little bit of time thinking
+ 
+
+701
+00:12:43,600 --> 00:12:45,910
+like a little bit of time thinking
+forwards like we've only just seen the
+
+702
+00:12:45,910 --> 00:12:45,920
+forwards like we've only just seen the
+ 
+
+703
+00:12:45,920 --> 00:12:47,590
+forwards like we've only just seen the
+models that can do this like in the last
+
+704
+00:12:47,590 --> 00:12:47,600
+models that can do this like in the last
+ 
+
+705
+00:12:47,600 --> 00:12:49,829
+models that can do this like in the last
+couple of months like the first models
+
+706
+00:12:49,829 --> 00:12:49,839
+couple of months like the first models
+ 
+
+707
+00:12:49,839 --> 00:12:51,829
+couple of months like the first models
+that that can find these kinds of
+
+708
+00:12:51,829 --> 00:12:51,839
+that that can find these kinds of
+ 
+
+709
+00:12:51,839 --> 00:12:53,670
+that that can find these kinds of
+vulnerabilities were really only
+
+710
+00:12:53,670 --> 00:12:53,680
+vulnerabilities were really only
+ 
+
+711
+00:12:53,680 --> 00:12:55,430
+vulnerabilities were really only
+introduced a couple of months ago We
+
+712
+00:12:55,430 --> 00:12:55,440
+introduced a couple of months ago We
+ 
+
+713
+00:12:55,440 --> 00:12:58,150
+introduced a couple of months ago We
+sort of tried to see how often um we
+
+714
+00:12:58,150 --> 00:12:58,160
+sort of tried to see how often um we
+ 
+
+715
+00:12:58,160 --> 00:13:00,310
+sort of tried to see how often um we
+could reproduce these kinds of bugs with
+
+716
+00:13:00,310 --> 00:13:00,320
+could reproduce these kinds of bugs with
+ 
+
+717
+00:13:00,320 --> 00:13:02,069
+could reproduce these kinds of bugs with
+older models that were released. I don't
+
+718
+00:13:02,069 --> 00:13:02,079
+older models that were released. I don't
+ 
+
+719
+00:13:02,079 --> 00:13:04,069
+older models that were released. I don't
+Okay, so Sonnet 4.5 was released like
+
+720
+00:13:04,069 --> 00:13:04,079
+Okay, so Sonnet 4.5 was released like
+ 
+
+721
+00:13:04,079 --> 00:13:06,710
+Okay, so Sonnet 4.5 was released like
+only 6 months ago and Opus 4.1 is less
+
+722
+00:13:06,710 --> 00:13:06,720
+only 6 months ago and Opus 4.1 is less
+ 
+
+723
+00:13:06,720 --> 00:13:08,470
+only 6 months ago and Opus 4.1 is less
+than a year old. Those ones can't find
+
+724
+00:13:08,470 --> 00:13:08,480
+than a year old. Those ones can't find
+ 
+
+725
+00:13:08,480 --> 00:13:10,470
+than a year old. Those ones can't find
+these bugs almost ever. The new models
+
+726
+00:13:10,470 --> 00:13:10,480
+these bugs almost ever. The new models
+ 
+
+727
+00:13:10,480 --> 00:13:12,069
+these bugs almost ever. The new models
+released over the last 3 months, 4
+
+728
+00:13:12,069 --> 00:13:12,079
+released over the last 3 months, 4
+ 
+
+729
+00:13:12,079 --> 00:13:14,389
+released over the last 3 months, 4
+months can. So like like it's like just
+
+730
+00:13:14,389 --> 00:13:14,399
+months can. So like like it's like just
+ 
+
+731
+00:13:14,399 --> 00:13:15,750
+months can. So like like it's like just
+on the edge of being able to do these
+
+732
+00:13:15,750 --> 00:13:15,760
+on the edge of being able to do these
+ 
+
+733
+00:13:15,760 --> 00:13:17,910
+on the edge of being able to do these
+kinds of bugs and like this is not the
+
+734
+00:13:17,910 --> 00:13:17,920
+kinds of bugs and like this is not the
+ 
+
+735
+00:13:17,920 --> 00:13:19,990
+kinds of bugs and like this is not the
+last model that's going to exist. Like
+
+736
+00:13:19,990 --> 00:13:20,000
+last model that's going to exist. Like
+ 
+
+737
+00:13:20,000 --> 00:13:21,269
+last model that's going to exist. Like
+there are going to be more and they're
+
+738
+00:13:21,269 --> 00:13:21,279
+there are going to be more and they're
+ 
+
+739
+00:13:21,279 --> 00:13:23,030
+there are going to be more and they're
+going to keep on getting better. Um and
+
+740
+00:13:23,030 --> 00:13:23,040
+going to keep on getting better. Um and
+ 
+
+741
+00:13:23,040 --> 00:13:24,949
+going to keep on getting better. Um and
+like in a very very real sense we are
+
+742
+00:13:24,949 --> 00:13:24,959
+like in a very very real sense we are
+ 
+
+743
+00:13:24,959 --> 00:13:27,430
+like in a very very real sense we are
+like on this exponential. Um you've
+
+744
+00:13:27,430 --> 00:13:27,440
+like on this exponential. Um you've
+ 
+
+745
+00:13:27,440 --> 00:13:28,949
+like on this exponential. Um you've
+probably seen this plot more times than
+
+746
+00:13:28,949 --> 00:13:28,959
+probably seen this plot more times than
+ 
+
+747
+00:13:28,959 --> 00:13:30,710
+probably seen this plot more times than
+you wanted to see it. It's this plot
+
+748
+00:13:30,710 --> 00:13:30,720
+you wanted to see it. It's this plot
+ 
+
+749
+00:13:30,720 --> 00:13:32,870
+you wanted to see it. It's this plot
+from meter that shows as a function of
+
+750
+00:13:32,870 --> 00:13:32,880
+from meter that shows as a function of
+ 
+
+751
+00:13:32,880 --> 00:13:35,829
+from meter that shows as a function of
+model release date um how long of a task
+
+752
+00:13:35,829 --> 00:13:35,839
+model release date um how long of a task
+ 
+
+753
+00:13:35,839 --> 00:13:38,150
+model release date um how long of a task
+that they can do that that humans take.
+
+754
+00:13:38,150 --> 00:13:38,160
+that they can do that that humans take.
+ 
+
+755
+00:13:38,160 --> 00:13:40,550
+that they can do that that humans take.
+So recent models the most recent models
+
+756
+00:13:40,550 --> 00:13:40,560
+So recent models the most recent models
+ 
+
+757
+00:13:40,560 --> 00:13:43,430
+So recent models the most recent models
+can do tasks that take humans roughly 15
+
+758
+00:13:43,430 --> 00:13:43,440
+can do tasks that take humans roughly 15
+ 
+
+759
+00:13:43,440 --> 00:13:45,110
+can do tasks that take humans roughly 15
+hours and they can succeed at that
+
+760
+00:13:45,110 --> 00:13:45,120
+hours and they can succeed at that
+ 
+
+761
+00:13:45,120 --> 00:13:46,870
+hours and they can succeed at that
+roughly half of the time. Um this is a
+
+762
+00:13:46,870 --> 00:13:46,880
+roughly half of the time. Um this is a
+ 
+
+763
+00:13:46,880 --> 00:13:49,030
+roughly half of the time. Um this is a
+nice plot by meter. Um we tried to
+
+764
+00:13:49,030 --> 00:13:49,040
+nice plot by meter. Um we tried to
+ 
+
+765
+00:13:49,040 --> 00:13:50,710
+nice plot by meter. Um we tried to
+produce a similar version of this plot.
+
+766
+00:13:50,710 --> 00:13:50,720
+produce a similar version of this plot.
+ 
+
+767
+00:13:50,720 --> 00:13:52,949
+produce a similar version of this plot.
+Oh yeah, by the way, um doubling time
+
+768
+00:13:52,949 --> 00:13:52,959
+Oh yeah, by the way, um doubling time
+ 
+
+769
+00:13:52,959 --> 00:13:55,269
+Oh yeah, by the way, um doubling time
+every four months. So I don't know, be a
+
+770
+00:13:55,269 --> 00:13:55,279
+every four months. So I don't know, be a
+ 
+
+771
+00:13:55,279 --> 00:13:56,550
+every four months. So I don't know, be a
+little worried there if this trend
+
+772
+00:13:56,550 --> 00:13:56,560
+little worried there if this trend
+ 
+
+773
+00:13:56,560 --> 00:13:58,310
+little worried there if this trend
+continues. Maybe it doesn't, but like
+
+774
+00:13:58,310 --> 00:13:58,320
+continues. Maybe it doesn't, but like
+ 
+
+775
+00:13:58,320 --> 00:13:59,670
+continues. Maybe it doesn't, but like
+you know, if it continues for like
+
+776
+00:13:59,670 --> 00:13:59,680
+you know, if it continues for like
+ 
+
+777
+00:13:59,680 --> 00:14:01,670
+you know, if it continues for like
+another year, um we're going to you know
+
+778
+00:14:01,670 --> 00:14:01,680
+another year, um we're going to you know
+ 
+
+779
+00:14:01,680 --> 00:14:03,350
+another year, um we're going to you know
+have these models producing like you
+
+780
+00:14:03,350 --> 00:14:03,360
+have these models producing like you
+ 
+
+781
+00:14:03,360 --> 00:14:05,590
+have these models producing like you
+know you know large amounts of code that
+
+782
+00:14:05,590 --> 00:14:05,600
+know you know large amounts of code that
+ 
+
+783
+00:14:05,600 --> 00:14:09,189
+know you know large amounts of code that
+um you know better than most of us. Um
+
+784
+00:14:09,189 --> 00:14:09,199
+um you know better than most of us. Um
+ 
+
+785
+00:14:09,199 --> 00:14:11,670
+um you know better than most of us. Um
+so we tried to produce a similar kind of
+
+786
+00:14:11,670 --> 00:14:11,680
+so we tried to produce a similar kind of
+ 
+
+787
+00:14:11,680 --> 00:14:15,910
+so we tried to produce a similar kind of
+plot where um instead of looking at uh
+
+788
+00:14:15,910 --> 00:14:15,920
+plot where um instead of looking at uh
+ 
+
+789
+00:14:15,920 --> 00:14:17,670
+plot where um instead of looking at uh
+you know how long of a duration of a
+
+790
+00:14:17,670 --> 00:14:17,680
+you know how long of a duration of a
+ 
+
+791
+00:14:17,680 --> 00:14:20,069
+you know how long of a duration of a
+task that models can do we we tried to
+
+792
+00:14:20,069 --> 00:14:20,079
+task that models can do we we tried to
+ 
+
+793
+00:14:20,079 --> 00:14:22,629
+task that models can do we we tried to
+look um okay smart contracts okay why
+
+794
+00:14:22,629 --> 00:14:22,639
+look um okay smart contracts okay why
+ 
+
+795
+00:14:22,639 --> 00:14:24,310
+look um okay smart contracts okay why
+smart contracts because they have dollar
+
+796
+00:14:24,310 --> 00:14:24,320
+smart contracts because they have dollar
+ 
+
+797
+00:14:24,320 --> 00:14:26,470
+smart contracts because they have dollar
+values associated with them and so you
+
+798
+00:14:26,470 --> 00:14:26,480
+values associated with them and so you
+ 
+
+799
+00:14:26,480 --> 00:14:28,629
+values associated with them and so you
+can ask how much money can I steal from
+
+800
+00:14:28,629 --> 00:14:28,639
+can ask how much money can I steal from
+ 
+
+801
+00:14:28,639 --> 00:14:30,069
+can ask how much money can I steal from
+a smart contract by having a language
+
+802
+00:14:30,069 --> 00:14:30,079
+a smart contract by having a language
+ 
+
+803
+00:14:30,079 --> 00:14:32,389
+a smart contract by having a language
+model find and exploit a vulnerability
+
+804
+00:14:32,389 --> 00:14:32,399
+model find and exploit a vulnerability
+ 
+
+805
+00:14:32,399 --> 00:14:35,030
+model find and exploit a vulnerability
+and so okay this is from a paper um by
+
+806
+00:14:35,030 --> 00:14:35,040
+and so okay this is from a paper um by
+ 
+
+807
+00:14:35,040 --> 00:14:37,030
+and so okay this is from a paper um by
+by two of our Matt scholars Winnie and
+
+808
+00:14:37,030 --> 00:14:37,040
+by two of our Matt scholars Winnie and
+ 
+
+809
+00:14:37,040 --> 00:14:37,910
+by two of our Matt scholars Winnie and
+Cole
+
+810
+00:14:37,910 --> 00:14:37,920
+Cole
+ 
+
+811
+00:14:37,920 --> 00:14:40,790
+Cole
+And and what they showed was that recent
+
+812
+00:14:40,790 --> 00:14:40,800
+And and what they showed was that recent
+ 
+
+813
+00:14:40,800 --> 00:14:45,350
+And and what they showed was that recent
+language models um can identify and
+
+814
+00:14:45,350 --> 00:14:45,360
+language models um can identify and
+ 
+
+815
+00:14:45,360 --> 00:14:47,509
+language models um can identify and
+exploit vulnerabilities and recover like
+
+816
+00:14:47,509 --> 00:14:47,519
+exploit vulnerabilities and recover like
+ 
+
+817
+00:14:47,519 --> 00:14:49,350
+exploit vulnerabilities and recover like
+several million dollars from like actual
+
+818
+00:14:49,350 --> 00:14:49,360
+several million dollars from like actual
+ 
+
+819
+00:14:49,360 --> 00:14:52,230
+several million dollars from like actual
+real smart contracts. Um and that the
+
+820
+00:14:52,230 --> 00:14:52,240
+real smart contracts. Um and that the
+ 
+
+821
+00:14:52,240 --> 00:14:53,829
+real smart contracts. Um and that the
+rate of their ability to do this is
+
+822
+00:14:53,829 --> 00:14:53,839
+rate of their ability to do this is
+ 
+
+823
+00:14:53,839 --> 00:14:55,590
+rate of their ability to do this is
+again going exponentially. Note the log
+
+824
+00:14:55,590 --> 00:14:55,600
+again going exponentially. Note the log
+ 
+
+825
+00:14:55,600 --> 00:14:57,910
+again going exponentially. Note the log
+scale on the y- axis here again. And so
+
+826
+00:14:57,910 --> 00:14:57,920
+scale on the y- axis here again. And so
+ 
+
+827
+00:14:57,920 --> 00:14:59,509
+scale on the y- axis here again. And so
+like these models are getting really
+
+828
+00:14:59,509 --> 00:14:59,519
+like these models are getting really
+ 
+
+829
+00:14:59,519 --> 00:15:01,430
+like these models are getting really
+really good at doing these kinds of
+
+830
+00:15:01,430 --> 00:15:01,440
+really good at doing these kinds of
+ 
+
+831
+00:15:01,440 --> 00:15:03,910
+really good at doing these kinds of
+things. And again I have no reason to
+
+832
+00:15:03,910 --> 00:15:03,920
+things. And again I have no reason to
+ 
+
+833
+00:15:03,920 --> 00:15:05,030
+things. And again I have no reason to
+believe that they're going to stop
+
+834
+00:15:05,030 --> 00:15:05,040
+believe that they're going to stop
+ 
+
+835
+00:15:05,040 --> 00:15:08,949
+believe that they're going to stop
+getting better at this continuing rate.
+
+836
+00:15:08,949 --> 00:15:08,959
+
+ 
+
+837
+00:15:08,959 --> 00:15:10,389
+
+Okay, I'm like sort of coming back to
+
+838
+00:15:10,389 --> 00:15:10,399
+Okay, I'm like sort of coming back to
+ 
+
+839
+00:15:10,399 --> 00:15:11,430
+Okay, I'm like sort of coming back to
+the slide because I think like this
+
+840
+00:15:11,430 --> 00:15:11,440
+the slide because I think like this
+ 
+
+841
+00:15:11,440 --> 00:15:12,629
+the slide because I think like this
+really is the thing I want you to take
+
+842
+00:15:12,629 --> 00:15:12,639
+really is the thing I want you to take
+ 
+
+843
+00:15:12,639 --> 00:15:14,470
+really is the thing I want you to take
+away. It's not where we are at this
+
+844
+00:15:14,470 --> 00:15:14,480
+away. It's not where we are at this
+ 
+
+845
+00:15:14,480 --> 00:15:16,389
+away. It's not where we are at this
+moment in time. Yes, at this moment in
+
+846
+00:15:16,389 --> 00:15:16,399
+moment in time. Yes, at this moment in
+ 
+
+847
+00:15:16,399 --> 00:15:18,230
+moment in time. Yes, at this moment in
+time the models can find vulnerabilities
+
+848
+00:15:18,230 --> 00:15:18,240
+time the models can find vulnerabilities
+ 
+
+849
+00:15:18,240 --> 00:15:19,990
+time the models can find vulnerabilities
+in the Linux kernel. Yes, at this moment
+
+850
+00:15:19,990 --> 00:15:20,000
+in the Linux kernel. Yes, at this moment
+ 
+
+851
+00:15:20,000 --> 00:15:21,350
+in the Linux kernel. Yes, at this moment
+in time they can find, you know, these
+
+852
+00:15:21,350 --> 00:15:21,360
+in time they can find, you know, these
+ 
+
+853
+00:15:21,360 --> 00:15:23,829
+in time they can find, you know, these
+critical CVEes um in really important
+
+854
+00:15:23,829 --> 00:15:23,839
+critical CVEes um in really important
+ 
+
+855
+00:15:23,839 --> 00:15:25,670
+critical CVEes um in really important
+software that people use, but like the
+
+856
+00:15:25,670 --> 00:15:25,680
+software that people use, but like the
+ 
+
+857
+00:15:25,680 --> 00:15:28,470
+software that people use, but like the
+rate of progress is very large. And so
+
+858
+00:15:28,470 --> 00:15:28,480
+rate of progress is very large. And so
+ 
+
+859
+00:15:28,480 --> 00:15:30,389
+rate of progress is very large. And so
+you should expect that like the best
+
+860
+00:15:30,389 --> 00:15:30,399
+you should expect that like the best
+ 
+
+861
+00:15:30,399 --> 00:15:32,310
+you should expect that like the best
+models can do this today. The like
+
+862
+00:15:32,310 --> 00:15:32,320
+models can do this today. The like
+ 
+
+863
+00:15:32,320 --> 00:15:34,069
+models can do this today. The like
+average model you have on your laptop
+
+864
+00:15:34,069 --> 00:15:34,079
+average model you have on your laptop
+ 
+
+865
+00:15:34,079 --> 00:15:37,590
+average model you have on your laptop
+probably can do this in a year.
+
+866
+00:15:37,590 --> 00:15:37,600
+probably can do this in a year.
+ 
+
+867
+00:15:37,600 --> 00:15:40,150
+probably can do this in a year.
+Um,
+
+868
+00:15:40,150 --> 00:15:40,160
+Um,
+ 
+
+869
+00:15:40,160 --> 00:15:42,389
+Um,
+I'm a skeptical person. I didn't believe
+
+870
+00:15:42,389 --> 00:15:42,399
+I'm a skeptical person. I didn't believe
+ 
+
+871
+00:15:42,399 --> 00:15:44,870
+I'm a skeptical person. I didn't believe
+in language models for a very long time.
+
+872
+00:15:44,870 --> 00:15:44,880
+in language models for a very long time.
+ 
+
+873
+00:15:44,880 --> 00:15:47,110
+in language models for a very long time.
+Uh, when I first saw language models,
+
+874
+00:15:47,110 --> 00:15:47,120
+Uh, when I first saw language models,
+ 
+
+875
+00:15:47,120 --> 00:15:48,550
+Uh, when I first saw language models,
+the only thing that I did with them was
+
+876
+00:15:48,550 --> 00:15:48,560
+the only thing that I did with them was
+ 
+
+877
+00:15:48,560 --> 00:15:50,230
+the only thing that I did with them was
+like I I sort of prodded them and made
+
+878
+00:15:50,230 --> 00:15:50,240
+like I I sort of prodded them and made
+ 
+
+879
+00:15:50,240 --> 00:15:52,470
+like I I sort of prodded them and made
+fun of sort of how how how easily they
+
+880
+00:15:52,470 --> 00:15:52,480
+fun of sort of how how how easily they
+ 
+
+881
+00:15:52,480 --> 00:15:55,110
+fun of sort of how how how easily they
+broke. Um, but like they actually are
+
+882
+00:15:55,110 --> 00:15:55,120
+broke. Um, but like they actually are
+ 
+
+883
+00:15:55,120 --> 00:15:57,509
+broke. Um, but like they actually are
+quite good right now. They of course
+
+884
+00:15:57,509 --> 00:15:57,519
+quite good right now. They of course
+ 
+
+885
+00:15:57,519 --> 00:16:01,430
+quite good right now. They of course
+have problems, but you can't just stick
+
+886
+00:16:01,430 --> 00:16:01,440
+have problems, but you can't just stick
+ 
+
+887
+00:16:01,440 --> 00:16:02,870
+have problems, but you can't just stick
+your head in the sand. Like these things
+
+888
+00:16:02,870 --> 00:16:02,880
+your head in the sand. Like these things
+ 
+
+889
+00:16:02,880 --> 00:16:05,430
+your head in the sand. Like these things
+are working really really well.
+
+890
+00:16:05,430 --> 00:16:05,440
+are working really really well.
+ 
+
+891
+00:16:05,440 --> 00:16:08,389
+are working really really well.
+Um, and like you know there are some
+
+892
+00:16:08,389 --> 00:16:08,399
+Um, and like you know there are some
+ 
+
+893
+00:16:08,399 --> 00:16:09,590
+Um, and like you know there are some
+people who say you know it's on an
+
+894
+00:16:09,590 --> 00:16:09,600
+people who say you know it's on an
+ 
+
+895
+00:16:09,600 --> 00:16:12,069
+people who say you know it's on an
+exponential. I I agree the exponential
+
+896
+00:16:12,069 --> 00:16:12,079
+exponential. I I agree the exponential
+ 
+
+897
+00:16:12,079 --> 00:16:15,350
+exponential. I I agree the exponential
+is not going to last forever. Um I
+
+898
+00:16:15,350 --> 00:16:15,360
+is not going to last forever. Um I
+ 
+
+899
+00:16:15,360 --> 00:16:17,110
+is not going to last forever. Um I
+remember when CPUs were getting
+
+900
+00:16:17,110 --> 00:16:17,120
+remember when CPUs were getting
+ 
+
+901
+00:16:17,120 --> 00:16:18,710
+remember when CPUs were getting
+exponentially faster every couple of
+
+902
+00:16:18,710 --> 00:16:18,720
+exponentially faster every couple of
+ 
+
+903
+00:16:18,720 --> 00:16:20,790
+exponentially faster every couple of
+years, right? Like this is the fastest
+
+904
+00:16:20,790 --> 00:16:20,800
+years, right? Like this is the fastest
+ 
+
+905
+00:16:20,800 --> 00:16:22,550
+years, right? Like this is the fastest
+CPU that Intel produced every year
+
+906
+00:16:22,550 --> 00:16:22,560
+CPU that Intel produced every year
+ 
+
+907
+00:16:22,560 --> 00:16:25,110
+CPU that Intel produced every year
+starting from the 404 um up until the
+
+908
+00:16:25,110 --> 00:16:25,120
+starting from the 404 um up until the
+ 
+
+909
+00:16:25,120 --> 00:16:28,069
+starting from the 404 um up until the
+first Pentiums um in 2000. Very nice
+
+910
+00:16:28,069 --> 00:16:28,079
+first Pentiums um in 2000. Very nice
+ 
+
+911
+00:16:28,079 --> 00:16:30,310
+first Pentiums um in 2000. Very nice
+clean exponential and then of course you
+
+912
+00:16:30,310 --> 00:16:30,320
+clean exponential and then of course you
+ 
+
+913
+00:16:30,320 --> 00:16:31,910
+clean exponential and then of course you
+know the exponential tapers off. It's no
+
+914
+00:16:31,910 --> 00:16:31,920
+know the exponential tapers off. It's no
+ 
+
+915
+00:16:31,920 --> 00:16:34,150
+know the exponential tapers off. It's no
+longer exponential. What do you know? Um
+
+916
+00:16:34,150 --> 00:16:34,160
+longer exponential. What do you know? Um
+ 
+
+917
+00:16:34,160 --> 00:16:36,389
+longer exponential. What do you know? Um
+there is going to be a bend. No one
+
+918
+00:16:36,389 --> 00:16:36,399
+there is going to be a bend. No one
+ 
+
+919
+00:16:36,399 --> 00:16:38,470
+there is going to be a bend. No one
+denies this. No exponential can continue
+
+920
+00:16:38,470 --> 00:16:38,480
+denies this. No exponential can continue
+ 
+
+921
+00:16:38,480 --> 00:16:42,310
+denies this. No exponential can continue
+forever. Um but it's very hard to
+
+922
+00:16:42,310 --> 00:16:42,320
+forever. Um but it's very hard to
+ 
+
+923
+00:16:42,320 --> 00:16:44,069
+forever. Um but it's very hard to
+predict when the bend is going to
+
+924
+00:16:44,069 --> 00:16:44,079
+predict when the bend is going to
+ 
+
+925
+00:16:44,079 --> 00:16:46,870
+predict when the bend is going to
+happen. Like maybe the bend happens in 6
+
+926
+00:16:46,870 --> 00:16:46,880
+happen. Like maybe the bend happens in 6
+ 
+
+927
+00:16:46,880 --> 00:16:48,470
+happen. Like maybe the bend happens in 6
+months. Maybe in 6 months it's the case
+
+928
+00:16:48,470 --> 00:16:48,480
+months. Maybe in 6 months it's the case
+ 
+
+929
+00:16:48,480 --> 00:16:49,749
+months. Maybe in 6 months it's the case
+that the models are no longer getting
+
+930
+00:16:49,749 --> 00:16:49,759
+that the models are no longer getting
+ 
+
+931
+00:16:49,759 --> 00:16:51,749
+that the models are no longer getting
+exponentially better. Maybe it happens
+
+932
+00:16:51,749 --> 00:16:51,759
+exponentially better. Maybe it happens
+ 
+
+933
+00:16:51,759 --> 00:16:54,389
+exponentially better. Maybe it happens
+in 2 years. And when the bend happens
+
+934
+00:16:54,389 --> 00:16:54,399
+in 2 years. And when the bend happens
+ 
+
+935
+00:16:54,399 --> 00:16:56,150
+in 2 years. And when the bend happens
+will matter quite a lot for what
+
+936
+00:16:56,150 --> 00:16:56,160
+will matter quite a lot for what
+ 
+
+937
+00:16:56,160 --> 00:16:58,389
+will matter quite a lot for what
+capabilities these models have. And I
+
+938
+00:16:58,389 --> 00:16:58,399
+capabilities these models have. And I
+ 
+
+939
+00:16:58,399 --> 00:16:59,990
+capabilities these models have. And I
+think you should not assume that like
+
+940
+00:16:59,990 --> 00:17:00,000
+think you should not assume that like
+ 
+
+941
+00:17:00,000 --> 00:17:01,749
+think you should not assume that like
+it's definitely going to happen in a
+
+942
+00:17:01,749 --> 00:17:01,759
+it's definitely going to happen in a
+ 
+
+943
+00:17:01,759 --> 00:17:03,269
+it's definitely going to happen in a
+couple of months because people have
+
+944
+00:17:03,269 --> 00:17:03,279
+couple of months because people have
+ 
+
+945
+00:17:03,279 --> 00:17:06,150
+couple of months because people have
+been saying this forever. For like the
+
+946
+00:17:06,150 --> 00:17:06,160
+been saying this forever. For like the
+ 
+
+947
+00:17:06,160 --> 00:17:07,669
+been saying this forever. For like the
+last 10 years, people have been saying
+
+948
+00:17:07,669 --> 00:17:07,679
+last 10 years, people have been saying
+ 
+
+949
+00:17:07,679 --> 00:17:09,669
+last 10 years, people have been saying
+deep learning is going to hit a wall and
+
+950
+00:17:09,669 --> 00:17:09,679
+deep learning is going to hit a wall and
+ 
+
+951
+00:17:09,679 --> 00:17:12,470
+deep learning is going to hit a wall and
+at least as of yet it has not. And so
+
+952
+00:17:12,470 --> 00:17:12,480
+at least as of yet it has not. And so
+ 
+
+953
+00:17:12,480 --> 00:17:14,150
+at least as of yet it has not. And so
+like we should be willing to entertain
+
+954
+00:17:14,150 --> 00:17:14,160
+like we should be willing to entertain
+ 
+
+955
+00:17:14,160 --> 00:17:16,069
+like we should be willing to entertain
+the possibility that it might especially
+
+956
+00:17:16,069 --> 00:17:16,079
+the possibility that it might especially
+ 
+
+957
+00:17:16,079 --> 00:17:18,230
+the possibility that it might especially
+as security people right like so I I
+
+958
+00:17:18,230 --> 00:17:18,240
+as security people right like so I I
+ 
+
+959
+00:17:18,240 --> 00:17:20,230
+as security people right like so I I
+went to a conference at crypto where I
+
+960
+00:17:20,230 --> 00:17:20,240
+went to a conference at crypto where I
+ 
+
+961
+00:17:20,240 --> 00:17:23,270
+went to a conference at crypto where I
+gave a talk and and I observed that like
+
+962
+00:17:23,270 --> 00:17:23,280
+gave a talk and and I observed that like
+ 
+
+963
+00:17:23,280 --> 00:17:25,350
+gave a talk and and I observed that like
+10 of the papers at this conference were
+
+964
+00:17:25,350 --> 00:17:25,360
+10 of the papers at this conference were
+ 
+
+965
+00:17:25,360 --> 00:17:27,829
+10 of the papers at this conference were
+on postquantum cryptography.
+
+966
+00:17:27,829 --> 00:17:27,839
+on postquantum cryptography.
+ 
+
+967
+00:17:27,839 --> 00:17:29,110
+on postquantum cryptography.
+I I don't know if you know this, but
+
+968
+00:17:29,110 --> 00:17:29,120
+I I don't know if you know this, but
+ 
+
+969
+00:17:29,120 --> 00:17:31,350
+I I don't know if you know this, but
+like we don't have quantum computers and
+
+970
+00:17:31,350 --> 00:17:31,360
+like we don't have quantum computers and
+ 
+
+971
+00:17:31,360 --> 00:17:32,789
+like we don't have quantum computers and
+yet cryptographers are working on
+
+972
+00:17:32,789 --> 00:17:32,799
+yet cryptographers are working on
+ 
+
+973
+00:17:32,799 --> 00:17:34,710
+yet cryptographers are working on
+postquantum cryptography because they
+
+974
+00:17:34,710 --> 00:17:34,720
+postquantum cryptography because they
+ 
+
+975
+00:17:34,720 --> 00:17:37,190
+postquantum cryptography because they
+understand that it is worth investing in
+
+976
+00:17:37,190 --> 00:17:37,200
+understand that it is worth investing in
+ 
+
+977
+00:17:37,200 --> 00:17:38,630
+understand that it is worth investing in
+defending against something that we
+
+978
+00:17:38,630 --> 00:17:38,640
+defending against something that we
+ 
+
+979
+00:17:38,640 --> 00:17:40,390
+defending against something that we
+don't have in front of us right now. And
+
+980
+00:17:40,390 --> 00:17:40,400
+don't have in front of us right now. And
+ 
+
+981
+00:17:40,400 --> 00:17:41,669
+don't have in front of us right now. And
+yet here is a thing that I have
+
+982
+00:17:41,669 --> 00:17:41,679
+yet here is a thing that I have
+ 
+
+983
+00:17:41,679 --> 00:17:43,270
+yet here is a thing that I have
+literally right in front of me right now
+
+984
+00:17:43,270 --> 00:17:43,280
+literally right in front of me right now
+ 
+
+985
+00:17:43,280 --> 00:17:45,029
+literally right in front of me right now
+finding these kinds of bugs. And I often
+
+986
+00:17:45,029 --> 00:17:45,039
+finding these kinds of bugs. And I often
+ 
+
+987
+00:17:45,039 --> 00:17:46,310
+finding these kinds of bugs. And I often
+talk to talk to security people and
+
+988
+00:17:46,310 --> 00:17:46,320
+talk to talk to security people and
+ 
+
+989
+00:17:46,320 --> 00:17:48,870
+talk to talk to security people and
+they're in denial about it. So we like
+
+990
+00:17:48,870 --> 00:17:48,880
+they're in denial about it. So we like
+ 
+
+991
+00:17:48,880 --> 00:17:50,630
+they're in denial about it. So we like
+we really really like we should really
+
+992
+00:17:50,630 --> 00:17:50,640
+we really really like we should really
+ 
+
+993
+00:17:50,640 --> 00:17:52,390
+we really really like we should really
+need to understand this is the
+
+994
+00:17:52,390 --> 00:17:52,400
+need to understand this is the
+ 
+
+995
+00:17:52,400 --> 00:17:55,270
+need to understand this is the
+exponential we're on. Um there's a fun
+
+996
+00:17:55,270 --> 00:17:55,280
+exponential we're on. Um there's a fun
+ 
+
+997
+00:17:55,280 --> 00:17:57,350
+exponential we're on. Um there's a fun
+slide that I like to show. Um this is
+
+998
+00:17:57,350 --> 00:17:57,360
+slide that I like to show. Um this is
+ 
+
+999
+00:17:57,360 --> 00:18:00,710
+slide that I like to show. Um this is
+from uh the uh international energy
+
+1000
+00:18:00,710 --> 00:18:00,720
+from uh the uh international energy
+ 
+
+1001
+00:18:00,720 --> 00:18:03,669
+from uh the uh international energy
+agency which every year um makes a
+
+1002
+00:18:03,669 --> 00:18:03,679
+agency which every year um makes a
+ 
+
+1003
+00:18:03,679 --> 00:18:06,070
+agency which every year um makes a
+prediction for how much um of various
+
+1004
+00:18:06,070 --> 00:18:06,080
+prediction for how much um of various
+ 
+
+1005
+00:18:06,080 --> 00:18:07,510
+prediction for how much um of various
+kinds of energy people are going to be
+
+1006
+00:18:07,510 --> 00:18:07,520
+kinds of energy people are going to be
+ 
+
+1007
+00:18:07,520 --> 00:18:09,990
+kinds of energy people are going to be
+using for generation. Um and here's the
+
+1008
+00:18:09,990 --> 00:18:10,000
+using for generation. Um and here's the
+ 
+
+1009
+00:18:10,000 --> 00:18:13,190
+using for generation. Um and here's the
+plot for how much solar is actually
+
+1010
+00:18:13,190 --> 00:18:13,200
+plot for how much solar is actually
+ 
+
+1011
+00:18:13,200 --> 00:18:15,430
+plot for how much solar is actually
+being deployed versus their predictions.
+
+1012
+00:18:15,430 --> 00:18:15,440
+being deployed versus their predictions.
+ 
+
+1013
+00:18:15,440 --> 00:18:16,950
+being deployed versus their predictions.
+Uh the red lines are their predictions
+
+1014
+00:18:16,950 --> 00:18:16,960
+Uh the red lines are their predictions
+ 
+
+1015
+00:18:16,960 --> 00:18:18,390
+Uh the red lines are their predictions
+from every point in time. White is
+
+1016
+00:18:18,390 --> 00:18:18,400
+from every point in time. White is
+ 
+
+1017
+00:18:18,400 --> 00:18:21,590
+from every point in time. White is
+what's actually true. um for more than
+
+1018
+00:18:21,590 --> 00:18:21,600
+what's actually true. um for more than
+ 
+
+1019
+00:18:21,600 --> 00:18:24,390
+what's actually true. um for more than
+half of the years their prediction for
+
+1020
+00:18:24,390 --> 00:18:24,400
+half of the years their prediction for
+ 
+
+1021
+00:18:24,400 --> 00:18:27,350
+half of the years their prediction for
+what would happen in 2040 happened the
+
+1022
+00:18:27,350 --> 00:18:27,360
+what would happen in 2040 happened the
+ 
+
+1023
+00:18:27,360 --> 00:18:29,669
+what would happen in 2040 happened the
+next year
+
+1024
+00:18:29,669 --> 00:18:29,679
+next year
+ 
+
+1025
+00:18:29,679 --> 00:18:30,870
+next year
+from like you would think that they
+
+1026
+00:18:30,870 --> 00:18:30,880
+from like you would think that they
+ 
+
+1027
+00:18:30,880 --> 00:18:33,430
+from like you would think that they
+would have learned like the 15th time
+
+1028
+00:18:33,430 --> 00:18:33,440
+would have learned like the 15th time
+ 
+
+1029
+00:18:33,440 --> 00:18:35,510
+would have learned like the 15th time
+that this happened that you should make
+
+1030
+00:18:35,510 --> 00:18:35,520
+that this happened that you should make
+ 
+
+1031
+00:18:35,520 --> 00:18:37,669
+that this happened that you should make
+a continued like exponential trend but
+
+1032
+00:18:37,669 --> 00:18:37,679
+a continued like exponential trend but
+ 
+
+1033
+00:18:37,679 --> 00:18:39,350
+a continued like exponential trend but
+every year they assume that things will
+
+1034
+00:18:39,350 --> 00:18:39,360
+every year they assume that things will
+ 
+
+1035
+00:18:39,360 --> 00:18:41,430
+every year they assume that things will
+continue at roughly the current rate and
+
+1036
+00:18:41,430 --> 00:18:41,440
+continue at roughly the current rate and
+ 
+
+1037
+00:18:41,440 --> 00:18:43,909
+continue at roughly the current rate and
+every year it goes up by I don't know
+
+1038
+00:18:43,909 --> 00:18:43,919
+every year it goes up by I don't know
+ 
+
+1039
+00:18:43,919 --> 00:18:46,870
+every year it goes up by I don't know
+another 30 40%.
+
+1040
+00:18:46,870 --> 00:18:46,880
+another 30 40%.
+ 
+
+1041
+00:18:46,880 --> 00:18:48,710
+another 30 40%.
+we should not be them. Like we should
+
+1042
+00:18:48,710 --> 00:18:48,720
+we should not be them. Like we should
+ 
+
+1043
+00:18:48,720 --> 00:18:50,789
+we should not be them. Like we should
+sort of understand that these things
+
+1044
+00:18:50,789 --> 00:18:50,799
+sort of understand that these things
+ 
+
+1045
+00:18:50,799 --> 00:18:52,870
+sort of understand that these things
+have been getting exponentially better
+
+1046
+00:18:52,870 --> 00:18:52,880
+have been getting exponentially better
+ 
+
+1047
+00:18:52,880 --> 00:18:54,630
+have been getting exponentially better
+every every couple months for the last
+
+1048
+00:18:54,630 --> 00:18:54,640
+every every couple months for the last
+ 
+
+1049
+00:18:54,640 --> 00:18:56,789
+every every couple months for the last
+couple of years and it may be the case
+
+1050
+00:18:56,789 --> 00:18:56,799
+couple of years and it may be the case
+ 
+
+1051
+00:18:56,799 --> 00:18:59,270
+couple of years and it may be the case
+that things flatten out but probably not
+
+1052
+00:18:59,270 --> 00:18:59,280
+that things flatten out but probably not
+ 
+
+1053
+00:18:59,280 --> 00:19:01,029
+that things flatten out but probably not
+at least probably not for like the next
+
+1054
+00:19:01,029 --> 00:19:01,039
+at least probably not for like the next
+ 
+
+1055
+00:19:01,039 --> 00:19:02,789
+at least probably not for like the next
+couple of months. So like we should like
+
+1056
+00:19:02,789 --> 00:19:02,799
+couple of months. So like we should like
+ 
+
+1057
+00:19:02,799 --> 00:19:03,990
+couple of months. So like we should like
+and I think you know these next couple
+
+1058
+00:19:03,990 --> 00:19:04,000
+and I think you know these next couple
+ 
+
+1059
+00:19:04,000 --> 00:19:05,990
+and I think you know these next couple
+of months will really be some of the
+
+1060
+00:19:05,990 --> 00:19:06,000
+of months will really be some of the
+ 
+
+1061
+00:19:06,000 --> 00:19:07,270
+of months will really be some of the
+most important couple of months for
+
+1062
+00:19:07,270 --> 00:19:07,280
+most important couple of months for
+ 
+
+1063
+00:19:07,280 --> 00:19:08,950
+most important couple of months for
+security.
+
+1064
+00:19:08,950 --> 00:19:08,960
+security.
+ 
+
+1065
+00:19:08,960 --> 00:19:11,350
+security.
+Okay. Um I have two minutes left for a
+
+1066
+00:19:11,350 --> 00:19:11,360
+Okay. Um I have two minutes left for a
+ 
+
+1067
+00:19:11,360 --> 00:19:14,230
+Okay. Um I have two minutes left for a
+conclusion. Um,
+
+1068
+00:19:14,230 --> 00:19:14,240
+conclusion. Um,
+ 
+
+1069
+00:19:14,240 --> 00:19:15,510
+conclusion. Um,
+it's pretty clear to me that these
+
+1070
+00:19:15,510 --> 00:19:15,520
+it's pretty clear to me that these
+ 
+
+1071
+00:19:15,520 --> 00:19:16,710
+it's pretty clear to me that these
+current models are better vulnerability
+
+1072
+00:19:16,710 --> 00:19:16,720
+current models are better vulnerability
+ 
+
+1073
+00:19:16,720 --> 00:19:18,870
+current models are better vulnerability
+researchers than I am. Um, I used to do
+
+1074
+00:19:18,870 --> 00:19:18,880
+researchers than I am. Um, I used to do
+ 
+
+1075
+00:19:18,880 --> 00:19:20,789
+researchers than I am. Um, I used to do
+this, you know, somewhat professionally.
+
+1076
+00:19:20,789 --> 00:19:20,799
+this, you know, somewhat professionally.
+ 
+
+1077
+00:19:20,799 --> 00:19:24,310
+this, you know, somewhat professionally.
+Um, I have CVE to my name. Um, I do not
+
+1078
+00:19:24,310 --> 00:19:24,320
+Um, I have CVE to my name. Um, I do not
+ 
+
+1079
+00:19:24,320 --> 00:19:26,470
+Um, I have CVE to my name. Um, I do not
+have or Okay, now I do, but I did not
+
+1080
+00:19:26,470 --> 00:19:26,480
+have or Okay, now I do, but I did not
+ 
+
+1081
+00:19:26,480 --> 00:19:28,630
+have or Okay, now I do, but I did not
+have CVs in the Linux kernel. Like the
+
+1082
+00:19:28,630 --> 00:19:28,640
+have CVs in the Linux kernel. Like the
+ 
+
+1083
+00:19:28,640 --> 00:19:29,830
+have CVs in the Linux kernel. Like the
+these models are better vulnerability
+
+1084
+00:19:29,830 --> 00:19:29,840
+these models are better vulnerability
+ 
+
+1085
+00:19:29,840 --> 00:19:31,909
+these models are better vulnerability
+researchers than I am. It's probably not
+
+1086
+00:19:31,909 --> 00:19:31,919
+researchers than I am. It's probably not
+ 
+
+1087
+00:19:31,919 --> 00:19:33,830
+researchers than I am. It's probably not
+yet better than all of you, but at some
+
+1088
+00:19:33,830 --> 00:19:33,840
+yet better than all of you, but at some
+ 
+
+1089
+00:19:33,840 --> 00:19:36,070
+yet better than all of you, but at some
+point it will be like if we if we
+
+1090
+00:19:36,070 --> 00:19:36,080
+point it will be like if we if we
+ 
+
+1091
+00:19:36,080 --> 00:19:37,669
+point it will be like if we if we
+continue on this trend for even just
+
+1092
+00:19:37,669 --> 00:19:37,679
+continue on this trend for even just
+ 
+
+1093
+00:19:37,679 --> 00:19:39,590
+continue on this trend for even just
+another year, they'll probably be better
+
+1094
+00:19:39,590 --> 00:19:39,600
+another year, they'll probably be better
+ 
+
+1095
+00:19:39,600 --> 00:19:41,029
+another year, they'll probably be better
+vulnerability researchers than all of
+
+1096
+00:19:41,029 --> 00:19:41,039
+vulnerability researchers than all of
+ 
+
+1097
+00:19:41,039 --> 00:19:42,950
+vulnerability researchers than all of
+you. And I don't know what that world
+
+1098
+00:19:42,950 --> 00:19:42,960
+you. And I don't know what that world
+ 
+
+1099
+00:19:42,960 --> 00:19:44,950
+you. And I don't know what that world
+looks like. Like it's like quite scary
+
+1100
+00:19:44,950 --> 00:19:44,960
+looks like. Like it's like quite scary
+ 
+
+1101
+00:19:44,960 --> 00:19:46,870
+looks like. Like it's like quite scary
+to live in a world where you can
+
+1102
+00:19:46,870 --> 00:19:46,880
+to live in a world where you can
+ 
+
+1103
+00:19:46,880 --> 00:19:48,870
+to live in a world where you can
+automatically find bugs that like
+
+1104
+00:19:48,870 --> 00:19:48,880
+automatically find bugs that like
+ 
+
+1105
+00:19:48,880 --> 00:19:50,870
+automatically find bugs that like
+previously only like the top one or two
+
+1106
+00:19:50,870 --> 00:19:50,880
+previously only like the top one or two
+ 
+
+1107
+00:19:50,880 --> 00:19:52,150
+previously only like the top one or two
+like you know people in the world could
+
+1108
+00:19:52,150 --> 00:19:52,160
+like you know people in the world could
+ 
+
+1109
+00:19:52,160 --> 00:19:53,909
+like you know people in the world could
+have found.
+
+1110
+00:19:53,909 --> 00:19:53,919
+have found.
+ 
+
+1111
+00:19:53,919 --> 00:19:58,150
+have found.
+Um so maybe my call to action is help us
+
+1112
+00:19:58,150 --> 00:19:58,160
+Um so maybe my call to action is help us
+ 
+
+1113
+00:19:58,160 --> 00:20:00,870
+Um so maybe my call to action is help us
+make the future go well. We're going to
+
+1114
+00:20:00,870 --> 00:20:00,880
+make the future go well. We're going to
+ 
+
+1115
+00:20:00,880 --> 00:20:03,190
+make the future go well. We're going to
+need all the help that we can get. Um
+
+1116
+00:20:03,190 --> 00:20:03,200
+need all the help that we can get. Um
+ 
+
+1117
+00:20:03,200 --> 00:20:05,830
+need all the help that we can get. Um
+for our part at anthropic um there's
+
+1118
+00:20:05,830 --> 00:20:05,840
+for our part at anthropic um there's
+ 
+
+1119
+00:20:05,840 --> 00:20:07,909
+for our part at anthropic um there's
+cloud code security that is trying to do
+
+1120
+00:20:07,909 --> 00:20:07,919
+cloud code security that is trying to do
+ 
+
+1121
+00:20:07,919 --> 00:20:10,789
+cloud code security that is trying to do
+something to to find bugs. Um you heard
+
+1122
+00:20:10,789 --> 00:20:10,799
+something to to find bugs. Um you heard
+ 
+
+1123
+00:20:10,799 --> 00:20:14,070
+something to to find bugs. Um you heard
+earlier today from DeepMind um OpenAI
+
+1124
+00:20:14,070 --> 00:20:14,080
+earlier today from DeepMind um OpenAI
+ 
+
+1125
+00:20:14,080 --> 00:20:18,549
+earlier today from DeepMind um OpenAI
+has their um their Arvar project.
+
+1126
+00:20:18,549 --> 00:20:18,559
+has their um their Arvar project.
+ 
+
+1127
+00:20:18,559 --> 00:20:20,230
+has their um their Arvar project.
+Speaking not as an anthropic employee
+
+1128
+00:20:20,230 --> 00:20:20,240
+Speaking not as an anthropic employee
+ 
+
+1129
+00:20:20,240 --> 00:20:21,909
+Speaking not as an anthropic employee
+like I don't really care where you help
+
+1130
+00:20:21,909 --> 00:20:21,919
+like I don't really care where you help
+ 
+
+1131
+00:20:21,919 --> 00:20:24,470
+like I don't really care where you help
+just please help like you know it would
+
+1132
+00:20:24,470 --> 00:20:24,480
+just please help like you know it would
+ 
+
+1133
+00:20:24,480 --> 00:20:26,070
+just please help like you know it would
+be great if you would like to know help
+
+1134
+00:20:26,070 --> 00:20:26,080
+be great if you would like to know help
+ 
+
+1135
+00:20:26,080 --> 00:20:29,110
+be great if you would like to know help
+us anthropic too but like just the world
+
+1136
+00:20:29,110 --> 00:20:29,120
+us anthropic too but like just the world
+ 
+
+1137
+00:20:29,120 --> 00:20:30,710
+us anthropic too but like just the world
+will need a lot of people to be doing a
+
+1138
+00:20:30,710 --> 00:20:30,720
+will need a lot of people to be doing a
+ 
+
+1139
+00:20:30,720 --> 00:20:33,909
+will need a lot of people to be doing a
+lot of this work and it needs to happen
+
+1140
+00:20:33,909 --> 00:20:33,919
+lot of this work and it needs to happen
+ 
+
+1141
+00:20:33,919 --> 00:20:36,630
+lot of this work and it needs to happen
+soon like order months. I think like
+
+1142
+00:20:36,630 --> 00:20:36,640
+soon like order months. I think like
+ 
+
+1143
+00:20:36,640 --> 00:20:39,430
+soon like order months. I think like
+waiting a year is going to be too long.
+
+1144
+00:20:39,430 --> 00:20:39,440
+waiting a year is going to be too long.
+ 
+
+1145
+00:20:39,440 --> 00:20:41,430
+waiting a year is going to be too long.
+um we are going to have a huge number of
+
+1146
+00:20:41,430 --> 00:20:41,440
+um we are going to have a huge number of
+ 
+
+1147
+00:20:41,440 --> 00:20:44,710
+um we are going to have a huge number of
+bugs. I have so many bugs in the Linux
+
+1148
+00:20:44,710 --> 00:20:44,720
+bugs. I have so many bugs in the Linux
+ 
+
+1149
+00:20:44,720 --> 00:20:46,310
+bugs. I have so many bugs in the Linux
+kernel that I can't report because I
+
+1150
+00:20:46,310 --> 00:20:46,320
+kernel that I can't report because I
+ 
+
+1151
+00:20:46,320 --> 00:20:47,750
+kernel that I can't report because I
+haven't validated them yet. I'm not
+
+1152
+00:20:47,750 --> 00:20:47,760
+haven't validated them yet. I'm not
+ 
+
+1153
+00:20:47,760 --> 00:20:48,870
+haven't validated them yet. I'm not
+going to make that some open source
+
+1154
+00:20:48,870 --> 00:20:48,880
+going to make that some open source
+ 
+
+1155
+00:20:48,880 --> 00:20:50,470
+going to make that some open source
+developer validate bugs that I I haven't
+
+1156
+00:20:50,470 --> 00:20:50,480
+developer validate bugs that I I haven't
+ 
+
+1157
+00:20:50,480 --> 00:20:51,830
+developer validate bugs that I I haven't
+checked yet. Like I'm not going to send
+
+1158
+00:20:51,830 --> 00:20:51,840
+checked yet. Like I'm not going to send
+ 
+
+1159
+00:20:51,840 --> 00:20:53,669
+checked yet. Like I'm not going to send
+them, you know, potential slop, but this
+
+1160
+00:20:53,669 --> 00:20:53,679
+them, you know, potential slop, but this
+ 
+
+1161
+00:20:53,679 --> 00:20:56,310
+them, you know, potential slop, but this
+means that like I now have I don't know
+
+1162
+00:20:56,310 --> 00:20:56,320
+means that like I now have I don't know
+ 
+
+1163
+00:20:56,320 --> 00:20:57,750
+means that like I now have I don't know
+several hundred crashes that they
+
+1164
+00:20:57,750 --> 00:20:57,760
+several hundred crashes that they
+ 
+
+1165
+00:20:57,760 --> 00:20:59,350
+several hundred crashes that they
+haven't seen because I haven't had time
+
+1166
+00:20:59,350 --> 00:20:59,360
+haven't seen because I haven't had time
+ 
+
+1167
+00:20:59,360 --> 00:21:01,909
+haven't seen because I haven't had time
+to check them. um we need to find a way
+
+1168
+00:21:01,909 --> 00:21:01,919
+to check them. um we need to find a way
+ 
+
+1169
+00:21:01,919 --> 00:21:03,430
+to check them. um we need to find a way
+to fix this so that we can actually go
+
+1170
+00:21:03,430 --> 00:21:03,440
+to fix this so that we can actually go
+ 
+
+1171
+00:21:03,440 --> 00:21:05,430
+to fix this so that we can actually go
+through all this stuff because soon it's
+
+1172
+00:21:05,430 --> 00:21:05,440
+through all this stuff because soon it's
+ 
+
+1173
+00:21:05,440 --> 00:21:06,789
+through all this stuff because soon it's
+not just going to be me who has all of
+
+1174
+00:21:06,789 --> 00:21:06,799
+not just going to be me who has all of
+ 
+
+1175
+00:21:06,799 --> 00:21:07,990
+not just going to be me who has all of
+this but it's going to be anyone
+
+1176
+00:21:07,990 --> 00:21:08,000
+this but it's going to be anyone
+ 
+
+1177
+00:21:08,000 --> 00:21:10,710
+this but it's going to be anyone
+malicious in the world who wants. So
+
+1178
+00:21:10,710 --> 00:21:10,720
+malicious in the world who wants. So
+ 
+
+1179
+00:21:10,720 --> 00:21:13,430
+malicious in the world who wants. So
+really um yeah I'd encourage you to find
+
+1180
+00:21:13,430 --> 00:21:13,440
+really um yeah I'd encourage you to find
+ 
+
+1181
+00:21:13,440 --> 00:21:16,390
+really um yeah I'd encourage you to find
+a try and find a way to see if um you
+
+1182
+00:21:16,390 --> 00:21:16,400
+a try and find a way to see if um you
+ 
+
+1183
+00:21:16,400 --> 00:21:18,470
+a try and find a way to see if um you
+know some particular set of skills that
+
+1184
+00:21:18,470 --> 00:21:18,480
+know some particular set of skills that
+ 
+
+1185
+00:21:18,480 --> 00:21:20,149
+know some particular set of skills that
+you have could like help us make sure
+
+1186
+00:21:20,149 --> 00:21:20,159
+you have could like help us make sure
+ 
+
+1187
+00:21:20,159 --> 00:21:21,590
+you have could like help us make sure
+that things go well over the next couple
+
+1188
+00:21:21,590 --> 00:21:21,600
+that things go well over the next couple
+ 
+
+1189
+00:21:21,600 --> 00:21:22,789
+that things go well over the next couple
+of months and over the next couple of
+
+1190
+00:21:22,789 --> 00:21:22,799
+of months and over the next couple of
+ 
+
+1191
+00:21:22,799 --> 00:21:25,350
+of months and over the next couple of
+years because I am quite worried about
+
+1192
+00:21:25,350 --> 00:21:25,360
+years because I am quite worried about
+ 
+
+1193
+00:21:25,360 --> 00:21:27,669
+years because I am quite worried about
+how this direction is heading. Um and
+
+1194
+00:21:27,669 --> 00:21:27,679
+how this direction is heading. Um and
+ 
+
+1195
+00:21:27,679 --> 00:21:29,510
+how this direction is heading. Um and
+yeah, we need all the help we can get.
+
+1196
+00:21:29,510 --> 00:21:29,520
+yeah, we need all the help we can get.
+ 
+
+1197
+00:21:29,520 --> 00:21:40,310
+yeah, we need all the help we can get.
+Um, thank you.
+
+1198
+00:21:40,310 --> 00:21:40,320
+
+ 
+
+1199
+00:21:40,320 --> 00:21:42,870
+
+>> Um, while I wait for questions, I'll
+
+1200
+00:21:42,870 --> 00:21:42,880
+>> Um, while I wait for questions, I'll
+ 
+
+1201
+00:21:42,880 --> 00:21:44,310
+>> Um, while I wait for questions, I'll
+just leave this video playing in the
+
+1202
+00:21:44,310 --> 00:21:44,320
+just leave this video playing in the
+ 
+
+1203
+00:21:44,320 --> 00:21:45,830
+just leave this video playing in the
+background.
+
+1204
+00:21:45,830 --> 00:21:45,840
+background.
+ 
+
+1205
+00:21:45,840 --> 00:21:47,350
+background.
+>> What's what's what's what what should we
+
+1206
+00:21:47,350 --> 00:21:47,360
+>> What's what's what's what what should we
+ 
+
+1207
+00:21:47,360 --> 00:21:48,149
+>> What's what's what's what what should we
+be watching for?
+
+1208
+00:21:48,149 --> 00:21:48,159
+be watching for?
+ 
+
+1209
+00:21:48,159 --> 00:21:50,310
+be watching for?
+>> Uh, just just watch. It's fine. Um,
+
+1210
+00:21:50,310 --> 00:21:50,320
+>> Uh, just just watch. It's fine. Um,
+ 
+
+1211
+00:21:50,320 --> 00:21:51,830
+>> Uh, just just watch. It's fine. Um,
+let's take a question.
+
+1212
+00:21:51,830 --> 00:21:51,840
+let's take a question.
+ 
+
+1213
+00:21:51,840 --> 00:21:55,029
+let's take a question.
+>> That's hardly fair. Uh, let's Yeah, I'm
+
+1214
+00:21:55,029 --> 00:21:55,039
+>> That's hardly fair. Uh, let's Yeah, I'm
+ 
+
+1215
+00:21:55,039 --> 00:21:56,310
+>> That's hardly fair. Uh, let's Yeah, I'm
+sure there are questions. Let's uh let's
+
+1216
+00:21:56,310 --> 00:21:56,320
+sure there are questions. Let's uh let's
+ 
+
+1217
+00:21:56,320 --> 00:21:57,909
+sure there are questions. Let's uh let's
+take some. I'll take from over here
+
+1218
+00:21:57,909 --> 00:21:57,919
+take some. I'll take from over here
+ 
+
+1219
+00:21:57,919 --> 00:22:00,310
+take some. I'll take from over here
+first.
+
+1220
+00:22:00,310 --> 00:22:00,320
+first.
+ 
+
+1221
+00:22:00,320 --> 00:22:01,909
+first.
+Oh hello.
+
+1222
+00:22:01,909 --> 00:22:01,919
+Oh hello.
+ 
+
+1223
+00:22:01,919 --> 00:22:02,870
+Oh hello.
+>> Hey uh
+
+1224
+00:22:02,870 --> 00:22:02,880
+>> Hey uh
+ 
+
+1225
+00:22:02,880 --> 00:22:06,630
+>> Hey uh
+>> hi I'm Nabil from Palto Networks. So I
+
+1226
+00:22:06,630 --> 00:22:06,640
+>> hi I'm Nabil from Palto Networks. So I
+ 
+
+1227
+00:22:06,640 --> 00:22:09,350
+>> hi I'm Nabil from Palto Networks. So I
+I'm wondering like given the future
+
+1228
+00:22:09,350 --> 00:22:09,360
+I'm wondering like given the future
+ 
+
+1229
+00:22:09,360 --> 00:22:12,310
+I'm wondering like given the future
+where bugs will be found autonomously
+
+1230
+00:22:12,310 --> 00:22:12,320
+where bugs will be found autonomously
+ 
+
+1231
+00:22:12,320 --> 00:22:14,149
+where bugs will be found autonomously
+like the one we can't find as you
+
+1232
+00:22:14,149 --> 00:22:14,159
+like the one we can't find as you
+ 
+
+1233
+00:22:14,159 --> 00:22:17,029
+like the one we can't find as you
+mentioned is like since you guys have
+
+1234
+00:22:17,029 --> 00:22:17,039
+mentioned is like since you guys have
+ 
+
+1235
+00:22:17,039 --> 00:22:19,190
+mentioned is like since you guys have
+the visibility should we think about
+
+1236
+00:22:19,190 --> 00:22:19,200
+the visibility should we think about
+ 
+
+1237
+00:22:19,200 --> 00:22:21,190
+the visibility should we think about
+something like to identify the malicious
+
+1238
+00:22:21,190 --> 00:22:21,200
+something like to identify the malicious
+ 
+
+1239
+00:22:21,200 --> 00:22:24,149
+something like to identify the malicious
+intent because it would be impossible
+
+1240
+00:22:24,149 --> 00:22:24,159
+intent because it would be impossible
+ 
+
+1241
+00:22:24,159 --> 00:22:27,590
+intent because it would be impossible
+for us to fix all the zero day bugs in
+
+1242
+00:22:27,590 --> 00:22:27,600
+for us to fix all the zero day bugs in
+ 
+
+1243
+00:22:27,600 --> 00:22:29,830
+for us to fix all the zero day bugs in
+all the repos around the world. What's
+
+1244
+00:22:29,830 --> 00:22:29,840
+all the repos around the world. What's
+ 
+
+1245
+00:22:29,840 --> 00:22:31,430
+all the repos around the world. What's
+your thought because you guys have the
+
+1246
+00:22:31,430 --> 00:22:31,440
+your thought because you guys have the
+ 
+
+1247
+00:22:31,440 --> 00:22:34,230
+your thought because you guys have the
+control. What can we do in that regard?
+
+1248
+00:22:34,230 --> 00:22:34,240
+control. What can we do in that regard?
+ 
+
+1249
+00:22:34,240 --> 00:22:35,350
+control. What can we do in that regard?
+Thank you.
+
+1250
+00:22:35,350 --> 00:22:35,360
+Thank you.
+ 
+
+1251
+00:22:35,360 --> 00:22:37,990
+Thank you.
+Yeah. Um,
+
+1252
+00:22:37,990 --> 00:22:38,000
+Yeah. Um,
+ 
+
+1253
+00:22:38,000 --> 00:22:40,390
+Yeah. Um,
+yeah. So, identifying malicious intent
+
+1254
+00:22:40,390 --> 00:22:40,400
+yeah. So, identifying malicious intent
+ 
+
+1255
+00:22:40,400 --> 00:22:43,029
+yeah. So, identifying malicious intent
+is hard because security is dual use.
+
+1256
+00:22:43,029 --> 00:22:43,039
+is hard because security is dual use.
+ 
+
+1257
+00:22:43,039 --> 00:22:46,630
+is hard because security is dual use.
+Um, I want to allow people to use the
+
+1258
+00:22:46,630 --> 00:22:46,640
+Um, I want to allow people to use the
+ 
+
+1259
+00:22:46,640 --> 00:22:49,990
+Um, I want to allow people to use the
+models to find bugs to fix things.
+
+1260
+00:22:49,990 --> 00:22:50,000
+models to find bugs to fix things.
+ 
+
+1261
+00:22:50,000 --> 00:22:51,430
+models to find bugs to fix things.
+If they're the developer of the
+
+1262
+00:22:51,430 --> 00:22:51,440
+If they're the developer of the
+ 
+
+1263
+00:22:51,440 --> 00:22:54,070
+If they're the developer of the
+software, I would ideally not like to
+
+1264
+00:22:54,070 --> 00:22:54,080
+software, I would ideally not like to
+ 
+
+1265
+00:22:54,080 --> 00:22:56,230
+software, I would ideally not like to
+let someone use the software to go and
+
+1266
+00:22:56,230 --> 00:22:56,240
+let someone use the software to go and
+ 
+
+1267
+00:22:56,240 --> 00:22:58,549
+let someone use the software to go and
+exploit things. And for a very long time
+
+1268
+00:22:58,549 --> 00:22:58,559
+exploit things. And for a very long time
+ 
+
+1269
+00:22:58,559 --> 00:23:00,789
+exploit things. And for a very long time
+in security, like we've always
+
+1270
+00:23:00,789 --> 00:23:00,799
+in security, like we've always
+ 
+
+1271
+00:23:00,799 --> 00:23:02,310
+in security, like we've always
+understood that the dual use nature
+
+1272
+00:23:02,310 --> 00:23:02,320
+understood that the dual use nature
+ 
+
+1273
+00:23:02,320 --> 00:23:05,590
+understood that the dual use nature
+favored the defender, you know.
+
+1274
+00:23:05,590 --> 00:23:05,600
+favored the defender, you know.
+ 
+
+1275
+00:23:05,600 --> 00:23:07,110
+favored the defender, you know.
+pick any software that's that's that's
+
+1276
+00:23:07,110 --> 00:23:07,120
+pick any software that's that's that's
+ 
+
+1277
+00:23:07,120 --> 00:23:09,750
+pick any software that's that's that's
+that that exists. It generally favors
+
+1278
+00:23:09,750 --> 00:23:09,760
+that that exists. It generally favors
+ 
+
+1279
+00:23:09,760 --> 00:23:11,190
+that that exists. It generally favors
+the defender more than the attacker. I
+
+1280
+00:23:11,190 --> 00:23:11,200
+the defender more than the attacker. I
+ 
+
+1281
+00:23:11,200 --> 00:23:13,110
+the defender more than the attacker. I
+think this has been true and this has
+
+1282
+00:23:13,110 --> 00:23:13,120
+think this has been true and this has
+ 
+
+1283
+00:23:13,120 --> 00:23:14,549
+think this has been true and this has
+been the way that we've been operating
+
+1284
+00:23:14,549 --> 00:23:14,559
+been the way that we've been operating
+ 
+
+1285
+00:23:14,559 --> 00:23:17,990
+been the way that we've been operating
+in the past. Um it's unclear if this
+
+1286
+00:23:17,990 --> 00:23:18,000
+in the past. Um it's unclear if this
+ 
+
+1287
+00:23:18,000 --> 00:23:19,190
+in the past. Um it's unclear if this
+will always be true in the future
+
+1288
+00:23:19,190 --> 00:23:19,200
+will always be true in the future
+ 
+
+1289
+00:23:19,200 --> 00:23:20,630
+will always be true in the future
+especially for language models as we go
+
+1290
+00:23:20,630 --> 00:23:20,640
+especially for language models as we go
+ 
+
+1291
+00:23:20,640 --> 00:23:23,830
+especially for language models as we go
+forwards. Um, and so I do want to make
+
+1292
+00:23:23,830 --> 00:23:23,840
+forwards. Um, and so I do want to make
+ 
+
+1293
+00:23:23,840 --> 00:23:25,510
+forwards. Um, and so I do want to make
+sure that we c people can't use these
+
+1294
+00:23:25,510 --> 00:23:25,520
+sure that we c people can't use these
+ 
+
+1295
+00:23:25,520 --> 00:23:27,510
+sure that we c people can't use these
+things for harm. And indeed, like, you
+
+1296
+00:23:27,510 --> 00:23:27,520
+things for harm. And indeed, like, you
+ 
+
+1297
+00:23:27,520 --> 00:23:29,430
+things for harm. And indeed, like, you
+know, anthropics models and opens models
+
+1298
+00:23:29,430 --> 00:23:29,440
+know, anthropics models and opens models
+ 
+
+1299
+00:23:29,440 --> 00:23:31,830
+know, anthropics models and opens models
+and deep minds models um will generally
+
+1300
+00:23:31,830 --> 00:23:31,840
+and deep minds models um will generally
+ 
+
+1301
+00:23:31,840 --> 00:23:33,990
+and deep minds models um will generally
+refuse if you're like very explicitly
+
+1302
+00:23:33,990 --> 00:23:34,000
+refuse if you're like very explicitly
+ 
+
+1303
+00:23:34,000 --> 00:23:36,470
+refuse if you're like very explicitly
+doing nasty things. Um, clearly they
+
+1304
+00:23:36,470 --> 00:23:36,480
+doing nasty things. Um, clearly they
+ 
+
+1305
+00:23:36,480 --> 00:23:37,750
+doing nasty things. Um, clearly they
+need to get better if they're going to
+
+1306
+00:23:37,750 --> 00:23:37,760
+need to get better if they're going to
+ 
+
+1307
+00:23:37,760 --> 00:23:40,710
+need to get better if they're going to
+be able to refuse everything. But, um,
+
+1308
+00:23:40,710 --> 00:23:40,720
+be able to refuse everything. But, um,
+ 
+
+1309
+00:23:40,720 --> 00:23:43,110
+be able to refuse everything. But, um,
+you know,
+
+1310
+00:23:43,110 --> 00:23:43,120
+you know,
+ 
+
+1311
+00:23:43,120 --> 00:23:45,510
+you know,
+I don't want to like not let people be
+
+1312
+00:23:45,510 --> 00:23:45,520
+I don't want to like not let people be
+ 
+
+1313
+00:23:45,520 --> 00:23:49,110
+I don't want to like not let people be
+honest defenders. Um because
+
+1314
+00:23:49,110 --> 00:23:49,120
+honest defenders. Um because
+ 
+
+1315
+00:23:49,120 --> 00:23:52,310
+honest defenders. Um because
+okay so the way I think about this is
+
+1316
+00:23:52,310 --> 00:23:52,320
+okay so the way I think about this is
+ 
+
+1317
+00:23:52,320 --> 00:23:54,230
+okay so the way I think about this is
+if I put a safeguard in place that's
+
+1318
+00:23:54,230 --> 00:23:54,240
+if I put a safeguard in place that's
+ 
+
+1319
+00:23:54,240 --> 00:23:56,310
+if I put a safeguard in place that's
+very very weak it will only stop the
+
+1320
+00:23:56,310 --> 00:23:56,320
+very very weak it will only stop the
+ 
+
+1321
+00:23:56,320 --> 00:23:58,310
+very very weak it will only stop the
+good people from using the software the
+
+1322
+00:23:58,310 --> 00:23:58,320
+good people from using the software the
+ 
+
+1323
+00:23:58,320 --> 00:23:59,590
+good people from using the software the
+bad people are just going to jailbreak
+
+1324
+00:23:59,590 --> 00:23:59,600
+bad people are just going to jailbreak
+ 
+
+1325
+00:23:59,600 --> 00:24:00,630
+bad people are just going to jailbreak
+the model and they're going to still
+
+1326
+00:24:00,630 --> 00:24:00,640
+the model and they're going to still
+ 
+
+1327
+00:24:00,640 --> 00:24:03,110
+the model and they're going to still
+attack it anyway and so I but the good
+
+1328
+00:24:03,110 --> 00:24:03,120
+attack it anyway and so I but the good
+ 
+
+1329
+00:24:03,120 --> 00:24:03,990
+attack it anyway and so I but the good
+people won't they're not going to
+
+1330
+00:24:03,990 --> 00:24:04,000
+people won't they're not going to
+ 
+
+1331
+00:24:04,000 --> 00:24:05,430
+people won't they're not going to
+circumvent the safeguards and so I want
+
+1332
+00:24:05,430 --> 00:24:05,440
+circumvent the safeguards and so I want
+ 
+
+1333
+00:24:05,440 --> 00:24:06,549
+circumvent the safeguards and so I want
+to make sure the good people have access
+
+1334
+00:24:06,549 --> 00:24:06,559
+to make sure the good people have access
+ 
+
+1335
+00:24:06,559 --> 00:24:08,710
+to make sure the good people have access
+to the software but if I put two strong
+
+1336
+00:24:08,710 --> 00:24:08,720
+to the software but if I put two strong
+ 
+
+1337
+00:24:08,720 --> 00:24:09,990
+to the software but if I put two strong
+safeguards in place then they don't have
+
+1338
+00:24:09,990 --> 00:24:10,000
+safeguards in place then they don't have
+ 
+
+1339
+00:24:10,000 --> 00:24:11,430
+safeguards in place then they don't have
+access to the software and so I think
+
+1340
+00:24:11,430 --> 00:24:11,440
+access to the software and so I think
+ 
+
+1341
+00:24:11,440 --> 00:24:13,269
+access to the software and so I think
+it's like just it's it's very nuanced
+
+1342
+00:24:13,269 --> 00:24:13,279
+it's like just it's it's very nuanced
+ 
+
+1343
+00:24:13,279 --> 00:24:15,510
+it's like just it's it's very nuanced
+how you want to do this and everyone is
+
+1344
+00:24:15,510 --> 00:24:15,520
+how you want to do this and everyone is
+ 
+
+1345
+00:24:15,520 --> 00:24:16,950
+how you want to do this and everyone is
+like trying their best to find the right
+
+1346
+00:24:16,950 --> 00:24:16,960
+like trying their best to find the right
+ 
+
+1347
+00:24:16,960 --> 00:24:18,950
+like trying their best to find the right
+balance and I think we're doing an okay
+
+1348
+00:24:18,950 --> 00:24:18,960
+balance and I think we're doing an okay
+ 
+
+1349
+00:24:18,960 --> 00:24:21,909
+balance and I think we're doing an okay
+job but um you know I think this is one
+
+1350
+00:24:21,909 --> 00:24:21,919
+job but um you know I think this is one
+ 
+
+1351
+00:24:21,919 --> 00:24:23,909
+job but um you know I think this is one
+of the areas where we need a lot more
+
+1352
+00:24:23,909 --> 00:24:23,919
+of the areas where we need a lot more
+ 
+
+1353
+00:24:23,919 --> 00:24:25,350
+of the areas where we need a lot more
+help to figure out how to do this
+
+1354
+00:24:25,350 --> 00:24:25,360
+help to figure out how to do this
+ 
+
+1355
+00:24:25,360 --> 00:24:26,710
+help to figure out how to do this
+better.
+
+1356
+00:24:26,710 --> 00:24:26,720
+better.
+ 
+
+1357
+00:24:26,720 --> 00:24:29,909
+better.
+>> Hi uh Michael Seagull from MIT just
+
+1358
+00:24:29,909 --> 00:24:29,919
+>> Hi uh Michael Seagull from MIT just
+ 
+
+1359
+00:24:29,919 --> 00:24:32,950
+>> Hi uh Michael Seagull from MIT just
+wanted to ask um comment on both the
+
+1360
+00:24:32,950 --> 00:24:32,960
+wanted to ask um comment on both the
+ 
+
+1361
+00:24:32,960 --> 00:24:37,110
+wanted to ask um comment on both the
+speed that is as this becomes faster uh
+
+1362
+00:24:37,110 --> 00:24:37,120
+speed that is as this becomes faster uh
+ 
+
+1363
+00:24:37,120 --> 00:24:39,830
+speed that is as this becomes faster uh
+the bad guys will have things faster and
+
+1364
+00:24:39,830 --> 00:24:39,840
+the bad guys will have things faster and
+ 
+
+1365
+00:24:39,840 --> 00:24:41,510
+the bad guys will have things faster and
+they'll also be concerned that they will
+
+1366
+00:24:41,510 --> 00:24:41,520
+they'll also be concerned that they will
+ 
+
+1367
+00:24:41,520 --> 00:24:44,230
+they'll also be concerned that they will
+be fixed faster. So for a period of
+
+1368
+00:24:44,230 --> 00:24:44,240
+be fixed faster. So for a period of
+ 
+
+1369
+00:24:44,240 --> 00:24:45,430
+be fixed faster. So for a period of
+time, we're going to be dealing a lot
+
+1370
+00:24:45,430 --> 00:24:45,440
+time, we're going to be dealing a lot
+ 
+
+1371
+00:24:45,440 --> 00:24:48,549
+time, we're going to be dealing a lot
+with changes in speed. And then what's
+
+1372
+00:24:48,549 --> 00:24:48,559
+with changes in speed. And then what's
+ 
+
+1373
+00:24:48,559 --> 00:24:51,269
+with changes in speed. And then what's
+sort of the endgame? Do we there's been
+
+1374
+00:24:51,269 --> 00:24:51,279
+sort of the endgame? Do we there's been
+ 
+
+1375
+00:24:51,279 --> 00:24:53,269
+sort of the endgame? Do we there's been
+a long-term argument about whether
+
+1376
+00:24:53,269 --> 00:24:53,279
+a long-term argument about whether
+ 
+
+1377
+00:24:53,279 --> 00:24:56,070
+a long-term argument about whether
+vulnerabilities are dense or sparse? And
+
+1378
+00:24:56,070 --> 00:24:56,080
+vulnerabilities are dense or sparse? And
+ 
+
+1379
+00:24:56,080 --> 00:24:58,070
+vulnerabilities are dense or sparse? And
+ultimately, if we get this good at
+
+1380
+00:24:58,070 --> 00:24:58,080
+ultimately, if we get this good at
+ 
+
+1381
+00:24:58,080 --> 00:25:00,549
+ultimately, if we get this good at
+things, do we really get down to really
+
+1382
+00:25:00,549 --> 00:25:00,559
+things, do we really get down to really
+ 
+
+1383
+00:25:00,559 --> 00:25:03,830
+things, do we really get down to really
+almost no vulnerabilities?
+
+1384
+00:25:03,830 --> 00:25:03,840
+almost no vulnerabilities?
+ 
+
+1385
+00:25:03,840 --> 00:25:04,789
+almost no vulnerabilities?
+>> Two.
+
+1386
+00:25:04,789 --> 00:25:04,799
+>> Two.
+ 
+
+1387
+00:25:04,799 --> 00:25:07,750
+>> Two.
+>> Um, okay, great question. Um
+
+1388
+00:25:07,750 --> 00:25:07,760
+>> Um, okay, great question. Um
+ 
+
+1389
+00:25:07,760 --> 00:25:09,590
+>> Um, okay, great question. Um
+I tend to think and many people tend to
+
+1390
+00:25:09,590 --> 00:25:09,600
+I tend to think and many people tend to
+ 
+
+1391
+00:25:09,600 --> 00:25:11,430
+I tend to think and many people tend to
+think that in the long term probably the
+
+1392
+00:25:11,430 --> 00:25:11,440
+think that in the long term probably the
+ 
+
+1393
+00:25:11,440 --> 00:25:13,750
+think that in the long term probably the
+defenders win but like you know in the
+
+1394
+00:25:13,750 --> 00:25:13,760
+defenders win but like you know in the
+ 
+
+1395
+00:25:13,760 --> 00:25:15,350
+defenders win but like you know in the
+limit I'll just like rewrite all the
+
+1396
+00:25:15,350 --> 00:25:15,360
+limit I'll just like rewrite all the
+ 
+
+1397
+00:25:15,360 --> 00:25:17,350
+limit I'll just like rewrite all the
+software in Rust and I just like get rid
+
+1398
+00:25:17,350 --> 00:25:17,360
+software in Rust and I just like get rid
+ 
+
+1399
+00:25:17,360 --> 00:25:19,350
+software in Rust and I just like get rid
+of memory corruption vulnerabilities and
+
+1400
+00:25:19,350 --> 00:25:19,360
+of memory corruption vulnerabilities and
+ 
+
+1401
+00:25:19,360 --> 00:25:21,110
+of memory corruption vulnerabilities and
+in the limit I'll like you know formally
+
+1402
+00:25:21,110 --> 00:25:21,120
+in the limit I'll like you know formally
+ 
+
+1403
+00:25:21,120 --> 00:25:23,269
+in the limit I'll like you know formally
+verify all of my protocols you know TLS
+
+1404
+00:25:23,269 --> 00:25:23,279
+verify all of my protocols you know TLS
+ 
+
+1405
+00:25:23,279 --> 00:25:25,430
+verify all of my protocols you know TLS
+is proved now to be safe under like you
+
+1406
+00:25:25,430 --> 00:25:25,440
+is proved now to be safe under like you
+ 
+
+1407
+00:25:25,440 --> 00:25:27,350
+is proved now to be safe under like you
+know various assumptions like I'll prove
+
+1408
+00:25:27,350 --> 00:25:27,360
+know various assumptions like I'll prove
+ 
+
+1409
+00:25:27,360 --> 00:25:28,870
+know various assumptions like I'll prove
+everything and like in the limit like
+
+1410
+00:25:28,870 --> 00:25:28,880
+everything and like in the limit like
+ 
+
+1411
+00:25:28,880 --> 00:25:31,269
+everything and like in the limit like
+this is good um but like in the
+
+1412
+00:25:31,269 --> 00:25:31,279
+this is good um but like in the
+ 
+
+1413
+00:25:31,279 --> 00:25:33,029
+this is good um but like in the
+transitionary period between now and
+
+1414
+00:25:33,029 --> 00:25:33,039
+transitionary period between now and
+ 
+
+1415
+00:25:33,039 --> 00:25:35,669
+transitionary period between now and
+then things probably are very bad And
+
+1416
+00:25:35,669 --> 00:25:35,679
+then things probably are very bad And
+ 
+
+1417
+00:25:35,679 --> 00:25:37,830
+then things probably are very bad And
+like this is I think why I particularly
+
+1418
+00:25:37,830 --> 00:25:37,840
+like this is I think why I particularly
+ 
+
+1419
+00:25:37,840 --> 00:25:40,710
+like this is I think why I particularly
+want people to help like immediately is
+
+1420
+00:25:40,710 --> 00:25:40,720
+want people to help like immediately is
+ 
+
+1421
+00:25:40,720 --> 00:25:42,549
+want people to help like immediately is
+because the transitionary period is
+
+1422
+00:25:42,549 --> 00:25:42,559
+because the transitionary period is
+ 
+
+1423
+00:25:42,559 --> 00:25:44,310
+because the transitionary period is
+where I'm most worried and like we are
+
+1424
+00:25:44,310 --> 00:25:44,320
+where I'm most worried and like we are
+ 
+
+1425
+00:25:44,320 --> 00:25:46,390
+where I'm most worried and like we are
+in the transitionary period now. And so
+
+1426
+00:25:46,390 --> 00:25:46,400
+in the transitionary period now. And so
+ 
+
+1427
+00:25:46,400 --> 00:25:47,990
+in the transitionary period now. And so
+I think like yeah we need quite a lot of
+
+1428
+00:25:47,990 --> 00:25:48,000
+I think like yeah we need quite a lot of
+ 
+
+1429
+00:25:48,000 --> 00:25:50,310
+I think like yeah we need quite a lot of
+help making sure that even if things
+
+1430
+00:25:50,310 --> 00:25:50,320
+help making sure that even if things
+ 
+
+1431
+00:25:50,320 --> 00:25:53,029
+help making sure that even if things
+will go well in the future um that the
+
+1432
+00:25:53,029 --> 00:25:53,039
+will go well in the future um that the
+ 
+
+1433
+00:25:53,039 --> 00:25:56,789
+will go well in the future um that the
+things will be uh at least not bad now
+
+1434
+00:25:56,789 --> 00:25:56,799
+things will be uh at least not bad now
+ 
+
+1435
+00:25:56,799 --> 00:25:58,310
+things will be uh at least not bad now
+um you know I think the other analogy
+
+1436
+00:25:58,310 --> 00:25:58,320
+um you know I think the other analogy
+ 
+
+1437
+00:25:58,320 --> 00:26:00,230
+um you know I think the other analogy
+people like to give is you know the
+
+1438
+00:26:00,230 --> 00:26:00,240
+people like to give is you know the
+ 
+
+1439
+00:26:00,240 --> 00:26:02,789
+people like to give is you know the
+industrial revolution um all else equal
+
+1440
+00:26:02,789 --> 00:26:02,799
+industrial revolution um all else equal
+ 
+
+1441
+00:26:02,799 --> 00:26:04,630
+industrial revolution um all else equal
+was a good thing but for the people who
+
+1442
+00:26:04,630 --> 00:26:04,640
+was a good thing but for the people who
+ 
+
+1443
+00:26:04,640 --> 00:26:06,630
+was a good thing but for the people who
+were living through it it was like kind
+
+1444
+00:26:06,630 --> 00:26:06,640
+were living through it it was like kind
+ 
+
+1445
+00:26:06,640 --> 00:26:09,909
+were living through it it was like kind
+of hard. Um we sort of like want to make
+
+1446
+00:26:09,909 --> 00:26:09,919
+of hard. Um we sort of like want to make
+ 
+
+1447
+00:26:09,919 --> 00:26:12,149
+of hard. Um we sort of like want to make
+things go well um you know for the
+
+1448
+00:26:12,149 --> 00:26:12,159
+things go well um you know for the
+ 
+
+1449
+00:26:12,159 --> 00:26:14,070
+things go well um you know for the
+people who are living through the thing
+
+1450
+00:26:14,070 --> 00:26:14,080
+people who are living through the thing
+ 
+
+1451
+00:26:14,080 --> 00:26:16,470
+people who are living through the thing
+um but not uh you know but still like
+
+1452
+00:26:16,470 --> 00:26:16,480
+um but not uh you know but still like
+ 
+
+1453
+00:26:16,480 --> 00:26:19,350
+um but not uh you know but still like
+get us to the nice end state um and just
+
+1454
+00:26:19,350 --> 00:26:19,360
+get us to the nice end state um and just
+ 
+
+1455
+00:26:19,360 --> 00:26:21,110
+get us to the nice end state um and just
+yeah making that happen is going to be
+
+1456
+00:26:21,110 --> 00:26:21,120
+yeah making that happen is going to be
+ 
+
+1457
+00:26:21,120 --> 00:26:26,039
+yeah making that happen is going to be
+yeah challenging. Yeah. Thank you.
+

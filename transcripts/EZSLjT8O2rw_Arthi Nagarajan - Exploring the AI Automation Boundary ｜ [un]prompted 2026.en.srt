@@ -1,0 +1,6015 @@
+1
+00:00:04,960 --> 00:00:08,390
+
+All right. Okay. So, I'm going to try to
+
+2
+00:00:08,390 --> 00:00:08,400
+All right. Okay. So, I'm going to try to
+ 
+
+3
+00:00:08,400 --> 00:00:09,990
+All right. Okay. So, I'm going to try to
+keep you all engaged for the next 20
+
+4
+00:00:09,990 --> 00:00:10,000
+keep you all engaged for the next 20
+ 
+
+5
+00:00:10,000 --> 00:00:12,150
+keep you all engaged for the next 20
+minutes. I know it's been a long day,
+
+6
+00:00:12,150 --> 00:00:12,160
+minutes. I know it's been a long day,
+ 
+
+7
+00:00:12,160 --> 00:00:13,910
+minutes. I know it's been a long day,
+but um in this session, I'm going to be
+
+8
+00:00:13,910 --> 00:00:13,920
+but um in this session, I'm going to be
+ 
+
+9
+00:00:13,920 --> 00:00:16,150
+but um in this session, I'm going to be
+talking about exploring the AI
+
+10
+00:00:16,150 --> 00:00:16,160
+talking about exploring the AI
+ 
+
+11
+00:00:16,160 --> 00:00:19,990
+talking about exploring the AI
+automation boundary for threat hunting.
+
+12
+00:00:19,990 --> 00:00:20,000
+automation boundary for threat hunting.
+ 
+
+13
+00:00:20,000 --> 00:00:22,070
+automation boundary for threat hunting.
+My name is Arthy Nagarajin. I am a
+
+14
+00:00:22,070 --> 00:00:22,080
+My name is Arthy Nagarajin. I am a
+ 
+
+15
+00:00:22,080 --> 00:00:24,630
+My name is Arthy Nagarajin. I am a
+software engineer at Data Dog. I work
+
+16
+00:00:24,630 --> 00:00:24,640
+software engineer at Data Dog. I work
+ 
+
+17
+00:00:24,640 --> 00:00:26,230
+software engineer at Data Dog. I work
+closely with internal threat
+
+18
+00:00:26,230 --> 00:00:26,240
+closely with internal threat
+ 
+
+19
+00:00:26,240 --> 00:00:28,230
+closely with internal threat
+intelligence and detection teams to
+
+20
+00:00:28,230 --> 00:00:28,240
+intelligence and detection teams to
+ 
+
+21
+00:00:28,240 --> 00:00:30,150
+intelligence and detection teams to
+productionize and scale up their
+
+22
+00:00:30,150 --> 00:00:30,160
+productionize and scale up their
+ 
+
+23
+00:00:30,160 --> 00:00:32,470
+productionize and scale up their
+security processes.
+
+24
+00:00:32,470 --> 00:00:32,480
+security processes.
+ 
+
+25
+00:00:32,480 --> 00:00:34,549
+security processes.
+Over the past six to nine months, we've
+
+26
+00:00:34,549 --> 00:00:34,559
+Over the past six to nine months, we've
+ 
+
+27
+00:00:34,559 --> 00:00:36,630
+Over the past six to nine months, we've
+been developing an AI powered threat
+
+28
+00:00:36,630 --> 00:00:36,640
+been developing an AI powered threat
+ 
+
+29
+00:00:36,640 --> 00:00:38,950
+been developing an AI powered threat
+hunting tool called the hunting copilot.
+
+30
+00:00:38,950 --> 00:00:38,960
+hunting tool called the hunting copilot.
+ 
+
+31
+00:00:38,960 --> 00:00:40,470
+hunting tool called the hunting copilot.
+I'll share the lessons we learned along
+
+32
+00:00:40,470 --> 00:00:40,480
+I'll share the lessons we learned along
+ 
+
+33
+00:00:40,480 --> 00:00:43,110
+I'll share the lessons we learned along
+the way and how our understanding of the
+
+34
+00:00:43,110 --> 00:00:43,120
+the way and how our understanding of the
+ 
+
+35
+00:00:43,120 --> 00:00:45,430
+the way and how our understanding of the
+automation boundary for AI in threat
+
+36
+00:00:45,430 --> 00:00:45,440
+automation boundary for AI in threat
+ 
+
+37
+00:00:45,440 --> 00:00:48,950
+automation boundary for AI in threat
+hunting evolved through real world use.
+
+38
+00:00:48,950 --> 00:00:48,960
+hunting evolved through real world use.
+ 
+
+39
+00:00:48,960 --> 00:00:52,310
+hunting evolved through real world use.
+Our goal is to equip our interning
+
+40
+00:00:52,310 --> 00:00:52,320
+Our goal is to equip our interning
+ 
+
+41
+00:00:52,320 --> 00:00:54,229
+Our goal is to equip our interning
+internal threat hunting teams with tools
+
+42
+00:00:54,229 --> 00:00:54,239
+internal threat hunting teams with tools
+ 
+
+43
+00:00:54,239 --> 00:00:56,389
+internal threat hunting teams with tools
+to accelerate their hunts. As a
+
+44
+00:00:56,389 --> 00:00:56,399
+to accelerate their hunts. As a
+ 
+
+45
+00:00:56,399 --> 00:00:57,910
+to accelerate their hunts. As a
+developer, there are two questions I
+
+46
+00:00:57,910 --> 00:00:57,920
+developer, there are two questions I
+ 
+
+47
+00:00:57,920 --> 00:00:59,590
+developer, there are two questions I
+needed to answer. What should we
+
+48
+00:00:59,590 --> 00:00:59,600
+needed to answer. What should we
+ 
+
+49
+00:00:59,600 --> 00:01:02,470
+needed to answer. What should we
+automate and how should we automate it?
+
+50
+00:01:02,470 --> 00:01:02,480
+automate and how should we automate it?
+ 
+
+51
+00:01:02,480 --> 00:01:04,310
+automate and how should we automate it?
+Threat hunting is reminiscent of trying
+
+52
+00:01:04,310 --> 00:01:04,320
+Threat hunting is reminiscent of trying
+ 
+
+53
+00:01:04,320 --> 00:01:06,789
+Threat hunting is reminiscent of trying
+to find a needle in a haststack. A
+
+54
+00:01:06,789 --> 00:01:06,799
+to find a needle in a haststack. A
+ 
+
+55
+00:01:06,799 --> 00:01:09,190
+to find a needle in a haststack. A
+magnitude of data that looks normal to
+
+56
+00:01:09,190 --> 00:01:09,200
+magnitude of data that looks normal to
+ 
+
+57
+00:01:09,200 --> 00:01:11,030
+magnitude of data that looks normal to
+the untrained eye, but the attack is
+
+58
+00:01:11,030 --> 00:01:11,040
+the untrained eye, but the attack is
+ 
+
+59
+00:01:11,040 --> 00:01:13,510
+the untrained eye, but the attack is
+written in between the lines. A data dog
+
+60
+00:01:13,510 --> 00:01:13,520
+written in between the lines. A data dog
+ 
+
+61
+00:01:13,520 --> 00:01:15,590
+written in between the lines. A data dog
+hunter searched through a massive volume
+
+62
+00:01:15,590 --> 00:01:15,600
+hunter searched through a massive volume
+ 
+
+63
+00:01:15,600 --> 00:01:18,070
+hunter searched through a massive volume
+of logs from many different sources with
+
+64
+00:01:18,070 --> 00:01:18,080
+of logs from many different sources with
+ 
+
+65
+00:01:18,080 --> 00:01:20,870
+of logs from many different sources with
+varying schemas. It's really tedious to
+
+66
+00:01:20,870 --> 00:01:20,880
+varying schemas. It's really tedious to
+ 
+
+67
+00:01:20,880 --> 00:01:22,310
+varying schemas. It's really tedious to
+figure out which queries will surface
+
+68
+00:01:22,310 --> 00:01:22,320
+figure out which queries will surface
+ 
+
+69
+00:01:22,320 --> 00:01:24,630
+figure out which queries will surface
+the antenna data. And these queries are
+
+70
+00:01:24,630 --> 00:01:24,640
+the antenna data. And these queries are
+ 
+
+71
+00:01:24,640 --> 00:01:26,230
+the antenna data. And these queries are
+really important because they eventually
+
+72
+00:01:26,230 --> 00:01:26,240
+really important because they eventually
+ 
+
+73
+00:01:26,240 --> 00:01:29,429
+really important because they eventually
+become detection rules.
+
+74
+00:01:29,429 --> 00:01:29,439
+become detection rules.
+ 
+
+75
+00:01:29,439 --> 00:01:31,910
+become detection rules.
+That's why we mainly decided to automate
+
+76
+00:01:31,910 --> 00:01:31,920
+That's why we mainly decided to automate
+ 
+
+77
+00:01:31,920 --> 00:01:33,910
+That's why we mainly decided to automate
+query generation. Since log data is
+
+78
+00:01:33,910 --> 00:01:33,920
+query generation. Since log data is
+ 
+
+79
+00:01:33,920 --> 00:01:35,429
+query generation. Since log data is
+represented as text, it seemed like an
+
+80
+00:01:35,429 --> 00:01:35,439
+represented as text, it seemed like an
+ 
+
+81
+00:01:35,439 --> 00:01:39,429
+represented as text, it seemed like an
+obvious use case for LLMs.
+
+82
+00:01:39,429 --> 00:01:39,439
+obvious use case for LLMs.
+ 
+
+83
+00:01:39,439 --> 00:01:41,270
+obvious use case for LLMs.
+This was our first question. Are modern
+
+84
+00:01:41,270 --> 00:01:41,280
+This was our first question. Are modern
+ 
+
+85
+00:01:41,280 --> 00:01:43,030
+This was our first question. Are modern
+LLMs good at threat hunting out of the
+
+86
+00:01:43,030 --> 00:01:43,040
+LLMs good at threat hunting out of the
+ 
+
+87
+00:01:43,040 --> 00:01:45,510
+LLMs good at threat hunting out of the
+box? If this is true, my job would be
+
+88
+00:01:45,510 --> 00:01:45,520
+box? If this is true, my job would be
+ 
+
+89
+00:01:45,520 --> 00:01:48,310
+box? If this is true, my job would be
+super easy. And we started really
+
+90
+00:01:48,310 --> 00:01:48,320
+super easy. And we started really
+ 
+
+91
+00:01:48,320 --> 00:01:52,710
+super easy. And we started really
+simple. We used OpenAI's GPT4.1 model in
+
+92
+00:01:52,710 --> 00:01:52,720
+simple. We used OpenAI's GPT4.1 model in
+ 
+
+93
+00:01:52,720 --> 00:01:55,030
+simple. We used OpenAI's GPT4.1 model in
+a single agent, equipped it with web
+
+94
+00:01:55,030 --> 00:01:55,040
+a single agent, equipped it with web
+ 
+
+95
+00:01:55,040 --> 00:01:57,350
+a single agent, equipped it with web
+search capabilities and the AWS
+
+96
+00:01:57,350 --> 00:01:57,360
+search capabilities and the AWS
+ 
+
+97
+00:01:57,360 --> 00:01:59,590
+search capabilities and the AWS
+knowledge MCP for searching cloud trail
+
+98
+00:01:59,590 --> 00:01:59,600
+knowledge MCP for searching cloud trail
+ 
+
+99
+00:01:59,600 --> 00:02:01,590
+knowledge MCP for searching cloud trail
+schema documentation.
+
+100
+00:02:01,590 --> 00:02:01,600
+schema documentation.
+ 
+
+101
+00:02:01,600 --> 00:02:03,590
+schema documentation.
+In the system prompt, we linked the data
+
+102
+00:02:03,590 --> 00:02:03,600
+In the system prompt, we linked the data
+ 
+
+103
+00:02:03,600 --> 00:02:05,749
+In the system prompt, we linked the data
+dog syntax documentation and provided
+
+104
+00:02:05,749 --> 00:02:05,759
+dog syntax documentation and provided
+ 
+
+105
+00:02:05,759 --> 00:02:07,990
+dog syntax documentation and provided
+some threat hunting hypothesis to query
+
+106
+00:02:07,990 --> 00:02:08,000
+some threat hunting hypothesis to query
+ 
+
+107
+00:02:08,000 --> 00:02:09,589
+some threat hunting hypothesis to query
+examples and just said, "Hey, you're a
+
+108
+00:02:09,589 --> 00:02:09,599
+examples and just said, "Hey, you're a
+ 
+
+109
+00:02:09,599 --> 00:02:13,110
+examples and just said, "Hey, you're a
+threat hunting agent. Do your thing."
+
+110
+00:02:13,110 --> 00:02:13,120
+threat hunting agent. Do your thing."
+ 
+
+111
+00:02:13,120 --> 00:02:16,390
+threat hunting agent. Do your thing."
+The results were okay. Given a broad
+
+112
+00:02:16,390 --> 00:02:16,400
+The results were okay. Given a broad
+ 
+
+113
+00:02:16,400 --> 00:02:18,070
+The results were okay. Given a broad
+threat hunting prompt, the agent would
+
+114
+00:02:18,070 --> 00:02:18,080
+threat hunting prompt, the agent would
+ 
+
+115
+00:02:18,080 --> 00:02:20,070
+threat hunting prompt, the agent would
+generate several specific hypotheses
+
+116
+00:02:20,070 --> 00:02:20,080
+generate several specific hypotheses
+ 
+
+117
+00:02:20,080 --> 00:02:21,830
+generate several specific hypotheses
+with corresponding data dog lucine
+
+118
+00:02:21,830 --> 00:02:21,840
+with corresponding data dog lucine
+ 
+
+119
+00:02:21,840 --> 00:02:24,710
+with corresponding data dog lucine
+queries. Response time was really fast,
+
+120
+00:02:24,710 --> 00:02:24,720
+queries. Response time was really fast,
+ 
+
+121
+00:02:24,720 --> 00:02:27,430
+queries. Response time was really fast,
+an average of 5 seconds. However, syntax
+
+122
+00:02:27,430 --> 00:02:27,440
+an average of 5 seconds. However, syntax
+ 
+
+123
+00:02:27,440 --> 00:02:30,869
+an average of 5 seconds. However, syntax
+error rate was quite high at 25%. Our
+
+124
+00:02:30,869 --> 00:02:30,879
+error rate was quite high at 25%. Our
+ 
+
+125
+00:02:30,879 --> 00:02:33,030
+error rate was quite high at 25%. Our
+hunters complained about the aggressive
+
+126
+00:02:33,030 --> 00:02:33,040
+hunters complained about the aggressive
+ 
+
+127
+00:02:33,040 --> 00:02:35,030
+hunters complained about the aggressive
+hypothesis production and the frequently
+
+128
+00:02:35,030 --> 00:02:35,040
+hypothesis production and the frequently
+ 
+
+129
+00:02:35,040 --> 00:02:37,990
+hypothesis production and the frequently
+misnamed fields and irrelevant values.
+
+130
+00:02:37,990 --> 00:02:38,000
+misnamed fields and irrelevant values.
+ 
+
+131
+00:02:38,000 --> 00:02:39,589
+misnamed fields and irrelevant values.
+They also wanted the agent to
+
+132
+00:02:39,589 --> 00:02:39,599
+They also wanted the agent to
+ 
+
+133
+00:02:39,599 --> 00:02:41,430
+They also wanted the agent to
+automatically rule out some false
+
+134
+00:02:41,430 --> 00:02:41,440
+automatically rule out some false
+ 
+
+135
+00:02:41,440 --> 00:02:43,670
+automatically rule out some false
+positives. For instance, if the surface
+
+136
+00:02:43,670 --> 00:02:43,680
+positives. For instance, if the surface
+ 
+
+137
+00:02:43,680 --> 00:02:45,589
+positives. For instance, if the surface
+logs are associated with a known testing
+
+138
+00:02:45,589 --> 00:02:45,599
+logs are associated with a known testing
+ 
+
+139
+00:02:45,599 --> 00:02:49,350
+logs are associated with a known testing
+account, it should interpret that.
+
+140
+00:02:49,350 --> 00:02:49,360
+account, it should interpret that.
+ 
+
+141
+00:02:49,360 --> 00:02:51,589
+account, it should interpret that.
+In summary, the major failures of our
+
+142
+00:02:51,589 --> 00:02:51,599
+In summary, the major failures of our
+ 
+
+143
+00:02:51,599 --> 00:02:53,670
+In summary, the major failures of our
+first iteration were low syntax
+
+144
+00:02:53,670 --> 00:02:53,680
+first iteration were low syntax
+ 
+
+145
+00:02:53,680 --> 00:02:56,790
+first iteration were low syntax
+accuracy, low semantic accuracy. So this
+
+146
+00:02:56,790 --> 00:02:56,800
+accuracy, low semantic accuracy. So this
+ 
+
+147
+00:02:56,800 --> 00:02:58,790
+accuracy, low semantic accuracy. So this
+means that the query does not surface
+
+148
+00:02:58,790 --> 00:02:58,800
+means that the query does not surface
+ 
+
+149
+00:02:58,800 --> 00:03:00,630
+means that the query does not surface
+the intended data because the fields are
+
+150
+00:03:00,630 --> 00:03:00,640
+the intended data because the fields are
+ 
+
+151
+00:03:00,640 --> 00:03:02,869
+the intended data because the fields are
+wrong. I'm going to be talking about
+
+152
+00:03:02,869 --> 00:03:02,879
+wrong. I'm going to be talking about
+ 
+
+153
+00:03:02,879 --> 00:03:04,869
+wrong. I'm going to be talking about
+schema and saying the word schema like a
+
+154
+00:03:04,869 --> 00:03:04,879
+schema and saying the word schema like a
+ 
+
+155
+00:03:04,879 --> 00:03:07,110
+schema and saying the word schema like a
+thousand times in this talk. But this is
+
+156
+00:03:07,110 --> 00:03:07,120
+thousand times in this talk. But this is
+ 
+
+157
+00:03:07,120 --> 00:03:10,390
+thousand times in this talk. But this is
+really the crux of our work on this
+
+158
+00:03:10,390 --> 00:03:10,400
+really the crux of our work on this
+ 
+
+159
+00:03:10,400 --> 00:03:12,869
+really the crux of our work on this
+tool.
+
+160
+00:03:12,869 --> 00:03:12,879
+tool.
+ 
+
+161
+00:03:12,879 --> 00:03:15,509
+tool.
+It also struggled with low relevance. So
+
+162
+00:03:15,509 --> 00:03:15,519
+It also struggled with low relevance. So
+ 
+
+163
+00:03:15,519 --> 00:03:17,430
+It also struggled with low relevance. So
+it wasn't using the data to drive
+
+164
+00:03:17,430 --> 00:03:17,440
+it wasn't using the data to drive
+ 
+
+165
+00:03:17,440 --> 00:03:19,750
+it wasn't using the data to drive
+conclusions and we attributed a lot of
+
+166
+00:03:19,750 --> 00:03:19,760
+conclusions and we attributed a lot of
+ 
+
+167
+00:03:19,760 --> 00:03:21,990
+conclusions and we attributed a lot of
+this to ineffective tool usage. It was
+
+168
+00:03:21,990 --> 00:03:22,000
+this to ineffective tool usage. It was
+ 
+
+169
+00:03:22,000 --> 00:03:24,229
+this to ineffective tool usage. It was
+just ignoring whatever tools we provided
+
+170
+00:03:24,229 --> 00:03:24,239
+just ignoring whatever tools we provided
+ 
+
+171
+00:03:24,239 --> 00:03:26,550
+just ignoring whatever tools we provided
+it.
+
+172
+00:03:26,550 --> 00:03:26,560
+it.
+ 
+
+173
+00:03:26,560 --> 00:03:28,550
+it.
+We concluded that LLMs are bad at threat
+
+174
+00:03:28,550 --> 00:03:28,560
+We concluded that LLMs are bad at threat
+ 
+
+175
+00:03:28,560 --> 00:03:30,630
+We concluded that LLMs are bad at threat
+hunting and we had to go back to the
+
+176
+00:03:30,630 --> 00:03:30,640
+hunting and we had to go back to the
+ 
+
+177
+00:03:30,640 --> 00:03:31,990
+hunting and we had to go back to the
+basics and understand what their
+
+178
+00:03:31,990 --> 00:03:32,000
+basics and understand what their
+ 
+
+179
+00:03:32,000 --> 00:03:34,789
+basics and understand what their
+capabilities actually were. LLMs are
+
+180
+00:03:34,789 --> 00:03:34,799
+capabilities actually were. LLMs are
+ 
+
+181
+00:03:34,799 --> 00:03:36,949
+capabilities actually were. LLMs are
+good at
+
+182
+00:03:36,949 --> 00:03:36,959
+good at
+ 
+
+183
+00:03:36,959 --> 00:03:39,430
+good at
+synthesis, pattern matching and
+
+184
+00:03:39,430 --> 00:03:39,440
+synthesis, pattern matching and
+ 
+
+185
+00:03:39,440 --> 00:03:41,910
+synthesis, pattern matching and
+translation. We needed to focus on
+
+186
+00:03:41,910 --> 00:03:41,920
+translation. We needed to focus on
+ 
+
+187
+00:03:41,920 --> 00:03:43,670
+translation. We needed to focus on
+reducing threat hunting into problems of
+
+188
+00:03:43,670 --> 00:03:43,680
+reducing threat hunting into problems of
+ 
+
+189
+00:03:43,680 --> 00:03:45,990
+reducing threat hunting into problems of
+these categories.
+
+190
+00:03:45,990 --> 00:03:46,000
+these categories.
+ 
+
+191
+00:03:46,000 --> 00:03:47,589
+these categories.
+Before I get into the second iteration
+
+192
+00:03:47,589 --> 00:03:47,599
+Before I get into the second iteration
+ 
+
+193
+00:03:47,599 --> 00:03:49,110
+Before I get into the second iteration
+of the hunting co-pilot, I have to
+
+194
+00:03:49,110 --> 00:03:49,120
+of the hunting co-pilot, I have to
+ 
+
+195
+00:03:49,120 --> 00:03:51,750
+of the hunting co-pilot, I have to
+address the obvious obstacle in the AI
+
+196
+00:03:51,750 --> 00:03:51,760
+address the obvious obstacle in the AI
+ 
+
+197
+00:03:51,760 --> 00:03:54,229
+address the obvious obstacle in the AI
+threat hunting space, and that's data.
+
+198
+00:03:54,229 --> 00:03:54,239
+threat hunting space, and that's data.
+ 
+
+199
+00:03:54,239 --> 00:03:55,910
+threat hunting space, and that's data.
+Let's start with the nature of the log
+
+200
+00:03:55,910 --> 00:03:55,920
+Let's start with the nature of the log
+ 
+
+201
+00:03:55,920 --> 00:03:58,390
+Let's start with the nature of the log
+data we're quering. At Data Dog, we have
+
+202
+00:03:58,390 --> 00:03:58,400
+data we're quering. At Data Dog, we have
+ 
+
+203
+00:03:58,400 --> 00:04:00,149
+data we're quering. At Data Dog, we have
+large volumes of telemetry with look
+
+204
+00:04:00,149 --> 00:04:00,159
+large volumes of telemetry with look
+ 
+
+205
+00:04:00,159 --> 00:04:03,110
+large volumes of telemetry with look
+back periods of up to 450 days. And
+
+206
+00:04:03,110 --> 00:04:03,120
+back periods of up to 450 days. And
+ 
+
+207
+00:04:03,120 --> 00:04:04,949
+back periods of up to 450 days. And
+these logs are composed of faceted
+
+208
+00:04:04,949 --> 00:04:04,959
+these logs are composed of faceted
+ 
+
+209
+00:04:04,959 --> 00:04:07,110
+these logs are composed of faceted
+fields, which are indexed and easy to
+
+210
+00:04:07,110 --> 00:04:07,120
+fields, which are indexed and easy to
+ 
+
+211
+00:04:07,120 --> 00:04:09,990
+fields, which are indexed and easy to
+filter on, and many unfaceted fields.
+
+212
+00:04:09,990 --> 00:04:10,000
+filter on, and many unfaceted fields.
+ 
+
+213
+00:04:10,000 --> 00:04:11,670
+filter on, and many unfaceted fields.
+These are raw attributes that can be
+
+214
+00:04:11,670 --> 00:04:11,680
+These are raw attributes that can be
+ 
+
+215
+00:04:11,680 --> 00:04:13,670
+These are raw attributes that can be
+searched, but they aren't indexed. And
+
+216
+00:04:13,670 --> 00:04:13,680
+searched, but they aren't indexed. And
+ 
+
+217
+00:04:13,680 --> 00:04:15,429
+searched, but they aren't indexed. And
+this is what makes capturing the full
+
+218
+00:04:15,429 --> 00:04:15,439
+this is what makes capturing the full
+ 
+
+219
+00:04:15,439 --> 00:04:17,830
+this is what makes capturing the full
+schema of a source or index in a small
+
+220
+00:04:17,830 --> 00:04:17,840
+schema of a source or index in a small
+ 
+
+221
+00:04:17,840 --> 00:04:20,469
+schema of a source or index in a small
+number of tokens very challenging. It's
+
+222
+00:04:20,469 --> 00:04:20,479
+number of tokens very challenging. It's
+ 
+
+223
+00:04:20,479 --> 00:04:22,310
+number of tokens very challenging. It's
+even harder to understand what kinds of
+
+224
+00:04:22,310 --> 00:04:22,320
+even harder to understand what kinds of
+ 
+
+225
+00:04:22,320 --> 00:04:24,629
+even harder to understand what kinds of
+values exist for each field without
+
+226
+00:04:24,629 --> 00:04:24,639
+values exist for each field without
+ 
+
+227
+00:04:24,639 --> 00:04:27,990
+values exist for each field without
+actually querying the data.
+
+228
+00:04:27,990 --> 00:04:28,000
+actually querying the data.
+ 
+
+229
+00:04:28,000 --> 00:04:29,909
+actually querying the data.
+We also have customizable ingestion
+
+230
+00:04:29,909 --> 00:04:29,919
+We also have customizable ingestion
+ 
+
+231
+00:04:29,919 --> 00:04:31,510
+We also have customizable ingestion
+pipelines that increase automation
+
+232
+00:04:31,510 --> 00:04:31,520
+pipelines that increase automation
+ 
+
+233
+00:04:31,520 --> 00:04:33,990
+pipelines that increase automation
+complexity. And finally, threat hunting
+
+234
+00:04:33,990 --> 00:04:34,000
+complexity. And finally, threat hunting
+ 
+
+235
+00:04:34,000 --> 00:04:36,150
+complexity. And finally, threat hunting
+in general is hard to capture concretely
+
+236
+00:04:36,150 --> 00:04:36,160
+in general is hard to capture concretely
+ 
+
+237
+00:04:36,160 --> 00:04:38,230
+in general is hard to capture concretely
+because the success criteria is very
+
+238
+00:04:38,230 --> 00:04:38,240
+because the success criteria is very
+ 
+
+239
+00:04:38,240 --> 00:04:41,430
+because the success criteria is very
+ambiguous. The inputs, outputs, and
+
+240
+00:04:41,430 --> 00:04:41,440
+ambiguous. The inputs, outputs, and
+ 
+
+241
+00:04:41,440 --> 00:04:43,830
+ambiguous. The inputs, outputs, and
+methods used differ greatly from hunt to
+
+242
+00:04:43,830 --> 00:04:43,840
+methods used differ greatly from hunt to
+ 
+
+243
+00:04:43,840 --> 00:04:47,110
+methods used differ greatly from hunt to
+hunt and hunter to hunter.
+
+244
+00:04:47,110 --> 00:04:47,120
+hunt and hunter to hunter.
+ 
+
+245
+00:04:47,120 --> 00:04:48,870
+hunt and hunter to hunter.
+Fundamentally, this means we don't have
+
+246
+00:04:48,870 --> 00:04:48,880
+Fundamentally, this means we don't have
+ 
+
+247
+00:04:48,880 --> 00:04:50,790
+Fundamentally, this means we don't have
+a reliable ground truth readily
+
+248
+00:04:50,790 --> 00:04:50,800
+a reliable ground truth readily
+ 
+
+249
+00:04:50,800 --> 00:04:52,550
+a reliable ground truth readily
+available, neither for query generation
+
+250
+00:04:52,550 --> 00:04:52,560
+available, neither for query generation
+ 
+
+251
+00:04:52,560 --> 00:04:57,110
+available, neither for query generation
+nor for overall threat hunting.
+
+252
+00:04:57,110 --> 00:04:57,120
+nor for overall threat hunting.
+ 
+
+253
+00:04:57,120 --> 00:04:58,950
+nor for overall threat hunting.
+We thought about fine-tuning our agent
+
+254
+00:04:58,950 --> 00:04:58,960
+We thought about fine-tuning our agent
+ 
+
+255
+00:04:58,960 --> 00:05:01,350
+We thought about fine-tuning our agent
+before anyone asks. And the solution
+
+256
+00:05:01,350 --> 00:05:01,360
+before anyone asks. And the solution
+ 
+
+257
+00:05:01,360 --> 00:05:02,950
+before anyone asks. And the solution
+only makes sense if you have access to
+
+258
+00:05:02,950 --> 00:05:02,960
+only makes sense if you have access to
+ 
+
+259
+00:05:02,960 --> 00:05:05,270
+only makes sense if you have access to
+good threat hunting data. By good data,
+
+260
+00:05:05,270 --> 00:05:05,280
+good threat hunting data. By good data,
+ 
+
+261
+00:05:05,280 --> 00:05:07,270
+good threat hunting data. By good data,
+I mean data that is representative,
+
+262
+00:05:07,270 --> 00:05:07,280
+I mean data that is representative,
+ 
+
+263
+00:05:07,280 --> 00:05:10,550
+I mean data that is representative,
+well-labeled, and in abundance. We did
+
+264
+00:05:10,550 --> 00:05:10,560
+well-labeled, and in abundance. We did
+ 
+
+265
+00:05:10,560 --> 00:05:12,870
+well-labeled, and in abundance. We did
+not already have a well-curated corpus
+
+266
+00:05:12,870 --> 00:05:12,880
+not already have a well-curated corpus
+ 
+
+267
+00:05:12,880 --> 00:05:15,189
+not already have a well-curated corpus
+of past threat hunts with consistent
+
+268
+00:05:15,189 --> 00:05:15,199
+of past threat hunts with consistent
+ 
+
+269
+00:05:15,199 --> 00:05:18,070
+of past threat hunts with consistent
+inputs and outputs labeled labeled in a
+
+270
+00:05:18,070 --> 00:05:18,080
+inputs and outputs labeled labeled in a
+ 
+
+271
+00:05:18,080 --> 00:05:20,390
+inputs and outputs labeled labeled in a
+way that can apply to unseen hunts.
+
+272
+00:05:20,390 --> 00:05:20,400
+way that can apply to unseen hunts.
+ 
+
+273
+00:05:20,400 --> 00:05:22,870
+way that can apply to unseen hunts.
+Given the amount of time and resources
+
+274
+00:05:22,870 --> 00:05:22,880
+Given the amount of time and resources
+ 
+
+275
+00:05:22,880 --> 00:05:24,469
+Given the amount of time and resources
+it would have taken to produce this and
+
+276
+00:05:24,469 --> 00:05:24,479
+it would have taken to produce this and
+ 
+
+277
+00:05:24,479 --> 00:05:25,670
+it would have taken to produce this and
+the fact that we needed to deliver
+
+278
+00:05:25,670 --> 00:05:25,680
+the fact that we needed to deliver
+ 
+
+279
+00:05:25,680 --> 00:05:27,990
+the fact that we needed to deliver
+results quickly, we decided to stick to
+
+280
+00:05:27,990 --> 00:05:28,000
+results quickly, we decided to stick to
+ 
+
+281
+00:05:28,000 --> 00:05:29,510
+results quickly, we decided to stick to
+advanced prompt engineering techniques.
+
+282
+00:05:29,510 --> 00:05:29,520
+advanced prompt engineering techniques.
+ 
+
+283
+00:05:29,520 --> 00:05:31,749
+advanced prompt engineering techniques.
+Finetuning was just too high risk and
+
+284
+00:05:31,749 --> 00:05:31,759
+Finetuning was just too high risk and
+ 
+
+285
+00:05:31,759 --> 00:05:36,550
+Finetuning was just too high risk and
+high effort with expected low return.
+
+286
+00:05:36,550 --> 00:05:36,560
+
+ 
+
+287
+00:05:36,560 --> 00:05:37,990
+
+This is the point in our journey where
+
+288
+00:05:37,990 --> 00:05:38,000
+This is the point in our journey where
+ 
+
+289
+00:05:38,000 --> 00:05:40,710
+This is the point in our journey where
+we had to reframe the problem. Our
+
+290
+00:05:40,710 --> 00:05:40,720
+we had to reframe the problem. Our
+ 
+
+291
+00:05:40,720 --> 00:05:43,029
+we had to reframe the problem. Our
+hunters needed this agent to be accurate
+
+292
+00:05:43,029 --> 00:05:43,039
+hunters needed this agent to be accurate
+ 
+
+293
+00:05:43,039 --> 00:05:45,670
+hunters needed this agent to be accurate
+and useful. After syntax accuracy,
+
+294
+00:05:45,670 --> 00:05:45,680
+and useful. After syntax accuracy,
+ 
+
+295
+00:05:45,680 --> 00:05:48,150
+and useful. After syntax accuracy,
+semantic accuracy was the top weakness.
+
+296
+00:05:48,150 --> 00:05:48,160
+semantic accuracy was the top weakness.
+ 
+
+297
+00:05:48,160 --> 00:05:50,550
+semantic accuracy was the top weakness.
+And in other words, queries that were
+
+298
+00:05:50,550 --> 00:05:50,560
+And in other words, queries that were
+ 
+
+299
+00:05:50,560 --> 00:05:52,550
+And in other words, queries that were
+syntactically valid were still answering
+
+300
+00:05:52,550 --> 00:05:52,560
+syntactically valid were still answering
+ 
+
+301
+00:05:52,560 --> 00:05:55,510
+syntactically valid were still answering
+the wrong question.
+
+302
+00:05:55,510 --> 00:05:55,520
+the wrong question.
+ 
+
+303
+00:05:55,520 --> 00:05:57,590
+the wrong question.
+So we reframed the problem around field
+
+304
+00:05:57,590 --> 00:05:57,600
+So we reframed the problem around field
+ 
+
+305
+00:05:57,600 --> 00:05:59,830
+So we reframed the problem around field
+discovery. We sat down with our threat
+
+306
+00:05:59,830 --> 00:05:59,840
+discovery. We sat down with our threat
+ 
+
+307
+00:05:59,840 --> 00:06:01,189
+discovery. We sat down with our threat
+hunters and asked them to walk us
+
+308
+00:06:01,189 --> 00:06:01,199
+hunters and asked them to walk us
+ 
+
+309
+00:06:01,199 --> 00:06:03,430
+hunters and asked them to walk us
+through how they analyze logs in a hunt.
+
+310
+00:06:03,430 --> 00:06:03,440
+through how they analyze logs in a hunt.
+ 
+
+311
+00:06:03,440 --> 00:06:04,790
+through how they analyze logs in a hunt.
+We found that their process was
+
+312
+00:06:04,790 --> 00:06:04,800
+We found that their process was
+ 
+
+313
+00:06:04,800 --> 00:06:07,110
+We found that their process was
+fortunately repeatable. It's a mix of
+
+314
+00:06:07,110 --> 00:06:07,120
+fortunately repeatable. It's a mix of
+ 
+
+315
+00:06:07,120 --> 00:06:09,350
+fortunately repeatable. It's a mix of
+informed guessing, sampling, and
+
+316
+00:06:09,350 --> 00:06:09,360
+informed guessing, sampling, and
+ 
+
+317
+00:06:09,360 --> 00:06:11,909
+informed guessing, sampling, and
+iterative refinement. They start with an
+
+318
+00:06:11,909 --> 00:06:11,919
+iterative refinement. They start with an
+ 
+
+319
+00:06:11,919 --> 00:06:14,390
+iterative refinement. They start with an
+initial hypothesis and broad queries.
+
+320
+00:06:14,390 --> 00:06:14,400
+initial hypothesis and broad queries.
+ 
+
+321
+00:06:14,400 --> 00:06:16,629
+initial hypothesis and broad queries.
+They dive into the raw logs and inspect
+
+322
+00:06:16,629 --> 00:06:16,639
+They dive into the raw logs and inspect
+ 
+
+323
+00:06:16,639 --> 00:06:18,629
+They dive into the raw logs and inspect
+sample values. Then they tweak their
+
+324
+00:06:18,629 --> 00:06:18,639
+sample values. Then they tweak their
+ 
+
+325
+00:06:18,639 --> 00:06:20,629
+sample values. Then they tweak their
+query and repeat this process until they
+
+326
+00:06:20,629 --> 00:06:20,639
+query and repeat this process until they
+ 
+
+327
+00:06:20,639 --> 00:06:22,710
+query and repeat this process until they
+find something valuable.
+
+328
+00:06:22,710 --> 00:06:22,720
+find something valuable.
+ 
+
+329
+00:06:22,720 --> 00:06:24,629
+find something valuable.
+We call this process log schema
+
+330
+00:06:24,629 --> 00:06:24,639
+We call this process log schema
+ 
+
+331
+00:06:24,639 --> 00:06:26,150
+We call this process log schema
+exploration.
+
+332
+00:06:26,150 --> 00:06:26,160
+exploration.
+ 
+
+333
+00:06:26,160 --> 00:06:28,070
+exploration.
+Instead of relying on documentation as a
+
+334
+00:06:28,070 --> 00:06:28,080
+Instead of relying on documentation as a
+ 
+
+335
+00:06:28,080 --> 00:06:29,590
+Instead of relying on documentation as a
+source of truth, the schema should be
+
+336
+00:06:29,590 --> 00:06:29,600
+source of truth, the schema should be
+ 
+
+337
+00:06:29,600 --> 00:06:33,749
+source of truth, the schema should be
+derived directly from the data.
+
+338
+00:06:33,749 --> 00:06:33,759
+derived directly from the data.
+ 
+
+339
+00:06:33,759 --> 00:06:35,909
+derived directly from the data.
+We shifted the boundary more towards AI
+
+340
+00:06:35,909 --> 00:06:35,919
+We shifted the boundary more towards AI
+ 
+
+341
+00:06:35,919 --> 00:06:38,390
+We shifted the boundary more towards AI
+with automated data analysis. So use the
+
+342
+00:06:38,390 --> 00:06:38,400
+with automated data analysis. So use the
+ 
+
+343
+00:06:38,400 --> 00:06:40,950
+with automated data analysis. So use the
+data to drive conclusions and this would
+
+344
+00:06:40,950 --> 00:06:40,960
+data to drive conclusions and this would
+ 
+
+345
+00:06:40,960 --> 00:06:42,870
+data to drive conclusions and this would
+address the hunter's request to rule out
+
+346
+00:06:42,870 --> 00:06:42,880
+address the hunter's request to rule out
+ 
+
+347
+00:06:42,880 --> 00:06:46,629
+address the hunter's request to rule out
+some false positives as well.
+
+348
+00:06:46,629 --> 00:06:46,639
+some false positives as well.
+ 
+
+349
+00:06:46,639 --> 00:06:48,230
+some false positives as well.
+There were several several sub
+
+350
+00:06:48,230 --> 00:06:48,240
+There were several several sub
+ 
+
+351
+00:06:48,240 --> 00:06:50,629
+There were several several sub
+iterations that led to V2, but the core
+
+352
+00:06:50,629 --> 00:06:50,639
+iterations that led to V2, but the core
+ 
+
+353
+00:06:50,639 --> 00:06:52,469
+iterations that led to V2, but the core
+shift was towards a multi-agent
+
+354
+00:06:52,469 --> 00:06:52,479
+shift was towards a multi-agent
+ 
+
+355
+00:06:52,479 --> 00:06:54,629
+shift was towards a multi-agent
+framework. We introduced reasoning
+
+356
+00:06:54,629 --> 00:06:54,639
+framework. We introduced reasoning
+ 
+
+357
+00:06:54,639 --> 00:06:57,350
+framework. We introduced reasoning
+models such as GPT 5.1 and implemented
+
+358
+00:06:57,350 --> 00:06:57,360
+models such as GPT 5.1 and implemented
+ 
+
+359
+00:06:57,360 --> 00:07:00,230
+models such as GPT 5.1 and implemented
+an orchestrator expert framework. We
+
+360
+00:07:00,230 --> 00:07:00,240
+an orchestrator expert framework. We
+ 
+
+361
+00:07:00,240 --> 00:07:02,469
+an orchestrator expert framework. We
+also added the data dog MCP server and
+
+362
+00:07:02,469 --> 00:07:02,479
+also added the data dog MCP server and
+ 
+
+363
+00:07:02,479 --> 00:07:04,629
+also added the data dog MCP server and
+this allowed the agent to execute the
+
+364
+00:07:04,629 --> 00:07:04,639
+this allowed the agent to execute the
+ 
+
+365
+00:07:04,639 --> 00:07:06,550
+this allowed the agent to execute the
+queries it generated and then validate
+
+366
+00:07:06,550 --> 00:07:06,560
+queries it generated and then validate
+ 
+
+367
+00:07:06,560 --> 00:07:08,710
+queries it generated and then validate
+them against real logs. One of the most
+
+368
+00:07:08,710 --> 00:07:08,720
+them against real logs. One of the most
+ 
+
+369
+00:07:08,720 --> 00:07:11,189
+them against real logs. One of the most
+valuable features of this MCP is that it
+
+370
+00:07:11,189 --> 00:07:11,199
+valuable features of this MCP is that it
+ 
+
+371
+00:07:11,199 --> 00:07:12,870
+valuable features of this MCP is that it
+returns concise corrections when
+
+372
+00:07:12,870 --> 00:07:12,880
+returns concise corrections when
+ 
+
+373
+00:07:12,880 --> 00:07:14,629
+returns concise corrections when
+something is wrong and that was the key
+
+374
+00:07:14,629 --> 00:07:14,639
+something is wrong and that was the key
+ 
+
+375
+00:07:14,639 --> 00:07:17,430
+something is wrong and that was the key
+to improving syntax accuracy.
+
+376
+00:07:17,430 --> 00:07:17,440
+to improving syntax accuracy.
+ 
+
+377
+00:07:17,440 --> 00:07:19,270
+to improving syntax accuracy.
+Lastly, we tightened the system prompt
+
+378
+00:07:19,270 --> 00:07:19,280
+Lastly, we tightened the system prompt
+ 
+
+379
+00:07:19,280 --> 00:07:21,990
+Lastly, we tightened the system prompt
+and defined iterative query refinement
+
+380
+00:07:21,990 --> 00:07:22,000
+and defined iterative query refinement
+ 
+
+381
+00:07:22,000 --> 00:07:24,230
+and defined iterative query refinement
+behaviors as well as stop conditions.
+
+382
+00:07:24,230 --> 00:07:24,240
+behaviors as well as stop conditions.
+ 
+
+383
+00:07:24,240 --> 00:07:25,830
+behaviors as well as stop conditions.
+And we noticed that the agent struggled
+
+384
+00:07:25,830 --> 00:07:25,840
+And we noticed that the agent struggled
+ 
+
+385
+00:07:25,840 --> 00:07:29,110
+And we noticed that the agent struggled
+with tricky syntax like negation or JSON
+
+386
+00:07:29,110 --> 00:07:29,120
+with tricky syntax like negation or JSON
+ 
+
+387
+00:07:29,120 --> 00:07:30,870
+with tricky syntax like negation or JSON
+policy document formatting which our
+
+388
+00:07:30,870 --> 00:07:30,880
+policy document formatting which our
+ 
+
+389
+00:07:30,880 --> 00:07:33,670
+policy document formatting which our
+threat hunters love to search on and
+
+390
+00:07:33,670 --> 00:07:33,680
+threat hunters love to search on and
+ 
+
+391
+00:07:33,680 --> 00:07:36,309
+threat hunters love to search on and
+wildcard placement. So we provided more
+
+392
+00:07:36,309 --> 00:07:36,319
+wildcard placement. So we provided more
+ 
+
+393
+00:07:36,319 --> 00:07:37,909
+wildcard placement. So we provided more
+concrete construction rules in this case
+
+394
+00:07:37,909 --> 00:07:37,919
+concrete construction rules in this case
+ 
+
+395
+00:07:37,919 --> 00:07:42,150
+concrete construction rules in this case
+for that.
+
+396
+00:07:42,150 --> 00:07:42,160
+
+ 
+
+397
+00:07:42,160 --> 00:07:43,830
+
+This is an overview of the architecture.
+
+398
+00:07:43,830 --> 00:07:43,840
+This is an overview of the architecture.
+ 
+
+399
+00:07:43,840 --> 00:07:45,589
+This is an overview of the architecture.
+We have the orchestrator. It's handling
+
+400
+00:07:45,589 --> 00:07:45,599
+We have the orchestrator. It's handling
+ 
+
+401
+00:07:45,599 --> 00:07:47,589
+We have the orchestrator. It's handling
+the investigation flow maintaining the
+
+402
+00:07:47,589 --> 00:07:47,599
+the investigation flow maintaining the
+ 
+
+403
+00:07:47,599 --> 00:07:50,550
+the investigation flow maintaining the
+overall hunt context. It then gathers
+
+404
+00:07:50,550 --> 00:07:50,560
+overall hunt context. It then gathers
+ 
+
+405
+00:07:50,560 --> 00:07:53,029
+overall hunt context. It then gathers
+source documentation from expert sub
+
+406
+00:07:53,029 --> 00:07:53,039
+source documentation from expert sub
+ 
+
+407
+00:07:53,039 --> 00:07:55,510
+source documentation from expert sub
+aents such as for AWS cloud trail or GCP
+
+408
+00:07:55,510 --> 00:07:55,520
+aents such as for AWS cloud trail or GCP
+ 
+
+409
+00:07:55,520 --> 00:07:58,309
+aents such as for AWS cloud trail or GCP
+audit logs. It then calls the data dog
+
+410
+00:07:58,309 --> 00:07:58,319
+audit logs. It then calls the data dog
+ 
+
+411
+00:07:58,319 --> 00:08:00,150
+audit logs. It then calls the data dog
+agent and it's essentially a wrapper for
+
+412
+00:08:00,150 --> 00:08:00,160
+agent and it's essentially a wrapper for
+ 
+
+413
+00:08:00,160 --> 00:08:02,869
+agent and it's essentially a wrapper for
+the data dog MCP. It generates and
+
+414
+00:08:02,869 --> 00:08:02,879
+the data dog MCP. It generates and
+ 
+
+415
+00:08:02,879 --> 00:08:04,550
+the data dog MCP. It generates and
+iteratively refineses queries based on
+
+416
+00:08:04,550 --> 00:08:04,560
+iteratively refineses queries based on
+ 
+
+417
+00:08:04,560 --> 00:08:06,950
+iteratively refineses queries based on
+the data. We noticed that queries that
+
+418
+00:08:06,950 --> 00:08:06,960
+the data. We noticed that queries that
+ 
+
+419
+00:08:06,960 --> 00:08:09,510
+the data. We noticed that queries that
+return zero results were most likely
+
+420
+00:08:09,510 --> 00:08:09,520
+return zero results were most likely
+ 
+
+421
+00:08:09,520 --> 00:08:11,670
+return zero results were most likely
+semantically incorrect. So we just
+
+422
+00:08:11,670 --> 00:08:11,680
+semantically incorrect. So we just
+ 
+
+423
+00:08:11,680 --> 00:08:13,830
+semantically incorrect. So we just
+biased the agent towards generating logs
+
+424
+00:08:13,830 --> 00:08:13,840
+biased the agent towards generating logs
+ 
+
+425
+00:08:13,840 --> 00:08:15,830
+biased the agent towards generating logs
+results. Our stop conditions were both
+
+426
+00:08:15,830 --> 00:08:15,840
+results. Our stop conditions were both
+ 
+
+427
+00:08:15,840 --> 00:08:17,670
+results. Our stop conditions were both
+quantitative. So cap the number of
+
+428
+00:08:17,670 --> 00:08:17,680
+quantitative. So cap the number of
+ 
+
+429
+00:08:17,680 --> 00:08:20,390
+quantitative. So cap the number of
+iterations at five and subjective. If
+
+430
+00:08:20,390 --> 00:08:20,400
+iterations at five and subjective. If
+ 
+
+431
+00:08:20,400 --> 00:08:21,830
+iterations at five and subjective. If
+you find logs and can reach a
+
+432
+00:08:21,830 --> 00:08:21,840
+you find logs and can reach a
+ 
+
+433
+00:08:21,840 --> 00:08:24,070
+you find logs and can reach a
+conclusion, stop iterating.
+
+434
+00:08:24,070 --> 00:08:24,080
+conclusion, stop iterating.
+ 
+
+435
+00:08:24,080 --> 00:08:26,070
+conclusion, stop iterating.
+This divide and conquer approach reduced
+
+436
+00:08:26,070 --> 00:08:26,080
+This divide and conquer approach reduced
+ 
+
+437
+00:08:26,080 --> 00:08:28,950
+This divide and conquer approach reduced
+overall context load um context overload
+
+438
+00:08:28,950 --> 00:08:28,960
+overall context load um context overload
+ 
+
+439
+00:08:28,960 --> 00:08:30,950
+overall context load um context overload
+and made each step more controlled and
+
+440
+00:08:30,950 --> 00:08:30,960
+and made each step more controlled and
+ 
+
+441
+00:08:30,960 --> 00:08:33,110
+and made each step more controlled and
+precise.
+
+442
+00:08:33,110 --> 00:08:33,120
+precise.
+ 
+
+443
+00:08:33,120 --> 00:08:34,949
+precise.
+With this architecture, we noticed a
+
+444
+00:08:34,949 --> 00:08:34,959
+With this architecture, we noticed a
+ 
+
+445
+00:08:34,959 --> 00:08:37,029
+With this architecture, we noticed a
+huge improvement in syntax accuracy by
+
+446
+00:08:37,029 --> 00:08:37,039
+huge improvement in syntax accuracy by
+ 
+
+447
+00:08:37,039 --> 00:08:39,430
+huge improvement in syntax accuracy by
+17% and slightly better semantic
+
+448
+00:08:39,430 --> 00:08:39,440
+17% and slightly better semantic
+ 
+
+449
+00:08:39,440 --> 00:08:42,709
+17% and slightly better semantic
+accuracy, but tool usage increased. All
+
+450
+00:08:42,709 --> 00:08:42,719
+accuracy, but tool usage increased. All
+ 
+
+451
+00:08:42,719 --> 00:08:44,870
+accuracy, but tool usage increased. All
+this, however, was at the cost of
+
+452
+00:08:44,870 --> 00:08:44,880
+this, however, was at the cost of
+ 
+
+453
+00:08:44,880 --> 00:08:47,110
+this, however, was at the cost of
+response speed. We went from an average
+
+454
+00:08:47,110 --> 00:08:47,120
+response speed. We went from an average
+ 
+
+455
+00:08:47,120 --> 00:08:49,750
+response speed. We went from an average
+of 5 seconds per response to 6 minutes.
+
+456
+00:08:49,750 --> 00:08:49,760
+of 5 seconds per response to 6 minutes.
+ 
+
+457
+00:08:49,760 --> 00:08:52,230
+of 5 seconds per response to 6 minutes.
+Some edge cases taking 30 minutes to an
+
+458
+00:08:52,230 --> 00:08:52,240
+Some edge cases taking 30 minutes to an
+ 
+
+459
+00:08:52,240 --> 00:08:55,190
+Some edge cases taking 30 minutes to an
+hour. Our you our users were not happy
+
+460
+00:08:55,190 --> 00:08:55,200
+hour. Our you our users were not happy
+ 
+
+461
+00:08:55,200 --> 00:08:57,110
+hour. Our you our users were not happy
+with this response time and semantic
+
+462
+00:08:57,110 --> 00:08:57,120
+with this response time and semantic
+ 
+
+463
+00:08:57,120 --> 00:08:58,389
+with this response time and semantic
+accuracy was still hindered by
+
+464
+00:08:58,389 --> 00:08:58,399
+accuracy was still hindered by
+ 
+
+465
+00:08:58,399 --> 00:09:00,389
+accuracy was still hindered by
+persistent hallucination. This was
+
+466
+00:09:00,389 --> 00:09:00,399
+persistent hallucination. This was
+ 
+
+467
+00:09:00,399 --> 00:09:02,550
+persistent hallucination. This was
+because query executions often timed out
+
+468
+00:09:02,550 --> 00:09:02,560
+because query executions often timed out
+ 
+
+469
+00:09:02,560 --> 00:09:04,870
+because query executions often timed out
+or the results were truncated. Sampling
+
+470
+00:09:04,870 --> 00:09:04,880
+or the results were truncated. Sampling
+ 
+
+471
+00:09:04,880 --> 00:09:06,630
+or the results were truncated. Sampling
+log data was just too computationally
+
+472
+00:09:06,630 --> 00:09:06,640
+log data was just too computationally
+ 
+
+473
+00:09:06,640 --> 00:09:08,389
+log data was just too computationally
+exhaustive to be handled by the agent
+
+474
+00:09:08,389 --> 00:09:08,399
+exhaustive to be handled by the agent
+ 
+
+475
+00:09:08,399 --> 00:09:12,790
+exhaustive to be handled by the agent
+alone.
+
+476
+00:09:12,790 --> 00:09:12,800
+
+ 
+
+477
+00:09:12,800 --> 00:09:14,550
+
+We learned a lot about the trade-offs of
+
+478
+00:09:14,550 --> 00:09:14,560
+We learned a lot about the trade-offs of
+ 
+
+479
+00:09:14,560 --> 00:09:16,710
+We learned a lot about the trade-offs of
+multi- aent frameworks and powerful MCP
+
+480
+00:09:16,710 --> 00:09:16,720
+multi- aent frameworks and powerful MCP
+ 
+
+481
+00:09:16,720 --> 00:09:18,870
+multi- aent frameworks and powerful MCP
+tools with V2 and it all comes down to
+
+482
+00:09:18,870 --> 00:09:18,880
+tools with V2 and it all comes down to
+ 
+
+483
+00:09:18,880 --> 00:09:20,870
+tools with V2 and it all comes down to
+context. This principle hasn't changed.
+
+484
+00:09:20,870 --> 00:09:20,880
+context. This principle hasn't changed.
+ 
+
+485
+00:09:20,880 --> 00:09:22,310
+context. This principle hasn't changed.
+Threat hunting workflows overload
+
+486
+00:09:22,310 --> 00:09:22,320
+Threat hunting workflows overload
+ 
+
+487
+00:09:22,320 --> 00:09:24,230
+Threat hunting workflows overload
+context. If you manage the context well,
+
+488
+00:09:24,230 --> 00:09:24,240
+context. If you manage the context well,
+ 
+
+489
+00:09:24,240 --> 00:09:26,550
+context. If you manage the context well,
+you'll see results improve.
+
+490
+00:09:26,550 --> 00:09:26,560
+you'll see results improve.
+ 
+
+491
+00:09:26,560 --> 00:09:28,389
+you'll see results improve.
+The core lessons from V2 were that we
+
+492
+00:09:28,389 --> 00:09:28,399
+The core lessons from V2 were that we
+ 
+
+493
+00:09:28,399 --> 00:09:30,389
+The core lessons from V2 were that we
+should use reasoning sparingly. It was
+
+494
+00:09:30,389 --> 00:09:30,399
+should use reasoning sparingly. It was
+ 
+
+495
+00:09:30,399 --> 00:09:32,710
+should use reasoning sparingly. It was
+way too slow for production use cases.
+
+496
+00:09:32,710 --> 00:09:32,720
+way too slow for production use cases.
+ 
+
+497
+00:09:32,720 --> 00:09:34,070
+way too slow for production use cases.
+And if you use it, you should provide
+
+498
+00:09:34,070 --> 00:09:34,080
+And if you use it, you should provide
+ 
+
+499
+00:09:34,080 --> 00:09:36,630
+And if you use it, you should provide
+reasoning transparency to the user.
+
+500
+00:09:36,630 --> 00:09:36,640
+reasoning transparency to the user.
+ 
+
+501
+00:09:36,640 --> 00:09:38,470
+reasoning transparency to the user.
+Multi-agent frameworks are an excellent
+
+502
+00:09:38,470 --> 00:09:38,480
+Multi-agent frameworks are an excellent
+ 
+
+503
+00:09:38,480 --> 00:09:40,870
+Multi-agent frameworks are an excellent
+way to manage context. So the
+
+504
+00:09:40,870 --> 00:09:40,880
+way to manage context. So the
+ 
+
+505
+00:09:40,880 --> 00:09:42,630
+way to manage context. So the
+orchestrator is building context over
+
+506
+00:09:42,630 --> 00:09:42,640
+orchestrator is building context over
+ 
+
+507
+00:09:42,640 --> 00:09:44,630
+orchestrator is building context over
+the course of a hunt, but each expert
+
+508
+00:09:44,630 --> 00:09:44,640
+the course of a hunt, but each expert
+ 
+
+509
+00:09:44,640 --> 00:09:46,630
+the course of a hunt, but each expert
+agent, it starts fresh every time it's
+
+510
+00:09:46,630 --> 00:09:46,640
+agent, it starts fresh every time it's
+ 
+
+511
+00:09:46,640 --> 00:09:48,870
+agent, it starts fresh every time it's
+called. Based on how you conquer and
+
+512
+00:09:48,870 --> 00:09:48,880
+called. Based on how you conquer and
+ 
+
+513
+00:09:48,880 --> 00:09:50,630
+called. Based on how you conquer and
+divide these sub agents can become
+
+514
+00:09:50,630 --> 00:09:50,640
+divide these sub agents can become
+ 
+
+515
+00:09:50,640 --> 00:09:52,550
+divide these sub agents can become
+excellent at their specific task, and
+
+516
+00:09:52,550 --> 00:09:52,560
+excellent at their specific task, and
+ 
+
+517
+00:09:52,560 --> 00:09:54,070
+excellent at their specific task, and
+you save context space for the overall
+
+518
+00:09:54,070 --> 00:09:54,080
+you save context space for the overall
+ 
+
+519
+00:09:54,080 --> 00:09:55,590
+you save context space for the overall
+hunt.
+
+520
+00:09:55,590 --> 00:09:55,600
+hunt.
+ 
+
+521
+00:09:55,600 --> 00:09:57,750
+hunt.
+However, delegation introduces its own
+
+522
+00:09:57,750 --> 00:09:57,760
+However, delegation introduces its own
+ 
+
+523
+00:09:57,760 --> 00:09:59,990
+However, delegation introduces its own
+cost. Every handoff adds latency and
+
+524
+00:09:59,990 --> 00:10:00,000
+cost. Every handoff adds latency and
+ 
+
+525
+00:10:00,000 --> 00:10:01,750
+cost. Every handoff adds latency and
+Asian coordination will increase
+
+526
+00:10:01,750 --> 00:10:01,760
+Asian coordination will increase
+ 
+
+527
+00:10:01,760 --> 00:10:03,750
+Asian coordination will increase
+complexity.
+
+528
+00:10:03,750 --> 00:10:03,760
+complexity.
+ 
+
+529
+00:10:03,760 --> 00:10:06,150
+complexity.
+A quick note on chaining. We noticed
+
+530
+00:10:06,150 --> 00:10:06,160
+A quick note on chaining. We noticed
+ 
+
+531
+00:10:06,160 --> 00:10:08,790
+A quick note on chaining. We noticed
+that chains of length over three were
+
+532
+00:10:08,790 --> 00:10:08,800
+that chains of length over three were
+ 
+
+533
+00:10:08,800 --> 00:10:10,470
+that chains of length over three were
+subject to getting stuck downstream,
+
+534
+00:10:10,470 --> 00:10:10,480
+subject to getting stuck downstream,
+ 
+
+535
+00:10:10,480 --> 00:10:11,829
+subject to getting stuck downstream,
+especially if there was some looping,
+
+536
+00:10:11,829 --> 00:10:11,839
+especially if there was some looping,
+ 
+
+537
+00:10:11,839 --> 00:10:13,110
+especially if there was some looping,
+and that's what we had with the
+
+538
+00:10:13,110 --> 00:10:13,120
+and that's what we had with the
+ 
+
+539
+00:10:13,120 --> 00:10:14,630
+and that's what we had with the
+iterative refinement in the data dog
+
+540
+00:10:14,630 --> 00:10:14,640
+iterative refinement in the data dog
+ 
+
+541
+00:10:14,640 --> 00:10:16,630
+iterative refinement in the data dog
+agent.
+
+542
+00:10:16,630 --> 00:10:16,640
+agent.
+ 
+
+543
+00:10:16,640 --> 00:10:18,630
+agent.
+So, we try to keep our architecture at
+
+544
+00:10:18,630 --> 00:10:18,640
+So, we try to keep our architecture at
+ 
+
+545
+00:10:18,640 --> 00:10:21,350
+So, we try to keep our architecture at
+three layers or less.
+
+546
+00:10:21,350 --> 00:10:21,360
+three layers or less.
+ 
+
+547
+00:10:21,360 --> 00:10:23,350
+three layers or less.
+Tools are crucial, but they need to be
+
+548
+00:10:23,350 --> 00:10:23,360
+Tools are crucial, but they need to be
+ 
+
+549
+00:10:23,360 --> 00:10:25,590
+Tools are crucial, but they need to be
+concise and informative. We designed
+
+550
+00:10:25,590 --> 00:10:25,600
+concise and informative. We designed
+ 
+
+551
+00:10:25,600 --> 00:10:27,590
+concise and informative. We designed
+tools to return short suggestions to
+
+552
+00:10:27,590 --> 00:10:27,600
+tools to return short suggestions to
+ 
+
+553
+00:10:27,600 --> 00:10:29,590
+tools to return short suggestions to
+take the burden of correction off of the
+
+554
+00:10:29,590 --> 00:10:29,600
+take the burden of correction off of the
+ 
+
+555
+00:10:29,600 --> 00:10:32,630
+take the burden of correction off of the
+agent. And we always specified a concise
+
+556
+00:10:32,630 --> 00:10:32,640
+agent. And we always specified a concise
+ 
+
+557
+00:10:32,640 --> 00:10:35,030
+agent. And we always specified a concise
+list of of allowed tools for MTP servers
+
+558
+00:10:35,030 --> 00:10:35,040
+list of of allowed tools for MTP servers
+ 
+
+559
+00:10:35,040 --> 00:10:37,509
+list of of allowed tools for MTP servers
+that expose many. The system prompt
+
+560
+00:10:37,509 --> 00:10:37,519
+that expose many. The system prompt
+ 
+
+561
+00:10:37,519 --> 00:10:38,870
+that expose many. The system prompt
+should describe which tool should be
+
+562
+00:10:38,870 --> 00:10:38,880
+should describe which tool should be
+ 
+
+563
+00:10:38,880 --> 00:10:41,509
+should describe which tool should be
+called at which step.
+
+564
+00:10:41,509 --> 00:10:41,519
+called at which step.
+ 
+
+565
+00:10:41,519 --> 00:10:44,310
+called at which step.
+And I am aware of the very fickle nature
+
+566
+00:10:44,310 --> 00:10:44,320
+And I am aware of the very fickle nature
+ 
+
+567
+00:10:44,320 --> 00:10:46,949
+And I am aware of the very fickle nature
+of making bold claims on what AI can and
+
+568
+00:10:46,949 --> 00:10:46,959
+of making bold claims on what AI can and
+ 
+
+569
+00:10:46,959 --> 00:10:48,710
+of making bold claims on what AI can and
+cannot do. I did see the talks yesterday
+
+570
+00:10:48,710 --> 00:10:48,720
+cannot do. I did see the talks yesterday
+ 
+
+571
+00:10:48,720 --> 00:10:51,509
+cannot do. I did see the talks yesterday
+especially anthropic Nicholas um opus
+
+572
+00:10:51,509 --> 00:10:51,519
+especially anthropic Nicholas um opus
+ 
+
+573
+00:10:51,519 --> 00:10:53,350
+especially anthropic Nicholas um opus
+4.5 and 4.6 were released quite
+
+574
+00:10:53,350 --> 00:10:53,360
+4.5 and 4.6 were released quite
+ 
+
+575
+00:10:53,360 --> 00:10:55,829
+4.5 and 4.6 were released quite
+recently. So, as these LLMs get more
+
+576
+00:10:55,829 --> 00:10:55,839
+recently. So, as these LLMs get more
+ 
+
+577
+00:10:55,839 --> 00:10:57,430
+recently. So, as these LLMs get more
+powerful and the context window
+
+578
+00:10:57,430 --> 00:10:57,440
+powerful and the context window
+ 
+
+579
+00:10:57,440 --> 00:10:58,790
+powerful and the context window
+increases, you can simplify your
+
+580
+00:10:58,790 --> 00:10:58,800
+increases, you can simplify your
+ 
+
+581
+00:10:58,800 --> 00:11:00,069
+increases, you can simplify your
+architecture while keeping
+
+582
+00:11:00,069 --> 00:11:00,079
+architecture while keeping
+ 
+
+583
+00:11:00,079 --> 00:11:02,069
+architecture while keeping
+hallucinations low. But I'd argue that
+
+584
+00:11:02,069 --> 00:11:02,079
+hallucinations low. But I'd argue that
+ 
+
+585
+00:11:02,079 --> 00:11:03,269
+hallucinations low. But I'd argue that
+right now for threat hunting,
+
+586
+00:11:03,269 --> 00:11:03,279
+right now for threat hunting,
+ 
+
+587
+00:11:03,279 --> 00:11:04,550
+right now for threat hunting,
+multi-agent frameworks are still
+
+588
+00:11:04,550 --> 00:11:04,560
+multi-agent frameworks are still
+ 
+
+589
+00:11:04,560 --> 00:11:09,750
+multi-agent frameworks are still
+necessary for the best results.
+
+590
+00:11:09,750 --> 00:11:09,760
+
+ 
+
+591
+00:11:09,760 --> 00:11:13,110
+
+Achieving high query syntax accuracy was
+
+592
+00:11:13,110 --> 00:11:13,120
+Achieving high query syntax accuracy was
+ 
+
+593
+00:11:13,120 --> 00:11:16,069
+Achieving high query syntax accuracy was
+pretty easy, but semantic accuracy is
+
+594
+00:11:16,069 --> 00:11:16,079
+pretty easy, but semantic accuracy is
+ 
+
+595
+00:11:16,079 --> 00:11:17,829
+pretty easy, but semantic accuracy is
+really hard because of the high volume
+
+596
+00:11:17,829 --> 00:11:17,839
+really hard because of the high volume
+ 
+
+597
+00:11:17,839 --> 00:11:20,069
+really hard because of the high volume
+and density of the data. There are four
+
+598
+00:11:20,069 --> 00:11:20,079
+and density of the data. There are four
+ 
+
+599
+00:11:20,079 --> 00:11:21,509
+and density of the data. There are four
+fundamental approaches that we've been
+
+600
+00:11:21,509 --> 00:11:21,519
+fundamental approaches that we've been
+ 
+
+601
+00:11:21,519 --> 00:11:23,910
+fundamental approaches that we've been
+exploring to manage this. So the first
+
+602
+00:11:23,910 --> 00:11:23,920
+exploring to manage this. So the first
+ 
+
+603
+00:11:23,920 --> 00:11:26,230
+exploring to manage this. So the first
+is external documentation and AIS
+
+604
+00:11:26,230 --> 00:11:26,240
+is external documentation and AIS
+ 
+
+605
+00:11:26,240 --> 00:11:27,590
+is external documentation and AIS
+basically you're trying to make an
+
+606
+00:11:27,590 --> 00:11:27,600
+basically you're trying to make an
+ 
+
+607
+00:11:27,600 --> 00:11:29,430
+basically you're trying to make an
+educated guess on what the schema may
+
+608
+00:11:29,430 --> 00:11:29,440
+educated guess on what the schema may
+ 
+
+609
+00:11:29,440 --> 00:11:31,430
+educated guess on what the schema may
+look like at data dog and in practice
+
+610
+00:11:31,430 --> 00:11:31,440
+look like at data dog and in practice
+ 
+
+611
+00:11:31,440 --> 00:11:33,110
+look like at data dog and in practice
+this wasn't very representative of the
+
+612
+00:11:33,110 --> 00:11:33,120
+this wasn't very representative of the
+ 
+
+613
+00:11:33,120 --> 00:11:35,910
+this wasn't very representative of the
+data log clustering and aggregations
+
+614
+00:11:35,910 --> 00:11:35,920
+data log clustering and aggregations
+ 
+
+615
+00:11:35,920 --> 00:11:38,069
+data log clustering and aggregations
+they can really help cut down the logs
+
+616
+00:11:38,069 --> 00:11:38,079
+they can really help cut down the logs
+ 
+
+617
+00:11:38,079 --> 00:11:40,310
+they can really help cut down the logs
+that need to be analyzed. However it's
+
+618
+00:11:40,310 --> 00:11:40,320
+that need to be analyzed. However it's
+ 
+
+619
+00:11:40,320 --> 00:11:42,389
+that need to be analyzed. However it's
+very easy to misjudge which facets to
+
+620
+00:11:42,389 --> 00:11:42,399
+very easy to misjudge which facets to
+ 
+
+621
+00:11:42,399 --> 00:11:44,150
+very easy to misjudge which facets to
+aggregate on and the agent usually
+
+622
+00:11:44,150 --> 00:11:44,160
+aggregate on and the agent usually
+ 
+
+623
+00:11:44,160 --> 00:11:46,630
+aggregate on and the agent usually
+guesses wrong. the built-in clustering
+
+624
+00:11:46,630 --> 00:11:46,640
+guesses wrong. the built-in clustering
+ 
+
+625
+00:11:46,640 --> 00:11:48,470
+guesses wrong. the built-in clustering
+within the data dog logs logs platform
+
+626
+00:11:48,470 --> 00:11:48,480
+within the data dog logs logs platform
+ 
+
+627
+00:11:48,480 --> 00:11:49,910
+within the data dog logs logs platform
+if you've seen it. It's based on the
+
+628
+00:11:49,910 --> 00:11:49,920
+if you've seen it. It's based on the
+ 
+
+629
+00:11:49,920 --> 00:11:52,150
+if you've seen it. It's based on the
+message body or status and that's not
+
+630
+00:11:52,150 --> 00:11:52,160
+message body or status and that's not
+ 
+
+631
+00:11:52,160 --> 00:11:53,990
+message body or status and that's not
+always relevant to the hunts. Our
+
+632
+00:11:53,990 --> 00:11:54,000
+always relevant to the hunts. Our
+ 
+
+633
+00:11:54,000 --> 00:11:57,269
+always relevant to the hunts. Our
+hunters love aggregating on super niche
+
+634
+00:11:57,269 --> 00:11:57,279
+hunters love aggregating on super niche
+ 
+
+635
+00:11:57,279 --> 00:12:00,069
+hunters love aggregating on super niche
+facets and attributes. We could
+
+636
+00:12:00,069 --> 00:12:00,079
+facets and attributes. We could
+ 
+
+637
+00:12:00,079 --> 00:12:01,990
+facets and attributes. We could
+pre-process with ingestion pipeline
+
+638
+00:12:01,990 --> 00:12:02,000
+pre-process with ingestion pipeline
+ 
+
+639
+00:12:02,000 --> 00:12:03,829
+pre-process with ingestion pipeline
+data. So build an understanding of
+
+640
+00:12:03,829 --> 00:12:03,839
+data. So build an understanding of
+ 
+
+641
+00:12:03,839 --> 00:12:06,550
+data. So build an understanding of
+schema statically. We gather all the
+
+642
+00:12:06,550 --> 00:12:06,560
+schema statically. We gather all the
+ 
+
+643
+00:12:06,560 --> 00:12:08,389
+schema statically. We gather all the
+remappers and grock parsers from the
+
+644
+00:12:08,389 --> 00:12:08,399
+remappers and grock parsers from the
+ 
+
+645
+00:12:08,399 --> 00:12:10,550
+remappers and grock parsers from the
+configuration pipeline and then we feed
+
+646
+00:12:10,550 --> 00:12:10,560
+configuration pipeline and then we feed
+ 
+
+647
+00:12:10,560 --> 00:12:12,310
+configuration pipeline and then we feed
+that into the context. But it still
+
+648
+00:12:12,310 --> 00:12:12,320
+that into the context. But it still
+ 
+
+649
+00:12:12,320 --> 00:12:13,990
+that into the context. But it still
+misses some information and it's
+
+650
+00:12:13,990 --> 00:12:14,000
+misses some information and it's
+ 
+
+651
+00:12:14,000 --> 00:12:16,230
+misses some information and it's
+consuming a lot of context space and
+
+652
+00:12:16,230 --> 00:12:16,240
+consuming a lot of context space and
+ 
+
+653
+00:12:16,240 --> 00:12:18,310
+consuming a lot of context space and
+it's also subject to change. So we still
+
+654
+00:12:18,310 --> 00:12:18,320
+it's also subject to change. So we still
+ 
+
+655
+00:12:18,320 --> 00:12:21,030
+it's also subject to change. So we still
+need a more dynamic approach that would
+
+656
+00:12:21,030 --> 00:12:21,040
+need a more dynamic approach that would
+ 
+
+657
+00:12:21,040 --> 00:12:23,110
+need a more dynamic approach that would
+be live sampling dynamically learn
+
+658
+00:12:23,110 --> 00:12:23,120
+be live sampling dynamically learn
+ 
+
+659
+00:12:23,120 --> 00:12:25,110
+be live sampling dynamically learn
+schema from the data and again this is
+
+660
+00:12:25,110 --> 00:12:25,120
+schema from the data and again this is
+ 
+
+661
+00:12:25,120 --> 00:12:27,430
+schema from the data and again this is
+computationally exhaustive. So we had to
+
+662
+00:12:27,430 --> 00:12:27,440
+computationally exhaustive. So we had to
+ 
+
+663
+00:12:27,440 --> 00:12:30,069
+computationally exhaustive. So we had to
+shift the expectation of handling this
+
+664
+00:12:30,069 --> 00:12:30,079
+shift the expectation of handling this
+ 
+
+665
+00:12:30,079 --> 00:12:32,230
+shift the expectation of handling this
+away from AI agents and towards the
+
+666
+00:12:32,230 --> 00:12:32,240
+away from AI agents and towards the
+ 
+
+667
+00:12:32,240 --> 00:12:33,990
+away from AI agents and towards the
+tools.
+
+668
+00:12:33,990 --> 00:12:34,000
+tools.
+ 
+
+669
+00:12:34,000 --> 00:12:35,990
+tools.
+Our solution is a sort of coordinated
+
+670
+00:12:35,990 --> 00:12:36,000
+Our solution is a sort of coordinated
+ 
+
+671
+00:12:36,000 --> 00:12:37,829
+Our solution is a sort of coordinated
+dance amongst all of these options and
+
+672
+00:12:37,829 --> 00:12:37,839
+dance amongst all of these options and
+ 
+
+673
+00:12:37,839 --> 00:12:40,389
+dance amongst all of these options and
+we fortify and tweak reliance on each
+
+674
+00:12:40,389 --> 00:12:40,399
+we fortify and tweak reliance on each
+ 
+
+675
+00:12:40,399 --> 00:12:42,230
+we fortify and tweak reliance on each
+one based on the performance that we're
+
+676
+00:12:42,230 --> 00:12:42,240
+one based on the performance that we're
+ 
+
+677
+00:12:42,240 --> 00:12:44,870
+one based on the performance that we're
+seeing.
+
+678
+00:12:44,870 --> 00:12:44,880
+seeing.
+ 
+
+679
+00:12:44,880 --> 00:12:48,069
+seeing.
+Okay, evaluations a pretty painstaking
+
+680
+00:12:48,069 --> 00:12:48,079
+Okay, evaluations a pretty painstaking
+ 
+
+681
+00:12:48,079 --> 00:12:50,870
+Okay, evaluations a pretty painstaking
+though undeniably important topic. The
+
+682
+00:12:50,870 --> 00:12:50,880
+though undeniably important topic. The
+ 
+
+683
+00:12:50,880 --> 00:12:52,710
+though undeniably important topic. The
+data problem I mentioned earlier, it it
+
+684
+00:12:52,710 --> 00:12:52,720
+data problem I mentioned earlier, it it
+ 
+
+685
+00:12:52,720 --> 00:12:53,990
+data problem I mentioned earlier, it it
+applies here. We do not have a
+
+686
+00:12:53,990 --> 00:12:54,000
+applies here. We do not have a
+ 
+
+687
+00:12:54,000 --> 00:12:55,829
+applies here. We do not have a
+well-curated corpus of threat hunting
+
+688
+00:12:55,829 --> 00:12:55,839
+well-curated corpus of threat hunting
+ 
+
+689
+00:12:55,839 --> 00:12:57,670
+well-curated corpus of threat hunting
+data for a traditional evaluation
+
+690
+00:12:57,670 --> 00:12:57,680
+data for a traditional evaluation
+ 
+
+691
+00:12:57,680 --> 00:13:00,069
+data for a traditional evaluation
+system. Even when we generated that
+
+692
+00:13:00,069 --> 00:13:00,079
+system. Even when we generated that
+ 
+
+693
+00:13:00,079 --> 00:13:02,310
+system. Even when we generated that
+data, we noticed that evaluation results
+
+694
+00:13:02,310 --> 00:13:02,320
+data, we noticed that evaluation results
+ 
+
+695
+00:13:02,320 --> 00:13:04,069
+data, we noticed that evaluation results
+were not reflective of its performance
+
+696
+00:13:04,069 --> 00:13:04,079
+were not reflective of its performance
+ 
+
+697
+00:13:04,079 --> 00:13:06,870
+were not reflective of its performance
+in unseen hats. These traditional
+
+698
+00:13:06,870 --> 00:13:06,880
+in unseen hats. These traditional
+ 
+
+699
+00:13:06,880 --> 00:13:08,710
+in unseen hats. These traditional
+evaluation systems with inputs and
+
+700
+00:13:08,710 --> 00:13:08,720
+evaluation systems with inputs and
+ 
+
+701
+00:13:08,720 --> 00:13:10,710
+evaluation systems with inputs and
+expected outputs, they just produced a
+
+702
+00:13:10,710 --> 00:13:10,720
+expected outputs, they just produced a
+ 
+
+703
+00:13:10,720 --> 00:13:12,470
+expected outputs, they just produced a
+bunch of statistics and oftentimes they
+
+704
+00:13:12,470 --> 00:13:12,480
+bunch of statistics and oftentimes they
+ 
+
+705
+00:13:12,480 --> 00:13:14,949
+bunch of statistics and oftentimes they
+showed high accuracy for certain tasks,
+
+706
+00:13:14,949 --> 00:13:14,959
+showed high accuracy for certain tasks,
+ 
+
+707
+00:13:14,959 --> 00:13:17,990
+showed high accuracy for certain tasks,
+but our users disagreed. So passing
+
+708
+00:13:17,990 --> 00:13:18,000
+but our users disagreed. So passing
+ 
+
+709
+00:13:18,000 --> 00:13:19,509
+but our users disagreed. So passing
+evaluations did not always correlate
+
+710
+00:13:19,509 --> 00:13:19,519
+evaluations did not always correlate
+ 
+
+711
+00:13:19,519 --> 00:13:22,069
+evaluations did not always correlate
+with trust. A single number to capture
+
+712
+00:13:22,069 --> 00:13:22,079
+with trust. A single number to capture
+ 
+
+713
+00:13:22,079 --> 00:13:23,829
+with trust. A single number to capture
+the performance can be quite misleading.
+
+714
+00:13:23,829 --> 00:13:23,839
+the performance can be quite misleading.
+ 
+
+715
+00:13:23,839 --> 00:13:26,069
+the performance can be quite misleading.
+Like claiming that an agent is 95%
+
+716
+00:13:26,069 --> 00:13:26,079
+Like claiming that an agent is 95%
+ 
+
+717
+00:13:26,079 --> 00:13:27,750
+Like claiming that an agent is 95%
+accurate, that could mean anything. and
+
+718
+00:13:27,750 --> 00:13:27,760
+accurate, that could mean anything. and
+ 
+
+719
+00:13:27,760 --> 00:13:29,190
+accurate, that could mean anything. and
+it makes you think that it'll be
+
+720
+00:13:29,190 --> 00:13:29,200
+it makes you think that it'll be
+ 
+
+721
+00:13:29,200 --> 00:13:31,430
+it makes you think that it'll be
+accurate 95% of the time in future
+
+722
+00:13:31,430 --> 00:13:31,440
+accurate 95% of the time in future
+ 
+
+723
+00:13:31,440 --> 00:13:35,030
+accurate 95% of the time in future
+hunts. What matters is it's the data
+
+724
+00:13:35,030 --> 00:13:35,040
+hunts. What matters is it's the data
+ 
+
+725
+00:13:35,040 --> 00:13:36,949
+hunts. What matters is it's the data
+rubrics and scoring mechanis mechanisms
+
+726
+00:13:36,949 --> 00:13:36,959
+rubrics and scoring mechanis mechanisms
+ 
+
+727
+00:13:36,959 --> 00:13:38,870
+rubrics and scoring mechanis mechanisms
+behind the evaluation mechanism that
+
+728
+00:13:38,870 --> 00:13:38,880
+behind the evaluation mechanism that
+ 
+
+729
+00:13:38,880 --> 00:13:41,590
+behind the evaluation mechanism that
+actually carries the truth. And so
+
+730
+00:13:41,590 --> 00:13:41,600
+actually carries the truth. And so
+ 
+
+731
+00:13:41,600 --> 00:13:43,430
+actually carries the truth. And so
+there's this trade-off between the time
+
+732
+00:13:43,430 --> 00:13:43,440
+there's this trade-off between the time
+ 
+
+733
+00:13:43,440 --> 00:13:45,750
+there's this trade-off between the time
+invested into a robust evaluation system
+
+734
+00:13:45,750 --> 00:13:45,760
+invested into a robust evaluation system
+ 
+
+735
+00:13:45,760 --> 00:13:48,389
+invested into a robust evaluation system
+and developing the tool especially given
+
+736
+00:13:48,389 --> 00:13:48,399
+and developing the tool especially given
+ 
+
+737
+00:13:48,399 --> 00:13:50,790
+and developing the tool especially given
+the size of our team. So we invested
+
+738
+00:13:50,790 --> 00:13:50,800
+the size of our team. So we invested
+ 
+
+739
+00:13:50,800 --> 00:13:54,389
+the size of our team. So we invested
+time into other eval strategies.
+
+740
+00:13:54,389 --> 00:13:54,399
+time into other eval strategies.
+ 
+
+741
+00:13:54,399 --> 00:13:56,230
+time into other eval strategies.
+Our
+
+742
+00:13:56,230 --> 00:13:56,240
+Our
+ 
+
+743
+00:13:56,240 --> 00:13:58,310
+Our
+strategy was to prioritize trends,
+
+744
+00:13:58,310 --> 00:13:58,320
+strategy was to prioritize trends,
+ 
+
+745
+00:13:58,320 --> 00:14:00,470
+strategy was to prioritize trends,
+comparative metrics, and human feedback
+
+746
+00:14:00,470 --> 00:14:00,480
+comparative metrics, and human feedback
+ 
+
+747
+00:14:00,480 --> 00:14:02,629
+comparative metrics, and human feedback
+over static benchmark performance. We
+
+748
+00:14:02,629 --> 00:14:02,639
+over static benchmark performance. We
+ 
+
+749
+00:14:02,639 --> 00:14:04,870
+over static benchmark performance. We
+conducted AB testing during our hunt
+
+750
+00:14:04,870 --> 00:14:04,880
+conducted AB testing during our hunt
+ 
+
+751
+00:14:04,880 --> 00:14:06,870
+conducted AB testing during our hunt
+weeks. So, human versus machine. Some
+
+752
+00:14:06,870 --> 00:14:06,880
+weeks. So, human versus machine. Some
+ 
+
+753
+00:14:06,880 --> 00:14:08,790
+weeks. So, human versus machine. Some
+hunters use the tool and others didn't.
+
+754
+00:14:08,790 --> 00:14:08,800
+hunters use the tool and others didn't.
+ 
+
+755
+00:14:08,800 --> 00:14:10,069
+hunters use the tool and others didn't.
+And we compared their respective
+
+756
+00:14:10,069 --> 00:14:10,079
+And we compared their respective
+ 
+
+757
+00:14:10,079 --> 00:14:13,350
+And we compared their respective
+results. We rely on a frequent and tight
+
+758
+00:14:13,350 --> 00:14:13,360
+results. We rely on a frequent and tight
+ 
+
+759
+00:14:13,360 --> 00:14:15,430
+results. We rely on a frequent and tight
+user feedback loop and also collect data
+
+760
+00:14:15,430 --> 00:14:15,440
+user feedback loop and also collect data
+ 
+
+761
+00:14:15,440 --> 00:14:17,110
+user feedback loop and also collect data
+as the hunters use the tool to figure
+
+762
+00:14:17,110 --> 00:14:17,120
+as the hunters use the tool to figure
+ 
+
+763
+00:14:17,120 --> 00:14:19,269
+as the hunters use the tool to figure
+out when and how they choose to use it.
+
+764
+00:14:19,269 --> 00:14:19,279
+out when and how they choose to use it.
+ 
+
+765
+00:14:19,279 --> 00:14:22,150
+out when and how they choose to use it.
+Because for us, usage corresponded to
+
+766
+00:14:22,150 --> 00:14:22,160
+Because for us, usage corresponded to
+ 
+
+767
+00:14:22,160 --> 00:14:24,150
+Because for us, usage corresponded to
+success.
+
+768
+00:14:24,150 --> 00:14:24,160
+success.
+ 
+
+769
+00:14:24,160 --> 00:14:26,150
+success.
+We pruned non-essential evaluation
+
+770
+00:14:26,150 --> 00:14:26,160
+We pruned non-essential evaluation
+ 
+
+771
+00:14:26,160 --> 00:14:27,670
+We pruned non-essential evaluation
+metrics and distilled it down to a few
+
+772
+00:14:27,670 --> 00:14:27,680
+metrics and distilled it down to a few
+ 
+
+773
+00:14:27,680 --> 00:14:29,590
+metrics and distilled it down to a few
+tasks that traditional benchmarking made
+
+774
+00:14:29,590 --> 00:14:29,600
+tasks that traditional benchmarking made
+ 
+
+775
+00:14:29,600 --> 00:14:31,590
+tasks that traditional benchmarking made
+sense for like response speed or syntax
+
+776
+00:14:31,590 --> 00:14:31,600
+sense for like response speed or syntax
+ 
+
+777
+00:14:31,600 --> 00:14:33,509
+sense for like response speed or syntax
+accuracy because we have like a data dog
+
+778
+00:14:33,509 --> 00:14:33,519
+accuracy because we have like a data dog
+ 
+
+779
+00:14:33,519 --> 00:14:36,550
+accuracy because we have like a data dog
+syntax validation checker for semantic
+
+780
+00:14:36,550 --> 00:14:36,560
+syntax validation checker for semantic
+ 
+
+781
+00:14:36,560 --> 00:14:38,470
+syntax validation checker for semantic
+accuracy. We're not just pinning an LLM
+
+782
+00:14:38,470 --> 00:14:38,480
+accuracy. We're not just pinning an LLM
+ 
+
+783
+00:14:38,480 --> 00:14:39,990
+accuracy. We're not just pinning an LLM
+based judge against it like that would
+
+784
+00:14:39,990 --> 00:14:40,000
+based judge against it like that would
+ 
+
+785
+00:14:40,000 --> 00:14:41,509
+based judge against it like that would
+be circular because we just I just
+
+786
+00:14:41,509 --> 00:14:41,519
+be circular because we just I just
+ 
+
+787
+00:14:41,519 --> 00:14:43,189
+be circular because we just I just
+argued that LLMs aren't very skilled at
+
+788
+00:14:43,189 --> 00:14:43,199
+argued that LLMs aren't very skilled at
+ 
+
+789
+00:14:43,199 --> 00:14:45,269
+argued that LLMs aren't very skilled at
+that. What we do instead is that we run
+
+790
+00:14:45,269 --> 00:14:45,279
+that. What we do instead is that we run
+ 
+
+791
+00:14:45,279 --> 00:14:46,790
+that. What we do instead is that we run
+the agent on our test prompts and we
+
+792
+00:14:46,790 --> 00:14:46,800
+the agent on our test prompts and we
+ 
+
+793
+00:14:46,800 --> 00:14:49,030
+the agent on our test prompts and we
+extract the unique queries and then we
+
+794
+00:14:49,030 --> 00:14:49,040
+extract the unique queries and then we
+ 
+
+795
+00:14:49,040 --> 00:14:52,150
+extract the unique queries and then we
+run them to see the results. Um, and it
+
+796
+00:14:52,150 --> 00:14:52,160
+run them to see the results. Um, and it
+ 
+
+797
+00:14:52,160 --> 00:14:53,910
+run them to see the results. Um, and it
+for the test cases that didn't have any
+
+798
+00:14:53,910 --> 00:14:53,920
+for the test cases that didn't have any
+ 
+
+799
+00:14:53,920 --> 00:14:55,110
+for the test cases that didn't have any
+results, we would do a lot of manual
+
+800
+00:14:55,110 --> 00:14:55,120
+results, we would do a lot of manual
+ 
+
+801
+00:14:55,120 --> 00:14:57,350
+results, we would do a lot of manual
+verification. And we did, you know, we
+
+802
+00:14:57,350 --> 00:14:57,360
+verification. And we did, you know, we
+ 
+
+803
+00:14:57,360 --> 00:14:59,750
+verification. And we did, you know, we
+did add an LLM judge on that. But it's
+
+804
+00:14:59,750 --> 00:14:59,760
+did add an LLM judge on that. But it's
+ 
+
+805
+00:14:59,760 --> 00:15:01,829
+did add an LLM judge on that. But it's
+kind of a combination of different
+
+806
+00:15:01,829 --> 00:15:01,839
+kind of a combination of different
+ 
+
+807
+00:15:01,839 --> 00:15:05,269
+kind of a combination of different
+tactics as opposed to just what does LLM
+
+808
+00:15:05,269 --> 00:15:05,279
+tactics as opposed to just what does LLM
+ 
+
+809
+00:15:05,279 --> 00:15:09,829
+tactics as opposed to just what does LLM
+base judge think um, off the bat.
+
+810
+00:15:09,829 --> 00:15:09,839
+base judge think um, off the bat.
+ 
+
+811
+00:15:09,839 --> 00:15:11,750
+base judge think um, off the bat.
+All right. So, that was kind of the
+
+812
+00:15:11,750 --> 00:15:11,760
+All right. So, that was kind of the
+ 
+
+813
+00:15:11,760 --> 00:15:13,670
+All right. So, that was kind of the
+preface and how we built it. And now I
+
+814
+00:15:13,670 --> 00:15:13,680
+preface and how we built it. And now I
+ 
+
+815
+00:15:13,680 --> 00:15:15,509
+preface and how we built it. And now I
+want to walk through how our tool aided
+
+816
+00:15:15,509 --> 00:15:15,519
+want to walk through how our tool aided
+ 
+
+817
+00:15:15,519 --> 00:15:17,670
+want to walk through how our tool aided
+our hunters in a recent ADS privilege
+
+818
+00:15:17,670 --> 00:15:17,680
+our hunters in a recent ADS privilege
+ 
+
+819
+00:15:17,680 --> 00:15:21,509
+our hunters in a recent ADS privilege
+escalation, hunt week.
+
+820
+00:15:21,509 --> 00:15:21,519
+escalation, hunt week.
+ 
+
+821
+00:15:21,519 --> 00:15:23,030
+escalation, hunt week.
+One of our hunters focused on an
+
+822
+00:15:23,030 --> 00:15:23,040
+One of our hunters focused on an
+ 
+
+823
+00:15:23,040 --> 00:15:25,590
+One of our hunters focused on an
+escalation path with the AM create login
+
+824
+00:15:25,590 --> 00:15:25,600
+escalation path with the AM create login
+ 
+
+825
+00:15:25,600 --> 00:15:27,189
+escalation path with the AM create login
+profile event. This is a pretty dense
+
+826
+00:15:27,189 --> 00:15:27,199
+profile event. This is a pretty dense
+ 
+
+827
+00:15:27,199 --> 00:15:28,389
+profile event. This is a pretty dense
+slide, so I'll try to walk you through
+
+828
+00:15:28,389 --> 00:15:28,399
+slide, so I'll try to walk you through
+ 
+
+829
+00:15:28,399 --> 00:15:30,230
+slide, so I'll try to walk you through
+it as best as I can. Starting on the
+
+830
+00:15:30,230 --> 00:15:30,240
+it as best as I can. Starting on the
+ 
+
+831
+00:15:30,240 --> 00:15:33,110
+it as best as I can. Starting on the
+left, top left, you can see that the
+
+832
+00:15:33,110 --> 00:15:33,120
+left, top left, you can see that the
+ 
+
+833
+00:15:33,120 --> 00:15:35,189
+left, top left, you can see that the
+agent generated a starting query and
+
+834
+00:15:35,189 --> 00:15:35,199
+agent generated a starting query and
+ 
+
+835
+00:15:35,199 --> 00:15:37,110
+agent generated a starting query and
+automatically broaden the scope from 1
+
+836
+00:15:37,110 --> 00:15:37,120
+automatically broaden the scope from 1
+ 
+
+837
+00:15:37,120 --> 00:15:40,470
+automatically broaden the scope from 1
+day to 7 days, then eventually 30 days.
+
+838
+00:15:40,470 --> 00:15:40,480
+day to 7 days, then eventually 30 days.
+ 
+
+839
+00:15:40,480 --> 00:15:43,189
+day to 7 days, then eventually 30 days.
+Moving down, the agent identified six
+
+840
+00:15:43,189 --> 00:15:43,199
+Moving down, the agent identified six
+ 
+
+841
+00:15:43,199 --> 00:15:44,949
+Moving down, the agent identified six
+distinct targets and correctly assumed
+
+842
+00:15:44,949 --> 00:15:44,959
+distinct targets and correctly assumed
+ 
+
+843
+00:15:44,959 --> 00:15:46,790
+distinct targets and correctly assumed
+that they were associated with test
+
+844
+00:15:46,790 --> 00:15:46,800
+that they were associated with test
+ 
+
+845
+00:15:46,800 --> 00:15:48,710
+that they were associated with test
+accounts. It identified the type of
+
+846
+00:15:48,710 --> 00:15:48,720
+accounts. It identified the type of
+ 
+
+847
+00:15:48,720 --> 00:15:50,470
+accounts. It identified the type of
+password reset behav be behavior that
+
+848
+00:15:50,470 --> 00:15:50,480
+password reset behav be behavior that
+ 
+
+849
+00:15:50,480 --> 00:15:52,069
+password reset behav be behavior that
+made some of these events suspicious
+
+850
+00:15:52,069 --> 00:15:52,079
+made some of these events suspicious
+ 
+
+851
+00:15:52,079 --> 00:15:53,990
+made some of these events suspicious
+versus not.
+
+852
+00:15:53,990 --> 00:15:54,000
+versus not.
+ 
+
+853
+00:15:54,000 --> 00:15:55,829
+versus not.
+I I had to redact some of this um
+
+854
+00:15:55,829 --> 00:15:55,839
+I I had to redact some of this um
+ 
+
+855
+00:15:55,839 --> 00:15:57,269
+I I had to redact some of this um
+information, but funny enough, these
+
+856
+00:15:57,269 --> 00:15:57,279
+information, but funny enough, these
+ 
+
+857
+00:15:57,279 --> 00:15:58,870
+information, but funny enough, these
+users were actually generated by one of
+
+858
+00:15:58,870 --> 00:15:58,880
+users were actually generated by one of
+ 
+
+859
+00:15:58,880 --> 00:16:01,430
+users were actually generated by one of
+our security research teams um as test
+
+860
+00:16:01,430 --> 00:16:01,440
+our security research teams um as test
+ 
+
+861
+00:16:01,440 --> 00:16:02,710
+our security research teams um as test
+threat actors. So, it was pretty cool
+
+862
+00:16:02,710 --> 00:16:02,720
+threat actors. So, it was pretty cool
+ 
+
+863
+00:16:02,720 --> 00:16:04,069
+threat actors. So, it was pretty cool
+that our agent could identify them.
+
+864
+00:16:04,069 --> 00:16:04,079
+that our agent could identify them.
+ 
+
+865
+00:16:04,079 --> 00:16:06,150
+that our agent could identify them.
+There's no incident, but um definitely
+
+866
+00:16:06,150 --> 00:16:06,160
+There's no incident, but um definitely
+ 
+
+867
+00:16:06,160 --> 00:16:08,949
+There's no incident, but um definitely
+identifying suspicious behavior.
+
+868
+00:16:08,949 --> 00:16:08,959
+identifying suspicious behavior.
+ 
+
+869
+00:16:08,959 --> 00:16:13,030
+identifying suspicious behavior.
+And then moving to the right or yes I
+
+870
+00:16:13,030 --> 00:16:13,040
+And then moving to the right or yes I
+ 
+
+871
+00:16:13,040 --> 00:16:14,550
+And then moving to the right or yes I
+think my uh rights and lefts are
+
+872
+00:16:14,550 --> 00:16:14,560
+think my uh rights and lefts are
+ 
+
+873
+00:16:14,560 --> 00:16:17,350
+think my uh rights and lefts are
+confused but um it then provided a
+
+874
+00:16:17,350 --> 00:16:17,360
+confused but um it then provided a
+ 
+
+875
+00:16:17,360 --> 00:16:19,590
+confused but um it then provided a
+verdict of likely benign as well as next
+
+876
+00:16:19,590 --> 00:16:19,600
+verdict of likely benign as well as next
+ 
+
+877
+00:16:19,600 --> 00:16:21,110
+verdict of likely benign as well as next
+steps for verifying them and potential
+
+878
+00:16:21,110 --> 00:16:21,120
+steps for verifying them and potential
+ 
+
+879
+00:16:21,120 --> 00:16:23,030
+steps for verifying them and potential
+pivots. It named these are the users you
+
+880
+00:16:23,030 --> 00:16:23,040
+pivots. It named these are the users you
+ 
+
+881
+00:16:23,040 --> 00:16:24,310
+pivots. It named these are the users you
+should reach out to and figure out if
+
+882
+00:16:24,310 --> 00:16:24,320
+should reach out to and figure out if
+ 
+
+883
+00:16:24,320 --> 00:16:25,590
+should reach out to and figure out if
+they're actually authorized to have
+
+884
+00:16:25,590 --> 00:16:25,600
+they're actually authorized to have
+ 
+
+885
+00:16:25,600 --> 00:16:29,189
+they're actually authorized to have
+these roles.
+
+886
+00:16:29,189 --> 00:16:29,199
+
+ 
+
+887
+00:16:29,199 --> 00:16:31,670
+
+Our hunter also progressed it by asking
+
+888
+00:16:31,670 --> 00:16:31,680
+Our hunter also progressed it by asking
+ 
+
+889
+00:16:31,680 --> 00:16:33,749
+Our hunter also progressed it by asking
+if there were subsequent console login
+
+890
+00:16:33,749 --> 00:16:33,759
+if there were subsequent console login
+ 
+
+891
+00:16:33,759 --> 00:16:36,069
+if there were subsequent console login
+for the created users. So the agent
+
+892
+00:16:36,069 --> 00:16:36,079
+for the created users. So the agent
+ 
+
+893
+00:16:36,079 --> 00:16:37,990
+for the created users. So the agent
+generated a new query and identified
+
+894
+00:16:37,990 --> 00:16:38,000
+generated a new query and identified
+ 
+
+895
+00:16:38,000 --> 00:16:40,069
+generated a new query and identified
+that there wasn't any evidence of that
+
+896
+00:16:40,069 --> 00:16:40,079
+that there wasn't any evidence of that
+ 
+
+897
+00:16:40,079 --> 00:16:41,749
+that there wasn't any evidence of that
+and it did it for all of the relevant
+
+898
+00:16:41,749 --> 00:16:41,759
+and it did it for all of the relevant
+ 
+
+899
+00:16:41,759 --> 00:16:45,269
+and it did it for all of the relevant
+users that it found in a prior request.
+
+900
+00:16:45,269 --> 00:16:45,279
+users that it found in a prior request.
+ 
+
+901
+00:16:45,279 --> 00:16:47,110
+users that it found in a prior request.
+So this was a pretty good success case
+
+902
+00:16:47,110 --> 00:16:47,120
+So this was a pretty good success case
+ 
+
+903
+00:16:47,120 --> 00:16:48,710
+So this was a pretty good success case
+and I I think what also made it
+
+904
+00:16:48,710 --> 00:16:48,720
+and I I think what also made it
+ 
+
+905
+00:16:48,720 --> 00:16:49,990
+and I I think what also made it
+successful is that there was a hunter
+
+906
+00:16:49,990 --> 00:16:50,000
+successful is that there was a hunter
+ 
+
+907
+00:16:50,000 --> 00:16:53,269
+successful is that there was a hunter
+that was driving it with a very concrete
+
+908
+00:16:53,269 --> 00:16:53,279
+that was driving it with a very concrete
+ 
+
+909
+00:16:53,279 --> 00:16:55,670
+that was driving it with a very concrete
+playbook. Um so the agent was doing a
+
+910
+00:16:55,670 --> 00:16:55,680
+playbook. Um so the agent was doing a
+ 
+
+911
+00:16:55,680 --> 00:16:56,790
+playbook. Um so the agent was doing a
+lot of the searching and the data
+
+912
+00:16:56,790 --> 00:16:56,800
+lot of the searching and the data
+ 
+
+913
+00:16:56,800 --> 00:16:59,430
+lot of the searching and the data
+analysis but um the hunt was kind of
+
+914
+00:16:59,430 --> 00:16:59,440
+analysis but um the hunt was kind of
+ 
+
+915
+00:16:59,440 --> 00:17:01,269
+analysis but um the hunt was kind of
+defined or the playbook was defined by
+
+916
+00:17:01,269 --> 00:17:01,279
+defined or the playbook was defined by
+ 
+
+917
+00:17:01,279 --> 00:17:04,390
+defined or the playbook was defined by
+the expert in this case.
+
+918
+00:17:04,390 --> 00:17:04,400
+the expert in this case.
+ 
+
+919
+00:17:04,400 --> 00:17:05,990
+the expert in this case.
+Last thing I wanted to show is some of
+
+920
+00:17:05,990 --> 00:17:06,000
+Last thing I wanted to show is some of
+ 
+
+921
+00:17:06,000 --> 00:17:08,710
+Last thing I wanted to show is some of
+our reasoning transparency. So basically
+
+922
+00:17:08,710 --> 00:17:08,720
+our reasoning transparency. So basically
+ 
+
+923
+00:17:08,720 --> 00:17:10,150
+our reasoning transparency. So basically
+it's a little bit dense but these are
+
+924
+00:17:10,150 --> 00:17:10,160
+it's a little bit dense but these are
+ 
+
+925
+00:17:10,160 --> 00:17:11,350
+it's a little bit dense but these are
+the requests that were sent to the sub
+
+926
+00:17:11,350 --> 00:17:11,360
+the requests that were sent to the sub
+ 
+
+927
+00:17:11,360 --> 00:17:13,350
+the requests that were sent to the sub
+agent. So it called the AWS agent once
+
+928
+00:17:13,350 --> 00:17:13,360
+agent. So it called the AWS agent once
+ 
+
+929
+00:17:13,360 --> 00:17:15,429
+agent. So it called the AWS agent once
+and the data dog agent numerous number
+
+930
+00:17:15,429 --> 00:17:15,439
+and the data dog agent numerous number
+ 
+
+931
+00:17:15,439 --> 00:17:17,270
+and the data dog agent numerous number
+of times to really do that iterative
+
+932
+00:17:17,270 --> 00:17:17,280
+of times to really do that iterative
+ 
+
+933
+00:17:17,280 --> 00:17:19,429
+of times to really do that iterative
+refinement. So it's both data dog agent
+
+934
+00:17:19,429 --> 00:17:19,439
+refinement. So it's both data dog agent
+ 
+
+935
+00:17:19,439 --> 00:17:21,189
+refinement. So it's both data dog agent
+calling the data dog MCP a bunch of
+
+936
+00:17:21,189 --> 00:17:21,199
+calling the data dog MCP a bunch of
+ 
+
+937
+00:17:21,199 --> 00:17:23,270
+calling the data dog MCP a bunch of
+times and the orchestrator agent calling
+
+938
+00:17:23,270 --> 00:17:23,280
+times and the orchestrator agent calling
+ 
+
+939
+00:17:23,280 --> 00:17:25,429
+times and the orchestrator agent calling
+the data dog agent a bunch of times. So
+
+940
+00:17:25,429 --> 00:17:25,439
+the data dog agent a bunch of times. So
+ 
+
+941
+00:17:25,439 --> 00:17:28,870
+the data dog agent a bunch of times. So
+there's two loops here.
+
+942
+00:17:28,870 --> 00:17:28,880
+there's two loops here.
+ 
+
+943
+00:17:28,880 --> 00:17:32,230
+there's two loops here.
+We also ran an AB testing week um in the
+
+944
+00:17:32,230 --> 00:17:32,240
+We also ran an AB testing week um in the
+ 
+
+945
+00:17:32,240 --> 00:17:35,510
+We also ran an AB testing week um in the
+same AWS privilege escalation hunt week.
+
+946
+00:17:35,510 --> 00:17:35,520
+same AWS privilege escalation hunt week.
+ 
+
+947
+00:17:35,520 --> 00:17:37,350
+same AWS privilege escalation hunt week.
+Team A utilized the hunting co-pilot and
+
+948
+00:17:37,350 --> 00:17:37,360
+Team A utilized the hunting co-pilot and
+ 
+
+949
+00:17:37,360 --> 00:17:39,350
+Team A utilized the hunting co-pilot and
+team B was a more experienced threat
+
+950
+00:17:39,350 --> 00:17:39,360
+team B was a more experienced threat
+ 
+
+951
+00:17:39,360 --> 00:17:40,950
+team B was a more experienced threat
+hunter could not use the hunting
+
+952
+00:17:40,950 --> 00:17:40,960
+hunter could not use the hunting
+ 
+
+953
+00:17:40,960 --> 00:17:42,870
+hunter could not use the hunting
+co-pilot, but they could use chat GPT.
+
+954
+00:17:42,870 --> 00:17:42,880
+co-pilot, but they could use chat GPT.
+ 
+
+955
+00:17:42,880 --> 00:17:44,789
+co-pilot, but they could use chat GPT.
+It didn't make sense to cut out AI usage
+
+956
+00:17:44,789 --> 00:17:44,799
+It didn't make sense to cut out AI usage
+ 
+
+957
+00:17:44,799 --> 00:17:47,510
+It didn't make sense to cut out AI usage
+entirely. We tracked live metrics for
+
+958
+00:17:47,510 --> 00:17:47,520
+entirely. We tracked live metrics for
+ 
+
+959
+00:17:47,520 --> 00:17:49,110
+entirely. We tracked live metrics for
+the tool, but we also had them fill out
+
+960
+00:17:49,110 --> 00:17:49,120
+the tool, but we also had them fill out
+ 
+
+961
+00:17:49,120 --> 00:17:50,789
+the tool, but we also had them fill out
+rubrics and questionnaires for
+
+962
+00:17:50,789 --> 00:17:50,799
+rubrics and questionnaires for
+ 
+
+963
+00:17:50,799 --> 00:17:53,029
+rubrics and questionnaires for
+subjective scoring.
+
+964
+00:17:53,029 --> 00:17:53,039
+subjective scoring.
+ 
+
+965
+00:17:53,039 --> 00:17:54,950
+subjective scoring.
+There were many hypotheses explored
+
+966
+00:17:54,950 --> 00:17:54,960
+There were many hypotheses explored
+ 
+
+967
+00:17:54,960 --> 00:17:56,870
+There were many hypotheses explored
+during this week. So we reviewed the
+
+968
+00:17:56,870 --> 00:17:56,880
+during this week. So we reviewed the
+ 
+
+969
+00:17:56,880 --> 00:17:58,710
+during this week. So we reviewed the
+results holistically and compared
+
+970
+00:17:58,710 --> 00:17:58,720
+results holistically and compared
+ 
+
+971
+00:17:58,720 --> 00:18:00,950
+results holistically and compared
+similar hypotheses. This is because we
+
+972
+00:18:00,950 --> 00:18:00,960
+similar hypotheses. This is because we
+ 
+
+973
+00:18:00,960 --> 00:18:02,630
+similar hypotheses. This is because we
+wanted to minimize testing disruption
+
+974
+00:18:02,630 --> 00:18:02,640
+wanted to minimize testing disruption
+ 
+
+975
+00:18:02,640 --> 00:18:04,150
+wanted to minimize testing disruption
+for their hunts. Like these are actual
+
+976
+00:18:04,150 --> 00:18:04,160
+for their hunts. Like these are actual
+ 
+
+977
+00:18:04,160 --> 00:18:05,430
+for their hunts. Like these are actual
+production hunts and they're expected to
+
+978
+00:18:05,430 --> 00:18:05,440
+production hunts and they're expected to
+ 
+
+979
+00:18:05,440 --> 00:18:07,669
+production hunts and they're expected to
+deliver results from these. When we
+
+980
+00:18:07,669 --> 00:18:07,679
+deliver results from these. When we
+ 
+
+981
+00:18:07,679 --> 00:18:09,029
+deliver results from these. When we
+compared the results of the two teams,
+
+982
+00:18:09,029 --> 00:18:09,039
+compared the results of the two teams,
+ 
+
+983
+00:18:09,039 --> 00:18:10,870
+compared the results of the two teams,
+we found that the hunting co-pilot cut
+
+984
+00:18:10,870 --> 00:18:10,880
+we found that the hunting co-pilot cut
+ 
+
+985
+00:18:10,880 --> 00:18:13,270
+we found that the hunting co-pilot cut
+the average query iteration time from 10
+
+986
+00:18:13,270 --> 00:18:13,280
+the average query iteration time from 10
+ 
+
+987
+00:18:13,280 --> 00:18:15,510
+the average query iteration time from 10
+minutes to 5 minutes and the hunt
+
+988
+00:18:15,510 --> 00:18:15,520
+minutes to 5 minutes and the hunt
+ 
+
+989
+00:18:15,520 --> 00:18:17,110
+minutes to 5 minutes and the hunt
+duration for each of these hypotheses
+
+990
+00:18:17,110 --> 00:18:17,120
+duration for each of these hypotheses
+ 
+
+991
+00:18:17,120 --> 00:18:19,190
+duration for each of these hypotheses
+were about 60 minutes and the tool
+
+992
+00:18:19,190 --> 00:18:19,200
+were about 60 minutes and the tool
+ 
+
+993
+00:18:19,200 --> 00:18:22,310
+were about 60 minutes and the tool
+helped save 25 of those minutes. We also
+
+994
+00:18:22,310 --> 00:18:22,320
+helped save 25 of those minutes. We also
+ 
+
+995
+00:18:22,320 --> 00:18:23,830
+helped save 25 of those minutes. We also
+noticed that the response times all
+
+996
+00:18:23,830 --> 00:18:23,840
+noticed that the response times all
+ 
+
+997
+00:18:23,840 --> 00:18:26,310
+noticed that the response times all
+remained under six minutes for this week
+
+998
+00:18:26,310 --> 00:18:26,320
+remained under six minutes for this week
+ 
+
+999
+00:18:26,320 --> 00:18:28,150
+remained under six minutes for this week
+in particular.
+
+1000
+00:18:28,150 --> 00:18:28,160
+in particular.
+ 
+
+1001
+00:18:28,160 --> 00:18:29,590
+in particular.
+When we looked at the subjective scores,
+
+1002
+00:18:29,590 --> 00:18:29,600
+When we looked at the subjective scores,
+ 
+
+1003
+00:18:29,600 --> 00:18:31,110
+When we looked at the subjective scores,
+the tool succeeded in hypothesis
+
+1004
+00:18:31,110 --> 00:18:31,120
+the tool succeeded in hypothesis
+ 
+
+1005
+00:18:31,120 --> 00:18:33,430
+the tool succeeded in hypothesis
+relevancy and context awareness. It
+
+1006
+00:18:33,430 --> 00:18:33,440
+relevancy and context awareness. It
+ 
+
+1007
+00:18:33,440 --> 00:18:35,190
+relevancy and context awareness. It
+stayed on track and it used the data to
+
+1008
+00:18:35,190 --> 00:18:35,200
+stayed on track and it used the data to
+ 
+
+1009
+00:18:35,200 --> 00:18:37,590
+stayed on track and it used the data to
+drive conclusions. However, on more
+
+1010
+00:18:37,590 --> 00:18:37,600
+drive conclusions. However, on more
+ 
+
+1011
+00:18:37,600 --> 00:18:39,990
+drive conclusions. However, on more
+complex hypotheses where a lot of data
+
+1012
+00:18:39,990 --> 00:18:40,000
+complex hypotheses where a lot of data
+ 
+
+1013
+00:18:40,000 --> 00:18:41,590
+complex hypotheses where a lot of data
+needed to be analyzed, it struggled with
+
+1014
+00:18:41,590 --> 00:18:41,600
+needed to be analyzed, it struggled with
+ 
+
+1015
+00:18:41,600 --> 00:18:43,830
+needed to be analyzed, it struggled with
+signal to noise control. The data volume
+
+1016
+00:18:43,830 --> 00:18:43,840
+signal to noise control. The data volume
+ 
+
+1017
+00:18:43,840 --> 00:18:45,750
+signal to noise control. The data volume
+was just too high and it wasn't able to
+
+1018
+00:18:45,750 --> 00:18:45,760
+was just too high and it wasn't able to
+ 
+
+1019
+00:18:45,760 --> 00:18:47,190
+was just too high and it wasn't able to
+automatically garner insights from the
+
+1020
+00:18:47,190 --> 00:18:47,200
+automatically garner insights from the
+ 
+
+1021
+00:18:47,200 --> 00:18:48,470
+automatically garner insights from the
+surface logs because there was a lot of
+
+1022
+00:18:48,470 --> 00:18:48,480
+surface logs because there was a lot of
+ 
+
+1023
+00:18:48,480 --> 00:18:51,350
+surface logs because there was a lot of
+truncation happening. So there's still
+
+1024
+00:18:51,350 --> 00:18:51,360
+truncation happening. So there's still
+ 
+
+1025
+00:18:51,360 --> 00:18:53,430
+truncation happening. So there's still
+room for improvement and it helped us
+
+1026
+00:18:53,430 --> 00:18:53,440
+room for improvement and it helped us
+ 
+
+1027
+00:18:53,440 --> 00:18:55,590
+room for improvement and it helped us
+decide which solutions of the four I was
+
+1028
+00:18:55,590 --> 00:18:55,600
+decide which solutions of the four I was
+ 
+
+1029
+00:18:55,600 --> 00:18:57,830
+decide which solutions of the four I was
+talking about to prioritize for semantic
+
+1030
+00:18:57,830 --> 00:18:57,840
+talking about to prioritize for semantic
+ 
+
+1031
+00:18:57,840 --> 00:18:59,590
+talking about to prioritize for semantic
+accuracy.
+
+1032
+00:18:59,590 --> 00:18:59,600
+accuracy.
+ 
+
+1033
+00:18:59,600 --> 00:19:01,029
+accuracy.
+Also, if you're curious, the hunt week
+
+1034
+00:19:01,029 --> 00:19:01,039
+Also, if you're curious, the hunt week
+ 
+
+1035
+00:19:01,039 --> 00:19:02,870
+Also, if you're curious, the hunt week
+produced um two new cloud detection
+
+1036
+00:19:02,870 --> 00:19:02,880
+produced um two new cloud detection
+ 
+
+1037
+00:19:02,880 --> 00:19:07,830
+produced um two new cloud detection
+rules and uncovered zero incidents.
+
+1038
+00:19:07,830 --> 00:19:07,840
+
+ 
+
+1039
+00:19:07,840 --> 00:19:09,350
+
+We garnered a deeper understanding of
+
+1040
+00:19:09,350 --> 00:19:09,360
+We garnered a deeper understanding of
+ 
+
+1041
+00:19:09,360 --> 00:19:11,510
+We garnered a deeper understanding of
+the automation boundary and how we can
+
+1042
+00:19:11,510 --> 00:19:11,520
+the automation boundary and how we can
+ 
+
+1043
+00:19:11,520 --> 00:19:13,350
+the automation boundary and how we can
+help our hunters. Currently, our
+
+1044
+00:19:13,350 --> 00:19:13,360
+help our hunters. Currently, our
+ 
+
+1045
+00:19:13,360 --> 00:19:15,590
+help our hunters. Currently, our
+automation boundary is three-fold. In
+
+1046
+00:19:15,590 --> 00:19:15,600
+automation boundary is three-fold. In
+ 
+
+1047
+00:19:15,600 --> 00:19:17,110
+automation boundary is three-fold. In
+addition to query generation and data
+
+1048
+00:19:17,110 --> 00:19:17,120
+addition to query generation and data
+ 
+
+1049
+00:19:17,120 --> 00:19:19,190
+addition to query generation and data
+analysis, our hunters also wanted the
+
+1050
+00:19:19,190 --> 00:19:19,200
+analysis, our hunters also wanted the
+ 
+
+1051
+00:19:19,200 --> 00:19:21,590
+analysis, our hunters also wanted the
+agent to pull in different sources and
+
+1052
+00:19:21,590 --> 00:19:21,600
+agent to pull in different sources and
+ 
+
+1053
+00:19:21,600 --> 00:19:25,029
+agent to pull in different sources and
+pivot on these hypotheses.
+
+1054
+00:19:25,029 --> 00:19:25,039
+pivot on these hypotheses.
+ 
+
+1055
+00:19:25,039 --> 00:19:26,950
+pivot on these hypotheses.
+More precisely, when we saw reduced
+
+1056
+00:19:26,950 --> 00:19:26,960
+More precisely, when we saw reduced
+ 
+
+1057
+00:19:26,960 --> 00:19:29,909
+More precisely, when we saw reduced
+performance, we refocused AI usage on
+
+1058
+00:19:29,909 --> 00:19:29,919
+performance, we refocused AI usage on
+ 
+
+1059
+00:19:29,919 --> 00:19:31,830
+performance, we refocused AI usage on
+the components that actually map to its
+
+1060
+00:19:31,830 --> 00:19:31,840
+the components that actually map to its
+ 
+
+1061
+00:19:31,840 --> 00:19:33,430
+the components that actually map to its
+strengths like summarization and
+
+1062
+00:19:33,430 --> 00:19:33,440
+strengths like summarization and
+ 
+
+1063
+00:19:33,440 --> 00:19:36,150
+strengths like summarization and
+synthesis. It was optimal for our team
+
+1064
+00:19:36,150 --> 00:19:36,160
+synthesis. It was optimal for our team
+ 
+
+1065
+00:19:36,160 --> 00:19:37,830
+synthesis. It was optimal for our team
+to let the threat hunters drive the
+
+1066
+00:19:37,830 --> 00:19:37,840
+to let the threat hunters drive the
+ 
+
+1067
+00:19:37,840 --> 00:19:40,230
+to let the threat hunters drive the
+hunt, focus on automating field
+
+1068
+00:19:40,230 --> 00:19:40,240
+hunt, focus on automating field
+ 
+
+1069
+00:19:40,240 --> 00:19:42,470
+hunt, focus on automating field
+discovery with high accuracy, and
+
+1070
+00:19:42,470 --> 00:19:42,480
+discovery with high accuracy, and
+ 
+
+1071
+00:19:42,480 --> 00:19:44,789
+discovery with high accuracy, and
+provide a convenient single platform to
+
+1072
+00:19:44,789 --> 00:19:44,799
+provide a convenient single platform to
+ 
+
+1073
+00:19:44,799 --> 00:19:46,789
+provide a convenient single platform to
+query all telemetry sources with one
+
+1074
+00:19:46,789 --> 00:19:46,799
+query all telemetry sources with one
+ 
+
+1075
+00:19:46,799 --> 00:19:48,390
+query all telemetry sources with one
+language, which in this case was
+
+1076
+00:19:48,390 --> 00:19:48,400
+language, which in this case was
+ 
+
+1077
+00:19:48,400 --> 00:19:51,830
+language, which in this case was
+English.
+
+1078
+00:19:51,830 --> 00:19:51,840
+
+ 
+
+1079
+00:19:51,840 --> 00:19:54,710
+
+Thank you so much. Um, I have a link to
+
+1080
+00:19:54,710 --> 00:19:54,720
+Thank you so much. Um, I have a link to
+ 
+
+1081
+00:19:54,720 --> 00:19:56,470
+Thank you so much. Um, I have a link to
+the public version of the slides in my
+
+1082
+00:19:56,470 --> 00:19:56,480
+the public version of the slides in my
+ 
+
+1083
+00:19:56,480 --> 00:19:58,789
+the public version of the slides in my
+LinkedIn in the corner. Um, thanks again
+
+1084
+00:19:58,789 --> 00:19:58,799
+LinkedIn in the corner. Um, thanks again
+ 
+
+1085
+00:19:58,799 --> 00:20:00,150
+LinkedIn in the corner. Um, thanks again
+for listening and let me know if you
+
+1086
+00:20:00,150 --> 00:20:00,160
+for listening and let me know if you
+ 
+
+1087
+00:20:00,160 --> 00:20:15,350
+for listening and let me know if you
+have any questions.
+
+1088
+00:20:15,350 --> 00:20:15,360
+
+ 
+
+1089
+00:20:15,360 --> 00:20:17,510
+
+questions.
+
+1090
+00:20:17,510 --> 00:20:17,520
+questions.
+ 
+
+1091
+00:20:17,520 --> 00:20:24,070
+questions.
+>> Very good. Thank you.
+
+1092
+00:20:24,070 --> 00:20:24,080
+
+ 
+
+1093
+00:20:24,080 --> 00:20:26,390
+
+for the LLM judges you talked about, did
+
+1094
+00:20:26,390 --> 00:20:26,400
+for the LLM judges you talked about, did
+ 
+
+1095
+00:20:26,400 --> 00:20:28,710
+for the LLM judges you talked about, did
+you use different LLM providers like
+
+1096
+00:20:28,710 --> 00:20:28,720
+you use different LLM providers like
+ 
+
+1097
+00:20:28,720 --> 00:20:30,470
+you use different LLM providers like
+different uh foundation models or
+
+1098
+00:20:30,470 --> 00:20:30,480
+different uh foundation models or
+ 
+
+1099
+00:20:30,480 --> 00:20:33,430
+different uh foundation models or
+different local models? And um which
+
+1100
+00:20:33,430 --> 00:20:33,440
+different local models? And um which
+ 
+
+1101
+00:20:33,440 --> 00:20:37,110
+different local models? And um which
+models were the most uh if you did,
+
+1102
+00:20:37,110 --> 00:20:37,120
+models were the most uh if you did,
+ 
+
+1103
+00:20:37,120 --> 00:20:38,789
+models were the most uh if you did,
+which models were in the most agreement
+
+1104
+00:20:38,789 --> 00:20:38,799
+which models were in the most agreement
+ 
+
+1105
+00:20:38,799 --> 00:20:43,669
+which models were in the most agreement
+with a human judge or how often did they
+
+1106
+00:20:43,669 --> 00:20:43,679
+with a human judge or how often did they
+ 
+
+1107
+00:20:43,679 --> 00:20:45,510
+with a human judge or how often did they
+kind of differ in their opinion of of
+
+1108
+00:20:45,510 --> 00:20:45,520
+kind of differ in their opinion of of
+ 
+
+1109
+00:20:45,520 --> 00:20:46,710
+kind of differ in their opinion of of
+the judging?
+
+1110
+00:20:46,710 --> 00:20:46,720
+the judging?
+ 
+
+1111
+00:20:46,720 --> 00:20:48,549
+the judging?
+>> Yeah, that's a good question. We we
+
+1112
+00:20:48,549 --> 00:20:48,559
+>> Yeah, that's a good question. We we
+ 
+
+1113
+00:20:48,559 --> 00:20:51,510
+>> Yeah, that's a good question. We we
+didn't do a very thorough analysis of
+
+1114
+00:20:51,510 --> 00:20:51,520
+didn't do a very thorough analysis of
+ 
+
+1115
+00:20:51,520 --> 00:20:52,870
+didn't do a very thorough analysis of
+how different models and different
+
+1116
+00:20:52,870 --> 00:20:52,880
+how different models and different
+ 
+
+1117
+00:20:52,880 --> 00:20:55,510
+how different models and different
+providers gave different results
+
+1118
+00:20:55,510 --> 00:20:55,520
+providers gave different results
+ 
+
+1119
+00:20:55,520 --> 00:20:57,110
+providers gave different results
+especially for evaluation. I think we
+
+1120
+00:20:57,110 --> 00:20:57,120
+especially for evaluation. I think we
+ 
+
+1121
+00:20:57,120 --> 00:20:59,350
+especially for evaluation. I think we
+just didn't invest that much time. What
+
+1122
+00:20:59,350 --> 00:20:59,360
+just didn't invest that much time. What
+ 
+
+1123
+00:20:59,360 --> 00:21:00,950
+just didn't invest that much time. What
+we did compare was reasoning versus
+
+1124
+00:21:00,950 --> 00:21:00,960
+we did compare was reasoning versus
+ 
+
+1125
+00:21:00,960 --> 00:21:03,750
+we did compare was reasoning versus
+non-reasoning. And so for the judge
+
+1126
+00:21:03,750 --> 00:21:03,760
+non-reasoning. And so for the judge
+ 
+
+1127
+00:21:03,760 --> 00:21:05,270
+non-reasoning. And so for the judge
+honestly we had to prioritize speed in
+
+1128
+00:21:05,270 --> 00:21:05,280
+honestly we had to prioritize speed in
+ 
+
+1129
+00:21:05,280 --> 00:21:07,270
+honestly we had to prioritize speed in
+that case. So we opted we didn't opt for
+
+1130
+00:21:07,270 --> 00:21:07,280
+that case. So we opted we didn't opt for
+ 
+
+1131
+00:21:07,280 --> 00:21:09,350
+that case. So we opted we didn't opt for
+reasoning because we didn't really
+
+1132
+00:21:09,350 --> 00:21:09,360
+reasoning because we didn't really
+ 
+
+1133
+00:21:09,360 --> 00:21:11,990
+reasoning because we didn't really
+noticed a huge improvement in accuracy
+
+1134
+00:21:11,990 --> 00:21:12,000
+noticed a huge improvement in accuracy
+ 
+
+1135
+00:21:12,000 --> 00:21:14,390
+noticed a huge improvement in accuracy
+or how well it thought like similar to a
+
+1136
+00:21:14,390 --> 00:21:14,400
+or how well it thought like similar to a
+ 
+
+1137
+00:21:14,400 --> 00:21:17,190
+or how well it thought like similar to a
+human. So we were prioritizing speed in
+
+1138
+00:21:17,190 --> 00:21:17,200
+human. So we were prioritizing speed in
+ 
+
+1139
+00:21:17,200 --> 00:21:18,950
+human. So we were prioritizing speed in
+that case and more manual verification.
+
+1140
+00:21:18,950 --> 00:21:18,960
+that case and more manual verification.
+ 
+
+1141
+00:21:18,960 --> 00:21:20,789
+that case and more manual verification.
+So I guess the short answer is we didn't
+
+1142
+00:21:20,789 --> 00:21:20,799
+So I guess the short answer is we didn't
+ 
+
+1143
+00:21:20,799 --> 00:21:24,310
+So I guess the short answer is we didn't
+do a thorough analysis there. Um but uh
+
+1144
+00:21:24,310 --> 00:21:24,320
+do a thorough analysis there. Um but uh
+ 
+
+1145
+00:21:24,320 --> 00:21:26,230
+do a thorough analysis there. Um but uh
+we did notice a huge difference between
+
+1146
+00:21:26,230 --> 00:21:26,240
+we did notice a huge difference between
+ 
+
+1147
+00:21:26,240 --> 00:21:31,430
+we did notice a huge difference between
+reasoning and non-reasoning models.
+
+1148
+00:21:31,430 --> 00:21:31,440
+
+ 
+
+1149
+00:21:31,440 --> 00:21:35,350
+
+>> Um did you guys ever like went into like
+
+1150
+00:21:35,350 --> 00:21:35,360
+>> Um did you guys ever like went into like
+ 
+
+1151
+00:21:35,360 --> 00:21:37,669
+>> Um did you guys ever like went into like
+some sort of like a confidence score?
+
+1152
+00:21:37,669 --> 00:21:37,679
+some sort of like a confidence score?
+ 
+
+1153
+00:21:37,679 --> 00:21:39,750
+some sort of like a confidence score?
+Um, the reason I mentioned that is I
+
+1154
+00:21:39,750 --> 00:21:39,760
+Um, the reason I mentioned that is I
+ 
+
+1155
+00:21:39,760 --> 00:21:42,710
+Um, the reason I mentioned that is I
+think Salesforce guys did a presentation
+
+1156
+00:21:42,710 --> 00:21:42,720
+think Salesforce guys did a presentation
+ 
+
+1157
+00:21:42,720 --> 00:21:45,510
+think Salesforce guys did a presentation
+about anomaly detection and whatnot and
+
+1158
+00:21:45,510 --> 00:21:45,520
+about anomaly detection and whatnot and
+ 
+
+1159
+00:21:45,520 --> 00:21:48,070
+about anomaly detection and whatnot and
+they would annotate like some sort of
+
+1160
+00:21:48,070 --> 00:21:48,080
+they would annotate like some sort of
+ 
+
+1161
+00:21:48,080 --> 00:21:49,510
+they would annotate like some sort of
+like a confidence score like a low,
+
+1162
+00:21:49,510 --> 00:21:49,520
+like a confidence score like a low,
+ 
+
+1163
+00:21:49,520 --> 00:21:51,830
+like a confidence score like a low,
+medium or high. I don't know if you guys
+
+1164
+00:21:51,830 --> 00:21:51,840
+medium or high. I don't know if you guys
+ 
+
+1165
+00:21:51,840 --> 00:21:54,390
+medium or high. I don't know if you guys
+thought about that or looked into it.
+
+1166
+00:21:54,390 --> 00:21:54,400
+thought about that or looked into it.
+ 
+
+1167
+00:21:54,400 --> 00:21:57,590
+thought about that or looked into it.
+>> Uh, so confidence score on what the
+
+1168
+00:21:57,590 --> 00:21:57,600
+>> Uh, so confidence score on what the
+ 
+
+1169
+00:21:57,600 --> 00:21:59,990
+>> Uh, so confidence score on what the
+agent is producing.
+
+1170
+00:21:59,990 --> 00:22:00,000
+agent is producing.
+ 
+
+1171
+00:22:00,000 --> 00:22:03,750
+agent is producing.
+Yeah, I I think we didn't generate like
+
+1172
+00:22:03,750 --> 00:22:03,760
+Yeah, I I think we didn't generate like
+ 
+
+1173
+00:22:03,760 --> 00:22:05,190
+Yeah, I I think we didn't generate like
+a confidence score meaning like how
+
+1174
+00:22:05,190 --> 00:22:05,200
+a confidence score meaning like how
+ 
+
+1175
+00:22:05,200 --> 00:22:07,029
+a confidence score meaning like how
+confident the agent is in this answer
+
+1176
+00:22:07,029 --> 00:22:07,039
+confident the agent is in this answer
+ 
+
+1177
+00:22:07,039 --> 00:22:08,950
+confident the agent is in this answer
+because a lot of it it was it tended to
+
+1178
+00:22:08,950 --> 00:22:08,960
+because a lot of it it was it tended to
+ 
+
+1179
+00:22:08,960 --> 00:22:10,230
+because a lot of it it was it tended to
+be quite confident because we were
+
+1180
+00:22:10,230 --> 00:22:10,240
+be quite confident because we were
+ 
+
+1181
+00:22:10,240 --> 00:22:11,990
+be quite confident because we were
+giving it like a promptive you are to
+
+1182
+00:22:11,990 --> 00:22:12,000
+giving it like a promptive you are to
+ 
+
+1183
+00:22:12,000 --> 00:22:14,310
+giving it like a promptive you are to
+generate very accurate data dog lucine
+
+1184
+00:22:14,310 --> 00:22:14,320
+generate very accurate data dog lucine
+ 
+
+1185
+00:22:14,320 --> 00:22:16,149
+generate very accurate data dog lucine
+queries and it would think that it was
+
+1186
+00:22:16,149 --> 00:22:16,159
+queries and it would think that it was
+ 
+
+1187
+00:22:16,159 --> 00:22:17,750
+queries and it would think that it was
+generating accurate lucine queries and
+
+1188
+00:22:17,750 --> 00:22:17,760
+generating accurate lucine queries and
+ 
+
+1189
+00:22:17,760 --> 00:22:19,190
+generating accurate lucine queries and
+similarly when we tried to judge it the
+
+1190
+00:22:19,190 --> 00:22:19,200
+similarly when we tried to judge it the
+ 
+
+1191
+00:22:19,200 --> 00:22:21,510
+similarly when we tried to judge it the
+judge was like this is 100% correct. it
+
+1192
+00:22:21,510 --> 00:22:21,520
+judge was like this is 100% correct. it
+ 
+
+1193
+00:22:21,520 --> 00:22:23,909
+judge was like this is 100% correct. it
+it was a very circular. So, um that's
+
+1194
+00:22:23,909 --> 00:22:23,919
+it was a very circular. So, um that's
+ 
+
+1195
+00:22:23,919 --> 00:22:25,750
+it was a very circular. So, um that's
+not something we focused on because it
+
+1196
+00:22:25,750 --> 00:22:25,760
+not something we focused on because it
+ 
+
+1197
+00:22:25,760 --> 00:22:27,669
+not something we focused on because it
+wasn't reflective of what how it
+
+1198
+00:22:27,669 --> 00:22:27,679
+wasn't reflective of what how it
+ 
+
+1199
+00:22:27,679 --> 00:22:30,390
+wasn't reflective of what how it
+actually performed with our users.
+
+1200
+00:22:30,390 --> 00:22:30,400
+actually performed with our users.
+ 
+
+1201
+00:22:30,400 --> 00:22:32,870
+actually performed with our users.
+>> Yeah. Great.
+
+1202
+00:22:32,870 --> 00:22:32,880
+>> Yeah. Great.
+ 
+
+1203
+00:22:32,880 --> 00:22:36,679
+>> Yeah. Great.
+>> All right. Thank you very much.
+

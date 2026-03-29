@@ -1,0 +1,6685 @@
+1
+00:00:06,160 --> 00:00:09,190
+
+All right. So, welcome to the basement.
+
+2
+00:00:09,190 --> 00:00:09,200
+All right. So, welcome to the basement.
+ 
+
+3
+00:00:09,200 --> 00:00:11,110
+All right. So, welcome to the basement.
+Um, you know, it was interesting first
+
+4
+00:00:11,110 --> 00:00:11,120
+Um, you know, it was interesting first
+ 
+
+5
+00:00:11,120 --> 00:00:13,110
+Um, you know, it was interesting first
+coming walking down here after it's so
+
+6
+00:00:13,110 --> 00:00:13,120
+coming walking down here after it's so
+ 
+
+7
+00:00:13,120 --> 00:00:14,870
+coming walking down here after it's so
+big and beautiful up there and coming
+
+8
+00:00:14,870 --> 00:00:14,880
+big and beautiful up there and coming
+ 
+
+9
+00:00:14,880 --> 00:00:15,910
+big and beautiful up there and coming
+down here. I'm like, am I going to go
+
+10
+00:00:15,910 --> 00:00:15,920
+down here. I'm like, am I going to go
+ 
+
+11
+00:00:15,920 --> 00:00:18,550
+down here. I'm like, am I going to go
+into the right place? Um, but, uh, the
+
+12
+00:00:18,550 --> 00:00:18,560
+into the right place? Um, but, uh, the
+ 
+
+13
+00:00:18,560 --> 00:00:21,029
+into the right place? Um, but, uh, the
+acoustics are better.
+
+14
+00:00:21,029 --> 00:00:21,039
+acoustics are better.
+ 
+
+15
+00:00:21,039 --> 00:00:23,269
+acoustics are better.
+So, anyways, um, I'm going to talk a
+
+16
+00:00:23,269 --> 00:00:23,279
+So, anyways, um, I'm going to talk a
+ 
+
+17
+00:00:23,279 --> 00:00:25,509
+So, anyways, um, I'm going to talk a
+little bit today about establishing AI
+
+18
+00:00:25,509 --> 00:00:25,519
+little bit today about establishing AI
+ 
+
+19
+00:00:25,519 --> 00:00:27,830
+little bit today about establishing AI
+governance without stifling innovation.
+
+20
+00:00:27,830 --> 00:00:27,840
+governance without stifling innovation.
+ 
+
+21
+00:00:27,840 --> 00:00:29,349
+governance without stifling innovation.
+Um, I'm going to have to kind of give a
+
+22
+00:00:29,349 --> 00:00:29,359
+Um, I'm going to have to kind of give a
+ 
+
+23
+00:00:29,359 --> 00:00:30,550
+Um, I'm going to have to kind of give a
+little bit of a background about it
+
+24
+00:00:30,550 --> 00:00:30,560
+little bit of a background about it
+ 
+
+25
+00:00:30,560 --> 00:00:31,669
+little bit of a background about it
+because I work for a company called
+
+26
+00:00:31,669 --> 00:00:31,679
+because I work for a company called
+ 
+
+27
+00:00:31,679 --> 00:00:33,990
+because I work for a company called
+TripleF Enterprises, which most probably
+
+28
+00:00:33,990 --> 00:00:34,000
+TripleF Enterprises, which most probably
+ 
+
+29
+00:00:34,000 --> 00:00:35,590
+TripleF Enterprises, which most probably
+like no one's ever heard of. And so I've
+
+30
+00:00:35,590 --> 00:00:35,600
+like no one's ever heard of. And so I've
+ 
+
+31
+00:00:35,600 --> 00:00:37,350
+like no one's ever heard of. And so I've
+got to kind of explain what we do, which
+
+32
+00:00:37,350 --> 00:00:37,360
+got to kind of explain what we do, which
+ 
+
+33
+00:00:37,360 --> 00:00:39,110
+got to kind of explain what we do, which
+kind of knocks software development,
+
+34
+00:00:39,110 --> 00:00:39,120
+kind of knocks software development,
+ 
+
+35
+00:00:39,120 --> 00:00:41,430
+kind of knocks software development,
+right? Um, as well as, you know, kind of
+
+36
+00:00:41,430 --> 00:00:41,440
+right? Um, as well as, you know, kind of
+ 
+
+37
+00:00:41,440 --> 00:00:43,350
+right? Um, as well as, you know, kind of
+our method kind of went through how we
+
+38
+00:00:43,350 --> 00:00:43,360
+our method kind of went through how we
+ 
+
+39
+00:00:43,360 --> 00:00:44,869
+our method kind of went through how we
+originally met with the different
+
+40
+00:00:44,869 --> 00:00:44,879
+originally met with the different
+ 
+
+41
+00:00:44,879 --> 00:00:46,950
+originally met with the different
+executive teams, met with outside
+
+42
+00:00:46,950 --> 00:00:46,960
+executive teams, met with outside
+ 
+
+43
+00:00:46,960 --> 00:00:48,630
+executive teams, met with outside
+consultants and started to develop an AI
+
+44
+00:00:48,630 --> 00:00:48,640
+consultants and started to develop an AI
+ 
+
+45
+00:00:48,640 --> 00:00:50,470
+consultants and started to develop an AI
+road map and then realizing we needed
+
+46
+00:00:50,470 --> 00:00:50,480
+road map and then realizing we needed
+ 
+
+47
+00:00:50,480 --> 00:00:51,990
+road map and then realizing we needed
+governance and thought we were handling
+
+48
+00:00:51,990 --> 00:00:52,000
+governance and thought we were handling
+ 
+
+49
+00:00:52,000 --> 00:00:53,670
+governance and thought we were handling
+it well and then kind of ran into some
+
+50
+00:00:53,670 --> 00:00:53,680
+it well and then kind of ran into some
+ 
+
+51
+00:00:53,680 --> 00:00:54,950
+it well and then kind of ran into some
+issues where we're like, okay, this is
+
+52
+00:00:54,950 --> 00:00:54,960
+issues where we're like, okay, this is
+ 
+
+53
+00:00:54,960 --> 00:00:56,150
+issues where we're like, okay, this is
+what we would have done differently. And
+
+54
+00:00:56,150 --> 00:00:56,160
+what we would have done differently. And
+ 
+
+55
+00:00:56,160 --> 00:00:57,510
+what we would have done differently. And
+hopefully those lessons learned are
+
+56
+00:00:57,510 --> 00:00:57,520
+hopefully those lessons learned are
+ 
+
+57
+00:00:57,520 --> 00:01:00,470
+hopefully those lessons learned are
+helpful for you guys. Um,
+
+58
+00:01:00,470 --> 00:01:00,480
+helpful for you guys. Um,
+ 
+
+59
+00:01:00,480 --> 00:01:04,950
+helpful for you guys. Um,
+so a bit about FFF Enterprises. Uh,
+
+60
+00:01:04,950 --> 00:01:04,960
+so a bit about FFF Enterprises. Uh,
+ 
+
+61
+00:01:04,960 --> 00:01:07,750
+so a bit about FFF Enterprises. Uh,
+we're basically like a baby McKessan.
+
+62
+00:01:07,750 --> 00:01:07,760
+we're basically like a baby McKessan.
+ 
+
+63
+00:01:07,760 --> 00:01:11,429
+we're basically like a baby McKessan.
+We're a $5 billion like pharmaceutical
+
+64
+00:01:11,429 --> 00:01:11,439
+We're a $5 billion like pharmaceutical
+ 
+
+65
+00:01:11,439 --> 00:01:13,750
+We're a $5 billion like pharmaceutical
+distribution company, but we also have
+
+66
+00:01:13,750 --> 00:01:13,760
+distribution company, but we also have
+ 
+
+67
+00:01:13,760 --> 00:01:15,990
+distribution company, but we also have
+IoT mini fridge devices, kind of like a
+
+68
+00:01:15,990 --> 00:01:16,000
+IoT mini fridge devices, kind of like a
+ 
+
+69
+00:01:16,000 --> 00:01:17,990
+IoT mini fridge devices, kind of like a
+Vegas mini fridge, but with drugs in
+
+70
+00:01:17,990 --> 00:01:18,000
+Vegas mini fridge, but with drugs in
+ 
+
+71
+00:01:18,000 --> 00:01:21,190
+Vegas mini fridge, but with drugs in
+them atarmacies and hospitals. Um, we
+
+72
+00:01:21,190 --> 00:01:21,200
+them atarmacies and hospitals. Um, we
+ 
+
+73
+00:01:21,200 --> 00:01:22,310
+them atarmacies and hospitals. Um, we
+have a couple different software
+
+74
+00:01:22,310 --> 00:01:22,320
+have a couple different software
+ 
+
+75
+00:01:22,320 --> 00:01:24,789
+have a couple different software
+divisions. We actually have an online
+
+76
+00:01:24,789 --> 00:01:24,799
+divisions. We actually have an online
+ 
+
+77
+00:01:24,799 --> 00:01:28,550
+divisions. We actually have an online
+pharmacy. We have nurses that go do um
+
+78
+00:01:28,550 --> 00:01:28,560
+pharmacy. We have nurses that go do um
+ 
+
+79
+00:01:28,560 --> 00:01:30,230
+pharmacy. We have nurses that go do um
+like IV drugs and things like that, but
+
+80
+00:01:30,230 --> 00:01:30,240
+like IV drugs and things like that, but
+ 
+
+81
+00:01:30,240 --> 00:01:32,390
+like IV drugs and things like that, but
+we like we focus on specialty drugs,
+
+82
+00:01:32,390 --> 00:01:32,400
+we like we focus on specialty drugs,
+ 
+
+83
+00:01:32,400 --> 00:01:34,469
+we like we focus on specialty drugs,
+which is a whole area of pharmacy. So,
+
+84
+00:01:34,469 --> 00:01:34,479
+which is a whole area of pharmacy. So,
+ 
+
+85
+00:01:34,479 --> 00:01:37,270
+which is a whole area of pharmacy. So,
+we don't compete that much directly with
+
+86
+00:01:37,270 --> 00:01:37,280
+we don't compete that much directly with
+ 
+
+87
+00:01:37,280 --> 00:01:40,950
+we don't compete that much directly with
+uh you know the big three. Um but that
+
+88
+00:01:40,950 --> 00:01:40,960
+uh you know the big three. Um but that
+ 
+
+89
+00:01:40,960 --> 00:01:42,630
+uh you know the big three. Um but that
+kind of giving you a background of kind
+
+90
+00:01:42,630 --> 00:01:42,640
+kind of giving you a background of kind
+ 
+
+91
+00:01:42,640 --> 00:01:46,230
+kind of giving you a background of kind
+of our size and us not being software
+
+92
+00:01:46,230 --> 00:01:46,240
+of our size and us not being software
+ 
+
+93
+00:01:46,240 --> 00:01:47,190
+of our size and us not being software
+forward, right? Because we were not
+
+94
+00:01:47,190 --> 00:01:47,200
+forward, right? Because we were not
+ 
+
+95
+00:01:47,200 --> 00:01:48,550
+forward, right? Because we were not
+really tech forward. We're just
+
+96
+00:01:48,550 --> 00:01:48,560
+really tech forward. We're just
+ 
+
+97
+00:01:48,560 --> 00:01:50,069
+really tech forward. We're just
+distributing things, taking orders by
+
+98
+00:01:50,069 --> 00:01:50,079
+distributing things, taking orders by
+ 
+
+99
+00:01:50,079 --> 00:01:51,510
+distributing things, taking orders by
+fax and things like that back in the
+
+100
+00:01:51,510 --> 00:01:51,520
+fax and things like that back in the
+ 
+
+101
+00:01:51,520 --> 00:01:53,749
+fax and things like that back in the
+day. But we're trying to really move to
+
+102
+00:01:53,749 --> 00:01:53,759
+day. But we're trying to really move to
+ 
+
+103
+00:01:53,759 --> 00:01:55,910
+day. But we're trying to really move to
+have tech kind of really kind of help us
+
+104
+00:01:55,910 --> 00:01:55,920
+have tech kind of really kind of help us
+ 
+
+105
+00:01:55,920 --> 00:01:58,069
+have tech kind of really kind of help us
+out in the future and where we want to
+
+106
+00:01:58,069 --> 00:01:58,079
+out in the future and where we want to
+ 
+
+107
+00:01:58,079 --> 00:02:02,310
+out in the future and where we want to
+go.
+
+108
+00:02:02,310 --> 00:02:02,320
+
+ 
+
+109
+00:02:02,320 --> 00:02:04,950
+
+>> Did you guys Is there a Hey guys in the
+
+110
+00:02:04,950 --> 00:02:04,960
+>> Did you guys Is there a Hey guys in the
+ 
+
+111
+00:02:04,960 --> 00:02:09,109
+>> Did you guys Is there a Hey guys in the
+back? Is there a way to start the clock?
+
+112
+00:02:09,109 --> 00:02:09,119
+back? Is there a way to start the clock?
+ 
+
+113
+00:02:09,119 --> 00:02:11,270
+back? Is there a way to start the clock?
+>> Oh, it just popped up. Perfect. Thank
+
+114
+00:02:11,270 --> 00:02:11,280
+>> Oh, it just popped up. Perfect. Thank
+ 
+
+115
+00:02:11,280 --> 00:02:12,710
+>> Oh, it just popped up. Perfect. Thank
+you. No, it's going. It's going now.
+
+116
+00:02:12,710 --> 00:02:12,720
+you. No, it's going. It's going now.
+ 
+
+117
+00:02:12,720 --> 00:02:13,830
+you. No, it's going. It's going now.
+Just want I just want to make sure I
+
+118
+00:02:13,830 --> 00:02:13,840
+Just want I just want to make sure I
+ 
+
+119
+00:02:13,840 --> 00:02:15,750
+Just want I just want to make sure I
+don't talk too much, which I like to do.
+
+120
+00:02:15,750 --> 00:02:15,760
+don't talk too much, which I like to do.
+ 
+
+121
+00:02:15,760 --> 00:02:18,630
+don't talk too much, which I like to do.
+So, all right. So, but now we're kind of
+
+122
+00:02:18,630 --> 00:02:18,640
+So, all right. So, but now we're kind of
+ 
+
+123
+00:02:18,640 --> 00:02:20,550
+So, all right. So, but now we're kind of
+using tech advantage. myself. I started
+
+124
+00:02:20,550 --> 00:02:20,560
+using tech advantage. myself. I started
+ 
+
+125
+00:02:20,560 --> 00:02:23,030
+using tech advantage. myself. I started
+very tech forward. You know, my first IT
+
+126
+00:02:23,030 --> 00:02:23,040
+very tech forward. You know, my first IT
+ 
+
+127
+00:02:23,040 --> 00:02:24,869
+very tech forward. You know, my first IT
+job was helping people connect to dialup
+
+128
+00:02:24,869 --> 00:02:24,879
+job was helping people connect to dialup
+ 
+
+129
+00:02:24,879 --> 00:02:27,350
+job was helping people connect to dialup
+and it just kind of cascaded from there.
+
+130
+00:02:27,350 --> 00:02:27,360
+and it just kind of cascaded from there.
+ 
+
+131
+00:02:27,360 --> 00:02:29,430
+and it just kind of cascaded from there.
+Um where I was a network engineer,
+
+132
+00:02:29,430 --> 00:02:29,440
+Um where I was a network engineer,
+ 
+
+133
+00:02:29,440 --> 00:02:31,350
+Um where I was a network engineer,
+network administrator, manage IT
+
+134
+00:02:31,350 --> 00:02:31,360
+network administrator, manage IT
+ 
+
+135
+00:02:31,360 --> 00:02:33,750
+network administrator, manage IT
+departments, got into cyber security,
+
+136
+00:02:33,750 --> 00:02:33,760
+departments, got into cyber security,
+ 
+
+137
+00:02:33,760 --> 00:02:36,790
+departments, got into cyber security,
+swung over to GRC for a while and then
+
+138
+00:02:36,790 --> 00:02:36,800
+swung over to GRC for a while and then
+ 
+
+139
+00:02:36,800 --> 00:02:39,190
+swung over to GRC for a while and then
+but everything kind of really came back
+
+140
+00:02:39,190 --> 00:02:39,200
+but everything kind of really came back
+ 
+
+141
+00:02:39,200 --> 00:02:41,430
+but everything kind of really came back
+except maybe not dialup but you know to
+
+142
+00:02:41,430 --> 00:02:41,440
+except maybe not dialup but you know to
+ 
+
+143
+00:02:41,440 --> 00:02:43,990
+except maybe not dialup but you know to
+help me out as the CISO over here at F
+
+144
+00:02:43,990 --> 00:02:44,000
+help me out as the CISO over here at F
+ 
+
+145
+00:02:44,000 --> 00:02:45,830
+help me out as the CISO over here at F
+Enterprises and and I've been there for
+
+146
+00:02:45,830 --> 00:02:45,840
+Enterprises and and I've been there for
+ 
+
+147
+00:02:45,840 --> 00:02:49,910
+Enterprises and and I've been there for
+a little over 5 years. Um so our
+
+148
+00:02:49,910 --> 00:02:49,920
+a little over 5 years. Um so our
+ 
+
+149
+00:02:49,920 --> 00:02:53,589
+a little over 5 years. Um so our
+original roadmap so we my my boss is the
+
+150
+00:02:53,589 --> 00:02:53,599
+original roadmap so we my my boss is the
+ 
+
+151
+00:02:53,599 --> 00:02:56,309
+original roadmap so we my my boss is the
+CIO and he went out you know with
+
+152
+00:02:56,309 --> 00:02:56,319
+CIO and he went out you know with
+ 
+
+153
+00:02:56,319 --> 00:02:58,550
+CIO and he went out you know with
+grabbed a consulting firm like let's AI
+
+154
+00:02:58,550 --> 00:02:58,560
+grabbed a consulting firm like let's AI
+ 
+
+155
+00:02:58,560 --> 00:03:00,630
+grabbed a consulting firm like let's AI
+you know and he came in and worked with
+
+156
+00:03:00,630 --> 00:03:00,640
+you know and he came in and worked with
+ 
+
+157
+00:03:00,640 --> 00:03:01,910
+you know and he came in and worked with
+these people they sat down with
+
+158
+00:03:01,910 --> 00:03:01,920
+these people they sat down with
+ 
+
+159
+00:03:01,920 --> 00:03:05,110
+these people they sat down with
+different VPs and and different folks
+
+160
+00:03:05,110 --> 00:03:05,120
+different VPs and and different folks
+ 
+
+161
+00:03:05,120 --> 00:03:06,869
+different VPs and and different folks
+not me
+
+162
+00:03:06,869 --> 00:03:06,879
+not me
+ 
+
+163
+00:03:06,879 --> 00:03:08,550
+not me
+and they came up with like we have these
+
+164
+00:03:08,550 --> 00:03:08,560
+and they came up with like we have these
+ 
+
+165
+00:03:08,560 --> 00:03:11,509
+and they came up with like we have these
+40 AI projects and we're going to and
+
+166
+00:03:11,509 --> 00:03:11,519
+40 AI projects and we're going to and
+ 
+
+167
+00:03:11,519 --> 00:03:13,190
+40 AI projects and we're going to and
+PMO is like we'll release them in five
+
+168
+00:03:13,190 --> 00:03:13,200
+PMO is like we'll release them in five
+ 
+
+169
+00:03:13,200 --> 00:03:15,030
+PMO is like we'll release them in five
+waves and we'll have everything this is
+
+170
+00:03:15,030 --> 00:03:15,040
+waves and we'll have everything this is
+ 
+
+171
+00:03:15,040 --> 00:03:16,710
+waves and we'll have everything this is
+in 2025 we'll have everything done by
+
+172
+00:03:16,710 --> 00:03:16,720
+in 2025 we'll have everything done by
+ 
+
+173
+00:03:16,720 --> 00:03:19,589
+in 2025 we'll have everything done by
+2027. seven. Um, so I mean we had use
+
+174
+00:03:19,589 --> 00:03:19,599
+2027. seven. Um, so I mean we had use
+ 
+
+175
+00:03:19,599 --> 00:03:21,830
+2027. seven. Um, so I mean we had use
+cases across the board like within HR,
+
+176
+00:03:21,830 --> 00:03:21,840
+cases across the board like within HR,
+ 
+
+177
+00:03:21,840 --> 00:03:24,070
+cases across the board like within HR,
+with our pharmacy distribution, within
+
+178
+00:03:24,070 --> 00:03:24,080
+with our pharmacy distribution, within
+ 
+
+179
+00:03:24,080 --> 00:03:27,030
+with our pharmacy distribution, within
+our pharmacy itself where I can explain
+
+180
+00:03:27,030 --> 00:03:27,040
+our pharmacy itself where I can explain
+ 
+
+181
+00:03:27,040 --> 00:03:28,470
+our pharmacy itself where I can explain
+one of them that's pretty cool later.
+
+182
+00:03:28,470 --> 00:03:28,480
+one of them that's pretty cool later.
+ 
+
+183
+00:03:28,480 --> 00:03:31,110
+one of them that's pretty cool later.
+Um, but that's dealing with PHI, we had
+
+184
+00:03:31,110 --> 00:03:31,120
+Um, but that's dealing with PHI, we had
+ 
+
+185
+00:03:31,120 --> 00:03:32,630
+Um, but that's dealing with PHI, we had
+sales, finance, so a lot of different
+
+186
+00:03:32,630 --> 00:03:32,640
+sales, finance, so a lot of different
+ 
+
+187
+00:03:32,640 --> 00:03:34,949
+sales, finance, so a lot of different
+types of data and you know I was kind of
+
+188
+00:03:34,949 --> 00:03:34,959
+types of data and you know I was kind of
+ 
+
+189
+00:03:34,959 --> 00:03:37,430
+types of data and you know I was kind of
+like you know I come and see the the
+
+190
+00:03:37,430 --> 00:03:37,440
+like you know I come and see the the
+ 
+
+191
+00:03:37,440 --> 00:03:39,030
+like you know I come and see the the
+presentation you know at the end of the
+
+192
+00:03:39,030 --> 00:03:39,040
+presentation you know at the end of the
+ 
+
+193
+00:03:39,040 --> 00:03:40,309
+presentation you know at the end of the
+from what the consultants did and I'm
+
+194
+00:03:40,309 --> 00:03:40,319
+from what the consultants did and I'm
+ 
+
+195
+00:03:40,319 --> 00:03:43,190
+from what the consultants did and I'm
+like uh we got a problem guys like we we
+
+196
+00:03:43,190 --> 00:03:43,200
+like uh we got a problem guys like we we
+ 
+
+197
+00:03:43,200 --> 00:03:46,229
+like uh we got a problem guys like we we
+haven't really thought this out.
+
+198
+00:03:46,229 --> 00:03:46,239
+haven't really thought this out.
+ 
+
+199
+00:03:46,239 --> 00:03:48,710
+haven't really thought this out.
+So kind of first way I kind of started
+
+200
+00:03:48,710 --> 00:03:48,720
+So kind of first way I kind of started
+ 
+
+201
+00:03:48,720 --> 00:03:50,149
+So kind of first way I kind of started
+doing this was like okay well let's
+
+202
+00:03:50,149 --> 00:03:50,159
+doing this was like okay well let's
+ 
+
+203
+00:03:50,159 --> 00:03:53,030
+doing this was like okay well let's
+let's get like proposed kind of a tiered
+
+204
+00:03:53,030 --> 00:03:53,040
+let's get like proposed kind of a tiered
+ 
+
+205
+00:03:53,040 --> 00:03:55,830
+let's get like proposed kind of a tiered
+governance platform right so we kind of
+
+206
+00:03:55,830 --> 00:03:55,840
+governance platform right so we kind of
+ 
+
+207
+00:03:55,840 --> 00:03:57,429
+governance platform right so we kind of
+have the head of the governance
+
+208
+00:03:57,429 --> 00:03:57,439
+have the head of the governance
+ 
+
+209
+00:03:57,439 --> 00:03:59,509
+have the head of the governance
+committee which is myself the CIO our
+
+210
+00:03:59,509 --> 00:03:59,519
+committee which is myself the CIO our
+ 
+
+211
+00:03:59,519 --> 00:04:01,030
+committee which is myself the CIO our
+general counsel our chief compliance
+
+212
+00:04:01,030 --> 00:04:01,040
+general counsel our chief compliance
+ 
+
+213
+00:04:01,040 --> 00:04:02,630
+general counsel our chief compliance
+officer and the and these are the kind
+
+214
+00:04:02,630 --> 00:04:02,640
+officer and the and these are the kind
+ 
+
+215
+00:04:02,640 --> 00:04:04,630
+officer and the and these are the kind
+of like the top level you know we're out
+
+216
+00:04:04,630 --> 00:04:04,640
+of like the top level you know we're out
+ 
+
+217
+00:04:04,640 --> 00:04:06,789
+of like the top level you know we're out
+there pushing down policies we're
+
+218
+00:04:06,789 --> 00:04:06,799
+there pushing down policies we're
+ 
+
+219
+00:04:06,799 --> 00:04:08,949
+there pushing down policies we're
+talking about ethics we're we're really
+
+220
+00:04:08,949 --> 00:04:08,959
+talking about ethics we're we're really
+ 
+
+221
+00:04:08,959 --> 00:04:11,350
+talking about ethics we're we're really
+trying to focus on regulatory um you
+
+222
+00:04:11,350 --> 00:04:11,360
+trying to focus on regulatory um you
+ 
+
+223
+00:04:11,360 --> 00:04:12,789
+trying to focus on regulatory um you
+know obviously me on the security side
+
+224
+00:04:12,789 --> 00:04:12,799
+know obviously me on the security side
+ 
+
+225
+00:04:12,799 --> 00:04:14,070
+know obviously me on the security side
+but we kind of wanted to shrink that
+
+226
+00:04:14,070 --> 00:04:14,080
+but we kind of wanted to shrink that
+ 
+
+227
+00:04:14,080 --> 00:04:16,310
+but we kind of wanted to shrink that
+down a bit farther And so we created
+
+228
+00:04:16,310 --> 00:04:16,320
+down a bit farther And so we created
+ 
+
+229
+00:04:16,320 --> 00:04:17,670
+down a bit farther And so we created
+kind of an AI center of excellence
+
+230
+00:04:17,670 --> 00:04:17,680
+kind of an AI center of excellence
+ 
+
+231
+00:04:17,680 --> 00:04:20,229
+kind of an AI center of excellence
+there. And that's kind of more VPs and
+
+232
+00:04:20,229 --> 00:04:20,239
+there. And that's kind of more VPs and
+ 
+
+233
+00:04:20,239 --> 00:04:22,629
+there. And that's kind of more VPs and
+director levels, some special managers.
+
+234
+00:04:22,629 --> 00:04:22,639
+director levels, some special managers.
+ 
+
+235
+00:04:22,639 --> 00:04:24,150
+director levels, some special managers.
+Uh those are the guys in charge of data
+
+236
+00:04:24,150 --> 00:04:24,160
+Uh those are the guys in charge of data
+ 
+
+237
+00:04:24,160 --> 00:04:25,830
+Uh those are the guys in charge of data
+science that are sitting on that board.
+
+238
+00:04:25,830 --> 00:04:25,840
+science that are sitting on that board.
+ 
+
+239
+00:04:25,840 --> 00:04:27,030
+science that are sitting on that board.
+People inside of the infrastructure that
+
+240
+00:04:27,030 --> 00:04:27,040
+People inside of the infrastructure that
+ 
+
+241
+00:04:27,040 --> 00:04:30,150
+People inside of the infrastructure that
+are building it. Um you know, we have HR
+
+242
+00:04:30,150 --> 00:04:30,160
+are building it. Um you know, we have HR
+ 
+
+243
+00:04:30,160 --> 00:04:31,670
+are building it. Um you know, we have HR
+sitting there as well because they've
+
+244
+00:04:31,670 --> 00:04:31,680
+sitting there as well because they've
+ 
+
+245
+00:04:31,680 --> 00:04:33,990
+sitting there as well because they've
+been really helpful for us on enablement
+
+246
+00:04:33,990 --> 00:04:34,000
+been really helpful for us on enablement
+ 
+
+247
+00:04:34,000 --> 00:04:35,350
+been really helpful for us on enablement
+and training, right? Because not
+
+248
+00:04:35,350 --> 00:04:35,360
+and training, right? Because not
+ 
+
+249
+00:04:35,360 --> 00:04:37,830
+and training, right? Because not
+everybody is excited about hearing about
+
+250
+00:04:37,830 --> 00:04:37,840
+everybody is excited about hearing about
+ 
+
+251
+00:04:37,840 --> 00:04:39,189
+everybody is excited about hearing about
+AI is taking your jobs because that's
+
+252
+00:04:39,189 --> 00:04:39,199
+AI is taking your jobs because that's
+ 
+
+253
+00:04:39,199 --> 00:04:40,310
+AI is taking your jobs because that's
+what it says everywhere, right? So
+
+254
+00:04:40,310 --> 00:04:40,320
+what it says everywhere, right? So
+ 
+
+255
+00:04:40,320 --> 00:04:42,070
+what it says everywhere, right? So
+they're like, "No, it's not going to do
+
+256
+00:04:42,070 --> 00:04:42,080
+they're like, "No, it's not going to do
+ 
+
+257
+00:04:42,080 --> 00:04:43,350
+they're like, "No, it's not going to do
+So we were like we're trying to like
+
+258
+00:04:43,350 --> 00:04:43,360
+So we were like we're trying to like
+ 
+
+259
+00:04:43,360 --> 00:04:45,590
+So we were like we're trying to like
+show people on kind of ways that we kind
+
+260
+00:04:45,590 --> 00:04:45,600
+show people on kind of ways that we kind
+ 
+
+261
+00:04:45,600 --> 00:04:46,870
+show people on kind of ways that we kind
+of do it around to like make them
+
+262
+00:04:46,870 --> 00:04:46,880
+of do it around to like make them
+ 
+
+263
+00:04:46,880 --> 00:04:49,350
+of do it around to like make them
+excited about it. Um so HR has been very
+
+264
+00:04:49,350 --> 00:04:49,360
+excited about it. Um so HR has been very
+ 
+
+265
+00:04:49,360 --> 00:04:51,909
+excited about it. Um so HR has been very
+helpful for that. Um and and they then
+
+266
+00:04:51,909 --> 00:04:51,919
+helpful for that. Um and and they then
+ 
+
+267
+00:04:51,919 --> 00:04:53,110
+helpful for that. Um and and they then
+they were kind of working in in that
+
+268
+00:04:53,110 --> 00:04:53,120
+they were kind of working in in that
+ 
+
+269
+00:04:53,120 --> 00:04:55,749
+they were kind of working in in that
+area on standardized practices, shared
+
+270
+00:04:55,749 --> 00:04:55,759
+area on standardized practices, shared
+ 
+
+271
+00:04:55,759 --> 00:04:57,990
+area on standardized practices, shared
+services. Um you know working along with
+
+272
+00:04:57,990 --> 00:04:58,000
+services. Um you know working along with
+ 
+
+273
+00:04:58,000 --> 00:04:59,270
+services. Um you know working along with
+me with controls but getting more and
+
+274
+00:04:59,270 --> 00:04:59,280
+me with controls but getting more and
+ 
+
+275
+00:04:59,280 --> 00:05:01,830
+me with controls but getting more and
+more specific as we go down. And you
+
+276
+00:05:01,830 --> 00:05:01,840
+more specific as we go down. And you
+ 
+
+277
+00:05:01,840 --> 00:05:03,350
+more specific as we go down. And you
+know in the future what we're hoping to
+
+278
+00:05:03,350 --> 00:05:03,360
+know in the future what we're hoping to
+ 
+
+279
+00:05:03,360 --> 00:05:06,310
+know in the future what we're hoping to
+is kind of have a catalog of you know
+
+280
+00:05:06,310 --> 00:05:06,320
+is kind of have a catalog of you know
+ 
+
+281
+00:05:06,320 --> 00:05:08,070
+is kind of have a catalog of you know
+different use cases that we kind of
+
+282
+00:05:08,070 --> 00:05:08,080
+different use cases that we kind of
+ 
+
+283
+00:05:08,080 --> 00:05:10,150
+different use cases that we kind of
+shift between the departments and stuff
+
+284
+00:05:10,150 --> 00:05:10,160
+shift between the departments and stuff
+ 
+
+285
+00:05:10,160 --> 00:05:12,550
+shift between the departments and stuff
+like that and kind of have an AI review
+
+286
+00:05:12,550 --> 00:05:12,560
+like that and kind of have an AI review
+ 
+
+287
+00:05:12,560 --> 00:05:15,189
+like that and kind of have an AI review
+board like an agent checkout so to speak
+
+288
+00:05:15,189 --> 00:05:15,199
+board like an agent checkout so to speak
+ 
+
+289
+00:05:15,199 --> 00:05:17,830
+board like an agent checkout so to speak
+right and so the smaller level area
+
+290
+00:05:17,830 --> 00:05:17,840
+right and so the smaller level area
+ 
+
+291
+00:05:17,840 --> 00:05:19,430
+right and so the smaller level area
+where a manager might just be able to go
+
+292
+00:05:19,430 --> 00:05:19,440
+where a manager might just be able to go
+ 
+
+293
+00:05:19,440 --> 00:05:21,029
+where a manager might just be able to go
+reach out to somebody on the cloud
+
+294
+00:05:21,029 --> 00:05:21,039
+reach out to somebody on the cloud
+ 
+
+295
+00:05:21,039 --> 00:05:23,029
+reach out to somebody on the cloud
+center sorry the AI center of excellence
+
+296
+00:05:23,029 --> 00:05:23,039
+center sorry the AI center of excellence
+ 
+
+297
+00:05:23,039 --> 00:05:25,590
+center sorry the AI center of excellence
+and just check out that use case and if
+
+298
+00:05:25,590 --> 00:05:25,600
+and just check out that use case and if
+ 
+
+299
+00:05:25,600 --> 00:05:26,790
+and just check out that use case and if
+there's not a lot of stuff doing it
+
+300
+00:05:26,790 --> 00:05:26,800
+there's not a lot of stuff doing it
+ 
+
+301
+00:05:26,800 --> 00:05:28,469
+there's not a lot of stuff doing it
+there. So if we think about it too,
+
+302
+00:05:28,469 --> 00:05:28,479
+there. So if we think about it too,
+ 
+
+303
+00:05:28,479 --> 00:05:30,950
+there. So if we think about it too,
+another way to look at that is is kind
+
+304
+00:05:30,950 --> 00:05:30,960
+another way to look at that is is kind
+ 
+
+305
+00:05:30,960 --> 00:05:33,749
+another way to look at that is is kind
+of on the the risk level, right? So
+
+306
+00:05:33,749 --> 00:05:33,759
+of on the the risk level, right? So
+ 
+
+307
+00:05:33,759 --> 00:05:35,510
+of on the the risk level, right? So
+anything that's looking very risky like
+
+308
+00:05:35,510 --> 00:05:35,520
+anything that's looking very risky like
+ 
+
+309
+00:05:35,520 --> 00:05:37,430
+anything that's looking very risky like
+if we're touching PHI if there's a lot
+
+310
+00:05:37,430 --> 00:05:37,440
+if we're touching PHI if there's a lot
+ 
+
+311
+00:05:37,440 --> 00:05:39,670
+if we're touching PHI if there's a lot
+of PII it starts getting pushed up to
+
+312
+00:05:39,670 --> 00:05:39,680
+of PII it starts getting pushed up to
+ 
+
+313
+00:05:39,680 --> 00:05:42,469
+of PII it starts getting pushed up to
+the higher committees um you know and
+
+314
+00:05:42,469 --> 00:05:42,479
+the higher committees um you know and
+ 
+
+315
+00:05:42,479 --> 00:05:45,270
+the higher committees um you know and
+you know my security architect who's on
+
+316
+00:05:45,270 --> 00:05:45,280
+you know my security architect who's on
+ 
+
+317
+00:05:45,280 --> 00:05:47,189
+you know my security architect who's on
+the center of excellence board should be
+
+318
+00:05:47,189 --> 00:05:47,199
+the center of excellence board should be
+ 
+
+319
+00:05:47,199 --> 00:05:48,710
+the center of excellence board should be
+pushing things helping to push things to
+
+320
+00:05:48,710 --> 00:05:48,720
+pushing things helping to push things to
+ 
+
+321
+00:05:48,720 --> 00:05:51,510
+pushing things helping to push things to
+me you know VP of pharmacy those who
+
+322
+00:05:51,510 --> 00:05:51,520
+me you know VP of pharmacy those who
+ 
+
+323
+00:05:51,520 --> 00:05:54,790
+me you know VP of pharmacy those who
+work with PHI ethical stuff with with HR
+
+324
+00:05:54,790 --> 00:05:54,800
+work with PHI ethical stuff with with HR
+ 
+
+325
+00:05:54,800 --> 00:05:56,390
+work with PHI ethical stuff with with HR
+all those kind of so the further the
+
+326
+00:05:56,390 --> 00:05:56,400
+all those kind of so the further the
+ 
+
+327
+00:05:56,400 --> 00:05:58,550
+all those kind of so the further the
+risk the higher up it goes that's the
+
+328
+00:05:58,550 --> 00:05:58,560
+risk the higher up it goes that's the
+ 
+
+329
+00:05:58,560 --> 00:05:59,990
+risk the higher up it goes that's the
+idea and so that's what we tried to
+
+330
+00:05:59,990 --> 00:06:00,000
+idea and so that's what we tried to
+ 
+
+331
+00:06:00,000 --> 00:06:01,990
+idea and so that's what we tried to
+start putting together um because the
+
+332
+00:06:01,990 --> 00:06:02,000
+start putting together um because the
+ 
+
+333
+00:06:02,000 --> 00:06:03,590
+start putting together um because the
+goal of AI governance to balance the
+
+334
+00:06:03,590 --> 00:06:03,600
+goal of AI governance to balance the
+ 
+
+335
+00:06:03,600 --> 00:06:06,230
+goal of AI governance to balance the
+value and the risk.
+
+336
+00:06:06,230 --> 00:06:06,240
+value and the risk.
+ 
+
+337
+00:06:06,240 --> 00:06:07,590
+value and the risk.
+Some of the other things we kind of
+
+338
+00:06:07,590 --> 00:06:07,600
+Some of the other things we kind of
+ 
+
+339
+00:06:07,600 --> 00:06:11,189
+Some of the other things we kind of
+looked at there um is we saw those 40
+
+340
+00:06:11,189 --> 00:06:11,199
+looked at there um is we saw those 40
+ 
+
+341
+00:06:11,199 --> 00:06:14,070
+looked at there um is we saw those 40
+use cases and we're like this is a lot
+
+342
+00:06:14,070 --> 00:06:14,080
+use cases and we're like this is a lot
+ 
+
+343
+00:06:14,080 --> 00:06:16,070
+use cases and we're like this is a lot
+you know like and how do we even know is
+
+344
+00:06:16,070 --> 00:06:16,080
+you know like and how do we even know is
+ 
+
+345
+00:06:16,080 --> 00:06:17,670
+you know like and how do we even know is
+what's going to be good what's going to
+
+346
+00:06:17,670 --> 00:06:17,680
+what's going to be good what's going to
+ 
+
+347
+00:06:17,680 --> 00:06:20,469
+what's going to be good what's going to
+be you know really a use case where
+
+348
+00:06:20,469 --> 00:06:20,479
+be you know really a use case where
+ 
+
+349
+00:06:20,479 --> 00:06:22,550
+be you know really a use case where
+we're going to find that value or are we
+
+350
+00:06:22,550 --> 00:06:22,560
+we're going to find that value or are we
+ 
+
+351
+00:06:22,560 --> 00:06:24,469
+we're going to find that value or are we
+just wasting time and money and putting
+
+352
+00:06:24,469 --> 00:06:24,479
+just wasting time and money and putting
+ 
+
+353
+00:06:24,479 --> 00:06:26,950
+just wasting time and money and putting
+ourselves at risk. But so we we we first
+
+354
+00:06:26,950 --> 00:06:26,960
+ourselves at risk. But so we we we first
+ 
+
+355
+00:06:26,960 --> 00:06:28,070
+ourselves at risk. But so we we we first
+decided like well we need to create
+
+356
+00:06:28,070 --> 00:06:28,080
+decided like well we need to create
+ 
+
+357
+00:06:28,080 --> 00:06:30,150
+decided like well we need to create
+intake forms you know include different
+
+358
+00:06:30,150 --> 00:06:30,160
+intake forms you know include different
+ 
+
+359
+00:06:30,160 --> 00:06:32,950
+intake forms you know include different
+things to look at um you know expect we
+
+360
+00:06:32,950 --> 00:06:32,960
+things to look at um you know expect we
+ 
+
+361
+00:06:32,960 --> 00:06:33,990
+things to look at um you know expect we
+wanted to make sure that people would
+
+362
+00:06:33,990 --> 00:06:34,000
+wanted to make sure that people would
+ 
+
+363
+00:06:34,000 --> 00:06:35,670
+wanted to make sure that people would
+like have an idea what their process is
+
+364
+00:06:35,670 --> 00:06:35,680
+like have an idea what their process is
+ 
+
+365
+00:06:35,680 --> 00:06:37,670
+like have an idea what their process is
+now what the metrics they wanted to be
+
+366
+00:06:37,670 --> 00:06:37,680
+now what the metrics they wanted to be
+ 
+
+367
+00:06:37,680 --> 00:06:39,189
+now what the metrics they wanted to be
+in their future. We didn't kind of get
+
+368
+00:06:39,189 --> 00:06:39,199
+in their future. We didn't kind of get
+ 
+
+369
+00:06:39,199 --> 00:06:40,390
+in their future. We didn't kind of get
+that far in depth the first time around.
+
+370
+00:06:40,390 --> 00:06:40,400
+that far in depth the first time around.
+ 
+
+371
+00:06:40,400 --> 00:06:41,590
+that far in depth the first time around.
+We're just like oh we'll have some risk
+
+372
+00:06:41,590 --> 00:06:41,600
+We're just like oh we'll have some risk
+ 
+
+373
+00:06:41,600 --> 00:06:43,670
+We're just like oh we'll have some risk
+assessments. You just tell us how we'll
+
+374
+00:06:43,670 --> 00:06:43,680
+assessments. You just tell us how we'll
+ 
+
+375
+00:06:43,680 --> 00:06:45,110
+assessments. You just tell us how we'll
+kind of judge on how much technical work
+
+376
+00:06:45,110 --> 00:06:45,120
+kind of judge on how much technical work
+ 
+
+377
+00:06:45,120 --> 00:06:47,189
+kind of judge on how much technical work
+it's going to be. Uh you know you tell
+
+378
+00:06:47,189 --> 00:06:47,199
+it's going to be. Uh you know you tell
+ 
+
+379
+00:06:47,199 --> 00:06:49,189
+it's going to be. Uh you know you tell
+us what you're expecting.
+
+380
+00:06:49,189 --> 00:06:49,199
+us what you're expecting.
+ 
+
+381
+00:06:49,199 --> 00:06:52,390
+us what you're expecting.
+Um you know and we also you know we we
+
+382
+00:06:52,390 --> 00:06:52,400
+Um you know and we also you know we we
+ 
+
+383
+00:06:52,400 --> 00:06:54,390
+Um you know and we also you know we we
+provided training for folks you know
+
+384
+00:06:54,390 --> 00:06:54,400
+provided training for folks you know
+ 
+
+385
+00:06:54,400 --> 00:06:55,670
+provided training for folks you know
+that we didn't realize how depth it
+
+386
+00:06:55,670 --> 00:06:55,680
+that we didn't realize how depth it
+ 
+
+387
+00:06:55,680 --> 00:06:57,590
+that we didn't realize how depth it
+would have to go. Um you know we wanted
+
+388
+00:06:57,590 --> 00:06:57,600
+would have to go. Um you know we wanted
+ 
+
+389
+00:06:57,600 --> 00:06:59,430
+would have to go. Um you know we wanted
+to have controls embedded controls and
+
+390
+00:06:59,430 --> 00:06:59,440
+to have controls embedded controls and
+ 
+
+391
+00:06:59,440 --> 00:07:02,629
+to have controls embedded controls and
+system design. So access controls is one
+
+392
+00:07:02,629 --> 00:07:02,639
+system design. So access controls is one
+ 
+
+393
+00:07:02,639 --> 00:07:05,029
+system design. So access controls is one
+thing that we want to make sure that the
+
+394
+00:07:05,029 --> 00:07:05,039
+thing that we want to make sure that the
+ 
+
+395
+00:07:05,039 --> 00:07:07,670
+thing that we want to make sure that the
+agents or the people have like the right
+
+396
+00:07:07,670 --> 00:07:07,680
+agents or the people have like the right
+ 
+
+397
+00:07:07,680 --> 00:07:08,870
+agents or the people have like the right
+amount of access and how we're going to
+
+398
+00:07:08,870 --> 00:07:08,880
+amount of access and how we're going to
+ 
+
+399
+00:07:08,880 --> 00:07:11,029
+amount of access and how we're going to
+do that. We went with like how we're
+
+400
+00:07:11,029 --> 00:07:11,039
+do that. We went with like how we're
+ 
+
+401
+00:07:11,039 --> 00:07:12,469
+do that. We went with like how we're
+going to monitor everything. Let's put
+
+402
+00:07:12,469 --> 00:07:12,479
+going to monitor everything. Let's put
+ 
+
+403
+00:07:12,479 --> 00:07:14,230
+going to monitor everything. Let's put
+that together. Can we kind of see what's
+
+404
+00:07:14,230 --> 00:07:14,240
+that together. Can we kind of see what's
+ 
+
+405
+00:07:14,240 --> 00:07:17,749
+that together. Can we kind of see what's
+going on? Um and then you know we wanted
+
+406
+00:07:17,749 --> 00:07:17,759
+going on? Um and then you know we wanted
+ 
+
+407
+00:07:17,759 --> 00:07:19,749
+going on? Um and then you know we wanted
+to be able to eventually and this is
+
+408
+00:07:19,749 --> 00:07:19,759
+to be able to eventually and this is
+ 
+
+409
+00:07:19,759 --> 00:07:21,670
+to be able to eventually and this is
+kind of you know we're running at the
+
+410
+00:07:21,670 --> 00:07:21,680
+kind of you know we're running at the
+ 
+
+411
+00:07:21,680 --> 00:07:22,950
+kind of you know we're running at the
+same time we're still already moving
+
+412
+00:07:22,950 --> 00:07:22,960
+same time we're still already moving
+ 
+
+413
+00:07:22,960 --> 00:07:25,830
+same time we're still already moving
+forward with a couple use cases and you
+
+414
+00:07:25,830 --> 00:07:25,840
+forward with a couple use cases and you
+ 
+
+415
+00:07:25,840 --> 00:07:27,029
+forward with a couple use cases and you
+know we want we want to understand how
+
+416
+00:07:27,029 --> 00:07:27,039
+know we want we want to understand how
+ 
+
+417
+00:07:27,039 --> 00:07:29,510
+know we want we want to understand how
+to audit them later and how to alert on
+
+418
+00:07:29,510 --> 00:07:29,520
+to audit them later and how to alert on
+ 
+
+419
+00:07:29,520 --> 00:07:32,230
+to audit them later and how to alert on
+any issues that we're running into. Um
+
+420
+00:07:32,230 --> 00:07:32,240
+any issues that we're running into. Um
+ 
+
+421
+00:07:32,240 --> 00:07:34,390
+any issues that we're running into. Um
+and so initially we're like what we need
+
+422
+00:07:34,390 --> 00:07:34,400
+and so initially we're like what we need
+ 
+
+423
+00:07:34,400 --> 00:07:36,629
+and so initially we're like what we need
+to do is kind of focus on one control
+
+424
+00:07:36,629 --> 00:07:36,639
+to do is kind of focus on one control
+ 
+
+425
+00:07:36,639 --> 00:07:39,189
+to do is kind of focus on one control
+plane you know of what we want to do you
+
+426
+00:07:39,189 --> 00:07:39,199
+plane you know of what we want to do you
+ 
+
+427
+00:07:39,199 --> 00:07:41,029
+plane you know of what we want to do you
+know you know we didn't you know go
+
+428
+00:07:41,029 --> 00:07:41,039
+know you know we didn't you know go
+ 
+
+429
+00:07:41,039 --> 00:07:43,029
+know you know we didn't you know go
+build an MCP server or anything but we
+
+430
+00:07:43,029 --> 00:07:43,039
+build an MCP server or anything but we
+ 
+
+431
+00:07:43,039 --> 00:07:45,189
+build an MCP server or anything but we
+we have data bricks so they're like
+
+432
+00:07:45,189 --> 00:07:45,199
+we have data bricks so they're like
+ 
+
+433
+00:07:45,199 --> 00:07:46,870
+we have data bricks so they're like
+we're going to funnel most everything we
+
+434
+00:07:46,870 --> 00:07:46,880
+we're going to funnel most everything we
+ 
+
+435
+00:07:46,880 --> 00:07:49,909
+we're going to funnel most everything we
+can through data bricks right outside of
+
+436
+00:07:49,909 --> 00:07:49,919
+can through data bricks right outside of
+ 
+
+437
+00:07:49,919 --> 00:07:51,749
+can through data bricks right outside of
+you know if people want to use you know
+
+438
+00:07:51,749 --> 00:07:51,759
+you know if people want to use you know
+ 
+
+439
+00:07:51,759 --> 00:07:53,830
+you know if people want to use you know
+a chatbot we're going to put all that
+
+440
+00:07:53,830 --> 00:07:53,840
+a chatbot we're going to put all that
+ 
+
+441
+00:07:53,840 --> 00:07:56,390
+a chatbot we're going to put all that
+side with co-pilot and Microsoft because
+
+442
+00:07:56,390 --> 00:07:56,400
+side with co-pilot and Microsoft because
+ 
+
+443
+00:07:56,400 --> 00:07:58,950
+side with co-pilot and Microsoft because
+again $5 billion company we have the
+
+444
+00:07:58,950 --> 00:07:58,960
+again $5 billion company we have the
+ 
+
+445
+00:07:58,960 --> 00:08:01,350
+again $5 billion company we have the
+money for fancy software and We're a
+
+446
+00:08:01,350 --> 00:08:01,360
+money for fancy software and We're a
+ 
+
+447
+00:08:01,360 --> 00:08:03,589
+money for fancy software and We're a
+Microsoft shop. So kind of kind of
+
+448
+00:08:03,589 --> 00:08:03,599
+Microsoft shop. So kind of kind of
+ 
+
+449
+00:08:03,599 --> 00:08:05,830
+Microsoft shop. So kind of kind of
+forced into that uh that there. So we
+
+450
+00:08:05,830 --> 00:08:05,840
+forced into that uh that there. So we
+ 
+
+451
+00:08:05,840 --> 00:08:07,270
+forced into that uh that there. So we
+kind of set these things up thinking,
+
+452
+00:08:07,270 --> 00:08:07,280
+kind of set these things up thinking,
+ 
+
+453
+00:08:07,280 --> 00:08:09,589
+kind of set these things up thinking,
+okay, this this should be enough, right?
+
+454
+00:08:09,589 --> 00:08:09,599
+okay, this this should be enough, right?
+ 
+
+455
+00:08:09,599 --> 00:08:11,350
+okay, this this should be enough, right?
+This should really help us to go
+
+456
+00:08:11,350 --> 00:08:11,360
+This should really help us to go
+ 
+
+457
+00:08:11,360 --> 00:08:13,510
+This should really help us to go
+forward. We we've thought about it, you
+
+458
+00:08:13,510 --> 00:08:13,520
+forward. We we've thought about it, you
+ 
+
+459
+00:08:13,520 --> 00:08:15,670
+forward. We we've thought about it, you
+know, and you know, I've already held my
+
+460
+00:08:15,670 --> 00:08:15,680
+know, and you know, I've already held my
+ 
+
+461
+00:08:15,680 --> 00:08:17,510
+know, and you know, I've already held my
+boss back for two months on this, you
+
+462
+00:08:17,510 --> 00:08:17,520
+boss back for two months on this, you
+ 
+
+463
+00:08:17,520 --> 00:08:20,390
+boss back for two months on this, you
+know, cuz it was a initially our CEO is
+
+464
+00:08:20,390 --> 00:08:20,400
+know, cuz it was a initially our CEO is
+ 
+
+465
+00:08:20,400 --> 00:08:22,950
+know, cuz it was a initially our CEO is
+like no AI. Uh let's not do that. And
+
+466
+00:08:22,950 --> 00:08:22,960
+like no AI. Uh let's not do that. And
+ 
+
+467
+00:08:22,960 --> 00:08:24,950
+like no AI. Uh let's not do that. And
+then my boss finally convinced him and
+
+468
+00:08:24,950 --> 00:08:24,960
+then my boss finally convinced him and
+ 
+
+469
+00:08:24,960 --> 00:08:27,350
+then my boss finally convinced him and
+then he was like, I want it now. And and
+
+470
+00:08:27,350 --> 00:08:27,360
+then he was like, I want it now. And and
+ 
+
+471
+00:08:27,360 --> 00:08:29,430
+then he was like, I want it now. And and
+it was like it was the end of, you know,
+
+472
+00:08:29,430 --> 00:08:29,440
+it was like it was the end of, you know,
+ 
+
+473
+00:08:29,440 --> 00:08:31,189
+it was like it was the end of, you know,
+like I said, it was 2025. I hadn't had
+
+474
+00:08:31,189 --> 00:08:31,199
+like I said, it was 2025. I hadn't had
+ 
+
+475
+00:08:31,199 --> 00:08:32,949
+like I said, it was 2025. I hadn't had
+budget for it cuz I was told no. So, we
+
+476
+00:08:32,949 --> 00:08:32,959
+budget for it cuz I was told no. So, we
+ 
+
+477
+00:08:32,959 --> 00:08:33,990
+budget for it cuz I was told no. So, we
+had to like pull in a little bit of
+
+478
+00:08:33,990 --> 00:08:34,000
+had to like pull in a little bit of
+ 
+
+479
+00:08:34,000 --> 00:08:35,269
+had to like pull in a little bit of
+emergency budget and stuff like that,
+
+480
+00:08:35,269 --> 00:08:35,279
+emergency budget and stuff like that,
+ 
+
+481
+00:08:35,279 --> 00:08:37,670
+emergency budget and stuff like that,
+but uh it's been a hurry up and go thing
+
+482
+00:08:37,670 --> 00:08:37,680
+but uh it's been a hurry up and go thing
+ 
+
+483
+00:08:37,680 --> 00:08:43,909
+but uh it's been a hurry up and go thing
+ever since.
+
+484
+00:08:43,909 --> 00:08:43,919
+
+ 
+
+485
+00:08:43,919 --> 00:08:46,949
+
+All right. So, you know, everything
+
+486
+00:08:46,949 --> 00:08:46,959
+All right. So, you know, everything
+ 
+
+487
+00:08:46,959 --> 00:08:49,509
+All right. So, you know, everything
+obviously didn't have 100% success like
+
+488
+00:08:49,509 --> 00:08:49,519
+obviously didn't have 100% success like
+ 
+
+489
+00:08:49,519 --> 00:08:51,110
+obviously didn't have 100% success like
+the little happy robot on the bottom of
+
+490
+00:08:51,110 --> 00:08:51,120
+the little happy robot on the bottom of
+ 
+
+491
+00:08:51,120 --> 00:08:54,310
+the little happy robot on the bottom of
+that last picture. Um we really figured
+
+492
+00:08:54,310 --> 00:08:54,320
+that last picture. Um we really figured
+ 
+
+493
+00:08:54,320 --> 00:08:56,389
+that last picture. Um we really figured
+out we needed to do a lot more. We had
+
+494
+00:08:56,389 --> 00:08:56,399
+out we needed to do a lot more. We had
+ 
+
+495
+00:08:56,399 --> 00:08:58,150
+out we needed to do a lot more. We had
+created an AI usage policy that said,
+
+496
+00:08:58,150 --> 00:08:58,160
+created an AI usage policy that said,
+ 
+
+497
+00:08:58,160 --> 00:09:00,949
+created an AI usage policy that said,
+"Hey, check with it before you use AI."
+
+498
+00:09:00,949 --> 00:09:00,959
+"Hey, check with it before you use AI."
+ 
+
+499
+00:09:00,959 --> 00:09:03,269
+"Hey, check with it before you use AI."
+You know, that was that was what we put
+
+500
+00:09:03,269 --> 00:09:03,279
+You know, that was that was what we put
+ 
+
+501
+00:09:03,279 --> 00:09:04,710
+You know, that was that was what we put
+out. That's compliance and legal put
+
+502
+00:09:04,710 --> 00:09:04,720
+out. That's compliance and legal put
+ 
+
+503
+00:09:04,720 --> 00:09:05,990
+out. That's compliance and legal put
+that together. I'm like, "Seems good.
+
+504
+00:09:05,990 --> 00:09:06,000
+that together. I'm like, "Seems good.
+ 
+
+505
+00:09:06,000 --> 00:09:08,550
+that together. I'm like, "Seems good.
+Seems legit." Uh, we needed something
+
+506
+00:09:08,550 --> 00:09:08,560
+Seems legit." Uh, we needed something
+ 
+
+507
+00:09:08,560 --> 00:09:11,269
+Seems legit." Uh, we needed something
+way more specific, right? We needed to
+
+508
+00:09:11,269 --> 00:09:11,279
+way more specific, right? We needed to
+ 
+
+509
+00:09:11,279 --> 00:09:14,630
+way more specific, right? We needed to
+be able to list specifically these are
+
+510
+00:09:14,630 --> 00:09:14,640
+be able to list specifically these are
+ 
+
+511
+00:09:14,640 --> 00:09:17,590
+be able to list specifically these are
+approved tooling tools you could use.
+
+512
+00:09:17,590 --> 00:09:17,600
+approved tooling tools you could use.
+ 
+
+513
+00:09:17,600 --> 00:09:19,350
+approved tooling tools you could use.
+These are specifically prohibited
+
+514
+00:09:19,350 --> 00:09:19,360
+These are specifically prohibited
+ 
+
+515
+00:09:19,360 --> 00:09:22,150
+These are specifically prohibited
+technologies, but use cases as well. So
+
+516
+00:09:22,150 --> 00:09:22,160
+technologies, but use cases as well. So
+ 
+
+517
+00:09:22,160 --> 00:09:24,790
+technologies, but use cases as well. So
+when people were like uh we have some
+
+518
+00:09:24,790 --> 00:09:24,800
+when people were like uh we have some
+ 
+
+519
+00:09:24,800 --> 00:09:26,470
+when people were like uh we have some
+software that does work for medical
+
+520
+00:09:26,470 --> 00:09:26,480
+software that does work for medical
+ 
+
+521
+00:09:26,480 --> 00:09:29,030
+software that does work for medical
+trials for instance you know like that's
+
+522
+00:09:29,030 --> 00:09:29,040
+trials for instance you know like that's
+ 
+
+523
+00:09:29,040 --> 00:09:30,790
+trials for instance you know like that's
+very very touchy. So it's like that's
+
+524
+00:09:30,790 --> 00:09:30,800
+very very touchy. So it's like that's
+ 
+
+525
+00:09:30,800 --> 00:09:32,630
+very very touchy. So it's like that's
+prohibited. So someone has to make a
+
+526
+00:09:32,630 --> 00:09:32,640
+prohibited. So someone has to make a
+ 
+
+527
+00:09:32,640 --> 00:09:33,910
+prohibited. So someone has to make a
+really good reason and come around
+
+528
+00:09:33,910 --> 00:09:33,920
+really good reason and come around
+ 
+
+529
+00:09:33,920 --> 00:09:35,670
+really good reason and come around
+through with us and yes we're going to
+
+530
+00:09:35,670 --> 00:09:35,680
+through with us and yes we're going to
+ 
+
+531
+00:09:35,680 --> 00:09:37,350
+through with us and yes we're going to
+be doing something there but you know
+
+532
+00:09:37,350 --> 00:09:37,360
+be doing something there but you know
+ 
+
+533
+00:09:37,360 --> 00:09:39,110
+be doing something there but you know
+that has to be brought through through
+
+534
+00:09:39,110 --> 00:09:39,120
+that has to be brought through through
+ 
+
+535
+00:09:39,120 --> 00:09:41,430
+that has to be brought through through
+the governance committee but the the
+
+536
+00:09:41,430 --> 00:09:41,440
+the governance committee but the the
+ 
+
+537
+00:09:41,440 --> 00:09:43,350
+the governance committee but the the
+general policy is like please don't do
+
+538
+00:09:43,350 --> 00:09:43,360
+general policy is like please don't do
+ 
+
+539
+00:09:43,360 --> 00:09:45,350
+general policy is like please don't do
+that. you know, we want we want to make
+
+540
+00:09:45,350 --> 00:09:45,360
+that. you know, we want we want to make
+ 
+
+541
+00:09:45,360 --> 00:09:47,829
+that. you know, we want we want to make
+sure the policy had shows that everyone
+
+542
+00:09:47,829 --> 00:09:47,839
+sure the policy had shows that everyone
+ 
+
+543
+00:09:47,839 --> 00:09:50,070
+sure the policy had shows that everyone
+who's using it is required to go through
+
+544
+00:09:50,070 --> 00:09:50,080
+who's using it is required to go through
+ 
+
+545
+00:09:50,080 --> 00:09:51,910
+who's using it is required to go through
+AI awareness training and they got to
+
+546
+00:09:51,910 --> 00:09:51,920
+AI awareness training and they got to
+ 
+
+547
+00:09:51,920 --> 00:09:53,750
+AI awareness training and they got to
+sign off. We took that our normal
+
+548
+00:09:53,750 --> 00:09:53,760
+sign off. We took that our normal
+ 
+
+549
+00:09:53,760 --> 00:09:55,350
+sign off. We took that our normal
+acceptable use policy, you know, where
+
+550
+00:09:55,350 --> 00:09:55,360
+acceptable use policy, you know, where
+ 
+
+551
+00:09:55,360 --> 00:09:57,269
+acceptable use policy, you know, where
+it's like, hey, you know, we're going to
+
+552
+00:09:57,269 --> 00:09:57,279
+it's like, hey, you know, we're going to
+ 
+
+553
+00:09:57,279 --> 00:09:58,870
+it's like, hey, you know, we're going to
+be watching you. Don't do bad things on
+
+554
+00:09:58,870 --> 00:09:58,880
+be watching you. Don't do bad things on
+ 
+
+555
+00:09:58,880 --> 00:10:00,150
+be watching you. Don't do bad things on
+the internet. Don't post on social media
+
+556
+00:10:00,150 --> 00:10:00,160
+the internet. Don't post on social media
+ 
+
+557
+00:10:00,160 --> 00:10:01,350
+the internet. Don't post on social media
+and got really a little bit more
+
+558
+00:10:01,350 --> 00:10:01,360
+and got really a little bit more
+ 
+
+559
+00:10:01,360 --> 00:10:03,990
+and got really a little bit more
+in-depth with things you can do with AI.
+
+560
+00:10:03,990 --> 00:10:04,000
+in-depth with things you can do with AI.
+ 
+
+561
+00:10:04,000 --> 00:10:05,990
+in-depth with things you can do with AI.
+Um, and if you want examples, I can
+
+562
+00:10:05,990 --> 00:10:06,000
+Um, and if you want examples, I can
+ 
+
+563
+00:10:06,000 --> 00:10:08,870
+Um, and if you want examples, I can
+share some of those later um outside of
+
+564
+00:10:08,870 --> 00:10:08,880
+share some of those later um outside of
+ 
+
+565
+00:10:08,880 --> 00:10:12,070
+share some of those later um outside of
+this. Um but I think that was something
+
+566
+00:10:12,070 --> 00:10:12,080
+this. Um but I think that was something
+ 
+
+567
+00:10:12,080 --> 00:10:17,110
+this. Um but I think that was something
+that really helped. Um we also uh to
+
+568
+00:10:17,110 --> 00:10:17,120
+that really helped. Um we also uh to
+ 
+
+569
+00:10:17,120 --> 00:10:20,550
+that really helped. Um we also uh to
+help adoption we started getting people
+
+570
+00:10:20,550 --> 00:10:20,560
+help adoption we started getting people
+ 
+
+571
+00:10:20,560 --> 00:10:22,230
+help adoption we started getting people
+like in you know we had a co-pilot
+
+572
+00:10:22,230 --> 00:10:22,240
+like in you know we had a co-pilot
+ 
+
+573
+00:10:22,240 --> 00:10:23,269
+like in you know we had a co-pilot
+adoption thing so we're doing that and
+
+574
+00:10:23,269 --> 00:10:23,279
+adoption thing so we're doing that and
+ 
+
+575
+00:10:23,279 --> 00:10:24,310
+adoption thing so we're doing that and
+so people be like these are the use
+
+576
+00:10:24,310 --> 00:10:24,320
+so people be like these are the use
+ 
+
+577
+00:10:24,320 --> 00:10:26,310
+so people be like these are the use
+cases I'm using but having people within
+
+578
+00:10:26,310 --> 00:10:26,320
+cases I'm using but having people within
+ 
+
+579
+00:10:26,320 --> 00:10:27,750
+cases I'm using but having people within
+departments kind of really championing
+
+580
+00:10:27,750 --> 00:10:27,760
+departments kind of really championing
+ 
+
+581
+00:10:27,760 --> 00:10:30,389
+departments kind of really championing
+it. Um I was glad to see it work because
+
+582
+00:10:30,389 --> 00:10:30,399
+it. Um I was glad to see it work because
+ 
+
+583
+00:10:30,399 --> 00:10:32,630
+it. Um I was glad to see it work because
+I have been trying very hard to always
+
+584
+00:10:32,630 --> 00:10:32,640
+I have been trying very hard to always
+ 
+
+585
+00:10:32,640 --> 00:10:33,910
+I have been trying very hard to always
+get a security champion in each
+
+586
+00:10:33,910 --> 00:10:33,920
+get a security champion in each
+ 
+
+587
+00:10:33,920 --> 00:10:35,350
+get a security champion in each
+department or a risk management champion
+
+588
+00:10:35,350 --> 00:10:35,360
+department or a risk management champion
+ 
+
+589
+00:10:35,360 --> 00:10:38,310
+department or a risk management champion
+in each department. Um AI seemed to be a
+
+590
+00:10:38,310 --> 00:10:38,320
+in each department. Um AI seemed to be a
+ 
+
+591
+00:10:38,320 --> 00:10:39,590
+in each department. Um AI seemed to be a
+little bit better. they seem to enjoy
+
+592
+00:10:39,590 --> 00:10:39,600
+little bit better. they seem to enjoy
+ 
+
+593
+00:10:39,600 --> 00:10:43,190
+little bit better. they seem to enjoy
+that. So,
+
+594
+00:10:43,190 --> 00:10:43,200
+that. So,
+ 
+
+595
+00:10:43,200 --> 00:10:45,590
+that. So,
+you know, some of the other pieces on
+
+596
+00:10:45,590 --> 00:10:45,600
+you know, some of the other pieces on
+ 
+
+597
+00:10:45,600 --> 00:10:48,150
+you know, some of the other pieces on
+there as well was where does it require
+
+598
+00:10:48,150 --> 00:10:48,160
+there as well was where does it require
+ 
+
+599
+00:10:48,160 --> 00:10:50,069
+there as well was where does it require
+human oversight? Again, speaking of the
+
+600
+00:10:50,069 --> 00:10:50,079
+human oversight? Again, speaking of the
+ 
+
+601
+00:10:50,079 --> 00:10:52,069
+human oversight? Again, speaking of the
+medical trial piece, uh, one of our use
+
+602
+00:10:52,069 --> 00:10:52,079
+medical trial piece, uh, one of our use
+ 
+
+603
+00:10:52,079 --> 00:10:53,350
+medical trial piece, uh, one of our use
+cases that we're currently using, one of
+
+604
+00:10:53,350 --> 00:10:53,360
+cases that we're currently using, one of
+ 
+
+605
+00:10:53,360 --> 00:10:55,110
+cases that we're currently using, one of
+the first use cases we deployed was
+
+606
+00:10:55,110 --> 00:10:55,120
+the first use cases we deployed was
+ 
+
+607
+00:10:55,120 --> 00:10:56,949
+the first use cases we deployed was
+medical pre-authorization.
+
+608
+00:10:56,949 --> 00:10:56,959
+medical pre-authorization.
+ 
+
+609
+00:10:56,959 --> 00:11:00,710
+medical pre-authorization.
+So, we do a lot of work with immune
+
+610
+00:11:00,710 --> 00:11:00,720
+So, we do a lot of work with immune
+ 
+
+611
+00:11:00,720 --> 00:11:02,870
+So, we do a lot of work with immune
+drugs and what happens is some of our
+
+612
+00:11:02,870 --> 00:11:02,880
+drugs and what happens is some of our
+ 
+
+613
+00:11:02,880 --> 00:11:04,630
+drugs and what happens is some of our
+patients, well, they just automatically
+
+614
+00:11:04,630 --> 00:11:04,640
+patients, well, they just automatically
+ 
+
+615
+00:11:04,640 --> 00:11:05,910
+patients, well, they just automatically
+get denied because it's expensive.
+
+616
+00:11:05,910 --> 00:11:05,920
+get denied because it's expensive.
+ 
+
+617
+00:11:05,920 --> 00:11:06,949
+get denied because it's expensive.
+That's really kind of what the
+
+618
+00:11:06,949 --> 00:11:06,959
+That's really kind of what the
+ 
+
+619
+00:11:06,959 --> 00:11:10,470
+That's really kind of what the
+healthcare companies do. So, we created
+
+620
+00:11:10,470 --> 00:11:10,480
+healthcare companies do. So, we created
+ 
+
+621
+00:11:10,480 --> 00:11:12,550
+healthcare companies do. So, we created
+an agent go through and pull all they'd
+
+622
+00:11:12,550 --> 00:11:12,560
+an agent go through and pull all they'd
+ 
+
+623
+00:11:12,560 --> 00:11:14,470
+an agent go through and pull all they'd
+read the letters on why they're denied.
+
+624
+00:11:14,470 --> 00:11:14,480
+read the letters on why they're denied.
+ 
+
+625
+00:11:14,480 --> 00:11:15,750
+read the letters on why they're denied.
+They'd pull all the proper
+
+626
+00:11:15,750 --> 00:11:15,760
+They'd pull all the proper
+ 
+
+627
+00:11:15,760 --> 00:11:17,750
+They'd pull all the proper
+documentation, wrap it up in a pretty
+
+628
+00:11:17,750 --> 00:11:17,760
+documentation, wrap it up in a pretty
+ 
+
+629
+00:11:17,760 --> 00:11:19,750
+documentation, wrap it up in a pretty
+bow, and then a doctor would review it
+
+630
+00:11:19,750 --> 00:11:19,760
+bow, and then a doctor would review it
+ 
+
+631
+00:11:19,760 --> 00:11:23,350
+bow, and then a doctor would review it
+and approve that or not. Um, that's the
+
+632
+00:11:23,350 --> 00:11:23,360
+and approve that or not. Um, that's the
+ 
+
+633
+00:11:23,360 --> 00:11:26,790
+and approve that or not. Um, that's the
+$250,000 use case. Uh, my b my boss is
+
+634
+00:11:26,790 --> 00:11:26,800
+$250,000 use case. Uh, my b my boss is
+ 
+
+635
+00:11:26,800 --> 00:11:28,230
+$250,000 use case. Uh, my b my boss is
+like, "Yeah, we're saving $250,000 a
+
+636
+00:11:28,230 --> 00:11:28,240
+like, "Yeah, we're saving $250,000 a
+ 
+
+637
+00:11:28,240 --> 00:11:29,509
+like, "Yeah, we're saving $250,000 a
+year on this thing. It's pretty cool."
+
+638
+00:11:29,509 --> 00:11:29,519
+year on this thing. It's pretty cool."
+ 
+
+639
+00:11:29,519 --> 00:11:31,110
+year on this thing. It's pretty cool."
+Um, and and it's really great to help
+
+640
+00:11:31,110 --> 00:11:31,120
+Um, and and it's really great to help
+ 
+
+641
+00:11:31,120 --> 00:11:34,550
+Um, and and it's really great to help
+people out. Um, so we that was like,
+
+642
+00:11:34,550 --> 00:11:34,560
+people out. Um, so we that was like,
+ 
+
+643
+00:11:34,560 --> 00:11:36,710
+people out. Um, so we that was like,
+"This requires human oversight." Uh
+
+644
+00:11:36,710 --> 00:11:36,720
+"This requires human oversight." Uh
+ 
+
+645
+00:11:36,720 --> 00:11:39,750
+"This requires human oversight." Uh
+we've also understood in another use
+
+646
+00:11:39,750 --> 00:11:39,760
+we've also understood in another use
+ 
+
+647
+00:11:39,760 --> 00:11:41,110
+we've also understood in another use
+case because I think use cases are kind
+
+648
+00:11:41,110 --> 00:11:41,120
+case because I think use cases are kind
+ 
+
+649
+00:11:41,120 --> 00:11:42,310
+case because I think use cases are kind
+of exciting so should probably bring
+
+650
+00:11:42,310 --> 00:11:42,320
+of exciting so should probably bring
+ 
+
+651
+00:11:42,320 --> 00:11:44,710
+of exciting so should probably bring
+them up right. Um another use case we're
+
+652
+00:11:44,710 --> 00:11:44,720
+them up right. Um another use case we're
+ 
+
+653
+00:11:44,720 --> 00:11:46,630
+them up right. Um another use case we're
+using is using multiple agents and this
+
+654
+00:11:46,630 --> 00:11:46,640
+using is using multiple agents and this
+ 
+
+655
+00:11:46,640 --> 00:11:49,670
+using is using multiple agents and this
+is for a distribution company for you
+
+656
+00:11:49,670 --> 00:11:49,680
+is for a distribution company for you
+ 
+
+657
+00:11:49,680 --> 00:11:52,230
+is for a distribution company for you
+know overages, shortages, damages and
+
+658
+00:11:52,230 --> 00:11:52,240
+know overages, shortages, damages and
+ 
+
+659
+00:11:52,240 --> 00:11:54,470
+know overages, shortages, damages and
+shipping goods. So people can log a
+
+660
+00:11:54,470 --> 00:11:54,480
+shipping goods. So people can log a
+ 
+
+661
+00:11:54,480 --> 00:11:57,430
+shipping goods. So people can log a
+complaint on our e our SAP e-commerce
+
+662
+00:11:57,430 --> 00:11:57,440
+complaint on our e our SAP e-commerce
+ 
+
+663
+00:11:57,440 --> 00:12:01,190
+complaint on our e our SAP e-commerce
+site which then throws a notice over to
+
+664
+00:12:01,190 --> 00:12:01,200
+site which then throws a notice over to
+ 
+
+665
+00:12:01,200 --> 00:12:02,870
+site which then throws a notice over to
+Salesforce. the saleserson knows what's
+
+666
+00:12:02,870 --> 00:12:02,880
+Salesforce. the saleserson knows what's
+ 
+
+667
+00:12:02,880 --> 00:12:05,910
+Salesforce. the saleserson knows what's
+going on and then that reach you know
+
+668
+00:12:05,910 --> 00:12:05,920
+going on and then that reach you know
+ 
+
+669
+00:12:05,920 --> 00:12:07,430
+going on and then that reach you know
+and then we re this is all being
+
+670
+00:12:07,430 --> 00:12:07,440
+and then we re this is all being
+ 
+
+671
+00:12:07,440 --> 00:12:08,629
+and then we re this is all being
+orchestrated within different agents
+
+672
+00:12:08,629 --> 00:12:08,639
+orchestrated within different agents
+ 
+
+673
+00:12:08,639 --> 00:12:10,310
+orchestrated within different agents
+within data bricks which reaches out to
+
+674
+00:12:10,310 --> 00:12:10,320
+within data bricks which reaches out to
+ 
+
+675
+00:12:10,320 --> 00:12:12,389
+within data bricks which reaches out to
+SAP pulls ship date all this other
+
+676
+00:12:12,389 --> 00:12:12,399
+SAP pulls ship date all this other
+ 
+
+677
+00:12:12,399 --> 00:12:14,470
+SAP pulls ship date all this other
+information pulls all these documents
+
+678
+00:12:14,470 --> 00:12:14,480
+information pulls all these documents
+ 
+
+679
+00:12:14,480 --> 00:12:16,310
+information pulls all these documents
+together you know passes it to this
+
+680
+00:12:16,310 --> 00:12:16,320
+together you know passes it to this
+ 
+
+681
+00:12:16,320 --> 00:12:18,310
+together you know passes it to this
+orchestrator agent that builds
+
+682
+00:12:18,310 --> 00:12:18,320
+orchestrator agent that builds
+ 
+
+683
+00:12:18,320 --> 00:12:20,870
+orchestrator agent that builds
+everything around it and then hands this
+
+684
+00:12:20,870 --> 00:12:20,880
+everything around it and then hands this
+ 
+
+685
+00:12:20,880 --> 00:12:23,030
+everything around it and then hands this
+long document including you know any
+
+686
+00:12:23,030 --> 00:12:23,040
+long document including you know any
+ 
+
+687
+00:12:23,040 --> 00:12:25,829
+long document including you know any
+images that the customer might upload um
+
+688
+00:12:25,829 --> 00:12:25,839
+images that the customer might upload um
+ 
+
+689
+00:12:25,839 --> 00:12:29,190
+images that the customer might upload um
+and and eventually we have video like
+
+690
+00:12:29,190 --> 00:12:29,200
+and and eventually we have video like
+ 
+
+691
+00:12:29,200 --> 00:12:31,590
+and and eventually we have video like
+over you know where people are packing
+
+692
+00:12:31,590 --> 00:12:31,600
+over you know where people are packing
+ 
+
+693
+00:12:31,600 --> 00:12:32,550
+over you know where people are packing
+So, I mean, we have like, you know,
+
+694
+00:12:32,550 --> 00:12:32,560
+So, I mean, we have like, you know,
+ 
+
+695
+00:12:32,560 --> 00:12:34,870
+So, I mean, we have like, you know,
+$13,000 vials of drugs that go out
+
+696
+00:12:34,870 --> 00:12:34,880
+$13,000 vials of drugs that go out
+ 
+
+697
+00:12:34,880 --> 00:12:35,990
+$13,000 vials of drugs that go out
+sometimes. So, we got to make sure
+
+698
+00:12:35,990 --> 00:12:36,000
+sometimes. So, we got to make sure
+ 
+
+699
+00:12:36,000 --> 00:12:37,750
+sometimes. So, we got to make sure
+people don't, you know, harm them, you
+
+700
+00:12:37,750 --> 00:12:37,760
+people don't, you know, harm them, you
+ 
+
+701
+00:12:37,760 --> 00:12:40,310
+people don't, you know, harm them, you
+know, make sure put it in. Um, but then
+
+702
+00:12:40,310 --> 00:12:40,320
+know, make sure put it in. Um, but then
+ 
+
+703
+00:12:40,320 --> 00:12:41,829
+know, make sure put it in. Um, but then
+it pieces all that together for someone
+
+704
+00:12:41,829 --> 00:12:41,839
+it pieces all that together for someone
+ 
+
+705
+00:12:41,839 --> 00:12:43,990
+it pieces all that together for someone
+to review and get back with the customer
+
+706
+00:12:43,990 --> 00:12:44,000
+to review and get back with the customer
+ 
+
+707
+00:12:44,000 --> 00:12:46,550
+to review and get back with the customer
+and it saves a lot of time. So, you
+
+708
+00:12:46,550 --> 00:12:46,560
+and it saves a lot of time. So, you
+ 
+
+709
+00:12:46,560 --> 00:12:48,069
+and it saves a lot of time. So, you
+know, where do you put the human review
+
+710
+00:12:48,069 --> 00:12:48,079
+know, where do you put the human review
+ 
+
+711
+00:12:48,079 --> 00:12:50,069
+know, where do you put the human review
+in the loop? We're still very much on
+
+712
+00:12:50,069 --> 00:12:50,079
+in the loop? We're still very much on
+ 
+
+713
+00:12:50,079 --> 00:12:51,590
+in the loop? We're still very much on
+the risk adverse side. So, we're kind of
+
+714
+00:12:51,590 --> 00:12:51,600
+the risk adverse side. So, we're kind of
+ 
+
+715
+00:12:51,600 --> 00:12:53,030
+the risk adverse side. So, we're kind of
+leaning that direction. The more we can
+
+716
+00:12:53,030 --> 00:12:53,040
+leaning that direction. The more we can
+ 
+
+717
+00:12:53,040 --> 00:12:55,030
+leaning that direction. The more we can
+do, the better.
+
+718
+00:12:55,030 --> 00:12:55,040
+do, the better.
+ 
+
+719
+00:12:55,040 --> 00:12:58,790
+do, the better.
+Um in yeah I'd mentioned the sign off
+
+720
+00:12:58,790 --> 00:12:58,800
+Um in yeah I'd mentioned the sign off
+ 
+
+721
+00:12:58,800 --> 00:13:00,949
+Um in yeah I'd mentioned the sign off
+definitely unacceptable use policy the
+
+722
+00:13:00,949 --> 00:13:00,959
+definitely unacceptable use policy the
+ 
+
+723
+00:13:00,959 --> 00:13:03,350
+definitely unacceptable use policy the
+training more and more sign off our my
+
+724
+00:13:03,350 --> 00:13:03,360
+training more and more sign off our my
+ 
+
+725
+00:13:03,360 --> 00:13:06,230
+training more and more sign off our my
+legal team is very signature happy I
+
+726
+00:13:06,230 --> 00:13:06,240
+legal team is very signature happy I
+ 
+
+727
+00:13:06,240 --> 00:13:07,350
+legal team is very signature happy I
+don't know you know we're in the state
+
+728
+00:13:07,350 --> 00:13:07,360
+don't know you know we're in the state
+ 
+
+729
+00:13:07,360 --> 00:13:08,470
+don't know you know we're in the state
+of California I'm not sure how much it's
+
+730
+00:13:08,470 --> 00:13:08,480
+of California I'm not sure how much it's
+ 
+
+731
+00:13:08,480 --> 00:13:10,230
+of California I'm not sure how much it's
+going to protect you uh but you know
+
+732
+00:13:10,230 --> 00:13:10,240
+going to protect you uh but you know
+ 
+
+733
+00:13:10,240 --> 00:13:12,870
+going to protect you uh but you know
+they're happy that people do sign off um
+
+734
+00:13:12,870 --> 00:13:12,880
+they're happy that people do sign off um
+ 
+
+735
+00:13:12,880 --> 00:13:14,790
+they're happy that people do sign off um
+stricter AI intake I mentioned earlier
+
+736
+00:13:14,790 --> 00:13:14,800
+stricter AI intake I mentioned earlier
+ 
+
+737
+00:13:14,800 --> 00:13:17,110
+stricter AI intake I mentioned earlier
+kind of having you know what's the
+
+738
+00:13:17,110 --> 00:13:17,120
+kind of having you know what's the
+ 
+
+739
+00:13:17,120 --> 00:13:19,910
+kind of having you know what's the
+benefit of this so why should we do it
+
+740
+00:13:19,910 --> 00:13:19,920
+benefit of this so why should we do it
+ 
+
+741
+00:13:19,920 --> 00:13:22,870
+benefit of this so why should we do it
+and now we're kind of really what is
+
+742
+00:13:22,870 --> 00:13:22,880
+and now we're kind of really what is
+ 
+
+743
+00:13:22,880 --> 00:13:25,269
+and now we're kind of really what is
+your process currently like does it take
+
+744
+00:13:25,269 --> 00:13:25,279
+your process currently like does it take
+ 
+
+745
+00:13:25,279 --> 00:13:27,509
+your process currently like does it take
+you how long this process take? How much
+
+746
+00:13:27,509 --> 00:13:27,519
+you how long this process take? How much
+ 
+
+747
+00:13:27,519 --> 00:13:29,110
+you how long this process take? How much
+do you think this will make it
+
+748
+00:13:29,110 --> 00:13:29,120
+do you think this will make it
+ 
+
+749
+00:13:29,120 --> 00:13:30,629
+do you think this will make it
+improvement? And if you want to work
+
+750
+00:13:30,629 --> 00:13:30,639
+improvement? And if you want to work
+ 
+
+751
+00:13:30,639 --> 00:13:32,870
+improvement? And if you want to work
+with our data team or whomever to talk
+
+752
+00:13:32,870 --> 00:13:32,880
+with our data team or whomever to talk
+ 
+
+753
+00:13:32,880 --> 00:13:34,230
+with our data team or whomever to talk
+through how is this going to actually do
+
+754
+00:13:34,230 --> 00:13:34,240
+through how is this going to actually do
+ 
+
+755
+00:13:34,240 --> 00:13:35,430
+through how is this going to actually do
+you think it's going to work better?
+
+756
+00:13:35,430 --> 00:13:35,440
+you think it's going to work better?
+ 
+
+757
+00:13:35,440 --> 00:13:37,990
+you think it's going to work better?
+Let's do that. And so we have an intake
+
+758
+00:13:37,990 --> 00:13:38,000
+Let's do that. And so we have an intake
+ 
+
+759
+00:13:38,000 --> 00:13:39,350
+Let's do that. And so we have an intake
+form, you know, and then as we're
+
+760
+00:13:39,350 --> 00:13:39,360
+form, you know, and then as we're
+ 
+
+761
+00:13:39,360 --> 00:13:40,710
+form, you know, and then as we're
+evaluating use cases, we have a risk
+
+762
+00:13:40,710 --> 00:13:40,720
+evaluating use cases, we have a risk
+ 
+
+763
+00:13:40,720 --> 00:13:42,310
+evaluating use cases, we have a risk
+form and they fill out does this touch
+
+764
+00:13:42,310 --> 00:13:42,320
+form and they fill out does this touch
+ 
+
+765
+00:13:42,320 --> 00:13:44,230
+form and they fill out does this touch
+PHI? How's this, you know, like does
+
+766
+00:13:44,230 --> 00:13:44,240
+PHI? How's this, you know, like does
+ 
+
+767
+00:13:44,240 --> 00:13:46,310
+PHI? How's this, you know, like does
+this affect a critical process? And we
+
+768
+00:13:46,310 --> 00:13:46,320
+this affect a critical process? And we
+ 
+
+769
+00:13:46,320 --> 00:13:47,910
+this affect a critical process? And we
+go through quite a few different areas
+
+770
+00:13:47,910 --> 00:13:47,920
+go through quite a few different areas
+ 
+
+771
+00:13:47,920 --> 00:13:50,150
+go through quite a few different areas
+there so that we can really start
+
+772
+00:13:50,150 --> 00:13:50,160
+there so that we can really start
+ 
+
+773
+00:13:50,160 --> 00:13:53,110
+there so that we can really start
+looking at prioritizing use cases. And
+
+774
+00:13:53,110 --> 00:13:53,120
+looking at prioritizing use cases. And
+ 
+
+775
+00:13:53,120 --> 00:13:55,590
+looking at prioritizing use cases. And
+uh turns out a lot of those 40 initial
+
+776
+00:13:55,590 --> 00:13:55,600
+uh turns out a lot of those 40 initial
+ 
+
+777
+00:13:55,600 --> 00:13:57,509
+uh turns out a lot of those 40 initial
+use cases. Some of them are just they
+
+778
+00:13:57,509 --> 00:13:57,519
+use cases. Some of them are just they
+ 
+
+779
+00:13:57,519 --> 00:13:58,870
+use cases. Some of them are just they
+just want they just want a nice report
+
+780
+00:13:58,870 --> 00:13:58,880
+just want they just want a nice report
+ 
+
+781
+00:13:58,880 --> 00:14:00,069
+just want they just want a nice report
+pulled from two different things. It's
+
+782
+00:14:00,069 --> 00:14:00,079
+pulled from two different things. It's
+ 
+
+783
+00:14:00,079 --> 00:14:01,590
+pulled from two different things. It's
+nothing this is something they can do
+
+784
+00:14:01,590 --> 00:14:01,600
+nothing this is something they can do
+ 
+
+785
+00:14:01,600 --> 00:14:02,949
+nothing this is something they can do
+like it's a small task. You know it's
+
+786
+00:14:02,949 --> 00:14:02,959
+like it's a small task. You know it's
+ 
+
+787
+00:14:02,959 --> 00:14:04,870
+like it's a small task. You know it's
+not what they it's not building this
+
+788
+00:14:04,870 --> 00:14:04,880
+not what they it's not building this
+ 
+
+789
+00:14:04,880 --> 00:14:06,710
+not what they it's not building this
+magic AI thing. It's really just okay
+
+790
+00:14:06,710 --> 00:14:06,720
+magic AI thing. It's really just okay
+ 
+
+791
+00:14:06,720 --> 00:14:07,990
+magic AI thing. It's really just okay
+I'm taking some numbers from Salesforce
+
+792
+00:14:07,990 --> 00:14:08,000
+I'm taking some numbers from Salesforce
+ 
+
+793
+00:14:08,000 --> 00:14:10,310
+I'm taking some numbers from Salesforce
+and SAP and put them together. So we're
+
+794
+00:14:10,310 --> 00:14:10,320
+and SAP and put them together. So we're
+ 
+
+795
+00:14:10,320 --> 00:14:11,509
+and SAP and put them together. So we're
+you know we're we're working through
+
+796
+00:14:11,509 --> 00:14:11,519
+you know we're we're working through
+ 
+
+797
+00:14:11,519 --> 00:14:15,430
+you know we're we're working through
+that still as we go forward. Um but you
+
+798
+00:14:15,430 --> 00:14:15,440
+that still as we go forward. Um but you
+ 
+
+799
+00:14:15,440 --> 00:14:17,189
+that still as we go forward. Um but you
+know creating those scorecards for use
+
+800
+00:14:17,189 --> 00:14:17,199
+know creating those scorecards for use
+ 
+
+801
+00:14:17,199 --> 00:14:18,470
+know creating those scorecards for use
+cases so you understand the
+
+802
+00:14:18,470 --> 00:14:18,480
+cases so you understand the
+ 
+
+803
+00:14:18,480 --> 00:14:20,150
+cases so you understand the
+prioritization has really helped us kind
+
+804
+00:14:20,150 --> 00:14:20,160
+prioritization has really helped us kind
+ 
+
+805
+00:14:20,160 --> 00:14:21,910
+prioritization has really helped us kind
+of try to streamline this and understand
+
+806
+00:14:21,910 --> 00:14:21,920
+of try to streamline this and understand
+ 
+
+807
+00:14:21,920 --> 00:14:22,710
+of try to streamline this and understand
+kind of where we're going forward
+
+808
+00:14:22,710 --> 00:14:22,720
+kind of where we're going forward
+ 
+
+809
+00:14:22,720 --> 00:14:23,670
+kind of where we're going forward
+because otherwise every business
+
+810
+00:14:23,670 --> 00:14:23,680
+because otherwise every business
+ 
+
+811
+00:14:23,680 --> 00:14:27,110
+because otherwise every business
+division wants it at the same time. Um
+
+812
+00:14:27,110 --> 00:14:27,120
+division wants it at the same time. Um
+ 
+
+813
+00:14:27,120 --> 00:14:29,509
+division wants it at the same time. Um
+usually governance committee will be
+
+814
+00:14:29,509 --> 00:14:29,519
+usually governance committee will be
+ 
+
+815
+00:14:29,519 --> 00:14:32,710
+usually governance committee will be
+able to kind of make that call but um I
+
+816
+00:14:32,710 --> 00:14:32,720
+able to kind of make that call but um I
+ 
+
+817
+00:14:32,720 --> 00:14:34,069
+able to kind of make that call but um I
+do not sit on the executive team
+
+818
+00:14:34,069 --> 00:14:34,079
+do not sit on the executive team
+ 
+
+819
+00:14:34,079 --> 00:14:35,509
+do not sit on the executive team
+formally but everyone else on the
+
+820
+00:14:35,509 --> 00:14:35,519
+formally but everyone else on the
+ 
+
+821
+00:14:35,519 --> 00:14:37,030
+formally but everyone else on the
+governance committee does. So sometimes
+
+822
+00:14:37,030 --> 00:14:37,040
+governance committee does. So sometimes
+ 
+
+823
+00:14:37,040 --> 00:14:39,350
+governance committee does. So sometimes
+it gets bumped up, you know, to my CEO
+
+824
+00:14:39,350 --> 00:14:39,360
+it gets bumped up, you know, to my CEO
+ 
+
+825
+00:14:39,360 --> 00:14:41,030
+it gets bumped up, you know, to my CEO
+and others and the CFO that might, you
+
+826
+00:14:41,030 --> 00:14:41,040
+and others and the CFO that might, you
+ 
+
+827
+00:14:41,040 --> 00:14:42,389
+and others and the CFO that might, you
+know, pull the strings, but usually we
+
+828
+00:14:42,389 --> 00:14:42,399
+know, pull the strings, but usually we
+ 
+
+829
+00:14:42,399 --> 00:14:43,750
+know, pull the strings, but usually we
+we get to make the decisions, which is
+
+830
+00:14:43,750 --> 00:14:43,760
+we get to make the decisions, which is
+ 
+
+831
+00:14:43,760 --> 00:14:46,870
+we get to make the decisions, which is
+nice. Um, but having those success
+
+832
+00:14:46,870 --> 00:14:46,880
+nice. Um, but having those success
+ 
+
+833
+00:14:46,880 --> 00:14:48,629
+nice. Um, but having those success
+measures and benchmarking ahead of time
+
+834
+00:14:48,629 --> 00:14:48,639
+measures and benchmarking ahead of time
+ 
+
+835
+00:14:48,639 --> 00:14:50,230
+measures and benchmarking ahead of time
+based on all this stuff is is really
+
+836
+00:14:50,230 --> 00:14:50,240
+based on all this stuff is is really
+ 
+
+837
+00:14:50,240 --> 00:14:52,470
+based on all this stuff is is really
+helpful cuz, you know, in the end we do
+
+838
+00:14:52,470 --> 00:14:52,480
+helpful cuz, you know, in the end we do
+ 
+
+839
+00:14:52,480 --> 00:14:54,470
+helpful cuz, you know, in the end we do
+want to show that it is saving us
+
+840
+00:14:54,470 --> 00:14:54,480
+want to show that it is saving us
+ 
+
+841
+00:14:54,480 --> 00:14:56,470
+want to show that it is saving us
+$250,000 or this is how much time it
+
+842
+00:14:56,470 --> 00:14:56,480
+$250,000 or this is how much time it
+ 
+
+843
+00:14:56,480 --> 00:14:58,949
+$250,000 or this is how much time it
+saved. I think it's really important
+
+844
+00:14:58,949 --> 00:14:58,959
+saved. I think it's really important
+ 
+
+845
+00:14:58,959 --> 00:15:01,110
+saved. I think it's really important
+that you know people be able to do that
+
+846
+00:15:01,110 --> 00:15:01,120
+that you know people be able to do that
+ 
+
+847
+00:15:01,120 --> 00:15:02,870
+that you know people be able to do that
+and maybe you know with some better
+
+848
+00:15:02,870 --> 00:15:02,880
+and maybe you know with some better
+ 
+
+849
+00:15:02,880 --> 00:15:05,189
+and maybe you know with some better
+control planning on access controls. We
+
+850
+00:15:05,189 --> 00:15:05,199
+control planning on access controls. We
+ 
+
+851
+00:15:05,199 --> 00:15:08,629
+control planning on access controls. We
+have kind of a I like to call it
+
+852
+00:15:08,629 --> 00:15:08,639
+have kind of a I like to call it
+ 
+
+853
+00:15:08,639 --> 00:15:11,030
+have kind of a I like to call it
+security ouus spaghetti and sometimes
+
+854
+00:15:11,030 --> 00:15:11,040
+security ouus spaghetti and sometimes
+ 
+
+855
+00:15:11,040 --> 00:15:12,790
+security ouus spaghetti and sometimes
+it's hard to figure out who's got
+
+856
+00:15:12,790 --> 00:15:12,800
+it's hard to figure out who's got
+ 
+
+857
+00:15:12,800 --> 00:15:14,550
+it's hard to figure out who's got
+control where and kind of cleaning some
+
+858
+00:15:14,550 --> 00:15:14,560
+control where and kind of cleaning some
+ 
+
+859
+00:15:14,560 --> 00:15:18,470
+control where and kind of cleaning some
+of that that up and you know right now
+
+860
+00:15:18,470 --> 00:15:18,480
+of that that up and you know right now
+ 
+
+861
+00:15:18,480 --> 00:15:20,870
+of that that up and you know right now
+while we're focusing heavy on co-pilot
+
+862
+00:15:20,870 --> 00:15:20,880
+while we're focusing heavy on co-pilot
+ 
+
+863
+00:15:20,880 --> 00:15:22,710
+while we're focusing heavy on co-pilot
+and data bricks it's a little easier but
+
+864
+00:15:22,710 --> 00:15:22,720
+and data bricks it's a little easier but
+ 
+
+865
+00:15:22,720 --> 00:15:24,310
+and data bricks it's a little easier but
+as we expand we know we want to have
+
+866
+00:15:24,310 --> 00:15:24,320
+as we expand we know we want to have
+ 
+
+867
+00:15:24,320 --> 00:15:25,670
+as we expand we know we want to have
+different divisions to be able to build
+
+868
+00:15:25,670 --> 00:15:25,680
+different divisions to be able to build
+ 
+
+869
+00:15:25,680 --> 00:15:27,910
+different divisions to be able to build
+their own agents whether it's through AI
+
+870
+00:15:27,910 --> 00:15:27,920
+their own agents whether it's through AI
+ 
+
+871
+00:15:27,920 --> 00:15:29,670
+their own agents whether it's through AI
+we have one division right now that's on
+
+872
+00:15:29,670 --> 00:15:29,680
+we have one division right now that's on
+ 
+
+873
+00:15:29,680 --> 00:15:31,509
+we have one division right now that's on
+the software side of thing that that is
+
+874
+00:15:31,509 --> 00:15:31,519
+the software side of thing that that is
+ 
+
+875
+00:15:31,519 --> 00:15:33,910
+the software side of thing that that is
+building their own AI stuff but that's
+
+876
+00:15:33,910 --> 00:15:33,920
+building their own AI stuff but that's
+ 
+
+877
+00:15:33,920 --> 00:15:35,750
+building their own AI stuff but that's
+kind of in demo mode. We're kind of
+
+878
+00:15:35,750 --> 00:15:35,760
+kind of in demo mode. We're kind of
+ 
+
+879
+00:15:35,760 --> 00:15:37,990
+kind of in demo mode. We're kind of
+testing with them, getting all the best
+
+880
+00:15:37,990 --> 00:15:38,000
+testing with them, getting all the best
+ 
+
+881
+00:15:38,000 --> 00:15:39,350
+testing with them, getting all the best
+practices before we launch it out for
+
+882
+00:15:39,350 --> 00:15:39,360
+practices before we launch it out for
+ 
+
+883
+00:15:39,360 --> 00:15:41,509
+practices before we launch it out for
+everybody else. Um, but that's kind of
+
+884
+00:15:41,509 --> 00:15:41,519
+everybody else. Um, but that's kind of
+ 
+
+885
+00:15:41,519 --> 00:15:43,590
+everybody else. Um, but that's kind of
+what we need to do. And then obviously
+
+886
+00:15:43,590 --> 00:15:43,600
+what we need to do. And then obviously
+ 
+
+887
+00:15:43,600 --> 00:15:46,949
+what we need to do. And then obviously
+shadow AI. Um, that's that's a
+
+888
+00:15:46,949 --> 00:15:46,959
+shadow AI. Um, that's that's a
+ 
+
+889
+00:15:46,959 --> 00:15:48,870
+shadow AI. Um, that's that's a
+definitely going to be a big one for me
+
+890
+00:15:48,870 --> 00:15:48,880
+definitely going to be a big one for me
+ 
+
+891
+00:15:48,880 --> 00:15:52,230
+definitely going to be a big one for me
+uh chasing down later this year. Um,
+
+892
+00:15:52,230 --> 00:15:52,240
+uh chasing down later this year. Um,
+ 
+
+893
+00:15:52,240 --> 00:15:54,230
+uh chasing down later this year. Um,
+is ridiculous as it sounds. You know,
+
+894
+00:15:54,230 --> 00:15:54,240
+is ridiculous as it sounds. You know,
+ 
+
+895
+00:15:54,240 --> 00:15:55,990
+is ridiculous as it sounds. You know,
+I'm you know, my procurement team is
+
+896
+00:15:55,990 --> 00:15:56,000
+I'm you know, my procurement team is
+ 
+
+897
+00:15:56,000 --> 00:15:57,910
+I'm you know, my procurement team is
+like my best friend there because then,
+
+898
+00:15:57,910 --> 00:15:57,920
+like my best friend there because then,
+ 
+
+899
+00:15:57,920 --> 00:15:59,749
+like my best friend there because then,
+you know, I'm working with legal and
+
+900
+00:15:59,749 --> 00:15:59,759
+you know, I'm working with legal and
+ 
+
+901
+00:15:59,759 --> 00:16:01,350
+you know, I'm working with legal and
+procurement on getting everything into
+
+902
+00:16:01,350 --> 00:16:01,360
+procurement on getting everything into
+ 
+
+903
+00:16:01,360 --> 00:16:02,870
+procurement on getting everything into
+contract so we know if there's AI on
+
+904
+00:16:02,870 --> 00:16:02,880
+contract so we know if there's AI on
+ 
+
+905
+00:16:02,880 --> 00:16:04,550
+contract so we know if there's AI on
+use. if we know if there's private you
+
+906
+00:16:04,550 --> 00:16:04,560
+use. if we know if there's private you
+ 
+
+907
+00:16:04,560 --> 00:16:07,430
+use. if we know if there's private you
+know if there's nothing in PII but you
+
+908
+00:16:07,430 --> 00:16:07,440
+know if there's nothing in PII but you
+ 
+
+909
+00:16:07,440 --> 00:16:09,590
+know if there's nothing in PII but you
+know do they have AI too like where are
+
+910
+00:16:09,590 --> 00:16:09,600
+know do they have AI too like where are
+ 
+
+911
+00:16:09,600 --> 00:16:11,189
+know do they have AI too like where are
+the data being kept what models are they
+
+912
+00:16:11,189 --> 00:16:11,199
+the data being kept what models are they
+ 
+
+913
+00:16:11,199 --> 00:16:13,030
+the data being kept what models are they
+using um so we're starting to kind of
+
+914
+00:16:13,030 --> 00:16:13,040
+using um so we're starting to kind of
+ 
+
+915
+00:16:13,040 --> 00:16:14,470
+using um so we're starting to kind of
+work that in with the procurement for
+
+916
+00:16:14,470 --> 00:16:14,480
+work that in with the procurement for
+ 
+
+917
+00:16:14,480 --> 00:16:16,790
+work that in with the procurement for
+third party risk so we're slowly getting
+
+918
+00:16:16,790 --> 00:16:16,800
+third party risk so we're slowly getting
+ 
+
+919
+00:16:16,800 --> 00:16:21,430
+third party risk so we're slowly getting
+there um this was a I asked uh you know
+
+920
+00:16:21,430 --> 00:16:21,440
+there um this was a I asked uh you know
+ 
+
+921
+00:16:21,440 --> 00:16:23,350
+there um this was a I asked uh you know
+I asked co-pilot I was like hey what
+
+922
+00:16:23,350 --> 00:16:23,360
+I asked co-pilot I was like hey what
+ 
+
+923
+00:16:23,360 --> 00:16:24,470
+I asked co-pilot I was like hey what
+what's something like you know we're
+
+924
+00:16:24,470 --> 00:16:24,480
+what's something like you know we're
+ 
+
+925
+00:16:24,480 --> 00:16:25,910
+what's something like you know we're
+we're designing this thing but it grew
+
+926
+00:16:25,910 --> 00:16:25,920
+we're designing this thing but it grew
+ 
+
+927
+00:16:25,920 --> 00:16:27,509
+we're designing this thing but it grew
+legs and I was like but make it sound
+
+928
+00:16:27,509 --> 00:16:27,519
+legs and I was like but make it sound
+ 
+
+929
+00:16:27,519 --> 00:16:29,670
+legs and I was like but make it sound
+kind of nerdy and they were like you
+
+930
+00:16:29,670 --> 00:16:29,680
+kind of nerdy and they were like you
+ 
+
+931
+00:16:29,680 --> 00:16:30,949
+kind of nerdy and they were like you
+know we were aiming for controlled
+
+932
+00:16:30,949 --> 00:16:30,959
+know we were aiming for controlled
+ 
+
+933
+00:16:30,959 --> 00:16:33,670
+know we were aiming for controlled
+execution but it spawned child processes
+
+934
+00:16:33,670 --> 00:16:33,680
+execution but it spawned child processes
+ 
+
+935
+00:16:33,680 --> 00:16:36,949
+execution but it spawned child processes
+But, uh, that's me and that's kind of I
+
+936
+00:16:36,949 --> 00:16:36,959
+But, uh, that's me and that's kind of I
+ 
+
+937
+00:16:36,959 --> 00:16:40,150
+But, uh, that's me and that's kind of I
+hope that was kind of helpful and, uh, I
+
+938
+00:16:40,150 --> 00:16:40,160
+hope that was kind of helpful and, uh, I
+ 
+
+939
+00:16:40,160 --> 00:16:41,749
+hope that was kind of helpful and, uh, I
+just wanted to kind of throw out a
+
+940
+00:16:41,749 --> 00:16:41,759
+just wanted to kind of throw out a
+ 
+
+941
+00:16:41,759 --> 00:16:43,189
+just wanted to kind of throw out a
+couple of use cases, but if you have
+
+942
+00:16:43,189 --> 00:16:43,199
+couple of use cases, but if you have
+ 
+
+943
+00:16:43,199 --> 00:16:45,189
+couple of use cases, but if you have
+questions, go right ahead.
+
+944
+00:16:45,189 --> 00:16:45,199
+questions, go right ahead.
+ 
+
+945
+00:16:45,199 --> 00:16:46,710
+questions, go right ahead.
+>> Hey, hello again.
+
+946
+00:16:46,710 --> 00:16:46,720
+>> Hey, hello again.
+ 
+
+947
+00:16:46,720 --> 00:16:47,350
+>> Hey, hello again.
+>> Okay.
+
+948
+00:16:47,350 --> 00:16:47,360
+>> Okay.
+ 
+
+949
+00:16:47,360 --> 00:16:48,150
+>> Okay.
+>> No,
+
+950
+00:16:48,150 --> 00:16:48,160
+>> No,
+ 
+
+951
+00:16:48,160 --> 00:16:49,590
+>> No,
+>> what are you what are you doing about
+
+952
+00:16:49,590 --> 00:16:49,600
+>> what are you what are you doing about
+ 
+
+953
+00:16:49,600 --> 00:16:51,910
+>> what are you what are you doing about
+prompt injection?
+
+954
+00:16:51,910 --> 00:16:51,920
+prompt injection?
+ 
+
+955
+00:16:51,920 --> 00:16:56,310
+prompt injection?
+We're so most things right now on for
+
+956
+00:16:56,310 --> 00:16:56,320
+We're so most things right now on for
+ 
+
+957
+00:16:56,320 --> 00:16:59,269
+We're so most things right now on for
+end users uh we're going secure browsers
+
+958
+00:16:59,269 --> 00:16:59,279
+end users uh we're going secure browsers
+ 
+
+959
+00:16:59,279 --> 00:17:00,790
+end users uh we're going secure browsers
+for the method of kind of blocking as
+
+960
+00:17:00,790 --> 00:17:00,800
+for the method of kind of blocking as
+ 
+
+961
+00:17:00,800 --> 00:17:02,470
+for the method of kind of blocking as
+much as we can there. If they even if
+
+962
+00:17:02,470 --> 00:17:02,480
+much as we can there. If they even if
+ 
+
+963
+00:17:02,480 --> 00:17:03,829
+much as we can there. If they even if
+they try to go to chat GBT, it just
+
+964
+00:17:03,829 --> 00:17:03,839
+they try to go to chat GBT, it just
+ 
+
+965
+00:17:03,839 --> 00:17:05,829
+they try to go to chat GBT, it just
+forces them over to our our instance of
+
+966
+00:17:05,829 --> 00:17:05,839
+forces them over to our our instance of
+ 
+
+967
+00:17:05,839 --> 00:17:09,029
+forces them over to our our instance of
+C-pilot. Um and if people start, you
+
+968
+00:17:09,029 --> 00:17:09,039
+C-pilot. Um and if people start, you
+ 
+
+969
+00:17:09,039 --> 00:17:10,069
+C-pilot. Um and if people start, you
+know, if you're cutting and pasting
+
+970
+00:17:10,069 --> 00:17:10,079
+know, if you're cutting and pasting
+ 
+
+971
+00:17:10,079 --> 00:17:12,710
+know, if you're cutting and pasting
+within, you know,
+
+972
+00:17:12,710 --> 00:17:12,720
+within, you know,
+ 
+
+973
+00:17:12,720 --> 00:17:13,990
+within, you know,
+like code to have something that will
+
+974
+00:17:13,990 --> 00:17:14,000
+like code to have something that will
+ 
+
+975
+00:17:14,000 --> 00:17:16,230
+like code to have something that will
+review your code, it'll rip out keys and
+
+976
+00:17:16,230 --> 00:17:16,240
+review your code, it'll rip out keys and
+ 
+
+977
+00:17:16,240 --> 00:17:17,590
+review your code, it'll rip out keys and
+stuff like that. So secure browsers have
+
+978
+00:17:17,590 --> 00:17:17,600
+stuff like that. So secure browsers have
+ 
+
+979
+00:17:17,600 --> 00:17:20,549
+stuff like that. So secure browsers have
+been good for us um in that area. On the
+
+980
+00:17:20,549 --> 00:17:20,559
+been good for us um in that area. On the
+ 
+
+981
+00:17:20,559 --> 00:17:22,549
+been good for us um in that area. On the
+other side, we're hoping the controls
+
+982
+00:17:22,549 --> 00:17:22,559
+other side, we're hoping the controls
+ 
+
+983
+00:17:22,559 --> 00:17:24,870
+other side, we're hoping the controls
+within data bricks are solving for for
+
+984
+00:17:24,870 --> 00:17:24,880
+within data bricks are solving for for
+ 
+
+985
+00:17:24,880 --> 00:17:27,350
+within data bricks are solving for for
+our agents there. I mean, I'm not, you
+
+986
+00:17:27,350 --> 00:17:27,360
+our agents there. I mean, I'm not, you
+ 
+
+987
+00:17:27,360 --> 00:17:28,390
+our agents there. I mean, I'm not, you
+know, selling data bricks, but there's
+
+988
+00:17:28,390 --> 00:17:28,400
+know, selling data bricks, but there's
+ 
+
+989
+00:17:28,400 --> 00:17:29,750
+know, selling data bricks, but there's
+some cool stuff they can do in the
+
+990
+00:17:29,750 --> 00:17:29,760
+some cool stuff they can do in the
+ 
+
+991
+00:17:29,760 --> 00:17:32,070
+some cool stuff they can do in the
+monitoring for like hallucinations and
+
+992
+00:17:32,070 --> 00:17:32,080
+monitoring for like hallucinations and
+ 
+
+993
+00:17:32,080 --> 00:17:33,029
+monitoring for like hallucinations and
+things like that where we can set
+
+994
+00:17:33,029 --> 00:17:33,039
+things like that where we can set
+ 
+
+995
+00:17:33,039 --> 00:17:34,310
+things like that where we can set
+baselines. This is what we're expected.
+
+996
+00:17:34,310 --> 00:17:34,320
+baselines. This is what we're expected.
+ 
+
+997
+00:17:34,320 --> 00:17:36,549
+baselines. This is what we're expected.
+If it's out of there, it alerts us. Um,
+
+998
+00:17:36,549 --> 00:17:36,559
+If it's out of there, it alerts us. Um,
+ 
+
+999
+00:17:36,559 --> 00:17:37,909
+If it's out of there, it alerts us. Um,
+but I still think we need to go through
+
+1000
+00:17:37,909 --> 00:17:37,919
+but I still think we need to go through
+ 
+
+1001
+00:17:37,919 --> 00:17:39,990
+but I still think we need to go through
+and build a better audit program to come
+
+1002
+00:17:39,990 --> 00:17:40,000
+and build a better audit program to come
+ 
+
+1003
+00:17:40,000 --> 00:17:42,070
+and build a better audit program to come
+back to see if there's been like a slow
+
+1004
+00:17:42,070 --> 00:17:42,080
+back to see if there's been like a slow
+ 
+
+1005
+00:17:42,080 --> 00:17:44,070
+back to see if there's been like a slow
+movement in out of where we need the
+
+1006
+00:17:44,070 --> 00:17:44,080
+movement in out of where we need the
+ 
+
+1007
+00:17:44,080 --> 00:17:45,590
+movement in out of where we need the
+norm that we want to go. And if somebody
+
+1008
+00:17:45,590 --> 00:17:45,600
+norm that we want to go. And if somebody
+ 
+
+1009
+00:17:45,600 --> 00:17:47,190
+norm that we want to go. And if somebody
+just signs up with their credit card
+
+1010
+00:17:47,190 --> 00:17:47,200
+just signs up with their credit card
+ 
+
+1011
+00:17:47,200 --> 00:17:49,750
+just signs up with their credit card
+for, you know, pro version of some new
+
+1012
+00:17:49,750 --> 00:17:49,760
+for, you know, pro version of some new
+ 
+
+1013
+00:17:49,760 --> 00:17:52,950
+for, you know, pro version of some new
+platform that's shadow AI, how do you
+
+1014
+00:17:52,950 --> 00:17:52,960
+platform that's shadow AI, how do you
+ 
+
+1015
+00:17:52,960 --> 00:17:54,789
+platform that's shadow AI, how do you
+detect that?
+
+1016
+00:17:54,789 --> 00:17:54,799
+detect that?
+ 
+
+1017
+00:17:54,799 --> 00:17:58,470
+detect that?
+>> We're we've we've, you know, I know you
+
+1018
+00:17:58,470 --> 00:17:58,480
+>> We're we've we've, you know, I know you
+ 
+
+1019
+00:17:58,480 --> 00:18:00,789
+>> We're we've we've, you know, I know you
+guys released some stuff uh that we tie
+
+1020
+00:18:00,789 --> 00:18:00,799
+guys released some stuff uh that we tie
+ 
+
+1021
+00:18:00,799 --> 00:18:02,549
+guys released some stuff uh that we tie
+back into CrowdStrike when Open Claw
+
+1022
+00:18:02,549 --> 00:18:02,559
+back into CrowdStrike when Open Claw
+ 
+
+1023
+00:18:02,559 --> 00:18:04,070
+back into CrowdStrike when Open Claw
+came out, that whole stuff. So, we
+
+1024
+00:18:04,070 --> 00:18:04,080
+came out, that whole stuff. So, we
+ 
+
+1025
+00:18:04,080 --> 00:18:05,909
+came out, that whole stuff. So, we
+actually worked off that when after the
+
+1026
+00:18:05,909 --> 00:18:05,919
+actually worked off that when after the
+ 
+
+1027
+00:18:05,919 --> 00:18:07,190
+actually worked off that when after the
+cloud security alliance kind of posted
+
+1028
+00:18:07,190 --> 00:18:07,200
+cloud security alliance kind of posted
+ 
+
+1029
+00:18:07,200 --> 00:18:09,430
+cloud security alliance kind of posted
+that. Um, and so that was kind of
+
+1030
+00:18:09,430 --> 00:18:09,440
+that. Um, and so that was kind of
+ 
+
+1031
+00:18:09,440 --> 00:18:13,110
+that. Um, and so that was kind of
+helpful. We're again, you know, I can
+
+1032
+00:18:13,110 --> 00:18:13,120
+helpful. We're again, you know, I can
+ 
+
+1033
+00:18:13,120 --> 00:18:14,310
+helpful. We're again, you know, I can
+kind of see where people are going some
+
+1034
+00:18:14,310 --> 00:18:14,320
+kind of see where people are going some
+ 
+
+1035
+00:18:14,320 --> 00:18:15,350
+kind of see where people are going some
+with secure browser, but I don't think
+
+1036
+00:18:15,350 --> 00:18:15,360
+with secure browser, but I don't think
+ 
+
+1037
+00:18:15,360 --> 00:18:16,710
+with secure browser, but I don't think
+we're going to catch all of it. You
+
+1038
+00:18:16,710 --> 00:18:16,720
+we're going to catch all of it. You
+ 
+
+1039
+00:18:16,720 --> 00:18:18,150
+we're going to catch all of it. You
+know, especially when it's like, okay,
+
+1040
+00:18:18,150 --> 00:18:18,160
+know, especially when it's like, okay,
+ 
+
+1041
+00:18:18,160 --> 00:18:19,510
+know, especially when it's like, okay,
+well, I can say claude, but how does it
+
+1042
+00:18:19,510 --> 00:18:19,520
+well, I can say claude, but how does it
+ 
+
+1043
+00:18:19,520 --> 00:18:21,430
+well, I can say claude, but how does it
+detect if it's an AI piece? There's
+
+1044
+00:18:21,430 --> 00:18:21,440
+detect if it's an AI piece? There's
+ 
+
+1045
+00:18:21,440 --> 00:18:25,350
+detect if it's an AI piece? There's
+still improvements we need to do.
+
+1046
+00:18:25,350 --> 00:18:25,360
+still improvements we need to do.
+ 
+
+1047
+00:18:25,360 --> 00:18:29,909
+still improvements we need to do.
+>> I'm not sure who was next. I'll go here.
+
+1048
+00:18:29,909 --> 00:18:29,919
+>> I'm not sure who was next. I'll go here.
+ 
+
+1049
+00:18:29,919 --> 00:18:33,590
+>> I'm not sure who was next. I'll go here.
+>> Hi. Uh, the stricter AI intake, what
+
+1050
+00:18:33,590 --> 00:18:33,600
+>> Hi. Uh, the stricter AI intake, what
+ 
+
+1051
+00:18:33,600 --> 00:18:35,430
+>> Hi. Uh, the stricter AI intake, what
+phase is that happening at? Because we
+
+1052
+00:18:35,430 --> 00:18:35,440
+phase is that happening at? Because we
+ 
+
+1053
+00:18:35,440 --> 00:18:37,510
+phase is that happening at? Because we
+have people delivering code so fast,
+
+1054
+00:18:37,510 --> 00:18:37,520
+have people delivering code so fast,
+ 
+
+1055
+00:18:37,520 --> 00:18:39,270
+have people delivering code so fast,
+right? Like we don't have a tiered
+
+1056
+00:18:39,270 --> 00:18:39,280
+right? Like we don't have a tiered
+ 
+
+1057
+00:18:39,280 --> 00:18:40,789
+right? Like we don't have a tiered
+blueprint. I have two follow-up
+
+1058
+00:18:40,789 --> 00:18:40,799
+blueprint. I have two follow-up
+ 
+
+1059
+00:18:40,799 --> 00:18:42,549
+blueprint. I have two follow-up
+questions which is I love the scorecard
+
+1060
+00:18:42,549 --> 00:18:42,559
+questions which is I love the scorecard
+ 
+
+1061
+00:18:42,559 --> 00:18:44,390
+questions which is I love the scorecard
+idea. How are you dimensioning risk?
+
+1062
+00:18:44,390 --> 00:18:44,400
+idea. How are you dimensioning risk?
+ 
+
+1063
+00:18:44,400 --> 00:18:46,789
+idea. How are you dimensioning risk?
+Like risk is could be risk of them
+
+1064
+00:18:46,789 --> 00:18:46,799
+Like risk is could be risk of them
+ 
+
+1065
+00:18:46,799 --> 00:18:49,430
+Like risk is could be risk of them
+training on my data. It could be like
+
+1066
+00:18:49,430 --> 00:18:49,440
+training on my data. It could be like
+ 
+
+1067
+00:18:49,440 --> 00:18:50,950
+training on my data. It could be like
+almost anything. So if you could talk
+
+1068
+00:18:50,950 --> 00:18:50,960
+almost anything. So if you could talk
+ 
+
+1069
+00:18:50,960 --> 00:18:52,310
+almost anything. So if you could talk
+about the risk dimensions that'd be
+
+1070
+00:18:52,310 --> 00:18:52,320
+about the risk dimensions that'd be
+ 
+
+1071
+00:18:52,320 --> 00:18:52,950
+about the risk dimensions that'd be
+awesome.
+
+1072
+00:18:52,950 --> 00:18:52,960
+awesome.
+ 
+
+1073
+00:18:52,960 --> 00:18:55,909
+awesome.
+>> Yeah. Yeah. So um on the coding software
+
+1074
+00:18:55,909 --> 00:18:55,919
+>> Yeah. Yeah. So um on the coding software
+ 
+
+1075
+00:18:55,919 --> 00:18:58,470
+>> Yeah. Yeah. So um on the coding software
+side that's definitely harder slow down
+
+1076
+00:18:58,470 --> 00:18:58,480
+side that's definitely harder slow down
+ 
+
+1077
+00:18:58,480 --> 00:19:00,789
+side that's definitely harder slow down
+when it's the business coming to us and
+
+1078
+00:19:00,789 --> 00:19:00,799
+when it's the business coming to us and
+ 
+
+1079
+00:19:00,799 --> 00:19:01,909
+when it's the business coming to us and
+ask us to build something for them.
+
+1080
+00:19:01,909 --> 00:19:01,919
+ask us to build something for them.
+ 
+
+1081
+00:19:01,919 --> 00:19:02,870
+ask us to build something for them.
+That's kind of where we're doing that
+
+1082
+00:19:02,870 --> 00:19:02,880
+That's kind of where we're doing that
+ 
+
+1083
+00:19:02,880 --> 00:19:06,630
+That's kind of where we're doing that
+that better job of it. Um we the risk
+
+1084
+00:19:06,630 --> 00:19:06,640
+that better job of it. Um we the risk
+ 
+
+1085
+00:19:06,640 --> 00:19:11,029
+that better job of it. Um we the risk
+intake form has been been modified
+
+1086
+00:19:11,029 --> 00:19:11,039
+intake form has been been modified
+ 
+
+1087
+00:19:11,039 --> 00:19:12,549
+intake form has been been modified
+like I don't know almost every new use
+
+1088
+00:19:12,549 --> 00:19:12,559
+like I don't know almost every new use
+ 
+
+1089
+00:19:12,559 --> 00:19:14,230
+like I don't know almost every new use
+case because something comes up. Um
+
+1090
+00:19:14,230 --> 00:19:14,240
+case because something comes up. Um
+ 
+
+1091
+00:19:14,240 --> 00:19:16,630
+case because something comes up. Um
+which means you know of course you know
+
+1092
+00:19:16,630 --> 00:19:16,640
+which means you know of course you know
+ 
+
+1093
+00:19:16,640 --> 00:19:17,990
+which means you know of course you know
+the vision of the governance board only
+
+1094
+00:19:17,990 --> 00:19:18,000
+the vision of the governance board only
+ 
+
+1095
+00:19:18,000 --> 00:19:19,350
+the vision of the governance board only
+coming in when there's high risk. No.
+
+1096
+00:19:19,350 --> 00:19:19,360
+coming in when there's high risk. No.
+ 
+
+1097
+00:19:19,360 --> 00:19:21,270
+coming in when there's high risk. No.
+No. That means I'm hands-on on a lot of
+
+1098
+00:19:21,270 --> 00:19:21,280
+No. That means I'm hands-on on a lot of
+ 
+
+1099
+00:19:21,280 --> 00:19:24,230
+No. That means I'm hands-on on a lot of
+stuff initially. Um but I mean we've
+
+1100
+00:19:24,230 --> 00:19:24,240
+stuff initially. Um but I mean we've
+ 
+
+1101
+00:19:24,240 --> 00:19:25,510
+stuff initially. Um but I mean we've
+we've kind of covered a lot of stuff
+
+1102
+00:19:25,510 --> 00:19:25,520
+we've kind of covered a lot of stuff
+ 
+
+1103
+00:19:25,520 --> 00:19:28,070
+we've kind of covered a lot of stuff
+with usage of data. Um patient data
+
+1104
+00:19:28,070 --> 00:19:28,080
+with usage of data. Um patient data
+ 
+
+1105
+00:19:28,080 --> 00:19:29,590
+with usage of data. Um patient data
+makes it easy. I mean we're a businessto
+
+1106
+00:19:29,590 --> 00:19:29,600
+makes it easy. I mean we're a businessto
+ 
+
+1107
+00:19:29,600 --> 00:19:31,350
+makes it easy. I mean we're a businessto
+business pharmaceutical distribution
+
+1108
+00:19:31,350 --> 00:19:31,360
+business pharmaceutical distribution
+ 
+
+1109
+00:19:31,360 --> 00:19:33,669
+business pharmaceutical distribution
+company. So like most of the stuff we're
+
+1110
+00:19:33,669 --> 00:19:33,679
+company. So like most of the stuff we're
+ 
+
+1111
+00:19:33,679 --> 00:19:36,070
+company. So like most of the stuff we're
+doing is not secret not we're not
+
+1112
+00:19:36,070 --> 00:19:36,080
+doing is not secret not we're not
+ 
+
+1113
+00:19:36,080 --> 00:19:37,830
+doing is not secret not we're not
+worried about that data. There's no
+
+1114
+00:19:37,830 --> 00:19:37,840
+worried about that data. There's no
+ 
+
+1115
+00:19:37,840 --> 00:19:40,710
+worried about that data. There's no
+there's not much IP there but you know
+
+1116
+00:19:40,710 --> 00:19:40,720
+there's not much IP there but you know
+ 
+
+1117
+00:19:40,720 --> 00:19:43,029
+there's not much IP there but you know
+and then patient data obviously. So for
+
+1118
+00:19:43,029 --> 00:19:43,039
+and then patient data obviously. So for
+ 
+
+1119
+00:19:43,039 --> 00:19:45,590
+and then patient data obviously. So for
+us like a lot of times it is very black
+
+1120
+00:19:45,590 --> 00:19:45,600
+us like a lot of times it is very black
+ 
+
+1121
+00:19:45,600 --> 00:19:47,750
+us like a lot of times it is very black
+and white you know if we need more um
+
+1122
+00:19:47,750 --> 00:19:47,760
+and white you know if we need more um
+ 
+
+1123
+00:19:47,760 --> 00:19:50,070
+and white you know if we need more um
+but some of the use cases
+
+1124
+00:19:50,070 --> 00:19:50,080
+but some of the use cases
+ 
+
+1125
+00:19:50,080 --> 00:19:52,630
+but some of the use cases
+usually when more access is needed than
+
+1126
+00:19:52,630 --> 00:19:52,640
+usually when more access is needed than
+ 
+
+1127
+00:19:52,640 --> 00:19:55,270
+usually when more access is needed than
+should be for certain people like this
+
+1128
+00:19:55,270 --> 00:19:55,280
+should be for certain people like this
+ 
+
+1129
+00:19:55,280 --> 00:19:56,870
+should be for certain people like this
+well you know you're kind of combining
+
+1130
+00:19:56,870 --> 00:19:56,880
+well you know you're kind of combining
+ 
+
+1131
+00:19:56,880 --> 00:19:59,830
+well you know you're kind of combining
+this process that has a lot of you know
+
+1132
+00:19:59,830 --> 00:19:59,840
+this process that has a lot of you know
+ 
+
+1133
+00:19:59,840 --> 00:20:02,390
+this process that has a lot of you know
+financial data that shouldn't be exposed
+
+1134
+00:20:02,390 --> 00:20:02,400
+financial data that shouldn't be exposed
+ 
+
+1135
+00:20:02,400 --> 00:20:03,750
+financial data that shouldn't be exposed
+to everybody and that's where we're
+
+1136
+00:20:03,750 --> 00:20:03,760
+to everybody and that's where we're
+ 
+
+1137
+00:20:03,760 --> 00:20:05,190
+to everybody and that's where we're
+seeing some of the stuff where kind of
+
+1138
+00:20:05,190 --> 00:20:05,200
+seeing some of the stuff where kind of
+ 
+
+1139
+00:20:05,200 --> 00:20:08,710
+seeing some of the stuff where kind of
+re have to ask those risk questions.
+
+1140
+00:20:08,710 --> 00:20:08,720
+re have to ask those risk questions.
+ 
+
+1141
+00:20:08,720 --> 00:20:11,430
+re have to ask those risk questions.
+I had a quick question on um the saying
+
+1142
+00:20:11,430 --> 00:20:11,440
+I had a quick question on um the saying
+ 
+
+1143
+00:20:11,440 --> 00:20:13,990
+I had a quick question on um the saying
+the intake form.
+
+1144
+00:20:13,990 --> 00:20:14,000
+the intake form.
+ 
+
+1145
+00:20:14,000 --> 00:20:16,150
+the intake form.
+Can you share any successes on making
+
+1146
+00:20:16,150 --> 00:20:16,160
+Can you share any successes on making
+ 
+
+1147
+00:20:16,160 --> 00:20:18,310
+Can you share any successes on making
+that friction-free and the path of least
+
+1148
+00:20:18,310 --> 00:20:18,320
+that friction-free and the path of least
+ 
+
+1149
+00:20:18,320 --> 00:20:20,230
+that friction-free and the path of least
+resistance being the safest path versus
+
+1150
+00:20:20,230 --> 00:20:20,240
+resistance being the safest path versus
+ 
+
+1151
+00:20:20,240 --> 00:20:21,750
+resistance being the safest path versus
+them circumventing it because it's
+
+1152
+00:20:21,750 --> 00:20:21,760
+them circumventing it because it's
+ 
+
+1153
+00:20:21,760 --> 00:20:23,830
+them circumventing it because it's
+overhead and they just want to go? Any
+
+1154
+00:20:23,830 --> 00:20:23,840
+overhead and they just want to go? Any
+ 
+
+1155
+00:20:23,840 --> 00:20:25,190
+overhead and they just want to go? Any
+wins there you can share?
+
+1156
+00:20:25,190 --> 00:20:25,200
+wins there you can share?
+ 
+
+1157
+00:20:25,200 --> 00:20:27,270
+wins there you can share?
+>> Is to insert friction?
+
+1158
+00:20:27,270 --> 00:20:27,280
+>> Is to insert friction?
+ 
+
+1159
+00:20:27,280 --> 00:20:29,270
+>> Is to insert friction?
+>> Yeah, I I mean and and I think a lot of
+
+1160
+00:20:29,270 --> 00:20:29,280
+>> Yeah, I I mean and and I think a lot of
+ 
+
+1161
+00:20:29,280 --> 00:20:32,789
+>> Yeah, I I mean and and I think a lot of
+it is because
+
+1162
+00:20:32,789 --> 00:20:32,799
+it is because
+ 
+
+1163
+00:20:32,799 --> 00:20:34,230
+it is because
+we're controlling the keys and forcing
+
+1164
+00:20:34,230 --> 00:20:34,240
+we're controlling the keys and forcing
+ 
+
+1165
+00:20:34,240 --> 00:20:36,390
+we're controlling the keys and forcing
+everybody through data bricks again. we
+
+1166
+00:20:36,390 --> 00:20:36,400
+everybody through data bricks again. we
+ 
+
+1167
+00:20:36,400 --> 00:20:38,230
+everybody through data bricks again. we
+only know what we're we're trying to do,
+
+1168
+00:20:38,230 --> 00:20:38,240
+only know what we're we're trying to do,
+ 
+
+1169
+00:20:38,240 --> 00:20:40,710
+only know what we're we're trying to do,
+right? And so they can't get too far of
+
+1170
+00:20:40,710 --> 00:20:40,720
+right? And so they can't get too far of
+ 
+
+1171
+00:20:40,720 --> 00:20:43,750
+right? And so they can't get too far of
+anywhere without our help currently. Um,
+
+1172
+00:20:43,750 --> 00:20:43,760
+anywhere without our help currently. Um,
+ 
+
+1173
+00:20:43,760 --> 00:20:45,830
+anywhere without our help currently. Um,
+but no, I I think it's been it's been
+
+1174
+00:20:45,830 --> 00:20:45,840
+but no, I I think it's been it's been
+ 
+
+1175
+00:20:45,840 --> 00:20:49,190
+but no, I I think it's been it's been
+tough for people. We've we have a pretty
+
+1176
+00:20:49,190 --> 00:20:49,200
+tough for people. We've we have a pretty
+ 
+
+1177
+00:20:49,200 --> 00:20:51,990
+tough for people. We've we have a pretty
+strong like project intake PMO process,
+
+1178
+00:20:51,990 --> 00:20:52,000
+strong like project intake PMO process,
+ 
+
+1179
+00:20:52,000 --> 00:20:54,710
+strong like project intake PMO process,
+so people are kind of used to that. Um,
+
+1180
+00:20:54,710 --> 00:20:54,720
+so people are kind of used to that. Um,
+ 
+
+1181
+00:20:54,720 --> 00:20:56,149
+so people are kind of used to that. Um,
+you know, when you're getting your
+
+1182
+00:20:56,149 --> 00:20:56,159
+you know, when you're getting your
+ 
+
+1183
+00:20:56,159 --> 00:20:57,750
+you know, when you're getting your
+funding, you're assigning the resources.
+
+1184
+00:20:57,750 --> 00:20:57,760
+funding, you're assigning the resources.
+ 
+
+1185
+00:20:57,760 --> 00:20:59,190
+funding, you're assigning the resources.
+I mean, it's $5 million, so we're kind
+
+1186
+00:20:59,190 --> 00:20:59,200
+I mean, it's $5 million, so we're kind
+ 
+
+1187
+00:20:59,200 --> 00:21:00,470
+I mean, it's $5 million, so we're kind
+of a little slower there. So, I think
+
+1188
+00:21:00,470 --> 00:21:00,480
+of a little slower there. So, I think
+ 
+
+1189
+00:21:00,480 --> 00:21:01,750
+of a little slower there. So, I think
+that helps. It wasn't like out of the
+
+1190
+00:21:01,750 --> 00:21:01,760
+that helps. It wasn't like out of the
+ 
+
+1191
+00:21:01,760 --> 00:21:03,909
+that helps. It wasn't like out of the
+blue we needed that. But
+
+1192
+00:21:03,909 --> 00:21:03,919
+blue we needed that. But
+ 
+
+1193
+00:21:03,919 --> 00:21:05,270
+blue we needed that. But
+>> thank you. We still catch things during
+
+1194
+00:21:05,270 --> 00:21:05,280
+>> thank you. We still catch things during
+ 
+
+1195
+00:21:05,280 --> 00:21:06,549
+>> thank you. We still catch things during
+the change management phases that I
+
+1196
+00:21:06,549 --> 00:21:06,559
+the change management phases that I
+ 
+
+1197
+00:21:06,559 --> 00:21:07,909
+the change management phases that I
+wasn't told about.
+
+1198
+00:21:07,909 --> 00:21:07,919
+wasn't told about.
+ 
+
+1199
+00:21:07,919 --> 00:21:09,909
+wasn't told about.
+>> Okay. We're just um I think we have one
+
+1200
+00:21:09,909 --> 00:21:09,919
+>> Okay. We're just um I think we have one
+ 
+
+1201
+00:21:09,919 --> 00:21:11,590
+>> Okay. We're just um I think we have one
+more question while we still get AB up.
+
+1202
+00:21:11,590 --> 00:21:11,600
+more question while we still get AB up.
+ 
+
+1203
+00:21:11,600 --> 00:21:15,350
+more question while we still get AB up.
+So you had a question.
+
+1204
+00:21:15,350 --> 00:21:15,360
+So you had a question.
+ 
+
+1205
+00:21:15,360 --> 00:21:18,310
+So you had a question.
+>> So you're using uh data bricks as your
+
+1206
+00:21:18,310 --> 00:21:18,320
+>> So you're using uh data bricks as your
+ 
+
+1207
+00:21:18,320 --> 00:21:20,149
+>> So you're using uh data bricks as your
+authorization platform. Everything's
+
+1208
+00:21:20,149 --> 00:21:20,159
+authorization platform. Everything's
+ 
+
+1209
+00:21:20,159 --> 00:21:22,390
+authorization platform. Everything's
+going through that particular service.
+
+1210
+00:21:22,390 --> 00:21:22,400
+going through that particular service.
+ 
+
+1211
+00:21:22,400 --> 00:21:24,870
+going through that particular service.
+It's not integrating anywhere else.
+
+1212
+00:21:24,870 --> 00:21:24,880
+It's not integrating anywhere else.
+ 
+
+1213
+00:21:24,880 --> 00:21:28,310
+It's not integrating anywhere else.
+>> Correct. So that's that's I mean it's
+
+1214
+00:21:28,310 --> 00:21:28,320
+>> Correct. So that's that's I mean it's
+ 
+
+1215
+00:21:28,320 --> 00:21:30,149
+>> Correct. So that's that's I mean it's
+talking but you know a data bricks
+
+1216
+00:21:30,149 --> 00:21:30,159
+talking but you know a data bricks
+ 
+
+1217
+00:21:30,159 --> 00:21:32,149
+talking but you know a data bricks
+Salesforce AI agent is talking to the
+
+1218
+00:21:32,149 --> 00:21:32,159
+Salesforce AI agent is talking to the
+ 
+
+1219
+00:21:32,159 --> 00:21:34,390
+Salesforce AI agent is talking to the
+Salesforce AI agent within Salesforce.
+
+1220
+00:21:34,390 --> 00:21:34,400
+Salesforce AI agent within Salesforce.
+ 
+
+1221
+00:21:34,400 --> 00:21:36,149
+Salesforce AI agent within Salesforce.
+Um and same thing with Juul with an
+
+1222
+00:21:36,149 --> 00:21:36,159
+Um and same thing with Juul with an
+ 
+
+1223
+00:21:36,159 --> 00:21:38,149
+Um and same thing with Juul with an
+>> so you've got great authorization on all
+
+1224
+00:21:38,149 --> 00:21:38,159
+>> so you've got great authorization on all
+ 
+
+1225
+00:21:38,159 --> 00:21:39,029
+>> so you've got great authorization on all
+of that.
+
+1226
+00:21:39,029 --> 00:21:39,039
+of that.
+ 
+
+1227
+00:21:39,039 --> 00:21:41,590
+of that.
+>> Well as much as we can doing and I'm
+
+1228
+00:21:41,590 --> 00:21:41,600
+>> Well as much as we can doing and I'm
+ 
+
+1229
+00:21:41,600 --> 00:21:42,950
+>> Well as much as we can doing and I'm
+still learning more about labeling
+
+1230
+00:21:42,950 --> 00:21:42,960
+still learning more about labeling
+ 
+
+1231
+00:21:42,960 --> 00:21:44,870
+still learning more about labeling
+within data bricks to you know make sure
+
+1232
+00:21:44,870 --> 00:21:44,880
+within data bricks to you know make sure
+ 
+
+1233
+00:21:44,880 --> 00:21:47,350
+within data bricks to you know make sure
+and shrink the controls back to
+
+1234
+00:21:47,350 --> 00:21:47,360
+and shrink the controls back to
+ 
+
+1235
+00:21:47,360 --> 00:21:48,630
+and shrink the controls back to
+especially when it comes to users and
+
+1236
+00:21:48,630 --> 00:21:48,640
+especially when it comes to users and
+ 
+
+1237
+00:21:48,640 --> 00:21:49,990
+especially when it comes to users and
+active directory groups. Like I said the
+
+1238
+00:21:49,990 --> 00:21:50,000
+active directory groups. Like I said the
+ 
+
+1239
+00:21:50,000 --> 00:21:51,590
+active directory groups. Like I said the
+spaghetti groups have too much security.
+
+1240
+00:21:51,590 --> 00:21:51,600
+spaghetti groups have too much security.
+ 
+
+1241
+00:21:51,600 --> 00:21:52,070
+spaghetti groups have too much security.
+So,
+
+1242
+00:21:52,070 --> 00:21:52,080
+So,
+ 
+
+1243
+00:21:52,080 --> 00:21:54,070
+So,
+>> so you're thinking about integrating it
+
+1244
+00:21:54,070 --> 00:21:54,080
+>> so you're thinking about integrating it
+ 
+
+1245
+00:21:54,080 --> 00:21:57,270
+>> so you're thinking about integrating it
+somewhere else within those maybe active
+
+1246
+00:21:57,270 --> 00:21:57,280
+somewhere else within those maybe active
+ 
+
+1247
+00:21:57,280 --> 00:22:00,070
+somewhere else within those maybe active
+directory owned maybe Microsoft product
+
+1248
+00:22:00,070 --> 00:22:00,080
+directory owned maybe Microsoft product
+ 
+
+1249
+00:22:00,080 --> 00:22:01,350
+directory owned maybe Microsoft product
+sets
+
+1250
+00:22:01,350 --> 00:22:01,360
+sets
+ 
+
+1251
+00:22:01,360 --> 00:22:02,789
+sets
+>> and I know it's not going to stay in
+
+1252
+00:22:02,789 --> 00:22:02,799
+>> and I know it's not going to stay in
+ 
+
+1253
+00:22:02,799 --> 00:22:04,870
+>> and I know it's not going to stay in
+there. So, we're we were trying to keep
+
+1254
+00:22:04,870 --> 00:22:04,880
+there. So, we're we were trying to keep
+ 
+
+1255
+00:22:04,880 --> 00:22:06,710
+there. So, we're we were trying to keep
+going on but I I told my boss let's
+
+1256
+00:22:06,710 --> 00:22:06,720
+going on but I I told my boss let's
+ 
+
+1257
+00:22:06,720 --> 00:22:08,390
+going on but I I told my boss let's
+start here. You didn't give me budget to
+
+1258
+00:22:08,390 --> 00:22:08,400
+start here. You didn't give me budget to
+ 
+
+1259
+00:22:08,400 --> 00:22:10,950
+start here. You didn't give me budget to
+buy you know AI specific security tool
+
+1260
+00:22:10,950 --> 00:22:10,960
+buy you know AI specific security tool
+ 
+
+1261
+00:22:10,960 --> 00:22:13,270
+buy you know AI specific security tool
+set but we'd love to look.
+
+1262
+00:22:13,270 --> 00:22:13,280
+set but we'd love to look.
+ 
+
+1263
+00:22:13,280 --> 00:22:13,990
+set but we'd love to look.
+>> Thank you.
+
+1264
+00:22:13,990 --> 00:22:14,000
+>> Thank you.
+ 
+
+1265
+00:22:14,000 --> 00:22:16,870
+>> Thank you.
+>> Okay. How are we doing on AV?
+
+1266
+00:22:16,870 --> 00:22:16,880
+>> Okay. How are we doing on AV?
+ 
+
+1267
+00:22:16,880 --> 00:22:18,070
+>> Okay. How are we doing on AV?
+>> Okay. Well, I have a question for you.
+
+1268
+00:22:18,070 --> 00:22:18,080
+>> Okay. Well, I have a question for you.
+ 
+
+1269
+00:22:18,080 --> 00:22:20,470
+>> Okay. Well, I have a question for you.
+you mentioned um so there's this whole
+
+1270
+00:22:20,470 --> 00:22:20,480
+you mentioned um so there's this whole
+ 
+
+1271
+00:22:20,480 --> 00:22:24,470
+you mentioned um so there's this whole
+notion of SAS being disrupted and uh
+
+1272
+00:22:24,470 --> 00:22:24,480
+notion of SAS being disrupted and uh
+ 
+
+1273
+00:22:24,480 --> 00:22:27,029
+notion of SAS being disrupted and uh
+this notion of being a system of context
+
+1274
+00:22:27,029 --> 00:22:27,039
+this notion of being a system of context
+ 
+
+1275
+00:22:27,039 --> 00:22:29,110
+this notion of being a system of context
+rather than a system of record.
+
+1276
+00:22:29,110 --> 00:22:29,120
+rather than a system of record.
+ 
+
+1277
+00:22:29,120 --> 00:22:31,110
+rather than a system of record.
+>> Uh do do you understand what that
+
+1278
+00:22:31,110 --> 00:22:31,120
+>> Uh do do you understand what that
+ 
+
+1279
+00:22:31,120 --> 00:22:32,950
+>> Uh do do you understand what that
+concept means or how have you embraced
+
+1280
+00:22:32,950 --> 00:22:32,960
+concept means or how have you embraced
+ 
+
+1281
+00:22:32,960 --> 00:22:35,750
+concept means or how have you embraced
+that sort of concept within uh FFF?
+
+1282
+00:22:35,750 --> 00:22:35,760
+that sort of concept within uh FFF?
+ 
+
+1283
+00:22:35,760 --> 00:22:37,110
+that sort of concept within uh FFF?
+>> If you can explain a little bit more
+
+1284
+00:22:37,110 --> 00:22:37,120
+>> If you can explain a little bit more
+ 
+
+1285
+00:22:37,120 --> 00:22:38,950
+>> If you can explain a little bit more
+what you mean by system concepts.
+
+1286
+00:22:38,950 --> 00:22:38,960
+what you mean by system concepts.
+ 
+
+1287
+00:22:38,960 --> 00:22:40,149
+what you mean by system concepts.
+>> Well, so you were talking about some of
+
+1288
+00:22:40,149 --> 00:22:40,159
+>> Well, so you were talking about some of
+ 
+
+1289
+00:22:40,159 --> 00:22:41,430
+>> Well, so you were talking about some of
+the services that you're using like
+
+1290
+00:22:41,430 --> 00:22:41,440
+the services that you're using like
+ 
+
+1291
+00:22:41,440 --> 00:22:43,750
+the services that you're using like
+Service Now, Salesforce, whatever. And
+
+1292
+00:22:43,750 --> 00:22:43,760
+Service Now, Salesforce, whatever. And
+ 
+
+1293
+00:22:43,760 --> 00:22:45,830
+Service Now, Salesforce, whatever. And
+each company is trying to be what they
+
+1294
+00:22:45,830 --> 00:22:45,840
+each company is trying to be what they
+ 
+
+1295
+00:22:45,840 --> 00:22:48,310
+each company is trying to be what they
+call the system of context. Not system
+
+1296
+00:22:48,310 --> 00:22:48,320
+call the system of context. Not system
+ 
+
+1297
+00:22:48,320 --> 00:22:50,870
+call the system of context. Not system
+of record but system of context which is
+
+1298
+00:22:50,870 --> 00:22:50,880
+of record but system of context which is
+ 
+
+1299
+00:22:50,880 --> 00:22:52,310
+of record but system of context which is
+to be the centerpoint for
+
+1300
+00:22:52,310 --> 00:22:52,320
+to be the centerpoint for
+ 
+
+1301
+00:22:52,320 --> 00:22:52,789
+to be the centerpoint for
+>> everything.
+
+1302
+00:22:52,789 --> 00:22:52,799
+>> everything.
+ 
+
+1303
+00:22:52,799 --> 00:22:54,710
+>> everything.
+>> Everything right so now you have but you
+
+1304
+00:22:54,710 --> 00:22:54,720
+>> Everything right so now you have but you
+ 
+
+1305
+00:22:54,720 --> 00:22:57,909
+>> Everything right so now you have but you
+have two products who are buying to be a
+
+1306
+00:22:57,909 --> 00:22:57,919
+have two products who are buying to be a
+ 
+
+1307
+00:22:57,919 --> 00:22:59,909
+have two products who are buying to be a
+system of context.
+
+1308
+00:22:59,909 --> 00:22:59,919
+system of context.
+ 
+
+1309
+00:22:59,919 --> 00:23:01,830
+system of context.
+>> So how are you uh trying to reconcile
+
+1310
+00:23:01,830 --> 00:23:01,840
+>> So how are you uh trying to reconcile
+ 
+
+1311
+00:23:01,840 --> 00:23:03,590
+>> So how are you uh trying to reconcile
+that? We're and I think that's where
+
+1312
+00:23:03,590 --> 00:23:03,600
+that? We're and I think that's where
+ 
+
+1313
+00:23:03,600 --> 00:23:05,830
+that? We're and I think that's where
+we're kind of leaving things within data
+
+1314
+00:23:05,830 --> 00:23:05,840
+we're kind of leaving things within data
+ 
+
+1315
+00:23:05,840 --> 00:23:08,310
+we're kind of leaving things within data
+bricks because it's because we have our
+
+1316
+00:23:08,310 --> 00:23:08,320
+bricks because it's because we have our
+ 
+
+1317
+00:23:08,320 --> 00:23:10,070
+bricks because it's because we have our
+two main systems of context really are
+
+1318
+00:23:10,070 --> 00:23:10,080
+two main systems of context really are
+ 
+
+1319
+00:23:10,080 --> 00:23:13,110
+two main systems of context really are
+Salesforce and SAP but we're shoving it
+
+1320
+00:23:13,110 --> 00:23:13,120
+Salesforce and SAP but we're shoving it
+ 
+
+1321
+00:23:13,120 --> 00:23:15,190
+Salesforce and SAP but we're shoving it
+all into data bricks and making that our
+
+1322
+00:23:15,190 --> 00:23:15,200
+all into data bricks and making that our
+ 
+
+1323
+00:23:15,200 --> 00:23:16,070
+all into data bricks and making that our
+main system.
+
+1324
+00:23:16,070 --> 00:23:16,080
+main system.
+ 
+
+1325
+00:23:16,080 --> 00:23:17,830
+main system.
+>> So you're creating your own system of
+
+1326
+00:23:17,830 --> 00:23:17,840
+>> So you're creating your own system of
+ 
+
+1327
+00:23:17,840 --> 00:23:19,590
+>> So you're creating your own system of
+context effectively. Okay.
+
+1328
+00:23:19,590 --> 00:23:19,600
+context effectively. Okay.
+ 
+
+1329
+00:23:19,600 --> 00:23:21,510
+context effectively. Okay.
+>> Right. And and you know just being able
+
+1330
+00:23:21,510 --> 00:23:21,520
+>> Right. And and you know just being able
+ 
+
+1331
+00:23:21,520 --> 00:23:23,669
+>> Right. And and you know just being able
+to like you know bronze, silver, gold
+
+1332
+00:23:23,669 --> 00:23:23,679
+to like you know bronze, silver, gold
+ 
+
+1333
+00:23:23,679 --> 00:23:25,190
+to like you know bronze, silver, gold
+data standards within it has been
+
+1334
+00:23:25,190 --> 00:23:25,200
+data standards within it has been
+ 
+
+1335
+00:23:25,200 --> 00:23:25,830
+data standards within it has been
+helpful.
+
+1336
+00:23:25,830 --> 00:23:25,840
+helpful.
+ 
+
+1337
+00:23:25,840 --> 00:23:29,559
+helpful.
+>> Okay. Very good.
+

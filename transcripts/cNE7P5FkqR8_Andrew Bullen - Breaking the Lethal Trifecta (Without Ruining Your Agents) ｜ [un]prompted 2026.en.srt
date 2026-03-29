@@ -1,0 +1,4765 @@
+1
+00:00:04,880 --> 00:00:07,430
+
+Great. Um, so hey everyone. It's great
+
+2
+00:00:07,430 --> 00:00:07,440
+Great. Um, so hey everyone. It's great
+ 
+
+3
+00:00:07,440 --> 00:00:09,270
+Great. Um, so hey everyone. It's great
+to see you all. Uh, I'm Andrew. I'm the
+
+4
+00:00:09,270 --> 00:00:09,280
+to see you all. Uh, I'm Andrew. I'm the
+ 
+
+5
+00:00:09,280 --> 00:00:11,749
+to see you all. Uh, I'm Andrew. I'm the
+head of the AI security team at Stripe.
+
+6
+00:00:11,749 --> 00:00:11,759
+head of the AI security team at Stripe.
+ 
+
+7
+00:00:11,759 --> 00:00:14,070
+head of the AI security team at Stripe.
+Um, and I've been at Stripe for about 10
+
+8
+00:00:14,070 --> 00:00:14,080
+Um, and I've been at Stripe for about 10
+ 
+
+9
+00:00:14,080 --> 00:00:16,390
+Um, and I've been at Stripe for about 10
+years now. And I mean, I guess a lot of
+
+10
+00:00:16,390 --> 00:00:16,400
+years now. And I mean, I guess a lot of
+ 
+
+11
+00:00:16,400 --> 00:00:18,390
+years now. And I mean, I guess a lot of
+people ask me why I'm still here. Uh,
+
+12
+00:00:18,390 --> 00:00:18,400
+people ask me why I'm still here. Uh,
+ 
+
+13
+00:00:18,400 --> 00:00:20,230
+people ask me why I'm still here. Uh,
+unfortunately, I'm a nerd who loves
+
+14
+00:00:20,230 --> 00:00:20,240
+unfortunately, I'm a nerd who loves
+ 
+
+15
+00:00:20,240 --> 00:00:21,990
+unfortunately, I'm a nerd who loves
+solving problems and I've yet to find
+
+16
+00:00:21,990 --> 00:00:22,000
+solving problems and I've yet to find
+ 
+
+17
+00:00:22,000 --> 00:00:24,950
+solving problems and I've yet to find
+another uh, way to keep my ADHD brain
+
+18
+00:00:24,950 --> 00:00:24,960
+another uh, way to keep my ADHD brain
+ 
+
+19
+00:00:24,960 --> 00:00:28,390
+another uh, way to keep my ADHD brain
+entertained. Um, but in these 10 years,
+
+20
+00:00:28,390 --> 00:00:28,400
+entertained. Um, but in these 10 years,
+ 
+
+21
+00:00:28,400 --> 00:00:30,390
+entertained. Um, but in these 10 years,
+I've lived through, you know, many
+
+22
+00:00:30,390 --> 00:00:30,400
+I've lived through, you know, many
+ 
+
+23
+00:00:30,400 --> 00:00:33,830
+I've lived through, you know, many
+product launches, many reorgs, um, you
+
+24
+00:00:33,830 --> 00:00:33,840
+product launches, many reorgs, um, you
+ 
+
+25
+00:00:33,840 --> 00:00:35,510
+product launches, many reorgs, um, you
+know, the slow, dignified graying of
+
+26
+00:00:35,510 --> 00:00:35,520
+know, the slow, dignified graying of
+ 
+
+27
+00:00:35,520 --> 00:00:38,549
+know, the slow, dignified graying of
+Patrick's hair. Um, and I can honestly
+
+28
+00:00:38,549 --> 00:00:38,559
+Patrick's hair. Um, and I can honestly
+ 
+
+29
+00:00:38,559 --> 00:00:41,110
+Patrick's hair. Um, and I can honestly
+say that this moment, um, sort of this
+
+30
+00:00:41,110 --> 00:00:41,120
+say that this moment, um, sort of this
+ 
+
+31
+00:00:41,120 --> 00:00:43,910
+say that this moment, um, sort of this
+work in security, um, in this age of AI
+
+32
+00:00:43,910 --> 00:00:43,920
+work in security, um, in this age of AI
+ 
+
+33
+00:00:43,920 --> 00:00:45,990
+work in security, um, in this age of AI
+is some of the most exciting work that,
+
+34
+00:00:45,990 --> 00:00:46,000
+is some of the most exciting work that,
+ 
+
+35
+00:00:46,000 --> 00:00:48,150
+is some of the most exciting work that,
+you know, I've I've experienced in my
+
+36
+00:00:48,150 --> 00:00:48,160
+you know, I've I've experienced in my
+ 
+
+37
+00:00:48,160 --> 00:00:51,190
+you know, I've I've experienced in my
+entire career. And so I'm here to talk
+
+38
+00:00:51,190 --> 00:00:51,200
+entire career. And so I'm here to talk
+ 
+
+39
+00:00:51,200 --> 00:00:53,430
+entire career. And so I'm here to talk
+to you about the uh possibly most
+
+40
+00:00:53,430 --> 00:00:53,440
+to you about the uh possibly most
+ 
+
+41
+00:00:53,440 --> 00:00:56,630
+to you about the uh possibly most
+exciting and also most terrifying aspect
+
+42
+00:00:56,630 --> 00:00:56,640
+exciting and also most terrifying aspect
+ 
+
+43
+00:00:56,640 --> 00:00:59,830
+exciting and also most terrifying aspect
+of uh being in this new AI age which is
+
+44
+00:00:59,830 --> 00:00:59,840
+of uh being in this new AI age which is
+ 
+
+45
+00:00:59,840 --> 00:01:01,590
+of uh being in this new AI age which is
+prompt injection and sort of the
+
+46
+00:01:01,590 --> 00:01:01,600
+prompt injection and sort of the
+ 
+
+47
+00:01:01,600 --> 00:01:02,950
+prompt injection and sort of the
+approaches that we're taking at Stripe
+
+48
+00:01:02,950 --> 00:01:02,960
+approaches that we're taking at Stripe
+ 
+
+49
+00:01:02,960 --> 00:01:05,670
+approaches that we're taking at Stripe
+to mitigating the risk there.
+
+50
+00:01:05,670 --> 00:01:05,680
+to mitigating the risk there.
+ 
+
+51
+00:01:05,680 --> 00:01:08,149
+to mitigating the risk there.
+Um so we have an elephant in the room.
+
+52
+00:01:08,149 --> 00:01:08,159
+Um so we have an elephant in the room.
+ 
+
+53
+00:01:08,159 --> 00:01:09,990
+Um so we have an elephant in the room.
+Um, you know, I I think in this
+
+54
+00:01:09,990 --> 00:01:10,000
+Um, you know, I I think in this
+ 
+
+55
+00:01:10,000 --> 00:01:11,750
+Um, you know, I I think in this
+community, we spend a lot of time
+
+56
+00:01:11,750 --> 00:01:11,760
+community, we spend a lot of time
+ 
+
+57
+00:01:11,760 --> 00:01:13,350
+community, we spend a lot of time
+thinking and talking about prompt
+
+58
+00:01:13,350 --> 00:01:13,360
+thinking and talking about prompt
+ 
+
+59
+00:01:13,360 --> 00:01:16,310
+thinking and talking about prompt
+injection, but I find that most people
+
+60
+00:01:16,310 --> 00:01:16,320
+injection, but I find that most people
+ 
+
+61
+00:01:16,320 --> 00:01:18,310
+injection, but I find that most people
+working in AI are sort of scrupulously
+
+62
+00:01:18,310 --> 00:01:18,320
+working in AI are sort of scrupulously
+ 
+
+63
+00:01:18,320 --> 00:01:20,950
+working in AI are sort of scrupulously
+avoiding it. Um, you know, given the AI
+
+64
+00:01:20,950 --> 00:01:20,960
+avoiding it. Um, you know, given the AI
+ 
+
+65
+00:01:20,960 --> 00:01:23,510
+avoiding it. Um, you know, given the AI
+hype cycle, all the focus on building
+
+66
+00:01:23,510 --> 00:01:23,520
+hype cycle, all the focus on building
+ 
+
+67
+00:01:23,520 --> 00:01:25,749
+hype cycle, all the focus on building
+things really, really fast, there's not
+
+68
+00:01:25,749 --> 00:01:25,759
+things really, really fast, there's not
+ 
+
+69
+00:01:25,759 --> 00:01:27,910
+things really, really fast, there's not
+a lot of consideration of risk. We're
+
+70
+00:01:27,910 --> 00:01:27,920
+a lot of consideration of risk. We're
+ 
+
+71
+00:01:27,920 --> 00:01:30,070
+a lot of consideration of risk. We're
+very much back in a move fast and break
+
+72
+00:01:30,070 --> 00:01:30,080
+very much back in a move fast and break
+ 
+
+73
+00:01:30,080 --> 00:01:33,190
+very much back in a move fast and break
+things era. Um, and it's just easier for
+
+74
+00:01:33,190 --> 00:01:33,200
+things era. Um, and it's just easier for
+ 
+
+75
+00:01:33,200 --> 00:01:35,030
+things era. Um, and it's just easier for
+a lot of companies to pretend prompt
+
+76
+00:01:35,030 --> 00:01:35,040
+a lot of companies to pretend prompt
+ 
+
+77
+00:01:35,040 --> 00:01:36,950
+a lot of companies to pretend prompt
+injection doesn't exist and hope there
+
+78
+00:01:36,950 --> 00:01:36,960
+injection doesn't exist and hope there
+ 
+
+79
+00:01:36,960 --> 00:01:39,429
+injection doesn't exist and hope there
+won't be a problem. Um, which ultimately
+
+80
+00:01:39,429 --> 00:01:39,439
+won't be a problem. Um, which ultimately
+ 
+
+81
+00:01:39,439 --> 00:01:42,069
+won't be a problem. Um, which ultimately
+means just letting the user, you know,
+
+82
+00:01:42,069 --> 00:01:42,079
+means just letting the user, you know,
+ 
+
+83
+00:01:42,079 --> 00:01:44,950
+means just letting the user, you know,
+beware the risk to to them. You know,
+
+84
+00:01:44,950 --> 00:01:44,960
+beware the risk to to them. You know,
+ 
+
+85
+00:01:44,960 --> 00:01:48,630
+beware the risk to to them. You know,
+see, open claw, of course. Um, and so
+
+86
+00:01:48,630 --> 00:01:48,640
+see, open claw, of course. Um, and so
+ 
+
+87
+00:01:48,640 --> 00:01:50,469
+see, open claw, of course. Um, and so
+while I'm sure everyone here, uh, you
+
+88
+00:01:50,469 --> 00:01:50,479
+while I'm sure everyone here, uh, you
+ 
+
+89
+00:01:50,479 --> 00:01:52,630
+while I'm sure everyone here, uh, you
+know, understands prompt injection quite
+
+90
+00:01:52,630 --> 00:01:52,640
+know, understands prompt injection quite
+ 
+
+91
+00:01:52,640 --> 00:01:54,550
+know, understands prompt injection quite
+well, I've actually been very surprised
+
+92
+00:01:54,550 --> 00:01:54,560
+well, I've actually been very surprised
+ 
+
+93
+00:01:54,560 --> 00:01:57,270
+well, I've actually been very surprised
+at how many other, you know, people in
+
+94
+00:01:57,270 --> 00:01:57,280
+at how many other, you know, people in
+ 
+
+95
+00:01:57,280 --> 00:02:00,230
+at how many other, you know, people in
+AI, you know, experienced AI developers,
+
+96
+00:02:00,230 --> 00:02:00,240
+AI, you know, experienced AI developers,
+ 
+
+97
+00:02:00,240 --> 00:02:01,990
+AI, you know, experienced AI developers,
+you know, startup founders, tech
+
+98
+00:02:01,990 --> 00:02:02,000
+you know, startup founders, tech
+ 
+
+99
+00:02:02,000 --> 00:02:04,550
+you know, startup founders, tech
+executives that I talk to only have a
+
+100
+00:02:04,550 --> 00:02:04,560
+executives that I talk to only have a
+ 
+
+101
+00:02:04,560 --> 00:02:06,149
+executives that I talk to only have a
+really vague understanding of what
+
+102
+00:02:06,149 --> 00:02:06,159
+really vague understanding of what
+ 
+
+103
+00:02:06,159 --> 00:02:09,190
+really vague understanding of what
+prompt injection is. Um, because
+
+104
+00:02:09,190 --> 00:02:09,200
+prompt injection is. Um, because
+ 
+
+105
+00:02:09,200 --> 00:02:10,710
+prompt injection is. Um, because
+ultimately prompt injection is a really
+
+106
+00:02:10,710 --> 00:02:10,720
+ultimately prompt injection is a really
+ 
+
+107
+00:02:10,720 --> 00:02:13,589
+ultimately prompt injection is a really
+inconvenient risk. Um and that's why I
+
+108
+00:02:13,589 --> 00:02:13,599
+inconvenient risk. Um and that's why I
+ 
+
+109
+00:02:13,599 --> 00:02:15,750
+inconvenient risk. Um and that's why I
+think we as a security uh you know as
+
+110
+00:02:15,750 --> 00:02:15,760
+think we as a security uh you know as
+ 
+
+111
+00:02:15,760 --> 00:02:17,270
+think we as a security uh you know as
+security practitioners have a really
+
+112
+00:02:17,270 --> 00:02:17,280
+security practitioners have a really
+ 
+
+113
+00:02:17,280 --> 00:02:20,470
+security practitioners have a really
+important um responsibility to show to
+
+114
+00:02:20,470 --> 00:02:20,480
+important um responsibility to show to
+ 
+
+115
+00:02:20,480 --> 00:02:23,750
+important um responsibility to show to
+the industry that not only is it uh um
+
+116
+00:02:23,750 --> 00:02:23,760
+the industry that not only is it uh um
+ 
+
+117
+00:02:23,760 --> 00:02:25,670
+the industry that not only is it uh um
+you know a real risk but it does not
+
+118
+00:02:25,670 --> 00:02:25,680
+you know a real risk but it does not
+ 
+
+119
+00:02:25,680 --> 00:02:28,470
+you know a real risk but it does not
+actually um mean that we can't move fast
+
+120
+00:02:28,470 --> 00:02:28,480
+actually um mean that we can't move fast
+ 
+
+121
+00:02:28,480 --> 00:02:31,270
+actually um mean that we can't move fast
+on AI. We need to help you know all of
+
+122
+00:02:31,270 --> 00:02:31,280
+on AI. We need to help you know all of
+ 
+
+123
+00:02:31,280 --> 00:02:32,790
+on AI. We need to help you know all of
+our companies you know the people
+
+124
+00:02:32,790 --> 00:02:32,800
+our companies you know the people
+ 
+
+125
+00:02:32,800 --> 00:02:35,670
+our companies you know the people
+building AI move fast while not yoloing
+
+126
+00:02:35,670 --> 00:02:35,680
+building AI move fast while not yoloing
+ 
+
+127
+00:02:35,680 --> 00:02:37,589
+building AI move fast while not yoloing
+security.
+
+128
+00:02:37,589 --> 00:02:37,599
+security.
+ 
+
+129
+00:02:37,599 --> 00:02:40,229
+security.
+So, you know, I'm sure a lot of you have
+
+130
+00:02:40,229 --> 00:02:40,239
+So, you know, I'm sure a lot of you have
+ 
+
+131
+00:02:40,239 --> 00:02:42,869
+So, you know, I'm sure a lot of you have
+um seen this graph from last year about
+
+132
+00:02:42,869 --> 00:02:42,879
+um seen this graph from last year about
+ 
+
+133
+00:02:42,879 --> 00:02:45,190
+um seen this graph from last year about
+uh failure rates um in resisting prompt
+
+134
+00:02:45,190 --> 00:02:45,200
+uh failure rates um in resisting prompt
+ 
+
+135
+00:02:45,200 --> 00:02:47,990
+uh failure rates um in resisting prompt
+ejection attacks. Um you know, models
+
+136
+00:02:47,990 --> 00:02:48,000
+ejection attacks. Um you know, models
+ 
+
+137
+00:02:48,000 --> 00:02:49,910
+ejection attacks. Um you know, models
+are getting better. But I think in
+
+138
+00:02:49,910 --> 00:02:49,920
+are getting better. But I think in
+ 
+
+139
+00:02:49,920 --> 00:02:52,390
+are getting better. But I think in
+security, you know, even a 1% even a
+
+140
+00:02:52,390 --> 00:02:52,400
+security, you know, even a 1% even a
+ 
+
+141
+00:02:52,400 --> 00:02:55,030
+security, you know, even a 1% even a
+0.1% failure chance to attack is not
+
+142
+00:02:55,030 --> 00:02:55,040
+0.1% failure chance to attack is not
+ 
+
+143
+00:02:55,040 --> 00:02:56,470
+0.1% failure chance to attack is not
+enough. So, we need something better. We
+
+144
+00:02:56,470 --> 00:02:56,480
+enough. So, we need something better. We
+ 
+
+145
+00:02:56,480 --> 00:02:58,309
+enough. So, we need something better. We
+need something better than just uh
+
+146
+00:02:58,309 --> 00:02:58,319
+need something better than just uh
+ 
+
+147
+00:02:58,319 --> 00:03:00,949
+need something better than just uh
+relying on the models. And also, this is
+
+148
+00:03:00,949 --> 00:03:00,959
+relying on the models. And also, this is
+ 
+
+149
+00:03:00,959 --> 00:03:03,190
+relying on the models. And also, this is
+not a future problem. Um, another
+
+150
+00:03:03,190 --> 00:03:03,200
+not a future problem. Um, another
+ 
+
+151
+00:03:03,200 --> 00:03:04,869
+not a future problem. Um, another
+elephant that is hiding behind the first
+
+152
+00:03:04,869 --> 00:03:04,879
+elephant that is hiding behind the first
+ 
+
+153
+00:03:04,879 --> 00:03:07,910
+elephant that is hiding behind the first
+elephant is that we don't really know
+
+154
+00:03:07,910 --> 00:03:07,920
+elephant is that we don't really know
+ 
+
+155
+00:03:07,920 --> 00:03:10,229
+elephant is that we don't really know
+um, especially with consumers how
+
+156
+00:03:10,229 --> 00:03:10,239
+um, especially with consumers how
+ 
+
+157
+00:03:10,239 --> 00:03:13,190
+um, especially with consumers how
+prevalent prompt ejection attacks are
+
+158
+00:03:13,190 --> 00:03:13,200
+prevalent prompt ejection attacks are
+ 
+
+159
+00:03:13,200 --> 00:03:14,710
+prevalent prompt ejection attacks are
+and we don't know how prevalent that
+
+160
+00:03:14,710 --> 00:03:14,720
+and we don't know how prevalent that
+ 
+
+161
+00:03:14,720 --> 00:03:16,470
+and we don't know how prevalent that
+they are going to be in the future. But
+
+162
+00:03:16,470 --> 00:03:16,480
+they are going to be in the future. But
+ 
+
+163
+00:03:16,480 --> 00:03:21,270
+they are going to be in the future. But
+I personally believe that um, you know,
+
+164
+00:03:21,270 --> 00:03:21,280
+I personally believe that um, you know,
+ 
+
+165
+00:03:21,280 --> 00:03:23,110
+I personally believe that um, you know,
+once again looking at things like open
+
+166
+00:03:23,110 --> 00:03:23,120
+once again looking at things like open
+ 
+
+167
+00:03:23,120 --> 00:03:25,350
+once again looking at things like open
+claw things are going to get a lot worse
+
+168
+00:03:25,350 --> 00:03:25,360
+claw things are going to get a lot worse
+ 
+
+169
+00:03:25,360 --> 00:03:28,309
+claw things are going to get a lot worse
+before they get better. Um, so what do
+
+170
+00:03:28,309 --> 00:03:28,319
+before they get better. Um, so what do
+ 
+
+171
+00:03:28,319 --> 00:03:31,270
+before they get better. Um, so what do
+we do? Um, you know, how do we protect
+
+172
+00:03:31,270 --> 00:03:31,280
+we do? Um, you know, how do we protect
+ 
+
+173
+00:03:31,280 --> 00:03:33,030
+we do? Um, you know, how do we protect
+our companies from the risks of prompt
+
+174
+00:03:33,030 --> 00:03:33,040
+our companies from the risks of prompt
+ 
+
+175
+00:03:33,040 --> 00:03:35,509
+our companies from the risks of prompt
+injection? Um, well, I I have a
+
+176
+00:03:35,509 --> 00:03:35,519
+injection? Um, well, I I have a
+ 
+
+177
+00:03:35,519 --> 00:03:37,430
+injection? Um, well, I I have a
+confession to make. I'm not here to
+
+178
+00:03:37,430 --> 00:03:37,440
+confession to make. I'm not here to
+ 
+
+179
+00:03:37,440 --> 00:03:39,270
+confession to make. I'm not here to
+announce a magical technical solution
+
+180
+00:03:39,270 --> 00:03:39,280
+announce a magical technical solution
+ 
+
+181
+00:03:39,280 --> 00:03:41,910
+announce a magical technical solution
+that allows us to solve prompt injection
+
+182
+00:03:41,910 --> 00:03:41,920
+that allows us to solve prompt injection
+ 
+
+183
+00:03:41,920 --> 00:03:44,229
+that allows us to solve prompt injection
+without any risk. I'm going to tell you
+
+184
+00:03:44,229 --> 00:03:44,239
+without any risk. I'm going to tell you
+ 
+
+185
+00:03:44,239 --> 00:03:45,589
+without any risk. I'm going to tell you
+something that you probably already
+
+186
+00:03:45,589 --> 00:03:45,599
+something that you probably already
+ 
+
+187
+00:03:45,599 --> 00:03:47,509
+something that you probably already
+know, which that we basically have to
+
+188
+00:03:47,509 --> 00:03:47,519
+know, which that we basically have to
+ 
+
+189
+00:03:47,519 --> 00:03:51,270
+know, which that we basically have to
+assume prompt injections will happen and
+
+190
+00:03:51,270 --> 00:03:51,280
+assume prompt injections will happen and
+ 
+
+191
+00:03:51,280 --> 00:03:53,270
+assume prompt injections will happen and
+prevent compromised agents from causing
+
+192
+00:03:53,270 --> 00:03:53,280
+prevent compromised agents from causing
+ 
+
+193
+00:03:53,280 --> 00:03:56,070
+prevent compromised agents from causing
+harms uh compromised agents from causing
+
+194
+00:03:56,070 --> 00:03:56,080
+harms uh compromised agents from causing
+ 
+
+195
+00:03:56,080 --> 00:03:59,509
+harms uh compromised agents from causing
+harm when they do happen. Um, but I will
+
+196
+00:03:59,509 --> 00:03:59,519
+harm when they do happen. Um, but I will
+ 
+
+197
+00:03:59,519 --> 00:04:01,509
+harm when they do happen. Um, but I will
+share with you a set of architectural
+
+198
+00:04:01,509 --> 00:04:01,519
+share with you a set of architectural
+ 
+
+199
+00:04:01,519 --> 00:04:03,589
+share with you a set of architectural
+controls that we have built at Stripe
+
+200
+00:04:03,589 --> 00:04:03,599
+controls that we have built at Stripe
+ 
+
+201
+00:04:03,599 --> 00:04:05,270
+controls that we have built at Stripe
+that serve as guardrails to prevent
+
+202
+00:04:05,270 --> 00:04:05,280
+that serve as guardrails to prevent
+ 
+
+203
+00:04:05,280 --> 00:04:07,030
+that serve as guardrails to prevent
+those bad things from happening when
+
+204
+00:04:07,030 --> 00:04:07,040
+those bad things from happening when
+ 
+
+205
+00:04:07,040 --> 00:04:09,750
+those bad things from happening when
+prompt injection does happen.
+
+206
+00:04:09,750 --> 00:04:09,760
+prompt injection does happen.
+ 
+
+207
+00:04:09,760 --> 00:04:11,350
+prompt injection does happen.
+But the guardrails are really only a
+
+208
+00:04:11,350 --> 00:04:11,360
+But the guardrails are really only a
+ 
+
+209
+00:04:11,360 --> 00:04:14,630
+But the guardrails are really only a
+small part of the story. Um,
+
+210
+00:04:14,630 --> 00:04:14,640
+small part of the story. Um,
+ 
+
+211
+00:04:14,640 --> 00:04:16,229
+small part of the story. Um,
+what happens when you put these
+
+212
+00:04:16,229 --> 00:04:16,239
+what happens when you put these
+ 
+
+213
+00:04:16,239 --> 00:04:18,069
+what happens when you put these
+guardrails in place is that there are
+
+214
+00:04:18,069 --> 00:04:18,079
+guardrails in place is that there are
+ 
+
+215
+00:04:18,079 --> 00:04:20,069
+guardrails in place is that there are
+negative impacts on sort of what agents
+
+216
+00:04:20,069 --> 00:04:20,079
+negative impacts on sort of what agents
+ 
+
+217
+00:04:20,079 --> 00:04:23,030
+negative impacts on sort of what agents
+can do. There's friction for users.
+
+218
+00:04:23,030 --> 00:04:23,040
+can do. There's friction for users.
+ 
+
+219
+00:04:23,040 --> 00:04:26,070
+can do. There's friction for users.
+addressing those problems is really what
+
+220
+00:04:26,070 --> 00:04:26,080
+addressing those problems is really what
+ 
+
+221
+00:04:26,080 --> 00:04:28,790
+addressing those problems is really what
+takes um sort of a technical solution
+
+222
+00:04:28,790 --> 00:04:28,800
+takes um sort of a technical solution
+ 
+
+223
+00:04:28,800 --> 00:04:31,830
+takes um sort of a technical solution
+into a workable solution for your
+
+224
+00:04:31,830 --> 00:04:31,840
+into a workable solution for your
+ 
+
+225
+00:04:31,840 --> 00:04:35,590
+into a workable solution for your
+business. Um and you know that's sort of
+
+226
+00:04:35,590 --> 00:04:35,600
+business. Um and you know that's sort of
+ 
+
+227
+00:04:35,600 --> 00:04:38,230
+business. Um and you know that's sort of
+the the real work I think in many cases
+
+228
+00:04:38,230 --> 00:04:38,240
+the the real work I think in many cases
+ 
+
+229
+00:04:38,240 --> 00:04:41,670
+the the real work I think in many cases
+of security practitioners.
+
+230
+00:04:41,670 --> 00:04:41,680
+of security practitioners.
+ 
+
+231
+00:04:41,680 --> 00:04:43,670
+of security practitioners.
+This is sort of ultimately a security
+
+232
+00:04:43,670 --> 00:04:43,680
+This is sort of ultimately a security
+ 
+
+233
+00:04:43,680 --> 00:04:45,830
+This is sort of ultimately a security
+leadership talk. you know, when
+
+234
+00:04:45,830 --> 00:04:45,840
+leadership talk. you know, when
+ 
+
+235
+00:04:45,840 --> 00:04:47,749
+leadership talk. you know, when
+practicing a security engineering, you
+
+236
+00:04:47,749 --> 00:04:47,759
+practicing a security engineering, you
+ 
+
+237
+00:04:47,759 --> 00:04:49,350
+practicing a security engineering, you
+know, step one is the threat model, step
+
+238
+00:04:49,350 --> 00:04:49,360
+know, step one is the threat model, step
+ 
+
+239
+00:04:49,360 --> 00:04:51,350
+know, step one is the threat model, step
+two is the mitigation, but importantly,
+
+240
+00:04:51,350 --> 00:04:51,360
+two is the mitigation, but importantly,
+ 
+
+241
+00:04:51,360 --> 00:04:53,510
+two is the mitigation, but importantly,
+step three is figuring out how to put in
+
+242
+00:04:53,510 --> 00:04:53,520
+step three is figuring out how to put in
+ 
+
+243
+00:04:53,520 --> 00:04:55,590
+step three is figuring out how to put in
+place the mitigation in a way that the
+
+244
+00:04:55,590 --> 00:04:55,600
+place the mitigation in a way that the
+ 
+
+245
+00:04:55,600 --> 00:04:58,790
+place the mitigation in a way that the
+business still can achieve its goal. Um,
+
+246
+00:04:58,790 --> 00:04:58,800
+business still can achieve its goal. Um,
+ 
+
+247
+00:04:58,800 --> 00:05:00,310
+business still can achieve its goal. Um,
+and so with prompt injection, the
+
+248
+00:05:00,310 --> 00:05:00,320
+and so with prompt injection, the
+ 
+
+249
+00:05:00,320 --> 00:05:03,350
+and so with prompt injection, the
+interesting part is what happens uh
+
+250
+00:05:03,350 --> 00:05:03,360
+interesting part is what happens uh
+ 
+
+251
+00:05:03,360 --> 00:05:05,670
+interesting part is what happens uh
+after we put in place the guard rails,
+
+252
+00:05:05,670 --> 00:05:05,680
+after we put in place the guard rails,
+ 
+
+253
+00:05:05,680 --> 00:05:09,590
+after we put in place the guard rails,
+how do we enforce it? Um, and uh, you
+
+254
+00:05:09,590 --> 00:05:09,600
+how do we enforce it? Um, and uh, you
+ 
+
+255
+00:05:09,600 --> 00:05:10,950
+how do we enforce it? Um, and uh, you
+know, what do we do to make it so that
+
+256
+00:05:10,950 --> 00:05:10,960
+know, what do we do to make it so that
+ 
+
+257
+00:05:10,960 --> 00:05:13,590
+know, what do we do to make it so that
+agents can still be powerful? Um and and
+
+258
+00:05:13,590 --> 00:05:13,600
+agents can still be powerful? Um and and
+ 
+
+259
+00:05:13,600 --> 00:05:15,830
+agents can still be powerful? Um and and
+so I'm going to uh tell you a little bit
+
+260
+00:05:15,830 --> 00:05:15,840
+so I'm going to uh tell you a little bit
+ 
+
+261
+00:05:15,840 --> 00:05:18,390
+so I'm going to uh tell you a little bit
+about how we've tried to uh uh navigate
+
+262
+00:05:18,390 --> 00:05:18,400
+about how we've tried to uh uh navigate
+ 
+
+263
+00:05:18,400 --> 00:05:22,469
+about how we've tried to uh uh navigate
+the sort of frothy FOMO driven world um
+
+264
+00:05:22,469 --> 00:05:22,479
+the sort of frothy FOMO driven world um
+ 
+
+265
+00:05:22,479 --> 00:05:26,070
+the sort of frothy FOMO driven world um
+uh while still remaining secure.
+
+266
+00:05:26,070 --> 00:05:26,080
+uh while still remaining secure.
+ 
+
+267
+00:05:26,080 --> 00:05:28,710
+uh while still remaining secure.
+Um cool. So what are the controls? Okay.
+
+268
+00:05:28,710 --> 00:05:28,720
+Um cool. So what are the controls? Okay.
+ 
+
+269
+00:05:28,720 --> 00:05:30,390
+Um cool. So what are the controls? Okay.
+Well, first let's start with data
+
+270
+00:05:30,390 --> 00:05:30,400
+Well, first let's start with data
+ 
+
+271
+00:05:30,400 --> 00:05:31,590
+Well, first let's start with data
+exfiltration. What are the two bad
+
+272
+00:05:31,590 --> 00:05:31,600
+exfiltration. What are the two bad
+ 
+
+273
+00:05:31,600 --> 00:05:33,029
+exfiltration. What are the two bad
+things that can happen when you get
+
+274
+00:05:33,029 --> 00:05:33,039
+things that can happen when you get
+ 
+
+275
+00:05:33,039 --> 00:05:35,270
+things that can happen when you get
+prompt injected? Um I'm sure you're all
+
+276
+00:05:35,270 --> 00:05:35,280
+prompt injected? Um I'm sure you're all
+ 
+
+277
+00:05:35,280 --> 00:05:37,189
+prompt injected? Um I'm sure you're all
+familiar with the lethal trifecta. You
+
+278
+00:05:37,189 --> 00:05:37,199
+familiar with the lethal trifecta. You
+ 
+
+279
+00:05:37,199 --> 00:05:39,990
+familiar with the lethal trifecta. You
+know, this term coined by Simon Willis.
+
+280
+00:05:39,990 --> 00:05:40,000
+know, this term coined by Simon Willis.
+ 
+
+281
+00:05:40,000 --> 00:05:42,150
+know, this term coined by Simon Willis.
+Um you know there are three things that
+
+282
+00:05:42,150 --> 00:05:42,160
+Um you know there are three things that
+ 
+
+283
+00:05:42,160 --> 00:05:46,310
+Um you know there are three things that
+a agent needs in order to um uh
+
+284
+00:05:46,310 --> 00:05:46,320
+a agent needs in order to um uh
+ 
+
+285
+00:05:46,320 --> 00:05:48,150
+a agent needs in order to um uh
+exfiltrate data if it gets prompt
+
+286
+00:05:48,150 --> 00:05:48,160
+exfiltrate data if it gets prompt
+ 
+
+287
+00:05:48,160 --> 00:05:52,070
+exfiltrate data if it gets prompt
+injected. Um one is untr untrusted
+
+288
+00:05:52,070 --> 00:05:52,080
+injected. Um one is untr untrusted
+ 
+
+289
+00:05:52,080 --> 00:05:55,189
+injected. Um one is untr untrusted
+content. Untrusted content is really not
+
+290
+00:05:55,189 --> 00:05:55,199
+content. Untrusted content is really not
+ 
+
+291
+00:05:55,199 --> 00:05:58,469
+content. Untrusted content is really not
+feasible in most cases I think for us to
+
+292
+00:05:58,469 --> 00:05:58,479
+feasible in most cases I think for us to
+ 
+
+293
+00:05:58,479 --> 00:06:02,550
+feasible in most cases I think for us to
+um you know remove as a guard rail. Um,
+
+294
+00:06:02,550 --> 00:06:02,560
+um you know remove as a guard rail. Um,
+ 
+
+295
+00:06:02,560 --> 00:06:04,790
+um you know remove as a guard rail. Um,
+you know, first of all, a big part of
+
+296
+00:06:04,790 --> 00:06:04,800
+you know, first of all, a big part of
+ 
+
+297
+00:06:04,800 --> 00:06:06,469
+you know, first of all, a big part of
+why LLMs are useful in the first place
+
+298
+00:06:06,469 --> 00:06:06,479
+why LLMs are useful in the first place
+ 
+
+299
+00:06:06,479 --> 00:06:08,150
+why LLMs are useful in the first place
+is you can just throw a bunch of stuff
+
+300
+00:06:08,150 --> 00:06:08,160
+is you can just throw a bunch of stuff
+ 
+
+301
+00:06:08,160 --> 00:06:10,390
+is you can just throw a bunch of stuff
+at them and they will figure out what to
+
+302
+00:06:10,390 --> 00:06:10,400
+at them and they will figure out what to
+ 
+
+303
+00:06:10,400 --> 00:06:13,590
+at them and they will figure out what to
+do. And beyond that, um, you know,
+
+304
+00:06:13,590 --> 00:06:13,600
+do. And beyond that, um, you know,
+ 
+
+305
+00:06:13,600 --> 00:06:15,189
+do. And beyond that, um, you know,
+attackers have been very very creative
+
+306
+00:06:15,189 --> 00:06:15,199
+attackers have been very very creative
+ 
+
+307
+00:06:15,199 --> 00:06:18,070
+attackers have been very very creative
+in figuring out, uh, ways to sneak
+
+308
+00:06:18,070 --> 00:06:18,080
+in figuring out, uh, ways to sneak
+ 
+
+309
+00:06:18,080 --> 00:06:20,390
+in figuring out, uh, ways to sneak
+prompt injections into places you
+
+310
+00:06:20,390 --> 00:06:20,400
+prompt injections into places you
+ 
+
+311
+00:06:20,400 --> 00:06:21,909
+prompt injections into places you
+wouldn't think to look for untrusted
+
+312
+00:06:21,909 --> 00:06:21,919
+wouldn't think to look for untrusted
+ 
+
+313
+00:06:21,919 --> 00:06:25,189
+wouldn't think to look for untrusted
+content. Um, similarly, there's private
+
+314
+00:06:25,189 --> 00:06:25,199
+content. Um, similarly, there's private
+ 
+
+315
+00:06:25,199 --> 00:06:27,590
+content. Um, similarly, there's private
+data. And while there are totally many
+
+316
+00:06:27,590 --> 00:06:27,600
+data. And while there are totally many
+ 
+
+317
+00:06:27,600 --> 00:06:29,510
+data. And while there are totally many
+applications that don't need private
+
+318
+00:06:29,510 --> 00:06:29,520
+applications that don't need private
+ 
+
+319
+00:06:29,520 --> 00:06:32,550
+applications that don't need private
+data to work, uh there are a lot that
+
+320
+00:06:32,550 --> 00:06:32,560
+data to work, uh there are a lot that
+ 
+
+321
+00:06:32,560 --> 00:06:34,469
+data to work, uh there are a lot that
+do. And certainly at Stripe, we have a
+
+322
+00:06:34,469 --> 00:06:34,479
+do. And certainly at Stripe, we have a
+ 
+
+323
+00:06:34,479 --> 00:06:35,749
+do. And certainly at Stripe, we have a
+lot. You know, whether it's support
+
+324
+00:06:35,749 --> 00:06:35,759
+lot. You know, whether it's support
+ 
+
+325
+00:06:35,759 --> 00:06:39,110
+lot. You know, whether it's support
+tickets, emails, etc. Many, many agents
+
+326
+00:06:39,110 --> 00:06:39,120
+tickets, emails, etc. Many, many agents
+ 
+
+327
+00:06:39,120 --> 00:06:40,629
+tickets, emails, etc. Many, many agents
+need private data, which means that
+
+328
+00:06:40,629 --> 00:06:40,639
+need private data, which means that
+ 
+
+329
+00:06:40,639 --> 00:06:42,390
+need private data, which means that
+there's really only one leg of the
+
+330
+00:06:42,390 --> 00:06:42,400
+there's really only one leg of the
+ 
+
+331
+00:06:42,400 --> 00:06:45,830
+there's really only one leg of the
+lethal trifecta that we can focus on for
+
+332
+00:06:45,830 --> 00:06:45,840
+lethal trifecta that we can focus on for
+ 
+
+333
+00:06:45,840 --> 00:06:47,670
+lethal trifecta that we can focus on for
+um mitigating prompt injection risk,
+
+334
+00:06:47,670 --> 00:06:47,680
+um mitigating prompt injection risk,
+ 
+
+335
+00:06:47,680 --> 00:06:50,950
+um mitigating prompt injection risk,
+which is egress. So um our focus has
+
+336
+00:06:50,950 --> 00:06:50,960
+which is egress. So um our focus has
+ 
+
+337
+00:06:50,960 --> 00:06:53,189
+which is egress. So um our focus has
+been um from a guardrail perspective
+
+338
+00:06:53,189 --> 00:06:53,199
+been um from a guardrail perspective
+ 
+
+339
+00:06:53,199 --> 00:06:55,830
+been um from a guardrail perspective
+very much on preventing egress which one
+
+340
+00:06:55,830 --> 00:06:55,840
+very much on preventing egress which one
+ 
+
+341
+00:06:55,840 --> 00:06:57,990
+very much on preventing egress which one
+is egress to the public internet just
+
+342
+00:06:57,990 --> 00:06:58,000
+is egress to the public internet just
+ 
+
+343
+00:06:58,000 --> 00:07:00,070
+is egress to the public internet just
+making general web requests and then
+
+344
+00:07:00,070 --> 00:07:00,080
+making general web requests and then
+ 
+
+345
+00:07:00,080 --> 00:07:02,150
+making general web requests and then
+there's another sneaky one which is
+
+346
+00:07:02,150 --> 00:07:02,160
+there's another sneaky one which is
+ 
+
+347
+00:07:02,160 --> 00:07:04,150
+there's another sneaky one which is
+being really careful about how you talk
+
+348
+00:07:04,150 --> 00:07:04,160
+being really careful about how you talk
+ 
+
+349
+00:07:04,160 --> 00:07:06,469
+being really careful about how you talk
+to third parties. Um you know a very
+
+350
+00:07:06,469 --> 00:07:06,479
+to third parties. Um you know a very
+ 
+
+351
+00:07:06,479 --> 00:07:08,390
+to third parties. Um you know a very
+easy way to excfiltrate data would be
+
+352
+00:07:08,390 --> 00:07:08,400
+easy way to excfiltrate data would be
+ 
+
+353
+00:07:08,400 --> 00:07:10,150
+easy way to excfiltrate data would be
+writing it to a public Google doc with a
+
+354
+00:07:10,150 --> 00:07:10,160
+writing it to a public Google doc with a
+ 
+
+355
+00:07:10,160 --> 00:07:12,629
+writing it to a public Google doc with a
+Google doc tool. Um so that's guard
+
+356
+00:07:12,629 --> 00:07:12,639
+Google doc tool. Um so that's guard
+ 
+
+357
+00:07:12,639 --> 00:07:15,510
+Google doc tool. Um so that's guard
+wheel one preventing egress.
+
+358
+00:07:15,510 --> 00:07:15,520
+wheel one preventing egress.
+ 
+
+359
+00:07:15,520 --> 00:07:18,230
+wheel one preventing egress.
+Second, unfortunately, there isn't a uh
+
+360
+00:07:18,230 --> 00:07:18,240
+Second, unfortunately, there isn't a uh
+ 
+
+361
+00:07:18,240 --> 00:07:21,110
+Second, unfortunately, there isn't a uh
+you know term officially for uh the
+
+362
+00:07:21,110 --> 00:07:21,120
+you know term officially for uh the
+ 
+
+363
+00:07:21,120 --> 00:07:23,270
+you know term officially for uh the
+things that you need in order to have
+
+364
+00:07:23,270 --> 00:07:23,280
+things that you need in order to have
+ 
+
+365
+00:07:23,280 --> 00:07:25,749
+things that you need in order to have
+prompt injection um deal damage by
+
+366
+00:07:25,749 --> 00:07:25,759
+prompt injection um deal damage by
+ 
+
+367
+00:07:25,759 --> 00:07:28,469
+prompt injection um deal damage by
+taking a sensitive action. But I guess
+
+368
+00:07:28,469 --> 00:07:28,479
+taking a sensitive action. But I guess
+ 
+
+369
+00:07:28,479 --> 00:07:29,830
+taking a sensitive action. But I guess
+lacking something better, I will call
+
+370
+00:07:29,830 --> 00:07:29,840
+lacking something better, I will call
+ 
+
+371
+00:07:29,840 --> 00:07:32,710
+lacking something better, I will call
+this the lethal bifecta. Um and
+
+372
+00:07:32,710 --> 00:07:32,720
+this the lethal bifecta. Um and
+ 
+
+373
+00:07:32,720 --> 00:07:35,029
+this the lethal bifecta. Um and
+essentially we're in the same boat where
+
+374
+00:07:35,029 --> 00:07:35,039
+essentially we're in the same boat where
+ 
+
+375
+00:07:35,039 --> 00:07:39,029
+essentially we're in the same boat where
+um preventing untrusted content is not
+
+376
+00:07:39,029 --> 00:07:39,039
+um preventing untrusted content is not
+ 
+
+377
+00:07:39,039 --> 00:07:41,189
+um preventing untrusted content is not
+really that feasible for most agents. So
+
+378
+00:07:41,189 --> 00:07:41,199
+really that feasible for most agents. So
+ 
+
+379
+00:07:41,199 --> 00:07:44,230
+really that feasible for most agents. So
+instead um we focus on uh preventing
+
+380
+00:07:44,230 --> 00:07:44,240
+instead um we focus on uh preventing
+ 
+
+381
+00:07:44,240 --> 00:07:45,909
+instead um we focus on uh preventing
+agents from unilaterally taking
+
+382
+00:07:45,909 --> 00:07:45,919
+agents from unilaterally taking
+ 
+
+383
+00:07:45,919 --> 00:07:49,110
+agents from unilaterally taking
+sensitive actions. Um sensitive is very
+
+384
+00:07:49,110 --> 00:07:49,120
+sensitive actions. Um sensitive is very
+ 
+
+385
+00:07:49,120 --> 00:07:52,150
+sensitive actions. Um sensitive is very
+loadbearing here. Um generally the rule
+
+386
+00:07:52,150 --> 00:07:52,160
+loadbearing here. Um generally the rule
+ 
+
+387
+00:07:52,160 --> 00:07:53,670
+loadbearing here. Um generally the rule
+of thumb that I say is that anything
+
+388
+00:07:53,670 --> 00:07:53,680
+of thumb that I say is that anything
+ 
+
+389
+00:07:53,680 --> 00:07:55,990
+of thumb that I say is that anything
+that is a production right or exter like
+
+390
+00:07:55,990 --> 00:07:56,000
+that is a production right or exter like
+ 
+
+391
+00:07:56,000 --> 00:07:59,270
+that is a production right or exter like
+a um broad communication or or sending a
+
+392
+00:07:59,270 --> 00:07:59,280
+a um broad communication or or sending a
+ 
+
+393
+00:07:59,280 --> 00:08:01,589
+a um broad communication or or sending a
+message are the big things that we think
+
+394
+00:08:01,589 --> 00:08:01,599
+message are the big things that we think
+ 
+
+395
+00:08:01,599 --> 00:08:04,950
+message are the big things that we think
+of as as sensitive actions.
+
+396
+00:08:04,950 --> 00:08:04,960
+of as as sensitive actions.
+ 
+
+397
+00:08:04,960 --> 00:08:06,950
+of as as sensitive actions.
+So uh great problem solved. We have our
+
+398
+00:08:06,950 --> 00:08:06,960
+So uh great problem solved. We have our
+ 
+
+399
+00:08:06,960 --> 00:08:10,869
+So uh great problem solved. We have our
+guard rails. Um, unfortunately, um,
+
+400
+00:08:10,869 --> 00:08:10,879
+guard rails. Um, unfortunately, um,
+ 
+
+401
+00:08:10,879 --> 00:08:13,270
+guard rails. Um, unfortunately, um,
+these guardrails cause problems. Um,
+
+402
+00:08:13,270 --> 00:08:13,280
+these guardrails cause problems. Um,
+ 
+
+403
+00:08:13,280 --> 00:08:16,309
+these guardrails cause problems. Um,
+they cause agents to be less useful and
+
+404
+00:08:16,309 --> 00:08:16,319
+they cause agents to be less useful and
+ 
+
+405
+00:08:16,319 --> 00:08:17,990
+they cause agents to be less useful and
+worse, they cause agents to be very
+
+406
+00:08:17,990 --> 00:08:18,000
+worse, they cause agents to be very
+ 
+
+407
+00:08:18,000 --> 00:08:20,790
+worse, they cause agents to be very
+annoying. Um, I'm sure everyone here has
+
+408
+00:08:20,790 --> 00:08:20,800
+annoying. Um, I'm sure everyone here has
+ 
+
+409
+00:08:20,800 --> 00:08:23,189
+annoying. Um, I'm sure everyone here has
+had a very similar experience using
+
+410
+00:08:23,189 --> 00:08:23,199
+had a very similar experience using
+ 
+
+411
+00:08:23,199 --> 00:08:26,469
+had a very similar experience using
+claude code for the first time where um,
+
+412
+00:08:26,469 --> 00:08:26,479
+claude code for the first time where um,
+ 
+
+413
+00:08:26,479 --> 00:08:28,150
+claude code for the first time where um,
+you know, Claude is constantly asking,
+
+414
+00:08:28,150 --> 00:08:28,160
+you know, Claude is constantly asking,
+ 
+
+415
+00:08:28,160 --> 00:08:29,830
+you know, Claude is constantly asking,
+can I do this? Can I do this? Can I do
+
+416
+00:08:29,830 --> 00:08:29,840
+can I do this? Can I do this? Can I do
+ 
+
+417
+00:08:29,840 --> 00:08:31,589
+can I do this? Can I do this? Can I do
+this? And it really is a bad user
+
+418
+00:08:31,589 --> 00:08:31,599
+this? And it really is a bad user
+ 
+
+419
+00:08:31,599 --> 00:08:34,070
+this? And it really is a bad user
+experience. you just start trying to you
+
+420
+00:08:34,070 --> 00:08:34,080
+experience. you just start trying to you
+ 
+
+421
+00:08:34,080 --> 00:08:35,750
+experience. you just start trying to you
+know find where in the settings you can
+
+422
+00:08:35,750 --> 00:08:35,760
+know find where in the settings you can
+ 
+
+423
+00:08:35,760 --> 00:08:38,389
+know find where in the settings you can
+enable dangerously skip permissions. So
+
+424
+00:08:38,389 --> 00:08:38,399
+enable dangerously skip permissions. So
+ 
+
+425
+00:08:38,399 --> 00:08:40,469
+enable dangerously skip permissions. So
+we really need to address these pain
+
+426
+00:08:40,469 --> 00:08:40,479
+we really need to address these pain
+ 
+
+427
+00:08:40,479 --> 00:08:43,190
+we really need to address these pain
+points if we want um these guardrails to
+
+428
+00:08:43,190 --> 00:08:43,200
+points if we want um these guardrails to
+ 
+
+429
+00:08:43,200 --> 00:08:45,269
+points if we want um these guardrails to
+be adoptable.
+
+430
+00:08:45,269 --> 00:08:45,279
+be adoptable.
+ 
+
+431
+00:08:45,279 --> 00:08:48,470
+be adoptable.
+So let's start with egress controls. Um
+
+432
+00:08:48,470 --> 00:08:48,480
+So let's start with egress controls. Um
+ 
+
+433
+00:08:48,480 --> 00:08:49,990
+So let's start with egress controls. Um
+you know the common thing that I heard a
+
+434
+00:08:49,990 --> 00:08:50,000
+you know the common thing that I heard a
+ 
+
+435
+00:08:50,000 --> 00:08:51,269
+you know the common thing that I heard a
+lot of when I was like hey we need to
+
+436
+00:08:51,269 --> 00:08:51,279
+lot of when I was like hey we need to
+ 
+
+437
+00:08:51,279 --> 00:08:52,870
+lot of when I was like hey we need to
+make it so our agents can't egress to
+
+438
+00:08:52,870 --> 00:08:52,880
+make it so our agents can't egress to
+ 
+
+439
+00:08:52,880 --> 00:08:54,790
+make it so our agents can't egress to
+the public internet is like wait you
+
+440
+00:08:54,790 --> 00:08:54,800
+the public internet is like wait you
+ 
+
+441
+00:08:54,800 --> 00:08:56,150
+the public internet is like wait you
+know we need to be able to do research
+
+442
+00:08:56,150 --> 00:08:56,160
+know we need to be able to do research
+ 
+
+443
+00:08:56,160 --> 00:08:58,710
+know we need to be able to do research
+we need access to public internet data.
+
+444
+00:08:58,710 --> 00:08:58,720
+we need access to public internet data.
+ 
+
+445
+00:08:58,720 --> 00:09:00,470
+we need access to public internet data.
+Um the key thing here is that what these
+
+446
+00:09:00,470 --> 00:09:00,480
+Um the key thing here is that what these
+ 
+
+447
+00:09:00,480 --> 00:09:02,710
+Um the key thing here is that what these
+agents generally need is not the ability
+
+448
+00:09:02,710 --> 00:09:02,720
+agents generally need is not the ability
+ 
+
+449
+00:09:02,720 --> 00:09:05,350
+agents generally need is not the ability
+to make an arbitrary HTTP request. What
+
+450
+00:09:05,350 --> 00:09:05,360
+to make an arbitrary HTTP request. What
+ 
+
+451
+00:09:05,360 --> 00:09:06,790
+to make an arbitrary HTTP request. What
+they need is the ability to get data
+
+452
+00:09:06,790 --> 00:09:06,800
+they need is the ability to get data
+ 
+
+453
+00:09:06,800 --> 00:09:09,030
+they need is the ability to get data
+from the internet. So the solution that
+
+454
+00:09:09,030 --> 00:09:09,040
+from the internet. So the solution that
+ 
+
+455
+00:09:09,040 --> 00:09:11,430
+from the internet. So the solution that
+we came to here is to offer a safe
+
+456
+00:09:11,430 --> 00:09:11,440
+we came to here is to offer a safe
+ 
+
+457
+00:09:11,440 --> 00:09:14,230
+we came to here is to offer a safe
+search. Um we build this on OpenAI
+
+458
+00:09:14,230 --> 00:09:14,240
+search. Um we build this on OpenAI
+ 
+
+459
+00:09:14,240 --> 00:09:16,550
+search. Um we build this on OpenAI
+search. Um but you know there are other
+
+460
+00:09:16,550 --> 00:09:16,560
+search. Um but you know there are other
+ 
+
+461
+00:09:16,560 --> 00:09:19,030
+search. Um but you know there are other
+ways to do this. Um but the key thing
+
+462
+00:09:19,030 --> 00:09:19,040
+ways to do this. Um but the key thing
+ 
+
+463
+00:09:19,040 --> 00:09:20,710
+ways to do this. Um but the key thing
+here is you need to make it so that the
+
+464
+00:09:20,710 --> 00:09:20,720
+here is you need to make it so that the
+ 
+
+465
+00:09:20,720 --> 00:09:23,350
+here is you need to make it so that the
+search does not itself um trigger
+
+466
+00:09:23,350 --> 00:09:23,360
+search does not itself um trigger
+ 
+
+467
+00:09:23,360 --> 00:09:25,590
+search does not itself um trigger
+egress. So there's a setting in OpenAI
+
+468
+00:09:25,590 --> 00:09:25,600
+egress. So there's a setting in OpenAI
+ 
+
+469
+00:09:25,600 --> 00:09:28,389
+egress. So there's a setting in OpenAI
+web search uh external web access false
+
+470
+00:09:28,389 --> 00:09:28,399
+web search uh external web access false
+ 
+
+471
+00:09:28,399 --> 00:09:30,710
+web search uh external web access false
+that you set so that you can make a
+
+472
+00:09:30,710 --> 00:09:30,720
+that you set so that you can make a
+ 
+
+473
+00:09:30,720 --> 00:09:32,070
+that you set so that you can make a
+request for a search and it'll just
+
+474
+00:09:32,070 --> 00:09:32,080
+request for a search and it'll just
+ 
+
+475
+00:09:32,080 --> 00:09:33,670
+request for a search and it'll just
+serve results to you out of the cache
+
+476
+00:09:33,670 --> 00:09:33,680
+serve results to you out of the cache
+ 
+
+477
+00:09:33,680 --> 00:09:38,470
+serve results to you out of the cache
+and it won't um you know you prevent the
+
+478
+00:09:38,470 --> 00:09:38,480
+and it won't um you know you prevent the
+ 
+
+479
+00:09:38,480 --> 00:09:40,550
+and it won't um you know you prevent the
+uh data from being eressed by your agent
+
+480
+00:09:40,550 --> 00:09:40,560
+uh data from being eressed by your agent
+ 
+
+481
+00:09:40,560 --> 00:09:42,150
+uh data from being eressed by your agent
+and instead it just gets egressed by
+
+482
+00:09:42,150 --> 00:09:42,160
+and instead it just gets egressed by
+ 
+
+483
+00:09:42,160 --> 00:09:44,949
+and instead it just gets egressed by
+OpenAI. That's not like really making
+
+484
+00:09:44,949 --> 00:09:44,959
+OpenAI. That's not like really making
+ 
+
+485
+00:09:44,959 --> 00:09:47,110
+OpenAI. That's not like really making
+anything any safer.
+
+486
+00:09:47,110 --> 00:09:47,120
+anything any safer.
+ 
+
+487
+00:09:47,120 --> 00:09:51,110
+anything any safer.
+So second is um how you um handle SAS.
+
+488
+00:09:51,110 --> 00:09:51,120
+So second is um how you um handle SAS.
+ 
+
+489
+00:09:51,120 --> 00:09:52,710
+So second is um how you um handle SAS.
+So, you know, we say, "Hey, we have to
+
+490
+00:09:52,710 --> 00:09:52,720
+So, you know, we say, "Hey, we have to
+ 
+
+491
+00:09:52,720 --> 00:09:54,710
+So, you know, we say, "Hey, we have to
+be careful about egress." And then
+
+492
+00:09:54,710 --> 00:09:54,720
+be careful about egress." And then
+ 
+
+493
+00:09:54,720 --> 00:09:57,030
+be careful about egress." And then
+people are like, "Well, I have an MCP
+
+494
+00:09:57,030 --> 00:09:57,040
+people are like, "Well, I have an MCP
+ 
+
+495
+00:09:57,040 --> 00:09:59,269
+people are like, "Well, I have an MCP
+for my SAS app. Can't I just hook up the
+
+496
+00:09:59,269 --> 00:09:59,279
+for my SAS app. Can't I just hook up the
+ 
+
+497
+00:09:59,279 --> 00:10:01,750
+for my SAS app. Can't I just hook up the
+SA uh the MCP?" That's fine, right? We
+
+498
+00:10:01,750 --> 00:10:01,760
+SA uh the MCP?" That's fine, right? We
+ 
+
+499
+00:10:01,760 --> 00:10:05,750
+SA uh the MCP?" That's fine, right? We
+trust our SAS. And that's sort of true,
+
+500
+00:10:05,750 --> 00:10:05,760
+trust our SAS. And that's sort of true,
+ 
+
+501
+00:10:05,760 --> 00:10:09,110
+trust our SAS. And that's sort of true,
+but also sort of not true. Um the way
+
+502
+00:10:09,110 --> 00:10:09,120
+but also sort of not true. Um the way
+ 
+
+503
+00:10:09,120 --> 00:10:10,389
+but also sort of not true. Um the way
+that we have approached, you know,
+
+504
+00:10:10,389 --> 00:10:10,399
+that we have approached, you know,
+ 
+
+505
+00:10:10,399 --> 00:10:12,870
+that we have approached, you know,
+preventing um SAS from being a data
+
+506
+00:10:12,870 --> 00:10:12,880
+preventing um SAS from being a data
+ 
+
+507
+00:10:12,880 --> 00:10:15,350
+preventing um SAS from being a data
+exfiltration vector is through proxying.
+
+508
+00:10:15,350 --> 00:10:15,360
+exfiltration vector is through proxying.
+ 
+
+509
+00:10:15,360 --> 00:10:17,269
+exfiltration vector is through proxying.
+Um we have a central MCP server at
+
+510
+00:10:17,269 --> 00:10:17,279
+Um we have a central MCP server at
+ 
+
+511
+00:10:17,279 --> 00:10:19,590
+Um we have a central MCP server at
+Stripe called Toolshed. Basically when
+
+512
+00:10:19,590 --> 00:10:19,600
+Stripe called Toolshed. Basically when
+ 
+
+513
+00:10:19,600 --> 00:10:22,150
+Stripe called Toolshed. Basically when
+we want to hook up a uh thirdparty SAS
+
+514
+00:10:22,150 --> 00:10:22,160
+we want to hook up a uh thirdparty SAS
+ 
+
+515
+00:10:22,160 --> 00:10:24,550
+we want to hook up a uh thirdparty SAS
+we will uh proxy basically the
+
+516
+00:10:24,550 --> 00:10:24,560
+we will uh proxy basically the
+ 
+
+517
+00:10:24,560 --> 00:10:26,550
+we will uh proxy basically the
+connection through that central uh
+
+518
+00:10:26,550 --> 00:10:26,560
+connection through that central uh
+ 
+
+519
+00:10:26,560 --> 00:10:28,150
+connection through that central uh
+server and then that gives us a place
+
+520
+00:10:28,150 --> 00:10:28,160
+server and then that gives us a place
+ 
+
+521
+00:10:28,160 --> 00:10:30,550
+server and then that gives us a place
+where we can write rules like don't
+
+522
+00:10:30,550 --> 00:10:30,560
+where we can write rules like don't
+ 
+
+523
+00:10:30,560 --> 00:10:32,230
+where we can write rules like don't
+allow connections to tenants that are
+
+524
+00:10:32,230 --> 00:10:32,240
+allow connections to tenants that are
+ 
+
+525
+00:10:32,240 --> 00:10:35,509
+allow connections to tenants that are
+not stripe um when you're uh writing
+
+526
+00:10:35,509 --> 00:10:35,519
+not stripe um when you're uh writing
+ 
+
+527
+00:10:35,519 --> 00:10:37,990
+not stripe um when you're uh writing
+data to Google Docs or Figma or
+
+528
+00:10:37,990 --> 00:10:38,000
+data to Google Docs or Figma or
+ 
+
+529
+00:10:38,000 --> 00:10:39,910
+data to Google Docs or Figma or
+whatever. Um and ultimately this
+
+530
+00:10:39,910 --> 00:10:39,920
+whatever. Um and ultimately this
+ 
+
+531
+00:10:39,920 --> 00:10:41,350
+whatever. Um and ultimately this
+actually offers a better experience for
+
+532
+00:10:41,350 --> 00:10:41,360
+actually offers a better experience for
+ 
+
+533
+00:10:41,360 --> 00:10:42,550
+actually offers a better experience for
+the user because then they only need to
+
+534
+00:10:42,550 --> 00:10:42,560
+the user because then they only need to
+ 
+
+535
+00:10:42,560 --> 00:10:44,230
+the user because then they only need to
+worry about connecting to one MCP server
+
+536
+00:10:44,230 --> 00:10:44,240
+worry about connecting to one MCP server
+ 
+
+537
+00:10:44,240 --> 00:10:47,110
+worry about connecting to one MCP server
+with their app. Um
+
+538
+00:10:47,110 --> 00:10:47,120
+with their app. Um
+ 
+
+539
+00:10:47,120 --> 00:10:49,670
+with their app. Um
+and so second we have uh the human
+
+540
+00:10:49,670 --> 00:10:49,680
+and so second we have uh the human
+ 
+
+541
+00:10:49,680 --> 00:10:52,710
+and so second we have uh the human
+confirmation friction. Um this is an
+
+542
+00:10:52,710 --> 00:10:52,720
+confirmation friction. Um this is an
+ 
+
+543
+00:10:52,720 --> 00:10:55,590
+confirmation friction. Um this is an
+area I think that there really needs to
+
+544
+00:10:55,590 --> 00:10:55,600
+area I think that there really needs to
+ 
+
+545
+00:10:55,600 --> 00:10:57,750
+area I think that there really needs to
+be a lot more user experience uh
+
+546
+00:10:57,750 --> 00:10:57,760
+be a lot more user experience uh
+ 
+
+547
+00:10:57,760 --> 00:10:59,990
+be a lot more user experience uh
+research. But at a high level I think of
+
+548
+00:10:59,990 --> 00:11:00,000
+research. But at a high level I think of
+ 
+
+549
+00:11:00,000 --> 00:11:02,949
+research. But at a high level I think of
+there being like three main problems um
+
+550
+00:11:02,949 --> 00:11:02,959
+there being like three main problems um
+ 
+
+551
+00:11:02,959 --> 00:11:05,190
+there being like three main problems um
+when you're doing human confirmation
+
+552
+00:11:05,190 --> 00:11:05,200
+when you're doing human confirmation
+ 
+
+553
+00:11:05,200 --> 00:11:07,350
+when you're doing human confirmation
+flow. One is that like especially in
+
+554
+00:11:07,350 --> 00:11:07,360
+flow. One is that like especially in
+ 
+
+555
+00:11:07,360 --> 00:11:10,230
+flow. One is that like especially in
+this sort of claude code umesque world
+
+556
+00:11:10,230 --> 00:11:10,240
+this sort of claude code umesque world
+ 
+
+557
+00:11:10,240 --> 00:11:11,829
+this sort of claude code umesque world
+that we are in now, the fact that the
+
+558
+00:11:11,829 --> 00:11:11,839
+that we are in now, the fact that the
+ 
+
+559
+00:11:11,839 --> 00:11:13,829
+that we are in now, the fact that the
+confirmation dialogue stops the agent in
+
+560
+00:11:13,829 --> 00:11:13,839
+confirmation dialogue stops the agent in
+ 
+
+561
+00:11:13,839 --> 00:11:15,670
+confirmation dialogue stops the agent in
+its tracks is a major problem. You
+
+562
+00:11:15,670 --> 00:11:15,680
+its tracks is a major problem. You
+ 
+
+563
+00:11:15,680 --> 00:11:17,350
+its tracks is a major problem. You
+really want to be able to start an agent
+
+564
+00:11:17,350 --> 00:11:17,360
+really want to be able to start an agent
+ 
+
+565
+00:11:17,360 --> 00:11:19,269
+really want to be able to start an agent
+doing its work and let it you know churn
+
+566
+00:11:19,269 --> 00:11:19,279
+doing its work and let it you know churn
+ 
+
+567
+00:11:19,279 --> 00:11:21,430
+doing its work and let it you know churn
+along until it's done and then come back
+
+568
+00:11:21,430 --> 00:11:21,440
+along until it's done and then come back
+ 
+
+569
+00:11:21,440 --> 00:11:24,550
+along until it's done and then come back
+to it. Um second is review fatigue. You
+
+570
+00:11:24,550 --> 00:11:24,560
+to it. Um second is review fatigue. You
+ 
+
+571
+00:11:24,560 --> 00:11:27,430
+to it. Um second is review fatigue. You
+know see claude code asking you to run
+
+572
+00:11:27,430 --> 00:11:27,440
+know see claude code asking you to run
+ 
+
+573
+00:11:27,440 --> 00:11:30,470
+know see claude code asking you to run
+find. Um and uh third is rubber
+
+574
+00:11:30,470 --> 00:11:30,480
+find. Um and uh third is rubber
+ 
+
+575
+00:11:30,480 --> 00:11:32,069
+find. Um and uh third is rubber
+stamping. you know, with enough review
+
+576
+00:11:32,069 --> 00:11:32,079
+stamping. you know, with enough review
+ 
+
+577
+00:11:32,079 --> 00:11:33,910
+stamping. you know, with enough review
+fatigue, people are just going to mash
+
+578
+00:11:33,910 --> 00:11:33,920
+fatigue, people are just going to mash
+ 
+
+579
+00:11:33,920 --> 00:11:37,750
+fatigue, people are just going to mash
+confirm on any confirmation dialogues.
+
+580
+00:11:37,750 --> 00:11:37,760
+confirm on any confirmation dialogues.
+ 
+
+581
+00:11:37,760 --> 00:11:39,590
+confirm on any confirmation dialogues.
+So, as we've been looking at the UX for
+
+582
+00:11:39,590 --> 00:11:39,600
+So, as we've been looking at the UX for
+ 
+
+583
+00:11:39,600 --> 00:11:41,990
+So, as we've been looking at the UX for
+this, I think that um probably the core
+
+584
+00:11:41,990 --> 00:11:42,000
+this, I think that um probably the core
+ 
+
+585
+00:11:42,000 --> 00:11:43,750
+this, I think that um probably the core
+of how we can make this a lot better for
+
+586
+00:11:43,750 --> 00:11:43,760
+of how we can make this a lot better for
+ 
+
+587
+00:11:43,760 --> 00:11:45,990
+of how we can make this a lot better for
+users is batching confirmations. Um
+
+588
+00:11:45,990 --> 00:11:46,000
+users is batching confirmations. Um
+ 
+
+589
+00:11:46,000 --> 00:11:47,509
+users is batching confirmations. Um
+there are a lot of like writes and
+
+590
+00:11:47,509 --> 00:11:47,519
+there are a lot of like writes and
+ 
+
+591
+00:11:47,519 --> 00:11:48,949
+there are a lot of like writes and
+commands that you might want to do that
+
+592
+00:11:48,949 --> 00:11:48,959
+commands that you might want to do that
+ 
+
+593
+00:11:48,959 --> 00:11:50,790
+commands that you might want to do that
+don't really actually need to happen
+
+594
+00:11:50,790 --> 00:11:50,800
+don't really actually need to happen
+ 
+
+595
+00:11:50,800 --> 00:11:53,110
+don't really actually need to happen
+instantaneously for the agent to
+
+596
+00:11:53,110 --> 00:11:53,120
+instantaneously for the agent to
+ 
+
+597
+00:11:53,120 --> 00:11:55,110
+instantaneously for the agent to
+continue making for forward progress.
+
+598
+00:11:55,110 --> 00:11:55,120
+continue making for forward progress.
+ 
+
+599
+00:11:55,120 --> 00:11:56,790
+continue making for forward progress.
+So, we can just let these stack up on
+
+600
+00:11:56,790 --> 00:11:56,800
+So, we can just let these stack up on
+ 
+
+601
+00:11:56,800 --> 00:11:59,110
+So, we can just let these stack up on
+the side and let the user come back to
+
+602
+00:11:59,110 --> 00:11:59,120
+the side and let the user come back to
+ 
+
+603
+00:11:59,120 --> 00:12:00,870
+the side and let the user come back to
+these later.
+
+604
+00:12:00,870 --> 00:12:00,880
+these later.
+ 
+
+605
+00:12:00,880 --> 00:12:03,030
+these later.
+Um secondly, there are a lot of uh
+
+606
+00:12:03,030 --> 00:12:03,040
+Um secondly, there are a lot of uh
+ 
+
+607
+00:12:03,040 --> 00:12:05,190
+Um secondly, there are a lot of uh
+rights where you can just do the right
+
+608
+00:12:05,190 --> 00:12:05,200
+rights where you can just do the right
+ 
+
+609
+00:12:05,200 --> 00:12:07,590
+rights where you can just do the right
+and then offer the user the opportunity
+
+610
+00:12:07,590 --> 00:12:07,600
+and then offer the user the opportunity
+ 
+
+611
+00:12:07,600 --> 00:12:09,509
+and then offer the user the opportunity
+to revert it later and that's like a
+
+612
+00:12:09,509 --> 00:12:09,519
+to revert it later and that's like a
+ 
+
+613
+00:12:09,519 --> 00:12:12,389
+to revert it later and that's like a
+perfectly reasonable uh compromise to
+
+614
+00:12:12,389 --> 00:12:12,399
+perfectly reasonable uh compromise to
+ 
+
+615
+00:12:12,399 --> 00:12:14,790
+perfectly reasonable uh compromise to
+make sure that the agent can't um you
+
+616
+00:12:14,790 --> 00:12:14,800
+make sure that the agent can't um you
+ 
+
+617
+00:12:14,800 --> 00:12:17,829
+make sure that the agent can't um you
+know do some irreversible harm. Um and
+
+618
+00:12:17,829 --> 00:12:17,839
+know do some irreversible harm. Um and
+ 
+
+619
+00:12:17,839 --> 00:12:21,269
+know do some irreversible harm. Um and
+then also as we um sort of continue to
+
+620
+00:12:21,269 --> 00:12:21,279
+then also as we um sort of continue to
+ 
+
+621
+00:12:21,279 --> 00:12:24,310
+then also as we um sort of continue to
+get into um you know more sophisticated
+
+622
+00:12:24,310 --> 00:12:24,320
+get into um you know more sophisticated
+ 
+
+623
+00:12:24,320 --> 00:12:26,150
+get into um you know more sophisticated
+policy there are a lot of options around
+
+624
+00:12:26,150 --> 00:12:26,160
+policy there are a lot of options around
+ 
+
+625
+00:12:26,160 --> 00:12:28,150
+policy there are a lot of options around
+having an LLM as a second reviewer to
+
+626
+00:12:28,150 --> 00:12:28,160
+having an LLM as a second reviewer to
+ 
+
+627
+00:12:28,160 --> 00:12:29,590
+having an LLM as a second reviewer to
+make sure that people aren't rubber
+
+628
+00:12:29,590 --> 00:12:29,600
+make sure that people aren't rubber
+ 
+
+629
+00:12:29,600 --> 00:12:32,550
+make sure that people aren't rubber
+stamping things to you know uh uh
+
+630
+00:12:32,550 --> 00:12:32,560
+stamping things to you know uh uh
+ 
+
+631
+00:12:32,560 --> 00:12:34,310
+stamping things to you know uh uh
+quickly tell the agent that it's trying
+
+632
+00:12:34,310 --> 00:12:34,320
+quickly tell the agent that it's trying
+ 
+
+633
+00:12:34,320 --> 00:12:37,590
+quickly tell the agent that it's trying
+to do something bad um you know uh uh
+
+634
+00:12:37,590 --> 00:12:37,600
+to do something bad um you know uh uh
+ 
+
+635
+00:12:37,600 --> 00:12:40,949
+to do something bad um you know uh uh
+without needing to involve the human.
+
+636
+00:12:40,949 --> 00:12:40,959
+without needing to involve the human.
+ 
+
+637
+00:12:40,959 --> 00:12:43,030
+without needing to involve the human.
+So lastly, how do we enforce this all?
+
+638
+00:12:43,030 --> 00:12:43,040
+So lastly, how do we enforce this all?
+ 
+
+639
+00:12:43,040 --> 00:12:44,629
+So lastly, how do we enforce this all?
+This is like very challenging when you
+
+640
+00:12:44,629 --> 00:12:44,639
+This is like very challenging when you
+ 
+
+641
+00:12:44,639 --> 00:12:47,509
+This is like very challenging when you
+have many many people um writing agents
+
+642
+00:12:47,509 --> 00:12:47,519
+have many many people um writing agents
+ 
+
+643
+00:12:47,519 --> 00:12:51,030
+have many many people um writing agents
+in uh different frameworks um across um
+
+644
+00:12:51,030 --> 00:12:51,040
+in uh different frameworks um across um
+ 
+
+645
+00:12:51,040 --> 00:12:52,949
+in uh different frameworks um across um
+your ecosystem.
+
+646
+00:12:52,949 --> 00:12:52,959
+your ecosystem.
+ 
+
+647
+00:12:52,959 --> 00:12:55,829
+your ecosystem.
+Um for egress uh fortunately we're in
+
+648
+00:12:55,829 --> 00:12:55,839
+Um for egress uh fortunately we're in
+ 
+
+649
+00:12:55,839 --> 00:12:57,509
+Um for egress uh fortunately we're in
+really good shape here at Stripe because
+
+650
+00:12:57,509 --> 00:12:57,519
+really good shape here at Stripe because
+ 
+
+651
+00:12:57,519 --> 00:12:59,509
+really good shape here at Stripe because
+we have a strong egress control program
+
+652
+00:12:59,509 --> 00:12:59,519
+we have a strong egress control program
+ 
+
+653
+00:12:59,519 --> 00:13:01,509
+we have a strong egress control program
+that predated sort of the world of AI
+
+654
+00:13:01,509 --> 00:13:01,519
+that predated sort of the world of AI
+ 
+
+655
+00:13:01,519 --> 00:13:03,509
+that predated sort of the world of AI
+agents. We have a uh open source
+
+656
+00:13:03,509 --> 00:13:03,519
+agents. We have a uh open source
+ 
+
+657
+00:13:03,519 --> 00:13:05,190
+agents. We have a uh open source
+repository called smokeokescreen that we
+
+658
+00:13:05,190 --> 00:13:05,200
+repository called smokeokescreen that we
+ 
+
+659
+00:13:05,200 --> 00:13:07,030
+repository called smokeokescreen that we
+use for a lot of this. Uh essentially
+
+660
+00:13:07,030 --> 00:13:07,040
+use for a lot of this. Uh essentially
+ 
+
+661
+00:13:07,040 --> 00:13:09,750
+use for a lot of this. Uh essentially
+the approach here is one tag any service
+
+662
+00:13:09,750 --> 00:13:09,760
+the approach here is one tag any service
+ 
+
+663
+00:13:09,760 --> 00:13:11,990
+the approach here is one tag any service
+that is an AI agent. This is actually
+
+664
+00:13:11,990 --> 00:13:12,000
+that is an AI agent. This is actually
+ 
+
+665
+00:13:12,000 --> 00:13:14,470
+that is an AI agent. This is actually
+not very hard because we know that to be
+
+666
+00:13:14,470 --> 00:13:14,480
+not very hard because we know that to be
+ 
+
+667
+00:13:14,480 --> 00:13:16,150
+not very hard because we know that to be
+an agent, you need to talk to foundation
+
+668
+00:13:16,150 --> 00:13:16,160
+an agent, you need to talk to foundation
+ 
+
+669
+00:13:16,160 --> 00:13:18,069
+an agent, you need to talk to foundation
+models. We have a proxy for this, but
+
+670
+00:13:18,069 --> 00:13:18,079
+models. We have a proxy for this, but
+ 
+
+671
+00:13:18,079 --> 00:13:20,310
+models. We have a proxy for this, but
+you could use, you know, whether your
+
+672
+00:13:20,310 --> 00:13:20,320
+you could use, you know, whether your
+ 
+
+673
+00:13:20,320 --> 00:13:22,150
+you could use, you know, whether your
+service talks to bedrock or whatever as
+
+674
+00:13:22,150 --> 00:13:22,160
+service talks to bedrock or whatever as
+ 
+
+675
+00:13:22,160 --> 00:13:23,910
+service talks to bedrock or whatever as
+a way of doing this. And then once you
+
+676
+00:13:23,910 --> 00:13:23,920
+a way of doing this. And then once you
+ 
+
+677
+00:13:23,920 --> 00:13:26,550
+a way of doing this. And then once you
+have uh a tag on the services that are
+
+678
+00:13:26,550 --> 00:13:26,560
+have uh a tag on the services that are
+ 
+
+679
+00:13:26,560 --> 00:13:29,670
+have uh a tag on the services that are
+agents, you know where your egress proxy
+
+680
+00:13:29,670 --> 00:13:29,680
+agents, you know where your egress proxy
+ 
+
+681
+00:13:29,680 --> 00:13:32,389
+agents, you know where your egress proxy
+serve uh service is or you know how your
+
+682
+00:13:32,389 --> 00:13:32,399
+serve uh service is or you know how your
+ 
+
+683
+00:13:32,399 --> 00:13:34,310
+serve uh service is or you know how your
+firewall is con uh figured, you can just
+
+684
+00:13:34,310 --> 00:13:34,320
+firewall is con uh figured, you can just
+ 
+
+685
+00:13:34,320 --> 00:13:36,550
+firewall is con uh figured, you can just
+write CI checks that say if this is an
+
+686
+00:13:36,550 --> 00:13:36,560
+write CI checks that say if this is an
+ 
+
+687
+00:13:36,560 --> 00:13:39,750
+write CI checks that say if this is an
+agent, you can't configure uh egress
+
+688
+00:13:39,750 --> 00:13:39,760
+agent, you can't configure uh egress
+ 
+
+689
+00:13:39,760 --> 00:13:42,310
+agent, you can't configure uh egress
+without some you know escalated uh uh
+
+690
+00:13:42,310 --> 00:13:42,320
+without some you know escalated uh uh
+ 
+
+691
+00:13:42,320 --> 00:13:43,750
+without some you know escalated uh uh
+review process to make sure it's
+
+692
+00:13:43,750 --> 00:13:43,760
+review process to make sure it's
+ 
+
+693
+00:13:43,760 --> 00:13:46,710
+review process to make sure it's
+following um sort of the principles of
+
+694
+00:13:46,710 --> 00:13:46,720
+following um sort of the principles of
+ 
+
+695
+00:13:46,720 --> 00:13:48,629
+following um sort of the principles of
+uh um you know preventing data
+
+696
+00:13:48,629 --> 00:13:48,639
+uh um you know preventing data
+ 
+
+697
+00:13:48,639 --> 00:13:49,910
+uh um you know preventing data
+exfiltration. So that's essentially what
+
+698
+00:13:49,910 --> 00:13:49,920
+exfiltration. So that's essentially what
+ 
+
+699
+00:13:49,920 --> 00:13:52,310
+exfiltration. So that's essentially what
+we do at Stripe.
+
+700
+00:13:52,310 --> 00:13:52,320
+we do at Stripe.
+ 
+
+701
+00:13:52,320 --> 00:13:53,829
+we do at Stripe.
+So for guardrails things are a little
+
+702
+00:13:53,829 --> 00:13:53,839
+So for guardrails things are a little
+ 
+
+703
+00:13:53,839 --> 00:13:56,870
+So for guardrails things are a little
+bit more complicated. Um at Stripe we
+
+704
+00:13:56,870 --> 00:13:56,880
+bit more complicated. Um at Stripe we
+ 
+
+705
+00:13:56,880 --> 00:13:58,389
+bit more complicated. Um at Stripe we
+have sort of two main places that people
+
+706
+00:13:58,389 --> 00:13:58,399
+have sort of two main places that people
+ 
+
+707
+00:13:58,399 --> 00:14:00,470
+have sort of two main places that people
+are writing tools. Um either you're
+
+708
+00:14:00,470 --> 00:14:00,480
+are writing tools. Um either you're
+ 
+
+709
+00:14:00,480 --> 00:14:01,990
+are writing tools. Um either you're
+writing inline tools in the agent
+
+710
+00:14:01,990 --> 00:14:02,000
+writing inline tools in the agent
+ 
+
+711
+00:14:02,000 --> 00:14:03,350
+writing inline tools in the agent
+framework or you're writing tools that
+
+712
+00:14:03,350 --> 00:14:03,360
+framework or you're writing tools that
+ 
+
+713
+00:14:03,360 --> 00:14:06,069
+framework or you're writing tools that
+are in our central MCP service. And our
+
+714
+00:14:06,069 --> 00:14:06,079
+are in our central MCP service. And our
+ 
+
+715
+00:14:06,079 --> 00:14:07,509
+are in our central MCP service. And our
+approach here is that we require
+
+716
+00:14:07,509 --> 00:14:07,519
+approach here is that we require
+ 
+
+717
+00:14:07,519 --> 00:14:09,829
+approach here is that we require
+annotations on every tool with you know
+
+718
+00:14:09,829 --> 00:14:09,839
+annotations on every tool with you know
+ 
+
+719
+00:14:09,839 --> 00:14:11,670
+annotations on every tool with you know
+nice human readable properties like
+
+720
+00:14:11,670 --> 00:14:11,680
+nice human readable properties like
+ 
+
+721
+00:14:11,680 --> 00:14:14,230
+nice human readable properties like
+production impacting write or broadcast
+
+722
+00:14:14,230 --> 00:14:14,240
+production impacting write or broadcast
+ 
+
+723
+00:14:14,240 --> 00:14:16,230
+production impacting write or broadcast
+uh data internally. And then based on
+
+724
+00:14:16,230 --> 00:14:16,240
+uh data internally. And then based on
+ 
+
+725
+00:14:16,240 --> 00:14:17,829
+uh data internally. And then based on
+these annotations you can determine
+
+726
+00:14:17,829 --> 00:14:17,839
+these annotations you can determine
+ 
+
+727
+00:14:17,839 --> 00:14:19,910
+these annotations you can determine
+whether the tool needs to have some sort
+
+728
+00:14:19,910 --> 00:14:19,920
+whether the tool needs to have some sort
+ 
+
+729
+00:14:19,920 --> 00:14:22,470
+whether the tool needs to have some sort
+of human in the loop review. And by sort
+
+730
+00:14:22,470 --> 00:14:22,480
+of human in the loop review. And by sort
+ 
+
+731
+00:14:22,480 --> 00:14:23,670
+of human in the loop review. And by sort
+of centralizing this through a
+
+732
+00:14:23,670 --> 00:14:23,680
+of centralizing this through a
+ 
+
+733
+00:14:23,680 --> 00:14:26,870
+of centralizing this through a
+framework, you can have a central uh um
+
+734
+00:14:26,870 --> 00:14:26,880
+framework, you can have a central uh um
+ 
+
+735
+00:14:26,880 --> 00:14:30,150
+framework, you can have a central uh um
+UX framework that is used for um you
+
+736
+00:14:30,150 --> 00:14:30,160
+UX framework that is used for um you
+ 
+
+737
+00:14:30,160 --> 00:14:32,069
+UX framework that is used for um you
+know doing those reviews and sort of
+
+738
+00:14:32,069 --> 00:14:32,079
+know doing those reviews and sort of
+ 
+
+739
+00:14:32,079 --> 00:14:33,670
+know doing those reviews and sort of
+improving the experience on it over
+
+740
+00:14:33,670 --> 00:14:33,680
+improving the experience on it over
+ 
+
+741
+00:14:33,680 --> 00:14:36,389
+improving the experience on it over
+time. Um things are getting more
+
+742
+00:14:36,389 --> 00:14:36,399
+time. Um things are getting more
+ 
+
+743
+00:14:36,399 --> 00:14:38,790
+time. Um things are getting more
+complicated here though because um you
+
+744
+00:14:38,790 --> 00:14:38,800
+complicated here though because um you
+ 
+
+745
+00:14:38,800 --> 00:14:40,230
+complicated here though because um you
+know I I've heard it said by certain
+
+746
+00:14:40,230 --> 00:14:40,240
+know I I've heard it said by certain
+ 
+
+747
+00:14:40,240 --> 00:14:42,949
+know I I've heard it said by certain
+people that MCP is dead. Maybe not true,
+
+748
+00:14:42,949 --> 00:14:42,959
+people that MCP is dead. Maybe not true,
+ 
+
+749
+00:14:42,959 --> 00:14:45,590
+people that MCP is dead. Maybe not true,
+but increasingly agents don't need
+
+750
+00:14:45,590 --> 00:14:45,600
+but increasingly agents don't need
+ 
+
+751
+00:14:45,600 --> 00:14:47,269
+but increasingly agents don't need
+special tools. they'll just write their
+
+752
+00:14:47,269 --> 00:14:47,279
+special tools. they'll just write their
+ 
+
+753
+00:14:47,279 --> 00:14:49,990
+special tools. they'll just write their
+own co code and hit their own um you
+
+754
+00:14:49,990 --> 00:14:50,000
+own co code and hit their own um you
+ 
+
+755
+00:14:50,000 --> 00:14:52,790
+own co code and hit their own um you
+know hit random uh uh APIs on your
+
+756
+00:14:52,790 --> 00:14:52,800
+know hit random uh uh APIs on your
+ 
+
+757
+00:14:52,800 --> 00:14:54,150
+know hit random uh uh APIs on your
+existing services. So what do we do
+
+758
+00:14:54,150 --> 00:14:54,160
+existing services. So what do we do
+ 
+
+759
+00:14:54,160 --> 00:14:56,629
+existing services. So what do we do
+here? Um this is like work that is in
+
+760
+00:14:56,629 --> 00:14:56,639
+here? Um this is like work that is in
+ 
+
+761
+00:14:56,639 --> 00:14:58,069
+here? Um this is like work that is in
+progress right now. of the approach that
+
+762
+00:14:58,069 --> 00:14:58,079
+progress right now. of the approach that
+ 
+
+763
+00:14:58,079 --> 00:15:00,150
+progress right now. of the approach that
+we're looking at here is essentially
+
+764
+00:15:00,150 --> 00:15:00,160
+we're looking at here is essentially
+ 
+
+765
+00:15:00,160 --> 00:15:02,470
+we're looking at here is essentially
+proxying the connections coming out of
+
+766
+00:15:02,470 --> 00:15:02,480
+proxying the connections coming out of
+ 
+
+767
+00:15:02,480 --> 00:15:04,710
+proxying the connections coming out of
+agents out of their sandboxes and then
+
+768
+00:15:04,710 --> 00:15:04,720
+agents out of their sandboxes and then
+ 
+
+769
+00:15:04,720 --> 00:15:06,389
+agents out of their sandboxes and then
+using that as a choke point where you
+
+770
+00:15:06,389 --> 00:15:06,399
+using that as a choke point where you
+ 
+
+771
+00:15:06,399 --> 00:15:08,550
+using that as a choke point where you
+can similarly have annotations on the
+
+772
+00:15:08,550 --> 00:15:08,560
+can similarly have annotations on the
+ 
+
+773
+00:15:08,560 --> 00:15:11,430
+can similarly have annotations on the
+API endpoints that the um agents are
+
+774
+00:15:11,430 --> 00:15:11,440
+API endpoints that the um agents are
+ 
+
+775
+00:15:11,440 --> 00:15:13,350
+API endpoints that the um agents are
+talking to and determine which ones are
+
+776
+00:15:13,350 --> 00:15:13,360
+talking to and determine which ones are
+ 
+
+777
+00:15:13,360 --> 00:15:16,389
+talking to and determine which ones are
+sensitive which ones need um additional
+
+778
+00:15:16,389 --> 00:15:16,399
+sensitive which ones need um additional
+ 
+
+779
+00:15:16,399 --> 00:15:20,470
+sensitive which ones need um additional
+uh uh review by the the operator.
+
+780
+00:15:20,470 --> 00:15:20,480
+uh uh review by the the operator.
+ 
+
+781
+00:15:20,480 --> 00:15:23,189
+uh uh review by the the operator.
+So yeah to to wrap up um we basically
+
+782
+00:15:23,189 --> 00:15:23,199
+So yeah to to wrap up um we basically
+ 
+
+783
+00:15:23,199 --> 00:15:24,790
+So yeah to to wrap up um we basically
+derisk prompt injection by assuming it
+
+784
+00:15:24,790 --> 00:15:24,800
+derisk prompt injection by assuming it
+ 
+
+785
+00:15:24,800 --> 00:15:26,870
+derisk prompt injection by assuming it
+will happen and preventing damage. Um
+
+786
+00:15:26,870 --> 00:15:26,880
+will happen and preventing damage. Um
+ 
+
+787
+00:15:26,880 --> 00:15:28,710
+will happen and preventing damage. Um
+you know two risks data exfiltration and
+
+788
+00:15:28,710 --> 00:15:28,720
+you know two risks data exfiltration and
+ 
+
+789
+00:15:28,720 --> 00:15:31,189
+you know two risks data exfiltration and
+harmful actions. Data excfiltration the
+
+790
+00:15:31,189 --> 00:15:31,199
+harmful actions. Data excfiltration the
+ 
+
+791
+00:15:31,199 --> 00:15:33,670
+harmful actions. Data excfiltration the
+key control is preventing egress and
+
+792
+00:15:33,670 --> 00:15:33,680
+key control is preventing egress and
+ 
+
+793
+00:15:33,680 --> 00:15:36,310
+key control is preventing egress and
+making sure that sna SAS isn't a sneaky
+
+794
+00:15:36,310 --> 00:15:36,320
+making sure that sna SAS isn't a sneaky
+ 
+
+795
+00:15:36,320 --> 00:15:38,870
+making sure that sna SAS isn't a sneaky
+way to do egress. Um we solve pain
+
+796
+00:15:38,870 --> 00:15:38,880
+way to do egress. Um we solve pain
+ 
+
+797
+00:15:38,880 --> 00:15:41,430
+way to do egress. Um we solve pain
+points here with uh safe web search and
+
+798
+00:15:41,430 --> 00:15:41,440
+points here with uh safe web search and
+ 
+
+799
+00:15:41,440 --> 00:15:45,829
+points here with uh safe web search and
+proxying of SAS. Um and we use CI time
+
+800
+00:15:45,829 --> 00:15:45,839
+proxying of SAS. Um and we use CI time
+ 
+
+801
+00:15:45,839 --> 00:15:47,509
+proxying of SAS. Um and we use CI time
+controls on egress settings as our
+
+802
+00:15:47,509 --> 00:15:47,519
+controls on egress settings as our
+ 
+
+803
+00:15:47,519 --> 00:15:49,910
+controls on egress settings as our
+enforcement mechanism for preventing
+
+804
+00:15:49,910 --> 00:15:49,920
+enforcement mechanism for preventing
+ 
+
+805
+00:15:49,920 --> 00:15:52,150
+enforcement mechanism for preventing
+harmful actions. Human review is the key
+
+806
+00:15:52,150 --> 00:15:52,160
+harmful actions. Human review is the key
+ 
+
+807
+00:15:52,160 --> 00:15:55,670
+harmful actions. Human review is the key
+constraint. Um we use annotations in
+
+808
+00:15:55,670 --> 00:15:55,680
+constraint. Um we use annotations in
+ 
+
+809
+00:15:55,680 --> 00:15:58,389
+constraint. Um we use annotations in
+order to ensure things have human review
+
+810
+00:15:58,389 --> 00:15:58,399
+order to ensure things have human review
+ 
+
+811
+00:15:58,399 --> 00:16:00,150
+order to ensure things have human review
+um and trigger automatic human in the
+
+812
+00:16:00,150 --> 00:16:00,160
+um and trigger automatic human in the
+ 
+
+813
+00:16:00,160 --> 00:16:02,389
+um and trigger automatic human in the
+loop. But we need to work hard to ensure
+
+814
+00:16:02,389 --> 00:16:02,399
+loop. But we need to work hard to ensure
+ 
+
+815
+00:16:02,399 --> 00:16:04,870
+loop. But we need to work hard to ensure
+that the user experience of the human uh
+
+816
+00:16:04,870 --> 00:16:04,880
+that the user experience of the human uh
+ 
+
+817
+00:16:04,880 --> 00:16:07,509
+that the user experience of the human uh
+in the loop flow is good and things like
+
+818
+00:16:07,509 --> 00:16:07,519
+in the loop flow is good and things like
+ 
+
+819
+00:16:07,519 --> 00:16:11,910
+in the loop flow is good and things like
+batching, reverts um you know software
+
+820
+00:16:11,910 --> 00:16:11,920
+batching, reverts um you know software
+ 
+
+821
+00:16:11,920 --> 00:16:15,030
+batching, reverts um you know software
+and LLM driven uh um checks that can
+
+822
+00:16:15,030 --> 00:16:15,040
+and LLM driven uh um checks that can
+ 
+
+823
+00:16:15,040 --> 00:16:16,629
+and LLM driven uh um checks that can
+happen without uh the human being
+
+824
+00:16:16,629 --> 00:16:16,639
+happen without uh the human being
+ 
+
+825
+00:16:16,639 --> 00:16:19,269
+happen without uh the human being
+involved all can be applied to make this
+
+826
+00:16:19,269 --> 00:16:19,279
+involved all can be applied to make this
+ 
+
+827
+00:16:19,279 --> 00:16:21,430
+involved all can be applied to make this
+better.
+
+828
+00:16:21,430 --> 00:16:21,440
+better.
+ 
+
+829
+00:16:21,440 --> 00:16:23,590
+better.
+Um so that's it. That's what we built.
+
+830
+00:16:23,590 --> 00:16:23,600
+Um so that's it. That's what we built.
+ 
+
+831
+00:16:23,600 --> 00:16:25,670
+Um so that's it. That's what we built.
+Um, but at some level, what I really
+
+832
+00:16:25,670 --> 00:16:25,680
+Um, but at some level, what I really
+ 
+
+833
+00:16:25,680 --> 00:16:27,350
+Um, but at some level, what I really
+want you to take away from this is that
+
+834
+00:16:27,350 --> 00:16:27,360
+want you to take away from this is that
+ 
+
+835
+00:16:27,360 --> 00:16:29,430
+want you to take away from this is that
+security isn't just about figuring out
+
+836
+00:16:29,430 --> 00:16:29,440
+security isn't just about figuring out
+ 
+
+837
+00:16:29,440 --> 00:16:31,749
+security isn't just about figuring out
+the secure way to do things. It's about
+
+838
+00:16:31,749 --> 00:16:31,759
+the secure way to do things. It's about
+ 
+
+839
+00:16:31,759 --> 00:16:33,829
+the secure way to do things. It's about
+helping your organization figure out how
+
+840
+00:16:33,829 --> 00:16:33,839
+helping your organization figure out how
+ 
+
+841
+00:16:33,839 --> 00:16:36,790
+helping your organization figure out how
+to accomplish uh their goals in a secure
+
+842
+00:16:36,790 --> 00:16:36,800
+to accomplish uh their goals in a secure
+ 
+
+843
+00:16:36,800 --> 00:16:41,749
+to accomplish uh their goals in a secure
+way. Um and um you know it is slightly
+
+844
+00:16:41,749 --> 00:16:41,759
+way. Um and um you know it is slightly
+ 
+
+845
+00:16:41,759 --> 00:16:43,430
+way. Um and um you know it is slightly
+terrifying to see all the offensive
+
+846
+00:16:43,430 --> 00:16:43,440
+terrifying to see all the offensive
+ 
+
+847
+00:16:43,440 --> 00:16:46,870
+terrifying to see all the offensive
+talks of ways that uh um uh you know AI
+
+848
+00:16:46,870 --> 00:16:46,880
+talks of ways that uh um uh you know AI
+ 
+
+849
+00:16:46,880 --> 00:16:48,310
+talks of ways that uh um uh you know AI
+is making it easier to attack things but
+
+850
+00:16:48,310 --> 00:16:48,320
+is making it easier to attack things but
+ 
+
+851
+00:16:48,320 --> 00:16:50,790
+is making it easier to attack things but
+it's also been really um exciting to see
+
+852
+00:16:50,790 --> 00:16:50,800
+it's also been really um exciting to see
+ 
+
+853
+00:16:50,800 --> 00:16:52,949
+it's also been really um exciting to see
+the ways in which I think we can expect
+
+854
+00:16:52,949 --> 00:16:52,959
+the ways in which I think we can expect
+ 
+
+855
+00:16:52,959 --> 00:16:55,350
+the ways in which I think we can expect
+security to be much better in the near
+
+856
+00:16:55,350 --> 00:16:55,360
+security to be much better in the near
+ 
+
+857
+00:16:55,360 --> 00:16:57,990
+security to be much better in the near
+future once we have agents really doing
+
+858
+00:16:57,990 --> 00:16:58,000
+future once we have agents really doing
+ 
+
+859
+00:16:58,000 --> 00:17:00,150
+future once we have agents really doing
+all of this detailed analysis of our
+
+860
+00:17:00,150 --> 00:17:00,160
+all of this detailed analysis of our
+ 
+
+861
+00:17:00,160 --> 00:17:02,710
+all of this detailed analysis of our
+code on an ongoing basis. But in order
+
+862
+00:17:02,710 --> 00:17:02,720
+code on an ongoing basis. But in order
+ 
+
+863
+00:17:02,720 --> 00:17:04,630
+code on an ongoing basis. But in order
+to get there, we need to make it past
+
+864
+00:17:04,630 --> 00:17:04,640
+to get there, we need to make it past
+ 
+
+865
+00:17:04,640 --> 00:17:07,510
+to get there, we need to make it past
+this sort of turbulent
+
+866
+00:17:07,510 --> 00:17:07,520
+this sort of turbulent
+ 
+
+867
+00:17:07,520 --> 00:17:09,270
+this sort of turbulent
+high-risk era that we're in. And
+
+868
+00:17:09,270 --> 00:17:09,280
+high-risk era that we're in. And
+ 
+
+869
+00:17:09,280 --> 00:17:12,549
+high-risk era that we're in. And
+basically uh uh all of us in this room
+
+870
+00:17:12,549 --> 00:17:12,559
+basically uh uh all of us in this room
+ 
+
+871
+00:17:12,559 --> 00:17:14,150
+basically uh uh all of us in this room
+are the ones that need to help our
+
+872
+00:17:14,150 --> 00:17:14,160
+are the ones that need to help our
+ 
+
+873
+00:17:14,160 --> 00:17:23,110
+are the ones that need to help our
+organizations do it. So thank you.
+
+874
+00:17:23,110 --> 00:17:23,120
+
+ 
+
+875
+00:17:23,120 --> 00:17:25,669
+
+Questions? We got one back there. Uh
+
+876
+00:17:25,669 --> 00:17:25,679
+Questions? We got one back there. Uh
+ 
+
+877
+00:17:25,679 --> 00:17:27,189
+Questions? We got one back there. Uh
+while I'm walking back, I'll start with
+
+878
+00:17:27,189 --> 00:17:27,199
+while I'm walking back, I'll start with
+ 
+
+879
+00:17:27,199 --> 00:17:31,430
+while I'm walking back, I'll start with
+one. um uh you put a lot of effort into
+
+880
+00:17:31,430 --> 00:17:31,440
+one. um uh you put a lot of effort into
+ 
+
+881
+00:17:31,440 --> 00:17:34,789
+one. um uh you put a lot of effort into
+improving the pain points around
+
+882
+00:17:34,789 --> 00:17:34,799
+improving the pain points around
+ 
+
+883
+00:17:34,799 --> 00:17:37,750
+improving the pain points around
+uh sort of human in the loop reviews. Do
+
+884
+00:17:37,750 --> 00:17:37,760
+uh sort of human in the loop reviews. Do
+ 
+
+885
+00:17:37,760 --> 00:17:39,029
+uh sort of human in the loop reviews. Do
+you find that there's any value in sort
+
+886
+00:17:39,029 --> 00:17:39,039
+you find that there's any value in sort
+ 
+
+887
+00:17:39,039 --> 00:17:40,630
+you find that there's any value in sort
+of aggregating any of that at the the
+
+888
+00:17:40,630 --> 00:17:40,640
+of aggregating any of that at the the
+ 
+
+889
+00:17:40,640 --> 00:17:42,549
+of aggregating any of that at the the
+group or team level or teams like
+
+890
+00:17:42,549 --> 00:17:42,559
+group or team level or teams like
+ 
+
+891
+00:17:42,559 --> 00:17:44,230
+group or team level or teams like
+typically running into the same sorts of
+
+892
+00:17:44,230 --> 00:17:44,240
+typically running into the same sorts of
+ 
+
+893
+00:17:44,240 --> 00:17:45,830
+typically running into the same sorts of
+problems or is it is it sort of like
+
+894
+00:17:45,830 --> 00:17:45,840
+problems or is it is it sort of like
+ 
+
+895
+00:17:45,840 --> 00:17:48,230
+problems or is it is it sort of like
+person or or no review at all?
+
+896
+00:17:48,230 --> 00:17:48,240
+person or or no review at all?
+ 
+
+897
+00:17:48,240 --> 00:17:49,430
+person or or no review at all?
+>> I think we're probably going to get
+
+898
+00:17:49,430 --> 00:17:49,440
+>> I think we're probably going to get
+ 
+
+899
+00:17:49,440 --> 00:17:51,110
+>> I think we're probably going to get
+there. We're pretty early in this. a lot
+
+900
+00:17:51,110 --> 00:17:51,120
+there. We're pretty early in this. a lot
+ 
+
+901
+00:17:51,120 --> 00:17:54,070
+there. We're pretty early in this. a lot
+of the the UX experimentation is like
+
+902
+00:17:54,070 --> 00:17:54,080
+of the the UX experimentation is like
+ 
+
+903
+00:17:54,080 --> 00:17:57,510
+of the the UX experimentation is like
+very um you know very early on. We're
+
+904
+00:17:57,510 --> 00:17:57,520
+very um you know very early on. We're
+ 
+
+905
+00:17:57,520 --> 00:17:59,270
+very um you know very early on. We're
+we're early on in the experimentation
+
+906
+00:17:59,270 --> 00:17:59,280
+we're early on in the experimentation
+ 
+
+907
+00:17:59,280 --> 00:18:02,310
+we're early on in the experimentation
+process. But I think in general trying
+
+908
+00:18:02,310 --> 00:18:02,320
+process. But I think in general trying
+ 
+
+909
+00:18:02,320 --> 00:18:06,950
+process. But I think in general trying
+to find ways to um you know make it so
+
+910
+00:18:06,950 --> 00:18:06,960
+to find ways to um you know make it so
+ 
+
+911
+00:18:06,960 --> 00:18:09,270
+to find ways to um you know make it so
+that people need to stop less, fewer
+
+912
+00:18:09,270 --> 00:18:09,280
+that people need to stop less, fewer
+ 
+
+913
+00:18:09,280 --> 00:18:11,270
+that people need to stop less, fewer
+checks, fewer reviews need to be made
+
+914
+00:18:11,270 --> 00:18:11,280
+checks, fewer reviews need to be made
+ 
+
+915
+00:18:11,280 --> 00:18:13,029
+checks, fewer reviews need to be made
+while ensuring that human judgment is
+
+916
+00:18:13,029 --> 00:18:13,039
+while ensuring that human judgment is
+ 
+
+917
+00:18:13,039 --> 00:18:14,549
+while ensuring that human judgment is
+applied at the right time is going to be
+
+918
+00:18:14,549 --> 00:18:14,559
+applied at the right time is going to be
+ 
+
+919
+00:18:14,559 --> 00:18:17,990
+applied at the right time is going to be
+sort of the northstar here.
+
+920
+00:18:17,990 --> 00:18:18,000
+sort of the northstar here.
+ 
+
+921
+00:18:18,000 --> 00:18:20,310
+sort of the northstar here.
+>> Awesome. Thank you. Quick question. Do
+
+922
+00:18:20,310 --> 00:18:20,320
+>> Awesome. Thank you. Quick question. Do
+ 
+
+923
+00:18:20,320 --> 00:18:23,029
+>> Awesome. Thank you. Quick question. Do
+you still find the value in doing like
+
+924
+00:18:23,029 --> 00:18:23,039
+you still find the value in doing like
+ 
+
+925
+00:18:23,039 --> 00:18:25,190
+you still find the value in doing like
+threat med to stop like prompt
+
+926
+00:18:25,190 --> 00:18:25,200
+threat med to stop like prompt
+ 
+
+927
+00:18:25,200 --> 00:18:27,190
+threat med to stop like prompt
+objections at least partially as you
+
+928
+00:18:27,190 --> 00:18:27,200
+objections at least partially as you
+ 
+
+929
+00:18:27,200 --> 00:18:29,190
+objections at least partially as you
+design systems?
+
+930
+00:18:29,190 --> 00:18:29,200
+design systems?
+ 
+
+931
+00:18:29,200 --> 00:18:31,029
+design systems?
+>> Yeah, I think that there's 100% a place
+
+932
+00:18:31,029 --> 00:18:31,039
+>> Yeah, I think that there's 100% a place
+ 
+
+933
+00:18:31,039 --> 00:18:34,630
+>> Yeah, I think that there's 100% a place
+for um you know detective and and um
+
+934
+00:18:34,630 --> 00:18:34,640
+for um you know detective and and um
+ 
+
+935
+00:18:34,640 --> 00:18:37,029
+for um you know detective and and um
+sort of other types of controls that u
+
+936
+00:18:37,029 --> 00:18:37,039
+sort of other types of controls that u
+ 
+
+937
+00:18:37,039 --> 00:18:40,390
+sort of other types of controls that u
+sort of are not um you know guarantees.
+
+938
+00:18:40,390 --> 00:18:40,400
+sort of are not um you know guarantees.
+ 
+
+939
+00:18:40,400 --> 00:18:43,029
+sort of are not um you know guarantees.
+Um, I think especially for sort of
+
+940
+00:18:43,029 --> 00:18:43,039
+Um, I think especially for sort of
+ 
+
+941
+00:18:43,039 --> 00:18:44,630
+Um, I think especially for sort of
+customerf facing products and stuff like
+
+942
+00:18:44,630 --> 00:18:44,640
+customerf facing products and stuff like
+ 
+
+943
+00:18:44,640 --> 00:18:46,310
+customerf facing products and stuff like
+that that's is going to be important.
+
+944
+00:18:46,310 --> 00:18:46,320
+that that's is going to be important.
+ 
+
+945
+00:18:46,320 --> 00:18:48,630
+that that's is going to be important.
+But like ultimately I guess because
+
+946
+00:18:48,630 --> 00:18:48,640
+But like ultimately I guess because
+ 
+
+947
+00:18:48,640 --> 00:18:50,230
+But like ultimately I guess because
+we're not at the point where we can
+
+948
+00:18:50,230 --> 00:18:50,240
+we're not at the point where we can
+ 
+
+949
+00:18:50,240 --> 00:18:53,350
+we're not at the point where we can
+fully trust that we really want to lean
+
+950
+00:18:53,350 --> 00:18:53,360
+fully trust that we really want to lean
+ 
+
+951
+00:18:53,360 --> 00:18:56,070
+fully trust that we really want to lean
+on these more deterministic um
+
+952
+00:18:56,070 --> 00:18:56,080
+on these more deterministic um
+ 
+
+953
+00:18:56,080 --> 00:18:59,720
+on these more deterministic um
+architectural controls.
+

@@ -1,0 +1,6125 @@
+1
+00:00:06,080 --> 00:00:09,270
+
+Thank you and um thanks for inviting me.
+
+2
+00:00:09,270 --> 00:00:09,280
+Thank you and um thanks for inviting me.
+ 
+
+3
+00:00:09,280 --> 00:00:11,270
+Thank you and um thanks for inviting me.
+Great to be here. Uh the usual
+
+4
+00:00:11,270 --> 00:00:11,280
+Great to be here. Uh the usual
+ 
+
+5
+00:00:11,280 --> 00:00:14,310
+Great to be here. Uh the usual
+disclosure. So even though my company
+
+6
+00:00:14,310 --> 00:00:14,320
+disclosure. So even though my company
+ 
+
+7
+00:00:14,320 --> 00:00:16,790
+disclosure. So even though my company
+name is on well will be on every slide
+
+8
+00:00:16,790 --> 00:00:16,800
+name is on well will be on every slide
+ 
+
+9
+00:00:16,800 --> 00:00:19,349
+name is on well will be on every slide
+after this. Uh they're just sponsoring
+
+10
+00:00:19,349 --> 00:00:19,359
+after this. Uh they're just sponsoring
+ 
+
+11
+00:00:19,359 --> 00:00:21,910
+after this. Uh they're just sponsoring
+me to be here. This is not an official
+
+12
+00:00:21,910 --> 00:00:21,920
+me to be here. This is not an official
+ 
+
+13
+00:00:21,920 --> 00:00:25,269
+me to be here. This is not an official
+talk.
+
+14
+00:00:25,269 --> 00:00:25,279
+
+ 
+
+15
+00:00:25,279 --> 00:00:27,589
+
+So
+
+16
+00:00:27,589 --> 00:00:27,599
+So
+ 
+
+17
+00:00:27,599 --> 00:00:30,950
+So
+I have to say when AI came along I was
+
+18
+00:00:30,950 --> 00:00:30,960
+I have to say when AI came along I was
+ 
+
+19
+00:00:30,960 --> 00:00:35,190
+I have to say when AI came along I was
+something of a skeptic. Okay. So I'm a
+
+20
+00:00:35,190 --> 00:00:35,200
+something of a skeptic. Okay. So I'm a
+ 
+
+21
+00:00:35,200 --> 00:00:38,549
+something of a skeptic. Okay. So I'm a
+hardware hacker and I'm thinking
+
+22
+00:00:38,549 --> 00:00:38,559
+hardware hacker and I'm thinking
+ 
+
+23
+00:00:38,559 --> 00:00:41,510
+hardware hacker and I'm thinking
+how can AI really help me with hardware
+
+24
+00:00:41,510 --> 00:00:41,520
+how can AI really help me with hardware
+ 
+
+25
+00:00:41,520 --> 00:00:43,990
+how can AI really help me with hardware
+hacking. You know until like data can
+
+26
+00:00:43,990 --> 00:00:44,000
+hacking. You know until like data can
+ 
+
+27
+00:00:44,000 --> 00:00:46,630
+hacking. You know until like data can
+come up and start plugging things in or
+
+28
+00:00:46,630 --> 00:00:46,640
+come up and start plugging things in or
+ 
+
+29
+00:00:46,640 --> 00:00:49,110
+come up and start plugging things in or
+Captain Kirk can break my triorder and
+
+30
+00:00:49,110 --> 00:00:49,120
+Captain Kirk can break my triorder and
+ 
+
+31
+00:00:49,120 --> 00:00:50,549
+Captain Kirk can break my triorder and
+put it back together and make it do
+
+32
+00:00:50,549 --> 00:00:50,559
+put it back together and make it do
+ 
+
+33
+00:00:50,559 --> 00:00:53,029
+put it back together and make it do
+something. I don't get it. How's AI
+
+34
+00:00:53,029 --> 00:00:53,039
+something. I don't get it. How's AI
+ 
+
+35
+00:00:53,039 --> 00:00:55,029
+something. I don't get it. How's AI
+going to help me?
+
+36
+00:00:55,029 --> 00:00:55,039
+going to help me?
+ 
+
+37
+00:00:55,039 --> 00:00:57,670
+going to help me?
+Because for AI uh sorry for hardware
+
+38
+00:00:57,670 --> 00:00:57,680
+Because for AI uh sorry for hardware
+ 
+
+39
+00:00:57,680 --> 00:01:00,790
+Because for AI uh sorry for hardware
+hacking you need a lab. Okay, you need
+
+40
+00:01:00,790 --> 00:01:00,800
+hacking you need a lab. Okay, you need
+ 
+
+41
+00:01:00,800 --> 00:01:03,270
+hacking you need a lab. Okay, you need
+hardware, you need scopes, you need
+
+42
+00:01:03,270 --> 00:01:03,280
+hardware, you need scopes, you need
+ 
+
+43
+00:01:03,280 --> 00:01:07,030
+hardware, you need scopes, you need
+components, you need um you know
+
+44
+00:01:07,030 --> 00:01:07,040
+components, you need um you know
+ 
+
+45
+00:01:07,040 --> 00:01:10,630
+components, you need um you know
+electronics. Um this is a particularly
+
+46
+00:01:10,630 --> 00:01:10,640
+electronics. Um this is a particularly
+ 
+
+47
+00:01:10,640 --> 00:01:12,950
+electronics. Um this is a particularly
+nice lab by the way. I wish I wish my
+
+48
+00:01:12,950 --> 00:01:12,960
+nice lab by the way. I wish I wish my
+ 
+
+49
+00:01:12,960 --> 00:01:15,270
+nice lab by the way. I wish I wish my
+lab looked like this. This is actually
+
+50
+00:01:15,270 --> 00:01:15,280
+lab looked like this. This is actually
+ 
+
+51
+00:01:15,280 --> 00:01:17,749
+lab looked like this. This is actually
+Joe Grand's lab. I don't know a lot of
+
+52
+00:01:17,749 --> 00:01:17,759
+Joe Grand's lab. I don't know a lot of
+ 
+
+53
+00:01:17,759 --> 00:01:20,390
+Joe Grand's lab. I don't know a lot of
+you will have heard of him. Uh he's a
+
+54
+00:01:20,390 --> 00:01:20,400
+you will have heard of him. Uh he's a
+ 
+
+55
+00:01:20,400 --> 00:01:22,950
+you will have heard of him. Uh he's a
+very talented hardware hacker. If this
+
+56
+00:01:22,950 --> 00:01:22,960
+very talented hardware hacker. If this
+ 
+
+57
+00:01:22,960 --> 00:01:24,950
+very talented hardware hacker. If this
+talk in any way inspires you to do
+
+58
+00:01:24,950 --> 00:01:24,960
+talk in any way inspires you to do
+ 
+
+59
+00:01:24,960 --> 00:01:27,350
+talk in any way inspires you to do
+hardware hacking, he gives really great
+
+60
+00:01:27,350 --> 00:01:27,360
+hardware hacking, he gives really great
+ 
+
+61
+00:01:27,360 --> 00:01:29,109
+hardware hacking, he gives really great
+training courses. So, he's your man.
+
+62
+00:01:29,109 --> 00:01:29,119
+training courses. So, he's your man.
+ 
+
+63
+00:01:29,119 --> 00:01:31,830
+training courses. So, he's your man.
+Look up Joe Grand. And as you can see,
+
+64
+00:01:31,830 --> 00:01:31,840
+Look up Joe Grand. And as you can see,
+ 
+
+65
+00:01:31,840 --> 00:01:34,710
+Look up Joe Grand. And as you can see,
+his his lab is so nice, he has a
+
+66
+00:01:34,710 --> 00:01:34,720
+his his lab is so nice, he has a
+ 
+
+67
+00:01:34,720 --> 00:01:36,310
+his his lab is so nice, he has a
+security guard to make sure it stays
+
+68
+00:01:36,310 --> 00:01:36,320
+security guard to make sure it stays
+ 
+
+69
+00:01:36,320 --> 00:01:38,789
+security guard to make sure it stays
+that way, right? So, you go in there and
+
+70
+00:01:38,789 --> 00:01:38,799
+that way, right? So, you go in there and
+ 
+
+71
+00:01:38,799 --> 00:01:40,230
+that way, right? So, you go in there and
+try and move a wire or something, that
+
+72
+00:01:40,230 --> 00:01:40,240
+try and move a wire or something, that
+ 
+
+73
+00:01:40,240 --> 00:01:44,630
+try and move a wire or something, that
+guy's going to pounce on you. So,
+
+74
+00:01:44,630 --> 00:01:44,640
+guy's going to pounce on you. So,
+ 
+
+75
+00:01:44,640 --> 00:01:47,429
+guy's going to pounce on you. So,
+back at my house,
+
+76
+00:01:47,429 --> 00:01:47,439
+back at my house,
+ 
+
+77
+00:01:47,439 --> 00:01:49,830
+back at my house,
+it looks more like this. So, I mean,
+
+78
+00:01:49,830 --> 00:01:49,840
+it looks more like this. So, I mean,
+ 
+
+79
+00:01:49,840 --> 00:01:51,670
+it looks more like this. So, I mean,
+obviously at work I have really, you
+
+80
+00:01:51,670 --> 00:01:51,680
+obviously at work I have really, you
+ 
+
+81
+00:01:51,680 --> 00:01:53,270
+obviously at work I have really, you
+know, state-of-the-art labs and so on,
+
+82
+00:01:53,270 --> 00:01:53,280
+know, state-of-the-art labs and so on,
+ 
+
+83
+00:01:53,280 --> 00:01:56,870
+know, state-of-the-art labs and so on,
+but this is my home uh hacking around
+
+84
+00:01:56,870 --> 00:01:56,880
+but this is my home uh hacking around
+ 
+
+85
+00:01:56,880 --> 00:01:58,709
+but this is my home uh hacking around
+lab.
+
+86
+00:01:58,709 --> 00:01:58,719
+lab.
+ 
+
+87
+00:01:58,719 --> 00:02:03,030
+lab.
+And yeah, you need tools, you need um
+
+88
+00:02:03,030 --> 00:02:03,040
+And yeah, you need tools, you need um
+ 
+
+89
+00:02:03,040 --> 00:02:05,670
+And yeah, you need tools, you need um
+in this case FPGAs, you need uh
+
+90
+00:02:05,670 --> 00:02:05,680
+in this case FPGAs, you need uh
+ 
+
+91
+00:02:05,680 --> 00:02:08,229
+in this case FPGAs, you need uh
+debuggers, you need power supplies, you
+
+92
+00:02:08,229 --> 00:02:08,239
+debuggers, you need power supplies, you
+ 
+
+93
+00:02:08,239 --> 00:02:10,150
+debuggers, you need power supplies, you
+I've got a glitching platform there,
+
+94
+00:02:10,150 --> 00:02:10,160
+I've got a glitching platform there,
+ 
+
+95
+00:02:10,160 --> 00:02:13,830
+I've got a glitching platform there,
+which is an EM pulse generator.
+
+96
+00:02:13,830 --> 00:02:13,840
+which is an EM pulse generator.
+ 
+
+97
+00:02:13,840 --> 00:02:16,150
+which is an EM pulse generator.
+Um all kinds of crap that has to be
+
+98
+00:02:16,150 --> 00:02:16,160
+Um all kinds of crap that has to be
+ 
+
+99
+00:02:16,160 --> 00:02:19,750
+Um all kinds of crap that has to be
+wired together. And so again, how the
+
+100
+00:02:19,750 --> 00:02:19,760
+wired together. And so again, how the
+ 
+
+101
+00:02:19,760 --> 00:02:26,550
+wired together. And so again, how the
+hell can AI help me with that?
+
+102
+00:02:26,550 --> 00:02:26,560
+
+ 
+
+103
+00:02:26,560 --> 00:02:29,830
+
+So what changed? How come I'm up here
+
+104
+00:02:29,830 --> 00:02:29,840
+So what changed? How come I'm up here
+ 
+
+105
+00:02:29,840 --> 00:02:31,430
+So what changed? How come I'm up here
+talking about, you know, singing the
+
+106
+00:02:31,430 --> 00:02:31,440
+talking about, you know, singing the
+ 
+
+107
+00:02:31,440 --> 00:02:33,589
+talking about, you know, singing the
+praises of AI if I'm such a skeptic and
+
+108
+00:02:33,589 --> 00:02:33,599
+praises of AI if I'm such a skeptic and
+ 
+
+109
+00:02:33,599 --> 00:02:36,710
+praises of AI if I'm such a skeptic and
+AI can't help me?
+
+110
+00:02:36,710 --> 00:02:36,720
+AI can't help me?
+ 
+
+111
+00:02:36,720 --> 00:02:41,270
+AI can't help me?
+So basically uh I was on a a business
+
+112
+00:02:41,270 --> 00:02:41,280
+So basically uh I was on a a business
+ 
+
+113
+00:02:41,280 --> 00:02:44,309
+So basically uh I was on a a business
+trip and actually this is the setup from
+
+114
+00:02:44,309 --> 00:02:44,319
+trip and actually this is the setup from
+ 
+
+115
+00:02:44,319 --> 00:02:47,030
+trip and actually this is the setup from
+when I went on that business trip and I
+
+116
+00:02:47,030 --> 00:02:47,040
+when I went on that business trip and I
+ 
+
+117
+00:02:47,040 --> 00:02:49,030
+when I went on that business trip and I
+was trying to crack a specific target.
+
+118
+00:02:49,030 --> 00:02:49,040
+was trying to crack a specific target.
+ 
+
+119
+00:02:49,040 --> 00:02:51,589
+was trying to crack a specific target.
+So the target is there sitting on the
+
+120
+00:02:51,589 --> 00:02:51,599
+So the target is there sitting on the
+ 
+
+121
+00:02:51,599 --> 00:02:54,309
+So the target is there sitting on the
+the XY platform
+
+122
+00:02:54,309 --> 00:02:54,319
+the XY platform
+ 
+
+123
+00:02:54,319 --> 00:02:57,990
+the XY platform
+and I've got scripts running that are
+
+124
+00:02:57,990 --> 00:02:58,000
+and I've got scripts running that are
+ 
+
+125
+00:02:58,000 --> 00:03:00,869
+and I've got scripts running that are
+basically trying to glitch it. So people
+
+126
+00:03:00,869 --> 00:03:00,879
+basically trying to glitch it. So people
+ 
+
+127
+00:03:00,879 --> 00:03:02,149
+basically trying to glitch it. So people
+are not familiar with glitching.
+
+128
+00:03:02,149 --> 00:03:02,159
+are not familiar with glitching.
+ 
+
+129
+00:03:02,159 --> 00:03:05,910
+are not familiar with glitching.
+Glitching is a a technique where you
+
+130
+00:03:05,910 --> 00:03:05,920
+Glitching is a a technique where you
+ 
+
+131
+00:03:05,920 --> 00:03:09,509
+Glitching is a a technique where you
+basically try and trick the chip into
+
+132
+00:03:09,509 --> 00:03:09,519
+basically try and trick the chip into
+ 
+
+133
+00:03:09,519 --> 00:03:11,350
+basically try and trick the chip into
+doing something it's not supposed to do.
+
+134
+00:03:11,350 --> 00:03:11,360
+doing something it's not supposed to do.
+ 
+
+135
+00:03:11,360 --> 00:03:14,149
+doing something it's not supposed to do.
+So in this case, I'm trying to dump the
+
+136
+00:03:14,149 --> 00:03:14,159
+So in this case, I'm trying to dump the
+ 
+
+137
+00:03:14,159 --> 00:03:16,149
+So in this case, I'm trying to dump the
+firmware from that chip, but the chip is
+
+138
+00:03:16,149 --> 00:03:16,159
+firmware from that chip, but the chip is
+ 
+
+139
+00:03:16,159 --> 00:03:19,750
+firmware from that chip, but the chip is
+locked. So to glitch it, you basically
+
+140
+00:03:19,750 --> 00:03:19,760
+locked. So to glitch it, you basically
+ 
+
+141
+00:03:19,760 --> 00:03:22,070
+locked. So to glitch it, you basically
+say, right, at the moment it does the
+
+142
+00:03:22,070 --> 00:03:22,080
+say, right, at the moment it does the
+ 
+
+143
+00:03:22,080 --> 00:03:24,309
+say, right, at the moment it does the
+check, this guy said, give me your
+
+144
+00:03:24,309 --> 00:03:24,319
+check, this guy said, give me your
+ 
+
+145
+00:03:24,319 --> 00:03:27,350
+check, this guy said, give me your
+firmware. The chip says, am I allowed to
+
+146
+00:03:27,350 --> 00:03:27,360
+firmware. The chip says, am I allowed to
+ 
+
+147
+00:03:27,360 --> 00:03:30,070
+firmware. The chip says, am I allowed to
+give the firmware? Is it locked? And you
+
+148
+00:03:30,070 --> 00:03:30,080
+give the firmware? Is it locked? And you
+ 
+
+149
+00:03:30,080 --> 00:03:32,550
+give the firmware? Is it locked? And you
+hit it at that point. and try and
+
+150
+00:03:32,550 --> 00:03:32,560
+hit it at that point. and try and
+ 
+
+151
+00:03:32,560 --> 00:03:34,390
+hit it at that point. and try and
+confuse it and it goes, "Okay, here's
+
+152
+00:03:34,390 --> 00:03:34,400
+confuse it and it goes, "Okay, here's
+ 
+
+153
+00:03:34,400 --> 00:03:36,309
+confuse it and it goes, "Okay, here's
+here's my firmware even though it was
+
+154
+00:03:36,309 --> 00:03:36,319
+here's my firmware even though it was
+ 
+
+155
+00:03:36,319 --> 00:03:37,670
+here's my firmware even though it was
+locked and it shouldn't have given it to
+
+156
+00:03:37,670 --> 00:03:37,680
+locked and it shouldn't have given it to
+ 
+
+157
+00:03:37,680 --> 00:03:42,390
+locked and it shouldn't have given it to
+you." So anyway, I have scripts running.
+
+158
+00:03:42,390 --> 00:03:42,400
+you." So anyway, I have scripts running.
+ 
+
+159
+00:03:42,400 --> 00:03:45,350
+you." So anyway, I have scripts running.
+It's a non-deterministic process. So you
+
+160
+00:03:45,350 --> 00:03:45,360
+It's a non-deterministic process. So you
+ 
+
+161
+00:03:45,360 --> 00:03:48,229
+It's a non-deterministic process. So you
+may have to repeat your glitch, get the
+
+162
+00:03:48,229 --> 00:03:48,239
+may have to repeat your glitch, get the
+ 
+
+163
+00:03:48,239 --> 00:03:50,710
+may have to repeat your glitch, get the
+timing right, get the the power of the
+
+164
+00:03:50,710 --> 00:03:50,720
+timing right, get the the power of the
+ 
+
+165
+00:03:50,720 --> 00:03:54,390
+timing right, get the the power of the
+glitch right, and so on um hundreds,
+
+166
+00:03:54,390 --> 00:03:54,400
+glitch right, and so on um hundreds,
+ 
+
+167
+00:03:54,400 --> 00:03:57,509
+glitch right, and so on um hundreds,
+thousands, maybe even millions of times.
+
+168
+00:03:57,509 --> 00:03:57,519
+thousands, maybe even millions of times.
+ 
+
+169
+00:03:57,519 --> 00:03:59,350
+thousands, maybe even millions of times.
+So, I was on this business trip and I
+
+170
+00:03:59,350 --> 00:03:59,360
+So, I was on this business trip and I
+ 
+
+171
+00:03:59,360 --> 00:04:02,869
+So, I was on this business trip and I
+left the scripts running and for 6 weeks
+
+172
+00:04:02,869 --> 00:04:02,879
+left the scripts running and for 6 weeks
+ 
+
+173
+00:04:02,879 --> 00:04:05,670
+left the scripts running and for 6 weeks
+it was running 24/7 just banging away on
+
+174
+00:04:05,670 --> 00:04:05,680
+it was running 24/7 just banging away on
+ 
+
+175
+00:04:05,680 --> 00:04:07,750
+it was running 24/7 just banging away on
+this chip trying to get it to give up
+
+176
+00:04:07,750 --> 00:04:07,760
+this chip trying to get it to give up
+ 
+
+177
+00:04:07,760 --> 00:04:11,270
+this chip trying to get it to give up
+its firmware.
+
+178
+00:04:11,270 --> 00:04:11,280
+its firmware.
+ 
+
+179
+00:04:11,280 --> 00:04:14,470
+its firmware.
+And it didn't. I got back from the trip.
+
+180
+00:04:14,470 --> 00:04:14,480
+And it didn't. I got back from the trip.
+ 
+
+181
+00:04:14,480 --> 00:04:16,789
+And it didn't. I got back from the trip.
+6 weeks later, nothing. Script still
+
+182
+00:04:16,789 --> 00:04:16,799
+6 weeks later, nothing. Script still
+ 
+
+183
+00:04:16,799 --> 00:04:20,310
+6 weeks later, nothing. Script still
+running. Zero results.
+
+184
+00:04:20,310 --> 00:04:20,320
+running. Zero results.
+ 
+
+185
+00:04:20,320 --> 00:04:23,830
+running. Zero results.
+Now, in the meantime, um
+
+186
+00:04:23,830 --> 00:04:23,840
+Now, in the meantime, um
+ 
+
+187
+00:04:23,840 --> 00:04:26,390
+Now, in the meantime, um
+there was a guy organizing an online
+
+188
+00:04:26,390 --> 00:04:26,400
+there was a guy organizing an online
+ 
+
+189
+00:04:26,400 --> 00:04:28,150
+there was a guy organizing an online
+event
+
+190
+00:04:28,150 --> 00:04:28,160
+event
+ 
+
+191
+00:04:28,160 --> 00:04:31,110
+event
+called Prompt or Get the [\h__\h] Out, which
+
+192
+00:04:31,110 --> 00:04:31,120
+called Prompt or Get the [\h__\h] Out, which
+ 
+
+193
+00:04:31,120 --> 00:04:34,310
+called Prompt or Get the [\h__\h] Out, which
+was uh you can find it on YouTube. And
+
+194
+00:04:34,310 --> 00:04:34,320
+was uh you can find it on YouTube. And
+ 
+
+195
+00:04:34,320 --> 00:04:37,909
+was uh you can find it on YouTube. And
+it's basically five minute talks about
+
+196
+00:04:37,909 --> 00:04:37,919
+it's basically five minute talks about
+ 
+
+197
+00:04:37,919 --> 00:04:40,790
+it's basically five minute talks about
+AI and what you're doing with AI. And
+
+198
+00:04:40,790 --> 00:04:40,800
+AI and what you're doing with AI. And
+ 
+
+199
+00:04:40,800 --> 00:04:42,390
+AI and what you're doing with AI. And
+I'm not going to say who he is because
+
+200
+00:04:42,390 --> 00:04:42,400
+I'm not going to say who he is because
+ 
+
+201
+00:04:42,400 --> 00:04:47,030
+I'm not going to say who he is because
+he's kind of shy and retiring, but um
+
+202
+00:04:47,030 --> 00:04:47,040
+he's kind of shy and retiring, but um
+ 
+
+203
+00:04:47,040 --> 00:04:50,150
+he's kind of shy and retiring, but um
+he said uh he kept saying to me, "When
+
+204
+00:04:50,150 --> 00:04:50,160
+he said uh he kept saying to me, "When
+ 
+
+205
+00:04:50,160 --> 00:04:51,670
+he said uh he kept saying to me, "When
+are you going to come online and give
+
+206
+00:04:51,670 --> 00:04:51,680
+are you going to come online and give
+ 
+
+207
+00:04:51,680 --> 00:04:55,030
+are you going to come online and give
+your talk?" And I'm like, "Gaddy, I
+
+208
+00:04:55,030 --> 00:04:55,040
+your talk?" And I'm like, "Gaddy, I
+ 
+
+209
+00:04:55,040 --> 00:05:00,629
+your talk?" And I'm like, "Gaddy, I
+don't do AI, right?" Um all I use it for
+
+210
+00:05:00,629 --> 00:05:00,639
+don't do AI, right?" Um all I use it for
+ 
+
+211
+00:05:00,639 --> 00:05:04,230
+don't do AI, right?" Um all I use it for
+is looking up data sheets, maybe take a
+
+212
+00:05:04,230 --> 00:05:04,240
+is looking up data sheets, maybe take a
+ 
+
+213
+00:05:04,240 --> 00:05:06,230
+is looking up data sheets, maybe take a
+picture of a component and say, "What
+
+214
+00:05:06,230 --> 00:05:06,240
+picture of a component and say, "What
+ 
+
+215
+00:05:06,240 --> 00:05:09,430
+picture of a component and say, "What
+the hell is this?" and let AI figure it
+
+216
+00:05:09,430 --> 00:05:09,440
+the hell is this?" and let AI figure it
+ 
+
+217
+00:05:09,440 --> 00:05:12,150
+the hell is this?" and let AI figure it
+out for me. I'm not using it dayto-day.
+
+218
+00:05:12,150 --> 00:05:12,160
+out for me. I'm not using it dayto-day.
+ 
+
+219
+00:05:12,160 --> 00:05:14,710
+out for me. I'm not using it dayto-day.
+I've got nothing to talk about.
+
+220
+00:05:14,710 --> 00:05:14,720
+I've got nothing to talk about.
+ 
+
+221
+00:05:14,720 --> 00:05:18,550
+I've got nothing to talk about.
+So he said, [cough] "Excuse me." He
+
+222
+00:05:18,550 --> 00:05:18,560
+So he said, [cough] "Excuse me." He
+ 
+
+223
+00:05:18,560 --> 00:05:20,070
+So he said, [cough] "Excuse me." He
+said,
+
+224
+00:05:20,070 --> 00:05:20,080
+said,
+ 
+
+225
+00:05:20,080 --> 00:05:23,029
+said,
+"You're asking the wrong questions.
+
+226
+00:05:23,029 --> 00:05:23,039
+"You're asking the wrong questions.
+ 
+
+227
+00:05:23,039 --> 00:05:25,749
+"You're asking the wrong questions.
+Just do me a favor.
+
+228
+00:05:25,749 --> 00:05:25,759
+Just do me a favor.
+ 
+
+229
+00:05:25,759 --> 00:05:27,670
+Just do me a favor.
+Think of three questions that are
+
+230
+00:05:27,670 --> 00:05:27,680
+Think of three questions that are
+ 
+
+231
+00:05:27,680 --> 00:05:30,310
+Think of three questions that are
+relevant, really relevant to what you're
+
+232
+00:05:30,310 --> 00:05:30,320
+relevant, really relevant to what you're
+ 
+
+233
+00:05:30,320 --> 00:05:33,909
+relevant, really relevant to what you're
+trying to do and then ask AI.
+
+234
+00:05:33,909 --> 00:05:33,919
+trying to do and then ask AI.
+ 
+
+235
+00:05:33,919 --> 00:05:36,790
+trying to do and then ask AI.
+Maybe it'll help."
+
+236
+00:05:36,790 --> 00:05:36,800
+Maybe it'll help."
+ 
+
+237
+00:05:36,800 --> 00:05:39,029
+Maybe it'll help."
+So the three questions when you're
+
+238
+00:05:39,029 --> 00:05:39,039
+So the three questions when you're
+ 
+
+239
+00:05:39,039 --> 00:05:40,710
+So the three questions when you're
+glitching
+
+240
+00:05:40,710 --> 00:05:40,720
+glitching
+ 
+
+241
+00:05:40,720 --> 00:05:45,189
+glitching
+are where to glitch, when to glitch, and
+
+242
+00:05:45,189 --> 00:05:45,199
+are where to glitch, when to glitch, and
+ 
+
+243
+00:05:45,199 --> 00:05:47,350
+are where to glitch, when to glitch, and
+how much to glitch. Those are the three
+
+244
+00:05:47,350 --> 00:05:47,360
+how much to glitch. Those are the three
+ 
+
+245
+00:05:47,360 --> 00:05:52,710
+how much to glitch. Those are the three
+basic questions. So if we go back to my
+
+246
+00:05:52,710 --> 00:05:52,720
+basic questions. So if we go back to my
+ 
+
+247
+00:05:52,720 --> 00:05:55,110
+basic questions. So if we go back to my
+setup here,
+
+248
+00:05:55,110 --> 00:05:55,120
+setup here,
+ 
+
+249
+00:05:55,120 --> 00:05:58,070
+setup here,
+the where to glitch is in this case. Oh,
+
+250
+00:05:58,070 --> 00:05:58,080
+the where to glitch is in this case. Oh,
+ 
+
+251
+00:05:58,080 --> 00:05:59,590
+the where to glitch is in this case. Oh,
+maybe I can get a mouse working. Hang
+
+252
+00:05:59,590 --> 00:05:59,600
+maybe I can get a mouse working. Hang
+ 
+
+253
+00:05:59,600 --> 00:06:01,189
+maybe I can get a mouse working. Hang
+on.
+
+254
+00:06:01,189 --> 00:06:01,199
+on.
+ 
+
+255
+00:06:01,199 --> 00:06:04,230
+on.
+Can you see my mouse pointer?
+
+256
+00:06:04,230 --> 00:06:04,240
+Can you see my mouse pointer?
+ 
+
+257
+00:06:04,240 --> 00:06:07,029
+Can you see my mouse pointer?
+So the where is
+
+258
+00:06:07,029 --> 00:06:07,039
+So the where is
+ 
+
+259
+00:06:07,039 --> 00:06:09,350
+So the where is
+the chip is quite big and this little
+
+260
+00:06:09,350 --> 00:06:09,360
+the chip is quite big and this little
+ 
+
+261
+00:06:09,360 --> 00:06:12,550
+the chip is quite big and this little
+probe is quite small. So where do you
+
+262
+00:06:12,550 --> 00:06:12,560
+probe is quite small. So where do you
+ 
+
+263
+00:06:12,560 --> 00:06:15,990
+probe is quite small. So where do you
+put the probe on the chip? The when to
+
+264
+00:06:15,990 --> 00:06:16,000
+put the probe on the chip? The when to
+ 
+
+265
+00:06:16,000 --> 00:06:20,070
+put the probe on the chip? The when to
+glitch is you know how how many nanconds
+
+266
+00:06:20,070 --> 00:06:20,080
+glitch is you know how how many nanconds
+ 
+
+267
+00:06:20,080 --> 00:06:22,390
+glitch is you know how how many nanconds
+or microsconds from a particular event
+
+268
+00:06:22,390 --> 00:06:22,400
+or microsconds from a particular event
+ 
+
+269
+00:06:22,400 --> 00:06:24,309
+or microsconds from a particular event
+like a reset
+
+270
+00:06:24,309 --> 00:06:24,319
+like a reset
+ 
+
+271
+00:06:24,319 --> 00:06:26,790
+like a reset
+um and how much is how many volts should
+
+272
+00:06:26,790 --> 00:06:26,800
+um and how much is how many volts should
+ 
+
+273
+00:06:26,800 --> 00:06:31,430
+um and how much is how many volts should
+I give the EM pulse in this case.
+
+274
+00:06:31,430 --> 00:06:31,440
+I give the EM pulse in this case.
+ 
+
+275
+00:06:31,440 --> 00:06:33,670
+I give the EM pulse in this case.
+So
+
+276
+00:06:33,670 --> 00:06:33,680
+So
+ 
+
+277
+00:06:33,680 --> 00:06:36,550
+So
+I asked those three questions
+
+278
+00:06:36,550 --> 00:06:36,560
+I asked those three questions
+ 
+
+279
+00:06:36,560 --> 00:06:38,790
+I asked those three questions
+and it gave me an answer. So for the for
+
+280
+00:06:38,790 --> 00:06:38,800
+and it gave me an answer. So for the for
+ 
+
+281
+00:06:38,800 --> 00:06:41,590
+and it gave me an answer. So for the for
+the position I just went into chat GPT
+
+282
+00:06:41,590 --> 00:06:41,600
+the position I just went into chat GPT
+ 
+
+283
+00:06:41,600 --> 00:06:44,070
+the position I just went into chat GPT
+online and I said I'm attacking this
+
+284
+00:06:44,070 --> 00:06:44,080
+online and I said I'm attacking this
+ 
+
+285
+00:06:44,080 --> 00:06:45,990
+online and I said I'm attacking this
+chip. I didn't say attacking because if
+
+286
+00:06:45,990 --> 00:06:46,000
+chip. I didn't say attacking because if
+ 
+
+287
+00:06:46,000 --> 00:06:48,070
+chip. I didn't say attacking because if
+you say attacking it'll say oh I can't
+
+288
+00:06:48,070 --> 00:06:48,080
+you say attacking it'll say oh I can't
+ 
+
+289
+00:06:48,080 --> 00:06:50,150
+you say attacking it'll say oh I can't
+help you with that. That would be
+
+290
+00:06:50,150 --> 00:06:50,160
+help you with that. That would be
+ 
+
+291
+00:06:50,160 --> 00:06:51,670
+help you with that. That would be
+naughty.
+
+292
+00:06:51,670 --> 00:06:51,680
+naughty.
+ 
+
+293
+00:06:51,680 --> 00:06:54,710
+naughty.
+Um, so I just phrased it like if I
+
+294
+00:06:54,710 --> 00:06:54,720
+Um, so I just phrased it like if I
+ 
+
+295
+00:06:54,720 --> 00:06:59,029
+Um, so I just phrased it like if I
+wanted to perform an EM pulse fault
+
+296
+00:06:59,029 --> 00:06:59,039
+wanted to perform an EM pulse fault
+ 
+
+297
+00:06:59,039 --> 00:07:02,150
+wanted to perform an EM pulse fault
+injection on this model chip, where
+
+298
+00:07:02,150 --> 00:07:02,160
+injection on this model chip, where
+ 
+
+299
+00:07:02,160 --> 00:07:04,950
+injection on this model chip, where
+would I put the probe?
+
+300
+00:07:04,950 --> 00:07:04,960
+would I put the probe?
+ 
+
+301
+00:07:04,960 --> 00:07:06,870
+would I put the probe?
+And
+
+302
+00:07:06,870 --> 00:07:06,880
+And
+ 
+
+303
+00:07:06,880 --> 00:07:10,390
+And
+when would I send the pulse and how hard
+
+304
+00:07:10,390 --> 00:07:10,400
+when would I send the pulse and how hard
+ 
+
+305
+00:07:10,400 --> 00:07:12,629
+when would I send the pulse and how hard
+should I hit it?
+
+306
+00:07:12,629 --> 00:07:12,639
+should I hit it?
+ 
+
+307
+00:07:12,639 --> 00:07:16,710
+should I hit it?
+So it said draw a diagonal line across
+
+308
+00:07:16,710 --> 00:07:16,720
+So it said draw a diagonal line across
+ 
+
+309
+00:07:16,720 --> 00:07:19,110
+So it said draw a diagonal line across
+the chip and I forget the exact number
+
+310
+00:07:19,110 --> 00:07:19,120
+the chip and I forget the exact number
+ 
+
+311
+00:07:19,120 --> 00:07:23,830
+the chip and I forget the exact number
+but put the probe 7 mil in from the
+
+312
+00:07:23,830 --> 00:07:23,840
+but put the probe 7 mil in from the
+ 
+
+313
+00:07:23,840 --> 00:07:26,230
+but put the probe 7 mil in from the
+corner. So the diagonal line between two
+
+314
+00:07:26,230 --> 00:07:26,240
+corner. So the diagonal line between two
+ 
+
+315
+00:07:26,240 --> 00:07:30,390
+corner. So the diagonal line between two
+corners put the probe 7 ms in
+
+316
+00:07:30,390 --> 00:07:30,400
+corners put the probe 7 ms in
+ 
+
+317
+00:07:30,400 --> 00:07:34,390
+corners put the probe 7 ms in
+when uh it said basically
+
+318
+00:07:34,390 --> 00:07:34,400
+when uh it said basically
+ 
+
+319
+00:07:34,400 --> 00:07:36,629
+when uh it said basically
+as soon as this happens. So on this
+
+320
+00:07:36,629 --> 00:07:36,639
+as soon as this happens. So on this
+ 
+
+321
+00:07:36,639 --> 00:07:40,070
+as soon as this happens. So on this
+event send the the glitch and how hard
+
+322
+00:07:40,070 --> 00:07:40,080
+event send the the glitch and how hard
+ 
+
+323
+00:07:40,080 --> 00:07:43,990
+event send the the glitch and how hard
+it gave me a process. It said um start
+
+324
+00:07:43,990 --> 00:07:44,000
+it gave me a process. It said um start
+ 
+
+325
+00:07:44,000 --> 00:07:46,309
+it gave me a process. It said um start
+at 500 volts which is the maximum you
+
+326
+00:07:46,309 --> 00:07:46,319
+at 500 volts which is the maximum you
+ 
+
+327
+00:07:46,319 --> 00:07:48,629
+at 500 volts which is the maximum you
+can give the chip shouter and when it's
+
+328
+00:07:48,629 --> 00:07:48,639
+can give the chip shouter and when it's
+ 
+
+329
+00:07:48,639 --> 00:07:51,749
+can give the chip shouter and when it's
+crashing 50% of the time that's the
+
+330
+00:07:51,749 --> 00:07:51,759
+crashing 50% of the time that's the
+ 
+
+331
+00:07:51,759 --> 00:07:54,869
+crashing 50% of the time that's the
+sweet spot then we'll start running.
+
+332
+00:07:54,869 --> 00:07:54,879
+sweet spot then we'll start running.
+ 
+
+333
+00:07:54,879 --> 00:07:59,350
+sweet spot then we'll start running.
+Okay, great. So I set it all going. I
+
+334
+00:07:59,350 --> 00:07:59,360
+Okay, great. So I set it all going. I
+ 
+
+335
+00:07:59,360 --> 00:08:02,309
+Okay, great. So I set it all going. I
+did the the 50% test. I figured out what
+
+336
+00:08:02,309 --> 00:08:02,319
+did the the 50% test. I figured out what
+ 
+
+337
+00:08:02,319 --> 00:08:04,950
+did the the 50% test. I figured out what
+the voltage was. Set it going. Went
+
+338
+00:08:04,950 --> 00:08:04,960
+the voltage was. Set it going. Went
+ 
+
+339
+00:08:04,960 --> 00:08:08,390
+the voltage was. Set it going. Went
+downstairs. Got myself a cup of coffee.
+
+340
+00:08:08,390 --> 00:08:08,400
+downstairs. Got myself a cup of coffee.
+ 
+
+341
+00:08:08,400 --> 00:08:11,510
+downstairs. Got myself a cup of coffee.
+came back
+
+342
+00:08:11,510 --> 00:08:11,520
+came back
+ 
+
+343
+00:08:11,520 --> 00:08:19,749
+came back
+and it was done.
+
+344
+00:08:19,749 --> 00:08:19,759
+
+ 
+
+345
+00:08:19,759 --> 00:08:24,070
+
+7 minutes. 7 minutes. So, I'd spend six
+
+346
+00:08:24,070 --> 00:08:24,080
+7 minutes. 7 minutes. So, I'd spend six
+ 
+
+347
+00:08:24,080 --> 00:08:27,189
+7 minutes. 7 minutes. So, I'd spend six
+weeks banging, well, not me, but my
+
+348
+00:08:27,189 --> 00:08:27,199
+weeks banging, well, not me, but my
+ 
+
+349
+00:08:27,199 --> 00:08:29,270
+weeks banging, well, not me, but my
+Python that was banging its head against
+
+350
+00:08:29,270 --> 00:08:29,280
+Python that was banging its head against
+ 
+
+351
+00:08:29,280 --> 00:08:34,469
+Python that was banging its head against
+a brick wall. 7 minutes.
+
+352
+00:08:34,469 --> 00:08:34,479
+
+ 
+
+353
+00:08:34,479 --> 00:08:37,829
+
+So, it's like shock.
+
+354
+00:08:37,829 --> 00:08:37,839
+So, it's like shock.
+ 
+
+355
+00:08:37,839 --> 00:08:40,790
+So, it's like shock.
+So now, yeah, I'm a believer. I believe
+
+356
+00:08:40,790 --> 00:08:40,800
+So now, yeah, I'm a believer. I believe
+ 
+
+357
+00:08:40,800 --> 00:08:47,110
+So now, yeah, I'm a believer. I believe
+this [\h__\h] works. Okay, so what's next?
+
+358
+00:08:47,110 --> 00:08:47,120
+this [\h__\h] works. Okay, so what's next?
+ 
+
+359
+00:08:47,120 --> 00:08:50,630
+this [\h__\h] works. Okay, so what's next?
+So what happens if I just say to Claude,
+
+360
+00:08:50,630 --> 00:08:50,640
+So what happens if I just say to Claude,
+ 
+
+361
+00:08:50,640 --> 00:08:52,870
+So what happens if I just say to Claude,
+"Okay, don't give me instructions. I'm
+
+362
+00:08:52,870 --> 00:08:52,880
+"Okay, don't give me instructions. I'm
+ 
+
+363
+00:08:52,880 --> 00:08:55,030
+"Okay, don't give me instructions. I'm
+You're not the boss of me. I'm the boss
+
+364
+00:08:55,030 --> 00:08:55,040
+You're not the boss of me. I'm the boss
+ 
+
+365
+00:08:55,040 --> 00:08:58,949
+You're not the boss of me. I'm the boss
+of you. You do this stuff. Okay, I'm not
+
+366
+00:08:58,949 --> 00:08:58,959
+of you. You do this stuff. Okay, I'm not
+ 
+
+367
+00:08:58,959 --> 00:09:01,190
+of you. You do this stuff. Okay, I'm not
+taking your advice and going and typing
+
+368
+00:09:01,190 --> 00:09:01,200
+taking your advice and going and typing
+ 
+
+369
+00:09:01,200 --> 00:09:04,550
+taking your advice and going and typing
+stuff in. So here here's my lab. It's
+
+370
+00:09:04,550 --> 00:09:04,560
+stuff in. So here here's my lab. It's
+ 
+
+371
+00:09:04,560 --> 00:09:06,150
+stuff in. So here here's my lab. It's
+yours now."
+
+372
+00:09:06,150 --> 00:09:06,160
+yours now."
+ 
+
+373
+00:09:06,160 --> 00:09:09,590
+yours now."
+So in the lab we've got a debugger which
+
+374
+00:09:09,590 --> 00:09:09,600
+So in the lab we've got a debugger which
+ 
+
+375
+00:09:09,600 --> 00:09:12,710
+So in the lab we've got a debugger which
+has S swd J tag. We've got a logic
+
+376
+00:09:12,710 --> 00:09:12,720
+has S swd J tag. We've got a logic
+ 
+
+377
+00:09:12,720 --> 00:09:15,670
+has S swd J tag. We've got a logic
+analyzer which can sniff UART [\h__\h]
+
+378
+00:09:15,670 --> 00:09:15,680
+analyzer which can sniff UART [\h__\h]
+ 
+
+379
+00:09:15,680 --> 00:09:19,030
+analyzer which can sniff UART [\h__\h]
+whatever. We've got the the glitch
+
+380
+00:09:19,030 --> 00:09:19,040
+whatever. We've got the the glitch
+ 
+
+381
+00:09:19,040 --> 00:09:21,829
+whatever. We've got the the glitch
+trigger which in this picture
+
+382
+00:09:21,829 --> 00:09:21,839
+trigger which in this picture
+ 
+
+383
+00:09:21,839 --> 00:09:27,990
+trigger which in this picture
+is this guy here which is an FPGA
+
+384
+00:09:27,990 --> 00:09:28,000
+is this guy here which is an FPGA
+ 
+
+385
+00:09:28,000 --> 00:09:30,949
+is this guy here which is an FPGA
+um voltmeter scopes buarts whatever
+
+386
+00:09:30,949 --> 00:09:30,959
+um voltmeter scopes buarts whatever
+ 
+
+387
+00:09:30,959 --> 00:09:33,750
+um voltmeter scopes buarts whatever
+power supply. So I gave that all to
+
+388
+00:09:33,750 --> 00:09:33,760
+power supply. So I gave that all to
+ 
+
+389
+00:09:33,760 --> 00:09:38,361
+power supply. So I gave that all to
+Claude and said, "Do your thing."
+
+390
+00:09:38,361 --> 00:09:38,371
+Claude and said, "Do your thing."
+ 
+
+391
+00:09:38,371 --> 00:09:39,509
+Claude and said, "Do your thing."
+[clears throat] And it gave me back
+
+392
+00:09:39,509 --> 00:09:39,519
+[clears throat] And it gave me back
+ 
+
+393
+00:09:39,519 --> 00:09:41,030
+[clears throat] And it gave me back
+this.
+
+394
+00:09:41,030 --> 00:09:41,040
+this.
+ 
+
+395
+00:09:41,040 --> 00:09:46,470
+this.
+And what this is is a Raspberry Pi Pico.
+
+396
+00:09:46,470 --> 00:09:46,480
+And what this is is a Raspberry Pi Pico.
+ 
+
+397
+00:09:46,480 --> 00:09:50,630
+And what this is is a Raspberry Pi Pico.
+And it has all of those things in it.
+
+398
+00:09:50,630 --> 00:09:50,640
+And it has all of those things in it.
+ 
+
+399
+00:09:50,640 --> 00:09:54,070
+And it has all of those things in it.
+So it talks direct to the target with
+
+400
+00:09:54,070 --> 00:09:54,080
+So it talks direct to the target with
+ 
+
+401
+00:09:54,080 --> 00:09:59,590
+So it talks direct to the target with
+SWD or JTAG. So that's a couple of pins
+
+402
+00:09:59,590 --> 00:09:59,600
+SWD or JTAG. So that's a couple of pins
+ 
+
+403
+00:09:59,600 --> 00:10:01,990
+SWD or JTAG. So that's a couple of pins
+kind of here somewhere.
+
+404
+00:10:01,990 --> 00:10:02,000
+kind of here somewhere.
+ 
+
+405
+00:10:02,000 --> 00:10:06,230
+kind of here somewhere.
+Uh it sniffs UART SPI or ITC.
+
+406
+00:10:06,230 --> 00:10:06,240
+Uh it sniffs UART SPI or ITC.
+ 
+
+407
+00:10:06,240 --> 00:10:09,750
+Uh it sniffs UART SPI or ITC.
+Um it does five nanocond resolution
+
+408
+00:10:09,750 --> 00:10:09,760
+Um it does five nanocond resolution
+ 
+
+409
+00:10:09,760 --> 00:10:12,230
+Um it does five nanocond resolution
+timing for glitching.
+
+410
+00:10:12,230 --> 00:10:12,240
+timing for glitching.
+ 
+
+411
+00:10:12,240 --> 00:10:15,750
+timing for glitching.
+It has uh peripheral control, so
+
+412
+00:10:15,750 --> 00:10:15,760
+It has uh peripheral control, so
+ 
+
+413
+00:10:15,760 --> 00:10:18,150
+It has uh peripheral control, so
+eight hardware UARTs. And if you know
+
+414
+00:10:18,150 --> 00:10:18,160
+eight hardware UARTs. And if you know
+ 
+
+415
+00:10:18,160 --> 00:10:19,829
+eight hardware UARTs. And if you know
+what a Pico is, you'll go, "Hang on a
+
+416
+00:10:19,829 --> 00:10:19,839
+what a Pico is, you'll go, "Hang on a
+ 
+
+417
+00:10:19,839 --> 00:10:22,550
+what a Pico is, you'll go, "Hang on a
+minute. Pico's only got two hardware
+
+418
+00:10:22,550 --> 00:10:22,560
+minute. Pico's only got two hardware
+ 
+
+419
+00:10:22,560 --> 00:10:24,150
+minute. Pico's only got two hardware
+UARTs."
+
+420
+00:10:24,150 --> 00:10:24,160
+UARTs."
+ 
+
+421
+00:10:24,160 --> 00:10:27,990
+UARTs."
+Uh actually one of the joys of using
+
+422
+00:10:27,990 --> 00:10:28,000
+Uh actually one of the joys of using
+ 
+
+423
+00:10:28,000 --> 00:10:31,110
+Uh actually one of the joys of using
+Claude to do all the donkey work is you
+
+424
+00:10:31,110 --> 00:10:31,120
+Claude to do all the donkey work is you
+ 
+
+425
+00:10:31,120 --> 00:10:34,550
+Claude to do all the donkey work is you
+can have crazy ideas and say well I need
+
+426
+00:10:34,550 --> 00:10:34,560
+can have crazy ideas and say well I need
+ 
+
+427
+00:10:34,560 --> 00:10:36,310
+can have crazy ideas and say well I need
+more than two UARTs. So how are we going
+
+428
+00:10:36,310 --> 00:10:36,320
+more than two UARTs. So how are we going
+ 
+
+429
+00:10:36,320 --> 00:10:39,590
+more than two UARTs. So how are we going
+to fix that? And Claude will say well
+
+430
+00:10:39,590 --> 00:10:39,600
+to fix that? And Claude will say well
+ 
+
+431
+00:10:39,600 --> 00:10:42,310
+to fix that? And Claude will say well
+each of those two UARTs has four
+
+432
+00:10:42,310 --> 00:10:42,320
+each of those two UARTs has four
+ 
+
+433
+00:10:42,320 --> 00:10:44,790
+each of those two UARTs has four
+alternate pin configurations.
+
+434
+00:10:44,790 --> 00:10:44,800
+alternate pin configurations.
+ 
+
+435
+00:10:44,800 --> 00:10:47,269
+alternate pin configurations.
+So why don't we just flip the configs?
+
+436
+00:10:47,269 --> 00:10:47,279
+So why don't we just flip the configs?
+ 
+
+437
+00:10:47,279 --> 00:10:49,829
+So why don't we just flip the configs?
+you know, you wire up up to eight
+
+438
+00:10:49,829 --> 00:10:49,839
+you know, you wire up up to eight
+ 
+
+439
+00:10:49,839 --> 00:10:51,750
+you know, you wire up up to eight
+devices and I'll just flip the configs
+
+440
+00:10:51,750 --> 00:10:51,760
+devices and I'll just flip the configs
+ 
+
+441
+00:10:51,760 --> 00:10:54,150
+devices and I'll just flip the configs
+for you when you need to talk to that
+
+442
+00:10:54,150 --> 00:10:54,160
+for you when you need to talk to that
+ 
+
+443
+00:10:54,160 --> 00:10:58,630
+for you when you need to talk to that
+device. And I'm like, genius. Okay, I
+
+444
+00:10:58,630 --> 00:10:58,640
+device. And I'm like, genius. Okay, I
+ 
+
+445
+00:10:58,640 --> 00:11:00,949
+device. And I'm like, genius. Okay, I
+now have eight hardware.
+
+446
+00:11:00,949 --> 00:11:00,959
+now have eight hardware.
+ 
+
+447
+00:11:00,959 --> 00:11:02,870
+now have eight hardware.
+Thanks, Claude.
+
+448
+00:11:02,870 --> 00:11:02,880
+Thanks, Claude.
+ 
+
+449
+00:11:02,880 --> 00:11:05,750
+Thanks, Claude.
+So, yeah. Um,
+
+450
+00:11:05,750 --> 00:11:05,760
+So, yeah. Um,
+ 
+
+451
+00:11:05,760 --> 00:11:09,430
+So, yeah. Um,
+that's what we did. And
+
+452
+00:11:09,430 --> 00:11:09,440
+that's what we did. And
+ 
+
+453
+00:11:09,440 --> 00:11:13,190
+that's what we did. And
+now I can just think of crazy [\h__\h] and
+
+454
+00:11:13,190 --> 00:11:13,200
+now I can just think of crazy [\h__\h] and
+ 
+
+455
+00:11:13,200 --> 00:11:16,949
+now I can just think of crazy [\h__\h] and
+say to Claude, "Hey, Claude, what if we
+
+456
+00:11:16,949 --> 00:11:16,959
+say to Claude, "Hey, Claude, what if we
+ 
+
+457
+00:11:16,959 --> 00:11:19,509
+say to Claude, "Hey, Claude, what if we
+And this is a screenshot of a chat I was
+
+458
+00:11:19,509 --> 00:11:19,519
+And this is a screenshot of a chat I was
+ 
+
+459
+00:11:19,519 --> 00:11:22,069
+And this is a screenshot of a chat I was
+having with a a work colleague where I'm
+
+460
+00:11:22,069 --> 00:11:22,079
+having with a a work colleague where I'm
+ 
+
+461
+00:11:22,079 --> 00:11:25,030
+having with a a work colleague where I'm
+explaining this particular glitch to
+
+462
+00:11:25,030 --> 00:11:25,040
+explaining this particular glitch to
+ 
+
+463
+00:11:25,040 --> 00:11:27,030
+explaining this particular glitch to
+him.
+
+464
+00:11:27,030 --> 00:11:27,040
+him.
+ 
+
+465
+00:11:27,040 --> 00:11:29,190
+him.
+And in mid conversation with him, I'm
+
+466
+00:11:29,190 --> 00:11:29,200
+And in mid conversation with him, I'm
+ 
+
+467
+00:11:29,200 --> 00:11:31,509
+And in mid conversation with him, I'm
+like, "Hang on a minute. Why are we
+
+468
+00:11:31,509 --> 00:11:31,519
+like, "Hang on a minute. Why are we
+ 
+
+469
+00:11:31,519 --> 00:11:34,710
+like, "Hang on a minute. Why are we
+messing around with timing to try and
+
+470
+00:11:34,710 --> 00:11:34,720
+messing around with timing to try and
+ 
+
+471
+00:11:34,720 --> 00:11:37,509
+messing around with timing to try and
+create a voltage drop to a particular
+
+472
+00:11:37,509 --> 00:11:37,519
+create a voltage drop to a particular
+ 
+
+473
+00:11:37,519 --> 00:11:41,750
+create a voltage drop to a particular
+point? When we have an ADC on the pico,
+
+474
+00:11:41,750 --> 00:11:41,760
+point? When we have an ADC on the pico,
+ 
+
+475
+00:11:41,760 --> 00:11:43,990
+point? When we have an ADC on the pico,
+we can just measure the voltage. And
+
+476
+00:11:43,990 --> 00:11:44,000
+we can just measure the voltage. And
+ 
+
+477
+00:11:44,000 --> 00:11:46,630
+we can just measure the voltage. And
+when we reach that point,
+
+478
+00:11:46,630 --> 00:11:46,640
+when we reach that point,
+ 
+
+479
+00:11:46,640 --> 00:11:49,910
+when we reach that point,
+so I I could use the ADC to measure the
+
+480
+00:11:49,910 --> 00:11:49,920
+so I I could use the ADC to measure the
+ 
+
+481
+00:11:49,920 --> 00:11:52,470
+so I I could use the ADC to measure the
+timing to get to that voltage. And
+
+482
+00:11:52,470 --> 00:11:52,480
+timing to get to that voltage. And
+ 
+
+483
+00:11:52,480 --> 00:11:54,069
+timing to get to that voltage. And
+actually Claude took it one step
+
+484
+00:11:54,069 --> 00:11:54,079
+actually Claude took it one step
+ 
+
+485
+00:11:54,079 --> 00:11:55,509
+actually Claude took it one step
+further. I hope you couldn't read it
+
+486
+00:11:55,509 --> 00:11:55,519
+further. I hope you couldn't read it
+ 
+
+487
+00:11:55,519 --> 00:11:57,030
+further. I hope you couldn't read it
+here,
+
+488
+00:11:57,030 --> 00:11:57,040
+here,
+ 
+
+489
+00:11:57,040 --> 00:11:59,590
+here,
+but uh
+
+490
+00:11:59,590 --> 00:11:59,600
+but uh
+ 
+
+491
+00:11:59,600 --> 00:12:02,870
+but uh
+Claude said, well, an alternative
+
+492
+00:12:02,870 --> 00:12:02,880
+Claude said, well, an alternative
+ 
+
+493
+00:12:02,880 --> 00:12:05,350
+Claude said, well, an alternative
+approach would be
+
+494
+00:12:05,350 --> 00:12:05,360
+approach would be
+ 
+
+495
+00:12:05,360 --> 00:12:07,110
+approach would be
+instead of just measuring, we could use
+
+496
+00:12:07,110 --> 00:12:07,120
+instead of just measuring, we could use
+ 
+
+497
+00:12:07,120 --> 00:12:11,190
+instead of just measuring, we could use
+the ADC to actively control the timing.
+
+498
+00:12:11,190 --> 00:12:11,200
+the ADC to actively control the timing.
+ 
+
+499
+00:12:11,200 --> 00:12:13,509
+the ADC to actively control the timing.
+So we're going to do the glitch. I'm not
+
+500
+00:12:13,509 --> 00:12:13,519
+So we're going to do the glitch. I'm not
+ 
+
+501
+00:12:13,519 --> 00:12:15,910
+So we're going to do the glitch. I'm not
+going to give it any parameters. It's
+
+502
+00:12:15,910 --> 00:12:15,920
+going to give it any parameters. It's
+ 
+
+503
+00:12:15,920 --> 00:12:17,910
+going to give it any parameters. It's
+going to measure the voltage on the
+
+504
+00:12:17,910 --> 00:12:17,920
+going to measure the voltage on the
+ 
+
+505
+00:12:17,920 --> 00:12:20,550
+going to measure the voltage on the
+target and when we hit the right point,
+
+506
+00:12:20,550 --> 00:12:20,560
+target and when we hit the right point,
+ 
+
+507
+00:12:20,560 --> 00:12:22,790
+target and when we hit the right point,
+then bam, it's going to do the glitch.
+
+508
+00:12:22,790 --> 00:12:22,800
+then bam, it's going to do the glitch.
+ 
+
+509
+00:12:22,800 --> 00:12:24,790
+then bam, it's going to do the glitch.
+It's going to stop the glitch. Bring the
+
+510
+00:12:24,790 --> 00:12:24,800
+It's going to stop the glitch. Bring the
+ 
+
+511
+00:12:24,800 --> 00:12:27,269
+It's going to stop the glitch. Bring the
+power back up.
+
+512
+00:12:27,269 --> 00:12:27,279
+power back up.
+ 
+
+513
+00:12:27,279 --> 00:12:30,230
+power back up.
+So, I said to my colleague, "Hey, Claude
+
+514
+00:12:30,230 --> 00:12:30,240
+So, I said to my colleague, "Hey, Claude
+ 
+
+515
+00:12:30,240 --> 00:12:33,590
+So, I said to my colleague, "Hey, Claude
+likes that idea."
+
+516
+00:12:33,590 --> 00:12:33,600
+likes that idea."
+ 
+
+517
+00:12:33,600 --> 00:12:36,949
+likes that idea."
+So, Claude told me, "Connect one wire
+
+518
+00:12:36,949 --> 00:12:36,959
+So, Claude told me, "Connect one wire
+ 
+
+519
+00:12:36,959 --> 00:12:38,949
+So, Claude told me, "Connect one wire
+and I'll take care of the rest." So, I
+
+520
+00:12:38,949 --> 00:12:38,959
+and I'll take care of the rest." So, I
+ 
+
+521
+00:12:38,959 --> 00:12:42,310
+and I'll take care of the rest." So, I
+connected up the ADC. It wrote the code.
+
+522
+00:12:42,310 --> 00:12:42,320
+connected up the ADC. It wrote the code.
+ 
+
+523
+00:12:42,320 --> 00:12:44,470
+connected up the ADC. It wrote the code.
+It ran it. I didn't even run it. I just
+
+524
+00:12:44,470 --> 00:12:44,480
+It ran it. I didn't even run it. I just
+ 
+
+525
+00:12:44,480 --> 00:12:48,710
+It ran it. I didn't even run it. I just
+came back and I saw this string of this
+
+526
+00:12:48,710 --> 00:12:48,720
+came back and I saw this string of this
+ 
+
+527
+00:12:48,720 --> 00:12:51,350
+came back and I saw this string of this
+is all FFS because it was a blank chip I
+
+528
+00:12:51,350 --> 00:12:51,360
+is all FFS because it was a blank chip I
+ 
+
+529
+00:12:51,360 --> 00:12:54,069
+is all FFS because it was a blank chip I
+was testing. But it dumped it unlocked
+
+530
+00:12:54,069 --> 00:12:54,079
+was testing. But it dumped it unlocked
+ 
+
+531
+00:12:54,079 --> 00:12:57,910
+was testing. But it dumped it unlocked
+and dumped the data on the first try.
+
+532
+00:12:57,910 --> 00:12:57,920
+and dumped the data on the first try.
+ 
+
+533
+00:12:57,920 --> 00:13:01,670
+and dumped the data on the first try.
+And I'm like, "Holy fuck."
+
+534
+00:13:01,670 --> 00:13:01,680
+And I'm like, "Holy fuck."
+ 
+
+535
+00:13:01,680 --> 00:13:04,550
+And I'm like, "Holy fuck."
+And that's my colleague laughing. Okay.
+
+536
+00:13:04,550 --> 00:13:04,560
+And that's my colleague laughing. Okay.
+ 
+
+537
+00:13:04,560 --> 00:13:10,629
+And that's my colleague laughing. Okay.
+So,
+
+538
+00:13:10,629 --> 00:13:10,639
+
+ 
+
+539
+00:13:10,639 --> 00:13:13,670
+
+what could possibly go wrong?
+
+540
+00:13:13,670 --> 00:13:13,680
+what could possibly go wrong?
+ 
+
+541
+00:13:13,680 --> 00:13:20,310
+what could possibly go wrong?
+So, I have here,
+
+542
+00:13:20,310 --> 00:13:20,320
+
+ 
+
+543
+00:13:20,320 --> 00:13:23,350
+
+the device in question.
+
+544
+00:13:23,350 --> 00:13:23,360
+the device in question.
+ 
+
+545
+00:13:23,360 --> 00:13:25,430
+the device in question.
+So, the white board is the target, the
+
+546
+00:13:25,430 --> 00:13:25,440
+So, the white board is the target, the
+ 
+
+547
+00:13:25,440 --> 00:13:29,670
+So, the white board is the target, the
+green board is the Pico,
+
+548
+00:13:29,670 --> 00:13:29,680
+green board is the Pico,
+ 
+
+549
+00:13:29,680 --> 00:13:33,509
+green board is the Pico,
+and
+
+550
+00:13:33,509 --> 00:13:33,519
+
+ 
+
+551
+00:13:33,519 --> 00:13:36,389
+
+Let's give it a go.
+
+552
+00:13:36,389 --> 00:13:36,399
+Let's give it a go.
+ 
+
+553
+00:13:36,399 --> 00:13:44,069
+Let's give it a go.
+I don't know. Where are we?
+
+554
+00:13:44,069 --> 00:13:44,079
+
+ 
+
+555
+00:13:44,079 --> 00:14:00,629
+
+Sorry, I need my glasses.
+
+556
+00:14:00,629 --> 00:14:00,639
+
+ 
+
+557
+00:14:00,639 --> 00:14:03,350
+
+Uh, so just to prove this isn't a fix,
+
+558
+00:14:03,350 --> 00:14:03,360
+Uh, so just to prove this isn't a fix,
+ 
+
+559
+00:14:03,360 --> 00:14:06,710
+Uh, so just to prove this isn't a fix,
+um, I'm using the official tool to talk
+
+560
+00:14:06,710 --> 00:14:06,720
+um, I'm using the official tool to talk
+ 
+
+561
+00:14:06,720 --> 00:14:08,710
+um, I'm using the official tool to talk
+to the chip
+
+562
+00:14:08,710 --> 00:14:08,720
+to the chip
+ 
+
+563
+00:14:08,720 --> 00:14:10,710
+to the chip
+and it's unlocked at the moment
+
+564
+00:14:10,710 --> 00:14:10,720
+and it's unlocked at the moment
+ 
+
+565
+00:14:10,720 --> 00:14:12,790
+and it's unlocked at the moment
+completely blank.
+
+566
+00:14:12,790 --> 00:14:12,800
+completely blank.
+ 
+
+567
+00:14:12,800 --> 00:14:16,230
+completely blank.
+So I am going to fill memory
+
+568
+00:14:16,230 --> 00:14:16,240
+So I am going to fill memory
+ 
+
+569
+00:14:16,240 --> 00:14:19,590
+So I am going to fill memory
+with
+
+570
+00:14:19,590 --> 00:14:19,600
+
+ 
+
+571
+00:14:19,600 --> 00:14:24,389
+
+someone give me a hex value.
+
+572
+00:14:24,389 --> 00:14:24,399
+
+ 
+
+573
+00:14:24,399 --> 00:14:28,150
+
+boobies. Are we doing boobies then? Is
+
+574
+00:14:28,150 --> 00:14:28,160
+boobies. Are we doing boobies then? Is
+ 
+
+575
+00:14:28,160 --> 00:14:30,870
+boobies. Are we doing boobies then? Is
+okay. I had two guesses what it was
+
+576
+00:14:30,870 --> 00:14:30,880
+okay. I had two guesses what it was
+ 
+
+577
+00:14:30,880 --> 00:14:31,990
+okay. I had two guesses what it was
+going to be. It was going to be dead
+
+578
+00:14:31,990 --> 00:14:32,000
+going to be. It was going to be dead
+ 
+
+579
+00:14:32,000 --> 00:14:34,470
+going to be. It was going to be dead
+beef or boobies. So, I guess we're doing
+
+580
+00:14:34,470 --> 00:14:34,480
+beef or boobies. So, I guess we're doing
+ 
+
+581
+00:14:34,480 --> 00:14:40,230
+beef or boobies. So, I guess we're doing
+boobies.
+
+582
+00:14:40,230 --> 00:14:40,240
+
+ 
+
+583
+00:14:40,240 --> 00:14:45,189
+
+Uh, actually, we need one more zero.
+
+584
+00:14:45,189 --> 00:14:45,199
+
+ 
+
+585
+00:14:45,199 --> 00:14:47,829
+
+And then we say it like
+
+586
+00:14:47,829 --> 00:14:47,839
+And then we say it like
+ 
+
+587
+00:14:47,839 --> 00:14:56,069
+And then we say it like
+Homer boobies.
+
+588
+00:14:56,069 --> 00:14:56,079
+
+ 
+
+589
+00:14:56,079 --> 00:14:59,110
+
+Um it's little Indian so it looks a bit
+
+590
+00:14:59,110 --> 00:14:59,120
+Um it's little Indian so it looks a bit
+ 
+
+591
+00:14:59,120 --> 00:15:01,430
+Um it's little Indian so it looks a bit
+weird. So I'm going to change the option
+
+592
+00:15:01,430 --> 00:15:01,440
+weird. So I'm going to change the option
+ 
+
+593
+00:15:01,440 --> 00:15:03,670
+weird. So I'm going to change the option
+by
+
+594
+00:15:03,670 --> 00:15:03,680
+by
+ 
+
+595
+00:15:03,680 --> 00:15:05,829
+by
+uh readout protection. I'm going to
+
+596
+00:15:05,829 --> 00:15:05,839
+uh readout protection. I'm going to
+ 
+
+597
+00:15:05,839 --> 00:15:10,710
+uh readout protection. I'm going to
+protect it.
+
+598
+00:15:10,710 --> 00:15:10,720
+
+ 
+
+599
+00:15:10,720 --> 00:15:14,470
+
+Apply.
+
+600
+00:15:14,470 --> 00:15:14,480
+
+ 
+
+601
+00:15:14,480 --> 00:15:17,509
+
+So if I disconnect
+
+602
+00:15:17,509 --> 00:15:17,519
+So if I disconnect
+ 
+
+603
+00:15:17,519 --> 00:15:21,670
+So if I disconnect
+and reconnect.
+
+604
+00:15:21,670 --> 00:15:21,680
+
+ 
+
+605
+00:15:21,680 --> 00:15:23,750
+
+So data read failed. It can't read it
+
+606
+00:15:23,750 --> 00:15:23,760
+So data read failed. It can't read it
+ 
+
+607
+00:15:23,760 --> 00:15:26,550
+So data read failed. It can't read it
+back because it's now locked. Okay. So
+
+608
+00:15:26,550 --> 00:15:26,560
+back because it's now locked. Okay. So
+ 
+
+609
+00:15:26,560 --> 00:15:29,350
+back because it's now locked. Okay. So
+if I go to the read, there's no no data
+
+610
+00:15:29,350 --> 00:15:29,360
+if I go to the read, there's no no data
+ 
+
+611
+00:15:29,360 --> 00:15:31,110
+if I go to the read, there's no no data
+to display.
+
+612
+00:15:31,110 --> 00:15:31,120
+to display.
+ 
+
+613
+00:15:31,120 --> 00:15:45,590
+to display.
+So, let's leave this guy.
+
+614
+00:15:45,590 --> 00:15:45,600
+
+ 
+
+615
+00:15:45,600 --> 00:15:47,110
+
+So, [clears throat] now I'm connected to
+
+616
+00:15:47,110 --> 00:15:47,120
+So, [clears throat] now I'm connected to
+ 
+
+617
+00:15:47,120 --> 00:15:50,629
+So, [clears throat] now I'm connected to
+my Pico hacker
+
+618
+00:15:50,629 --> 00:15:50,639
+my Pico hacker
+ 
+
+619
+00:15:50,639 --> 00:15:52,069
+my Pico hacker
+and it's [clears throat] got a menu. And
+
+620
+00:15:52,069 --> 00:15:52,079
+and it's [clears throat] got a menu. And
+ 
+
+621
+00:15:52,079 --> 00:15:55,189
+and it's [clears throat] got a menu. And
+by the way, this is a known so this is a
+
+622
+00:15:55,189 --> 00:15:55,199
+by the way, this is a known so this is a
+ 
+
+623
+00:15:55,199 --> 00:15:57,590
+by the way, this is a known so this is a
+known attack. Uh it's called stimpic. as
+
+624
+00:15:57,590 --> 00:15:57,600
+known attack. Uh it's called stimpic. as
+ 
+
+625
+00:15:57,600 --> 00:16:00,389
+known attack. Uh it's called stimpic. as
+part of picop pona and when I published
+
+626
+00:16:00,389 --> 00:16:00,399
+part of picop pona and when I published
+ 
+
+627
+00:16:00,399 --> 00:16:03,910
+part of picop pona and when I published
+the code um full credit to them is in
+
+628
+00:16:03,910 --> 00:16:03,920
+the code um full credit to them is in
+ 
+
+629
+00:16:03,920 --> 00:16:07,670
+the code um full credit to them is in
+there. The difference here is uh we're
+
+630
+00:16:07,670 --> 00:16:07,680
+there. The difference here is uh we're
+ 
+
+631
+00:16:07,680 --> 00:16:10,069
+there. The difference here is uh we're
+doing a non-deterministic hopefully
+
+632
+00:16:10,069 --> 00:16:10,079
+doing a non-deterministic hopefully
+ 
+
+633
+00:16:10,079 --> 00:16:11,590
+doing a non-deterministic hopefully
+we're turning so I'm doing the opposite
+
+634
+00:16:11,590 --> 00:16:11,600
+we're turning so I'm doing the opposite
+ 
+
+635
+00:16:11,600 --> 00:16:13,350
+we're turning so I'm doing the opposite
+of what Gaddy said we should all be
+
+636
+00:16:13,350 --> 00:16:13,360
+of what Gaddy said we should all be
+ 
+
+637
+00:16:13,360 --> 00:16:16,389
+of what Gaddy said we should all be
+aiming for. Um so I'm trying to turn a
+
+638
+00:16:16,389 --> 00:16:16,399
+aiming for. Um so I'm trying to turn a
+ 
+
+639
+00:16:16,399 --> 00:16:17,910
+aiming for. Um so I'm trying to turn a
+nondeterministic
+
+640
+00:16:17,910 --> 00:16:17,920
+nondeterministic
+ 
+
+641
+00:16:17,920 --> 00:16:22,150
+nondeterministic
+process into a deterministic one. Um,
+
+642
+00:16:22,150 --> 00:16:22,160
+process into a deterministic one. Um,
+ 
+
+643
+00:16:22,160 --> 00:16:26,310
+process into a deterministic one. Um,
+and we do that by letting the controller
+
+644
+00:16:26,310 --> 00:16:26,320
+and we do that by letting the controller
+ 
+
+645
+00:16:26,320 --> 00:16:28,550
+and we do that by letting the controller
+uh or letting the Pico do the whole
+
+646
+00:16:28,550 --> 00:16:28,560
+uh or letting the Pico do the whole
+ 
+
+647
+00:16:28,560 --> 00:16:31,269
+uh or letting the Pico do the whole
+process. So to just explain what it's
+
+648
+00:16:31,269 --> 00:16:31,279
+process. So to just explain what it's
+ 
+
+649
+00:16:31,279 --> 00:16:33,509
+process. So to just explain what it's
+going to do,
+
+650
+00:16:33,509 --> 00:16:33,519
+going to do,
+ 
+
+651
+00:16:33,519 --> 00:16:36,069
+going to do,
+it's going to connect over SWD. It's
+
+652
+00:16:36,069 --> 00:16:36,079
+it's going to connect over SWD. It's
+ 
+
+653
+00:16:36,079 --> 00:16:39,430
+it's going to connect over SWD. It's
+going to load a payload into flash.
+
+654
+00:16:39,430 --> 00:16:39,440
+going to load a payload into flash.
+ 
+
+655
+00:16:39,440 --> 00:16:43,110
+going to load a payload into flash.
+It's then going to reboot.
+
+656
+00:16:43,110 --> 00:16:43,120
+It's then going to reboot.
+ 
+
+657
+00:16:43,120 --> 00:16:45,350
+It's then going to reboot.
+Uh, it's going to cause a brown out that
+
+658
+00:16:45,350 --> 00:16:45,360
+Uh, it's going to cause a brown out that
+ 
+
+659
+00:16:45,360 --> 00:16:49,509
+Uh, it's going to cause a brown out that
+basically causes the chip to reboot. Um,
+
+660
+00:16:49,509 --> 00:16:49,519
+basically causes the chip to reboot. Um,
+ 
+
+661
+00:16:49,519 --> 00:16:52,710
+basically causes the chip to reboot. Um,
+but the brownout isn't going to go low
+
+662
+00:16:52,710 --> 00:16:52,720
+but the brownout isn't going to go low
+ 
+
+663
+00:16:52,720 --> 00:16:55,590
+but the brownout isn't going to go low
+enough to to wipe the flash. So, the
+
+664
+00:16:55,590 --> 00:16:55,600
+enough to to wipe the flash. So, the
+ 
+
+665
+00:16:55,600 --> 00:16:57,509
+enough to to wipe the flash. So, the
+code I want to run will survive the
+
+666
+00:16:57,509 --> 00:16:57,519
+code I want to run will survive the
+ 
+
+667
+00:16:57,519 --> 00:17:00,550
+code I want to run will survive the
+glitch. And then stage two, it will come
+
+668
+00:17:00,550 --> 00:17:00,560
+glitch. And then stage two, it will come
+ 
+
+669
+00:17:00,560 --> 00:17:05,270
+glitch. And then stage two, it will come
+in. it reconfigures the um the memory
+
+670
+00:17:05,270 --> 00:17:05,280
+in. it reconfigures the um the memory
+ 
+
+671
+00:17:05,280 --> 00:17:09,829
+in. it reconfigures the um the memory
+mapper to think that the flash is the
+
+672
+00:17:09,829 --> 00:17:09,839
+mapper to think that the flash is the
+ 
+
+673
+00:17:09,839 --> 00:17:11,909
+mapper to think that the flash is the
+SRAMM
+
+674
+00:17:11,909 --> 00:17:11,919
+SRAMM
+ 
+
+675
+00:17:11,919 --> 00:17:14,549
+SRAMM
+and then it'll do another glitch which
+
+676
+00:17:14,549 --> 00:17:14,559
+and then it'll do another glitch which
+ 
+
+677
+00:17:14,559 --> 00:17:17,829
+and then it'll do another glitch which
+will cause it to boot off the flash
+
+678
+00:17:17,829 --> 00:17:17,839
+will cause it to boot off the flash
+ 
+
+679
+00:17:17,839 --> 00:17:21,110
+will cause it to boot off the flash
+which the chip thinks is SRAM uh sorry
+
+680
+00:17:21,110 --> 00:17:21,120
+which the chip thinks is SRAM uh sorry
+ 
+
+681
+00:17:21,120 --> 00:17:23,350
+which the chip thinks is SRAM uh sorry
+other way around SRAMM which the chip
+
+682
+00:17:23,350 --> 00:17:23,360
+other way around SRAMM which the chip
+ 
+
+683
+00:17:23,360 --> 00:17:25,669
+other way around SRAMM which the chip
+thinks is flash and because it booted
+
+684
+00:17:25,669 --> 00:17:25,679
+thinks is flash and because it booted
+ 
+
+685
+00:17:25,679 --> 00:17:27,909
+thinks is flash and because it booted
+off flash you have read access to the
+
+686
+00:17:27,909 --> 00:17:27,919
+off flash you have read access to the
+ 
+
+687
+00:17:27,919 --> 00:17:31,270
+off flash you have read access to the
+flash you can dump the memory Here
+
+688
+00:17:31,270 --> 00:17:31,280
+flash you can dump the memory Here
+ 
+
+689
+00:17:31,280 --> 00:17:33,110
+flash you can dump the memory Here
+he goes.
+
+690
+00:17:33,110 --> 00:17:33,120
+he goes.
+ 
+
+691
+00:17:33,120 --> 00:17:35,590
+he goes.
+Have we sacrificed enough kittens this
+
+692
+00:17:35,590 --> 00:17:35,600
+Have we sacrificed enough kittens this
+ 
+
+693
+00:17:35,600 --> 00:17:48,549
+Have we sacrificed enough kittens this
+morning for the demo gods to love me?
+
+694
+00:17:48,549 --> 00:17:48,559
+
+ 
+
+695
+00:17:48,559 --> 00:17:58,070
+
+Boobies.
+
+696
+00:17:58,070 --> 00:17:58,080
+
+ 
+
+697
+00:17:58,080 --> 00:17:59,909
+
+I have two minutes left. I think that's
+
+698
+00:17:59,909 --> 00:17:59,919
+I have two minutes left. I think that's
+ 
+
+699
+00:17:59,919 --> 00:18:02,310
+I have two minutes left. I think that's
+questions, right? Or is the questions
+
+700
+00:18:02,310 --> 00:18:02,320
+questions, right? Or is the questions
+ 
+
+701
+00:18:02,320 --> 00:18:06,230
+questions, right? Or is the questions
+after the Okay. So, so I'll just show
+
+702
+00:18:06,230 --> 00:18:06,240
+after the Okay. So, so I'll just show
+ 
+
+703
+00:18:06,240 --> 00:18:09,270
+after the Okay. So, so I'll just show
+you one more thing.
+
+704
+00:18:09,270 --> 00:18:09,280
+you one more thing.
+ 
+
+705
+00:18:09,280 --> 00:18:11,590
+you one more thing.
+So, basically, I told it to just give me
+
+706
+00:18:11,590 --> 00:18:11,600
+So, basically, I told it to just give me
+ 
+
+707
+00:18:11,600 --> 00:18:14,390
+So, basically, I told it to just give me
+a lot of tooling so I can understand
+
+708
+00:18:14,390 --> 00:18:14,400
+a lot of tooling so I can understand
+ 
+
+709
+00:18:14,400 --> 00:18:18,470
+a lot of tooling so I can understand
+what's happening. So if I run the R
+
+710
+00:18:18,470 --> 00:18:18,480
+what's happening. So if I run the R
+ 
+
+711
+00:18:18,480 --> 00:18:21,110
+what's happening. So if I run the R
+command,
+
+712
+00:18:21,110 --> 00:18:21,120
+command,
+ 
+
+713
+00:18:21,120 --> 00:18:24,310
+command,
+this is doing the initial sweep
+
+714
+00:18:24,310 --> 00:18:24,320
+this is doing the initial sweep
+ 
+
+715
+00:18:24,320 --> 00:18:27,350
+this is doing the initial sweep
+to understand at what point SRAMM
+
+716
+00:18:27,350 --> 00:18:27,360
+to understand at what point SRAMM
+ 
+
+717
+00:18:27,360 --> 00:18:31,190
+to understand at what point SRAMM
+survives, but the brownout trigger kicks
+
+718
+00:18:31,190 --> 00:18:31,200
+survives, but the brownout trigger kicks
+ 
+
+719
+00:18:31,200 --> 00:18:34,630
+survives, but the brownout trigger kicks
+in and causes a reset. Uh, so it's going
+
+720
+00:18:34,630 --> 00:18:34,640
+in and causes a reset. Uh, so it's going
+ 
+
+721
+00:18:34,640 --> 00:18:37,990
+in and causes a reset. Uh, so it's going
+to keep going down until SRAMM gets
+
+722
+00:18:37,990 --> 00:18:38,000
+to keep going down until SRAMM gets
+ 
+
+723
+00:18:38,000 --> 00:18:40,390
+to keep going down until SRAMM gets
+corrupted and then we'll get a nice
+
+724
+00:18:40,390 --> 00:18:40,400
+corrupted and then we'll get a nice
+ 
+
+725
+00:18:40,400 --> 00:18:53,750
+corrupted and then we'll get a nice
+little table.
+
+726
+00:18:53,750 --> 00:18:53,760
+
+ 
+
+727
+00:18:53,760 --> 00:19:00,070
+
+So yeah, talk amongst yourselves.
+
+728
+00:19:00,070 --> 00:19:00,080
+
+ 
+
+729
+00:19:00,080 --> 00:19:01,669
+
+If anyone's got a question, you can
+
+730
+00:19:01,669 --> 00:19:01,679
+If anyone's got a question, you can
+ 
+
+731
+00:19:01,679 --> 00:19:03,350
+If anyone's got a question, you can
+shout it out now because this will take
+
+732
+00:19:03,350 --> 00:19:03,360
+shout it out now because this will take
+ 
+
+733
+00:19:03,360 --> 00:19:07,510
+shout it out now because this will take
+about another 20 seconds.
+
+734
+00:19:07,510 --> 00:19:07,520
+
+ 
+
+735
+00:19:07,520 --> 00:19:10,789
+
+>> Oh, done. Okay.
+
+736
+00:19:10,789 --> 00:19:10,799
+>> Oh, done. Okay.
+ 
+
+737
+00:19:10,799 --> 00:19:12,789
+>> Oh, done. Okay.
+So, yeah, as you can see, what we have
+
+738
+00:19:12,789 --> 00:19:12,799
+So, yeah, as you can see, what we have
+ 
+
+739
+00:19:12,799 --> 00:19:14,630
+So, yeah, as you can see, what we have
+now is
+
+740
+00:19:14,630 --> 00:19:14,640
+now is
+ 
+
+741
+00:19:14,640 --> 00:19:18,789
+now is
+the NRST is the reset flag. So, it's
+
+742
+00:19:18,789 --> 00:19:18,799
+the NRST is the reset flag. So, it's
+ 
+
+743
+00:19:18,799 --> 00:19:22,230
+the NRST is the reset flag. So, it's
+like a reverse um
+
+744
+00:19:22,230 --> 00:19:22,240
+like a reverse um
+ 
+
+745
+00:19:22,240 --> 00:19:25,190
+like a reverse um
+pin that tells me that it it triggered
+
+746
+00:19:25,190 --> 00:19:25,200
+pin that tells me that it it triggered
+ 
+
+747
+00:19:25,200 --> 00:19:29,270
+pin that tells me that it it triggered
+and it's now in in not reset mode. So,
+
+748
+00:19:29,270 --> 00:19:29,280
+and it's now in in not reset mode. So,
+ 
+
+749
+00:19:29,280 --> 00:19:34,390
+and it's now in in not reset mode. So,
+um this window down here between 161
+
+750
+00:19:34,390 --> 00:19:34,400
+um this window down here between 161
+ 
+
+751
+00:19:34,400 --> 00:19:39,190
+um this window down here between 161
+and 089 is a really big window where I
+
+752
+00:19:39,190 --> 00:19:39,200
+and 089 is a really big window where I
+ 
+
+753
+00:19:39,200 --> 00:19:41,029
+and 089 is a really big window where I
+can achieve what I want. I caused a
+
+754
+00:19:41,029 --> 00:19:41,039
+can achieve what I want. I caused a
+ 
+
+755
+00:19:41,039 --> 00:19:43,029
+can achieve what I want. I caused a
+reset, but I haven't lost the contents
+
+756
+00:19:43,029 --> 00:19:43,039
+reset, but I haven't lost the contents
+ 
+
+757
+00:19:43,039 --> 00:19:46,390
+reset, but I haven't lost the contents
+of flash. And it gives you timing. So if
+
+758
+00:19:46,390 --> 00:19:46,400
+of flash. And it gives you timing. So if
+ 
+
+759
+00:19:46,400 --> 00:19:49,350
+of flash. And it gives you timing. So if
+you want to do it the oldfashioned way,
+
+760
+00:19:49,350 --> 00:19:49,360
+you want to do it the oldfashioned way,
+ 
+
+761
+00:19:49,360 --> 00:19:52,230
+you want to do it the oldfashioned way,
+you know, how the kids used to do it in
+
+762
+00:19:52,230 --> 00:19:52,240
+you know, how the kids used to do it in
+ 
+
+763
+00:19:52,240 --> 00:19:55,590
+you know, how the kids used to do it in
+the old days with timing. I mean, so
+
+764
+00:19:55,590 --> 00:19:55,600
+the old days with timing. I mean, so
+ 
+
+765
+00:19:55,600 --> 00:19:59,510
+the old days with timing. I mean, so
+yesterday. Um, but yeah, there you go.
+
+766
+00:19:59,510 --> 00:19:59,520
+yesterday. Um, but yeah, there you go.
+ 
+
+767
+00:19:59,520 --> 00:20:08,310
+yesterday. Um, but yeah, there you go.
+That's it.
+
+768
+00:20:08,310 --> 00:20:08,320
+
+ 
+
+769
+00:20:08,320 --> 00:20:09,750
+
+I have to imagine there will be
+
+770
+00:20:09,750 --> 00:20:09,760
+I have to imagine there will be
+ 
+
+771
+00:20:09,760 --> 00:20:12,470
+I have to imagine there will be
+questions just after we take like three
+
+772
+00:20:12,470 --> 00:20:12,480
+questions just after we take like three
+ 
+
+773
+00:20:12,480 --> 00:20:14,710
+questions just after we take like three
+seconds for this to integrate. Uh, yeah,
+
+774
+00:20:14,710 --> 00:20:14,720
+seconds for this to integrate. Uh, yeah,
+ 
+
+775
+00:20:14,720 --> 00:20:23,510
+seconds for this to integrate. Uh, yeah,
+questions.
+
+776
+00:20:23,510 --> 00:20:23,520
+
+ 
+
+777
+00:20:23,520 --> 00:20:25,270
+
+So if you're interested, take a picture
+
+778
+00:20:25,270 --> 00:20:25,280
+So if you're interested, take a picture
+ 
+
+779
+00:20:25,280 --> 00:20:28,710
+So if you're interested, take a picture
+of that URL. That's the framework. It's
+
+780
+00:20:28,710 --> 00:20:28,720
+of that URL. That's the framework. It's
+ 
+
+781
+00:20:28,720 --> 00:20:31,430
+of that URL. That's the framework. It's
+already published. It does not have this
+
+782
+00:20:31,430 --> 00:20:31,440
+already published. It does not have this
+ 
+
+783
+00:20:31,440 --> 00:20:33,669
+already published. It does not have this
+code in it yet. I need to backport it
+
+784
+00:20:33,669 --> 00:20:33,679
+code in it yet. I need to backport it
+ 
+
+785
+00:20:33,679 --> 00:20:36,149
+code in it yet. I need to backport it
+into there, but I'll do that probably in
+
+786
+00:20:36,149 --> 00:20:36,159
+into there, but I'll do that probably in
+ 
+
+787
+00:20:36,159 --> 00:20:38,310
+into there, but I'll do that probably in
+the next week. So, but the main
+
+788
+00:20:38,310 --> 00:20:38,320
+the next week. So, but the main
+ 
+
+789
+00:20:38,320 --> 00:20:40,390
+the next week. So, but the main
+framework is there. It's already useful
+
+790
+00:20:40,390 --> 00:20:40,400
+framework is there. It's already useful
+ 
+
+791
+00:20:40,400 --> 00:20:43,350
+framework is there. It's already useful
+for other stuff as well. So
+
+792
+00:20:43,350 --> 00:20:43,360
+for other stuff as well. So
+ 
+
+793
+00:20:43,360 --> 00:20:45,750
+for other stuff as well. So
+>> Adam, I'm curious if in the the first
+
+794
+00:20:45,750 --> 00:20:45,760
+>> Adam, I'm curious if in the the first
+ 
+
+795
+00:20:45,760 --> 00:20:47,669
+>> Adam, I'm curious if in the the first
+time you used it to do the glitch and
+
+796
+00:20:47,669 --> 00:20:47,679
+time you used it to do the glitch and
+ 
+
+797
+00:20:47,679 --> 00:20:49,669
+time you used it to do the glitch and
+then it worked the first time right
+
+798
+00:20:49,669 --> 00:20:49,679
+then it worked the first time right
+ 
+
+799
+00:20:49,679 --> 00:20:51,990
+then it worked the first time right
+away. Uh did you actually ask it to
+
+800
+00:20:51,990 --> 00:20:52,000
+away. Uh did you actually ask it to
+ 
+
+801
+00:20:52,000 --> 00:20:53,750
+away. Uh did you actually ask it to
+explain why it picked those particular
+
+802
+00:20:53,750 --> 00:20:53,760
+explain why it picked those particular
+ 
+
+803
+00:20:53,760 --> 00:20:55,430
+explain why it picked those particular
+parameters?
+
+804
+00:20:55,430 --> 00:20:55,440
+parameters?
+ 
+
+805
+00:20:55,440 --> 00:20:57,830
+parameters?
+>> Yeah. So the uh which is even more
+
+806
+00:20:57,830 --> 00:20:57,840
+>> Yeah. So the uh which is even more
+ 
+
+807
+00:20:57,840 --> 00:21:00,390
+>> Yeah. So the uh which is even more
+amazing. Um
+
+808
+00:21:00,390 --> 00:21:00,400
+amazing. Um
+ 
+
+809
+00:21:00,400 --> 00:21:03,190
+amazing. Um
+basically I told it in the dialogue
+
+810
+00:21:03,190 --> 00:21:03,200
+basically I told it in the dialogue
+ 
+
+811
+00:21:03,200 --> 00:21:04,789
+basically I told it in the dialogue
+about setting the three question
+
+812
+00:21:04,789 --> 00:21:04,799
+about setting the three question
+ 
+
+813
+00:21:04,799 --> 00:21:08,310
+about setting the three question
+answers. Um,
+
+814
+00:21:08,310 --> 00:21:08,320
+answers. Um,
+ 
+
+815
+00:21:08,320 --> 00:21:10,710
+answers. Um,
+I said, I've got a flash dump of the
+
+816
+00:21:10,710 --> 00:21:10,720
+I said, I've got a flash dump of the
+ 
+
+817
+00:21:10,720 --> 00:21:13,029
+I said, I've got a flash dump of the
+bootloadader because you can read out
+
+818
+00:21:13,029 --> 00:21:13,039
+bootloadader because you can read out
+ 
+
+819
+00:21:13,039 --> 00:21:14,789
+bootloadader because you can read out
+the bootloadader
+
+820
+00:21:14,789 --> 00:21:14,799
+the bootloadader
+ 
+
+821
+00:21:14,799 --> 00:21:18,390
+the bootloadader
+um from static uh memory.
+
+822
+00:21:18,390 --> 00:21:18,400
+um from static uh memory.
+ 
+
+823
+00:21:18,400 --> 00:21:22,149
+um from static uh memory.
+And so it reverse engineered it and
+
+824
+00:21:22,149 --> 00:21:22,159
+And so it reverse engineered it and
+ 
+
+825
+00:21:22,159 --> 00:21:25,029
+And so it reverse engineered it and
+counted the steps between. So it said,
+
+826
+00:21:25,029 --> 00:21:25,039
+counted the steps between. So it said,
+ 
+
+827
+00:21:25,039 --> 00:21:26,789
+counted the steps between. So it said,
+well, the obvious target is you send a
+
+828
+00:21:26,789 --> 00:21:26,799
+well, the obvious target is you send a
+ 
+
+829
+00:21:26,799 --> 00:21:31,350
+well, the obvious target is you send a
+read command for the memory. And it then
+
+830
+00:21:31,350 --> 00:21:31,360
+read command for the memory. And it then
+ 
+
+831
+00:21:31,360 --> 00:21:34,310
+read command for the memory. And it then
+counted the steps between receiving the
+
+832
+00:21:34,310 --> 00:21:34,320
+counted the steps between receiving the
+ 
+
+833
+00:21:34,320 --> 00:21:36,470
+counted the steps between receiving the
+car or echoing the carriage return of
+
+834
+00:21:36,470 --> 00:21:36,480
+car or echoing the carriage return of
+ 
+
+835
+00:21:36,480 --> 00:21:41,270
+car or echoing the carriage return of
+the read and doing the compare to the uh
+
+836
+00:21:41,270 --> 00:21:41,280
+the read and doing the compare to the uh
+ 
+
+837
+00:21:41,280 --> 00:21:45,430
+the read and doing the compare to the uh
+lock key and it it then said okay it's
+
+838
+00:21:45,430 --> 00:21:45,440
+lock key and it it then said okay it's
+ 
+
+839
+00:21:45,440 --> 00:21:47,909
+lock key and it it then said okay it's
+it's running on this chip at this number
+
+840
+00:21:47,909 --> 00:21:47,919
+it's running on this chip at this number
+ 
+
+841
+00:21:47,919 --> 00:21:50,870
+it's running on this chip at this number
+of megahertz so it'll be this number of
+
+842
+00:21:50,870 --> 00:21:50,880
+of megahertz so it'll be this number of
+ 
+
+843
+00:21:50,880 --> 00:21:52,470
+of megahertz so it'll be this number of
+microsconds
+
+844
+00:21:52,470 --> 00:21:52,480
+microsconds
+ 
+
+845
+00:21:52,480 --> 00:21:54,789
+microsconds
+as it happens the window was pretty big
+
+846
+00:21:54,789 --> 00:21:54,799
+as it happens the window was pretty big
+ 
+
+847
+00:21:54,799 --> 00:21:57,830
+as it happens the window was pretty big
+so I could just do it at zero but I've
+
+848
+00:21:57,830 --> 00:21:57,840
+so I could just do it at zero but I've
+ 
+
+849
+00:21:57,840 --> 00:22:00,070
+so I could just do it at zero but I've
+also used the same so I use the JTAG
+
+850
+00:22:00,070 --> 00:22:00,080
+also used the same so I use the JTAG
+ 
+
+851
+00:22:00,080 --> 00:22:01,590
+also used the same so I use the JTAG
+interface
+
+852
+00:22:01,590 --> 00:22:01,600
+interface
+ 
+
+853
+00:22:01,600 --> 00:22:04,149
+interface
+um to single step. So you can get even
+
+854
+00:22:04,149 --> 00:22:04,159
+um to single step. So you can get even
+ 
+
+855
+00:22:04,159 --> 00:22:06,630
+um to single step. So you can get even
+more accurate that way. So you put a
+
+856
+00:22:06,630 --> 00:22:06,640
+more accurate that way. So you put a
+ 
+
+857
+00:22:06,640 --> 00:22:09,510
+more accurate that way. So you put a
+break point where you want to stop and
+
+858
+00:22:09,510 --> 00:22:09,520
+break point where you want to stop and
+ 
+
+859
+00:22:09,520 --> 00:22:11,830
+break point where you want to stop and
+then you tell it to single step to that
+
+860
+00:22:11,830 --> 00:22:11,840
+then you tell it to single step to that
+ 
+
+861
+00:22:11,840 --> 00:22:13,430
+then you tell it to single step to that
+break point.
+
+862
+00:22:13,430 --> 00:22:13,440
+break point.
+ 
+
+863
+00:22:13,440 --> 00:22:15,190
+break point.
+>> We've got one more. We got one one more
+
+864
+00:22:15,190 --> 00:22:15,200
+>> We've got one more. We got one one more
+ 
+
+865
+00:22:15,200 --> 00:22:16,789
+>> We've got one more. We got one one more
+question back. Sorry.
+
+866
+00:22:16,789 --> 00:22:16,799
+question back. Sorry.
+ 
+
+867
+00:22:16,799 --> 00:22:19,350
+question back. Sorry.
+>> So you use Claude to help you that first
+
+868
+00:22:19,350 --> 00:22:19,360
+>> So you use Claude to help you that first
+ 
+
+869
+00:22:19,360 --> 00:22:20,710
+>> So you use Claude to help you that first
+time around and he gave you a really
+
+870
+00:22:20,710 --> 00:22:20,720
+time around and he gave you a really
+ 
+
+871
+00:22:20,720 --> 00:22:22,390
+time around and he gave you a really
+good answer. Have you baked in any of
+
+872
+00:22:22,390 --> 00:22:22,400
+good answer. Have you baked in any of
+ 
+
+873
+00:22:22,400 --> 00:22:25,110
+good answer. Have you baked in any of
+your knowledge into that? Over here.
+
+874
+00:22:25,110 --> 00:22:25,120
+your knowledge into that? Over here.
+ 
+
+875
+00:22:25,120 --> 00:22:27,350
+your knowledge into that? Over here.
+>> Sorry, I'm being stupid. I can't see who
+
+876
+00:22:27,350 --> 00:22:27,360
+>> Sorry, I'm being stupid. I can't see who
+ 
+
+877
+00:22:27,360 --> 00:22:28,070
+>> Sorry, I'm being stupid. I can't see who
+was asking.
+
+878
+00:22:28,070 --> 00:22:28,080
+was asking.
+ 
+
+879
+00:22:28,080 --> 00:22:30,230
+was asking.
+>> Over here. It's cool. Yeah. So, have you
+
+880
+00:22:30,230 --> 00:22:30,240
+>> Over here. It's cool. Yeah. So, have you
+ 
+
+881
+00:22:30,240 --> 00:22:31,830
+>> Over here. It's cool. Yeah. So, have you
+had have you done any more baking of
+
+882
+00:22:31,830 --> 00:22:31,840
+had have you done any more baking of
+ 
+
+883
+00:22:31,840 --> 00:22:33,430
+had have you done any more baking of
+your knowledge of how to do stuff into
+
+884
+00:22:33,430 --> 00:22:33,440
+your knowledge of how to do stuff into
+ 
+
+885
+00:22:33,440 --> 00:22:35,190
+your knowledge of how to do stuff into
+it since you've got the one good answer
+
+886
+00:22:35,190 --> 00:22:35,200
+it since you've got the one good answer
+ 
+
+887
+00:22:35,200 --> 00:22:37,110
+it since you've got the one good answer
+from it that original time?
+
+888
+00:22:37,110 --> 00:22:37,120
+from it that original time?
+ 
+
+889
+00:22:37,120 --> 00:22:38,950
+from it that original time?
+>> Oh, yeah. Since then, so that was in
+
+890
+00:22:38,950 --> 00:22:38,960
+>> Oh, yeah. Since then, so that was in
+ 
+
+891
+00:22:38,960 --> 00:22:43,750
+>> Oh, yeah. Since then, so that was in
+October. Um, since then, every kind of
+
+892
+00:22:43,750 --> 00:22:43,760
+October. Um, since then, every kind of
+ 
+
+893
+00:22:43,760 --> 00:22:45,830
+October. Um, since then, every kind of
+spare minute between doing my real day
+
+894
+00:22:45,830 --> 00:22:45,840
+spare minute between doing my real day
+ 
+
+895
+00:22:45,840 --> 00:22:47,669
+spare minute between doing my real day
+job and well, actually incorporating
+
+896
+00:22:47,669 --> 00:22:47,679
+job and well, actually incorporating
+ 
+
+897
+00:22:47,679 --> 00:22:50,230
+job and well, actually incorporating
+this into our work processes is now also
+
+898
+00:22:50,230 --> 00:22:50,240
+this into our work processes is now also
+ 
+
+899
+00:22:50,240 --> 00:22:52,470
+this into our work processes is now also
+my real day job. Actually, my colleague
+
+900
+00:22:52,470 --> 00:22:52,480
+my real day job. Actually, my colleague
+ 
+
+901
+00:22:52,480 --> 00:22:55,510
+my real day job. Actually, my colleague
+is doing a phenomenal job and it's kind
+
+902
+00:22:55,510 --> 00:22:55,520
+is doing a phenomenal job and it's kind
+ 
+
+903
+00:22:55,520 --> 00:22:57,110
+is doing a phenomenal job and it's kind
+of embarrassing what I'm showing here
+
+904
+00:22:57,110 --> 00:22:57,120
+of embarrassing what I'm showing here
+ 
+
+905
+00:22:57,120 --> 00:22:59,029
+of embarrassing what I'm showing here
+compared to what he's now done with it.
+
+906
+00:22:59,029 --> 00:22:59,039
+compared to what he's now done with it.
+ 
+
+907
+00:22:59,039 --> 00:23:03,029
+compared to what he's now done with it.
+Um, but yes, I'm constantly trying
+
+908
+00:23:03,029 --> 00:23:03,039
+Um, but yes, I'm constantly trying
+ 
+
+909
+00:23:03,039 --> 00:23:04,870
+Um, but yes, I'm constantly trying
+different targets, training it on
+
+910
+00:23:04,870 --> 00:23:04,880
+different targets, training it on
+ 
+
+911
+00:23:04,880 --> 00:23:08,070
+different targets, training it on
+processes that the Raiden mentioned in
+
+912
+00:23:08,070 --> 00:23:08,080
+processes that the Raiden mentioned in
+ 
+
+913
+00:23:08,080 --> 00:23:11,190
+processes that the Raiden mentioned in
+the name Raiden Pico is a project me and
+
+914
+00:23:11,190 --> 00:23:11,200
+the name Raiden Pico is a project me and
+ 
+
+915
+00:23:11,200 --> 00:23:13,669
+the name Raiden Pico is a project me and
+a colleague wrote at IBM when I was at
+
+916
+00:23:13,669 --> 00:23:13,679
+a colleague wrote at IBM when I was at
+ 
+
+917
+00:23:13,679 --> 00:23:17,590
+a colleague wrote at IBM when I was at
+X-Force and it took us over a year, two
+
+918
+00:23:17,590 --> 00:23:17,600
+X-Force and it took us over a year, two
+ 
+
+919
+00:23:17,600 --> 00:23:20,390
+X-Force and it took us over a year, two
+of us working on it full-time.
+
+920
+00:23:20,390 --> 00:23:20,400
+of us working on it full-time.
+ 
+
+921
+00:23:20,400 --> 00:23:26,230
+of us working on it full-time.
+Um Claude rewrote it in 3 days. So
+
+922
+00:23:26,230 --> 00:23:26,240
+Um Claude rewrote it in 3 days. So
+ 
+
+923
+00:23:26,240 --> 00:23:28,549
+Um Claude rewrote it in 3 days. So
+>> uh I'm very curious like uh have you
+
+924
+00:23:28,549 --> 00:23:28,559
+>> uh I'm very curious like uh have you
+ 
+
+925
+00:23:28,559 --> 00:23:30,710
+>> uh I'm very curious like uh have you
+tried using cloud to rev some like other
+
+926
+00:23:30,710 --> 00:23:30,720
+tried using cloud to rev some like other
+ 
+
+927
+00:23:30,720 --> 00:23:33,590
+tried using cloud to rev some like other
+devices and like uh not pickle but
+
+928
+00:23:33,590 --> 00:23:33,600
+devices and like uh not pickle but
+ 
+
+929
+00:23:33,600 --> 00:23:35,669
+devices and like uh not pickle but
+something else and and also like what do
+
+930
+00:23:35,669 --> 00:23:35,679
+something else and and also like what do
+ 
+
+931
+00:23:35,679 --> 00:23:36,870
+something else and and also like what do
+you feel like would be like the
+
+932
+00:23:36,870 --> 00:23:36,880
+you feel like would be like the
+ 
+
+933
+00:23:36,880 --> 00:23:39,190
+you feel like would be like the
+difference of like uh hacking pickle and
+
+934
+00:23:39,190 --> 00:23:39,200
+difference of like uh hacking pickle and
+ 
+
+935
+00:23:39,200 --> 00:23:40,630
+difference of like uh hacking pickle and
+other devices?
+
+936
+00:23:40,630 --> 00:23:40,640
+other devices?
+ 
+
+937
+00:23:40,640 --> 00:23:43,430
+other devices?
+>> Um so to use it on another device the
+
+938
+00:23:43,430 --> 00:23:43,440
+>> Um so to use it on another device the
+ 
+
+939
+00:23:43,440 --> 00:23:45,830
+>> Um so to use it on another device the
+the reason I chose the pico is because
+
+940
+00:23:45,830 --> 00:23:45,840
+the reason I chose the pico is because
+ 
+
+941
+00:23:45,840 --> 00:23:48,950
+the reason I chose the pico is because
+it's cheap. So, they're like seven bucks
+
+942
+00:23:48,950 --> 00:23:48,960
+it's cheap. So, they're like seven bucks
+ 
+
+943
+00:23:48,960 --> 00:23:53,669
+it's cheap. So, they're like seven bucks
+or something. Um, the
+
+944
+00:23:53,669 --> 00:23:53,679
+or something. Um, the
+ 
+
+945
+00:23:53,679 --> 00:23:56,470
+or something. Um, the
+the equipment in that first picture that
+
+946
+00:23:56,470 --> 00:23:56,480
+the equipment in that first picture that
+ 
+
+947
+00:23:56,480 --> 00:24:00,789
+the equipment in that first picture that
+is replaced by the Pico is over $1,000
+
+948
+00:24:00,789 --> 00:24:00,799
+is replaced by the Pico is over $1,000
+ 
+
+949
+00:24:00,799 --> 00:24:03,270
+is replaced by the Pico is over $1,000
+worth of equipment. And the Pico is
+
+950
+00:24:03,270 --> 00:24:03,280
+worth of equipment. And the Pico is
+ 
+
+951
+00:24:03,280 --> 00:24:05,029
+worth of equipment. And the Pico is
+performing every single function of
+
+952
+00:24:05,029 --> 00:24:05,039
+performing every single function of
+ 
+
+953
+00:24:05,039 --> 00:24:07,990
+performing every single function of
+every one of those components. So, my
+
+954
+00:24:07,990 --> 00:24:08,000
+every one of those components. So, my
+ 
+
+955
+00:24:08,000 --> 00:24:11,830
+every one of those components. So, my
+idea was it becomes disposable. You can
+
+956
+00:24:11,830 --> 00:24:11,840
+idea was it becomes disposable. You can
+ 
+
+957
+00:24:11,840 --> 00:24:15,909
+idea was it becomes disposable. You can
+take your $7 Pico and wire it in. I've
+
+958
+00:24:15,909 --> 00:24:15,919
+take your $7 Pico and wire it in. I've
+ 
+
+959
+00:24:15,919 --> 00:24:17,669
+take your $7 Pico and wire it in. I've
+I've spoken at length, you know, in that
+
+960
+00:24:17,669 --> 00:24:17,679
+I've spoken at length, you know, in that
+ 
+
+961
+00:24:17,679 --> 00:24:19,269
+I've spoken at length, you know, in that
+first picture there was all these cables
+
+962
+00:24:19,269 --> 00:24:19,279
+first picture there was all these cables
+ 
+
+963
+00:24:19,279 --> 00:24:22,070
+first picture there was all these cables
+and crap everywhere. Um I've spoken
+
+964
+00:24:22,070 --> 00:24:22,080
+and crap everywhere. Um I've spoken
+ 
+
+965
+00:24:22,080 --> 00:24:25,190
+and crap everywhere. Um I've spoken
+before about that what I call spaghetti
+
+966
+00:24:25,190 --> 00:24:25,200
+before about that what I call spaghetti
+ 
+
+967
+00:24:25,200 --> 00:24:28,549
+before about that what I call spaghetti
+is your enemy in in glitching. So with
+
+968
+00:24:28,549 --> 00:24:28,559
+is your enemy in in glitching. So with
+ 
+
+969
+00:24:28,559 --> 00:24:31,990
+is your enemy in in glitching. So with
+this system, you can actually solder the
+
+970
+00:24:31,990 --> 00:24:32,000
+this system, you can actually solder the
+ 
+
+971
+00:24:32,000 --> 00:24:35,269
+this system, you can actually solder the
+Pico directly into a test circuit and
+
+972
+00:24:35,269 --> 00:24:35,279
+Pico directly into a test circuit and
+ 
+
+973
+00:24:35,279 --> 00:24:37,830
+Pico directly into a test circuit and
+it's disposable. You don't care if if
+
+974
+00:24:37,830 --> 00:24:37,840
+it's disposable. You don't care if if
+ 
+
+975
+00:24:37,840 --> 00:24:40,390
+it's disposable. You don't care if if
+you burned a pico. It's like seven
+
+976
+00:24:40,390 --> 00:24:40,400
+you burned a pico. It's like seven
+ 
+
+977
+00:24:40,400 --> 00:24:43,190
+you burned a pico. It's like seven
+bucks. So, but yes, you could port it to
+
+978
+00:24:43,190 --> 00:24:43,200
+bucks. So, but yes, you could port it to
+ 
+
+979
+00:24:43,200 --> 00:24:45,110
+bucks. So, but yes, you could port it to
+something else if you want to start
+
+980
+00:24:45,110 --> 00:24:45,120
+something else if you want to start
+ 
+
+981
+00:24:45,120 --> 00:24:47,830
+something else if you want to start
+attacking mezz or giga or gigahertz
+
+982
+00:24:47,830 --> 00:24:47,840
+attacking mezz or giga or gigahertz
+ 
+
+983
+00:24:47,840 --> 00:24:50,950
+attacking mezz or giga or gigahertz
+speed platforms. Maybe you want to go to
+
+984
+00:24:50,950 --> 00:24:50,960
+speed platforms. Maybe you want to go to
+ 
+
+985
+00:24:50,960 --> 00:24:53,750
+speed platforms. Maybe you want to go to
+a Raspberry Pi 5. But you can just say
+
+986
+00:24:53,750 --> 00:24:53,760
+a Raspberry Pi 5. But you can just say
+ 
+
+987
+00:24:53,760 --> 00:24:56,710
+a Raspberry Pi 5. But you can just say
+to Claude, port this code to there.
+
+988
+00:24:56,710 --> 00:24:56,720
+to Claude, port this code to there.
+ 
+
+989
+00:24:56,720 --> 00:24:58,870
+to Claude, port this code to there.
+Probably in an hour max, you'll have it
+
+990
+00:24:58,870 --> 00:24:58,880
+Probably in an hour max, you'll have it
+ 
+
+991
+00:24:58,880 --> 00:25:02,870
+Probably in an hour max, you'll have it
+working. So, yeah, go for it.
+
+992
+00:25:02,870 --> 00:25:02,880
+working. So, yeah, go for it.
+ 
+
+993
+00:25:02,880 --> 00:25:04,710
+working. So, yeah, go for it.
+>> So, I would like to step in for a couple
+
+994
+00:25:04,710 --> 00:25:04,720
+>> So, I would like to step in for a couple
+ 
+
+995
+00:25:04,720 --> 00:25:06,630
+>> So, I would like to step in for a couple
+minutes to tell you a few things this
+
+996
+00:25:06,630 --> 00:25:06,640
+minutes to tell you a few things this
+ 
+
+997
+00:25:06,640 --> 00:25:08,149
+minutes to tell you a few things this
+guy did not tell you. He gave me way too
+
+998
+00:25:08,149 --> 00:25:08,159
+guy did not tell you. He gave me way too
+ 
+
+999
+00:25:08,159 --> 00:25:09,590
+guy did not tell you. He gave me way too
+much credit. Trust me, he did everything
+
+1000
+00:25:09,590 --> 00:25:09,600
+much credit. Trust me, he did everything
+ 
+
+1001
+00:25:09,600 --> 00:25:11,430
+much credit. Trust me, he did everything
+on his own. I never even touched
+
+1002
+00:25:11,430 --> 00:25:11,440
+on his own. I never even touched
+ 
+
+1003
+00:25:11,440 --> 00:25:14,390
+on his own. I never even touched
+hardware in my life. But a couple of
+
+1004
+00:25:14,390 --> 00:25:14,400
+hardware in my life. But a couple of
+ 
+
+1005
+00:25:14,400 --> 00:25:16,470
+hardware in my life. But a couple of
+points that are really critical. I think
+
+1006
+00:25:16,470 --> 00:25:16,480
+points that are really critical. I think
+ 
+
+1007
+00:25:16,480 --> 00:25:18,549
+points that are really critical. I think
+one my f the first Defcon talk I ever
+
+1008
+00:25:18,549 --> 00:25:18,559
+one my f the first Defcon talk I ever
+ 
+
+1009
+00:25:18,559 --> 00:25:20,549
+one my f the first Defcon talk I ever
+went to that I remember probably defcon
+
+1010
+00:25:20,549 --> 00:25:20,559
+went to that I remember probably defcon
+ 
+
+1011
+00:25:20,559 --> 00:25:24,070
+went to that I remember probably defcon
+13. I don't remember maybe 14. Major
+
+1012
+00:25:24,070 --> 00:25:24,080
+13. I don't remember maybe 14. Major
+ 
+
+1013
+00:25:24,080 --> 00:25:26,230
+13. I don't remember maybe 14. Major
+went on stage [clears throat]
+
+1014
+00:25:26,230 --> 00:25:26,240
+went on stage [clears throat]
+ 
+
+1015
+00:25:26,240 --> 00:25:30,230
+went on stage [clears throat]
+and told people how he played with
+
+1016
+00:25:30,230 --> 00:25:30,240
+and told people how he played with
+ 
+
+1017
+00:25:30,240 --> 00:25:34,470
+and told people how he played with
+magnetic cards to the degree where he
+
+1018
+00:25:34,470 --> 00:25:34,480
+magnetic cards to the degree where he
+ 
+
+1019
+00:25:34,480 --> 00:25:37,190
+magnetic cards to the degree where he
+got magnetic gel to try and see where
+
+1020
+00:25:37,190 --> 00:25:37,200
+got magnetic gel to try and see where
+ 
+
+1021
+00:25:37,200 --> 00:25:39,990
+got magnetic gel to try and see where
+the lines are. And you saw like 64-bit
+
+1022
+00:25:39,990 --> 00:25:40,000
+the lines are. And you saw like 64-bit
+ 
+
+1023
+00:25:40,000 --> 00:25:41,830
+the lines are. And you saw like 64-bit
+security and then you saw the only the
+
+1024
+00:25:41,830 --> 00:25:41,840
+security and then you saw the only the
+ 
+
+1025
+00:25:41,840 --> 00:25:43,510
+security and then you saw the only the
+first four bits or five bits change and
+
+1026
+00:25:43,510 --> 00:25:43,520
+first four bits or five bits change and
+ 
+
+1027
+00:25:43,520 --> 00:25:44,789
+first four bits or five bits change and
+the sixth one gives everybody must
+
+1028
+00:25:44,789 --> 00:25:44,799
+the sixth one gives everybody must
+ 
+
+1029
+00:25:44,799 --> 00:25:47,750
+the sixth one gives everybody must
+master or whatever it is and the hotel
+
+1030
+00:25:47,750 --> 00:25:47,760
+master or whatever it is and the hotel
+ 
+
+1031
+00:25:47,760 --> 00:25:49,990
+master or whatever it is and the hotel
+in Vegas sent their security after him
+
+1032
+00:25:49,990 --> 00:25:50,000
+in Vegas sent their security after him
+ 
+
+1033
+00:25:50,000 --> 00:25:52,310
+in Vegas sent their security after him
+for trying too many things their IDs
+
+1034
+00:25:52,310 --> 00:25:52,320
+for trying too many things their IDs
+ 
+
+1035
+00:25:52,320 --> 00:25:54,630
+for trying too many things their IDs
+played up and he's been there for every
+
+1036
+00:25:54,630 --> 00:25:54,640
+played up and he's been there for every
+ 
+
+1037
+00:25:54,640 --> 00:25:56,149
+played up and he's been there for every
+stage of hardware hacking for I don't
+
+1038
+00:25:56,149 --> 00:25:56,159
+stage of hardware hacking for I don't
+ 
+
+1039
+00:25:56,159 --> 00:25:58,630
+stage of hardware hacking for I don't
+know how many years whether it's those
+
+1040
+00:25:58,630 --> 00:25:58,640
+know how many years whether it's those
+ 
+
+1041
+00:25:58,640 --> 00:26:00,549
+know how many years whether it's those
+keys that they start thinking about uh
+
+1042
+00:26:00,549 --> 00:26:00,559
+keys that they start thinking about uh
+ 
+
+1043
+00:26:00,559 --> 00:26:03,269
+keys that they start thinking about uh
+special forces using or RFID and
+
+1044
+00:26:03,269 --> 00:26:03,279
+special forces using or RFID and
+ 
+
+1045
+00:26:03,279 --> 00:26:05,110
+special forces using or RFID and
+whenever there is something out there
+
+1046
+00:26:05,110 --> 00:26:05,120
+whenever there is something out there
+ 
+
+1047
+00:26:05,120 --> 00:26:07,269
+whenever there is something out there
+that is hardware hacking you can always
+
+1048
+00:26:07,269 --> 00:26:07,279
+that is hardware hacking you can always
+ 
+
+1049
+00:26:07,279 --> 00:26:10,230
+that is hardware hacking you can always
+find a major conversation, a major major
+
+1050
+00:26:10,230 --> 00:26:10,240
+find a major conversation, a major major
+ 
+
+1051
+00:26:10,240 --> 00:26:12,149
+find a major conversation, a major major
+talk somewhere before somebody publishes
+
+1052
+00:26:12,149 --> 00:26:12,159
+talk somewhere before somebody publishes
+ 
+
+1053
+00:26:12,159 --> 00:26:17,029
+talk somewhere before somebody publishes
+the big frameworks. And
+
+1054
+00:26:17,029 --> 00:26:17,039
+
+ 
+
+1055
+00:26:17,039 --> 00:26:18,950
+
+this time is no different. He's been
+
+1056
+00:26:18,950 --> 00:26:18,960
+this time is no different. He's been
+ 
+
+1057
+00:26:18,960 --> 00:26:20,070
+this time is no different. He's been
+helping a lot of people get into
+
+1058
+00:26:20,070 --> 00:26:20,080
+helping a lot of people get into
+ 
+
+1059
+00:26:20,080 --> 00:26:22,870
+helping a lot of people get into
+hardware hacking. He has groups. And
+
+1060
+00:26:22,870 --> 00:26:22,880
+hardware hacking. He has groups. And
+ 
+
+1061
+00:26:22,880 --> 00:26:24,470
+hardware hacking. He has groups. And
+what people need to understand, what
+
+1062
+00:26:24,470 --> 00:26:24,480
+what people need to understand, what
+ 
+
+1063
+00:26:24,480 --> 00:26:27,350
+what people need to understand, what
+you've just seen is not just cool. It's
+
+1064
+00:26:27,350 --> 00:26:27,360
+you've just seen is not just cool. It's
+ 
+
+1065
+00:26:27,360 --> 00:26:29,029
+you've just seen is not just cool. It's
+just one small aspect of the world
+
+1066
+00:26:29,029 --> 00:26:29,039
+just one small aspect of the world
+ 
+
+1067
+00:26:29,039 --> 00:26:30,470
+just one small aspect of the world
+that's completely changed and we don't
+
+1068
+00:26:30,470 --> 00:26:30,480
+that's completely changed and we don't
+ 
+
+1069
+00:26:30,480 --> 00:26:31,669
+that's completely changed and we don't
+even see. And I would like to tell you
+
+1070
+00:26:31,669 --> 00:26:31,679
+even see. And I would like to tell you
+ 
+
+1071
+00:26:31,679 --> 00:26:33,190
+even see. And I would like to tell you
+three reasons why. I don't even know if
+
+1072
+00:26:33,190 --> 00:26:33,200
+three reasons why. I don't even know if
+ 
+
+1073
+00:26:33,200 --> 00:26:34,390
+three reasons why. I don't even know if
+it's really three. I was in the
+
+1074
+00:26:34,390 --> 00:26:34,400
+it's really three. I was in the
+ 
+
+1075
+00:26:34,400 --> 00:26:36,149
+it's really three. I was in the
+military. I just say three. We'll figure
+
+1076
+00:26:36,149 --> 00:26:36,159
+military. I just say three. We'll figure
+ 
+
+1077
+00:26:36,159 --> 00:26:37,750
+military. I just say three. We'll figure
+it out. We'll figure it out as it goes
+
+1078
+00:26:37,750 --> 00:26:37,760
+it out. We'll figure it out as it goes
+ 
+
+1079
+00:26:37,760 --> 00:26:41,669
+it out. We'll figure it out as it goes
+as we go. Number one, glitching is cool.
+
+1080
+00:26:41,669 --> 00:26:41,679
+as we go. Number one, glitching is cool.
+ 
+
+1081
+00:26:41,679 --> 00:26:43,750
+as we go. Number one, glitching is cool.
+I don't know. I could spend like so many
+
+1082
+00:26:43,750 --> 00:26:43,760
+I don't know. I could spend like so many
+ 
+
+1083
+00:26:43,760 --> 00:26:45,029
+I don't know. I could spend like so many
+years in security and not know it
+
+1084
+00:26:45,029 --> 00:26:45,039
+years in security and not know it
+ 
+
+1085
+00:26:45,039 --> 00:26:47,510
+years in security and not know it
+exists, at least in that name. But it's
+
+1086
+00:26:47,510 --> 00:26:47,520
+exists, at least in that name. But it's
+ 
+
+1087
+00:26:47,520 --> 00:26:48,950
+exists, at least in that name. But it's
+way cool, but it's also hard. He told
+
+1088
+00:26:48,950 --> 00:26:48,960
+way cool, but it's also hard. He told
+ 
+
+1089
+00:26:48,960 --> 00:26:50,710
+way cool, but it's also hard. He told
+you he spent like six weeks as he was
+
+1090
+00:26:50,710 --> 00:26:50,720
+you he spent like six weeks as he was
+ 
+
+1091
+00:26:50,720 --> 00:26:52,789
+you he spent like six weeks as he was
+going home. He was traveling. He came
+
+1092
+00:26:52,789 --> 00:26:52,799
+going home. He was traveling. He came
+ 
+
+1093
+00:26:52,799 --> 00:26:54,149
+going home. He was traveling. He came
+back. The system still worked. I mean,
+
+1094
+00:26:54,149 --> 00:26:54,159
+back. The system still worked. I mean,
+ 
+
+1095
+00:26:54,159 --> 00:26:56,549
+back. The system still worked. I mean,
+how did that happen? No success. You
+
+1096
+00:26:56,549 --> 00:26:56,559
+how did that happen? No success. You
+ 
+
+1097
+00:26:56,559 --> 00:26:58,070
+how did that happen? No success. You
+judging he literally messaged me and
+
+1098
+00:26:58,070 --> 00:26:58,080
+judging he literally messaged me and
+ 
+
+1099
+00:26:58,080 --> 00:27:00,630
+judging he literally messaged me and
+said, "Do you remember that talk from
+
+1100
+00:27:00,630 --> 00:27:00,640
+said, "Do you remember that talk from
+ 
+
+1101
+00:27:00,640 --> 00:27:02,390
+said, "Do you remember that talk from
+promp to get the [\h__\h] out where somebody
+
+1102
+00:27:02,390 --> 00:27:02,400
+promp to get the [\h__\h] out where somebody
+ 
+
+1103
+00:27:02,400 --> 00:27:04,149
+promp to get the [\h__\h] out where somebody
+did some reversing? I said you're here.
+
+1104
+00:27:04,149 --> 00:27:04,159
+did some reversing? I said you're here.
+ 
+
+1105
+00:27:04,159 --> 00:27:05,269
+did some reversing? I said you're here.
+Do you remember that talk when they used
+
+1106
+00:27:05,269 --> 00:27:05,279
+Do you remember that talk when they used
+ 
+
+1107
+00:27:05,279 --> 00:27:07,269
+Do you remember that talk when they used
+multiple here?" and he comes back and he
+
+1108
+00:27:07,269 --> 00:27:07,279
+multiple here?" and he comes back and he
+ 
+
+1109
+00:27:07,279 --> 00:27:08,870
+multiple here?" and he comes back and he
+says, "Yeah, three attempts on chip and
+
+1110
+00:27:08,870 --> 00:27:08,880
+says, "Yeah, three attempts on chip and
+ 
+
+1111
+00:27:08,880 --> 00:27:11,750
+says, "Yeah, three attempts on chip and
+I succeeded." And that's level one.
+
+1112
+00:27:11,750 --> 00:27:11,760
+I succeeded." And that's level one.
+ 
+
+1113
+00:27:11,760 --> 00:27:13,750
+I succeeded." And that's level one.
+Here's number two. Number two is now
+
+1114
+00:27:13,750 --> 00:27:13,760
+Here's number two. Number two is now
+ 
+
+1115
+00:27:13,760 --> 00:27:16,070
+Here's number two. Number two is now
+says, "Now that I have this capability,
+
+1116
+00:27:16,070 --> 00:27:16,080
+says, "Now that I have this capability,
+ 
+
+1117
+00:27:16,080 --> 00:27:18,310
+says, "Now that I have this capability,
+I'm suddenly programming the next layer,
+
+1118
+00:27:18,310 --> 00:27:18,320
+I'm suddenly programming the next layer,
+ 
+
+1119
+00:27:18,320 --> 00:27:20,710
+I'm suddenly programming the next layer,
+which is true for all of us. Glitching
+
+1120
+00:27:20,710 --> 00:27:20,720
+which is true for all of us. Glitching
+ 
+
+1121
+00:27:20,720 --> 00:27:22,149
+which is true for all of us. Glitching
+has been something you had to work hard
+
+1122
+00:27:22,149 --> 00:27:22,159
+has been something you had to work hard
+ 
+
+1123
+00:27:22,159 --> 00:27:24,789
+has been something you had to work hard
+with hardware. It works now. This guy,
+
+1124
+00:27:24,789 --> 00:27:24,799
+with hardware. It works now. This guy,
+ 
+
+1125
+00:27:24,799 --> 00:27:26,549
+with hardware. It works now. This guy,
+it doesn't tell you the impact,
+
+1126
+00:27:26,549 --> 00:27:26,559
+it doesn't tell you the impact,
+ 
+
+1127
+00:27:26,559 --> 00:27:28,070
+it doesn't tell you the impact,
+literally says, I can program next
+
+1128
+00:27:28,070 --> 00:27:28,080
+literally says, I can program next
+ 
+
+1129
+00:27:28,080 --> 00:27:29,029
+literally says, I can program next
+layer." I'm not sure what that means
+
+1130
+00:27:29,029 --> 00:27:29,039
+layer." I'm not sure what that means
+ 
+
+1131
+00:27:29,039 --> 00:27:30,470
+layer." I'm not sure what that means
+yet, but I'm imagining it's not just
+
+1132
+00:27:30,470 --> 00:27:30,480
+yet, but I'm imagining it's not just
+ 
+
+1133
+00:27:30,480 --> 00:27:32,070
+yet, but I'm imagining it's not just
+about let's try and find the right
+
+1134
+00:27:32,070 --> 00:27:32,080
+about let's try and find the right
+ 
+
+1135
+00:27:32,080 --> 00:27:33,750
+about let's try and find the right
+location with the right angle and the
+
+1136
+00:27:33,750 --> 00:27:33,760
+location with the right angle and the
+ 
+
+1137
+00:27:33,760 --> 00:27:35,830
+location with the right angle and the
+right timing for the pulse to find that
+
+1138
+00:27:35,830 --> 00:27:35,840
+right timing for the pulse to find that
+ 
+
+1139
+00:27:35,840 --> 00:27:38,390
+right timing for the pulse to find that
+CMP instruction and flip it, right? It's
+
+1140
+00:27:38,390 --> 00:27:38,400
+CMP instruction and flip it, right? It's
+ 
+
+1141
+00:27:38,400 --> 00:27:41,029
+CMP instruction and flip it, right? It's
+about can I do two in a row? Can I try
+
+1142
+00:27:41,029 --> 00:27:41,039
+about can I do two in a row? Can I try
+ 
+
+1143
+00:27:41,039 --> 00:27:43,590
+about can I do two in a row? Can I try
+and change the timing somehow? This guy
+
+1144
+00:27:43,590 --> 00:27:43,600
+and change the timing somehow? This guy
+ 
+
+1145
+00:27:43,600 --> 00:27:45,510
+and change the timing somehow? This guy
+essentially is constantly finding the
+
+1146
+00:27:45,510 --> 00:27:45,520
+essentially is constantly finding the
+ 
+
+1147
+00:27:45,520 --> 00:27:47,190
+essentially is constantly finding the
+next layer and the next layer. So for
+
+1148
+00:27:47,190 --> 00:27:47,200
+next layer and the next layer. So for
+ 
+
+1149
+00:27:47,200 --> 00:27:49,510
+next layer and the next layer. So for
+me, it's not about the frontier
+
+1150
+00:27:49,510 --> 00:27:49,520
+me, it's not about the frontier
+ 
+
+1151
+00:27:49,520 --> 00:27:52,230
+me, it's not about the frontier
+foundation models, labs, PhD people.
+
+1152
+00:27:52,230 --> 00:27:52,240
+foundation models, labs, PhD people.
+ 
+
+1153
+00:27:52,240 --> 00:27:53,909
+foundation models, labs, PhD people.
+It's about the power users who keep
+
+1154
+00:27:53,909 --> 00:27:53,919
+It's about the power users who keep
+ 
+
+1155
+00:27:53,919 --> 00:27:55,430
+It's about the power users who keep
+learning, keep trying, who say they
+
+1156
+00:27:55,430 --> 00:27:55,440
+learning, keep trying, who say they
+ 
+
+1157
+00:27:55,440 --> 00:27:57,590
+learning, keep trying, who say they
+don't know [\h__\h] who go and try things
+
+1158
+00:27:57,590 --> 00:27:57,600
+don't know [\h__\h] who go and try things
+ 
+
+1159
+00:27:57,600 --> 00:27:58,950
+don't know [\h__\h] who go and try things
+and again go to the next layer and the
+
+1160
+00:27:58,950 --> 00:27:58,960
+and again go to the next layer and the
+ 
+
+1161
+00:27:58,960 --> 00:27:59,990
+and again go to the next layer and the
+next layer they are making the
+
+1162
+00:27:59,990 --> 00:28:00,000
+next layer they are making the
+ 
+
+1163
+00:28:00,000 --> 00:28:01,269
+next layer they are making the
+difference and that's a difference we
+
+1164
+00:28:01,269 --> 00:28:01,279
+difference and that's a difference we
+ 
+
+1165
+00:28:01,279 --> 00:28:03,750
+difference and that's a difference we
+can all make. Going off my soap box,
+
+1166
+00:28:03,750 --> 00:28:03,760
+can all make. Going off my soap box,
+ 
+
+1167
+00:28:03,760 --> 00:28:06,310
+can all make. Going off my soap box,
+there's number three.
+
+1168
+00:28:06,310 --> 00:28:06,320
+there's number three.
+ 
+
+1169
+00:28:06,320 --> 00:28:10,710
+there's number three.
+Glitching is a hobbyist's expensive
+
+1170
+00:28:10,710 --> 00:28:10,720
+Glitching is a hobbyist's expensive
+ 
+
+1171
+00:28:10,720 --> 00:28:15,110
+Glitching is a hobbyist's expensive
+job hobby role or it's a nation states.
+
+1172
+00:28:15,110 --> 00:28:15,120
+job hobby role or it's a nation states.
+ 
+
+1173
+00:28:15,120 --> 00:28:16,950
+job hobby role or it's a nation states.
+I imagine there are multiple nation
+
+1174
+00:28:16,950 --> 00:28:16,960
+I imagine there are multiple nation
+ 
+
+1175
+00:28:16,960 --> 00:28:19,029
+I imagine there are multiple nation
+states all around the world still even
+
+1176
+00:28:19,029 --> 00:28:19,039
+states all around the world still even
+ 
+
+1177
+00:28:19,039 --> 00:28:21,190
+states all around the world still even
+though we have eim now trying to bypass
+
+1178
+00:28:21,190 --> 00:28:21,200
+though we have eim now trying to bypass
+ 
+
+1179
+00:28:21,200 --> 00:28:24,389
+though we have eim now trying to bypass
+SIM cards or credit cards a lot of crazy
+
+1180
+00:28:24,389 --> 00:28:24,399
+SIM cards or credit cards a lot of crazy
+ 
+
+1181
+00:28:24,399 --> 00:28:25,830
+SIM cards or credit cards a lot of crazy
+[\h__\h] that's been going through a lot of
+
+1182
+00:28:25,830 --> 00:28:25,840
+[\h__\h] that's been going through a lot of
+ 
+
+1183
+00:28:25,840 --> 00:28:27,909
+[\h__\h] that's been going through a lot of
+hardening for many many years and what
+
+1184
+00:28:27,909 --> 00:28:27,919
+hardening for many many years and what
+ 
+
+1185
+00:28:27,919 --> 00:28:30,630
+hardening for many many years and what
+this guy here just showed you is that it
+
+1186
+00:28:30,630 --> 00:28:30,640
+this guy here just showed you is that it
+ 
+
+1187
+00:28:30,640 --> 00:28:32,149
+this guy here just showed you is that it
+doesn't take a lab anymore you have this
+
+1188
+00:28:32,149 --> 00:28:32,159
+doesn't take a lab anymore you have this
+ 
+
+1189
+00:28:32,159 --> 00:28:34,149
+doesn't take a lab anymore you have this
+pico here although you still need a lab
+
+1190
+00:28:34,149 --> 00:28:34,159
+pico here although you still need a lab
+ 
+
+1191
+00:28:34,159 --> 00:28:36,230
+pico here although you still need a lab
+to do more than that all it takes is
+
+1192
+00:28:36,230 --> 00:28:36,240
+to do more than that all it takes is
+ 
+
+1193
+00:28:36,240 --> 00:28:37,830
+to do more than that all it takes is
+working with blood code being a little
+
+1194
+00:28:37,830 --> 00:28:37,840
+working with blood code being a little
+ 
+
+1195
+00:28:37,840 --> 00:28:39,350
+working with blood code being a little
+bit smart understanding a little bit and
+
+1196
+00:28:39,350 --> 00:28:39,360
+bit smart understanding a little bit and
+ 
+
+1197
+00:28:39,360 --> 00:28:41,750
+bit smart understanding a little bit and
+the nation state level capability just
+
+1198
+00:28:41,750 --> 00:28:41,760
+the nation state level capability just
+ 
+
+1199
+00:28:41,760 --> 00:28:44,789
+the nation state level capability just
+became something everybody can
+
+1200
+00:28:44,789 --> 00:28:44,799
+became something everybody can
+ 
+
+1201
+00:28:44,799 --> 00:28:47,909
+became something everybody can
+and do it 10 times better. And that is
+
+1202
+00:28:47,909 --> 00:28:47,919
+and do it 10 times better. And that is
+ 
+
+1203
+00:28:47,919 --> 00:28:49,430
+and do it 10 times better. And that is
+something that we're also con constantly
+
+1204
+00:28:49,430 --> 00:28:49,440
+something that we're also con constantly
+ 
+
+1205
+00:28:49,440 --> 00:28:51,590
+something that we're also con constantly
+going to see whether it's in social
+
+1206
+00:28:51,590 --> 00:28:51,600
+going to see whether it's in social
+ 
+
+1207
+00:28:51,600 --> 00:28:53,269
+going to see whether it's in social
+engineering becoming psychological
+
+1208
+00:28:53,269 --> 00:28:53,279
+engineering becoming psychological
+ 
+
+1209
+00:28:53,279 --> 00:28:54,710
+engineering becoming psychological
+profiling or whether it's about coding
+
+1210
+00:28:54,710 --> 00:28:54,720
+profiling or whether it's about coding
+ 
+
+1211
+00:28:54,720 --> 00:28:58,070
+profiling or whether it's about coding
+or whatever it is. So now I can get off
+
+1212
+00:28:58,070 --> 00:28:58,080
+or whatever it is. So now I can get off
+ 
+
+1213
+00:28:58,080 --> 00:29:00,789
+or whatever it is. So now I can get off
+my soap box and say this guy here did
+
+1214
+00:29:00,789 --> 00:29:00,799
+my soap box and say this guy here did
+ 
+
+1215
+00:29:00,799 --> 00:29:02,149
+my soap box and say this guy here did
+not want to come speak. This guy here
+
+1216
+00:29:02,149 --> 00:29:02,159
+not want to come speak. This guy here
+ 
+
+1217
+00:29:02,159 --> 00:29:04,230
+not want to come speak. This guy here
+never puts himself forward but he just
+
+1218
+00:29:04,230 --> 00:29:04,240
+never puts himself forward but he just
+ 
+
+1219
+00:29:04,240 --> 00:29:07,750
+never puts himself forward but he just
+in a minor huge way changed the world
+
+1220
+00:29:07,750 --> 00:29:07,760
+in a minor huge way changed the world
+ 
+
+1221
+00:29:07,760 --> 00:29:09,590
+in a minor huge way changed the world
+and made hardware hacking accessible to
+
+1222
+00:29:09,590 --> 00:29:09,600
+and made hardware hacking accessible to
+ 
+
+1223
+00:29:09,600 --> 00:29:12,630
+and made hardware hacking accessible to
+everybody. Thank you for all you do.
+
+1224
+00:29:12,630 --> 00:29:12,640
+everybody. Thank you for all you do.
+ 
+
+1225
+00:29:12,640 --> 00:29:15,960
+everybody. Thank you for all you do.
+Thank you.
+

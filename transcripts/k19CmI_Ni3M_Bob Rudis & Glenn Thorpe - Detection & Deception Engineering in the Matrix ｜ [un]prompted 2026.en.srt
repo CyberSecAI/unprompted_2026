@@ -1,0 +1,7975 @@
+1
+00:00:04,480 --> 00:00:06,470
+
+We have a fan. That's great. Uh, hey
+
+2
+00:00:06,470 --> 00:00:06,480
+We have a fan. That's great. Uh, hey
+ 
+
+3
+00:00:06,480 --> 00:00:07,909
+We have a fan. That's great. Uh, hey
+everybody. This is the last talk of the
+
+4
+00:00:07,909 --> 00:00:07,919
+everybody. This is the last talk of the
+ 
+
+5
+00:00:07,919 --> 00:00:09,430
+everybody. This is the last talk of the
+day. This was an epic day. I learned a
+
+6
+00:00:09,430 --> 00:00:09,440
+day. This was an epic day. I learned a
+ 
+
+7
+00:00:09,440 --> 00:00:11,110
+day. This was an epic day. I learned a
+lot today. I wish we wish this
+
+8
+00:00:11,110 --> 00:00:11,120
+lot today. I wish we wish this
+ 
+
+9
+00:00:11,120 --> 00:00:12,950
+lot today. I wish we wish this
+conference was held back in November.
+
+10
+00:00:12,950 --> 00:00:12,960
+conference was held back in November.
+ 
+
+11
+00:00:12,960 --> 00:00:14,470
+conference was held back in November.
+Could have saved me and Glenn a lot of
+
+12
+00:00:14,470 --> 00:00:14,480
+Could have saved me and Glenn a lot of
+ 
+
+13
+00:00:14,480 --> 00:00:16,470
+Could have saved me and Glenn a lot of
+work along the way. I'm Bob. This is
+
+14
+00:00:16,470 --> 00:00:16,480
+work along the way. I'm Bob. This is
+ 
+
+15
+00:00:16,480 --> 00:00:17,910
+work along the way. I'm Bob. This is
+Glenn. Say hi, Glenn.
+
+16
+00:00:17,910 --> 00:00:17,920
+Glenn. Say hi, Glenn.
+ 
+
+17
+00:00:17,920 --> 00:00:18,790
+Glenn. Say hi, Glenn.
+>> Hi, Glenn.
+
+18
+00:00:18,790 --> 00:00:18,800
+>> Hi, Glenn.
+ 
+
+19
+00:00:18,800 --> 00:00:20,230
+>> Hi, Glenn.
+>> And uh, we're both on the adver
+
+20
+00:00:20,230 --> 00:00:20,240
+>> And uh, we're both on the adver
+ 
+
+21
+00:00:20,240 --> 00:00:22,470
+>> And uh, we're both on the adver
+adversary engineering and R&D side of
+
+22
+00:00:22,470 --> 00:00:22,480
+adversary engineering and R&D side of
+ 
+
+23
+00:00:22,480 --> 00:00:24,950
+adversary engineering and R&D side of
+Grey Noise. We call ourselves Great Grey
+
+24
+00:00:24,950 --> 00:00:24,960
+Grey Noise. We call ourselves Great Grey
+ 
+
+25
+00:00:24,960 --> 00:00:26,630
+Grey Noise. We call ourselves Great Grey
+Noise Labs because we're not very clever
+
+26
+00:00:26,630 --> 00:00:26,640
+Noise Labs because we're not very clever
+ 
+
+27
+00:00:26,640 --> 00:00:29,589
+Noise Labs because we're not very clever
+about naming things. And uh our team
+
+28
+00:00:29,589 --> 00:00:29,599
+about naming things. And uh our team
+ 
+
+29
+00:00:29,599 --> 00:00:31,750
+about naming things. And uh our team
+crafts and deploys detection rules. We
+
+30
+00:00:31,750 --> 00:00:31,760
+crafts and deploys detection rules. We
+ 
+
+31
+00:00:31,760 --> 00:00:34,310
+crafts and deploys detection rules. We
+call them tags. Uh we craft detection
+
+32
+00:00:34,310 --> 00:00:34,320
+call them tags. Uh we craft detection
+ 
+
+33
+00:00:34,320 --> 00:00:35,830
+call them tags. Uh we craft detection
+environments, which is a really fancy
+
+34
+00:00:35,830 --> 00:00:35,840
+environments, which is a really fancy
+ 
+
+35
+00:00:35,840 --> 00:00:38,069
+environments, which is a really fancy
+phrase for we deploy honeypotss. And we
+
+36
+00:00:38,069 --> 00:00:38,079
+phrase for we deploy honeypotss. And we
+ 
+
+37
+00:00:38,079 --> 00:00:40,069
+phrase for we deploy honeypotss. And we
+hunt for threat actors and for zero days
+
+38
+00:00:40,069 --> 00:00:40,079
+hunt for threat actors and for zero days
+ 
+
+39
+00:00:40,079 --> 00:00:42,229
+hunt for threat actors and for zero days
+in our data. And we're here today to
+
+40
+00:00:42,229 --> 00:00:42,239
+in our data. And we're here today to
+ 
+
+41
+00:00:42,239 --> 00:00:44,790
+in our data. And we're here today to
+talk to you about the newest member of
+
+42
+00:00:44,790 --> 00:00:44,800
+talk to you about the newest member of
+ 
+
+43
+00:00:44,800 --> 00:00:48,229
+talk to you about the newest member of
+our team, Orbee.
+
+44
+00:00:48,229 --> 00:00:48,239
+our team, Orbee.
+ 
+
+45
+00:00:48,239 --> 00:00:50,470
+our team, Orbee.
+Uh, Orbee is an internal AI powered
+
+46
+00:00:50,470 --> 00:00:50,480
+Uh, Orbee is an internal AI powered
+ 
+
+47
+00:00:50,480 --> 00:00:52,549
+Uh, Orbee is an internal AI powered
+thread intelligence analyst that helps
+
+48
+00:00:52,549 --> 00:00:52,559
+thread intelligence analyst that helps
+ 
+
+49
+00:00:52,559 --> 00:00:54,950
+thread intelligence analyst that helps
+us make sense of what's happening on our
+
+50
+00:00:54,950 --> 00:00:54,960
+us make sense of what's happening on our
+ 
+
+51
+00:00:54,960 --> 00:00:57,990
+us make sense of what's happening on our
+planetary scale global observation grid.
+
+52
+00:00:57,990 --> 00:00:58,000
+planetary scale global observation grid.
+ 
+
+53
+00:00:58,000 --> 00:00:59,270
+planetary scale global observation grid.
+And the truth is, as you're going to
+
+54
+00:00:59,270 --> 00:00:59,280
+And the truth is, as you're going to
+ 
+
+55
+00:00:59,280 --> 00:01:01,750
+And the truth is, as you're going to
+hear, we were overwhelmed trying to find
+
+56
+00:01:01,750 --> 00:01:01,760
+hear, we were overwhelmed trying to find
+ 
+
+57
+00:01:01,760 --> 00:01:04,549
+hear, we were overwhelmed trying to find
+truly meaningful new signal in all the
+
+58
+00:01:04,549 --> 00:01:04,559
+truly meaningful new signal in all the
+ 
+
+59
+00:01:04,559 --> 00:01:06,469
+truly meaningful new signal in all the
+noise that we capture. And that's how
+
+60
+00:01:06,469 --> 00:01:06,479
+noise that we capture. And that's how
+ 
+
+61
+00:01:06,479 --> 00:01:07,990
+noise that we capture. And that's how
+Orbee came to be. So, we're going to
+
+62
+00:01:07,990 --> 00:01:08,000
+Orbee came to be. So, we're going to
+ 
+
+63
+00:01:08,000 --> 00:01:10,710
+Orbee came to be. So, we're going to
+talk to you about what Ary is, why we
+
+64
+00:01:10,710 --> 00:01:10,720
+talk to you about what Ary is, why we
+ 
+
+65
+00:01:10,720 --> 00:01:13,109
+talk to you about what Ary is, why we
+literally had to build it, the lessons
+
+66
+00:01:13,109 --> 00:01:13,119
+literally had to build it, the lessons
+ 
+
+67
+00:01:13,119 --> 00:01:14,789
+literally had to build it, the lessons
+that we learned while bending it to our
+
+68
+00:01:14,789 --> 00:01:14,799
+that we learned while bending it to our
+ 
+
+69
+00:01:14,799 --> 00:01:16,710
+that we learned while bending it to our
+collective will, and the outcomes that
+
+70
+00:01:16,710 --> 00:01:16,720
+collective will, and the outcomes that
+ 
+
+71
+00:01:16,720 --> 00:01:18,710
+collective will, and the outcomes that
+we achieved after building it. And we
+
+72
+00:01:18,710 --> 00:01:18,720
+we achieved after building it. And we
+ 
+
+73
+00:01:18,720 --> 00:01:20,230
+we achieved after building it. And we
+may talk about futures if we have time
+
+74
+00:01:20,230 --> 00:01:20,240
+may talk about futures if we have time
+ 
+
+75
+00:01:20,240 --> 00:01:22,630
+may talk about futures if we have time
+left. Uh, but we're going to tell you
+
+76
+00:01:22,630 --> 00:01:22,640
+left. Uh, but we're going to tell you
+ 
+
+77
+00:01:22,640 --> 00:01:24,070
+left. Uh, but we're going to tell you
+all we can about our friendly
+
+78
+00:01:24,070 --> 00:01:24,080
+all we can about our friendly
+ 
+
+79
+00:01:24,080 --> 00:01:26,469
+all we can about our friendly
+neighborhood spherical spelunker. And
+
+80
+00:01:26,469 --> 00:01:26,479
+neighborhood spherical spelunker. And
+ 
+
+81
+00:01:26,479 --> 00:01:28,630
+neighborhood spherical spelunker. And
+we've got some goodies to give you as
+
+82
+00:01:28,630 --> 00:01:28,640
+we've got some goodies to give you as
+ 
+
+83
+00:01:28,640 --> 00:01:30,710
+we've got some goodies to give you as
+well. Feel free to go to this right now
+
+84
+00:01:30,710 --> 00:01:30,720
+well. Feel free to go to this right now
+ 
+
+85
+00:01:30,720 --> 00:01:31,749
+well. Feel free to go to this right now
+because there's some slides you're going
+
+86
+00:01:31,749 --> 00:01:31,759
+because there's some slides you're going
+ 
+
+87
+00:01:31,759 --> 00:01:33,030
+because there's some slides you're going
+to need to look at the things I'm there
+
+88
+00:01:33,030 --> 00:01:33,040
+to need to look at the things I'm there
+ 
+
+89
+00:01:33,040 --> 00:01:34,310
+to need to look at the things I'm there
+for because we realize these screens
+
+90
+00:01:34,310 --> 00:01:34,320
+for because we realize these screens
+ 
+
+91
+00:01:34,320 --> 00:01:35,830
+for because we realize these screens
+just aren't going to show them. And
+
+92
+00:01:35,830 --> 00:01:35,840
+just aren't going to show them. And
+ 
+
+93
+00:01:35,840 --> 00:01:37,190
+just aren't going to show them. And
+you're looking at screens anyway. So
+
+94
+00:01:37,190 --> 00:01:37,200
+you're looking at screens anyway. So
+ 
+
+95
+00:01:37,200 --> 00:01:38,230
+you're looking at screens anyway. So
+like feel free to do that and all you
+
+96
+00:01:38,230 --> 00:01:38,240
+like feel free to do that and all you
+ 
+
+97
+00:01:38,240 --> 00:01:39,590
+like feel free to do that and all you
+Zoom people get to see them before
+
+98
+00:01:39,590 --> 00:01:39,600
+Zoom people get to see them before
+ 
+
+99
+00:01:39,600 --> 00:01:41,830
+Zoom people get to see them before
+everybody else. So you guys have fun for
+
+100
+00:01:41,830 --> 00:01:41,840
+everybody else. So you guys have fun for
+ 
+
+101
+00:01:41,840 --> 00:01:44,390
+everybody else. So you guys have fun for
+those things. And oh good. I actually
+
+102
+00:01:44,390 --> 00:01:44,400
+those things. And oh good. I actually
+ 
+
+103
+00:01:44,400 --> 00:01:45,670
+those things. And oh good. I actually
+made it big enough. So Orbeez is
+
+104
+00:01:45,670 --> 00:01:45,680
+made it big enough. So Orbeez is
+ 
+
+105
+00:01:45,680 --> 00:01:47,270
+made it big enough. So Orbeez is
+actually going to do a threat hunt while
+
+106
+00:01:47,270 --> 00:01:47,280
+actually going to do a threat hunt while
+ 
+
+107
+00:01:47,280 --> 00:01:49,030
+actually going to do a threat hunt while
+we're talking to you today. It takes
+
+108
+00:01:49,030 --> 00:01:49,040
+we're talking to you today. It takes
+ 
+
+109
+00:01:49,040 --> 00:01:50,789
+we're talking to you today. It takes
+around 14 minutes. So hopefully we'll
+
+110
+00:01:50,789 --> 00:01:50,799
+around 14 minutes. So hopefully we'll
+ 
+
+111
+00:01:50,799 --> 00:01:53,749
+around 14 minutes. So hopefully we'll
+get done in time to co-join it. Uh I
+
+112
+00:01:53,749 --> 00:01:53,759
+get done in time to co-join it. Uh I
+ 
+
+113
+00:01:53,759 --> 00:01:55,670
+get done in time to co-join it. Uh I
+found some weird base double base 64
+
+114
+00:01:55,670 --> 00:01:55,680
+found some weird base double base 64
+ 
+
+115
+00:01:55,680 --> 00:01:57,190
+found some weird base double base 64
+encoded stuff and Orbeez is going to go
+
+116
+00:01:57,190 --> 00:01:57,200
+encoded stuff and Orbeez is going to go
+ 
+
+117
+00:01:57,200 --> 00:01:59,190
+encoded stuff and Orbeez is going to go
+look through our fleet of honeypot data
+
+118
+00:01:59,190 --> 00:01:59,200
+look through our fleet of honeypot data
+ 
+
+119
+00:01:59,200 --> 00:02:00,550
+look through our fleet of honeypot data
+to figure out what it is without me
+
+120
+00:02:00,550 --> 00:02:00,560
+to figure out what it is without me
+ 
+
+121
+00:02:00,560 --> 00:02:02,469
+to figure out what it is without me
+intervening with it at all. And we'll
+
+122
+00:02:02,469 --> 00:02:02,479
+intervening with it at all. And we'll
+ 
+
+123
+00:02:02,479 --> 00:02:03,590
+intervening with it at all. And we'll
+show you the progress throughout and
+
+124
+00:02:03,590 --> 00:02:03,600
+show you the progress throughout and
+ 
+
+125
+00:02:03,600 --> 00:02:04,630
+show you the progress throughout and
+hopefully to be done with this at the
+
+126
+00:02:04,630 --> 00:02:04,640
+hopefully to be done with this at the
+ 
+
+127
+00:02:04,640 --> 00:02:07,190
+hopefully to be done with this at the
+end and we can see what it is. Now,
+
+128
+00:02:07,190 --> 00:02:07,200
+end and we can see what it is. Now,
+ 
+
+129
+00:02:07,200 --> 00:02:09,990
+end and we can see what it is. Now,
+Orbee turns out to be a reverse origin
+
+130
+00:02:09,990 --> 00:02:10,000
+Orbee turns out to be a reverse origin
+ 
+
+131
+00:02:10,000 --> 00:02:11,670
+Orbee turns out to be a reverse origin
+story. Normally, the hero causes
+
+132
+00:02:11,670 --> 00:02:11,680
+story. Normally, the hero causes
+ 
+
+133
+00:02:11,680 --> 00:02:14,229
+story. Normally, the hero causes
+villains to be created. In this case,
+
+134
+00:02:14,229 --> 00:02:14,239
+villains to be created. In this case,
+ 
+
+135
+00:02:14,239 --> 00:02:16,790
+villains to be created. In this case,
+Orbee was born out of necessity due to
+
+136
+00:02:16,790 --> 00:02:16,800
+Orbee was born out of necessity due to
+ 
+
+137
+00:02:16,800 --> 00:02:19,750
+Orbee was born out of necessity due to
+the villain known as React to Shell. Uh,
+
+138
+00:02:19,750 --> 00:02:19,760
+the villain known as React to Shell. Uh,
+ 
+
+139
+00:02:19,760 --> 00:02:22,070
+the villain known as React to Shell. Uh,
+this is this thing was terrible. How
+
+140
+00:02:22,070 --> 00:02:22,080
+this is this thing was terrible. How
+ 
+
+141
+00:02:22,080 --> 00:02:24,150
+this is this thing was terrible. How
+terrible. This is how terrible. It came
+
+142
+00:02:24,150 --> 00:02:24,160
+terrible. This is how terrible. It came
+ 
+
+143
+00:02:24,160 --> 00:02:26,869
+terrible. This is how terrible. It came
+on the scene back in December 2025. It
+
+144
+00:02:26,869 --> 00:02:26,879
+on the scene back in December 2025. It
+ 
+
+145
+00:02:26,879 --> 00:02:28,949
+on the scene back in December 2025. It
+was bad. It was It wasn't as bad as Log
+
+146
+00:02:28,949 --> 00:02:28,959
+was bad. It was It wasn't as bad as Log
+ 
+
+147
+00:02:28,959 --> 00:02:31,270
+was bad. It was It wasn't as bad as Log
+forj, but it was pretty bad. And this is
+
+148
+00:02:31,270 --> 00:02:31,280
+forj, but it was pretty bad. And this is
+ 
+
+149
+00:02:31,280 --> 00:02:33,190
+forj, but it was pretty bad. And this is
+just an example of the data that we saw
+
+150
+00:02:33,190 --> 00:02:33,200
+just an example of the data that we saw
+ 
+
+151
+00:02:33,200 --> 00:02:34,790
+just an example of the data that we saw
+every single day, the number of sessions
+
+152
+00:02:34,790 --> 00:02:34,800
+every single day, the number of sessions
+ 
+
+153
+00:02:34,800 --> 00:02:37,190
+every single day, the number of sessions
+coming in and the onslaught that we had
+
+154
+00:02:37,190 --> 00:02:37,200
+coming in and the onslaught that we had
+ 
+
+155
+00:02:37,200 --> 00:02:38,390
+coming in and the onslaught that we had
+to deal with ever since then, too,
+
+156
+00:02:38,390 --> 00:02:38,400
+to deal with ever since then, too,
+ 
+
+157
+00:02:38,400 --> 00:02:39,830
+to deal with ever since then, too,
+because this goes to like just last
+
+158
+00:02:39,830 --> 00:02:39,840
+because this goes to like just last
+ 
+
+159
+00:02:39,840 --> 00:02:43,350
+because this goes to like just last
+week. Everybody tried to sling React to
+
+160
+00:02:43,350 --> 00:02:43,360
+week. Everybody tried to sling React to
+ 
+
+161
+00:02:43,360 --> 00:02:44,869
+week. Everybody tried to sling React to
+shell payloads out whatever they could
+
+162
+00:02:44,869 --> 00:02:44,879
+shell payloads out whatever they could
+ 
+
+163
+00:02:44,879 --> 00:02:46,790
+shell payloads out whatever they could
+on the internet to get their share of
+
+164
+00:02:46,790 --> 00:02:46,800
+on the internet to get their share of
+ 
+
+165
+00:02:46,800 --> 00:02:48,949
+on the internet to get their share of
+all the things census inventoried that
+
+166
+00:02:48,949 --> 00:02:48,959
+all the things census inventoried that
+ 
+
+167
+00:02:48,959 --> 00:02:51,030
+all the things census inventoried that
+was out there for these things. And by
+
+168
+00:02:51,030 --> 00:02:51,040
+was out there for these things. And by
+ 
+
+169
+00:02:51,040 --> 00:02:54,949
+was out there for these things. And by
+January 6th, we had observed over 8,200
+
+170
+00:02:54,949 --> 00:02:54,959
+January 6th, we had observed over 8,200
+ 
+
+171
+00:02:54,959 --> 00:02:58,710
+January 6th, we had observed over 8,200
+unique IPs from over a thousand ASNs
+
+172
+00:02:58,710 --> 00:02:58,720
+unique IPs from over a thousand ASNs
+ 
+
+173
+00:02:58,720 --> 00:03:01,270
+unique IPs from over a thousand ASNs
+that were slinging 70,000 completely
+
+174
+00:03:01,270 --> 00:03:01,280
+that were slinging 70,000 completely
+ 
+
+175
+00:03:01,280 --> 00:03:03,750
+that were slinging 70,000 completely
+unique payloads trying to compromise
+
+176
+00:03:03,750 --> 00:03:03,760
+unique payloads trying to compromise
+ 
+
+177
+00:03:03,760 --> 00:03:05,110
+unique payloads trying to compromise
+react to shell. And I just felt
+
+178
+00:03:05,110 --> 00:03:05,120
+react to shell. And I just felt
+ 
+
+179
+00:03:05,120 --> 00:03:07,990
+react to shell. And I just felt
+compelled to note uh this is one of u
+
+180
+00:03:07,990 --> 00:03:08,000
+compelled to note uh this is one of u
+ 
+
+181
+00:03:08,000 --> 00:03:10,470
+compelled to note uh this is one of u
+more than a few of with the help of
+
+182
+00:03:10,470 --> 00:03:10,480
+more than a few of with the help of
+ 
+
+183
+00:03:10,480 --> 00:03:12,710
+more than a few of with the help of
+claude AI generated payloads and we can
+
+184
+00:03:12,710 --> 00:03:12,720
+claude AI generated payloads and we can
+ 
+
+185
+00:03:12,720 --> 00:03:13,910
+claude AI generated payloads and we can
+talk to you about payloads. We have a
+
+186
+00:03:13,910 --> 00:03:13,920
+talk to you about payloads. We have a
+ 
+
+187
+00:03:13,920 --> 00:03:16,149
+talk to you about payloads. We have a
+site you can go to explore those as well
+
+188
+00:03:16,149 --> 00:03:16,159
+site you can go to explore those as well
+ 
+
+189
+00:03:16,159 --> 00:03:17,990
+site you can go to explore those as well
+with massively diverse network
+
+190
+00:03:17,990 --> 00:03:18,000
+with massively diverse network
+ 
+
+191
+00:03:18,000 --> 00:03:20,309
+with massively diverse network
+fingerprints. And if Glenn or I had
+
+192
+00:03:20,309 --> 00:03:20,319
+fingerprints. And if Glenn or I had
+ 
+
+193
+00:03:20,319 --> 00:03:21,830
+fingerprints. And if Glenn or I had
+tried to do this stuff on our own
+
+194
+00:03:21,830 --> 00:03:21,840
+tried to do this stuff on our own
+ 
+
+195
+00:03:21,840 --> 00:03:23,910
+tried to do this stuff on our own
+without the help of something else, it
+
+196
+00:03:23,910 --> 00:03:23,920
+without the help of something else, it
+ 
+
+197
+00:03:23,920 --> 00:03:25,509
+without the help of something else, it
+would have driven us crazy. And as you
+
+198
+00:03:25,509 --> 00:03:25,519
+would have driven us crazy. And as you
+ 
+
+199
+00:03:25,519 --> 00:03:27,190
+would have driven us crazy. And as you
+can see, Orbee was kind of pissed at us
+
+200
+00:03:27,190 --> 00:03:27,200
+can see, Orbee was kind of pissed at us
+ 
+
+201
+00:03:27,200 --> 00:03:29,750
+can see, Orbee was kind of pissed at us
+for having to do this work as well. Uh
+
+202
+00:03:29,750 --> 00:03:29,760
+for having to do this work as well. Uh
+ 
+
+203
+00:03:29,760 --> 00:03:31,589
+for having to do this work as well. Uh
+so this is Orbee. Uh this is the
+
+204
+00:03:31,589 --> 00:03:31,599
+so this is Orbee. Uh this is the
+ 
+
+205
+00:03:31,599 --> 00:03:33,830
+so this is Orbee. Uh this is the
+nutrition facts for Orbee. If you have
+
+206
+00:03:33,830 --> 00:03:33,840
+nutrition facts for Orbee. If you have
+ 
+
+207
+00:03:33,840 --> 00:03:35,589
+nutrition facts for Orbee. If you have
+that link up as well, there's a bigger
+
+208
+00:03:35,589 --> 00:03:35,599
+that link up as well, there's a bigger
+ 
+
+209
+00:03:35,599 --> 00:03:37,110
+that link up as well, there's a bigger
+version of this out there. And we're
+
+210
+00:03:37,110 --> 00:03:37,120
+version of this out there. And we're
+ 
+
+211
+00:03:37,120 --> 00:03:38,550
+version of this out there. And we're
+going to go through some specifics, but
+
+212
+00:03:38,550 --> 00:03:38,560
+going to go through some specifics, but
+ 
+
+213
+00:03:38,560 --> 00:03:40,229
+going to go through some specifics, but
+you can find a lot more in the repo as
+
+214
+00:03:40,229 --> 00:03:40,239
+you can find a lot more in the repo as
+ 
+
+215
+00:03:40,239 --> 00:03:43,030
+you can find a lot more in the repo as
+well. And uh it runs in a very
+
+216
+00:03:43,030 --> 00:03:43,040
+well. And uh it runs in a very
+ 
+
+217
+00:03:43,040 --> 00:03:45,830
+well. And uh it runs in a very
+customized clog code environment. We're
+
+218
+00:03:45,830 --> 00:03:45,840
+customized clog code environment. We're
+ 
+
+219
+00:03:45,840 --> 00:03:47,110
+customized clog code environment. We're
+going to throw that away soon and build
+
+220
+00:03:47,110 --> 00:03:47,120
+going to throw that away soon and build
+ 
+
+221
+00:03:47,120 --> 00:03:48,470
+going to throw that away soon and build
+our own because we reached the limits of
+
+222
+00:03:48,470 --> 00:03:48,480
+our own because we reached the limits of
+ 
+
+223
+00:03:48,480 --> 00:03:50,949
+our own because we reached the limits of
+what clog code can actually go do. It
+
+224
+00:03:50,949 --> 00:03:50,959
+what clog code can actually go do. It
+ 
+
+225
+00:03:50,959 --> 00:03:52,869
+what clog code can actually go do. It
+coordinates between 12 and 16 MCP
+
+226
+00:03:52,869 --> 00:03:52,879
+coordinates between 12 and 16 MCP
+ 
+
+227
+00:03:52,879 --> 00:03:55,190
+coordinates between 12 and 16 MCP
+servers and around seven plus
+
+228
+00:03:55,190 --> 00:03:55,200
+servers and around seven plus
+ 
+
+229
+00:03:55,200 --> 00:03:57,030
+servers and around seven plus
+investigation. We are which we are going
+
+230
+00:03:57,030 --> 00:03:57,040
+investigation. We are which we are going
+ 
+
+231
+00:03:57,040 --> 00:03:59,110
+investigation. We are which we are going
+to cover a couple here. However, with
+
+232
+00:03:59,110 --> 00:03:59,120
+to cover a couple here. However, with
+ 
+
+233
+00:03:59,120 --> 00:04:01,270
+to cover a couple here. However, with
+all that, it's a really light footprint.
+
+234
+00:04:01,270 --> 00:04:01,280
+all that, it's a really light footprint.
+ 
+
+235
+00:04:01,280 --> 00:04:03,190
+all that, it's a really light footprint.
+Uh most of the work is done in remote
+
+236
+00:04:03,190 --> 00:04:03,200
+Uh most of the work is done in remote
+ 
+
+237
+00:04:03,200 --> 00:04:05,910
+Uh most of the work is done in remote
+servers like Archammy or our API. Uh
+
+238
+00:04:05,910 --> 00:04:05,920
+servers like Archammy or our API. Uh
+ 
+
+239
+00:04:05,920 --> 00:04:07,670
+servers like Archammy or our API. Uh
+local duct DB does all the analysis and
+
+240
+00:04:07,670 --> 00:04:07,680
+local duct DB does all the analysis and
+ 
+
+241
+00:04:07,680 --> 00:04:09,589
+local duct DB does all the analysis and
+you'll see why in a minute. And the LLM
+
+242
+00:04:09,589 --> 00:04:09,599
+you'll see why in a minute. And the LLM
+ 
+
+243
+00:04:09,599 --> 00:04:11,030
+you'll see why in a minute. And the LLM
+takes care of a lot of work for us as
+
+244
+00:04:11,030 --> 00:04:11,040
+takes care of a lot of work for us as
+ 
+
+245
+00:04:11,040 --> 00:04:13,509
+takes care of a lot of work for us as
+well too. And the goal for this is to
+
+246
+00:04:13,509 --> 00:04:13,519
+well too. And the goal for this is to
+ 
+
+247
+00:04:13,519 --> 00:04:15,670
+well too. And the goal for this is to
+save us a bunch of time, deliver
+
+248
+00:04:15,670 --> 00:04:15,680
+save us a bunch of time, deliver
+ 
+
+249
+00:04:15,680 --> 00:04:18,229
+save us a bunch of time, deliver
+structured, reproducible, and validated
+
+250
+00:04:18,229 --> 00:04:18,239
+structured, reproducible, and validated
+ 
+
+251
+00:04:18,239 --> 00:04:20,469
+structured, reproducible, and validated
+that's because of him. Uh thread threat
+
+252
+00:04:20,469 --> 00:04:20,479
+that's because of him. Uh thread threat
+ 
+
+253
+00:04:20,479 --> 00:04:22,310
+that's because of him. Uh thread threat
+hunting analyses and other artifacts
+
+254
+00:04:22,310 --> 00:04:22,320
+hunting analyses and other artifacts
+ 
+
+255
+00:04:22,320 --> 00:04:24,070
+hunting analyses and other artifacts
+that uses our data. And you can see all
+
+256
+00:04:24,070 --> 00:04:24,080
+that uses our data. And you can see all
+ 
+
+257
+00:04:24,080 --> 00:04:25,909
+that uses our data. And you can see all
+the other stuff that we actually have to
+
+258
+00:04:25,909 --> 00:04:25,919
+the other stuff that we actually have to
+ 
+
+259
+00:04:25,919 --> 00:04:28,790
+the other stuff that we actually have to
+go to do that.
+
+260
+00:04:28,790 --> 00:04:28,800
+go to do that.
+ 
+
+261
+00:04:28,800 --> 00:04:31,830
+go to do that.
+Yeah. So Bob started the the story, but
+
+262
+00:04:31,830 --> 00:04:31,840
+Yeah. So Bob started the the story, but
+ 
+
+263
+00:04:31,840 --> 00:04:33,510
+Yeah. So Bob started the the story, but
+you can, you know, to reframe that
+
+264
+00:04:33,510 --> 00:04:33,520
+you can, you know, to reframe that
+ 
+
+265
+00:04:33,520 --> 00:04:35,990
+you can, you know, to reframe that
+again. Why does Orbeez exist? And it's
+
+266
+00:04:35,990 --> 00:04:36,000
+again. Why does Orbeez exist? And it's
+ 
+
+267
+00:04:36,000 --> 00:04:39,030
+again. Why does Orbeez exist? And it's
+because we are tired.
+
+268
+00:04:39,030 --> 00:04:39,040
+because we are tired.
+ 
+
+269
+00:04:39,040 --> 00:04:41,590
+because we are tired.
+And here's why. as we have a a look at
+
+270
+00:04:41,590 --> 00:04:41,600
+And here's why. as we have a a look at
+ 
+
+271
+00:04:41,600 --> 00:04:43,830
+And here's why. as we have a a look at
+just a few seconds of uh pecaps and
+
+272
+00:04:43,830 --> 00:04:43,840
+just a few seconds of uh pecaps and
+ 
+
+273
+00:04:43,840 --> 00:04:45,510
+just a few seconds of uh pecaps and
+sessions that we see on our fleet on a
+
+274
+00:04:45,510 --> 00:04:45,520
+sessions that we see on our fleet on a
+ 
+
+275
+00:04:45,520 --> 00:04:47,270
+sessions that we see on our fleet on a
+pew pew map because everyone loves pew
+
+276
+00:04:47,270 --> 00:04:47,280
+pew pew map because everyone loves pew
+ 
+
+277
+00:04:47,280 --> 00:04:50,150
+pew pew map because everyone loves pew
+maps. That was a hackathon project. Uh
+
+278
+00:04:50,150 --> 00:04:50,160
+maps. That was a hackathon project. Uh
+ 
+
+279
+00:04:50,160 --> 00:04:51,990
+maps. That was a hackathon project. Uh
+over the just in the last 90 days, we're
+
+280
+00:04:51,990 --> 00:04:52,000
+over the just in the last 90 days, we're
+ 
+
+281
+00:04:52,000 --> 00:04:53,909
+over the just in the last 90 days, we're
+looking at three like we have a fleet of
+
+282
+00:04:53,909 --> 00:04:53,919
+looking at three like we have a fleet of
+ 
+
+283
+00:04:53,919 --> 00:04:56,550
+looking at three like we have a fleet of
+over 3,000 sensors, 90 plus countries,
+
+284
+00:04:56,550 --> 00:04:56,560
+over 3,000 sensors, 90 plus countries,
+ 
+
+285
+00:04:56,560 --> 00:04:59,510
+over 3,000 sensors, 90 plus countries,
+3,500 detections, 200 attacker profiles,
+
+286
+00:04:59,510 --> 00:04:59,520
+3,500 detections, 200 attacker profiles,
+ 
+
+287
+00:04:59,520 --> 00:05:01,270
+3,500 detections, 200 attacker profiles,
+and those are growing by the week pretty
+
+288
+00:05:01,270 --> 00:05:01,280
+and those are growing by the week pretty
+ 
+
+289
+00:05:01,280 --> 00:05:03,590
+and those are growing by the week pretty
+much. And then underneath all that,
+
+290
+00:05:03,590 --> 00:05:03,600
+much. And then underneath all that,
+ 
+
+291
+00:05:03,600 --> 00:05:05,749
+much. And then underneath all that,
+growing by the second, again over the
+
+292
+00:05:05,749 --> 00:05:05,759
+growing by the second, again over the
+ 
+
+293
+00:05:05,759 --> 00:05:08,310
+growing by the second, again over the
+last 90 days, we're talking 22 tab of
+
+294
+00:05:08,310 --> 00:05:08,320
+last 90 days, we're talking 22 tab of
+ 
+
+295
+00:05:08,320 --> 00:05:10,790
+last 90 days, we're talking 22 tab of
+packet captures, 32 tab of session
+
+296
+00:05:10,790 --> 00:05:10,800
+packet captures, 32 tab of session
+ 
+
+297
+00:05:10,800 --> 00:05:12,950
+packet captures, 32 tab of session
+information, and 20 million elastic
+
+298
+00:05:12,950 --> 00:05:12,960
+information, and 20 million elastic
+ 
+
+299
+00:05:12,960 --> 00:05:15,749
+information, and 20 million elastic
+search documents. So this is what one
+
+300
+00:05:15,749 --> 00:05:15,759
+search documents. So this is what one
+ 
+
+301
+00:05:15,759 --> 00:05:18,390
+search documents. So this is what one
+small team at a startup is responsible
+
+302
+00:05:18,390 --> 00:05:18,400
+small team at a startup is responsible
+ 
+
+303
+00:05:18,400 --> 00:05:20,870
+small team at a startup is responsible
+for sifting through the noise to be able
+
+304
+00:05:20,870 --> 00:05:20,880
+for sifting through the noise to be able
+ 
+
+305
+00:05:20,880 --> 00:05:22,870
+for sifting through the noise to be able
+to find the signal to be able to deliver
+
+306
+00:05:22,870 --> 00:05:22,880
+to find the signal to be able to deliver
+ 
+
+307
+00:05:22,880 --> 00:05:24,550
+to find the signal to be able to deliver
+the protections to our customers and see
+
+308
+00:05:24,550 --> 00:05:24,560
+the protections to our customers and see
+ 
+
+309
+00:05:24,560 --> 00:05:26,550
+the protections to our customers and see
+what's growing going on on the internet.
+
+310
+00:05:26,550 --> 00:05:26,560
+what's growing going on on the internet.
+ 
+
+311
+00:05:26,560 --> 00:05:30,150
+what's growing going on on the internet.
+So in the end, we scaled our fleets, but
+
+312
+00:05:30,150 --> 00:05:30,160
+So in the end, we scaled our fleets, but
+ 
+
+313
+00:05:30,160 --> 00:05:33,189
+So in the end, we scaled our fleets, but
+the scale is what broke us. So we built
+
+314
+00:05:33,189 --> 00:05:33,199
+the scale is what broke us. So we built
+ 
+
+315
+00:05:33,199 --> 00:05:36,150
+the scale is what broke us. So we built
+Orbee.
+
+316
+00:05:36,150 --> 00:05:36,160
+Orbee.
+ 
+
+317
+00:05:36,160 --> 00:05:37,430
+Orbee.
+It's a good thing Orbee never gets
+
+318
+00:05:37,430 --> 00:05:37,440
+It's a good thing Orbee never gets
+ 
+
+319
+00:05:37,440 --> 00:05:37,909
+It's a good thing Orbee never gets
+tired.
+
+320
+00:05:37,909 --> 00:05:37,919
+tired.
+ 
+
+321
+00:05:37,919 --> 00:05:38,469
+tired.
+>> Nope.
+
+322
+00:05:38,469 --> 00:05:38,479
+>> Nope.
+ 
+
+323
+00:05:38,479 --> 00:05:41,189
+>> Nope.
+>> So one thing I am still stunned by in
+
+324
+00:05:41,189 --> 00:05:41,199
+>> So one thing I am still stunned by in
+ 
+
+325
+00:05:41,199 --> 00:05:45,909
+>> So one thing I am still stunned by in
+2026 is that folks get tripped up that
+
+326
+00:05:45,909 --> 00:05:45,919
+2026 is that folks get tripped up that
+ 
+
+327
+00:05:45,919 --> 00:05:47,909
+2026 is that folks get tripped up that
+these LLMs don't come preloaded with
+
+328
+00:05:47,909 --> 00:05:47,919
+these LLMs don't come preloaded with
+ 
+
+329
+00:05:47,919 --> 00:05:49,029
+these LLMs don't come preloaded with
+everything you need and they just
+
+330
+00:05:49,029 --> 00:05:49,039
+everything you need and they just
+ 
+
+331
+00:05:49,039 --> 00:05:50,870
+everything you need and they just
+dismiss them outright. Even the ones
+
+332
+00:05:50,870 --> 00:05:50,880
+dismiss them outright. Even the ones
+ 
+
+333
+00:05:50,880 --> 00:05:52,150
+dismiss them outright. Even the ones
+that have been purpose-built for that,
+
+334
+00:05:52,150 --> 00:05:52,160
+that have been purpose-built for that,
+ 
+
+335
+00:05:52,160 --> 00:05:53,430
+that have been purpose-built for that,
+like I won't mention some of the
+
+336
+00:05:53,430 --> 00:05:53,440
+like I won't mention some of the
+ 
+
+337
+00:05:53,440 --> 00:05:55,749
+like I won't mention some of the
+Security Foundation models, but they're
+
+338
+00:05:55,749 --> 00:05:55,759
+Security Foundation models, but they're
+ 
+
+339
+00:05:55,759 --> 00:05:58,469
+Security Foundation models, but they're
+not great. We've tried them all and even
+
+340
+00:05:58,469 --> 00:05:58,479
+not great. We've tried them all and even
+ 
+
+341
+00:05:58,479 --> 00:05:59,830
+not great. We've tried them all and even
+these fancy new ones that came out in
+
+342
+00:05:59,830 --> 00:05:59,840
+these fancy new ones that came out in
+ 
+
+343
+00:05:59,840 --> 00:06:01,270
+these fancy new ones that came out in
+November that we're all like singing the
+
+344
+00:06:01,270 --> 00:06:01,280
+November that we're all like singing the
+ 
+
+345
+00:06:01,280 --> 00:06:02,950
+November that we're all like singing the
+praises of. They're they're good, but
+
+346
+00:06:02,950 --> 00:06:02,960
+praises of. They're they're good, but
+ 
+
+347
+00:06:02,960 --> 00:06:04,550
+praises of. They're they're good, but
+they don't have everything that we need,
+
+348
+00:06:04,550 --> 00:06:04,560
+they don't have everything that we need,
+ 
+
+349
+00:06:04,560 --> 00:06:06,390
+they don't have everything that we need,
+as you just heard, too, to do what we
+
+350
+00:06:06,390 --> 00:06:06,400
+as you just heard, too, to do what we
+ 
+
+351
+00:06:06,400 --> 00:06:08,629
+as you just heard, too, to do what we
+needed to do. And I liken this to the
+
+352
+00:06:08,629 --> 00:06:08,639
+needed to do. And I liken this to the
+ 
+
+353
+00:06:08,639 --> 00:06:09,990
+needed to do. And I liken this to the
+scene in the Matrix where Tank is
+
+354
+00:06:09,990 --> 00:06:10,000
+scene in the Matrix where Tank is
+ 
+
+355
+00:06:10,000 --> 00:06:12,309
+scene in the Matrix where Tank is
+uploading jiu-jitsu into into Neo.
+
+356
+00:06:12,309 --> 00:06:12,319
+uploading jiu-jitsu into into Neo.
+ 
+
+357
+00:06:12,319 --> 00:06:13,830
+uploading jiu-jitsu into into Neo.
+That's the problem that we're trying to
+
+358
+00:06:13,830 --> 00:06:13,840
+That's the problem that we're trying to
+ 
+
+359
+00:06:13,840 --> 00:06:15,270
+That's the problem that we're trying to
+solve that we've all that you've heard
+
+360
+00:06:15,270 --> 00:06:15,280
+solve that we've all that you've heard
+ 
+
+361
+00:06:15,280 --> 00:06:17,430
+solve that we've all that you've heard
+throughout today trying to solve. Orbee
+
+362
+00:06:17,430 --> 00:06:17,440
+throughout today trying to solve. Orbee
+ 
+
+363
+00:06:17,440 --> 00:06:19,110
+throughout today trying to solve. Orbee
+starts with an empty head every single
+
+364
+00:06:19,110 --> 00:06:19,120
+starts with an empty head every single
+ 
+
+365
+00:06:19,120 --> 00:06:20,950
+starts with an empty head every single
+time, just like Claude does. You can
+
+366
+00:06:20,950 --> 00:06:20,960
+time, just like Claude does. You can
+ 
+
+367
+00:06:20,960 --> 00:06:22,550
+time, just like Claude does. You can
+give it memory, but it still fires up
+
+368
+00:06:22,550 --> 00:06:22,560
+give it memory, but it still fires up
+ 
+
+369
+00:06:22,560 --> 00:06:23,990
+give it memory, but it still fires up
+with an empty head. For our threat
+
+370
+00:06:23,990 --> 00:06:24,000
+with an empty head. For our threat
+ 
+
+371
+00:06:24,000 --> 00:06:26,230
+with an empty head. For our threat
+hunting context, it's actually by
+
+372
+00:06:26,230 --> 00:06:26,240
+hunting context, it's actually by
+ 
+
+373
+00:06:26,240 --> 00:06:28,629
+hunting context, it's actually by
+default about as smart and helpful as
+
+374
+00:06:28,629 --> 00:06:28,639
+default about as smart and helpful as
+ 
+
+375
+00:06:28,639 --> 00:06:30,629
+default about as smart and helpful as
+like a 13-year-old with access to both a
+
+376
+00:06:30,629 --> 00:06:30,639
+like a 13-year-old with access to both a
+ 
+
+377
+00:06:30,639 --> 00:06:33,270
+like a 13-year-old with access to both a
+flamethrower and Wikipedia. So, not not
+
+378
+00:06:33,270 --> 00:06:33,280
+flamethrower and Wikipedia. So, not not
+ 
+
+379
+00:06:33,280 --> 00:06:36,150
+flamethrower and Wikipedia. So, not not
+really not really helpful. So, the skill
+
+380
+00:06:36,150 --> 00:06:36,160
+really not really helpful. So, the skill
+ 
+
+381
+00:06:36,160 --> 00:06:38,790
+really not really helpful. So, the skill
+system is how we load it up. And we have
+
+382
+00:06:38,790 --> 00:06:38,800
+system is how we load it up. And we have
+ 
+
+383
+00:06:38,800 --> 00:06:40,550
+system is how we load it up. And we have
+individual skill directories and each
+
+384
+00:06:40,550 --> 00:06:40,560
+individual skill directories and each
+ 
+
+385
+00:06:40,560 --> 00:06:42,710
+individual skill directories and each
+one is a structured system prompt and
+
+386
+00:06:42,710 --> 00:06:42,720
+one is a structured system prompt and
+ 
+
+387
+00:06:42,720 --> 00:06:45,110
+one is a structured system prompt and
+associated resources and tools that
+
+388
+00:06:45,110 --> 00:06:45,120
+associated resources and tools that
+ 
+
+389
+00:06:45,120 --> 00:06:46,950
+associated resources and tools that
+define workflow phases that Orbee is
+
+390
+00:06:46,950 --> 00:06:46,960
+define workflow phases that Orbee is
+ 
+
+391
+00:06:46,960 --> 00:06:48,070
+define workflow phases that Orbee is
+going through. Now the Orbee that we
+
+392
+00:06:48,070 --> 00:06:48,080
+going through. Now the Orbee that we
+ 
+
+393
+00:06:48,080 --> 00:06:49,110
+going through. Now the Orbee that we
+fired up before, it's going to go
+
+394
+00:06:49,110 --> 00:06:49,120
+fired up before, it's going to go
+ 
+
+395
+00:06:49,120 --> 00:06:51,510
+fired up before, it's going to go
+through about six workflow phases. We
+
+396
+00:06:51,510 --> 00:06:51,520
+through about six workflow phases. We
+ 
+
+397
+00:06:51,520 --> 00:06:53,430
+through about six workflow phases. We
+may get to see a little bit of like
+
+398
+00:06:53,430 --> 00:06:53,440
+may get to see a little bit of like
+ 
+
+399
+00:06:53,440 --> 00:06:55,029
+may get to see a little bit of like
+workflow two or three as we check in on
+
+400
+00:06:55,029 --> 00:06:55,039
+workflow two or three as we check in on
+ 
+
+401
+00:06:55,039 --> 00:06:57,110
+workflow two or three as we check in on
+in a minute. There's mand there's
+
+402
+00:06:57,110 --> 00:06:57,120
+in a minute. There's mand there's
+ 
+
+403
+00:06:57,120 --> 00:06:58,710
+in a minute. There's mand there's
+mandatory constraints. There's
+
+404
+00:06:58,710 --> 00:06:58,720
+mandatory constraints. There's
+ 
+
+405
+00:06:58,720 --> 00:07:00,870
+mandatory constraints. There's
+definitions of antiatterns because you
+
+406
+00:07:00,870 --> 00:07:00,880
+definitions of antiatterns because you
+ 
+
+407
+00:07:00,880 --> 00:07:02,469
+definitions of antiatterns because you
+got to tell it what it shouldn't do, not
+
+408
+00:07:02,469 --> 00:07:02,479
+got to tell it what it shouldn't do, not
+ 
+
+409
+00:07:02,479 --> 00:07:05,029
+got to tell it what it shouldn't do, not
+just what it should do. and output specs
+
+410
+00:07:05,029 --> 00:07:05,039
+just what it should do. and output specs
+ 
+
+411
+00:07:05,039 --> 00:07:06,629
+just what it should do. and output specs
+so we get the precision output that we
+
+412
+00:07:06,629 --> 00:07:06,639
+so we get the precision output that we
+ 
+
+413
+00:07:06,639 --> 00:07:08,230
+so we get the precision output that we
+need for ourselves and for the customers
+
+414
+00:07:08,230 --> 00:07:08,240
+need for ourselves and for the customers
+ 
+
+415
+00:07:08,240 --> 00:07:10,150
+need for ourselves and for the customers
+that and our partners that we give it to
+
+416
+00:07:10,150 --> 00:07:10,160
+that and our partners that we give it to
+ 
+
+417
+00:07:10,160 --> 00:07:13,029
+that and our partners that we give it to
+in particular domains. I tried and Glenn
+
+418
+00:07:13,029 --> 00:07:13,039
+in particular domains. I tried and Glenn
+ 
+
+419
+00:07:13,039 --> 00:07:14,790
+in particular domains. I tried and Glenn
+has tried to keep the skills mostly in
+
+420
+00:07:14,790 --> 00:07:14,800
+has tried to keep the skills mostly in
+ 
+
+421
+00:07:14,800 --> 00:07:16,629
+has tried to keep the skills mostly in
+natural language so that anybody on the
+
+422
+00:07:16,629 --> 00:07:16,639
+natural language so that anybody on the
+ 
+
+423
+00:07:16,639 --> 00:07:18,710
+natural language so that anybody on the
+team can work with them but there's SQL
+
+424
+00:07:18,710 --> 00:07:18,720
+team can work with them but there's SQL
+ 
+
+425
+00:07:18,720 --> 00:07:20,390
+team can work with them but there's SQL
+and bash and go code and other things
+
+426
+00:07:20,390 --> 00:07:20,400
+and bash and go code and other things
+ 
+
+427
+00:07:20,400 --> 00:07:22,309
+and bash and go code and other things
+associated with them as well but we
+
+428
+00:07:22,309 --> 00:07:22,319
+associated with them as well but we
+ 
+
+429
+00:07:22,319 --> 00:07:24,150
+associated with them as well but we
+really tried to make it as codelike as
+
+430
+00:07:24,150 --> 00:07:24,160
+really tried to make it as codelike as
+ 
+
+431
+00:07:24,160 --> 00:07:25,909
+really tried to make it as codelike as
+possible. So we're not going to have a
+
+432
+00:07:25,909 --> 00:07:25,919
+possible. So we're not going to have a
+ 
+
+433
+00:07:25,919 --> 00:07:27,110
+possible. So we're not going to have a
+chance to go through all through all of
+
+434
+00:07:27,110 --> 00:07:27,120
+chance to go through all through all of
+ 
+
+435
+00:07:27,120 --> 00:07:28,309
+chance to go through all through all of
+these things. Please talk to us
+
+436
+00:07:28,309 --> 00:07:28,319
+these things. Please talk to us
+ 
+
+437
+00:07:28,319 --> 00:07:29,510
+these things. Please talk to us
+afterwards. I'll show you everything
+
+438
+00:07:29,510 --> 00:07:29,520
+afterwards. I'll show you everything
+ 
+
+439
+00:07:29,520 --> 00:07:31,430
+afterwards. I'll show you everything
+that you can that we can show you. We're
+
+440
+00:07:31,430 --> 00:07:31,440
+that you can that we can show you. We're
+ 
+
+441
+00:07:31,440 --> 00:07:32,870
+that you can that we can show you. We're
+going to talk about the tag triage skill
+
+442
+00:07:32,870 --> 00:07:32,880
+going to talk about the tag triage skill
+ 
+
+443
+00:07:32,880 --> 00:07:34,390
+going to talk about the tag triage skill
+and the census enrichment ones in
+
+444
+00:07:34,390 --> 00:07:34,400
+and the census enrichment ones in
+ 
+
+445
+00:07:34,400 --> 00:07:36,550
+and the census enrichment ones in
+detail, but let me talk about the other
+
+446
+00:07:36,550 --> 00:07:36,560
+detail, but let me talk about the other
+ 
+
+447
+00:07:36,560 --> 00:07:37,589
+detail, but let me talk about the other
+ones. The threat hunting one is what
+
+448
+00:07:37,589 --> 00:07:37,599
+ones. The threat hunting one is what
+ 
+
+449
+00:07:37,599 --> 00:07:38,710
+ones. The threat hunting one is what
+Orbeez is doing. So, you're going to see
+
+450
+00:07:38,710 --> 00:07:38,720
+Orbeez is doing. So, you're going to see
+ 
+
+451
+00:07:38,720 --> 00:07:40,150
+Orbeez is doing. So, you're going to see
+that the output of that. So, we won't
+
+452
+00:07:40,150 --> 00:07:40,160
+that the output of that. So, we won't
+ 
+
+453
+00:07:40,160 --> 00:07:42,230
+that the output of that. So, we won't
+talk about that much. We have a markdown
+
+454
+00:07:42,230 --> 00:07:42,240
+talk about that much. We have a markdown
+ 
+
+455
+00:07:42,240 --> 00:07:43,510
+talk about that much. We have a markdown
+writing skill because it turns out
+
+456
+00:07:43,510 --> 00:07:43,520
+writing skill because it turns out
+ 
+
+457
+00:07:43,520 --> 00:07:45,350
+writing skill because it turns out
+Claude sucks at markdown. It may look
+
+458
+00:07:45,350 --> 00:07:45,360
+Claude sucks at markdown. It may look
+ 
+
+459
+00:07:45,360 --> 00:07:47,909
+Claude sucks at markdown. It may look
+like it does great job. It doesn't. So,
+
+460
+00:07:47,909 --> 00:07:47,919
+like it does great job. It doesn't. So,
+ 
+
+461
+00:07:47,919 --> 00:07:49,430
+like it does great job. It doesn't. So,
+we actually had to build custom markdown
+
+462
+00:07:49,430 --> 00:07:49,440
+we actually had to build custom markdown
+ 
+
+463
+00:07:49,440 --> 00:07:50,710
+we actually had to build custom markdown
+skills. So, it does really good
+
+464
+00:07:50,710 --> 00:07:50,720
+skills. So, it does really good
+ 
+
+465
+00:07:50,720 --> 00:07:52,469
+skills. So, it does really good
+precision markdown that translates well
+
+466
+00:07:52,469 --> 00:07:52,479
+precision markdown that translates well
+ 
+
+467
+00:07:52,479 --> 00:07:54,309
+precision markdown that translates well
+to PDF and to Google Docs.
+
+468
+00:07:54,309 --> 00:07:54,319
+to PDF and to Google Docs.
+ 
+
+469
+00:07:54,319 --> 00:07:57,029
+to PDF and to Google Docs.
+Unfortunately, uh we do we have a pcap
+
+470
+00:07:57,029 --> 00:07:57,039
+Unfortunately, uh we do we have a pcap
+ 
+
+471
+00:07:57,039 --> 00:07:58,869
+Unfortunately, uh we do we have a pcap
+analysis skill because we capture a ton
+
+472
+00:07:58,869 --> 00:07:58,879
+analysis skill because we capture a ton
+ 
+
+473
+00:07:58,879 --> 00:08:01,029
+analysis skill because we capture a ton
+of pcap as Glenn mentioned and we need
+
+474
+00:08:01,029 --> 00:08:01,039
+of pcap as Glenn mentioned and we need
+ 
+
+475
+00:08:01,039 --> 00:08:02,710
+of pcap as Glenn mentioned and we need
+to help it understand how to do work
+
+476
+00:08:02,710 --> 00:08:02,720
+to help it understand how to do work
+ 
+
+477
+00:08:02,720 --> 00:08:03,909
+to help it understand how to do work
+with it. We're going to give it tools
+
+478
+00:08:03,909 --> 00:08:03,919
+with it. We're going to give it tools
+ 
+
+479
+00:08:03,919 --> 00:08:05,189
+with it. We're going to give it tools
+too in a little bit to work with them
+
+480
+00:08:05,189 --> 00:08:05,199
+too in a little bit to work with them
+ 
+
+481
+00:08:05,199 --> 00:08:07,430
+too in a little bit to work with them
+too. For anyone that works with out
+
+482
+00:08:07,430 --> 00:08:07,440
+too. For anyone that works with out
+ 
+
+483
+00:08:07,440 --> 00:08:09,670
+too. For anyone that works with out
+ofband security testing domains, OT
+
+484
+00:08:09,670 --> 00:08:09,680
+ofband security testing domains, OT
+ 
+
+485
+00:08:09,680 --> 00:08:12,070
+ofband security testing domains, OT
+domains, we give it a skill to know
+
+486
+00:08:12,070 --> 00:08:12,080
+domains, we give it a skill to know
+ 
+
+487
+00:08:12,080 --> 00:08:13,430
+domains, we give it a skill to know
+everything it needs to know about those
+
+488
+00:08:13,430 --> 00:08:13,440
+everything it needs to know about those
+ 
+
+489
+00:08:13,440 --> 00:08:14,629
+everything it needs to know about those
+domains and how to work with them and
+
+490
+00:08:14,629 --> 00:08:14,639
+domains and how to work with them and
+ 
+
+491
+00:08:14,639 --> 00:08:16,150
+domains and how to work with them and
+tie infrastructure together with that
+
+492
+00:08:16,150 --> 00:08:16,160
+tie infrastructure together with that
+ 
+
+493
+00:08:16,160 --> 00:08:18,070
+tie infrastructure together with that
+along with the MCP server. You'll see
+
+494
+00:08:18,070 --> 00:08:18,080
+along with the MCP server. You'll see
+ 
+
+495
+00:08:18,080 --> 00:08:20,390
+along with the MCP server. You'll see
+soon too. Virus total, you all know what
+
+496
+00:08:20,390 --> 00:08:20,400
+soon too. Virus total, you all know what
+ 
+
+497
+00:08:20,400 --> 00:08:21,350
+soon too. Virus total, you all know what
+that is. You wouldn't be here if you
+
+498
+00:08:21,350 --> 00:08:21,360
+that is. You wouldn't be here if you
+ 
+
+499
+00:08:21,360 --> 00:08:22,869
+that is. You wouldn't be here if you
+didn't know what that is. and he's going
+
+500
+00:08:22,869 --> 00:08:22,879
+didn't know what that is. and he's going
+ 
+
+501
+00:08:22,879 --> 00:08:24,309
+didn't know what that is. and he's going
+to drone on for like two minutes about
+
+502
+00:08:24,309 --> 00:08:24,319
+to drone on for like two minutes about
+ 
+
+503
+00:08:24,319 --> 00:08:25,670
+to drone on for like two minutes about
+findings validation because he cares
+
+504
+00:08:25,670 --> 00:08:25,680
+findings validation because he cares
+ 
+
+505
+00:08:25,680 --> 00:08:26,950
+findings validation because he cares
+about stuff like that. So I'll let him
+
+506
+00:08:26,950 --> 00:08:26,960
+about stuff like that. So I'll let him
+ 
+
+507
+00:08:26,960 --> 00:08:30,230
+about stuff like that. So I'll let him
+do that later. Uh so this is uh the the
+
+508
+00:08:30,230 --> 00:08:30,240
+do that later. Uh so this is uh the the
+ 
+
+509
+00:08:30,240 --> 00:08:32,790
+do that later. Uh so this is uh the the
+tag triage skill. It's how Orby works.
+
+510
+00:08:32,790 --> 00:08:32,800
+tag triage skill. It's how Orby works.
+ 
+
+511
+00:08:32,800 --> 00:08:34,949
+tag triage skill. It's how Orby works.
+You can't read that. So basically if you
+
+512
+00:08:34,949 --> 00:08:34,959
+You can't read that. So basically if you
+ 
+
+513
+00:08:34,959 --> 00:08:36,709
+You can't read that. So basically if you
+didn't get the URL before, go for it
+
+514
+00:08:36,709 --> 00:08:36,719
+didn't get the URL before, go for it
+ 
+
+515
+00:08:36,719 --> 00:08:39,190
+didn't get the URL before, go for it
+there because you can see it. Uh we have
+
+516
+00:08:39,190 --> 00:08:39,200
+there because you can see it. Uh we have
+ 
+
+517
+00:08:39,200 --> 00:08:42,389
+there because you can see it. Uh we have
+over 3500 detection rules tags. We need
+
+518
+00:08:42,389 --> 00:08:42,399
+over 3500 detection rules tags. We need
+ 
+
+519
+00:08:42,399 --> 00:08:43,750
+over 3500 detection rules tags. We need
+to know what's important at any given
+
+520
+00:08:43,750 --> 00:08:43,760
+to know what's important at any given
+ 
+
+521
+00:08:43,760 --> 00:08:45,269
+to know what's important at any given
+moment in time and especially like what
+
+522
+00:08:45,269 --> 00:08:45,279
+moment in time and especially like what
+ 
+
+523
+00:08:45,279 --> 00:08:46,949
+moment in time and especially like what
+was important from yesterday to today or
+
+524
+00:08:46,949 --> 00:08:46,959
+was important from yesterday to today or
+ 
+
+525
+00:08:46,959 --> 00:08:48,949
+was important from yesterday to today or
+over the weekend or even from a
+
+526
+00:08:48,949 --> 00:08:48,959
+over the weekend or even from a
+ 
+
+527
+00:08:48,959 --> 00:08:50,630
+over the weekend or even from a
+particular defined time period. So
+
+528
+00:08:50,630 --> 00:08:50,640
+particular defined time period. So
+ 
+
+529
+00:08:50,640 --> 00:08:53,670
+particular defined time period. So
+that's what we did. We we helped Ory
+
+530
+00:08:53,670 --> 00:08:53,680
+that's what we did. We we helped Ory
+ 
+
+531
+00:08:53,680 --> 00:08:55,910
+that's what we did. We we helped Ory
+with the skill understand how to go do
+
+532
+00:08:55,910 --> 00:08:55,920
+with the skill understand how to go do
+ 
+
+533
+00:08:55,920 --> 00:08:58,230
+with the skill understand how to go do
+what what it needed to go do to do that
+
+534
+00:08:58,230 --> 00:08:58,240
+what what it needed to go do to do that
+ 
+
+535
+00:08:58,240 --> 00:08:59,910
+what what it needed to go do to do that
+and it gives me briefings on a regular
+
+536
+00:08:59,910 --> 00:08:59,920
+and it gives me briefings on a regular
+ 
+
+537
+00:08:59,920 --> 00:09:02,389
+and it gives me briefings on a regular
+basis for those. One thing to kind of
+
+538
+00:09:02,389 --> 00:09:02,399
+basis for those. One thing to kind of
+ 
+
+539
+00:09:02,399 --> 00:09:03,829
+basis for those. One thing to kind of
+call in mind there's been a theme
+
+540
+00:09:03,829 --> 00:09:03,839
+call in mind there's been a theme
+ 
+
+541
+00:09:03,839 --> 00:09:05,110
+call in mind there's been a theme
+throughout the conference and it's kind
+
+542
+00:09:05,110 --> 00:09:05,120
+throughout the conference and it's kind
+ 
+
+543
+00:09:05,120 --> 00:09:07,269
+throughout the conference and it's kind
+of it's kind of bittersweet to go last
+
+544
+00:09:07,269 --> 00:09:07,279
+of it's kind of bittersweet to go last
+ 
+
+545
+00:09:07,279 --> 00:09:09,030
+of it's kind of bittersweet to go last
+for the whole talk but that gives us the
+
+546
+00:09:09,030 --> 00:09:09,040
+for the whole talk but that gives us the
+ 
+
+547
+00:09:09,040 --> 00:09:10,550
+for the whole talk but that gives us the
+privilege of kind of pulling in some of
+
+548
+00:09:10,550 --> 00:09:10,560
+privilege of kind of pulling in some of
+ 
+
+549
+00:09:10,560 --> 00:09:11,829
+privilege of kind of pulling in some of
+the conversations that have happened
+
+550
+00:09:11,829 --> 00:09:11,839
+the conversations that have happened
+ 
+
+551
+00:09:11,839 --> 00:09:14,230
+the conversations that have happened
+earlier in the week. Um, but there's
+
+552
+00:09:14,230 --> 00:09:14,240
+earlier in the week. Um, but there's
+ 
+
+553
+00:09:14,240 --> 00:09:16,230
+earlier in the week. Um, but there's
+been a theme of like how these skills
+
+554
+00:09:16,230 --> 00:09:16,240
+been a theme of like how these skills
+ 
+
+555
+00:09:16,240 --> 00:09:17,829
+been a theme of like how these skills
+are so important and that, you know,
+
+556
+00:09:17,829 --> 00:09:17,839
+are so important and that, you know,
+ 
+
+557
+00:09:17,839 --> 00:09:19,509
+are so important and that, you know,
+humans are still very involved in the
+
+558
+00:09:19,509 --> 00:09:19,519
+humans are still very involved in the
+ 
+
+559
+00:09:19,519 --> 00:09:21,910
+humans are still very involved in the
+meaningful output using AI. And this is
+
+560
+00:09:21,910 --> 00:09:21,920
+meaningful output using AI. And this is
+ 
+
+561
+00:09:21,920 --> 00:09:23,990
+meaningful output using AI. And this is
+actually a really good call out to that.
+
+562
+00:09:23,990 --> 00:09:24,000
+actually a really good call out to that.
+ 
+
+563
+00:09:24,000 --> 00:09:25,990
+actually a really good call out to that.
+I don't really compliment Bob a lot in
+
+564
+00:09:25,990 --> 00:09:26,000
+I don't really compliment Bob a lot in
+ 
+
+565
+00:09:26,000 --> 00:09:29,509
+I don't really compliment Bob a lot in
+person or virtually actually, but he
+
+566
+00:09:29,509 --> 00:09:29,519
+person or virtually actually, but he
+ 
+
+567
+00:09:29,519 --> 00:09:31,430
+person or virtually actually, but he
+built this skill. So Bob has a data
+
+568
+00:09:31,430 --> 00:09:31,440
+built this skill. So Bob has a data
+ 
+
+569
+00:09:31,440 --> 00:09:32,949
+built this skill. So Bob has a data
+science background. If you're not
+
+570
+00:09:32,949 --> 00:09:32,959
+science background. If you're not
+ 
+
+571
+00:09:32,959 --> 00:09:34,070
+science background. If you're not
+familiar with his work, you've probably
+
+572
+00:09:34,070 --> 00:09:34,080
+familiar with his work, you've probably
+ 
+
+573
+00:09:34,080 --> 00:09:36,389
+familiar with his work, you've probably
+seen it somewhere, but he built this
+
+574
+00:09:36,389 --> 00:09:36,399
+seen it somewhere, but he built this
+ 
+
+575
+00:09:36,399 --> 00:09:38,070
+seen it somewhere, but he built this
+skill. The the language model didn't
+
+576
+00:09:38,070 --> 00:09:38,080
+skill. The the language model didn't
+ 
+
+577
+00:09:38,080 --> 00:09:40,230
+skill. The the language model didn't
+figure out how we want to do the the uh
+
+578
+00:09:40,230 --> 00:09:40,240
+figure out how we want to do the the uh
+ 
+
+579
+00:09:40,240 --> 00:09:42,470
+figure out how we want to do the the uh
+zscale analysis and stuff. So he built
+
+580
+00:09:42,470 --> 00:09:42,480
+zscale analysis and stuff. So he built
+ 
+
+581
+00:09:42,480 --> 00:09:44,949
+zscale analysis and stuff. So he built
+the skill the skill that let Orbee do
+
+582
+00:09:44,949 --> 00:09:44,959
+the skill the skill that let Orbee do
+ 
+
+583
+00:09:44,959 --> 00:09:47,509
+the skill the skill that let Orbee do
+the thing in a way that works for us. So
+
+584
+00:09:47,509 --> 00:09:47,519
+the thing in a way that works for us. So
+ 
+
+585
+00:09:47,519 --> 00:09:50,230
+the thing in a way that works for us. So
+basically, you know, Bob is smart.
+
+586
+00:09:50,230 --> 00:09:50,240
+basically, you know, Bob is smart.
+ 
+
+587
+00:09:50,240 --> 00:09:52,310
+basically, you know, Bob is smart.
+Sorry, I had to say that. Bob is smart,
+
+588
+00:09:52,310 --> 00:09:52,320
+Sorry, I had to say that. Bob is smart,
+ 
+
+589
+00:09:52,320 --> 00:09:53,750
+Sorry, I had to say that. Bob is smart,
+but Orbeez is fast, working all the
+
+590
+00:09:53,750 --> 00:09:53,760
+but Orbeez is fast, working all the
+ 
+
+591
+00:09:53,760 --> 00:09:55,750
+but Orbeez is fast, working all the
+time. So by putting those things
+
+592
+00:09:55,750 --> 00:09:55,760
+time. So by putting those things
+ 
+
+593
+00:09:55,760 --> 00:09:57,190
+time. So by putting those things
+together, it was what really leveled up
+
+594
+00:09:57,190 --> 00:09:57,200
+together, it was what really leveled up
+ 
+
+595
+00:09:57,200 --> 00:09:59,269
+together, it was what really leveled up
+the game. So just kind of another plus
+
+596
+00:09:59,269 --> 00:09:59,279
+the game. So just kind of another plus
+ 
+
+597
+00:09:59,279 --> 00:10:00,870
+the game. So just kind of another plus
+one to what we've been hearing about how
+
+598
+00:10:00,870 --> 00:10:00,880
+one to what we've been hearing about how
+ 
+
+599
+00:10:00,880 --> 00:10:03,030
+one to what we've been hearing about how
+skills and human-driven skills and
+
+600
+00:10:03,030 --> 00:10:03,040
+skills and human-driven skills and
+ 
+
+601
+00:10:03,040 --> 00:10:04,870
+skills and human-driven skills and
+putting intentionality and kind of how
+
+602
+00:10:04,870 --> 00:10:04,880
+putting intentionality and kind of how
+ 
+
+603
+00:10:04,880 --> 00:10:06,470
+putting intentionality and kind of how
+you develop those skills really matter
+
+604
+00:10:06,470 --> 00:10:06,480
+you develop those skills really matter
+ 
+
+605
+00:10:06,480 --> 00:10:07,910
+you develop those skills really matter
+for for meaningful use of this.
+
+606
+00:10:07,910 --> 00:10:07,920
+for for meaningful use of this.
+ 
+
+607
+00:10:07,920 --> 00:10:09,190
+for for meaningful use of this.
+>> So I'm slow.
+
+608
+00:10:09,190 --> 00:10:09,200
+>> So I'm slow.
+ 
+
+609
+00:10:09,200 --> 00:10:09,750
+>> So I'm slow.
+>> Just move on.
+
+610
+00:10:09,750 --> 00:10:09,760
+>> Just move on.
+ 
+
+611
+00:10:09,760 --> 00:10:10,310
+>> Just move on.
+>> I'm slow.
+
+612
+00:10:10,310 --> 00:10:10,320
+>> I'm slow.
+ 
+
+613
+00:10:10,320 --> 00:10:12,150
+>> I'm slow.
+>> No, no, just move on. Okay. All right.
+
+614
+00:10:12,150 --> 00:10:12,160
+>> No, no, just move on. Okay. All right.
+ 
+
+615
+00:10:12,160 --> 00:10:13,590
+>> No, no, just move on. Okay. All right.
+You you know Q1 review time.
+
+616
+00:10:13,590 --> 00:10:13,600
+You you know Q1 review time.
+ 
+
+617
+00:10:13,600 --> 00:10:16,230
+You you know Q1 review time.
+>> I said you were smart. It's fine. Uh so
+
+618
+00:10:16,230 --> 00:10:16,240
+>> I said you were smart. It's fine. Uh so
+ 
+
+619
+00:10:16,240 --> 00:10:17,670
+>> I said you were smart. It's fine. Uh so
+the one thing I want to call out to this
+
+620
+00:10:17,670 --> 00:10:17,680
+the one thing I want to call out to this
+ 
+
+621
+00:10:17,680 --> 00:10:20,230
+the one thing I want to call out to this
+is this is completely modifiable. Uh he
+
+622
+00:10:20,230 --> 00:10:20,240
+is this is completely modifiable. Uh he
+ 
+
+623
+00:10:20,240 --> 00:10:22,630
+is this is completely modifiable. Uh he
+created a preferences system for Orbee
+
+624
+00:10:22,630 --> 00:10:22,640
+created a preferences system for Orbee
+ 
+
+625
+00:10:22,640 --> 00:10:24,230
+created a preferences system for Orbee
+that lets us tune it without changing
+
+626
+00:10:24,230 --> 00:10:24,240
+that lets us tune it without changing
+ 
+
+627
+00:10:24,240 --> 00:10:26,630
+that lets us tune it without changing
+the core skills. And a little thing
+
+628
+00:10:26,630 --> 00:10:26,640
+the core skills. And a little thing
+ 
+
+629
+00:10:26,640 --> 00:10:27,990
+the core skills. And a little thing
+happened on Saturday that everyone
+
+630
+00:10:27,990 --> 00:10:28,000
+happened on Saturday that everyone
+ 
+
+631
+00:10:28,000 --> 00:10:29,590
+happened on Saturday that everyone
+probably realizes which changes things
+
+632
+00:10:29,590 --> 00:10:29,600
+probably realizes which changes things
+ 
+
+633
+00:10:29,600 --> 00:10:32,310
+probably realizes which changes things
+up from an internet perspective. So we
+
+634
+00:10:32,310 --> 00:10:32,320
+up from an internet perspective. So we
+ 
+
+635
+00:10:32,320 --> 00:10:35,030
+up from an internet perspective. So we
+actually worked with Orbee to craft a
+
+636
+00:10:35,030 --> 00:10:35,040
+actually worked with Orbee to craft a
+ 
+
+637
+00:10:35,040 --> 00:10:37,110
+actually worked with Orbee to craft a
+specialized preferences to do an
+
+638
+00:10:37,110 --> 00:10:37,120
+specialized preferences to do an
+ 
+
+639
+00:10:37,120 --> 00:10:40,069
+specialized preferences to do an
+analysis of conflict. basically anything
+
+640
+00:10:40,069 --> 00:10:40,079
+analysis of conflict. basically anything
+ 
+
+641
+00:10:40,079 --> 00:10:42,069
+analysis of conflict. basically anything
+associated with the conflict. You can
+
+642
+00:10:42,069 --> 00:10:42,079
+associated with the conflict. You can
+ 
+
+643
+00:10:42,079 --> 00:10:43,350
+associated with the conflict. You can
+talk to us about what it actually did.
+
+644
+00:10:43,350 --> 00:10:43,360
+talk to us about what it actually did.
+ 
+
+645
+00:10:43,360 --> 00:10:44,790
+talk to us about what it actually did.
+This is an example of one of the things
+
+646
+00:10:44,790 --> 00:10:44,800
+This is an example of one of the things
+ 
+
+647
+00:10:44,800 --> 00:10:47,030
+This is an example of one of the things
+it did to create what's out there. Those
+
+648
+00:10:47,030 --> 00:10:47,040
+it did to create what's out there. Those
+ 
+
+649
+00:10:47,040 --> 00:10:48,470
+it did to create what's out there. Those
+are structured things that it outputs.
+
+650
+00:10:48,470 --> 00:10:48,480
+are structured things that it outputs.
+ 
+
+651
+00:10:48,480 --> 00:10:49,910
+are structured things that it outputs.
+Again, we can talk about that there. But
+
+652
+00:10:49,910 --> 00:10:49,920
+Again, we can talk about that there. But
+ 
+
+653
+00:10:49,920 --> 00:10:52,790
+Again, we can talk about that there. But
+we now can separate the conflict related
+
+654
+00:10:52,790 --> 00:10:52,800
+we now can separate the conflict related
+ 
+
+655
+00:10:52,800 --> 00:10:54,389
+we now can separate the conflict related
+stuff from the rest of the stuff we have
+
+656
+00:10:54,389 --> 00:10:54,399
+stuff from the rest of the stuff we have
+ 
+
+657
+00:10:54,399 --> 00:10:56,069
+stuff from the rest of the stuff we have
+to care about. By the way, while the
+
+658
+00:10:56,069 --> 00:10:56,079
+to care about. By the way, while the
+ 
+
+659
+00:10:56,079 --> 00:10:57,430
+to care about. By the way, while the
+conflict's been going on and you're all
+
+660
+00:10:57,430 --> 00:10:57,440
+conflict's been going on and you're all
+ 
+
+661
+00:10:57,440 --> 00:10:59,190
+conflict's been going on and you're all
+looking over there, the ransomware
+
+662
+00:10:59,190 --> 00:10:59,200
+looking over there, the ransomware
+ 
+
+663
+00:10:59,200 --> 00:11:00,710
+looking over there, the ransomware
+attackers have been having a great time
+
+664
+00:11:00,710 --> 00:11:00,720
+attackers have been having a great time
+ 
+
+665
+00:11:00,720 --> 00:11:02,150
+attackers have been having a great time
+building an inventory. So, you might
+
+666
+00:11:02,150 --> 00:11:02,160
+building an inventory. So, you might
+ 
+
+667
+00:11:02,160 --> 00:11:03,750
+building an inventory. So, you might
+want to watch that in yours when you go
+
+668
+00:11:03,750 --> 00:11:03,760
+want to watch that in yours when you go
+ 
+
+669
+00:11:03,760 --> 00:11:06,230
+want to watch that in yours when you go
+back. Uh the other one I want to give a
+
+670
+00:11:06,230 --> 00:11:06,240
+back. Uh the other one I want to give a
+ 
+
+671
+00:11:06,240 --> 00:11:08,230
+back. Uh the other one I want to give a
+shout out to Census cuz we our data is
+
+672
+00:11:08,230 --> 00:11:08,240
+shout out to Census cuz we our data is
+ 
+
+673
+00:11:08,240 --> 00:11:10,069
+shout out to Census cuz we our data is
+great. I love our data. We got great
+
+674
+00:11:10,069 --> 00:11:10,079
+great. I love our data. We got great
+ 
+
+675
+00:11:10,079 --> 00:11:11,829
+great. I love our data. We got great
+insights from our data. And then when we
+
+676
+00:11:11,829 --> 00:11:11,839
+insights from our data. And then when we
+ 
+
+677
+00:11:11,839 --> 00:11:14,230
+insights from our data. And then when we
+plugged census into this data, it
+
+678
+00:11:14,230 --> 00:11:14,240
+plugged census into this data, it
+ 
+
+679
+00:11:14,240 --> 00:11:16,630
+plugged census into this data, it
+leveled it up like crazy. Uh they have
+
+680
+00:11:16,630 --> 00:11:16,640
+leveled it up like crazy. Uh they have
+ 
+
+681
+00:11:16,640 --> 00:11:17,670
+leveled it up like crazy. Uh they have
+global, if you don't know who they are,
+
+682
+00:11:17,670 --> 00:11:17,680
+global, if you don't know who they are,
+ 
+
+683
+00:11:17,680 --> 00:11:19,350
+global, if you don't know who they are,
+they've got global internet scan data.
+
+684
+00:11:19,350 --> 00:11:19,360
+they've got global internet scan data.
+ 
+
+685
+00:11:19,360 --> 00:11:20,870
+they've got global internet scan data.
+It puts it at our fingertips and puts it
+
+686
+00:11:20,870 --> 00:11:20,880
+It puts it at our fingertips and puts it
+ 
+
+687
+00:11:20,880 --> 00:11:23,110
+It puts it at our fingertips and puts it
+at Orbee's fingertips. We get to turn
+
+688
+00:11:23,110 --> 00:11:23,120
+at Orbee's fingertips. We get to turn
+ 
+
+689
+00:11:23,120 --> 00:11:26,150
+at Orbee's fingertips. We get to turn
+IPs into full infrastructure profiles.
+
+690
+00:11:26,150 --> 00:11:26,160
+IPs into full infrastructure profiles.
+ 
+
+691
+00:11:26,160 --> 00:11:28,630
+IPs into full infrastructure profiles.
+We use that as well as our Jaw 4, which
+
+692
+00:11:28,630 --> 00:11:28,640
+We use that as well as our Jaw 4, which
+ 
+
+693
+00:11:28,640 --> 00:11:30,630
+We use that as well as our Jaw 4, which
+is a new way of identifying network
+
+694
+00:11:30,630 --> 00:11:30,640
+is a new way of identifying network
+ 
+
+695
+00:11:30,640 --> 00:11:32,870
+is a new way of identifying network
+fingerprints and those O domains I
+
+696
+00:11:32,870 --> 00:11:32,880
+fingerprints and those O domains I
+ 
+
+697
+00:11:32,880 --> 00:11:35,190
+fingerprints and those O domains I
+talked about. And we can map actual
+
+698
+00:11:35,190 --> 00:11:35,200
+talked about. And we can map actual
+ 
+
+699
+00:11:35,200 --> 00:11:36,630
+talked about. And we can map actual
+attacker infrastructure better than we
+
+700
+00:11:36,630 --> 00:11:36,640
+attacker infrastructure better than we
+ 
+
+701
+00:11:36,640 --> 00:11:38,230
+attacker infrastructure better than we
+have ever been able to do before. Well,
+
+702
+00:11:38,230 --> 00:11:38,240
+have ever been able to do before. Well,
+ 
+
+703
+00:11:38,240 --> 00:11:41,190
+have ever been able to do before. Well,
+okay. Or or can to be honest about it.
+
+704
+00:11:41,190 --> 00:11:41,200
+okay. Or or can to be honest about it.
+ 
+
+705
+00:11:41,200 --> 00:11:42,949
+okay. Or or can to be honest about it.
+And uh as an example, so you can see
+
+706
+00:11:42,949 --> 00:11:42,959
+And uh as an example, so you can see
+ 
+
+707
+00:11:42,959 --> 00:11:45,350
+And uh as an example, so you can see
+that report there. And I want to just
+
+708
+00:11:45,350 --> 00:11:45,360
+that report there. And I want to just
+ 
+
+709
+00:11:45,360 --> 00:11:46,550
+that report there. And I want to just
+call out this one because this is this
+
+710
+00:11:46,550 --> 00:11:46,560
+call out this one because this is this
+ 
+
+711
+00:11:46,560 --> 00:11:49,509
+call out this one because this is this
+is this this is in the repo as well. It
+
+712
+00:11:49,509 --> 00:11:49,519
+is this this is in the repo as well. It
+ 
+
+713
+00:11:49,519 --> 00:11:52,389
+is this this is in the repo as well. It
+found a cluster in a Canadian hosting
+
+714
+00:11:52,389 --> 00:11:52,399
+found a cluster in a Canadian hosting
+ 
+
+715
+00:11:52,399 --> 00:11:55,350
+found a cluster in a Canadian hosting
+provider of it was a huge cluster and
+
+716
+00:11:55,350 --> 00:11:55,360
+provider of it was a huge cluster and
+ 
+
+717
+00:11:55,360 --> 00:11:58,630
+provider of it was a huge cluster and
+2,000 of those nodes were slinging
+
+718
+00:11:58,630 --> 00:11:58,640
+2,000 of those nodes were slinging
+ 
+
+719
+00:11:58,640 --> 00:12:00,630
+2,000 of those nodes were slinging
+gigantic scads of credentials against
+
+720
+00:12:00,630 --> 00:12:00,640
+gigantic scads of credentials against
+ 
+
+721
+00:12:00,640 --> 00:12:02,389
+gigantic scads of credentials against
+sonic walls for the past 70 days. This
+
+722
+00:12:02,389 --> 00:12:02,399
+sonic walls for the past 70 days. This
+ 
+
+723
+00:12:02,399 --> 00:12:04,310
+sonic walls for the past 70 days. This
+is something we just found last week. uh
+
+724
+00:12:04,310 --> 00:12:04,320
+is something we just found last week. uh
+ 
+
+725
+00:12:04,320 --> 00:12:05,430
+is something we just found last week. uh
+we actually gave all this data to the
+
+726
+00:12:05,430 --> 00:12:05,440
+we actually gave all this data to the
+ 
+
+727
+00:12:05,440 --> 00:12:07,030
+we actually gave all this data to the
+CCCS and they're hopefully going to shut
+
+728
+00:12:07,030 --> 00:12:07,040
+CCCS and they're hopefully going to shut
+ 
+
+729
+00:12:07,040 --> 00:12:09,990
+CCCS and they're hopefully going to shut
+it down. Um along with that though uh we
+
+730
+00:12:09,990 --> 00:12:10,000
+it down. Um along with that though uh we
+ 
+
+731
+00:12:10,000 --> 00:12:12,069
+it down. Um along with that though uh we
+actually worked with Orby the idiots did
+
+732
+00:12:12,069 --> 00:12:12,079
+actually worked with Orby the idiots did
+ 
+
+733
+00:12:12,079 --> 00:12:14,710
+actually worked with Orby the idiots did
+leave their whole go profile like thing
+
+734
+00:12:14,710 --> 00:12:14,720
+leave their whole go profile like thing
+ 
+
+735
+00:12:14,720 --> 00:12:17,030
+leave their whole go profile like thing
+but path open to their proxy network. So
+
+736
+00:12:17,030 --> 00:12:17,040
+but path open to their proxy network. So
+ 
+
+737
+00:12:17,040 --> 00:12:19,350
+but path open to their proxy network. So
+we Orby and I managed to dig into it
+
+738
+00:12:19,350 --> 00:12:19,360
+we Orby and I managed to dig into it
+ 
+
+739
+00:12:19,360 --> 00:12:20,870
+we Orby and I managed to dig into it
+profile the whole thing and we could see
+
+740
+00:12:20,870 --> 00:12:20,880
+profile the whole thing and we could see
+ 
+
+741
+00:12:20,880 --> 00:12:22,710
+profile the whole thing and we could see
+exactly what it would go do. I kind of
+
+742
+00:12:22,710 --> 00:12:22,720
+exactly what it would go do. I kind of
+ 
+
+743
+00:12:22,720 --> 00:12:24,310
+exactly what it would go do. I kind of
+want these proxies. They're really good.
+
+744
+00:12:24,310 --> 00:12:24,320
+want these proxies. They're really good.
+ 
+
+745
+00:12:24,320 --> 00:12:25,750
+want these proxies. They're really good.
+I hate saying nice things about bad guys
+
+746
+00:12:25,750 --> 00:12:25,760
+I hate saying nice things about bad guys
+ 
+
+747
+00:12:25,760 --> 00:12:27,030
+I hate saying nice things about bad guys
+but this is a really great proxy
+
+748
+00:12:27,030 --> 00:12:27,040
+but this is a really great proxy
+ 
+
+749
+00:12:27,040 --> 00:12:28,389
+but this is a really great proxy
+network. You also try to tap into it
+
+750
+00:12:28,389 --> 00:12:28,399
+network. You also try to tap into it
+ 
+
+751
+00:12:28,399 --> 00:12:30,870
+network. You also try to tap into it
+before they shut it down. Uh you know
+
+752
+00:12:30,870 --> 00:12:30,880
+before they shut it down. Uh you know
+ 
+
+753
+00:12:30,880 --> 00:12:34,150
+before they shut it down. Uh you know
+about skills. So they're just text files
+
+754
+00:12:34,150 --> 00:12:34,160
+about skills. So they're just text files
+ 
+
+755
+00:12:34,160 --> 00:12:37,030
+about skills. So they're just text files
+with SQL and bash and stuff. So I'm not
+
+756
+00:12:37,030 --> 00:12:37,040
+with SQL and bash and stuff. So I'm not
+ 
+
+757
+00:12:37,040 --> 00:12:38,710
+with SQL and bash and stuff. So I'm not
+going to go into you saw that. I just
+
+758
+00:12:38,710 --> 00:12:38,720
+going to go into you saw that. I just
+ 
+
+759
+00:12:38,720 --> 00:12:40,710
+going to go into you saw that. I just
+want to prove that we do work. So we've
+
+760
+00:12:40,710 --> 00:12:40,720
+want to prove that we do work. So we've
+ 
+
+761
+00:12:40,720 --> 00:12:41,990
+want to prove that we do work. So we've
+been working for the past couple weeks
+
+762
+00:12:41,990 --> 00:12:42,000
+been working for the past couple weeks
+ 
+
+763
+00:12:42,000 --> 00:12:43,430
+been working for the past couple weeks
+on modifying these things. I think we
+
+764
+00:12:43,430 --> 00:12:43,440
+on modifying these things. I think we
+ 
+
+765
+00:12:43,440 --> 00:12:45,030
+on modifying these things. I think we
+tweak the skills almost every single
+
+766
+00:12:45,030 --> 00:12:45,040
+tweak the skills almost every single
+ 
+
+767
+00:12:45,040 --> 00:12:47,190
+tweak the skills almost every single
+day. And do not judge me by my commit
+
+768
+00:12:47,190 --> 00:12:47,200
+day. And do not judge me by my commit
+ 
+
+769
+00:12:47,200 --> 00:12:48,790
+day. And do not judge me by my commit
+messages. That is not nice. Don't don't
+
+770
+00:12:48,790 --> 00:12:48,800
+messages. That is not nice. Don't don't
+ 
+
+771
+00:12:48,800 --> 00:12:50,790
+messages. That is not nice. Don't don't
+>> I'm judging.
+
+772
+00:12:50,790 --> 00:12:50,800
+>> I'm judging.
+ 
+
+773
+00:12:50,800 --> 00:12:52,790
+>> I'm judging.
+>> Uh let's check in on Orbee. Oh wow. It
+
+774
+00:12:52,790 --> 00:12:52,800
+>> Uh let's check in on Orbee. Oh wow. It
+ 
+
+775
+00:12:52,800 --> 00:12:54,389
+>> Uh let's check in on Orbee. Oh wow. It
+made it to phase four already. So it's
+
+776
+00:12:54,389 --> 00:12:54,399
+made it to phase four already. So it's
+ 
+
+777
+00:12:54,399 --> 00:12:56,629
+made it to phase four already. So it's
+about to do the final report. It has
+
+778
+00:12:56,629 --> 00:12:56,639
+about to do the final report. It has
+ 
+
+779
+00:12:56,639 --> 00:12:58,949
+about to do the final report. It has
+gone through grabbed that IP address.
+
+780
+00:12:58,949 --> 00:12:58,959
+gone through grabbed that IP address.
+ 
+
+781
+00:12:58,959 --> 00:13:00,389
+gone through grabbed that IP address.
+Looked it up in census. looked it up in
+
+782
+00:13:00,389 --> 00:13:00,399
+Looked it up in census. looked it up in
+ 
+
+783
+00:13:00,399 --> 00:13:02,949
+Looked it up in census. looked it up in
+virus total, combined it all together,
+
+784
+00:13:02,949 --> 00:13:02,959
+virus total, combined it all together,
+ 
+
+785
+00:13:02,959 --> 00:13:04,470
+virus total, combined it all together,
+got the job for us, did whatever it
+
+786
+00:13:04,470 --> 00:13:04,480
+got the job for us, did whatever it
+ 
+
+787
+00:13:04,480 --> 00:13:06,150
+got the job for us, did whatever it
+could, and we're going to see it
+
+788
+00:13:06,150 --> 00:13:06,160
+could, and we're going to see it
+ 
+
+789
+00:13:06,160 --> 00:13:08,230
+could, and we're going to see it
+probably also did a bunch of fun stuff
+
+790
+00:13:08,230 --> 00:13:08,240
+probably also did a bunch of fun stuff
+ 
+
+791
+00:13:08,240 --> 00:13:10,389
+probably also did a bunch of fun stuff
+on the back end that maybe we we might
+
+792
+00:13:10,389 --> 00:13:10,399
+on the back end that maybe we we might
+ 
+
+793
+00:13:10,399 --> 00:13:12,389
+on the back end that maybe we we might
+not have done or done as fast. It's back
+
+794
+00:13:12,389 --> 00:13:12,399
+not have done or done as fast. It's back
+ 
+
+795
+00:13:12,399 --> 00:13:14,629
+not have done or done as fast. It's back
+to the Matrix one more second. There's
+
+796
+00:13:14,629 --> 00:13:14,639
+to the Matrix one more second. There's
+ 
+
+797
+00:13:14,639 --> 00:13:16,150
+to the Matrix one more second. There's
+that scene near the end where Trinity
+
+798
+00:13:16,150 --> 00:13:16,160
+that scene near the end where Trinity
+ 
+
+799
+00:13:16,160 --> 00:13:18,470
+that scene near the end where Trinity
+and Neo drop into the pocket construct
+
+800
+00:13:18,470 --> 00:13:18,480
+and Neo drop into the pocket construct
+ 
+
+801
+00:13:18,480 --> 00:13:23,670
+and Neo drop into the pocket construct
+and just load up guns, lots of guns, and
+
+802
+00:13:23,670 --> 00:13:23,680
+and just load up guns, lots of guns, and
+ 
+
+803
+00:13:23,680 --> 00:13:26,230
+and just load up guns, lots of guns, and
+MCPs are that scene. an LLM with the
+
+804
+00:13:26,230 --> 00:13:26,240
+MCPs are that scene. an LLM with the
+ 
+
+805
+00:13:26,240 --> 00:13:28,870
+MCPs are that scene. an LLM with the
+right tools and it can get the job done
+
+806
+00:13:28,870 --> 00:13:28,880
+right tools and it can get the job done
+ 
+
+807
+00:13:28,880 --> 00:13:31,350
+right tools and it can get the job done
+really really well. So, Orby connects to
+
+808
+00:13:31,350 --> 00:13:31,360
+really really well. So, Orby connects to
+ 
+
+809
+00:13:31,360 --> 00:13:32,790
+really really well. So, Orby connects to
+a dozen or so of these things. Some are
+
+810
+00:13:32,790 --> 00:13:32,800
+a dozen or so of these things. Some are
+ 
+
+811
+00:13:32,800 --> 00:13:34,150
+a dozen or so of these things. Some are
+in-house. I'll walk through some of
+
+812
+00:13:34,150 --> 00:13:34,160
+in-house. I'll walk through some of
+ 
+
+813
+00:13:34,160 --> 00:13:35,910
+in-house. I'll walk through some of
+them. Some we're converting to in-house
+
+814
+00:13:35,910 --> 00:13:35,920
+them. Some we're converting to in-house
+ 
+
+815
+00:13:35,920 --> 00:13:38,470
+them. Some we're converting to in-house
+because reasons. And uh if you give it
+
+816
+00:13:38,470 --> 00:13:38,480
+because reasons. And uh if you give it
+ 
+
+817
+00:13:38,480 --> 00:13:40,310
+because reasons. And uh if you give it
+access to the right data, it can do
+
+818
+00:13:40,310 --> 00:13:40,320
+access to the right data, it can do
+ 
+
+819
+00:13:40,320 --> 00:13:41,910
+access to the right data, it can do
+things like, hey, here's an odd payload
+
+820
+00:13:41,910 --> 00:13:41,920
+things like, hey, here's an odd payload
+ 
+
+821
+00:13:41,920 --> 00:13:43,509
+things like, hey, here's an odd payload
+and then give us a fully sourced
+
+822
+00:13:43,509 --> 00:13:43,519
+and then give us a fully sourced
+ 
+
+823
+00:13:43,519 --> 00:13:45,590
+and then give us a fully sourced
+campaign investigation.
+
+824
+00:13:45,590 --> 00:13:45,600
+campaign investigation.
+ 
+
+825
+00:13:45,600 --> 00:13:47,190
+campaign investigation.
+So, these are the tools that we give
+
+826
+00:13:47,190 --> 00:13:47,200
+So, these are the tools that we give
+ 
+
+827
+00:13:47,200 --> 00:13:48,230
+So, these are the tools that we give
+that we gave it. There's a little more,
+
+828
+00:13:48,230 --> 00:13:48,240
+that we gave it. There's a little more,
+ 
+
+829
+00:13:48,240 --> 00:13:49,430
+that we gave it. There's a little more,
+but these are the ones that matter the
+
+830
+00:13:49,430 --> 00:13:49,440
+but these are the ones that matter the
+ 
+
+831
+00:13:49,440 --> 00:13:51,750
+but these are the ones that matter the
+most. Um, we work with ground truth
+
+832
+00:13:51,750 --> 00:13:51,760
+most. Um, we work with ground truth
+ 
+
+833
+00:13:51,760 --> 00:13:53,190
+most. Um, we work with ground truth
+data. We've heard that a lot today which
+
+834
+00:13:53,190 --> 00:13:53,200
+data. We've heard that a lot today which
+ 
+
+835
+00:13:53,200 --> 00:13:54,629
+data. We've heard that a lot today which
+I really appreciated hearing that other
+
+836
+00:13:54,629 --> 00:13:54,639
+I really appreciated hearing that other
+ 
+
+837
+00:13:54,639 --> 00:13:56,949
+I really appreciated hearing that other
+people are doing that too. Archammy
+
+838
+00:13:56,949 --> 00:13:56,959
+people are doing that too. Archammy
+ 
+
+839
+00:13:56,959 --> 00:13:58,470
+people are doing that too. Archammy
+which is kind of like wire sharkark for
+
+840
+00:13:58,470 --> 00:13:58,480
+which is kind of like wire sharkark for
+ 
+
+841
+00:13:58,480 --> 00:14:00,550
+which is kind of like wire sharkark for
+the for internet scale data for us and
+
+842
+00:14:00,550 --> 00:14:00,560
+the for internet scale data for us and
+ 
+
+843
+00:14:00,560 --> 00:14:02,629
+the for internet scale data for us and
+our great noise API data. Uh that's our
+
+844
+00:14:02,629 --> 00:14:02,639
+our great noise API data. Uh that's our
+ 
+
+845
+00:14:02,639 --> 00:14:04,389
+our great noise API data. Uh that's our
+ground truth. That's where we need to
+
+846
+00:14:04,389 --> 00:14:04,399
+ground truth. That's where we need to
+ 
+
+847
+00:14:04,399 --> 00:14:07,110
+ground truth. That's where we need to
+get things from. The Jaw 4 MCP server
+
+848
+00:14:07,110 --> 00:14:07,120
+get things from. The Jaw 4 MCP server
+ 
+
+849
+00:14:07,120 --> 00:14:09,350
+get things from. The Jaw 4 MCP server
+has every single thing I know and he
+
+850
+00:14:09,350 --> 00:14:09,360
+has every single thing I know and he
+ 
+
+851
+00:14:09,360 --> 00:14:11,910
+has every single thing I know and he
+knows and my team knows about Jaw 4
+
+852
+00:14:11,910 --> 00:14:11,920
+knows and my team knows about Jaw 4
+ 
+
+853
+00:14:11,920 --> 00:14:13,269
+knows and my team knows about Jaw 4
+which are the fingerprints on the
+
+854
+00:14:13,269 --> 00:14:13,279
+which are the fingerprints on the
+ 
+
+855
+00:14:13,279 --> 00:14:14,949
+which are the fingerprints on the
+network that these things talk to. This
+
+856
+00:14:14,949 --> 00:14:14,959
+network that these things talk to. This
+ 
+
+857
+00:14:14,959 --> 00:14:16,790
+network that these things talk to. This
+helps us connect tissue in in the
+
+858
+00:14:16,790 --> 00:14:16,800
+helps us connect tissue in in the
+ 
+
+859
+00:14:16,800 --> 00:14:18,389
+helps us connect tissue in in the
+infrastructure that's out there. Same
+
+860
+00:14:18,389 --> 00:14:18,399
+infrastructure that's out there. Same
+ 
+
+861
+00:14:18,399 --> 00:14:20,389
+infrastructure that's out there. Same
+thing for the O domains. I worked with a
+
+862
+00:14:20,389 --> 00:14:20,399
+thing for the O domains. I worked with a
+ 
+
+863
+00:14:20,399 --> 00:14:22,629
+thing for the O domains. I worked with a
+friend and customer over at Sandia. We
+
+864
+00:14:22,629 --> 00:14:22,639
+friend and customer over at Sandia. We
+ 
+
+865
+00:14:22,639 --> 00:14:24,389
+friend and customer over at Sandia. We
+baked every single thing we know about
+
+866
+00:14:24,389 --> 00:14:24,399
+baked every single thing we know about
+ 
+
+867
+00:14:24,399 --> 00:14:27,509
+baked every single thing we know about
+these domains into an MCP server, which
+
+868
+00:14:27,509 --> 00:14:27,519
+these domains into an MCP server, which
+ 
+
+869
+00:14:27,519 --> 00:14:28,710
+these domains into an MCP server, which
+you're getting a link to today because
+
+870
+00:14:28,710 --> 00:14:28,720
+you're getting a link to today because
+ 
+
+871
+00:14:28,720 --> 00:14:29,829
+you're getting a link to today because
+you all can use this. It's a command
+
+872
+00:14:29,829 --> 00:14:29,839
+you all can use this. It's a command
+ 
+
+873
+00:14:29,839 --> 00:14:30,550
+you all can use this. It's a command
+line tool on MC.
+
+874
+00:14:30,550 --> 00:14:30,560
+line tool on MC.
+ 
+
+875
+00:14:30,560 --> 00:14:32,230
+line tool on MC.
+>> You're going to want to dig into that. O
+
+876
+00:14:32,230 --> 00:14:32,240
+>> You're going to want to dig into that. O
+ 
+
+877
+00:14:32,240 --> 00:14:34,069
+>> You're going to want to dig into that. O
+>> yeah, it's actually really important. Uh
+
+878
+00:14:34,069 --> 00:14:34,079
+>> yeah, it's actually really important. Uh
+ 
+
+879
+00:14:34,079 --> 00:14:36,550
+>> yeah, it's actually really important. Uh
+we use duct DB for analytics because
+
+880
+00:14:36,550 --> 00:14:36,560
+we use duct DB for analytics because
+ 
+
+881
+00:14:36,560 --> 00:14:38,550
+we use duct DB for analytics because
+friends don't let friends let LLM do
+
+882
+00:14:38,550 --> 00:14:38,560
+friends don't let friends let LLM do
+ 
+
+883
+00:14:38,560 --> 00:14:40,069
+friends don't let friends let LLM do
+their own analytics because they suck at
+
+884
+00:14:40,069 --> 00:14:40,079
+their own analytics because they suck at
+ 
+
+885
+00:14:40,079 --> 00:14:42,150
+their own analytics because they suck at
+everything if you don't give them tools.
+
+886
+00:14:42,150 --> 00:14:42,160
+everything if you don't give them tools.
+ 
+
+887
+00:14:42,160 --> 00:14:43,990
+everything if you don't give them tools.
+uh Glenn and Glenn and myself and a
+
+888
+00:14:43,990 --> 00:14:44,000
+uh Glenn and Glenn and myself and a
+ 
+
+889
+00:14:44,000 --> 00:14:46,949
+uh Glenn and Glenn and myself and a
+bunch of others have a ton of a a ton of
+
+890
+00:14:46,949 --> 00:14:46,959
+bunch of others have a ton of a a ton of
+ 
+
+891
+00:14:46,959 --> 00:14:49,110
+bunch of others have a ton of a a ton of
+knowledge about how to do pcap analysis
+
+892
+00:14:49,110 --> 00:14:49,120
+knowledge about how to do pcap analysis
+ 
+
+893
+00:14:49,120 --> 00:14:51,110
+knowledge about how to do pcap analysis
+and we gave it t-shark and wrapped an
+
+894
+00:14:51,110 --> 00:14:51,120
+and we gave it t-shark and wrapped an
+ 
+
+895
+00:14:51,120 --> 00:14:53,110
+and we gave it t-shark and wrapped an
+MCP server around it with that 30 years
+
+896
+00:14:53,110 --> 00:14:53,120
+MCP server around it with that 30 years
+ 
+
+897
+00:14:53,120 --> 00:14:55,269
+MCP server around it with that 30 years
+of information to let it dissect and do
+
+898
+00:14:55,269 --> 00:14:55,279
+of information to let it dissect and do
+ 
+
+899
+00:14:55,279 --> 00:14:56,550
+of information to let it dissect and do
+what it can with pcaps because we
+
+900
+00:14:56,550 --> 00:14:56,560
+what it can with pcaps because we
+ 
+
+901
+00:14:56,560 --> 00:14:58,710
+what it can with pcaps because we
+sometimes have to go into those too.
+
+902
+00:14:58,710 --> 00:14:58,720
+sometimes have to go into those too.
+ 
+
+903
+00:14:58,720 --> 00:15:00,710
+sometimes have to go into those too.
+Serakata, same thing tool thing. Virus
+
+904
+00:15:00,710 --> 00:15:00,720
+Serakata, same thing tool thing. Virus
+ 
+
+905
+00:15:00,720 --> 00:15:02,710
+Serakata, same thing tool thing. Virus
+Total, you know what that is. Uh, going
+
+906
+00:15:02,710 --> 00:15:02,720
+Total, you know what that is. Uh, going
+ 
+
+907
+00:15:02,720 --> 00:15:04,230
+Total, you know what that is. Uh, going
+back to Census Platform and threat
+
+908
+00:15:04,230 --> 00:15:04,240
+back to Census Platform and threat
+ 
+
+909
+00:15:04,240 --> 00:15:05,910
+back to Census Platform and threat
+hunting again, just just to shout out to
+
+910
+00:15:05,910 --> 00:15:05,920
+hunting again, just just to shout out to
+ 
+
+911
+00:15:05,920 --> 00:15:07,990
+hunting again, just just to shout out to
+them. It's it's leveled up our analyses
+
+912
+00:15:07,990 --> 00:15:08,000
+them. It's it's leveled up our analyses
+ 
+
+913
+00:15:08,000 --> 00:15:10,230
+them. It's it's leveled up our analyses
+and their MCP servers are awesome. We
+
+914
+00:15:10,230 --> 00:15:10,240
+and their MCP servers are awesome. We
+ 
+
+915
+00:15:10,240 --> 00:15:12,150
+and their MCP servers are awesome. We
+did have to write that skill to use it
+
+916
+00:15:12,150 --> 00:15:12,160
+did have to write that skill to use it
+ 
+
+917
+00:15:12,160 --> 00:15:14,310
+did have to write that skill to use it
+though, so it's kind of awesome. Uh, and
+
+918
+00:15:14,310 --> 00:15:14,320
+though, so it's kind of awesome. Uh, and
+ 
+
+919
+00:15:14,320 --> 00:15:15,430
+though, so it's kind of awesome. Uh, and
+I get I also have to shout out to
+
+920
+00:15:15,430 --> 00:15:15,440
+I get I also have to shout out to
+ 
+
+921
+00:15:15,440 --> 00:15:16,870
+I get I also have to shout out to
+Feedley. If you're not using Feedley
+
+922
+00:15:16,870 --> 00:15:16,880
+Feedley. If you're not using Feedley
+ 
+
+923
+00:15:16,880 --> 00:15:19,350
+Feedley. If you're not using Feedley
+CTI, this is this is not a commercial.
+
+924
+00:15:19,350 --> 00:15:19,360
+CTI, this is this is not a commercial.
+ 
+
+925
+00:15:19,360 --> 00:15:20,949
+CTI, this is this is not a commercial.
+It really provides all the external
+
+926
+00:15:20,949 --> 00:15:20,959
+It really provides all the external
+ 
+
+927
+00:15:20,959 --> 00:15:22,949
+It really provides all the external
+context that we need to make this whole
+
+928
+00:15:22,949 --> 00:15:22,959
+context that we need to make this whole
+ 
+
+929
+00:15:22,959 --> 00:15:25,350
+context that we need to make this whole
+thing really really smart.
+
+930
+00:15:25,350 --> 00:15:25,360
+thing really really smart.
+ 
+
+931
+00:15:25,360 --> 00:15:27,350
+thing really really smart.
+And one last Matrix scene, since this
+
+932
+00:15:27,350 --> 00:15:27,360
+And one last Matrix scene, since this
+ 
+
+933
+00:15:27,360 --> 00:15:29,110
+And one last Matrix scene, since this
+was threat hunting in the Matrix, near
+
+934
+00:15:29,110 --> 00:15:29,120
+was threat hunting in the Matrix, near
+ 
+
+935
+00:15:29,120 --> 00:15:31,829
+was threat hunting in the Matrix, near
+the end, Neo sees that helicopter losing
+
+936
+00:15:31,829 --> 00:15:31,839
+the end, Neo sees that helicopter losing
+ 
+
+937
+00:15:31,839 --> 00:15:34,150
+the end, Neo sees that helicopter losing
+control before it actually crashes. He
+
+938
+00:15:34,150 --> 00:15:34,160
+control before it actually crashes. He
+ 
+
+939
+00:15:34,160 --> 00:15:36,870
+control before it actually crashes. He
+acts on what he sees coming, not what's
+
+940
+00:15:36,870 --> 00:15:36,880
+acts on what he sees coming, not what's
+ 
+
+941
+00:15:36,880 --> 00:15:38,790
+acts on what he sees coming, not what's
+already happened. And that's the frame
+
+942
+00:15:38,790 --> 00:15:38,800
+already happened. And that's the frame
+ 
+
+943
+00:15:38,800 --> 00:15:40,710
+already happened. And that's the frame
+for this section. Safety is prevention
+
+944
+00:15:40,710 --> 00:15:40,720
+for this section. Safety is prevention
+ 
+
+945
+00:15:40,720 --> 00:15:44,790
+for this section. Safety is prevention
+and validation as detection.
+
+946
+00:15:44,790 --> 00:15:44,800
+and validation as detection.
+ 
+
+947
+00:15:44,800 --> 00:15:47,910
+and validation as detection.
+So, going along with Bob's Matrix
+
+948
+00:15:47,910 --> 00:15:47,920
+So, going along with Bob's Matrix
+ 
+
+949
+00:15:47,920 --> 00:15:49,430
+So, going along with Bob's Matrix
+reference because I was forced into
+
+950
+00:15:49,430 --> 00:15:49,440
+reference because I was forced into
+ 
+
+951
+00:15:49,440 --> 00:15:51,269
+reference because I was forced into
+that. Uh, what happens when there's a
+
+952
+00:15:51,269 --> 00:15:51,279
+that. Uh, what happens when there's a
+ 
+
+953
+00:15:51,279 --> 00:15:53,829
+that. Uh, what happens when there's a
+glitch in the matrix? And thinking about
+
+954
+00:15:53,829 --> 00:15:53,839
+glitch in the matrix? And thinking about
+ 
+
+955
+00:15:53,839 --> 00:15:56,230
+glitch in the matrix? And thinking about
+this from the other side, for me it was
+
+956
+00:15:56,230 --> 00:15:56,240
+this from the other side, for me it was
+ 
+
+957
+00:15:56,240 --> 00:15:58,629
+this from the other side, for me it was
+a confident wrong answer reaching a
+
+958
+00:15:58,629 --> 00:15:58,639
+a confident wrong answer reaching a
+ 
+
+959
+00:15:58,639 --> 00:16:00,870
+a confident wrong answer reaching a
+stakeholder who then takes action on
+
+960
+00:16:00,870 --> 00:16:00,880
+stakeholder who then takes action on
+ 
+
+961
+00:16:00,880 --> 00:16:03,030
+stakeholder who then takes action on
+that information. And in our space, this
+
+962
+00:16:03,030 --> 00:16:03,040
+that information. And in our space, this
+ 
+
+963
+00:16:03,040 --> 00:16:05,189
+that information. And in our space, this
+can cause real harm, physical or
+
+964
+00:16:05,189 --> 00:16:05,199
+can cause real harm, physical or
+ 
+
+965
+00:16:05,199 --> 00:16:07,749
+can cause real harm, physical or
+virtual. So how do we stop it from doing
+
+966
+00:16:07,749 --> 00:16:07,759
+virtual. So how do we stop it from doing
+ 
+
+967
+00:16:07,759 --> 00:16:11,430
+virtual. So how do we stop it from doing
+dumb things? And then how do we get it
+
+968
+00:16:11,430 --> 00:16:11,440
+dumb things? And then how do we get it
+ 
+
+969
+00:16:11,440 --> 00:16:13,990
+dumb things? And then how do we get it
+to tell it on itself or understand when
+
+970
+00:16:13,990 --> 00:16:14,000
+to tell it on itself or understand when
+ 
+
+971
+00:16:14,000 --> 00:16:15,910
+to tell it on itself or understand when
+it does those dumb things anyway even
+
+972
+00:16:15,910 --> 00:16:15,920
+it does those dumb things anyway even
+ 
+
+973
+00:16:15,920 --> 00:16:18,629
+it does those dumb things anyway even
+though we asked it not to?
+
+974
+00:16:18,629 --> 00:16:18,639
+though we asked it not to?
+ 
+
+975
+00:16:18,639 --> 00:16:20,230
+though we asked it not to?
+So in the real world, we have guide
+
+976
+00:16:20,230 --> 00:16:20,240
+So in the real world, we have guide
+ 
+
+977
+00:16:20,240 --> 00:16:23,269
+So in the real world, we have guide
+rails and guard rails. So kind of mimic
+
+978
+00:16:23,269 --> 00:16:23,279
+rails and guard rails. So kind of mimic
+ 
+
+979
+00:16:23,279 --> 00:16:26,389
+rails and guard rails. So kind of mimic
+this a bit in our Orbee. Not I guess no
+
+980
+00:16:26,389 --> 00:16:26,399
+this a bit in our Orbee. Not I guess no
+ 
+
+981
+00:16:26,399 --> 00:16:28,550
+this a bit in our Orbee. Not I guess no
+one else here is really named their
+
+982
+00:16:28,550 --> 00:16:28,560
+one else here is really named their
+ 
+
+983
+00:16:28,560 --> 00:16:29,110
+one else here is really named their
+>> All right. Well,
+
+984
+00:16:29,110 --> 00:16:29,120
+>> All right. Well,
+ 
+
+985
+00:16:29,120 --> 00:16:29,670
+>> All right. Well,
+>> you should.
+
+986
+00:16:29,670 --> 00:16:29,680
+>> you should.
+ 
+
+987
+00:16:29,680 --> 00:16:32,550
+>> you should.
+>> Yeah, give it a name. It helps. Uh so
+
+988
+00:16:32,550 --> 00:16:32,560
+>> Yeah, give it a name. It helps. Uh so
+ 
+
+989
+00:16:32,560 --> 00:16:35,030
+>> Yeah, give it a name. It helps. Uh so
+that in Orby it exists with like guard
+
+990
+00:16:35,030 --> 00:16:35,040
+that in Orby it exists with like guard
+ 
+
+991
+00:16:35,040 --> 00:16:36,550
+that in Orby it exists with like guard
+hooks. So those are just shell commands
+
+992
+00:16:36,550 --> 00:16:36,560
+hooks. So those are just shell commands
+ 
+
+993
+00:16:36,560 --> 00:16:38,470
+hooks. So those are just shell commands
+that were kind of policing the behavior
+
+994
+00:16:38,470 --> 00:16:38,480
+that were kind of policing the behavior
+ 
+
+995
+00:16:38,480 --> 00:16:39,829
+that were kind of policing the behavior
+that the models, you know, you're like,
+
+996
+00:16:39,829 --> 00:16:39,839
+that the models, you know, you're like,
+ 
+
+997
+00:16:39,839 --> 00:16:41,110
+that the models, you know, you're like,
+"Please don't do this, but it's going to
+
+998
+00:16:41,110 --> 00:16:41,120
+"Please don't do this, but it's going to
+ 
+
+999
+00:16:41,120 --> 00:16:43,189
+"Please don't do this, but it's going to
+do it anyway." Um using a guard hook
+
+1000
+00:16:43,189 --> 00:16:43,199
+do it anyway." Um using a guard hook
+ 
+
+1001
+00:16:43,199 --> 00:16:44,470
+do it anyway." Um using a guard hook
+kind of just terminates that process
+
+1002
+00:16:44,470 --> 00:16:44,480
+kind of just terminates that process
+ 
+
+1003
+00:16:44,480 --> 00:16:46,069
+kind of just terminates that process
+right away and makes it move on. So it's
+
+1004
+00:16:46,069 --> 00:16:46,079
+right away and makes it move on. So it's
+ 
+
+1005
+00:16:46,079 --> 00:16:48,310
+right away and makes it move on. So it's
+just a safety check. uh decision trees,
+
+1006
+00:16:48,310 --> 00:16:48,320
+just a safety check. uh decision trees,
+ 
+
+1007
+00:16:48,320 --> 00:16:50,389
+just a safety check. uh decision trees,
+that's simply just going A to B to C to
+
+1008
+00:16:50,389 --> 00:16:50,399
+that's simply just going A to B to C to
+ 
+
+1009
+00:16:50,399 --> 00:16:52,310
+that's simply just going A to B to C to
+make sure it's doing the order properly.
+
+1010
+00:16:52,310 --> 00:16:52,320
+make sure it's doing the order properly.
+ 
+
+1011
+00:16:52,320 --> 00:16:53,829
+make sure it's doing the order properly.
+Um you can think of that as like you
+
+1012
+00:16:53,829 --> 00:16:53,839
+Um you can think of that as like you
+ 
+
+1013
+00:16:53,839 --> 00:16:55,749
+Um you can think of that as like you
+can't have dessert before dinner. Uh
+
+1014
+00:16:55,749 --> 00:16:55,759
+can't have dessert before dinner. Uh
+ 
+
+1015
+00:16:55,759 --> 00:16:58,550
+can't have dessert before dinner. Uh
+bulletproof patterns. Um we're
+
+1016
+00:16:58,550 --> 00:16:58,560
+bulletproof patterns. Um we're
+ 
+
+1017
+00:16:58,560 --> 00:17:00,069
+bulletproof patterns. Um we're
+traditionally used to code which has
+
+1018
+00:17:00,069 --> 00:17:00,079
+traditionally used to code which has
+ 
+
+1019
+00:17:00,079 --> 00:17:03,110
+traditionally used to code which has
+kind of a go no-go outcome, but writing
+
+1020
+00:17:03,110 --> 00:17:03,120
+kind of a go no-go outcome, but writing
+ 
+
+1021
+00:17:03,120 --> 00:17:06,069
+kind of a go no-go outcome, but writing
+does not. And for like an example of a
+
+1022
+00:17:06,069 --> 00:17:06,079
+does not. And for like an example of a
+ 
+
+1023
+00:17:06,079 --> 00:17:07,510
+does not. And for like an example of a
+bulletproof pattern we're using here is
+
+1024
+00:17:07,510 --> 00:17:07,520
+bulletproof pattern we're using here is
+ 
+
+1025
+00:17:07,520 --> 00:17:08,949
+bulletproof pattern we're using here is
+just timestamp conversions. Like there's
+
+1026
+00:17:08,949 --> 00:17:08,959
+just timestamp conversions. Like there's
+ 
+
+1027
+00:17:08,959 --> 00:17:10,949
+just timestamp conversions. Like there's
+a lot of ways to do that, but like don't
+
+1028
+00:17:10,949 --> 00:17:10,959
+a lot of ways to do that, but like don't
+ 
+
+1029
+00:17:10,959 --> 00:17:12,710
+a lot of ways to do that, but like don't
+don't think about it. Just do do it this
+
+1030
+00:17:12,710 --> 00:17:12,720
+don't think about it. Just do do it this
+ 
+
+1031
+00:17:12,720 --> 00:17:14,549
+don't think about it. Just do do it this
+way and move on, please. Uh and then
+
+1032
+00:17:14,549 --> 00:17:14,559
+way and move on, please. Uh and then
+ 
+
+1033
+00:17:14,559 --> 00:17:17,350
+way and move on, please. Uh and then
+checklists. check. Uh I don't think it's
+
+1034
+00:17:17,350 --> 00:17:17,360
+checklists. check. Uh I don't think it's
+ 
+
+1035
+00:17:17,360 --> 00:17:19,029
+checklists. check. Uh I don't think it's
+really surprising to think about AI
+
+1036
+00:17:19,029 --> 00:17:19,039
+really surprising to think about AI
+ 
+
+1037
+00:17:19,039 --> 00:17:21,909
+really surprising to think about AI
+being very type A, but it helps to just
+
+1038
+00:17:21,909 --> 00:17:21,919
+being very type A, but it helps to just
+ 
+
+1039
+00:17:21,919 --> 00:17:24,949
+being very type A, but it helps to just
+embrace that. So give it a checklist.
+
+1040
+00:17:24,949 --> 00:17:24,959
+embrace that. So give it a checklist.
+ 
+
+1041
+00:17:24,959 --> 00:17:26,549
+embrace that. So give it a checklist.
+Make it a, you know, check these off as
+
+1042
+00:17:26,549 --> 00:17:26,559
+Make it a, you know, check these off as
+ 
+
+1043
+00:17:26,559 --> 00:17:27,909
+Make it a, you know, check these off as
+you go. This is what you should do. And
+
+1044
+00:17:27,909 --> 00:17:27,919
+you go. This is what you should do. And
+ 
+
+1045
+00:17:27,919 --> 00:17:29,270
+you go. This is what you should do. And
+then at the end, at least you're not
+
+1046
+00:17:29,270 --> 00:17:29,280
+then at the end, at least you're not
+ 
+
+1047
+00:17:29,280 --> 00:17:31,669
+then at the end, at least you're not
+making assumptions about what it did
+
+1048
+00:17:31,669 --> 00:17:31,679
+making assumptions about what it did
+ 
+
+1049
+00:17:31,679 --> 00:17:33,190
+making assumptions about what it did
+because you expected it to do it. Like
+
+1050
+00:17:33,190 --> 00:17:33,200
+because you expected it to do it. Like
+ 
+
+1051
+00:17:33,200 --> 00:17:34,549
+because you expected it to do it. Like
+it will, you know, ensure that it at
+
+1052
+00:17:34,549 --> 00:17:34,559
+it will, you know, ensure that it at
+ 
+
+1053
+00:17:34,559 --> 00:17:36,310
+it will, you know, ensure that it at
+least covered the bases that you had
+
+1054
+00:17:36,310 --> 00:17:36,320
+least covered the bases that you had
+ 
+
+1055
+00:17:36,320 --> 00:17:39,029
+least covered the bases that you had
+expected it to do.
+
+1056
+00:17:39,029 --> 00:17:39,039
+expected it to do.
+ 
+
+1057
+00:17:39,039 --> 00:17:40,470
+expected it to do.
+But those are the guardrails. But
+
+1058
+00:17:40,470 --> 00:17:40,480
+But those are the guardrails. But
+ 
+
+1059
+00:17:40,480 --> 00:17:42,789
+But those are the guardrails. But
+guardrails don't prevent crashes. They
+
+1060
+00:17:42,789 --> 00:17:42,799
+guardrails don't prevent crashes. They
+ 
+
+1061
+00:17:42,799 --> 00:17:44,950
+guardrails don't prevent crashes. They
+change just what happens after the crash
+
+1062
+00:17:44,950 --> 00:17:44,960
+change just what happens after the crash
+ 
+
+1063
+00:17:44,960 --> 00:17:46,390
+change just what happens after the crash
+happens. And sometimes they can even
+
+1064
+00:17:46,390 --> 00:17:46,400
+happens. And sometimes they can even
+ 
+
+1065
+00:17:46,400 --> 00:17:49,430
+happens. And sometimes they can even
+make the crash worse. So how do you
+
+1066
+00:17:49,430 --> 00:17:49,440
+make the crash worse. So how do you
+ 
+
+1067
+00:17:49,440 --> 00:17:51,830
+make the crash worse. So how do you
+prepare for those eventual failures? You
+
+1068
+00:17:51,830 --> 00:17:51,840
+prepare for those eventual failures? You
+ 
+
+1069
+00:17:51,840 --> 00:17:54,630
+prepare for those eventual failures? You
+crash test it. You build detections. So
+
+1070
+00:17:54,630 --> 00:17:54,640
+crash test it. You build detections. So
+ 
+
+1071
+00:17:54,640 --> 00:17:56,870
+crash test it. You build detections. So
+in Orby, again, this looks like a few
+
+1072
+00:17:56,870 --> 00:17:56,880
+in Orby, again, this looks like a few
+ 
+
+1073
+00:17:56,880 --> 00:17:58,549
+in Orby, again, this looks like a few
+things. Footnotes, like old school
+
+1074
+00:17:58,549 --> 00:17:58,559
+things. Footnotes, like old school
+ 
+
+1075
+00:17:58,559 --> 00:18:01,510
+things. Footnotes, like old school
+footnotes, super helpful here. Um, you
+
+1076
+00:18:01,510 --> 00:18:01,520
+footnotes, super helpful here. Um, you
+ 
+
+1077
+00:18:01,520 --> 00:18:03,029
+footnotes, super helpful here. Um, you
+can have a subject matter expert
+
+1078
+00:18:03,029 --> 00:18:03,039
+can have a subject matter expert
+ 
+
+1079
+00:18:03,039 --> 00:18:05,430
+can have a subject matter expert
+reviewing a report had the footnote.
+
+1080
+00:18:05,430 --> 00:18:05,440
+reviewing a report had the footnote.
+ 
+
+1081
+00:18:05,440 --> 00:18:06,789
+reviewing a report had the footnote.
+make the footnote really accessible like
+
+1082
+00:18:06,789 --> 00:18:06,799
+make the footnote really accessible like
+ 
+
+1083
+00:18:06,799 --> 00:18:08,630
+make the footnote really accessible like
+with a URL or something to go to the
+
+1084
+00:18:08,630 --> 00:18:08,640
+with a URL or something to go to the
+ 
+
+1085
+00:18:08,640 --> 00:18:10,390
+with a URL or something to go to the
+actual data source just you know check
+
+1086
+00:18:10,390 --> 00:18:10,400
+actual data source just you know check
+ 
+
+1087
+00:18:10,400 --> 00:18:12,150
+actual data source just you know check
+for some hallucinations and you can get
+
+1088
+00:18:12,150 --> 00:18:12,160
+for some hallucinations and you can get
+ 
+
+1089
+00:18:12,160 --> 00:18:14,310
+for some hallucinations and you can get
+a really quick feel for the vibe of the
+
+1090
+00:18:14,310 --> 00:18:14,320
+a really quick feel for the vibe of the
+ 
+
+1091
+00:18:14,320 --> 00:18:15,830
+a really quick feel for the vibe of the
+report the accuracy and start building
+
+1092
+00:18:15,830 --> 00:18:15,840
+report the accuracy and start building
+ 
+
+1093
+00:18:15,840 --> 00:18:18,549
+report the accuracy and start building
+or losing confidence in its output uh
+
+1094
+00:18:18,549 --> 00:18:18,559
+or losing confidence in its output uh
+ 
+
+1095
+00:18:18,559 --> 00:18:20,390
+or losing confidence in its output uh
+logging everything we are cyber security
+
+1096
+00:18:20,390 --> 00:18:20,400
+logging everything we are cyber security
+ 
+
+1097
+00:18:20,400 --> 00:18:23,029
+logging everything we are cyber security
+after all right um running assessments
+
+1098
+00:18:23,029 --> 00:18:23,039
+after all right um running assessments
+ 
+
+1099
+00:18:23,039 --> 00:18:24,710
+after all right um running assessments
+this one's kind of fun you can kind of
+
+1100
+00:18:24,710 --> 00:18:24,720
+this one's kind of fun you can kind of
+ 
+
+1101
+00:18:24,720 --> 00:18:26,950
+this one's kind of fun you can kind of
+think of it as therapy for your your
+
+1102
+00:18:26,950 --> 00:18:26,960
+think of it as therapy for your your
+ 
+
+1103
+00:18:26,960 --> 00:18:30,390
+think of it as therapy for your your
+agent um you ask it like h how did how
+
+1104
+00:18:30,390 --> 00:18:30,400
+agent um you ask it like h how did how
+ 
+
+1105
+00:18:30,400 --> 00:18:32,470
+agent um you ask it like h how did how
+did this go like what was hard for you
+
+1106
+00:18:32,470 --> 00:18:32,480
+did this go like what was hard for you
+ 
+
+1107
+00:18:32,480 --> 00:18:33,830
+did this go like what was hard for you
+what could have made this better how
+
+1108
+00:18:33,830 --> 00:18:33,840
+what could have made this better how
+ 
+
+1109
+00:18:33,840 --> 00:18:35,510
+what could have made this better how
+could we have sped this and it will
+
+1110
+00:18:35,510 --> 00:18:35,520
+could we have sped this and it will
+ 
+
+1111
+00:18:35,520 --> 00:18:38,150
+could we have sped this and it will
+answer and it will engage with you. So
+
+1112
+00:18:38,150 --> 00:18:38,160
+answer and it will engage with you. So
+ 
+
+1113
+00:18:38,160 --> 00:18:40,230
+answer and it will engage with you. So
+you can I mean don't get psychosis but
+
+1114
+00:18:40,230 --> 00:18:40,240
+you can I mean don't get psychosis but
+ 
+
+1115
+00:18:40,240 --> 00:18:42,310
+you can I mean don't get psychosis but
+but so you can take that and then move
+
+1116
+00:18:42,310 --> 00:18:42,320
+but so you can take that and then move
+ 
+
+1117
+00:18:42,320 --> 00:18:44,390
+but so you can take that and then move
+those findings further up in your skills
+
+1118
+00:18:44,390 --> 00:18:44,400
+those findings further up in your skills
+ 
+
+1119
+00:18:44,400 --> 00:18:47,270
+those findings further up in your skills
+you know kind of shift left mentality to
+
+1120
+00:18:47,270 --> 00:18:47,280
+you know kind of shift left mentality to
+ 
+
+1121
+00:18:47,280 --> 00:18:49,669
+you know kind of shift left mentality to
+make this work more effectively
+
+1122
+00:18:49,669 --> 00:18:49,679
+make this work more effectively
+ 
+
+1123
+00:18:49,679 --> 00:18:51,990
+make this work more effectively
+downstream. uh the validator. I'm going
+
+1124
+00:18:51,990 --> 00:18:52,000
+downstream. uh the validator. I'm going
+ 
+
+1125
+00:18:52,000 --> 00:18:53,830
+downstream. uh the validator. I'm going
+to touch on this on the next slide, but
+
+1126
+00:18:53,830 --> 00:18:53,840
+to touch on this on the next slide, but
+ 
+
+1127
+00:18:53,840 --> 00:18:55,510
+to touch on this on the next slide, but
+essentially, you know, taking a finished
+
+1128
+00:18:55,510 --> 00:18:55,520
+essentially, you know, taking a finished
+ 
+
+1129
+00:18:55,520 --> 00:18:58,230
+essentially, you know, taking a finished
+report, extracting every claim is how we
+
+1130
+00:18:58,230 --> 00:18:58,240
+report, extracting every claim is how we
+ 
+
+1131
+00:18:58,240 --> 00:19:00,470
+report, extracting every claim is how we
+uh implemented this. And then using a
+
+1132
+00:19:00,470 --> 00:19:00,480
+uh implemented this. And then using a
+ 
+
+1133
+00:19:00,480 --> 00:19:03,110
+uh implemented this. And then using a
+completely different model, revalidate
+
+1134
+00:19:03,110 --> 00:19:03,120
+completely different model, revalidate
+ 
+
+1135
+00:19:03,120 --> 00:19:05,029
+completely different model, revalidate
+those claims and look for inaccuracies
+
+1136
+00:19:05,029 --> 00:19:05,039
+those claims and look for inaccuracies
+ 
+
+1137
+00:19:05,039 --> 00:19:07,110
+those claims and look for inaccuracies
+and give feedback on, you know, maybe
+
+1138
+00:19:07,110 --> 00:19:07,120
+and give feedback on, you know, maybe
+ 
+
+1139
+00:19:07,120 --> 00:19:09,590
+and give feedback on, you know, maybe
+it's a a 1% or half a percent off
+
+1140
+00:19:09,590 --> 00:19:09,600
+it's a a 1% or half a percent off
+ 
+
+1141
+00:19:09,600 --> 00:19:11,830
+it's a a 1% or half a percent off
+because we're dealing with live data, so
+
+1142
+00:19:11,830 --> 00:19:11,840
+because we're dealing with live data, so
+ 
+
+1143
+00:19:11,840 --> 00:19:13,909
+because we're dealing with live data, so
+when it re-queried, like there's more
+
+1144
+00:19:13,909 --> 00:19:13,919
+when it re-queried, like there's more
+ 
+
+1145
+00:19:13,919 --> 00:19:15,830
+when it re-queried, like there's more
+now because it's been 10 minutes since
+
+1146
+00:19:15,830 --> 00:19:15,840
+now because it's been 10 minutes since
+ 
+
+1147
+00:19:15,840 --> 00:19:18,070
+now because it's been 10 minutes since
+the last query, so that's okay. Um or
+
+1148
+00:19:18,070 --> 00:19:18,080
+the last query, so that's okay. Um or
+ 
+
+1149
+00:19:18,080 --> 00:19:19,270
+the last query, so that's okay. Um or
+sometimes it's like, yeah, I did the
+
+1150
+00:19:19,270 --> 00:19:19,280
+sometimes it's like, yeah, I did the
+ 
+
+1151
+00:19:19,280 --> 00:19:20,870
+sometimes it's like, yeah, I did the
+math wrong. My bad. I can't do, you
+
+1152
+00:19:20,870 --> 00:19:20,880
+math wrong. My bad. I can't do, you
+ 
+
+1153
+00:19:20,880 --> 00:19:23,190
+math wrong. My bad. I can't do, you
+know, they they suck at dates maybe. Uh
+
+1154
+00:19:23,190 --> 00:19:23,200
+know, they they suck at dates maybe. Uh
+ 
+
+1155
+00:19:23,200 --> 00:19:24,870
+know, they they suck at dates maybe. Uh
+and then we've heard this a lot this
+
+1156
+00:19:24,870 --> 00:19:24,880
+and then we've heard this a lot this
+ 
+
+1157
+00:19:24,880 --> 00:19:27,270
+and then we've heard this a lot this
+week, which is extremely encouraging. A
+
+1158
+00:19:27,270 --> 00:19:27,280
+week, which is extremely encouraging. A
+ 
+
+1159
+00:19:27,280 --> 00:19:29,830
+week, which is extremely encouraging. A
+human in the loop. You're still
+
+1160
+00:19:29,830 --> 00:19:29,840
+human in the loop. You're still
+ 
+
+1161
+00:19:29,840 --> 00:19:31,590
+human in the loop. You're still
+responsible for the output of these
+
+1162
+00:19:31,590 --> 00:19:31,600
+responsible for the output of these
+ 
+
+1163
+00:19:31,600 --> 00:19:33,590
+responsible for the output of these
+model of these uh reports. It's your
+
+1164
+00:19:33,590 --> 00:19:33,600
+model of these uh reports. It's your
+ 
+
+1165
+00:19:33,600 --> 00:19:34,710
+model of these uh reports. It's your
+company. It's your brand. It's your
+
+1166
+00:19:34,710 --> 00:19:34,720
+company. It's your brand. It's your
+ 
+
+1167
+00:19:34,720 --> 00:19:37,590
+company. It's your brand. It's your
+reputation, whatever. Um so you have to
+
+1168
+00:19:37,590 --> 00:19:37,600
+reputation, whatever. Um so you have to
+ 
+
+1169
+00:19:37,600 --> 00:19:38,870
+reputation, whatever. Um so you have to
+stand behind it. You can't just
+
+1170
+00:19:38,870 --> 00:19:38,880
+stand behind it. You can't just
+ 
+
+1171
+00:19:38,880 --> 00:19:40,710
+stand behind it. You can't just
+outsource all of that risk and liability
+
+1172
+00:19:40,710 --> 00:19:40,720
+outsource all of that risk and liability
+ 
+
+1173
+00:19:40,720 --> 00:19:43,510
+outsource all of that risk and liability
+to that. So I think of this as a like if
+
+1174
+00:19:43,510 --> 00:19:43,520
+to that. So I think of this as a like if
+ 
+
+1175
+00:19:43,520 --> 00:19:44,710
+to that. So I think of this as a like if
+you have a self-driving car and it
+
+1176
+00:19:44,710 --> 00:19:44,720
+you have a self-driving car and it
+ 
+
+1177
+00:19:44,720 --> 00:19:46,710
+you have a self-driving car and it
+crashes into a street lamp, it's still
+
+1178
+00:19:46,710 --> 00:19:46,720
+crashes into a street lamp, it's still
+ 
+
+1179
+00:19:46,720 --> 00:19:48,310
+crashes into a street lamp, it's still
+your problem. It's still going to be
+
+1180
+00:19:48,310 --> 00:19:48,320
+your problem. It's still going to be
+ 
+
+1181
+00:19:48,320 --> 00:19:49,750
+your problem. It's still going to be
+your headache. you're still responsible
+
+1182
+00:19:49,750 --> 00:19:49,760
+your headache. you're still responsible
+ 
+
+1183
+00:19:49,760 --> 00:19:52,470
+your headache. you're still responsible
+for what happened there.
+
+1184
+00:19:52,470 --> 00:19:52,480
+for what happened there.
+ 
+
+1185
+00:19:52,480 --> 00:19:54,390
+for what happened there.
+So as soon as Orby started producing
+
+1186
+00:19:54,390 --> 00:19:54,400
+So as soon as Orby started producing
+ 
+
+1187
+00:19:54,400 --> 00:19:56,230
+So as soon as Orby started producing
+real output, my first question was, you
+
+1188
+00:19:56,230 --> 00:19:56,240
+real output, my first question was, you
+ 
+
+1189
+00:19:56,240 --> 00:19:57,510
+real output, my first question was, you
+know, how do again, how do we stand
+
+1190
+00:19:57,510 --> 00:19:57,520
+know, how do again, how do we stand
+ 
+
+1191
+00:19:57,520 --> 00:19:59,590
+know, how do again, how do we stand
+behind this? How can I trust this thing?
+
+1192
+00:19:59,590 --> 00:19:59,600
+behind this? How can I trust this thing?
+ 
+
+1193
+00:19:59,600 --> 00:20:01,750
+behind this? How can I trust this thing?
+And early on, I started engaging with
+
+1194
+00:20:01,750 --> 00:20:01,760
+And early on, I started engaging with
+ 
+
+1195
+00:20:01,760 --> 00:20:05,669
+And early on, I started engaging with
+it, asking it questions. You how how how
+
+1196
+00:20:05,669 --> 00:20:05,679
+it, asking it questions. You how how how
+ 
+
+1197
+00:20:05,679 --> 00:20:06,870
+it, asking it questions. You how how how
+do I know this is correct? Because now
+
+1198
+00:20:06,870 --> 00:20:06,880
+do I know this is correct? Because now
+ 
+
+1199
+00:20:06,880 --> 00:20:08,789
+do I know this is correct? Because now
+you're calling yourself out. And it got
+
+1200
+00:20:08,789 --> 00:20:08,799
+you're calling yourself out. And it got
+ 
+
+1201
+00:20:08,799 --> 00:20:10,070
+you're calling yourself out. And it got
+a little sassy with me, which I
+
+1202
+00:20:10,070 --> 00:20:10,080
+a little sassy with me, which I
+ 
+
+1203
+00:20:10,080 --> 00:20:11,350
+a little sassy with me, which I
+appreciated actually. So I was like,
+
+1204
+00:20:11,350 --> 00:20:11,360
+appreciated actually. So I was like,
+ 
+
+1205
+00:20:11,360 --> 00:20:11,909
+appreciated actually. So I was like,
+okay, we've got
+
+1206
+00:20:11,909 --> 00:20:11,919
+okay, we've got
+ 
+
+1207
+00:20:11,919 --> 00:20:13,590
+okay, we've got
+>> So did I. So did I actually Yeah. Yeah.
+
+1208
+00:20:13,590 --> 00:20:13,600
+>> So did I. So did I actually Yeah. Yeah.
+ 
+
+1209
+00:20:13,600 --> 00:20:14,870
+>> So did I. So did I actually Yeah. Yeah.
+We got we got some we got something to
+
+1210
+00:20:14,870 --> 00:20:14,880
+We got we got some we got something to
+ 
+
+1211
+00:20:14,880 --> 00:20:16,870
+We got we got some we got something to
+work here. Um but yeah, so then I I
+
+1212
+00:20:16,870 --> 00:20:16,880
+work here. Um but yeah, so then I I
+ 
+
+1213
+00:20:16,880 --> 00:20:18,150
+work here. Um but yeah, so then I I
+started making a skill for that. The
+
+1214
+00:20:18,150 --> 00:20:18,160
+started making a skill for that. The
+ 
+
+1215
+00:20:18,160 --> 00:20:20,070
+started making a skill for that. The
+validator is clearly what we call it.
+
+1216
+00:20:20,070 --> 00:20:20,080
+validator is clearly what we call it.
+ 
+
+1217
+00:20:20,080 --> 00:20:22,950
+validator is clearly what we call it.
+But um so running the validator on some
+
+1218
+00:20:22,950 --> 00:20:22,960
+But um so running the validator on some
+ 
+
+1219
+00:20:22,960 --> 00:20:25,190
+But um so running the validator on some
+early reports uh it had some findings
+
+1220
+00:20:25,190 --> 00:20:25,200
+early reports uh it had some findings
+ 
+
+1221
+00:20:25,200 --> 00:20:27,430
+early reports uh it had some findings
+like 78 claims extracted less than half
+
+1222
+00:20:27,430 --> 00:20:27,440
+like 78 claims extracted less than half
+ 
+
+1223
+00:20:27,440 --> 00:20:29,909
+like 78 claims extracted less than half
+were verified. Like that's alarming. Uh
+
+1224
+00:20:29,909 --> 00:20:29,919
+were verified. Like that's alarming. Uh
+ 
+
+1225
+00:20:29,919 --> 00:20:32,789
+were verified. Like that's alarming. Uh
+in one case it made up tag names. So for
+
+1226
+00:20:32,789 --> 00:20:32,799
+in one case it made up tag names. So for
+ 
+
+1227
+00:20:32,799 --> 00:20:34,870
+in one case it made up tag names. So for
+grey noise tags are the root of our
+
+1228
+00:20:34,870 --> 00:20:34,880
+grey noise tags are the root of our
+ 
+
+1229
+00:20:34,880 --> 00:20:36,950
+grey noise tags are the root of our
+findings and our output. Making up tag
+
+1230
+00:20:36,950 --> 00:20:36,960
+findings and our output. Making up tag
+ 
+
+1231
+00:20:36,960 --> 00:20:40,070
+findings and our output. Making up tag
+names is really bad. Um and it turns out
+
+1232
+00:20:40,070 --> 00:20:40,080
+names is really bad. Um and it turns out
+ 
+
+1233
+00:20:40,080 --> 00:20:42,070
+names is really bad. Um and it turns out
+after investigating that the model was
+
+1234
+00:20:42,070 --> 00:20:42,080
+after investigating that the model was
+ 
+
+1235
+00:20:42,080 --> 00:20:44,470
+after investigating that the model was
+summ summarizing the tag names to try
+
+1236
+00:20:44,470 --> 00:20:44,480
+summ summarizing the tag names to try
+ 
+
+1237
+00:20:44,480 --> 00:20:46,710
+summ summarizing the tag names to try
+and be helpful. But then by the end of
+
+1238
+00:20:46,710 --> 00:20:46,720
+and be helpful. But then by the end of
+ 
+
+1239
+00:20:46,720 --> 00:20:49,350
+and be helpful. But then by the end of
+all of this run, the tag names were all
+
+1240
+00:20:49,350 --> 00:20:49,360
+all of this run, the tag names were all
+ 
+
+1241
+00:20:49,360 --> 00:20:50,789
+all of this run, the tag names were all
+different. So it had made up a bunch of
+
+1242
+00:20:50,789 --> 00:20:50,799
+different. So it had made up a bunch of
+ 
+
+1243
+00:20:50,799 --> 00:20:52,789
+different. So it had made up a bunch of
+tag names. So again, take that
+
+1244
+00:20:52,789 --> 00:20:52,799
+tag names. So again, take that
+ 
+
+1245
+00:20:52,799 --> 00:20:54,230
+tag names. So again, take that
+information, put it in a skill, tell it
+
+1246
+00:20:54,230 --> 00:20:54,240
+information, put it in a skill, tell it
+ 
+
+1247
+00:20:54,240 --> 00:20:56,470
+information, put it in a skill, tell it
+not to summarize or alternate K tag
+
+1248
+00:20:56,470 --> 00:20:56,480
+not to summarize or alternate K tag
+ 
+
+1249
+00:20:56,480 --> 00:20:58,789
+not to summarize or alternate K tag
+names and problem solve. Um, so you just
+
+1250
+00:20:58,789 --> 00:20:58,799
+names and problem solve. Um, so you just
+ 
+
+1251
+00:20:58,799 --> 00:21:00,310
+names and problem solve. Um, so you just
+have to kind of engage with it. And then
+
+1252
+00:21:00,310 --> 00:21:00,320
+have to kind of engage with it. And then
+ 
+
+1253
+00:21:00,320 --> 00:21:01,990
+have to kind of engage with it. And then
+it also just added something to the SIS
+
+1254
+00:21:01,990 --> 00:21:02,000
+it also just added something to the SIS
+ 
+
+1255
+00:21:02,000 --> 00:21:03,590
+it also just added something to the SIS
+code once. I can't explain that one. I
+
+1256
+00:21:03,590 --> 00:21:03,600
+code once. I can't explain that one. I
+ 
+
+1257
+00:21:03,600 --> 00:21:04,950
+code once. I can't explain that one. I
+don't know if it has a crystal ball. I
+
+1258
+00:21:04,950 --> 00:21:04,960
+don't know if it has a crystal ball. I
+ 
+
+1259
+00:21:04,960 --> 00:21:05,990
+don't know if it has a crystal ball. I
+should have actually checked to see if
+
+1260
+00:21:05,990 --> 00:21:06,000
+should have actually checked to see if
+ 
+
+1261
+00:21:06,000 --> 00:21:07,990
+should have actually checked to see if
+it got added by now. But anyway, um,
+
+1262
+00:21:07,990 --> 00:21:08,000
+it got added by now. But anyway, um,
+ 
+
+1263
+00:21:08,000 --> 00:21:09,669
+it got added by now. But anyway, um,
+that was interesting. But it was an easy
+
+1264
+00:21:09,669 --> 00:21:09,679
+that was interesting. But it was an easy
+ 
+
+1265
+00:21:09,679 --> 00:21:11,510
+that was interesting. But it was an easy
+find because on the revalidation it was
+
+1266
+00:21:11,510 --> 00:21:11,520
+find because on the revalidation it was
+ 
+
+1267
+00:21:11,520 --> 00:21:13,029
+find because on the revalidation it was
+like it's not there. Like all right, fix
+
+1268
+00:21:13,029 --> 00:21:13,039
+like it's not there. Like all right, fix
+ 
+
+1269
+00:21:13,039 --> 00:21:15,750
+like it's not there. Like all right, fix
+it. Um, yeah. So, like I said, the goal
+
+1270
+00:21:15,750 --> 00:21:15,760
+it. Um, yeah. So, like I said, the goal
+ 
+
+1271
+00:21:15,760 --> 00:21:18,470
+it. Um, yeah. So, like I said, the goal
+is just to reduce what the validation
+
+1272
+00:21:18,470 --> 00:21:18,480
+is just to reduce what the validation
+ 
+
+1273
+00:21:18,480 --> 00:21:20,390
+is just to reduce what the validation
+finds by taking those learnings and
+
+1274
+00:21:20,390 --> 00:21:20,400
+finds by taking those learnings and
+ 
+
+1275
+00:21:20,400 --> 00:21:22,950
+finds by taking those learnings and
+moving them further up in the chain.
+
+1276
+00:21:22,950 --> 00:21:22,960
+moving them further up in the chain.
+ 
+
+1277
+00:21:22,960 --> 00:21:24,390
+moving them further up in the chain.
+>> Cool. So, we're pretty much almost at
+
+1278
+00:21:24,390 --> 00:21:24,400
+>> Cool. So, we're pretty much almost at
+ 
+
+1279
+00:21:24,400 --> 00:21:25,510
+>> Cool. So, we're pretty much almost at
+time. So, I'll go through this real
+
+1280
+00:21:25,510 --> 00:21:25,520
+time. So, I'll go through this real
+ 
+
+1281
+00:21:25,520 --> 00:21:26,710
+time. So, I'll go through this real
+quick just to show you it's a real
+
+1282
+00:21:26,710 --> 00:21:26,720
+quick just to show you it's a real
+ 
+
+1283
+00:21:26,720 --> 00:21:28,149
+quick just to show you it's a real
+thing. These are linear tickets that
+
+1284
+00:21:28,149 --> 00:21:28,159
+thing. These are linear tickets that
+ 
+
+1285
+00:21:28,159 --> 00:21:30,470
+thing. These are linear tickets that
+Orbeez created over the past round month
+
+1286
+00:21:30,470 --> 00:21:30,480
+Orbeez created over the past round month
+ 
+
+1287
+00:21:30,480 --> 00:21:32,870
+Orbeez created over the past round month
+and a half uh when it's found stuff and
+
+1288
+00:21:32,870 --> 00:21:32,880
+and a half uh when it's found stuff and
+ 
+
+1289
+00:21:32,880 --> 00:21:34,310
+and a half uh when it's found stuff and
+told us to go do things with it. And
+
+1290
+00:21:34,310 --> 00:21:34,320
+told us to go do things with it. And
+ 
+
+1291
+00:21:34,320 --> 00:21:36,230
+told us to go do things with it. And
+it's really good at doing that cuz it
+
+1292
+00:21:36,230 --> 00:21:36,240
+it's really good at doing that cuz it
+ 
+
+1293
+00:21:36,240 --> 00:21:38,710
+it's really good at doing that cuz it
+told me directly I'm supposed to go file
+
+1294
+00:21:38,710 --> 00:21:38,720
+told me directly I'm supposed to go file
+ 
+
+1295
+00:21:38,720 --> 00:21:40,470
+told me directly I'm supposed to go file
+this GitHub takedown notice because it
+
+1296
+00:21:40,470 --> 00:21:40,480
+this GitHub takedown notice because it
+ 
+
+1297
+00:21:40,480 --> 00:21:42,230
+this GitHub takedown notice because it
+found malware on GitHub and I had to go
+
+1298
+00:21:42,230 --> 00:21:42,240
+found malware on GitHub and I had to go
+ 
+
+1299
+00:21:42,240 --> 00:21:44,630
+found malware on GitHub and I had to go
+do that. I don't like that because like
+
+1300
+00:21:44,630 --> 00:21:44,640
+do that. I don't like that because like
+ 
+
+1301
+00:21:44,640 --> 00:21:46,549
+do that. I don't like that because like
+Microsoft never takes anything down. But
+
+1302
+00:21:46,549 --> 00:21:46,559
+Microsoft never takes anything down. But
+ 
+
+1303
+00:21:46,559 --> 00:21:47,990
+Microsoft never takes anything down. But
+that's just another thing. At least it
+
+1304
+00:21:47,990 --> 00:21:48,000
+that's just another thing. At least it
+ 
+
+1305
+00:21:48,000 --> 00:21:49,590
+that's just another thing. At least it
+had the nicity to give me what I should
+
+1306
+00:21:49,590 --> 00:21:49,600
+had the nicity to give me what I should
+ 
+
+1307
+00:21:49,600 --> 00:21:51,430
+had the nicity to give me what I should
+tell it when I did that. And I actually
+
+1308
+00:21:51,430 --> 00:21:51,440
+tell it when I did that. And I actually
+ 
+
+1309
+00:21:51,440 --> 00:21:53,350
+tell it when I did that. And I actually
+did it. I think that counts as human in
+
+1310
+00:21:53,350 --> 00:21:53,360
+did it. I think that counts as human in
+ 
+
+1311
+00:21:53,360 --> 00:21:53,909
+did it. I think that counts as human in
+the loop though.
+
+1312
+00:21:53,909 --> 00:21:53,919
+the loop though.
+ 
+
+1313
+00:21:53,919 --> 00:21:55,909
+the loop though.
+>> It might. It might. It did it. But then
+
+1314
+00:21:55,909 --> 00:21:55,919
+>> It might. It might. It did it. But then
+ 
+
+1315
+00:21:55,919 --> 00:21:57,510
+>> It might. It might. It did it. But then
+I kind of restart the same session every
+
+1316
+00:21:57,510 --> 00:21:57,520
+I kind of restart the same session every
+ 
+
+1317
+00:21:57,520 --> 00:21:59,590
+I kind of restart the same session every
+day to keep memory. So the next morning
+
+1318
+00:21:59,590 --> 00:21:59,600
+day to keep memory. So the next morning
+ 
+
+1319
+00:21:59,600 --> 00:22:01,190
+day to keep memory. So the next morning
+I fired it up. It's like did did you
+
+1320
+00:22:01,190 --> 00:22:01,200
+I fired it up. It's like did did you
+ 
+
+1321
+00:22:01,200 --> 00:22:03,110
+I fired it up. It's like did did you
+file that ticket? And like I had to
+
+1322
+00:22:03,110 --> 00:22:03,120
+file that ticket? And like I had to
+ 
+
+1323
+00:22:03,120 --> 00:22:05,270
+file that ticket? And like I had to
+paste the URL for it to actually know
+
+1324
+00:22:05,270 --> 00:22:05,280
+paste the URL for it to actually know
+ 
+
+1325
+00:22:05,280 --> 00:22:07,669
+paste the URL for it to actually know
+that I did that. So the era of our AI
+
+1326
+00:22:07,669 --> 00:22:07,679
+that I did that. So the era of our AI
+ 
+
+1327
+00:22:07,679 --> 00:22:09,750
+that I did that. So the era of our AI
+overlords are actually here. I actually
+
+1328
+00:22:09,750 --> 00:22:09,760
+overlords are actually here. I actually
+ 
+
+1329
+00:22:09,760 --> 00:22:10,950
+overlords are actually here. I actually
+don't need to go through this slide
+
+1330
+00:22:10,950 --> 00:22:10,960
+don't need to go through this slide
+ 
+
+1331
+00:22:10,960 --> 00:22:12,070
+don't need to go through this slide
+because you've heard it from almost
+
+1332
+00:22:12,070 --> 00:22:12,080
+because you've heard it from almost
+ 
+
+1333
+00:22:12,080 --> 00:22:14,149
+because you've heard it from almost
+everybody today. This is great. My one
+
+1334
+00:22:14,149 --> 00:22:14,159
+everybody today. This is great. My one
+ 
+
+1335
+00:22:14,159 --> 00:22:16,310
+everybody today. This is great. My one
+takeaway. So, this is our manifesto. How
+
+1336
+00:22:16,310 --> 00:22:16,320
+takeaway. So, this is our manifesto. How
+ 
+
+1337
+00:22:16,320 --> 00:22:17,830
+takeaway. So, this is our manifesto. How
+to design what your elements are going
+
+1338
+00:22:17,830 --> 00:22:17,840
+to design what your elements are going
+ 
+
+1339
+00:22:17,840 --> 00:22:19,110
+to design what your elements are going
+to go do. It's all and this one's up
+
+1340
+00:22:19,110 --> 00:22:19,120
+to go do. It's all and this one's up
+ 
+
+1341
+00:22:19,120 --> 00:22:20,870
+to go do. It's all and this one's up
+there as well, too. I'm just going to
+
+1342
+00:22:20,870 --> 00:22:20,880
+there as well, too. I'm just going to
+ 
+
+1343
+00:22:20,880 --> 00:22:22,710
+there as well, too. I'm just going to
+say assume these things are going to do
+
+1344
+00:22:22,710 --> 00:22:22,720
+say assume these things are going to do
+ 
+
+1345
+00:22:22,720 --> 00:22:24,149
+say assume these things are going to do
+something really stupid and plan around
+
+1346
+00:22:24,149 --> 00:22:24,159
+something really stupid and plan around
+ 
+
+1347
+00:22:24,159 --> 00:22:27,110
+something really stupid and plan around
+it. G give it data, tell it what to do,
+
+1348
+00:22:27,110 --> 00:22:27,120
+it. G give it data, tell it what to do,
+ 
+
+1349
+00:22:27,120 --> 00:22:29,190
+it. G give it data, tell it what to do,
+retell it what to do, tell it what not
+
+1350
+00:22:29,190 --> 00:22:29,200
+retell it what to do, tell it what not
+ 
+
+1351
+00:22:29,200 --> 00:22:30,870
+retell it what to do, tell it what not
+to do. And then the last thing I'll say
+
+1352
+00:22:30,870 --> 00:22:30,880
+to do. And then the last thing I'll say
+ 
+
+1353
+00:22:30,880 --> 00:22:33,350
+to do. And then the last thing I'll say
+is or the last one is also important to
+
+1354
+00:22:33,350 --> 00:22:33,360
+is or the last one is also important to
+ 
+
+1355
+00:22:33,360 --> 00:22:35,510
+is or the last one is also important to
+save money. Uh we do the real hard work
+
+1356
+00:22:35,510 --> 00:22:35,520
+save money. Uh we do the real hard work
+ 
+
+1357
+00:22:35,520 --> 00:22:37,590
+save money. Uh we do the real hard work
+on Opus 46 and we do all the lightweight
+
+1358
+00:22:37,590 --> 00:22:37,600
+on Opus 46 and we do all the lightweight
+ 
+
+1359
+00:22:37,600 --> 00:22:39,669
+on Opus 46 and we do all the lightweight
+work on either Haiku or Sonnet to take
+
+1360
+00:22:39,669 --> 00:22:39,679
+work on either Haiku or Sonnet to take
+ 
+
+1361
+00:22:39,679 --> 00:22:40,789
+work on either Haiku or Sonnet to take
+things a little bit cheaper.
+
+1362
+00:22:40,789 --> 00:22:40,799
+things a little bit cheaper.
+ 
+
+1363
+00:22:40,799 --> 00:22:42,549
+things a little bit cheaper.
+>> It's been really cool this week to see
+
+1364
+00:22:42,549 --> 00:22:42,559
+>> It's been really cool this week to see
+ 
+
+1365
+00:22:42,559 --> 00:22:44,149
+>> It's been really cool this week to see
+like we brushed over that slide really
+
+1366
+00:22:44,149 --> 00:22:44,159
+like we brushed over that slide really
+ 
+
+1367
+00:22:44,159 --> 00:22:45,909
+like we brushed over that slide really
+quickly and all this is online so you
+
+1368
+00:22:45,909 --> 00:22:45,919
+quickly and all this is online so you
+ 
+
+1369
+00:22:45,919 --> 00:22:46,470
+quickly and all this is online so you
+can see it later.
+
+1370
+00:22:46,470 --> 00:22:46,480
+can see it later.
+ 
+
+1371
+00:22:46,480 --> 00:22:47,909
+can see it later.
+>> Oh and here it's running his stupid
+
+1372
+00:22:47,909 --> 00:22:47,919
+>> Oh and here it's running his stupid
+ 
+
+1373
+00:22:47,919 --> 00:22:49,590
+>> Oh and here it's running his stupid
+findings valid. It takes so much time.
+
+1374
+00:22:49,590 --> 00:22:49,600
+findings valid. It takes so much time.
+ 
+
+1375
+00:22:49,600 --> 00:22:51,110
+findings valid. It takes so much time.
+Who cares about validation? I mean
+
+1376
+00:22:51,110 --> 00:22:51,120
+Who cares about validation? I mean
+ 
+
+1377
+00:22:51,120 --> 00:22:51,430
+Who cares about validation? I mean
+seriously.
+
+1378
+00:22:51,430 --> 00:22:51,440
+seriously.
+ 
+
+1379
+00:22:51,440 --> 00:22:52,710
+seriously.
+>> But it's been cool this week to see how
+
+1380
+00:22:52,710 --> 00:22:52,720
+>> But it's been cool this week to see how
+ 
+
+1381
+00:22:52,720 --> 00:22:53,990
+>> But it's been cool this week to see how
+we've all kind of come to the same
+
+1382
+00:22:53,990 --> 00:22:54,000
+we've all kind of come to the same
+ 
+
+1383
+00:22:54,000 --> 00:22:55,430
+we've all kind of come to the same
+conclusions for that manifesto which is
+
+1384
+00:22:55,430 --> 00:22:55,440
+conclusions for that manifesto which is
+ 
+
+1385
+00:22:55,440 --> 00:22:56,870
+conclusions for that manifesto which is
+why we can brush over it. So I think I'm
+
+1386
+00:22:56,870 --> 00:22:56,880
+why we can brush over it. So I think I'm
+ 
+
+1387
+00:22:56,880 --> 00:22:58,390
+why we can brush over it. So I think I'm
+I'm I'm a little bit more optimistic at
+
+1388
+00:22:58,390 --> 00:22:58,400
+I'm I'm a little bit more optimistic at
+ 
+
+1389
+00:22:58,400 --> 00:22:59,590
+I'm I'm a little bit more optimistic at
+the end of this conference than I was at
+
+1390
+00:22:59,590 --> 00:22:59,600
+the end of this conference than I was at
+ 
+
+1391
+00:22:59,600 --> 00:23:00,070
+the end of this conference than I was at
+the beginning.
+
+1392
+00:23:00,070 --> 00:23:00,080
+the beginning.
+ 
+
+1393
+00:23:00,080 --> 00:23:01,029
+the beginning.
+>> Yeah. So we're not going to go through
+
+1394
+00:23:01,029 --> 00:23:01,039
+>> Yeah. So we're not going to go through
+ 
+
+1395
+00:23:01,039 --> 00:23:02,310
+>> Yeah. So we're not going to go through
+the report here. We didn't think we'd
+
+1396
+00:23:02,310 --> 00:23:02,320
+the report here. We didn't think we'd
+ 
+
+1397
+00:23:02,320 --> 00:23:03,669
+the report here. We didn't think we'd
+have time for it. The report that it
+
+1398
+00:23:03,669 --> 00:23:03,679
+have time for it. The report that it
+ 
+
+1399
+00:23:03,679 --> 00:23:04,870
+have time for it. The report that it
+made is up there. You'll see it. It's
+
+1400
+00:23:04,870 --> 00:23:04,880
+made is up there. You'll see it. It's
+ 
+
+1401
+00:23:04,880 --> 00:23:06,630
+made is up there. You'll see it. It's
+pretty easily. You've got a skill you
+
+1402
+00:23:06,630 --> 00:23:06,640
+pretty easily. You've got a skill you
+ 
+
+1403
+00:23:06,640 --> 00:23:08,390
+pretty easily. You've got a skill you
+can run against Census MCP server, which
+
+1404
+00:23:08,390 --> 00:23:08,400
+can run against Census MCP server, which
+ 
+
+1405
+00:23:08,400 --> 00:23:09,510
+can run against Census MCP server, which
+you should do because it's got great
+
+1406
+00:23:09,510 --> 00:23:09,520
+you should do because it's got great
+ 
+
+1407
+00:23:09,520 --> 00:23:11,510
+you should do because it's got great
+contextual data. You've got a free
+
+1408
+00:23:11,510 --> 00:23:11,520
+contextual data. You've got a free
+ 
+
+1409
+00:23:11,520 --> 00:23:13,430
+contextual data. You've got a free
+Circata MCP server. If you work with
+
+1410
+00:23:13,430 --> 00:23:13,440
+Circata MCP server. If you work with
+ 
+
+1411
+00:23:13,440 --> 00:23:14,789
+Circata MCP server. If you work with
+Circata, it's great for iterating
+
+1412
+00:23:14,789 --> 00:23:14,799
+Circata, it's great for iterating
+ 
+
+1413
+00:23:14,799 --> 00:23:17,110
+Circata, it's great for iterating
+through testing rules and testing pcaps,
+
+1414
+00:23:17,110 --> 00:23:17,120
+through testing rules and testing pcaps,
+ 
+
+1415
+00:23:17,120 --> 00:23:20,789
+through testing rules and testing pcaps,
+etc. And you've also got a OS domain
+
+1416
+00:23:20,789 --> 00:23:20,799
+etc. And you've also got a OS domain
+ 
+
+1417
+00:23:20,799 --> 00:23:22,710
+etc. And you've also got a OS domain
+command line tool and MCP server as a
+
+1418
+00:23:22,710 --> 00:23:22,720
+command line tool and MCP server as a
+ 
+
+1419
+00:23:22,720 --> 00:23:23,750
+command line tool and MCP server as a
+result of this too. So, you got a lot of
+
+1420
+00:23:23,750 --> 00:23:23,760
+result of this too. So, you got a lot of
+ 
+
+1421
+00:23:23,760 --> 00:23:24,070
+result of this too. So, you got a lot of
+gifts
+
+1422
+00:23:24,070 --> 00:23:24,080
+gifts
+ 
+
+1423
+00:23:24,080 --> 00:23:25,510
+gifts
+>> and this is all real too. So, like feel
+
+1424
+00:23:25,510 --> 00:23:25,520
+>> and this is all real too. So, like feel
+ 
+
+1425
+00:23:25,520 --> 00:23:27,270
+>> and this is all real too. So, like feel
+free to use it and like go hunt and look
+
+1426
+00:23:27,270 --> 00:23:27,280
+free to use it and like go hunt and look
+ 
+
+1427
+00:23:27,280 --> 00:23:28,149
+free to use it and like go hunt and look
+in your environment and
+
+1428
+00:23:28,149 --> 00:23:28,159
+in your environment and
+ 
+
+1429
+00:23:28,159 --> 00:23:29,750
+in your environment and
+>> and this is how you get a hold of us. We
+
+1430
+00:23:29,750 --> 00:23:29,760
+>> and this is how you get a hold of us. We
+ 
+
+1431
+00:23:29,760 --> 00:23:31,510
+>> and this is how you get a hold of us. We
+really suck at social media. So that
+
+1432
+00:23:31,510 --> 00:23:31,520
+really suck at social media. So that
+ 
+
+1433
+00:23:31,520 --> 00:23:33,430
+really suck at social media. So that
+research at greyno.io is probably what
+
+1434
+00:23:33,430 --> 00:23:33,440
+research at greyno.io is probably what
+ 
+
+1435
+00:23:33,440 --> 00:23:35,750
+research at greyno.io is probably what
+you should do. Um and feel free to you
+
+1436
+00:23:35,750 --> 00:23:35,760
+you should do. Um and feel free to you
+ 
+
+1437
+00:23:35,760 --> 00:23:37,350
+you should do. Um and feel free to you
+know file issues and stuff on the GitHub
+
+1438
+00:23:37,350 --> 00:23:37,360
+know file issues and stuff on the GitHub
+ 
+
+1439
+00:23:37,360 --> 00:23:39,110
+know file issues and stuff on the GitHub
+stuff because we're going to keep making
+
+1440
+00:23:39,110 --> 00:23:39,120
+stuff because we're going to keep making
+ 
+
+1441
+00:23:39,120 --> 00:23:40,549
+stuff because we're going to keep making
+these things better and you can help us
+
+1442
+00:23:40,549 --> 00:23:40,559
+these things better and you can help us
+ 
+
+1443
+00:23:40,559 --> 00:23:42,230
+these things better and you can help us
+make it better too. So thank you all.
+
+1444
+00:23:42,230 --> 00:23:42,240
+make it better too. So thank you all.
+ 
+
+1445
+00:23:42,240 --> 00:23:49,190
+make it better too. So thank you all.
+Appreciate it.
+
+1446
+00:23:49,190 --> 00:23:49,200
+
+ 
+
+1447
+00:23:49,200 --> 00:23:52,630
+
+Open source and a recap of the themes of
+
+1448
+00:23:52,630 --> 00:23:52,640
+Open source and a recap of the themes of
+ 
+
+1449
+00:23:52,640 --> 00:23:55,110
+Open source and a recap of the themes of
+the day. Great way to end it. Let's do
+
+1450
+00:23:55,110 --> 00:23:55,120
+the day. Great way to end it. Let's do
+ 
+
+1451
+00:23:55,120 --> 00:23:57,190
+the day. Great way to end it. Let's do
+questions.
+
+1452
+00:23:57,190 --> 00:23:57,200
+questions.
+ 
+
+1453
+00:23:57,200 --> 00:23:58,310
+questions.
+>> Come on.
+
+1454
+00:23:58,310 --> 00:23:58,320
+>> Come on.
+ 
+
+1455
+00:23:58,320 --> 00:23:58,950
+>> Come on.
+>> No question.
+
+1456
+00:23:58,950 --> 00:23:58,960
+>> No question.
+ 
+
+1457
+00:23:58,960 --> 00:24:00,470
+>> No question.
+>> Oh, here we go. Great. There will be
+
+1458
+00:24:00,470 --> 00:24:00,480
+>> Oh, here we go. Great. There will be
+ 
+
+1459
+00:24:00,480 --> 00:24:01,590
+>> Oh, here we go. Great. There will be
+questions. It always takes seven
+
+1460
+00:24:01,590 --> 00:24:01,600
+questions. It always takes seven
+ 
+
+1461
+00:24:01,600 --> 00:24:08,470
+questions. It always takes seven
+seconds.
+
+1462
+00:24:08,470 --> 00:24:08,480
+
+ 
+
+1463
+00:24:08,480 --> 00:24:10,230
+
+>> Actually, a question that I have been
+
+1464
+00:24:10,230 --> 00:24:10,240
+>> Actually, a question that I have been
+ 
+
+1465
+00:24:10,240 --> 00:24:11,909
+>> Actually, a question that I have been
+wanting to ask and you're the lucky ones
+
+1466
+00:24:11,909 --> 00:24:11,919
+wanting to ask and you're the lucky ones
+ 
+
+1467
+00:24:11,919 --> 00:24:14,870
+wanting to ask and you're the lucky ones
+to get it. So, everybody these days
+
+1468
+00:24:14,870 --> 00:24:14,880
+to get it. So, everybody these days
+ 
+
+1469
+00:24:14,880 --> 00:24:17,190
+to get it. So, everybody these days
+seems to be using cloud code to
+
+1470
+00:24:17,190 --> 00:24:17,200
+seems to be using cloud code to
+ 
+
+1471
+00:24:17,200 --> 00:24:19,350
+seems to be using cloud code to
+orchestrate the agents, work with the
+
+1472
+00:24:19,350 --> 00:24:19,360
+orchestrate the agents, work with the
+ 
+
+1473
+00:24:19,360 --> 00:24:21,990
+orchestrate the agents, work with the
+agents. Have you thought and have you
+
+1474
+00:24:21,990 --> 00:24:22,000
+agents. Have you thought and have you
+ 
+
+1475
+00:24:22,000 --> 00:24:24,549
+agents. Have you thought and have you
+tried to use like something like lang
+
+1476
+00:24:24,549 --> 00:24:24,559
+tried to use like something like lang
+ 
+
+1477
+00:24:24,559 --> 00:24:28,390
+tried to use like something like lang
+graph lang chain instead of what is good
+
+1478
+00:24:28,390 --> 00:24:28,400
+graph lang chain instead of what is good
+ 
+
+1479
+00:24:28,400 --> 00:24:28,870
+graph lang chain instead of what is good
+what is
+
+1480
+00:24:28,870 --> 00:24:28,880
+what is
+ 
+
+1481
+00:24:28,880 --> 00:24:30,470
+what is
+>> that's an awesome question and as I
+
+1482
+00:24:30,470 --> 00:24:30,480
+>> that's an awesome question and as I
+ 
+
+1483
+00:24:30,480 --> 00:24:32,870
+>> that's an awesome question and as I
+mentioned we have hit the limits of clog
+
+1484
+00:24:32,870 --> 00:24:32,880
+mentioned we have hit the limits of clog
+ 
+
+1485
+00:24:32,880 --> 00:24:34,390
+mentioned we have hit the limits of clog
+code cuz it was meant for something else
+
+1486
+00:24:34,390 --> 00:24:34,400
+code cuz it was meant for something else
+ 
+
+1487
+00:24:34,400 --> 00:24:35,430
+code cuz it was meant for something else
+completely different than what we're
+
+1488
+00:24:35,430 --> 00:24:35,440
+completely different than what we're
+ 
+
+1489
+00:24:35,440 --> 00:24:37,350
+completely different than what we're
+trying to do with it. We worked with it
+
+1490
+00:24:37,350 --> 00:24:37,360
+trying to do with it. We worked with it
+ 
+
+1491
+00:24:37,360 --> 00:24:39,430
+trying to do with it. We worked with it
+cuz it's free and it it's been great and
+
+1492
+00:24:39,430 --> 00:24:39,440
+cuz it's free and it it's been great and
+ 
+
+1493
+00:24:39,440 --> 00:24:41,430
+cuz it's free and it it's been great and
+it's helped us get to where we are. We
+
+1494
+00:24:41,430 --> 00:24:41,440
+it's helped us get to where we are. We
+ 
+
+1495
+00:24:41,440 --> 00:24:43,269
+it's helped us get to where we are. We
+need to create our own threat hunting
+
+1496
+00:24:43,269 --> 00:24:43,279
+need to create our own threat hunting
+ 
+
+1497
+00:24:43,279 --> 00:24:45,029
+need to create our own threat hunting
+agent framework that knows what what to
+
+1498
+00:24:45,029 --> 00:24:45,039
+agent framework that knows what what to
+ 
+
+1499
+00:24:45,039 --> 00:24:46,950
+agent framework that knows what what to
+go do. So you're yeah so we are
+
+1500
+00:24:46,950 --> 00:24:46,960
+go do. So you're yeah so we are
+ 
+
+1501
+00:24:46,960 --> 00:24:48,230
+go do. So you're yeah so we are
+absolutely going to explore that. We are
+
+1502
+00:24:48,230 --> 00:24:48,240
+absolutely going to explore that. We are
+ 
+
+1503
+00:24:48,240 --> 00:24:49,510
+absolutely going to explore that. We are
+probably going to try to do our own with
+
+1504
+00:24:49,510 --> 00:24:49,520
+probably going to try to do our own with
+ 
+
+1505
+00:24:49,520 --> 00:24:52,149
+probably going to try to do our own with
+Go first because I like writing co Go
+
+1506
+00:24:52,149 --> 00:24:52,159
+Go first because I like writing co Go
+ 
+
+1507
+00:24:52,159 --> 00:24:54,149
+Go first because I like writing co Go
+code weirdly enough. Actually, I like
+
+1508
+00:24:54,149 --> 00:24:54,159
+code weirdly enough. Actually, I like
+ 
+
+1509
+00:24:54,159 --> 00:24:55,909
+code weirdly enough. Actually, I like
+Okay, that's not true anymore. I like
+
+1510
+00:24:55,909 --> 00:24:55,919
+Okay, that's not true anymore. I like
+ 
+
+1511
+00:24:55,919 --> 00:24:58,549
+Okay, that's not true anymore. I like
+working with cloud code to write Go code
+
+1512
+00:24:58,549 --> 00:24:58,559
+working with cloud code to write Go code
+ 
+
+1513
+00:24:58,559 --> 00:25:01,350
+working with cloud code to write Go code
+now. Uh I still like writing Go code,
+
+1514
+00:25:01,350 --> 00:25:01,360
+now. Uh I still like writing Go code,
+ 
+
+1515
+00:25:01,360 --> 00:25:02,710
+now. Uh I still like writing Go code,
+but I like it better when it can help me
+
+1516
+00:25:02,710 --> 00:25:02,720
+but I like it better when it can help me
+ 
+
+1517
+00:25:02,720 --> 00:25:03,909
+but I like it better when it can help me
+go do that. So yeah, that's a great
+
+1518
+00:25:03,909 --> 00:25:03,919
+go do that. So yeah, that's a great
+ 
+
+1519
+00:25:03,919 --> 00:25:05,350
+go do that. So yeah, that's a great
+question and I would for anyone that's
+
+1520
+00:25:05,350 --> 00:25:05,360
+question and I would for anyone that's
+ 
+
+1521
+00:25:05,360 --> 00:25:06,870
+question and I would for anyone that's
+trying to do this in house, start with
+
+1522
+00:25:06,870 --> 00:25:06,880
+trying to do this in house, start with
+ 
+
+1523
+00:25:06,880 --> 00:25:08,310
+trying to do this in house, start with
+cloud code. It's the best thing out
+
+1524
+00:25:08,310 --> 00:25:08,320
+cloud code. It's the best thing out
+ 
+
+1525
+00:25:08,320 --> 00:25:09,990
+cloud code. It's the best thing out
+there. You're going to outgrow it and
+
+1526
+00:25:09,990 --> 00:25:10,000
+there. You're going to outgrow it and
+ 
+
+1527
+00:25:10,000 --> 00:25:11,990
+there. You're going to outgrow it and
+you should really consider moving to
+
+1528
+00:25:11,990 --> 00:25:12,000
+you should really consider moving to
+ 
+
+1529
+00:25:12,000 --> 00:25:13,830
+you should really consider moving to
+something else. But the great thing is
+
+1530
+00:25:13,830 --> 00:25:13,840
+something else. But the great thing is
+ 
+
+1531
+00:25:13,840 --> 00:25:15,430
+something else. But the great thing is
+you have a friend to help you. Like
+
+1532
+00:25:15,430 --> 00:25:15,440
+you have a friend to help you. Like
+ 
+
+1533
+00:25:15,440 --> 00:25:16,710
+you have a friend to help you. Like
+Claude's my buddy and it can help you
+
+1534
+00:25:16,710 --> 00:25:16,720
+Claude's my buddy and it can help you
+ 
+
+1535
+00:25:16,720 --> 00:25:19,990
+Claude's my buddy and it can help you
+guys do it, too. So it's great.
+
+1536
+00:25:19,990 --> 00:25:20,000
+guys do it, too. So it's great.
+ 
+
+1537
+00:25:20,000 --> 00:25:21,750
+guys do it, too. So it's great.
+>> So a follow up to that. When do you
+
+1538
+00:25:21,750 --> 00:25:21,760
+>> So a follow up to that. When do you
+ 
+
+1539
+00:25:21,760 --> 00:25:23,029
+>> So a follow up to that. When do you
+outgrow it?
+
+1540
+00:25:23,029 --> 00:25:23,039
+outgrow it?
+ 
+
+1541
+00:25:23,039 --> 00:25:23,669
+outgrow it?
+>> When do I what
+
+1542
+00:25:23,669 --> 00:25:23,679
+>> When do I what
+ 
+
+1543
+00:25:23,679 --> 00:25:25,669
+>> When do I what
+>> what are the limitations? What when do
+
+1544
+00:25:25,669 --> 00:25:25,679
+>> what are the limitations? What when do
+ 
+
+1545
+00:25:25,679 --> 00:25:26,950
+>> what are the limitations? What when do
+you outgrow it?
+
+1546
+00:25:26,950 --> 00:25:26,960
+you outgrow it?
+ 
+
+1547
+00:25:26,960 --> 00:25:27,830
+you outgrow it?
+>> When do you outrow it?
+
+1548
+00:25:27,830 --> 00:25:27,840
+>> When do you outrow it?
+ 
+
+1549
+00:25:27,840 --> 00:25:29,350
+>> When do you outrow it?
+>> Oh, when do we outrow it? I think I
+
+1550
+00:25:29,350 --> 00:25:29,360
+>> Oh, when do we outrow it? I think I
+ 
+
+1551
+00:25:29,360 --> 00:25:32,549
+>> Oh, when do we outrow it? I think I
+think so. This is Orbeez at 093 and I
+
+1552
+00:25:32,549 --> 00:25:32,559
+think so. This is Orbeez at 093 and I
+ 
+
+1553
+00:25:32,559 --> 00:25:33,830
+think so. This is Orbeez at 093 and I
+think when I kind of get we have a
+
+1554
+00:25:33,830 --> 00:25:33,840
+think when I kind of get we have a
+ 
+
+1555
+00:25:33,840 --> 00:25:35,190
+think when I kind of get we have a
+couple more things to tweak and after
+
+1556
+00:25:35,190 --> 00:25:35,200
+couple more things to tweak and after
+ 
+
+1557
+00:25:35,200 --> 00:25:37,110
+couple more things to tweak and after
+1.0 I were going to be going to the next
+
+1558
+00:25:37,110 --> 00:25:37,120
+1.0 I were going to be going to the next
+ 
+
+1559
+00:25:37,120 --> 00:25:38,470
+1.0 I were going to be going to the next
+thing because we need to expand it to do
+
+1560
+00:25:38,470 --> 00:25:38,480
+thing because we need to expand it to do
+ 
+
+1561
+00:25:38,480 --> 00:25:40,870
+thing because we need to expand it to do
+other data and other sources. What it
+
+1562
+00:25:40,870 --> 00:25:40,880
+other data and other sources. What it
+ 
+
+1563
+00:25:40,880 --> 00:25:42,310
+other data and other sources. What it
+can do now is great. I think that's when
+
+1564
+00:25:42,310 --> 00:25:42,320
+can do now is great. I think that's when
+ 
+
+1565
+00:25:42,320 --> 00:25:43,269
+can do now is great. I think that's when
+we need to branch it out and do that.
+
+1566
+00:25:43,269 --> 00:25:43,279
+we need to branch it out and do that.
+ 
+
+1567
+00:25:43,279 --> 00:25:43,430
+we need to branch it out and do that.
+It's
+
+1568
+00:25:43,430 --> 00:25:43,440
+It's
+ 
+
+1569
+00:25:43,440 --> 00:25:45,110
+It's
+>> a lot about context window size.
+
+1570
+00:25:45,110 --> 00:25:45,120
+>> a lot about context window size.
+ 
+
+1571
+00:25:45,120 --> 00:25:46,710
+>> a lot about context window size.
+>> Yeah. I like an because I I don't really
+
+1572
+00:25:46,710 --> 00:25:46,720
+>> Yeah. I like an because I I don't really
+ 
+
+1573
+00:25:46,720 --> 00:25:49,110
+>> Yeah. I like an because I I don't really
+want to spend money on a million a
+
+1574
+00:25:49,110 --> 00:25:49,120
+want to spend money on a million a
+ 
+
+1575
+00:25:49,120 --> 00:25:50,950
+want to spend money on a million a
+million token context window. I don't I
+
+1576
+00:25:50,950 --> 00:25:50,960
+million token context window. I don't I
+ 
+
+1577
+00:25:50,960 --> 00:25:52,870
+million token context window. I don't I
+I like Anthropic a little but not that
+
+1578
+00:25:52,870 --> 00:25:52,880
+I like Anthropic a little but not that
+ 
+
+1579
+00:25:52,880 --> 00:25:53,830
+I like Anthropic a little but not that
+much. I'm not going to give them that
+
+1580
+00:25:53,830 --> 00:25:53,840
+much. I'm not going to give them that
+ 
+
+1581
+00:25:53,840 --> 00:25:57,190
+much. I'm not going to give them that
+much money. So,
+
+1582
+00:25:57,190 --> 00:25:57,200
+much money. So,
+ 
+
+1583
+00:25:57,200 --> 00:25:58,149
+much money. So,
+>> anymore?
+
+1584
+00:25:58,149 --> 00:25:58,159
+>> anymore?
+ 
+
+1585
+00:25:58,159 --> 00:26:00,230
+>> anymore?
+>> Nothing else. We're around. We can show
+
+1586
+00:26:00,230 --> 00:26:00,240
+>> Nothing else. We're around. We can show
+ 
+
+1587
+00:26:00,240 --> 00:26:02,149
+>> Nothing else. We're around. We can show
+you the report. Go to the repo. It's all
+
+1588
+00:26:02,149 --> 00:26:02,159
+you the report. Go to the repo. It's all
+ 
+
+1589
+00:26:02,159 --> 00:26:02,710
+you the report. Go to the repo. It's all
+yours.
+
+1590
+00:26:02,710 --> 00:26:02,720
+yours.
+ 
+
+1591
+00:26:02,720 --> 00:26:03,590
+yours.
+>> All right. Thank you, man.
+
+1592
+00:26:03,590 --> 00:26:03,600
+>> All right. Thank you, man.
+ 
+
+1593
+00:26:03,600 --> 00:26:04,310
+>> All right. Thank you, man.
+>> Thank you so much.
+
+1594
+00:26:04,310 --> 00:26:04,320
+>> Thank you so much.
+ 
+
+1595
+00:26:04,320 --> 00:26:07,320
+>> Thank you so much.
+>> Thanks.
+

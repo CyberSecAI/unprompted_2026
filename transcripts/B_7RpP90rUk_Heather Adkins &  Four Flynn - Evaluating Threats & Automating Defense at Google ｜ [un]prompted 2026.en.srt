@@ -1,0 +1,5575 @@
+1
+00:00:05,520 --> 00:00:07,749
+
+Great. Well, amazing to be here, Gaddy
+
+2
+00:00:07,749 --> 00:00:07,759
+Great. Well, amazing to be here, Gaddy
+ 
+
+3
+00:00:07,759 --> 00:00:09,270
+Great. Well, amazing to be here, Gaddy
+team, the whole team. I mean, it's such
+
+4
+00:00:09,270 --> 00:00:09,280
+team, the whole team. I mean, it's such
+ 
+
+5
+00:00:09,280 --> 00:00:11,350
+team, the whole team. I mean, it's such
+an incredible community. Um, I'm
+
+6
+00:00:11,350 --> 00:00:11,360
+an incredible community. Um, I'm
+ 
+
+7
+00:00:11,360 --> 00:00:14,549
+an incredible community. Um, I'm
+Heather. Uh, I work at Google and I do
+
+8
+00:00:14,549 --> 00:00:14,559
+Heather. Uh, I work at Google and I do
+ 
+
+9
+00:00:14,559 --> 00:00:18,310
+Heather. Uh, I work at Google and I do
+cyber cyber cyber stuff. I'm joined by u
+
+10
+00:00:18,310 --> 00:00:18,320
+cyber cyber cyber stuff. I'm joined by u
+ 
+
+11
+00:00:18,320 --> 00:00:21,269
+cyber cyber cyber stuff. I'm joined by u
+my amazing colleague for uh who leads
+
+12
+00:00:21,269 --> 00:00:21,279
+my amazing colleague for uh who leads
+ 
+
+13
+00:00:21,279 --> 00:00:23,670
+my amazing colleague for uh who leads
+security and privacy for Deep Mind.
+
+14
+00:00:23,670 --> 00:00:23,680
+security and privacy for Deep Mind.
+ 
+
+15
+00:00:23,680 --> 00:00:25,429
+security and privacy for Deep Mind.
+Please send him all the prompt injection
+
+16
+00:00:25,429 --> 00:00:25,439
+Please send him all the prompt injection
+ 
+
+17
+00:00:25,439 --> 00:00:29,830
+Please send him all the prompt injection
+bugs. Uh, not me. Um, I want to maybe
+
+18
+00:00:29,830 --> 00:00:29,840
+bugs. Uh, not me. Um, I want to maybe
+ 
+
+19
+00:00:29,840 --> 00:00:33,110
+bugs. Uh, not me. Um, I want to maybe
+start just by setting the scene a little
+
+20
+00:00:33,110 --> 00:00:33,120
+start just by setting the scene a little
+ 
+
+21
+00:00:33,120 --> 00:00:35,190
+start just by setting the scene a little
+bit. I think it's an understatement for
+
+22
+00:00:35,190 --> 00:00:35,200
+bit. I think it's an understatement for
+ 
+
+23
+00:00:35,200 --> 00:00:37,430
+bit. I think it's an understatement for
+all of you to say that this is an
+
+24
+00:00:37,430 --> 00:00:37,440
+all of you to say that this is an
+ 
+
+25
+00:00:37,440 --> 00:00:39,830
+all of you to say that this is an
+unprecedented time. We will all look
+
+26
+00:00:39,830 --> 00:00:39,840
+unprecedented time. We will all look
+ 
+
+27
+00:00:39,840 --> 00:00:44,470
+unprecedented time. We will all look
+back on the I think the year 2026
+
+28
+00:00:44,470 --> 00:00:44,480
+back on the I think the year 2026
+ 
+
+29
+00:00:44,480 --> 00:00:47,910
+back on the I think the year 2026
+as the year everything pivoted. Um, and
+
+30
+00:00:47,910 --> 00:00:47,920
+as the year everything pivoted. Um, and
+ 
+
+31
+00:00:47,920 --> 00:00:50,950
+as the year everything pivoted. Um, and
+we will also think of 2026
+
+32
+00:00:50,950 --> 00:00:50,960
+we will also think of 2026
+ 
+
+33
+00:00:50,960 --> 00:00:53,750
+we will also think of 2026
+as a simpler time. I think it's going to
+
+34
+00:00:53,750 --> 00:00:53,760
+as a simpler time. I think it's going to
+ 
+
+35
+00:00:53,760 --> 00:00:55,910
+as a simpler time. I think it's going to
+get a little bit harder and a little bit
+
+36
+00:00:55,910 --> 00:00:55,920
+get a little bit harder and a little bit
+ 
+
+37
+00:00:55,920 --> 00:00:59,189
+get a little bit harder and a little bit
+more complex. Um,
+
+38
+00:00:59,189 --> 00:00:59,199
+more complex. Um,
+ 
+
+39
+00:00:59,199 --> 00:01:03,750
+more complex. Um,
+we are not far off from a world where
+
+40
+00:01:03,750 --> 00:01:03,760
+we are not far off from a world where
+ 
+
+41
+00:01:03,760 --> 00:01:06,630
+we are not far off from a world where
+there will be an open- source full
+
+42
+00:01:06,630 --> 00:01:06,640
+there will be an open- source full
+ 
+
+43
+00:01:06,640 --> 00:01:08,710
+there will be an open- source full
+hacking tool where you can type in go
+
+44
+00:01:08,710 --> 00:01:08,720
+hacking tool where you can type in go
+ 
+
+45
+00:01:08,720 --> 00:01:11,350
+hacking tool where you can type in go
+hack Google and a week later it'll come
+
+46
+00:01:11,350 --> 00:01:11,360
+hack Google and a week later it'll come
+ 
+
+47
+00:01:11,360 --> 00:01:14,390
+hack Google and a week later it'll come
+back with a root prompt. Uh, we're not
+
+48
+00:01:14,390 --> 00:01:14,400
+back with a root prompt. Uh, we're not
+ 
+
+49
+00:01:14,400 --> 00:01:17,429
+back with a root prompt. Uh, we're not
+far off. Um, and we know this for a few
+
+50
+00:01:17,429 --> 00:01:17,439
+far off. Um, and we know this for a few
+ 
+
+51
+00:01:17,439 --> 00:01:20,310
+far off. Um, and we know this for a few
+reasons. Number one, there are now open-
+
+52
+00:01:20,310 --> 00:01:20,320
+reasons. Number one, there are now open-
+ 
+
+53
+00:01:20,320 --> 00:01:22,550
+reasons. Number one, there are now open-
+source frameworks for doing pentesting,
+
+54
+00:01:22,550 --> 00:01:22,560
+source frameworks for doing pentesting,
+ 
+
+55
+00:01:22,560 --> 00:01:23,990
+source frameworks for doing pentesting,
+finding, you know, simple
+
+56
+00:01:23,990 --> 00:01:24,000
+finding, you know, simple
+ 
+
+57
+00:01:24,000 --> 00:01:27,109
+finding, you know, simple
+vulnerabilities in web apps, etc. I did
+
+58
+00:01:27,109 --> 00:01:27,119
+vulnerabilities in web apps, etc. I did
+ 
+
+59
+00:01:27,119 --> 00:01:29,190
+vulnerabilities in web apps, etc. I did
+a little back of the ma uh back of the
+
+60
+00:01:29,190 --> 00:01:29,200
+a little back of the ma uh back of the
+ 
+
+61
+00:01:29,200 --> 00:01:31,190
+a little back of the ma uh back of the
+napkin math as well. There's about a
+
+62
+00:01:31,190 --> 00:01:31,200
+napkin math as well. There's about a
+ 
+
+63
+00:01:31,200 --> 00:01:34,710
+napkin math as well. There's about a
+billion dollars of VC money going into
+
+64
+00:01:34,710 --> 00:01:34,720
+billion dollars of VC money going into
+ 
+
+65
+00:01:34,720 --> 00:01:37,830
+billion dollars of VC money going into
+startups for vulnerability discovery,
+
+66
+00:01:37,830 --> 00:01:37,840
+startups for vulnerability discovery,
+ 
+
+67
+00:01:37,840 --> 00:01:41,670
+startups for vulnerability discovery,
+pen testing, red team simulation. So
+
+68
+00:01:41,670 --> 00:01:41,680
+pen testing, red team simulation. So
+ 
+
+69
+00:01:41,680 --> 00:01:43,590
+pen testing, red team simulation. So
+between all the good guys and all the
+
+70
+00:01:43,590 --> 00:01:43,600
+between all the good guys and all the
+ 
+
+71
+00:01:43,600 --> 00:01:45,670
+between all the good guys and all the
+bad guys, I think it's fair to say we
+
+72
+00:01:45,670 --> 00:01:45,680
+bad guys, I think it's fair to say we
+ 
+
+73
+00:01:45,680 --> 00:01:47,990
+bad guys, I think it's fair to say we
+are at a point where we'll be able to
+
+74
+00:01:47,990 --> 00:01:48,000
+are at a point where we'll be able to
+ 
+
+75
+00:01:48,000 --> 00:01:50,630
+are at a point where we'll be able to
+find every vulnerability in every system
+
+76
+00:01:50,630 --> 00:01:50,640
+find every vulnerability in every system
+ 
+
+77
+00:01:50,640 --> 00:01:53,270
+find every vulnerability in every system
+with Agentic frameworks and that's going
+
+78
+00:01:53,270 --> 00:01:53,280
+with Agentic frameworks and that's going
+ 
+
+79
+00:01:53,280 --> 00:01:55,910
+with Agentic frameworks and that's going
+to be a completely different world. Um
+
+80
+00:01:55,910 --> 00:01:55,920
+to be a completely different world. Um
+ 
+
+81
+00:01:55,920 --> 00:01:57,350
+to be a completely different world. Um
+it's going to change the way we think
+
+82
+00:01:57,350 --> 00:01:57,360
+it's going to change the way we think
+ 
+
+83
+00:01:57,360 --> 00:01:59,030
+it's going to change the way we think
+about vulnerabilities, the way we rank
+
+84
+00:01:59,030 --> 00:01:59,040
+about vulnerabilities, the way we rank
+ 
+
+85
+00:01:59,040 --> 00:02:00,950
+about vulnerabilities, the way we rank
+them, prioritize them. We'll have to
+
+86
+00:02:00,950 --> 00:02:00,960
+them, prioritize them. We'll have to
+ 
+
+87
+00:02:00,960 --> 00:02:03,270
+them, prioritize them. We'll have to
+change the CVSS scoring system because
+
+88
+00:02:03,270 --> 00:02:03,280
+change the CVSS scoring system because
+ 
+
+89
+00:02:03,280 --> 00:02:05,670
+change the CVSS scoring system because
+it won't be meaningful anymore.
+
+90
+00:02:05,670 --> 00:02:05,680
+it won't be meaningful anymore.
+ 
+
+91
+00:02:05,680 --> 00:02:07,429
+it won't be meaningful anymore.
+Um there will be a world where we just
+
+92
+00:02:07,429 --> 00:02:07,439
+Um there will be a world where we just
+ 
+
+93
+00:02:07,439 --> 00:02:09,669
+Um there will be a world where we just
+have too many vulnerabilities. And to
+
+94
+00:02:09,669 --> 00:02:09,679
+have too many vulnerabilities. And to
+ 
+
+95
+00:02:09,679 --> 00:02:11,110
+have too many vulnerabilities. And to
+give you some sense, we are already
+
+96
+00:02:11,110 --> 00:02:11,120
+give you some sense, we are already
+ 
+
+97
+00:02:11,120 --> 00:02:13,830
+give you some sense, we are already
+seeing it. Um, I checked this morning
+
+98
+00:02:13,830 --> 00:02:13,840
+seeing it. Um, I checked this morning
+ 
+
+99
+00:02:13,840 --> 00:02:16,150
+seeing it. Um, I checked this morning
+and the, uh, vulnerability database, the
+
+100
+00:02:16,150 --> 00:02:16,160
+and the, uh, vulnerability database, the
+ 
+
+101
+00:02:16,160 --> 00:02:20,390
+and the, uh, vulnerability database, the
+NVD has a 30,000 backlog unanalyzed
+
+102
+00:02:20,390 --> 00:02:20,400
+NVD has a 30,000 backlog unanalyzed
+ 
+
+103
+00:02:20,400 --> 00:02:22,949
+NVD has a 30,000 backlog unanalyzed
+vulnerability queue. But even given
+
+104
+00:02:22,949 --> 00:02:22,959
+vulnerability queue. But even given
+ 
+
+105
+00:02:22,959 --> 00:02:26,710
+vulnerability queue. But even given
+that, between 24 and 25, there was a 35%
+
+106
+00:02:26,710 --> 00:02:26,720
+that, between 24 and 25, there was a 35%
+ 
+
+107
+00:02:26,720 --> 00:02:29,589
+that, between 24 and 25, there was a 35%
+increase in logged uh, vulnerabilities
+
+108
+00:02:29,589 --> 00:02:29,599
+increase in logged uh, vulnerabilities
+ 
+
+109
+00:02:29,599 --> 00:02:31,830
+increase in logged uh, vulnerabilities
+that got a CVE. And not every bug that
+
+110
+00:02:31,830 --> 00:02:31,840
+that got a CVE. And not every bug that
+ 
+
+111
+00:02:31,840 --> 00:02:34,869
+that got a CVE. And not every bug that
+gets um, discovered gets a CVE. So we're
+
+112
+00:02:34,869 --> 00:02:34,879
+gets um, discovered gets a CVE. So we're
+ 
+
+113
+00:02:34,879 --> 00:02:38,229
+gets um, discovered gets a CVE. So we're
+already seeing kind of a a cataclysmic
+
+114
+00:02:38,229 --> 00:02:38,239
+already seeing kind of a a cataclysmic
+ 
+
+115
+00:02:38,239 --> 00:02:41,030
+already seeing kind of a a cataclysmic
+increase fairly significantly. And that
+
+116
+00:02:41,030 --> 00:02:41,040
+increase fairly significantly. And that
+ 
+
+117
+00:02:41,040 --> 00:02:42,869
+increase fairly significantly. And that
+brings us to the impetus for the project
+
+118
+00:02:42,869 --> 00:02:42,879
+brings us to the impetus for the project
+ 
+
+119
+00:02:42,879 --> 00:02:45,030
+brings us to the impetus for the project
+we're going to talk about today. Um big
+
+120
+00:02:45,030 --> 00:02:45,040
+we're going to talk about today. Um big
+ 
+
+121
+00:02:45,040 --> 00:02:47,350
+we're going to talk about today. Um big
+sleep and code mender. These are two
+
+122
+00:02:47,350 --> 00:02:47,360
+sleep and code mender. These are two
+ 
+
+123
+00:02:47,360 --> 00:02:49,910
+sleep and code mender. These are two
+projects uh research projects out of uh
+
+124
+00:02:49,910 --> 00:02:49,920
+projects uh research projects out of uh
+ 
+
+125
+00:02:49,920 --> 00:02:52,630
+projects uh research projects out of uh
+Google and Google deep mind with one
+
+126
+00:02:52,630 --> 00:02:52,640
+Google and Google deep mind with one
+ 
+
+127
+00:02:52,640 --> 00:02:57,670
+Google and Google deep mind with one
+goal and one real deep meaning that I
+
+128
+00:02:57,670 --> 00:02:57,680
+goal and one real deep meaning that I
+ 
+
+129
+00:02:57,680 --> 00:02:59,990
+goal and one real deep meaning that I
+want to leave with uh all of you today.
+
+130
+00:02:59,990 --> 00:03:00,000
+want to leave with uh all of you today.
+ 
+
+131
+00:03:00,000 --> 00:03:02,550
+want to leave with uh all of you today.
+Next slide is that we simply must
+
+132
+00:03:02,550 --> 00:03:02,560
+Next slide is that we simply must
+ 
+
+133
+00:03:02,560 --> 00:03:04,869
+Next slide is that we simply must
+eliminate every software vulnerability
+
+134
+00:03:04,869 --> 00:03:04,879
+eliminate every software vulnerability
+ 
+
+135
+00:03:04,879 --> 00:03:07,110
+eliminate every software vulnerability
+on Earth.
+
+136
+00:03:07,110 --> 00:03:07,120
+on Earth.
+ 
+
+137
+00:03:07,120 --> 00:03:09,430
+on Earth.
+And that is the legacy that people in
+
+138
+00:03:09,430 --> 00:03:09,440
+And that is the legacy that people in
+ 
+
+139
+00:03:09,440 --> 00:03:11,750
+And that is the legacy that people in
+this room need to leave behind to the
+
+140
+00:03:11,750 --> 00:03:11,760
+this room need to leave behind to the
+ 
+
+141
+00:03:11,760 --> 00:03:14,550
+this room need to leave behind to the
+next generation of technologists.
+
+142
+00:03:14,550 --> 00:03:14,560
+next generation of technologists.
+ 
+
+143
+00:03:14,560 --> 00:03:16,550
+next generation of technologists.
+And it is not a simple problem. It is
+
+144
+00:03:16,550 --> 00:03:16,560
+And it is not a simple problem. It is
+ 
+
+145
+00:03:16,560 --> 00:03:19,190
+And it is not a simple problem. It is
+not an easy one, but it is the one that
+
+146
+00:03:19,190 --> 00:03:19,200
+not an easy one, but it is the one that
+ 
+
+147
+00:03:19,200 --> 00:03:21,350
+not an easy one, but it is the one that
+we have to solve because as humanity
+
+148
+00:03:21,350 --> 00:03:21,360
+we have to solve because as humanity
+ 
+
+149
+00:03:21,360 --> 00:03:23,509
+we have to solve because as humanity
+goes beyond Earth, we just simply need
+
+150
+00:03:23,509 --> 00:03:23,519
+goes beyond Earth, we just simply need
+ 
+
+151
+00:03:23,519 --> 00:03:24,949
+goes beyond Earth, we just simply need
+to not be dealing with cross-sight
+
+152
+00:03:24,949 --> 00:03:24,959
+to not be dealing with cross-sight
+ 
+
+153
+00:03:24,959 --> 00:03:28,630
+to not be dealing with cross-sight
+scripting bugs.
+
+154
+00:03:28,630 --> 00:03:28,640
+
+ 
+
+155
+00:03:28,640 --> 00:03:30,630
+
+And um we have a little ambition at
+
+156
+00:03:30,630 --> 00:03:30,640
+And um we have a little ambition at
+ 
+
+157
+00:03:30,640 --> 00:03:33,030
+And um we have a little ambition at
+Google to get rid of memory safety bugs
+
+158
+00:03:33,030 --> 00:03:33,040
+Google to get rid of memory safety bugs
+ 
+
+159
+00:03:33,040 --> 00:03:35,509
+Google to get rid of memory safety bugs
+as well. And that is what we're going to
+
+160
+00:03:35,509 --> 00:03:35,519
+as well. And that is what we're going to
+ 
+
+161
+00:03:35,519 --> 00:03:38,710
+as well. And that is what we're going to
+talk a little bit about today. Um on top
+
+162
+00:03:38,710 --> 00:03:38,720
+talk a little bit about today. Um on top
+ 
+
+163
+00:03:38,720 --> 00:03:40,470
+talk a little bit about today. Um on top
+of finding every bug, we have to be able
+
+164
+00:03:40,470 --> 00:03:40,480
+of finding every bug, we have to be able
+ 
+
+165
+00:03:40,480 --> 00:03:42,550
+of finding every bug, we have to be able
+to give developers the tools to not make
+
+166
+00:03:42,550 --> 00:03:42,560
+to give developers the tools to not make
+ 
+
+167
+00:03:42,560 --> 00:03:44,550
+to give developers the tools to not make
+them anymore.
+
+168
+00:03:44,550 --> 00:03:44,560
+them anymore.
+ 
+
+169
+00:03:44,560 --> 00:03:47,270
+them anymore.
+And uh the technology we're going to
+
+170
+00:03:47,270 --> 00:03:47,280
+And uh the technology we're going to
+ 
+
+171
+00:03:47,280 --> 00:03:50,229
+And uh the technology we're going to
+talk about here today um also lends
+
+172
+00:03:50,229 --> 00:03:50,239
+talk about here today um also lends
+ 
+
+173
+00:03:50,239 --> 00:03:54,550
+talk about here today um also lends
+itself to that. Uh next slide.
+
+174
+00:03:54,550 --> 00:03:54,560
+itself to that. Uh next slide.
+ 
+
+175
+00:03:54,560 --> 00:03:56,630
+itself to that. Uh next slide.
+So, I'm pretty sure everybody who's
+
+176
+00:03:56,630 --> 00:03:56,640
+So, I'm pretty sure everybody who's
+ 
+
+177
+00:03:56,640 --> 00:03:58,390
+So, I'm pretty sure everybody who's
+played with an LLM has pointed it at
+
+178
+00:03:58,390 --> 00:03:58,400
+played with an LLM has pointed it at
+ 
+
+179
+00:03:58,400 --> 00:03:59,910
+played with an LLM has pointed it at
+some code and said, "Please find me a
+
+180
+00:03:59,910 --> 00:03:59,920
+some code and said, "Please find me a
+ 
+
+181
+00:03:59,920 --> 00:04:02,390
+some code and said, "Please find me a
+bug." And it's actually pretty good. Um,
+
+182
+00:04:02,390 --> 00:04:02,400
+bug." And it's actually pretty good. Um,
+ 
+
+183
+00:04:02,400 --> 00:04:04,229
+bug." And it's actually pretty good. Um,
+even the older models are pretty good.
+
+184
+00:04:04,229 --> 00:04:04,239
+even the older models are pretty good.
+ 
+
+185
+00:04:04,239 --> 00:04:05,990
+even the older models are pretty good.
+And as we have the new generations
+
+186
+00:04:05,990 --> 00:04:06,000
+And as we have the new generations
+ 
+
+187
+00:04:06,000 --> 00:04:08,149
+And as we have the new generations
+coming out successfully,
+
+188
+00:04:08,149 --> 00:04:08,159
+coming out successfully,
+ 
+
+189
+00:04:08,159 --> 00:04:10,949
+coming out successfully,
+um, kind of every kind of 3 to four
+
+190
+00:04:10,949 --> 00:04:10,959
+um, kind of every kind of 3 to four
+ 
+
+191
+00:04:10,959 --> 00:04:12,710
+um, kind of every kind of 3 to four
+months, we're seeing a massive
+
+192
+00:04:12,710 --> 00:04:12,720
+months, we're seeing a massive
+ 
+
+193
+00:04:12,720 --> 00:04:14,630
+months, we're seeing a massive
+improvement in what the large language
+
+194
+00:04:14,630 --> 00:04:14,640
+improvement in what the large language
+ 
+
+195
+00:04:14,640 --> 00:04:16,150
+improvement in what the large language
+models can do about reasoning about
+
+196
+00:04:16,150 --> 00:04:16,160
+models can do about reasoning about
+ 
+
+197
+00:04:16,160 --> 00:04:17,749
+models can do about reasoning about
+code.
+
+198
+00:04:17,749 --> 00:04:17,759
+code.
+ 
+
+199
+00:04:17,759 --> 00:04:21,030
+code.
+Um, we wanted to go one step further and
+
+200
+00:04:21,030 --> 00:04:21,040
+Um, we wanted to go one step further and
+ 
+
+201
+00:04:21,040 --> 00:04:22,629
+Um, we wanted to go one step further and
+not just look at the shallow bugs that
+
+202
+00:04:22,629 --> 00:04:22,639
+not just look at the shallow bugs that
+ 
+
+203
+00:04:22,639 --> 00:04:24,390
+not just look at the shallow bugs that
+are easy to find.
+
+204
+00:04:24,390 --> 00:04:24,400
+are easy to find.
+ 
+
+205
+00:04:24,400 --> 00:04:26,710
+are easy to find.
+but to really look at the kinds of bugs
+
+206
+00:04:26,710 --> 00:04:26,720
+but to really look at the kinds of bugs
+ 
+
+207
+00:04:26,720 --> 00:04:29,909
+but to really look at the kinds of bugs
+that top elite researchers uh can find.
+
+208
+00:04:29,909 --> 00:04:29,919
+that top elite researchers uh can find.
+ 
+
+209
+00:04:29,919 --> 00:04:33,430
+that top elite researchers uh can find.
+There was a 2017 study, a RAND study
+
+210
+00:04:33,430 --> 00:04:33,440
+There was a 2017 study, a RAND study
+ 
+
+211
+00:04:33,440 --> 00:04:36,870
+There was a 2017 study, a RAND study
+that showed um just how long an expert
+
+212
+00:04:36,870 --> 00:04:36,880
+that showed um just how long an expert
+ 
+
+213
+00:04:36,880 --> 00:04:38,469
+that showed um just how long an expert
+vulnerability
+
+214
+00:04:38,469 --> 00:04:38,479
+vulnerability
+ 
+
+215
+00:04:38,479 --> 00:04:40,790
+vulnerability
+researcher takes to find kind of a
+
+216
+00:04:40,790 --> 00:04:40,800
+researcher takes to find kind of a
+ 
+
+217
+00:04:40,800 --> 00:04:42,629
+researcher takes to find kind of a
+deeply embedded bug. I think it's
+
+218
+00:04:42,629 --> 00:04:42,639
+deeply embedded bug. I think it's
+ 
+
+219
+00:04:42,639 --> 00:04:45,110
+deeply embedded bug. I think it's
+somewhere on the order of a month for
+
+220
+00:04:45,110 --> 00:04:45,120
+somewhere on the order of a month for
+ 
+
+221
+00:04:45,120 --> 00:04:48,950
+somewhere on the order of a month for
+finding the bug and about 22 days um for
+
+222
+00:04:48,950 --> 00:04:48,960
+finding the bug and about 22 days um for
+ 
+
+223
+00:04:48,960 --> 00:04:51,590
+finding the bug and about 22 days um for
+exploitation successfully.
+
+224
+00:04:51,590 --> 00:04:51,600
+exploitation successfully.
+ 
+
+225
+00:04:51,600 --> 00:04:53,830
+exploitation successfully.
+But what if you could build an agentic
+
+226
+00:04:53,830 --> 00:04:53,840
+But what if you could build an agentic
+ 
+
+227
+00:04:53,840 --> 00:04:56,550
+But what if you could build an agentic
+reasoning system that could do that in a
+
+228
+00:04:56,550 --> 00:04:56,560
+reasoning system that could do that in a
+ 
+
+229
+00:04:56,560 --> 00:04:58,469
+reasoning system that could do that in a
+matter of hours or minutes and you could
+
+230
+00:04:58,469 --> 00:04:58,479
+matter of hours or minutes and you could
+ 
+
+231
+00:04:58,479 --> 00:05:00,710
+matter of hours or minutes and you could
+find the deep bugs much faster, more
+
+232
+00:05:00,710 --> 00:05:00,720
+find the deep bugs much faster, more
+ 
+
+233
+00:05:00,720 --> 00:05:03,749
+find the deep bugs much faster, more
+reliably, and potentially early in the
+
+234
+00:05:03,749 --> 00:05:03,759
+reliably, and potentially early in the
+ 
+
+235
+00:05:03,759 --> 00:05:06,070
+reliably, and potentially early in the
+software development life cycle. So the
+
+236
+00:05:06,070 --> 00:05:06,080
+software development life cycle. So the
+ 
+
+237
+00:05:06,080 --> 00:05:07,909
+software development life cycle. So the
+approach that the big sleep team has
+
+238
+00:05:07,909 --> 00:05:07,919
+approach that the big sleep team has
+ 
+
+239
+00:05:07,919 --> 00:05:10,469
+approach that the big sleep team has
+taken to finding bugs is not just to use
+
+240
+00:05:10,469 --> 00:05:10,479
+taken to finding bugs is not just to use
+ 
+
+241
+00:05:10,479 --> 00:05:13,350
+taken to finding bugs is not just to use
+the LLM for the basic things you can
+
+242
+00:05:13,350 --> 00:05:13,360
+the LLM for the basic things you can
+ 
+
+243
+00:05:13,360 --> 00:05:15,670
+the LLM for the basic things you can
+prompt it to do, but actually to
+
+244
+00:05:15,670 --> 00:05:15,680
+prompt it to do, but actually to
+ 
+
+245
+00:05:15,680 --> 00:05:18,629
+prompt it to do, but actually to
+recreate the human expertise of our
+
+246
+00:05:18,629 --> 00:05:18,639
+recreate the human expertise of our
+ 
+
+247
+00:05:18,639 --> 00:05:20,950
+recreate the human expertise of our
+project zero team. Project Zero is a
+
+248
+00:05:20,950 --> 00:05:20,960
+project zero team. Project Zero is a
+ 
+
+249
+00:05:20,960 --> 00:05:21,990
+project zero team. Project Zero is a
+team that's been around for over a
+
+250
+00:05:21,990 --> 00:05:22,000
+team that's been around for over a
+ 
+
+251
+00:05:22,000 --> 00:05:24,390
+team that's been around for over a
+decade. Their goal is to get rid of zero
+
+252
+00:05:24,390 --> 00:05:24,400
+decade. Their goal is to get rid of zero
+ 
+
+253
+00:05:24,400 --> 00:05:27,270
+decade. Their goal is to get rid of zero
+days. They haven't been successful yet,
+
+254
+00:05:27,270 --> 00:05:27,280
+days. They haven't been successful yet,
+ 
+
+255
+00:05:27,280 --> 00:05:28,790
+days. They haven't been successful yet,
+but they think they're going to get
+
+256
+00:05:28,790 --> 00:05:28,800
+but they think they're going to get
+ 
+
+257
+00:05:28,800 --> 00:05:31,270
+but they think they're going to get
+there with this technology. So, they
+
+258
+00:05:31,270 --> 00:05:31,280
+there with this technology. So, they
+ 
+
+259
+00:05:31,280 --> 00:05:33,830
+there with this technology. So, they
+want to recreate that uh kind of deep
+
+260
+00:05:33,830 --> 00:05:33,840
+want to recreate that uh kind of deep
+ 
+
+261
+00:05:33,840 --> 00:05:35,909
+want to recreate that uh kind of deep
+researcher experience with three things
+
+262
+00:05:35,909 --> 00:05:35,919
+researcher experience with three things
+ 
+
+263
+00:05:35,919 --> 00:05:38,310
+researcher experience with three things
+also in mind. Number one, we want
+
+264
+00:05:38,310 --> 00:05:38,320
+also in mind. Number one, we want
+ 
+
+265
+00:05:38,320 --> 00:05:40,390
+also in mind. Number one, we want
+uncompromising quality. We do not want
+
+266
+00:05:40,390 --> 00:05:40,400
+uncompromising quality. We do not want
+ 
+
+267
+00:05:40,400 --> 00:05:42,550
+uncompromising quality. We do not want
+to produce AI slop with the bugs we
+
+268
+00:05:42,550 --> 00:05:42,560
+to produce AI slop with the bugs we
+ 
+
+269
+00:05:42,560 --> 00:05:45,430
+to produce AI slop with the bugs we
+find. We want everything that lands in a
+
+270
+00:05:45,430 --> 00:05:45,440
+find. We want everything that lands in a
+ 
+
+271
+00:05:45,440 --> 00:05:47,270
+find. We want everything that lands in a
+developer's hands, especially an
+
+272
+00:05:47,270 --> 00:05:47,280
+developer's hands, especially an
+ 
+
+273
+00:05:47,280 --> 00:05:50,150
+developer's hands, especially an
+inexperienced developer, to just work
+
+274
+00:05:50,150 --> 00:05:50,160
+inexperienced developer, to just work
+ 
+
+275
+00:05:50,160 --> 00:05:53,270
+inexperienced developer, to just work
+out of the box. Number two, we need this
+
+276
+00:05:53,270 --> 00:05:53,280
+out of the box. Number two, we need this
+ 
+
+277
+00:05:53,280 --> 00:05:55,430
+out of the box. Number two, we need this
+to be cost effective and efficient at
+
+278
+00:05:55,430 --> 00:05:55,440
+to be cost effective and efficient at
+ 
+
+279
+00:05:55,440 --> 00:05:57,430
+to be cost effective and efficient at
+scale. We have trillions of lines of
+
+280
+00:05:57,430 --> 00:05:57,440
+scale. We have trillions of lines of
+ 
+
+281
+00:05:57,440 --> 00:05:59,430
+scale. We have trillions of lines of
+code on the planet, billions of lines of
+
+282
+00:05:59,430 --> 00:05:59,440
+code on the planet, billions of lines of
+ 
+
+283
+00:05:59,440 --> 00:06:01,749
+code on the planet, billions of lines of
+code at Google. Um, and we want to run
+
+284
+00:06:01,749 --> 00:06:01,759
+code at Google. Um, and we want to run
+ 
+
+285
+00:06:01,759 --> 00:06:03,270
+code at Google. Um, and we want to run
+this all the time. So, it's got to be
+
+286
+00:06:03,270 --> 00:06:03,280
+this all the time. So, it's got to be
+ 
+
+287
+00:06:03,280 --> 00:06:06,710
+this all the time. So, it's got to be
+fast and efficient. And third, as real
+
+288
+00:06:06,710 --> 00:06:06,720
+fast and efficient. And third, as real
+ 
+
+289
+00:06:06,720 --> 00:06:08,710
+fast and efficient. And third, as real
+time as possible. Right? Right now,
+
+290
+00:06:08,710 --> 00:06:08,720
+time as possible. Right? Right now,
+ 
+
+291
+00:06:08,720 --> 00:06:10,710
+time as possible. Right? Right now,
+we're all looking at brownfield code. So
+
+292
+00:06:10,710 --> 00:06:10,720
+we're all looking at brownfield code. So
+ 
+
+293
+00:06:10,720 --> 00:06:11,749
+we're all looking at brownfield code. So
+stuff that's already launched in
+
+294
+00:06:11,749 --> 00:06:11,759
+stuff that's already launched in
+ 
+
+295
+00:06:11,759 --> 00:06:13,670
+stuff that's already launched in
+production, open source code, stuff
+
+296
+00:06:13,670 --> 00:06:13,680
+production, open source code, stuff
+ 
+
+297
+00:06:13,680 --> 00:06:15,029
+production, open source code, stuff
+that's already out there, we want to be
+
+298
+00:06:15,029 --> 00:06:15,039
+that's already out there, we want to be
+ 
+
+299
+00:06:15,039 --> 00:06:17,590
+that's already out there, we want to be
+able to put it in the developers user
+
+300
+00:06:17,590 --> 00:06:17,600
+able to put it in the developers user
+ 
+
+301
+00:06:17,600 --> 00:06:19,189
+able to put it in the developers user
+journey so that they're not launching
+
+302
+00:06:19,189 --> 00:06:19,199
+journey so that they're not launching
+ 
+
+303
+00:06:19,199 --> 00:06:21,749
+journey so that they're not launching
+new bugs in the future as well. And we
+
+304
+00:06:21,749 --> 00:06:21,759
+new bugs in the future as well. And we
+ 
+
+305
+00:06:21,759 --> 00:06:24,230
+new bugs in the future as well. And we
+think if we do this, if we get it right,
+
+306
+00:06:24,230 --> 00:06:24,240
+think if we do this, if we get it right,
+ 
+
+307
+00:06:24,240 --> 00:06:27,430
+think if we do this, if we get it right,
+um, we can probably be creating and
+
+308
+00:06:27,430 --> 00:06:27,440
+um, we can probably be creating and
+ 
+
+309
+00:06:27,440 --> 00:06:28,950
+um, we can probably be creating and
+maintaining code that's relatively
+
+310
+00:06:28,950 --> 00:06:28,960
+maintaining code that's relatively
+ 
+
+311
+00:06:28,960 --> 00:06:31,270
+maintaining code that's relatively
+bug-free in the next couple of years,
+
+312
+00:06:31,270 --> 00:06:31,280
+bug-free in the next couple of years,
+ 
+
+313
+00:06:31,280 --> 00:06:33,270
+bug-free in the next couple of years,
+right? This is kind of within not only
+
+314
+00:06:33,270 --> 00:06:33,280
+right? This is kind of within not only
+ 
+
+315
+00:06:33,280 --> 00:06:35,110
+right? This is kind of within not only
+our ambition, but our capabilities with
+
+316
+00:06:35,110 --> 00:06:35,120
+our ambition, but our capabilities with
+ 
+
+317
+00:06:35,120 --> 00:06:39,110
+our ambition, but our capabilities with
+the tech. Uh, next slide. So let's talk
+
+318
+00:06:39,110 --> 00:06:39,120
+the tech. Uh, next slide. So let's talk
+ 
+
+319
+00:06:39,120 --> 00:06:41,909
+the tech. Uh, next slide. So let's talk
+um about big sleep. And I'm not going to
+
+320
+00:06:41,909 --> 00:06:41,919
+um about big sleep. And I'm not going to
+ 
+
+321
+00:06:41,919 --> 00:06:44,710
+um about big sleep. And I'm not going to
+do like you know code reading here or
+
+322
+00:06:44,710 --> 00:06:44,720
+do like you know code reading here or
+ 
+
+323
+00:06:44,720 --> 00:06:45,510
+do like you know code reading here or
+anything. We're going to talk
+
+324
+00:06:45,510 --> 00:06:45,520
+anything. We're going to talk
+ 
+
+325
+00:06:45,520 --> 00:06:48,870
+anything. We're going to talk
+architecture a little bit. Um one of the
+
+326
+00:06:48,870 --> 00:06:48,880
+architecture a little bit. Um one of the
+ 
+
+327
+00:06:48,880 --> 00:06:50,710
+architecture a little bit. Um one of the
+first things we realized as we studied
+
+328
+00:06:50,710 --> 00:06:50,720
+first things we realized as we studied
+ 
+
+329
+00:06:50,720 --> 00:06:52,870
+first things we realized as we studied
+how the researchers work is that they
+
+330
+00:06:52,870 --> 00:06:52,880
+how the researchers work is that they
+ 
+
+331
+00:06:52,880 --> 00:06:56,390
+how the researchers work is that they
+become deeply expert in the codebase
+
+332
+00:06:56,390 --> 00:06:56,400
+become deeply expert in the codebase
+ 
+
+333
+00:06:56,400 --> 00:06:57,909
+become deeply expert in the codebase
+they're working in. And if you've ever
+
+334
+00:06:57,909 --> 00:06:57,919
+they're working in. And if you've ever
+ 
+
+335
+00:06:57,919 --> 00:06:59,589
+they're working in. And if you've ever
+met a really good bone researcher they
+
+336
+00:06:59,589 --> 00:06:59,599
+met a really good bone researcher they
+ 
+
+337
+00:06:59,599 --> 00:07:01,749
+met a really good bone researcher they
+kind of tend to get you know deep and
+
+338
+00:07:01,749 --> 00:07:01,759
+kind of tend to get you know deep and
+ 
+
+339
+00:07:01,759 --> 00:07:05,029
+kind of tend to get you know deep and
+niche in one area or two areas. And the
+
+340
+00:07:05,029 --> 00:07:05,039
+niche in one area or two areas. And the
+ 
+
+341
+00:07:05,039 --> 00:07:06,550
+niche in one area or two areas. And the
+way they do this is they understand the
+
+342
+00:07:06,550 --> 00:07:06,560
+way they do this is they understand the
+ 
+
+343
+00:07:06,560 --> 00:07:09,189
+way they do this is they understand the
+code. um they look at the kinds of bugs
+
+344
+00:07:09,189 --> 00:07:09,199
+code. um they look at the kinds of bugs
+ 
+
+345
+00:07:09,199 --> 00:07:10,950
+code. um they look at the kinds of bugs
+that they've had in the code before,
+
+346
+00:07:10,950 --> 00:07:10,960
+that they've had in the code before,
+ 
+
+347
+00:07:10,960 --> 00:07:13,189
+that they've had in the code before,
+past vulnerabilities, they do variant
+
+348
+00:07:13,189 --> 00:07:13,199
+past vulnerabilities, they do variant
+ 
+
+349
+00:07:13,199 --> 00:07:14,710
+past vulnerabilities, they do variant
+analysis
+
+350
+00:07:14,710 --> 00:07:14,720
+analysis
+ 
+
+351
+00:07:14,720 --> 00:07:16,710
+analysis
+um and they have a really good
+
+352
+00:07:16,710 --> 00:07:16,720
+um and they have a really good
+ 
+
+353
+00:07:16,720 --> 00:07:18,550
+um and they have a really good
+understanding of the code architecture.
+
+354
+00:07:18,550 --> 00:07:18,560
+understanding of the code architecture.
+ 
+
+355
+00:07:18,560 --> 00:07:20,790
+understanding of the code architecture.
+Okay, so we have to give that to this
+
+356
+00:07:20,790 --> 00:07:20,800
+Okay, so we have to give that to this
+ 
+
+357
+00:07:20,800 --> 00:07:23,270
+Okay, so we have to give that to this
+agentic reasoning system as well. So we
+
+358
+00:07:23,270 --> 00:07:23,280
+agentic reasoning system as well. So we
+ 
+
+359
+00:07:23,280 --> 00:07:26,469
+agentic reasoning system as well. So we
+harness that and that's phase one.
+
+360
+00:07:26,469 --> 00:07:26,479
+harness that and that's phase one.
+ 
+
+361
+00:07:26,479 --> 00:07:29,830
+harness that and that's phase one.
+We then enter into uh phase two which is
+
+362
+00:07:29,830 --> 00:07:29,840
+We then enter into uh phase two which is
+ 
+
+363
+00:07:29,840 --> 00:07:32,550
+We then enter into uh phase two which is
+this agentic framework that's working
+
+364
+00:07:32,550 --> 00:07:32,560
+this agentic framework that's working
+ 
+
+365
+00:07:32,560 --> 00:07:35,270
+this agentic framework that's working
+constantly in a loop feeding back to
+
+366
+00:07:35,270 --> 00:07:35,280
+constantly in a loop feeding back to
+ 
+
+367
+00:07:35,280 --> 00:07:38,550
+constantly in a loop feeding back to
+itself. It's building hypotheses perhaps
+
+368
+00:07:38,550 --> 00:07:38,560
+itself. It's building hypotheses perhaps
+ 
+
+369
+00:07:38,560 --> 00:07:41,270
+itself. It's building hypotheses perhaps
+based on past bugs. For example, here's
+
+370
+00:07:41,270 --> 00:07:41,280
+based on past bugs. For example, here's
+ 
+
+371
+00:07:41,280 --> 00:07:42,870
+based on past bugs. For example, here's
+a part of the code that I think might be
+
+372
+00:07:42,870 --> 00:07:42,880
+a part of the code that I think might be
+ 
+
+373
+00:07:42,880 --> 00:07:45,430
+a part of the code that I think might be
+vulnerable. Let me test that hypothesis.
+
+374
+00:07:45,430 --> 00:07:45,440
+vulnerable. Let me test that hypothesis.
+ 
+
+375
+00:07:45,440 --> 00:07:48,309
+vulnerable. Let me test that hypothesis.
+To do that, it needs tools. Okay, it
+
+376
+00:07:48,309 --> 00:07:48,319
+To do that, it needs tools. Okay, it
+ 
+
+377
+00:07:48,319 --> 00:07:50,550
+To do that, it needs tools. Okay, it
+needs a debugger. It needs the code
+
+378
+00:07:50,550 --> 00:07:50,560
+needs a debugger. It needs the code
+ 
+
+379
+00:07:50,560 --> 00:07:52,469
+needs a debugger. It needs the code
+browser and it needs a Python
+
+380
+00:07:52,469 --> 00:07:52,479
+browser and it needs a Python
+ 
+
+381
+00:07:52,479 --> 00:07:54,150
+browser and it needs a Python
+interpreter so that it can write scripts
+
+382
+00:07:54,150 --> 00:07:54,160
+interpreter so that it can write scripts
+ 
+
+383
+00:07:54,160 --> 00:07:56,790
+interpreter so that it can write scripts
+for itself. So what it's doing is that
+
+384
+00:07:56,790 --> 00:07:56,800
+for itself. So what it's doing is that
+ 
+
+385
+00:07:56,800 --> 00:07:58,790
+for itself. So what it's doing is that
+it's not just prompting itself. It's
+
+386
+00:07:58,790 --> 00:07:58,800
+it's not just prompting itself. It's
+ 
+
+387
+00:07:58,800 --> 00:08:02,309
+it's not just prompting itself. It's
+building code. It's building test cases
+
+388
+00:08:02,309 --> 00:08:02,319
+building code. It's building test cases
+ 
+
+389
+00:08:02,319 --> 00:08:05,510
+building code. It's building test cases
+and it's able to test its own hypothesis
+
+390
+00:08:05,510 --> 00:08:05,520
+and it's able to test its own hypothesis
+ 
+
+391
+00:08:05,520 --> 00:08:07,670
+and it's able to test its own hypothesis
+and see if there's success and failure.
+
+392
+00:08:07,670 --> 00:08:07,680
+and see if there's success and failure.
+ 
+
+393
+00:08:07,680 --> 00:08:10,309
+and see if there's success and failure.
+And it's doing that constantly in a
+
+394
+00:08:10,309 --> 00:08:10,319
+And it's doing that constantly in a
+ 
+
+395
+00:08:10,319 --> 00:08:12,629
+And it's doing that constantly in a
+loop. Right? This is far beyond just
+
+396
+00:08:12,629 --> 00:08:12,639
+loop. Right? This is far beyond just
+ 
+
+397
+00:08:12,639 --> 00:08:14,230
+loop. Right? This is far beyond just
+prompting, you know, find the cross-
+
+398
+00:08:14,230 --> 00:08:14,240
+prompting, you know, find the cross-
+ 
+
+399
+00:08:14,240 --> 00:08:16,710
+prompting, you know, find the cross-
+sight scripting bug in this code. Okay.
+
+400
+00:08:16,710 --> 00:08:16,720
+sight scripting bug in this code. Okay.
+ 
+
+401
+00:08:16,720 --> 00:08:19,430
+sight scripting bug in this code. Okay.
+Um, and it's this hypothesis and uh
+
+402
+00:08:19,430 --> 00:08:19,440
+Um, and it's this hypothesis and uh
+ 
+
+403
+00:08:19,440 --> 00:08:21,909
+Um, and it's this hypothesis and uh
+revision that really gives the system
+
+404
+00:08:21,909 --> 00:08:21,919
+revision that really gives the system
+ 
+
+405
+00:08:21,919 --> 00:08:24,869
+revision that really gives the system
+that feel of like an expert researcher,
+
+406
+00:08:24,869 --> 00:08:24,879
+that feel of like an expert researcher,
+ 
+
+407
+00:08:24,879 --> 00:08:26,629
+that feel of like an expert researcher,
+right? And if you've if you've ever met
+
+408
+00:08:26,629 --> 00:08:26,639
+right? And if you've if you've ever met
+ 
+
+409
+00:08:26,639 --> 00:08:28,309
+right? And if you've if you've ever met
+them, they sometimes are just standing
+
+410
+00:08:28,309 --> 00:08:28,319
+them, they sometimes are just standing
+ 
+
+411
+00:08:28,319 --> 00:08:30,309
+them, they sometimes are just standing
+in the corner staring with their coffee
+
+412
+00:08:30,309 --> 00:08:30,319
+in the corner staring with their coffee
+ 
+
+413
+00:08:30,319 --> 00:08:32,070
+in the corner staring with their coffee
+going, you know, I can't get that bug. I
+
+414
+00:08:32,070 --> 00:08:32,080
+going, you know, I can't get that bug. I
+ 
+
+415
+00:08:32,080 --> 00:08:34,630
+going, you know, I can't get that bug. I
+can't get that bug. This is what the LLM
+
+416
+00:08:34,630 --> 00:08:34,640
+can't get that bug. This is what the LLM
+ 
+
+417
+00:08:34,640 --> 00:08:37,750
+can't get that bug. This is what the LLM
+um reasoning loop is doing. Once it has
+
+418
+00:08:37,750 --> 00:08:37,760
+um reasoning loop is doing. Once it has
+ 
+
+419
+00:08:37,760 --> 00:08:41,509
+um reasoning loop is doing. Once it has
+a successful crash that it thinks uh
+
+420
+00:08:41,509 --> 00:08:41,519
+a successful crash that it thinks uh
+ 
+
+421
+00:08:41,519 --> 00:08:44,070
+a successful crash that it thinks uh
+might be a valid vulnerability, we then
+
+422
+00:08:44,070 --> 00:08:44,080
+might be a valid vulnerability, we then
+ 
+
+423
+00:08:44,080 --> 00:08:47,670
+might be a valid vulnerability, we then
+move into the verification phase. Um and
+
+424
+00:08:47,670 --> 00:08:47,680
+move into the verification phase. Um and
+ 
+
+425
+00:08:47,680 --> 00:08:49,590
+move into the verification phase. Um and
+it's looking at feedback data that's
+
+426
+00:08:49,590 --> 00:08:49,600
+it's looking at feedback data that's
+ 
+
+427
+00:08:49,600 --> 00:08:52,790
+it's looking at feedback data that's
+coming out of the debugger. Um and it is
+
+428
+00:08:52,790 --> 00:08:52,800
+coming out of the debugger. Um and it is
+ 
+
+429
+00:08:52,800 --> 00:08:55,670
+coming out of the debugger. Um and it is
+actually then building an exploit.
+
+430
+00:08:55,670 --> 00:08:55,680
+actually then building an exploit.
+ 
+
+431
+00:08:55,680 --> 00:08:58,310
+actually then building an exploit.
+Okay. And this proof of vulnerability is
+
+432
+00:08:58,310 --> 00:08:58,320
+Okay. And this proof of vulnerability is
+ 
+
+433
+00:08:58,320 --> 00:09:00,790
+Okay. And this proof of vulnerability is
+so key to getting the false positive
+
+434
+00:09:00,790 --> 00:09:00,800
+so key to getting the false positive
+ 
+
+435
+00:09:00,800 --> 00:09:02,949
+so key to getting the false positive
+rate to zero. And we've managed to do
+
+436
+00:09:02,949 --> 00:09:02,959
+rate to zero. And we've managed to do
+ 
+
+437
+00:09:02,959 --> 00:09:05,110
+rate to zero. And we've managed to do
+that. So every bug that comes out of
+
+438
+00:09:05,110 --> 00:09:05,120
+that. So every bug that comes out of
+ 
+
+439
+00:09:05,120 --> 00:09:07,030
+that. So every bug that comes out of
+there is not only a candidate for an
+
+440
+00:09:07,030 --> 00:09:07,040
+there is not only a candidate for an
+ 
+
+441
+00:09:07,040 --> 00:09:10,150
+there is not only a candidate for an
+exploit um for vulnerability, but it's
+
+442
+00:09:10,150 --> 00:09:10,160
+exploit um for vulnerability, but it's
+ 
+
+443
+00:09:10,160 --> 00:09:12,949
+exploit um for vulnerability, but it's
+actually provably a vulnerability. We
+
+444
+00:09:12,949 --> 00:09:12,959
+actually provably a vulnerability. We
+ 
+
+445
+00:09:12,959 --> 00:09:15,509
+actually provably a vulnerability. We
+then write a report and again it's the
+
+446
+00:09:15,509 --> 00:09:15,519
+then write a report and again it's the
+ 
+
+447
+00:09:15,519 --> 00:09:17,350
+then write a report and again it's the
+it's Gemini writing the report. It's not
+
+448
+00:09:17,350 --> 00:09:17,360
+it's Gemini writing the report. It's not
+ 
+
+449
+00:09:17,360 --> 00:09:19,990
+it's Gemini writing the report. It's not
+a human. Um it's got the proof of
+
+450
+00:09:19,990 --> 00:09:20,000
+a human. Um it's got the proof of
+ 
+
+451
+00:09:20,000 --> 00:09:21,750
+a human. Um it's got the proof of
+vulnerability code so the developer can
+
+452
+00:09:21,750 --> 00:09:21,760
+vulnerability code so the developer can
+ 
+
+453
+00:09:21,760 --> 00:09:24,389
+vulnerability code so the developer can
+test it. It has a high quality report
+
+454
+00:09:24,389 --> 00:09:24,399
+test it. It has a high quality report
+ 
+
+455
+00:09:24,399 --> 00:09:27,030
+test it. It has a high quality report
+that does a step by step through every
+
+456
+00:09:27,030 --> 00:09:27,040
+that does a step by step through every
+ 
+
+457
+00:09:27,040 --> 00:09:29,190
+that does a step by step through every
+function, every part of the bug. It
+
+458
+00:09:29,190 --> 00:09:29,200
+function, every part of the bug. It
+ 
+
+459
+00:09:29,200 --> 00:09:31,269
+function, every part of the bug. It
+explains the bug in detail so that if
+
+460
+00:09:31,269 --> 00:09:31,279
+explains the bug in detail so that if
+ 
+
+461
+00:09:31,279 --> 00:09:32,949
+explains the bug in detail so that if
+you have a non-expert developer, they're
+
+462
+00:09:32,949 --> 00:09:32,959
+you have a non-expert developer, they're
+ 
+
+463
+00:09:32,959 --> 00:09:35,430
+you have a non-expert developer, they're
+going to understand what's going on. And
+
+464
+00:09:35,430 --> 00:09:35,440
+going to understand what's going on. And
+ 
+
+465
+00:09:35,440 --> 00:09:37,269
+going to understand what's going on. And
+we've managed to do this to the extent
+
+466
+00:09:37,269 --> 00:09:37,279
+we've managed to do this to the extent
+ 
+
+467
+00:09:37,279 --> 00:09:39,430
+we've managed to do this to the extent
+where endto-end fully automated without
+
+468
+00:09:39,430 --> 00:09:39,440
+where endto-end fully automated without
+ 
+
+469
+00:09:39,440 --> 00:09:41,110
+where endto-end fully automated without
+a human involvement, we're getting zero
+
+470
+00:09:41,110 --> 00:09:41,120
+a human involvement, we're getting zero
+ 
+
+471
+00:09:41,120 --> 00:09:43,110
+a human involvement, we're getting zero
+false positives. And these are deep
+
+472
+00:09:43,110 --> 00:09:43,120
+false positives. And these are deep
+ 
+
+473
+00:09:43,120 --> 00:09:45,509
+false positives. And these are deep
+memory safety bugs, right? These are not
+
+474
+00:09:45,509 --> 00:09:45,519
+memory safety bugs, right? These are not
+ 
+
+475
+00:09:45,519 --> 00:09:47,030
+memory safety bugs, right? These are not
+cross-sight scripting bugs. These are
+
+476
+00:09:47,030 --> 00:09:47,040
+cross-sight scripting bugs. These are
+ 
+
+477
+00:09:47,040 --> 00:09:49,350
+cross-sight scripting bugs. These are
+not uh kind of shallow integer
+
+478
+00:09:49,350 --> 00:09:49,360
+not uh kind of shallow integer
+ 
+
+479
+00:09:49,360 --> 00:09:51,750
+not uh kind of shallow integer
+overflows. They're kind of deep uh in
+
+480
+00:09:51,750 --> 00:09:51,760
+overflows. They're kind of deep uh in
+ 
+
+481
+00:09:51,760 --> 00:09:54,389
+overflows. They're kind of deep uh in
+the codebase. Um and we've put them all
+
+482
+00:09:54,389 --> 00:09:54,399
+the codebase. Um and we've put them all
+ 
+
+483
+00:09:54,399 --> 00:09:56,949
+the codebase. Um and we've put them all
+online. That's the URL down there. Um
+
+484
+00:09:56,949 --> 00:09:56,959
+online. That's the URL down there. Um
+ 
+
+485
+00:09:56,959 --> 00:09:58,710
+online. That's the URL down there. Um
+our issue tracker. So you can go in and
+
+486
+00:09:58,710 --> 00:09:58,720
+our issue tracker. So you can go in and
+ 
+
+487
+00:09:58,720 --> 00:10:01,269
+our issue tracker. So you can go in and
+see them um and see the quality of the
+
+488
+00:10:01,269 --> 00:10:01,279
+see them um and see the quality of the
+ 
+
+489
+00:10:01,279 --> 00:10:04,630
+see them um and see the quality of the
+report and um kind of I think all but
+
+490
+00:10:04,630 --> 00:10:04,640
+report and um kind of I think all but
+ 
+
+491
+00:10:04,640 --> 00:10:07,190
+report and um kind of I think all but
+five are fixed at this point. So as I
+
+492
+00:10:07,190 --> 00:10:07,200
+five are fixed at this point. So as I
+ 
+
+493
+00:10:07,200 --> 00:10:09,269
+five are fixed at this point. So as I
+checked this morning so that's big
+
+494
+00:10:09,269 --> 00:10:09,279
+checked this morning so that's big
+ 
+
+495
+00:10:09,279 --> 00:10:11,269
+checked this morning so that's big
+sleep. This is just the vulnerability
+
+496
+00:10:11,269 --> 00:10:11,279
+sleep. This is just the vulnerability
+ 
+
+497
+00:10:11,279 --> 00:10:13,750
+sleep. This is just the vulnerability
+discovery. We've done one half of the
+
+498
+00:10:13,750 --> 00:10:13,760
+discovery. We've done one half of the
+ 
+
+499
+00:10:13,760 --> 00:10:16,550
+discovery. We've done one half of the
+job for the developer. Now we've got to
+
+500
+00:10:16,550 --> 00:10:16,560
+job for the developer. Now we've got to
+ 
+
+501
+00:10:16,560 --> 00:10:18,310
+job for the developer. Now we've got to
+do the part that really sucks as a
+
+502
+00:10:18,310 --> 00:10:18,320
+do the part that really sucks as a
+ 
+
+503
+00:10:18,320 --> 00:10:20,310
+do the part that really sucks as a
+developer which is fixing the code. And
+
+504
+00:10:20,310 --> 00:10:20,320
+developer which is fixing the code. And
+ 
+
+505
+00:10:20,320 --> 00:10:21,829
+developer which is fixing the code. And
+for that I'm going to pass it to four.
+
+506
+00:10:21,829 --> 00:10:21,839
+for that I'm going to pass it to four.
+ 
+
+507
+00:10:21,839 --> 00:10:24,310
+for that I'm going to pass it to four.
+>> All right. Great. Thanks Heather. All
+
+508
+00:10:24,310 --> 00:10:24,320
+>> All right. Great. Thanks Heather. All
+ 
+
+509
+00:10:24,320 --> 00:10:26,150
+>> All right. Great. Thanks Heather. All
+right. So let's zoom out for a minute. I
+
+510
+00:10:26,150 --> 00:10:26,160
+right. So let's zoom out for a minute. I
+ 
+
+511
+00:10:26,160 --> 00:10:27,269
+right. So let's zoom out for a minute. I
+want to speed up a little because I want
+
+512
+00:10:27,269 --> 00:10:27,279
+want to speed up a little because I want
+ 
+
+513
+00:10:27,279 --> 00:10:28,230
+want to speed up a little because I want
+to make sure that we have time for
+
+514
+00:10:28,230 --> 00:10:28,240
+to make sure that we have time for
+ 
+
+515
+00:10:28,240 --> 00:10:29,670
+to make sure that we have time for
+questions, but I have a lot to cover.
+
+516
+00:10:29,670 --> 00:10:29,680
+questions, but I have a lot to cover.
+ 
+
+517
+00:10:29,680 --> 00:10:31,190
+questions, but I have a lot to cover.
+So, we said we're going to try to fix
+
+518
+00:10:31,190 --> 00:10:31,200
+So, we said we're going to try to fix
+ 
+
+519
+00:10:31,200 --> 00:10:32,630
+So, we said we're going to try to fix
+every security vulnerability on Earth,
+
+520
+00:10:32,630 --> 00:10:32,640
+every security vulnerability on Earth,
+ 
+
+521
+00:10:32,640 --> 00:10:34,230
+every security vulnerability on Earth,
+and we're not kidding. So, what does
+
+522
+00:10:34,230 --> 00:10:34,240
+and we're not kidding. So, what does
+ 
+
+523
+00:10:34,240 --> 00:10:35,750
+and we're not kidding. So, what does
+that mean? There's a whole bunch of
+
+524
+00:10:35,750 --> 00:10:35,760
+that mean? There's a whole bunch of
+ 
+
+525
+00:10:35,760 --> 00:10:37,430
+that mean? There's a whole bunch of
+other pieces besides the big sleeve
+
+526
+00:10:37,430 --> 00:10:37,440
+other pieces besides the big sleeve
+ 
+
+527
+00:10:37,440 --> 00:10:38,710
+other pieces besides the big sleeve
+component, right? So, finding
+
+528
+00:10:38,710 --> 00:10:38,720
+component, right? So, finding
+ 
+
+529
+00:10:38,720 --> 00:10:41,509
+component, right? So, finding
+vulnerabilities is one part, but also we
+
+530
+00:10:41,509 --> 00:10:41,519
+vulnerabilities is one part, but also we
+ 
+
+531
+00:10:41,519 --> 00:10:43,030
+vulnerabilities is one part, but also we
+have to help the developers patch those
+
+532
+00:10:43,030 --> 00:10:43,040
+have to help the developers patch those
+ 
+
+533
+00:10:43,040 --> 00:10:44,230
+have to help the developers patch those
+vulnerabilities. I'll talk more about
+
+534
+00:10:44,230 --> 00:10:44,240
+vulnerabilities. I'll talk more about
+ 
+
+535
+00:10:44,240 --> 00:10:46,630
+vulnerabilities. I'll talk more about
+that in just a second. Uh, but one other
+
+536
+00:10:46,630 --> 00:10:46,640
+that in just a second. Uh, but one other
+ 
+
+537
+00:10:46,640 --> 00:10:48,069
+that in just a second. Uh, but one other
+thing that I want to make sure we at
+
+538
+00:10:48,069 --> 00:10:48,079
+thing that I want to make sure we at
+ 
+
+539
+00:10:48,079 --> 00:10:49,829
+thing that I want to make sure we at
+least touch on, we're not going to talk
+
+540
+00:10:49,829 --> 00:10:49,839
+least touch on, we're not going to talk
+ 
+
+541
+00:10:49,839 --> 00:10:52,069
+least touch on, we're not going to talk
+about it in detail today, is that also
+
+542
+00:10:52,069 --> 00:10:52,079
+about it in detail today, is that also
+ 
+
+543
+00:10:52,079 --> 00:10:53,910
+about it in detail today, is that also
+brand new green field code that's being
+
+544
+00:10:53,910 --> 00:10:53,920
+brand new green field code that's being
+ 
+
+545
+00:10:53,920 --> 00:10:56,310
+brand new green field code that's being
+generated through Vibe coding frameworks
+
+546
+00:10:56,310 --> 00:10:56,320
+generated through Vibe coding frameworks
+ 
+
+547
+00:10:56,320 --> 00:10:57,750
+generated through Vibe coding frameworks
+actually needs to be secure out of the
+
+548
+00:10:57,750 --> 00:10:57,760
+actually needs to be secure out of the
+ 
+
+549
+00:10:57,760 --> 00:10:59,430
+actually needs to be secure out of the
+box as well. And so that's something
+
+550
+00:10:59,430 --> 00:10:59,440
+box as well. And so that's something
+ 
+
+551
+00:10:59,440 --> 00:11:01,030
+box as well. And so that's something
+else we're working on. We don't have
+
+552
+00:11:01,030 --> 00:11:01,040
+else we're working on. We don't have
+ 
+
+553
+00:11:01,040 --> 00:11:02,710
+else we're working on. We don't have
+time to talk about that today, but we
+
+554
+00:11:02,710 --> 00:11:02,720
+time to talk about that today, but we
+ 
+
+555
+00:11:02,720 --> 00:11:04,470
+time to talk about that today, but we
+think it's a completed thought, right?
+
+556
+00:11:04,470 --> 00:11:04,480
+think it's a completed thought, right?
+ 
+
+557
+00:11:04,480 --> 00:11:07,190
+think it's a completed thought, right?
+Where if you have legacy code that we
+
+558
+00:11:07,190 --> 00:11:07,200
+Where if you have legacy code that we
+ 
+
+559
+00:11:07,200 --> 00:11:09,030
+Where if you have legacy code that we
+can find vulnerabilities in it and we
+
+560
+00:11:09,030 --> 00:11:09,040
+can find vulnerabilities in it and we
+ 
+
+561
+00:11:09,040 --> 00:11:10,550
+can find vulnerabilities in it and we
+can get those automatically patched.
+
+562
+00:11:10,550 --> 00:11:10,560
+can get those automatically patched.
+ 
+
+563
+00:11:10,560 --> 00:11:12,790
+can get those automatically patched.
+That's the middle to the top arrow. If
+
+564
+00:11:12,790 --> 00:11:12,800
+That's the middle to the top arrow. If
+ 
+
+565
+00:11:12,800 --> 00:11:14,470
+That's the middle to the top arrow. If
+we have legacy code, we can actually
+
+566
+00:11:14,470 --> 00:11:14,480
+we have legacy code, we can actually
+ 
+
+567
+00:11:14,480 --> 00:11:16,310
+we have legacy code, we can actually
+proactively harden that code. I'll talk
+
+568
+00:11:16,310 --> 00:11:16,320
+proactively harden that code. I'll talk
+ 
+
+569
+00:11:16,320 --> 00:11:17,590
+proactively harden that code. I'll talk
+about that in a minute. And then
+
+570
+00:11:17,590 --> 00:11:17,600
+about that in a minute. And then
+ 
+
+571
+00:11:17,600 --> 00:11:19,910
+about that in a minute. And then
+finally, brand new code should be secure
+
+572
+00:11:19,910 --> 00:11:19,920
+finally, brand new code should be secure
+ 
+
+573
+00:11:19,920 --> 00:11:21,670
+finally, brand new code should be secure
+as much as possible out of the box. Not
+
+574
+00:11:21,670 --> 00:11:21,680
+as much as possible out of the box. Not
+ 
+
+575
+00:11:21,680 --> 00:11:23,190
+as much as possible out of the box. Not
+just free of vulnerabilities, but
+
+576
+00:11:23,190 --> 00:11:23,200
+just free of vulnerabilities, but
+ 
+
+577
+00:11:23,200 --> 00:11:24,710
+just free of vulnerabilities, but
+actually using secure frameworks so
+
+578
+00:11:24,710 --> 00:11:24,720
+actually using secure frameworks so
+ 
+
+579
+00:11:24,720 --> 00:11:26,550
+actually using secure frameworks so
+those vulnerabilities aren't possible in
+
+580
+00:11:26,550 --> 00:11:26,560
+those vulnerabilities aren't possible in
+ 
+
+581
+00:11:26,560 --> 00:11:28,310
+those vulnerabilities aren't possible in
+the first place. So we're working on all
+
+582
+00:11:28,310 --> 00:11:28,320
+the first place. So we're working on all
+ 
+
+583
+00:11:28,320 --> 00:11:30,389
+the first place. So we're working on all
+of this. Uh but let me dive in a little
+
+584
+00:11:30,389 --> 00:11:30,399
+of this. Uh but let me dive in a little
+ 
+
+585
+00:11:30,399 --> 00:11:31,990
+of this. Uh but let me dive in a little
+bit more into the the code mener
+
+586
+00:11:31,990 --> 00:11:32,000
+bit more into the the code mener
+ 
+
+587
+00:11:32,000 --> 00:11:34,790
+bit more into the the code mener
+component specifically. Right. So this
+
+588
+00:11:34,790 --> 00:11:34,800
+component specifically. Right. So this
+ 
+
+589
+00:11:34,800 --> 00:11:36,550
+component specifically. Right. So this
+is basically how codemen works. is a
+
+590
+00:11:36,550 --> 00:11:36,560
+is basically how codemen works. is a
+ 
+
+591
+00:11:36,560 --> 00:11:37,750
+is basically how codemen works. is a
+project we started last year in
+
+592
+00:11:37,750 --> 00:11:37,760
+project we started last year in
+ 
+
+593
+00:11:37,760 --> 00:11:40,389
+project we started last year in
+recognition that this AI von apocalypse
+
+594
+00:11:40,389 --> 00:11:40,399
+recognition that this AI von apocalypse
+ 
+
+595
+00:11:40,399 --> 00:11:42,069
+recognition that this AI von apocalypse
+which by the way is a word that you
+
+596
+00:11:42,069 --> 00:11:42,079
+which by the way is a word that you
+ 
+
+597
+00:11:42,079 --> 00:11:43,350
+which by the way is a word that you
+should take away from this conference
+
+598
+00:11:43,350 --> 00:11:43,360
+should take away from this conference
+ 
+
+599
+00:11:43,360 --> 00:11:45,509
+should take away from this conference
+the vone apocalypse is coming and so we
+
+600
+00:11:45,509 --> 00:11:45,519
+the vone apocalypse is coming and so we
+ 
+
+601
+00:11:45,519 --> 00:11:47,110
+the vone apocalypse is coming and so we
+think we should actually help arm the
+
+602
+00:11:47,110 --> 00:11:47,120
+think we should actually help arm the
+ 
+
+603
+00:11:47,120 --> 00:11:48,630
+think we should actually help arm the
+community with tools to solve this
+
+604
+00:11:48,630 --> 00:11:48,640
+community with tools to solve this
+ 
+
+605
+00:11:48,640 --> 00:11:50,870
+community with tools to solve this
+problem so it's not enough to find
+
+606
+00:11:50,870 --> 00:11:50,880
+problem so it's not enough to find
+ 
+
+607
+00:11:50,880 --> 00:11:52,630
+problem so it's not enough to find
+vulnerabilities we should also help the
+
+608
+00:11:52,630 --> 00:11:52,640
+vulnerabilities we should also help the
+ 
+
+609
+00:11:52,640 --> 00:11:55,110
+vulnerabilities we should also help the
+the the developers patch code now what
+
+610
+00:11:55,110 --> 00:11:55,120
+the the developers patch code now what
+ 
+
+611
+00:11:55,120 --> 00:11:56,710
+the the developers patch code now what
+are the three components of patching
+
+612
+00:11:56,710 --> 00:11:56,720
+are the three components of patching
+ 
+
+613
+00:11:56,720 --> 00:11:59,030
+are the three components of patching
+code you want to make sure one that the
+
+614
+00:11:59,030 --> 00:11:59,040
+code you want to make sure one that the
+ 
+
+615
+00:11:59,040 --> 00:12:01,750
+code you want to make sure one that the
+patch fixes the security vulnerability
+
+616
+00:12:01,750 --> 00:12:01,760
+patch fixes the security vulnerability
+ 
+
+617
+00:12:01,760 --> 00:12:04,790
+patch fixes the security vulnerability
+right two that it doesn't break the code
+
+618
+00:12:04,790 --> 00:12:04,800
+right two that it doesn't break the code
+ 
+
+619
+00:12:04,800 --> 00:12:06,389
+right two that it doesn't break the code
+in some way that changes the
+
+620
+00:12:06,389 --> 00:12:06,399
+in some way that changes the
+ 
+
+621
+00:12:06,399 --> 00:12:08,949
+in some way that changes the
+functionality, right? And then three, as
+
+622
+00:12:08,949 --> 00:12:08,959
+functionality, right? And then three, as
+ 
+
+623
+00:12:08,959 --> 00:12:10,310
+functionality, right? And then three, as
+much as possible, you actually want to
+
+624
+00:12:10,310 --> 00:12:10,320
+much as possible, you actually want to
+ 
+
+625
+00:12:10,320 --> 00:12:12,150
+much as possible, you actually want to
+honor the idioms of the developer that
+
+626
+00:12:12,150 --> 00:12:12,160
+honor the idioms of the developer that
+ 
+
+627
+00:12:12,160 --> 00:12:14,310
+honor the idioms of the developer that
+had built that code previously, so that
+
+628
+00:12:14,310 --> 00:12:14,320
+had built that code previously, so that
+ 
+
+629
+00:12:14,320 --> 00:12:15,430
+had built that code previously, so that
+it's not just a patch for the
+
+630
+00:12:15,430 --> 00:12:15,440
+it's not just a patch for the
+ 
+
+631
+00:12:15,440 --> 00:12:16,949
+it's not just a patch for the
+vulnerability, but it's done in the way
+
+632
+00:12:16,949 --> 00:12:16,959
+vulnerability, but it's done in the way
+ 
+
+633
+00:12:16,959 --> 00:12:20,150
+vulnerability, but it's done in the way
+that the developer finds easy to digest
+
+634
+00:12:20,150 --> 00:12:20,160
+that the developer finds easy to digest
+ 
+
+635
+00:12:20,160 --> 00:12:22,389
+that the developer finds easy to digest
+and understand. So all three of those
+
+636
+00:12:22,389 --> 00:12:22,399
+and understand. So all three of those
+ 
+
+637
+00:12:22,399 --> 00:12:23,990
+and understand. So all three of those
+things is what codemen is built to
+
+638
+00:12:23,990 --> 00:12:24,000
+things is what codemen is built to
+ 
+
+639
+00:12:24,000 --> 00:12:27,110
+things is what codemen is built to
+solve. So how does it work? Well, it
+
+640
+00:12:27,110 --> 00:12:27,120
+solve. So how does it work? Well, it
+ 
+
+641
+00:12:27,120 --> 00:12:29,590
+solve. So how does it work? Well, it
+takes in either a a verified
+
+642
+00:12:29,590 --> 00:12:29,600
+takes in either a a verified
+ 
+
+643
+00:12:29,600 --> 00:12:31,509
+takes in either a a verified
+vulnerability from big sleep and the
+
+644
+00:12:31,509 --> 00:12:31,519
+vulnerability from big sleep and the
+ 
+
+645
+00:12:31,519 --> 00:12:33,430
+vulnerability from big sleep and the
+idea is to make this a full endto-end
+
+646
+00:12:33,430 --> 00:12:33,440
+idea is to make this a full endto-end
+ 
+
+647
+00:12:33,440 --> 00:12:35,670
+idea is to make this a full endto-end
+discovery and fixing engine, right? What
+
+648
+00:12:35,670 --> 00:12:35,680
+discovery and fixing engine, right? What
+ 
+
+649
+00:12:35,680 --> 00:12:37,110
+discovery and fixing engine, right? What
+that runs completely without human
+
+650
+00:12:37,110 --> 00:12:37,120
+that runs completely without human
+ 
+
+651
+00:12:37,120 --> 00:12:39,350
+that runs completely without human
+intervention. Um, the other piece that
+
+652
+00:12:39,350 --> 00:12:39,360
+intervention. Um, the other piece that
+ 
+
+653
+00:12:39,360 --> 00:12:40,629
+intervention. Um, the other piece that
+I'm not sure we have time to talk about
+
+654
+00:12:40,629 --> 00:12:40,639
+I'm not sure we have time to talk about
+ 
+
+655
+00:12:40,639 --> 00:12:42,389
+I'm not sure we have time to talk about
+today is hardening. Basically, in a
+
+656
+00:12:42,389 --> 00:12:42,399
+today is hardening. Basically, in a
+ 
+
+657
+00:12:42,399 --> 00:12:43,990
+today is hardening. Basically, in a
+nutshell, what this is is basically
+
+658
+00:12:43,990 --> 00:12:44,000
+nutshell, what this is is basically
+ 
+
+659
+00:12:44,000 --> 00:12:45,990
+nutshell, what this is is basically
+proactively looking at a codebase for
+
+660
+00:12:45,990 --> 00:12:46,000
+proactively looking at a codebase for
+ 
+
+661
+00:12:46,000 --> 00:12:47,829
+proactively looking at a codebase for
+things like pointer exceptions and
+
+662
+00:12:47,829 --> 00:12:47,839
+things like pointer exceptions and
+ 
+
+663
+00:12:47,839 --> 00:12:49,829
+things like pointer exceptions and
+modifying the code through a a larger
+
+664
+00:12:49,829 --> 00:12:49,839
+modifying the code through a a larger
+ 
+
+665
+00:12:49,839 --> 00:12:51,829
+modifying the code through a a larger
+patch to make sure that all of those
+
+666
+00:12:51,829 --> 00:12:51,839
+patch to make sure that all of those
+ 
+
+667
+00:12:51,839 --> 00:12:53,990
+patch to make sure that all of those
+buffers are protected before the
+
+668
+00:12:53,990 --> 00:12:54,000
+buffers are protected before the
+ 
+
+669
+00:12:54,000 --> 00:12:55,509
+buffers are protected before the
+vulnerability can actually occur in the
+
+670
+00:12:55,509 --> 00:12:55,519
+vulnerability can actually occur in the
+ 
+
+671
+00:12:55,519 --> 00:12:57,030
+vulnerability can actually occur in the
+first place. So, you can imagine a
+
+672
+00:12:57,030 --> 00:12:57,040
+first place. So, you can imagine a
+ 
+
+673
+00:12:57,040 --> 00:12:58,949
+first place. So, you can imagine a
+similar process to patching actually
+
+674
+00:12:58,949 --> 00:12:58,959
+similar process to patching actually
+ 
+
+675
+00:12:58,959 --> 00:13:01,110
+similar process to patching actually
+being used to harden code and protect
+
+676
+00:13:01,110 --> 00:13:01,120
+being used to harden code and protect
+ 
+
+677
+00:13:01,120 --> 00:13:02,550
+being used to harden code and protect
+pointers as well, but I won't go into
+
+678
+00:13:02,550 --> 00:13:02,560
+pointers as well, but I won't go into
+ 
+
+679
+00:13:02,560 --> 00:13:04,949
+pointers as well, but I won't go into
+that in detail. So, the LLM agent
+
+680
+00:13:04,949 --> 00:13:04,959
+that in detail. So, the LLM agent
+ 
+
+681
+00:13:04,959 --> 00:13:06,629
+that in detail. So, the LLM agent
+actually has very similar access to
+
+682
+00:13:06,629 --> 00:13:06,639
+actually has very similar access to
+ 
+
+683
+00:13:06,639 --> 00:13:08,230
+actually has very similar access to
+tools and environment like Heather just
+
+684
+00:13:08,230 --> 00:13:08,240
+tools and environment like Heather just
+ 
+
+685
+00:13:08,240 --> 00:13:09,990
+tools and environment like Heather just
+discussed, right? It can do things like
+
+686
+00:13:09,990 --> 00:13:10,000
+discussed, right? It can do things like
+ 
+
+687
+00:13:10,000 --> 00:13:12,550
+discussed, right? It can do things like
+debugging. It can test hypothesis. What
+
+688
+00:13:12,550 --> 00:13:12,560
+debugging. It can test hypothesis. What
+ 
+
+689
+00:13:12,560 --> 00:13:14,069
+debugging. It can test hypothesis. What
+that does is it creates a number of
+
+690
+00:13:14,069 --> 00:13:14,079
+that does is it creates a number of
+ 
+
+691
+00:13:14,079 --> 00:13:16,069
+that does is it creates a number of
+patch candidates, right? That are
+
+692
+00:13:16,069 --> 00:13:16,079
+patch candidates, right? That are
+ 
+
+693
+00:13:16,079 --> 00:13:18,150
+patch candidates, right? That are
+potential fixes, but that's not good
+
+694
+00:13:18,150 --> 00:13:18,160
+potential fixes, but that's not good
+ 
+
+695
+00:13:18,160 --> 00:13:20,470
+potential fixes, but that's not good
+enough, right? We need to verify that
+
+696
+00:13:20,470 --> 00:13:20,480
+enough, right? We need to verify that
+ 
+
+697
+00:13:20,480 --> 00:13:22,150
+enough, right? We need to verify that
+those patches. And so some of the secret
+
+698
+00:13:22,150 --> 00:13:22,160
+those patches. And so some of the secret
+ 
+
+699
+00:13:22,160 --> 00:13:24,069
+those patches. And so some of the secret
+sauce of what we've been building is
+
+700
+00:13:24,069 --> 00:13:24,079
+sauce of what we've been building is
+ 
+
+701
+00:13:24,079 --> 00:13:26,150
+sauce of what we've been building is
+actually in these verification stages.
+
+702
+00:13:26,150 --> 00:13:26,160
+actually in these verification stages.
+ 
+
+703
+00:13:26,160 --> 00:13:27,910
+actually in these verification stages.
+And we've done a huge amount of work
+
+704
+00:13:27,910 --> 00:13:27,920
+And we've done a huge amount of work
+ 
+
+705
+00:13:27,920 --> 00:13:30,389
+And we've done a huge amount of work
+here. So we have verifiers of all kinds.
+
+706
+00:13:30,389 --> 00:13:30,399
+here. So we have verifiers of all kinds.
+ 
+
+707
+00:13:30,399 --> 00:13:32,470
+here. So we have verifiers of all kinds.
+And it's actually a pluggable system. So
+
+708
+00:13:32,470 --> 00:13:32,480
+And it's actually a pluggable system. So
+ 
+
+709
+00:13:32,480 --> 00:13:34,230
+And it's actually a pluggable system. So
+we actually fuzz the variables before
+
+710
+00:13:34,230 --> 00:13:34,240
+we actually fuzz the variables before
+ 
+
+711
+00:13:34,240 --> 00:13:36,310
+we actually fuzz the variables before
+and after the patch to validate that the
+
+712
+00:13:36,310 --> 00:13:36,320
+and after the patch to validate that the
+ 
+
+713
+00:13:36,320 --> 00:13:38,230
+and after the patch to validate that the
+functionality hasn't been destroyed by
+
+714
+00:13:38,230 --> 00:13:38,240
+functionality hasn't been destroyed by
+ 
+
+715
+00:13:38,240 --> 00:13:40,230
+functionality hasn't been destroyed by
+the patch. We actually do formal
+
+716
+00:13:40,230 --> 00:13:40,240
+the patch. We actually do formal
+ 
+
+717
+00:13:40,240 --> 00:13:41,590
+the patch. We actually do formal
+verification of that section of the
+
+718
+00:13:41,590 --> 00:13:41,600
+verification of that section of the
+ 
+
+719
+00:13:41,600 --> 00:13:43,829
+verification of that section of the
+codebase to try to prove that that code
+
+720
+00:13:43,829 --> 00:13:43,839
+codebase to try to prove that that code
+ 
+
+721
+00:13:43,839 --> 00:13:45,829
+codebase to try to prove that that code
+still is functionally equivalent. We
+
+722
+00:13:45,829 --> 00:13:45,839
+still is functionally equivalent. We
+ 
+
+723
+00:13:45,839 --> 00:13:47,910
+still is functionally equivalent. We
+actually also look for differential
+
+724
+00:13:47,910 --> 00:13:47,920
+actually also look for differential
+ 
+
+725
+00:13:47,920 --> 00:13:49,750
+actually also look for differential
+testing. We actually do a round of
+
+726
+00:13:49,750 --> 00:13:49,760
+testing. We actually do a round of
+ 
+
+727
+00:13:49,760 --> 00:13:51,590
+testing. We actually do a round of
+fuzzing of the code with a potential
+
+728
+00:13:51,590 --> 00:13:51,600
+fuzzing of the code with a potential
+ 
+
+729
+00:13:51,600 --> 00:13:53,269
+fuzzing of the code with a potential
+candidate patch to make sure that the
+
+730
+00:13:53,269 --> 00:13:53,279
+candidate patch to make sure that the
+ 
+
+731
+00:13:53,279 --> 00:13:55,110
+candidate patch to make sure that the
+vulnerability is still not present by
+
+732
+00:13:55,110 --> 00:13:55,120
+vulnerability is still not present by
+ 
+
+733
+00:13:55,120 --> 00:13:58,069
+vulnerability is still not present by
+injecting the the the the malicious
+
+734
+00:13:58,069 --> 00:13:58,079
+injecting the the the the malicious
+ 
+
+735
+00:13:58,079 --> 00:13:59,269
+injecting the the the the malicious
+inputs into that section of the
+
+736
+00:13:59,269 --> 00:13:59,279
+inputs into that section of the
+ 
+
+737
+00:13:59,279 --> 00:14:01,829
+inputs into that section of the
+codebase. Um and finally, we use of
+
+738
+00:14:01,829 --> 00:14:01,839
+codebase. Um and finally, we use of
+ 
+
+739
+00:14:01,839 --> 00:14:03,990
+codebase. Um and finally, we use of
+course uh maybe the most obvious of all
+
+740
+00:14:03,990 --> 00:14:04,000
+course uh maybe the most obvious of all
+ 
+
+741
+00:14:04,000 --> 00:14:06,790
+course uh maybe the most obvious of all
+options. we use the LL an LLM itself to
+
+742
+00:14:06,790 --> 00:14:06,800
+options. we use the LL an LLM itself to
+ 
+
+743
+00:14:06,800 --> 00:14:09,189
+options. we use the LL an LLM itself to
+view the patch uh with a very carefully
+
+744
+00:14:09,189 --> 00:14:09,199
+view the patch uh with a very carefully
+ 
+
+745
+00:14:09,199 --> 00:14:11,269
+view the patch uh with a very carefully
+crafted um pre-prompt to try to
+
+746
+00:14:11,269 --> 00:14:11,279
+crafted um pre-prompt to try to
+ 
+
+747
+00:14:11,279 --> 00:14:13,189
+crafted um pre-prompt to try to
+determine if that patch is also accurate
+
+748
+00:14:13,189 --> 00:14:13,199
+determine if that patch is also accurate
+ 
+
+749
+00:14:13,199 --> 00:14:15,269
+determine if that patch is also accurate
+as well. So that's not all that we do,
+
+750
+00:14:15,269 --> 00:14:15,279
+as well. So that's not all that we do,
+ 
+
+751
+00:14:15,279 --> 00:14:17,110
+as well. So that's not all that we do,
+but it's a good sense of the types of
+
+752
+00:14:17,110 --> 00:14:17,120
+but it's a good sense of the types of
+ 
+
+753
+00:14:17,120 --> 00:14:18,949
+but it's a good sense of the types of
+things that we do. And it's only once
+
+754
+00:14:18,949 --> 00:14:18,959
+things that we do. And it's only once
+ 
+
+755
+00:14:18,959 --> 00:14:21,670
+things that we do. And it's only once
+the patches all pass the verifier um
+
+756
+00:14:21,670 --> 00:14:21,680
+the patches all pass the verifier um
+ 
+
+757
+00:14:21,680 --> 00:14:23,269
+the patches all pass the verifier um
+that we would actually consider that
+
+758
+00:14:23,269 --> 00:14:23,279
+that we would actually consider that
+ 
+
+759
+00:14:23,279 --> 00:14:24,790
+that we would actually consider that
+something that's a candidate to send to
+
+760
+00:14:24,790 --> 00:14:24,800
+something that's a candidate to send to
+ 
+
+761
+00:14:24,800 --> 00:14:26,629
+something that's a candidate to send to
+the community. In some cases, none of
+
+762
+00:14:26,629 --> 00:14:26,639
+the community. In some cases, none of
+ 
+
+763
+00:14:26,639 --> 00:14:28,710
+the community. In some cases, none of
+the patches actually pass validation and
+
+764
+00:14:28,710 --> 00:14:28,720
+the patches actually pass validation and
+ 
+
+765
+00:14:28,720 --> 00:14:30,310
+the patches actually pass validation and
+the learnings from the validation
+
+766
+00:14:30,310 --> 00:14:30,320
+the learnings from the validation
+ 
+
+767
+00:14:30,320 --> 00:14:32,310
+the learnings from the validation
+failures are actually fed back into the
+
+768
+00:14:32,310 --> 00:14:32,320
+failures are actually fed back into the
+ 
+
+769
+00:14:32,320 --> 00:14:34,710
+failures are actually fed back into the
+context window for the LLM to to learn
+
+770
+00:14:34,710 --> 00:14:34,720
+context window for the LLM to to learn
+ 
+
+771
+00:14:34,720 --> 00:14:36,870
+context window for the LLM to to learn
+from the mistake and try to improve to a
+
+772
+00:14:36,870 --> 00:14:36,880
+from the mistake and try to improve to a
+ 
+
+773
+00:14:36,880 --> 00:14:38,310
+from the mistake and try to improve to a
+new set of candidate patches that are
+
+774
+00:14:38,310 --> 00:14:38,320
+new set of candidate patches that are
+ 
+
+775
+00:14:38,320 --> 00:14:40,550
+new set of candidate patches that are
+then in turn validated and ranked for
+
+776
+00:14:40,550 --> 00:14:40,560
+then in turn validated and ranked for
+ 
+
+777
+00:14:40,560 --> 00:14:42,949
+then in turn validated and ranked for
+submission. Um, so that's essentially
+
+778
+00:14:42,949 --> 00:14:42,959
+submission. Um, so that's essentially
+ 
+
+779
+00:14:42,959 --> 00:14:45,750
+submission. Um, so that's essentially
+how codemen works. Um, just a couple
+
+780
+00:14:45,750 --> 00:14:45,760
+how codemen works. Um, just a couple
+ 
+
+781
+00:14:45,760 --> 00:14:48,310
+how codemen works. Um, just a couple
+notes here. We've got 178 fixes now in
+
+782
+00:14:48,310 --> 00:14:48,320
+notes here. We've got 178 fixes now in
+ 
+
+783
+00:14:48,320 --> 00:14:50,629
+notes here. We've got 178 fixes now in
+open source that have been autonomously
+
+784
+00:14:50,629 --> 00:14:50,639
+open source that have been autonomously
+ 
+
+785
+00:14:50,639 --> 00:14:53,430
+open source that have been autonomously
+generated through code mender. Um, we
+
+786
+00:14:53,430 --> 00:14:53,440
+generated through code mender. Um, we
+ 
+
+787
+00:14:53,440 --> 00:14:55,189
+generated through code mender. Um, we
+have uh a pass through a couple of
+
+788
+00:14:55,189 --> 00:14:55,199
+have uh a pass through a couple of
+ 
+
+789
+00:14:55,199 --> 00:14:56,470
+have uh a pass through a couple of
+different libraries, open source
+
+790
+00:14:56,470 --> 00:14:56,480
+different libraries, open source
+ 
+
+791
+00:14:56,480 --> 00:14:58,389
+different libraries, open source
+libraries. Lib WP is one example. We've
+
+792
+00:14:58,389 --> 00:14:58,399
+libraries. Lib WP is one example. We've
+ 
+
+793
+00:14:58,399 --> 00:14:59,990
+libraries. Lib WP is one example. We've
+done a bunch of work in Chrome as well
+
+794
+00:14:59,990 --> 00:15:00,000
+done a bunch of work in Chrome as well
+ 
+
+795
+00:15:00,000 --> 00:15:02,150
+done a bunch of work in Chrome as well
+to actually harden pointers in the
+
+796
+00:15:02,150 --> 00:15:02,160
+to actually harden pointers in the
+ 
+
+797
+00:15:02,160 --> 00:15:03,990
+to actually harden pointers in the
+codebase through automatically generated
+
+798
+00:15:03,990 --> 00:15:04,000
+codebase through automatically generated
+ 
+
+799
+00:15:04,000 --> 00:15:06,949
+codebase through automatically generated
+patches to to to harden those pointers.
+
+800
+00:15:06,949 --> 00:15:06,959
+patches to to to harden those pointers.
+ 
+
+801
+00:15:06,959 --> 00:15:09,829
+patches to to to harden those pointers.
+Um, and um, of course, we're working on
+
+802
+00:15:09,829 --> 00:15:09,839
+Um, and um, of course, we're working on
+ 
+
+803
+00:15:09,839 --> 00:15:11,350
+Um, and um, of course, we're working on
+on doing this for internal Google
+
+804
+00:15:11,350 --> 00:15:11,360
+on doing this for internal Google
+ 
+
+805
+00:15:11,360 --> 00:15:13,670
+on doing this for internal Google
+systems. I think probably one criticism
+
+806
+00:15:13,670 --> 00:15:13,680
+systems. I think probably one criticism
+ 
+
+807
+00:15:13,680 --> 00:15:16,069
+systems. I think probably one criticism
+of of of our approach here that I I
+
+808
+00:15:16,069 --> 00:15:16,079
+of of of our approach here that I I
+ 
+
+809
+00:15:16,079 --> 00:15:18,230
+of of of our approach here that I I
+think you could levy is that we are
+
+810
+00:15:18,230 --> 00:15:18,240
+think you could levy is that we are
+ 
+
+811
+00:15:18,240 --> 00:15:20,710
+think you could levy is that we are
+maybe being too cautious in making sure
+
+812
+00:15:20,710 --> 00:15:20,720
+maybe being too cautious in making sure
+ 
+
+813
+00:15:20,720 --> 00:15:22,710
+maybe being too cautious in making sure
+that we have highly verified outputs for
+
+814
+00:15:22,710 --> 00:15:22,720
+that we have highly verified outputs for
+ 
+
+815
+00:15:22,720 --> 00:15:24,310
+that we have highly verified outputs for
+the community before we send something
+
+816
+00:15:24,310 --> 00:15:24,320
+the community before we send something
+ 
+
+817
+00:15:24,320 --> 00:15:26,550
+the community before we send something
+out. Um, we've taken a position that we
+
+818
+00:15:26,550 --> 00:15:26,560
+out. Um, we've taken a position that we
+ 
+
+819
+00:15:26,560 --> 00:15:28,550
+out. Um, we've taken a position that we
+really firmly believe in quality and
+
+820
+00:15:28,550 --> 00:15:28,560
+really firmly believe in quality and
+ 
+
+821
+00:15:28,560 --> 00:15:30,550
+really firmly believe in quality and
+that people trusting the system is
+
+822
+00:15:30,550 --> 00:15:30,560
+that people trusting the system is
+ 
+
+823
+00:15:30,560 --> 00:15:32,069
+that people trusting the system is
+what's going to lead us to be able to
+
+824
+00:15:32,069 --> 00:15:32,079
+what's going to lead us to be able to
+ 
+
+825
+00:15:32,079 --> 00:15:33,590
+what's going to lead us to be able to
+accelerate the community's adoption of
+
+826
+00:15:33,590 --> 00:15:33,600
+accelerate the community's adoption of
+ 
+
+827
+00:15:33,600 --> 00:15:35,990
+accelerate the community's adoption of
+this technology. Um, I guess we'll see
+
+828
+00:15:35,990 --> 00:15:36,000
+this technology. Um, I guess we'll see
+ 
+
+829
+00:15:36,000 --> 00:15:37,430
+this technology. Um, I guess we'll see
+how it plays out. I think other folks
+
+830
+00:15:37,430 --> 00:15:37,440
+how it plays out. I think other folks
+ 
+
+831
+00:15:37,440 --> 00:15:39,189
+how it plays out. I think other folks
+have a different trade-off on the dial
+
+832
+00:15:39,189 --> 00:15:39,199
+have a different trade-off on the dial
+ 
+
+833
+00:15:39,199 --> 00:15:41,670
+have a different trade-off on the dial
+of sort of quicker to market. um but
+
+834
+00:15:41,670 --> 00:15:41,680
+of sort of quicker to market. um but
+ 
+
+835
+00:15:41,680 --> 00:15:43,189
+of sort of quicker to market. um but
+maybe tolerating, you know, more
+
+836
+00:15:43,189 --> 00:15:43,199
+maybe tolerating, you know, more
+ 
+
+837
+00:15:43,199 --> 00:15:45,829
+maybe tolerating, you know, more
+developer toil. Um you know, I think
+
+838
+00:15:45,829 --> 00:15:45,839
+developer toil. Um you know, I think
+ 
+
+839
+00:15:45,839 --> 00:15:47,189
+developer toil. Um you know, I think
+we're we're we're we're trying to figure
+
+840
+00:15:47,189 --> 00:15:47,199
+we're we're we're we're trying to figure
+ 
+
+841
+00:15:47,199 --> 00:15:49,670
+we're we're we're we're trying to figure
+out where the right line is there. Um I
+
+842
+00:15:49,670 --> 00:15:49,680
+out where the right line is there. Um I
+ 
+
+843
+00:15:49,680 --> 00:15:51,269
+out where the right line is there. Um I
+won't go into all the details here on
+
+844
+00:15:51,269 --> 00:15:51,279
+won't go into all the details here on
+ 
+
+845
+00:15:51,279 --> 00:15:53,430
+won't go into all the details here on
+the bottom except to recognize the fact
+
+846
+00:15:53,430 --> 00:15:53,440
+the bottom except to recognize the fact
+ 
+
+847
+00:15:53,440 --> 00:15:55,509
+the bottom except to recognize the fact
+that all of this is well and good, but
+
+848
+00:15:55,509 --> 00:15:55,519
+that all of this is well and good, but
+ 
+
+849
+00:15:55,519 --> 00:15:57,269
+that all of this is well and good, but
+those of us in the hallway here in the
+
+850
+00:15:57,269 --> 00:15:57,279
+those of us in the hallway here in the
+ 
+
+851
+00:15:57,279 --> 00:15:58,949
+those of us in the hallway here in the
+in the room all know that one of the
+
+852
+00:15:58,949 --> 00:15:58,959
+in the room all know that one of the
+ 
+
+853
+00:15:58,959 --> 00:16:00,310
+in the room all know that one of the
+hardest problems with patching is
+
+854
+00:16:00,310 --> 00:16:00,320
+hardest problems with patching is
+ 
+
+855
+00:16:00,320 --> 00:16:03,189
+hardest problems with patching is
+actually places in the in the world that
+
+856
+00:16:03,189 --> 00:16:03,199
+actually places in the in the world that
+ 
+
+857
+00:16:03,199 --> 00:16:05,430
+actually places in the in the world that
+struggle to actually apply patches in a
+
+858
+00:16:05,430 --> 00:16:05,440
+struggle to actually apply patches in a
+ 
+
+859
+00:16:05,440 --> 00:16:07,590
+struggle to actually apply patches in a
+timely manner. And so that's another
+
+860
+00:16:07,590 --> 00:16:07,600
+timely manner. And so that's another
+ 
+
+861
+00:16:07,600 --> 00:16:08,870
+timely manner. And so that's another
+problem. I don't know how to solve that
+
+862
+00:16:08,870 --> 00:16:08,880
+problem. I don't know how to solve that
+ 
+
+863
+00:16:08,880 --> 00:16:11,670
+problem. I don't know how to solve that
+with AI. if you do come find me and I I
+
+864
+00:16:11,670 --> 00:16:11,680
+with AI. if you do come find me and I I
+ 
+
+865
+00:16:11,680 --> 00:16:13,749
+with AI. if you do come find me and I I
+will be very excited to talk to you. Um
+
+866
+00:16:13,749 --> 00:16:13,759
+will be very excited to talk to you. Um
+ 
+
+867
+00:16:13,759 --> 00:16:15,350
+will be very excited to talk to you. Um
+but I think this is an important part of
+
+868
+00:16:15,350 --> 00:16:15,360
+but I think this is an important part of
+ 
+
+869
+00:16:15,360 --> 00:16:17,509
+but I think this is an important part of
+the puzzle is uh being able to get the
+
+870
+00:16:17,509 --> 00:16:17,519
+the puzzle is uh being able to get the
+ 
+
+871
+00:16:17,519 --> 00:16:19,189
+the puzzle is uh being able to get the
+community and the world to patch our
+
+872
+00:16:19,189 --> 00:16:19,199
+community and the world to patch our
+ 
+
+873
+00:16:19,199 --> 00:16:22,069
+community and the world to patch our
+code bases at the speed of AI. Um okay
+
+874
+00:16:22,069 --> 00:16:22,079
+code bases at the speed of AI. Um okay
+ 
+
+875
+00:16:22,079 --> 00:16:24,230
+code bases at the speed of AI. Um okay
+and with that um I guess we'll take
+
+876
+00:16:24,230 --> 00:16:24,240
+and with that um I guess we'll take
+ 
+
+877
+00:16:24,240 --> 00:16:26,870
+and with that um I guess we'll take
+questions um with a few minutes left. So
+
+878
+00:16:26,870 --> 00:16:26,880
+questions um with a few minutes left. So
+ 
+
+879
+00:16:26,880 --> 00:16:28,470
+questions um with a few minutes left. So
+I don't know how questions work by the
+
+880
+00:16:28,470 --> 00:16:28,480
+I don't know how questions work by the
+ 
+
+881
+00:16:28,480 --> 00:16:32,790
+I don't know how questions work by the
+way. So okay there's mics um around. So
+
+882
+00:16:32,790 --> 00:16:32,800
+way. So okay there's mics um around. So
+ 
+
+883
+00:16:32,800 --> 00:16:34,470
+way. So okay there's mics um around. So
+if you have a question raise your hand
+
+884
+00:16:34,470 --> 00:16:34,480
+if you have a question raise your hand
+ 
+
+885
+00:16:34,480 --> 00:16:37,670
+if you have a question raise your hand
+and I guess somehow a mic will show up.
+
+886
+00:16:37,670 --> 00:16:37,680
+and I guess somehow a mic will show up.
+ 
+
+887
+00:16:37,680 --> 00:16:39,110
+and I guess somehow a mic will show up.
+Yeah, there's a gentleman here in the
+
+888
+00:16:39,110 --> 00:16:39,120
+Yeah, there's a gentleman here in the
+ 
+
+889
+00:16:39,120 --> 00:16:41,269
+Yeah, there's a gentleman here in the
+front and Heather's gonna answer all the
+
+890
+00:16:41,269 --> 00:16:41,279
+front and Heather's gonna answer all the
+ 
+
+891
+00:16:41,279 --> 00:16:43,910
+front and Heather's gonna answer all the
+questions [laughter]
+
+892
+00:16:43,910 --> 00:16:43,920
+questions [laughter]
+ 
+
+893
+00:16:43,920 --> 00:16:45,509
+questions [laughter]
+>> because you don't know how they work.
+
+894
+00:16:45,509 --> 00:16:45,519
+>> because you don't know how they work.
+ 
+
+895
+00:16:45,519 --> 00:16:48,870
+>> because you don't know how they work.
+Okay,
+
+896
+00:16:48,870 --> 00:16:48,880
+
+ 
+
+897
+00:16:48,880 --> 00:16:49,670
+
+>> I can't hear you.
+
+898
+00:16:49,670 --> 00:16:49,680
+>> I can't hear you.
+ 
+
+899
+00:16:49,680 --> 00:16:51,430
+>> I can't hear you.
+>> Yeah, to turn it on. Just flip it.
+
+900
+00:16:51,430 --> 00:16:51,440
+>> Yeah, to turn it on. Just flip it.
+ 
+
+901
+00:16:51,440 --> 00:16:57,189
+>> Yeah, to turn it on. Just flip it.
+>> Just flip the switch up.
+
+902
+00:16:57,189 --> 00:16:57,199
+
+ 
+
+903
+00:16:57,199 --> 00:16:58,230
+
+>> I can just
+
+904
+00:16:58,230 --> 00:16:58,240
+>> I can just
+ 
+
+905
+00:16:58,240 --> 00:17:00,230
+>> I can just
+>> If you shout, I'll repeat.
+
+906
+00:17:00,230 --> 00:17:00,240
+>> If you shout, I'll repeat.
+ 
+
+907
+00:17:00,240 --> 00:17:03,590
+>> If you shout, I'll repeat.
+>> Okay. Oh, yeah. So I'm just wondering uh
+
+908
+00:17:03,590 --> 00:17:03,600
+>> Okay. Oh, yeah. So I'm just wondering uh
+ 
+
+909
+00:17:03,600 --> 00:17:05,909
+>> Okay. Oh, yeah. So I'm just wondering uh
+how similar or different this is from
+
+910
+00:17:05,909 --> 00:17:05,919
+how similar or different this is from
+ 
+
+911
+00:17:05,919 --> 00:17:08,549
+how similar or different this is from
+OpenAI's adwork that was recently
+
+912
+00:17:08,549 --> 00:17:08,559
+OpenAI's adwork that was recently
+ 
+
+913
+00:17:08,559 --> 00:17:11,750
+OpenAI's adwork that was recently
+released because I was uh reading about
+
+914
+00:17:11,750 --> 00:17:11,760
+released because I was uh reading about
+ 
+
+915
+00:17:11,760 --> 00:17:14,150
+released because I was uh reading about
+it. It does something similar but so
+
+916
+00:17:14,150 --> 00:17:14,160
+it. It does something similar but so
+ 
+
+917
+00:17:14,160 --> 00:17:16,390
+it. It does something similar but so
+would be interesting to know like and I
+
+918
+00:17:16,390 --> 00:17:16,400
+would be interesting to know like and I
+ 
+
+919
+00:17:16,400 --> 00:17:17,829
+would be interesting to know like and I
+don't know if you have done any sort of
+
+920
+00:17:17,829 --> 00:17:17,839
+don't know if you have done any sort of
+ 
+
+921
+00:17:17,839 --> 00:17:20,230
+don't know if you have done any sort of
+like comparison as to how yours is.
+
+922
+00:17:20,230 --> 00:17:20,240
+like comparison as to how yours is.
+ 
+
+923
+00:17:20,240 --> 00:17:21,750
+like comparison as to how yours is.
+Yeah. So that's
+
+924
+00:17:21,750 --> 00:17:21,760
+Yeah. So that's
+ 
+
+925
+00:17:21,760 --> 00:17:23,350
+Yeah. So that's
+>> I don't know are the OpenAI guys here?
+
+926
+00:17:23,350 --> 00:17:23,360
+>> I don't know are the OpenAI guys here?
+ 
+
+927
+00:17:23,360 --> 00:17:24,230
+>> I don't know are the OpenAI guys here?
+Do they want to say
+
+928
+00:17:24,230 --> 00:17:24,240
+Do they want to say
+ 
+
+929
+00:17:24,240 --> 00:17:25,029
+Do they want to say
+>> where you at?
+
+930
+00:17:25,029 --> 00:17:25,039
+>> where you at?
+ 
+
+931
+00:17:25,039 --> 00:17:26,870
+>> where you at?
+>> Where are you at?
+
+932
+00:17:26,870 --> 00:17:26,880
+>> Where are you at?
+ 
+
+933
+00:17:26,880 --> 00:17:29,350
+>> Where are you at?
+>> And uh just to add sorry just to add I
+
+934
+00:17:29,350 --> 00:17:29,360
+>> And uh just to add sorry just to add I
+ 
+
+935
+00:17:29,360 --> 00:17:34,230
+>> And uh just to add sorry just to add I
+think uh
+
+936
+00:17:34,230 --> 00:17:34,240
+
+ 
+
+937
+00:17:34,240 --> 00:17:36,390
+
+Um to to seriously answer your question,
+
+938
+00:17:36,390 --> 00:17:36,400
+Um to to seriously answer your question,
+ 
+
+939
+00:17:36,400 --> 00:17:37,750
+Um to to seriously answer your question,
+um we've not done a side-by-side
+
+940
+00:17:37,750 --> 00:17:37,760
+um we've not done a side-by-side
+ 
+
+941
+00:17:37,760 --> 00:17:39,270
+um we've not done a side-by-side
+comparison because neither team has
+
+942
+00:17:39,270 --> 00:17:39,280
+comparison because neither team has
+ 
+
+943
+00:17:39,280 --> 00:17:42,390
+comparison because neither team has
+published full details. Um but I I think
+
+944
+00:17:42,390 --> 00:17:42,400
+published full details. Um but I I think
+ 
+
+945
+00:17:42,400 --> 00:17:44,630
+published full details. Um but I I think
+it's fair to say we're both using um
+
+946
+00:17:44,630 --> 00:17:44,640
+it's fair to say we're both using um
+ 
+
+947
+00:17:44,640 --> 00:17:46,950
+it's fair to say we're both using um
+kind of, you know, agentic reasoning u
+
+948
+00:17:46,950 --> 00:17:46,960
+kind of, you know, agentic reasoning u
+ 
+
+949
+00:17:46,960 --> 00:17:49,110
+kind of, you know, agentic reasoning u
+behind them, but we'll see as the
+
+950
+00:17:49,110 --> 00:17:49,120
+behind them, but we'll see as the
+ 
+
+951
+00:17:49,120 --> 00:17:51,110
+behind them, but we'll see as the
+>> things develop as as they come out.
+
+952
+00:17:51,110 --> 00:17:51,120
+>> things develop as as they come out.
+ 
+
+953
+00:17:51,120 --> 00:17:53,029
+>> things develop as as they come out.
+>> Y question
+
+954
+00:17:53,029 --> 00:17:53,039
+>> Y question
+ 
+
+955
+00:17:53,039 --> 00:17:54,310
+>> Y question
+>> with the
+
+956
+00:17:54,310 --> 00:17:54,320
+>> with the
+ 
+
+957
+00:17:54,320 --> 00:17:55,350
+>> with the
+>> there's one here and then there. Yeah.
+
+958
+00:17:55,350 --> 00:17:55,360
+>> there's one here and then there. Yeah.
+ 
+
+959
+00:17:55,360 --> 00:17:56,950
+>> there's one here and then there. Yeah.
+with the techniques you've used in Big
+
+960
+00:17:56,950 --> 00:17:56,960
+with the techniques you've used in Big
+ 
+
+961
+00:17:56,960 --> 00:17:59,350
+with the techniques you've used in Big
+Sleep, they seem very focused on memory
+
+962
+00:17:59,350 --> 00:17:59,360
+Sleep, they seem very focused on memory
+ 
+
+963
+00:17:59,360 --> 00:18:01,350
+Sleep, they seem very focused on memory
+safety vulnerabilities, which are a huge
+
+964
+00:18:01,350 --> 00:18:01,360
+safety vulnerabilities, which are a huge
+ 
+
+965
+00:18:01,360 --> 00:18:03,590
+safety vulnerabilities, which are a huge
+problem. Uh I'm curious how much of
+
+966
+00:18:03,590 --> 00:18:03,600
+problem. Uh I'm curious how much of
+ 
+
+967
+00:18:03,600 --> 00:18:05,190
+problem. Uh I'm curious how much of
+these tech how many of these techniques
+
+968
+00:18:05,190 --> 00:18:05,200
+these tech how many of these techniques
+ 
+
+969
+00:18:05,200 --> 00:18:07,110
+these tech how many of these techniques
+do you think would be applicable to
+
+970
+00:18:07,110 --> 00:18:07,120
+do you think would be applicable to
+ 
+
+971
+00:18:07,120 --> 00:18:08,950
+do you think would be applicable to
+things with a less clear signal than
+
+972
+00:18:08,950 --> 00:18:08,960
+things with a less clear signal than
+ 
+
+973
+00:18:08,960 --> 00:18:11,750
+things with a less clear signal than
+just a SEG fault or some of these uh
+
+974
+00:18:11,750 --> 00:18:11,760
+just a SEG fault or some of these uh
+ 
+
+975
+00:18:11,760 --> 00:18:13,029
+just a SEG fault or some of these uh
+more difficult to find things than
+
+976
+00:18:13,029 --> 00:18:13,039
+more difficult to find things than
+ 
+
+977
+00:18:13,039 --> 00:18:14,150
+more difficult to find things than
+memory vulnerabilities?
+
+978
+00:18:14,150 --> 00:18:14,160
+memory vulnerabilities?
+ 
+
+979
+00:18:14,160 --> 00:18:16,789
+memory vulnerabilities?
+>> Yeah, I I'm just say quickly it does
+
+980
+00:18:16,789 --> 00:18:16,799
+>> Yeah, I I'm just say quickly it does
+ 
+
+981
+00:18:16,799 --> 00:18:18,150
+>> Yeah, I I'm just say quickly it does
+definitely apply. I mean, the team's
+
+982
+00:18:18,150 --> 00:18:18,160
+definitely apply. I mean, the team's
+ 
+
+983
+00:18:18,160 --> 00:18:21,029
+definitely apply. I mean, the team's
+finding shallow bugs as well. um what
+
+984
+00:18:21,029 --> 00:18:21,039
+finding shallow bugs as well. um what
+ 
+
+985
+00:18:21,039 --> 00:18:22,549
+finding shallow bugs as well. um what
+we're targeting with the research is the
+
+986
+00:18:22,549 --> 00:18:22,559
+we're targeting with the research is the
+ 
+
+987
+00:18:22,559 --> 00:18:24,070
+we're targeting with the research is the
+deep stuff because it's harder and a
+
+988
+00:18:24,070 --> 00:18:24,080
+deep stuff because it's harder and a
+ 
+
+989
+00:18:24,080 --> 00:18:25,830
+deep stuff because it's harder and a
+little more esoteric. But
+
+990
+00:18:25,830 --> 00:18:25,840
+little more esoteric. But
+ 
+
+991
+00:18:25,840 --> 00:18:27,430
+little more esoteric. But
+>> yeah. Yeah. I mean I don't really have a
+
+992
+00:18:27,430 --> 00:18:27,440
+>> yeah. Yeah. I mean I don't really have a
+ 
+
+993
+00:18:27,440 --> 00:18:28,789
+>> yeah. Yeah. I mean I don't really have a
+lot to add. I I think a lot of the
+
+994
+00:18:28,789 --> 00:18:28,799
+lot to add. I I think a lot of the
+ 
+
+995
+00:18:28,799 --> 00:18:30,070
+lot to add. I I think a lot of the
+techniques actually carry over to web
+
+996
+00:18:30,070 --> 00:18:30,080
+techniques actually carry over to web
+ 
+
+997
+00:18:30,080 --> 00:18:31,029
+techniques actually carry over to web
+vulnerabilities and shallow
+
+998
+00:18:31,029 --> 00:18:31,039
+vulnerabilities and shallow
+ 
+
+999
+00:18:31,039 --> 00:18:32,630
+vulnerabilities and shallow
+vulnerabilities quite well. I think the
+
+1000
+00:18:32,630 --> 00:18:32,640
+vulnerabilities quite well. I think the
+ 
+
+1001
+00:18:32,640 --> 00:18:34,630
+vulnerabilities quite well. I think the
+verification techniques um of the
+
+1002
+00:18:34,630 --> 00:18:34,640
+verification techniques um of the
+ 
+
+1003
+00:18:34,640 --> 00:18:36,789
+verification techniques um of the
+vulnerability are different to your
+
+1004
+00:18:36,789 --> 00:18:36,799
+vulnerability are different to your
+ 
+
+1005
+00:18:36,799 --> 00:18:39,669
+vulnerability are different to your
+point. Um but you know injected faults
+
+1006
+00:18:39,669 --> 00:18:39,679
+point. Um but you know injected faults
+ 
+
+1007
+00:18:39,679 --> 00:18:41,990
+point. Um but you know injected faults
+whether it's input validation you know
+
+1008
+00:18:41,990 --> 00:18:42,000
+whether it's input validation you know
+ 
+
+1009
+00:18:42,000 --> 00:18:43,350
+whether it's input validation you know
+things like that I think all of it will
+
+1010
+00:18:43,350 --> 00:18:43,360
+things like that I think all of it will
+ 
+
+1011
+00:18:43,360 --> 00:18:44,470
+things like that I think all of it will
+work and we're we're building all of
+
+1012
+00:18:44,470 --> 00:18:44,480
+work and we're we're building all of
+ 
+
+1013
+00:18:44,480 --> 00:18:47,029
+work and we're we're building all of
+that stuff as well um to make sure that
+
+1014
+00:18:47,029 --> 00:18:47,039
+that stuff as well um to make sure that
+ 
+
+1015
+00:18:47,039 --> 00:18:48,630
+that stuff as well um to make sure that
+we work for web vulnerabilities both
+
+1016
+00:18:48,630 --> 00:18:48,640
+we work for web vulnerabilities both
+ 
+
+1017
+00:18:48,640 --> 00:18:50,630
+we work for web vulnerabilities both
+finding and fixing. So yeah, that's a
+
+1018
+00:18:50,630 --> 00:18:50,640
+finding and fixing. So yeah, that's a
+ 
+
+1019
+00:18:50,640 --> 00:18:52,710
+finding and fixing. So yeah, that's a
+good question.
+
+1020
+00:18:52,710 --> 00:18:52,720
+good question.
+ 
+
+1021
+00:18:52,720 --> 00:18:54,310
+good question.
+>> I guess I will say um I mean we're still
+
+1022
+00:18:54,310 --> 00:18:54,320
+>> I guess I will say um I mean we're still
+ 
+
+1023
+00:18:54,320 --> 00:18:55,990
+>> I guess I will say um I mean we're still
+doing a lot of fuzzing. We develop OSS
+
+1024
+00:18:55,990 --> 00:18:56,000
+doing a lot of fuzzing. We develop OSS
+ 
+
+1025
+00:18:56,000 --> 00:18:58,150
+doing a lot of fuzzing. We develop OSS
+fuzz at Google. Um doing tons of
+
+1026
+00:18:58,150 --> 00:18:58,160
+fuzz at Google. Um doing tons of
+ 
+
+1027
+00:18:58,160 --> 00:19:00,470
+fuzz at Google. Um doing tons of
+fuzzing, but big sleep is finding things
+
+1028
+00:19:00,470 --> 00:19:00,480
+fuzzing, but big sleep is finding things
+ 
+
+1029
+00:19:00,480 --> 00:19:02,470
+fuzzing, but big sleep is finding things
+the fuzzers are missing. Uh so that
+
+1030
+00:19:02,470 --> 00:19:02,480
+the fuzzers are missing. Uh so that
+ 
+
+1031
+00:19:02,480 --> 00:19:04,549
+the fuzzers are missing. Uh so that
+tells us that we're we're targeting at
+
+1032
+00:19:04,549 --> 00:19:04,559
+tells us that we're we're targeting at
+ 
+
+1033
+00:19:04,559 --> 00:19:07,029
+tells us that we're we're targeting at
+the right depths probably in the code.
+
+1034
+00:19:07,029 --> 00:19:07,039
+the right depths probably in the code.
+ 
+
+1035
+00:19:07,039 --> 00:19:08,789
+the right depths probably in the code.
+>> Yeah, my my question is related to
+
+1036
+00:19:08,789 --> 00:19:08,799
+>> Yeah, my my question is related to
+ 
+
+1037
+00:19:08,799 --> 00:19:10,470
+>> Yeah, my my question is related to
+business logic vulnerabilities that
+
+1038
+00:19:10,470 --> 00:19:10,480
+business logic vulnerabilities that
+ 
+
+1039
+00:19:10,480 --> 00:19:12,230
+business logic vulnerabilities that
+don't have necessarily a signature but
+
+1040
+00:19:12,230 --> 00:19:12,240
+don't have necessarily a signature but
+ 
+
+1041
+00:19:12,240 --> 00:19:13,830
+don't have necessarily a signature but
+are in the context of how the
+
+1042
+00:19:13,830 --> 00:19:13,840
+are in the context of how the
+ 
+
+1043
+00:19:13,840 --> 00:19:15,350
+are in the context of how the
+application's used. How are you all
+
+1044
+00:19:15,350 --> 00:19:15,360
+application's used. How are you all
+ 
+
+1045
+00:19:15,360 --> 00:19:16,870
+application's used. How are you all
+thinking about those types of
+
+1046
+00:19:16,870 --> 00:19:16,880
+thinking about those types of
+ 
+
+1047
+00:19:16,880 --> 00:19:18,710
+thinking about those types of
+vulnerability classes in your approach?
+
+1048
+00:19:18,710 --> 00:19:18,720
+vulnerability classes in your approach?
+ 
+
+1049
+00:19:18,720 --> 00:19:20,070
+vulnerability classes in your approach?
+And do you think this methodology would
+
+1050
+00:19:20,070 --> 00:19:20,080
+And do you think this methodology would
+ 
+
+1051
+00:19:20,080 --> 00:19:22,230
+And do you think this methodology would
+apply to that specific class of
+
+1052
+00:19:22,230 --> 00:19:22,240
+apply to that specific class of
+ 
+
+1053
+00:19:22,240 --> 00:19:23,029
+apply to that specific class of
+vulnerabilities?
+
+1054
+00:19:23,029 --> 00:19:23,039
+vulnerabilities?
+ 
+
+1055
+00:19:23,039 --> 00:19:24,630
+vulnerabilities?
+>> I think right now most of our research
+
+1056
+00:19:24,630 --> 00:19:24,640
+>> I think right now most of our research
+ 
+
+1057
+00:19:24,640 --> 00:19:26,870
+>> I think right now most of our research
+is not on business applications. It's on
+
+1058
+00:19:26,870 --> 00:19:26,880
+is not on business applications. It's on
+ 
+
+1059
+00:19:26,880 --> 00:19:29,590
+is not on business applications. It's on
+kind of infrastructure components like
+
+1060
+00:19:29,590 --> 00:19:29,600
+kind of infrastructure components like
+ 
+
+1061
+00:19:29,600 --> 00:19:31,270
+kind of infrastructure components like
+um
+
+1062
+00:19:31,270 --> 00:19:31,280
+um
+ 
+
+1063
+00:19:31,280 --> 00:19:33,990
+um
+>> you know the the V8
+
+1064
+00:19:33,990 --> 00:19:34,000
+>> you know the the V8
+ 
+
+1065
+00:19:34,000 --> 00:19:37,270
+>> you know the the V8
+>> um uh part of Chrome which we sandbox
+
+1066
+00:19:37,270 --> 00:19:37,280
+>> um uh part of Chrome which we sandbox
+ 
+
+1067
+00:19:37,280 --> 00:19:40,549
+>> um uh part of Chrome which we sandbox
+and you know we wish it was better. So
+
+1068
+00:19:40,549 --> 00:19:40,559
+and you know we wish it was better. So
+ 
+
+1069
+00:19:40,559 --> 00:19:42,710
+and you know we wish it was better. So
+um those components or something like
+
+1070
+00:19:42,710 --> 00:19:42,720
+um those components or something like
+ 
+
+1071
+00:19:42,720 --> 00:19:46,150
+um those components or something like
+the um uh ffmpeg is another one that
+
+1072
+00:19:46,150 --> 00:19:46,160
+the um uh ffmpeg is another one that
+ 
+
+1073
+00:19:46,160 --> 00:19:47,990
+the um uh ffmpeg is another one that
+we've looked at quite a bit because it's
+
+1074
+00:19:47,990 --> 00:19:48,000
+we've looked at quite a bit because it's
+ 
+
+1075
+00:19:48,000 --> 00:19:49,830
+we've looked at quite a bit because it's
+job is to handle untrusted input
+
+1076
+00:19:49,830 --> 00:19:49,840
+job is to handle untrusted input
+ 
+
+1077
+00:19:49,840 --> 00:19:50,470
+job is to handle untrusted input
+>> right
+
+1078
+00:19:50,470 --> 00:19:50,480
+>> right
+ 
+
+1079
+00:19:50,480 --> 00:19:52,630
+>> right
+>> um how it translates to business
+
+1080
+00:19:52,630 --> 00:19:52,640
+>> um how it translates to business
+ 
+
+1081
+00:19:52,640 --> 00:19:55,270
+>> um how it translates to business
+applications we're not sure yet. So
+
+1082
+00:19:55,270 --> 00:19:55,280
+applications we're not sure yet. So
+ 
+
+1083
+00:19:55,280 --> 00:19:55,909
+applications we're not sure yet. So
+>> thank you
+
+1084
+00:19:55,909 --> 00:19:55,919
+>> thank you
+ 
+
+1085
+00:19:55,919 --> 00:19:58,070
+>> thank you
+>> folks I'm going to cut down the Q&A but
+
+1086
+00:19:58,070 --> 00:19:58,080
+>> folks I'm going to cut down the Q&A but
+ 
+
+1087
+00:19:58,080 --> 00:20:00,230
+>> folks I'm going to cut down the Q&A but
+please remember you can always find the
+
+1088
+00:20:00,230 --> 00:20:00,240
+please remember you can always find the
+ 
+
+1089
+00:20:00,240 --> 00:20:01,909
+please remember you can always find the
+speakers on Slack as well as talk to
+
+1090
+00:20:01,909 --> 00:20:01,919
+speakers on Slack as well as talk to
+ 
+
+1091
+00:20:01,919 --> 00:20:03,750
+speakers on Slack as well as talk to
+them later when they're here. Thank you
+
+1092
+00:20:03,750 --> 00:20:03,760
+them later when they're here. Thank you
+ 
+
+1093
+00:20:03,760 --> 00:20:05,669
+them later when they're here. Thank you
+so much for and I'll have you know by
+
+1094
+00:20:05,669 --> 00:20:05,679
+so much for and I'll have you know by
+ 
+
+1095
+00:20:05,679 --> 00:20:07,669
+so much for and I'll have you know by
+the way
+
+1096
+00:20:07,669 --> 00:20:07,679
+the way
+ 
+
+1097
+00:20:07,679 --> 00:20:10,070
+the way
+they're
+
+1098
+00:20:10,070 --> 00:20:10,080
+they're
+ 
+
+1099
+00:20:10,080 --> 00:20:11,830
+they're
+That's a lot of appreciation right there
+
+1100
+00:20:11,830 --> 00:20:11,840
+That's a lot of appreciation right there
+ 
+
+1101
+00:20:11,840 --> 00:20:13,669
+That's a lot of appreciation right there
+that their titles don't say this, but
+
+1102
+00:20:13,669 --> 00:20:13,679
+that their titles don't say this, but
+ 
+
+1103
+00:20:13,679 --> 00:20:16,630
+that their titles don't say this, but
+four is the CISO++ of DeepMind, right?
+
+1104
+00:20:16,630 --> 00:20:16,640
+four is the CISO++ of DeepMind, right?
+ 
+
+1105
+00:20:16,640 --> 00:20:18,150
+four is the CISO++ of DeepMind, right?
+And Heather is the sister of Google.
+
+1106
+00:20:18,150 --> 00:20:18,160
+And Heather is the sister of Google.
+ 
+
+1107
+00:20:18,160 --> 00:20:19,669
+And Heather is the sister of Google.
+They just don't say that. They're not
+
+1108
+00:20:19,669 --> 00:20:19,679
+They just don't say that. They're not
+ 
+
+1109
+00:20:19,679 --> 00:20:20,870
+They just don't say that. They're not
+allowed to say these things, so I'll
+
+1110
+00:20:20,870 --> 00:20:20,880
+allowed to say these things, so I'll
+ 
+
+1111
+00:20:20,880 --> 00:20:22,070
+allowed to say these things, so I'll
+embarrass them here and say it. So,
+
+1112
+00:20:22,070 --> 00:20:22,080
+embarrass them here and say it. So,
+ 
+
+1113
+00:20:22,080 --> 00:20:22,950
+embarrass them here and say it. So,
+thank you so much for coming and
+
+1114
+00:20:22,950 --> 00:20:22,960
+thank you so much for coming and
+ 
+
+1115
+00:20:22,960 --> 00:20:26,360
+thank you so much for coming and
+speaking with us.
+

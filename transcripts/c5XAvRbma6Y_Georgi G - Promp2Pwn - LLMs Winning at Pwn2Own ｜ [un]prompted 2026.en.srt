@@ -1,0 +1,5585 @@
+1
+00:00:05,920 --> 00:00:07,510
+
+Hello.
+
+2
+00:00:07,510 --> 00:00:07,520
+Hello.
+ 
+
+3
+00:00:07,520 --> 00:00:12,629
+Hello.
+Right. Oh [\h__\h] Hello. Um, right. I'm a
+
+4
+00:00:12,629 --> 00:00:12,639
+Right. Oh [\h__\h] Hello. Um, right. I'm a
+ 
+
+5
+00:00:12,639 --> 00:00:15,030
+Right. Oh [\h__\h] Hello. Um, right. I'm a
+little bit slow today. Well, past couple
+
+6
+00:00:15,030 --> 00:00:15,040
+little bit slow today. Well, past couple
+ 
+
+7
+00:00:15,040 --> 00:00:17,910
+little bit slow today. Well, past couple
+of days I'm jetlacked out of my mind.
+
+8
+00:00:17,910 --> 00:00:17,920
+of days I'm jetlacked out of my mind.
+ 
+
+9
+00:00:17,920 --> 00:00:20,230
+of days I'm jetlacked out of my mind.
+So, I apologize if I make even less
+
+10
+00:00:20,230 --> 00:00:20,240
+So, I apologize if I make even less
+ 
+
+11
+00:00:20,240 --> 00:00:24,230
+So, I apologize if I make even less
+sense than usual. Um, my name is Georgie
+
+12
+00:00:24,230 --> 00:00:24,240
+sense than usual. Um, my name is Georgie
+ 
+
+13
+00:00:24,240 --> 00:00:27,509
+sense than usual. Um, my name is Georgie
+and I hack things for a company based
+
+14
+00:00:27,509 --> 00:00:27,519
+and I hack things for a company based
+ 
+
+15
+00:00:27,519 --> 00:00:30,710
+and I hack things for a company based
+out of the UK called Interup Labs. And
+
+16
+00:00:30,710 --> 00:00:30,720
+out of the UK called Interup Labs. And
+ 
+
+17
+00:00:30,720 --> 00:00:34,870
+out of the UK called Interup Labs. And
+today I'm going to talk about my journey
+
+18
+00:00:34,870 --> 00:00:34,880
+today I'm going to talk about my journey
+ 
+
+19
+00:00:34,880 --> 00:00:40,709
+today I'm going to talk about my journey
+into AI and how I ended up using AI for
+
+20
+00:00:40,709 --> 00:00:40,719
+into AI and how I ended up using AI for
+ 
+
+21
+00:00:40,719 --> 00:00:43,270
+into AI and how I ended up using AI for
+um what essentially was a successful
+
+22
+00:00:43,270 --> 00:00:43,280
+um what essentially was a successful
+ 
+
+23
+00:00:43,280 --> 00:00:46,389
+um what essentially was a successful
+entry at the last mobile pontoron
+
+24
+00:00:46,389 --> 00:00:46,399
+entry at the last mobile pontoron
+ 
+
+25
+00:00:46,399 --> 00:00:49,590
+entry at the last mobile pontoron
+edition. Um, is it safe to assume
+
+26
+00:00:49,590 --> 00:00:49,600
+edition. Um, is it safe to assume
+ 
+
+27
+00:00:49,600 --> 00:00:53,270
+edition. Um, is it safe to assume
+everyone's heard of ponton? Um, if
+
+28
+00:00:53,270 --> 00:00:53,280
+everyone's heard of ponton? Um, if
+ 
+
+29
+00:00:53,280 --> 00:00:54,630
+everyone's heard of ponton? Um, if
+you've if you have no idea what
+
+30
+00:00:54,630 --> 00:00:54,640
+you've if you have no idea what
+ 
+
+31
+00:00:54,640 --> 00:00:56,389
+you've if you have no idea what
+pontonone is, can you please raise your
+
+32
+00:00:56,389 --> 00:00:56,399
+pontonone is, can you please raise your
+ 
+
+33
+00:00:56,399 --> 00:01:00,869
+pontonone is, can you please raise your
+hand? Okay. So pon is a contest happens
+
+34
+00:01:00,869 --> 00:01:00,879
+hand? Okay. So pon is a contest happens
+ 
+
+35
+00:01:00,879 --> 00:01:03,510
+hand? Okay. So pon is a contest happens
+uh once nowadays twice or whatever a
+
+36
+00:01:03,510 --> 00:01:03,520
+uh once nowadays twice or whatever a
+ 
+
+37
+00:01:03,520 --> 00:01:07,670
+uh once nowadays twice or whatever a
+year where a company called trend AI
+
+38
+00:01:07,670 --> 00:01:07,680
+year where a company called trend AI
+ 
+
+39
+00:01:07,680 --> 00:01:11,510
+year where a company called trend AI
+well zdi the zero day initiative uh will
+
+40
+00:01:11,510 --> 00:01:11,520
+well zdi the zero day initiative uh will
+ 
+
+41
+00:01:11,520 --> 00:01:14,870
+well zdi the zero day initiative uh will
+bring out some real world targets like
+
+42
+00:01:14,870 --> 00:01:14,880
+bring out some real world targets like
+ 
+
+43
+00:01:14,880 --> 00:01:18,630
+bring out some real world targets like
+phones routters printers naz whatever
+
+44
+00:01:18,630 --> 00:01:18,640
+phones routters printers naz whatever
+ 
+
+45
+00:01:18,640 --> 00:01:20,870
+phones routters printers naz whatever
+and they invite people to demonstrate
+
+46
+00:01:20,870 --> 00:01:20,880
+and they invite people to demonstrate
+ 
+
+47
+00:01:20,880 --> 00:01:24,149
+and they invite people to demonstrate
+and exploit uh using durase
+
+48
+00:01:24,149 --> 00:01:24,159
+and exploit uh using durase
+ 
+
+49
+00:01:24,159 --> 00:01:26,870
+and exploit uh using durase
+um so that's essentially what pontoon is
+
+50
+00:01:26,870 --> 00:01:26,880
+um so that's essentially what pontoon is
+ 
+
+51
+00:01:26,880 --> 00:01:31,429
+um so that's essentially what pontoon is
+Um, I've been doing puntor for maybe
+
+52
+00:01:31,429 --> 00:01:31,439
+Um, I've been doing puntor for maybe
+ 
+
+53
+00:01:31,439 --> 00:01:35,270
+Um, I've been doing puntor for maybe
+over 10 years now, and I've mostly been
+
+54
+00:01:35,270 --> 00:01:35,280
+over 10 years now, and I've mostly been
+ 
+
+55
+00:01:35,280 --> 00:01:38,149
+over 10 years now, and I've mostly been
+focused on Android targets over the
+
+56
+00:01:38,149 --> 00:01:38,159
+focused on Android targets over the
+ 
+
+57
+00:01:38,159 --> 00:01:43,270
+focused on Android targets over the
+years, and I'm getting really bored. Um,
+
+58
+00:01:43,270 --> 00:01:43,280
+years, and I'm getting really bored. Um,
+ 
+
+59
+00:01:43,280 --> 00:01:45,910
+years, and I'm getting really bored. Um,
+nothing's really changed for a couple of
+
+60
+00:01:45,910 --> 00:01:45,920
+nothing's really changed for a couple of
+ 
+
+61
+00:01:45,920 --> 00:01:48,469
+nothing's really changed for a couple of
+the vendors I've been targeting over the
+
+62
+00:01:48,469 --> 00:01:48,479
+the vendors I've been targeting over the
+ 
+
+63
+00:01:48,479 --> 00:01:50,789
+the vendors I've been targeting over the
+years. Uh, it's essentially the same
+
+64
+00:01:50,789 --> 00:01:50,799
+years. Uh, it's essentially the same
+ 
+
+65
+00:01:50,799 --> 00:01:54,469
+years. Uh, it's essentially the same
+bugs over and over again. Um,
+
+66
+00:01:54,469 --> 00:01:54,479
+bugs over and over again. Um,
+ 
+
+67
+00:01:54,479 --> 00:01:57,429
+bugs over and over again. Um,
+the only issue is it's getting a bit
+
+68
+00:01:57,429 --> 00:01:57,439
+the only issue is it's getting a bit
+ 
+
+69
+00:01:57,439 --> 00:01:59,109
+the only issue is it's getting a bit
+more difficult to find these bugs
+
+70
+00:01:59,109 --> 00:01:59,119
+more difficult to find these bugs
+ 
+
+71
+00:01:59,119 --> 00:02:01,030
+more difficult to find these bugs
+because they're buried in a huge amount
+
+72
+00:02:01,030 --> 00:02:01,040
+because they're buried in a huge amount
+ 
+
+73
+00:02:01,040 --> 00:02:03,510
+because they're buried in a huge amount
+of applications and some of the bug
+
+74
+00:02:03,510 --> 00:02:03,520
+of applications and some of the bug
+ 
+
+75
+00:02:03,520 --> 00:02:06,310
+of applications and some of the bug
+bounties out there are wiping the
+
+76
+00:02:06,310 --> 00:02:06,320
+bounties out there are wiping the
+ 
+
+77
+00:02:06,320 --> 00:02:10,229
+bounties out there are wiping the
+lowhanging more obvious bugs. Um, so I
+
+78
+00:02:10,229 --> 00:02:10,239
+lowhanging more obvious bugs. Um, so I
+ 
+
+79
+00:02:10,239 --> 00:02:11,589
+lowhanging more obvious bugs. Um, so I
+decided, okay, well, that's a great
+
+80
+00:02:11,589 --> 00:02:11,599
+decided, okay, well, that's a great
+ 
+
+81
+00:02:11,599 --> 00:02:15,830
+decided, okay, well, that's a great
+excuse to teach myself um AI. um Android
+
+82
+00:02:15,830 --> 00:02:15,840
+excuse to teach myself um AI. um Android
+ 
+
+83
+00:02:15,840 --> 00:02:19,750
+excuse to teach myself um AI. um Android
+applications the delvic executable file
+
+84
+00:02:19,750 --> 00:02:19,760
+applications the delvic executable file
+ 
+
+85
+00:02:19,760 --> 00:02:22,630
+applications the delvic executable file
+format decompiles nicely to human
+
+86
+00:02:22,630 --> 00:02:22,640
+format decompiles nicely to human
+ 
+
+87
+00:02:22,640 --> 00:02:26,470
+format decompiles nicely to human
+readable Java. So, you know, human
+
+88
+00:02:26,470 --> 00:02:26,480
+readable Java. So, you know, human
+ 
+
+89
+00:02:26,480 --> 00:02:29,830
+readable Java. So, you know, human
+readable Javas potentially a great um
+
+90
+00:02:29,830 --> 00:02:29,840
+readable Javas potentially a great um
+ 
+
+91
+00:02:29,840 --> 00:02:33,430
+readable Javas potentially a great um
+input for LLM and so many of these bugs
+
+92
+00:02:33,430 --> 00:02:33,440
+input for LLM and so many of these bugs
+ 
+
+93
+00:02:33,440 --> 00:02:36,390
+input for LLM and so many of these bugs
+that I'm talking about, they're very
+
+94
+00:02:36,390 --> 00:02:36,400
+that I'm talking about, they're very
+ 
+
+95
+00:02:36,400 --> 00:02:39,110
+that I'm talking about, they're very
+obvious patterns that might not
+
+96
+00:02:39,110 --> 00:02:39,120
+obvious patterns that might not
+ 
+
+97
+00:02:39,120 --> 00:02:41,270
+obvious patterns that might not
+necessarily be the easiest one for a
+
+98
+00:02:41,270 --> 00:02:41,280
+necessarily be the easiest one for a
+ 
+
+99
+00:02:41,280 --> 00:02:43,750
+necessarily be the easiest one for a
+static analyzer to pick up, but when you
+
+100
+00:02:43,750 --> 00:02:43,760
+static analyzer to pick up, but when you
+ 
+
+101
+00:02:43,760 --> 00:02:45,750
+static analyzer to pick up, but when you
+see one, you know instantly there's
+
+102
+00:02:45,750 --> 00:02:45,760
+see one, you know instantly there's
+ 
+
+103
+00:02:45,760 --> 00:02:48,710
+see one, you know instantly there's
+something wrong going on. So this kind
+
+104
+00:02:48,710 --> 00:02:48,720
+something wrong going on. So this kind
+ 
+
+105
+00:02:48,720 --> 00:02:51,589
+something wrong going on. So this kind
+of pattern matching is probably another
+
+106
+00:02:51,589 --> 00:02:51,599
+of pattern matching is probably another
+ 
+
+107
+00:02:51,599 --> 00:02:55,110
+of pattern matching is probably another
+great um problem for for an LLM to work
+
+108
+00:02:55,110 --> 00:02:55,120
+great um problem for for an LLM to work
+ 
+
+109
+00:02:55,120 --> 00:02:59,350
+great um problem for for an LLM to work
+on obviously. And last but not not least
+
+110
+00:02:59,350 --> 00:02:59,360
+on obviously. And last but not not least
+ 
+
+111
+00:02:59,360 --> 00:03:01,509
+on obviously. And last but not not least
+um there's absolutely no privacy
+
+112
+00:03:01,509 --> 00:03:01,519
+um there's absolutely no privacy
+ 
+
+113
+00:03:01,519 --> 00:03:05,430
+um there's absolutely no privacy
+concerns in my day-to-day job as a von
+
+114
+00:03:05,430 --> 00:03:05,440
+concerns in my day-to-day job as a von
+ 
+
+115
+00:03:05,440 --> 00:03:08,390
+concerns in my day-to-day job as a von
+researcher. Um unfortunately we've not
+
+116
+00:03:08,390 --> 00:03:08,400
+researcher. Um unfortunately we've not
+ 
+
+117
+00:03:08,400 --> 00:03:12,790
+researcher. Um unfortunately we've not
+really found a way to use um LLMs uh at
+
+118
+00:03:12,790 --> 00:03:12,800
+really found a way to use um LLMs uh at
+ 
+
+119
+00:03:12,800 --> 00:03:17,270
+really found a way to use um LLMs uh at
+the minute. Uh but um ponton was was was
+
+120
+00:03:17,270 --> 00:03:17,280
+the minute. Uh but um ponton was was was
+ 
+
+121
+00:03:17,280 --> 00:03:19,830
+the minute. Uh but um ponton was was was
+great excuse because we obviously don't
+
+122
+00:03:19,830 --> 00:03:19,840
+great excuse because we obviously don't
+ 
+
+123
+00:03:19,840 --> 00:03:21,990
+great excuse because we obviously don't
+care about these bugs. These bugs will
+
+124
+00:03:21,990 --> 00:03:22,000
+care about these bugs. These bugs will
+ 
+
+125
+00:03:22,000 --> 00:03:24,309
+care about these bugs. These bugs will
+eventually end up with the ponton
+
+126
+00:03:24,309 --> 00:03:24,319
+eventually end up with the ponton
+ 
+
+127
+00:03:24,319 --> 00:03:28,390
+eventually end up with the ponton
+organizers. Right. So before I actually
+
+128
+00:03:28,390 --> 00:03:28,400
+organizers. Right. So before I actually
+ 
+
+129
+00:03:28,400 --> 00:03:32,070
+organizers. Right. So before I actually
+dig into the agendic solution which is
+
+130
+00:03:32,070 --> 00:03:32,080
+dig into the agendic solution which is
+ 
+
+131
+00:03:32,080 --> 00:03:34,070
+dig into the agendic solution which is
+the focus of this talk, I obviously
+
+132
+00:03:34,070 --> 00:03:34,080
+the focus of this talk, I obviously
+ 
+
+133
+00:03:34,080 --> 00:03:37,430
+the focus of this talk, I obviously
+decided to um well make sure there's
+
+134
+00:03:37,430 --> 00:03:37,440
+decided to um well make sure there's
+ 
+
+135
+00:03:37,440 --> 00:03:39,750
+decided to um well make sure there's
+actually something out there. Um I
+
+136
+00:03:39,750 --> 00:03:39,760
+actually something out there. Um I
+ 
+
+137
+00:03:39,760 --> 00:03:41,910
+actually something out there. Um I
+actually was a bit of a skeptic. but
+
+138
+00:03:41,910 --> 00:03:41,920
+actually was a bit of a skeptic. but
+ 
+
+139
+00:03:41,920 --> 00:03:44,710
+actually was a bit of a skeptic. but
+didn't really know if I should uh buy
+
+140
+00:03:44,710 --> 00:03:44,720
+didn't really know if I should uh buy
+ 
+
+141
+00:03:44,720 --> 00:03:47,430
+didn't really know if I should uh buy
+into this hype. Um so I'm like okay well
+
+142
+00:03:47,430 --> 00:03:47,440
+into this hype. Um so I'm like okay well
+ 
+
+143
+00:03:47,440 --> 00:03:51,350
+into this hype. Um so I'm like okay well
+let's copy paste some output from a tool
+
+144
+00:03:51,350 --> 00:03:51,360
+let's copy paste some output from a tool
+ 
+
+145
+00:03:51,360 --> 00:03:53,990
+let's copy paste some output from a tool
+like Jeb or Jadex basically a tool that
+
+146
+00:03:53,990 --> 00:03:54,000
+like Jeb or Jadex basically a tool that
+ 
+
+147
+00:03:54,000 --> 00:03:56,949
+like Jeb or Jadex basically a tool that
+will decompile an Android application to
+
+148
+00:03:56,949 --> 00:03:56,959
+will decompile an Android application to
+ 
+
+149
+00:03:56,959 --> 00:03:59,030
+will decompile an Android application to
+Java and like paste some of this input
+
+150
+00:03:59,030 --> 00:03:59,040
+Java and like paste some of this input
+ 
+
+151
+00:03:59,040 --> 00:04:02,710
+Java and like paste some of this input
+into a a chatbot and see what comes back
+
+152
+00:04:02,710 --> 00:04:02,720
+into a a chatbot and see what comes back
+ 
+
+153
+00:04:02,720 --> 00:04:04,949
+into a a chatbot and see what comes back
+and you know surprisingly like some of
+
+154
+00:04:04,949 --> 00:04:04,959
+and you know surprisingly like some of
+ 
+
+155
+00:04:04,959 --> 00:04:07,830
+and you know surprisingly like some of
+these bugs instantly picked up like okay
+
+156
+00:04:07,830 --> 00:04:07,840
+these bugs instantly picked up like okay
+ 
+
+157
+00:04:07,840 --> 00:04:09,990
+these bugs instantly picked up like okay
+well there's something there. Um,
+
+158
+00:04:09,990 --> 00:04:10,000
+well there's something there. Um,
+ 
+
+159
+00:04:10,000 --> 00:04:11,910
+well there's something there. Um,
+unfortunately there wasn't really a
+
+160
+00:04:11,910 --> 00:04:11,920
+unfortunately there wasn't really a
+ 
+
+161
+00:04:11,920 --> 00:04:16,550
+unfortunately there wasn't really a
+decent uh plug-in for Jeb or Jaddex to
+
+162
+00:04:16,550 --> 00:04:16,560
+decent uh plug-in for Jeb or Jaddex to
+ 
+
+163
+00:04:16,560 --> 00:04:18,949
+decent uh plug-in for Jeb or Jaddex to
+use to like use a chatbot as an
+
+164
+00:04:18,949 --> 00:04:18,959
+use to like use a chatbot as an
+ 
+
+165
+00:04:18,959 --> 00:04:22,390
+use to like use a chatbot as an
+assistant. So I kind of focused a little
+
+166
+00:04:22,390 --> 00:04:22,400
+assistant. So I kind of focused a little
+ 
+
+167
+00:04:22,400 --> 00:04:24,550
+assistant. So I kind of focused a little
+bit for a short period of time on
+
+168
+00:04:24,550 --> 00:04:24,560
+bit for a short period of time on
+ 
+
+169
+00:04:24,560 --> 00:04:27,110
+bit for a short period of time on
+Android Studio because it's what
+
+170
+00:04:27,110 --> 00:04:27,120
+Android Studio because it's what
+ 
+
+171
+00:04:27,120 --> 00:04:29,430
+Android Studio because it's what
+supposedly what real developers use. So
+
+172
+00:04:29,430 --> 00:04:29,440
+supposedly what real developers use. So
+ 
+
+173
+00:04:29,440 --> 00:04:31,270
+supposedly what real developers use. So
+hopefully better support for some of
+
+174
+00:04:31,270 --> 00:04:31,280
+hopefully better support for some of
+ 
+
+175
+00:04:31,280 --> 00:04:34,230
+hopefully better support for some of
+these assistants out there. So you can
+
+176
+00:04:34,230 --> 00:04:34,240
+these assistants out there. So you can
+ 
+
+177
+00:04:34,240 --> 00:04:36,550
+these assistants out there. So you can
+use Jadex to decompile the app and then
+
+178
+00:04:36,550 --> 00:04:36,560
+use Jadex to decompile the app and then
+ 
+
+179
+00:04:36,560 --> 00:04:38,790
+use Jadex to decompile the app and then
+export as a gradal project and then
+
+180
+00:04:38,790 --> 00:04:38,800
+export as a gradal project and then
+ 
+
+181
+00:04:38,800 --> 00:04:40,950
+export as a gradal project and then
+import it into Android Studio and then
+
+182
+00:04:40,950 --> 00:04:40,960
+import it into Android Studio and then
+ 
+
+183
+00:04:40,960 --> 00:04:43,909
+import it into Android Studio and then
+take advantage of some of these like Jet
+
+184
+00:04:43,909 --> 00:04:43,919
+take advantage of some of these like Jet
+ 
+
+185
+00:04:43,919 --> 00:04:46,550
+take advantage of some of these like Jet
+Brains AI assistant or C- pilot plugins
+
+186
+00:04:46,550 --> 00:04:46,560
+Brains AI assistant or C- pilot plugins
+ 
+
+187
+00:04:46,560 --> 00:04:49,270
+Brains AI assistant or C- pilot plugins
+or whatever to ask questions about the
+
+188
+00:04:49,270 --> 00:04:49,280
+or whatever to ask questions about the
+ 
+
+189
+00:04:49,280 --> 00:04:52,710
+or whatever to ask questions about the
+app, ask the ask the model to clean up
+
+190
+00:04:52,710 --> 00:04:52,720
+app, ask the ask the model to clean up
+ 
+
+191
+00:04:52,720 --> 00:04:55,110
+app, ask the ask the model to clean up
+the app, tidy up the some of the
+
+192
+00:04:55,110 --> 00:04:55,120
+the app, tidy up the some of the
+ 
+
+193
+00:04:55,120 --> 00:04:57,990
+the app, tidy up the some of the
+partially obiscated source, etc. Well,
+
+194
+00:04:57,990 --> 00:04:58,000
+partially obiscated source, etc. Well,
+ 
+
+195
+00:04:58,000 --> 00:04:59,749
+partially obiscated source, etc. Well,
+long story short, I wasn't so happy with
+
+196
+00:04:59,749 --> 00:04:59,759
+long story short, I wasn't so happy with
+ 
+
+197
+00:04:59,759 --> 00:05:03,670
+long story short, I wasn't so happy with
+the with the integration, but I was um
+
+198
+00:05:03,670 --> 00:05:03,680
+the with the integration, but I was um
+ 
+
+199
+00:05:03,680 --> 00:05:07,350
+the with the integration, but I was um
+surprised by the by the outputs um like
+
+200
+00:05:07,350 --> 00:05:07,360
+surprised by the by the outputs um like
+ 
+
+201
+00:05:07,360 --> 00:05:08,950
+surprised by the by the outputs um like
+using
+
+202
+00:05:08,950 --> 00:05:08,960
+using
+ 
+
+203
+00:05:08,960 --> 00:05:12,390
+using
+again chat style bots ad hoc. Um I was
+
+204
+00:05:12,390 --> 00:05:12,400
+again chat style bots ad hoc. Um I was
+ 
+
+205
+00:05:12,400 --> 00:05:15,029
+again chat style bots ad hoc. Um I was
+like okay well let's see what the
+
+206
+00:05:15,029 --> 00:05:15,039
+like okay well let's see what the
+ 
+
+207
+00:05:15,039 --> 00:05:16,710
+like okay well let's see what the
+agentic stuff is all about. And there
+
+208
+00:05:16,710 --> 00:05:16,720
+agentic stuff is all about. And there
+ 
+
+209
+00:05:16,720 --> 00:05:19,830
+agentic stuff is all about. And there
+isn't actually I'm talking about August
+
+210
+00:05:19,830 --> 00:05:19,840
+isn't actually I'm talking about August
+ 
+
+211
+00:05:19,840 --> 00:05:21,990
+isn't actually I'm talking about August
+last year so maybe there's something
+
+212
+00:05:21,990 --> 00:05:22,000
+last year so maybe there's something
+ 
+
+213
+00:05:22,000 --> 00:05:23,749
+last year so maybe there's something
+nowadays but August last year I'm like
+
+214
+00:05:23,749 --> 00:05:23,759
+nowadays but August last year I'm like
+ 
+
+215
+00:05:23,759 --> 00:05:26,230
+nowadays but August last year I'm like
+is there something I can use agentbased
+
+216
+00:05:26,230 --> 00:05:26,240
+is there something I can use agentbased
+ 
+
+217
+00:05:26,240 --> 00:05:28,870
+is there something I can use agentbased
+that will just consume an Android
+
+218
+00:05:28,870 --> 00:05:28,880
+that will just consume an Android
+ 
+
+219
+00:05:28,880 --> 00:05:31,430
+that will just consume an Android
+application go and find bugs in it well
+
+220
+00:05:31,430 --> 00:05:31,440
+application go and find bugs in it well
+ 
+
+221
+00:05:31,440 --> 00:05:33,029
+application go and find bugs in it well
+couldn't find anything at the time so
+
+222
+00:05:33,029 --> 00:05:33,039
+couldn't find anything at the time so
+ 
+
+223
+00:05:33,039 --> 00:05:35,430
+couldn't find anything at the time so
+I'm like right I mean that's another
+
+224
+00:05:35,430 --> 00:05:35,440
+I'm like right I mean that's another
+ 
+
+225
+00:05:35,440 --> 00:05:37,110
+I'm like right I mean that's another
+good excuse to like try and learn
+
+226
+00:05:37,110 --> 00:05:37,120
+good excuse to like try and learn
+ 
+
+227
+00:05:37,120 --> 00:05:39,590
+good excuse to like try and learn
+something new for once
+
+228
+00:05:39,590 --> 00:05:39,600
+something new for once
+ 
+
+229
+00:05:39,600 --> 00:05:43,029
+something new for once
+um and this is what the really high
+
+230
+00:05:43,029 --> 00:05:43,039
+um and this is what the really high
+ 
+
+231
+00:05:43,039 --> 00:05:46,710
+um and this is what the really high
+level design of the um solution looks
+
+232
+00:05:46,710 --> 00:05:46,720
+level design of the um solution looks
+ 
+
+233
+00:05:46,720 --> 00:05:51,350
+level design of the um solution looks
+like. So I use lang chain for the agent
+
+234
+00:05:51,350 --> 00:05:51,360
+like. So I use lang chain for the agent
+ 
+
+235
+00:05:51,360 --> 00:05:54,629
+like. So I use lang chain for the agent
+or the set of agents uh that I have
+
+236
+00:05:54,629 --> 00:05:54,639
+or the set of agents uh that I have
+ 
+
+237
+00:05:54,639 --> 00:05:57,749
+or the set of agents uh that I have
+nowadays. I've got Jadex again the
+
+238
+00:05:57,749 --> 00:05:57,759
+nowadays. I've got Jadex again the
+ 
+
+239
+00:05:57,759 --> 00:06:00,550
+nowadays. I've got Jadex again the
+application used to decompile uh Android
+
+240
+00:06:00,550 --> 00:06:00,560
+application used to decompile uh Android
+ 
+
+241
+00:06:00,560 --> 00:06:03,350
+application used to decompile uh Android
+applications to Java. Uh the agent
+
+242
+00:06:03,350 --> 00:06:03,360
+applications to Java. Uh the agent
+ 
+
+243
+00:06:03,360 --> 00:06:06,710
+applications to Java. Uh the agent
+speaks to light LLM just to help with
+
+244
+00:06:06,710 --> 00:06:06,720
+speaks to light LLM just to help with
+ 
+
+245
+00:06:06,720 --> 00:06:08,790
+speaks to light LLM just to help with
+the management for some of these models.
+
+246
+00:06:08,790 --> 00:06:08,800
+the management for some of these models.
+ 
+
+247
+00:06:08,800 --> 00:06:11,590
+the management for some of these models.
+All of these models run on Azure Foundry
+
+248
+00:06:11,590 --> 00:06:11,600
+All of these models run on Azure Foundry
+ 
+
+249
+00:06:11,600 --> 00:06:14,950
+All of these models run on Azure Foundry
+and I've got Langfuse for um
+
+250
+00:06:14,950 --> 00:06:14,960
+and I've got Langfuse for um
+ 
+
+251
+00:06:14,960 --> 00:06:19,189
+and I've got Langfuse for um
+introspection and observability.
+
+252
+00:06:19,189 --> 00:06:19,199
+introspection and observability.
+ 
+
+253
+00:06:19,199 --> 00:06:22,950
+introspection and observability.
+So again, I have no idea what AI is at
+
+254
+00:06:22,950 --> 00:06:22,960
+So again, I have no idea what AI is at
+ 
+
+255
+00:06:22,960 --> 00:06:24,710
+So again, I have no idea what AI is at
+this point or how I'm supposed to
+
+256
+00:06:24,710 --> 00:06:24,720
+this point or how I'm supposed to
+ 
+
+257
+00:06:24,720 --> 00:06:28,469
+this point or how I'm supposed to
+actually be using this. So I'm extremely
+
+258
+00:06:28,469 --> 00:06:28,479
+actually be using this. So I'm extremely
+ 
+
+259
+00:06:28,479 --> 00:06:32,629
+actually be using this. So I'm extremely
+naive and I decide to go with a two
+
+260
+00:06:32,629 --> 00:06:32,639
+naive and I decide to go with a two
+ 
+
+261
+00:06:32,639 --> 00:06:35,670
+naive and I decide to go with a two
+agent setup. One agent to identify
+
+262
+00:06:35,670 --> 00:06:35,680
+agent setup. One agent to identify
+ 
+
+263
+00:06:35,680 --> 00:06:38,390
+agent setup. One agent to identify
+what's the valid attack surface in the
+
+264
+00:06:38,390 --> 00:06:38,400
+what's the valid attack surface in the
+ 
+
+265
+00:06:38,400 --> 00:06:41,350
+what's the valid attack surface in the
+target application. Then produce some
+
+266
+00:06:41,350 --> 00:06:41,360
+target application. Then produce some
+ 
+
+267
+00:06:41,360 --> 00:06:43,350
+target application. Then produce some
+list of entry points into the
+
+268
+00:06:43,350 --> 00:06:43,360
+list of entry points into the
+ 
+
+269
+00:06:43,360 --> 00:06:45,430
+list of entry points into the
+application and then hand this list over
+
+270
+00:06:45,430 --> 00:06:45,440
+application and then hand this list over
+ 
+
+271
+00:06:45,440 --> 00:06:50,790
+application and then hand this list over
+to a bug hunter um agent.
+
+272
+00:06:50,790 --> 00:06:50,800
+to a bug hunter um agent.
+ 
+
+273
+00:06:50,800 --> 00:06:53,990
+to a bug hunter um agent.
+And the bug hunter agent is supposed to
+
+274
+00:06:53,990 --> 00:06:54,000
+And the bug hunter agent is supposed to
+ 
+
+275
+00:06:54,000 --> 00:06:57,430
+And the bug hunter agent is supposed to
+like go and find bugs for me. And this
+
+276
+00:06:57,430 --> 00:06:57,440
+like go and find bugs for me. And this
+ 
+
+277
+00:06:57,440 --> 00:06:59,749
+like go and find bugs for me. And this
+whole setup speaks to JREX via these
+
+278
+00:06:59,749 --> 00:06:59,759
+whole setup speaks to JREX via these
+ 
+
+279
+00:06:59,759 --> 00:07:02,629
+whole setup speaks to JREX via these
+JREX MCP. Couple of words on the Jax
+
+280
+00:07:02,629 --> 00:07:02,639
+JREX MCP. Couple of words on the Jax
+ 
+
+281
+00:07:02,639 --> 00:07:05,670
+JREX MCP. Couple of words on the Jax
+MCP. The it was heavily based on an
+
+282
+00:07:05,670 --> 00:07:05,680
+MCP. The it was heavily based on an
+ 
+
+283
+00:07:05,680 --> 00:07:07,909
+MCP. The it was heavily based on an
+open- source implementation
+
+284
+00:07:07,909 --> 00:07:07,919
+open- source implementation
+ 
+
+285
+00:07:07,919 --> 00:07:12,309
+open- source implementation
+by this uh guy. It's it it wasn't ideal,
+
+286
+00:07:12,309 --> 00:07:12,319
+by this uh guy. It's it it wasn't ideal,
+ 
+
+287
+00:07:12,319 --> 00:07:14,070
+by this uh guy. It's it it wasn't ideal,
+but it was pretty much the only
+
+288
+00:07:14,070 --> 00:07:14,080
+but it was pretty much the only
+ 
+
+289
+00:07:14,080 --> 00:07:17,270
+but it was pretty much the only
+available option at the time. Um, so
+
+290
+00:07:17,270 --> 00:07:17,280
+available option at the time. Um, so
+ 
+
+291
+00:07:17,280 --> 00:07:20,390
+available option at the time. Um, so
+it's uh the JADAX it's implemented as a
+
+292
+00:07:20,390 --> 00:07:20,400
+it's uh the JADAX it's implemented as a
+ 
+
+293
+00:07:20,400 --> 00:07:23,430
+it's uh the JADAX it's implemented as a
+JADX plug-in that essentially runs uh an
+
+294
+00:07:23,430 --> 00:07:23,440
+JADX plug-in that essentially runs uh an
+ 
+
+295
+00:07:23,440 --> 00:07:26,629
+JADX plug-in that essentially runs uh an
+HTTP server embedded into into the
+
+296
+00:07:26,629 --> 00:07:26,639
+HTTP server embedded into into the
+ 
+
+297
+00:07:26,639 --> 00:07:29,749
+HTTP server embedded into into the
+plug-in and exposes some JADX internal
+
+298
+00:07:29,749 --> 00:07:29,759
+plug-in and exposes some JADX internal
+ 
+
+299
+00:07:29,759 --> 00:07:32,150
+plug-in and exposes some JADX internal
+API that you can interact with from the
+
+300
+00:07:32,150 --> 00:07:32,160
+API that you can interact with from the
+ 
+
+301
+00:07:32,160 --> 00:07:35,510
+API that you can interact with from the
+outside and the actual MCP part is just
+
+302
+00:07:35,510 --> 00:07:35,520
+outside and the actual MCP part is just
+ 
+
+303
+00:07:35,520 --> 00:07:38,710
+outside and the actual MCP part is just
+a Python like fast MCP implementation
+
+304
+00:07:38,710 --> 00:07:38,720
+a Python like fast MCP implementation
+ 
+
+305
+00:07:38,720 --> 00:07:42,469
+a Python like fast MCP implementation
+that wraps the rest style endpoints from
+
+306
+00:07:42,469 --> 00:07:42,479
+that wraps the rest style endpoints from
+ 
+
+307
+00:07:42,479 --> 00:07:45,589
+that wraps the rest style endpoints from
+the embedded server and you've got tools
+
+308
+00:07:45,589 --> 00:07:45,599
+the embedded server and you've got tools
+ 
+
+309
+00:07:45,599 --> 00:07:48,550
+the embedded server and you've got tools
+like fetch me the Android manifest. This
+
+310
+00:07:48,550 --> 00:07:48,560
+like fetch me the Android manifest. This
+ 
+
+311
+00:07:48,560 --> 00:07:51,909
+like fetch me the Android manifest. This
+is a description of what the app does,
+
+312
+00:07:51,909 --> 00:07:51,919
+is a description of what the app does,
+ 
+
+313
+00:07:51,919 --> 00:07:54,790
+is a description of what the app does,
+all of the components of the app. Um
+
+314
+00:07:54,790 --> 00:07:54,800
+all of the components of the app. Um
+ 
+
+315
+00:07:54,800 --> 00:07:57,110
+all of the components of the app. Um
+there's tool to retrieve source code for
+
+316
+00:07:57,110 --> 00:07:57,120
+there's tool to retrieve source code for
+ 
+
+317
+00:07:57,120 --> 00:07:59,430
+there's tool to retrieve source code for
+a particular method, same one for a
+
+318
+00:07:59,430 --> 00:07:59,440
+a particular method, same one for a
+ 
+
+319
+00:07:59,440 --> 00:08:03,029
+a particular method, same one for a
+class, tool to actually search through a
+
+320
+00:08:03,029 --> 00:08:03,039
+class, tool to actually search through a
+ 
+
+321
+00:08:03,039 --> 00:08:05,189
+class, tool to actually search through a
+list of classes defined in the app,
+
+322
+00:08:05,189 --> 00:08:05,199
+list of classes defined in the app,
+ 
+
+323
+00:08:05,199 --> 00:08:07,430
+list of classes defined in the app,
+etc., etc. Like all of the stuff you
+
+324
+00:08:07,430 --> 00:08:07,440
+etc., etc. Like all of the stuff you
+ 
+
+325
+00:08:07,440 --> 00:08:09,990
+etc., etc. Like all of the stuff you
+would imagine as a reverse engineer you
+
+326
+00:08:09,990 --> 00:08:10,000
+would imagine as a reverse engineer you
+ 
+
+327
+00:08:10,000 --> 00:08:14,150
+would imagine as a reverse engineer you
+might want to ask questions about.
+
+328
+00:08:14,150 --> 00:08:14,160
+might want to ask questions about.
+ 
+
+329
+00:08:14,160 --> 00:08:18,790
+might want to ask questions about.
+some really obvious mistakes early on.
+
+330
+00:08:18,790 --> 00:08:18,800
+some really obvious mistakes early on.
+ 
+
+331
+00:08:18,800 --> 00:08:21,909
+some really obvious mistakes early on.
+So, I was literally like, "Right, I'm
+
+332
+00:08:21,909 --> 00:08:21,919
+So, I was literally like, "Right, I'm
+ 
+
+333
+00:08:21,919 --> 00:08:24,070
+So, I was literally like, "Right, I'm
+looking for bugs. This is the app. Go
+
+334
+00:08:24,070 --> 00:08:24,080
+looking for bugs. This is the app. Go
+ 
+
+335
+00:08:24,080 --> 00:08:26,950
+looking for bugs. This is the app. Go
+and find bugs." Well, that's clearly not
+
+336
+00:08:26,950 --> 00:08:26,960
+and find bugs." Well, that's clearly not
+ 
+
+337
+00:08:26,960 --> 00:08:29,990
+and find bugs." Well, that's clearly not
+how it works. Um, the app like the agent
+
+338
+00:08:29,990 --> 00:08:30,000
+how it works. Um, the app like the agent
+ 
+
+339
+00:08:30,000 --> 00:08:32,790
+how it works. Um, the app like the agent
+didn't really know what's going on. It
+
+340
+00:08:32,790 --> 00:08:32,800
+didn't really know what's going on. It
+ 
+
+341
+00:08:32,800 --> 00:08:35,750
+didn't really know what's going on. It
+didn't really know what I'm asking. um
+
+342
+00:08:35,750 --> 00:08:35,760
+didn't really know what I'm asking. um
+ 
+
+343
+00:08:35,760 --> 00:08:37,909
+didn't really know what I'm asking. um
+it gets really confused and it gets
+
+344
+00:08:37,909 --> 00:08:37,919
+it gets really confused and it gets
+ 
+
+345
+00:08:37,919 --> 00:08:41,589
+it gets really confused and it gets
+easily lost and just runs out of tokens,
+
+346
+00:08:41,589 --> 00:08:41,599
+easily lost and just runs out of tokens,
+ 
+
+347
+00:08:41,599 --> 00:08:44,149
+easily lost and just runs out of tokens,
+runs out of uh coal like tool call
+
+348
+00:08:44,149 --> 00:08:44,159
+runs out of uh coal like tool call
+ 
+
+349
+00:08:44,159 --> 00:08:48,949
+runs out of uh coal like tool call
+limits, etc., etc. And again, so very
+
+350
+00:08:48,949 --> 00:08:48,959
+limits, etc., etc. And again, so very
+ 
+
+351
+00:08:48,959 --> 00:08:54,150
+limits, etc., etc. And again, so very
+extremely vague objective and very fuzzy
+
+352
+00:08:54,150 --> 00:08:54,160
+extremely vague objective and very fuzzy
+ 
+
+353
+00:08:54,160 --> 00:08:56,790
+extremely vague objective and very fuzzy
+success like criteria like the the the
+
+354
+00:08:56,790 --> 00:08:56,800
+success like criteria like the the the
+ 
+
+355
+00:08:56,800 --> 00:08:58,630
+success like criteria like the the the
+agent doesn't know what kind of bugs I'm
+
+356
+00:08:58,630 --> 00:08:58,640
+agent doesn't know what kind of bugs I'm
+ 
+
+357
+00:08:58,640 --> 00:09:01,509
+agent doesn't know what kind of bugs I'm
+looking for. Uh it doesn't know exactly
+
+358
+00:09:01,509 --> 00:09:01,519
+looking for. Uh it doesn't know exactly
+ 
+
+359
+00:09:01,519 --> 00:09:03,990
+looking for. Uh it doesn't know exactly
+where to look for these bugs. It it it
+
+360
+00:09:03,990 --> 00:09:04,000
+where to look for these bugs. It it it
+ 
+
+361
+00:09:04,000 --> 00:09:05,590
+where to look for these bugs. It it it
+was just a nightmare. I was like, "Okay,
+
+362
+00:09:05,590 --> 00:09:05,600
+was just a nightmare. I was like, "Okay,
+ 
+
+363
+00:09:05,600 --> 00:09:08,550
+was just a nightmare. I was like, "Okay,
+well, this agenda stuff is kind of BS."
+
+364
+00:09:08,550 --> 00:09:08,560
+well, this agenda stuff is kind of BS."
+ 
+
+365
+00:09:08,560 --> 00:09:11,030
+well, this agenda stuff is kind of BS."
+Um, then again, chatting to a few
+
+366
+00:09:11,030 --> 00:09:11,040
+Um, then again, chatting to a few
+ 
+
+367
+00:09:11,040 --> 00:09:12,230
+Um, then again, chatting to a few
+people, they're like, "Well, you
+
+368
+00:09:12,230 --> 00:09:12,240
+people, they're like, "Well, you
+ 
+
+369
+00:09:12,240 --> 00:09:13,750
+people, they're like, "Well, you
+absolutely misusing this. This is not
+
+370
+00:09:13,750 --> 00:09:13,760
+absolutely misusing this. This is not
+ 
+
+371
+00:09:13,760 --> 00:09:15,269
+absolutely misusing this. This is not
+how you use AI." I'm like, "Okay,
+
+372
+00:09:15,269 --> 00:09:15,279
+how you use AI." I'm like, "Okay,
+ 
+
+373
+00:09:15,279 --> 00:09:17,910
+how you use AI." I'm like, "Okay,
+interesting." Then the first and most
+
+374
+00:09:17,910 --> 00:09:17,920
+interesting." Then the first and most
+ 
+
+375
+00:09:17,920 --> 00:09:22,949
+interesting." Then the first and most
+obvious issue was to like tell the agent
+
+376
+00:09:22,949 --> 00:09:22,959
+obvious issue was to like tell the agent
+ 
+
+377
+00:09:22,959 --> 00:09:25,829
+obvious issue was to like tell the agent
+like in a more structured manner where
+
+378
+00:09:25,829 --> 00:09:25,839
+like in a more structured manner where
+ 
+
+379
+00:09:25,839 --> 00:09:28,230
+like in a more structured manner where
+to look for bugs and then iterate over
+
+380
+00:09:28,230 --> 00:09:28,240
+to look for bugs and then iterate over
+ 
+
+381
+00:09:28,240 --> 00:09:31,430
+to look for bugs and then iterate over
+the entry points defined well discovered
+
+382
+00:09:31,430 --> 00:09:31,440
+the entry points defined well discovered
+ 
+
+383
+00:09:31,440 --> 00:09:33,670
+the entry points defined well discovered
+by the attack surface analysis agent. So
+
+384
+00:09:33,670 --> 00:09:33,680
+by the attack surface analysis agent. So
+ 
+
+385
+00:09:33,680 --> 00:09:35,190
+by the attack surface analysis agent. So
+instead of just looking for bugs in the
+
+386
+00:09:35,190 --> 00:09:35,200
+instead of just looking for bugs in the
+ 
+
+387
+00:09:35,200 --> 00:09:37,110
+instead of just looking for bugs in the
+app in general, you say start looking
+
+388
+00:09:37,110 --> 00:09:37,120
+app in general, you say start looking
+ 
+
+389
+00:09:37,120 --> 00:09:38,470
+app in general, you say start looking
+for bugs in this one particular
+
+390
+00:09:38,470 --> 00:09:38,480
+for bugs in this one particular
+ 
+
+391
+00:09:38,480 --> 00:09:39,990
+for bugs in this one particular
+component.
+
+392
+00:09:39,990 --> 00:09:40,000
+component.
+ 
+
+393
+00:09:40,000 --> 00:09:42,710
+component.
+um you get way further into the the core
+
+394
+00:09:42,710 --> 00:09:42,720
+um you get way further into the the core
+ 
+
+395
+00:09:42,720 --> 00:09:44,870
+um you get way further into the the core
+graph and then if you even break this
+
+396
+00:09:44,870 --> 00:09:44,880
+graph and then if you even break this
+ 
+
+397
+00:09:44,880 --> 00:09:48,550
+graph and then if you even break this
+down further and say well start looking
+
+398
+00:09:48,550 --> 00:09:48,560
+down further and say well start looking
+ 
+
+399
+00:09:48,560 --> 00:09:52,550
+down further and say well start looking
+for bugs in this component
+
+400
+00:09:52,550 --> 00:09:52,560
+for bugs in this component
+ 
+
+401
+00:09:52,560 --> 00:09:55,990
+for bugs in this component
+reachable exactly through an intent
+
+402
+00:09:55,990 --> 00:09:56,000
+reachable exactly through an intent
+ 
+
+403
+00:09:56,000 --> 00:09:59,350
+reachable exactly through an intent
+filter defining this data format etc. So
+
+404
+00:09:59,350 --> 00:09:59,360
+filter defining this data format etc. So
+ 
+
+405
+00:09:59,360 --> 00:10:01,190
+filter defining this data format etc. So
+you give some extra guidance to keep it
+
+406
+00:10:01,190 --> 00:10:01,200
+you give some extra guidance to keep it
+ 
+
+407
+00:10:01,200 --> 00:10:03,670
+you give some extra guidance to keep it
+on track for longer. Uh some more
+
+408
+00:10:03,670 --> 00:10:03,680
+on track for longer. Uh some more
+ 
+
+409
+00:10:03,680 --> 00:10:05,829
+on track for longer. Uh some more
+mistakes well the MTP server wasn't
+
+410
+00:10:05,829 --> 00:10:05,839
+mistakes well the MTP server wasn't
+ 
+
+411
+00:10:05,839 --> 00:10:08,310
+mistakes well the MTP server wasn't
+ideal. Um the tool descriptions were a
+
+412
+00:10:08,310 --> 00:10:08,320
+ideal. Um the tool descriptions were a
+ 
+
+413
+00:10:08,320 --> 00:10:11,910
+ideal. Um the tool descriptions were a
+bit vague and messed up maybe. Um the
+
+414
+00:10:11,910 --> 00:10:11,920
+bit vague and messed up maybe. Um the
+ 
+
+415
+00:10:11,920 --> 00:10:14,069
+bit vague and messed up maybe. Um the
+code search was extremely slow. The
+
+416
+00:10:14,069 --> 00:10:14,079
+code search was extremely slow. The
+ 
+
+417
+00:10:14,079 --> 00:10:16,389
+code search was extremely slow. The
+error messages were extremely unhelpful.
+
+418
+00:10:16,389 --> 00:10:16,399
+error messages were extremely unhelpful.
+ 
+
+419
+00:10:16,399 --> 00:10:18,470
+error messages were extremely unhelpful.
+Um basically whenever you encounter a
+
+420
+00:10:18,470 --> 00:10:18,480
+Um basically whenever you encounter a
+ 
+
+421
+00:10:18,480 --> 00:10:20,550
+Um basically whenever you encounter a
+problem, you just return a message
+
+422
+00:10:20,550 --> 00:10:20,560
+problem, you just return a message
+ 
+
+423
+00:10:20,560 --> 00:10:22,870
+problem, you just return a message
+saying there's been an error. So it's
+
+424
+00:10:22,870 --> 00:10:22,880
+saying there's been an error. So it's
+ 
+
+425
+00:10:22,880 --> 00:10:24,870
+saying there's been an error. So it's
+not really helpful to the agent and like
+
+426
+00:10:24,870 --> 00:10:24,880
+not really helpful to the agent and like
+ 
+
+427
+00:10:24,880 --> 00:10:26,630
+not really helpful to the agent and like
+you're not really guiding the agent how
+
+428
+00:10:26,630 --> 00:10:26,640
+you're not really guiding the agent how
+ 
+
+429
+00:10:26,640 --> 00:10:28,630
+you're not really guiding the agent how
+to use the tool if it fails to use it
+
+430
+00:10:28,630 --> 00:10:28,640
+to use the tool if it fails to use it
+ 
+
+431
+00:10:28,640 --> 00:10:32,470
+to use the tool if it fails to use it
+properly. So a lot of these are easily
+
+432
+00:10:32,470 --> 00:10:32,480
+properly. So a lot of these are easily
+ 
+
+433
+00:10:32,480 --> 00:10:36,230
+properly. So a lot of these are easily
+like solvable. um you just implement
+
+434
+00:10:36,230 --> 00:10:36,240
+like solvable. um you just implement
+ 
+
+435
+00:10:36,240 --> 00:10:38,389
+like solvable. um you just implement
+some additional tools if necessary to
+
+436
+00:10:38,389 --> 00:10:38,399
+some additional tools if necessary to
+ 
+
+437
+00:10:38,399 --> 00:10:43,110
+some additional tools if necessary to
+like expose more granular tools. And I
+
+438
+00:10:43,110 --> 00:10:43,120
+like expose more granular tools. And I
+ 
+
+439
+00:10:43,120 --> 00:10:46,550
+like expose more granular tools. And I
+think what made um a lot of difference
+
+440
+00:10:46,550 --> 00:10:46,560
+think what made um a lot of difference
+ 
+
+441
+00:10:46,560 --> 00:10:50,470
+think what made um a lot of difference
+in this case was uh just returning some
+
+442
+00:10:50,470 --> 00:10:50,480
+in this case was uh just returning some
+ 
+
+443
+00:10:50,480 --> 00:10:52,949
+in this case was uh just returning some
+actionable error messages. So the agent
+
+444
+00:10:52,949 --> 00:10:52,959
+actionable error messages. So the agent
+ 
+
+445
+00:10:52,959 --> 00:10:57,430
+actionable error messages. So the agent
+can actually um retry based on like
+
+446
+00:10:57,430 --> 00:10:57,440
+can actually um retry based on like
+ 
+
+447
+00:10:57,440 --> 00:10:59,509
+can actually um retry based on like
+retry wi with with like some sort of
+
+448
+00:10:59,509 --> 00:10:59,519
+retry wi with with like some sort of
+ 
+
+449
+00:10:59,519 --> 00:11:01,509
+retry wi with with like some sort of
+idea what may have gone wrong and like
+
+450
+00:11:01,509 --> 00:11:01,519
+idea what may have gone wrong and like
+ 
+
+451
+00:11:01,519 --> 00:11:03,350
+idea what may have gone wrong and like
+try and tweak the input for the tool
+
+452
+00:11:03,350 --> 00:11:03,360
+try and tweak the input for the tool
+ 
+
+453
+00:11:03,360 --> 00:11:07,190
+try and tweak the input for the tool
+based on the error message. Um system
+
+454
+00:11:07,190 --> 00:11:07,200
+based on the error message. Um system
+ 
+
+455
+00:11:07,200 --> 00:11:10,069
+based on the error message. Um system
+prompt improvements. Uh basically like I
+
+456
+00:11:10,069 --> 00:11:10,079
+prompt improvements. Uh basically like I
+ 
+
+457
+00:11:10,079 --> 00:11:12,550
+prompt improvements. Uh basically like I
+had to be extremely I realized at this
+
+458
+00:11:12,550 --> 00:11:12,560
+had to be extremely I realized at this
+ 
+
+459
+00:11:12,560 --> 00:11:14,389
+had to be extremely I realized at this
+point I'm dealing with a with an intern.
+
+460
+00:11:14,389 --> 00:11:14,399
+point I'm dealing with a with an intern.
+ 
+
+461
+00:11:14,399 --> 00:11:16,550
+point I'm dealing with a with an intern.
+Like if I had an intern for the summer
+
+462
+00:11:16,550 --> 00:11:16,560
+Like if I had an intern for the summer
+ 
+
+463
+00:11:16,560 --> 00:11:19,509
+Like if I had an intern for the summer
+and I want this intern to find bugs on,
+
+464
+00:11:19,509 --> 00:11:19,519
+and I want this intern to find bugs on,
+ 
+
+465
+00:11:19,519 --> 00:11:22,150
+and I want this intern to find bugs on,
+I need to be very well it it's literally
+
+466
+00:11:22,150 --> 00:11:22,160
+I need to be very well it it's literally
+ 
+
+467
+00:11:22,160 --> 00:11:25,509
+I need to be very well it it's literally
+like describing the process that I have
+
+468
+00:11:25,509 --> 00:11:25,519
+like describing the process that I have
+ 
+
+469
+00:11:25,519 --> 00:11:29,269
+like describing the process that I have
+deeply ingrained in deep in my brain
+
+470
+00:11:29,269 --> 00:11:29,279
+deeply ingrained in deep in my brain
+ 
+
+471
+00:11:29,279 --> 00:11:31,670
+deeply ingrained in deep in my brain
+that like what I actually look for and
+
+472
+00:11:31,670 --> 00:11:31,680
+that like what I actually look for and
+ 
+
+473
+00:11:31,680 --> 00:11:34,389
+that like what I actually look for and
+what primitives I'm aware of that that I
+
+474
+00:11:34,389 --> 00:11:34,399
+what primitives I'm aware of that that I
+ 
+
+475
+00:11:34,399 --> 00:11:36,230
+what primitives I'm aware of that that I
+need to chain together to have a
+
+476
+00:11:36,230 --> 00:11:36,240
+need to chain together to have a
+ 
+
+477
+00:11:36,240 --> 00:11:38,389
+need to chain together to have a
+successful exploit. So I had to be very
+
+478
+00:11:38,389 --> 00:11:38,399
+successful exploit. So I had to be very
+ 
+
+479
+00:11:38,399 --> 00:11:40,949
+successful exploit. So I had to be very
+explicit about all of these. Um, I need
+
+480
+00:11:40,949 --> 00:11:40,959
+explicit about all of these. Um, I need
+ 
+
+481
+00:11:40,959 --> 00:11:43,990
+explicit about all of these. Um, I need
+to specify some priorities in terms of
+
+482
+00:11:43,990 --> 00:11:44,000
+to specify some priorities in terms of
+ 
+
+483
+00:11:44,000 --> 00:11:46,230
+to specify some priorities in terms of
+the actual bug classes I'm looking for,
+
+484
+00:11:46,230 --> 00:11:46,240
+the actual bug classes I'm looking for,
+ 
+
+485
+00:11:46,240 --> 00:11:48,470
+the actual bug classes I'm looking for,
+etc. And the agent was always, always,
+
+486
+00:11:48,470 --> 00:11:48,480
+etc. And the agent was always, always,
+ 
+
+487
+00:11:48,480 --> 00:11:50,470
+etc. And the agent was always, always,
+always trying to suggest some fixes and
+
+488
+00:11:50,470 --> 00:11:50,480
+always trying to suggest some fixes and
+ 
+
+489
+00:11:50,480 --> 00:11:52,470
+always trying to suggest some fixes and
+mitigations. I'm like, shut up. Stop
+
+490
+00:11:52,470 --> 00:11:52,480
+mitigations. I'm like, shut up. Stop
+ 
+
+491
+00:11:52,480 --> 00:11:54,230
+mitigations. I'm like, shut up. Stop
+wasting my tokens. I don't care about
+
+492
+00:11:54,230 --> 00:11:54,240
+wasting my tokens. I don't care about
+ 
+
+493
+00:11:54,240 --> 00:11:57,190
+wasting my tokens. I don't care about
+any of this [\h__\h] Okay, so this is
+
+494
+00:11:57,190 --> 00:11:57,200
+any of this [\h__\h] Okay, so this is
+ 
+
+495
+00:11:57,200 --> 00:11:58,949
+any of this [\h__\h] Okay, so this is
+probably the the least interesting part
+
+496
+00:11:58,949 --> 00:11:58,959
+probably the the least interesting part
+ 
+
+497
+00:11:58,959 --> 00:12:01,750
+probably the the least interesting part
+of the talk. These are the two bugs that
+
+498
+00:12:01,750 --> 00:12:01,760
+of the talk. These are the two bugs that
+ 
+
+499
+00:12:01,760 --> 00:12:04,630
+of the talk. These are the two bugs that
+we ended up chaining for pawn to own.
+
+500
+00:12:04,630 --> 00:12:04,640
+we ended up chaining for pawn to own.
+ 
+
+501
+00:12:04,640 --> 00:12:06,949
+we ended up chaining for pawn to own.
+So, the initial agent implementation is
+
+502
+00:12:06,949 --> 00:12:06,959
+So, the initial agent implementation is
+ 
+
+503
+00:12:06,959 --> 00:12:09,590
+So, the initial agent implementation is
+still like extremely basic. There's like
+
+504
+00:12:09,590 --> 00:12:09,600
+still like extremely basic. There's like
+ 
+
+505
+00:12:09,600 --> 00:12:12,870
+still like extremely basic. There's like
+no verification. There's very little
+
+506
+00:12:12,870 --> 00:12:12,880
+no verification. There's very little
+ 
+
+507
+00:12:12,880 --> 00:12:15,269
+no verification. There's very little
+guard rails. Like it it's it's it's
+
+508
+00:12:15,269 --> 00:12:15,279
+guard rails. Like it it's it's it's
+ 
+
+509
+00:12:15,279 --> 00:12:17,350
+guard rails. Like it it's it's it's
+shite, but it still found stuff like it
+
+510
+00:12:17,350 --> 00:12:17,360
+shite, but it still found stuff like it
+ 
+
+511
+00:12:17,360 --> 00:12:18,550
+shite, but it still found stuff like it
+found a lot of stuff actually.
+
+512
+00:12:18,550 --> 00:12:18,560
+found a lot of stuff actually.
+ 
+
+513
+00:12:18,560 --> 00:12:20,949
+found a lot of stuff actually.
+Surprisingly, it found probably over a
+
+514
+00:12:20,949 --> 00:12:20,959
+Surprisingly, it found probably over a
+ 
+
+515
+00:12:20,959 --> 00:12:23,509
+Surprisingly, it found probably over a
+dozen bugs that had to be manually
+
+516
+00:12:23,509 --> 00:12:23,519
+dozen bugs that had to be manually
+ 
+
+517
+00:12:23,519 --> 00:12:26,230
+dozen bugs that had to be manually
+verified at this point. Um, and again,
+
+518
+00:12:26,230 --> 00:12:26,240
+verified at this point. Um, and again,
+ 
+
+519
+00:12:26,240 --> 00:12:28,710
+verified at this point. Um, and again,
+we we chained two of these bugs uh
+
+520
+00:12:28,710 --> 00:12:28,720
+we we chained two of these bugs uh
+ 
+
+521
+00:12:28,720 --> 00:12:31,030
+we we chained two of these bugs uh
+together. So, and and the agent wasn't
+
+522
+00:12:31,030 --> 00:12:31,040
+together. So, and and the agent wasn't
+ 
+
+523
+00:12:31,040 --> 00:12:32,710
+together. So, and and the agent wasn't
+able to figure out these two bugs can
+
+524
+00:12:32,710 --> 00:12:32,720
+able to figure out these two bugs can
+ 
+
+525
+00:12:32,720 --> 00:12:34,790
+able to figure out these two bugs can
+actually be used in in some sort of
+
+526
+00:12:34,790 --> 00:12:34,800
+actually be used in in some sort of
+ 
+
+527
+00:12:34,800 --> 00:12:37,350
+actually be used in in some sort of
+chain. So the first bug it was in a
+
+528
+00:12:37,350 --> 00:12:37,360
+chain. So the first bug it was in a
+ 
+
+529
+00:12:37,360 --> 00:12:41,110
+chain. So the first bug it was in a
+application called smart touch call um
+
+530
+00:12:41,110 --> 00:12:41,120
+application called smart touch call um
+ 
+
+531
+00:12:41,120 --> 00:12:42,550
+application called smart touch call um
+which is some sort of interactive
+
+532
+00:12:42,550 --> 00:12:42,560
+which is some sort of interactive
+ 
+
+533
+00:12:42,560 --> 00:12:45,350
+which is some sort of interactive
+customer service app for Sammy uh
+
+534
+00:12:45,350 --> 00:12:45,360
+customer service app for Sammy uh
+ 
+
+535
+00:12:45,360 --> 00:12:46,870
+customer service app for Sammy uh
+customers
+
+536
+00:12:46,870 --> 00:12:46,880
+customers
+ 
+
+537
+00:12:46,880 --> 00:12:50,310
+customers
+um and it's a like really traditional
+
+538
+00:12:50,310 --> 00:12:50,320
+um and it's a like really traditional
+ 
+
+539
+00:12:50,320 --> 00:12:52,470
+um and it's a like really traditional
+obvious
+
+540
+00:12:52,470 --> 00:12:52,480
+obvious
+ 
+
+541
+00:12:52,480 --> 00:12:55,350
+obvious
+URL validation problem. So you send the
+
+542
+00:12:55,350 --> 00:12:55,360
+URL validation problem. So you send the
+ 
+
+543
+00:12:55,360 --> 00:12:59,110
+URL validation problem. So you send the
+URI to the app essentially and they
+
+544
+00:12:59,110 --> 00:12:59,120
+URI to the app essentially and they
+ 
+
+545
+00:12:59,120 --> 00:13:01,350
+URI to the app essentially and they
+extract some parameters out of the URI,
+
+546
+00:13:01,350 --> 00:13:01,360
+extract some parameters out of the URI,
+ 
+
+547
+00:13:01,360 --> 00:13:06,069
+extract some parameters out of the URI,
+treat one of the parameters as a um as a
+
+548
+00:13:06,069 --> 00:13:06,079
+treat one of the parameters as a um as a
+ 
+
+549
+00:13:06,079 --> 00:13:09,430
+treat one of the parameters as a um as a
+URL and then load this URL into a web
+
+550
+00:13:09,430 --> 00:13:09,440
+URL and then load this URL into a web
+ 
+
+551
+00:13:09,440 --> 00:13:12,069
+URL and then load this URL into a web
+view which is just an embedded browser
+
+552
+00:13:12,069 --> 00:13:12,079
+view which is just an embedded browser
+ 
+
+553
+00:13:12,079 --> 00:13:14,629
+view which is just an embedded browser
+that runs in the app. Um the interesting
+
+554
+00:13:14,629 --> 00:13:14,639
+that runs in the app. Um the interesting
+ 
+
+555
+00:13:14,639 --> 00:13:15,990
+that runs in the app. Um the interesting
+bit about this web view was the fact
+
+556
+00:13:15,990 --> 00:13:16,000
+bit about this web view was the fact
+ 
+
+557
+00:13:16,000 --> 00:13:18,310
+bit about this web view was the fact
+that it's got a very custom web chrome
+
+558
+00:13:18,310 --> 00:13:18,320
+that it's got a very custom web chrome
+ 
+
+559
+00:13:18,320 --> 00:13:20,389
+that it's got a very custom web chrome
+client implementation which is basically
+
+560
+00:13:20,389 --> 00:13:20,399
+client implementation which is basically
+ 
+
+561
+00:13:20,399 --> 00:13:23,509
+client implementation which is basically
+the bit of the web view that dictates
+
+562
+00:13:23,509 --> 00:13:23,519
+the bit of the web view that dictates
+ 
+
+563
+00:13:23,519 --> 00:13:26,790
+the bit of the web view that dictates
+how permissions are managed in in in
+
+564
+00:13:26,790 --> 00:13:26,800
+how permissions are managed in in in
+ 
+
+565
+00:13:26,800 --> 00:13:29,829
+how permissions are managed in in in
+this web view. And this particular web
+
+566
+00:13:29,829 --> 00:13:29,839
+this web view. And this particular web
+ 
+
+567
+00:13:29,839 --> 00:13:31,350
+this web view. And this particular web
+chrome client basically gives you access
+
+568
+00:13:31,350 --> 00:13:31,360
+chrome client basically gives you access
+ 
+
+569
+00:13:31,360 --> 00:13:33,350
+chrome client basically gives you access
+to your microphone, camera, geoloccation
+
+570
+00:13:33,350 --> 00:13:33,360
+to your microphone, camera, geoloccation
+ 
+
+571
+00:13:33,360 --> 00:13:35,269
+to your microphone, camera, geoloccation
+and a couple of other bits and bobs.
+
+572
+00:13:35,269 --> 00:13:35,279
+and a couple of other bits and bobs.
+ 
+
+573
+00:13:35,279 --> 00:13:37,670
+and a couple of other bits and bobs.
+Normally when you ask for this in a
+
+574
+00:13:37,670 --> 00:13:37,680
+Normally when you ask for this in a
+ 
+
+575
+00:13:37,680 --> 00:13:39,829
+Normally when you ask for this in a
+browser or in any other web view, you
+
+576
+00:13:39,829 --> 00:13:39,839
+browser or in any other web view, you
+ 
+
+577
+00:13:39,839 --> 00:13:41,590
+browser or in any other web view, you
+get a notification, you get a prompt and
+
+578
+00:13:41,590 --> 00:13:41,600
+get a notification, you get a prompt and
+ 
+
+579
+00:13:41,600 --> 00:13:43,350
+get a notification, you get a prompt and
+you need to confirm all of these one by
+
+580
+00:13:43,350 --> 00:13:43,360
+you need to confirm all of these one by
+ 
+
+581
+00:13:43,360 --> 00:13:45,829
+you need to confirm all of these one by
+one based on the origin or whatever. But
+
+582
+00:13:45,829 --> 00:13:45,839
+one based on the origin or whatever. But
+ 
+
+583
+00:13:45,839 --> 00:13:48,069
+one based on the origin or whatever. But
+this one was just like, okay, go ahead.
+
+584
+00:13:48,069 --> 00:13:48,079
+this one was just like, okay, go ahead.
+ 
+
+585
+00:13:48,079 --> 00:13:50,710
+this one was just like, okay, go ahead.
+Like you've got access to any of these.
+
+586
+00:13:50,710 --> 00:13:50,720
+Like you've got access to any of these.
+ 
+
+587
+00:13:50,720 --> 00:13:53,030
+Like you've got access to any of these.
+Um, this is what the entry point looks
+
+588
+00:13:53,030 --> 00:13:53,040
+Um, this is what the entry point looks
+ 
+
+589
+00:13:53,040 --> 00:13:54,790
+Um, this is what the entry point looks
+like. You've got the name of the
+
+590
+00:13:54,790 --> 00:13:54,800
+like. You've got the name of the
+ 
+
+591
+00:13:54,800 --> 00:13:56,949
+like. You've got the name of the
+activity. It's called web view activity.
+
+592
+00:13:56,949 --> 00:13:56,959
+activity. It's called web view activity.
+ 
+
+593
+00:13:56,959 --> 00:14:00,470
+activity. It's called web view activity.
+Nice. Uh, it's got a scheme and a host
+
+594
+00:14:00,470 --> 00:14:00,480
+Nice. Uh, it's got a scheme and a host
+ 
+
+595
+00:14:00,480 --> 00:14:02,150
+Nice. Uh, it's got a scheme and a host
+which basically tells you how to reach
+
+596
+00:14:02,150 --> 00:14:02,160
+which basically tells you how to reach
+ 
+
+597
+00:14:02,160 --> 00:14:04,389
+which basically tells you how to reach
+this application. So when you click on a
+
+598
+00:14:04,389 --> 00:14:04,399
+this application. So when you click on a
+ 
+
+599
+00:14:04,399 --> 00:14:07,590
+this application. So when you click on a
+link sdc.skin
+
+600
+00:14:07,590 --> 00:14:07,600
+link sdc.skin
+ 
+
+601
+00:14:07,600 --> 00:14:10,150
+link sdc.skin
+sldc/
+
+602
+00:14:10,150 --> 00:14:10,160
+sldc/
+ 
+
+603
+00:14:10,160 --> 00:14:14,150
+sldc/
+whatever from a from a browser or from a
+
+604
+00:14:14,150 --> 00:14:14,160
+whatever from a from a browser or from a
+ 
+
+605
+00:14:14,160 --> 00:14:17,110
+whatever from a from a browser or from a
+instant message or whatever the Android
+
+606
+00:14:17,110 --> 00:14:17,120
+instant message or whatever the Android
+ 
+
+607
+00:14:17,120 --> 00:14:19,030
+instant message or whatever the Android
+operating system will know exactly how
+
+608
+00:14:19,030 --> 00:14:19,040
+operating system will know exactly how
+ 
+
+609
+00:14:19,040 --> 00:14:21,750
+operating system will know exactly how
+to routt this message to to the to the
+
+610
+00:14:21,750 --> 00:14:21,760
+to routt this message to to the to the
+ 
+
+611
+00:14:21,760 --> 00:14:23,509
+to routt this message to to the to the
+target application to the target
+
+612
+00:14:23,509 --> 00:14:23,519
+target application to the target
+ 
+
+613
+00:14:23,519 --> 00:14:26,870
+target application to the target
+activity. So they retrieve some details
+
+614
+00:14:26,870 --> 00:14:26,880
+activity. So they retrieve some details
+ 
+
+615
+00:14:26,880 --> 00:14:29,670
+activity. So they retrieve some details
+out of the what what's called an intent.
+
+616
+00:14:29,670 --> 00:14:29,680
+out of the what what's called an intent.
+ 
+
+617
+00:14:29,680 --> 00:14:32,629
+out of the what what's called an intent.
+The intent is just a bit of data that
+
+618
+00:14:32,629 --> 00:14:32,639
+The intent is just a bit of data that
+ 
+
+619
+00:14:32,639 --> 00:14:34,710
+The intent is just a bit of data that
+goes from the browser, let's say, to the
+
+620
+00:14:34,710 --> 00:14:34,720
+goes from the browser, let's say, to the
+ 
+
+621
+00:14:34,720 --> 00:14:36,870
+goes from the browser, let's say, to the
+application and you can bundle some
+
+622
+00:14:36,870 --> 00:14:36,880
+application and you can bundle some
+ 
+
+623
+00:14:36,880 --> 00:14:39,350
+application and you can bundle some
+intent extras and you can bundle some
+
+624
+00:14:39,350 --> 00:14:39,360
+intent extras and you can bundle some
+ 
+
+625
+00:14:39,360 --> 00:14:41,829
+intent extras and you can bundle some
+URI parameters. So, they extracted a lot
+
+626
+00:14:41,829 --> 00:14:41,839
+URI parameters. So, they extracted a lot
+ 
+
+627
+00:14:41,839 --> 00:14:45,990
+URI parameters. So, they extracted a lot
+of these and um I mean it's really hard
+
+628
+00:14:45,990 --> 00:14:46,000
+of these and um I mean it's really hard
+ 
+
+629
+00:14:46,000 --> 00:14:47,750
+of these and um I mean it's really hard
+to tell exactly what they were aiming
+
+630
+00:14:47,750 --> 00:14:47,760
+to tell exactly what they were aiming
+ 
+
+631
+00:14:47,760 --> 00:14:50,230
+to tell exactly what they were aiming
+for, but um there was some like really
+
+632
+00:14:50,230 --> 00:14:50,240
+for, but um there was some like really
+ 
+
+633
+00:14:50,240 --> 00:14:52,470
+for, but um there was some like really
+sloppy checks to try and make sure they
+
+634
+00:14:52,470 --> 00:14:52,480
+sloppy checks to try and make sure they
+ 
+
+635
+00:14:52,480 --> 00:14:55,509
+sloppy checks to try and make sure they
+load the correct uh URL and they do some
+
+636
+00:14:55,509 --> 00:14:55,519
+load the correct uh URL and they do some
+ 
+
+637
+00:14:55,519 --> 00:14:58,230
+load the correct uh URL and they do some
+validation on the URL and they make sure
+
+638
+00:14:58,230 --> 00:14:58,240
+validation on the URL and they make sure
+ 
+
+639
+00:14:58,240 --> 00:15:00,790
+validation on the URL and they make sure
+the URL matches what they've tried to
+
+640
+00:15:00,790 --> 00:15:00,800
+the URL matches what they've tried to
+ 
+
+641
+00:15:00,800 --> 00:15:02,870
+the URL matches what they've tried to
+hardcode into the application. It
+
+642
+00:15:02,870 --> 00:15:02,880
+hardcode into the application. It
+ 
+
+643
+00:15:02,880 --> 00:15:05,590
+hardcode into the application. It
+doesn't matter like probably safe to
+
+644
+00:15:05,590 --> 00:15:05,600
+doesn't matter like probably safe to
+ 
+
+645
+00:15:05,600 --> 00:15:08,230
+doesn't matter like probably safe to
+disregard all of this. The end result is
+
+646
+00:15:08,230 --> 00:15:08,240
+disregard all of this. The end result is
+ 
+
+647
+00:15:08,240 --> 00:15:13,590
+disregard all of this. The end result is
+you reach this web view.post URL uh sync
+
+648
+00:15:13,590 --> 00:15:13,600
+you reach this web view.post URL uh sync
+ 
+
+649
+00:15:13,600 --> 00:15:16,550
+you reach this web view.post URL uh sync
+uh with a URL that you control fully. So
+
+650
+00:15:16,550 --> 00:15:16,560
+uh with a URL that you control fully. So
+ 
+
+651
+00:15:16,560 --> 00:15:18,310
+uh with a URL that you control fully. So
+you get to execute JavaScript in this
+
+652
+00:15:18,310 --> 00:15:18,320
+you get to execute JavaScript in this
+ 
+
+653
+00:15:18,320 --> 00:15:20,870
+you get to execute JavaScript in this
+web view. And once you execute
+
+654
+00:15:20,870 --> 00:15:20,880
+web view. And once you execute
+ 
+
+655
+00:15:20,880 --> 00:15:22,389
+web view. And once you execute
+JavaScript in this web view, obviously
+
+656
+00:15:22,389 --> 00:15:22,399
+JavaScript in this web view, obviously
+ 
+
+657
+00:15:22,399 --> 00:15:24,069
+JavaScript in this web view, obviously
+you get access to all of these like nice
+
+658
+00:15:24,069 --> 00:15:24,079
+you get access to all of these like nice
+ 
+
+659
+00:15:24,079 --> 00:15:26,150
+you get access to all of these like nice
+things like a camera, microphone, etc.,
+
+660
+00:15:26,150 --> 00:15:26,160
+things like a camera, microphone, etc.,
+ 
+
+661
+00:15:26,160 --> 00:15:28,629
+things like a camera, microphone, etc.,
+etc., etc. So this is a report from the
+
+662
+00:15:28,629 --> 00:15:28,639
+etc., etc. So this is a report from the
+ 
+
+663
+00:15:28,639 --> 00:15:32,069
+etc., etc. So this is a report from the
+bug hunter. Um it's obviously trimmed
+
+664
+00:15:32,069 --> 00:15:32,079
+bug hunter. Um it's obviously trimmed
+ 
+
+665
+00:15:32,079 --> 00:15:34,790
+bug hunter. Um it's obviously trimmed
+down significantly. Uh but it tells you
+
+666
+00:15:34,790 --> 00:15:34,800
+down significantly. Uh but it tells you
+ 
+
+667
+00:15:34,800 --> 00:15:37,590
+down significantly. Uh but it tells you
+oh there's uh this like web view that
+
+668
+00:15:37,590 --> 00:15:37,600
+oh there's uh this like web view that
+ 
+
+669
+00:15:37,600 --> 00:15:40,470
+oh there's uh this like web view that
+you can reach. Um you need to like it
+
+670
+00:15:40,470 --> 00:15:40,480
+you can reach. Um you need to like it
+ 
+
+671
+00:15:40,480 --> 00:15:41,990
+you can reach. Um you need to like it
+actually provides some sort of trigger
+
+672
+00:15:41,990 --> 00:15:42,000
+actually provides some sort of trigger
+ 
+
+673
+00:15:42,000 --> 00:15:43,910
+actually provides some sort of trigger
+for me to actually try and reproduce the
+
+674
+00:15:43,910 --> 00:15:43,920
+for me to actually try and reproduce the
+ 
+
+675
+00:15:43,920 --> 00:15:45,829
+for me to actually try and reproduce the
+bug and it tells me this is the sync.
+
+676
+00:15:45,829 --> 00:15:45,839
+bug and it tells me this is the sync.
+ 
+
+677
+00:15:45,839 --> 00:15:47,269
+bug and it tells me this is the sync.
+This is where you end up executing
+
+678
+00:15:47,269 --> 00:15:47,279
+This is where you end up executing
+ 
+
+679
+00:15:47,279 --> 00:15:50,710
+This is where you end up executing
+JavaScript in this web view etc etc. Um
+
+680
+00:15:50,710 --> 00:15:50,720
+JavaScript in this web view etc etc. Um
+ 
+
+681
+00:15:50,720 --> 00:15:52,470
+JavaScript in this web view etc etc. Um
+there was a bit of a problem actually.
+
+682
+00:15:52,470 --> 00:15:52,480
+there was a bit of a problem actually.
+ 
+
+683
+00:15:52,480 --> 00:15:56,470
+there was a bit of a problem actually.
+Um the agent didn't highlight the custom
+
+684
+00:15:56,470 --> 00:15:56,480
+Um the agent didn't highlight the custom
+ 
+
+685
+00:15:56,480 --> 00:15:58,230
+Um the agent didn't highlight the custom
+web chrome client. So it didn't tell me
+
+686
+00:15:58,230 --> 00:15:58,240
+web chrome client. So it didn't tell me
+ 
+
+687
+00:15:58,240 --> 00:16:01,110
+web chrome client. So it didn't tell me
+I get access to all of these nice bits.
+
+688
+00:16:01,110 --> 00:16:01,120
+I get access to all of these nice bits.
+ 
+
+689
+00:16:01,120 --> 00:16:04,710
+I get access to all of these nice bits.
+Um, and it also missed an important like
+
+690
+00:16:04,710 --> 00:16:04,720
+Um, and it also missed an important like
+ 
+
+691
+00:16:04,720 --> 00:16:07,829
+Um, and it also missed an important like
+crucial part. Uh, there was a check in
+
+692
+00:16:07,829 --> 00:16:07,839
+crucial part. Uh, there was a check in
+ 
+
+693
+00:16:07,839 --> 00:16:09,350
+crucial part. Uh, there was a check in
+the application. Literally, the first
+
+694
+00:16:09,350 --> 00:16:09,360
+the application. Literally, the first
+ 
+
+695
+00:16:09,360 --> 00:16:11,749
+the application. Literally, the first
+thing it does is check if you're on a
+
+696
+00:16:11,749 --> 00:16:11,759
+thing it does is check if you're on a
+ 
+
+697
+00:16:11,759 --> 00:16:13,990
+thing it does is check if you're on a
+phone call. Like if there's an ongoing
+
+698
+00:16:13,990 --> 00:16:14,000
+phone call. Like if there's an ongoing
+ 
+
+699
+00:16:14,000 --> 00:16:16,629
+phone call. Like if there's an ongoing
+phone call, proceed and load this into
+
+700
+00:16:16,629 --> 00:16:16,639
+phone call, proceed and load this into
+ 
+
+701
+00:16:16,639 --> 00:16:18,870
+phone call, proceed and load this into
+web view. If you're not on a phone call,
+
+702
+00:16:18,870 --> 00:16:18,880
+web view. If you're not on a phone call,
+ 
+
+703
+00:16:18,880 --> 00:16:21,910
+web view. If you're not on a phone call,
+just drop the entire like request or
+
+704
+00:16:21,910 --> 00:16:21,920
+just drop the entire like request or
+ 
+
+705
+00:16:21,920 --> 00:16:23,829
+just drop the entire like request or
+whatever. So, nothing really happens.
+
+706
+00:16:23,829 --> 00:16:23,839
+whatever. So, nothing really happens.
+ 
+
+707
+00:16:23,839 --> 00:16:25,990
+whatever. So, nothing really happens.
+And that's a very strange prerequisite
+
+708
+00:16:25,990 --> 00:16:26,000
+And that's a very strange prerequisite
+ 
+
+709
+00:16:26,000 --> 00:16:28,629
+And that's a very strange prerequisite
+for your exploit to work. but it's also
+
+710
+00:16:28,629 --> 00:16:28,639
+for your exploit to work. but it's also
+ 
+
+711
+00:16:28,639 --> 00:16:31,829
+for your exploit to work. but it's also
+what makes it the perfect meme exploit
+
+712
+00:16:31,829 --> 00:16:31,839
+what makes it the perfect meme exploit
+ 
+
+713
+00:16:31,839 --> 00:16:35,030
+what makes it the perfect meme exploit
+for for the contest. Um, so second bug
+
+714
+00:16:35,030 --> 00:16:35,040
+for for the contest. Um, so second bug
+ 
+
+715
+00:16:35,040 --> 00:16:38,949
+for for the contest. Um, so second bug
+to the rescue, the agent found a bug in
+
+716
+00:16:38,949 --> 00:16:38,959
+to the rescue, the agent found a bug in
+ 
+
+717
+00:16:38,959 --> 00:16:42,310
+to the rescue, the agent found a bug in
+Bixby, which is Samsung's AI assistant,
+
+718
+00:16:42,310 --> 00:16:42,320
+Bixby, which is Samsung's AI assistant,
+ 
+
+719
+00:16:42,320 --> 00:16:44,710
+Bixby, which is Samsung's AI assistant,
+which is really really nice and funny
+
+720
+00:16:44,710 --> 00:16:44,720
+which is really really nice and funny
+ 
+
+721
+00:16:44,720 --> 00:16:48,949
+which is really really nice and funny
+and ironic. And again, very like sort of
+
+722
+00:16:48,949 --> 00:16:48,959
+and ironic. And again, very like sort of
+ 
+
+723
+00:16:48,959 --> 00:16:50,710
+and ironic. And again, very like sort of
+similar bug. You end up executing
+
+724
+00:16:50,710 --> 00:16:50,720
+similar bug. You end up executing
+ 
+
+725
+00:16:50,720 --> 00:16:52,949
+similar bug. You end up executing
+JavaScript in a web view in in the Bixby
+
+726
+00:16:52,949 --> 00:16:52,959
+JavaScript in a web view in in the Bixby
+ 
+
+727
+00:16:52,959 --> 00:16:55,110
+JavaScript in a web view in in the Bixby
+application. And once you're in that
+
+728
+00:16:55,110 --> 00:16:55,120
+application. And once you're in that
+ 
+
+729
+00:16:55,120 --> 00:16:58,389
+application. And once you're in that
+Bixby application, you can speak to
+
+730
+00:16:58,389 --> 00:16:58,399
+Bixby application, you can speak to
+ 
+
+731
+00:16:58,399 --> 00:17:00,230
+Bixby application, you can speak to
+components from the Bixby application
+
+732
+00:17:00,230 --> 00:17:00,240
+components from the Bixby application
+ 
+
+733
+00:17:00,240 --> 00:17:03,749
+components from the Bixby application
+that are not exposed to to um other
+
+734
+00:17:03,749 --> 00:17:03,759
+that are not exposed to to um other
+ 
+
+735
+00:17:03,759 --> 00:17:06,470
+that are not exposed to to um other
+applications on the phone directly. Um
+
+736
+00:17:06,470 --> 00:17:06,480
+applications on the phone directly. Um
+ 
+
+737
+00:17:06,480 --> 00:17:08,870
+applications on the phone directly. Um
+this is what it looks like again. Um
+
+738
+00:17:08,870 --> 00:17:08,880
+this is what it looks like again. Um
+ 
+
+739
+00:17:08,880 --> 00:17:11,669
+this is what it looks like again. Um
+they take some data, they extract some
+
+740
+00:17:11,669 --> 00:17:11,679
+they take some data, they extract some
+ 
+
+741
+00:17:11,679 --> 00:17:15,429
+they take some data, they extract some
+bits and bobs of the URI and then they
+
+742
+00:17:15,429 --> 00:17:15,439
+bits and bobs of the URI and then they
+ 
+
+743
+00:17:15,439 --> 00:17:18,069
+bits and bobs of the URI and then they
+try to validate the the URI. And
+
+744
+00:17:18,069 --> 00:17:18,079
+try to validate the the URI. And
+ 
+
+745
+00:17:18,079 --> 00:17:20,390
+try to validate the the URI. And
+basically, long story short, any
+
+746
+00:17:20,390 --> 00:17:20,400
+basically, long story short, any
+ 
+
+747
+00:17:20,400 --> 00:17:23,110
+basically, long story short, any
+subdomain of mcsvc.samsung.com
+
+748
+00:17:23,110 --> 00:17:23,120
+subdomain of mcsvc.samsung.com
+ 
+
+749
+00:17:23,120 --> 00:17:27,029
+subdomain of mcsvc.samsung.com
+samsung.com can be loaded into this web
+
+750
+00:17:27,029 --> 00:17:27,039
+samsung.com can be loaded into this web
+ 
+
+751
+00:17:27,039 --> 00:17:28,549
+samsung.com can be loaded into this web
+view. Well, the issue is there's like
+
+752
+00:17:28,549 --> 00:17:28,559
+view. Well, the issue is there's like
+ 
+
+753
+00:17:28,559 --> 00:17:31,190
+view. Well, the issue is there's like
+plenty and plenty of subdomains and sub
+
+754
+00:17:31,190 --> 00:17:31,200
+plenty and plenty of subdomains and sub
+ 
+
+755
+00:17:31,200 --> 00:17:33,590
+plenty and plenty of subdomains and sub
+subdomains of this domain and some of
+
+756
+00:17:33,590 --> 00:17:33,600
+subdomains of this domain and some of
+ 
+
+757
+00:17:33,600 --> 00:17:35,510
+subdomains of this domain and some of
+them have cross-sight scripting. So, you
+
+758
+00:17:35,510 --> 00:17:35,520
+them have cross-sight scripting. So, you
+ 
+
+759
+00:17:35,520 --> 00:17:38,870
+them have cross-sight scripting. So, you
+just um run your JavaScript in them uh
+
+760
+00:17:38,870 --> 00:17:38,880
+just um run your JavaScript in them uh
+ 
+
+761
+00:17:38,880 --> 00:17:41,909
+just um run your JavaScript in them uh
+well um in this origin and you execute
+
+762
+00:17:41,909 --> 00:17:41,919
+well um in this origin and you execute
+ 
+
+763
+00:17:41,919 --> 00:17:43,669
+well um in this origin and you execute
+JavaScript in that web view. This is
+
+764
+00:17:43,669 --> 00:17:43,679
+JavaScript in that web view. This is
+ 
+
+765
+00:17:43,679 --> 00:17:46,789
+JavaScript in that web view. This is
+what the bug report looks like for like
+
+766
+00:17:46,789 --> 00:17:46,799
+what the bug report looks like for like
+ 
+
+767
+00:17:46,799 --> 00:17:50,070
+what the bug report looks like for like
+it's captured two bugs in in in this
+
+768
+00:17:50,070 --> 00:17:50,080
+it's captured two bugs in in in this
+ 
+
+769
+00:17:50,080 --> 00:17:51,990
+it's captured two bugs in in in this
+scenario. So it says, "Oh, the host
+
+770
+00:17:51,990 --> 00:17:52,000
+scenario. So it says, "Oh, the host
+ 
+
+771
+00:17:52,000 --> 00:17:54,549
+scenario. So it says, "Oh, the host
+validation's really relaxed that they're
+
+772
+00:17:54,549 --> 00:17:54,559
+validation's really relaxed that they're
+ 
+
+773
+00:17:54,559 --> 00:17:56,950
+validation's really relaxed that they're
+loading essentially any subdomain or sub
+
+774
+00:17:56,950 --> 00:17:56,960
+loading essentially any subdomain or sub
+ 
+
+775
+00:17:56,960 --> 00:18:00,230
+loading essentially any subdomain or sub
+subdomain or whatever for this very
+
+776
+00:18:00,230 --> 00:18:00,240
+subdomain or whatever for this very
+ 
+
+777
+00:18:00,240 --> 00:18:03,270
+subdomain or whatever for this very
+broad Samsung domain. So you might want
+
+778
+00:18:03,270 --> 00:18:03,280
+broad Samsung domain. So you might want
+ 
+
+779
+00:18:03,280 --> 00:18:05,669
+broad Samsung domain. So you might want
+to look out for this one and see if
+
+780
+00:18:05,669 --> 00:18:05,679
+to look out for this one and see if
+ 
+
+781
+00:18:05,679 --> 00:18:08,950
+to look out for this one and see if
+there's any interesting like uh
+
+782
+00:18:08,950 --> 00:18:08,960
+there's any interesting like uh
+ 
+
+783
+00:18:08,960 --> 00:18:11,350
+there's any interesting like uh
+JavaScript executing already on this
+
+784
+00:18:11,350 --> 00:18:11,360
+JavaScript executing already on this
+ 
+
+785
+00:18:11,360 --> 00:18:13,029
+JavaScript executing already on this
+domains that you can leverage for a
+
+786
+00:18:13,029 --> 00:18:13,039
+domains that you can leverage for a
+ 
+
+787
+00:18:13,039 --> 00:18:15,350
+domains that you can leverage for a
+cross-ite scripting or whatever." And
+
+788
+00:18:15,350 --> 00:18:15,360
+cross-ite scripting or whatever." And
+ 
+
+789
+00:18:15,360 --> 00:18:16,870
+cross-ite scripting or whatever." And
+then it tells me, oh yeah, by the way,
+
+790
+00:18:16,870 --> 00:18:16,880
+then it tells me, oh yeah, by the way,
+ 
+
+791
+00:18:16,880 --> 00:18:19,029
+then it tells me, oh yeah, by the way,
+there's like a very privileged uh
+
+792
+00:18:19,029 --> 00:18:19,039
+there's like a very privileged uh
+ 
+
+793
+00:18:19,039 --> 00:18:21,270
+there's like a very privileged uh
+JavaScript interface that you can reach
+
+794
+00:18:21,270 --> 00:18:21,280
+JavaScript interface that you can reach
+ 
+
+795
+00:18:21,280 --> 00:18:23,750
+JavaScript interface that you can reach
+from once you're executing in this uh
+
+796
+00:18:23,750 --> 00:18:23,760
+from once you're executing in this uh
+ 
+
+797
+00:18:23,760 --> 00:18:28,310
+from once you're executing in this uh
+web view. Um this is the demo from the
+
+798
+00:18:28,310 --> 00:18:28,320
+web view. Um this is the demo from the
+ 
+
+799
+00:18:28,320 --> 00:18:30,950
+web view. Um this is the demo from the
+contest. So basically you have the phone
+
+800
+00:18:30,950 --> 00:18:30,960
+contest. So basically you have the phone
+ 
+
+801
+00:18:30,960 --> 00:18:33,990
+contest. So basically you have the phone
+target phone on the left and you click a
+
+802
+00:18:33,990 --> 00:18:34,000
+target phone on the left and you click a
+ 
+
+803
+00:18:34,000 --> 00:18:35,669
+target phone on the left and you click a
+link. This is this is what happens at
+
+804
+00:18:35,669 --> 00:18:35,679
+link. This is this is what happens at
+ 
+
+805
+00:18:35,679 --> 00:18:37,830
+link. This is this is what happens at
+Pontton. Like you click one link and
+
+806
+00:18:37,830 --> 00:18:37,840
+Pontton. Like you click one link and
+ 
+
+807
+00:18:37,840 --> 00:18:41,190
+Pontton. Like you click one link and
+that's it. Like what happens is you go
+
+808
+00:18:41,190 --> 00:18:41,200
+that's it. Like what happens is you go
+ 
+
+809
+00:18:41,200 --> 00:18:45,830
+that's it. Like what happens is you go
+to this uh Bixby web view. Um once
+
+810
+00:18:45,830 --> 00:18:45,840
+to this uh Bixby web view. Um once
+ 
+
+811
+00:18:45,840 --> 00:18:48,230
+to this uh Bixby web view. Um once
+you're in the Bixby web view, you ask
+
+812
+00:18:48,230 --> 00:18:48,240
+you're in the Bixby web view, you ask
+ 
+
+813
+00:18:48,240 --> 00:18:51,750
+you're in the Bixby web view, you ask
+Bixby to make a phone call to whatever
+
+814
+00:18:51,750 --> 00:18:51,760
+Bixby to make a phone call to whatever
+ 
+
+815
+00:18:51,760 --> 00:18:53,510
+Bixby to make a phone call to whatever
+number. Once you make a phone call,
+
+816
+00:18:53,510 --> 00:18:53,520
+number. Once you make a phone call,
+ 
+
+817
+00:18:53,520 --> 00:18:56,710
+number. Once you make a phone call,
+you're able to bypass the phone call
+
+818
+00:18:56,710 --> 00:18:56,720
+you're able to bypass the phone call
+ 
+
+819
+00:18:56,720 --> 00:18:58,789
+you're able to bypass the phone call
+check in the other application. So you
+
+820
+00:18:58,789 --> 00:18:58,799
+check in the other application. So you
+ 
+
+821
+00:18:58,799 --> 00:19:00,470
+check in the other application. So you
+end up in the other application and you
+
+822
+00:19:00,470 --> 00:19:00,480
+end up in the other application and you
+ 
+
+823
+00:19:00,480 --> 00:19:02,549
+end up in the other application and you
+get access to the camera feed, etc.,
+
+824
+00:19:02,549 --> 00:19:02,559
+get access to the camera feed, etc.,
+ 
+
+825
+00:19:02,559 --> 00:19:04,390
+get access to the camera feed, etc.,
+etc.
+
+826
+00:19:04,390 --> 00:19:04,400
+etc.
+ 
+
+827
+00:19:04,400 --> 00:19:07,909
+etc.
+Okay. um a bit on the agent evolution.
+
+828
+00:19:07,909 --> 00:19:07,919
+Okay. um a bit on the agent evolution.
+ 
+
+829
+00:19:07,919 --> 00:19:10,549
+Okay. um a bit on the agent evolution.
+Uh implemented an APK harvesting tool.
+
+830
+00:19:10,549 --> 00:19:10,559
+Uh implemented an APK harvesting tool.
+ 
+
+831
+00:19:10,559 --> 00:19:13,270
+Uh implemented an APK harvesting tool.
+Uh basically just some scripts uh put
+
+832
+00:19:13,270 --> 00:19:13,280
+Uh basically just some scripts uh put
+ 
+
+833
+00:19:13,280 --> 00:19:15,750
+Uh basically just some scripts uh put
+together to retrieve APKs from app
+
+834
+00:19:15,750 --> 00:19:15,760
+together to retrieve APKs from app
+ 
+
+835
+00:19:15,760 --> 00:19:18,950
+together to retrieve APKs from app
+stores to like start scanning for bugs
+
+836
+00:19:18,950 --> 00:19:18,960
+stores to like start scanning for bugs
+ 
+
+837
+00:19:18,960 --> 00:19:21,669
+stores to like start scanning for bugs
+at scale. Uh decouple the Android
+
+838
+00:19:21,669 --> 00:19:21,679
+at scale. Uh decouple the Android
+ 
+
+839
+00:19:21,679 --> 00:19:24,630
+at scale. Uh decouple the Android
+manifest analysis logic. Well, the
+
+840
+00:19:24,630 --> 00:19:24,640
+manifest analysis logic. Well, the
+ 
+
+841
+00:19:24,640 --> 00:19:26,870
+manifest analysis logic. Well, the
+attack surface analysis logic. There's a
+
+842
+00:19:26,870 --> 00:19:26,880
+attack surface analysis logic. There's a
+ 
+
+843
+00:19:26,880 --> 00:19:28,950
+attack surface analysis logic. There's a
+like a standalone script because I
+
+844
+00:19:28,950 --> 00:19:28,960
+like a standalone script because I
+ 
+
+845
+00:19:28,960 --> 00:19:31,270
+like a standalone script because I
+realized there's no point uh using an
+
+846
+00:19:31,270 --> 00:19:31,280
+realized there's no point uh using an
+ 
+
+847
+00:19:31,280 --> 00:19:33,029
+realized there's no point uh using an
+LLM for something that's extremely
+
+848
+00:19:33,029 --> 00:19:33,039
+LLM for something that's extremely
+ 
+
+849
+00:19:33,039 --> 00:19:34,710
+LLM for something that's extremely
+deterministic. I know exactly what I'm
+
+850
+00:19:34,710 --> 00:19:34,720
+deterministic. I know exactly what I'm
+ 
+
+851
+00:19:34,720 --> 00:19:38,870
+deterministic. I know exactly what I'm
+looking for. Um, and further refined the
+
+852
+00:19:38,870 --> 00:19:38,880
+looking for. Um, and further refined the
+ 
+
+853
+00:19:38,880 --> 00:19:42,789
+looking for. Um, and further refined the
+the bug hunting scope. So,
+
+854
+00:19:42,789 --> 00:19:42,799
+the bug hunting scope. So,
+ 
+
+855
+00:19:42,799 --> 00:19:45,190
+the bug hunting scope. So,
+previously I would ask the app to start
+
+856
+00:19:45,190 --> 00:19:45,200
+previously I would ask the app to start
+ 
+
+857
+00:19:45,200 --> 00:19:46,950
+previously I would ask the app to start
+looking for bugs reachable via this
+
+858
+00:19:46,950 --> 00:19:46,960
+looking for bugs reachable via this
+ 
+
+859
+00:19:46,960 --> 00:19:49,510
+looking for bugs reachable via this
+intent filter. This is like entry point
+
+860
+00:19:49,510 --> 00:19:49,520
+intent filter. This is like entry point
+ 
+
+861
+00:19:49,520 --> 00:19:51,190
+intent filter. This is like entry point
+number one. Then you've got another
+
+862
+00:19:51,190 --> 00:19:51,200
+number one. Then you've got another
+ 
+
+863
+00:19:51,200 --> 00:19:52,710
+number one. Then you've got another
+intent filter. This is entry point
+
+864
+00:19:52,710 --> 00:19:52,720
+intent filter. This is entry point
+ 
+
+865
+00:19:52,720 --> 00:19:54,390
+intent filter. This is entry point
+number two. Then I realized there's
+
+866
+00:19:54,390 --> 00:19:54,400
+number two. Then I realized there's
+ 
+
+867
+00:19:54,400 --> 00:19:57,830
+number two. Then I realized there's
+intent filters with like very obvious
+
+868
+00:19:57,830 --> 00:19:57,840
+intent filters with like very obvious
+ 
+
+869
+00:19:57,840 --> 00:20:01,430
+intent filters with like very obvious
+paths u like sub entry points into the
+
+870
+00:20:01,430 --> 00:20:01,440
+paths u like sub entry points into the
+ 
+
+871
+00:20:01,440 --> 00:20:03,430
+paths u like sub entry points into the
+intent filter essentially. So you can
+
+872
+00:20:03,430 --> 00:20:03,440
+intent filter essentially. So you can
+ 
+
+873
+00:20:03,440 --> 00:20:07,110
+intent filter essentially. So you can
+reach multiple features via any of these
+
+874
+00:20:07,110 --> 00:20:07,120
+reach multiple features via any of these
+ 
+
+875
+00:20:07,120 --> 00:20:09,430
+reach multiple features via any of these
+uh which makes sense to like start
+
+876
+00:20:09,430 --> 00:20:09,440
+uh which makes sense to like start
+ 
+
+877
+00:20:09,440 --> 00:20:12,150
+uh which makes sense to like start
+treating this as um as unique entry
+
+878
+00:20:12,150 --> 00:20:12,160
+treating this as um as unique entry
+ 
+
+879
+00:20:12,160 --> 00:20:15,430
+treating this as um as unique entry
+points into the app. Um I also realized
+
+880
+00:20:15,430 --> 00:20:15,440
+points into the app. Um I also realized
+ 
+
+881
+00:20:15,440 --> 00:20:18,710
+points into the app. Um I also realized
+some of the apps um comes as no surprise
+
+882
+00:20:18,710 --> 00:20:18,720
+some of the apps um comes as no surprise
+ 
+
+883
+00:20:18,720 --> 00:20:21,750
+some of the apps um comes as no surprise
+are slightly offiscated and the agent
+
+884
+00:20:21,750 --> 00:20:21,760
+are slightly offiscated and the agent
+ 
+
+885
+00:20:21,760 --> 00:20:27,029
+are slightly offiscated and the agent
+like works a lot better on a on a like a
+
+886
+00:20:27,029 --> 00:20:27,039
+like works a lot better on a on a like a
+ 
+
+887
+00:20:27,039 --> 00:20:29,430
+like works a lot better on a on a like a
+cold like base that's been slightly the
+
+888
+00:20:29,430 --> 00:20:29,440
+cold like base that's been slightly the
+ 
+
+889
+00:20:29,440 --> 00:20:31,190
+cold like base that's been slightly the
+offiscated. I noticed this when I was
+
+890
+00:20:31,190 --> 00:20:31,200
+offiscated. I noticed this when I was
+ 
+
+891
+00:20:31,200 --> 00:20:33,110
+offiscated. I noticed this when I was
+manually doing it and I'm like well I
+
+892
+00:20:33,110 --> 00:20:33,120
+manually doing it and I'm like well I
+ 
+
+893
+00:20:33,120 --> 00:20:36,710
+manually doing it and I'm like well I
+can just hook the uh buck hunter uh
+
+894
+00:20:36,710 --> 00:20:36,720
+can just hook the uh buck hunter uh
+ 
+
+895
+00:20:36,720 --> 00:20:38,789
+can just hook the uh buck hunter uh
+agent and whenever it makes a request
+
+896
+00:20:38,789 --> 00:20:38,799
+agent and whenever it makes a request
+ 
+
+897
+00:20:38,799 --> 00:20:40,870
+agent and whenever it makes a request
+for source code it will go via the code
+
+898
+00:20:40,870 --> 00:20:40,880
+for source code it will go via the code
+ 
+
+899
+00:20:40,880 --> 00:20:42,230
+for source code it will go via the code
+the offiscator and the code the
+
+900
+00:20:42,230 --> 00:20:42,240
+the offiscator and the code the
+ 
+
+901
+00:20:42,240 --> 00:20:44,870
+the offiscator and the code the
+offiscator will speak to the jadex mcp
+
+902
+00:20:44,870 --> 00:20:44,880
+offiscator will speak to the jadex mcp
+ 
+
+903
+00:20:44,880 --> 00:20:47,909
+offiscator will speak to the jadex mcp
+and like fetch the source clean it up a
+
+904
+00:20:47,909 --> 00:20:47,919
+and like fetch the source clean it up a
+ 
+
+905
+00:20:47,919 --> 00:20:50,710
+and like fetch the source clean it up a
+bit and then return the the source back
+
+906
+00:20:50,710 --> 00:20:50,720
+bit and then return the the source back
+ 
+
+907
+00:20:50,720 --> 00:20:53,990
+bit and then return the the source back
+to the buck hunter and this this was
+
+908
+00:20:53,990 --> 00:20:54,000
+to the buck hunter and this this was
+ 
+
+909
+00:20:54,000 --> 00:20:55,990
+to the buck hunter and this this was
+this made quite a quite a difference
+
+910
+00:20:55,990 --> 00:20:56,000
+this made quite a quite a difference
+ 
+
+911
+00:20:56,000 --> 00:20:59,669
+this made quite a quite a difference
+like you can see uh one two three letter
+
+912
+00:20:59,669 --> 00:20:59,679
+like you can see uh one two three letter
+ 
+
+913
+00:20:59,679 --> 00:21:02,630
+like you can see uh one two three letter
+method names and class names uh get very
+
+914
+00:21:02,630 --> 00:21:02,640
+method names and class names uh get very
+ 
+
+915
+00:21:02,640 --> 00:21:04,630
+method names and class names uh get very
+meaningful names that really help the
+
+916
+00:21:04,630 --> 00:21:04,640
+meaningful names that really help the
+ 
+
+917
+00:21:04,640 --> 00:21:09,110
+meaningful names that really help the
+agent gauge exactly what's going on. Um
+
+918
+00:21:09,110 --> 00:21:09,120
+agent gauge exactly what's going on. Um
+ 
+
+919
+00:21:09,120 --> 00:21:13,029
+agent gauge exactly what's going on. Um
+some more improvements um I realized I
+
+920
+00:21:13,029 --> 00:21:13,039
+some more improvements um I realized I
+ 
+
+921
+00:21:13,039 --> 00:21:15,350
+some more improvements um I realized I
+run the agent once I get a set of
+
+922
+00:21:15,350 --> 00:21:15,360
+run the agent once I get a set of
+ 
+
+923
+00:21:15,360 --> 00:21:17,909
+run the agent once I get a set of
+results I run the agent a second time on
+
+924
+00:21:17,909 --> 00:21:17,919
+results I run the agent a second time on
+ 
+
+925
+00:21:17,919 --> 00:21:19,909
+results I run the agent a second time on
+the second on the same entry point and I
+
+926
+00:21:19,909 --> 00:21:19,919
+the second on the same entry point and I
+ 
+
+927
+00:21:19,919 --> 00:21:22,070
+the second on the same entry point and I
+get a different set of results and
+
+928
+00:21:22,070 --> 00:21:22,080
+get a different set of results and
+ 
+
+929
+00:21:22,080 --> 00:21:23,990
+get a different set of results and
+obviously this makes sense to everyone
+
+930
+00:21:23,990 --> 00:21:24,000
+obviously this makes sense to everyone
+ 
+
+931
+00:21:24,000 --> 00:21:26,310
+obviously this makes sense to everyone
+who's worked with AI. So I'm like okay
+
+932
+00:21:26,310 --> 00:21:26,320
+who's worked with AI. So I'm like okay
+ 
+
+933
+00:21:26,320 --> 00:21:28,070
+who's worked with AI. So I'm like okay
+well just start running it like between
+
+934
+00:21:28,070 --> 00:21:28,080
+well just start running it like between
+ 
+
+935
+00:21:28,080 --> 00:21:30,230
+well just start running it like between
+one and five times depending on how
+
+936
+00:21:30,230 --> 00:21:30,240
+one and five times depending on how
+ 
+
+937
+00:21:30,240 --> 00:21:33,190
+one and five times depending on how
+interested I am in this uh entry point
+
+938
+00:21:33,190 --> 00:21:33,200
+interested I am in this uh entry point
+ 
+
+939
+00:21:33,200 --> 00:21:36,710
+interested I am in this uh entry point
+and start aggregating bugs uh bug
+
+940
+00:21:36,710 --> 00:21:36,720
+and start aggregating bugs uh bug
+ 
+
+941
+00:21:36,720 --> 00:21:38,870
+and start aggregating bugs uh bug
+reports and then run the bug reports
+
+942
+00:21:38,870 --> 00:21:38,880
+reports and then run the bug reports
+ 
+
+943
+00:21:38,880 --> 00:21:41,190
+reports and then run the bug reports
+through a dduplicator agent that
+
+944
+00:21:41,190 --> 00:21:41,200
+through a dduplicator agent that
+ 
+
+945
+00:21:41,200 --> 00:21:43,430
+through a dduplicator agent that
+basically takes a list of bug reports
+
+946
+00:21:43,430 --> 00:21:43,440
+basically takes a list of bug reports
+ 
+
+947
+00:21:43,440 --> 00:21:46,789
+basically takes a list of bug reports
+and tries to extract the the unique bug
+
+948
+00:21:46,789 --> 00:21:46,799
+and tries to extract the the unique bug
+ 
+
+949
+00:21:46,799 --> 00:21:48,789
+and tries to extract the the unique bug
+reports the bug reports capturing unique
+
+950
+00:21:48,789 --> 00:21:48,799
+reports the bug reports capturing unique
+ 
+
+951
+00:21:48,799 --> 00:21:51,750
+reports the bug reports capturing unique
+bugs. Um added another agent to like
+
+952
+00:21:51,750 --> 00:21:51,760
+bugs. Um added another agent to like
+ 
+
+953
+00:21:51,760 --> 00:21:54,230
+bugs. Um added another agent to like
+start converting bug reports to JSON.
+
+954
+00:21:54,230 --> 00:21:54,240
+start converting bug reports to JSON.
+ 
+
+955
+00:21:54,240 --> 00:21:56,230
+start converting bug reports to JSON.
+Uh, I don't know if that's a thing, but
+
+956
+00:21:56,230 --> 00:21:56,240
+Uh, I don't know if that's a thing, but
+ 
+
+957
+00:21:56,240 --> 00:21:59,029
+Uh, I don't know if that's a thing, but
+I noticed whenever I try and enforce a
+
+958
+00:21:59,029 --> 00:21:59,039
+I noticed whenever I try and enforce a
+ 
+
+959
+00:21:59,039 --> 00:22:02,230
+I noticed whenever I try and enforce a
+strict schema on the output, the the
+
+960
+00:22:02,230 --> 00:22:02,240
+strict schema on the output, the the
+ 
+
+961
+00:22:02,240 --> 00:22:04,549
+strict schema on the output, the the
+output will sometimes like degrade in
+
+962
+00:22:04,549 --> 00:22:04,559
+output will sometimes like degrade in
+ 
+
+963
+00:22:04,559 --> 00:22:07,990
+output will sometimes like degrade in
+quality. So, I had to like like do it as
+
+964
+00:22:07,990 --> 00:22:08,000
+quality. So, I had to like like do it as
+ 
+
+965
+00:22:08,000 --> 00:22:10,549
+quality. So, I had to like like do it as
+as a like a secondary like
+
+966
+00:22:10,549 --> 00:22:10,559
+as a like a secondary like
+ 
+
+967
+00:22:10,559 --> 00:22:14,310
+as a like a secondary like
+post-processing step. Um, and I also
+
+968
+00:22:14,310 --> 00:22:14,320
+post-processing step. Um, and I also
+ 
+
+969
+00:22:14,320 --> 00:22:17,190
+post-processing step. Um, and I also
+realized I've got many agents at this
+
+970
+00:22:17,190 --> 00:22:17,200
+realized I've got many agents at this
+ 
+
+971
+00:22:17,200 --> 00:22:19,029
+realized I've got many agents at this
+point and they all share bits and bobs
+
+972
+00:22:19,029 --> 00:22:19,039
+point and they all share bits and bobs
+ 
+
+973
+00:22:19,039 --> 00:22:21,830
+point and they all share bits and bobs
+of the system prompts. So I started
+
+974
+00:22:21,830 --> 00:22:21,840
+of the system prompts. So I started
+ 
+
+975
+00:22:21,840 --> 00:22:24,470
+of the system prompts. So I started
+managing the system prompts using Ginger
+
+976
+00:22:24,470 --> 00:22:24,480
+managing the system prompts using Ginger
+ 
+
+977
+00:22:24,480 --> 00:22:28,470
+managing the system prompts using Ginger
+uh Ginger 2 to like pick like different
+
+978
+00:22:28,470 --> 00:22:28,480
+uh Ginger 2 to like pick like different
+ 
+
+979
+00:22:28,480 --> 00:22:30,710
+uh Ginger 2 to like pick like different
+snippets of system prompts and use them
+
+980
+00:22:30,710 --> 00:22:30,720
+snippets of system prompts and use them
+ 
+
+981
+00:22:30,720 --> 00:22:33,909
+snippets of system prompts and use them
+across the the set of agents. Uh finally
+
+982
+00:22:33,909 --> 00:22:33,919
+across the the set of agents. Uh finally
+ 
+
+983
+00:22:33,919 --> 00:22:35,669
+across the the set of agents. Uh finally
+introduced the bug verifying agent. So
+
+984
+00:22:35,669 --> 00:22:35,679
+introduced the bug verifying agent. So
+ 
+
+985
+00:22:35,679 --> 00:22:37,190
+introduced the bug verifying agent. So
+whenever I find something with the bug
+
+986
+00:22:37,190 --> 00:22:37,200
+whenever I find something with the bug
+ 
+
+987
+00:22:37,200 --> 00:22:38,870
+whenever I find something with the bug
+hunter, I pass it on to the verifying
+
+988
+00:22:38,870 --> 00:22:38,880
+hunter, I pass it on to the verifying
+ 
+
+989
+00:22:38,880 --> 00:22:40,390
+hunter, I pass it on to the verifying
+agent.
+
+990
+00:22:40,390 --> 00:22:40,400
+agent.
+ 
+
+991
+00:22:40,400 --> 00:22:42,630
+agent.
+uh made life so much easier and needless
+
+992
+00:22:42,630 --> 00:22:42,640
+uh made life so much easier and needless
+ 
+
+993
+00:22:42,640 --> 00:22:44,710
+uh made life so much easier and needless
+to say and I also added a source to sync
+
+994
+00:22:44,710 --> 00:22:44,720
+to say and I also added a source to sync
+ 
+
+995
+00:22:44,720 --> 00:22:47,430
+to say and I also added a source to sync
+reachability tool based on suits up uh
+
+996
+00:22:47,430 --> 00:22:47,440
+reachability tool based on suits up uh
+ 
+
+997
+00:22:47,440 --> 00:22:50,630
+reachability tool based on suits up uh
+which is a framework for uh processing
+
+998
+00:22:50,630 --> 00:22:50,640
+which is a framework for uh processing
+ 
+
+999
+00:22:50,640 --> 00:22:53,430
+which is a framework for uh processing
+Java byte code and creating core graphs
+
+1000
+00:22:53,430 --> 00:22:53,440
+Java byte code and creating core graphs
+ 
+
+1001
+00:22:53,440 --> 00:22:55,270
+Java byte code and creating core graphs
+out of this bite code. So you can then
+
+1002
+00:22:55,270 --> 00:22:55,280
+out of this bite code. So you can then
+ 
+
+1003
+00:22:55,280 --> 00:22:58,070
+out of this bite code. So you can then
+start looking for paths from one part of
+
+1004
+00:22:58,070 --> 00:22:58,080
+start looking for paths from one part of
+ 
+
+1005
+00:22:58,080 --> 00:22:59,990
+start looking for paths from one part of
+the b uh of the core graph to another
+
+1006
+00:22:59,990 --> 00:23:00,000
+the b uh of the core graph to another
+ 
+
+1007
+00:23:00,000 --> 00:23:02,390
+the b uh of the core graph to another
+part. Um, this is just a snippet from
+
+1008
+00:23:02,390 --> 00:23:02,400
+part. Um, this is just a snippet from
+ 
+
+1009
+00:23:02,400 --> 00:23:05,350
+part. Um, this is just a snippet from
+the bug verifier run on the one of the
+
+1010
+00:23:05,350 --> 00:23:05,360
+the bug verifier run on the one of the
+ 
+
+1011
+00:23:05,360 --> 00:23:07,830
+the bug verifier run on the one of the
+the bugs that was reported by the bug
+
+1012
+00:23:07,830 --> 00:23:07,840
+the bugs that was reported by the bug
+ 
+
+1013
+00:23:07,840 --> 00:23:09,909
+the bugs that was reported by the bug
+hunter and it basically tells me this is
+
+1014
+00:23:09,909 --> 00:23:09,919
+hunter and it basically tells me this is
+ 
+
+1015
+00:23:09,919 --> 00:23:12,470
+hunter and it basically tells me this is
+not a valid bug actually because you
+
+1016
+00:23:12,470 --> 00:23:12,480
+not a valid bug actually because you
+ 
+
+1017
+00:23:12,480 --> 00:23:15,190
+not a valid bug actually because you
+won't be able to reach this based on the
+
+1018
+00:23:15,190 --> 00:23:15,200
+won't be able to reach this based on the
+ 
+
+1019
+00:23:15,200 --> 00:23:16,870
+won't be able to reach this based on the
+circumstances you described in the
+
+1020
+00:23:16,870 --> 00:23:16,880
+circumstances you described in the
+ 
+
+1021
+00:23:16,880 --> 00:23:19,430
+circumstances you described in the
+system prompt because this is only
+
+1022
+00:23:19,430 --> 00:23:19,440
+system prompt because this is only
+ 
+
+1023
+00:23:19,440 --> 00:23:21,430
+system prompt because this is only
+reachable when you're on an active call.
+
+1024
+00:23:21,430 --> 00:23:21,440
+reachable when you're on an active call.
+ 
+
+1025
+00:23:21,440 --> 00:23:23,029
+reachable when you're on an active call.
+If you're not on a call, you won't be
+
+1026
+00:23:23,029 --> 00:23:23,039
+If you're not on a call, you won't be
+ 
+
+1027
+00:23:23,039 --> 00:23:24,950
+If you're not on a call, you won't be
+able to see this.
+
+1028
+00:23:24,950 --> 00:23:24,960
+able to see this.
+ 
+
+1029
+00:23:24,960 --> 00:23:27,750
+able to see this.
+Um, it's a double-edged sword because if
+
+1030
+00:23:27,750 --> 00:23:27,760
+Um, it's a double-edged sword because if
+ 
+
+1031
+00:23:27,760 --> 00:23:29,830
+Um, it's a double-edged sword because if
+the agent decided this is not reachable,
+
+1032
+00:23:29,830 --> 00:23:29,840
+the agent decided this is not reachable,
+ 
+
+1033
+00:23:29,840 --> 00:23:31,350
+the agent decided this is not reachable,
+I would have never seen it probably.
+
+1034
+00:23:31,350 --> 00:23:31,360
+I would have never seen it probably.
+ 
+
+1035
+00:23:31,360 --> 00:23:33,190
+I would have never seen it probably.
+Anyway, so this is the current design.
+
+1036
+00:23:33,190 --> 00:23:33,200
+Anyway, so this is the current design.
+ 
+
+1037
+00:23:33,200 --> 00:23:35,750
+Anyway, so this is the current design.
+We've got a set of scripts doing all the
+
+1038
+00:23:35,750 --> 00:23:35,760
+We've got a set of scripts doing all the
+ 
+
+1039
+00:23:35,760 --> 00:23:37,590
+We've got a set of scripts doing all the
+deterministic bits and bobs. And we've
+
+1040
+00:23:37,590 --> 00:23:37,600
+deterministic bits and bobs. And we've
+ 
+
+1041
+00:23:37,600 --> 00:23:39,909
+deterministic bits and bobs. And we've
+got a bug hunter looking for bugs. We've
+
+1042
+00:23:39,909 --> 00:23:39,919
+got a bug hunter looking for bugs. We've
+ 
+
+1043
+00:23:39,919 --> 00:23:43,110
+got a bug hunter looking for bugs. We've
+got uh bug duplicator the duplicating
+
+1044
+00:23:43,110 --> 00:23:43,120
+got uh bug duplicator the duplicating
+ 
+
+1045
+00:23:43,120 --> 00:23:44,710
+got uh bug duplicator the duplicating
+the the bugs. We've got the code the
+
+1046
+00:23:44,710 --> 00:23:44,720
+the the bugs. We've got the code the
+ 
+
+1047
+00:23:44,720 --> 00:23:46,630
+the the bugs. We've got the code the
+offiscator cleaning up the code. We've
+
+1048
+00:23:46,630 --> 00:23:46,640
+offiscator cleaning up the code. We've
+ 
+
+1049
+00:23:46,640 --> 00:23:50,149
+offiscator cleaning up the code. We've
+got another agent to like reformat the
+
+1050
+00:23:50,149 --> 00:23:50,159
+got another agent to like reformat the
+ 
+
+1051
+00:23:50,159 --> 00:23:52,630
+got another agent to like reformat the
+the reports to JSON. And we've got a bug
+
+1052
+00:23:52,630 --> 00:23:52,640
+the reports to JSON. And we've got a bug
+ 
+
+1053
+00:23:52,640 --> 00:23:54,950
+the reports to JSON. And we've got a bug
+verifier. And then we've got obviously
+
+1054
+00:23:54,950 --> 00:23:54,960
+verifier. And then we've got obviously
+ 
+
+1055
+00:23:54,960 --> 00:23:58,710
+verifier. And then we've got obviously
+on the MCP side Jax and Suitup
+
+1056
+00:23:58,710 --> 00:23:58,720
+on the MCP side Jax and Suitup
+ 
+
+1057
+00:23:58,720 --> 00:24:02,149
+on the MCP side Jax and Suitup
+um road map uh maybe some sort of static
+
+1058
+00:24:02,149 --> 00:24:02,159
+um road map uh maybe some sort of static
+ 
+
+1059
+00:24:02,159 --> 00:24:04,710
+um road map uh maybe some sort of static
+analysis integration um start running
+
+1060
+00:24:04,710 --> 00:24:04,720
+analysis integration um start running
+ 
+
+1061
+00:24:04,720 --> 00:24:06,549
+analysis integration um start running
+static analyzers and let the agent
+
+1062
+00:24:06,549 --> 00:24:06,559
+static analyzers and let the agent
+ 
+
+1063
+00:24:06,559 --> 00:24:08,390
+static analyzers and let the agent
+triage the bugs coming out of the static
+
+1064
+00:24:08,390 --> 00:24:08,400
+triage the bugs coming out of the static
+ 
+
+1065
+00:24:08,400 --> 00:24:09,909
+triage the bugs coming out of the static
+analyzer.
+
+1066
+00:24:09,909 --> 00:24:09,919
+analyzer.
+ 
+
+1067
+00:24:09,919 --> 00:24:12,630
+analyzer.
+uh maybe some sort of way to start
+
+1068
+00:24:12,630 --> 00:24:12,640
+uh maybe some sort of way to start
+ 
+
+1069
+00:24:12,640 --> 00:24:14,310
+uh maybe some sort of way to start
+tracking bugs across different apps
+
+1070
+00:24:14,310 --> 00:24:14,320
+tracking bugs across different apps
+ 
+
+1071
+00:24:14,320 --> 00:24:16,310
+tracking bugs across different apps
+because at the minute the agent can can
+
+1072
+00:24:16,310 --> 00:24:16,320
+because at the minute the agent can can
+ 
+
+1073
+00:24:16,320 --> 00:24:18,950
+because at the minute the agent can can
+only see bugs within one app and like
+
+1074
+00:24:18,950 --> 00:24:18,960
+only see bugs within one app and like
+ 
+
+1075
+00:24:18,960 --> 00:24:21,110
+only see bugs within one app and like
+there's no like very often you need to
+
+1076
+00:24:21,110 --> 00:24:21,120
+there's no like very often you need to
+ 
+
+1077
+00:24:21,120 --> 00:24:23,190
+there's no like very often you need to
+start chaining things together across
+
+1078
+00:24:23,190 --> 00:24:23,200
+start chaining things together across
+ 
+
+1079
+00:24:23,200 --> 00:24:25,110
+start chaining things together across
+multiple apps in order to get a useful
+
+1080
+00:24:25,110 --> 00:24:25,120
+multiple apps in order to get a useful
+ 
+
+1081
+00:24:25,120 --> 00:24:26,950
+multiple apps in order to get a useful
+primitive out of them and a useful
+
+1082
+00:24:26,950 --> 00:24:26,960
+primitive out of them and a useful
+ 
+
+1083
+00:24:26,960 --> 00:24:28,870
+primitive out of them and a useful
+exploit. So maybe some sort of database
+
+1084
+00:24:28,870 --> 00:24:28,880
+exploit. So maybe some sort of database
+ 
+
+1085
+00:24:28,880 --> 00:24:30,870
+exploit. So maybe some sort of database
+where the agent can see all of the bugs
+
+1086
+00:24:30,870 --> 00:24:30,880
+where the agent can see all of the bugs
+ 
+
+1087
+00:24:30,880 --> 00:24:33,350
+where the agent can see all of the bugs
+we've got at the minute. Um, and last
+
+1088
+00:24:33,350 --> 00:24:33,360
+we've got at the minute. Um, and last
+ 
+
+1089
+00:24:33,360 --> 00:24:34,789
+we've got at the minute. Um, and last
+but not least, and actually something
+
+1090
+00:24:34,789 --> 00:24:34,799
+but not least, and actually something
+ 
+
+1091
+00:24:34,799 --> 00:24:36,789
+but not least, and actually something
+we've been working on, uh, introduce
+
+1092
+00:24:36,789 --> 00:24:36,799
+we've been working on, uh, introduce
+ 
+
+1093
+00:24:36,799 --> 00:24:39,110
+we've been working on, uh, introduce
+some pog generation and runtime proof of
+
+1094
+00:24:39,110 --> 00:24:39,120
+some pog generation and runtime proof of
+ 
+
+1095
+00:24:39,120 --> 00:24:41,669
+some pog generation and runtime proof of
+vulnerability. So you plug your phone
+
+1096
+00:24:41,669 --> 00:24:41,679
+vulnerability. So you plug your phone
+ 
+
+1097
+00:24:41,679 --> 00:24:44,549
+vulnerability. So you plug your phone
+into your laptop, you run ADBMCP, you
+
+1098
+00:24:44,549 --> 00:24:44,559
+into your laptop, you run ADBMCP, you
+ 
+
+1099
+00:24:44,559 --> 00:24:47,269
+into your laptop, you run ADBMCP, you
+run Freda MCP, and you let the agent
+
+1100
+00:24:47,269 --> 00:24:47,279
+run Freda MCP, and you let the agent
+ 
+
+1101
+00:24:47,279 --> 00:24:49,830
+run Freda MCP, and you let the agent
+test the trigger produced by the bug
+
+1102
+00:24:49,830 --> 00:24:49,840
+test the trigger produced by the bug
+ 
+
+1103
+00:24:49,840 --> 00:24:53,110
+test the trigger produced by the bug
+report uh by the bug hunter and then
+
+1104
+00:24:53,110 --> 00:24:53,120
+report uh by the bug hunter and then
+ 
+
+1105
+00:24:53,120 --> 00:24:55,590
+report uh by the bug hunter and then
+refine the pock while collecting some
+
+1106
+00:24:55,590 --> 00:24:55,600
+refine the pock while collecting some
+ 
+
+1107
+00:24:55,600 --> 00:24:59,510
+refine the pock while collecting some
+events using Freda hooks and ADB lockat
+
+1108
+00:24:59,510 --> 00:24:59,520
+events using Freda hooks and ADB lockat
+ 
+
+1109
+00:24:59,520 --> 00:25:01,669
+events using Freda hooks and ADB lockat
+um events.
+
+1110
+00:25:01,669 --> 00:25:01,679
+um events.
+ 
+
+1111
+00:25:01,679 --> 00:25:12,390
+um events.
+And that is it. Thank you. Thank you.
+
+1112
+00:25:12,390 --> 00:25:12,400
+
+ 
+
+1113
+00:25:12,400 --> 00:25:17,350
+
+questions for Georgie?
+
+1114
+00:25:17,350 --> 00:25:17,360
+
+ 
+
+1115
+00:25:17,360 --> 00:25:18,630
+
+>> All right, we want to go.
+
+1116
+00:25:18,630 --> 00:25:18,640
+>> All right, we want to go.
+ 
+
+1117
+00:25:18,640 --> 00:25:22,279
+>> All right, we want to go.
+>> Thank you. Thanks.
+

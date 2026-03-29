@@ -1,0 +1,6885 @@
+1
+00:00:06,160 --> 00:00:10,070
+
+All right, 20 minutes starts now. Okay.
+
+2
+00:00:10,070 --> 00:00:10,080
+All right, 20 minutes starts now. Okay.
+ 
+
+3
+00:00:10,080 --> 00:00:13,749
+All right, 20 minutes starts now. Okay.
+Oh, it's going to restart. Okay, sweet.
+
+4
+00:00:13,749 --> 00:00:13,759
+Oh, it's going to restart. Okay, sweet.
+ 
+
+5
+00:00:13,759 --> 00:00:15,430
+Oh, it's going to restart. Okay, sweet.
+All right, end of day. Everyone's
+
+6
+00:00:15,430 --> 00:00:15,440
+All right, end of day. Everyone's
+ 
+
+7
+00:00:15,440 --> 00:00:18,550
+All right, end of day. Everyone's
+excited, right? Okay. Trajecjawware
+
+8
+00:00:18,550 --> 00:00:18,560
+excited, right? Okay. Trajecjawware
+ 
+
+9
+00:00:18,560 --> 00:00:21,109
+excited, right? Okay. Trajecjawware
+model post training uh small language
+
+10
+00:00:21,109 --> 00:00:21,119
+model post training uh small language
+ 
+
+11
+00:00:21,119 --> 00:00:25,029
+model post training uh small language
+models. So, hey everyone. I am Aaron. Um
+
+12
+00:00:25,029 --> 00:00:25,039
+models. So, hey everyone. I am Aaron. Um
+ 
+
+13
+00:00:25,039 --> 00:00:27,670
+models. So, hey everyone. I am Aaron. Um
+background, some tech, some government,
+
+14
+00:00:27,670 --> 00:00:27,680
+background, some tech, some government,
+ 
+
+15
+00:00:27,680 --> 00:00:29,830
+background, some tech, some government,
+open source. If you're interested in
+
+16
+00:00:29,830 --> 00:00:29,840
+open source. If you're interested in
+ 
+
+17
+00:00:29,840 --> 00:00:32,150
+open source. If you're interested in
+model post training or frontier agent
+
+18
+00:00:32,150 --> 00:00:32,160
+model post training or frontier agent
+ 
+
+19
+00:00:32,160 --> 00:00:34,870
+model post training or frontier agent
+design, let me know.
+
+20
+00:00:34,870 --> 00:00:34,880
+design, let me know.
+ 
+
+21
+00:00:34,880 --> 00:00:36,709
+design, let me know.
+So today in this talk, what we're going
+
+22
+00:00:36,709 --> 00:00:36,719
+So today in this talk, what we're going
+ 
+
+23
+00:00:36,719 --> 00:00:38,790
+So today in this talk, what we're going
+to focus on uh maybe just in a quick
+
+24
+00:00:38,790 --> 00:00:38,800
+to focus on uh maybe just in a quick
+ 
+
+25
+00:00:38,800 --> 00:00:40,229
+to focus on uh maybe just in a quick
+show of hands, has anyone here actually
+
+26
+00:00:40,229 --> 00:00:40,239
+show of hands, has anyone here actually
+ 
+
+27
+00:00:40,239 --> 00:00:43,190
+show of hands, has anyone here actually
+worked on an actual model training or
+
+28
+00:00:43,190 --> 00:00:43,200
+worked on an actual model training or
+ 
+
+29
+00:00:43,200 --> 00:00:45,270
+worked on an actual model training or
+post training specifically familiar with
+
+30
+00:00:45,270 --> 00:00:45,280
+post training specifically familiar with
+ 
+
+31
+00:00:45,280 --> 00:00:49,190
+post training specifically familiar with
+like unsloth TRL? Awesome. Cool. Well,
+
+32
+00:00:49,190 --> 00:00:49,200
+like unsloth TRL? Awesome. Cool. Well,
+ 
+
+33
+00:00:49,200 --> 00:00:50,630
+like unsloth TRL? Awesome. Cool. Well,
+those that aren't, that's also perfectly
+
+34
+00:00:50,630 --> 00:00:50,640
+those that aren't, that's also perfectly
+ 
+
+35
+00:00:50,640 --> 00:00:52,389
+those that aren't, that's also perfectly
+fine. I'm going to walk through the next
+
+36
+00:00:52,389 --> 00:00:52,399
+fine. I'm going to walk through the next
+ 
+
+37
+00:00:52,399 --> 00:00:54,549
+fine. I'm going to walk through the next
+20 minutes effectively what is current
+
+38
+00:00:54,549 --> 00:00:54,559
+20 minutes effectively what is current
+ 
+
+39
+00:00:54,559 --> 00:00:56,709
+20 minutes effectively what is current
+state-of-the-art in specifically the
+
+40
+00:00:56,709 --> 00:00:56,719
+state-of-the-art in specifically the
+ 
+
+41
+00:00:56,719 --> 00:00:59,270
+state-of-the-art in specifically the
+alignment section of model post training
+
+42
+00:00:59,270 --> 00:00:59,280
+alignment section of model post training
+ 
+
+43
+00:00:59,280 --> 00:01:00,709
+alignment section of model post training
+talk a little bit about an open source
+
+44
+00:01:00,709 --> 00:01:00,719
+talk a little bit about an open source
+ 
+
+45
+00:01:00,719 --> 00:01:03,990
+talk a little bit about an open source
+project I'm uh releasing today
+
+46
+00:01:03,990 --> 00:01:04,000
+project I'm uh releasing today
+ 
+
+47
+00:01:04,000 --> 00:01:08,070
+project I'm uh releasing today
+um and some results of some a tutorial
+
+48
+00:01:08,070 --> 00:01:08,080
+um and some results of some a tutorial
+ 
+
+49
+00:01:08,080 --> 00:01:09,910
+um and some results of some a tutorial
+so let's set the stage a little bit so
+
+50
+00:01:09,910 --> 00:01:09,920
+so let's set the stage a little bit so
+ 
+
+51
+00:01:09,920 --> 00:01:11,510
+so let's set the stage a little bit so
+when we think about large language
+
+52
+00:01:11,510 --> 00:01:11,520
+when we think about large language
+ 
+
+53
+00:01:11,520 --> 00:01:12,950
+when we think about large language
+models decoder models these auto
+
+54
+00:01:12,950 --> 00:01:12,960
+models decoder models these auto
+ 
+
+55
+00:01:12,960 --> 00:01:15,190
+models decoder models these auto
+reggressive models uh we're typically a
+
+56
+00:01:15,190 --> 00:01:15,200
+reggressive models uh we're typically a
+ 
+
+57
+00:01:15,200 --> 00:01:16,870
+reggressive models uh we're typically a
+lot of folks talk about pre-train that's
+
+58
+00:01:16,870 --> 00:01:16,880
+lot of folks talk about pre-train that's
+ 
+
+59
+00:01:16,880 --> 00:01:18,310
+lot of folks talk about pre-train that's
+what happens typically when you take
+
+60
+00:01:18,310 --> 00:01:18,320
+what happens typically when you take
+ 
+
+61
+00:01:18,320 --> 00:01:20,230
+what happens typically when you take
+these big corpuses of the internet
+
+62
+00:01:20,230 --> 00:01:20,240
+these big corpuses of the internet
+ 
+
+63
+00:01:20,240 --> 00:01:23,670
+these big corpuses of the internet
+common crawl etc and proprietary sets um
+
+64
+00:01:23,670 --> 00:01:23,680
+common crawl etc and proprietary sets um
+ 
+
+65
+00:01:23,680 --> 00:01:25,990
+common crawl etc and proprietary sets um
+and you make these great models. Now
+
+66
+00:01:25,990 --> 00:01:26,000
+and you make these great models. Now
+ 
+
+67
+00:01:26,000 --> 00:01:27,429
+and you make these great models. Now
+this is one of the major innovations
+
+68
+00:01:27,429 --> 00:01:27,439
+this is one of the major innovations
+ 
+
+69
+00:01:27,439 --> 00:01:30,710
+this is one of the major innovations
+like for the original GPT uh 3 model
+
+70
+00:01:30,710 --> 00:01:30,720
+like for the original GPT uh 3 model
+ 
+
+71
+00:01:30,720 --> 00:01:32,469
+like for the original GPT uh 3 model
+that came is actually this instruction
+
+72
+00:01:32,469 --> 00:01:32,479
+that came is actually this instruction
+ 
+
+73
+00:01:32,479 --> 00:01:34,390
+that came is actually this instruction
+alignment actually aligning to human
+
+74
+00:01:34,390 --> 00:01:34,400
+alignment actually aligning to human
+ 
+
+75
+00:01:34,400 --> 00:01:36,550
+alignment actually aligning to human
+preference. Uh and this is when you're
+
+76
+00:01:36,550 --> 00:01:36,560
+preference. Uh and this is when you're
+ 
+
+77
+00:01:36,560 --> 00:01:37,910
+preference. Uh and this is when you're
+effectively optimizing you can think of
+
+78
+00:01:37,910 --> 00:01:37,920
+effectively optimizing you can think of
+ 
+
+79
+00:01:37,920 --> 00:01:39,990
+effectively optimizing you can think of
+at a high level for a specific task.
+
+80
+00:01:39,990 --> 00:01:40,000
+at a high level for a specific task.
+ 
+
+81
+00:01:40,000 --> 00:01:42,469
+at a high level for a specific task.
+When I say task that's anything from
+
+82
+00:01:42,469 --> 00:01:42,479
+When I say task that's anything from
+ 
+
+83
+00:01:42,479 --> 00:01:45,830
+When I say task that's anything from
+invoking function calls to question and
+
+84
+00:01:45,830 --> 00:01:45,840
+invoking function calls to question and
+ 
+
+85
+00:01:45,840 --> 00:01:47,910
+invoking function calls to question and
+answers and and things of that nature.
+
+86
+00:01:47,910 --> 00:01:47,920
+answers and and things of that nature.
+ 
+
+87
+00:01:47,920 --> 00:01:51,350
+answers and and things of that nature.
+And then there's prompting at inference.
+
+88
+00:01:51,350 --> 00:01:51,360
+And then there's prompting at inference.
+ 
+
+89
+00:01:51,360 --> 00:01:53,030
+And then there's prompting at inference.
+So when we say agents too as well, I
+
+90
+00:01:53,030 --> 00:01:53,040
+So when we say agents too as well, I
+ 
+
+91
+00:01:53,040 --> 00:01:54,149
+So when we say agents too as well, I
+think it's always for everyone just to
+
+92
+00:01:54,149 --> 00:01:54,159
+think it's always for everyone just to
+ 
+
+93
+00:01:54,159 --> 00:01:56,870
+think it's always for everyone just to
+remember what an agent is. So an agent
+
+94
+00:01:56,870 --> 00:01:56,880
+remember what an agent is. So an agent
+ 
+
+95
+00:01:56,880 --> 00:01:59,990
+remember what an agent is. So an agent
+itself is just a mere collection of
+
+96
+00:01:59,990 --> 00:02:00,000
+itself is just a mere collection of
+ 
+
+97
+00:02:00,000 --> 00:02:03,590
+itself is just a mere collection of
+invoking a model uh that has access to
+
+98
+00:02:03,590 --> 00:02:03,600
+invoking a model uh that has access to
+ 
+
+99
+00:02:03,600 --> 00:02:04,870
+invoking a model uh that has access to
+or invoking the model through
+
+100
+00:02:04,870 --> 00:02:04,880
+or invoking the model through
+ 
+
+101
+00:02:04,880 --> 00:02:07,030
+or invoking the model through
+effectively the application layer and
+
+102
+00:02:07,030 --> 00:02:07,040
+effectively the application layer and
+ 
+
+103
+00:02:07,040 --> 00:02:09,990
+effectively the application layer and
+giving the uh this system access to
+
+104
+00:02:09,990 --> 00:02:10,000
+giving the uh this system access to
+ 
+
+105
+00:02:10,000 --> 00:02:12,229
+giving the uh this system access to
+memory for long-term effectively
+
+106
+00:02:12,229 --> 00:02:12,239
+memory for long-term effectively
+ 
+
+107
+00:02:12,239 --> 00:02:15,030
+memory for long-term effectively
+persisting context in a outofband
+
+108
+00:02:15,030 --> 00:02:15,040
+persisting context in a outofband
+ 
+
+109
+00:02:15,040 --> 00:02:16,869
+persisting context in a outofband
+effectively data store and then
+
+110
+00:02:16,869 --> 00:02:16,879
+effectively data store and then
+ 
+
+111
+00:02:16,879 --> 00:02:19,030
+effectively data store and then
+short-term effectively a conversation
+
+112
+00:02:19,030 --> 00:02:19,040
+short-term effectively a conversation
+ 
+
+113
+00:02:19,040 --> 00:02:20,949
+short-term effectively a conversation
+where you can do things like truncation,
+
+114
+00:02:20,949 --> 00:02:20,959
+where you can do things like truncation,
+ 
+
+115
+00:02:20,959 --> 00:02:23,510
+where you can do things like truncation,
+pruning, artifact rehydration and then
+
+116
+00:02:23,510 --> 00:02:23,520
+pruning, artifact rehydration and then
+ 
+
+117
+00:02:23,520 --> 00:02:25,190
+pruning, artifact rehydration and then
+you have tools. These are functions that
+
+118
+00:02:25,190 --> 00:02:25,200
+you have tools. These are functions that
+ 
+
+119
+00:02:25,200 --> 00:02:26,949
+you have tools. These are functions that
+you can invoke that have dock strings
+
+120
+00:02:26,949 --> 00:02:26,959
+you can invoke that have dock strings
+ 
+
+121
+00:02:26,959 --> 00:02:28,550
+you can invoke that have dock strings
+and names associated with them and
+
+122
+00:02:28,550 --> 00:02:28,560
+and names associated with them and
+ 
+
+123
+00:02:28,560 --> 00:02:30,550
+and names associated with them and
+actions where you action in the
+
+124
+00:02:30,550 --> 00:02:30,560
+actions where you action in the
+ 
+
+125
+00:02:30,560 --> 00:02:31,990
+actions where you action in the
+environment that's executing in your
+
+126
+00:02:31,990 --> 00:02:32,000
+environment that's executing in your
+ 
+
+127
+00:02:32,000 --> 00:02:35,990
+environment that's executing in your
+local machine or remote container etc.
+
+128
+00:02:35,990 --> 00:02:36,000
+local machine or remote container etc.
+ 
+
+129
+00:02:36,000 --> 00:02:37,509
+local machine or remote container etc.
+So what's going on actually behind the
+
+130
+00:02:37,509 --> 00:02:37,519
+So what's going on actually behind the
+ 
+
+131
+00:02:37,519 --> 00:02:39,750
+So what's going on actually behind the
+scenes when you actually are having you
+
+132
+00:02:39,750 --> 00:02:39,760
+scenes when you actually are having you
+ 
+
+133
+00:02:39,760 --> 00:02:41,270
+scenes when you actually are having you
+know you're on clawed code you're on
+
+134
+00:02:41,270 --> 00:02:41,280
+know you're on clawed code you're on
+ 
+
+135
+00:02:41,280 --> 00:02:43,350
+know you're on clawed code you're on
+cursor or your own custom agent and it's
+
+136
+00:02:43,350 --> 00:02:43,360
+cursor or your own custom agent and it's
+ 
+
+137
+00:02:43,360 --> 00:02:45,509
+cursor or your own custom agent and it's
+making these function calls we're doing
+
+138
+00:02:45,509 --> 00:02:45,519
+making these function calls we're doing
+ 
+
+139
+00:02:45,519 --> 00:02:47,670
+making these function calls we're doing
+is the these models are stateless. So
+
+140
+00:02:47,670 --> 00:02:47,680
+is the these models are stateless. So
+ 
+
+141
+00:02:47,680 --> 00:02:49,350
+is the these models are stateless. So
+every interaction you have it doesn't
+
+142
+00:02:49,350 --> 00:02:49,360
+every interaction you have it doesn't
+ 
+
+143
+00:02:49,360 --> 00:02:53,110
+every interaction you have it doesn't
+maintain prior context into that. So
+
+144
+00:02:53,110 --> 00:02:53,120
+maintain prior context into that. So
+ 
+
+145
+00:02:53,120 --> 00:02:55,910
+maintain prior context into that. So
+when you send that uh tool call what
+
+146
+00:02:55,910 --> 00:02:55,920
+when you send that uh tool call what
+ 
+
+147
+00:02:55,920 --> 00:02:57,910
+when you send that uh tool call what
+it's really sending if you look at
+
+148
+00:02:57,910 --> 00:02:57,920
+it's really sending if you look at
+ 
+
+149
+00:02:57,920 --> 00:02:59,430
+it's really sending if you look at
+what's happening in the conversation
+
+150
+00:02:59,430 --> 00:02:59,440
+what's happening in the conversation
+ 
+
+151
+00:02:59,440 --> 00:03:02,309
+what's happening in the conversation
+it's sending the system prompt I am a
+
+152
+00:03:02,309 --> 00:03:02,319
+it's sending the system prompt I am a
+ 
+
+153
+00:03:02,319 --> 00:03:05,030
+it's sending the system prompt I am a
+great pin testing agents and effectively
+
+154
+00:03:05,030 --> 00:03:05,040
+great pin testing agents and effectively
+ 
+
+155
+00:03:05,040 --> 00:03:07,110
+great pin testing agents and effectively
+the tool schemas these are effectively
+
+156
+00:03:07,110 --> 00:03:07,120
+the tool schemas these are effectively
+ 
+
+157
+00:03:07,120 --> 00:03:09,589
+the tool schemas these are effectively
+the function name the arguments and then
+
+158
+00:03:09,589 --> 00:03:09,599
+the function name the arguments and then
+ 
+
+159
+00:03:09,599 --> 00:03:11,990
+the function name the arguments and then
+importantly the doc strings that in text
+
+160
+00:03:11,990 --> 00:03:12,000
+importantly the doc strings that in text
+ 
+
+161
+00:03:12,000 --> 00:03:15,190
+importantly the doc strings that in text
+describe that specific tool and then the
+
+162
+00:03:15,190 --> 00:03:15,200
+describe that specific tool and then the
+ 
+
+163
+00:03:15,200 --> 00:03:17,110
+describe that specific tool and then the
+conversation history that grows and then
+
+164
+00:03:17,110 --> 00:03:17,120
+conversation history that grows and then
+ 
+
+165
+00:03:17,120 --> 00:03:19,670
+conversation history that grows and then
+the next action.
+
+166
+00:03:19,670 --> 00:03:19,680
+the next action.
+ 
+
+167
+00:03:19,680 --> 00:03:21,990
+the next action.
+If we look at some of the results um
+
+168
+00:03:21,990 --> 00:03:22,000
+If we look at some of the results um
+ 
+
+169
+00:03:22,000 --> 00:03:24,309
+If we look at some of the results um
+from effectively the frontier models and
+
+170
+00:03:24,309 --> 00:03:24,319
+from effectively the frontier models and
+ 
+
+171
+00:03:24,319 --> 00:03:26,229
+from effectively the frontier models and
+this is I think last if anyone read
+
+172
+00:03:26,229 --> 00:03:26,239
+this is I think last if anyone read
+ 
+
+173
+00:03:26,239 --> 00:03:30,390
+this is I think last if anyone read
+regulars I think uh GPT52 scorecard
+
+174
+00:03:30,390 --> 00:03:30,400
+regulars I think uh GPT52 scorecard
+ 
+
+175
+00:03:30,400 --> 00:03:32,070
+regulars I think uh GPT52 scorecard
+along with I know some of us that were
+
+176
+00:03:32,070 --> 00:03:32,080
+along with I know some of us that were
+ 
+
+177
+00:03:32,080 --> 00:03:34,149
+along with I know some of us that were
+talking at offensive aicon back in the
+
+178
+00:03:34,149 --> 00:03:34,159
+talking at offensive aicon back in the
+ 
+
+179
+00:03:34,159 --> 00:03:36,070
+talking at offensive aicon back in the
+fall what we're finding at least with
+
+180
+00:03:36,070 --> 00:03:36,080
+fall what we're finding at least with
+ 
+
+181
+00:03:36,080 --> 00:03:37,509
+fall what we're finding at least with
+these models applied to different
+
+182
+00:03:37,509 --> 00:03:37,519
+these models applied to different
+ 
+
+183
+00:03:37,519 --> 00:03:39,910
+these models applied to different
+scaffolding frameworks what they really
+
+184
+00:03:39,910 --> 00:03:39,920
+scaffolding frameworks what they really
+ 
+
+185
+00:03:39,920 --> 00:03:42,149
+scaffolding frameworks what they really
+are good at is these atomic tasks so
+
+186
+00:03:42,149 --> 00:03:42,159
+are good at is these atomic tasks so
+ 
+
+187
+00:03:42,159 --> 00:03:43,990
+are good at is these atomic tasks so
+think in the web application pin testing
+
+188
+00:03:43,990 --> 00:03:44,000
+think in the web application pin testing
+ 
+
+189
+00:03:44,000 --> 00:03:45,670
+think in the web application pin testing
+world identifying effectively hey
+
+190
+00:03:45,670 --> 00:03:45,680
+world identifying effectively hey
+ 
+
+191
+00:03:45,680 --> 00:03:47,750
+world identifying effectively hey
+there's an LFI there's a cross-ite
+
+192
+00:03:47,750 --> 00:03:47,760
+there's an LFI there's a cross-ite
+ 
+
+193
+00:03:47,760 --> 00:03:49,270
+there's an LFI there's a cross-ite
+scripting attack and then explor
+
+194
+00:03:49,270 --> 00:03:49,280
+scripting attack and then explor
+ 
+
+195
+00:03:49,280 --> 00:03:51,110
+scripting attack and then explor
+exploiting through that. What they're
+
+196
+00:03:51,110 --> 00:03:51,120
+exploiting through that. What they're
+ 
+
+197
+00:03:51,120 --> 00:03:53,270
+exploiting through that. What they're
+really poor at right now, at least these
+
+198
+00:03:53,270 --> 00:03:53,280
+really poor at right now, at least these
+ 
+
+199
+00:03:53,280 --> 00:03:55,350
+really poor at right now, at least these
+general models, is these multi-stage
+
+200
+00:03:55,350 --> 00:03:55,360
+general models, is these multi-stage
+ 
+
+201
+00:03:55,360 --> 00:03:57,110
+general models, is these multi-stage
+tasks where we require effectively
+
+202
+00:03:57,110 --> 00:03:57,120
+tasks where we require effectively
+ 
+
+203
+00:03:57,120 --> 00:03:59,190
+tasks where we require effectively
+conjoining different vulnerabilities
+
+204
+00:03:59,190 --> 00:03:59,200
+conjoining different vulnerabilities
+ 
+
+205
+00:03:59,200 --> 00:04:02,149
+conjoining different vulnerabilities
+together to exploit.
+
+206
+00:04:02,149 --> 00:04:02,159
+together to exploit.
+ 
+
+207
+00:04:02,159 --> 00:04:04,229
+together to exploit.
+This is one of the reasons why we need
+
+208
+00:04:04,229 --> 00:04:04,239
+This is one of the reasons why we need
+ 
+
+209
+00:04:04,239 --> 00:04:06,390
+This is one of the reasons why we need
+to focus on model post training. Again,
+
+210
+00:04:06,390 --> 00:04:06,400
+to focus on model post training. Again,
+ 
+
+211
+00:04:06,400 --> 00:04:09,110
+to focus on model post training. Again,
+these base models, they're optimized for
+
+212
+00:04:09,110 --> 00:04:09,120
+these base models, they're optimized for
+ 
+
+213
+00:04:09,120 --> 00:04:10,789
+these base models, they're optimized for
+everything from question answer tasks
+
+214
+00:04:10,789 --> 00:04:10,799
+everything from question answer tasks
+ 
+
+215
+00:04:10,799 --> 00:04:13,429
+everything from question answer tasks
+about cats and dogs to software code
+
+216
+00:04:13,429 --> 00:04:13,439
+about cats and dogs to software code
+ 
+
+217
+00:04:13,439 --> 00:04:16,150
+about cats and dogs to software code
+development to effectively the cohort of
+
+218
+00:04:16,150 --> 00:04:16,160
+development to effectively the cohort of
+ 
+
+219
+00:04:16,160 --> 00:04:17,749
+development to effectively the cohort of
+most of the people in this room and
+
+220
+00:04:17,749 --> 00:04:17,759
+most of the people in this room and
+ 
+
+221
+00:04:17,759 --> 00:04:19,349
+most of the people in this room and
+above stairs. Applying these for
+
+222
+00:04:19,349 --> 00:04:19,359
+above stairs. Applying these for
+ 
+
+223
+00:04:19,359 --> 00:04:21,349
+above stairs. Applying these for
+applications with the intent purpose of
+
+224
+00:04:21,349 --> 00:04:21,359
+applications with the intent purpose of
+ 
+
+225
+00:04:21,359 --> 00:04:22,950
+applications with the intent purpose of
+doing tasks such as pin testing,
+
+226
+00:04:22,950 --> 00:04:22,960
+doing tasks such as pin testing,
+ 
+
+227
+00:04:22,960 --> 00:04:25,990
+doing tasks such as pin testing,
+instance response, etc. So when we talk
+
+228
+00:04:25,990 --> 00:04:26,000
+instance response, etc. So when we talk
+ 
+
+229
+00:04:26,000 --> 00:04:27,510
+instance response, etc. So when we talk
+about post training, a lot of what we're
+
+230
+00:04:27,510 --> 00:04:27,520
+about post training, a lot of what we're
+ 
+
+231
+00:04:27,520 --> 00:04:28,870
+about post training, a lot of what we're
+talking about is just inference time
+
+232
+00:04:28,870 --> 00:04:28,880
+talking about is just inference time
+ 
+
+233
+00:04:28,880 --> 00:04:30,550
+talking about is just inference time
+scaling or that's what we're talking
+
+234
+00:04:30,550 --> 00:04:30,560
+scaling or that's what we're talking
+ 
+
+235
+00:04:30,560 --> 00:04:32,070
+scaling or that's what we're talking
+about with agents uh scaffolding. I
+
+236
+00:04:32,070 --> 00:04:32,080
+about with agents uh scaffolding. I
+ 
+
+237
+00:04:32,080 --> 00:04:35,510
+about with agents uh scaffolding. I
+apologize for post-training. What we're
+
+238
+00:04:35,510 --> 00:04:35,520
+apologize for post-training. What we're
+ 
+
+239
+00:04:35,520 --> 00:04:37,350
+apologize for post-training. What we're
+really talking about is that RL
+
+240
+00:04:37,350 --> 00:04:37,360
+really talking about is that RL
+ 
+
+241
+00:04:37,360 --> 00:04:39,510
+really talking about is that RL
+reinforcement learning on trajectories
+
+242
+00:04:39,510 --> 00:04:39,520
+reinforcement learning on trajectories
+ 
+
+243
+00:04:39,520 --> 00:04:41,590
+reinforcement learning on trajectories
+supervised fine-tuning and then that
+
+244
+00:04:41,590 --> 00:04:41,600
+supervised fine-tuning and then that
+ 
+
+245
+00:04:41,600 --> 00:04:44,070
+supervised fine-tuning and then that
+pre-training earlier.
+
+246
+00:04:44,070 --> 00:04:44,080
+pre-training earlier.
+ 
+
+247
+00:04:44,080 --> 00:04:46,070
+pre-training earlier.
+When we talk about agentic reinforcement
+
+248
+00:04:46,070 --> 00:04:46,080
+When we talk about agentic reinforcement
+ 
+
+249
+00:04:46,080 --> 00:04:47,350
+When we talk about agentic reinforcement
+learning, what we're really talking
+
+250
+00:04:47,350 --> 00:04:47,360
+learning, what we're really talking
+ 
+
+251
+00:04:47,360 --> 00:04:49,990
+learning, what we're really talking
+about is the ability to effectively do
+
+252
+00:04:49,990 --> 00:04:50,000
+about is the ability to effectively do
+ 
+
+253
+00:04:50,000 --> 00:04:51,990
+about is the ability to effectively do
+behavioral cloning from these expert
+
+254
+00:04:51,990 --> 00:04:52,000
+behavioral cloning from these expert
+ 
+
+255
+00:04:52,000 --> 00:04:53,990
+behavioral cloning from these expert
+trajectories. Again, think about taking
+
+256
+00:04:53,990 --> 00:04:54,000
+trajectories. Again, think about taking
+ 
+
+257
+00:04:54,000 --> 00:04:57,990
+trajectories. Again, think about taking
+in the openweight world, running on GLM5
+
+258
+00:04:57,990 --> 00:04:58,000
+in the openweight world, running on GLM5
+ 
+
+259
+00:04:58,000 --> 00:05:01,030
+in the openweight world, running on GLM5
+or Kimmy K2
+
+260
+00:05:01,030 --> 00:05:01,040
+or Kimmy K2
+ 
+
+261
+00:05:01,040 --> 00:05:03,430
+or Kimmy K2
+um and then effectively recording the
+
+262
+00:05:03,430 --> 00:05:03,440
+um and then effectively recording the
+ 
+
+263
+00:05:03,440 --> 00:05:05,590
+um and then effectively recording the
+conversation of how that performed and
+
+264
+00:05:05,590 --> 00:05:05,600
+conversation of how that performed and
+ 
+
+265
+00:05:05,600 --> 00:05:08,310
+conversation of how that performed and
+then going to a weaker agent with a
+
+266
+00:05:08,310 --> 00:05:08,320
+then going to a weaker agent with a
+ 
+
+267
+00:05:08,320 --> 00:05:11,350
+then going to a weaker agent with a
+smaller model and then effectively
+
+268
+00:05:11,350 --> 00:05:11,360
+smaller model and then effectively
+ 
+
+269
+00:05:11,360 --> 00:05:13,110
+smaller model and then effectively
+teaching the model how to not just
+
+270
+00:05:13,110 --> 00:05:13,120
+teaching the model how to not just
+ 
+
+271
+00:05:13,120 --> 00:05:15,350
+teaching the model how to not just
+replicate but also think like that model
+
+272
+00:05:15,350 --> 00:05:15,360
+replicate but also think like that model
+ 
+
+273
+00:05:15,360 --> 00:05:17,909
+replicate but also think like that model
+for that specific task. Again, tasks can
+
+274
+00:05:17,909 --> 00:05:17,919
+for that specific task. Again, tasks can
+ 
+
+275
+00:05:17,919 --> 00:05:20,150
+for that specific task. Again, tasks can
+be everything from invoking functions
+
+276
+00:05:20,150 --> 00:05:20,160
+be everything from invoking functions
+ 
+
+277
+00:05:20,160 --> 00:05:22,710
+be everything from invoking functions
+like a shell command for invoking
+
+278
+00:05:22,710 --> 00:05:22,720
+like a shell command for invoking
+ 
+
+279
+00:05:22,720 --> 00:05:24,310
+like a shell command for invoking
+specific cyber tools in a shell
+
+280
+00:05:24,310 --> 00:05:24,320
+specific cyber tools in a shell
+ 
+
+281
+00:05:24,320 --> 00:05:26,870
+specific cyber tools in a shell
+environment, exploit code generation, or
+
+282
+00:05:26,870 --> 00:05:26,880
+environment, exploit code generation, or
+ 
+
+283
+00:05:26,880 --> 00:05:28,550
+environment, exploit code generation, or
+orchestration between different agents
+
+284
+00:05:28,550 --> 00:05:28,560
+orchestration between different agents
+ 
+
+285
+00:05:28,560 --> 00:05:30,710
+orchestration between different agents
+and tools.
+
+286
+00:05:30,710 --> 00:05:30,720
+and tools.
+ 
+
+287
+00:05:30,720 --> 00:05:32,469
+and tools.
+So, probably for the folks in here that
+
+288
+00:05:32,469 --> 00:05:32,479
+So, probably for the folks in here that
+ 
+
+289
+00:05:32,479 --> 00:05:33,909
+So, probably for the folks in here that
+did raise their hand that are working in
+
+290
+00:05:33,909 --> 00:05:33,919
+did raise their hand that are working in
+ 
+
+291
+00:05:33,919 --> 00:05:35,590
+did raise their hand that are working in
+this field, there's a there's a couple
+
+292
+00:05:35,590 --> 00:05:35,600
+this field, there's a there's a couple
+ 
+
+293
+00:05:35,600 --> 00:05:37,110
+this field, there's a there's a couple
+benchmarks out there within the
+
+294
+00:05:37,110 --> 00:05:37,120
+benchmarks out there within the
+ 
+
+295
+00:05:37,120 --> 00:05:38,790
+benchmarks out there within the
+cyerspace domain and it's not exhaustive
+
+296
+00:05:38,790 --> 00:05:38,800
+cyerspace domain and it's not exhaustive
+ 
+
+297
+00:05:38,800 --> 00:05:40,150
+cyerspace domain and it's not exhaustive
+and we all can complain that they're
+
+298
+00:05:40,150 --> 00:05:40,160
+and we all can complain that they're
+ 
+
+299
+00:05:40,160 --> 00:05:41,909
+and we all can complain that they're
+none of them are great and I can agree
+
+300
+00:05:41,909 --> 00:05:41,919
+none of them are great and I can agree
+ 
+
+301
+00:05:41,919 --> 00:05:44,230
+none of them are great and I can agree
+with you. I'm part of that. But you
+
+302
+00:05:44,230 --> 00:05:44,240
+with you. I'm part of that. But you
+ 
+
+303
+00:05:44,240 --> 00:05:46,310
+with you. I'm part of that. But you
+know, Sybench, CVE bench, Xbal
+
+304
+00:05:46,310 --> 00:05:46,320
+know, Sybench, CVE bench, Xbal
+ 
+
+305
+00:05:46,320 --> 00:05:49,189
+know, Sybench, CVE bench, Xbal
+validation, etc. These are kind of the
+
+306
+00:05:49,189 --> 00:05:49,199
+validation, etc. These are kind of the
+ 
+
+307
+00:05:49,199 --> 00:05:51,029
+validation, etc. These are kind of the
+foundations right now, especially in
+
+308
+00:05:51,029 --> 00:05:51,039
+foundations right now, especially in
+ 
+
+309
+00:05:51,039 --> 00:05:52,870
+foundations right now, especially in
+both these tasks really that are
+
+310
+00:05:52,870 --> 00:05:52,880
+both these tasks really that are
+ 
+
+311
+00:05:52,880 --> 00:05:55,350
+both these tasks really that are
+bucketed in pin testing of web
+
+312
+00:05:55,350 --> 00:05:55,360
+bucketed in pin testing of web
+ 
+
+313
+00:05:55,360 --> 00:05:58,790
+bucketed in pin testing of web
+applications or vulnerability um
+
+314
+00:05:58,790 --> 00:05:58,800
+applications or vulnerability um
+ 
+
+315
+00:05:58,800 --> 00:06:01,670
+applications or vulnerability um
+identification and code etc. for either
+
+316
+00:06:01,670 --> 00:06:01,680
+identification and code etc. for either
+ 
+
+317
+00:06:01,680 --> 00:06:04,950
+identification and code etc. for either
+web applications, crypto uh etc. dynamic
+
+318
+00:06:04,950 --> 00:06:04,960
+web applications, crypto uh etc. dynamic
+ 
+
+319
+00:06:04,960 --> 00:06:07,189
+web applications, crypto uh etc. dynamic
+and static environments.
+
+320
+00:06:07,189 --> 00:06:07,199
+and static environments.
+ 
+
+321
+00:06:07,199 --> 00:06:09,110
+and static environments.
+and we talk about what is like security
+
+322
+00:06:09,110 --> 00:06:09,120
+and we talk about what is like security
+ 
+
+323
+00:06:09,120 --> 00:06:11,749
+and we talk about what is like security
+pin testing from more of a philosophical
+
+324
+00:06:11,749 --> 00:06:11,759
+pin testing from more of a philosophical
+ 
+
+325
+00:06:11,759 --> 00:06:13,189
+pin testing from more of a philosophical
+perspective and what we're really doing
+
+326
+00:06:13,189 --> 00:06:13,199
+perspective and what we're really doing
+ 
+
+327
+00:06:13,199 --> 00:06:15,029
+perspective and what we're really doing
+here. We're really focused on this
+
+328
+00:06:15,029 --> 00:06:15,039
+here. We're really focused on this
+ 
+
+329
+00:06:15,039 --> 00:06:17,270
+here. We're really focused on this
+frontier ML problem that we're seeing
+
+330
+00:06:17,270 --> 00:06:17,280
+frontier ML problem that we're seeing
+ 
+
+331
+00:06:17,280 --> 00:06:19,110
+frontier ML problem that we're seeing
+across effectively what they call long
+
+332
+00:06:19,110 --> 00:06:19,120
+across effectively what they call long
+ 
+
+333
+00:06:19,120 --> 00:06:21,670
+across effectively what they call long
+horizon agents. Similar to how in web
+
+334
+00:06:21,670 --> 00:06:21,680
+horizon agents. Similar to how in web
+ 
+
+335
+00:06:21,680 --> 00:06:24,309
+horizon agents. Similar to how in web
+voyaging through browsers, agents
+
+336
+00:06:24,309 --> 00:06:24,319
+voyaging through browsers, agents
+ 
+
+337
+00:06:24,319 --> 00:06:27,110
+voyaging through browsers, agents
+playing effectively video games or
+
+338
+00:06:27,110 --> 00:06:27,120
+playing effectively video games or
+ 
+
+339
+00:06:27,120 --> 00:06:28,710
+playing effectively video games or
+effectively security pin testing, you
+
+340
+00:06:28,710 --> 00:06:28,720
+effectively security pin testing, you
+ 
+
+341
+00:06:28,720 --> 00:06:30,390
+effectively security pin testing, you
+have an agent that has to explore the
+
+342
+00:06:30,390 --> 00:06:30,400
+have an agent that has to explore the
+ 
+
+343
+00:06:30,400 --> 00:06:33,590
+have an agent that has to explore the
+world, understand what it's surrounding
+
+344
+00:06:33,590 --> 00:06:33,600
+world, understand what it's surrounding
+ 
+
+345
+00:06:33,600 --> 00:06:36,150
+world, understand what it's surrounding
+and then unify them to actually interact
+
+346
+00:06:36,150 --> 00:06:36,160
+and then unify them to actually interact
+ 
+
+347
+00:06:36,160 --> 00:06:37,670
+and then unify them to actually interact
+with the environment and invoke specific
+
+348
+00:06:37,670 --> 00:06:37,680
+with the environment and invoke specific
+ 
+
+349
+00:06:37,680 --> 00:06:39,350
+with the environment and invoke specific
+functions to complete these objectives.
+
+350
+00:06:39,350 --> 00:06:39,360
+functions to complete these objectives.
+ 
+
+351
+00:06:39,360 --> 00:06:41,990
+functions to complete these objectives.
+This is pretty complex and even from a
+
+352
+00:06:41,990 --> 00:06:42,000
+This is pretty complex and even from a
+ 
+
+353
+00:06:42,000 --> 00:06:44,629
+This is pretty complex and even from a
+more general ML perspective, that's why
+
+354
+00:06:44,629 --> 00:06:44,639
+more general ML perspective, that's why
+ 
+
+355
+00:06:44,639 --> 00:06:46,629
+more general ML perspective, that's why
+doing this model post training is such a
+
+356
+00:06:46,629 --> 00:06:46,639
+doing this model post training is such a
+ 
+
+357
+00:06:46,639 --> 00:06:48,150
+doing this model post training is such a
+requirement and such a cool frontier
+
+358
+00:06:48,150 --> 00:06:48,160
+requirement and such a cool frontier
+ 
+
+359
+00:06:48,160 --> 00:06:49,830
+requirement and such a cool frontier
+problem to work on.
+
+360
+00:06:49,830 --> 00:06:49,840
+problem to work on.
+ 
+
+361
+00:06:49,840 --> 00:06:51,350
+problem to work on.
+So if we look at other domains and how
+
+362
+00:06:51,350 --> 00:06:51,360
+So if we look at other domains and how
+ 
+
+363
+00:06:51,360 --> 00:06:52,790
+So if we look at other domains and how
+they're solving this again I don't like
+
+364
+00:06:52,790 --> 00:06:52,800
+they're solving this again I don't like
+ 
+
+365
+00:06:52,800 --> 00:06:54,309
+they're solving this again I don't like
+to reinvent the wheel I like to look at
+
+366
+00:06:54,309 --> 00:06:54,319
+to reinvent the wheel I like to look at
+ 
+
+367
+00:06:54,319 --> 00:06:55,990
+to reinvent the wheel I like to look at
+what others are doing in the space you
+
+368
+00:06:55,990 --> 00:06:56,000
+what others are doing in the space you
+ 
+
+369
+00:06:56,000 --> 00:06:58,230
+what others are doing in the space you
+can look at the I don't know if anyone's
+
+370
+00:06:58,230 --> 00:06:58,240
+can look at the I don't know if anyone's
+ 
+
+371
+00:06:58,240 --> 00:07:02,230
+can look at the I don't know if anyone's
+seen the work from law or from swbench
+
+372
+00:07:02,230 --> 00:07:02,240
+seen the work from law or from swbench
+ 
+
+373
+00:07:02,240 --> 00:07:05,350
+seen the work from law or from swbench
+terminal bench um but effectively in
+
+374
+00:07:05,350 --> 00:07:05,360
+terminal bench um but effectively in
+ 
+
+375
+00:07:05,360 --> 00:07:07,589
+terminal bench um but effectively in
+math and reasoning and coding agents
+
+376
+00:07:07,589 --> 00:07:07,599
+math and reasoning and coding agents
+ 
+
+377
+00:07:07,599 --> 00:07:09,510
+math and reasoning and coding agents
+there are pretty established benchmarks
+
+378
+00:07:09,510 --> 00:07:09,520
+there are pretty established benchmarks
+ 
+
+379
+00:07:09,520 --> 00:07:12,950
+there are pretty established benchmarks
+and training frameworks and eval as well
+
+380
+00:07:12,950 --> 00:07:12,960
+and training frameworks and eval as well
+ 
+
+381
+00:07:12,960 --> 00:07:14,790
+and training frameworks and eval as well
+I'd say overall in security the one
+
+382
+00:07:14,790 --> 00:07:14,800
+I'd say overall in security the one
+ 
+
+383
+00:07:14,800 --> 00:07:17,110
+I'd say overall in security the one
+takeaway is we don't really have that uh
+
+384
+00:07:17,110 --> 00:07:17,120
+takeaway is we don't really have that uh
+ 
+
+385
+00:07:17,120 --> 00:07:18,629
+takeaway is we don't really have that uh
+that is fundamentally missing that's why
+
+386
+00:07:18,629 --> 00:07:18,639
+that is fundamentally missing that's why
+ 
+
+387
+00:07:18,639 --> 00:07:21,510
+that is fundamentally missing that's why
+we hear talks like earlier today from
+
+388
+00:07:21,510 --> 00:07:21,520
+we hear talks like earlier today from
+ 
+
+389
+00:07:21,520 --> 00:07:23,189
+we hear talks like earlier today from
+folks that we don't have great evals, we
+
+390
+00:07:23,189 --> 00:07:23,199
+folks that we don't have great evals, we
+ 
+
+391
+00:07:23,199 --> 00:07:24,309
+folks that we don't have great evals, we
+don't have great measures, no one
+
+392
+00:07:24,309 --> 00:07:24,319
+don't have great measures, no one
+ 
+
+393
+00:07:24,319 --> 00:07:26,070
+don't have great measures, no one
+believes anything. I think we need to
+
+394
+00:07:26,070 --> 00:07:26,080
+believes anything. I think we need to
+ 
+
+395
+00:07:26,080 --> 00:07:27,830
+believes anything. I think we need to
+have that just like we have it in coding
+
+396
+00:07:27,830 --> 00:07:27,840
+have that just like we have it in coding
+ 
+
+397
+00:07:27,840 --> 00:07:29,749
+have that just like we have it in coding
+etc.
+
+398
+00:07:29,749 --> 00:07:29,759
+etc.
+ 
+
+399
+00:07:29,759 --> 00:07:31,270
+etc.
+So if you're going to do that and you
+
+400
+00:07:31,270 --> 00:07:31,280
+So if you're going to do that and you
+ 
+
+401
+00:07:31,280 --> 00:07:33,510
+So if you're going to do that and you
+want to build your post training
+
+402
+00:07:33,510 --> 00:07:33,520
+want to build your post training
+ 
+
+403
+00:07:33,520 --> 00:07:35,670
+want to build your post training
+environment to train your one security
+
+404
+00:07:35,670 --> 00:07:35,680
+environment to train your one security
+ 
+
+405
+00:07:35,680 --> 00:07:37,909
+environment to train your one security
+agent for defense or offense or really
+
+406
+00:07:37,909 --> 00:07:37,919
+agent for defense or offense or really
+ 
+
+407
+00:07:37,919 --> 00:07:40,230
+agent for defense or offense or really
+any long horizon task, what do you need
+
+408
+00:07:40,230 --> 00:07:40,240
+any long horizon task, what do you need
+ 
+
+409
+00:07:40,240 --> 00:07:43,749
+any long horizon task, what do you need
+to do that? You need a collection of
+
+410
+00:07:43,749 --> 00:07:43,759
+to do that? You need a collection of
+ 
+
+411
+00:07:43,759 --> 00:07:47,029
+to do that? You need a collection of
+about 36 plus different libraries SDKs
+
+412
+00:07:47,029 --> 00:07:47,039
+about 36 plus different libraries SDKs
+ 
+
+413
+00:07:47,039 --> 00:07:48,790
+about 36 plus different libraries SDKs
+to effectively conjoin them into your
+
+414
+00:07:48,790 --> 00:07:48,800
+to effectively conjoin them into your
+ 
+
+415
+00:07:48,800 --> 00:07:50,230
+to effectively conjoin them into your
+effectively cluster to do this
+
+416
+00:07:50,230 --> 00:07:50,240
+effectively cluster to do this
+ 
+
+417
+00:07:50,240 --> 00:07:53,909
+effectively cluster to do this
+distributed training RL infrastructure.
+
+418
+00:07:53,909 --> 00:07:53,919
+distributed training RL infrastructure.
+ 
+
+419
+00:07:53,919 --> 00:07:55,990
+distributed training RL infrastructure.
+It's always a problem of effectively
+
+420
+00:07:55,990 --> 00:07:56,000
+It's always a problem of effectively
+ 
+
+421
+00:07:56,000 --> 00:07:58,150
+It's always a problem of effectively
+what went wrong. I can tell you many
+
+422
+00:07:58,150 --> 00:07:58,160
+what went wrong. I can tell you many
+ 
+
+423
+00:07:58,160 --> 00:08:00,390
+what went wrong. I can tell you many
+horror stories after this about doing
+
+424
+00:08:00,390 --> 00:08:00,400
+horror stories after this about doing
+ 
+
+425
+00:08:00,400 --> 00:08:03,350
+horror stories after this about doing
+this um type of work but you know
+
+426
+00:08:03,350 --> 00:08:03,360
+this um type of work but you know
+ 
+
+427
+00:08:03,360 --> 00:08:05,670
+this um type of work but you know
+tracing a problem is is it the algorithm
+
+428
+00:08:05,670 --> 00:08:05,680
+tracing a problem is is it the algorithm
+ 
+
+429
+00:08:05,680 --> 00:08:07,749
+tracing a problem is is it the algorithm
+that's wrong? Is it the infrastructure,
+
+430
+00:08:07,749 --> 00:08:07,759
+that's wrong? Is it the infrastructure,
+ 
+
+431
+00:08:07,759 --> 00:08:10,390
+that's wrong? Is it the infrastructure,
+the environmental data? It's typically
+
+432
+00:08:10,390 --> 00:08:10,400
+the environmental data? It's typically
+ 
+
+433
+00:08:10,400 --> 00:08:13,270
+the environmental data? It's typically
+very difficult to actually do debugging.
+
+434
+00:08:13,270 --> 00:08:13,280
+very difficult to actually do debugging.
+ 
+
+435
+00:08:13,280 --> 00:08:15,510
+very difficult to actually do debugging.
+So this is why I wanted to release and
+
+436
+00:08:15,510 --> 00:08:15,520
+So this is why I wanted to release and
+ 
+
+437
+00:08:15,520 --> 00:08:18,150
+So this is why I wanted to release and
+compile a project called open trajectory
+
+438
+00:08:18,150 --> 00:08:18,160
+compile a project called open trajectory
+ 
+
+439
+00:08:18,160 --> 00:08:19,990
+compile a project called open trajectory
+gym that I just released about an hour
+
+440
+00:08:19,990 --> 00:08:20,000
+gym that I just released about an hour
+ 
+
+441
+00:08:20,000 --> 00:08:22,469
+gym that I just released about an hour
+ago. This is a collection that allows
+
+442
+00:08:22,469 --> 00:08:22,479
+ago. This is a collection that allows
+ 
+
+443
+00:08:22,479 --> 00:08:24,629
+ago. This is a collection that allows
+you in effectively one loop to apply
+
+444
+00:08:24,629 --> 00:08:24,639
+you in effectively one loop to apply
+ 
+
+445
+00:08:24,639 --> 00:08:26,629
+you in effectively one loop to apply
+some of the latest techniques in model
+
+446
+00:08:26,629 --> 00:08:26,639
+some of the latest techniques in model
+ 
+
+447
+00:08:26,639 --> 00:08:28,710
+some of the latest techniques in model
+post train that are built off the backs
+
+448
+00:08:28,710 --> 00:08:28,720
+post train that are built off the backs
+ 
+
+449
+00:08:28,720 --> 00:08:30,550
+post train that are built off the backs
+of some pretty cool awesome projects
+
+450
+00:08:30,550 --> 00:08:30,560
+of some pretty cool awesome projects
+ 
+
+451
+00:08:30,560 --> 00:08:33,269
+of some pretty cool awesome projects
+from TRL from a really cool project out
+
+452
+00:08:33,269 --> 00:08:33,279
+from TRL from a really cool project out
+ 
+
+453
+00:08:33,279 --> 00:08:35,190
+from TRL from a really cool project out
+of Berkeley Sky Computing Lab called
+
+454
+00:08:35,190 --> 00:08:35,200
+of Berkeley Sky Computing Lab called
+ 
+
+455
+00:08:35,200 --> 00:08:36,870
+of Berkeley Sky Computing Lab called
+SkyRL.
+
+456
+00:08:36,870 --> 00:08:36,880
+SkyRL.
+ 
+
+457
+00:08:36,880 --> 00:08:38,790
+SkyRL.
+um and a couple others that we can get
+
+458
+00:08:38,790 --> 00:08:38,800
+um and a couple others that we can get
+ 
+
+459
+00:08:38,800 --> 00:08:40,790
+um and a couple others that we can get
+into that allows effectively more at a
+
+460
+00:08:40,790 --> 00:08:40,800
+into that allows effectively more at a
+ 
+
+461
+00:08:40,800 --> 00:08:42,230
+into that allows effectively more at a
+practitioner and machine learning
+
+462
+00:08:42,230 --> 00:08:42,240
+practitioner and machine learning
+ 
+
+463
+00:08:42,240 --> 00:08:43,190
+practitioner and machine learning
+engineering level rather than
+
+464
+00:08:43,190 --> 00:08:43,200
+engineering level rather than
+ 
+
+465
+00:08:43,200 --> 00:08:46,470
+engineering level rather than
+effectively a PhD uh lab to effectively
+
+466
+00:08:46,470 --> 00:08:46,480
+effectively a PhD uh lab to effectively
+ 
+
+467
+00:08:46,480 --> 00:08:47,990
+effectively a PhD uh lab to effectively
+build and implement model post-training
+
+468
+00:08:47,990 --> 00:08:48,000
+build and implement model post-training
+ 
+
+469
+00:08:48,000 --> 00:08:50,070
+build and implement model post-training
+pipelines because I'm not aware of any
+
+470
+00:08:50,070 --> 00:08:50,080
+pipelines because I'm not aware of any
+ 
+
+471
+00:08:50,080 --> 00:08:51,190
+pipelines because I'm not aware of any
+other framework that does that in the
+
+472
+00:08:51,190 --> 00:08:51,200
+other framework that does that in the
+ 
+
+473
+00:08:51,200 --> 00:08:54,389
+other framework that does that in the
+open source let alone in security.
+
+474
+00:08:54,389 --> 00:08:54,399
+open source let alone in security.
+ 
+
+475
+00:08:54,399 --> 00:08:55,910
+open source let alone in security.
+What does this really mean? This allows
+
+476
+00:08:55,910 --> 00:08:55,920
+What does this really mean? This allows
+ 
+
+477
+00:08:55,920 --> 00:08:57,509
+What does this really mean? This allows
+you to effectively bring your own
+
+478
+00:08:57,509 --> 00:08:57,519
+you to effectively bring your own
+ 
+
+479
+00:08:57,519 --> 00:09:00,550
+you to effectively bring your own
+benchmark, bring your own model into
+
+480
+00:09:00,550 --> 00:09:00,560
+benchmark, bring your own model into
+ 
+
+481
+00:09:00,560 --> 00:09:02,790
+benchmark, bring your own model into
+effectively this gym that allows you to
+
+482
+00:09:02,790 --> 00:09:02,800
+effectively this gym that allows you to
+ 
+
+483
+00:09:02,800 --> 00:09:05,030
+effectively this gym that allows you to
+whether you're running a strand agent, a
+
+484
+00:09:05,030 --> 00:09:05,040
+whether you're running a strand agent, a
+ 
+
+485
+00:09:05,040 --> 00:09:06,630
+whether you're running a strand agent, a
+autogen
+
+486
+00:09:06,630 --> 00:09:06,640
+autogen
+ 
+
+487
+00:09:06,640 --> 00:09:10,310
+autogen
+um or you're running a um a link chain
+
+488
+00:09:10,310 --> 00:09:10,320
+um or you're running a um a link chain
+ 
+
+489
+00:09:10,320 --> 00:09:11,829
+um or you're running a um a link chain
+agent which is in the example I'll show
+
+490
+00:09:11,829 --> 00:09:11,839
+agent which is in the example I'll show
+ 
+
+491
+00:09:11,839 --> 00:09:13,829
+agent which is in the example I'll show
+you today. uh you can effectively
+
+492
+00:09:13,829 --> 00:09:13,839
+you today. uh you can effectively
+ 
+
+493
+00:09:13,839 --> 00:09:16,070
+you today. uh you can effectively
+connect your tool, your containers, your
+
+494
+00:09:16,070 --> 00:09:16,080
+connect your tool, your containers, your
+ 
+
+495
+00:09:16,080 --> 00:09:18,710
+connect your tool, your containers, your
+reward functions, and then your outcome
+
+496
+00:09:18,710 --> 00:09:18,720
+reward functions, and then your outcome
+ 
+
+497
+00:09:18,720 --> 00:09:20,870
+reward functions, and then your outcome
+will be an agent or a model more
+
+498
+00:09:20,870 --> 00:09:20,880
+will be an agent or a model more
+ 
+
+499
+00:09:20,880 --> 00:09:22,470
+will be an agent or a model more
+specifically that's aligned for those
+
+500
+00:09:22,470 --> 00:09:22,480
+specifically that's aligned for those
+ 
+
+501
+00:09:22,480 --> 00:09:25,509
+specifically that's aligned for those
+function calls at test time rather than
+
+502
+00:09:25,509 --> 00:09:25,519
+function calls at test time rather than
+ 
+
+503
+00:09:25,519 --> 00:09:27,430
+function calls at test time rather than
+having to learn those function calls and
+
+504
+00:09:27,430 --> 00:09:27,440
+having to learn those function calls and
+ 
+
+505
+00:09:27,440 --> 00:09:31,269
+having to learn those function calls and
+reasoning and trajectory at test time.
+
+506
+00:09:31,269 --> 00:09:31,279
+reasoning and trajectory at test time.
+ 
+
+507
+00:09:31,279 --> 00:09:32,949
+reasoning and trajectory at test time.
+Um how do I do that in the example I'll
+
+508
+00:09:32,949 --> 00:09:32,959
+Um how do I do that in the example I'll
+ 
+
+509
+00:09:32,959 --> 00:09:36,150
+Um how do I do that in the example I'll
+show you? So I used a mixture of
+
+510
+00:09:36,150 --> 00:09:36,160
+show you? So I used a mixture of
+ 
+
+511
+00:09:36,160 --> 00:09:38,710
+show you? So I used a mixture of
+effectively my DGX spark at home for
+
+512
+00:09:38,710 --> 00:09:38,720
+effectively my DGX spark at home for
+ 
+
+513
+00:09:38,720 --> 00:09:41,269
+effectively my DGX spark at home for
+inference um and effectively some local
+
+514
+00:09:41,269 --> 00:09:41,279
+inference um and effectively some local
+ 
+
+515
+00:09:41,279 --> 00:09:44,550
+inference um and effectively some local
+testing and then some cloud some cloud
+
+516
+00:09:44,550 --> 00:09:44,560
+testing and then some cloud some cloud
+ 
+
+517
+00:09:44,560 --> 00:09:47,750
+testing and then some cloud some cloud
+infrastructure H200's for actually the
+
+518
+00:09:47,750 --> 00:09:47,760
+infrastructure H200's for actually the
+ 
+
+519
+00:09:47,760 --> 00:09:49,670
+infrastructure H200's for actually the
+actual ray cluster and setting up the
+
+520
+00:09:49,670 --> 00:09:49,680
+actual ray cluster and setting up the
+ 
+
+521
+00:09:49,680 --> 00:09:52,470
+actual ray cluster and setting up the
+training infrastructure.
+
+522
+00:09:52,470 --> 00:09:52,480
+training infrastructure.
+ 
+
+523
+00:09:52,480 --> 00:09:54,790
+training infrastructure.
+Uh this training loop architecture works
+
+524
+00:09:54,790 --> 00:09:54,800
+Uh this training loop architecture works
+ 
+
+525
+00:09:54,800 --> 00:09:57,590
+Uh this training loop architecture works
+by setting up this live environment.
+
+526
+00:09:57,590 --> 00:09:57,600
+by setting up this live environment.
+ 
+
+527
+00:09:57,600 --> 00:09:58,790
+by setting up this live environment.
+Effectively the live environment that
+
+528
+00:09:58,790 --> 00:09:58,800
+Effectively the live environment that
+ 
+
+529
+00:09:58,800 --> 00:10:00,630
+Effectively the live environment that
+I'll we'll talk about here is Cybench.
+
+530
+00:10:00,630 --> 00:10:00,640
+I'll we'll talk about here is Cybench.
+ 
+
+531
+00:10:00,640 --> 00:10:03,590
+I'll we'll talk about here is Cybench.
+This is effectively 40 different mixture
+
+532
+00:10:03,590 --> 00:10:03,600
+This is effectively 40 different mixture
+ 
+
+533
+00:10:03,600 --> 00:10:05,670
+This is effectively 40 different mixture
+of web application challenges and static
+
+534
+00:10:05,670 --> 00:10:05,680
+of web application challenges and static
+ 
+
+535
+00:10:05,680 --> 00:10:08,389
+of web application challenges and static
+code analysis. Everything from CTF style
+
+536
+00:10:08,389 --> 00:10:08,399
+code analysis. Everything from CTF style
+ 
+
+537
+00:10:08,399 --> 00:10:10,550
+code analysis. Everything from CTF style
+where effectively and again when I say
+
+538
+00:10:10,550 --> 00:10:10,560
+where effectively and again when I say
+ 
+
+539
+00:10:10,560 --> 00:10:13,350
+where effectively and again when I say
+CTF every RL maybe it's important
+
+540
+00:10:13,350 --> 00:10:13,360
+CTF every RL maybe it's important
+ 
+
+541
+00:10:13,360 --> 00:10:16,310
+CTF every RL maybe it's important
+context every RL
+
+542
+00:10:16,310 --> 00:10:16,320
+context every RL
+ 
+
+543
+00:10:16,320 --> 00:10:19,670
+context every RL
+um every RL training program needs to
+
+544
+00:10:19,670 --> 00:10:19,680
+um every RL training program needs to
+ 
+
+545
+00:10:19,680 --> 00:10:22,069
+um every RL training program needs to
+have a verifiable reward at the end. So
+
+546
+00:10:22,069 --> 00:10:22,079
+have a verifiable reward at the end. So
+ 
+
+547
+00:10:22,079 --> 00:10:24,790
+have a verifiable reward at the end. So
+whether again you're doing a environment
+
+548
+00:10:24,790 --> 00:10:24,800
+whether again you're doing a environment
+ 
+
+549
+00:10:24,800 --> 00:10:26,630
+whether again you're doing a environment
+that is focused on capture the flags
+
+550
+00:10:26,630 --> 00:10:26,640
+that is focused on capture the flags
+ 
+
+551
+00:10:26,640 --> 00:10:28,389
+that is focused on capture the flags
+where you have effectively a flag at the
+
+552
+00:10:28,389 --> 00:10:28,399
+where you have effectively a flag at the
+ 
+
+553
+00:10:28,399 --> 00:10:31,030
+where you have effectively a flag at the
+end a hash or whether you're doing code
+
+554
+00:10:31,030 --> 00:10:31,040
+end a hash or whether you're doing code
+ 
+
+555
+00:10:31,040 --> 00:10:32,310
+end a hash or whether you're doing code
+analysis where you're looking for a
+
+556
+00:10:32,310 --> 00:10:32,320
+analysis where you're looking for a
+ 
+
+557
+00:10:32,320 --> 00:10:33,829
+analysis where you're looking for a
+specific CV number you need to have
+
+558
+00:10:33,829 --> 00:10:33,839
+specific CV number you need to have
+ 
+
+559
+00:10:33,839 --> 00:10:35,509
+specific CV number you need to have
+something that has a verifiable reward
+
+560
+00:10:35,509 --> 00:10:35,519
+something that has a verifiable reward
+ 
+
+561
+00:10:35,519 --> 00:10:38,230
+something that has a verifiable reward
+at the end and I and I'd argue that most
+
+562
+00:10:38,230 --> 00:10:38,240
+at the end and I and I'd argue that most
+ 
+
+563
+00:10:38,240 --> 00:10:39,990
+at the end and I and I'd argue that most
+cyber tasks actually do have that it
+
+564
+00:10:39,990 --> 00:10:40,000
+cyber tasks actually do have that it
+ 
+
+565
+00:10:40,000 --> 00:10:41,910
+cyber tasks actually do have that it
+might be obtuse but again that's why
+
+566
+00:10:41,910 --> 00:10:41,920
+might be obtuse but again that's why
+ 
+
+567
+00:10:41,920 --> 00:10:43,750
+might be obtuse but again that's why
+benchmark and eval design is so
+
+568
+00:10:43,750 --> 00:10:43,760
+benchmark and eval design is so
+ 
+
+569
+00:10:43,760 --> 00:10:45,509
+benchmark and eval design is so
+important. So we effectively have these
+
+570
+00:10:45,509 --> 00:10:45,519
+important. So we effectively have these
+ 
+
+571
+00:10:45,519 --> 00:10:47,190
+important. So we effectively have these
+agent trajectories we collect. We
+
+572
+00:10:47,190 --> 00:10:47,200
+agent trajectories we collect. We
+ 
+
+573
+00:10:47,200 --> 00:10:49,750
+agent trajectories we collect. We
+convert them to a common format uh
+
+574
+00:10:49,750 --> 00:10:49,760
+convert them to a common format uh
+ 
+
+575
+00:10:49,760 --> 00:10:52,150
+convert them to a common format uh
+called chat ML and then we effectively
+
+576
+00:10:52,150 --> 00:10:52,160
+called chat ML and then we effectively
+ 
+
+577
+00:10:52,160 --> 00:10:54,389
+called chat ML and then we effectively
+go through this three-stage
+
+578
+00:10:54,389 --> 00:10:54,399
+go through this three-stage
+ 
+
+579
+00:10:54,399 --> 00:10:56,389
+go through this three-stage
+um pipeline. two stages are affecting
+
+580
+00:10:56,389 --> 00:10:56,399
+um pipeline. two stages are affecting
+ 
+
+581
+00:10:56,399 --> 00:10:57,910
+um pipeline. two stages are affecting
+the model weights and the third stage is
+
+582
+00:10:57,910 --> 00:10:57,920
+the model weights and the third stage is
+ 
+
+583
+00:10:57,920 --> 00:10:59,990
+the model weights and the third stage is
+at test time where we're doing first
+
+584
+00:10:59,990 --> 00:11:00,000
+at test time where we're doing first
+ 
+
+585
+00:11:00,000 --> 00:11:01,750
+at test time where we're doing first
+instruction tuning to learn the tool
+
+586
+00:11:01,750 --> 00:11:01,760
+instruction tuning to learn the tool
+ 
+
+587
+00:11:01,760 --> 00:11:04,310
+instruction tuning to learn the tool
+format and then online reinforcement
+
+588
+00:11:04,310 --> 00:11:04,320
+format and then online reinforcement
+ 
+
+589
+00:11:04,320 --> 00:11:07,030
+format and then online reinforcement
+learning to effectively the agent to be
+
+590
+00:11:07,030 --> 00:11:07,040
+learning to effectively the agent to be
+ 
+
+591
+00:11:07,040 --> 00:11:09,190
+learning to effectively the agent to be
+more aligned to those trajectories and
+
+592
+00:11:09,190 --> 00:11:09,200
+more aligned to those trajectories and
+ 
+
+593
+00:11:09,200 --> 00:11:11,509
+more aligned to those trajectories and
+then uh ga which we'll and we're going
+
+594
+00:11:11,509 --> 00:11:11,519
+then uh ga which we'll and we're going
+ 
+
+595
+00:11:11,519 --> 00:11:14,069
+then uh ga which we'll and we're going
+to talk about each each three of these
+
+596
+00:11:14,069 --> 00:11:14,079
+to talk about each each three of these
+ 
+
+597
+00:11:14,079 --> 00:11:16,550
+to talk about each each three of these
+uh soon.
+
+598
+00:11:16,550 --> 00:11:16,560
+uh soon.
+ 
+
+599
+00:11:16,560 --> 00:11:18,310
+uh soon.
+So first I want to talk to within this
+
+600
+00:11:18,310 --> 00:11:18,320
+So first I want to talk to within this
+ 
+
+601
+00:11:18,320 --> 00:11:20,550
+So first I want to talk to within this
+project there is a synthetic code
+
+602
+00:11:20,550 --> 00:11:20,560
+project there is a synthetic code
+ 
+
+603
+00:11:20,560 --> 00:11:22,069
+project there is a synthetic code
+generation
+
+604
+00:11:22,069 --> 00:11:22,079
+generation
+ 
+
+605
+00:11:22,079 --> 00:11:24,069
+generation
+uh module effectively you can leverage
+
+606
+00:11:24,069 --> 00:11:24,079
+uh module effectively you can leverage
+ 
+
+607
+00:11:24,079 --> 00:11:25,590
+uh module effectively you can leverage
+where you can effectively have a
+
+608
+00:11:25,590 --> 00:11:25,600
+where you can effectively have a
+ 
+
+609
+00:11:25,600 --> 00:11:27,670
+where you can effectively have a
+manifest of the world that you want
+
+610
+00:11:27,670 --> 00:11:27,680
+manifest of the world that you want
+ 
+
+611
+00:11:27,680 --> 00:11:31,509
+manifest of the world that you want
+effectively uh the agent to see. This is
+
+612
+00:11:31,509 --> 00:11:31,519
+effectively uh the agent to see. This is
+ 
+
+613
+00:11:31,519 --> 00:11:33,750
+effectively uh the agent to see. This is
+useful effectively if you want to
+
+614
+00:11:33,750 --> 00:11:33,760
+useful effectively if you want to
+ 
+
+615
+00:11:33,760 --> 00:11:35,829
+useful effectively if you want to
+generate synthetic traces for that
+
+616
+00:11:35,829 --> 00:11:35,839
+generate synthetic traces for that
+ 
+
+617
+00:11:35,839 --> 00:11:37,430
+generate synthetic traces for that
+training data for that instruction
+
+618
+00:11:37,430 --> 00:11:37,440
+training data for that instruction
+ 
+
+619
+00:11:37,440 --> 00:11:39,750
+training data for that instruction
+tuning provide a world manifest
+
+620
+00:11:39,750 --> 00:11:39,760
+tuning provide a world manifest
+ 
+
+621
+00:11:39,760 --> 00:11:43,269
+tuning provide a world manifest
+effectively the network topology the uh
+
+622
+00:11:43,269 --> 00:11:43,279
+effectively the network topology the uh
+ 
+
+623
+00:11:43,279 --> 00:11:45,829
+effectively the network topology the uh
+the end verifiable reward and then
+
+624
+00:11:45,829 --> 00:11:45,839
+the end verifiable reward and then
+ 
+
+625
+00:11:45,839 --> 00:11:47,350
+the end verifiable reward and then
+having a teacher model again you can
+
+626
+00:11:47,350 --> 00:11:47,360
+having a teacher model again you can
+ 
+
+627
+00:11:47,360 --> 00:11:49,269
+having a teacher model again you can
+think about using an open-source model
+
+628
+00:11:49,269 --> 00:11:49,279
+think about using an open-source model
+ 
+
+629
+00:11:49,279 --> 00:11:51,350
+think about using an open-source model
+for this distillation task effectively
+
+630
+00:11:51,350 --> 00:11:51,360
+for this distillation task effectively
+ 
+
+631
+00:11:51,360 --> 00:11:55,750
+for this distillation task effectively
+GLM5 Kimmy K2 5 etc and it outputs will
+
+632
+00:11:55,750 --> 00:11:55,760
+GLM5 Kimmy K2 5 etc and it outputs will
+ 
+
+633
+00:11:55,760 --> 00:11:58,150
+GLM5 Kimmy K2 5 etc and it outputs will
+generate this train data this framework
+
+634
+00:11:58,150 --> 00:11:58,160
+generate this train data this framework
+ 
+
+635
+00:11:58,160 --> 00:11:59,509
+generate this train data this framework
+and pipeline is set up in the project
+
+636
+00:11:59,509 --> 00:11:59,519
+and pipeline is set up in the project
+ 
+
+637
+00:11:59,519 --> 00:12:01,190
+and pipeline is set up in the project
+and all you need to define line is
+
+638
+00:12:01,190 --> 00:12:01,200
+and all you need to define line is
+ 
+
+639
+00:12:01,200 --> 00:12:03,350
+and all you need to define line is
+effectively the parameters of the
+
+640
+00:12:03,350 --> 00:12:03,360
+effectively the parameters of the
+ 
+
+641
+00:12:03,360 --> 00:12:05,269
+effectively the parameters of the
+scenario of the simulation you want to
+
+642
+00:12:05,269 --> 00:12:05,279
+scenario of the simulation you want to
+ 
+
+643
+00:12:05,279 --> 00:12:08,310
+scenario of the simulation you want to
+perform. Effectively the task of code or
+
+644
+00:12:08,310 --> 00:12:08,320
+perform. Effectively the task of code or
+ 
+
+645
+00:12:08,320 --> 00:12:11,030
+perform. Effectively the task of code or
+synthetic data generation. Once you have
+
+646
+00:12:11,030 --> 00:12:11,040
+synthetic data generation. Once you have
+ 
+
+647
+00:12:11,040 --> 00:12:12,870
+synthetic data generation. Once you have
+that data either collected from your
+
+648
+00:12:12,870 --> 00:12:12,880
+that data either collected from your
+ 
+
+649
+00:12:12,880 --> 00:12:15,190
+that data either collected from your
+real world environment from your agent
+
+650
+00:12:15,190 --> 00:12:15,200
+real world environment from your agent
+ 
+
+651
+00:12:15,200 --> 00:12:18,389
+real world environment from your agent
+or from your simulated environment, you
+
+652
+00:12:18,389 --> 00:12:18,399
+or from your simulated environment, you
+ 
+
+653
+00:12:18,399 --> 00:12:20,150
+or from your simulated environment, you
+can perform this supervised learning
+
+654
+00:12:20,150 --> 00:12:20,160
+can perform this supervised learning
+ 
+
+655
+00:12:20,160 --> 00:12:22,550
+can perform this supervised learning
+task of instruction tuning where
+
+656
+00:12:22,550 --> 00:12:22,560
+task of instruction tuning where
+ 
+
+657
+00:12:22,560 --> 00:12:24,389
+task of instruction tuning where
+effectively we are having the model
+
+658
+00:12:24,389 --> 00:12:24,399
+effectively we are having the model
+ 
+
+659
+00:12:24,399 --> 00:12:28,069
+effectively we are having the model
+learn um the the tool calling format and
+
+660
+00:12:28,069 --> 00:12:28,079
+learn um the the tool calling format and
+ 
+
+661
+00:12:28,079 --> 00:12:30,710
+learn um the the tool calling format and
+the terminology as a first layer of
+
+662
+00:12:30,710 --> 00:12:30,720
+the terminology as a first layer of
+ 
+
+663
+00:12:30,720 --> 00:12:32,310
+the terminology as a first layer of
+post- training and alignment for the
+
+664
+00:12:32,310 --> 00:12:32,320
+post- training and alignment for the
+ 
+
+665
+00:12:32,320 --> 00:12:34,470
+post- training and alignment for the
+tasks that we're looking to perform. In
+
+666
+00:12:34,470 --> 00:12:34,480
+tasks that we're looking to perform. In
+ 
+
+667
+00:12:34,480 --> 00:12:36,150
+tasks that we're looking to perform. In
+this specific example that we're talking
+
+668
+00:12:36,150 --> 00:12:36,160
+this specific example that we're talking
+ 
+
+669
+00:12:36,160 --> 00:12:37,990
+this specific example that we're talking
+about, we're talking about a pin testing
+
+670
+00:12:37,990 --> 00:12:38,000
+about, we're talking about a pin testing
+ 
+
+671
+00:12:38,000 --> 00:12:39,910
+about, we're talking about a pin testing
+agent that's going after these specific
+
+672
+00:12:39,910 --> 00:12:39,920
+agent that's going after these specific
+ 
+
+673
+00:12:39,920 --> 00:12:41,750
+agent that's going after these specific
+challenges of again doing web
+
+674
+00:12:41,750 --> 00:12:41,760
+challenges of again doing web
+ 
+
+675
+00:12:41,760 --> 00:12:43,829
+challenges of again doing web
+application pin testing and static code
+
+676
+00:12:43,829 --> 00:12:43,839
+application pin testing and static code
+ 
+
+677
+00:12:43,839 --> 00:12:46,150
+application pin testing and static code
+analysis.
+
+678
+00:12:46,150 --> 00:12:46,160
+analysis.
+ 
+
+679
+00:12:46,160 --> 00:12:47,910
+analysis.
+What how the system is really performing
+
+680
+00:12:47,910 --> 00:12:47,920
+What how the system is really performing
+ 
+
+681
+00:12:47,920 --> 00:12:50,470
+What how the system is really performing
+when we're saying online RL it's um
+
+682
+00:12:50,470 --> 00:12:50,480
+when we're saying online RL it's um
+ 
+
+683
+00:12:50,480 --> 00:12:52,629
+when we're saying online RL it's um
+there's there's a couple things to it.
+
+684
+00:12:52,629 --> 00:12:52,639
+there's there's a couple things to it.
+ 
+
+685
+00:12:52,639 --> 00:12:54,550
+there's there's a couple things to it.
+At a high level, what we're doing is we
+
+686
+00:12:54,550 --> 00:12:54,560
+At a high level, what we're doing is we
+ 
+
+687
+00:12:54,560 --> 00:12:56,310
+At a high level, what we're doing is we
+have effectively different GPU
+
+688
+00:12:56,310 --> 00:12:56,320
+have effectively different GPU
+ 
+
+689
+00:12:56,320 --> 00:12:59,750
+have effectively different GPU
+infrastructure that is for loading um
+
+690
+00:12:59,750 --> 00:12:59,760
+infrastructure that is for loading um
+ 
+
+691
+00:12:59,760 --> 00:13:03,910
+infrastructure that is for loading um
+load loading the model uh itself. Um,
+
+692
+00:13:03,910 --> 00:13:03,920
+load loading the model uh itself. Um,
+ 
+
+693
+00:13:03,920 --> 00:13:06,949
+load loading the model uh itself. Um,
+and then also a environment too for the
+
+694
+00:13:06,949 --> 00:13:06,959
+and then also a environment too for the
+ 
+
+695
+00:13:06,959 --> 00:13:09,590
+and then also a environment too for the
+the sorry loading the model itself into
+
+696
+00:13:09,590 --> 00:13:09,600
+the sorry loading the model itself into
+ 
+
+697
+00:13:09,600 --> 00:13:11,750
+the sorry loading the model itself into
+an inference engine like effectively a
+
+698
+00:13:11,750 --> 00:13:11,760
+an inference engine like effectively a
+ 
+
+699
+00:13:11,760 --> 00:13:14,150
+an inference engine like effectively a
+VLM which is what I use in in this
+
+700
+00:13:14,150 --> 00:13:14,160
+VLM which is what I use in in this
+ 
+
+701
+00:13:14,160 --> 00:13:16,710
+VLM which is what I use in in this
+project. And then you have the trainer
+
+702
+00:13:16,710 --> 00:13:16,720
+project. And then you have the trainer
+ 
+
+703
+00:13:16,720 --> 00:13:18,949
+project. And then you have the trainer
+what's actually doing that uh that
+
+704
+00:13:18,949 --> 00:13:18,959
+what's actually doing that uh that
+ 
+
+705
+00:13:18,959 --> 00:13:20,710
+what's actually doing that uh that
+backwards pass to actually train the
+
+706
+00:13:20,710 --> 00:13:20,720
+backwards pass to actually train the
+ 
+
+707
+00:13:20,720 --> 00:13:22,949
+backwards pass to actually train the
+model weights in the model itself. You
+
+708
+00:13:22,949 --> 00:13:22,959
+model weights in the model itself. You
+ 
+
+709
+00:13:22,959 --> 00:13:25,269
+model weights in the model itself. You
+have the agent. The agent I'm using in
+
+710
+00:13:25,269 --> 00:13:25,279
+have the agent. The agent I'm using in
+ 
+
+711
+00:13:25,279 --> 00:13:26,949
+have the agent. The agent I'm using in
+here is an open source lane chain agent
+
+712
+00:13:26,949 --> 00:13:26,959
+here is an open source lane chain agent
+ 
+
+713
+00:13:26,959 --> 00:13:28,470
+here is an open source lane chain agent
+called box poner. There's a couple folks
+
+714
+00:13:28,470 --> 00:13:28,480
+called box poner. There's a couple folks
+ 
+
+715
+00:13:28,480 --> 00:13:30,150
+called box poner. There's a couple folks
+in this room that might be using it.
+
+716
+00:13:30,150 --> 00:13:30,160
+in this room that might be using it.
+ 
+
+717
+00:13:30,160 --> 00:13:31,670
+in this room that might be using it.
+It's a simple agent that just
+
+718
+00:13:31,670 --> 00:13:31,680
+It's a simple agent that just
+ 
+
+719
+00:13:31,680 --> 00:13:34,150
+It's a simple agent that just
+effectively has a shell tool, Python
+
+720
+00:13:34,150 --> 00:13:34,160
+effectively has a shell tool, Python
+ 
+
+721
+00:13:34,160 --> 00:13:35,829
+effectively has a shell tool, Python
+code generation. It's optimized a little
+
+722
+00:13:35,829 --> 00:13:35,839
+code generation. It's optimized a little
+ 
+
+723
+00:13:35,839 --> 00:13:38,389
+code generation. It's optimized a little
+bit for security tasks and you're then
+
+724
+00:13:38,389 --> 00:13:38,399
+bit for security tasks and you're then
+ 
+
+725
+00:13:38,399 --> 00:13:40,230
+bit for security tasks and you're then
+executing it against all of these
+
+726
+00:13:40,230 --> 00:13:40,240
+executing it against all of these
+ 
+
+727
+00:13:40,240 --> 00:13:42,389
+executing it against all of these
+environments. In this again world of
+
+728
+00:13:42,389 --> 00:13:42,399
+environments. In this again world of
+ 
+
+729
+00:13:42,399 --> 00:13:44,870
+environments. In this again world of
+Syben, we're talking about 40 different
+
+730
+00:13:44,870 --> 00:13:44,880
+Syben, we're talking about 40 different
+ 
+
+731
+00:13:44,880 --> 00:13:47,990
+Syben, we're talking about 40 different
+containers. Um, each with their own
+
+732
+00:13:47,990 --> 00:13:48,000
+containers. Um, each with their own
+ 
+
+733
+00:13:48,000 --> 00:13:50,310
+containers. Um, each with their own
+challenges, difficulties, etc. And the
+
+734
+00:13:50,310 --> 00:13:50,320
+challenges, difficulties, etc. And the
+ 
+
+735
+00:13:50,320 --> 00:13:52,069
+challenges, difficulties, etc. And the
+agent effectively is performing these
+
+736
+00:13:52,069 --> 00:13:52,079
+agent effectively is performing these
+ 
+
+737
+00:13:52,079 --> 00:13:54,550
+agent effectively is performing these
+tool calls. At every tool call, it's
+
+738
+00:13:54,550 --> 00:13:54,560
+tool calls. At every tool call, it's
+ 
+
+739
+00:13:54,560 --> 00:13:56,870
+tool calls. At every tool call, it's
+recording its answer of what the input
+
+740
+00:13:56,870 --> 00:13:56,880
+recording its answer of what the input
+ 
+
+741
+00:13:56,880 --> 00:13:58,389
+recording its answer of what the input
+and output was. And we're effectively
+
+742
+00:13:58,389 --> 00:13:58,399
+and output was. And we're effectively
+ 
+
+743
+00:13:58,399 --> 00:14:00,230
+and output was. And we're effectively
+scoring that based on these composite
+
+744
+00:14:00,230 --> 00:14:00,240
+scoring that based on these composite
+ 
+
+745
+00:14:00,240 --> 00:14:01,670
+scoring that based on these composite
+what we call reward functions
+
+746
+00:14:01,670 --> 00:14:01,680
+what we call reward functions
+ 
+
+747
+00:14:01,680 --> 00:14:03,189
+what we call reward functions
+effectively. Did they complete the task
+
+748
+00:14:03,189 --> 00:14:03,199
+effectively. Did they complete the task
+ 
+
+749
+00:14:03,199 --> 00:14:06,710
+effectively. Did they complete the task
+or did it not? We say reward function
+
+750
+00:14:06,710 --> 00:14:06,720
+or did it not? We say reward function
+ 
+
+751
+00:14:06,720 --> 00:14:09,269
+or did it not? We say reward function
+should be the next slide. What we're
+
+752
+00:14:09,269 --> 00:14:09,279
+should be the next slide. What we're
+ 
+
+753
+00:14:09,279 --> 00:14:11,189
+should be the next slide. What we're
+talking about are these signals and
+
+754
+00:14:11,189 --> 00:14:11,199
+talking about are these signals and
+ 
+
+755
+00:14:11,199 --> 00:14:12,870
+talking about are these signals and
+that's how we differentiate these
+
+756
+00:14:12,870 --> 00:14:12,880
+that's how we differentiate these
+ 
+
+757
+00:14:12,880 --> 00:14:14,470
+that's how we differentiate these
+composite reward functions where we're
+
+758
+00:14:14,470 --> 00:14:14,480
+composite reward functions where we're
+ 
+
+759
+00:14:14,480 --> 00:14:16,230
+composite reward functions where we're
+looking to effectively score based on
+
+760
+00:14:16,230 --> 00:14:16,240
+looking to effectively score based on
+ 
+
+761
+00:14:16,240 --> 00:14:18,949
+looking to effectively score based on
+different conditions. The simplest one
+
+762
+00:14:18,949 --> 00:14:18,959
+different conditions. The simplest one
+ 
+
+763
+00:14:18,959 --> 00:14:21,430
+different conditions. The simplest one
+is binary rewards. Effectively, did we
+
+764
+00:14:21,430 --> 00:14:21,440
+is binary rewards. Effectively, did we
+ 
+
+765
+00:14:21,440 --> 00:14:23,269
+is binary rewards. Effectively, did we
+complete the objective? In the world of
+
+766
+00:14:23,269 --> 00:14:23,279
+complete the objective? In the world of
+ 
+
+767
+00:14:23,279 --> 00:14:25,350
+complete the objective? In the world of
+a CTF, that's did we get the flag? Did
+
+768
+00:14:25,350 --> 00:14:25,360
+a CTF, that's did we get the flag? Did
+ 
+
+769
+00:14:25,360 --> 00:14:28,550
+a CTF, that's did we get the flag? Did
+we not? But as we all know, that's not
+
+770
+00:14:28,550 --> 00:14:28,560
+we not? But as we all know, that's not
+ 
+
+771
+00:14:28,560 --> 00:14:30,710
+we not? But as we all know, that's not
+the best way to evaluate how well a
+
+772
+00:14:30,710 --> 00:14:30,720
+the best way to evaluate how well a
+ 
+
+773
+00:14:30,720 --> 00:14:32,310
+the best way to evaluate how well a
+person completed an objective. That's
+
+774
+00:14:32,310 --> 00:14:32,320
+person completed an objective. That's
+ 
+
+775
+00:14:32,320 --> 00:14:35,030
+person completed an objective. That's
+why things like temporal decay, um,
+
+776
+00:14:35,030 --> 00:14:35,040
+why things like temporal decay, um,
+ 
+
+777
+00:14:35,040 --> 00:14:37,990
+why things like temporal decay, um,
+information sparity, and really in
+
+778
+00:14:37,990 --> 00:14:38,000
+information sparity, and really in
+ 
+
+779
+00:14:38,000 --> 00:14:39,509
+information sparity, and really in
+generating some of these composite
+
+780
+00:14:39,509 --> 00:14:39,519
+generating some of these composite
+ 
+
+781
+00:14:39,519 --> 00:14:40,790
+generating some of these composite
+reward functions that are trying to
+
+782
+00:14:40,790 --> 00:14:40,800
+reward functions that are trying to
+ 
+
+783
+00:14:40,800 --> 00:14:43,430
+reward functions that are trying to
+really find and score in between
+
+784
+00:14:43,430 --> 00:14:43,440
+really find and score in between
+ 
+
+785
+00:14:43,440 --> 00:14:45,030
+really find and score in between
+effectively the start and end
+
+786
+00:14:45,030 --> 00:14:45,040
+effectively the start and end
+ 
+
+787
+00:14:45,040 --> 00:14:48,949
+effectively the start and end
+trajectory, why it's important to um,
+
+788
+00:14:48,949 --> 00:14:48,959
+trajectory, why it's important to um,
+ 
+
+789
+00:14:48,959 --> 00:14:50,629
+trajectory, why it's important to um,
+look at these kind of key signals to
+
+790
+00:14:50,629 --> 00:14:50,639
+look at these kind of key signals to
+ 
+
+791
+00:14:50,639 --> 00:14:52,550
+look at these kind of key signals to
+effectively differentiate because again,
+
+792
+00:14:52,550 --> 00:14:52,560
+effectively differentiate because again,
+ 
+
+793
+00:14:52,560 --> 00:14:54,870
+effectively differentiate because again,
+you can get the final objective, but if
+
+794
+00:14:54,870 --> 00:14:54,880
+you can get the final objective, but if
+ 
+
+795
+00:14:54,880 --> 00:14:57,829
+you can get the final objective, but if
+you were super noisy or if you did not
+
+796
+00:14:57,829 --> 00:14:57,839
+you were super noisy or if you did not
+ 
+
+797
+00:14:57,839 --> 00:14:59,910
+you were super noisy or if you did not
+use the right exploration or uniqueness
+
+798
+00:14:59,910 --> 00:14:59,920
+use the right exploration or uniqueness
+ 
+
+799
+00:14:59,920 --> 00:15:01,350
+use the right exploration or uniqueness
+technique, doesn't really help you in
+
+800
+00:15:01,350 --> 00:15:01,360
+technique, doesn't really help you in
+ 
+
+801
+00:15:01,360 --> 00:15:03,030
+technique, doesn't really help you in
+the the in the end when you move to
+
+802
+00:15:03,030 --> 00:15:03,040
+the the in the end when you move to
+ 
+
+803
+00:15:03,040 --> 00:15:05,110
+the the in the end when you move to
+production
+
+804
+00:15:05,110 --> 00:15:05,120
+production
+ 
+
+805
+00:15:05,120 --> 00:15:06,949
+production
+how this works is that each of those
+
+806
+00:15:06,949 --> 00:15:06,959
+how this works is that each of those
+ 
+
+807
+00:15:06,959 --> 00:15:09,750
+how this works is that each of those
+traces if we think um we look at each of
+
+808
+00:15:09,750 --> 00:15:09,760
+traces if we think um we look at each of
+ 
+
+809
+00:15:09,760 --> 00:15:12,150
+traces if we think um we look at each of
+these traces it scores effectively based
+
+810
+00:15:12,150 --> 00:15:12,160
+these traces it scores effectively based
+ 
+
+811
+00:15:12,160 --> 00:15:14,230
+these traces it scores effectively based
+on these reward functions effectively
+
+812
+00:15:14,230 --> 00:15:14,240
+on these reward functions effectively
+ 
+
+813
+00:15:14,240 --> 00:15:16,389
+on these reward functions effectively
+numbers between zero and one effectively
+
+814
+00:15:16,389 --> 00:15:16,399
+numbers between zero and one effectively
+ 
+
+815
+00:15:16,399 --> 00:15:18,790
+numbers between zero and one effectively
+a formula it then takes the group mean
+
+816
+00:15:18,790 --> 00:15:18,800
+a formula it then takes the group mean
+ 
+
+817
+00:15:18,800 --> 00:15:21,590
+a formula it then takes the group mean
+of these scores and finds which of the
+
+818
+00:15:21,590 --> 00:15:21,600
+of these scores and finds which of the
+ 
+
+819
+00:15:21,600 --> 00:15:24,870
+of these scores and finds which of the
+best actions was most successful again
+
+820
+00:15:24,870 --> 00:15:24,880
+best actions was most successful again
+ 
+
+821
+00:15:24,880 --> 00:15:26,790
+best actions was most successful again
+when we have the agent executing in this
+
+822
+00:15:26,790 --> 00:15:26,800
+when we have the agent executing in this
+ 
+
+823
+00:15:26,800 --> 00:15:29,269
+when we have the agent executing in this
+RL environment it's not one agent just
+
+824
+00:15:29,269 --> 00:15:29,279
+RL environment it's not one agent just
+ 
+
+825
+00:15:29,279 --> 00:15:31,509
+RL environment it's not one agent just
+executing it's g actually
+
+826
+00:15:31,509 --> 00:15:31,519
+executing it's g actually
+ 
+
+827
+00:15:31,519 --> 00:15:34,069
+executing it's g actually
+It's actually um eight different agents
+
+828
+00:15:34,069 --> 00:15:34,079
+It's actually um eight different agents
+ 
+
+829
+00:15:34,079 --> 00:15:36,470
+It's actually um eight different agents
+executing the same task in different
+
+830
+00:15:36,470 --> 00:15:36,480
+executing the same task in different
+ 
+
+831
+00:15:36,480 --> 00:15:39,509
+executing the same task in different
+perturbations and selecting the best
+
+832
+00:15:39,509 --> 00:15:39,519
+perturbations and selecting the best
+ 
+
+833
+00:15:39,519 --> 00:15:42,389
+perturbations and selecting the best
+trace based on that by calculating that
+
+834
+00:15:42,389 --> 00:15:42,399
+trace based on that by calculating that
+ 
+
+835
+00:15:42,399 --> 00:15:44,389
+trace based on that by calculating that
+group mean based on these reward
+
+836
+00:15:44,389 --> 00:15:44,399
+group mean based on these reward
+ 
+
+837
+00:15:44,399 --> 00:15:46,790
+group mean based on these reward
+functions and then selecting that and
+
+838
+00:15:46,790 --> 00:15:46,800
+functions and then selecting that and
+ 
+
+839
+00:15:46,800 --> 00:15:48,790
+functions and then selecting that and
+then distilling that knowledge into the
+
+840
+00:15:48,790 --> 00:15:48,800
+then distilling that knowledge into the
+ 
+
+841
+00:15:48,800 --> 00:15:51,030
+then distilling that knowledge into the
+model weight itself. Again, the whole
+
+842
+00:15:51,030 --> 00:15:51,040
+model weight itself. Again, the whole
+ 
+
+843
+00:15:51,040 --> 00:15:52,790
+model weight itself. Again, the whole
+reason for doing this is so that when
+
+844
+00:15:52,790 --> 00:15:52,800
+reason for doing this is so that when
+ 
+
+845
+00:15:52,800 --> 00:15:55,189
+reason for doing this is so that when
+we're actually doing this at test time,
+
+846
+00:15:55,189 --> 00:15:55,199
+we're actually doing this at test time,
+ 
+
+847
+00:15:55,199 --> 00:15:57,749
+we're actually doing this at test time,
+it actually um doesn't have to do all of
+
+848
+00:15:57,749 --> 00:15:57,759
+it actually um doesn't have to do all of
+ 
+
+849
+00:15:57,759 --> 00:16:01,749
+it actually um doesn't have to do all of
+this knowledge and lesson learning.
+
+850
+00:16:01,749 --> 00:16:01,759
+this knowledge and lesson learning.
+ 
+
+851
+00:16:01,759 --> 00:16:04,389
+this knowledge and lesson learning.
+There is a technique um called genetic
+
+852
+00:16:04,389 --> 00:16:04,399
+There is a technique um called genetic
+ 
+
+853
+00:16:04,399 --> 00:16:06,310
+There is a technique um called genetic
+prao prompt evolution. It's effectively
+
+854
+00:16:06,310 --> 00:16:06,320
+prao prompt evolution. It's effectively
+ 
+
+855
+00:16:06,320 --> 00:16:07,829
+prao prompt evolution. It's effectively
+this big fancy name, but effectively
+
+856
+00:16:07,829 --> 00:16:07,839
+this big fancy name, but effectively
+ 
+
+857
+00:16:07,839 --> 00:16:09,990
+this big fancy name, but effectively
+what this is is a prompt optimizer. This
+
+858
+00:16:09,990 --> 00:16:10,000
+what this is is a prompt optimizer. This
+ 
+
+859
+00:16:10,000 --> 00:16:12,310
+what this is is a prompt optimizer. This
+is some uh what what it does is this is
+
+860
+00:16:12,310 --> 00:16:12,320
+is some uh what what it does is this is
+ 
+
+861
+00:16:12,320 --> 00:16:15,189
+is some uh what what it does is this is
+this this technique is not necessarily a
+
+862
+00:16:15,189 --> 00:16:15,199
+this this technique is not necessarily a
+ 
+
+863
+00:16:15,199 --> 00:16:16,629
+this this technique is not necessarily a
+this doesn't actually change the model
+
+864
+00:16:16,629 --> 00:16:16,639
+this doesn't actually change the model
+ 
+
+865
+00:16:16,639 --> 00:16:18,949
+this doesn't actually change the model
+weights. This is done at test time. So
+
+866
+00:16:18,949 --> 00:16:18,959
+weights. This is done at test time. So
+ 
+
+867
+00:16:18,959 --> 00:16:21,269
+weights. This is done at test time. So
+once you've trained the model, now at
+
+868
+00:16:21,269 --> 00:16:21,279
+once you've trained the model, now at
+ 
+
+869
+00:16:21,279 --> 00:16:23,590
+once you've trained the model, now at
+test time, we can actually evolve that
+
+870
+00:16:23,590 --> 00:16:23,600
+test time, we can actually evolve that
+ 
+
+871
+00:16:23,600 --> 00:16:25,670
+test time, we can actually evolve that
+system prompt. So again, going back to
+
+872
+00:16:25,670 --> 00:16:25,680
+system prompt. So again, going back to
+ 
+
+873
+00:16:25,680 --> 00:16:26,949
+system prompt. So again, going back to
+what's actually going behind the scene,
+
+874
+00:16:26,949 --> 00:16:26,959
+what's actually going behind the scene,
+ 
+
+875
+00:16:26,959 --> 00:16:29,030
+what's actually going behind the scene,
+that system prompt remains the same from
+
+876
+00:16:29,030 --> 00:16:29,040
+that system prompt remains the same from
+ 
+
+877
+00:16:29,040 --> 00:16:33,030
+that system prompt remains the same from
+step zero to effectively step 20, 40,
+
+878
+00:16:33,030 --> 00:16:33,040
+step zero to effectively step 20, 40,
+ 
+
+879
+00:16:33,040 --> 00:16:37,269
+step zero to effectively step 20, 40,
+60, etc. But if your original objective
+
+880
+00:16:37,269 --> 00:16:37,279
+60, etc. But if your original objective
+ 
+
+881
+00:16:37,279 --> 00:16:39,350
+60, etc. But if your original objective
+is multi-stage and multi-steps, you want
+
+882
+00:16:39,350 --> 00:16:39,360
+is multi-stage and multi-steps, you want
+ 
+
+883
+00:16:39,360 --> 00:16:41,749
+is multi-stage and multi-steps, you want
+to evolve that prompt. And the way to do
+
+884
+00:16:41,749 --> 00:16:41,759
+to evolve that prompt. And the way to do
+ 
+
+885
+00:16:41,759 --> 00:16:43,430
+to evolve that prompt. And the way to do
+that is through effectively prompt
+
+886
+00:16:43,430 --> 00:16:43,440
+that is through effectively prompt
+ 
+
+887
+00:16:43,440 --> 00:16:45,590
+that is through effectively prompt
+optimization. This is one technique to
+
+888
+00:16:45,590 --> 00:16:45,600
+optimization. This is one technique to
+ 
+
+889
+00:16:45,600 --> 00:16:47,350
+optimization. This is one technique to
+do that that I've experimented with. And
+
+890
+00:16:47,350 --> 00:16:47,360
+do that that I've experimented with. And
+ 
+
+891
+00:16:47,360 --> 00:16:49,269
+do that that I've experimented with. And
+the benefit here is you're effectively
+
+892
+00:16:49,269 --> 00:16:49,279
+the benefit here is you're effectively
+ 
+
+893
+00:16:49,279 --> 00:16:51,910
+the benefit here is you're effectively
+reflecting and evolving that system
+
+894
+00:16:51,910 --> 00:16:51,920
+reflecting and evolving that system
+ 
+
+895
+00:16:51,920 --> 00:16:55,829
+reflecting and evolving that system
+prompt using an outofband trellm that
+
+896
+00:16:55,829 --> 00:16:55,839
+prompt using an outofband trellm that
+ 
+
+897
+00:16:55,839 --> 00:16:58,470
+prompt using an outofband trellm that
+looks effectively at the past function
+
+898
+00:16:58,470 --> 00:16:58,480
+looks effectively at the past function
+ 
+
+899
+00:16:58,480 --> 00:17:01,030
+looks effectively at the past function
+calls and traces and optimizes your
+
+900
+00:17:01,030 --> 00:17:01,040
+calls and traces and optimizes your
+ 
+
+901
+00:17:01,040 --> 00:17:04,069
+calls and traces and optimizes your
+prompt based on what it finds.
+
+902
+00:17:04,069 --> 00:17:04,079
+prompt based on what it finds.
+ 
+
+903
+00:17:04,079 --> 00:17:08,789
+prompt based on what it finds.
+So the so what here so I took uh Quinn
+
+904
+00:17:08,789 --> 00:17:08,799
+So the so what here so I took uh Quinn
+ 
+
+905
+00:17:08,799 --> 00:17:10,309
+So the so what here so I took uh Quinn
+3.527B.
+
+906
+00:17:10,309 --> 00:17:10,319
+3.527B.
+ 
+
+907
+00:17:10,319 --> 00:17:12,470
+3.527B.
+This is a dense model. Again I prefix
+
+908
+00:17:12,470 --> 00:17:12,480
+This is a dense model. Again I prefix
+ 
+
+909
+00:17:12,480 --> 00:17:15,429
+This is a dense model. Again I prefix
+this. This is not the best performance
+
+910
+00:17:15,429 --> 00:17:15,439
+this. This is not the best performance
+ 
+
+911
+00:17:15,439 --> 00:17:17,510
+this. This is not the best performance
+but in under a day was able to take what
+
+912
+00:17:17,510 --> 00:17:17,520
+but in under a day was able to take what
+ 
+
+913
+00:17:17,520 --> 00:17:20,710
+but in under a day was able to take what
+was baseline performance within this
+
+914
+00:17:20,710 --> 00:17:20,720
+was baseline performance within this
+ 
+
+915
+00:17:20,720 --> 00:17:24,309
+was baseline performance within this
+specific framework uh called box coner
+
+916
+00:17:24,309 --> 00:17:24,319
+specific framework uh called box coner
+ 
+
+917
+00:17:24,319 --> 00:17:28,630
+specific framework uh called box coner
+effectively what started at about 12.5%
+
+918
+00:17:28,630 --> 00:17:28,640
+effectively what started at about 12.5%
+ 
+
+919
+00:17:28,640 --> 00:17:30,470
+effectively what started at about 12.5%
+um after doing effectively this
+
+920
+00:17:30,470 --> 00:17:30,480
+um after doing effectively this
+ 
+
+921
+00:17:30,480 --> 00:17:32,870
+um after doing effectively this
+two-stage training pipeline process of
+
+922
+00:17:32,870 --> 00:17:32,880
+two-stage training pipeline process of
+ 
+
+923
+00:17:32,880 --> 00:17:34,710
+two-stage training pipeline process of
+supervised fine-tuning and then
+
+924
+00:17:34,710 --> 00:17:34,720
+supervised fine-tuning and then
+ 
+
+925
+00:17:34,720 --> 00:17:36,310
+supervised fine-tuning and then
+supervised fine-tuning plus
+
+926
+00:17:36,310 --> 00:17:36,320
+supervised fine-tuning plus
+ 
+
+927
+00:17:36,320 --> 00:17:38,710
+supervised fine-tuning plus
+reinforcement learning able to lift it
+
+928
+00:17:38,710 --> 00:17:38,720
+reinforcement learning able to lift it
+ 
+
+929
+00:17:38,720 --> 00:17:41,510
+reinforcement learning able to lift it
+to around 35% solve rate. Now again this
+
+930
+00:17:41,510 --> 00:17:41,520
+to around 35% solve rate. Now again this
+ 
+
+931
+00:17:41,520 --> 00:17:43,270
+to around 35% solve rate. Now again this
+is not a talk about this is the best
+
+932
+00:17:43,270 --> 00:17:43,280
+is not a talk about this is the best
+ 
+
+933
+00:17:43,280 --> 00:17:46,549
+is not a talk about this is the best
+model. This is a framework a recipe that
+
+934
+00:17:46,549 --> 00:17:46,559
+model. This is a framework a recipe that
+ 
+
+935
+00:17:46,559 --> 00:17:49,350
+model. This is a framework a recipe that
+with effectively more training data
+
+936
+00:17:49,350 --> 00:17:49,360
+with effectively more training data
+ 
+
+937
+00:17:49,360 --> 00:17:52,470
+with effectively more training data
+effectively at the SFT level and more
+
+938
+00:17:52,470 --> 00:17:52,480
+effectively at the SFT level and more
+ 
+
+939
+00:17:52,480 --> 00:17:54,470
+effectively at the SFT level and more
+reinforcement learning time because
+
+940
+00:17:54,470 --> 00:17:54,480
+reinforcement learning time because
+ 
+
+941
+00:17:54,480 --> 00:17:56,310
+reinforcement learning time because
+again this is a side project for a
+
+942
+00:17:56,310 --> 00:17:56,320
+again this is a side project for a
+ 
+
+943
+00:17:56,320 --> 00:17:59,110
+again this is a side project for a
+conference and GPUs are expensive and I
+
+944
+00:17:59,110 --> 00:17:59,120
+conference and GPUs are expensive and I
+ 
+
+945
+00:17:59,120 --> 00:18:03,669
+conference and GPUs are expensive and I
+don't um that ultimately um this
+
+946
+00:18:03,669 --> 00:18:03,679
+don't um that ultimately um this
+ 
+
+947
+00:18:03,679 --> 00:18:06,070
+don't um that ultimately um this
+showcased a performance lift that I
+
+948
+00:18:06,070 --> 00:18:06,080
+showcased a performance lift that I
+ 
+
+949
+00:18:06,080 --> 00:18:07,190
+showcased a performance lift that I
+think is quite interesting. Again,
+
+950
+00:18:07,190 --> 00:18:07,200
+think is quite interesting. Again,
+ 
+
+951
+00:18:07,200 --> 00:18:09,669
+think is quite interesting. Again,
+there's still room to to grow, but if we
+
+952
+00:18:09,669 --> 00:18:09,679
+there's still room to to grow, but if we
+ 
+
+953
+00:18:09,679 --> 00:18:12,150
+there's still room to to grow, but if we
+look at the next sized openweight models
+
+954
+00:18:12,150 --> 00:18:12,160
+look at the next sized openweight models
+ 
+
+955
+00:18:12,160 --> 00:18:16,710
+look at the next sized openweight models
+like Miniax 2.5 or GLM5, etc., you're
+
+956
+00:18:16,710 --> 00:18:16,720
+like Miniax 2.5 or GLM5, etc., you're
+ 
+
+957
+00:18:16,720 --> 00:18:18,549
+like Miniax 2.5 or GLM5, etc., you're
+talking about model sizes that are
+
+958
+00:18:18,549 --> 00:18:18,559
+talking about model sizes that are
+ 
+
+959
+00:18:18,559 --> 00:18:22,549
+talking about model sizes that are
+almost 10x or at least 5x the size of
+
+960
+00:18:22,549 --> 00:18:22,559
+almost 10x or at least 5x the size of
+ 
+
+961
+00:18:22,559 --> 00:18:28,070
+almost 10x or at least 5x the size of
+this smaller smaller model at 27B.
+
+962
+00:18:28,070 --> 00:18:28,080
+
+ 
+
+963
+00:18:28,080 --> 00:18:30,630
+
+And here's just a quick case study of a
+
+964
+00:18:30,630 --> 00:18:30,640
+And here's just a quick case study of a
+ 
+
+965
+00:18:30,640 --> 00:18:32,710
+And here's just a quick case study of a
+specific example to showcase how this
+
+966
+00:18:32,710 --> 00:18:32,720
+specific example to showcase how this
+ 
+
+967
+00:18:32,720 --> 00:18:34,390
+specific example to showcase how this
+methodology works, which again is what
+
+968
+00:18:34,390 --> 00:18:34,400
+methodology works, which again is what
+ 
+
+969
+00:18:34,400 --> 00:18:36,310
+methodology works, which again is what
+I'm trying to showcase here. If we look
+
+970
+00:18:36,310 --> 00:18:36,320
+I'm trying to showcase here. If we look
+ 
+
+971
+00:18:36,320 --> 00:18:38,710
+I'm trying to showcase here. If we look
+on the left hand side, we'll see an
+
+972
+00:18:38,710 --> 00:18:38,720
+on the left hand side, we'll see an
+ 
+
+973
+00:18:38,720 --> 00:18:41,669
+on the left hand side, we'll see an
+example of this expert
+
+974
+00:18:41,669 --> 00:18:41,679
+example of this expert
+ 
+
+975
+00:18:41,679 --> 00:18:45,110
+example of this expert
+um this expert example of a of a crypto
+
+976
+00:18:45,110 --> 00:18:45,120
+um this expert example of a of a crypto
+ 
+
+977
+00:18:45,120 --> 00:18:48,310
+um this expert example of a of a crypto
+challenge where the model had this um
+
+978
+00:18:48,310 --> 00:18:48,320
+challenge where the model had this um
+ 
+
+979
+00:18:48,320 --> 00:18:50,390
+challenge where the model had this um
+AES variant with a shuffled nonlinear
+
+980
+00:18:50,390 --> 00:18:50,400
+AES variant with a shuffled nonlinear
+ 
+
+981
+00:18:50,400 --> 00:18:51,909
+AES variant with a shuffled nonlinear
+layer and the model had to reverse
+
+982
+00:18:51,909 --> 00:18:51,919
+layer and the model had to reverse
+ 
+
+983
+00:18:51,919 --> 00:18:54,630
+layer and the model had to reverse
+engineer from a cipher from source and
+
+984
+00:18:54,630 --> 00:18:54,640
+engineer from a cipher from source and
+ 
+
+985
+00:18:54,640 --> 00:18:57,750
+engineer from a cipher from source and
+interact with this oracle over the
+
+986
+00:18:57,750 --> 00:18:57,760
+interact with this oracle over the
+ 
+
+987
+00:18:57,760 --> 00:18:59,990
+interact with this oracle over the
+network and then write a solver to
+
+988
+00:18:59,990 --> 00:19:00,000
+network and then write a solver to
+ 
+
+989
+00:19:00,000 --> 00:19:02,630
+network and then write a solver to
+decrypt the flag. quite complex.
+
+990
+00:19:02,630 --> 00:19:02,640
+decrypt the flag. quite complex.
+ 
+
+991
+00:19:02,640 --> 00:19:04,470
+decrypt the flag. quite complex.
+Originally with the base model that you
+
+992
+00:19:04,470 --> 00:19:04,480
+Originally with the base model that you
+ 
+
+993
+00:19:04,480 --> 00:19:06,470
+Originally with the base model that you
+can download off hugging face that Quinn
+
+994
+00:19:06,470 --> 00:19:06,480
+can download off hugging face that Quinn
+ 
+
+995
+00:19:06,480 --> 00:19:10,070
+can download off hugging face that Quinn
+released two days ago um it failed after
+
+996
+00:19:10,070 --> 00:19:10,080
+released two days ago um it failed after
+ 
+
+997
+00:19:10,080 --> 00:19:13,190
+released two days ago um it failed after
+about 25 turns um and expanding that.
+
+998
+00:19:13,190 --> 00:19:13,200
+about 25 turns um and expanding that.
+ 
+
+999
+00:19:13,200 --> 00:19:15,110
+about 25 turns um and expanding that.
+Now with this tuned model it did solve
+
+1000
+00:19:15,110 --> 00:19:15,120
+Now with this tuned model it did solve
+ 
+
+1001
+00:19:15,120 --> 00:19:18,390
+Now with this tuned model it did solve
+it in less turns um I was able to
+
+1002
+00:19:18,390 --> 00:19:18,400
+it in less turns um I was able to
+ 
+
+1003
+00:19:18,400 --> 00:19:22,150
+it in less turns um I was able to
+actually complete that workflow.
+
+1004
+00:19:22,150 --> 00:19:22,160
+actually complete that workflow.
+ 
+
+1005
+00:19:22,160 --> 00:19:23,669
+actually complete that workflow.
+So, some lessons learned in building
+
+1006
+00:19:23,669 --> 00:19:23,679
+So, some lessons learned in building
+ 
+
+1007
+00:19:23,679 --> 00:19:26,150
+So, some lessons learned in building
+this. Um, I originally started and in
+
+1008
+00:19:26,150 --> 00:19:26,160
+this. Um, I originally started and in
+ 
+
+1009
+00:19:26,160 --> 00:19:28,390
+this. Um, I originally started and in
+the description of this talk, it was
+
+1010
+00:19:28,390 --> 00:19:28,400
+the description of this talk, it was
+ 
+
+1011
+00:19:28,400 --> 00:19:30,549
+the description of this talk, it was
+actually with GLM47
+
+1012
+00:19:30,549 --> 00:19:30,559
+actually with GLM47
+ 
+
+1013
+00:19:30,559 --> 00:19:32,950
+actually with GLM47
+flash 30B. That's actually was
+
+1014
+00:19:32,950 --> 00:19:32,960
+flash 30B. That's actually was
+ 
+
+1015
+00:19:32,960 --> 00:19:34,310
+flash 30B. That's actually was
+originally what I wanted to showcase.
+
+1016
+00:19:34,310 --> 00:19:34,320
+originally what I wanted to showcase.
+ 
+
+1017
+00:19:34,320 --> 00:19:35,909
+originally what I wanted to showcase.
+Quinn35 came out 2 days ago. I thought
+
+1018
+00:19:35,909 --> 00:19:35,919
+Quinn35 came out 2 days ago. I thought
+ 
+
+1019
+00:19:35,919 --> 00:19:37,029
+Quinn35 came out 2 days ago. I thought
+it'd be a little bit more topical than
+
+1020
+00:19:37,029 --> 00:19:37,039
+it'd be a little bit more topical than
+ 
+
+1021
+00:19:37,039 --> 00:19:39,270
+it'd be a little bit more topical than
+one a couple months ago. But the other
+
+1022
+00:19:39,270 --> 00:19:39,280
+one a couple months ago. But the other
+ 
+
+1023
+00:19:39,280 --> 00:19:41,510
+one a couple months ago. But the other
+reason why is actually mixture of expert
+
+1024
+00:19:41,510 --> 00:19:41,520
+reason why is actually mixture of expert
+ 
+
+1025
+00:19:41,520 --> 00:19:44,070
+reason why is actually mixture of expert
+models while going through RL. There's
+
+1026
+00:19:44,070 --> 00:19:44,080
+models while going through RL. There's
+ 
+
+1027
+00:19:44,080 --> 00:19:45,990
+models while going through RL. There's
+actually not a there's actually not a
+
+1028
+00:19:45,990 --> 00:19:46,000
+actually not a there's actually not a
+ 
+
+1029
+00:19:46,000 --> 00:19:47,510
+actually not a there's actually not a
+fix in the open source way to actually
+
+1030
+00:19:47,510 --> 00:19:47,520
+fix in the open source way to actually
+ 
+
+1031
+00:19:47,520 --> 00:19:48,630
+fix in the open source way to actually
+do what's called like weight
+
+1032
+00:19:48,630 --> 00:19:48,640
+do what's called like weight
+ 
+
+1033
+00:19:48,640 --> 00:19:50,310
+do what's called like weight
+synchronization with the individual
+
+1034
+00:19:50,310 --> 00:19:50,320
+synchronization with the individual
+ 
+
+1035
+00:19:50,320 --> 00:19:53,110
+synchronization with the individual
+expert nodes. So bottom line up front,
+
+1036
+00:19:53,110 --> 00:19:53,120
+expert nodes. So bottom line up front,
+ 
+
+1037
+00:19:53,120 --> 00:19:54,230
+expert nodes. So bottom line up front,
+if you're going to do this, I'd
+
+1038
+00:19:54,230 --> 00:19:54,240
+if you're going to do this, I'd
+ 
+
+1039
+00:19:54,240 --> 00:19:56,549
+if you're going to do this, I'd
+recommend starting with a dense model
+
+1040
+00:19:56,549 --> 00:19:56,559
+recommend starting with a dense model
+ 
+
+1041
+00:19:56,559 --> 00:19:57,669
+recommend starting with a dense model
+because there's not really an open
+
+1042
+00:19:57,669 --> 00:19:57,679
+because there's not really an open
+ 
+
+1043
+00:19:57,679 --> 00:20:00,950
+because there's not really an open
+source fix toe models right now in the
+
+1044
+00:20:00,950 --> 00:20:00,960
+source fix toe models right now in the
+ 
+
+1045
+00:20:00,960 --> 00:20:04,070
+source fix toe models right now in the
+lower level frameworks on the reward
+
+1046
+00:20:04,070 --> 00:20:04,080
+lower level frameworks on the reward
+ 
+
+1047
+00:20:04,080 --> 00:20:07,430
+lower level frameworks on the reward
+function design. Progressive scaling is
+
+1048
+00:20:07,430 --> 00:20:07,440
+function design. Progressive scaling is
+ 
+
+1049
+00:20:07,440 --> 00:20:09,830
+function design. Progressive scaling is
+the way to go. What I mean by that is
+
+1050
+00:20:09,830 --> 00:20:09,840
+the way to go. What I mean by that is
+ 
+
+1051
+00:20:09,840 --> 00:20:11,510
+the way to go. What I mean by that is
+again just like a human when you
+
+1052
+00:20:11,510 --> 00:20:11,520
+again just like a human when you
+ 
+
+1053
+00:20:11,520 --> 00:20:13,270
+again just like a human when you
+everyone here did their first CTF or
+
+1054
+00:20:13,270 --> 00:20:13,280
+everyone here did their first CTF or
+ 
+
+1055
+00:20:13,280 --> 00:20:15,270
+everyone here did their first CTF or
+cyber challenge, don't immediately start
+
+1056
+00:20:15,270 --> 00:20:15,280
+cyber challenge, don't immediately start
+ 
+
+1057
+00:20:15,280 --> 00:20:17,990
+cyber challenge, don't immediately start
+at the expert challenge. Have your agent
+
+1058
+00:20:17,990 --> 00:20:18,000
+at the expert challenge. Have your agent
+ 
+
+1059
+00:20:18,000 --> 00:20:21,590
+at the expert challenge. Have your agent
+start at very easy, easy, medium, hard,
+
+1060
+00:20:21,590 --> 00:20:21,600
+start at very easy, easy, medium, hard,
+ 
+
+1061
+00:20:21,600 --> 00:20:24,390
+start at very easy, easy, medium, hard,
+etc., and progress the agent through its
+
+1062
+00:20:24,390 --> 00:20:24,400
+etc., and progress the agent through its
+ 
+
+1063
+00:20:24,400 --> 00:20:26,630
+etc., and progress the agent through its
+uh reinforcement learning environment.
+
+1064
+00:20:26,630 --> 00:20:26,640
+uh reinforcement learning environment.
+ 
+
+1065
+00:20:26,640 --> 00:20:28,870
+uh reinforcement learning environment.
+Also, long horizons are expensive. It's
+
+1066
+00:20:28,870 --> 00:20:28,880
+Also, long horizons are expensive. It's
+ 
+
+1067
+00:20:28,880 --> 00:20:30,710
+Also, long horizons are expensive. It's
+a cool sounding name, but what does that
+
+1068
+00:20:30,710 --> 00:20:30,720
+a cool sounding name, but what does that
+ 
+
+1069
+00:20:30,720 --> 00:20:32,950
+a cool sounding name, but what does that
+mean? It means you need very large key
+
+1070
+00:20:32,950 --> 00:20:32,960
+mean? It means you need very large key
+ 
+
+1071
+00:20:32,960 --> 00:20:35,190
+mean? It means you need very large key
+value caches and memory to effectively
+
+1072
+00:20:35,190 --> 00:20:35,200
+value caches and memory to effectively
+ 
+
+1073
+00:20:35,200 --> 00:20:37,830
+value caches and memory to effectively
+not just load that 27B model, but give
+
+1074
+00:20:37,830 --> 00:20:37,840
+not just load that 27B model, but give
+ 
+
+1075
+00:20:37,840 --> 00:20:39,669
+not just load that 27B model, but give
+it enough context. It's great to say you
+
+1076
+00:20:39,669 --> 00:20:39,679
+it enough context. It's great to say you
+ 
+
+1077
+00:20:39,679 --> 00:20:42,149
+it enough context. It's great to say you
+can do 1 million in context or 128K
+
+1078
+00:20:42,149 --> 00:20:42,159
+can do 1 million in context or 128K
+ 
+
+1079
+00:20:42,159 --> 00:20:44,070
+can do 1 million in context or 128K
+tokens. If anyone here has actually
+
+1080
+00:20:44,070 --> 00:20:44,080
+tokens. If anyone here has actually
+ 
+
+1081
+00:20:44,080 --> 00:20:46,149
+tokens. If anyone here has actually
+tried loading and servicing a model at
+
+1082
+00:20:46,149 --> 00:20:46,159
+tried loading and servicing a model at
+ 
+
+1083
+00:20:46,159 --> 00:20:48,710
+tried loading and servicing a model at
+that, it's you can load the model at a
+
+1084
+00:20:48,710 --> 00:20:48,720
+that, it's you can load the model at a
+ 
+
+1085
+00:20:48,720 --> 00:20:52,789
+that, it's you can load the model at a
+lower quant at 60 gigabytes of VRAM, but
+
+1086
+00:20:52,789 --> 00:20:52,799
+lower quant at 60 gigabytes of VRAM, but
+ 
+
+1087
+00:20:52,799 --> 00:20:55,750
+lower quant at 60 gigabytes of VRAM, but
+then they actually load that with 128K
+
+1088
+00:20:55,750 --> 00:20:55,760
+then they actually load that with 128K
+ 
+
+1089
+00:20:55,760 --> 00:20:57,990
+then they actually load that with 128K
+in context and more. You're talking at
+
+1090
+00:20:57,990 --> 00:20:58,000
+in context and more. You're talking at
+ 
+
+1091
+00:20:58,000 --> 00:21:00,549
+in context and more. You're talking at
+least double or triple that in in terms
+
+1092
+00:21:00,549 --> 00:21:00,559
+least double or triple that in in terms
+ 
+
+1093
+00:21:00,559 --> 00:21:04,950
+least double or triple that in in terms
+of VRAM allocation. So,
+
+1094
+00:21:04,950 --> 00:21:04,960
+of VRAM allocation. So,
+ 
+
+1095
+00:21:04,960 --> 00:21:07,350
+of VRAM allocation. So,
+uh, and then more data. What you just
+
+1096
+00:21:07,350 --> 00:21:07,360
+uh, and then more data. What you just
+ 
+
+1097
+00:21:07,360 --> 00:21:09,190
+uh, and then more data. What you just
+saw in those results was effectively
+
+1098
+00:21:09,190 --> 00:21:09,200
+saw in those results was effectively
+ 
+
+1099
+00:21:09,200 --> 00:21:11,510
+saw in those results was effectively
+with open-source
+
+1100
+00:21:11,510 --> 00:21:11,520
+with open-source
+ 
+
+1101
+00:21:11,520 --> 00:21:14,549
+with open-source
+um open source traces, 285 open source
+
+1102
+00:21:14,549 --> 00:21:14,559
+um open source traces, 285 open source
+ 
+
+1103
+00:21:14,559 --> 00:21:17,430
+um open source traces, 285 open source
+traces from stronger models on the same
+
+1104
+00:21:17,430 --> 00:21:17,440
+traces from stronger models on the same
+ 
+
+1105
+00:21:17,440 --> 00:21:19,909
+traces from stronger models on the same
+task and with more data, which we
+
+1106
+00:21:19,909 --> 00:21:19,919
+task and with more data, which we
+ 
+
+1107
+00:21:19,919 --> 00:21:23,669
+task and with more data, which we
+typically do anywhere from 20 to 30,000
+
+1108
+00:21:23,669 --> 00:21:23,679
+typically do anywhere from 20 to 30,000
+ 
+
+1109
+00:21:23,679 --> 00:21:26,470
+typically do anywhere from 20 to 30,000
+uh traces. That's typically what you do
+
+1110
+00:21:26,470 --> 00:21:26,480
+uh traces. That's typically what you do
+ 
+
+1111
+00:21:26,480 --> 00:21:27,990
+uh traces. That's typically what you do
+uh for that supervised fine-tuning
+
+1112
+00:21:27,990 --> 00:21:28,000
+uh for that supervised fine-tuning
+ 
+
+1113
+00:21:28,000 --> 00:21:29,190
+uh for that supervised fine-tuning
+stage. And then you do more
+
+1114
+00:21:29,190 --> 00:21:29,200
+stage. And then you do more
+ 
+
+1115
+00:21:29,200 --> 00:21:30,549
+stage. And then you do more
+reinforcement learning with more
+
+1116
+00:21:30,549 --> 00:21:30,559
+reinforcement learning with more
+ 
+
+1117
+00:21:30,559 --> 00:21:34,870
+reinforcement learning with more
+challenges overall to better generalize.
+
+1118
+00:21:34,870 --> 00:21:34,880
+challenges overall to better generalize.
+ 
+
+1119
+00:21:34,880 --> 00:21:36,950
+challenges overall to better generalize.
+Everything's open source. Uh there's
+
+1120
+00:21:36,950 --> 00:21:36,960
+Everything's open source. Uh there's
+ 
+
+1121
+00:21:36,960 --> 00:21:39,750
+Everything's open source. Uh there's
+some links to GitHub if anyone's
+
+1122
+00:21:39,750 --> 00:21:39,760
+some links to GitHub if anyone's
+ 
+
+1123
+00:21:39,760 --> 00:21:41,909
+some links to GitHub if anyone's
+interested. There's also a Discord
+
+1124
+00:21:41,909 --> 00:21:41,919
+interested. There's also a Discord
+ 
+
+1125
+00:21:41,919 --> 00:21:46,149
+interested. There's also a Discord
+community that um Evan here manages back
+
+1126
+00:21:46,149 --> 00:21:46,159
+community that um Evan here manages back
+ 
+
+1127
+00:21:46,159 --> 00:21:47,909
+community that um Evan here manages back
+here if anyone's interested to talk more
+
+1128
+00:21:47,909 --> 00:21:47,919
+here if anyone's interested to talk more
+ 
+
+1129
+00:21:47,919 --> 00:21:51,669
+here if anyone's interested to talk more
+about this. Um I try to be online and
+
+1130
+00:21:51,669 --> 00:21:51,679
+about this. Um I try to be online and
+ 
+
+1131
+00:21:51,679 --> 00:21:54,630
+about this. Um I try to be online and
+help folks out. And if anyone wants any
+
+1132
+00:21:54,630 --> 00:21:54,640
+help folks out. And if anyone wants any
+ 
+
+1133
+00:21:54,640 --> 00:21:57,909
+help folks out. And if anyone wants any
+more questions, we can talk more or find
+
+1134
+00:21:57,909 --> 00:21:57,919
+more questions, we can talk more or find
+ 
+
+1135
+00:21:57,919 --> 00:22:06,390
+more questions, we can talk more or find
+me.
+
+1136
+00:22:06,390 --> 00:22:06,400
+
+ 
+
+1137
+00:22:06,400 --> 00:22:13,750
+
+questions.
+
+1138
+00:22:13,750 --> 00:22:13,760
+
+ 
+
+1139
+00:22:13,760 --> 00:22:17,510
+
+>> Hey, hey, great talk. So uh when you do
+
+1140
+00:22:17,510 --> 00:22:17,520
+>> Hey, hey, great talk. So uh when you do
+ 
+
+1141
+00:22:17,520 --> 00:22:21,590
+>> Hey, hey, great talk. So uh when you do
+RL right like it's easy to do uh easy to
+
+1142
+00:22:21,590 --> 00:22:21,600
+RL right like it's easy to do uh easy to
+ 
+
+1143
+00:22:21,600 --> 00:22:24,310
+RL right like it's easy to do uh easy to
+hill climb on like CTFs but when I
+
+1144
+00:22:24,310 --> 00:22:24,320
+hill climb on like CTFs but when I
+ 
+
+1145
+00:22:24,320 --> 00:22:27,110
+hill climb on like CTFs but when I
+wanted to like actually find a b bug
+
+1146
+00:22:27,110 --> 00:22:27,120
+wanted to like actually find a b bug
+ 
+
+1147
+00:22:27,120 --> 00:22:31,110
+wanted to like actually find a b bug
+like in like a real world application uh
+
+1148
+00:22:31,110 --> 00:22:31,120
+like in like a real world application uh
+ 
+
+1149
+00:22:31,120 --> 00:22:33,590
+like in like a real world application uh
+you don't know if there is a bug or not
+
+1150
+00:22:33,590 --> 00:22:33,600
+you don't know if there is a bug or not
+ 
+
+1151
+00:22:33,600 --> 00:22:37,750
+you don't know if there is a bug or not
+so would a CTF kind of a modeling for an
+
+1152
+00:22:37,750 --> 00:22:37,760
+so would a CTF kind of a modeling for an
+ 
+
+1153
+00:22:37,760 --> 00:22:41,430
+so would a CTF kind of a modeling for an
+RL challenge translate to like finding
+
+1154
+00:22:41,430 --> 00:22:41,440
+RL challenge translate to like finding
+ 
+
+1155
+00:22:41,440 --> 00:22:45,110
+RL challenge translate to like finding
+bugs in like real world applications.
+
+1156
+00:22:45,110 --> 00:22:45,120
+bugs in like real world applications.
+ 
+
+1157
+00:22:45,120 --> 00:22:46,789
+bugs in like real world applications.
+Yeah, I mean ultimately like forget the
+
+1158
+00:22:46,789 --> 00:22:46,799
+Yeah, I mean ultimately like forget the
+ 
+
+1159
+00:22:46,799 --> 00:22:48,710
+Yeah, I mean ultimately like forget the
+word CTF and everything I just said.
+
+1160
+00:22:48,710 --> 00:22:48,720
+word CTF and everything I just said.
+ 
+
+1161
+00:22:48,720 --> 00:22:50,390
+word CTF and everything I just said.
+There needs to be a verifiable reward at
+
+1162
+00:22:50,390 --> 00:22:50,400
+There needs to be a verifiable reward at
+ 
+
+1163
+00:22:50,400 --> 00:22:51,510
+There needs to be a verifiable reward at
+the end. Everything we're talking about
+
+1164
+00:22:51,510 --> 00:22:51,520
+the end. Everything we're talking about
+ 
+
+1165
+00:22:51,520 --> 00:22:52,950
+the end. Everything we're talking about
+is offline training,
+
+1166
+00:22:52,950 --> 00:22:52,960
+is offline training,
+ 
+
+1167
+00:22:52,960 --> 00:22:53,190
+is offline training,
+>> right?
+
+1168
+00:22:53,190 --> 00:22:53,200
+>> right?
+ 
+
+1169
+00:22:53,200 --> 00:22:54,470
+>> right?
+>> And what you're the task you're
+
+1170
+00:22:54,470 --> 00:22:54,480
+>> And what you're the task you're
+ 
+
+1171
+00:22:54,480 --> 00:22:56,070
+>> And what you're the task you're
+referencing is generalization.
+
+1172
+00:22:56,070 --> 00:22:56,080
+referencing is generalization.
+ 
+
+1173
+00:22:56,080 --> 00:22:56,470
+referencing is generalization.
+>> Yeah.
+
+1174
+00:22:56,470 --> 00:22:56,480
+>> Yeah.
+ 
+
+1175
+00:22:56,480 --> 00:22:59,270
+>> Yeah.
+>> Now that's a that is a problem in any ML
+
+1176
+00:22:59,270 --> 00:22:59,280
+>> Now that's a that is a problem in any ML
+ 
+
+1177
+00:22:59,280 --> 00:23:02,070
+>> Now that's a that is a problem in any ML
+task like look at Sweetbench or look in
+
+1178
+00:23:02,070 --> 00:23:02,080
+task like look at Sweetbench or look in
+ 
+
+1179
+00:23:02,080 --> 00:23:04,870
+task like look at Sweetbench or look in
+in this world of um what what you're
+
+1180
+00:23:04,870 --> 00:23:04,880
+in this world of um what what you're
+ 
+
+1181
+00:23:04,880 --> 00:23:07,110
+in this world of um what what you're
+describing in cyber like what I would
+
+1182
+00:23:07,110 --> 00:23:07,120
+describing in cyber like what I would
+ 
+
+1183
+00:23:07,120 --> 00:23:08,789
+describing in cyber like what I would
+say is we need to have we do need to
+
+1184
+00:23:08,789 --> 00:23:08,799
+say is we need to have we do need to
+ 
+
+1185
+00:23:08,799 --> 00:23:11,830
+say is we need to have we do need to
+have better evals effectively and in in
+
+1186
+00:23:11,830 --> 00:23:11,840
+have better evals effectively and in in
+ 
+
+1187
+00:23:11,840 --> 00:23:13,669
+have better evals effectively and in in
+cyber RL environments. I mean that's why
+
+1188
+00:23:13,669 --> 00:23:13,679
+cyber RL environments. I mean that's why
+ 
+
+1189
+00:23:13,679 --> 00:23:15,350
+cyber RL environments. I mean that's why
+frankly like there's a bunch of
+
+1190
+00:23:15,350 --> 00:23:15,360
+frankly like there's a bunch of
+ 
+
+1191
+00:23:15,360 --> 00:23:17,029
+frankly like there's a bunch of
+companies in this space that are the
+
+1192
+00:23:17,029 --> 00:23:17,039
+companies in this space that are the
+ 
+
+1193
+00:23:17,039 --> 00:23:18,950
+companies in this space that are the
+labs are paying for effectively for just
+
+1194
+00:23:18,950 --> 00:23:18,960
+labs are paying for effectively for just
+ 
+
+1195
+00:23:18,960 --> 00:23:20,390
+labs are paying for effectively for just
+RL environments
+
+1196
+00:23:20,390 --> 00:23:20,400
+RL environments
+ 
+
+1197
+00:23:20,400 --> 00:23:21,990
+RL environments
+>> not necessarily just for the scaffolding
+
+1198
+00:23:21,990 --> 00:23:22,000
+>> not necessarily just for the scaffolding
+ 
+
+1199
+00:23:22,000 --> 00:23:24,149
+>> not necessarily just for the scaffolding
+and the skills to execute but because it
+
+1200
+00:23:24,149 --> 00:23:24,159
+and the skills to execute but because it
+ 
+
+1201
+00:23:24,159 --> 00:23:26,390
+and the skills to execute but because it
+is skillful to build these RL frameworks
+
+1202
+00:23:26,390 --> 00:23:26,400
+is skillful to build these RL frameworks
+ 
+
+1203
+00:23:26,400 --> 00:23:28,549
+is skillful to build these RL frameworks
+that these RL environments that will
+
+1204
+00:23:28,549 --> 00:23:28,559
+that these RL environments that will
+ 
+
+1205
+00:23:28,559 --> 00:23:31,190
+that these RL environments that will
+generalize effectively to other tasks
+
+1206
+00:23:31,190 --> 00:23:31,200
+generalize effectively to other tasks
+ 
+
+1207
+00:23:31,200 --> 00:23:32,870
+generalize effectively to other tasks
+outside of what they perform. So to
+
+1208
+00:23:32,870 --> 00:23:32,880
+outside of what they perform. So to
+ 
+
+1209
+00:23:32,880 --> 00:23:35,190
+outside of what they perform. So to
+answer your question like that's one
+
+1210
+00:23:35,190 --> 00:23:35,200
+answer your question like that's one
+ 
+
+1211
+00:23:35,200 --> 00:23:36,789
+answer your question like that's one
+reason why I have this in this framework
+
+1212
+00:23:36,789 --> 00:23:36,799
+reason why I have this in this framework
+ 
+
+1213
+00:23:36,799 --> 00:23:38,390
+reason why I have this in this framework
+a bring your own environment since if
+
+1214
+00:23:38,390 --> 00:23:38,400
+a bring your own environment since if
+ 
+
+1215
+00:23:38,400 --> 00:23:41,270
+a bring your own environment since if
+yourself if you find and build a better
+
+1216
+00:23:41,270 --> 00:23:41,280
+yourself if you find and build a better
+ 
+
+1217
+00:23:41,280 --> 00:23:43,590
+yourself if you find and build a better
+environment that is ultimately how we
+
+1218
+00:23:43,590 --> 00:23:43,600
+environment that is ultimately how we
+ 
+
+1219
+00:23:43,600 --> 00:23:44,710
+environment that is ultimately how we
+would help solve that problem because
+
+1220
+00:23:44,710 --> 00:23:44,720
+would help solve that problem because
+ 
+
+1221
+00:23:44,720 --> 00:23:46,390
+would help solve that problem because
+that's the only way.
+
+1222
+00:23:46,390 --> 00:23:46,400
+that's the only way.
+ 
+
+1223
+00:23:46,400 --> 00:23:48,230
+that's the only way.
+>> Yeah. The thing is like the rewards
+
+1224
+00:23:48,230 --> 00:23:48,240
+>> Yeah. The thing is like the rewards
+ 
+
+1225
+00:23:48,240 --> 00:23:50,390
+>> Yeah. The thing is like the rewards
+don't converge right like that there is
+
+1226
+00:23:50,390 --> 00:23:50,400
+don't converge right like that there is
+ 
+
+1227
+00:23:50,400 --> 00:23:52,149
+don't converge right like that there is
+zero rewards and then there is like the
+
+1228
+00:23:52,149 --> 00:23:52,159
+zero rewards and then there is like the
+ 
+
+1229
+00:23:52,159 --> 00:23:54,870
+zero rewards and then there is like the
+100% reward in like a CTF cuz the
+
+1230
+00:23:54,870 --> 00:23:54,880
+100% reward in like a CTF cuz the
+ 
+
+1231
+00:23:54,880 --> 00:23:56,470
+100% reward in like a CTF cuz the
+environment doesn't give you a feedback
+
+1232
+00:23:56,470 --> 00:23:56,480
+environment doesn't give you a feedback
+ 
+
+1233
+00:23:56,480 --> 00:23:58,230
+environment doesn't give you a feedback
+that you're like really close to like
+
+1234
+00:23:58,230 --> 00:23:58,240
+that you're like really close to like
+ 
+
+1235
+00:23:58,240 --> 00:23:59,669
+that you're like really close to like
+the flag.
+
+1236
+00:23:59,669 --> 00:23:59,679
+the flag.
+ 
+
+1237
+00:23:59,679 --> 00:24:00,710
+the flag.
+>> You see what I mean?
+
+1238
+00:24:00,710 --> 00:24:00,720
+>> You see what I mean?
+ 
+
+1239
+00:24:00,720 --> 00:24:01,830
+>> You see what I mean?
+>> Yeah. Yeah, that's why like uh there
+
+1240
+00:24:01,830 --> 00:24:01,840
+>> Yeah. Yeah, that's why like uh there
+ 
+
+1241
+00:24:01,840 --> 00:24:03,110
+>> Yeah. Yeah, that's why like uh there
+there are different types of there's
+
+1242
+00:24:03,110 --> 00:24:03,120
+there are different types of there's
+ 
+
+1243
+00:24:03,120 --> 00:24:05,430
+there are different types of there's
+composite rewards, there's like binary
+
+1244
+00:24:05,430 --> 00:24:05,440
+composite rewards, there's like binary
+ 
+
+1245
+00:24:05,440 --> 00:24:07,669
+composite rewards, there's like binary
+rewards. Uh typically starting with
+
+1246
+00:24:07,669 --> 00:24:07,679
+rewards. Uh typically starting with
+ 
+
+1247
+00:24:07,679 --> 00:24:09,190
+rewards. Uh typically starting with
+binary rewards and then working
+
+1248
+00:24:09,190 --> 00:24:09,200
+binary rewards and then working
+ 
+
+1249
+00:24:09,200 --> 00:24:11,350
+binary rewards and then working
+backwards to progressive rewards. Okay,
+
+1250
+00:24:11,350 --> 00:24:11,360
+backwards to progressive rewards. Okay,
+ 
+
+1251
+00:24:11,360 --> 00:24:13,110
+backwards to progressive rewards. Okay,
+>> that's like what I what I can recommend
+
+1252
+00:24:13,110 --> 00:24:13,120
+>> that's like what I what I can recommend
+ 
+
+1253
+00:24:13,120 --> 00:24:14,310
+>> that's like what I what I can recommend
+based on lessons learned.
+
+1254
+00:24:14,310 --> 00:24:14,320
+based on lessons learned.
+ 
+
+1255
+00:24:14,320 --> 00:24:15,029
+based on lessons learned.
+>> Okay. Thank you.
+
+1256
+00:24:15,029 --> 00:24:15,039
+>> Okay. Thank you.
+ 
+
+1257
+00:24:15,039 --> 00:24:18,390
+>> Okay. Thank you.
+>> Um yeah, that's Yeah.
+
+1258
+00:24:18,390 --> 00:24:18,400
+>> Um yeah, that's Yeah.
+ 
+
+1259
+00:24:18,400 --> 00:24:22,149
+>> Um yeah, that's Yeah.
+>> All right. Anybody else?
+
+1260
+00:24:22,149 --> 00:24:22,159
+>> All right. Anybody else?
+ 
+
+1261
+00:24:22,159 --> 00:24:24,070
+>> All right. Anybody else?
+>> Here we go up front.
+
+1262
+00:24:24,070 --> 00:24:24,080
+>> Here we go up front.
+ 
+
+1263
+00:24:24,080 --> 00:24:25,750
+>> Here we go up front.
+>> I had one question earlier. You
+
+1264
+00:24:25,750 --> 00:24:25,760
+>> I had one question earlier. You
+ 
+
+1265
+00:24:25,760 --> 00:24:28,230
+>> I had one question earlier. You
+mentioned world and onslaught, right?
+
+1266
+00:24:28,230 --> 00:24:28,240
+mentioned world and onslaught, right?
+ 
+
+1267
+00:24:28,240 --> 00:24:30,070
+mentioned world and onslaught, right?
+from a I mean yeah this has nothing to
+
+1268
+00:24:30,070 --> 00:24:30,080
+from a I mean yeah this has nothing to
+ 
+
+1269
+00:24:30,080 --> 00:24:32,230
+from a I mean yeah this has nothing to
+do with security I'm just looking at
+
+1270
+00:24:32,230 --> 00:24:32,240
+do with security I'm just looking at
+ 
+
+1271
+00:24:32,240 --> 00:24:34,710
+do with security I'm just looking at
+from a compute perspective which do you
+
+1272
+00:24:34,710 --> 00:24:34,720
+from a compute perspective which do you
+ 
+
+1273
+00:24:34,720 --> 00:24:36,070
+from a compute perspective which do you
+think is better which is going to be
+
+1274
+00:24:36,070 --> 00:24:36,080
+think is better which is going to be
+ 
+
+1275
+00:24:36,080 --> 00:24:37,750
+think is better which is going to be
+more scalable
+
+1276
+00:24:37,750 --> 00:24:37,760
+more scalable
+ 
+
+1277
+00:24:37,760 --> 00:24:39,750
+more scalable
+>> uh from like uh you mentioned like
+
+1278
+00:24:39,750 --> 00:24:39,760
+>> uh from like uh you mentioned like
+ 
+
+1279
+00:24:39,760 --> 00:24:40,470
+>> uh from like uh you mentioned like
+unsloth
+
+1280
+00:24:40,470 --> 00:24:40,480
+unsloth
+ 
+
+1281
+00:24:40,480 --> 00:24:41,669
+unsloth
+>> unsloth and world
+
+1282
+00:24:41,669 --> 00:24:41,679
+>> unsloth and world
+ 
+
+1283
+00:24:41,679 --> 00:24:42,789
+>> unsloth and world
+>> and and what was the last one
+
+1284
+00:24:42,789 --> 00:24:42,799
+>> and and what was the last one
+ 
+
+1285
+00:24:42,799 --> 00:24:45,830
+>> and and what was the last one
+>> world vlan
+
+1286
+00:24:45,830 --> 00:24:45,840
+>> world vlan
+ 
+
+1287
+00:24:45,840 --> 00:24:47,750
+>> world vlan
+>> yeah so those are so those are I would
+
+1288
+00:24:47,750 --> 00:24:47,760
+>> yeah so those are so those are I would
+ 
+
+1289
+00:24:47,760 --> 00:24:49,029
+>> yeah so those are so those are I would
+say these are different things
+
+1290
+00:24:49,029 --> 00:24:49,039
+say these are different things
+ 
+
+1291
+00:24:49,039 --> 00:24:51,909
+say these are different things
+>> one is RL and the other is SFT based
+
+1292
+00:24:51,909 --> 00:24:51,919
+>> one is RL and the other is SFT based
+ 
+
+1293
+00:24:51,919 --> 00:24:53,669
+>> one is RL and the other is SFT based
+>> yeah yeah ver is for like test time
+
+1294
+00:24:53,669 --> 00:24:53,679
+>> yeah yeah ver is for like test time
+ 
+
+1295
+00:24:53,679 --> 00:24:55,909
+>> yeah yeah ver is for like test time
+scaling and for effectively that prompt
+
+1296
+00:24:55,909 --> 00:24:55,919
+scaling and for effectively that prompt
+ 
+
+1297
+00:24:55,919 --> 00:24:59,269
+scaling and for effectively that prompt
+optimizer unsloth is effectively if
+
+1298
+00:24:59,269 --> 00:24:59,279
+optimizer unsloth is effectively if
+ 
+
+1299
+00:24:59,279 --> 00:25:00,710
+optimizer unsloth is effectively if
+you're unsoft only works for Nvidia
+
+1300
+00:25:00,710 --> 00:25:00,720
+you're unsoft only works for Nvidia
+ 
+
+1301
+00:25:00,720 --> 00:25:01,590
+you're unsoft only works for Nvidia
+because they're effectively these
+
+1302
+00:25:01,590 --> 00:25:01,600
+because they're effectively these
+ 
+
+1303
+00:25:01,600 --> 00:25:03,110
+because they're effectively these
+optimized triton kernels and unsoft is
+
+1304
+00:25:03,110 --> 00:25:03,120
+optimized triton kernels and unsoft is
+ 
+
+1305
+00:25:03,120 --> 00:25:05,110
+optimized triton kernels and unsoft is
+primarily optimized for instruction
+
+1306
+00:25:05,110 --> 00:25:05,120
+primarily optimized for instruction
+ 
+
+1307
+00:25:05,120 --> 00:25:07,510
+primarily optimized for instruction
+tuning so that SFT
+
+1308
+00:25:07,510 --> 00:25:07,520
+tuning so that SFT
+ 
+
+1309
+00:25:07,520 --> 00:25:08,230
+tuning so that SFT
+>> correct
+
+1310
+00:25:08,230 --> 00:25:08,240
+>> correct
+ 
+
+1311
+00:25:08,240 --> 00:25:10,710
+>> correct
+>> so these are also at the SDK level I'd
+
+1312
+00:25:10,710 --> 00:25:10,720
+>> so these are also at the SDK level I'd
+ 
+
+1313
+00:25:10,720 --> 00:25:14,149
+>> so these are also at the SDK level I'd
+say that um you can use unsloth but
+
+1314
+00:25:14,149 --> 00:25:14,159
+say that um you can use unsloth but
+ 
+
+1315
+00:25:14,159 --> 00:25:16,310
+say that um you can use unsloth but
+there are pros and cons of that like I
+
+1316
+00:25:16,310 --> 00:25:16,320
+there are pros and cons of that like I
+ 
+
+1317
+00:25:16,320 --> 00:25:19,110
+there are pros and cons of that like I
+chose not to use unsloth because uh
+
+1318
+00:25:19,110 --> 00:25:19,120
+chose not to use unsloth because uh
+ 
+
+1319
+00:25:19,120 --> 00:25:21,430
+chose not to use unsloth because uh
+there are there are pros and cons uh in
+
+1320
+00:25:21,430 --> 00:25:21,440
+there are there are pros and cons uh in
+ 
+
+1321
+00:25:21,440 --> 00:25:23,110
+there are there are pros and cons uh in
+using it I actually used the base TRL
+
+1322
+00:25:23,110 --> 00:25:23,120
+using it I actually used the base TRL
+ 
+
+1323
+00:25:23,120 --> 00:25:25,830
+using it I actually used the base TRL
+which is what unsloth is built on top of
+
+1324
+00:25:25,830 --> 00:25:25,840
+which is what unsloth is built on top of
+ 
+
+1325
+00:25:25,840 --> 00:25:27,750
+which is what unsloth is built on top of
+>> um but again maybe we can talk more
+
+1326
+00:25:27,750 --> 00:25:27,760
+>> um but again maybe we can talk more
+ 
+
+1327
+00:25:27,760 --> 00:25:29,510
+>> um but again maybe we can talk more
+after if there's a specific question,
+
+1328
+00:25:29,510 --> 00:25:29,520
+after if there's a specific question,
+ 
+
+1329
+00:25:29,520 --> 00:25:29,990
+after if there's a specific question,
+but
+
+1330
+00:25:29,990 --> 00:25:30,000
+but
+ 
+
+1331
+00:25:30,000 --> 00:25:30,630
+but
+>> yeah.
+
+1332
+00:25:30,630 --> 00:25:30,640
+>> yeah.
+ 
+
+1333
+00:25:30,640 --> 00:25:31,830
+>> yeah.
+>> Yeah, I'd say like you can never go
+
+1334
+00:25:31,830 --> 00:25:31,840
+>> Yeah, I'd say like you can never go
+ 
+
+1335
+00:25:31,840 --> 00:25:33,430
+>> Yeah, I'd say like you can never go
+wrong of just using TRL because that's
+
+1336
+00:25:33,430 --> 00:25:33,440
+wrong of just using TRL because that's
+ 
+
+1337
+00:25:33,440 --> 00:25:34,630
+wrong of just using TRL because that's
+what everything's built off of
+
+1338
+00:25:34,630 --> 00:25:34,640
+what everything's built off of
+ 
+
+1339
+00:25:34,640 --> 00:25:36,149
+what everything's built off of
+underneath the hood. It's just very low
+
+1340
+00:25:36,149 --> 00:25:36,159
+underneath the hood. It's just very low
+ 
+
+1341
+00:25:36,159 --> 00:25:36,789
+underneath the hood. It's just very low
+level.
+
+1342
+00:25:36,789 --> 00:25:36,799
+level.
+ 
+
+1343
+00:25:36,799 --> 00:25:40,149
+level.
+>> I want to do some post training. I'm
+
+1344
+00:25:40,149 --> 00:25:40,159
+>> I want to do some post training. I'm
+ 
+
+1345
+00:25:40,159 --> 00:25:41,669
+>> I want to do some post training. I'm
+trying to figure out which is a better
+
+1346
+00:25:41,669 --> 00:25:41,679
+trying to figure out which is a better
+ 
+
+1347
+00:25:41,679 --> 00:25:43,990
+trying to figure out which is a better
+option from a hardware perspective.
+
+1348
+00:25:43,990 --> 00:25:44,000
+option from a hardware perspective.
+ 
+
+1349
+00:25:44,000 --> 00:25:48,070
+option from a hardware perspective.
+Compute, how much compute is needed?
+
+1350
+00:25:48,070 --> 00:25:48,080
+Compute, how much compute is needed?
+ 
+
+1351
+00:25:48,080 --> 00:25:48,470
+Compute, how much compute is needed?
+>> Okay.
+
+1352
+00:25:48,470 --> 00:25:48,480
+>> Okay.
+ 
+
+1353
+00:25:48,480 --> 00:25:51,029
+>> Okay.
+>> Yeah. Um yeah on I mean on hardware it
+
+1354
+00:25:51,029 --> 00:25:51,039
+>> Yeah. Um yeah on I mean on hardware it
+ 
+
+1355
+00:25:51,039 --> 00:25:52,630
+>> Yeah. Um yeah on I mean on hardware it
+you work backwards from the model you
+
+1356
+00:25:52,630 --> 00:25:52,640
+you work backwards from the model you
+ 
+
+1357
+00:25:52,640 --> 00:25:54,870
+you work backwards from the model you
+have and the and the RL environment you
+
+1358
+00:25:54,870 --> 00:25:54,880
+have and the and the RL environment you
+ 
+
+1359
+00:25:54,880 --> 00:25:59,350
+have and the and the RL environment you
+have to run your experiments in terms of
+
+1360
+00:25:59,350 --> 00:25:59,360
+have to run your experiments in terms of
+ 
+
+1361
+00:25:59,360 --> 00:26:01,269
+have to run your experiments in terms of
+framework to use like unsloaf does not
+
+1362
+00:26:01,269 --> 00:26:01,279
+framework to use like unsloaf does not
+ 
+
+1363
+00:26:01,279 --> 00:26:04,470
+framework to use like unsloaf does not
+supporte post training neither does any
+
+1364
+00:26:04,470 --> 00:26:04,480
+supporte post training neither does any
+ 
+
+1365
+00:26:04,480 --> 00:26:06,390
+supporte post training neither does any
+of the others you mentioned TRL there's
+
+1366
+00:26:06,390 --> 00:26:06,400
+of the others you mentioned TRL there's
+ 
+
+1367
+00:26:06,400 --> 00:26:08,630
+of the others you mentioned TRL there's
+like open PRs because there's backend
+
+1368
+00:26:08,630 --> 00:26:08,640
+like open PRs because there's backend
+ 
+
+1369
+00:26:08,640 --> 00:26:10,789
+like open PRs because there's backend
+issues in VLM so it's not really a
+
+1370
+00:26:10,789 --> 00:26:10,799
+issues in VLM so it's not really a
+ 
+
+1371
+00:26:10,799 --> 00:26:13,110
+issues in VLM so it's not really a
+solved problem to my knowledge as of
+
+1372
+00:26:13,110 --> 00:26:13,120
+solved problem to my knowledge as of
+ 
+
+1373
+00:26:13,120 --> 00:26:15,510
+solved problem to my knowledge as of
+right now specific toes
+
+1374
+00:26:15,510 --> 00:26:15,520
+right now specific toes
+ 
+
+1375
+00:26:15,520 --> 00:26:18,549
+right now specific toes
+>> okay thank
+
+1376
+00:26:18,549 --> 00:26:18,559
+
+ 
+
+1377
+00:26:18,559 --> 00:26:22,200
+
+Thanks a lot, Aaron.
+

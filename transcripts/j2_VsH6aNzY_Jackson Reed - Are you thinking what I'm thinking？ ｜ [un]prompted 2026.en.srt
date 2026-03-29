@@ -1,0 +1,1265 @@
+1
+00:00:05,680 --> 00:00:07,990
+
+All right, thanks folks. Appreciate the
+
+2
+00:00:07,990 --> 00:00:08,000
+All right, thanks folks. Appreciate the
+ 
+
+3
+00:00:08,000 --> 00:00:10,709
+All right, thanks folks. Appreciate the
+time. So, I'm calling this talk, are you
+
+4
+00:00:10,709 --> 00:00:10,719
+time. So, I'm calling this talk, are you
+ 
+
+5
+00:00:10,719 --> 00:00:12,310
+time. So, I'm calling this talk, are you
+thinking what I'm thinking? Because you
+
+6
+00:00:12,310 --> 00:00:12,320
+thinking what I'm thinking? Because you
+ 
+
+7
+00:00:12,320 --> 00:00:14,789
+thinking what I'm thinking? Because you
+can actually force models to think more
+
+8
+00:00:14,789 --> 00:00:14,799
+can actually force models to think more
+ 
+
+9
+00:00:14,799 --> 00:00:16,470
+can actually force models to think more
+or less what you want them to think.
+
+10
+00:00:16,470 --> 00:00:16,480
+or less what you want them to think.
+ 
+
+11
+00:00:16,480 --> 00:00:18,870
+or less what you want them to think.
+Models continue to grow in their
+
+12
+00:00:18,870 --> 00:00:18,880
+Models continue to grow in their
+ 
+
+13
+00:00:18,880 --> 00:00:20,550
+Models continue to grow in their
+capabilities, which is very cool. We
+
+14
+00:00:20,550 --> 00:00:20,560
+capabilities, which is very cool. We
+ 
+
+15
+00:00:20,560 --> 00:00:22,470
+capabilities, which is very cool. We
+have these reasoning models now that
+
+16
+00:00:22,470 --> 00:00:22,480
+have these reasoning models now that
+ 
+
+17
+00:00:22,480 --> 00:00:24,630
+have these reasoning models now that
+emit these special thinking blocks, both
+
+18
+00:00:24,630 --> 00:00:24,640
+emit these special thinking blocks, both
+ 
+
+19
+00:00:24,640 --> 00:00:27,269
+emit these special thinking blocks, both
+in anthropic and open AI. they release a
+
+20
+00:00:27,269 --> 00:00:27,279
+in anthropic and open AI. they release a
+ 
+
+21
+00:00:27,279 --> 00:00:29,349
+in anthropic and open AI. they release a
+block of specific thinking tokens and
+
+22
+00:00:29,349 --> 00:00:29,359
+block of specific thinking tokens and
+ 
+
+23
+00:00:29,359 --> 00:00:31,189
+block of specific thinking tokens and
+that enriches the context of the prompt
+
+24
+00:00:31,189 --> 00:00:31,199
+that enriches the context of the prompt
+ 
+
+25
+00:00:31,199 --> 00:00:32,549
+that enriches the context of the prompt
+you've actually given the model and so
+
+26
+00:00:32,549 --> 00:00:32,559
+you've actually given the model and so
+ 
+
+27
+00:00:32,559 --> 00:00:33,910
+you've actually given the model and so
+the model can provide a much better
+
+28
+00:00:33,910 --> 00:00:33,920
+the model can provide a much better
+ 
+
+29
+00:00:33,920 --> 00:00:35,830
+the model can provide a much better
+response to you which is really cool and
+
+30
+00:00:35,830 --> 00:00:35,840
+response to you which is really cool and
+ 
+
+31
+00:00:35,840 --> 00:00:37,350
+response to you which is really cool and
+because it's really important that it's
+
+32
+00:00:37,350 --> 00:00:37,360
+because it's really important that it's
+ 
+
+33
+00:00:37,360 --> 00:00:38,630
+because it's really important that it's
+you know the model's thoughts that
+
+34
+00:00:38,630 --> 00:00:38,640
+you know the model's thoughts that
+ 
+
+35
+00:00:38,640 --> 00:00:40,229
+you know the model's thoughts that
+enriches its context and provides its
+
+36
+00:00:40,229 --> 00:00:40,239
+enriches its context and provides its
+ 
+
+37
+00:00:40,239 --> 00:00:42,069
+enriches its context and provides its
+answer this is cryptographically
+
+38
+00:00:42,069 --> 00:00:42,079
+answer this is cryptographically
+ 
+
+39
+00:00:42,079 --> 00:00:44,389
+answer this is cryptographically
+protected by model providers Gemini has
+
+40
+00:00:44,389 --> 00:00:44,399
+protected by model providers Gemini has
+ 
+
+41
+00:00:44,399 --> 00:00:46,549
+protected by model providers Gemini has
+their own approach anthropic and openai
+
+42
+00:00:46,549 --> 00:00:46,559
+their own approach anthropic and openai
+ 
+
+43
+00:00:46,559 --> 00:00:47,910
+their own approach anthropic and openai
+have sort of a similar approach they
+
+44
+00:00:47,910 --> 00:00:47,920
+have sort of a similar approach they
+ 
+
+45
+00:00:47,920 --> 00:00:49,990
+have sort of a similar approach they
+both take which is that they provide
+
+46
+00:00:49,990 --> 00:00:50,000
+both take which is that they provide
+ 
+
+47
+00:00:50,000 --> 00:00:53,350
+both take which is that they provide
+either the block as an encrypted blob or
+
+48
+00:00:53,350 --> 00:00:53,360
+either the block as an encrypted blob or
+ 
+
+49
+00:00:53,360 --> 00:00:55,510
+either the block as an encrypted blob or
+they provide like a hash an HMAC
+
+50
+00:00:55,510 --> 00:00:55,520
+they provide like a hash an HMAC
+ 
+
+51
+00:00:55,520 --> 00:00:57,750
+they provide like a hash an HMAC
+signature for the block. So you can try
+
+52
+00:00:57,750 --> 00:00:57,760
+signature for the block. So you can try
+ 
+
+53
+00:00:57,760 --> 00:01:00,310
+signature for the block. So you can try
+to tamper but the API will say no no no
+
+54
+00:01:00,310 --> 00:01:00,320
+to tamper but the API will say no no no
+ 
+
+55
+00:01:00,320 --> 00:01:02,150
+to tamper but the API will say no no no
+this is not a valid message. So we'll
+
+56
+00:01:02,150 --> 00:01:02,160
+this is not a valid message. So we'll
+ 
+
+57
+00:01:02,160 --> 00:01:03,750
+this is not a valid message. So we'll
+try now I'm going to send a message to
+
+58
+00:01:03,750 --> 00:01:03,760
+try now I'm going to send a message to
+ 
+
+59
+00:01:03,760 --> 00:01:05,109
+try now I'm going to send a message to
+Haiku just asking what's the capital of
+
+60
+00:01:05,109 --> 00:01:05,119
+Haiku just asking what's the capital of
+ 
+
+61
+00:01:05,119 --> 00:01:07,590
+Haiku just asking what's the capital of
+the eel def France region. we get back a
+
+62
+00:01:07,590 --> 00:01:07,600
+the eel def France region. we get back a
+ 
+
+63
+00:01:07,600 --> 00:01:09,350
+the eel def France region. we get back a
+response and you can see here the little
+
+64
+00:01:09,350 --> 00:01:09,360
+response and you can see here the little
+ 
+
+65
+00:01:09,360 --> 00:01:11,109
+response and you can see here the little
+reasoning blocks and if I follow up and
+
+66
+00:01:11,109 --> 00:01:11,119
+reasoning blocks and if I follow up and
+ 
+
+67
+00:01:11,119 --> 00:01:15,350
+reasoning blocks and if I follow up and
+just say tell me more
+
+68
+00:01:15,350 --> 00:01:15,360
+just say tell me more
+ 
+
+69
+00:01:15,360 --> 00:01:18,070
+just say tell me more
+and now we look at the raw message you
+
+70
+00:01:18,070 --> 00:01:18,080
+and now we look at the raw message you
+ 
+
+71
+00:01:18,080 --> 00:01:20,230
+and now we look at the raw message you
+can actually see
+
+72
+00:01:20,230 --> 00:01:20,240
+can actually see
+ 
+
+73
+00:01:20,240 --> 00:01:22,149
+can actually see
+here's the reasoning block itself and
+
+74
+00:01:22,149 --> 00:01:22,159
+here's the reasoning block itself and
+ 
+
+75
+00:01:22,159 --> 00:01:24,870
+here's the reasoning block itself and
+the encrypted signature from or the
+
+76
+00:01:24,870 --> 00:01:24,880
+the encrypted signature from or the
+ 
+
+77
+00:01:24,880 --> 00:01:27,510
+the encrypted signature from or the
+crypto signature from anthropic can you
+
+78
+00:01:27,510 --> 00:01:27,520
+crypto signature from anthropic can you
+ 
+
+79
+00:01:27,520 --> 00:01:28,870
+crypto signature from anthropic can you
+guys see this you got like the plain
+
+80
+00:01:28,870 --> 00:01:28,880
+guys see this you got like the plain
+ 
+
+81
+00:01:28,880 --> 00:01:29,910
+guys see this you got like the plain
+text thinking and then you got this
+
+82
+00:01:29,910 --> 00:01:29,920
+text thinking and then you got this
+ 
+
+83
+00:01:29,920 --> 00:01:31,990
+text thinking and then you got this
+signature and you can't you can't tamper
+
+84
+00:01:31,990 --> 00:01:32,000
+signature and you can't you can't tamper
+ 
+
+85
+00:01:32,000 --> 00:01:33,910
+signature and you can't you can't tamper
+with that because it fails a crypto
+
+86
+00:01:33,910 --> 00:01:33,920
+with that because it fails a crypto
+ 
+
+87
+00:01:33,920 --> 00:01:36,789
+with that because it fails a crypto
+check and it doesn't work but All that
+
+88
+00:01:36,789 --> 00:01:36,799
+check and it doesn't work but All that
+ 
+
+89
+00:01:36,799 --> 00:01:39,830
+check and it doesn't work but All that
+openai ananthropic check is did a model
+
+90
+00:01:39,830 --> 00:01:39,840
+openai ananthropic check is did a model
+ 
+
+91
+00:01:39,840 --> 00:01:43,590
+openai ananthropic check is did a model
+from our provider actually think this
+
+92
+00:01:43,590 --> 00:01:43,600
+from our provider actually think this
+ 
+
+93
+00:01:43,600 --> 00:01:45,990
+from our provider actually think this
+ever and you can actually replay not
+
+94
+00:01:45,990 --> 00:01:46,000
+ever and you can actually replay not
+ 
+
+95
+00:01:46,000 --> 00:01:47,910
+ever and you can actually replay not
+just across conversations but even
+
+96
+00:01:47,910 --> 00:01:47,920
+just across conversations but even
+ 
+
+97
+00:01:47,920 --> 00:01:49,590
+just across conversations but even
+across API keys for some of the
+
+98
+00:01:49,590 --> 00:01:49,600
+across API keys for some of the
+ 
+
+99
+00:01:49,600 --> 00:01:51,510
+across API keys for some of the
+providers. So we'll look now we're going
+
+100
+00:01:51,510 --> 00:01:51,520
+providers. So we'll look now we're going
+ 
+
+101
+00:01:51,520 --> 00:01:53,429
+providers. So we'll look now we're going
+to inject reasoning in. So I'm going to
+
+102
+00:01:53,429 --> 00:01:53,439
+to inject reasoning in. So I'm going to
+ 
+
+103
+00:01:53,439 --> 00:01:55,030
+to inject reasoning in. So I'm going to
+duplicate and edit. Instead of asking
+
+104
+00:01:55,030 --> 00:01:55,040
+duplicate and edit. Instead of asking
+ 
+
+105
+00:01:55,040 --> 00:01:56,389
+duplicate and edit. Instead of asking
+about yield def France I'm going to ask
+
+106
+00:01:56,389 --> 00:01:56,399
+about yield def France I'm going to ask
+ 
+
+107
+00:01:56,399 --> 00:01:58,789
+about yield def France I'm going to ask
+about a region I can't pronounce. We're
+
+108
+00:01:58,789 --> 00:01:58,799
+about a region I can't pronounce. We're
+ 
+
+109
+00:01:58,799 --> 00:02:01,510
+about a region I can't pronounce. We're
+going to use opus and we will send this
+
+110
+00:02:01,510 --> 00:02:01,520
+going to use opus and we will send this
+ 
+
+111
+00:02:01,520 --> 00:02:03,590
+going to use opus and we will send this
+message.
+
+112
+00:02:03,590 --> 00:02:03,600
+message.
+ 
+
+113
+00:02:03,600 --> 00:02:05,830
+message.
+And now we get a new response of Tulus
+
+114
+00:02:05,830 --> 00:02:05,840
+And now we get a new response of Tulus
+ 
+
+115
+00:02:05,840 --> 00:02:08,469
+And now we get a new response of Tulus
+is the capital of the Elsateni region,
+
+116
+00:02:08,469 --> 00:02:08,479
+is the capital of the Elsateni region,
+ 
+
+117
+00:02:08,479 --> 00:02:10,150
+is the capital of the Elsateni region,
+which is of course correct. What we're
+
+118
+00:02:10,150 --> 00:02:10,160
+which is of course correct. What we're
+ 
+
+119
+00:02:10,160 --> 00:02:11,670
+which is of course correct. What we're
+now going to do is we're going to steal
+
+120
+00:02:11,670 --> 00:02:11,680
+now going to do is we're going to steal
+ 
+
+121
+00:02:11,680 --> 00:02:13,589
+now going to do is we're going to steal
+the reasoning block from the question
+
+122
+00:02:13,589 --> 00:02:13,599
+the reasoning block from the question
+ 
+
+123
+00:02:13,599 --> 00:02:17,190
+the reasoning block from the question
+about Paris. So we'll copy this
+
+124
+00:02:17,190 --> 00:02:17,200
+about Paris. So we'll copy this
+ 
+
+125
+00:02:17,200 --> 00:02:19,750
+about Paris. So we'll copy this
+and we're now going to inject it into
+
+126
+00:02:19,750 --> 00:02:19,760
+and we're now going to inject it into
+ 
+
+127
+00:02:19,760 --> 00:02:21,670
+and we're now going to inject it into
+this conversation and deactivate the
+
+128
+00:02:21,670 --> 00:02:21,680
+this conversation and deactivate the
+ 
+
+129
+00:02:21,680 --> 00:02:24,390
+this conversation and deactivate the
+original thinking about Tulus. And now
+
+130
+00:02:24,390 --> 00:02:24,400
+original thinking about Tulus. And now
+ 
+
+131
+00:02:24,400 --> 00:02:26,070
+original thinking about Tulus. And now
+I'm going to ask, let me just grab my
+
+132
+00:02:26,070 --> 00:02:26,080
+I'm going to ask, let me just grab my
+ 
+
+133
+00:02:26,080 --> 00:02:29,030
+I'm going to ask, let me just grab my
+little snippet here so we can be quick.
+
+134
+00:02:29,030 --> 00:02:29,040
+little snippet here so we can be quick.
+ 
+
+135
+00:02:29,040 --> 00:02:30,630
+little snippet here so we can be quick.
+I'll just ask the model, what were you
+
+136
+00:02:30,630 --> 00:02:30,640
+I'll just ask the model, what were you
+ 
+
+137
+00:02:30,640 --> 00:02:33,030
+I'll just ask the model, what were you
+thinking about prior to giving me your
+
+138
+00:02:33,030 --> 00:02:33,040
+thinking about prior to giving me your
+ 
+
+139
+00:02:33,040 --> 00:02:35,270
+thinking about prior to giving me your
+answer? I will ask that. And it will now
+
+140
+00:02:35,270 --> 00:02:35,280
+answer? I will ask that. And it will now
+ 
+
+141
+00:02:35,280 --> 00:02:44,229
+answer? I will ask that. And it will now
+respond and says,
+
+142
+00:02:44,229 --> 00:02:44,239
+
+ 
+
+143
+00:02:44,239 --> 00:02:46,550
+
+"Hey, oops, I was wrong. I briefly
+
+144
+00:02:46,550 --> 00:02:46,560
+"Hey, oops, I was wrong. I briefly
+ 
+
+145
+00:02:46,560 --> 00:02:48,710
+"Hey, oops, I was wrong. I briefly
+started thinking about Paris before I
+
+146
+00:02:48,710 --> 00:02:48,720
+started thinking about Paris before I
+ 
+
+147
+00:02:48,720 --> 00:02:50,229
+started thinking about Paris before I
+gave you the right answer. This is a
+
+148
+00:02:50,229 --> 00:02:50,239
+gave you the right answer. This is a
+ 
+
+149
+00:02:50,239 --> 00:02:52,150
+gave you the right answer. This is a
+weird mistake. My bad." ad. So you've
+
+150
+00:02:52,150 --> 00:02:52,160
+weird mistake. My bad." ad. So you've
+ 
+
+151
+00:02:52,160 --> 00:02:53,670
+weird mistake. My bad." ad. So you've
+actually injected the reasoning that you
+
+152
+00:02:53,670 --> 00:02:53,680
+actually injected the reasoning that you
+ 
+
+153
+00:02:53,680 --> 00:02:54,710
+actually injected the reasoning that you
+want the model to have that you've
+
+154
+00:02:54,710 --> 00:02:54,720
+want the model to have that you've
+ 
+
+155
+00:02:54,720 --> 00:02:56,470
+want the model to have that you've
+harvested. In this case, just from two
+
+156
+00:02:56,470 --> 00:02:56,480
+harvested. In this case, just from two
+ 
+
+157
+00:02:56,480 --> 00:02:57,509
+harvested. In this case, just from two
+conversations, but you can have it
+
+158
+00:02:57,509 --> 00:02:57,519
+conversations, but you can have it
+ 
+
+159
+00:02:57,519 --> 00:02:59,110
+conversations, but you can have it
+across API keys for across different
+
+160
+00:02:59,110 --> 00:02:59,120
+across API keys for across different
+ 
+
+161
+00:02:59,120 --> 00:03:01,110
+across API keys for across different
+accounts you injected in. It's kind of
+
+162
+00:03:01,110 --> 00:03:01,120
+accounts you injected in. It's kind of
+ 
+
+163
+00:03:01,120 --> 00:03:02,630
+accounts you injected in. It's kind of
+cool with anthropic. I've set up my tool
+
+164
+00:03:02,630 --> 00:03:02,640
+cool with anthropic. I've set up my tool
+ 
+
+165
+00:03:02,640 --> 00:03:03,990
+cool with anthropic. I've set up my tool
+to work well with anthropic. I haven't
+
+166
+00:03:03,990 --> 00:03:04,000
+to work well with anthropic. I haven't
+ 
+
+167
+00:03:04,000 --> 00:03:06,070
+to work well with anthropic. I haven't
+yet set up the harness for OpenAI. The
+
+168
+00:03:06,070 --> 00:03:06,080
+yet set up the harness for OpenAI. The
+ 
+
+169
+00:03:06,080 --> 00:03:07,509
+yet set up the harness for OpenAI. The
+steering is actually more effective and
+
+170
+00:03:07,509 --> 00:03:07,519
+steering is actually more effective and
+ 
+
+171
+00:03:07,519 --> 00:03:09,270
+steering is actually more effective and
+more concerning from OpenAI than it is
+
+172
+00:03:09,270 --> 00:03:09,280
+more concerning from OpenAI than it is
+ 
+
+173
+00:03:09,280 --> 00:03:11,430
+more concerning from OpenAI than it is
+on Enthropic. Um, but this is a quick
+
+174
+00:03:11,430 --> 00:03:11,440
+on Enthropic. Um, but this is a quick
+ 
+
+175
+00:03:11,440 --> 00:03:13,030
+on Enthropic. Um, but this is a quick
+overview. Any questions on this at this
+
+176
+00:03:13,030 --> 00:03:13,040
+overview. Any questions on this at this
+ 
+
+177
+00:03:13,040 --> 00:03:17,830
+overview. Any questions on this at this
+point?
+
+178
+00:03:17,830 --> 00:03:17,840
+
+ 
+
+179
+00:03:17,840 --> 00:03:20,309
+
+>> All right.
+
+180
+00:03:20,309 --> 00:03:20,319
+>> All right.
+ 
+
+181
+00:03:20,319 --> 00:03:22,790
+>> All right.
+They don't
+
+182
+00:03:22,790 --> 00:03:22,800
+They don't
+ 
+
+183
+00:03:22,800 --> 00:03:24,949
+They don't
+conver
+
+184
+00:03:24,949 --> 00:03:24,959
+conver
+ 
+
+185
+00:03:24,959 --> 00:03:26,869
+conver
+>> do do you know why they don't pin the
+
+186
+00:03:26,869 --> 00:03:26,879
+>> do do you know why they don't pin the
+ 
+
+187
+00:03:26,879 --> 00:03:29,030
+>> do do you know why they don't pin the
+thought to the conversation and let you
+
+188
+00:03:29,030 --> 00:03:29,040
+thought to the conversation and let you
+ 
+
+189
+00:03:29,040 --> 00:03:31,990
+thought to the conversation and let you
+>> I don't know. I will tell you my views
+
+190
+00:03:31,990 --> 00:03:32,000
+>> I don't know. I will tell you my views
+ 
+
+191
+00:03:32,000 --> 00:03:34,229
+>> I don't know. I will tell you my views
+and apologies to OpenAI or anthropic if
+
+192
+00:03:34,229 --> 00:03:34,239
+and apologies to OpenAI or anthropic if
+ 
+
+193
+00:03:34,239 --> 00:03:36,309
+and apologies to OpenAI or anthropic if
+I am wrong. Um I'm going to release a
+
+194
+00:03:36,309 --> 00:03:36,319
+I am wrong. Um I'm going to release a
+ 
+
+195
+00:03:36,319 --> 00:03:38,949
+I am wrong. Um I'm going to release a
+blog post on this uh in the next week.
+
+196
+00:03:38,949 --> 00:03:38,959
+blog post on this uh in the next week.
+ 
+
+197
+00:03:38,959 --> 00:03:41,270
+blog post on this uh in the next week.
+My interpretation of this is I think it
+
+198
+00:03:41,270 --> 00:03:41,280
+My interpretation of this is I think it
+ 
+
+199
+00:03:41,280 --> 00:03:42,470
+My interpretation of this is I think it
+was just like kind of missed in threat
+
+200
+00:03:42,470 --> 00:03:42,480
+was just like kind of missed in threat
+ 
+
+201
+00:03:42,480 --> 00:03:44,949
+was just like kind of missed in threat
+modeling. OpenAI, Anthropic and Gemini
+
+202
+00:03:44,949 --> 00:03:44,959
+modeling. OpenAI, Anthropic and Gemini
+ 
+
+203
+00:03:44,959 --> 00:03:46,710
+modeling. OpenAI, Anthropic and Gemini
+none of them really lock to context.
+
+204
+00:03:46,710 --> 00:03:46,720
+none of them really lock to context.
+ 
+
+205
+00:03:46,720 --> 00:03:48,390
+none of them really lock to context.
+Gemini has sort of like incidentally
+
+206
+00:03:48,390 --> 00:03:48,400
+Gemini has sort of like incidentally
+ 
+
+207
+00:03:48,400 --> 00:03:49,670
+Gemini has sort of like incidentally
+fixed this because the way that they
+
+208
+00:03:49,670 --> 00:03:49,680
+fixed this because the way that they
+ 
+
+209
+00:03:49,680 --> 00:03:51,589
+fixed this because the way that they
+manage the signatures it's like a
+
+210
+00:03:51,589 --> 00:03:51,599
+manage the signatures it's like a
+ 
+
+211
+00:03:51,599 --> 00:03:53,190
+manage the signatures it's like a
+completely different approach from open
+
+212
+00:03:53,190 --> 00:03:53,200
+completely different approach from open
+ 
+
+213
+00:03:53,200 --> 00:03:55,430
+completely different approach from open
+ananthropic but I think both of them the
+
+214
+00:03:55,430 --> 00:03:55,440
+ananthropic but I think both of them the
+ 
+
+215
+00:03:55,440 --> 00:03:56,550
+ananthropic but I think both of them the
+focus was just like we need to make sure
+
+216
+00:03:56,550 --> 00:03:56,560
+focus was just like we need to make sure
+ 
+
+217
+00:03:56,560 --> 00:03:58,710
+focus was just like we need to make sure
+that this is verified is from the model
+
+218
+00:03:58,710 --> 00:03:58,720
+that this is verified is from the model
+ 
+
+219
+00:03:58,720 --> 00:04:00,390
+that this is verified is from the model
+and they didn't actually lock it to
+
+220
+00:04:00,390 --> 00:04:00,400
+and they didn't actually lock it to
+ 
+
+221
+00:04:00,400 --> 00:04:02,470
+and they didn't actually lock it to
+something more than merely did this come
+
+222
+00:04:02,470 --> 00:04:02,480
+something more than merely did this come
+ 
+
+223
+00:04:02,480 --> 00:04:04,550
+something more than merely did this come
+from our provider. That's my theory. I
+
+224
+00:04:04,550 --> 00:04:04,560
+from our provider. That's my theory. I
+ 
+
+225
+00:04:04,560 --> 00:04:07,030
+from our provider. That's my theory. I
+don't know. Um but I I would guess it's
+
+226
+00:04:07,030 --> 00:04:07,040
+don't know. Um but I I would guess it's
+ 
+
+227
+00:04:07,040 --> 00:04:08,390
+don't know. Um but I I would guess it's
+simply that they like put in the check
+
+228
+00:04:08,390 --> 00:04:08,400
+simply that they like put in the check
+ 
+
+229
+00:04:08,400 --> 00:04:09,830
+simply that they like put in the check
+and then didn't do more. It might have
+
+230
+00:04:09,830 --> 00:04:09,840
+and then didn't do more. It might have
+ 
+
+231
+00:04:09,840 --> 00:04:11,190
+and then didn't do more. It might have
+even never been a security control at
+
+232
+00:04:11,190 --> 00:04:11,200
+even never been a security control at
+ 
+
+233
+00:04:11,200 --> 00:04:13,110
+even never been a security control at
+all. It might have just been like a we
+
+234
+00:04:13,110 --> 00:04:13,120
+all. It might have just been like a we
+ 
+
+235
+00:04:13,120 --> 00:04:15,350
+all. It might have just been like a we
+want to prevent sort of like if a
+
+236
+00:04:15,350 --> 00:04:15,360
+want to prevent sort of like if a
+ 
+
+237
+00:04:15,360 --> 00:04:16,949
+want to prevent sort of like if a
+reasoning block is malformed, we want to
+
+238
+00:04:16,949 --> 00:04:16,959
+reasoning block is malformed, we want to
+ 
+
+239
+00:04:16,959 --> 00:04:18,229
+reasoning block is malformed, we want to
+prevent it from totally dorking the
+
+240
+00:04:18,229 --> 00:04:18,239
+prevent it from totally dorking the
+ 
+
+241
+00:04:18,239 --> 00:04:21,189
+prevent it from totally dorking the
+model. I don't know, but it's my my
+
+242
+00:04:21,189 --> 00:04:21,199
+model. I don't know, but it's my my
+ 
+
+243
+00:04:21,199 --> 00:04:22,230
+model. I don't know, but it's my my
+assessment.
+
+244
+00:04:22,230 --> 00:04:22,240
+assessment.
+ 
+
+245
+00:04:22,240 --> 00:04:22,550
+assessment.
+>> Thanks.
+
+246
+00:04:22,550 --> 00:04:22,560
+>> Thanks.
+ 
+
+247
+00:04:22,560 --> 00:04:24,790
+>> Thanks.
+>> Any other questions?
+
+248
+00:04:24,790 --> 00:04:24,800
+>> Any other questions?
+ 
+
+249
+00:04:24,800 --> 00:04:25,110
+>> Any other questions?
+Yeah.
+
+250
+00:04:25,110 --> 00:04:25,120
+Yeah.
+ 
+
+251
+00:04:25,120 --> 00:04:30,230
+Yeah.
+>> Raise your hand if you got a question.
+
+252
+00:04:30,230 --> 00:04:30,240
+
+ 
+
+253
+00:04:30,240 --> 00:04:33,960
+
+>> All right. Thanks, Jackson.
+

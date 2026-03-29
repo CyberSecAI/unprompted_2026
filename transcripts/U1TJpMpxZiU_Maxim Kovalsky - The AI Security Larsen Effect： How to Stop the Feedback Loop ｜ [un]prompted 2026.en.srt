@@ -1,0 +1,4955 @@
+1
+00:00:05,920 --> 00:00:08,310
+
+Hey, that was a good talk, man. Hey,
+
+2
+00:00:08,310 --> 00:00:08,320
+Hey, that was a good talk, man. Hey,
+ 
+
+3
+00:00:08,320 --> 00:00:09,990
+Hey, that was a good talk, man. Hey,
+Gotti.
+
+4
+00:00:09,990 --> 00:00:10,000
+Gotti.
+ 
+
+5
+00:00:10,000 --> 00:00:12,230
+Gotti.
+Uh um I think I'm probably going to take
+
+6
+00:00:12,230 --> 00:00:12,240
+Uh um I think I'm probably going to take
+ 
+
+7
+00:00:12,240 --> 00:00:15,030
+Uh um I think I'm probably going to take
+this a couple of layers down. Uh but
+
+8
+00:00:15,030 --> 00:00:15,040
+this a couple of layers down. Uh but
+ 
+
+9
+00:00:15,040 --> 00:00:17,670
+this a couple of layers down. Uh but
+that's all right. Uh so, uh my name is
+
+10
+00:00:17,670 --> 00:00:17,680
+that's all right. Uh so, uh my name is
+ 
+
+11
+00:00:17,680 --> 00:00:20,950
+that's all right. Uh so, uh my name is
+Max. I work for consortium. Uh we are a
+
+12
+00:00:20,950 --> 00:00:20,960
+Max. I work for consortium. Uh we are a
+ 
+
+13
+00:00:20,960 --> 00:00:24,390
+Max. I work for consortium. Uh we are a
+VAR. So, um this is my announcement.
+
+14
+00:00:24,390 --> 00:00:24,400
+VAR. So, um this is my announcement.
+ 
+
+15
+00:00:24,400 --> 00:00:26,710
+VAR. So, um this is my announcement.
+Ivar. I'm new to the VAR space. I
+
+16
+00:00:26,710 --> 00:00:26,720
+Ivar. I'm new to the VAR space. I
+ 
+
+17
+00:00:26,720 --> 00:00:29,189
+Ivar. I'm new to the VAR space. I
+started my career in uh the federal
+
+18
+00:00:29,189 --> 00:00:29,199
+started my career in uh the federal
+ 
+
+19
+00:00:29,199 --> 00:00:31,269
+started my career in uh the federal
+intelligence community doing cyber crime
+
+20
+00:00:31,269 --> 00:00:31,279
+intelligence community doing cyber crime
+ 
+
+21
+00:00:31,279 --> 00:00:33,190
+intelligence community doing cyber crime
+investigations. I've been with early
+
+22
+00:00:33,190 --> 00:00:33,200
+investigations. I've been with early
+ 
+
+23
+00:00:33,200 --> 00:00:37,910
+investigations. I've been with early
+stage startups in cyber. I been big four
+
+24
+00:00:37,910 --> 00:00:37,920
+stage startups in cyber. I been big four
+ 
+
+25
+00:00:37,920 --> 00:00:40,310
+stage startups in cyber. I been big four
+um held a few industry roles
+
+26
+00:00:40,310 --> 00:00:40,320
+um held a few industry roles
+ 
+
+27
+00:00:40,320 --> 00:00:43,830
+um held a few industry roles
+practitioner uh and on leadership teams
+
+28
+00:00:43,830 --> 00:00:43,840
+practitioner uh and on leadership teams
+ 
+
+29
+00:00:43,840 --> 00:00:48,310
+practitioner uh and on leadership teams
+in industry and I've been varring for
+
+30
+00:00:48,310 --> 00:00:48,320
+in industry and I've been varring for
+ 
+
+31
+00:00:48,320 --> 00:00:52,150
+in industry and I've been varring for
+the last five six months or so. Um so uh
+
+32
+00:00:52,150 --> 00:00:52,160
+the last five six months or so. Um so uh
+ 
+
+33
+00:00:52,160 --> 00:00:54,630
+the last five six months or so. Um so uh
+one of the things that I focus in in my
+
+34
+00:00:54,630 --> 00:00:54,640
+one of the things that I focus in in my
+ 
+
+35
+00:00:54,640 --> 00:00:57,590
+one of the things that I focus in in my
+dayto-day is um you know it's the
+
+36
+00:00:57,590 --> 00:00:57,600
+dayto-day is um you know it's the
+ 
+
+37
+00:00:57,600 --> 00:00:59,590
+dayto-day is um you know it's the
+classic matchmaking.
+
+38
+00:00:59,590 --> 00:00:59,600
+classic matchmaking.
+ 
+
+39
+00:00:59,600 --> 00:01:02,310
+classic matchmaking.
+Um our clients come to us with problems
+
+40
+00:01:02,310 --> 00:01:02,320
+Um our clients come to us with problems
+ 
+
+41
+00:01:02,320 --> 00:01:03,910
+Um our clients come to us with problems
+and we try to identify the right
+
+42
+00:01:03,910 --> 00:01:03,920
+and we try to identify the right
+ 
+
+43
+00:01:03,920 --> 00:01:06,390
+and we try to identify the right
+solutions in the marketplace for them.
+
+44
+00:01:06,390 --> 00:01:06,400
+solutions in the marketplace for them.
+ 
+
+45
+00:01:06,400 --> 00:01:09,350
+solutions in the marketplace for them.
+Uh and I built a tool to help me and my
+
+46
+00:01:09,350 --> 00:01:09,360
+Uh and I built a tool to help me and my
+ 
+
+47
+00:01:09,360 --> 00:01:12,230
+Uh and I built a tool to help me and my
+team do this better um using some of the
+
+48
+00:01:12,230 --> 00:01:12,240
+team do this better um using some of the
+ 
+
+49
+00:01:12,240 --> 00:01:14,310
+team do this better um using some of the
+tools that we've been talking about. So
+
+50
+00:01:14,310 --> 00:01:14,320
+tools that we've been talking about. So
+ 
+
+51
+00:01:14,320 --> 00:01:16,630
+tools that we've been talking about. So
+um I'll introduce it and then I'll I'll
+
+52
+00:01:16,630 --> 00:01:16,640
+um I'll introduce it and then I'll I'll
+ 
+
+53
+00:01:16,640 --> 00:01:18,390
+um I'll introduce it and then I'll I'll
+show the uh the tool in action what that
+
+54
+00:01:18,390 --> 00:01:18,400
+show the uh the tool in action what that
+ 
+
+55
+00:01:18,400 --> 00:01:22,950
+show the uh the tool in action what that
+looks like. Uh, so what is my kind of
+
+56
+00:01:22,950 --> 00:01:22,960
+looks like. Uh, so what is my kind of
+ 
+
+57
+00:01:22,960 --> 00:01:24,550
+looks like. Uh, so what is my kind of
+regular day-to-day? What does that look
+
+58
+00:01:24,550 --> 00:01:24,560
+regular day-to-day? What does that look
+ 
+
+59
+00:01:24,560 --> 00:01:27,190
+regular day-to-day? What does that look
+like? Um, I get a call from a client.
+
+60
+00:01:27,190 --> 00:01:27,200
+like? Um, I get a call from a client.
+ 
+
+61
+00:01:27,200 --> 00:01:29,830
+like? Um, I get a call from a client.
+They say, "We need some AI security. We
+
+62
+00:01:29,830 --> 00:01:29,840
+They say, "We need some AI security. We
+ 
+
+63
+00:01:29,840 --> 00:01:33,190
+They say, "We need some AI security. We
+think, um, who do you recommend?" Well,
+
+64
+00:01:33,190 --> 00:01:33,200
+think, um, who do you recommend?" Well,
+ 
+
+65
+00:01:33,200 --> 00:01:35,510
+think, um, who do you recommend?" Well,
+hold on. Like, that's not enough
+
+66
+00:01:35,510 --> 00:01:35,520
+hold on. Like, that's not enough
+ 
+
+67
+00:01:35,520 --> 00:01:37,510
+hold on. Like, that's not enough
+information.
+
+68
+00:01:37,510 --> 00:01:37,520
+information.
+ 
+
+69
+00:01:37,520 --> 00:01:40,069
+information.
+What are your use cases?
+
+70
+00:01:40,069 --> 00:01:40,079
+What are your use cases?
+ 
+
+71
+00:01:40,079 --> 00:01:42,149
+What are your use cases?
+Um, like what what's your risk tolerance
+
+72
+00:01:42,149 --> 00:01:42,159
+Um, like what what's your risk tolerance
+ 
+
+73
+00:01:42,159 --> 00:01:43,670
+Um, like what what's your risk tolerance
+within the organization? are you
+
+74
+00:01:43,670 --> 00:01:43,680
+within the organization? are you
+ 
+
+75
+00:01:43,680 --> 00:01:46,950
+within the organization? are you
+concerned about uh having an incident or
+
+76
+00:01:46,950 --> 00:01:46,960
+concerned about uh having an incident or
+ 
+
+77
+00:01:46,960 --> 00:01:49,030
+concerned about uh having an incident or
+you're more concerned about filing that
+
+78
+00:01:49,030 --> 00:01:49,040
+you're more concerned about filing that
+ 
+
+79
+00:01:49,040 --> 00:01:50,870
+you're more concerned about filing that
+incident with the SEC cuz that tells me
+
+80
+00:01:50,870 --> 00:01:50,880
+incident with the SEC cuz that tells me
+ 
+
+81
+00:01:50,880 --> 00:01:52,950
+incident with the SEC cuz that tells me
+two different things.
+
+82
+00:01:52,950 --> 00:01:52,960
+two different things.
+ 
+
+83
+00:01:52,960 --> 00:01:56,149
+two different things.
+Uh and they go usually well but who's
+
+84
+00:01:56,149 --> 00:01:56,159
+Uh and they go usually well but who's
+ 
+
+85
+00:01:56,159 --> 00:01:58,389
+Uh and they go usually well but who's
+good? Just tell me who's good. Um you
+
+86
+00:01:58,389 --> 00:01:58,399
+good? Just tell me who's good. Um you
+ 
+
+87
+00:01:58,399 --> 00:02:01,670
+good? Just tell me who's good. Um you
+know um don't worry about it and hey man
+
+88
+00:02:01,670 --> 00:02:01,680
+know um don't worry about it and hey man
+ 
+
+89
+00:02:01,680 --> 00:02:03,670
+know um don't worry about it and hey man
+I'm not trying to be annoying. I'm just
+
+90
+00:02:03,670 --> 00:02:03,680
+I'm not trying to be annoying. I'm just
+ 
+
+91
+00:02:03,680 --> 00:02:06,149
+I'm not trying to be annoying. I'm just
+trying to bring you know VA back to the
+
+92
+00:02:06,149 --> 00:02:06,159
+trying to bring you know VA back to the
+ 
+
+93
+00:02:06,159 --> 00:02:09,190
+trying to bring you know VA back to the
+VAR. Um so assuming we have that
+
+94
+00:02:09,190 --> 00:02:09,200
+VAR. Um so assuming we have that
+ 
+
+95
+00:02:09,200 --> 00:02:10,710
+VAR. Um so assuming we have that
+conversation and we get a list of
+
+96
+00:02:10,710 --> 00:02:10,720
+conversation and we get a list of
+ 
+
+97
+00:02:10,720 --> 00:02:12,550
+conversation and we get a list of
+requirements and we understand what the
+
+98
+00:02:12,550 --> 00:02:12,560
+requirements and we understand what the
+ 
+
+99
+00:02:12,560 --> 00:02:14,229
+requirements and we understand what the
+use case and what the system is being
+
+100
+00:02:14,229 --> 00:02:14,239
+use case and what the system is being
+ 
+
+101
+00:02:14,239 --> 00:02:18,070
+use case and what the system is being
+built and what controls are required.
+
+102
+00:02:18,070 --> 00:02:18,080
+built and what controls are required.
+ 
+
+103
+00:02:18,080 --> 00:02:20,710
+built and what controls are required.
+Uh you know then we start the research.
+
+104
+00:02:20,710 --> 00:02:20,720
+Uh you know then we start the research.
+ 
+
+105
+00:02:20,720 --> 00:02:23,750
+Uh you know then we start the research.
+Um we go and we have some demos with AI
+
+106
+00:02:23,750 --> 00:02:23,760
+Um we go and we have some demos with AI
+ 
+
+107
+00:02:23,760 --> 00:02:26,390
+Um we go and we have some demos with AI
+security vendors.
+
+108
+00:02:26,390 --> 00:02:26,400
+security vendors.
+ 
+
+109
+00:02:26,400 --> 00:02:29,190
+security vendors.
+We read their marketing slicks. We look
+
+110
+00:02:29,190 --> 00:02:29,200
+We read their marketing slicks. We look
+ 
+
+111
+00:02:29,200 --> 00:02:31,270
+We read their marketing slicks. We look
+at their data sheets and we see things
+
+112
+00:02:31,270 --> 00:02:31,280
+at their data sheets and we see things
+ 
+
+113
+00:02:31,280 --> 00:02:33,190
+at their data sheets and we see things
+like this.
+
+114
+00:02:33,190 --> 00:02:33,200
+like this.
+ 
+
+115
+00:02:33,200 --> 00:02:36,790
+like this.
+Swarms of autonomous agents
+
+116
+00:02:36,790 --> 00:02:36,800
+Swarms of autonomous agents
+ 
+
+117
+00:02:36,800 --> 00:02:41,110
+Swarms of autonomous agents
+broadest and most comprehensive.
+
+118
+00:02:41,110 --> 00:02:41,120
+
+ 
+
+119
+00:02:41,120 --> 00:02:44,390
+
+That's a good one. 99% efficiency at sub
+
+120
+00:02:44,390 --> 00:02:44,400
+That's a good one. 99% efficiency at sub
+ 
+
+121
+00:02:44,400 --> 00:02:48,710
+That's a good one. 99% efficiency at sub
+30 millisecond latency.
+
+122
+00:02:48,710 --> 00:02:48,720
+
+ 
+
+123
+00:02:48,720 --> 00:02:51,190
+
+AI powered thread detection to
+
+124
+00:02:51,190 --> 00:02:51,200
+AI powered thread detection to
+ 
+
+125
+00:02:51,200 --> 00:02:55,670
+AI powered thread detection to
+automatically block all the adversaries.
+
+126
+00:02:55,670 --> 00:02:55,680
+automatically block all the adversaries.
+ 
+
+127
+00:02:55,680 --> 00:02:59,509
+automatically block all the adversaries.
+So that's like the the dayto-day reality
+
+128
+00:02:59,509 --> 00:02:59,519
+So that's like the the dayto-day reality
+ 
+
+129
+00:02:59,519 --> 00:03:01,430
+So that's like the the dayto-day reality
+of Avar.
+
+130
+00:03:01,430 --> 00:03:01,440
+of Avar.
+ 
+
+131
+00:03:01,440 --> 00:03:05,190
+of Avar.
+Um so what we needed to do is you know
+
+132
+00:03:05,190 --> 00:03:05,200
+Um so what we needed to do is you know
+ 
+
+133
+00:03:05,200 --> 00:03:07,110
+Um so what we needed to do is you know
+have a methodology where we could put
+
+134
+00:03:07,110 --> 00:03:07,120
+have a methodology where we could put
+ 
+
+135
+00:03:07,120 --> 00:03:09,190
+have a methodology where we could put
+those marketing claims and some of them
+
+136
+00:03:09,190 --> 00:03:09,200
+those marketing claims and some of them
+ 
+
+137
+00:03:09,200 --> 00:03:11,350
+those marketing claims and some of them
+may be legit some of them may be you
+
+138
+00:03:11,350 --> 00:03:11,360
+may be legit some of them may be you
+ 
+
+139
+00:03:11,360 --> 00:03:15,830
+may be legit some of them may be you
+know the u maybe simple simple PR and
+
+140
+00:03:15,830 --> 00:03:15,840
+know the u maybe simple simple PR and
+ 
+
+141
+00:03:15,840 --> 00:03:17,990
+know the u maybe simple simple PR and
+put it through some kind of a framework
+
+142
+00:03:17,990 --> 00:03:18,000
+put it through some kind of a framework
+ 
+
+143
+00:03:18,000 --> 00:03:19,430
+put it through some kind of a framework
+through some kind of an assessment
+
+144
+00:03:19,430 --> 00:03:19,440
+through some kind of an assessment
+ 
+
+145
+00:03:19,440 --> 00:03:21,350
+through some kind of an assessment
+thing. So that's where this thing really
+
+146
+00:03:21,350 --> 00:03:21,360
+thing. So that's where this thing really
+ 
+
+147
+00:03:21,360 --> 00:03:25,589
+thing. So that's where this thing really
+started. um you know we built um
+
+148
+00:03:25,589 --> 00:03:25,599
+started. um you know we built um
+ 
+
+149
+00:03:25,599 --> 00:03:29,670
+started. um you know we built um
+an agent and using clot code
+
+150
+00:03:29,670 --> 00:03:29,680
+an agent and using clot code
+ 
+
+151
+00:03:29,680 --> 00:03:36,070
+an agent and using clot code
+uh ous 4.5 we're at six now obviously um
+
+152
+00:03:36,070 --> 00:03:36,080
+uh ous 4.5 we're at six now obviously um
+ 
+
+153
+00:03:36,080 --> 00:03:37,990
+uh ous 4.5 we're at six now obviously um
+looking at all of those claims and try
+
+154
+00:03:37,990 --> 00:03:38,000
+looking at all of those claims and try
+ 
+
+155
+00:03:38,000 --> 00:03:41,509
+looking at all of those claims and try
+to you know find some substantiating
+
+156
+00:03:41,509 --> 00:03:41,519
+to you know find some substantiating
+ 
+
+157
+00:03:41,519 --> 00:03:44,470
+to you know find some substantiating
+evidence behind those claims so you know
+
+158
+00:03:44,470 --> 00:03:44,480
+evidence behind those claims so you know
+ 
+
+159
+00:03:44,480 --> 00:03:47,030
+evidence behind those claims so you know
+our clients can make good decisions but
+
+160
+00:03:47,030 --> 00:03:47,040
+our clients can make good decisions but
+ 
+
+161
+00:03:47,040 --> 00:03:49,670
+our clients can make good decisions but
+uh you know this started with over 2,000
+
+162
+00:03:49,670 --> 00:03:49,680
+uh you know this started with over 2,000
+ 
+
+163
+00:03:49,680 --> 00:03:51,509
+uh you know this started with over 2,000
+of those vendor claims that we needed to
+
+164
+00:03:51,509 --> 00:03:51,519
+of those vendor claims that we needed to
+ 
+
+165
+00:03:51,519 --> 00:03:54,789
+of those vendor claims that we needed to
+make sense of this was in December. I
+
+166
+00:03:54,789 --> 00:03:54,799
+make sense of this was in December. I
+ 
+
+167
+00:03:54,799 --> 00:03:59,350
+make sense of this was in December. I
+think we're all well over um 3,000. Um
+
+168
+00:03:59,350 --> 00:03:59,360
+think we're all well over um 3,000. Um
+ 
+
+169
+00:03:59,360 --> 00:04:02,630
+think we're all well over um 3,000. Um
+so when this proposal for the stock was
+
+170
+00:04:02,630 --> 00:04:02,640
+so when this proposal for the stock was
+ 
+
+171
+00:04:02,640 --> 00:04:06,390
+so when this proposal for the stock was
+submitted, uh we've analyzed 62 vendors.
+
+172
+00:04:06,390 --> 00:04:06,400
+submitted, uh we've analyzed 62 vendors.
+ 
+
+173
+00:04:06,400 --> 00:04:09,350
+submitted, uh we've analyzed 62 vendors.
+Now we're at nearly 80. Um so this is
+
+174
+00:04:09,350 --> 00:04:09,360
+Now we're at nearly 80. Um so this is
+ 
+
+175
+00:04:09,360 --> 00:04:11,750
+Now we're at nearly 80. Um so this is
+just 6 weeks later. Uh roughly, you
+
+176
+00:04:11,750 --> 00:04:11,760
+just 6 weeks later. Uh roughly, you
+ 
+
+177
+00:04:11,760 --> 00:04:13,670
+just 6 weeks later. Uh roughly, you
+know, there's four new startups that
+
+178
+00:04:13,670 --> 00:04:13,680
+know, there's four new startups that
+ 
+
+179
+00:04:13,680 --> 00:04:16,469
+know, there's four new startups that
+emerge out of stealth that claim to do
+
+180
+00:04:16,469 --> 00:04:16,479
+emerge out of stealth that claim to do
+ 
+
+181
+00:04:16,479 --> 00:04:19,670
+emerge out of stealth that claim to do
+AI security or existing cyber security
+
+182
+00:04:19,670 --> 00:04:19,680
+AI security or existing cyber security
+ 
+
+183
+00:04:19,680 --> 00:04:22,069
+AI security or existing cyber security
+vendors. bolt-on cyber AI security
+
+184
+00:04:22,069 --> 00:04:22,079
+vendors. bolt-on cyber AI security
+ 
+
+185
+00:04:22,079 --> 00:04:24,950
+vendors. bolt-on cyber AI security
+features. Um so between those uh you
+
+186
+00:04:24,950 --> 00:04:24,960
+features. Um so between those uh you
+ 
+
+187
+00:04:24,960 --> 00:04:26,550
+features. Um so between those uh you
+know it's roughly four new companies
+
+188
+00:04:26,550 --> 00:04:26,560
+know it's roughly four new companies
+ 
+
+189
+00:04:26,560 --> 00:04:31,189
+know it's roughly four new companies
+that get added to the database
+
+190
+00:04:31,189 --> 00:04:31,199
+
+ 
+
+191
+00:04:31,199 --> 00:04:33,830
+
+but assuming that we're able to
+
+192
+00:04:33,830 --> 00:04:33,840
+but assuming that we're able to
+ 
+
+193
+00:04:33,840 --> 00:04:35,830
+but assuming that we're able to
+translate that into something in some
+
+194
+00:04:35,830 --> 00:04:35,840
+translate that into something in some
+ 
+
+195
+00:04:35,840 --> 00:04:37,909
+translate that into something in some
+actionable recommendation
+
+196
+00:04:37,909 --> 00:04:37,919
+actionable recommendation
+ 
+
+197
+00:04:37,919 --> 00:04:40,710
+actionable recommendation
+you know still from the VA perspective
+
+198
+00:04:40,710 --> 00:04:40,720
+you know still from the VA perspective
+ 
+
+199
+00:04:40,720 --> 00:04:42,550
+you know still from the VA perspective
+the AI governance loop looks something
+
+200
+00:04:42,550 --> 00:04:42,560
+the AI governance loop looks something
+ 
+
+201
+00:04:42,560 --> 00:04:47,590
+the AI governance loop looks something
+like this we need AI security
+
+202
+00:04:47,590 --> 00:04:47,600
+like this we need AI security
+ 
+
+203
+00:04:47,600 --> 00:04:51,110
+like this we need AI security
+they get six vendor data sheets
+
+204
+00:04:51,110 --> 00:04:51,120
+they get six vendor data sheets
+ 
+
+205
+00:04:51,120 --> 00:04:52,870
+they get six vendor data sheets
+um given that there are some
+
+206
+00:04:52,870 --> 00:04:52,880
+um given that there are some
+ 
+
+207
+00:04:52,880 --> 00:04:54,150
+um given that there are some
+requirements that are known and there's
+
+208
+00:04:54,150 --> 00:04:54,160
+requirements that are known and there's
+ 
+
+209
+00:04:54,160 --> 00:04:55,670
+requirements that are known and there's
+some discovery that happened prior to
+
+210
+00:04:55,670 --> 00:04:55,680
+some discovery that happened prior to
+ 
+
+211
+00:04:55,680 --> 00:04:59,909
+some discovery that happened prior to
+that to uh the team kind of build some
+
+212
+00:04:59,909 --> 00:04:59,919
+that to uh the team kind of build some
+ 
+
+213
+00:04:59,919 --> 00:05:02,550
+that to uh the team kind of build some
+kind of a risk register using some
+
+214
+00:05:02,550 --> 00:05:02,560
+kind of a risk register using some
+ 
+
+215
+00:05:02,560 --> 00:05:05,270
+kind of a risk register using some
+variation of OASP NISP whatever other
+
+216
+00:05:05,270 --> 00:05:05,280
+variation of OASP NISP whatever other
+ 
+
+217
+00:05:05,280 --> 00:05:08,469
+variation of OASP NISP whatever other
+framework um not a ton out there on that
+
+218
+00:05:08,469 --> 00:05:08,479
+framework um not a ton out there on that
+ 
+
+219
+00:05:08,479 --> 00:05:10,550
+framework um not a ton out there on that
+focuses on AI security specifically so
+
+220
+00:05:10,550 --> 00:05:10,560
+focuses on AI security specifically so
+ 
+
+221
+00:05:10,560 --> 00:05:12,469
+focuses on AI security specifically so
+most teams are building this in-house
+
+222
+00:05:12,469 --> 00:05:12,479
+most teams are building this in-house
+ 
+
+223
+00:05:12,479 --> 00:05:15,029
+most teams are building this in-house
+using spreadsheets and kind of hand
+
+224
+00:05:15,029 --> 00:05:15,039
+using spreadsheets and kind of hand
+ 
+
+225
+00:05:15,039 --> 00:05:19,029
+using spreadsheets and kind of hand
+jamming it into their GRC tools
+
+226
+00:05:19,029 --> 00:05:19,039
+jamming it into their GRC tools
+ 
+
+227
+00:05:19,039 --> 00:05:21,749
+jamming it into their GRC tools
+four vendors get invited to demos and
+
+228
+00:05:21,749 --> 00:05:21,759
+four vendors get invited to demos and
+ 
+
+229
+00:05:21,759 --> 00:05:25,350
+four vendors get invited to demos and
+and two of them get a PC invite. PC's
+
+230
+00:05:25,350 --> 00:05:25,360
+and two of them get a PC invite. PC's
+ 
+
+231
+00:05:25,360 --> 00:05:27,189
+and two of them get a PC invite. PC's
+run in parallel. Usually there's not
+
+232
+00:05:27,189 --> 00:05:27,199
+run in parallel. Usually there's not
+ 
+
+233
+00:05:27,199 --> 00:05:30,790
+run in parallel. Usually there's not
+very clear eval criteria and then PC's
+
+234
+00:05:30,790 --> 00:05:30,800
+very clear eval criteria and then PC's
+ 
+
+235
+00:05:30,800 --> 00:05:33,830
+very clear eval criteria and then PC's
+get put on hold because
+
+236
+00:05:33,830 --> 00:05:33,840
+get put on hold because
+ 
+
+237
+00:05:33,840 --> 00:05:35,670
+get put on hold because
+we're building this thing in AWS's
+
+238
+00:05:35,670 --> 00:05:35,680
+we're building this thing in AWS's
+ 
+
+239
+00:05:35,680 --> 00:05:37,830
+we're building this thing in AWS's
+bedrock. Don't they have guard rails to
+
+240
+00:05:37,830 --> 00:05:37,840
+bedrock. Don't they have guard rails to
+ 
+
+241
+00:05:37,840 --> 00:05:39,749
+bedrock. Don't they have guard rails to
+do all of this stuff that we're
+
+242
+00:05:39,749 --> 00:05:39,759
+do all of this stuff that we're
+ 
+
+243
+00:05:39,759 --> 00:05:42,870
+do all of this stuff that we're
+evaluating the two vendors against?
+
+244
+00:05:42,870 --> 00:05:42,880
+evaluating the two vendors against?
+ 
+
+245
+00:05:42,880 --> 00:05:46,790
+evaluating the two vendors against?
+But wait, uh we have DLP.
+
+246
+00:05:46,790 --> 00:05:46,800
+But wait, uh we have DLP.
+ 
+
+247
+00:05:46,800 --> 00:05:48,070
+But wait, uh we have DLP.
+They're saying that they can do this.
+
+248
+00:05:48,070 --> 00:05:48,080
+They're saying that they can do this.
+ 
+
+249
+00:05:48,080 --> 00:05:50,230
+They're saying that they can do this.
+Can they do this?
+
+250
+00:05:50,230 --> 00:05:50,240
+Can they do this?
+ 
+
+251
+00:05:50,240 --> 00:05:52,070
+Can they do this?
+And no. By the way, there's a bunch of
+
+252
+00:05:52,070 --> 00:05:52,080
+And no. By the way, there's a bunch of
+ 
+
+253
+00:05:52,080 --> 00:05:53,749
+And no. By the way, there's a bunch of
+open source tools. So, why don't we just
+
+254
+00:05:53,749 --> 00:05:53,759
+open source tools. So, why don't we just
+ 
+
+255
+00:05:53,759 --> 00:05:57,110
+open source tools. So, why don't we just
+build this in house anyway?
+
+256
+00:05:57,110 --> 00:05:57,120
+build this in house anyway?
+ 
+
+257
+00:05:57,120 --> 00:05:59,670
+build this in house anyway?
+So, three months later, we need more
+
+258
+00:05:59,670 --> 00:05:59,680
+So, three months later, we need more
+ 
+
+259
+00:05:59,680 --> 00:06:01,749
+So, three months later, we need more
+time to assess.
+
+260
+00:06:01,749 --> 00:06:01,759
+time to assess.
+ 
+
+261
+00:06:01,759 --> 00:06:03,749
+time to assess.
+We go back to the beginning and in
+
+262
+00:06:03,749 --> 00:06:03,759
+We go back to the beginning and in
+ 
+
+263
+00:06:03,759 --> 00:06:05,830
+We go back to the beginning and in
+between, hey, really, we just we need to
+
+264
+00:06:05,830 --> 00:06:05,840
+between, hey, really, we just we need to
+ 
+
+265
+00:06:05,840 --> 00:06:08,150
+between, hey, really, we just we need to
+build an AI security strategy. So, let's
+
+266
+00:06:08,150 --> 00:06:08,160
+build an AI security strategy. So, let's
+ 
+
+267
+00:06:08,160 --> 00:06:11,029
+build an AI security strategy. So, let's
+bring in one of the big fours.
+
+268
+00:06:11,029 --> 00:06:11,039
+bring in one of the big fours.
+ 
+
+269
+00:06:11,039 --> 00:06:13,270
+bring in one of the big fours.
+Uh, and then, you know, we'll restart
+
+270
+00:06:13,270 --> 00:06:13,280
+Uh, and then, you know, we'll restart
+ 
+
+271
+00:06:13,280 --> 00:06:14,950
+Uh, and then, you know, we'll restart
+the process.
+
+272
+00:06:14,950 --> 00:06:14,960
+the process.
+ 
+
+273
+00:06:14,960 --> 00:06:17,670
+the process.
+And in the meantime, the customer
+
+274
+00:06:17,670 --> 00:06:17,680
+And in the meantime, the customer
+ 
+
+275
+00:06:17,680 --> 00:06:22,469
+And in the meantime, the customer
+chatbot is shipped.
+
+276
+00:06:22,469 --> 00:06:22,479
+
+ 
+
+277
+00:06:22,479 --> 00:06:24,309
+
+So quickly how I built this so I can
+
+278
+00:06:24,309 --> 00:06:24,319
+So quickly how I built this so I can
+ 
+
+279
+00:06:24,319 --> 00:06:26,550
+So quickly how I built this so I can
+actually get to the demo. Um already
+
+280
+00:06:26,550 --> 00:06:26,560
+actually get to the demo. Um already
+ 
+
+281
+00:06:26,560 --> 00:06:31,270
+actually get to the demo. Um already
+mentioned it in using cloud code. Uh
+
+282
+00:06:31,270 --> 00:06:31,280
+mentioned it in using cloud code. Uh
+ 
+
+283
+00:06:31,280 --> 00:06:34,950
+mentioned it in using cloud code. Uh
+it's an agentic loop um orchestrated um
+
+284
+00:06:34,950 --> 00:06:34,960
+it's an agentic loop um orchestrated um
+ 
+
+285
+00:06:34,960 --> 00:06:37,189
+it's an agentic loop um orchestrated um
+just within simply within cloud. There's
+
+286
+00:06:37,189 --> 00:06:37,199
+just within simply within cloud. There's
+ 
+
+287
+00:06:37,199 --> 00:06:40,950
+just within simply within cloud. There's
+an research agent and a QC agent. Uh
+
+288
+00:06:40,950 --> 00:06:40,960
+an research agent and a QC agent. Uh
+ 
+
+289
+00:06:40,960 --> 00:06:43,110
+an research agent and a QC agent. Uh
+bunch of system prompts and skills files
+
+290
+00:06:43,110 --> 00:06:43,120
+bunch of system prompts and skills files
+ 
+
+291
+00:06:43,120 --> 00:06:44,790
+bunch of system prompts and skills files
+that have been res refined over the last
+
+292
+00:06:44,790 --> 00:06:44,800
+that have been res refined over the last
+ 
+
+293
+00:06:44,800 --> 00:06:46,550
+that have been res refined over the last
+few months. But you know essentially
+
+294
+00:06:46,550 --> 00:06:46,560
+few months. But you know essentially
+ 
+
+295
+00:06:46,560 --> 00:06:48,710
+few months. But you know essentially
+their task is to go out there and find
+
+296
+00:06:48,710 --> 00:06:48,720
+their task is to go out there and find
+ 
+
+297
+00:06:48,720 --> 00:06:50,230
+their task is to go out there and find
+evidence for the claims that they're
+
+298
+00:06:50,230 --> 00:06:50,240
+evidence for the claims that they're
+ 
+
+299
+00:06:50,240 --> 00:06:52,230
+evidence for the claims that they're
+making. So that evidence can be
+
+300
+00:06:52,230 --> 00:06:52,240
+making. So that evidence can be
+ 
+
+301
+00:06:52,240 --> 00:06:54,230
+making. So that evidence can be
+contained at GitHub repos, it could be
+
+302
+00:06:54,230 --> 00:06:54,240
+contained at GitHub repos, it could be
+ 
+
+303
+00:06:54,240 --> 00:06:56,950
+contained at GitHub repos, it could be
+contained in API documentation, it could
+
+304
+00:06:56,950 --> 00:06:56,960
+contained in API documentation, it could
+ 
+
+305
+00:06:56,960 --> 00:07:01,189
+contained in API documentation, it could
+even be in uh user forums um where
+
+306
+00:07:01,189 --> 00:07:01,199
+even be in uh user forums um where
+ 
+
+307
+00:07:01,199 --> 00:07:03,270
+even be in uh user forums um where
+people talk about a certain product and
+
+308
+00:07:03,270 --> 00:07:03,280
+people talk about a certain product and
+ 
+
+309
+00:07:03,280 --> 00:07:06,230
+people talk about a certain product and
+their experience with it. And then based
+
+310
+00:07:06,230 --> 00:07:06,240
+their experience with it. And then based
+ 
+
+311
+00:07:06,240 --> 00:07:09,189
+their experience with it. And then based
+on the evidence available um the agent
+
+312
+00:07:09,189 --> 00:07:09,199
+on the evidence available um the agent
+ 
+
+313
+00:07:09,199 --> 00:07:12,230
+on the evidence available um the agent
+assigns that a confidence uh uh rating.
+
+314
+00:07:12,230 --> 00:07:12,240
+assigns that a confidence uh uh rating.
+ 
+
+315
+00:07:12,240 --> 00:07:14,390
+assigns that a confidence uh uh rating.
+So you know five out of five is it's
+
+316
+00:07:14,390 --> 00:07:14,400
+So you know five out of five is it's
+ 
+
+317
+00:07:14,400 --> 00:07:16,550
+So you know five out of five is it's
+able to extract code samples from GitHub
+
+318
+00:07:16,550 --> 00:07:16,560
+able to extract code samples from GitHub
+ 
+
+319
+00:07:16,560 --> 00:07:18,950
+able to extract code samples from GitHub
+repos to show how this particular
+
+320
+00:07:18,950 --> 00:07:18,960
+repos to show how this particular
+ 
+
+321
+00:07:18,960 --> 00:07:23,029
+repos to show how this particular
+capability is actually instrumented.
+
+322
+00:07:23,029 --> 00:07:23,039
+capability is actually instrumented.
+ 
+
+323
+00:07:23,039 --> 00:07:24,710
+capability is actually instrumented.
+Then we mapped all of those capabilities
+
+324
+00:07:24,710 --> 00:07:24,720
+Then we mapped all of those capabilities
+ 
+
+325
+00:07:24,720 --> 00:07:28,710
+Then we mapped all of those capabilities
+to some common uh common AI risk tonomy.
+
+326
+00:07:28,710 --> 00:07:28,720
+to some common uh common AI risk tonomy.
+ 
+
+327
+00:07:28,720 --> 00:07:31,589
+to some common uh common AI risk tonomy.
+Uh and then all of this comes together
+
+328
+00:07:31,589 --> 00:07:31,599
+Uh and then all of this comes together
+ 
+
+329
+00:07:31,599 --> 00:07:35,350
+Uh and then all of this comes together
+when uh a specific Gen AI system that
+
+330
+00:07:35,350 --> 00:07:35,360
+when uh a specific Gen AI system that
+ 
+
+331
+00:07:35,360 --> 00:07:37,350
+when uh a specific Gen AI system that
+somebody's building goes through a
+
+332
+00:07:37,350 --> 00:07:37,360
+somebody's building goes through a
+ 
+
+333
+00:07:37,360 --> 00:07:39,670
+somebody's building goes through a
+wizard, a series of steps that then make
+
+334
+00:07:39,670 --> 00:07:39,680
+wizard, a series of steps that then make
+ 
+
+335
+00:07:39,680 --> 00:07:41,749
+wizard, a series of steps that then make
+recommendations about what are the most
+
+336
+00:07:41,749 --> 00:07:41,759
+recommendations about what are the most
+ 
+
+337
+00:07:41,759 --> 00:07:44,629
+recommendations about what are the most
+appropriate uh set of solutions and then
+
+338
+00:07:44,629 --> 00:07:44,639
+appropriate uh set of solutions and then
+ 
+
+339
+00:07:44,639 --> 00:07:47,189
+appropriate uh set of solutions and then
+correspondingly the vendors who are able
+
+340
+00:07:47,189 --> 00:07:47,199
+correspondingly the vendors who are able
+ 
+
+341
+00:07:47,199 --> 00:07:49,749
+correspondingly the vendors who are able
+to satisfy them.
+
+342
+00:07:49,749 --> 00:07:49,759
+to satisfy them.
+ 
+
+343
+00:07:49,759 --> 00:07:52,150
+to satisfy them.
+And then there's some filters that we
+
+344
+00:07:52,150 --> 00:07:52,160
+And then there's some filters that we
+ 
+
+345
+00:07:52,160 --> 00:07:55,589
+And then there's some filters that we
+added based on early feedback about some
+
+346
+00:07:55,589 --> 00:07:55,599
+added based on early feedback about some
+ 
+
+347
+00:07:55,599 --> 00:07:57,110
+added based on early feedback about some
+of those other topics. say we're in
+
+348
+00:07:57,110 --> 00:07:57,120
+of those other topics. say we're in
+ 
+
+349
+00:07:57,120 --> 00:07:58,790
+of those other topics. say we're in
+PaloAlto, we're in Crowdstrike, they're
+
+350
+00:07:58,790 --> 00:07:58,800
+PaloAlto, we're in Crowdstrike, they're
+ 
+
+351
+00:07:58,800 --> 00:08:00,710
+PaloAlto, we're in Crowdstrike, they're
+doing a lot, they're making investments,
+
+352
+00:08:00,710 --> 00:08:00,720
+doing a lot, they're making investments,
+ 
+
+353
+00:08:00,720 --> 00:08:02,950
+doing a lot, they're making investments,
+let's look at our existing kind of
+
+354
+00:08:02,950 --> 00:08:02,960
+let's look at our existing kind of
+ 
+
+355
+00:08:02,960 --> 00:08:04,790
+let's look at our existing kind of
+strategic investments first before going
+
+356
+00:08:04,790 --> 00:08:04,800
+strategic investments first before going
+ 
+
+357
+00:08:04,800 --> 00:08:06,950
+strategic investments first before going
+to the marketplace. So some of those
+
+358
+00:08:06,950 --> 00:08:06,960
+to the marketplace. So some of those
+ 
+
+359
+00:08:06,960 --> 00:08:09,110
+to the marketplace. So some of those
+types of preferences
+
+360
+00:08:09,110 --> 00:08:09,120
+types of preferences
+ 
+
+361
+00:08:09,120 --> 00:08:11,270
+types of preferences
+um and then the system produces
+
+362
+00:08:11,270 --> 00:08:11,280
+um and then the system produces
+ 
+
+363
+00:08:11,280 --> 00:08:14,150
+um and then the system produces
+implementation guidance for um a variety
+
+364
+00:08:14,150 --> 00:08:14,160
+implementation guidance for um a variety
+ 
+
+365
+00:08:14,160 --> 00:08:17,270
+implementation guidance for um a variety
+of teams from GRC to cloud engineering
+
+366
+00:08:17,270 --> 00:08:17,280
+of teams from GRC to cloud engineering
+ 
+
+367
+00:08:17,280 --> 00:08:19,029
+of teams from GRC to cloud engineering
+uh to security architecture and
+
+368
+00:08:19,029 --> 00:08:19,039
+uh to security architecture and
+ 
+
+369
+00:08:19,039 --> 00:08:21,909
+uh to security architecture and
+engineering uh and dev teams if the
+
+370
+00:08:21,909 --> 00:08:21,919
+engineering uh and dev teams if the
+ 
+
+371
+00:08:21,919 --> 00:08:23,350
+engineering uh and dev teams if the
+choice is made to build some of those
+
+372
+00:08:23,350 --> 00:08:23,360
+choice is made to build some of those
+ 
+
+373
+00:08:23,360 --> 00:08:25,430
+choice is made to build some of those
+capabilities in house using uh open
+
+374
+00:08:25,430 --> 00:08:25,440
+capabilities in house using uh open
+ 
+
+375
+00:08:25,440 --> 00:08:29,589
+capabilities in house using uh open
+source solutions etc.
+
+376
+00:08:29,589 --> 00:08:29,599
+source solutions etc.
+ 
+
+377
+00:08:29,599 --> 00:08:33,190
+source solutions etc.
+This is the risk taxonomy. It's um on
+
+378
+00:08:33,190 --> 00:08:33,200
+This is the risk taxonomy. It's um on
+ 
+
+379
+00:08:33,200 --> 00:08:34,949
+This is the risk taxonomy. It's um on
+GitHub. You could take a look at it, but
+
+380
+00:08:34,949 --> 00:08:34,959
+GitHub. You could take a look at it, but
+ 
+
+381
+00:08:34,959 --> 00:08:38,389
+GitHub. You could take a look at it, but
+it's a essentially a synthesis of LLM
+
+382
+00:08:38,389 --> 00:08:38,399
+it's a essentially a synthesis of LLM
+ 
+
+383
+00:08:38,399 --> 00:08:42,469
+it's a essentially a synthesis of LLM
+top 10, NIST, AI, RMF, and MITER Atlas.
+
+384
+00:08:42,469 --> 00:08:42,479
+top 10, NIST, AI, RMF, and MITER Atlas.
+ 
+
+385
+00:08:42,479 --> 00:08:43,750
+top 10, NIST, AI, RMF, and MITER Atlas.
+Each of those three, I think, have
+
+386
+00:08:43,750 --> 00:08:43,760
+Each of those three, I think, have
+ 
+
+387
+00:08:43,760 --> 00:08:45,590
+Each of those three, I think, have
+really good components, but uh they
+
+388
+00:08:45,590 --> 00:08:45,600
+really good components, but uh they
+ 
+
+389
+00:08:45,600 --> 00:08:47,190
+really good components, but uh they
+don't tell the whole picture. So, this
+
+390
+00:08:47,190 --> 00:08:47,200
+don't tell the whole picture. So, this
+ 
+
+391
+00:08:47,200 --> 00:08:50,470
+don't tell the whole picture. So, this
+was an attempt to kind of uh expand this
+
+392
+00:08:50,470 --> 00:08:50,480
+was an attempt to kind of uh expand this
+ 
+
+393
+00:08:50,480 --> 00:08:53,350
+was an attempt to kind of uh expand this
+and and cover um all of potential
+
+394
+00:08:53,350 --> 00:08:53,360
+and and cover um all of potential
+ 
+
+395
+00:08:53,360 --> 00:08:56,870
+and and cover um all of potential
+today's uh today's risks in the space.
+
+396
+00:08:56,870 --> 00:08:56,880
+today's uh today's risks in the space.
+ 
+
+397
+00:08:56,880 --> 00:08:59,910
+today's uh today's risks in the space.
+So, we will
+
+398
+00:08:59,910 --> 00:08:59,920
+So, we will
+ 
+
+399
+00:08:59,920 --> 00:09:02,630
+So, we will
+go to
+
+400
+00:09:02,630 --> 00:09:02,640
+go to
+ 
+
+401
+00:09:02,640 --> 00:09:05,829
+go to
+a quick demo.
+
+402
+00:09:05,829 --> 00:09:05,839
+a quick demo.
+ 
+
+403
+00:09:05,839 --> 00:09:08,310
+a quick demo.
+So we'll put this particular system
+
+404
+00:09:08,310 --> 00:09:08,320
+So we'll put this particular system
+ 
+
+405
+00:09:08,320 --> 00:09:11,110
+So we'll put this particular system
+through that AI risk modeling wizard.
+
+406
+00:09:11,110 --> 00:09:11,120
+through that AI risk modeling wizard.
+ 
+
+407
+00:09:11,120 --> 00:09:14,630
+through that AI risk modeling wizard.
+Now we're calling it adjuster IQ.
+
+408
+00:09:14,630 --> 00:09:14,640
+Now we're calling it adjuster IQ.
+ 
+
+409
+00:09:14,640 --> 00:09:17,110
+Now we're calling it adjuster IQ.
+Basically claims hit the queue. the
+
+410
+00:09:17,110 --> 00:09:17,120
+Basically claims hit the queue. the
+ 
+
+411
+00:09:17,120 --> 00:09:18,949
+Basically claims hit the queue. the
+adjuster eqing analyzes gives them
+
+412
+00:09:18,949 --> 00:09:18,959
+adjuster eqing analyzes gives them
+ 
+
+413
+00:09:18,959 --> 00:09:22,230
+adjuster eqing analyzes gives them
+complexity scores uh identifies the
+
+414
+00:09:22,230 --> 00:09:22,240
+complexity scores uh identifies the
+ 
+
+415
+00:09:22,240 --> 00:09:24,870
+complexity scores uh identifies the
+right specialist routing and produces
+
+416
+00:09:24,870 --> 00:09:24,880
+right specialist routing and produces
+ 
+
+417
+00:09:24,880 --> 00:09:26,710
+right specialist routing and produces
+some uh fraud indicators and then
+
+418
+00:09:26,710 --> 00:09:26,720
+some uh fraud indicators and then
+ 
+
+419
+00:09:26,720 --> 00:09:28,630
+some uh fraud indicators and then
+presents this information to a human
+
+420
+00:09:28,630 --> 00:09:28,640
+presents this information to a human
+ 
+
+421
+00:09:28,640 --> 00:09:32,870
+presents this information to a human
+adjuster. So um some of the patterns
+
+422
+00:09:32,870 --> 00:09:32,880
+adjuster. So um some of the patterns
+ 
+
+423
+00:09:32,880 --> 00:09:35,670
+adjuster. So um some of the patterns
+that are being used it's being built on
+
+424
+00:09:35,670 --> 00:09:35,680
+that are being used it's being built on
+ 
+
+425
+00:09:35,680 --> 00:09:41,269
+that are being used it's being built on
+uh using 3.5 sonnet 3.5 via AWS betrock
+
+426
+00:09:41,269 --> 00:09:41,279
+uh using 3.5 sonnet 3.5 via AWS betrock
+ 
+
+427
+00:09:41,279 --> 00:09:45,030
+uh using 3.5 sonnet 3.5 via AWS betrock
+Amazon Kandra is being used for for rag
+
+428
+00:09:45,030 --> 00:09:45,040
+Amazon Kandra is being used for for rag
+ 
+
+429
+00:09:45,040 --> 00:09:47,350
+Amazon Kandra is being used for for rag
+uh our orchestration not very
+
+430
+00:09:47,350 --> 00:09:47,360
+uh our orchestration not very
+ 
+
+431
+00:09:47,360 --> 00:09:50,150
+uh our orchestration not very
+sophisticated direct API calls it's
+
+432
+00:09:50,150 --> 00:09:50,160
+sophisticated direct API calls it's
+ 
+
+433
+00:09:50,160 --> 00:09:52,790
+sophisticated direct API calls it's
+thanks to doing some tool calling and
+
+434
+00:09:52,790 --> 00:09:52,800
+thanks to doing some tool calling and
+ 
+
+435
+00:09:52,800 --> 00:09:56,710
+thanks to doing some tool calling and
+memory is session scoped um so that's um
+
+436
+00:09:56,710 --> 00:09:56,720
+memory is session scoped um so that's um
+ 
+
+437
+00:09:56,720 --> 00:09:59,030
+memory is session scoped um so that's um
+kind of the the key architecture
+
+438
+00:09:59,030 --> 00:09:59,040
+kind of the the key architecture
+ 
+
+439
+00:09:59,040 --> 00:10:05,110
+kind of the the key architecture
+patterns that are being used.
+
+440
+00:10:05,110 --> 00:10:05,120
+
+ 
+
+441
+00:10:05,120 --> 00:10:07,829
+
+All right, let me bring up bring up the
+
+442
+00:10:07,829 --> 00:10:07,839
+All right, let me bring up bring up the
+ 
+
+443
+00:10:07,839 --> 00:10:20,389
+All right, let me bring up bring up the
+tool.
+
+444
+00:10:20,389 --> 00:10:20,399
+
+ 
+
+445
+00:10:20,399 --> 00:10:24,790
+
+So this is the tool. um you know the net
+
+446
+00:10:24,790 --> 00:10:24,800
+So this is the tool. um you know the net
+ 
+
+447
+00:10:24,800 --> 00:10:27,190
+So this is the tool. um you know the net
+for starting point as I mentioned was
+
+448
+00:10:27,190 --> 00:10:27,200
+for starting point as I mentioned was
+ 
+
+449
+00:10:27,200 --> 00:10:29,670
+for starting point as I mentioned was
+having a risk taxonomy against which
+
+450
+00:10:29,670 --> 00:10:29,680
+having a risk taxonomy against which
+ 
+
+451
+00:10:29,680 --> 00:10:33,509
+having a risk taxonomy against which
+vendor claims can be uh can be mapped uh
+
+452
+00:10:33,509 --> 00:10:33,519
+vendor claims can be uh can be mapped uh
+ 
+
+453
+00:10:33,519 --> 00:10:35,990
+vendor claims can be uh can be mapped uh
+and then evaluated uh against the
+
+454
+00:10:35,990 --> 00:10:36,000
+and then evaluated uh against the
+ 
+
+455
+00:10:36,000 --> 00:10:38,630
+and then evaluated uh against the
+evidence. So you know for example let's
+
+456
+00:10:38,630 --> 00:10:38,640
+evidence. So you know for example let's
+ 
+
+457
+00:10:38,640 --> 00:10:40,949
+evidence. So you know for example let's
+look at data disclosure
+
+458
+00:10:40,949 --> 00:10:40,959
+look at data disclosure
+ 
+
+459
+00:10:40,959 --> 00:10:44,230
+look at data disclosure
+sensitive data and AI inputs um risks
+
+460
+00:10:44,230 --> 00:10:44,240
+sensitive data and AI inputs um risks
+ 
+
+461
+00:10:44,240 --> 00:10:46,310
+sensitive data and AI inputs um risks
+and we could see kind of the breakdown
+
+462
+00:10:46,310 --> 00:10:46,320
+and we could see kind of the breakdown
+ 
+
+463
+00:10:46,320 --> 00:10:49,829
+and we could see kind of the breakdown
+then helps us um map the right
+
+464
+00:10:49,829 --> 00:10:49,839
+then helps us um map the right
+ 
+
+465
+00:10:49,839 --> 00:10:51,670
+then helps us um map the right
+commercial solutions against this
+
+466
+00:10:51,670 --> 00:10:51,680
+commercial solutions against this
+ 
+
+467
+00:10:51,680 --> 00:10:54,310
+commercial solutions against this
+capability.
+
+468
+00:10:54,310 --> 00:10:54,320
+capability.
+ 
+
+469
+00:10:54,320 --> 00:10:57,430
+capability.
+So you know sensitive data and AI inputs
+
+470
+00:10:57,430 --> 00:10:57,440
+So you know sensitive data and AI inputs
+ 
+
+471
+00:10:57,440 --> 00:10:59,910
+So you know sensitive data and AI inputs
+that's a risk input in DLP and redaction
+
+472
+00:10:59,910 --> 00:10:59,920
+that's a risk input in DLP and redaction
+ 
+
+473
+00:10:59,920 --> 00:11:01,110
+that's a risk input in DLP and redaction
+that makes sense right that's a
+
+474
+00:11:01,110 --> 00:11:01,120
+that makes sense right that's a
+ 
+
+475
+00:11:01,120 --> 00:11:02,389
+that makes sense right that's a
+capability that we need to have to
+
+476
+00:11:02,389 --> 00:11:02,399
+capability that we need to have to
+ 
+
+477
+00:11:02,399 --> 00:11:05,829
+capability that we need to have to
+mitigate that particular risk um you
+
+478
+00:11:05,829 --> 00:11:05,839
+mitigate that particular risk um you
+ 
+
+479
+00:11:05,839 --> 00:11:07,990
+mitigate that particular risk um you
+know there's some guidance that we could
+
+480
+00:11:07,990 --> 00:11:08,000
+know there's some guidance that we could
+ 
+
+481
+00:11:08,000 --> 00:11:11,509
+know there's some guidance that we could
+use for a custom uh engineered solution
+
+482
+00:11:11,509 --> 00:11:11,519
+use for a custom uh engineered solution
+ 
+
+483
+00:11:11,519 --> 00:11:13,350
+use for a custom uh engineered solution
+to do this in house if we want to if we
+
+484
+00:11:13,350 --> 00:11:13,360
+to do this in house if we want to if we
+ 
+
+485
+00:11:13,360 --> 00:11:15,509
+to do this in house if we want to if we
+don't want to go to the marketplace um
+
+486
+00:11:15,509 --> 00:11:15,519
+don't want to go to the marketplace um
+ 
+
+487
+00:11:15,519 --> 00:11:17,269
+don't want to go to the marketplace um
+or
+
+488
+00:11:17,269 --> 00:11:17,279
+or
+ 
+
+489
+00:11:17,279 --> 00:11:19,509
+or
+and by the way uh on the application
+
+490
+00:11:19,509 --> 00:11:19,519
+and by the way uh on the application
+ 
+
+491
+00:11:19,519 --> 00:11:21,350
+and by the way uh on the application
+layer so through things like SDKs and
+
+492
+00:11:21,350 --> 00:11:21,360
+layer so through things like SDKs and
+ 
+
+493
+00:11:21,360 --> 00:11:23,990
+layer so through things like SDKs and
+APIs there are handful of vendors ers
+
+494
+00:11:23,990 --> 00:11:24,000
+APIs there are handful of vendors ers
+ 
+
+495
+00:11:24,000 --> 00:11:26,150
+APIs there are handful of vendors ers
+who are claiming uh that they could do
+
+496
+00:11:26,150 --> 00:11:26,160
+who are claiming uh that they could do
+ 
+
+497
+00:11:26,160 --> 00:11:28,550
+who are claiming uh that they could do
+this. And if we choose to implement this
+
+498
+00:11:28,550 --> 00:11:28,560
+this. And if we choose to implement this
+ 
+
+499
+00:11:28,560 --> 00:11:30,630
+this. And if we choose to implement this
+in the infrastructure layer, so like
+
+500
+00:11:30,630 --> 00:11:30,640
+in the infrastructure layer, so like
+ 
+
+501
+00:11:30,640 --> 00:11:32,069
+in the infrastructure layer, so like
+some kind of a choke point at the
+
+502
+00:11:32,069 --> 00:11:32,079
+some kind of a choke point at the
+ 
+
+503
+00:11:32,079 --> 00:11:34,630
+some kind of a choke point at the
+network or an endpoint agent that's
+
+504
+00:11:34,630 --> 00:11:34,640
+network or an endpoint agent that's
+ 
+
+505
+00:11:34,640 --> 00:11:36,470
+network or an endpoint agent that's
+centrally managed, you know, there are
+
+506
+00:11:36,470 --> 00:11:36,480
+centrally managed, you know, there are
+ 
+
+507
+00:11:36,480 --> 00:11:40,949
+centrally managed, you know, there are
+even more um vendors who are um able to
+
+508
+00:11:40,949 --> 00:11:40,959
+even more um vendors who are um able to
+ 
+
+509
+00:11:40,959 --> 00:11:46,550
+even more um vendors who are um able to
+satisfy that that control.
+
+510
+00:11:46,550 --> 00:11:46,560
+
+ 
+
+511
+00:11:46,560 --> 00:11:49,829
+
+So I'll bring up kind of quickly what
+
+512
+00:11:49,829 --> 00:11:49,839
+So I'll bring up kind of quickly what
+ 
+
+513
+00:11:49,839 --> 00:11:52,150
+So I'll bring up kind of quickly what
+what that research on any particular
+
+514
+00:11:52,150 --> 00:11:52,160
+what that research on any particular
+ 
+
+515
+00:11:52,160 --> 00:11:54,069
+what that research on any particular
+vendor looks like and then we'll put it
+
+516
+00:11:54,069 --> 00:11:54,079
+vendor looks like and then we'll put it
+ 
+
+517
+00:11:54,079 --> 00:11:56,389
+vendor looks like and then we'll put it
+all together.
+
+518
+00:11:56,389 --> 00:11:56,399
+all together.
+ 
+
+519
+00:11:56,399 --> 00:11:58,630
+all together.
+So looking at the vendor card for
+
+520
+00:11:58,630 --> 00:11:58,640
+So looking at the vendor card for
+ 
+
+521
+00:11:58,640 --> 00:12:01,590
+So looking at the vendor card for
+Crowdstrike Falcon AID that was through
+
+522
+00:12:01,590 --> 00:12:01,600
+Crowdstrike Falcon AID that was through
+ 
+
+523
+00:12:01,600 --> 00:12:04,550
+Crowdstrike Falcon AID that was through
+their PNG acquisition you know this is
+
+524
+00:12:04,550 --> 00:12:04,560
+their PNG acquisition you know this is
+ 
+
+525
+00:12:04,560 --> 00:12:08,310
+their PNG acquisition you know this is
+we're back at our um risk tonomy.
+
+526
+00:12:08,310 --> 00:12:08,320
+we're back at our um risk tonomy.
+ 
+
+527
+00:12:08,320 --> 00:12:10,790
+we're back at our um risk tonomy.
+So for data disclosure, you know, we
+
+528
+00:12:10,790 --> 00:12:10,800
+So for data disclosure, you know, we
+ 
+
+529
+00:12:10,800 --> 00:12:14,310
+So for data disclosure, you know, we
+could see that they have one capability
+
+530
+00:12:14,310 --> 00:12:14,320
+could see that they have one capability
+ 
+
+531
+00:12:14,320 --> 00:12:15,910
+could see that they have one capability
+and they're doing this at the
+
+532
+00:12:15,910 --> 00:12:15,920
+and they're doing this at the
+ 
+
+533
+00:12:15,920 --> 00:12:17,990
+and they're doing this at the
+application infrastructure layer and we
+
+534
+00:12:17,990 --> 00:12:18,000
+application infrastructure layer and we
+ 
+
+535
+00:12:18,000 --> 00:12:20,069
+application infrastructure layer and we
+also know that they're able to deploy
+
+536
+00:12:20,069 --> 00:12:20,079
+also know that they're able to deploy
+ 
+
+537
+00:12:20,079 --> 00:12:21,829
+also know that they're able to deploy
+this both at the network choke point
+
+538
+00:12:21,829 --> 00:12:21,839
+this both at the network choke point
+ 
+
+539
+00:12:21,839 --> 00:12:24,310
+this both at the network choke point
+layer and on the endpoint and let's see
+
+540
+00:12:24,310 --> 00:12:24,320
+layer and on the endpoint and let's see
+ 
+
+541
+00:12:24,320 --> 00:12:27,030
+layer and on the endpoint and let's see
+what the agent came up with in terms of
+
+542
+00:12:27,030 --> 00:12:27,040
+what the agent came up with in terms of
+ 
+
+543
+00:12:27,040 --> 00:12:30,150
+what the agent came up with in terms of
+uh evidence. Um so that's the kind of
+
+544
+00:12:30,150 --> 00:12:30,160
+uh evidence. Um so that's the kind of
+ 
+
+545
+00:12:30,160 --> 00:12:32,550
+uh evidence. Um so that's the kind of
+information that u it's able to gather
+
+546
+00:12:32,550 --> 00:12:32,560
+information that u it's able to gather
+ 
+
+547
+00:12:32,560 --> 00:12:34,949
+information that u it's able to gather
+on these vendors.
+
+548
+00:12:34,949 --> 00:12:34,959
+on these vendors.
+ 
+
+549
+00:12:34,959 --> 00:12:39,509
+on these vendors.
+Uh not flawlessly. Um there's still even
+
+550
+00:12:39,509 --> 00:12:39,519
+Uh not flawlessly. Um there's still even
+ 
+
+551
+00:12:39,519 --> 00:12:41,030
+Uh not flawlessly. Um there's still even
+though there's a lot a lot it's been
+
+552
+00:12:41,030 --> 00:12:41,040
+though there's a lot a lot it's been
+ 
+
+553
+00:12:41,040 --> 00:12:42,629
+though there's a lot a lot it's been
+refined quite a bit there's a lot of
+
+554
+00:12:42,629 --> 00:12:42,639
+refined quite a bit there's a lot of
+ 
+
+555
+00:12:42,639 --> 00:12:45,910
+refined quite a bit there's a lot of
+human QC that goes into um kind of to
+
+556
+00:12:45,910 --> 00:12:45,920
+human QC that goes into um kind of to
+ 
+
+557
+00:12:45,920 --> 00:12:49,350
+human QC that goes into um kind of to
+manage all of the hallucinations and
+
+558
+00:12:49,350 --> 00:12:49,360
+manage all of the hallucinations and
+ 
+
+559
+00:12:49,360 --> 00:12:51,750
+manage all of the hallucinations and
+context issues that that we discussed
+
+560
+00:12:51,750 --> 00:12:51,760
+context issues that that we discussed
+ 
+
+561
+00:12:51,760 --> 00:12:54,790
+context issues that that we discussed
+earlier in the day today. Anyway, so let
+
+562
+00:12:54,790 --> 00:12:54,800
+earlier in the day today. Anyway, so let
+ 
+
+563
+00:12:54,800 --> 00:12:59,509
+earlier in the day today. Anyway, so let
+me close that out and we'll go
+
+564
+00:12:59,509 --> 00:12:59,519
+me close that out and we'll go
+ 
+
+565
+00:12:59,519 --> 00:13:01,509
+me close that out and we'll go
+and do we have five minutes. Let's see
+
+566
+00:13:01,509 --> 00:13:01,519
+and do we have five minutes. Let's see
+ 
+
+567
+00:13:01,519 --> 00:13:03,590
+and do we have five minutes. Let's see
+if we can do a risk assessment of this
+
+568
+00:13:03,590 --> 00:13:03,600
+if we can do a risk assessment of this
+ 
+
+569
+00:13:03,600 --> 00:13:08,069
+if we can do a risk assessment of this
+adjuster IQ system in five minutes.
+
+570
+00:13:08,069 --> 00:13:08,079
+adjuster IQ system in five minutes.
+ 
+
+571
+00:13:08,079 --> 00:13:09,990
+adjuster IQ system in five minutes.
+So this is the wizard that I was just
+
+572
+00:13:09,990 --> 00:13:10,000
+So this is the wizard that I was just
+ 
+
+573
+00:13:10,000 --> 00:13:12,310
+So this is the wizard that I was just
+talking about. Um right so there's just
+
+574
+00:13:12,310 --> 00:13:12,320
+talking about. Um right so there's just
+ 
+
+575
+00:13:12,320 --> 00:13:14,310
+talking about. Um right so there's just
+a handful of questions that we ask and
+
+576
+00:13:14,310 --> 00:13:14,320
+a handful of questions that we ask and
+ 
+
+577
+00:13:14,320 --> 00:13:15,590
+a handful of questions that we ask and
+these are the kind of questions that we
+
+578
+00:13:15,590 --> 00:13:15,600
+these are the kind of questions that we
+ 
+
+579
+00:13:15,600 --> 00:13:17,030
+these are the kind of questions that we
+would ask that we would sit down with a
+
+580
+00:13:17,030 --> 00:13:17,040
+would ask that we would sit down with a
+ 
+
+581
+00:13:17,040 --> 00:13:19,910
+would ask that we would sit down with a
+client in um kind of that use case and
+
+582
+00:13:19,910 --> 00:13:19,920
+client in um kind of that use case and
+ 
+
+583
+00:13:19,920 --> 00:13:22,710
+client in um kind of that use case and
+requirements discovery. So what does
+
+584
+00:13:22,710 --> 00:13:22,720
+requirements discovery. So what does
+ 
+
+585
+00:13:22,720 --> 00:13:25,670
+requirements discovery. So what does
+this claim adjuster thing can do? It can
+
+586
+00:13:25,670 --> 00:13:25,680
+this claim adjuster thing can do? It can
+ 
+
+587
+00:13:25,680 --> 00:13:28,870
+this claim adjuster thing can do? It can
+be what kind of data um uh does it use?
+
+588
+00:13:28,870 --> 00:13:28,880
+be what kind of data um uh does it use?
+ 
+
+589
+00:13:28,880 --> 00:13:31,670
+be what kind of data um uh does it use?
+Internal confidential.
+
+590
+00:13:31,670 --> 00:13:31,680
+Internal confidential.
+ 
+
+591
+00:13:31,680 --> 00:13:33,910
+Internal confidential.
+Uh our employees are going to be using
+
+592
+00:13:33,910 --> 00:13:33,920
+Uh our employees are going to be using
+ 
+
+593
+00:13:33,920 --> 00:13:37,350
+Uh our employees are going to be using
+it over the internet. And you can see on
+
+594
+00:13:37,350 --> 00:13:37,360
+it over the internet. And you can see on
+ 
+
+595
+00:13:37,360 --> 00:13:39,910
+it over the internet. And you can see on
+the bottom now we're kind of activating
+
+596
+00:13:39,910 --> 00:13:39,920
+the bottom now we're kind of activating
+ 
+
+597
+00:13:39,920 --> 00:13:43,030
+the bottom now we're kind of activating
+and surfacing uh various risks that are
+
+598
+00:13:43,030 --> 00:13:43,040
+and surfacing uh various risks that are
+ 
+
+599
+00:13:43,040 --> 00:13:45,269
+and surfacing uh various risks that are
+associated with the choices that are use
+
+600
+00:13:45,269 --> 00:13:45,279
+associated with the choices that are use
+ 
+
+601
+00:13:45,279 --> 00:13:51,509
+associated with the choices that are use
+case driven.
+
+602
+00:13:51,509 --> 00:13:51,519
+
+ 
+
+603
+00:13:51,519 --> 00:13:53,670
+
+We're using AWS Betrock. So that's going
+
+604
+00:13:53,670 --> 00:13:53,680
+We're using AWS Betrock. So that's going
+ 
+
+605
+00:13:53,680 --> 00:13:56,069
+We're using AWS Betrock. So that's going
+to be manage pass. It's only going to
+
+606
+00:13:56,069 --> 00:13:56,079
+to be manage pass. It's only going to
+ 
+
+607
+00:13:56,079 --> 00:13:58,230
+to be manage pass. It's only going to
+create new record.
+
+608
+00:13:58,230 --> 00:13:58,240
+create new record.
+ 
+
+609
+00:13:58,240 --> 00:14:00,230
+create new record.
+You know, you could see like making an
+
+610
+00:14:00,230 --> 00:14:00,240
+You know, you could see like making an
+ 
+
+611
+00:14:00,240 --> 00:14:03,509
+You know, you could see like making an
+autonomous actions uh selection results
+
+612
+00:14:03,509 --> 00:14:03,519
+autonomous actions uh selection results
+ 
+
+613
+00:14:03,519 --> 00:14:05,750
+autonomous actions uh selection results
+and quite of a different um inherent
+
+614
+00:14:05,750 --> 00:14:05,760
+and quite of a different um inherent
+ 
+
+615
+00:14:05,760 --> 00:14:10,310
+and quite of a different um inherent
+risk profile of this system.
+
+616
+00:14:10,310 --> 00:14:10,320
+
+ 
+
+617
+00:14:10,320 --> 00:14:13,670
+
+And then
+
+618
+00:14:13,670 --> 00:14:13,680
+
+ 
+
+619
+00:14:13,680 --> 00:14:15,990
+
+what is the highest level of autonomy?
+
+620
+00:14:15,990 --> 00:14:16,000
+what is the highest level of autonomy?
+ 
+
+621
+00:14:16,000 --> 00:14:17,829
+what is the highest level of autonomy?
+uh because coding assistants become part
+
+622
+00:14:17,829 --> 00:14:17,839
+uh because coding assistants become part
+ 
+
+623
+00:14:17,839 --> 00:14:20,550
+uh because coding assistants become part
+of the attack surface. So what are uh
+
+624
+00:14:20,550 --> 00:14:20,560
+of the attack surface. So what are uh
+ 
+
+625
+00:14:20,560 --> 00:14:22,389
+of the attack surface. So what are uh
+how are coding assistants being used by
+
+626
+00:14:22,389 --> 00:14:22,399
+how are coding assistants being used by
+ 
+
+627
+00:14:22,399 --> 00:14:25,509
+how are coding assistants being used by
+the devs team uh that would introduce um
+
+628
+00:14:25,509 --> 00:14:25,519
+the devs team uh that would introduce um
+ 
+
+629
+00:14:25,519 --> 00:14:27,430
+the devs team uh that would introduce um
+right so any any anywhere from
+
+630
+00:14:27,430 --> 00:14:27,440
+right so any any anywhere from
+ 
+
+631
+00:14:27,440 --> 00:14:30,629
+right so any any anywhere from
+autonomous coding agents uh to suggested
+
+632
+00:14:30,629 --> 00:14:30,639
+autonomous coding agents uh to suggested
+ 
+
+633
+00:14:30,639 --> 00:14:33,110
+autonomous coding agents uh to suggested
+to suggesting only coding assistance but
+
+634
+00:14:33,110 --> 00:14:33,120
+to suggesting only coding assistance but
+ 
+
+635
+00:14:33,120 --> 00:14:34,629
+to suggesting only coding assistance but
+let's go with interactive coding
+
+636
+00:14:34,629 --> 00:14:34,639
+let's go with interactive coding
+ 
+
+637
+00:14:34,639 --> 00:14:36,389
+let's go with interactive coding
+assistance.
+
+638
+00:14:36,389 --> 00:14:36,399
+assistance.
+ 
+
+639
+00:14:36,399 --> 00:14:41,350
+assistance.
+Uh let's see
+
+640
+00:14:41,350 --> 00:14:41,360
+
+ 
+
+641
+00:14:41,360 --> 00:14:43,030
+
+doing good. I think we'll get there in
+
+642
+00:14:43,030 --> 00:14:43,040
+doing good. I think we'll get there in
+ 
+
+643
+00:14:43,040 --> 00:14:46,150
+doing good. I think we'll get there in
+the next four minutes.
+
+644
+00:14:46,150 --> 00:14:46,160
+the next four minutes.
+ 
+
+645
+00:14:46,160 --> 00:14:48,389
+the next four minutes.
+Okay, so we did our inherent b uh
+
+646
+00:14:48,389 --> 00:14:48,399
+Okay, so we did our inherent b uh
+ 
+
+647
+00:14:48,399 --> 00:14:50,629
+Okay, so we did our inherent b uh
+inherent risk profile. Now we're talking
+
+648
+00:14:50,629 --> 00:14:50,639
+inherent risk profile. Now we're talking
+ 
+
+649
+00:14:50,639 --> 00:14:53,910
+inherent risk profile. Now we're talking
+about architecture patterns and choices
+
+650
+00:14:53,910 --> 00:14:53,920
+about architecture patterns and choices
+ 
+
+651
+00:14:53,920 --> 00:14:56,150
+about architecture patterns and choices
+that are being me being used being made
+
+652
+00:14:56,150 --> 00:14:56,160
+that are being me being used being made
+ 
+
+653
+00:14:56,160 --> 00:14:58,230
+that are being me being used being made
+by the team that's building them. So the
+
+654
+00:14:58,230 --> 00:14:58,240
+by the team that's building them. So the
+ 
+
+655
+00:14:58,240 --> 00:14:59,829
+by the team that's building them. So the
+kind of things that get discussed
+
+656
+00:14:59,829 --> 00:14:59,839
+kind of things that get discussed
+ 
+
+657
+00:14:59,839 --> 00:15:02,550
+kind of things that get discussed
+discussed at the uh architecture review
+
+658
+00:15:02,550 --> 00:15:02,560
+discussed at the uh architecture review
+ 
+
+659
+00:15:02,560 --> 00:15:05,350
+discussed at the uh architecture review
+boards um and that would kick off some
+
+660
+00:15:05,350 --> 00:15:05,360
+boards um and that would kick off some
+ 
+
+661
+00:15:05,360 --> 00:15:07,189
+boards um and that would kick off some
+kind of a security assessment that may
+
+662
+00:15:07,189 --> 00:15:07,199
+kind of a security assessment that may
+ 
+
+663
+00:15:07,199 --> 00:15:10,790
+kind of a security assessment that may
+last who knows how many months in large
+
+664
+00:15:10,790 --> 00:15:10,800
+last who knows how many months in large
+ 
+
+665
+00:15:10,800 --> 00:15:12,629
+last who knows how many months in large
+enterprises.
+
+666
+00:15:12,629 --> 00:15:12,639
+enterprises.
+ 
+
+667
+00:15:12,639 --> 00:15:15,910
+enterprises.
+So we're in the AWS bedrock again. We're
+
+668
+00:15:15,910 --> 00:15:15,920
+So we're in the AWS bedrock again. We're
+ 
+
+669
+00:15:15,920 --> 00:15:19,110
+So we're in the AWS bedrock again. We're
+using rag and traditional databases.
+
+670
+00:15:19,110 --> 00:15:19,120
+using rag and traditional databases.
+ 
+
+671
+00:15:19,120 --> 00:15:23,670
+using rag and traditional databases.
+Uh direct API was in the use case. Let's
+
+672
+00:15:23,670 --> 00:15:23,680
+Uh direct API was in the use case. Let's
+ 
+
+673
+00:15:23,680 --> 00:15:26,069
+Uh direct API was in the use case. Let's
+say we're using servers compute. And you
+
+674
+00:15:26,069 --> 00:15:26,079
+say we're using servers compute. And you
+ 
+
+675
+00:15:26,079 --> 00:15:27,350
+say we're using servers compute. And you
+could see as I'm making these
+
+676
+00:15:27,350 --> 00:15:27,360
+could see as I'm making these
+ 
+
+677
+00:15:27,360 --> 00:15:29,910
+could see as I'm making these
+selections, the uh the risk profile is
+
+678
+00:15:29,910 --> 00:15:29,920
+selections, the uh the risk profile is
+ 
+
+679
+00:15:29,920 --> 00:15:33,030
+selections, the uh the risk profile is
+changing and we're using the system is
+
+680
+00:15:33,030 --> 00:15:33,040
+changing and we're using the system is
+ 
+
+681
+00:15:33,040 --> 00:15:34,710
+changing and we're using the system is
+going to give us a chat interface, some
+
+682
+00:15:34,710 --> 00:15:34,720
+going to give us a chat interface, some
+ 
+
+683
+00:15:34,720 --> 00:15:36,310
+going to give us a chat interface, some
+tool calling and let's obviously
+
+684
+00:15:36,310 --> 00:15:36,320
+tool calling and let's obviously
+ 
+
+685
+00:15:36,320 --> 00:15:38,069
+tool calling and let's obviously
+document analysis is going to be a big
+
+686
+00:15:38,069 --> 00:15:38,079
+document analysis is going to be a big
+ 
+
+687
+00:15:38,079 --> 00:15:41,670
+document analysis is going to be a big
+part.
+
+688
+00:15:41,670 --> 00:15:41,680
+
+ 
+
+689
+00:15:41,680 --> 00:15:42,870
+
+Okay. Okay. And now we'll get to the
+
+690
+00:15:42,870 --> 00:15:42,880
+Okay. Okay. And now we'll get to the
+ 
+
+691
+00:15:42,880 --> 00:15:46,629
+Okay. Okay. And now we'll get to the
+part where um we're able to ask
+
+692
+00:15:46,629 --> 00:15:46,639
+part where um we're able to ask
+ 
+
+693
+00:15:46,639 --> 00:15:49,509
+part where um we're able to ask
+questions like what security platforms
+
+694
+00:15:49,509 --> 00:15:49,519
+questions like what security platforms
+ 
+
+695
+00:15:49,519 --> 00:15:51,030
+questions like what security platforms
+have you made investment in? Let's look
+
+696
+00:15:51,030 --> 00:15:51,040
+have you made investment in? Let's look
+ 
+
+697
+00:15:51,040 --> 00:15:52,790
+have you made investment in? Let's look
+at those first and see what they can
+
+698
+00:15:52,790 --> 00:15:52,800
+at those first and see what they can
+ 
+
+699
+00:15:52,800 --> 00:15:54,629
+at those first and see what they can
+offer to us against those risks that
+
+700
+00:15:54,629 --> 00:15:54,639
+offer to us against those risks that
+ 
+
+701
+00:15:54,639 --> 00:15:58,230
+offer to us against those risks that
+we've identified. Uh obviously we're in
+
+702
+00:15:58,230 --> 00:15:58,240
+we've identified. Uh obviously we're in
+ 
+
+703
+00:15:58,240 --> 00:16:00,870
+we've identified. Uh obviously we're in
+um AWS Bedrock. That's going to give us
+
+704
+00:16:00,870 --> 00:16:00,880
+um AWS Bedrock. That's going to give us
+ 
+
+705
+00:16:00,880 --> 00:16:03,509
+um AWS Bedrock. That's going to give us
+some some controls. Let's say we're
+
+706
+00:16:03,509 --> 00:16:03,519
+some some controls. Let's say we're
+ 
+
+707
+00:16:03,519 --> 00:16:05,670
+some some controls. Let's say we're
+using we already have Crowdstrike and
+
+708
+00:16:05,670 --> 00:16:05,680
+using we already have Crowdstrike and
+ 
+
+709
+00:16:05,680 --> 00:16:07,749
+using we already have Crowdstrike and
+Zcaler. Uh that's going to make things a
+
+710
+00:16:07,749 --> 00:16:07,759
+Zcaler. Uh that's going to make things a
+ 
+
+711
+00:16:07,759 --> 00:16:10,389
+Zcaler. Uh that's going to make things a
+little bit easier. uh Zcaler has been
+
+712
+00:16:10,389 --> 00:16:10,399
+little bit easier. uh Zcaler has been
+ 
+
+713
+00:16:10,399 --> 00:16:14,710
+little bit easier. uh Zcaler has been
+adding Genai security capabilities.
+
+714
+00:16:14,710 --> 00:16:14,720
+adding Genai security capabilities.
+ 
+
+715
+00:16:14,720 --> 00:16:19,749
+adding Genai security capabilities.
+Do we um typically buy or build and or
+
+716
+00:16:19,749 --> 00:16:19,759
+Do we um typically buy or build and or
+ 
+
+717
+00:16:19,759 --> 00:16:21,509
+Do we um typically buy or build and or
+do we have no preference? But let's say
+
+718
+00:16:21,509 --> 00:16:21,519
+do we have no preference? But let's say
+ 
+
+719
+00:16:21,519 --> 00:16:25,030
+do we have no preference? But let's say
+we have we usually buy uh
+
+720
+00:16:25,030 --> 00:16:25,040
+we have we usually buy uh
+ 
+
+721
+00:16:25,040 --> 00:16:28,230
+we have we usually buy uh
+versus build um implementation layer
+
+722
+00:16:28,230 --> 00:16:28,240
+versus build um implementation layer
+ 
+
+723
+00:16:28,240 --> 00:16:30,550
+versus build um implementation layer
+preference. So you know a lot of the
+
+724
+00:16:30,550 --> 00:16:30,560
+preference. So you know a lot of the
+ 
+
+725
+00:16:30,560 --> 00:16:32,550
+preference. So you know a lot of the
+vendors are offering really two kind of
+
+726
+00:16:32,550 --> 00:16:32,560
+vendors are offering really two kind of
+ 
+
+727
+00:16:32,560 --> 00:16:35,430
+vendors are offering really two kind of
+implementation paths via SDKs APIs
+
+728
+00:16:35,430 --> 00:16:35,440
+implementation paths via SDKs APIs
+ 
+
+729
+00:16:35,440 --> 00:16:37,030
+implementation paths via SDKs APIs
+capabilities that could be provided to
+
+730
+00:16:37,030 --> 00:16:37,040
+capabilities that could be provided to
+ 
+
+731
+00:16:37,040 --> 00:16:39,910
+capabilities that could be provided to
+the application development teams versus
+
+732
+00:16:39,910 --> 00:16:39,920
+the application development teams versus
+ 
+
+733
+00:16:39,920 --> 00:16:42,230
+the application development teams versus
+things that are centrally deployed and
+
+734
+00:16:42,230 --> 00:16:42,240
+things that are centrally deployed and
+ 
+
+735
+00:16:42,240 --> 00:16:44,069
+things that are centrally deployed and
+governed um through uh the
+
+736
+00:16:44,069 --> 00:16:44,079
+governed um through uh the
+ 
+
+737
+00:16:44,079 --> 00:16:45,670
+governed um through uh the
+infrastructure. So let's say we're doing
+
+738
+00:16:45,670 --> 00:16:45,680
+infrastructure. So let's say we're doing
+ 
+
+739
+00:16:45,680 --> 00:16:47,590
+infrastructure. So let's say we're doing
+infrastructure.
+
+740
+00:16:47,590 --> 00:16:47,600
+infrastructure.
+ 
+
+741
+00:16:47,600 --> 00:16:51,110
+infrastructure.
+Um the talk before um the gentleman
+
+742
+00:16:51,110 --> 00:16:51,120
+Um the talk before um the gentleman
+ 
+
+743
+00:16:51,120 --> 00:16:52,949
+Um the talk before um the gentleman
+mentioned that yeah most of those
+
+744
+00:16:52,949 --> 00:16:52,959
+mentioned that yeah most of those
+ 
+
+745
+00:16:52,959 --> 00:16:54,710
+mentioned that yeah most of those
+solutions are either at the network
+
+746
+00:16:54,710 --> 00:16:54,720
+solutions are either at the network
+ 
+
+747
+00:16:54,720 --> 00:16:56,629
+solutions are either at the network
+layer as as some kind of gateways and
+
+748
+00:16:56,629 --> 00:16:56,639
+layer as as some kind of gateways and
+ 
+
+749
+00:16:56,639 --> 00:16:58,550
+layer as as some kind of gateways and
+proxies or they're going to be an
+
+750
+00:16:58,550 --> 00:16:58,560
+proxies or they're going to be an
+ 
+
+751
+00:16:58,560 --> 00:17:01,509
+proxies or they're going to be an
+endpoints via agents. But let's say we
+
+752
+00:17:01,509 --> 00:17:01,519
+endpoints via agents. But let's say we
+ 
+
+753
+00:17:01,519 --> 00:17:03,670
+endpoints via agents. But let's say we
+don't have a preference. So the system
+
+754
+00:17:03,670 --> 00:17:03,680
+don't have a preference. So the system
+ 
+
+755
+00:17:03,680 --> 00:17:05,510
+don't have a preference. So the system
+is going to surface vendors who can do
+
+756
+00:17:05,510 --> 00:17:05,520
+is going to surface vendors who can do
+ 
+
+757
+00:17:05,520 --> 00:17:08,630
+is going to surface vendors who can do
+both.
+
+758
+00:17:08,630 --> 00:17:08,640
+
+ 
+
+759
+00:17:08,640 --> 00:17:12,390
+
+And let's say that we want to um we will
+
+760
+00:17:12,390 --> 00:17:12,400
+And let's say that we want to um we will
+ 
+
+761
+00:17:12,400 --> 00:17:14,230
+And let's say that we want to um we will
+prioritize vendors who provide give us
+
+762
+00:17:14,230 --> 00:17:14,240
+prioritize vendors who provide give us
+ 
+
+763
+00:17:14,240 --> 00:17:16,230
+prioritize vendors who provide give us
+the most capabilities. So we're leaning
+
+764
+00:17:16,230 --> 00:17:16,240
+the most capabilities. So we're leaning
+ 
+
+765
+00:17:16,240 --> 00:17:17,750
+the most capabilities. So we're leaning
+towards platform and let's see what
+
+766
+00:17:17,750 --> 00:17:17,760
+towards platform and let's see what
+ 
+
+767
+00:17:17,760 --> 00:17:27,110
+towards platform and let's see what
+shows up.
+
+768
+00:17:27,110 --> 00:17:27,120
+
+ 
+
+769
+00:17:27,120 --> 00:17:30,630
+
+Okay. So what the system is telling us
+
+770
+00:17:30,630 --> 00:17:30,640
+Okay. So what the system is telling us
+ 
+
+771
+00:17:30,640 --> 00:17:33,029
+Okay. So what the system is telling us
+essentially that you know at the most
+
+772
+00:17:33,029 --> 00:17:33,039
+essentially that you know at the most
+ 
+
+773
+00:17:33,039 --> 00:17:35,029
+essentially that you know at the most
+critical and high levels uh we have
+
+774
+00:17:35,029 --> 00:17:35,039
+critical and high levels uh we have
+ 
+
+775
+00:17:35,039 --> 00:17:36,950
+critical and high levels uh we have
+certain gaps that we need to cover.
+
+776
+00:17:36,950 --> 00:17:36,960
+certain gaps that we need to cover.
+ 
+
+777
+00:17:36,960 --> 00:17:39,190
+certain gaps that we need to cover.
+Again, that goes back to this risk
+
+778
+00:17:39,190 --> 00:17:39,200
+Again, that goes back to this risk
+ 
+
+779
+00:17:39,200 --> 00:17:41,270
+Again, that goes back to this risk
+profile that gets triggered through uh
+
+780
+00:17:41,270 --> 00:17:41,280
+profile that gets triggered through uh
+ 
+
+781
+00:17:41,280 --> 00:17:43,669
+profile that gets triggered through uh
+through that wizard. And out of our
+
+782
+00:17:43,669 --> 00:17:43,679
+through that wizard. And out of our
+ 
+
+783
+00:17:43,679 --> 00:17:46,230
+through that wizard. And out of our
+existing vendor relationships, we're
+
+784
+00:17:46,230 --> 00:17:46,240
+existing vendor relationships, we're
+ 
+
+785
+00:17:46,240 --> 00:17:47,510
+existing vendor relationships, we're
+able to cover eight of those
+
+786
+00:17:47,510 --> 00:17:47,520
+able to cover eight of those
+ 
+
+787
+00:17:47,520 --> 00:17:51,029
+able to cover eight of those
+capabilities. So, let's grab those. And
+
+788
+00:17:51,029 --> 00:17:51,039
+capabilities. So, let's grab those. And
+ 
+
+789
+00:17:51,039 --> 00:17:54,470
+capabilities. So, let's grab those. And
+we have 15 gaps that are remaining.
+
+790
+00:17:54,470 --> 00:17:54,480
+we have 15 gaps that are remaining.
+ 
+
+791
+00:17:54,480 --> 00:17:57,909
+we have 15 gaps that are remaining.
+So, we can drill into each of those and
+
+792
+00:17:57,909 --> 00:17:57,919
+So, we can drill into each of those and
+ 
+
+793
+00:17:57,919 --> 00:18:01,750
+So, we can drill into each of those and
+say that for some of the governance
+
+794
+00:18:01,750 --> 00:18:01,760
+say that for some of the governance
+ 
+
+795
+00:18:01,760 --> 00:18:05,430
+say that for some of the governance
+things, you know, we don't need to buy a
+
+796
+00:18:05,430 --> 00:18:05,440
+things, you know, we don't need to buy a
+ 
+
+797
+00:18:05,440 --> 00:18:07,110
+things, you know, we don't need to buy a
+solution. That's, you know, we're
+
+798
+00:18:07,110 --> 00:18:07,120
+solution. That's, you know, we're
+ 
+
+799
+00:18:07,120 --> 00:18:09,270
+solution. That's, you know, we're
+perfectly capable of building an
+
+800
+00:18:09,270 --> 00:18:09,280
+perfectly capable of building an
+ 
+
+801
+00:18:09,280 --> 00:18:13,430
+perfectly capable of building an
+internal workflow inhouse. So,
+
+802
+00:18:13,430 --> 00:18:13,440
+internal workflow inhouse. So,
+ 
+
+803
+00:18:13,440 --> 00:18:17,750
+internal workflow inhouse. So,
+select some of those as build.
+
+804
+00:18:17,750 --> 00:18:17,760
+
+ 
+
+805
+00:18:17,760 --> 00:18:24,630
+
+Accept the rest.
+
+806
+00:18:24,630 --> 00:18:24,640
+
+ 
+
+807
+00:18:24,640 --> 00:18:27,430
+
+And now this is the short list of uh
+
+808
+00:18:27,430 --> 00:18:27,440
+And now this is the short list of uh
+ 
+
+809
+00:18:27,440 --> 00:18:29,350
+And now this is the short list of uh
+vendors that the system is recommending
+
+810
+00:18:29,350 --> 00:18:29,360
+vendors that the system is recommending
+ 
+
+811
+00:18:29,360 --> 00:18:31,590
+vendors that the system is recommending
+based on the based on the prior uh kind
+
+812
+00:18:31,590 --> 00:18:31,600
+based on the based on the prior uh kind
+ 
+
+813
+00:18:31,600 --> 00:18:33,750
+based on the based on the prior uh kind
+of wizard steps that that we went
+
+814
+00:18:33,750 --> 00:18:33,760
+of wizard steps that that we went
+ 
+
+815
+00:18:33,760 --> 00:18:35,990
+of wizard steps that that we went
+through. Um so these are the
+
+816
+00:18:35,990 --> 00:18:36,000
+through. Um so these are the
+ 
+
+817
+00:18:36,000 --> 00:18:38,950
+through. Um so these are the
+capabilities and the vendors who who uh
+
+818
+00:18:38,950 --> 00:18:38,960
+capabilities and the vendors who who uh
+ 
+
+819
+00:18:38,960 --> 00:18:41,110
+capabilities and the vendors who who uh
+we are confident are able to satisfy
+
+820
+00:18:41,110 --> 00:18:41,120
+we are confident are able to satisfy
+ 
+
+821
+00:18:41,120 --> 00:18:43,430
+we are confident are able to satisfy
+this particular capability.
+
+822
+00:18:43,430 --> 00:18:43,440
+this particular capability.
+ 
+
+823
+00:18:43,440 --> 00:18:47,190
+this particular capability.
+Uh there's a we could do a combo. So for
+
+824
+00:18:47,190 --> 00:18:47,200
+Uh there's a we could do a combo. So for
+ 
+
+825
+00:18:47,200 --> 00:18:50,230
+Uh there's a we could do a combo. So for
+aid over the gaps um really the system
+
+826
+00:18:50,230 --> 00:18:50,240
+aid over the gaps um really the system
+ 
+
+827
+00:18:50,240 --> 00:18:51,830
+aid over the gaps um really the system
+is saying we should take a look at five
+
+828
+00:18:51,830 --> 00:18:51,840
+is saying we should take a look at five
+ 
+
+829
+00:18:51,840 --> 00:18:53,669
+is saying we should take a look at five
+vendors who are doing each of those is
+
+830
+00:18:53,669 --> 00:18:53,679
+vendors who are doing each of those is
+ 
+
+831
+00:18:53,679 --> 00:18:57,029
+vendors who are doing each of those is
+doing some of those things.
+
+832
+00:18:57,029 --> 00:18:57,039
+doing some of those things.
+ 
+
+833
+00:18:57,039 --> 00:18:59,270
+doing some of those things.
+So we can apply
+
+834
+00:18:59,270 --> 00:18:59,280
+So we can apply
+ 
+
+835
+00:18:59,280 --> 00:19:00,870
+So we can apply
+and
+
+836
+00:19:00,870 --> 00:19:00,880
+and
+ 
+
+837
+00:19:00,880 --> 00:19:03,430
+and
+get to a page that's really a summary of
+
+838
+00:19:03,430 --> 00:19:03,440
+get to a page that's really a summary of
+ 
+
+839
+00:19:03,440 --> 00:19:04,950
+get to a page that's really a summary of
+all of the things that can be printed
+
+840
+00:19:04,950 --> 00:19:04,960
+all of the things that can be printed
+ 
+
+841
+00:19:04,960 --> 00:19:07,110
+all of the things that can be printed
+out uh provided to either the sourcing
+
+842
+00:19:07,110 --> 00:19:07,120
+out uh provided to either the sourcing
+ 
+
+843
+00:19:07,120 --> 00:19:08,870
+out uh provided to either the sourcing
+procurement teams in house or could be
+
+844
+00:19:08,870 --> 00:19:08,880
+procurement teams in house or could be
+ 
+
+845
+00:19:08,880 --> 00:19:11,430
+procurement teams in house or could be
+sent to the engineering teams or uh the
+
+846
+00:19:11,430 --> 00:19:11,440
+sent to the engineering teams or uh the
+ 
+
+847
+00:19:11,440 --> 00:19:14,230
+sent to the engineering teams or uh the
+development shops uh with you know
+
+848
+00:19:14,230 --> 00:19:14,240
+development shops uh with you know
+ 
+
+849
+00:19:14,240 --> 00:19:17,909
+development shops uh with you know
+either configuration uh guidance for you
+
+850
+00:19:17,909 --> 00:19:17,919
+either configuration uh guidance for you
+ 
+
+851
+00:19:17,919 --> 00:19:21,270
+either configuration uh guidance for you
+know for example the AWS bedrock guard
+
+852
+00:19:21,270 --> 00:19:21,280
+know for example the AWS bedrock guard
+ 
+
+853
+00:19:21,280 --> 00:19:22,630
+know for example the AWS bedrock guard
+rails and some of the controls that
+
+854
+00:19:22,630 --> 00:19:22,640
+rails and some of the controls that
+ 
+
+855
+00:19:22,640 --> 00:19:24,549
+rails and some of the controls that
+they're able to implement or similarly
+
+856
+00:19:24,549 --> 00:19:24,559
+they're able to implement or similarly
+ 
+
+857
+00:19:24,559 --> 00:19:27,830
+they're able to implement or similarly
+through uh or um other commercial
+
+858
+00:19:27,830 --> 00:19:27,840
+through uh or um other commercial
+ 
+
+859
+00:19:27,840 --> 00:19:32,470
+through uh or um other commercial
+solutions or in-house uh built um using
+
+860
+00:19:32,470 --> 00:19:32,480
+solutions or in-house uh built um using
+ 
+
+861
+00:19:32,480 --> 00:19:37,669
+solutions or in-house uh built um using
+open- source um tools uh and etc. So,
+
+862
+00:19:37,669 --> 00:19:37,679
+open- source um tools uh and etc. So,
+ 
+
+863
+00:19:37,679 --> 00:19:41,669
+open- source um tools uh and etc. So,
+and I looks like I am at time.
+
+864
+00:19:41,669 --> 00:19:41,679
+and I looks like I am at time.
+ 
+
+865
+00:19:41,679 --> 00:19:51,510
+and I looks like I am at time.
+I appreciate your watchful watchful eye
+
+866
+00:19:51,510 --> 00:19:51,520
+
+ 
+
+867
+00:19:51,520 --> 00:19:53,830
+
+and I guess we'll open it to questions
+
+868
+00:19:53,830 --> 00:19:53,840
+and I guess we'll open it to questions
+ 
+
+869
+00:19:53,840 --> 00:20:01,110
+and I guess we'll open it to questions
+for the next few minutes.
+
+870
+00:20:01,110 --> 00:20:01,120
+
+ 
+
+871
+00:20:01,120 --> 00:20:04,070
+
+Uh great presentation. Uh but I had a
+
+872
+00:20:04,070 --> 00:20:04,080
+Uh great presentation. Uh but I had a
+ 
+
+873
+00:20:04,080 --> 00:20:06,870
+Uh great presentation. Uh but I had a
+question about consolidating vendors
+
+874
+00:20:06,870 --> 00:20:06,880
+question about consolidating vendors
+ 
+
+875
+00:20:06,880 --> 00:20:08,230
+question about consolidating vendors
+versus picking something that is
+
+876
+00:20:08,230 --> 00:20:08,240
+versus picking something that is
+ 
+
+877
+00:20:08,240 --> 00:20:10,950
+versus picking something that is
+bestin-class. For example, like Viz is
+
+878
+00:20:10,950 --> 00:20:10,960
+bestin-class. For example, like Viz is
+ 
+
+879
+00:20:10,960 --> 00:20:13,110
+bestin-class. For example, like Viz is
+great at cloud security, but they also
+
+880
+00:20:13,110 --> 00:20:13,120
+great at cloud security, but they also
+ 
+
+881
+00:20:13,120 --> 00:20:15,669
+great at cloud security, but they also
+claim to do secret scanning and a bit of
+
+882
+00:20:15,669 --> 00:20:15,679
+claim to do secret scanning and a bit of
+ 
+
+883
+00:20:15,679 --> 00:20:19,510
+claim to do secret scanning and a bit of
+SAS and everything. So I mean how does
+
+884
+00:20:19,510 --> 00:20:19,520
+SAS and everything. So I mean how does
+ 
+
+885
+00:20:19,520 --> 00:20:21,430
+SAS and everything. So I mean how does
+your tool or like I mean or what are
+
+886
+00:20:21,430 --> 00:20:21,440
+your tool or like I mean or what are
+ 
+
+887
+00:20:21,440 --> 00:20:23,430
+your tool or like I mean or what are
+your thoughts on picking like a solution
+
+888
+00:20:23,430 --> 00:20:23,440
+your thoughts on picking like a solution
+ 
+
+889
+00:20:23,440 --> 00:20:25,750
+your thoughts on picking like a solution
+that is like a Swiss army knife does
+
+890
+00:20:25,750 --> 00:20:25,760
+that is like a Swiss army knife does
+ 
+
+891
+00:20:25,760 --> 00:20:27,590
+that is like a Swiss army knife does
+everything versus picking up something
+
+892
+00:20:27,590 --> 00:20:27,600
+everything versus picking up something
+ 
+
+893
+00:20:27,600 --> 00:20:30,870
+everything versus picking up something
+that is bestin-class. So uh the system
+
+894
+00:20:30,870 --> 00:20:30,880
+that is bestin-class. So uh the system
+ 
+
+895
+00:20:30,880 --> 00:20:33,750
+that is bestin-class. So uh the system
+attempts to recommend uh platform if a
+
+896
+00:20:33,750 --> 00:20:33,760
+attempts to recommend uh platform if a
+ 
+
+897
+00:20:33,760 --> 00:20:36,070
+attempts to recommend uh platform if a
+platform choice is made but the AI
+
+898
+00:20:36,070 --> 00:20:36,080
+platform choice is made but the AI
+ 
+
+899
+00:20:36,080 --> 00:20:37,830
+platform choice is made but the AI
+security landscape is very very
+
+900
+00:20:37,830 --> 00:20:37,840
+security landscape is very very
+ 
+
+901
+00:20:37,840 --> 00:20:40,789
+security landscape is very very
+fragmented right. So even the big
+
+902
+00:20:40,789 --> 00:20:40,799
+fragmented right. So even the big
+ 
+
+903
+00:20:40,799 --> 00:20:42,870
+fragmented right. So even the big
+companies like PaloAltos and the crowd
+
+904
+00:20:42,870 --> 00:20:42,880
+companies like PaloAltos and the crowd
+ 
+
+905
+00:20:42,880 --> 00:20:44,710
+companies like PaloAltos and the crowd
+strikes whiz is very far from that
+
+906
+00:20:44,710 --> 00:20:44,720
+strikes whiz is very far from that
+ 
+
+907
+00:20:44,720 --> 00:20:46,630
+strikes whiz is very far from that
+category for now they may get there at
+
+908
+00:20:46,630 --> 00:20:46,640
+category for now they may get there at
+ 
+
+909
+00:20:46,640 --> 00:20:48,149
+category for now they may get there at
+some point but they only have a very
+
+910
+00:20:48,149 --> 00:20:48,159
+some point but they only have a very
+ 
+
+911
+00:20:48,159 --> 00:20:50,789
+some point but they only have a very
+small handful of capabilities but uh
+
+912
+00:20:50,789 --> 00:20:50,799
+small handful of capabilities but uh
+ 
+
+913
+00:20:50,799 --> 00:20:52,950
+small handful of capabilities but uh
+even those big platform plays are still
+
+914
+00:20:52,950 --> 00:20:52,960
+even those big platform plays are still
+ 
+
+915
+00:20:52,960 --> 00:20:55,590
+even those big platform plays are still
+going to give you about 50% of of the
+
+916
+00:20:55,590 --> 00:20:55,600
+going to give you about 50% of of the
+ 
+
+917
+00:20:55,600 --> 00:20:58,870
+going to give you about 50% of of the
+risks that are most relevant. Okay.
+
+918
+00:20:58,870 --> 00:20:58,880
+risks that are most relevant. Okay.
+ 
+
+919
+00:20:58,880 --> 00:21:01,110
+risks that are most relevant. Okay.
+>> Hi there. Uh, thanks for going over
+
+920
+00:21:01,110 --> 00:21:01,120
+>> Hi there. Uh, thanks for going over
+ 
+
+921
+00:21:01,120 --> 00:21:03,510
+>> Hi there. Uh, thanks for going over
+this. This is something you and your
+
+922
+00:21:03,510 --> 00:21:03,520
+this. This is something you and your
+ 
+
+923
+00:21:03,520 --> 00:21:05,190
+this. This is something you and your
+organization have built and you guys
+
+924
+00:21:05,190 --> 00:21:05,200
+organization have built and you guys
+ 
+
+925
+00:21:05,200 --> 00:21:06,310
+organization have built and you guys
+maintain this.
+
+926
+00:21:06,310 --> 00:21:06,320
+maintain this.
+ 
+
+927
+00:21:06,320 --> 00:21:07,190
+maintain this.
+>> Yes.
+
+928
+00:21:07,190 --> 00:21:07,200
+>> Yes.
+ 
+
+929
+00:21:07,200 --> 00:21:08,789
+>> Yes.
+>> Interesting. Um, are you familiar with
+
+930
+00:21:08,789 --> 00:21:08,799
+>> Interesting. Um, are you familiar with
+ 
+
+931
+00:21:08,799 --> 00:21:11,190
+>> Interesting. Um, are you familiar with
+Richard Stein and the IT Harvest work
+
+932
+00:21:11,190 --> 00:21:11,200
+Richard Stein and the IT Harvest work
+ 
+
+933
+00:21:11,200 --> 00:21:11,990
+Richard Stein and the IT Harvest work
+that they do?
+
+934
+00:21:11,990 --> 00:21:12,000
+that they do?
+ 
+
+935
+00:21:12,000 --> 00:21:12,549
+that they do?
+>> No.
+
+936
+00:21:12,549 --> 00:21:12,559
+>> No.
+ 
+
+937
+00:21:12,559 --> 00:21:14,950
+>> No.
+>> It's like the kaleidoscope of cyber
+
+938
+00:21:14,950 --> 00:21:14,960
+>> It's like the kaleidoscope of cyber
+ 
+
+939
+00:21:14,960 --> 00:21:16,070
+>> It's like the kaleidoscope of cyber
+security vendors.
+
+940
+00:21:16,070 --> 00:21:16,080
+security vendors.
+ 
+
+941
+00:21:16,080 --> 00:21:17,110
+security vendors.
+>> Oh, I've seen it. Yeah. Yeah.
+
+942
+00:21:17,110 --> 00:21:17,120
+>> Oh, I've seen it. Yeah. Yeah.
+ 
+
+943
+00:21:17,120 --> 00:21:19,430
+>> Oh, I've seen it. Yeah. Yeah.
+>> The encyclopedia. They publish a book.
+
+944
+00:21:19,430 --> 00:21:19,440
+>> The encyclopedia. They publish a book.
+ 
+
+945
+00:21:19,440 --> 00:21:21,510
+>> The encyclopedia. They publish a book.
+It just this seems like it'd be
+
+946
+00:21:21,510 --> 00:21:21,520
+It just this seems like it'd be
+ 
+
+947
+00:21:21,520 --> 00:21:22,870
+It just this seems like it'd be
+extremely valuable to them. I don't know
+
+948
+00:21:22,870 --> 00:21:22,880
+extremely valuable to them. I don't know
+ 
+
+949
+00:21:22,880 --> 00:21:24,549
+extremely valuable to them. I don't know
+if you guys talk or work together but
+
+950
+00:21:24,549 --> 00:21:24,559
+if you guys talk or work together but
+ 
+
+951
+00:21:24,559 --> 00:21:26,230
+if you guys talk or work together but
+>> I've seen it but yeah I have not had any
+
+952
+00:21:26,230 --> 00:21:26,240
+>> I've seen it but yeah I have not had any
+ 
+
+953
+00:21:26,240 --> 00:21:27,110
+>> I've seen it but yeah I have not had any
+contact with them.
+
+954
+00:21:27,110 --> 00:21:27,120
+contact with them.
+ 
+
+955
+00:21:27,120 --> 00:21:29,190
+contact with them.
+>> How do you maintain this when such a
+
+956
+00:21:29,190 --> 00:21:29,200
+>> How do you maintain this when such a
+ 
+
+957
+00:21:29,200 --> 00:21:31,590
+>> How do you maintain this when such a
+high velocity rapidly changing
+
+958
+00:21:31,590 --> 00:21:31,600
+high velocity rapidly changing
+ 
+
+959
+00:21:31,600 --> 00:21:32,390
+high velocity rapidly changing
+landscape?
+
+960
+00:21:32,390 --> 00:21:32,400
+landscape?
+ 
+
+961
+00:21:32,400 --> 00:21:35,750
+landscape?
+>> So there is a uh via GitHub actions
+
+962
+00:21:35,750 --> 00:21:35,760
+>> So there is a uh via GitHub actions
+ 
+
+963
+00:21:35,760 --> 00:21:37,909
+>> So there is a uh via GitHub actions
+there's an agentic world workflow that
+
+964
+00:21:37,909 --> 00:21:37,919
+there's an agentic world workflow that
+ 
+
+965
+00:21:37,919 --> 00:21:40,710
+there's an agentic world workflow that
+kicks gets kicked off every evening. So
+
+966
+00:21:40,710 --> 00:21:40,720
+kicks gets kicked off every evening. So
+ 
+
+967
+00:21:40,720 --> 00:21:42,549
+kicks gets kicked off every evening. So
+overnight you know it's about 12 hours
+
+968
+00:21:42,549 --> 00:21:42,559
+overnight you know it's about 12 hours
+ 
+
+969
+00:21:42,559 --> 00:21:45,590
+overnight you know it's about 12 hours
+every day. U some subset of these
+
+970
+00:21:45,590 --> 00:21:45,600
+every day. U some subset of these
+ 
+
+971
+00:21:45,600 --> 00:21:47,909
+every day. U some subset of these
+vendors go through that new research
+
+972
+00:21:47,909 --> 00:21:47,919
+vendors go through that new research
+ 
+
+973
+00:21:47,919 --> 00:21:50,310
+vendors go through that new research
+process again. So every the the goal is
+
+974
+00:21:50,310 --> 00:21:50,320
+process again. So every the the goal is
+ 
+
+975
+00:21:50,320 --> 00:21:52,149
+process again. So every the the goal is
+to have every vendor get revisited at
+
+976
+00:21:52,149 --> 00:21:52,159
+to have every vendor get revisited at
+ 
+
+977
+00:21:52,159 --> 00:21:54,149
+to have every vendor get revisited at
+least once a month and then there's a
+
+978
+00:21:54,149 --> 00:21:54,159
+least once a month and then there's a
+ 
+
+979
+00:21:54,159 --> 00:21:55,909
+least once a month and then there's a
+separate workflow to identify new
+
+980
+00:21:55,909 --> 00:21:55,919
+separate workflow to identify new
+ 
+
+981
+00:21:55,919 --> 00:21:59,669
+separate workflow to identify new
+players or uh other uh traditional cyber
+
+982
+00:21:59,669 --> 00:21:59,679
+players or uh other uh traditional cyber
+ 
+
+983
+00:21:59,679 --> 00:22:01,909
+players or uh other uh traditional cyber
+security vendors who are adding uh AI
+
+984
+00:22:01,909 --> 00:22:01,919
+security vendors who are adding uh AI
+ 
+
+985
+00:22:01,919 --> 00:22:05,190
+security vendors who are adding uh AI
+security capabilities.
+
+986
+00:22:05,190 --> 00:22:05,200
+security capabilities.
+ 
+
+987
+00:22:05,200 --> 00:22:09,590
+security capabilities.
+Got time for one more
+
+988
+00:22:09,590 --> 00:22:09,600
+
+ 
+
+989
+00:22:09,600 --> 00:22:11,750
+
+or zero more. Thank you. All right.
+
+990
+00:22:11,750 --> 00:22:11,760
+or zero more. Thank you. All right.
+ 
+
+991
+00:22:11,760 --> 00:22:15,000
+or zero more. Thank you. All right.
+Thank you.
+

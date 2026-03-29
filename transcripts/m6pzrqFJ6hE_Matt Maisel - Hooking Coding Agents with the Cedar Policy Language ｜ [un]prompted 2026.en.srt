@@ -1,0 +1,4805 @@
+1
+00:00:06,000 --> 00:00:07,670
+
+All right. Uh, thanks everyone for uh,
+
+2
+00:00:07,670 --> 00:00:07,680
+All right. Uh, thanks everyone for uh,
+ 
+
+3
+00:00:07,680 --> 00:00:09,110
+All right. Uh, thanks everyone for uh,
+the technical difficulties. I really
+
+4
+00:00:09,110 --> 00:00:09,120
+the technical difficulties. I really
+ 
+
+5
+00:00:09,120 --> 00:00:11,030
+the technical difficulties. I really
+appreciate the AV staff here. Um, I'll
+
+6
+00:00:11,030 --> 00:00:11,040
+appreciate the AV staff here. Um, I'll
+ 
+
+7
+00:00:11,040 --> 00:00:12,549
+appreciate the AV staff here. Um, I'll
+just get started and we'll just we'll
+
+8
+00:00:12,549 --> 00:00:12,559
+just get started and we'll just we'll
+ 
+
+9
+00:00:12,559 --> 00:00:14,390
+just get started and we'll just we'll
+just work with what we got. Um, hey
+
+10
+00:00:14,390 --> 00:00:14,400
+just work with what we got. Um, hey
+ 
+
+11
+00:00:14,400 --> 00:00:15,669
+just work with what we got. Um, hey
+everyone. Uh, thanks for coming to my
+
+12
+00:00:15,669 --> 00:00:15,679
+everyone. Uh, thanks for coming to my
+ 
+
+13
+00:00:15,679 --> 00:00:17,670
+everyone. Uh, thanks for coming to my
+talk. I'm Matt Masel. I'm CTO and
+
+14
+00:00:17,670 --> 00:00:17,680
+talk. I'm Matt Masel. I'm CTO and
+ 
+
+15
+00:00:17,680 --> 00:00:19,750
+talk. I'm Matt Masel. I'm CTO and
+co-founder of Cinderea. Uh, we're
+
+16
+00:00:19,750 --> 00:00:19,760
+co-founder of Cinderea. Uh, we're
+ 
+
+17
+00:00:19,760 --> 00:00:22,310
+co-founder of Cinderea. Uh, we're
+building trustworthy uh, agent partners
+
+18
+00:00:22,310 --> 00:00:22,320
+building trustworthy uh, agent partners
+ 
+
+19
+00:00:22,320 --> 00:00:24,470
+building trustworthy uh, agent partners
+and I' I've spent the last 15 years at
+
+20
+00:00:24,470 --> 00:00:24,480
+and I' I've spent the last 15 years at
+ 
+
+21
+00:00:24,480 --> 00:00:25,990
+and I' I've spent the last 15 years at
+the intersection of machine learning,
+
+22
+00:00:25,990 --> 00:00:26,000
+the intersection of machine learning,
+ 
+
+23
+00:00:26,000 --> 00:00:30,230
+the intersection of machine learning,
+security, and software engineering.
+
+24
+00:00:30,230 --> 00:00:30,240
+
+ 
+
+25
+00:00:30,240 --> 00:00:32,150
+
+Today I'm going to be showing you how we
+
+26
+00:00:32,150 --> 00:00:32,160
+Today I'm going to be showing you how we
+ 
+
+27
+00:00:32,160 --> 00:00:34,150
+Today I'm going to be showing you how we
+can uh hook uh coding agents and
+
+28
+00:00:34,150 --> 00:00:34,160
+can uh hook uh coding agents and
+ 
+
+29
+00:00:34,160 --> 00:00:36,069
+can uh hook uh coding agents and
+adjudicate their actions using the Cedar
+
+30
+00:00:36,069 --> 00:00:36,079
+adjudicate their actions using the Cedar
+ 
+
+31
+00:00:36,079 --> 00:00:38,709
+adjudicate their actions using the Cedar
+policy language. Um and if you're in
+
+32
+00:00:38,709 --> 00:00:38,719
+policy language. Um and if you're in
+ 
+
+33
+00:00:38,719 --> 00:00:40,630
+policy language. Um and if you're in
+this uh track today, there's a lot of
+
+34
+00:00:40,630 --> 00:00:40,640
+this uh track today, there's a lot of
+ 
+
+35
+00:00:40,640 --> 00:00:41,830
+this uh track today, there's a lot of
+good background material. This is a
+
+36
+00:00:41,830 --> 00:00:41,840
+good background material. This is a
+ 
+
+37
+00:00:41,840 --> 00:00:42,950
+good background material. This is a
+lightning talk, so we're going to we're
+
+38
+00:00:42,950 --> 00:00:42,960
+lightning talk, so we're going to we're
+ 
+
+39
+00:00:42,960 --> 00:00:44,150
+lightning talk, so we're going to we're
+going to move really fast. We're
+
+40
+00:00:44,150 --> 00:00:44,160
+going to move really fast. We're
+ 
+
+41
+00:00:44,160 --> 00:00:45,750
+going to move really fast. We're
+actually going to unroll the coding
+
+42
+00:00:45,750 --> 00:00:45,760
+actually going to unroll the coding
+ 
+
+43
+00:00:45,760 --> 00:00:47,830
+actually going to unroll the coding
+agent loop and uh and build a policy
+
+44
+00:00:47,830 --> 00:00:47,840
+agent loop and uh and build a policy
+ 
+
+45
+00:00:47,840 --> 00:00:50,229
+agent loop and uh and build a policy
+harness all within the next 10 minutes.
+
+46
+00:00:50,229 --> 00:00:50,239
+harness all within the next 10 minutes.
+ 
+
+47
+00:00:50,239 --> 00:00:52,549
+harness all within the next 10 minutes.
+Um so coding agent scaffolds plan,
+
+48
+00:00:52,549 --> 00:00:52,559
+Um so coding agent scaffolds plan,
+ 
+
+49
+00:00:52,559 --> 00:00:54,389
+Um so coding agent scaffolds plan,
+generate, execute code, and run tools
+
+50
+00:00:54,389 --> 00:00:54,399
+generate, execute code, and run tools
+ 
+
+51
+00:00:54,399 --> 00:00:56,630
+generate, execute code, and run tools
+and loops. uh we can map this action
+
+52
+00:00:56,630 --> 00:00:56,640
+and loops. uh we can map this action
+ 
+
+53
+00:00:56,640 --> 00:00:58,950
+and loops. uh we can map this action
+space into a trajectory event model that
+
+54
+00:00:58,950 --> 00:00:58,960
+space into a trajectory event model that
+ 
+
+55
+00:00:58,960 --> 00:01:01,510
+space into a trajectory event model that
+consists of uh five four event types
+
+56
+00:01:01,510 --> 00:01:01,520
+consists of uh five four event types
+ 
+
+57
+00:01:01,520 --> 00:01:04,390
+consists of uh five four event types
+actions observations control and state.
+
+58
+00:01:04,390 --> 00:01:04,400
+actions observations control and state.
+ 
+
+59
+00:01:04,400 --> 00:01:06,230
+actions observations control and state.
+Um let's say an agent's maybe already
+
+60
+00:01:06,230 --> 00:01:06,240
+Um let's say an agent's maybe already
+ 
+
+61
+00:01:06,240 --> 00:01:08,149
+Um let's say an agent's maybe already
+working on some coding task. It's had a
+
+62
+00:01:08,149 --> 00:01:08,159
+working on some coding task. It's had a
+ 
+
+63
+00:01:08,159 --> 00:01:10,469
+working on some coding task. It's had a
+plan. It's going and generating code
+
+64
+00:01:10,469 --> 00:01:10,479
+plan. It's going and generating code
+ 
+
+65
+00:01:10,479 --> 00:01:11,910
+plan. It's going and generating code
+triggering actions. So starting at the
+
+66
+00:01:11,910 --> 00:01:11,920
+triggering actions. So starting at the
+ 
+
+67
+00:01:11,920 --> 00:01:14,149
+triggering actions. So starting at the
+bottom left uh we have uh the agent
+
+68
+00:01:14,149 --> 00:01:14,159
+bottom left uh we have uh the agent
+ 
+
+69
+00:01:14,159 --> 00:01:16,070
+bottom left uh we have uh the agent
+initiating uh initiating actions such as
+
+70
+00:01:16,070 --> 00:01:16,080
+initiating uh initiating actions such as
+ 
+
+71
+00:01:16,080 --> 00:01:18,310
+initiating uh initiating actions such as
+writing or modifying files running shell
+
+72
+00:01:18,310 --> 00:01:18,320
+writing or modifying files running shell
+ 
+
+73
+00:01:18,320 --> 00:01:21,030
+writing or modifying files running shell
+commands uh executing code um and these
+
+74
+00:01:21,030 --> 00:01:21,040
+commands uh executing code um and these
+ 
+
+75
+00:01:21,040 --> 00:01:22,950
+commands uh executing code um and these
+actions are all um mutating the
+
+76
+00:01:22,950 --> 00:01:22,960
+actions are all um mutating the
+ 
+
+77
+00:01:22,960 --> 00:01:24,310
+actions are all um mutating the
+environment that that agent's operating
+
+78
+00:01:24,310 --> 00:01:24,320
+environment that that agent's operating
+ 
+
+79
+00:01:24,320 --> 00:01:26,550
+environment that that agent's operating
+in. Um the environment then emits an
+
+80
+00:01:26,550 --> 00:01:26,560
+in. Um the environment then emits an
+ 
+
+81
+00:01:26,560 --> 00:01:28,230
+in. Um the environment then emits an
+observation uh back to the agent
+
+82
+00:01:28,230 --> 00:01:28,240
+observation uh back to the agent
+ 
+
+83
+00:01:28,240 --> 00:01:29,670
+observation uh back to the agent
+providing feedback to the next model
+
+84
+00:01:29,670 --> 00:01:29,680
+providing feedback to the next model
+ 
+
+85
+00:01:29,680 --> 00:01:32,310
+providing feedback to the next model
+inference call.
+
+86
+00:01:32,310 --> 00:01:32,320
+inference call.
+ 
+
+87
+00:01:32,320 --> 00:01:34,550
+inference call.
+Uh meanwhile we also have control events
+
+88
+00:01:34,550 --> 00:01:34,560
+Uh meanwhile we also have control events
+ 
+
+89
+00:01:34,560 --> 00:01:36,149
+Uh meanwhile we also have control events
+right that handle user prompts,
+
+90
+00:01:36,149 --> 00:01:36,159
+right that handle user prompts,
+ 
+
+91
+00:01:36,159 --> 00:01:38,390
+right that handle user prompts,
+permission requests, uh sub agent, agent
+
+92
+00:01:38,390 --> 00:01:38,400
+permission requests, uh sub agent, agent
+ 
+
+93
+00:01:38,400 --> 00:01:41,590
+permission requests, uh sub agent, agent
+orchestration. Um and then we have state
+
+94
+00:01:41,590 --> 00:01:41,600
+orchestration. Um and then we have state
+ 
+
+95
+00:01:41,600 --> 00:01:43,590
+orchestration. Um and then we have state
+events that handle uh mechanics like
+
+96
+00:01:43,590 --> 00:01:43,600
+events that handle uh mechanics like
+ 
+
+97
+00:01:43,600 --> 00:01:45,590
+events that handle uh mechanics like
+memory compaction, pruning, um
+
+98
+00:01:45,590 --> 00:01:45,600
+memory compaction, pruning, um
+ 
+
+99
+00:01:45,600 --> 00:01:48,550
+memory compaction, pruning, um
+environment snapshots, uh and so forth.
+
+100
+00:01:48,550 --> 00:01:48,560
+environment snapshots, uh and so forth.
+ 
+
+101
+00:01:48,560 --> 00:01:50,069
+environment snapshots, uh and so forth.
+So uh with this event model, we can
+
+102
+00:01:50,069 --> 00:01:50,079
+So uh with this event model, we can
+ 
+
+103
+00:01:50,079 --> 00:01:51,990
+So uh with this event model, we can
+actually take our now canonical lethal
+
+104
+00:01:51,990 --> 00:01:52,000
+actually take our now canonical lethal
+ 
+
+105
+00:01:52,000 --> 00:01:53,749
+actually take our now canonical lethal
+trifecta threat model and map it to
+
+106
+00:01:53,749 --> 00:01:53,759
+trifecta threat model and map it to
+ 
+
+107
+00:01:53,759 --> 00:01:55,510
+trifecta threat model and map it to
+these trajectory events. And we can see
+
+108
+00:01:55,510 --> 00:01:55,520
+these trajectory events. And we can see
+ 
+
+109
+00:01:55,520 --> 00:01:57,590
+these trajectory events. And we can see
+that this just becomes uh untrusted
+
+110
+00:01:57,590 --> 00:01:57,600
+that this just becomes uh untrusted
+ 
+
+111
+00:01:57,600 --> 00:01:59,109
+that this just becomes uh untrusted
+input, right? coming from things like
+
+112
+00:01:59,109 --> 00:01:59,119
+input, right? coming from things like
+ 
+
+113
+00:01:59,119 --> 00:02:00,950
+input, right? coming from things like
+skills which might be fetched you know
+
+114
+00:02:00,950 --> 00:02:00,960
+skills which might be fetched you know
+ 
+
+115
+00:02:00,960 --> 00:02:02,630
+skills which might be fetched you know
+over web fetch coming from a marketplace
+
+116
+00:02:02,630 --> 00:02:02,640
+over web fetch coming from a marketplace
+ 
+
+117
+00:02:02,640 --> 00:02:04,230
+over web fetch coming from a marketplace
+and returned as an observation right as
+
+118
+00:02:04,230 --> 00:02:04,240
+and returned as an observation right as
+ 
+
+119
+00:02:04,240 --> 00:02:05,990
+and returned as an observation right as
+as a as as untrusted data which might
+
+120
+00:02:05,990 --> 00:02:06,000
+as a as as untrusted data which might
+ 
+
+121
+00:02:06,000 --> 00:02:08,070
+as a as as untrusted data which might
+have injections. We might already have
+
+122
+00:02:08,070 --> 00:02:08,080
+have injections. We might already have
+ 
+
+123
+00:02:08,080 --> 00:02:10,309
+have injections. We might already have
+sensitive data like source code or
+
+124
+00:02:10,309 --> 00:02:10,319
+sensitive data like source code or
+ 
+
+125
+00:02:10,319 --> 00:02:12,470
+sensitive data like source code or
+internal docs in the agent context or
+
+126
+00:02:12,470 --> 00:02:12,480
+internal docs in the agent context or
+ 
+
+127
+00:02:12,480 --> 00:02:14,550
+internal docs in the agent context or
+retrieve from memory. Um and then
+
+128
+00:02:14,550 --> 00:02:14,560
+retrieve from memory. Um and then
+ 
+
+129
+00:02:14,560 --> 00:02:16,949
+retrieve from memory. Um and then
+through state changes right uh with to
+
+130
+00:02:16,949 --> 00:02:16,959
+through state changes right uh with to
+ 
+
+131
+00:02:16,959 --> 00:02:18,550
+through state changes right uh with to
+make this complete lethal trifecta we
+
+132
+00:02:18,550 --> 00:02:18,560
+make this complete lethal trifecta we
+ 
+
+133
+00:02:18,560 --> 00:02:19,910
+make this complete lethal trifecta we
+would have like shell commands or code
+
+134
+00:02:19,910 --> 00:02:19,920
+would have like shell commands or code
+ 
+
+135
+00:02:19,920 --> 00:02:21,910
+would have like shell commands or code
+execution right that would uh would lead
+
+136
+00:02:21,910 --> 00:02:21,920
+execution right that would uh would lead
+ 
+
+137
+00:02:21,920 --> 00:02:24,949
+execution right that would uh would lead
+to xfill of that data. Um but this is
+
+138
+00:02:24,949 --> 00:02:24,959
+to xfill of that data. Um but this is
+ 
+
+139
+00:02:24,959 --> 00:02:27,270
+to xfill of that data. Um but this is
+just one narrow threat model um data
+
+140
+00:02:27,270 --> 00:02:27,280
+just one narrow threat model um data
+ 
+
+141
+00:02:27,280 --> 00:02:29,190
+just one narrow threat model um data
+Xfell. And with this trajectory model we
+
+142
+00:02:29,190 --> 00:02:29,200
+Xfell. And with this trajectory model we
+ 
+
+143
+00:02:29,200 --> 00:02:31,110
+Xfell. And with this trajectory model we
+can do we can do more complex um even
+
+144
+00:02:31,110 --> 00:02:31,120
+can do we can do more complex um even
+ 
+
+145
+00:02:31,120 --> 00:02:33,589
+can do we can do more complex um even
+multi multi-step attacks right that are
+
+146
+00:02:33,589 --> 00:02:33,599
+multi multi-step attacks right that are
+ 
+
+147
+00:02:33,599 --> 00:02:35,110
+multi multi-step attacks right that are
+uh going to have observations and
+
+148
+00:02:35,110 --> 00:02:35,120
+uh going to have observations and
+ 
+
+149
+00:02:35,120 --> 00:02:37,350
+uh going to have observations and
+actions over multiple turns of the loop
+
+150
+00:02:37,350 --> 00:02:37,360
+actions over multiple turns of the loop
+ 
+
+151
+00:02:37,360 --> 00:02:39,270
+actions over multiple turns of the loop
+that might involve uh control events and
+
+152
+00:02:39,270 --> 00:02:39,280
+that might involve uh control events and
+ 
+
+153
+00:02:39,280 --> 00:02:41,910
+that might involve uh control events and
+state events. Um and we can also map
+
+154
+00:02:41,910 --> 00:02:41,920
+state events. Um and we can also map
+ 
+
+155
+00:02:41,920 --> 00:02:43,750
+state events. Um and we can also map
+other threat and risk models like OAS
+
+156
+00:02:43,750 --> 00:02:43,760
+other threat and risk models like OAS
+ 
+
+157
+00:02:43,760 --> 00:02:46,150
+other threat and risk models like OAS
+top 10 for aentic applications to this.
+
+158
+00:02:46,150 --> 00:02:46,160
+top 10 for aentic applications to this.
+ 
+
+159
+00:02:46,160 --> 00:02:48,150
+top 10 for aentic applications to this.
+Um, and this is really just looking uh
+
+160
+00:02:48,150 --> 00:02:48,160
+Um, and this is really just looking uh
+ 
+
+161
+00:02:48,160 --> 00:02:49,830
+Um, and this is really just looking uh
+helping us really map where we want to
+
+162
+00:02:49,830 --> 00:02:49,840
+helping us really map where we want to
+ 
+
+163
+00:02:49,840 --> 00:02:51,750
+helping us really map where we want to
+have control over the exact boundaries
+
+164
+00:02:51,750 --> 00:02:51,760
+have control over the exact boundaries
+ 
+
+165
+00:02:51,760 --> 00:02:53,190
+have control over the exact boundaries
+around these events and where they're
+
+166
+00:02:53,190 --> 00:02:53,200
+around these events and where they're
+ 
+
+167
+00:02:53,200 --> 00:02:55,430
+around these events and where they're
+produced. And this is where uh reference
+
+168
+00:02:55,430 --> 00:02:55,440
+produced. And this is where uh reference
+ 
+
+169
+00:02:55,440 --> 00:02:57,910
+produced. And this is where uh reference
+monitors uh come in. So we want a
+
+170
+00:02:57,910 --> 00:02:57,920
+monitors uh come in. So we want a
+ 
+
+171
+00:02:57,920 --> 00:03:00,070
+monitors uh come in. So we want a
+reference monitor sitting um outside the
+
+172
+00:03:00,070 --> 00:03:00,080
+reference monitor sitting um outside the
+ 
+
+173
+00:03:00,080 --> 00:03:01,670
+reference monitor sitting um outside the
+agent in the model, right? To mediate
+
+174
+00:03:01,670 --> 00:03:01,680
+agent in the model, right? To mediate
+ 
+
+175
+00:03:01,680 --> 00:03:04,309
+agent in the model, right? To mediate
+every event. Uh ideally this monitor is
+
+176
+00:03:04,309 --> 00:03:04,319
+every event. Uh ideally this monitor is
+ 
+
+177
+00:03:04,319 --> 00:03:06,309
+every event. Uh ideally this monitor is
+always invoked. It's tamperproof and
+
+178
+00:03:06,309 --> 00:03:06,319
+always invoked. It's tamperproof and
+ 
+
+179
+00:03:06,319 --> 00:03:08,710
+always invoked. It's tamperproof and
+verifiable. So it acts as our our hard
+
+180
+00:03:08,710 --> 00:03:08,720
+verifiable. So it acts as our our hard
+ 
+
+181
+00:03:08,720 --> 00:03:10,550
+verifiable. So it acts as our our hard
+security boundary between the agent
+
+182
+00:03:10,550 --> 00:03:10,560
+security boundary between the agent
+ 
+
+183
+00:03:10,560 --> 00:03:12,390
+security boundary between the agent
+control observation action and state
+
+184
+00:03:12,390 --> 00:03:12,400
+control observation action and state
+ 
+
+185
+00:03:12,400 --> 00:03:13,990
+control observation action and state
+events and where they're you know
+
+186
+00:03:13,990 --> 00:03:14,000
+events and where they're you know
+ 
+
+187
+00:03:14,000 --> 00:03:15,509
+events and where they're you know
+produced by the agent and by the system
+
+188
+00:03:15,509 --> 00:03:15,519
+produced by the agent and by the system
+ 
+
+189
+00:03:15,519 --> 00:03:17,589
+produced by the agent and by the system
+in the environment. Um but a reference
+
+190
+00:03:17,589 --> 00:03:17,599
+in the environment. Um but a reference
+ 
+
+191
+00:03:17,599 --> 00:03:19,190
+in the environment. Um but a reference
+monitor by itself is it's only as good
+
+192
+00:03:19,190 --> 00:03:19,200
+monitor by itself is it's only as good
+ 
+
+193
+00:03:19,200 --> 00:03:21,509
+monitor by itself is it's only as good
+as the policy enforcement uh points that
+
+194
+00:03:21,509 --> 00:03:21,519
+as the policy enforcement uh points that
+ 
+
+195
+00:03:21,519 --> 00:03:23,110
+as the policy enforcement uh points that
+it supports right where we can exert our
+
+196
+00:03:23,110 --> 00:03:23,120
+it supports right where we can exert our
+ 
+
+197
+00:03:23,120 --> 00:03:24,949
+it supports right where we can exert our
+control and where we can hook in. And
+
+198
+00:03:24,949 --> 00:03:24,959
+control and where we can hook in. And
+ 
+
+199
+00:03:24,959 --> 00:03:26,790
+control and where we can hook in. And
+that's again that's where uh where agent
+
+200
+00:03:26,790 --> 00:03:26,800
+that's again that's where uh where agent
+ 
+
+201
+00:03:26,800 --> 00:03:29,750
+that's again that's where uh where agent
+coding hooks come into play. So hooks
+
+202
+00:03:29,750 --> 00:03:29,760
+coding hooks come into play. So hooks
+ 
+
+203
+00:03:29,760 --> 00:03:31,830
+coding hooks come into play. So hooks
+allow us to intercept these trajectory
+
+204
+00:03:31,830 --> 00:03:31,840
+allow us to intercept these trajectory
+ 
+
+205
+00:03:31,840 --> 00:03:34,710
+allow us to intercept these trajectory
+events, processes them, decide whether
+
+206
+00:03:34,710 --> 00:03:34,720
+events, processes them, decide whether
+ 
+
+207
+00:03:34,720 --> 00:03:36,630
+events, processes them, decide whether
+to allow, modify or stop the agents
+
+208
+00:03:36,630 --> 00:03:36,640
+to allow, modify or stop the agents
+ 
+
+209
+00:03:36,640 --> 00:03:37,910
+to allow, modify or stop the agents
+loop. So we're changing the agents
+
+210
+00:03:37,910 --> 00:03:37,920
+loop. So we're changing the agents
+ 
+
+211
+00:03:37,920 --> 00:03:39,750
+loop. So we're changing the agents
+behavior. Um, and this is invoked at
+
+212
+00:03:39,750 --> 00:03:39,760
+behavior. Um, and this is invoked at
+ 
+
+213
+00:03:39,760 --> 00:03:41,910
+behavior. Um, and this is invoked at
+different life cycle uh stages of of the
+
+214
+00:03:41,910 --> 00:03:41,920
+different life cycle uh stages of of the
+ 
+
+215
+00:03:41,920 --> 00:03:44,149
+different life cycle uh stages of of the
+agent loop. And each coding agent uh
+
+216
+00:03:44,149 --> 00:03:44,159
+agent loop. And each coding agent uh
+ 
+
+217
+00:03:44,159 --> 00:03:46,149
+agent loop. And each coding agent uh
+implementation has its own details. Uh
+
+218
+00:03:46,149 --> 00:03:46,159
+implementation has its own details. Uh
+ 
+
+219
+00:03:46,159 --> 00:03:48,390
+implementation has its own details. Uh
+Gemini CLI, for example, has uh before
+
+220
+00:03:48,390 --> 00:03:48,400
+Gemini CLI, for example, has uh before
+ 
+
+221
+00:03:48,400 --> 00:03:50,630
+Gemini CLI, for example, has uh before
+and after model hooks uh which let you
+
+222
+00:03:50,630 --> 00:03:50,640
+and after model hooks uh which let you
+ 
+
+223
+00:03:50,640 --> 00:03:52,710
+and after model hooks uh which let you
+stream individual tokens and and do uh
+
+224
+00:03:52,710 --> 00:03:52,720
+stream individual tokens and and do uh
+ 
+
+225
+00:03:52,720 --> 00:03:54,630
+stream individual tokens and and do uh
+processing on them. uh cloud code
+
+226
+00:03:54,630 --> 00:03:54,640
+processing on them. uh cloud code
+ 
+
+227
+00:03:54,640 --> 00:03:56,550
+processing on them. uh cloud code
+doesn't um actually have any model hooks
+
+228
+00:03:56,550 --> 00:03:56,560
+doesn't um actually have any model hooks
+ 
+
+229
+00:03:56,560 --> 00:03:57,910
+doesn't um actually have any model hooks
+at all other than the final agent
+
+230
+00:03:57,910 --> 00:03:57,920
+at all other than the final agent
+ 
+
+231
+00:03:57,920 --> 00:03:59,750
+at all other than the final agent
+response uh that's returned as a
+
+232
+00:03:59,750 --> 00:03:59,760
+response uh that's returned as a
+ 
+
+233
+00:03:59,760 --> 00:04:01,670
+response uh that's returned as a
+notification event type. And then cursor
+
+234
+00:04:01,670 --> 00:04:01,680
+notification event type. And then cursor
+ 
+
+235
+00:04:01,680 --> 00:04:04,550
+notification event type. And then cursor
+has pretty granular uh hook types for
+
+236
+00:04:04,550 --> 00:04:04,560
+has pretty granular uh hook types for
+ 
+
+237
+00:04:04,560 --> 00:04:07,670
+has pretty granular uh hook types for
+MCP um shell commands as well as more
+
+238
+00:04:07,670 --> 00:04:07,680
+MCP um shell commands as well as more
+ 
+
+239
+00:04:07,680 --> 00:04:09,830
+MCP um shell commands as well as more
+generic tool calls. Um so with these
+
+240
+00:04:09,830 --> 00:04:09,840
+generic tool calls. Um so with these
+ 
+
+241
+00:04:09,840 --> 00:04:11,750
+generic tool calls. Um so with these
+hook life cycle events again at each of
+
+242
+00:04:11,750 --> 00:04:11,760
+hook life cycle events again at each of
+ 
+
+243
+00:04:11,760 --> 00:04:13,110
+hook life cycle events again at each of
+these these each of these key event
+
+244
+00:04:13,110 --> 00:04:13,120
+these these each of these key event
+ 
+
+245
+00:04:13,120 --> 00:04:15,190
+these these each of these key event
+types, we now have a policy um
+
+246
+00:04:15,190 --> 00:04:15,200
+types, we now have a policy um
+ 
+
+247
+00:04:15,200 --> 00:04:17,270
+types, we now have a policy um
+enforcement point. Um now we need a way
+
+248
+00:04:17,270 --> 00:04:17,280
+enforcement point. Um now we need a way
+ 
+
+249
+00:04:17,280 --> 00:04:21,030
+enforcement point. Um now we need a way
+to express policies around this model.
+
+250
+00:04:21,030 --> 00:04:21,040
+to express policies around this model.
+ 
+
+251
+00:04:21,040 --> 00:04:23,350
+to express policies around this model.
+So uh we're we're choosing Cedar uh in
+
+252
+00:04:23,350 --> 00:04:23,360
+So uh we're we're choosing Cedar uh in
+ 
+
+253
+00:04:23,360 --> 00:04:25,189
+So uh we're we're choosing Cedar uh in
+this implementation um to authorize
+
+254
+00:04:25,189 --> 00:04:25,199
+this implementation um to authorize
+ 
+
+255
+00:04:25,199 --> 00:04:26,469
+this implementation um to authorize
+these trajectory events and really the
+
+256
+00:04:26,469 --> 00:04:26,479
+these trajectory events and really the
+ 
+
+257
+00:04:26,479 --> 00:04:28,870
+these trajectory events and really the
+actions of the agent and we're invoking
+
+258
+00:04:28,870 --> 00:04:28,880
+actions of the agent and we're invoking
+ 
+
+259
+00:04:28,880 --> 00:04:30,950
+actions of the agent and we're invoking
+that processing and authorizing uh
+
+260
+00:04:30,950 --> 00:04:30,960
+that processing and authorizing uh
+ 
+
+261
+00:04:30,960 --> 00:04:33,110
+that processing and authorizing uh
+whenever each hook events triggered. So
+
+262
+00:04:33,110 --> 00:04:33,120
+whenever each hook events triggered. So
+ 
+
+263
+00:04:33,120 --> 00:04:35,030
+whenever each hook events triggered. So
+Cedar is a policy language that's
+
+264
+00:04:35,030 --> 00:04:35,040
+Cedar is a policy language that's
+ 
+
+265
+00:04:35,040 --> 00:04:36,950
+Cedar is a policy language that's
+expressive, fast and analyzable uh
+
+266
+00:04:36,950 --> 00:04:36,960
+expressive, fast and analyzable uh
+ 
+
+267
+00:04:36,960 --> 00:04:39,189
+expressive, fast and analyzable uh
+thanks to its formal properties and uh
+
+268
+00:04:39,189 --> 00:04:39,199
+thanks to its formal properties and uh
+ 
+
+269
+00:04:39,199 --> 00:04:41,749
+thanks to its formal properties and uh
+use of um the lean symbolic compiler. Um
+
+270
+00:04:41,749 --> 00:04:41,759
+use of um the lean symbolic compiler. Um
+ 
+
+271
+00:04:41,759 --> 00:04:43,670
+use of um the lean symbolic compiler. Um
+unlike other policy languages like Rego,
+
+272
+00:04:43,670 --> 00:04:43,680
+unlike other policy languages like Rego,
+ 
+
+273
+00:04:43,680 --> 00:04:45,270
+unlike other policy languages like Rego,
+uh Cedar policies can be analyzed
+
+274
+00:04:45,270 --> 00:04:45,280
+uh Cedar policies can be analyzed
+ 
+
+275
+00:04:45,280 --> 00:04:46,790
+uh Cedar policies can be analyzed
+through through this uh these hormone
+
+276
+00:04:46,790 --> 00:04:46,800
+through through this uh these hormone
+ 
+
+277
+00:04:46,800 --> 00:04:48,629
+through through this uh these hormone
+methods to to check for contradictory
+
+278
+00:04:48,629 --> 00:04:48,639
+methods to to check for contradictory
+ 
+
+279
+00:04:48,639 --> 00:04:50,469
+methods to to check for contradictory
+vacuous or other shadowed policy
+
+280
+00:04:50,469 --> 00:04:50,479
+vacuous or other shadowed policy
+ 
+
+281
+00:04:50,479 --> 00:04:53,110
+vacuous or other shadowed policy
+subsets. Um and Cedar also has a nice uh
+
+282
+00:04:53,110 --> 00:04:53,120
+subsets. Um and Cedar also has a nice uh
+ 
+
+283
+00:04:53,120 --> 00:04:54,550
+subsets. Um and Cedar also has a nice uh
+support for permission models like
+
+284
+00:04:54,550 --> 00:04:54,560
+support for permission models like
+ 
+
+285
+00:04:54,560 --> 00:04:56,870
+support for permission models like
+attribute-based access control uh which
+
+286
+00:04:56,870 --> 00:04:56,880
+attribute-based access control uh which
+ 
+
+287
+00:04:56,880 --> 00:04:59,030
+attribute-based access control uh which
+maps nicely nicely to this domain. So
+
+288
+00:04:59,030 --> 00:04:59,040
+maps nicely nicely to this domain. So
+ 
+
+289
+00:04:59,040 --> 00:05:00,310
+maps nicely nicely to this domain. So
+you can see an example of this by
+
+290
+00:05:00,310 --> 00:05:00,320
+you can see an example of this by
+ 
+
+291
+00:05:00,320 --> 00:05:02,629
+you can see an example of this by
+looking at this uh shell command action
+
+292
+00:05:02,629 --> 00:05:02,639
+looking at this uh shell command action
+ 
+
+293
+00:05:02,639 --> 00:05:04,790
+looking at this uh shell command action
+and context type in the middle um where
+
+294
+00:05:04,790 --> 00:05:04,800
+and context type in the middle um where
+ 
+
+295
+00:05:04,800 --> 00:05:06,710
+and context type in the middle um where
+we can see different schemas uh for the
+
+296
+00:05:06,710 --> 00:05:06,720
+we can see different schemas uh for the
+ 
+
+297
+00:05:06,720 --> 00:05:09,670
+we can see different schemas uh for the
+entities uh entities like agent and user
+
+298
+00:05:09,670 --> 00:05:09,680
+entities uh entities like agent and user
+ 
+
+299
+00:05:09,680 --> 00:05:11,430
+entities uh entities like agent and user
+and trajectory. And this is where we can
+
+300
+00:05:11,430 --> 00:05:11,440
+and trajectory. And this is where we can
+ 
+
+301
+00:05:11,440 --> 00:05:14,469
+and trajectory. And this is where we can
+add attributes uh with signature tags um
+
+302
+00:05:14,469 --> 00:05:14,479
+add attributes uh with signature tags um
+ 
+
+303
+00:05:14,479 --> 00:05:16,950
+add attributes uh with signature tags um
+or data sensitivity classifications and
+
+304
+00:05:16,950 --> 00:05:16,960
+or data sensitivity classifications and
+ 
+
+305
+00:05:16,960 --> 00:05:18,790
+or data sensitivity classifications and
+and other other attributes that might
+
+306
+00:05:18,790 --> 00:05:18,800
+and other other attributes that might
+ 
+
+307
+00:05:18,800 --> 00:05:20,550
+and other other attributes that might
+come from safety models or other other
+
+308
+00:05:20,550 --> 00:05:20,560
+come from safety models or other other
+ 
+
+309
+00:05:20,560 --> 00:05:21,990
+come from safety models or other other
+other guardrails that we're we're using
+
+310
+00:05:21,990 --> 00:05:22,000
+other guardrails that we're we're using
+ 
+
+311
+00:05:22,000 --> 00:05:23,749
+other guardrails that we're we're using
+right to compute values uh and compute
+
+312
+00:05:23,749 --> 00:05:23,759
+right to compute values uh and compute
+ 
+
+313
+00:05:23,759 --> 00:05:26,870
+right to compute values uh and compute
+attributes for these uh these policies.
+
+314
+00:05:26,870 --> 00:05:26,880
+attributes for these uh these policies.
+ 
+
+315
+00:05:26,880 --> 00:05:28,870
+attributes for these uh these policies.
+Um and policies don't just need to be
+
+316
+00:05:28,870 --> 00:05:28,880
+Um and policies don't just need to be
+ 
+
+317
+00:05:28,880 --> 00:05:30,950
+Um and policies don't just need to be
+security oriented. Uh they can also be
+
+318
+00:05:30,950 --> 00:05:30,960
+security oriented. Uh they can also be
+ 
+
+319
+00:05:30,960 --> 00:05:33,430
+security oriented. Uh they can also be
+uh for agent behavior. Um so this is uh
+
+320
+00:05:33,430 --> 00:05:33,440
+uh for agent behavior. Um so this is uh
+ 
+
+321
+00:05:33,440 --> 00:05:35,110
+uh for agent behavior. Um so this is uh
+it turns out in fact that claude code
+
+322
+00:05:35,110 --> 00:05:35,120
+it turns out in fact that claude code
+ 
+
+323
+00:05:35,120 --> 00:05:37,270
+it turns out in fact that claude code
+lets you write files while in plan mode.
+
+324
+00:05:37,270 --> 00:05:37,280
+lets you write files while in plan mode.
+ 
+
+325
+00:05:37,280 --> 00:05:39,110
+lets you write files while in plan mode.
+Um, so we can have policies that look
+
+326
+00:05:39,110 --> 00:05:39,120
+Um, so we can have policies that look
+ 
+
+327
+00:05:39,120 --> 00:05:41,510
+Um, so we can have policies that look
+for this type of behavior. Uh, and when
+
+328
+00:05:41,510 --> 00:05:41,520
+for this type of behavior. Uh, and when
+ 
+
+329
+00:05:41,520 --> 00:05:43,430
+for this type of behavior. Uh, and when
+permission mode is set to plan, which
+
+330
+00:05:43,430 --> 00:05:43,440
+permission mode is set to plan, which
+ 
+
+331
+00:05:43,440 --> 00:05:44,870
+permission mode is set to plan, which
+this is coming that's specific to cloud
+
+332
+00:05:44,870 --> 00:05:44,880
+this is coming that's specific to cloud
+ 
+
+333
+00:05:44,880 --> 00:05:47,189
+this is coming that's specific to cloud
+code actions, uh, we can we can check to
+
+334
+00:05:47,189 --> 00:05:47,199
+code actions, uh, we can we can check to
+ 
+
+335
+00:05:47,199 --> 00:05:48,629
+code actions, uh, we can we can check to
+see if it's planned, we can forbid the
+
+336
+00:05:48,629 --> 00:05:48,639
+see if it's planned, we can forbid the
+ 
+
+337
+00:05:48,639 --> 00:05:50,790
+see if it's planned, we can forbid the
+right unless that it's it's the actual
+
+338
+00:05:50,790 --> 00:05:50,800
+right unless that it's it's the actual
+ 
+
+339
+00:05:50,800 --> 00:05:52,790
+right unless that it's it's the actual
+plan file that it's writing to. Um, so
+
+340
+00:05:52,790 --> 00:05:52,800
+plan file that it's writing to. Um, so
+ 
+
+341
+00:05:52,800 --> 00:05:54,230
+plan file that it's writing to. Um, so
+at Cinderea, we we covered this actually
+
+342
+00:05:54,230 --> 00:05:54,240
+at Cinderea, we we covered this actually
+ 
+
+343
+00:05:54,240 --> 00:05:55,670
+at Cinderea, we we covered this actually
+in detail in some research that we
+
+344
+00:05:55,670 --> 00:05:55,680
+in detail in some research that we
+ 
+
+345
+00:05:55,680 --> 00:05:59,029
+in detail in some research that we
+released uh, uh, yesterday. Um, finally,
+
+346
+00:05:59,029 --> 00:05:59,039
+released uh, uh, yesterday. Um, finally,
+ 
+
+347
+00:05:59,039 --> 00:06:01,029
+released uh, uh, yesterday. Um, finally,
+uh, we can also source policy content
+
+348
+00:06:01,029 --> 00:06:01,039
+uh, we can also source policy content
+ 
+
+349
+00:06:01,039 --> 00:06:03,270
+uh, we can also source policy content
+from our agent context itself. So uh
+
+350
+00:06:03,270 --> 00:06:03,280
+from our agent context itself. So uh
+ 
+
+351
+00:06:03,280 --> 00:06:05,990
+from our agent context itself. So uh
+like claude MD or cursor rules files and
+
+352
+00:06:05,990 --> 00:06:06,000
+like claude MD or cursor rules files and
+ 
+
+353
+00:06:06,000 --> 00:06:08,469
+like claude MD or cursor rules files and
+we can take um some of the uh security
+
+354
+00:06:08,469 --> 00:06:08,479
+we can take um some of the uh security
+ 
+
+355
+00:06:08,479 --> 00:06:10,469
+we can take um some of the uh security
+permissions intent right in these files
+
+356
+00:06:10,469 --> 00:06:10,479
+permissions intent right in these files
+ 
+
+357
+00:06:10,479 --> 00:06:13,110
+permissions intent right in these files
+and formalize them as cedar policies. Um
+
+358
+00:06:13,110 --> 00:06:13,120
+and formalize them as cedar policies. Um
+ 
+
+359
+00:06:13,120 --> 00:06:14,950
+and formalize them as cedar policies. Um
+and in this example we're we're form
+
+360
+00:06:14,950 --> 00:06:14,960
+and in this example we're we're form
+ 
+
+361
+00:06:14,960 --> 00:06:15,990
+and in this example we're we're form
+we're forbidding the agent from
+
+362
+00:06:15,990 --> 00:06:16,000
+we're forbidding the agent from
+ 
+
+363
+00:06:16,000 --> 00:06:18,550
+we're forbidding the agent from
+performing shell executions based off of
+
+364
+00:06:18,550 --> 00:06:18,560
+performing shell executions based off of
+ 
+
+365
+00:06:18,560 --> 00:06:20,629
+performing shell executions based off of
+pattern matching on certain commands
+
+366
+00:06:20,629 --> 00:06:20,639
+pattern matching on certain commands
+ 
+
+367
+00:06:20,639 --> 00:06:22,710
+pattern matching on certain commands
+destructive commands or uh retrieving of
+
+368
+00:06:22,710 --> 00:06:22,720
+destructive commands or uh retrieving of
+ 
+
+369
+00:06:22,720 --> 00:06:25,110
+destructive commands or uh retrieving of
+certain environment uh files. Um so at
+
+370
+00:06:25,110 --> 00:06:25,120
+certain environment uh files. Um so at
+ 
+
+371
+00:06:25,120 --> 00:06:26,710
+certain environment uh files. Um so at
+this point we have our policies. The
+
+372
+00:06:26,710 --> 00:06:26,720
+this point we have our policies. The
+ 
+
+373
+00:06:26,720 --> 00:06:28,390
+this point we have our policies. The
+next step is setting up policy decision
+
+374
+00:06:28,390 --> 00:06:28,400
+next step is setting up policy decision
+ 
+
+375
+00:06:28,400 --> 00:06:29,830
+next step is setting up policy decision
+points uh to have our hook events
+
+376
+00:06:29,830 --> 00:06:29,840
+points uh to have our hook events
+ 
+
+377
+00:06:29,840 --> 00:06:32,230
+points uh to have our hook events
+trigger. So let's build up now uh part
+
+378
+00:06:32,230 --> 00:06:32,240
+trigger. So let's build up now uh part
+ 
+
+379
+00:06:32,240 --> 00:06:34,309
+trigger. So let's build up now uh part
+by part a hookbased harness. So we have
+
+380
+00:06:34,309 --> 00:06:34,319
+by part a hookbased harness. So we have
+ 
+
+381
+00:06:34,319 --> 00:06:36,230
+by part a hookbased harness. So we have
+our local adapters which are uh commands
+
+382
+00:06:36,230 --> 00:06:36,240
+our local adapters which are uh commands
+ 
+
+383
+00:06:36,240 --> 00:06:38,390
+our local adapters which are uh commands
+that are run uh by the coding agents.
+
+384
+00:06:38,390 --> 00:06:38,400
+that are run uh by the coding agents.
+ 
+
+385
+00:06:38,400 --> 00:06:40,710
+that are run uh by the coding agents.
+They intercept these hook events uh over
+
+386
+00:06:40,710 --> 00:06:40,720
+They intercept these hook events uh over
+ 
+
+387
+00:06:40,720 --> 00:06:42,629
+They intercept these hook events uh over
+standard in uh they transform them into
+
+388
+00:06:42,629 --> 00:06:42,639
+standard in uh they transform them into
+ 
+
+389
+00:06:42,639 --> 00:06:44,070
+standard in uh they transform them into
+a trajectory event model and then send
+
+390
+00:06:44,070 --> 00:06:44,080
+a trajectory event model and then send
+ 
+
+391
+00:06:44,080 --> 00:06:46,550
+a trajectory event model and then send
+them to a local harness service. Uh
+
+392
+00:06:46,550 --> 00:06:46,560
+them to a local harness service. Uh
+ 
+
+393
+00:06:46,560 --> 00:06:47,990
+them to a local harness service. Uh
+inside the harness service we have our
+
+394
+00:06:47,990 --> 00:06:48,000
+inside the harness service we have our
+ 
+
+395
+00:06:48,000 --> 00:06:49,670
+inside the harness service we have our
+policy a cedar policy engine that
+
+396
+00:06:49,670 --> 00:06:49,680
+policy a cedar policy engine that
+ 
+
+397
+00:06:49,680 --> 00:06:51,510
+policy a cedar policy engine that
+extracts the entities process them
+
+398
+00:06:51,510 --> 00:06:51,520
+extracts the entities process them
+ 
+
+399
+00:06:51,520 --> 00:06:53,430
+extracts the entities process them
+against um you know any guardrail. So
+
+400
+00:06:53,430 --> 00:06:53,440
+against um you know any guardrail. So
+ 
+
+401
+00:06:53,440 --> 00:06:54,550
+against um you know any guardrail. So
+it's kind of meant to be bring your own
+
+402
+00:06:54,550 --> 00:06:54,560
+it's kind of meant to be bring your own
+ 
+
+403
+00:06:54,560 --> 00:06:56,390
+it's kind of meant to be bring your own
+guardrail but currently we have yara
+
+404
+00:06:56,390 --> 00:06:56,400
+guardrail but currently we have yara
+ 
+
+405
+00:06:56,400 --> 00:06:58,469
+guardrail but currently we have yara
+signatures uh information flow control
+
+406
+00:06:58,469 --> 00:06:58,479
+signatures uh information flow control
+ 
+
+407
+00:06:58,479 --> 00:07:00,629
+signatures uh information flow control
+models and a safety model. Um and then
+
+408
+00:07:00,629 --> 00:07:00,639
+models and a safety model. Um and then
+ 
+
+409
+00:07:00,639 --> 00:07:02,469
+models and a safety model. Um and then
+uh from these results we also update the
+
+410
+00:07:02,469 --> 00:07:02,479
+uh from these results we also update the
+ 
+
+411
+00:07:02,479 --> 00:07:04,629
+uh from these results we also update the
+entity and trajectory stores uh for
+
+412
+00:07:04,629 --> 00:07:04,639
+entity and trajectory stores uh for
+ 
+
+413
+00:07:04,639 --> 00:07:06,390
+entity and trajectory stores uh for
+stful bookkeeping about information
+
+414
+00:07:06,390 --> 00:07:06,400
+stful bookkeeping about information
+ 
+
+415
+00:07:06,400 --> 00:07:07,670
+stful bookkeeping about information
+about the entities that we're we're
+
+416
+00:07:07,670 --> 00:07:07,680
+about the entities that we're we're
+ 
+
+417
+00:07:07,680 --> 00:07:09,189
+about the entities that we're we're
+observing.
+
+418
+00:07:09,189 --> 00:07:09,199
+observing.
+ 
+
+419
+00:07:09,199 --> 00:07:11,110
+observing.
+Uh writing cedar policies can be tedious
+
+420
+00:07:11,110 --> 00:07:11,120
+Uh writing cedar policies can be tedious
+ 
+
+421
+00:07:11,120 --> 00:07:12,309
+Uh writing cedar policies can be tedious
+uh but again thanks to its formal
+
+422
+00:07:12,309 --> 00:07:12,319
+uh but again thanks to its formal
+ 
+
+423
+00:07:12,319 --> 00:07:13,749
+uh but again thanks to its formal
+properties we can generate them with
+
+424
+00:07:13,749 --> 00:07:13,759
+properties we can generate them with
+ 
+
+425
+00:07:13,759 --> 00:07:16,390
+properties we can generate them with
+models and then verify and analyze them
+
+426
+00:07:16,390 --> 00:07:16,400
+models and then verify and analyze them
+ 
+
+427
+00:07:16,400 --> 00:07:18,550
+models and then verify and analyze them
+uh with built-in language tools. So we
+
+428
+00:07:18,550 --> 00:07:18,560
+uh with built-in language tools. So we
+ 
+
+429
+00:07:18,560 --> 00:07:20,469
+uh with built-in language tools. So we
+can have a policy agent uh that helps us
+
+430
+00:07:20,469 --> 00:07:20,479
+can have a policy agent uh that helps us
+ 
+
+431
+00:07:20,479 --> 00:07:22,790
+can have a policy agent uh that helps us
+author and validate uh when given policy
+
+432
+00:07:22,790 --> 00:07:22,800
+author and validate uh when given policy
+ 
+
+433
+00:07:22,800 --> 00:07:25,830
+author and validate uh when given policy
+features uh in context over MCP tools.
+
+434
+00:07:25,830 --> 00:07:25,840
+features uh in context over MCP tools.
+ 
+
+435
+00:07:25,840 --> 00:07:27,830
+features uh in context over MCP tools.
+Um so finally now we have this complete
+
+436
+00:07:27,830 --> 00:07:27,840
+Um so finally now we have this complete
+ 
+
+437
+00:07:27,840 --> 00:07:30,629
+Um so finally now we have this complete
+uh harness uh that's hook based. Um so
+
+438
+00:07:30,629 --> 00:07:30,639
+uh harness uh that's hook based. Um so
+ 
+
+439
+00:07:30,639 --> 00:07:31,909
+uh harness uh that's hook based. Um so
+let's let's kind of go through a few
+
+440
+00:07:31,909 --> 00:07:31,919
+let's let's kind of go through a few
+ 
+
+441
+00:07:31,919 --> 00:07:34,070
+let's let's kind of go through a few
+examples of this.
+
+442
+00:07:34,070 --> 00:07:34,080
+examples of this.
+ 
+
+443
+00:07:34,080 --> 00:07:37,350
+examples of this.
+So
+
+444
+00:07:37,350 --> 00:07:37,360
+
+ 
+
+445
+00:07:37,360 --> 00:07:40,469
+
+uh first we'll look at um uh some policy
+
+446
+00:07:40,469 --> 00:07:40,479
+uh first we'll look at um uh some policy
+ 
+
+447
+00:07:40,479 --> 00:07:41,990
+uh first we'll look at um uh some policy
+generation. So we have a skill that's
+
+448
+00:07:41,990 --> 00:07:42,000
+generation. So we have a skill that's
+ 
+
+449
+00:07:42,000 --> 00:07:43,589
+generation. So we have a skill that's
+shipped with this that just has the
+
+450
+00:07:43,589 --> 00:07:43,599
+shipped with this that just has the
+ 
+
+451
+00:07:43,599 --> 00:07:45,670
+shipped with this that just has the
+procedural knowledge about Cedar and
+
+452
+00:07:45,670 --> 00:07:45,680
+procedural knowledge about Cedar and
+ 
+
+453
+00:07:45,680 --> 00:07:47,189
+procedural knowledge about Cedar and
+some instructions on how to call these
+
+454
+00:07:47,189 --> 00:07:47,199
+some instructions on how to call these
+ 
+
+455
+00:07:47,199 --> 00:07:49,350
+some instructions on how to call these
+different tools that are exposed. So
+
+456
+00:07:49,350 --> 00:07:49,360
+different tools that are exposed. So
+ 
+
+457
+00:07:49,360 --> 00:07:51,270
+different tools that are exposed. So
+first we have the agent actually fetch
+
+458
+00:07:51,270 --> 00:07:51,280
+first we have the agent actually fetch
+ 
+
+459
+00:07:51,280 --> 00:07:53,909
+first we have the agent actually fetch
+the available uh context and and values
+
+460
+00:07:53,909 --> 00:07:53,919
+the available uh context and and values
+ 
+
+461
+00:07:53,919 --> 00:07:55,029
+the available uh context and and values
+right that are available for these
+
+462
+00:07:55,029 --> 00:07:55,039
+right that are available for these
+ 
+
+463
+00:07:55,039 --> 00:07:56,629
+right that are available for these
+entities. Um and maybe we're just going
+
+464
+00:07:56,629 --> 00:07:56,639
+entities. Um and maybe we're just going
+ 
+
+465
+00:07:56,639 --> 00:07:58,469
+entities. Um and maybe we're just going
+to start writing a policy and we'll tell
+
+466
+00:07:58,469 --> 00:07:58,479
+to start writing a policy and we'll tell
+ 
+
+467
+00:07:58,479 --> 00:08:00,230
+to start writing a policy and we'll tell
+it to go write some policies for shell
+
+468
+00:08:00,230 --> 00:08:00,240
+it to go write some policies for shell
+ 
+
+469
+00:08:00,240 --> 00:08:02,550
+it to go write some policies for shell
+injection. Um we can see some examples
+
+470
+00:08:02,550 --> 00:08:02,560
+injection. Um we can see some examples
+ 
+
+471
+00:08:02,560 --> 00:08:04,309
+injection. Um we can see some examples
+that are returned around the entity
+
+472
+00:08:04,309 --> 00:08:04,319
+that are returned around the entity
+ 
+
+473
+00:08:04,319 --> 00:08:05,510
+that are returned around the entity
+types that are available from the
+
+474
+00:08:05,510 --> 00:08:05,520
+types that are available from the
+ 
+
+475
+00:08:05,520 --> 00:08:08,070
+types that are available from the
+schema. We can see different uh context
+
+476
+00:08:08,070 --> 00:08:08,080
+schema. We can see different uh context
+ 
+
+477
+00:08:08,080 --> 00:08:10,950
+schema. We can see different uh context
+types and um if if we keep going up here
+
+478
+00:08:10,950 --> 00:08:10,960
+types and um if if we keep going up here
+ 
+
+479
+00:08:10,960 --> 00:08:12,550
+types and um if if we keep going up here
+too we can also see different entities
+
+480
+00:08:12,550 --> 00:08:12,560
+too we can also see different entities
+ 
+
+481
+00:08:12,560 --> 00:08:14,309
+too we can also see different entities
+actually for the these are label values
+
+482
+00:08:14,309 --> 00:08:14,319
+actually for the these are label values
+ 
+
+483
+00:08:14,319 --> 00:08:15,909
+actually for the these are label values
+for information flow control. So the
+
+484
+00:08:15,909 --> 00:08:15,919
+for information flow control. So the
+ 
+
+485
+00:08:15,919 --> 00:08:17,189
+for information flow control. So the
+sensitivity labels that we'll be looking
+
+486
+00:08:17,189 --> 00:08:17,199
+sensitivity labels that we'll be looking
+ 
+
+487
+00:08:17,199 --> 00:08:19,430
+sensitivity labels that we'll be looking
+at as well as the categories from our
+
+488
+00:08:19,430 --> 00:08:19,440
+at as well as the categories from our
+ 
+
+489
+00:08:19,440 --> 00:08:22,070
+at as well as the categories from our
+policy model that we expose. Um in this
+
+490
+00:08:22,070 --> 00:08:22,080
+policy model that we expose. Um in this
+ 
+
+491
+00:08:22,080 --> 00:08:23,909
+policy model that we expose. Um in this
+case it's policies around secure code
+
+492
+00:08:23,909 --> 00:08:23,919
+case it's policies around secure code
+ 
+
+493
+00:08:23,919 --> 00:08:25,909
+case it's policies around secure code
+generation and then uh the various Yara
+
+494
+00:08:25,909 --> 00:08:25,919
+generation and then uh the various Yara
+ 
+
+495
+00:08:25,919 --> 00:08:27,350
+generation and then uh the various Yara
+signature categories that we have in in
+
+496
+00:08:27,350 --> 00:08:27,360
+signature categories that we have in in
+ 
+
+497
+00:08:27,360 --> 00:08:31,589
+signature categories that we have in in
+our Yara uh uh rule set. Um so let's
+
+498
+00:08:31,589 --> 00:08:31,599
+our Yara uh uh rule set. Um so let's
+ 
+
+499
+00:08:31,599 --> 00:08:33,509
+our Yara uh uh rule set. Um so let's
+look at some more examples of this. So
+
+500
+00:08:33,509 --> 00:08:33,519
+look at some more examples of this. So
+ 
+
+501
+00:08:33,519 --> 00:08:36,070
+look at some more examples of this. So
+here's a uh a blocking of a destructive
+
+502
+00:08:36,070 --> 00:08:36,080
+here's a uh a blocking of a destructive
+ 
+
+503
+00:08:36,080 --> 00:08:37,990
+here's a uh a blocking of a destructive
+uh command a destructive action. So
+
+504
+00:08:37,990 --> 00:08:38,000
+uh command a destructive action. So
+ 
+
+505
+00:08:38,000 --> 00:08:39,990
+uh command a destructive action. So
+maybe we have some seed policies that
+
+506
+00:08:39,990 --> 00:08:40,000
+maybe we have some seed policies that
+ 
+
+507
+00:08:40,000 --> 00:08:43,190
+maybe we have some seed policies that
+you know look for SQL uh mutations that
+
+508
+00:08:43,190 --> 00:08:43,200
+you know look for SQL uh mutations that
+ 
+
+509
+00:08:43,200 --> 00:08:44,710
+you know look for SQL uh mutations that
+don't have any constraints. So in this
+
+510
+00:08:44,710 --> 00:08:44,720
+don't have any constraints. So in this
+ 
+
+511
+00:08:44,720 --> 00:08:46,310
+don't have any constraints. So in this
+case like a delete from users without a
+
+512
+00:08:46,310 --> 00:08:46,320
+case like a delete from users without a
+ 
+
+513
+00:08:46,320 --> 00:08:48,630
+case like a delete from users without a
+wear clause. Um so we can tell cloud to
+
+514
+00:08:48,630 --> 00:08:48,640
+wear clause. Um so we can tell cloud to
+ 
+
+515
+00:08:48,640 --> 00:08:50,710
+wear clause. Um so we can tell cloud to
+go run this. We can stop this and bring
+
+516
+00:08:50,710 --> 00:08:50,720
+go run this. We can stop this and bring
+ 
+
+517
+00:08:50,720 --> 00:08:52,310
+go run this. We can stop this and bring
+back uh bring back the the policy
+
+518
+00:08:52,310 --> 00:08:52,320
+back uh bring back the the policy
+ 
+
+519
+00:08:52,320 --> 00:08:54,310
+back uh bring back the the policy
+violation and context for the agent then
+
+520
+00:08:54,310 --> 00:08:54,320
+violation and context for the agent then
+ 
+
+521
+00:08:54,320 --> 00:08:56,790
+violation and context for the agent then
+to use to either steer um or for for a
+
+522
+00:08:56,790 --> 00:08:56,800
+to use to either steer um or for for a
+ 
+
+523
+00:08:56,800 --> 00:08:59,509
+to use to either steer um or for for a
+review by the user. Um we can also do
+
+524
+00:08:59,509 --> 00:08:59,519
+review by the user. Um we can also do
+ 
+
+525
+00:08:59,519 --> 00:09:01,190
+review by the user. Um we can also do
+again more sophisticated multi-turn
+
+526
+00:09:01,190 --> 00:09:01,200
+again more sophisticated multi-turn
+ 
+
+527
+00:09:01,200 --> 00:09:02,870
+again more sophisticated multi-turn
+things here with the stful bookkeeping.
+
+528
+00:09:02,870 --> 00:09:02,880
+things here with the stful bookkeeping.
+ 
+
+529
+00:09:02,880 --> 00:09:04,550
+things here with the stful bookkeeping.
+Um we have we can do information flow
+
+530
+00:09:04,550 --> 00:09:04,560
+Um we have we can do information flow
+ 
+
+531
+00:09:04,560 --> 00:09:06,550
+Um we have we can do information flow
+control where maybe in this in this case
+
+532
+00:09:06,550 --> 00:09:06,560
+control where maybe in this in this case
+ 
+
+533
+00:09:06,560 --> 00:09:09,350
+control where maybe in this in this case
+we're using Gemini CLI. Maybe Gemini uh
+
+534
+00:09:09,350 --> 00:09:09,360
+we're using Gemini CLI. Maybe Gemini uh
+ 
+
+535
+00:09:09,360 --> 00:09:12,310
+we're using Gemini CLI. Maybe Gemini uh
+we have like a a name, a date of birth
+
+536
+00:09:12,310 --> 00:09:12,320
+we have like a a name, a date of birth
+ 
+
+537
+00:09:12,320 --> 00:09:14,949
+we have like a a name, a date of birth
+and and an address, right? some PII um
+
+538
+00:09:14,949 --> 00:09:14,959
+and and an address, right? some PII um
+ 
+
+539
+00:09:14,959 --> 00:09:17,590
+and and an address, right? some PII um
+we can uh track that type of highly
+
+540
+00:09:17,590 --> 00:09:17,600
+we can uh track that type of highly
+ 
+
+541
+00:09:17,600 --> 00:09:19,910
+we can uh track that type of highly
+confidential PII and taint the
+
+542
+00:09:19,910 --> 00:09:19,920
+confidential PII and taint the
+ 
+
+543
+00:09:19,920 --> 00:09:22,389
+confidential PII and taint the
+trajectory so that way on on subsequent
+
+544
+00:09:22,389 --> 00:09:22,399
+trajectory so that way on on subsequent
+ 
+
+545
+00:09:22,399 --> 00:09:24,710
+trajectory so that way on on subsequent
+turns uh of the agent when maybe it's
+
+546
+00:09:24,710 --> 00:09:24,720
+turns uh of the agent when maybe it's
+ 
+
+547
+00:09:24,720 --> 00:09:26,550
+turns uh of the agent when maybe it's
+going to go do a web fetch or run some
+
+548
+00:09:26,550 --> 00:09:26,560
+going to go do a web fetch or run some
+ 
+
+549
+00:09:26,560 --> 00:09:28,230
+going to go do a web fetch or run some
+network command and we know that that
+
+550
+00:09:28,230 --> 00:09:28,240
+network command and we know that that
+ 
+
+551
+00:09:28,240 --> 00:09:29,910
+network command and we know that that
+trajectory has sensitive information in
+
+552
+00:09:29,910 --> 00:09:29,920
+trajectory has sensitive information in
+ 
+
+553
+00:09:29,920 --> 00:09:32,070
+trajectory has sensitive information in
+the context um we can dynamically
+
+554
+00:09:32,070 --> 00:09:32,080
+the context um we can dynamically
+ 
+
+555
+00:09:32,080 --> 00:09:34,710
+the context um we can dynamically
+restrict access to those tool calls um
+
+556
+00:09:34,710 --> 00:09:34,720
+restrict access to those tool calls um
+ 
+
+557
+00:09:34,720 --> 00:09:37,750
+restrict access to those tool calls um
+so we'll see here very shortly this web
+
+558
+00:09:37,750 --> 00:09:37,760
+so we'll see here very shortly this web
+ 
+
+559
+00:09:37,760 --> 00:09:40,550
+so we'll see here very shortly this web
+fetch uh to Google uh here fail and
+
+560
+00:09:40,550 --> 00:09:40,560
+fetch uh to Google uh here fail and
+ 
+
+561
+00:09:40,560 --> 00:09:42,790
+fetch uh to Google uh here fail and
+we'll we'll turn back uh return back a
+
+562
+00:09:42,790 --> 00:09:42,800
+we'll we'll turn back uh return back a
+ 
+
+563
+00:09:42,800 --> 00:09:45,110
+we'll we'll turn back uh return back a
+context text again uh in a similar way.
+
+564
+00:09:45,110 --> 00:09:45,120
+context text again uh in a similar way.
+ 
+
+565
+00:09:45,120 --> 00:09:46,949
+context text again uh in a similar way.
+Um and again these are just the the
+
+566
+00:09:46,949 --> 00:09:46,959
+Um and again these are just the the
+ 
+
+567
+00:09:46,959 --> 00:09:48,310
+Um and again these are just the the
+policy examples here on the side where
+
+568
+00:09:48,310 --> 00:09:48,320
+policy examples here on the side where
+ 
+
+569
+00:09:48,320 --> 00:09:50,230
+policy examples here on the side where
+the actions web fetch and we see the the
+
+570
+00:09:50,230 --> 00:09:50,240
+the actions web fetch and we see the the
+ 
+
+571
+00:09:50,240 --> 00:09:54,150
+the actions web fetch and we see the the
+trajectory resource label. Um finally uh
+
+572
+00:09:54,150 --> 00:09:54,160
+trajectory resource label. Um finally uh
+ 
+
+573
+00:09:54,160 --> 00:09:55,990
+trajectory resource label. Um finally uh
+we'll look at this last demo uh with
+
+574
+00:09:55,990 --> 00:09:56,000
+we'll look at this last demo uh with
+ 
+
+575
+00:09:56,000 --> 00:09:58,150
+we'll look at this last demo uh with
+cursor. Um so this is demonstrating an
+
+576
+00:09:58,150 --> 00:09:58,160
+cursor. Um so this is demonstrating an
+ 
+
+577
+00:09:58,160 --> 00:10:00,870
+cursor. Um so this is demonstrating an
+instance of lethal trifecta where let's
+
+578
+00:10:00,870 --> 00:10:00,880
+instance of lethal trifecta where let's
+ 
+
+579
+00:10:00,880 --> 00:10:02,870
+instance of lethal trifecta where let's
+say we have a a skill from a public
+
+580
+00:10:02,870 --> 00:10:02,880
+say we have a a skill from a public
+ 
+
+581
+00:10:02,880 --> 00:10:05,030
+say we have a a skill from a public
+marketplace uh that helps us generate uh
+
+582
+00:10:05,030 --> 00:10:05,040
+marketplace uh that helps us generate uh
+ 
+
+583
+00:10:05,040 --> 00:10:06,949
+marketplace uh that helps us generate uh
+code metrics to to tell us how good of
+
+584
+00:10:06,949 --> 00:10:06,959
+code metrics to to tell us how good of
+ 
+
+585
+00:10:06,959 --> 00:10:09,590
+code metrics to to tell us how good of
+vibe uh coders we are. Um unbeknownst to
+
+586
+00:10:09,590 --> 00:10:09,600
+vibe uh coders we are. Um unbeknownst to
+ 
+
+587
+00:10:09,600 --> 00:10:11,590
+vibe uh coders we are. Um unbeknownst to
+us there's this metrics.python Python
+
+588
+00:10:11,590 --> 00:10:11,600
+us there's this metrics.python Python
+ 
+
+589
+00:10:11,600 --> 00:10:13,110
+us there's this metrics.python Python
+script in here that does some
+
+590
+00:10:13,110 --> 00:10:13,120
+script in here that does some
+ 
+
+591
+00:10:13,120 --> 00:10:15,110
+script in here that does some
+environment variable harvesting and then
+
+592
+00:10:15,110 --> 00:10:15,120
+environment variable harvesting and then
+ 
+
+593
+00:10:15,120 --> 00:10:17,269
+environment variable harvesting and then
+uh does some uh does some requests to
+
+594
+00:10:17,269 --> 00:10:17,279
+uh does some uh does some requests to
+ 
+
+595
+00:10:17,279 --> 00:10:19,350
+uh does some uh does some requests to
+send that data out. So we can actually
+
+596
+00:10:19,350 --> 00:10:19,360
+send that data out. So we can actually
+ 
+
+597
+00:10:19,360 --> 00:10:22,389
+send that data out. So we can actually
+analyze that uh command uh event the
+
+598
+00:10:22,389 --> 00:10:22,399
+analyze that uh command uh event the
+ 
+
+599
+00:10:22,399 --> 00:10:24,710
+analyze that uh command uh event the
+shell command event and process the uh
+
+600
+00:10:24,710 --> 00:10:24,720
+shell command event and process the uh
+ 
+
+601
+00:10:24,720 --> 00:10:26,550
+shell command event and process the uh
+the metrics.pay file and run it against
+
+602
+00:10:26,550 --> 00:10:26,560
+the metrics.pay file and run it against
+ 
+
+603
+00:10:26,560 --> 00:10:28,630
+the metrics.pay file and run it against
+all of our guardrails our our signatures
+
+604
+00:10:28,630 --> 00:10:28,640
+all of our guardrails our our signatures
+ 
+
+605
+00:10:28,640 --> 00:10:30,710
+all of our guardrails our our signatures
+and again uh have that context uh
+
+606
+00:10:30,710 --> 00:10:30,720
+and again uh have that context uh
+ 
+
+607
+00:10:30,720 --> 00:10:32,310
+and again uh have that context uh
+available to us in our policy to to
+
+608
+00:10:32,310 --> 00:10:32,320
+available to us in our policy to to
+ 
+
+609
+00:10:32,320 --> 00:10:36,230
+available to us in our policy to to
+block it. Um so wrapping this up uh
+
+610
+00:10:36,230 --> 00:10:36,240
+block it. Um so wrapping this up uh
+ 
+
+611
+00:10:36,240 --> 00:10:38,790
+block it. Um so wrapping this up uh
+because again this is a a rapid tour. Uh
+
+612
+00:10:38,790 --> 00:10:38,800
+because again this is a a rapid tour. Uh
+ 
+
+613
+00:10:38,800 --> 00:10:41,190
+because again this is a a rapid tour. Uh
+first uh I'm leaving you uh today with
+
+614
+00:10:41,190 --> 00:10:41,200
+first uh I'm leaving you uh today with
+ 
+
+615
+00:10:41,200 --> 00:10:43,670
+first uh I'm leaving you uh today with
+an open- source uh Cedar policy engine
+
+616
+00:10:43,670 --> 00:10:43,680
+an open- source uh Cedar policy engine
+ 
+
+617
+00:10:43,680 --> 00:10:45,190
+an open- source uh Cedar policy engine
+that's integrated with these various
+
+618
+00:10:45,190 --> 00:10:45,200
+that's integrated with these various
+ 
+
+619
+00:10:45,200 --> 00:10:46,949
+that's integrated with these various
+coding agent hooks. Um this is a
+
+620
+00:10:46,949 --> 00:10:46,959
+coding agent hooks. Um this is a
+ 
+
+621
+00:10:46,959 --> 00:10:48,310
+coding agent hooks. Um this is a
+deterministic policy engine that's
+
+622
+00:10:48,310 --> 00:10:48,320
+deterministic policy engine that's
+ 
+
+623
+00:10:48,320 --> 00:10:50,310
+deterministic policy engine that's
+outside the model. So you know we we
+
+624
+00:10:50,310 --> 00:10:50,320
+outside the model. So you know we we
+ 
+
+625
+00:10:50,320 --> 00:10:52,310
+outside the model. So you know we we
+don't have to simply rely on safeguards
+
+626
+00:10:52,310 --> 00:10:52,320
+don't have to simply rely on safeguards
+ 
+
+627
+00:10:52,320 --> 00:10:54,949
+don't have to simply rely on safeguards
+or instructions and prompts. Uh this
+
+628
+00:10:54,949 --> 00:10:54,959
+or instructions and prompts. Uh this
+ 
+
+629
+00:10:54,959 --> 00:10:57,269
+or instructions and prompts. Uh this
+complements uh other defense and depth
+
+630
+00:10:57,269 --> 00:10:57,279
+complements uh other defense and depth
+ 
+
+631
+00:10:57,279 --> 00:10:59,110
+complements uh other defense and depth
+systems like sandboxes or permission
+
+632
+00:10:59,110 --> 00:10:59,120
+systems like sandboxes or permission
+ 
+
+633
+00:10:59,120 --> 00:11:01,030
+systems like sandboxes or permission
+systems. uh right permission systems can
+
+634
+00:11:01,030 --> 00:11:01,040
+systems. uh right permission systems can
+ 
+
+635
+00:11:01,040 --> 00:11:03,030
+systems. uh right permission systems can
+induce consent fatigue and have missing
+
+636
+00:11:03,030 --> 00:11:03,040
+induce consent fatigue and have missing
+ 
+
+637
+00:11:03,040 --> 00:11:05,269
+induce consent fatigue and have missing
+context. Uh sandbox systems might be
+
+638
+00:11:05,269 --> 00:11:05,279
+context. Uh sandbox systems might be
+ 
+
+639
+00:11:05,279 --> 00:11:07,590
+context. Uh sandbox systems might be
+overly restrictive. Um and we can get uh
+
+640
+00:11:07,590 --> 00:11:07,600
+overly restrictive. Um and we can get uh
+ 
+
+641
+00:11:07,600 --> 00:11:09,269
+overly restrictive. Um and we can get uh
+the trajectory context here in our
+
+642
+00:11:09,269 --> 00:11:09,279
+the trajectory context here in our
+ 
+
+643
+00:11:09,279 --> 00:11:12,069
+the trajectory context here in our
+policy engine. Um some challenges uh
+
+644
+00:11:12,069 --> 00:11:12,079
+policy engine. Um some challenges uh
+ 
+
+645
+00:11:12,079 --> 00:11:14,230
+policy engine. Um some challenges uh
+there is a uh of course uh sort of this
+
+646
+00:11:14,230 --> 00:11:14,240
+there is a uh of course uh sort of this
+ 
+
+647
+00:11:14,240 --> 00:11:16,150
+there is a uh of course uh sort of this
+goldilocks policy zone where we we still
+
+648
+00:11:16,150 --> 00:11:16,160
+goldilocks policy zone where we we still
+ 
+
+649
+00:11:16,160 --> 00:11:17,590
+goldilocks policy zone where we we still
+have to optimize our policies you know
+
+650
+00:11:17,590 --> 00:11:17,600
+have to optimize our policies you know
+ 
+
+651
+00:11:17,600 --> 00:11:19,190
+have to optimize our policies you know
+depending on the context of the agent.
+
+652
+00:11:19,190 --> 00:11:19,200
+depending on the context of the agent.
+ 
+
+653
+00:11:19,200 --> 00:11:20,630
+depending on the context of the agent.
+So we don't want overly restrictive
+
+654
+00:11:20,630 --> 00:11:20,640
+So we don't want overly restrictive
+ 
+
+655
+00:11:20,640 --> 00:11:23,110
+So we don't want overly restrictive
+policies that uh the the utility
+
+656
+00:11:23,110 --> 00:11:23,120
+policies that uh the the utility
+ 
+
+657
+00:11:23,120 --> 00:11:24,389
+policies that uh the the utility
+and then we also don't want brittle
+
+658
+00:11:24,389 --> 00:11:24,399
+and then we also don't want brittle
+ 
+
+659
+00:11:24,399 --> 00:11:26,389
+and then we also don't want brittle
+pattern matching on certain signature
+
+660
+00:11:26,389 --> 00:11:26,399
+pattern matching on certain signature
+ 
+
+661
+00:11:26,399 --> 00:11:27,829
+pattern matching on certain signature
+certain uh destructive commands as an
+
+662
+00:11:27,829 --> 00:11:27,839
+certain uh destructive commands as an
+ 
+
+663
+00:11:27,839 --> 00:11:29,269
+certain uh destructive commands as an
+example that could invite policy
+
+664
+00:11:29,269 --> 00:11:29,279
+example that could invite policy
+ 
+
+665
+00:11:29,279 --> 00:11:31,509
+example that could invite policy
+hacking. Um so this is an area where we
+
+666
+00:11:31,509 --> 00:11:31,519
+hacking. Um so this is an area where we
+ 
+
+667
+00:11:31,519 --> 00:11:32,630
+hacking. Um so this is an area where we
+have some ongoing research with
+
+668
+00:11:32,630 --> 00:11:32,640
+have some ongoing research with
+ 
+
+669
+00:11:32,640 --> 00:11:35,509
+have some ongoing research with
+optimization and uh guardrail latency uh
+
+670
+00:11:35,509 --> 00:11:35,519
+optimization and uh guardrail latency uh
+ 
+
+671
+00:11:35,519 --> 00:11:38,710
+optimization and uh guardrail latency uh
+benchmarking. Um so we also have uh
+
+672
+00:11:38,710 --> 00:11:38,720
+benchmarking. Um so we also have uh
+ 
+
+673
+00:11:38,720 --> 00:11:40,790
+benchmarking. Um so we also have uh
+policy scalability right the policy
+
+674
+00:11:40,790 --> 00:11:40,800
+policy scalability right the policy
+ 
+
+675
+00:11:40,800 --> 00:11:43,190
+policy scalability right the policy
+agent can help us uh with the formal
+
+676
+00:11:43,190 --> 00:11:43,200
+agent can help us uh with the formal
+ 
+
+677
+00:11:43,200 --> 00:11:45,430
+agent can help us uh with the formal
+tools provided over MCP with the ability
+
+678
+00:11:45,430 --> 00:11:45,440
+tools provided over MCP with the ability
+ 
+
+679
+00:11:45,440 --> 00:11:48,069
+tools provided over MCP with the ability
+to do agent assisted policy generation.
+
+680
+00:11:48,069 --> 00:11:48,079
+to do agent assisted policy generation.
+ 
+
+681
+00:11:48,079 --> 00:11:50,389
+to do agent assisted policy generation.
+Um and then finally just touching on you
+
+682
+00:11:50,389 --> 00:11:50,399
+Um and then finally just touching on you
+ 
+
+683
+00:11:50,399 --> 00:11:52,630
+Um and then finally just touching on you
+know more uh the the next uh kind of
+
+684
+00:11:52,630 --> 00:11:52,640
+know more uh the the next uh kind of
+ 
+
+685
+00:11:52,640 --> 00:11:54,790
+know more uh the the next uh kind of
+future of like maybe multi-turn stateful
+
+686
+00:11:54,790 --> 00:11:54,800
+future of like maybe multi-turn stateful
+ 
+
+687
+00:11:54,800 --> 00:11:56,870
+future of like maybe multi-turn stateful
+policies. You know steer is inherently
+
+688
+00:11:56,870 --> 00:11:56,880
+policies. You know steer is inherently
+ 
+
+689
+00:11:56,880 --> 00:11:59,030
+policies. You know steer is inherently
+stateless but because of the um entity
+
+690
+00:11:59,030 --> 00:11:59,040
+stateless but because of the um entity
+ 
+
+691
+00:11:59,040 --> 00:12:00,790
+stateless but because of the um entity
+and trajectory store we can do
+
+692
+00:12:00,790 --> 00:12:00,800
+and trajectory store we can do
+ 
+
+693
+00:12:00,800 --> 00:12:02,310
+and trajectory store we can do
+bookkeeping about the entities that we
+
+694
+00:12:02,310 --> 00:12:02,320
+bookkeeping about the entities that we
+ 
+
+695
+00:12:02,320 --> 00:12:04,389
+bookkeeping about the entities that we
+observe in the trajectory over time and
+
+696
+00:12:04,389 --> 00:12:04,399
+observe in the trajectory over time and
+ 
+
+697
+00:12:04,399 --> 00:12:06,389
+observe in the trajectory over time and
+allow us to expose those attributes as
+
+698
+00:12:06,389 --> 00:12:06,399
+allow us to expose those attributes as
+ 
+
+699
+00:12:06,399 --> 00:12:08,389
+allow us to expose those attributes as
+as dynamic attributes. But there's other
+
+700
+00:12:08,389 --> 00:12:08,399
+as dynamic attributes. But there's other
+ 
+
+701
+00:12:08,399 --> 00:12:10,470
+as dynamic attributes. But there's other
+logic systems uh like temporal linear
+
+702
+00:12:10,470 --> 00:12:10,480
+logic systems uh like temporal linear
+ 
+
+703
+00:12:10,480 --> 00:12:13,030
+logic systems uh like temporal linear
+logic and others that have more support
+
+704
+00:12:13,030 --> 00:12:13,040
+logic and others that have more support
+ 
+
+705
+00:12:13,040 --> 00:12:14,949
+logic and others that have more support
+for those types of operations um over
+
+706
+00:12:14,949 --> 00:12:14,959
+for those types of operations um over
+ 
+
+707
+00:12:14,959 --> 00:12:18,310
+for those types of operations um over
+over time over trajectories. Um, so with
+
+708
+00:12:18,310 --> 00:12:18,320
+over time over trajectories. Um, so with
+ 
+
+709
+00:12:18,320 --> 00:12:20,230
+over time over trajectories. Um, so with
+that, uh, thanks for your time. Here's
+
+710
+00:12:20,230 --> 00:12:20,240
+that, uh, thanks for your time. Here's
+ 
+
+711
+00:12:20,240 --> 00:12:22,069
+that, uh, thanks for your time. Here's
+the QR code to the, uh, the GitHub repo
+
+712
+00:12:22,069 --> 00:12:22,079
+the QR code to the, uh, the GitHub repo
+ 
+
+713
+00:12:22,079 --> 00:12:23,910
+the QR code to the, uh, the GitHub repo
+with this work. Uh, happy to take
+
+714
+00:12:23,910 --> 00:12:23,920
+with this work. Uh, happy to take
+ 
+
+715
+00:12:23,920 --> 00:12:25,590
+with this work. Uh, happy to take
+questions and, uh, and talk afterward as
+
+716
+00:12:25,590 --> 00:12:25,600
+questions and, uh, and talk afterward as
+ 
+
+717
+00:12:25,600 --> 00:12:34,310
+questions and, uh, and talk afterward as
+well, too.
+
+718
+00:12:34,310 --> 00:12:34,320
+
+ 
+
+719
+00:12:34,320 --> 00:12:38,949
+
+>> Anyone have questions?
+
+720
+00:12:38,949 --> 00:12:38,959
+
+ 
+
+721
+00:12:38,959 --> 00:12:41,590
+
+>> Uh, regarding the IFC model, are you
+
+722
+00:12:41,590 --> 00:12:41,600
+>> Uh, regarding the IFC model, are you
+ 
+
+723
+00:12:41,600 --> 00:12:44,150
+>> Uh, regarding the IFC model, are you
+tagging the datas or the labels of the
+
+724
+00:12:44,150 --> 00:12:44,160
+tagging the datas or the labels of the
+ 
+
+725
+00:12:44,160 --> 00:12:45,670
+tagging the datas or the labels of the
+data using AI?
+
+726
+00:12:45,670 --> 00:12:45,680
+data using AI?
+ 
+
+727
+00:12:45,680 --> 00:12:47,750
+data using AI?
+>> Yeah. So this is a uh a safety model.
+
+728
+00:12:47,750 --> 00:12:47,760
+>> Yeah. So this is a uh a safety model.
+ 
+
+729
+00:12:47,760 --> 00:12:50,069
+>> Yeah. So this is a uh a safety model.
+This is the GPT safeguards 20 billion
+
+730
+00:12:50,069 --> 00:12:50,079
+This is the GPT safeguards 20 billion
+ 
+
+731
+00:12:50,079 --> 00:12:52,710
+This is the GPT safeguards 20 billion
+model that has like a a policy like
+
+732
+00:12:52,710 --> 00:12:52,720
+model that has like a a policy like
+ 
+
+733
+00:12:52,720 --> 00:12:54,550
+model that has like a a policy like
+basically policies that you provided as
+
+734
+00:12:54,550 --> 00:12:54,560
+basically policies that you provided as
+ 
+
+735
+00:12:54,560 --> 00:12:56,629
+basically policies that you provided as
+examples for your your sensitivity
+
+736
+00:12:56,629 --> 00:12:56,639
+examples for your your sensitivity
+ 
+
+737
+00:12:56,639 --> 00:12:58,550
+examples for your your sensitivity
+labels. Um so that's how that
+
+738
+00:12:58,550 --> 00:12:58,560
+labels. Um so that's how that
+ 
+
+739
+00:12:58,560 --> 00:13:00,150
+labels. Um so that's how that
+classification is done. It could be from
+
+740
+00:13:00,150 --> 00:13:00,160
+classification is done. It could be from
+ 
+
+741
+00:13:00,160 --> 00:13:02,069
+classification is done. It could be from
+another DLP system from another data
+
+742
+00:13:02,069 --> 00:13:02,079
+another DLP system from another data
+ 
+
+743
+00:13:02,079 --> 00:13:03,750
+another DLP system from another data
+classification system uh for that for
+
+744
+00:13:03,750 --> 00:13:03,760
+classification system uh for that for
+ 
+
+745
+00:13:03,760 --> 00:13:05,269
+classification system uh for that for
+that label for that information.
+
+746
+00:13:05,269 --> 00:13:05,279
+that label for that information.
+ 
+
+747
+00:13:05,279 --> 00:13:07,430
+that label for that information.
+>> Okay. And this is labeling on the entire
+
+748
+00:13:07,430 --> 00:13:07,440
+>> Okay. And this is labeling on the entire
+ 
+
+749
+00:13:07,440 --> 00:13:09,670
+>> Okay. And this is labeling on the entire
+data instead of like some segment of
+
+750
+00:13:09,670 --> 00:13:09,680
+data instead of like some segment of
+ 
+
+751
+00:13:09,680 --> 00:13:11,509
+data instead of like some segment of
+>> so this is labeling on the events
+
+752
+00:13:11,509 --> 00:13:11,519
+>> so this is labeling on the events
+ 
+
+753
+00:13:11,519 --> 00:13:13,269
+>> so this is labeling on the events
+themselves with whatever data is
+
+754
+00:13:13,269 --> 00:13:13,279
+themselves with whatever data is
+ 
+
+755
+00:13:13,279 --> 00:13:15,110
+themselves with whatever data is
+retrieved or what whatever event is
+
+756
+00:13:15,110 --> 00:13:15,120
+retrieved or what whatever event is
+ 
+
+757
+00:13:15,120 --> 00:13:23,910
+retrieved or what whatever event is
+present in in the events themselves.
+
+758
+00:13:23,910 --> 00:13:23,920
+
+ 
+
+759
+00:13:23,920 --> 00:13:26,389
+
+>> Uh a great talk. Thank you very much. So
+
+760
+00:13:26,389 --> 00:13:26,399
+>> Uh a great talk. Thank you very much. So
+ 
+
+761
+00:13:26,399 --> 00:13:29,750
+>> Uh a great talk. Thank you very much. So
+quick questions. um you you write these
+
+762
+00:13:29,750 --> 00:13:29,760
+quick questions. um you you write these
+ 
+
+763
+00:13:29,760 --> 00:13:32,949
+quick questions. um you you write these
+policies uh in some language that's fine
+
+764
+00:13:32,949 --> 00:13:32,959
+policies uh in some language that's fine
+ 
+
+765
+00:13:32,959 --> 00:13:35,269
+policies uh in some language that's fine
+but uh who decides what should the
+
+766
+00:13:35,269 --> 00:13:35,279
+but uh who decides what should the
+ 
+
+767
+00:13:35,279 --> 00:13:37,509
+but uh who decides what should the
+policy be for a given agent the authors
+
+768
+00:13:37,509 --> 00:13:37,519
+policy be for a given agent the authors
+ 
+
+769
+00:13:37,519 --> 00:13:41,030
+policy be for a given agent the authors
+of the agents decide it and uh in terms
+
+770
+00:13:41,030 --> 00:13:41,040
+of the agents decide it and uh in terms
+ 
+
+771
+00:13:41,040 --> 00:13:43,030
+of the agents decide it and uh in terms
+of the implementation not the model as
+
+772
+00:13:43,030 --> 00:13:43,040
+of the implementation not the model as
+ 
+
+773
+00:13:43,040 --> 00:13:45,190
+of the implementation not the model as
+much as the implementation of the agents
+
+774
+00:13:45,190 --> 00:13:45,200
+much as the implementation of the agents
+ 
+
+775
+00:13:45,200 --> 00:13:47,430
+much as the implementation of the agents
+do you put them in the pre-post hooks of
+
+776
+00:13:47,430 --> 00:13:47,440
+do you put them in the pre-post hooks of
+ 
+
+777
+00:13:47,440 --> 00:13:52,790
+do you put them in the pre-post hooks of
+the um of the tool calls and agent LLM
+
+778
+00:13:52,790 --> 00:13:52,800
+the um of the tool calls and agent LLM
+ 
+
+779
+00:13:52,800 --> 00:13:55,269
+the um of the tool calls and agent LLM
+calls and that sort of stuff if you can
+
+780
+00:13:55,269 --> 00:13:55,279
+calls and that sort of stuff if you can
+ 
+
+781
+00:13:55,279 --> 00:13:57,829
+calls and that sort of stuff if you can
+get some under the hood det Yeah. So I
+
+782
+00:13:57,829 --> 00:13:57,839
+get some under the hood det Yeah. So I
+ 
+
+783
+00:13:57,839 --> 00:13:59,030
+get some under the hood det Yeah. So I
+kind of alluded to it a little bit, but
+
+784
+00:13:59,030 --> 00:13:59,040
+kind of alluded to it a little bit, but
+ 
+
+785
+00:13:59,040 --> 00:14:00,629
+kind of alluded to it a little bit, but
+this is where I think context from your
+
+786
+00:14:00,629 --> 00:14:00,639
+this is where I think context from your
+ 
+
+787
+00:14:00,639 --> 00:14:02,629
+this is where I think context from your
+cloud MD or your cursor rules files like
+
+788
+00:14:02,629 --> 00:14:02,639
+cloud MD or your cursor rules files like
+ 
+
+789
+00:14:02,639 --> 00:14:04,150
+cloud MD or your cursor rules files like
+there we're already putting a lot of
+
+790
+00:14:04,150 --> 00:14:04,160
+there we're already putting a lot of
+ 
+
+791
+00:14:04,160 --> 00:14:05,670
+there we're already putting a lot of
+sort of permission and security intent
+
+792
+00:14:05,670 --> 00:14:05,680
+sort of permission and security intent
+ 
+
+793
+00:14:05,680 --> 00:14:07,189
+sort of permission and security intent
+in there, you know. So you might be on
+
+794
+00:14:07,189 --> 00:14:07,199
+in there, you know. So you might be on
+ 
+
+795
+00:14:07,199 --> 00:14:08,870
+in there, you know. So you might be on
+an engineering team where there's
+
+796
+00:14:08,870 --> 00:14:08,880
+an engineering team where there's
+ 
+
+797
+00:14:08,880 --> 00:14:10,790
+an engineering team where there's
+certain files or certain operations on
+
+798
+00:14:10,790 --> 00:14:10,800
+certain files or certain operations on
+ 
+
+799
+00:14:10,800 --> 00:14:12,710
+certain files or certain operations on
+infrastructure and again we're again
+
+800
+00:14:12,710 --> 00:14:12,720
+infrastructure and again we're again
+ 
+
+801
+00:14:12,720 --> 00:14:13,829
+infrastructure and again we're again
+we're making this trade-off of giving
+
+802
+00:14:13,829 --> 00:14:13,839
+we're making this trade-off of giving
+ 
+
+803
+00:14:13,839 --> 00:14:15,590
+we're making this trade-off of giving
+the agent more access and given more
+
+804
+00:14:15,590 --> 00:14:15,600
+the agent more access and given more
+ 
+
+805
+00:14:15,600 --> 00:14:16,949
+the agent more access and given more
+utility to do useful things for us and
+
+806
+00:14:16,949 --> 00:14:16,959
+utility to do useful things for us and
+ 
+
+807
+00:14:16,959 --> 00:14:18,310
+utility to do useful things for us and
+then trying to dynamically determine
+
+808
+00:14:18,310 --> 00:14:18,320
+then trying to dynamically determine
+ 
+
+809
+00:14:18,320 --> 00:14:19,829
+then trying to dynamically determine
+when to revoke that access, right? It's
+
+810
+00:14:19,829 --> 00:14:19,839
+when to revoke that access, right? It's
+ 
+
+811
+00:14:19,839 --> 00:14:21,430
+when to revoke that access, right? It's
+the whole lease privileges thing. But
+
+812
+00:14:21,430 --> 00:14:21,440
+the whole lease privileges thing. But
+ 
+
+813
+00:14:21,440 --> 00:14:23,430
+the whole lease privileges thing. But
+yeah like that the idea there would be
+
+814
+00:14:23,430 --> 00:14:23,440
+yeah like that the idea there would be
+ 
+
+815
+00:14:23,440 --> 00:14:25,350
+yeah like that the idea there would be
+it would be per team that could be uh in
+
+816
+00:14:25,350 --> 00:14:25,360
+it would be per team that could be uh in
+ 
+
+817
+00:14:25,360 --> 00:14:27,269
+it would be per team that could be uh in
+your uh markdown files or it could come
+
+818
+00:14:27,269 --> 00:14:27,279
+your uh markdown files or it could come
+ 
+
+819
+00:14:27,279 --> 00:14:29,030
+your uh markdown files or it could come
+from your policy documents you know for
+
+820
+00:14:29,030 --> 00:14:29,040
+from your policy documents you know for
+ 
+
+821
+00:14:29,040 --> 00:14:31,030
+from your policy documents you know for
+your engineering best practices uh uh
+
+822
+00:14:31,030 --> 00:14:31,040
+your engineering best practices uh uh
+ 
+
+823
+00:14:31,040 --> 00:14:32,790
+your engineering best practices uh uh
+operating practices uh in in your
+
+824
+00:14:32,790 --> 00:14:32,800
+operating practices uh in in your
+ 
+
+825
+00:14:32,800 --> 00:14:37,670
+operating practices uh in in your
+environment.
+
+826
+00:14:37,670 --> 00:14:37,680
+
+ 
+
+827
+00:14:37,680 --> 00:14:39,269
+
+>> I'm sorry I can hear hear the code
+
+828
+00:14:39,269 --> 00:14:39,279
+>> I'm sorry I can hear hear the code
+ 
+
+829
+00:14:39,279 --> 00:14:43,110
+>> I'm sorry I can hear hear the code
+question
+
+830
+00:14:43,110 --> 00:14:43,120
+
+ 
+
+831
+00:14:43,120 --> 00:14:45,110
+
+Identity. Oh yeah so identity is not
+
+832
+00:14:45,110 --> 00:14:45,120
+Identity. Oh yeah so identity is not
+ 
+
+833
+00:14:45,120 --> 00:14:47,269
+Identity. Oh yeah so identity is not
+covered in here but um any IDP could be
+
+834
+00:14:47,269 --> 00:14:47,279
+covered in here but um any IDP could be
+ 
+
+835
+00:14:47,279 --> 00:14:48,710
+covered in here but um any IDP could be
+added in here like this is like Cedar
+
+836
+00:14:48,710 --> 00:14:48,720
+added in here like this is like Cedar
+ 
+
+837
+00:14:48,720 --> 00:14:50,470
+added in here like this is like Cedar
+sort of bread and butter. Um so that
+
+838
+00:14:50,470 --> 00:14:50,480
+sort of bread and butter. Um so that
+ 
+
+839
+00:14:50,480 --> 00:14:52,069
+sort of bread and butter. Um so that
+also could be used as well too. We focus
+
+840
+00:14:52,069 --> 00:14:52,079
+also could be used as well too. We focus
+ 
+
+841
+00:14:52,079 --> 00:14:54,069
+also could be used as well too. We focus
+on the attribute based access control uh
+
+842
+00:14:54,069 --> 00:14:54,079
+on the attribute based access control uh
+ 
+
+843
+00:14:54,079 --> 00:15:07,590
+on the attribute based access control uh
+in this uh in this work.
+
+844
+00:15:07,590 --> 00:15:07,600
+
+ 
+
+845
+00:15:07,600 --> 00:15:10,949
+
+>> Hey Matt, great talk. Um I'm curious how
+
+846
+00:15:10,949 --> 00:15:10,959
+>> Hey Matt, great talk. Um I'm curious how
+ 
+
+847
+00:15:10,959 --> 00:15:13,750
+>> Hey Matt, great talk. Um I'm curious how
+does Cedar policy engine work with first
+
+848
+00:15:13,750 --> 00:15:13,760
+does Cedar policy engine work with first
+ 
+
+849
+00:15:13,760 --> 00:15:16,470
+does Cedar policy engine work with first
+party agents? uh whether it's based on
+
+850
+00:15:16,470 --> 00:15:16,480
+party agents? uh whether it's based on
+ 
+
+851
+00:15:16,480 --> 00:15:19,030
+party agents? uh whether it's based on
+lang chain co-pilot studio stuff like
+
+852
+00:15:19,030 --> 00:15:19,040
+lang chain co-pilot studio stuff like
+ 
+
+853
+00:15:19,040 --> 00:15:19,590
+lang chain co-pilot studio stuff like
+that.
+
+854
+00:15:19,590 --> 00:15:19,600
+that.
+ 
+
+855
+00:15:19,600 --> 00:15:21,750
+that.
+>> Yeah. So uh we also open source like a
+
+856
+00:15:21,750 --> 00:15:21,760
+>> Yeah. So uh we also open source like a
+ 
+
+857
+00:15:21,760 --> 00:15:23,910
+>> Yeah. So uh we also open source like a
+cedar policy engine for like any uh
+
+858
+00:15:23,910 --> 00:15:23,920
+cedar policy engine for like any uh
+ 
+
+859
+00:15:23,920 --> 00:15:25,509
+cedar policy engine for like any uh
+right now supported Python libraries
+
+860
+00:15:25,509 --> 00:15:25,519
+right now supported Python libraries
+ 
+
+861
+00:15:25,519 --> 00:15:28,550
+right now supported Python libraries
+like lang chain strands ADK um and
+
+862
+00:15:28,550 --> 00:15:28,560
+like lang chain strands ADK um and
+ 
+
+863
+00:15:28,560 --> 00:15:29,910
+like lang chain strands ADK um and
+others but yeah so it could also be
+
+864
+00:15:29,910 --> 00:15:29,920
+others but yeah so it could also be
+ 
+
+865
+00:15:29,920 --> 00:15:31,509
+others but yeah so it could also be
+embedded within those first party agents
+
+866
+00:15:31,509 --> 00:15:31,519
+embedded within those first party agents
+ 
+
+867
+00:15:31,519 --> 00:15:32,870
+embedded within those first party agents
+as well too.
+
+868
+00:15:32,870 --> 00:15:32,880
+as well too.
+ 
+
+869
+00:15:32,880 --> 00:15:36,550
+as well too.
+>> Great.
+
+870
+00:15:36,550 --> 00:15:36,560
+
+ 
+
+871
+00:15:36,560 --> 00:15:40,629
+
+Anybody else?
+
+872
+00:15:40,629 --> 00:15:40,639
+
+ 
+
+873
+00:15:40,639 --> 00:15:42,310
+
+>> Matt had a lot of time. He finished up
+
+874
+00:15:42,310 --> 00:15:42,320
+>> Matt had a lot of time. He finished up
+ 
+
+875
+00:15:42,320 --> 00:15:43,750
+>> Matt had a lot of time. He finished up
+early.
+
+876
+00:15:43,750 --> 00:15:43,760
+early.
+ 
+
+877
+00:15:43,760 --> 00:15:46,310
+early.
+Hey Matt, thanks for the talk. Um, you
+
+878
+00:15:46,310 --> 00:15:46,320
+Hey Matt, thanks for the talk. Um, you
+ 
+
+879
+00:15:46,320 --> 00:15:47,910
+Hey Matt, thanks for the talk. Um, you
+mentioned kind of towards the end how
+
+880
+00:15:47,910 --> 00:15:47,920
+mentioned kind of towards the end how
+ 
+
+881
+00:15:47,920 --> 00:15:50,389
+mentioned kind of towards the end how
+this is complimementaryary with like a
+
+882
+00:15:50,389 --> 00:15:50,399
+this is complimementaryary with like a
+ 
+
+883
+00:15:50,399 --> 00:15:51,910
+this is complimementaryary with like a
+permission system. Could you just talk
+
+884
+00:15:51,910 --> 00:15:51,920
+permission system. Could you just talk
+ 
+
+885
+00:15:51,920 --> 00:15:52,870
+permission system. Could you just talk
+about that a little more?
+
+886
+00:15:52,870 --> 00:15:52,880
+about that a little more?
+ 
+
+887
+00:15:52,880 --> 00:15:54,310
+about that a little more?
+>> Yeah, so I think a good example would be
+
+888
+00:15:54,310 --> 00:15:54,320
+>> Yeah, so I think a good example would be
+ 
+
+889
+00:15:54,320 --> 00:15:55,910
+>> Yeah, so I think a good example would be
+like in in cloud code permissions,
+
+890
+00:15:55,910 --> 00:15:55,920
+like in in cloud code permissions,
+ 
+
+891
+00:15:55,920 --> 00:15:57,749
+like in in cloud code permissions,
+right? You might uh have bash and you
+
+892
+00:15:57,749 --> 00:15:57,759
+right? You might uh have bash and you
+ 
+
+893
+00:15:57,759 --> 00:15:59,269
+right? You might uh have bash and you
+might again similar to maybe with some
+
+894
+00:15:59,269 --> 00:15:59,279
+might again similar to maybe with some
+ 
+
+895
+00:15:59,279 --> 00:16:00,550
+might again similar to maybe with some
+of those Cedar policies where you're
+
+896
+00:16:00,550 --> 00:16:00,560
+of those Cedar policies where you're
+ 
+
+897
+00:16:00,560 --> 00:16:03,189
+of those Cedar policies where you're
+wild carding on certain commands. Great.
+
+898
+00:16:03,189 --> 00:16:03,199
+wild carding on certain commands. Great.
+ 
+
+899
+00:16:03,199 --> 00:16:04,629
+wild carding on certain commands. Great.
+You can still do that, but with Cedar
+
+900
+00:16:04,629 --> 00:16:04,639
+You can still do that, but with Cedar
+ 
+
+901
+00:16:04,639 --> 00:16:06,710
+You can still do that, but with Cedar
+you can have more context. You can have
+
+902
+00:16:06,710 --> 00:16:06,720
+you can have more context. You can have
+ 
+
+903
+00:16:06,720 --> 00:16:08,629
+you can have more context. You can have
+more you can allow permissions but only
+
+904
+00:16:08,629 --> 00:16:08,639
+more you can allow permissions but only
+ 
+
+905
+00:16:08,639 --> 00:16:11,110
+more you can allow permissions but only
+when the trajectory is not tainted with
+
+906
+00:16:11,110 --> 00:16:11,120
+when the trajectory is not tainted with
+ 
+
+907
+00:16:11,120 --> 00:16:13,430
+when the trajectory is not tainted with
+uh some information flow control. label.
+
+908
+00:16:13,430 --> 00:16:13,440
+uh some information flow control. label.
+ 
+
+909
+00:16:13,440 --> 00:16:15,350
+uh some information flow control. label.
+So that would be one example.
+
+910
+00:16:15,350 --> 00:16:15,360
+So that would be one example.
+ 
+
+911
+00:16:15,360 --> 00:16:17,829
+So that would be one example.
+>> Thanks.
+
+912
+00:16:17,829 --> 00:16:17,839
+>> Thanks.
+ 
+
+913
+00:16:17,839 --> 00:16:19,350
+>> Thanks.
+>> Anybody else? Oh, there we go. Down
+
+914
+00:16:19,350 --> 00:16:19,360
+>> Anybody else? Oh, there we go. Down
+ 
+
+915
+00:16:19,360 --> 00:16:27,350
+>> Anybody else? Oh, there we go. Down
+front.
+
+916
+00:16:27,350 --> 00:16:27,360
+
+ 
+
+917
+00:16:27,360 --> 00:16:29,350
+
+>> You mentioned um using this bookkeeping
+
+918
+00:16:29,350 --> 00:16:29,360
+>> You mentioned um using this bookkeeping
+ 
+
+919
+00:16:29,360 --> 00:16:31,829
+>> You mentioned um using this bookkeeping
+across multi-turn conversations. Have
+
+920
+00:16:31,829 --> 00:16:31,839
+across multi-turn conversations. Have
+ 
+
+921
+00:16:31,839 --> 00:16:33,590
+across multi-turn conversations. Have
+you experimented with multi- aent
+
+922
+00:16:33,590 --> 00:16:33,600
+you experimented with multi- aent
+ 
+
+923
+00:16:33,600 --> 00:16:35,269
+you experimented with multi- aent
+architectures where you have like
+
+924
+00:16:35,269 --> 00:16:35,279
+architectures where you have like
+ 
+
+925
+00:16:35,279 --> 00:16:36,710
+architectures where you have like
+convergence and divergence of
+
+926
+00:16:36,710 --> 00:16:36,720
+convergence and divergence of
+ 
+
+927
+00:16:36,720 --> 00:16:38,629
+convergence and divergence of
+trajectories? So I think this is where
+
+928
+00:16:38,629 --> 00:16:38,639
+trajectories? So I think this is where
+ 
+
+929
+00:16:38,639 --> 00:16:40,949
+trajectories? So I think this is where
+it gets uh kind of this is single agent
+
+930
+00:16:40,949 --> 00:16:40,959
+it gets uh kind of this is single agent
+ 
+
+931
+00:16:40,959 --> 00:16:42,389
+it gets uh kind of this is single agent
+like focus on single agents right now
+
+932
+00:16:42,389 --> 00:16:42,399
+like focus on single agents right now
+ 
+
+933
+00:16:42,399 --> 00:16:44,389
+like focus on single agents right now
+but the uh the sort of control event
+
+934
+00:16:44,389 --> 00:16:44,399
+but the uh the sort of control event
+ 
+
+935
+00:16:44,399 --> 00:16:45,910
+but the uh the sort of control event
+types is that place where you can see
+
+936
+00:16:45,910 --> 00:16:45,920
+types is that place where you can see
+ 
+
+937
+00:16:45,920 --> 00:16:48,150
+types is that place where you can see
+when and another agent spawned like a
+
+938
+00:16:48,150 --> 00:16:48,160
+when and another agent spawned like a
+ 
+
+939
+00:16:48,160 --> 00:16:50,150
+when and another agent spawned like a
+sub agents created or maybe there's more
+
+940
+00:16:50,150 --> 00:16:50,160
+sub agents created or maybe there's more
+ 
+
+941
+00:16:50,160 --> 00:16:52,550
+sub agents created or maybe there's more
+like agent to agent communications. Um
+
+942
+00:16:52,550 --> 00:16:52,560
+like agent to agent communications. Um
+ 
+
+943
+00:16:52,560 --> 00:16:54,870
+like agent to agent communications. Um
+so as far as like thinking of this as a
+
+944
+00:16:54,870 --> 00:16:54,880
+so as far as like thinking of this as a
+ 
+
+945
+00:16:54,880 --> 00:16:57,269
+so as far as like thinking of this as a
+another like agent to agent sort of
+
+946
+00:16:57,269 --> 00:16:57,279
+another like agent to agent sort of
+ 
+
+947
+00:16:57,279 --> 00:16:59,110
+another like agent to agent sort of
+boundary policies that maybe again more
+
+948
+00:16:59,110 --> 00:16:59,120
+boundary policies that maybe again more
+ 
+
+949
+00:16:59,120 --> 00:17:00,870
+boundary policies that maybe again more
+like contextual integrity like sort of
+
+950
+00:17:00,870 --> 00:17:00,880
+like contextual integrity like sort of
+ 
+
+951
+00:17:00,880 --> 00:17:03,269
+like contextual integrity like sort of
+use cases of an agent knows one secret
+
+952
+00:17:03,269 --> 00:17:03,279
+use cases of an agent knows one secret
+ 
+
+953
+00:17:03,279 --> 00:17:04,630
+use cases of an agent knows one secret
+you can't let other agents in the
+
+954
+00:17:04,630 --> 00:17:04,640
+you can't let other agents in the
+ 
+
+955
+00:17:04,640 --> 00:17:06,069
+you can't let other agents in the
+environment know that secret. This could
+
+956
+00:17:06,069 --> 00:17:06,079
+environment know that secret. This could
+ 
+
+957
+00:17:06,079 --> 00:17:07,429
+environment know that secret. This could
+be another another mechanism but uh that
+
+958
+00:17:07,429 --> 00:17:07,439
+be another another mechanism but uh that
+ 
+
+959
+00:17:07,439 --> 00:17:08,870
+be another another mechanism but uh that
+work is is not to be done yet in this
+
+960
+00:17:08,870 --> 00:17:08,880
+work is is not to be done yet in this
+ 
+
+961
+00:17:08,880 --> 00:17:11,880
+work is is not to be done yet in this
+work.
+

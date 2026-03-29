@@ -1,0 +1,59 @@
+1sd26pWhfmg_Nicholas Carlini - Black-hat LLMs ｜ [un]prompted 2026
+2_Vq4vY5EaA_Rob T. Lee, Glenn Thrope, Dan Hubbard & Sergej Epp - Vibe Coded ｜ [un]prompted 2026
+4zoYCfHwhEk_Aaron Brown & Madhur Prashant - Trajectory-Aware Post-Training Security Agents ｜ [un]prompted 2026
+6P77Zbo2TA4_Rami McCarthy - Zeal of the Convert： Taming Shai-Hulud with AI ｜ [un]prompted 2026
+93jhfuL-ndo_Jenny Guanni Qu - Why Most ML Vulnerability Detection Fails ｜ [un]prompted 2026
+996zolUsXog_Brendan Dolan-Gavitt & Vincent Olesen - Agents Exploiting “Auth-by-One” Errors ｜ [un]prompted 2026
+B_7RpP90rUk_Heather Adkins &  Four Flynn - Evaluating Threats & Automating Defense at Google ｜ [un]prompted 2026
+bw928cFShK4_Niki Aimable Niyikiza - Capability-Based Authorization for AI Agents ｜ [un]prompted 2026
+bxwEZMhqeR0_Scott Behrens & Justice Cassel - Source to Sink： Improving LLM Vuln Discovery ｜ [un]prompted 2026
+c5XAvRbma6Y_Georgi G - Promp2Pwn - LLMs Winning at Pwn2Own ｜ [un]prompted 2026
+c6_bRzHCf3U_Peter Girnus & Derek Chen - FENRIR： AI Hunting for AI Zero-Days at Scale ｜ [un]prompted 2026
+cEbPSQaSLXM_Mika Ayenson - ＂Can You See What Your AI Saw？＂ ｜ [un]prompted 2026
+cNE7P5FkqR8_Andrew Bullen - Breaking the Lethal Trifecta (Without Ruining Your Agents) ｜ [un]prompted 2026
+cUMJTM9egiM_Dan Hubbard - Opening Poem ｜ [un]prompted 2026
+DmO3cVOijNY_Srajan Gupta - Injecting Security Context During Vibe Coding ｜ [un]prompted 2026
+EZSLjT8O2rw_Arthi Nagarajan - Exploring the AI Automation Boundary ｜ [un]prompted 2026
+f0E_Vl5JQG0_Flash Talks ｜ [un]prompted 2026
+_f30RyXc_8Q_Olivia Gallucci - macOS Vulnerability Research ｜ [un]prompted 2026
+fAmr0N2rHIU_Xenia Mountrouidou - Traditional ML vs LLMs： who can classify better？ ｜ [un]prompted 2026
+Fzgqx1MauJg_Kyle Polley - Training BrowseSafe： Lessons from Detecting Prompt Injection ｜ [un]prompted 2026
+HjAxt-KpACg_Gadi Evron - Closing Words ｜ [un]prompted 2026
+IjL2qN1KDe8_Adam Krivka & Ondrej Vlcek - AI Found 12 Zero-Days in OpenSSL ｜ [un]prompted 2026
+j2_VsH6aNzY_Jackson Reed - Are you thinking what I'm thinking？ ｜ [un]prompted 2026
+J9B6Ez2ynvk_Nicolas Lidzborski - Securing Workspace GenAI at Google Speed ｜ [un]prompted 2026
+JZlaijmG-Ng_Carl Hurd - Glass-Box Security： Operationalizing Mechanistic Interpretability ｜ [un]prompted 2026
+k19CmI_Ni3M_Bob Rudis & Glenn Thorpe - Detection & Deception Engineering in the Matrix ｜ [un]prompted 2026
+kgwvAyF7qsA_Dan Guido - 200 Bugs⧸Week⧸Engineer： How We Rebuilt Trail of Bits Around AI ｜ [un]prompted 2026
+KrKk8BGPeQA_Jeffrey Zhang & Siddh Shah - Guardrails beyond Vibes ｜ [un]prompted 2026
+l9CPmPk2R-M_Daniel Miessler - Anatomy of an Agentic Personal AI Infrastructure ｜ [un]prompted 2026
+lib_KZKISOo_Dongdong Sun - From OSINT Chaos to Knowledge Graph ｜ [un]prompted 2026
+m6pzrqFJ6hE_Matt Maisel - Hooking Coding Agents with the Cedar Policy Language ｜ [un]prompted 2026
+mKb_IKVrcIc_Piotr Ryciak - Vibe Check： Security Failures in AI-Assisted IDEs ｜ [un]prompted 2026
+N0DukgZSREo_Roey Ben Chaim - Total Recon： How We Discovered 1000s of Open Agents in the Wild ｜ [un]prompted 2026
+nbXqlc9HjWU_Joey Melo - The Parseltongue Protocol： Textual Obfuscation Methods ｜ [un]prompted 2026
+NikR9PuB24U_Gadi Evron - Closing Words ｜ [un]prompted 2026
+nRH_rdW7EL8_Aaron Grattafiori & Skyler Bingham - Tenderizing the Target ｜ [un]prompted 2026
+NU6l0Qcf5rU_Ilia Shumailov - AI Security with Guarantees ｜ [un]prompted 2026
+OsUg3TlAqjQ_Rob T. Lee - SIFT-FIND EVIL! I Gave Claude Code R00t on DFIR SIFT Workstation ｜ [un]prompted 2026
+oXj1Kee_crw_Joe Sullivan - AI Notetakers： The Most Important Person in the Room ｜ [un]prompted 2026
+PtWwrOm3BeE_Matt Rittinghouse & Millie Huang - 1.8M Prompts, 30 Alerts ｜ [un]prompted 2026
+PZYtJL6TCwo_Mohamed Nabeel - Detecting GenAI Threats at Scale with YARA-Like Semantic Rules ｜ [un]prompted 2026
+RF4gR5uviv0_Ragini Ramalingam - Enterprise AI Governance at Snowflake ｜ [un]prompted 2026
+rO2yA52U_i4_Joshua Saxe - The Hard Part Isn’t Building the Agent： Measuring Effectiveness ｜ [un]prompted 2026
+S9lsiFQFmfo_Gadi Evron - Opening Words ｜ [un]prompted 2026
+sh9LpVM1QBM_Billy Norwood - Establishing AI Governance Without Stifling Innovation ｜ [un]prompted 2026
+SMEZowlcyyo_Shruti Datta Gupta & Chandrani Mukherjee - Security Guidance as a Service ｜ [un]prompted 2026
+SUa1nta8FGQ_Wes Ring & Josiah Peedikayil - Operation Pale Fire ｜ [un]prompted 2026
+SzLVXAzjOEU_Brooks McMillin - Building Secure Agentic Systems ｜ [un]prompted 2026
+_tqqnkemYsg_Adam Laurie (Major Malfunction) - AI go Beep Boop! ｜ [un]prompted 2026
+U1TJpMpxZiU_Maxim Kovalsky - The AI Security Larsen Effect： How to Stop the Feedback Loop ｜ [un]prompted 2026
+U2O14Jd3MBU_Paul McMillan & Ryan Lopopolo - Code Is Free： Securing Software ｜ [un]prompted 2026
+u7pag5p9z5o_Natalie Isak & Waris Gill - Developing & Deploying AI Fingerprints ｜ [un]prompted 2026
+uH-UggR2Txg_Gadi Evron - Opening Words - “Research conferences aren’t effective.” ｜ [un]prompted 2026
+uImn7_dmeoY_Mudita Khurana - Rethinking how we evaluate security agents for real-world use ｜ [un]prompted 2026
+UOtVmYR0mRg_Chase Hasbrouck - Three Phases of AI Adoption ｜ [un]prompted 2026
+xCtcQkJBReQ_Sergej Epp - 8 Minutes to Admin. We Caught It in the Wild. ｜ [un]prompted 2026
+XVos-fhnsek_Sean Park - When Passports Execute： Exploiting AI Driven KYC Pipelines ｜ [un]prompted 2026
+yUqBC3mc544_Gadi Evron on behalf of Zenity - PleaseFix ｜ [un]prompted 2026
+zVUm23P7ZNg_Johann Rehberger - Your Agent Works for Me Now ｜ [un]prompted 2026

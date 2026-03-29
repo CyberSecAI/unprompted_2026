@@ -1,0 +1,5305 @@
+1
+00:00:06,000 --> 00:00:07,909
+
+Good morning everyone. I'm Raini
+
+2
+00:00:07,909 --> 00:00:07,919
+Good morning everyone. I'm Raini
+ 
+
+3
+00:00:07,919 --> 00:00:09,750
+Good morning everyone. I'm Raini
+Ramolingum and I lead the enterprise
+
+4
+00:00:09,750 --> 00:00:09,760
+Ramolingum and I lead the enterprise
+ 
+
+5
+00:00:09,760 --> 00:00:12,870
+Ramolingum and I lead the enterprise
+security team at Snowflake. Um wanted to
+
+6
+00:00:12,870 --> 00:00:12,880
+security team at Snowflake. Um wanted to
+ 
+
+7
+00:00:12,880 --> 00:00:15,430
+security team at Snowflake. Um wanted to
+thank Gaddy and the team at Gnostic for
+
+8
+00:00:15,430 --> 00:00:15,440
+thank Gaddy and the team at Gnostic for
+ 
+
+9
+00:00:15,440 --> 00:00:16,950
+thank Gaddy and the team at Gnostic for
+putting this conference together and all
+
+10
+00:00:16,950 --> 00:00:16,960
+putting this conference together and all
+ 
+
+11
+00:00:16,960 --> 00:00:19,269
+putting this conference together and all
+of you for this great community that has
+
+12
+00:00:19,269 --> 00:00:19,279
+of you for this great community that has
+ 
+
+13
+00:00:19,279 --> 00:00:21,510
+of you for this great community that has
+come together um to discuss the
+
+14
+00:00:21,510 --> 00:00:21,520
+come together um to discuss the
+ 
+
+15
+00:00:21,520 --> 00:00:27,109
+come together um to discuss the
+challenges that we have in AI security.
+
+16
+00:00:27,109 --> 00:00:27,119
+
+ 
+
+17
+00:00:27,119 --> 00:00:29,429
+
+I want to start off with by by making an
+
+18
+00:00:29,429 --> 00:00:29,439
+I want to start off with by by making an
+ 
+
+19
+00:00:29,439 --> 00:00:32,870
+I want to start off with by by making an
+quick observation. Enterprise security
+
+20
+00:00:32,870 --> 00:00:32,880
+quick observation. Enterprise security
+ 
+
+21
+00:00:32,880 --> 00:00:36,150
+quick observation. Enterprise security
+for decades assumed that the execution
+
+22
+00:00:36,150 --> 00:00:36,160
+for decades assumed that the execution
+ 
+
+23
+00:00:36,160 --> 00:00:40,549
+for decades assumed that the execution
+in the enterprise is predefined or
+
+24
+00:00:40,549 --> 00:00:40,559
+in the enterprise is predefined or
+ 
+
+25
+00:00:40,559 --> 00:00:42,549
+in the enterprise is predefined or
+deterministic.
+
+26
+00:00:42,549 --> 00:00:42,559
+deterministic.
+ 
+
+27
+00:00:42,559 --> 00:00:45,510
+deterministic.
+So we had identities authenticating. We
+
+28
+00:00:45,510 --> 00:00:45,520
+So we had identities authenticating. We
+ 
+
+29
+00:00:45,520 --> 00:00:48,470
+So we had identities authenticating. We
+had you know systems and workflows exe
+
+30
+00:00:48,470 --> 00:00:48,480
+had you know systems and workflows exe
+ 
+
+31
+00:00:48,480 --> 00:00:51,590
+had you know systems and workflows exe
+executing predefined logic and
+
+32
+00:00:51,590 --> 00:00:51,600
+executing predefined logic and
+ 
+
+33
+00:00:51,600 --> 00:00:54,310
+executing predefined logic and
+automation existed but that was based on
+
+34
+00:00:54,310 --> 00:00:54,320
+automation existed but that was based on
+ 
+
+35
+00:00:54,320 --> 00:00:56,950
+automation existed but that was based on
+what humans defined and systems just
+
+36
+00:00:56,950 --> 00:00:56,960
+what humans defined and systems just
+ 
+
+37
+00:00:56,960 --> 00:01:00,389
+what humans defined and systems just
+executed it. And today a AI it's
+
+38
+00:01:00,389 --> 00:01:00,399
+executed it. And today a AI it's
+ 
+
+39
+00:01:00,399 --> 00:01:02,950
+executed it. And today a AI it's
+fundamentally different.
+
+40
+00:01:02,950 --> 00:01:02,960
+fundamentally different.
+ 
+
+41
+00:01:02,960 --> 00:01:05,910
+fundamentally different.
+We are deploying systems that now make
+
+42
+00:01:05,910 --> 00:01:05,920
+We are deploying systems that now make
+ 
+
+43
+00:01:05,920 --> 00:01:10,550
+We are deploying systems that now make
+decisions at runtime and invoke actions
+
+44
+00:01:10,550 --> 00:01:10,560
+decisions at runtime and invoke actions
+ 
+
+45
+00:01:10,560 --> 00:01:13,830
+decisions at runtime and invoke actions
+from the endpoint to the cloud to SAS
+
+46
+00:01:13,830 --> 00:01:13,840
+from the endpoint to the cloud to SAS
+ 
+
+47
+00:01:13,840 --> 00:01:17,030
+from the endpoint to the cloud to SAS
+and and blurring boundaries. And this is
+
+48
+00:01:17,030 --> 00:01:17,040
+and and blurring boundaries. And this is
+ 
+
+49
+00:01:17,040 --> 00:01:20,149
+and and blurring boundaries. And this is
+basically moved from
+
+50
+00:01:20,149 --> 00:01:20,159
+basically moved from
+ 
+
+51
+00:01:20,159 --> 00:01:23,590
+basically moved from
+deterministic action to making context
+
+52
+00:01:23,590 --> 00:01:23,600
+deterministic action to making context
+ 
+
+53
+00:01:23,600 --> 00:01:26,550
+deterministic action to making context
+aware actions in in real time that are
+
+54
+00:01:26,550 --> 00:01:26,560
+aware actions in in real time that are
+ 
+
+55
+00:01:26,560 --> 00:01:29,590
+aware actions in in real time that are
+not controlled by humans.
+
+56
+00:01:29,590 --> 00:01:29,600
+not controlled by humans.
+ 
+
+57
+00:01:29,600 --> 00:01:32,870
+not controlled by humans.
+So how do we govern
+
+58
+00:01:32,870 --> 00:01:32,880
+So how do we govern
+ 
+
+59
+00:01:32,880 --> 00:01:36,069
+So how do we govern
+this new ecosystem?
+
+60
+00:01:36,069 --> 00:01:36,079
+this new ecosystem?
+ 
+
+61
+00:01:36,079 --> 00:01:38,789
+this new ecosystem?
+The traditional governance models don't
+
+62
+00:01:38,789 --> 00:01:38,799
+The traditional governance models don't
+ 
+
+63
+00:01:38,799 --> 00:01:41,990
+The traditional governance models don't
+don't work anymore and governance has to
+
+64
+00:01:41,990 --> 00:01:42,000
+don't work anymore and governance has to
+ 
+
+65
+00:01:42,000 --> 00:01:45,270
+don't work anymore and governance has to
+become dynamic and evolve. I'd like to
+
+66
+00:01:45,270 --> 00:01:45,280
+become dynamic and evolve. I'd like to
+ 
+
+67
+00:01:45,280 --> 00:01:49,109
+become dynamic and evolve. I'd like to
+quote our CESO Brad Jones um who said
+
+68
+00:01:49,109 --> 00:01:49,119
+quote our CESO Brad Jones um who said
+ 
+
+69
+00:01:49,119 --> 00:01:52,710
+quote our CESO Brad Jones um who said
+governing AI at a company like Snowflake
+
+70
+00:01:52,710 --> 00:01:52,720
+governing AI at a company like Snowflake
+ 
+
+71
+00:01:52,720 --> 00:01:55,749
+governing AI at a company like Snowflake
+where the AI data cloud is like laying
+
+72
+00:01:55,749 --> 00:01:55,759
+where the AI data cloud is like laying
+ 
+
+73
+00:01:55,759 --> 00:01:59,030
+where the AI data cloud is like laying
+tracks in front of a running train. And
+
+74
+00:01:59,030 --> 00:01:59,040
+tracks in front of a running train. And
+ 
+
+75
+00:01:59,040 --> 00:02:03,830
+tracks in front of a running train. And
+our challenge was to lay those tracks
+
+76
+00:02:03,830 --> 00:02:03,840
+our challenge was to lay those tracks
+ 
+
+77
+00:02:03,840 --> 00:02:07,350
+our challenge was to lay those tracks
+and not slow down the running train. How
+
+78
+00:02:07,350 --> 00:02:07,360
+and not slow down the running train. How
+ 
+
+79
+00:02:07,360 --> 00:02:08,949
+and not slow down the running train. How
+do you achieve that? So we had to come
+
+80
+00:02:08,949 --> 00:02:08,959
+do you achieve that? So we had to come
+ 
+
+81
+00:02:08,959 --> 00:02:12,470
+do you achieve that? So we had to come
+up with a governance model that
+
+82
+00:02:12,470 --> 00:02:12,480
+up with a governance model that
+ 
+
+83
+00:02:12,480 --> 00:02:14,390
+up with a governance model that
+you know helped us to make decisions
+
+84
+00:02:14,390 --> 00:02:14,400
+you know helped us to make decisions
+ 
+
+85
+00:02:14,400 --> 00:02:17,990
+you know helped us to make decisions
+really quickly and enable innovation and
+
+86
+00:02:17,990 --> 00:02:18,000
+really quickly and enable innovation and
+ 
+
+87
+00:02:18,000 --> 00:02:20,630
+really quickly and enable innovation and
+but safely and securely. So I'll walk
+
+88
+00:02:20,630 --> 00:02:20,640
+but safely and securely. So I'll walk
+ 
+
+89
+00:02:20,640 --> 00:02:22,150
+but safely and securely. So I'll walk
+you through the governance model we
+
+90
+00:02:22,150 --> 00:02:22,160
+you through the governance model we
+ 
+
+91
+00:02:22,160 --> 00:02:27,430
+you through the governance model we
+adopted to enable this.
+
+92
+00:02:27,430 --> 00:02:27,440
+
+ 
+
+93
+00:02:27,440 --> 00:02:31,270
+
+So why is AI governance fundamentally
+
+94
+00:02:31,270 --> 00:02:31,280
+So why is AI governance fundamentally
+ 
+
+95
+00:02:31,280 --> 00:02:35,030
+So why is AI governance fundamentally
+different? First, AI tool adoption does
+
+96
+00:02:35,030 --> 00:02:35,040
+different? First, AI tool adoption does
+ 
+
+97
+00:02:35,040 --> 00:02:38,150
+different? First, AI tool adoption does
+not wait for review cycles and it does
+
+98
+00:02:38,150 --> 00:02:38,160
+not wait for review cycles and it does
+ 
+
+99
+00:02:38,160 --> 00:02:41,030
+not wait for review cycles and it does
+not follow the pace that you know uh
+
+100
+00:02:41,030 --> 00:02:41,040
+not follow the pace that you know uh
+ 
+
+101
+00:02:41,040 --> 00:02:42,390
+not follow the pace that you know uh
+that we see in the traditional
+
+102
+00:02:42,390 --> 00:02:42,400
+that we see in the traditional
+ 
+
+103
+00:02:42,400 --> 00:02:45,750
+that we see in the traditional
+enterprises. It begins with engineers
+
+104
+00:02:45,750 --> 00:02:45,760
+enterprises. It begins with engineers
+ 
+
+105
+00:02:45,760 --> 00:02:48,470
+enterprises. It begins with engineers
+experimenting with product teams trying
+
+106
+00:02:48,470 --> 00:02:48,480
+experimenting with product teams trying
+ 
+
+107
+00:02:48,480 --> 00:02:51,750
+experimenting with product teams trying
+to integrate with um uh solution
+
+108
+00:02:51,750 --> 00:02:51,760
+to integrate with um uh solution
+ 
+
+109
+00:02:51,760 --> 00:02:53,830
+to integrate with um uh solution
+engineers trying to showcase and
+
+110
+00:02:53,830 --> 00:02:53,840
+engineers trying to showcase and
+ 
+
+111
+00:02:53,840 --> 00:02:56,070
+engineers trying to showcase and
+business teams trying to uh increase
+
+112
+00:02:56,070 --> 00:02:56,080
+business teams trying to uh increase
+ 
+
+113
+00:02:56,080 --> 00:02:59,190
+business teams trying to uh increase
+their productivity using AI. So we had
+
+114
+00:02:59,190 --> 00:02:59,200
+their productivity using AI. So we had
+ 
+
+115
+00:02:59,200 --> 00:03:02,550
+their productivity using AI. So we had
+to come up with processes that evolved
+
+116
+00:03:02,550 --> 00:03:02,560
+to come up with processes that evolved
+ 
+
+117
+00:03:02,560 --> 00:03:06,390
+to come up with processes that evolved
+at that speed. feature velocity and and
+
+118
+00:03:06,390 --> 00:03:06,400
+at that speed. feature velocity and and
+ 
+
+119
+00:03:06,400 --> 00:03:09,910
+at that speed. feature velocity and and
+second feature velocity outpaces um you
+
+120
+00:03:09,910 --> 00:03:09,920
+second feature velocity outpaces um you
+ 
+
+121
+00:03:09,920 --> 00:03:12,070
+second feature velocity outpaces um you
+know any kind of feature releases. AI
+
+122
+00:03:12,070 --> 00:03:12,080
+know any kind of feature releases. AI
+ 
+
+123
+00:03:12,080 --> 00:03:14,710
+know any kind of feature releases. AI
+vendors are releasing features
+
+124
+00:03:14,710 --> 00:03:14,720
+vendors are releasing features
+ 
+
+125
+00:03:14,720 --> 00:03:17,509
+vendors are releasing features
+weekly and sometimes few times a week
+
+126
+00:03:17,509 --> 00:03:17,519
+weekly and sometimes few times a week
+ 
+
+127
+00:03:17,519 --> 00:03:19,589
+weekly and sometimes few times a week
+and therefore our security processes had
+
+128
+00:03:19,589 --> 00:03:19,599
+and therefore our security processes had
+ 
+
+129
+00:03:19,599 --> 00:03:22,630
+and therefore our security processes had
+to become dynamic. Third, most
+
+130
+00:03:22,630 --> 00:03:22,640
+to become dynamic. Third, most
+ 
+
+131
+00:03:22,640 --> 00:03:25,910
+to become dynamic. Third, most
+importantly AI burs the boundary. We
+
+132
+00:03:25,910 --> 00:03:25,920
+importantly AI burs the boundary. We
+ 
+
+133
+00:03:25,920 --> 00:03:28,309
+importantly AI burs the boundary. We
+used to have you know control planes
+
+134
+00:03:28,309 --> 00:03:28,319
+used to have you know control planes
+ 
+
+135
+00:03:28,319 --> 00:03:30,710
+used to have you know control planes
+that was strictly dedicated to endpoint
+
+136
+00:03:30,710 --> 00:03:30,720
+that was strictly dedicated to endpoint
+ 
+
+137
+00:03:30,720 --> 00:03:33,990
+that was strictly dedicated to endpoint
+or network or cloud or SAS. And today
+
+138
+00:03:33,990 --> 00:03:34,000
+or network or cloud or SAS. And today
+ 
+
+139
+00:03:34,000 --> 00:03:37,830
+or network or cloud or SAS. And today
+with AI one prompt can trigger an action
+
+140
+00:03:37,830 --> 00:03:37,840
+with AI one prompt can trigger an action
+ 
+
+141
+00:03:37,840 --> 00:03:41,270
+with AI one prompt can trigger an action
+at an endpoint. It can read make system
+
+142
+00:03:41,270 --> 00:03:41,280
+at an endpoint. It can read make system
+ 
+
+143
+00:03:41,280 --> 00:03:43,830
+at an endpoint. It can read make system
+calls make read file read or write files
+
+144
+00:03:43,830 --> 00:03:43,840
+calls make read file read or write files
+ 
+
+145
+00:03:43,840 --> 00:03:46,550
+calls make read file read or write files
+on the endpoint. It can make outbound
+
+146
+00:03:46,550 --> 00:03:46,560
+on the endpoint. It can make outbound
+ 
+
+147
+00:03:46,560 --> 00:03:50,630
+on the endpoint. It can make outbound
+network egress or it can invoke um APIs
+
+148
+00:03:50,630 --> 00:03:50,640
+network egress or it can invoke um APIs
+ 
+
+149
+00:03:50,640 --> 00:03:52,869
+network egress or it can invoke um APIs
+reaching out to SAS platforms. And
+
+150
+00:03:52,869 --> 00:03:52,879
+reaching out to SAS platforms. And
+ 
+
+151
+00:03:52,879 --> 00:03:55,270
+reaching out to SAS platforms. And
+therefore the control plane has to be
+
+152
+00:03:55,270 --> 00:03:55,280
+therefore the control plane has to be
+ 
+
+153
+00:03:55,280 --> 00:03:58,550
+therefore the control plane has to be
+across all of these domains and cannot
+
+154
+00:03:58,550 --> 00:03:58,560
+across all of these domains and cannot
+ 
+
+155
+00:03:58,560 --> 00:04:01,670
+across all of these domains and cannot
+be just static control planes. The risk
+
+156
+00:04:01,670 --> 00:04:01,680
+be just static control planes. The risk
+ 
+
+157
+00:04:01,680 --> 00:04:03,750
+be just static control planes. The risk
+again is once again is no longer static
+
+158
+00:04:03,750 --> 00:04:03,760
+again is once again is no longer static
+ 
+
+159
+00:04:03,760 --> 00:04:06,869
+again is once again is no longer static
+because the execution model has now be
+
+160
+00:04:06,869 --> 00:04:06,879
+because the execution model has now be
+ 
+
+161
+00:04:06,879 --> 00:04:10,070
+because the execution model has now be
+turned from one of deterministic to
+
+162
+00:04:10,070 --> 00:04:10,080
+turned from one of deterministic to
+ 
+
+163
+00:04:10,080 --> 00:04:11,990
+turned from one of deterministic to
+non-deterministic
+
+164
+00:04:11,990 --> 00:04:12,000
+non-deterministic
+ 
+
+165
+00:04:12,000 --> 00:04:14,789
+non-deterministic
+and it had the execution boundary has
+
+166
+00:04:14,789 --> 00:04:14,799
+and it had the execution boundary has
+ 
+
+167
+00:04:14,799 --> 00:04:17,909
+and it had the execution boundary has
+significantly expanded and therefore in
+
+168
+00:04:17,909 --> 00:04:17,919
+significantly expanded and therefore in
+ 
+
+169
+00:04:17,919 --> 00:04:21,990
+significantly expanded and therefore in
+order to be able to govern this AI we
+
+170
+00:04:21,990 --> 00:04:22,000
+order to be able to govern this AI we
+ 
+
+171
+00:04:22,000 --> 00:04:24,950
+order to be able to govern this AI we
+need to evolve our governance model at
+
+172
+00:04:24,950 --> 00:04:24,960
+need to evolve our governance model at
+ 
+
+173
+00:04:24,960 --> 00:04:26,629
+need to evolve our governance model at
+the same velocity at which the
+
+174
+00:04:26,629 --> 00:04:26,639
+the same velocity at which the
+ 
+
+175
+00:04:26,639 --> 00:04:31,430
+the same velocity at which the
+technology is evolving.
+
+176
+00:04:31,430 --> 00:04:31,440
+
+ 
+
+177
+00:04:31,440 --> 00:04:34,310
+
+So we realized early that in order to
+
+178
+00:04:34,310 --> 00:04:34,320
+So we realized early that in order to
+ 
+
+179
+00:04:34,320 --> 00:04:35,830
+So we realized early that in order to
+make
+
+180
+00:04:35,830 --> 00:04:35,840
+make
+ 
+
+181
+00:04:35,840 --> 00:04:37,270
+make
+uh you know in order to be our
+
+182
+00:04:37,270 --> 00:04:37,280
+uh you know in order to be our
+ 
+
+183
+00:04:37,280 --> 00:04:40,070
+uh you know in order to be our
+governance model to be dynamic we needed
+
+184
+00:04:40,070 --> 00:04:40,080
+governance model to be dynamic we needed
+ 
+
+185
+00:04:40,080 --> 00:04:44,230
+governance model to be dynamic we needed
+to have a structure that allowed us to
+
+186
+00:04:44,230 --> 00:04:44,240
+to have a structure that allowed us to
+ 
+
+187
+00:04:44,240 --> 00:04:47,670
+to have a structure that allowed us to
+make quick decisions. So we formed an
+
+188
+00:04:47,670 --> 00:04:47,680
+make quick decisions. So we formed an
+ 
+
+189
+00:04:47,680 --> 00:04:50,070
+make quick decisions. So we formed an
+enterprise steering committee with with
+
+190
+00:04:50,070 --> 00:04:50,080
+enterprise steering committee with with
+ 
+
+191
+00:04:50,080 --> 00:04:52,629
+enterprise steering committee with with
+uh uh you know members from security,
+
+192
+00:04:52,629 --> 00:04:52,639
+uh uh you know members from security,
+ 
+
+193
+00:04:52,639 --> 00:04:55,749
+uh uh you know members from security,
+IT, legal, privacy, a IML, data
+
+194
+00:04:55,749 --> 00:04:55,759
+IT, legal, privacy, a IML, data
+ 
+
+195
+00:04:55,759 --> 00:04:59,590
+IT, legal, privacy, a IML, data
+engineering and procurement teams and we
+
+196
+00:04:59,590 --> 00:04:59,600
+engineering and procurement teams and we
+ 
+
+197
+00:04:59,600 --> 00:05:01,909
+engineering and procurement teams and we
+with the and and all of these members
+
+198
+00:05:01,909 --> 00:05:01,919
+with the and and all of these members
+ 
+
+199
+00:05:01,919 --> 00:05:04,070
+with the and and all of these members
+came together because they had the
+
+200
+00:05:04,070 --> 00:05:04,080
+came together because they had the
+ 
+
+201
+00:05:04,080 --> 00:05:07,909
+came together because they had the
+ability to see the uh AI adoption across
+
+202
+00:05:07,909 --> 00:05:07,919
+ability to see the uh AI adoption across
+ 
+
+203
+00:05:07,919 --> 00:05:10,550
+ability to see the uh AI adoption across
+the enterprise and AI usage patterns.
+
+204
+00:05:10,550 --> 00:05:10,560
+the enterprise and AI usage patterns.
+ 
+
+205
+00:05:10,560 --> 00:05:13,749
+the enterprise and AI usage patterns.
+And so with those we identified the
+
+206
+00:05:13,749 --> 00:05:13,759
+And so with those we identified the
+ 
+
+207
+00:05:13,759 --> 00:05:16,550
+And so with those we identified the
+risks that we saw across this US usage
+
+208
+00:05:16,550 --> 00:05:16,560
+risks that we saw across this US usage
+ 
+
+209
+00:05:16,560 --> 00:05:19,430
+risks that we saw across this US usage
+patterns and adoption and we came up
+
+210
+00:05:19,430 --> 00:05:19,440
+patterns and adoption and we came up
+ 
+
+211
+00:05:19,440 --> 00:05:22,550
+patterns and adoption and we came up
+with mitigation controls and whether it
+
+212
+00:05:22,550 --> 00:05:22,560
+with mitigation controls and whether it
+ 
+
+213
+00:05:22,560 --> 00:05:24,950
+with mitigation controls and whether it
+be technical controls, process controls
+
+214
+00:05:24,950 --> 00:05:24,960
+be technical controls, process controls
+ 
+
+215
+00:05:24,960 --> 00:05:27,749
+be technical controls, process controls
+or contractual protections
+
+216
+00:05:27,749 --> 00:05:27,759
+or contractual protections
+ 
+
+217
+00:05:27,759 --> 00:05:30,870
+or contractual protections
+and then as a next step we bubble that
+
+218
+00:05:30,870 --> 00:05:30,880
+and then as a next step we bubble that
+ 
+
+219
+00:05:30,880 --> 00:05:33,830
+and then as a next step we bubble that
+up to our executive leadership teams and
+
+220
+00:05:33,830 --> 00:05:33,840
+up to our executive leadership teams and
+ 
+
+221
+00:05:33,840 --> 00:05:36,550
+up to our executive leadership teams and
+in in engineering, product management,
+
+222
+00:05:36,550 --> 00:05:36,560
+in in engineering, product management,
+ 
+
+223
+00:05:36,560 --> 00:05:40,310
+in in engineering, product management,
+sales, customer experience, IT etc. And
+
+224
+00:05:40,310 --> 00:05:40,320
+sales, customer experience, IT etc. And
+ 
+
+225
+00:05:40,320 --> 00:05:42,310
+sales, customer experience, IT etc. And
+these are the teams that were innovating
+
+226
+00:05:42,310 --> 00:05:42,320
+these are the teams that were innovating
+ 
+
+227
+00:05:42,320 --> 00:05:45,830
+these are the teams that were innovating
+at speed with the AI technology. And so
+
+228
+00:05:45,830 --> 00:05:45,840
+at speed with the AI technology. And so
+ 
+
+229
+00:05:45,840 --> 00:05:49,029
+at speed with the AI technology. And so
+this helped us to surface the risk up to
+
+230
+00:05:49,029 --> 00:05:49,039
+this helped us to surface the risk up to
+ 
+
+231
+00:05:49,039 --> 00:05:52,710
+this helped us to surface the risk up to
+the executive leadership and make risk
+
+232
+00:05:52,710 --> 00:05:52,720
+the executive leadership and make risk
+ 
+
+233
+00:05:52,720 --> 00:05:55,909
+the executive leadership and make risk
+informed decisions that align with our
+
+234
+00:05:55,909 --> 00:05:55,919
+informed decisions that align with our
+ 
+
+235
+00:05:55,919 --> 00:05:58,469
+informed decisions that align with our
+leadership's risk appetite because at
+
+236
+00:05:58,469 --> 00:05:58,479
+leadership's risk appetite because at
+ 
+
+237
+00:05:58,479 --> 00:06:00,390
+leadership's risk appetite because at
+Snowflake
+
+238
+00:06:00,390 --> 00:06:00,400
+Snowflake
+ 
+
+239
+00:06:00,400 --> 00:06:02,870
+Snowflake
+you know engineering innovation is is an
+
+240
+00:06:02,870 --> 00:06:02,880
+you know engineering innovation is is an
+ 
+
+241
+00:06:02,880 --> 00:06:06,710
+you know engineering innovation is is an
+engineering at speed is our is our is in
+
+242
+00:06:06,710 --> 00:06:06,720
+engineering at speed is our is our is in
+ 
+
+243
+00:06:06,720 --> 00:06:09,430
+engineering at speed is our is our is in
+our DNA and
+
+244
+00:06:09,430 --> 00:06:09,440
+our DNA and
+ 
+
+245
+00:06:09,440 --> 00:06:13,830
+our DNA and
+enabling or disabling AI was not a
+
+246
+00:06:13,830 --> 00:06:13,840
+enabling or disabling AI was not a
+ 
+
+247
+00:06:13,840 --> 00:06:15,510
+enabling or disabling AI was not a
+security decision.
+
+248
+00:06:15,510 --> 00:06:15,520
+security decision.
+ 
+
+249
+00:06:15,520 --> 00:06:18,230
+security decision.
+It is actually a business decision and
+
+250
+00:06:18,230 --> 00:06:18,240
+It is actually a business decision and
+ 
+
+251
+00:06:18,240 --> 00:06:20,150
+It is actually a business decision and
+it's not a security trade-off. It's a
+
+252
+00:06:20,150 --> 00:06:20,160
+it's not a security trade-off. It's a
+ 
+
+253
+00:06:20,160 --> 00:06:22,950
+it's not a security trade-off. It's a
+business trade-off. So having our
+
+254
+00:06:22,950 --> 00:06:22,960
+business trade-off. So having our
+ 
+
+255
+00:06:22,960 --> 00:06:26,390
+business trade-off. So having our
+executive leadership weigh in and and
+
+256
+00:06:26,390 --> 00:06:26,400
+executive leadership weigh in and and
+ 
+
+257
+00:06:26,400 --> 00:06:29,029
+executive leadership weigh in and and
+making decisions aligned with the risk
+
+258
+00:06:29,029 --> 00:06:29,039
+making decisions aligned with the risk
+ 
+
+259
+00:06:29,039 --> 00:06:32,469
+making decisions aligned with the risk
+appetite of the business helped us
+
+260
+00:06:32,469 --> 00:06:32,479
+appetite of the business helped us
+ 
+
+261
+00:06:32,479 --> 00:06:35,270
+appetite of the business helped us
+actually get that alignment as well as
+
+262
+00:06:35,270 --> 00:06:35,280
+actually get that alignment as well as
+ 
+
+263
+00:06:35,280 --> 00:06:37,670
+actually get that alignment as well as
+any cultural change that was required in
+
+264
+00:06:37,670 --> 00:06:37,680
+any cultural change that was required in
+ 
+
+265
+00:06:37,680 --> 00:06:39,909
+any cultural change that was required in
+the environment.
+
+266
+00:06:39,909 --> 00:06:39,919
+the environment.
+ 
+
+267
+00:06:39,919 --> 00:06:42,390
+the environment.
+So we shifted from reactive approvals to
+
+268
+00:06:42,390 --> 00:06:42,400
+So we shifted from reactive approvals to
+ 
+
+269
+00:06:42,400 --> 00:06:45,430
+So we shifted from reactive approvals to
+proactive risk ownership. And truly this
+
+270
+00:06:45,430 --> 00:06:45,440
+proactive risk ownership. And truly this
+ 
+
+271
+00:06:45,440 --> 00:06:48,390
+proactive risk ownership. And truly this
+structure was the one that helped us
+
+272
+00:06:48,390 --> 00:06:48,400
+structure was the one that helped us
+ 
+
+273
+00:06:48,400 --> 00:06:53,590
+structure was the one that helped us
+make decisions much faster.
+
+274
+00:06:53,590 --> 00:06:53,600
+
+ 
+
+275
+00:06:53,600 --> 00:06:56,309
+
+You cannot govern what you cannot see.
+
+276
+00:06:56,309 --> 00:06:56,319
+You cannot govern what you cannot see.
+ 
+
+277
+00:06:56,319 --> 00:06:59,270
+You cannot govern what you cannot see.
+So it's getting visibility into
+
+278
+00:06:59,270 --> 00:06:59,280
+So it's getting visibility into
+ 
+
+279
+00:06:59,280 --> 00:07:02,150
+So it's getting visibility into
+enterprise AI usage and adoption is
+
+280
+00:07:02,150 --> 00:07:02,160
+enterprise AI usage and adoption is
+ 
+
+281
+00:07:02,160 --> 00:07:04,469
+enterprise AI usage and adoption is
+critical in order to be able to govern.
+
+282
+00:07:04,469 --> 00:07:04,479
+critical in order to be able to govern.
+ 
+
+283
+00:07:04,479 --> 00:07:07,350
+critical in order to be able to govern.
+So we uh looked at four pathways in
+
+284
+00:07:07,350 --> 00:07:07,360
+So we uh looked at four pathways in
+ 
+
+285
+00:07:07,360 --> 00:07:09,589
+So we uh looked at four pathways in
+order to get visibility. First is our
+
+286
+00:07:09,589 --> 00:07:09,599
+order to get visibility. First is our
+ 
+
+287
+00:07:09,599 --> 00:07:13,029
+order to get visibility. First is our
+procurement process and we already had a
+
+288
+00:07:13,029 --> 00:07:13,039
+procurement process and we already had a
+ 
+
+289
+00:07:13,039 --> 00:07:15,670
+procurement process and we already had a
+pretty mature process and we built AI
+
+290
+00:07:15,670 --> 00:07:15,680
+pretty mature process and we built AI
+ 
+
+291
+00:07:15,680 --> 00:07:20,230
+pretty mature process and we built AI
+oversight into that and we looked at uh
+
+292
+00:07:20,230 --> 00:07:20,240
+oversight into that and we looked at uh
+ 
+
+293
+00:07:20,240 --> 00:07:22,870
+oversight into that and we looked at uh
+we looked we we uh rationalized the
+
+294
+00:07:22,870 --> 00:07:22,880
+we looked we we uh rationalized the
+ 
+
+295
+00:07:22,880 --> 00:07:27,510
+we looked we we uh rationalized the
+products not based on features and we
+
+296
+00:07:27,510 --> 00:07:27,520
+products not based on features and we
+ 
+
+297
+00:07:27,520 --> 00:07:29,749
+products not based on features and we
+not only did a security risk review but
+
+298
+00:07:29,749 --> 00:07:29,759
+not only did a security risk review but
+ 
+
+299
+00:07:29,759 --> 00:07:32,150
+not only did a security risk review but
+we also looked at whether the tool had
+
+300
+00:07:32,150 --> 00:07:32,160
+we also looked at whether the tool had
+ 
+
+301
+00:07:32,160 --> 00:07:34,390
+we also looked at whether the tool had
+redundant capabilities. So what that
+
+302
+00:07:34,390 --> 00:07:34,400
+redundant capabilities. So what that
+ 
+
+303
+00:07:34,400 --> 00:07:38,309
+redundant capabilities. So what that
+helped us do is eliminate tools which
+
+304
+00:07:38,309 --> 00:07:38,319
+helped us do is eliminate tools which
+ 
+
+305
+00:07:38,319 --> 00:07:41,670
+helped us do is eliminate tools which
+had overlapping capabilities and uh
+
+306
+00:07:41,670 --> 00:07:41,680
+had overlapping capabilities and uh
+ 
+
+307
+00:07:41,680 --> 00:07:44,150
+had overlapping capabilities and uh
+which will not only just reduced our uh
+
+308
+00:07:44,150 --> 00:07:44,160
+which will not only just reduced our uh
+ 
+
+309
+00:07:44,160 --> 00:07:47,270
+which will not only just reduced our uh
+operational overhead but also uh helped
+
+310
+00:07:47,270 --> 00:07:47,280
+operational overhead but also uh helped
+ 
+
+311
+00:07:47,280 --> 00:07:48,950
+operational overhead but also uh helped
+us eliminate unnecessary attack
+
+312
+00:07:48,950 --> 00:07:48,960
+us eliminate unnecessary attack
+ 
+
+313
+00:07:48,960 --> 00:07:51,270
+us eliminate unnecessary attack
+surfaces.
+
+314
+00:07:51,270 --> 00:07:51,280
+surfaces.
+ 
+
+315
+00:07:51,280 --> 00:07:54,150
+surfaces.
+Next we um we all know that AI does not
+
+316
+00:07:54,150 --> 00:07:54,160
+Next we um we all know that AI does not
+ 
+
+317
+00:07:54,160 --> 00:07:56,309
+Next we um we all know that AI does not
+come just in a new product. It is
+
+318
+00:07:56,309 --> 00:07:56,319
+come just in a new product. It is
+ 
+
+319
+00:07:56,319 --> 00:07:58,309
+come just in a new product. It is
+turning on AI features in existing
+
+320
+00:07:58,309 --> 00:07:58,319
+turning on AI features in existing
+ 
+
+321
+00:07:58,319 --> 00:08:01,029
+turning on AI features in existing
+products. So we gated those uh turning
+
+322
+00:08:01,029 --> 00:08:01,039
+products. So we gated those uh turning
+ 
+
+323
+00:08:01,039 --> 00:08:03,270
+products. So we gated those uh turning
+on new features through through security
+
+324
+00:08:03,270 --> 00:08:03,280
+on new features through through security
+ 
+
+325
+00:08:03,280 --> 00:08:05,350
+on new features through through security
+reviews. We required people to go
+
+326
+00:08:05,350 --> 00:08:05,360
+reviews. We required people to go
+ 
+
+327
+00:08:05,360 --> 00:08:07,189
+reviews. We required people to go
+through security reviews in order to
+
+328
+00:08:07,189 --> 00:08:07,199
+through security reviews in order to
+ 
+
+329
+00:08:07,199 --> 00:08:09,189
+through security reviews in order to
+enable AI features and existing tools
+
+330
+00:08:09,189 --> 00:08:09,199
+enable AI features and existing tools
+ 
+
+331
+00:08:09,199 --> 00:08:10,950
+enable AI features and existing tools
+and platforms.
+
+332
+00:08:10,950 --> 00:08:10,960
+and platforms.
+ 
+
+333
+00:08:10,960 --> 00:08:13,430
+and platforms.
+And uh third most importantly we
+
+334
+00:08:13,430 --> 00:08:13,440
+And uh third most importantly we
+ 
+
+335
+00:08:13,440 --> 00:08:15,909
+And uh third most importantly we
+actually did an active discovery for AI
+
+336
+00:08:15,909 --> 00:08:15,919
+actually did an active discovery for AI
+ 
+
+337
+00:08:15,919 --> 00:08:18,629
+actually did an active discovery for AI
+artifacts and interactions across the
+
+338
+00:08:18,629 --> 00:08:18,639
+artifacts and interactions across the
+ 
+
+339
+00:08:18,639 --> 00:08:21,670
+artifacts and interactions across the
+enterprise. And being the AI data cloud,
+
+340
+00:08:21,670 --> 00:08:21,680
+enterprise. And being the AI data cloud,
+ 
+
+341
+00:08:21,680 --> 00:08:23,830
+enterprise. And being the AI data cloud,
+we have we our security lake lives in
+
+342
+00:08:23,830 --> 00:08:23,840
+we have we our security lake lives in
+ 
+
+343
+00:08:23,840 --> 00:08:26,550
+we have we our security lake lives in
+our own platform. And with the AI
+
+344
+00:08:26,550 --> 00:08:26,560
+our own platform. And with the AI
+ 
+
+345
+00:08:26,560 --> 00:08:28,710
+our own platform. And with the AI
+capabilities that we have on our
+
+346
+00:08:28,710 --> 00:08:28,720
+capabilities that we have on our
+ 
+
+347
+00:08:28,720 --> 00:08:30,390
+capabilities that we have on our
+platform, we were able to quickly get
+
+348
+00:08:30,390 --> 00:08:30,400
+platform, we were able to quickly get
+ 
+
+349
+00:08:30,400 --> 00:08:33,350
+platform, we were able to quickly get
+insights um based on the telemetry that
+
+350
+00:08:33,350 --> 00:08:33,360
+insights um based on the telemetry that
+ 
+
+351
+00:08:33,360 --> 00:08:37,269
+insights um based on the telemetry that
+we had on the endpoint data uh network
+
+352
+00:08:37,269 --> 00:08:37,279
+we had on the endpoint data uh network
+ 
+
+353
+00:08:37,279 --> 00:08:40,149
+we had on the endpoint data uh network
+um uh cloud and SAS environments. We
+
+354
+00:08:40,149 --> 00:08:40,159
+um uh cloud and SAS environments. We
+ 
+
+355
+00:08:40,159 --> 00:08:43,670
+um uh cloud and SAS environments. We
+were able to identify AI artifacts um
+
+356
+00:08:43,670 --> 00:08:43,680
+were able to identify AI artifacts um
+ 
+
+357
+00:08:43,680 --> 00:08:47,190
+were able to identify AI artifacts um
+such as MCP components, models, agents,
+
+358
+00:08:47,190 --> 00:08:47,200
+such as MCP components, models, agents,
+ 
+
+359
+00:08:47,200 --> 00:08:49,990
+such as MCP components, models, agents,
+and those interactions.
+
+360
+00:08:49,990 --> 00:08:50,000
+and those interactions.
+ 
+
+361
+00:08:50,000 --> 00:08:54,230
+and those interactions.
+Uh last but not the least, we constantly
+
+362
+00:08:54,230 --> 00:08:54,240
+Uh last but not the least, we constantly
+ 
+
+363
+00:08:54,240 --> 00:08:57,590
+Uh last but not the least, we constantly
+partnered and had discussions with our
+
+364
+00:08:57,590 --> 00:08:57,600
+partnered and had discussions with our
+ 
+
+365
+00:08:57,600 --> 00:09:00,150
+partnered and had discussions with our
+uh peers in the business units and this
+
+366
+00:09:00,150 --> 00:09:00,160
+uh peers in the business units and this
+ 
+
+367
+00:09:00,160 --> 00:09:02,389
+uh peers in the business units and this
+is critical. You need to have security
+
+368
+00:09:02,389 --> 00:09:02,399
+is critical. You need to have security
+ 
+
+369
+00:09:02,399 --> 00:09:04,710
+is critical. You need to have security
+partners in in all business units that
+
+370
+00:09:04,710 --> 00:09:04,720
+partners in in all business units that
+ 
+
+371
+00:09:04,720 --> 00:09:07,030
+partners in in all business units that
+you con you know you you keep in touch
+
+372
+00:09:07,030 --> 00:09:07,040
+you con you know you you keep in touch
+ 
+
+373
+00:09:07,040 --> 00:09:09,910
+you con you know you you keep in touch
+with so you're aware of uh get in early
+
+374
+00:09:09,910 --> 00:09:09,920
+with so you're aware of uh get in early
+ 
+
+375
+00:09:09,920 --> 00:09:12,949
+with so you're aware of uh get in early
+insights into a AI adoption in those
+
+376
+00:09:12,949 --> 00:09:12,959
+insights into a AI adoption in those
+ 
+
+377
+00:09:12,959 --> 00:09:14,870
+insights into a AI adoption in those
+business units and that helps us make
+
+378
+00:09:14,870 --> 00:09:14,880
+business units and that helps us make
+ 
+
+379
+00:09:14,880 --> 00:09:18,949
+business units and that helps us make
+informed decisions.
+
+380
+00:09:18,949 --> 00:09:18,959
+
+ 
+
+381
+00:09:18,959 --> 00:09:21,110
+
+So with that visibility and that
+
+382
+00:09:21,110 --> 00:09:21,120
+So with that visibility and that
+ 
+
+383
+00:09:21,120 --> 00:09:23,350
+So with that visibility and that
+governance structure we were actually
+
+384
+00:09:23,350 --> 00:09:23,360
+governance structure we were actually
+ 
+
+385
+00:09:23,360 --> 00:09:26,389
+governance structure we were actually
+able to uh effect a cultural change when
+
+386
+00:09:26,389 --> 00:09:26,399
+able to uh effect a cultural change when
+ 
+
+387
+00:09:26,399 --> 00:09:29,430
+able to uh effect a cultural change when
+we were able to enable AI adoption
+
+388
+00:09:29,430 --> 00:09:29,440
+we were able to enable AI adoption
+ 
+
+389
+00:09:29,440 --> 00:09:31,509
+we were able to enable AI adoption
+responsibly.
+
+390
+00:09:31,509 --> 00:09:31,519
+responsibly.
+ 
+
+391
+00:09:31,519 --> 00:09:34,150
+responsibly.
+So first we establish enterprise
+
+392
+00:09:34,150 --> 00:09:34,160
+So first we establish enterprise
+ 
+
+393
+00:09:34,160 --> 00:09:37,990
+So first we establish enterprise
+guardrails. Um so we uh you know
+
+394
+00:09:37,990 --> 00:09:38,000
+guardrails. Um so we uh you know
+ 
+
+395
+00:09:38,000 --> 00:09:40,310
+guardrails. Um so we uh you know
+deployed endpoint network and DLP
+
+396
+00:09:40,310 --> 00:09:40,320
+deployed endpoint network and DLP
+ 
+
+397
+00:09:40,320 --> 00:09:42,389
+deployed endpoint network and DLP
+controls that were aligned to AI usage
+
+398
+00:09:42,389 --> 00:09:42,399
+controls that were aligned to AI usage
+ 
+
+399
+00:09:42,399 --> 00:09:43,990
+controls that were aligned to AI usage
+patterns.
+
+400
+00:09:43,990 --> 00:09:44,000
+patterns.
+ 
+
+401
+00:09:44,000 --> 00:09:45,990
+patterns.
+And the goal here was simple. Just
+
+402
+00:09:45,990 --> 00:09:46,000
+And the goal here was simple. Just
+ 
+
+403
+00:09:46,000 --> 00:09:49,430
+And the goal here was simple. Just
+allowed approved use cases and approved
+
+404
+00:09:49,430 --> 00:09:49,440
+allowed approved use cases and approved
+ 
+
+405
+00:09:49,440 --> 00:09:51,990
+allowed approved use cases and approved
+tools and then maintained consistent
+
+406
+00:09:51,990 --> 00:09:52,000
+tools and then maintained consistent
+ 
+
+407
+00:09:52,000 --> 00:09:55,110
+tools and then maintained consistent
+enforcement. Then we um with the
+
+408
+00:09:55,110 --> 00:09:55,120
+enforcement. Then we um with the
+ 
+
+409
+00:09:55,120 --> 00:09:59,350
+enforcement. Then we um with the
+visibility that we had, we basically um
+
+410
+00:09:59,350 --> 00:09:59,360
+visibility that we had, we basically um
+ 
+
+411
+00:09:59,360 --> 00:10:01,350
+visibility that we had, we basically um
+identified tools that were broadly used
+
+412
+00:10:01,350 --> 00:10:01,360
+identified tools that were broadly used
+ 
+
+413
+00:10:01,360 --> 00:10:03,990
+identified tools that were broadly used
+in the organization and made a conscious
+
+414
+00:10:03,990 --> 00:10:04,000
+in the organization and made a conscious
+ 
+
+415
+00:10:04,000 --> 00:10:06,310
+in the organization and made a conscious
+decision to procure some of those tools
+
+416
+00:10:06,310 --> 00:10:06,320
+decision to procure some of those tools
+ 
+
+417
+00:10:06,320 --> 00:10:08,710
+decision to procure some of those tools
+so that we can um manage them
+
+418
+00:10:08,710 --> 00:10:08,720
+so that we can um manage them
+ 
+
+419
+00:10:08,720 --> 00:10:11,990
+so that we can um manage them
+effectively. And in some cases we
+
+420
+00:10:11,990 --> 00:10:12,000
+effectively. And in some cases we
+ 
+
+421
+00:10:12,000 --> 00:10:14,150
+effectively. And in some cases we
+decided that some of the tools were
+
+422
+00:10:14,150 --> 00:10:14,160
+decided that some of the tools were
+ 
+
+423
+00:10:14,160 --> 00:10:17,590
+decided that some of the tools were
+risky and did uh and um you know guided
+
+424
+00:10:17,590 --> 00:10:17,600
+risky and did uh and um you know guided
+ 
+
+425
+00:10:17,600 --> 00:10:19,990
+risky and did uh and um you know guided
+our users towards approved alternatives
+
+426
+00:10:19,990 --> 00:10:20,000
+our users towards approved alternatives
+ 
+
+427
+00:10:20,000 --> 00:10:22,790
+our users towards approved alternatives
+in the enterprise.
+
+428
+00:10:22,790 --> 00:10:22,800
+in the enterprise.
+ 
+
+429
+00:10:22,800 --> 00:10:26,470
+in the enterprise.
+And last lastly we had um and again
+
+430
+00:10:26,470 --> 00:10:26,480
+And last lastly we had um and again
+ 
+
+431
+00:10:26,480 --> 00:10:30,630
+And last lastly we had um and again
+snowflake is um is a place where uh
+
+432
+00:10:30,630 --> 00:10:30,640
+snowflake is um is a place where uh
+ 
+
+433
+00:10:30,640 --> 00:10:33,030
+snowflake is um is a place where uh
+there is a lot of AI experimentation
+
+434
+00:10:33,030 --> 00:10:33,040
+there is a lot of AI experimentation
+ 
+
+435
+00:10:33,040 --> 00:10:36,150
+there is a lot of AI experimentation
+happening and so when we needed to
+
+436
+00:10:36,150 --> 00:10:36,160
+happening and so when we needed to
+ 
+
+437
+00:10:36,160 --> 00:10:38,790
+happening and so when we needed to
+provide um when AI experimentation
+
+438
+00:10:38,790 --> 00:10:38,800
+provide um when AI experimentation
+ 
+
+439
+00:10:38,800 --> 00:10:41,590
+provide um when AI experimentation
+needed to happen, we resorted our core
+
+440
+00:10:41,590 --> 00:10:41,600
+needed to happen, we resorted our core
+ 
+
+441
+00:10:41,600 --> 00:10:44,389
+needed to happen, we resorted our core
+operating principle was provide isolated
+
+442
+00:10:44,389 --> 00:10:44,399
+operating principle was provide isolated
+ 
+
+443
+00:10:44,399 --> 00:10:46,870
+operating principle was provide isolated
+environments with test tenants and
+
+444
+00:10:46,870 --> 00:10:46,880
+environments with test tenants and
+ 
+
+445
+00:10:46,880 --> 00:10:49,269
+environments with test tenants and
+synthetic data and where that was not
+
+446
+00:10:49,269 --> 00:10:49,279
+synthetic data and where that was not
+ 
+
+447
+00:10:49,279 --> 00:10:52,630
+synthetic data and where that was not
+possible and you know some use cases is
+
+448
+00:10:52,630 --> 00:10:52,640
+possible and you know some use cases is
+ 
+
+449
+00:10:52,640 --> 00:10:55,350
+possible and you know some use cases is
+where we they needed to have production
+
+450
+00:10:55,350 --> 00:10:55,360
+where we they needed to have production
+ 
+
+451
+00:10:55,360 --> 00:10:57,990
+where we they needed to have production
+adjacent environments. We came up with
+
+452
+00:10:57,990 --> 00:10:58,000
+adjacent environments. We came up with
+ 
+
+453
+00:10:58,000 --> 00:10:59,829
+adjacent environments. We came up with
+what is called an responsible AI
+
+454
+00:10:59,829 --> 00:10:59,839
+what is called an responsible AI
+ 
+
+455
+00:10:59,839 --> 00:11:03,030
+what is called an responsible AI
+experimentation framework which is
+
+456
+00:11:03,030 --> 00:11:03,040
+experimentation framework which is
+ 
+
+457
+00:11:03,040 --> 00:11:04,790
+experimentation framework which is
+setting clear accountability for the
+
+458
+00:11:04,790 --> 00:11:04,800
+setting clear accountability for the
+ 
+
+459
+00:11:04,800 --> 00:11:07,030
+setting clear accountability for the
+experimentation teams and security and
+
+460
+00:11:07,030 --> 00:11:07,040
+experimentation teams and security and
+ 
+
+461
+00:11:07,040 --> 00:11:10,790
+experimentation teams and security and
+IT and additional review processes and
+
+462
+00:11:10,790 --> 00:11:10,800
+IT and additional review processes and
+ 
+
+463
+00:11:10,800 --> 00:11:16,949
+IT and additional review processes and
+preventive and detective controls.
+
+464
+00:11:16,949 --> 00:11:16,959
+
+ 
+
+465
+00:11:16,959 --> 00:11:19,990
+
+So I'll I'll you know that was our
+
+466
+00:11:19,990 --> 00:11:20,000
+So I'll I'll you know that was our
+ 
+
+467
+00:11:20,000 --> 00:11:21,750
+So I'll I'll you know that was our
+governance structure and how we set
+
+468
+00:11:21,750 --> 00:11:21,760
+governance structure and how we set
+ 
+
+469
+00:11:21,760 --> 00:11:25,829
+governance structure and how we set
+about doing um you know respond securely
+
+470
+00:11:25,829 --> 00:11:25,839
+about doing um you know respond securely
+ 
+
+471
+00:11:25,839 --> 00:11:28,949
+about doing um you know respond securely
+enabling AI in the enterprise. I want to
+
+472
+00:11:28,949 --> 00:11:28,959
+enabling AI in the enterprise. I want to
+ 
+
+473
+00:11:28,959 --> 00:11:31,509
+enabling AI in the enterprise. I want to
+talk a little bit more into how we
+
+474
+00:11:31,509 --> 00:11:31,519
+talk a little bit more into how we
+ 
+
+475
+00:11:31,519 --> 00:11:36,150
+talk a little bit more into how we
+actually um deployed Genai tools in our
+
+476
+00:11:36,150 --> 00:11:36,160
+actually um deployed Genai tools in our
+ 
+
+477
+00:11:36,160 --> 00:11:37,829
+actually um deployed Genai tools in our
+enterprise.
+
+478
+00:11:37,829 --> 00:11:37,839
+enterprise.
+ 
+
+479
+00:11:37,839 --> 00:11:42,470
+enterprise.
+So we all know that um the genai tools
+
+480
+00:11:42,470 --> 00:11:42,480
+So we all know that um the genai tools
+ 
+
+481
+00:11:42,480 --> 00:11:44,550
+So we all know that um the genai tools
+evolve quickly and there are features
+
+482
+00:11:44,550 --> 00:11:44,560
+evolve quickly and there are features
+ 
+
+483
+00:11:44,560 --> 00:11:46,230
+evolve quickly and there are features
+releasing
+
+484
+00:11:46,230 --> 00:11:46,240
+releasing
+ 
+
+485
+00:11:46,240 --> 00:11:49,269
+releasing
+you know weekly or few times a week but
+
+486
+00:11:49,269 --> 00:11:49,279
+you know weekly or few times a week but
+ 
+
+487
+00:11:49,279 --> 00:11:51,509
+you know weekly or few times a week but
+the enterprise level controls in those
+
+488
+00:11:51,509 --> 00:11:51,519
+the enterprise level controls in those
+ 
+
+489
+00:11:51,519 --> 00:11:54,790
+the enterprise level controls in those
+tools are do not evolve at the same
+
+490
+00:11:54,790 --> 00:11:54,800
+tools are do not evolve at the same
+ 
+
+491
+00:11:54,800 --> 00:11:57,750
+tools are do not evolve at the same
+speed as features. So we had to do um
+
+492
+00:11:57,750 --> 00:11:57,760
+speed as features. So we had to do um
+ 
+
+493
+00:11:57,760 --> 00:11:59,829
+speed as features. So we had to do um
+feature-based risk assessment rather
+
+494
+00:11:59,829 --> 00:11:59,839
+feature-based risk assessment rather
+ 
+
+495
+00:11:59,839 --> 00:12:03,670
+feature-based risk assessment rather
+than broad in enablement of a tool with
+
+496
+00:12:03,670 --> 00:12:03,680
+than broad in enablement of a tool with
+ 
+
+497
+00:12:03,680 --> 00:12:05,910
+than broad in enablement of a tool with
+all its features. So when we looked at
+
+498
+00:12:05,910 --> 00:12:05,920
+all its features. So when we looked at
+ 
+
+499
+00:12:05,920 --> 00:12:07,509
+all its features. So when we looked at
+the features, we looked at what
+
+500
+00:12:07,509 --> 00:12:07,519
+the features, we looked at what
+ 
+
+501
+00:12:07,519 --> 00:12:09,190
+the features, we looked at what
+capabilities were there in the
+
+502
+00:12:09,190 --> 00:12:09,200
+capabilities were there in the
+ 
+
+503
+00:12:09,200 --> 00:12:12,470
+capabilities were there in the
+enterprise plane control plane um to be
+
+504
+00:12:12,470 --> 00:12:12,480
+enterprise plane control plane um to be
+ 
+
+505
+00:12:12,480 --> 00:12:15,030
+enterprise plane control plane um to be
+able to effectively control um data
+
+506
+00:12:15,030 --> 00:12:15,040
+able to effectively control um data
+ 
+
+507
+00:12:15,040 --> 00:12:19,670
+able to effectively control um data
+exfiltration or limit the um limit the
+
+508
+00:12:19,670 --> 00:12:19,680
+exfiltration or limit the um limit the
+ 
+
+509
+00:12:19,680 --> 00:12:22,069
+exfiltration or limit the um limit the
+in the the risk from integrations around
+
+510
+00:12:22,069 --> 00:12:22,079
+in the the risk from integrations around
+ 
+
+511
+00:12:22,079 --> 00:12:25,750
+in the the risk from integrations around
+that platform. So this would include
+
+512
+00:12:25,750 --> 00:12:25,760
+that platform. So this would include
+ 
+
+513
+00:12:25,760 --> 00:12:27,590
+that platform. So this would include
+things like did we did we have the
+
+514
+00:12:27,590 --> 00:12:27,600
+things like did we did we have the
+ 
+
+515
+00:12:27,600 --> 00:12:30,710
+things like did we did we have the
+ability to uh manage allow lists or deny
+
+516
+00:12:30,710 --> 00:12:30,720
+ability to uh manage allow lists or deny
+ 
+
+517
+00:12:30,720 --> 00:12:33,829
+ability to uh manage allow lists or deny
+lists within the platform for MCP or
+
+518
+00:12:33,829 --> 00:12:33,839
+lists within the platform for MCP or
+ 
+
+519
+00:12:33,839 --> 00:12:37,670
+lists within the platform for MCP or
+tools or uh web fetches or you know web
+
+520
+00:12:37,670 --> 00:12:37,680
+tools or uh web fetches or you know web
+ 
+
+521
+00:12:37,680 --> 00:12:41,269
+tools or uh web fetches or you know web
+search and things like that.
+
+522
+00:12:41,269 --> 00:12:41,279
+search and things like that.
+ 
+
+523
+00:12:41,279 --> 00:12:43,910
+search and things like that.
+So what we did was we enabled the
+
+524
+00:12:43,910 --> 00:12:43,920
+So what we did was we enabled the
+ 
+
+525
+00:12:43,920 --> 00:12:49,190
+So what we did was we enabled the
+features that were less risky and we
+
+526
+00:12:49,190 --> 00:12:49,200
+features that were less risky and we
+ 
+
+527
+00:12:49,200 --> 00:12:51,509
+features that were less risky and we
+that that we felt comfortable enabling
+
+528
+00:12:51,509 --> 00:12:51,519
+that that we felt comfortable enabling
+ 
+
+529
+00:12:51,519 --> 00:12:54,069
+that that we felt comfortable enabling
+with the controls that were already
+
+530
+00:12:54,069 --> 00:12:54,079
+with the controls that were already
+ 
+
+531
+00:12:54,079 --> 00:12:56,550
+with the controls that were already
+available in the enterprise and we gated
+
+532
+00:12:56,550 --> 00:12:56,560
+available in the enterprise and we gated
+ 
+
+533
+00:12:56,560 --> 00:13:00,949
+available in the enterprise and we gated
+the features which were not um we didn't
+
+534
+00:13:00,949 --> 00:13:00,959
+the features which were not um we didn't
+ 
+
+535
+00:13:00,959 --> 00:13:03,750
+the features which were not um we didn't
+have which we felt were not um did not
+
+536
+00:13:03,750 --> 00:13:03,760
+have which we felt were not um did not
+ 
+
+537
+00:13:03,760 --> 00:13:06,550
+have which we felt were not um did not
+have sufficient controls natively in the
+
+538
+00:13:06,550 --> 00:13:06,560
+have sufficient controls natively in the
+ 
+
+539
+00:13:06,560 --> 00:13:09,430
+have sufficient controls natively in the
+product. So this began a conversation
+
+540
+00:13:09,430 --> 00:13:09,440
+product. So this began a conversation
+ 
+
+541
+00:13:09,440 --> 00:13:11,990
+product. So this began a conversation
+with our vendors. So we engaged actively
+
+542
+00:13:11,990 --> 00:13:12,000
+with our vendors. So we engaged actively
+ 
+
+543
+00:13:12,000 --> 00:13:15,350
+with our vendors. So we engaged actively
+with our AI tool vendors and uh made
+
+544
+00:13:15,350 --> 00:13:15,360
+with our AI tool vendors and uh made
+ 
+
+545
+00:13:15,360 --> 00:13:17,110
+with our AI tool vendors and uh made
+feature requests to make those
+
+546
+00:13:17,110 --> 00:13:17,120
+feature requests to make those
+ 
+
+547
+00:13:17,120 --> 00:13:22,150
+feature requests to make those
+enhancements.
+
+548
+00:13:22,150 --> 00:13:22,160
+
+ 
+
+549
+00:13:22,160 --> 00:13:25,829
+
+Coding agents and I know all of us here
+
+550
+00:13:25,829 --> 00:13:25,839
+Coding agents and I know all of us here
+ 
+
+551
+00:13:25,839 --> 00:13:29,030
+Coding agents and I know all of us here
+in the room you know encountered this in
+
+552
+00:13:29,030 --> 00:13:29,040
+in the room you know encountered this in
+ 
+
+553
+00:13:29,040 --> 00:13:32,550
+in the room you know encountered this in
+our uh enterprises. coding agents
+
+554
+00:13:32,550 --> 00:13:32,560
+our uh enterprises. coding agents
+ 
+
+555
+00:13:32,560 --> 00:13:34,389
+our uh enterprises. coding agents
+potentially shift the uh you know
+
+556
+00:13:34,389 --> 00:13:34,399
+potentially shift the uh you know
+ 
+
+557
+00:13:34,399 --> 00:13:36,550
+potentially shift the uh you know
+significantly shift the threat model in
+
+558
+00:13:36,550 --> 00:13:36,560
+significantly shift the threat model in
+ 
+
+559
+00:13:36,560 --> 00:13:38,629
+significantly shift the threat model in
+the enterprise and this is the perfect
+
+560
+00:13:38,629 --> 00:13:38,639
+the enterprise and this is the perfect
+ 
+
+561
+00:13:38,639 --> 00:13:43,190
+the enterprise and this is the perfect
+example of how the attack surface in the
+
+562
+00:13:43,190 --> 00:13:43,200
+example of how the attack surface in the
+ 
+
+563
+00:13:43,200 --> 00:13:46,870
+example of how the attack surface in the
+enterprise expands
+
+564
+00:13:46,870 --> 00:13:46,880
+enterprise expands
+ 
+
+565
+00:13:46,880 --> 00:13:51,990
+enterprise expands
+um with AI and how you know the uh whole
+
+566
+00:13:51,990 --> 00:13:52,000
+um with AI and how you know the uh whole
+ 
+
+567
+00:13:52,000 --> 00:13:54,310
+um with AI and how you know the uh whole
+execution model has shifted from
+
+568
+00:13:54,310 --> 00:13:54,320
+execution model has shifted from
+ 
+
+569
+00:13:54,320 --> 00:13:58,230
+execution model has shifted from
+predetermined action to real time
+
+570
+00:13:58,230 --> 00:13:58,240
+predetermined action to real time
+ 
+
+571
+00:13:58,240 --> 00:14:01,110
+predetermined action to real time
+execution contextbased execution with
+
+572
+00:14:01,110 --> 00:14:01,120
+execution contextbased execution with
+ 
+
+573
+00:14:01,120 --> 00:14:02,949
+execution contextbased execution with
+expanded boundaries and this coding
+
+574
+00:14:02,949 --> 00:14:02,959
+expanded boundaries and this coding
+ 
+
+575
+00:14:02,959 --> 00:14:05,509
+expanded boundaries and this coding
+agent is a perfect example for that. So
+
+576
+00:14:05,509 --> 00:14:05,519
+agent is a perfect example for that. So
+ 
+
+577
+00:14:05,519 --> 00:14:07,509
+agent is a perfect example for that. So
+we have the risk from autonomous code
+
+578
+00:14:07,509 --> 00:14:07,519
+we have the risk from autonomous code
+ 
+
+579
+00:14:07,519 --> 00:14:09,509
+we have the risk from autonomous code
+execution
+
+580
+00:14:09,509 --> 00:14:09,519
+execution
+ 
+
+581
+00:14:09,519 --> 00:14:11,829
+execution
+that can happen. uh you know these
+
+582
+00:14:11,829 --> 00:14:11,839
+that can happen. uh you know these
+ 
+
+583
+00:14:11,839 --> 00:14:13,590
+that can happen. uh you know these
+coding agents don't just write code
+
+584
+00:14:13,590 --> 00:14:13,600
+coding agents don't just write code
+ 
+
+585
+00:14:13,600 --> 00:14:16,470
+coding agents don't just write code
+right they execute um system level calls
+
+586
+00:14:16,470 --> 00:14:16,480
+right they execute um system level calls
+ 
+
+587
+00:14:16,480 --> 00:14:19,670
+right they execute um system level calls
+they make file system reads or they are
+
+588
+00:14:19,670 --> 00:14:19,680
+they make file system reads or they are
+ 
+
+589
+00:14:19,680 --> 00:14:23,110
+they make file system reads or they are
+integrating with uh APIs
+
+590
+00:14:23,110 --> 00:14:23,120
+integrating with uh APIs
+ 
+
+591
+00:14:23,120 --> 00:14:25,350
+integrating with uh APIs
+and which all of which amplifies the
+
+592
+00:14:25,350 --> 00:14:25,360
+and which all of which amplifies the
+ 
+
+593
+00:14:25,360 --> 00:14:29,829
+and which all of which amplifies the
+remote code execution uh amplific risk
+
+594
+00:14:29,829 --> 00:14:29,839
+remote code execution uh amplific risk
+ 
+
+595
+00:14:29,839 --> 00:14:31,829
+remote code execution uh amplific risk
+and there are most of these come with
+
+596
+00:14:31,829 --> 00:14:31,839
+and there are most of these come with
+ 
+
+597
+00:14:31,839 --> 00:14:33,750
+and there are most of these come with
+embedded browser components which are
+
+598
+00:14:33,750 --> 00:14:33,760
+embedded browser components which are
+ 
+
+599
+00:14:33,760 --> 00:14:36,629
+embedded browser components which are
+bypassing standard controls. So we had
+
+600
+00:14:36,629 --> 00:14:36,639
+bypassing standard controls. So we had
+ 
+
+601
+00:14:36,639 --> 00:14:41,269
+bypassing standard controls. So we had
+to come up with um with with
+
+602
+00:14:41,269 --> 00:14:41,279
+to come up with um with with
+ 
+
+603
+00:14:41,279 --> 00:14:44,389
+to come up with um with with
+we had to come up with solutions in
+
+604
+00:14:44,389 --> 00:14:44,399
+we had to come up with solutions in
+ 
+
+605
+00:14:44,399 --> 00:14:46,629
+we had to come up with solutions in
+order to restrict and in in order to
+
+606
+00:14:46,629 --> 00:14:46,639
+order to restrict and in in order to
+ 
+
+607
+00:14:46,639 --> 00:14:50,069
+order to restrict and in in order to
+address that risk.
+
+608
+00:14:50,069 --> 00:14:50,079
+address that risk.
+ 
+
+609
+00:14:50,079 --> 00:14:53,590
+address that risk.
+And again the same problem as the uh
+
+610
+00:14:53,590 --> 00:14:53,600
+And again the same problem as the uh
+ 
+
+611
+00:14:53,600 --> 00:14:55,910
+And again the same problem as the uh
+genai tools. We don't have
+
+612
+00:14:55,910 --> 00:14:55,920
+genai tools. We don't have
+ 
+
+613
+00:14:55,920 --> 00:14:59,030
+genai tools. We don't have
+enterprisegrade controls that uh in in
+
+614
+00:14:59,030 --> 00:14:59,040
+enterprisegrade controls that uh in in
+ 
+
+615
+00:14:59,040 --> 00:15:01,110
+enterprisegrade controls that uh in in
+most of these coding agents today and or
+
+616
+00:15:01,110 --> 00:15:01,120
+most of these coding agents today and or
+ 
+
+617
+00:15:01,120 --> 00:15:03,110
+most of these coding agents today and or
+they're still trying to they're still in
+
+618
+00:15:03,110 --> 00:15:03,120
+they're still trying to they're still in
+ 
+
+619
+00:15:03,120 --> 00:15:05,350
+they're still trying to they're still in
+the process of maturing and there is
+
+620
+00:15:05,350 --> 00:15:05,360
+the process of maturing and there is
+ 
+
+621
+00:15:05,360 --> 00:15:11,350
+the process of maturing and there is
+rapid u uh release velocity. So this is
+
+622
+00:15:11,350 --> 00:15:11,360
+rapid u uh release velocity. So this is
+ 
+
+623
+00:15:11,360 --> 00:15:14,310
+rapid u uh release velocity. So this is
+coding agent is is not just another
+
+624
+00:15:14,310 --> 00:15:14,320
+coding agent is is not just another
+ 
+
+625
+00:15:14,320 --> 00:15:17,110
+coding agent is is not just another
+development tool and we had to work
+
+626
+00:15:17,110 --> 00:15:17,120
+development tool and we had to work
+ 
+
+627
+00:15:17,120 --> 00:15:19,670
+development tool and we had to work
+closely again with the vendor to get the
+
+628
+00:15:19,670 --> 00:15:19,680
+closely again with the vendor to get the
+ 
+
+629
+00:15:19,680 --> 00:15:22,629
+closely again with the vendor to get the
+features released that um that we
+
+630
+00:15:22,629 --> 00:15:22,639
+features released that um that we
+ 
+
+631
+00:15:22,639 --> 00:15:27,670
+features released that um that we
+required.
+
+632
+00:15:27,670 --> 00:15:27,680
+
+ 
+
+633
+00:15:27,680 --> 00:15:30,389
+
+We had a structured
+
+634
+00:15:30,389 --> 00:15:30,399
+We had a structured
+ 
+
+635
+00:15:30,399 --> 00:15:33,030
+We had a structured
+um assessment for the agentic tools. It
+
+636
+00:15:33,030 --> 00:15:33,040
+um assessment for the agentic tools. It
+ 
+
+637
+00:15:33,040 --> 00:15:34,870
+um assessment for the agentic tools. It
+followed the same pattern as what we did
+
+638
+00:15:34,870 --> 00:15:34,880
+followed the same pattern as what we did
+ 
+
+639
+00:15:34,880 --> 00:15:38,069
+followed the same pattern as what we did
+for the genai tools. We we assessed all
+
+640
+00:15:38,069 --> 00:15:38,079
+for the genai tools. We we assessed all
+ 
+
+641
+00:15:38,079 --> 00:15:40,870
+for the genai tools. We we assessed all
+of the execution surfaces whether it was
+
+642
+00:15:40,870 --> 00:15:40,880
+of the execution surfaces whether it was
+ 
+
+643
+00:15:40,880 --> 00:15:44,389
+of the execution surfaces whether it was
+a command line or desktop and we did the
+
+644
+00:15:44,389 --> 00:15:44,399
+a command line or desktop and we did the
+ 
+
+645
+00:15:44,399 --> 00:15:48,310
+a command line or desktop and we did the
+same feature-based risk impact and we
+
+646
+00:15:48,310 --> 00:15:48,320
+same feature-based risk impact and we
+ 
+
+647
+00:15:48,320 --> 00:15:50,310
+same feature-based risk impact and we
+the most importantly
+
+648
+00:15:50,310 --> 00:15:50,320
+the most importantly
+ 
+
+649
+00:15:50,320 --> 00:15:52,069
+the most importantly
+one of the most important things at an
+
+650
+00:15:52,069 --> 00:15:52,079
+one of the most important things at an
+ 
+
+651
+00:15:52,079 --> 00:15:54,150
+one of the most important things at an
+engineering company like Snowflake is we
+
+652
+00:15:54,150 --> 00:15:54,160
+engineering company like Snowflake is we
+ 
+
+653
+00:15:54,160 --> 00:15:57,749
+engineering company like Snowflake is we
+needed to make sure that we did not
+
+654
+00:15:57,749 --> 00:15:57,759
+needed to make sure that we did not
+ 
+
+655
+00:15:57,759 --> 00:16:00,710
+needed to make sure that we did not
+develop the work developer productivity
+
+656
+00:16:00,710 --> 00:16:00,720
+develop the work developer productivity
+ 
+
+657
+00:16:00,720 --> 00:16:03,269
+develop the work developer productivity
+and therefore we had to come up when we
+
+658
+00:16:03,269 --> 00:16:03,279
+and therefore we had to come up when we
+ 
+
+659
+00:16:03,279 --> 00:16:04,949
+and therefore we had to come up when we
+made these risk assessments and came up
+
+660
+00:16:04,949 --> 00:16:04,959
+made these risk assessments and came up
+ 
+
+661
+00:16:04,959 --> 00:16:06,150
+made these risk assessments and came up
+with mitigation
+
+662
+00:16:06,150 --> 00:16:06,160
+with mitigation
+ 
+
+663
+00:16:06,160 --> 00:16:08,230
+with mitigation
+We had to keep that in mind front and
+
+664
+00:16:08,230 --> 00:16:08,240
+We had to keep that in mind front and
+ 
+
+665
+00:16:08,240 --> 00:16:09,990
+We had to keep that in mind front and
+center and aligned with the risk
+
+666
+00:16:09,990 --> 00:16:10,000
+center and aligned with the risk
+ 
+
+667
+00:16:10,000 --> 00:16:12,629
+center and aligned with the risk
+appetite of our executive leadership. So
+
+668
+00:16:12,629 --> 00:16:12,639
+appetite of our executive leadership. So
+ 
+
+669
+00:16:12,639 --> 00:16:15,910
+appetite of our executive leadership. So
+it was um we had to you know come up
+
+670
+00:16:15,910 --> 00:16:15,920
+it was um we had to you know come up
+ 
+
+671
+00:16:15,920 --> 00:16:18,310
+it was um we had to you know come up
+with a set of controls that worked for
+
+672
+00:16:18,310 --> 00:16:18,320
+with a set of controls that worked for
+ 
+
+673
+00:16:18,320 --> 00:16:20,470
+with a set of controls that worked for
+us that did not impact developer
+
+674
+00:16:20,470 --> 00:16:20,480
+us that did not impact developer
+ 
+
+675
+00:16:20,480 --> 00:16:23,430
+us that did not impact developer
+productivity while un enabling us to use
+
+676
+00:16:23,430 --> 00:16:23,440
+productivity while un enabling us to use
+ 
+
+677
+00:16:23,440 --> 00:16:29,670
+productivity while un enabling us to use
+the features securely.
+
+678
+00:16:29,670 --> 00:16:29,680
+
+ 
+
+679
+00:16:29,680 --> 00:16:32,629
+
+So what we did is we en enabled
+
+680
+00:16:32,629 --> 00:16:32,639
+So what we did is we en enabled
+ 
+
+681
+00:16:32,639 --> 00:16:35,749
+So what we did is we en enabled
+enterprise um guardrails. We tried to
+
+682
+00:16:35,749 --> 00:16:35,759
+enterprise um guardrails. We tried to
+ 
+
+683
+00:16:35,759 --> 00:16:38,150
+enterprise um guardrails. We tried to
+constrain the uh tools within our
+
+684
+00:16:38,150 --> 00:16:38,160
+constrain the uh tools within our
+ 
+
+685
+00:16:38,160 --> 00:16:41,509
+constrain the uh tools within our
+enterprise tenant. We we established
+
+686
+00:16:41,509 --> 00:16:41,519
+enterprise tenant. We we established
+ 
+
+687
+00:16:41,519 --> 00:16:44,790
+enterprise tenant. We we established
+hardened configuration
+
+688
+00:16:44,790 --> 00:16:44,800
+hardened configuration
+ 
+
+689
+00:16:44,800 --> 00:16:47,269
+hardened configuration
+for this and most of you know that
+
+690
+00:16:47,269 --> 00:16:47,279
+for this and most of you know that
+ 
+
+691
+00:16:47,279 --> 00:16:50,470
+for this and most of you know that
+coding the um the the enterprise control
+
+692
+00:16:50,470 --> 00:16:50,480
+coding the um the the enterprise control
+ 
+
+693
+00:16:50,480 --> 00:16:53,269
+coding the um the the enterprise control
+plane in these coding agents do not
+
+694
+00:16:53,269 --> 00:16:53,279
+plane in these coding agents do not
+ 
+
+695
+00:16:53,279 --> 00:16:56,790
+plane in these coding agents do not
+provide a very uh secure set of a robust
+
+696
+00:16:56,790 --> 00:16:56,800
+provide a very uh secure set of a robust
+ 
+
+697
+00:16:56,800 --> 00:16:58,710
+provide a very uh secure set of a robust
+set of controls in order to be
+
+698
+00:16:58,710 --> 00:16:58,720
+set of controls in order to be
+ 
+
+699
+00:16:58,720 --> 00:17:01,189
+set of controls in order to be
+effectively enforce immutable
+
+700
+00:17:01,189 --> 00:17:01,199
+effectively enforce immutable
+ 
+
+701
+00:17:01,199 --> 00:17:03,590
+effectively enforce immutable
+configuration at the endpoint. So we had
+
+702
+00:17:03,590 --> 00:17:03,600
+configuration at the endpoint. So we had
+ 
+
+703
+00:17:03,600 --> 00:17:07,029
+configuration at the endpoint. So we had
+to deise endpoint. We had to do come up
+
+704
+00:17:07,029 --> 00:17:07,039
+to deise endpoint. We had to do come up
+ 
+
+705
+00:17:07,039 --> 00:17:10,549
+to deise endpoint. We had to do come up
+with controls using our existing IT and
+
+706
+00:17:10,549 --> 00:17:10,559
+with controls using our existing IT and
+ 
+
+707
+00:17:10,559 --> 00:17:14,710
+with controls using our existing IT and
+um uh security tool set to constrain the
+
+708
+00:17:14,710 --> 00:17:14,720
+um uh security tool set to constrain the
+ 
+
+709
+00:17:14,720 --> 00:17:17,270
+um uh security tool set to constrain the
+to to m try and maintain this immutable
+
+710
+00:17:17,270 --> 00:17:17,280
+to to m try and maintain this immutable
+ 
+
+711
+00:17:17,280 --> 00:17:20,390
+to to m try and maintain this immutable
+config configuration at the end points
+
+712
+00:17:20,390 --> 00:17:20,400
+config configuration at the end points
+ 
+
+713
+00:17:20,400 --> 00:17:23,829
+config configuration at the end points
+and uh we and we had to come up with
+
+714
+00:17:23,829 --> 00:17:23,839
+and uh we and we had to come up with
+ 
+
+715
+00:17:23,839 --> 00:17:26,470
+and uh we and we had to come up with
+again you we used our existing uh IT and
+
+716
+00:17:26,470 --> 00:17:26,480
+again you we used our existing uh IT and
+ 
+
+717
+00:17:26,480 --> 00:17:29,510
+again you we used our existing uh IT and
+security tool tool set to secure both
+
+718
+00:17:29,510 --> 00:17:29,520
+security tool tool set to secure both
+ 
+
+719
+00:17:29,520 --> 00:17:31,510
+security tool tool set to secure both
+the manual as well as the automated
+
+720
+00:17:31,510 --> 00:17:31,520
+the manual as well as the automated
+ 
+
+721
+00:17:31,520 --> 00:17:34,549
+the manual as well as the automated
+browser pathways which are huge um which
+
+722
+00:17:34,549 --> 00:17:34,559
+browser pathways which are huge um which
+ 
+
+723
+00:17:34,559 --> 00:17:35,909
+browser pathways which are huge um which
+huge risk.
+
+724
+00:17:35,909 --> 00:17:35,919
+huge risk.
+ 
+
+725
+00:17:35,919 --> 00:17:38,230
+huge risk.
+um in terms of um you know data
+
+726
+00:17:38,230 --> 00:17:38,240
+um in terms of um you know data
+ 
+
+727
+00:17:38,240 --> 00:17:42,549
+um in terms of um you know data
+excfiltration or prompt injection.
+
+728
+00:17:42,549 --> 00:17:42,559
+excfiltration or prompt injection.
+ 
+
+729
+00:17:42,559 --> 00:17:44,710
+excfiltration or prompt injection.
+And when it came to restriction of
+
+730
+00:17:44,710 --> 00:17:44,720
+And when it came to restriction of
+ 
+
+731
+00:17:44,720 --> 00:17:46,789
+And when it came to restriction of
+higher autonomy modes, we approached it
+
+732
+00:17:46,789 --> 00:17:46,799
+higher autonomy modes, we approached it
+ 
+
+733
+00:17:46,799 --> 00:17:50,549
+higher autonomy modes, we approached it
+really carefully. Um again trying to do
+
+734
+00:17:50,549 --> 00:17:50,559
+really carefully. Um again trying to do
+ 
+
+735
+00:17:50,559 --> 00:17:53,750
+really carefully. Um again trying to do
+what we could and limiting the um
+
+736
+00:17:53,750 --> 00:17:53,760
+what we could and limiting the um
+ 
+
+737
+00:17:53,760 --> 00:17:58,070
+what we could and limiting the um
+limiting this to uh we looked at the
+
+738
+00:17:58,070 --> 00:17:58,080
+limiting this to uh we looked at the
+ 
+
+739
+00:17:58,080 --> 00:18:00,390
+limiting this to uh we looked at the
+user groups and risk profiles and we
+
+740
+00:18:00,390 --> 00:18:00,400
+user groups and risk profiles and we
+ 
+
+741
+00:18:00,400 --> 00:18:04,470
+user groups and risk profiles and we
+kind of you know enabled those features
+
+742
+00:18:04,470 --> 00:18:04,480
+kind of you know enabled those features
+ 
+
+743
+00:18:04,480 --> 00:18:06,789
+kind of you know enabled those features
+based on the risk profile of the users
+
+744
+00:18:06,789 --> 00:18:06,799
+based on the risk profile of the users
+ 
+
+745
+00:18:06,799 --> 00:18:09,990
+based on the risk profile of the users
+and we are still we work continue to
+
+746
+00:18:09,990 --> 00:18:10,000
+and we are still we work continue to
+ 
+
+747
+00:18:10,000 --> 00:18:12,710
+and we are still we work continue to
+work with vendors because it is a lot of
+
+748
+00:18:12,710 --> 00:18:12,720
+work with vendors because it is a lot of
+ 
+
+749
+00:18:12,720 --> 00:18:14,710
+work with vendors because it is a lot of
+these enterprise control planes for
+
+750
+00:18:14,710 --> 00:18:14,720
+these enterprise control planes for
+ 
+
+751
+00:18:14,720 --> 00:18:17,029
+these enterprise control planes for
+these uh coding agents do not have like
+
+752
+00:18:17,029 --> 00:18:17,039
+these uh coding agents do not have like
+ 
+
+753
+00:18:17,039 --> 00:18:18,230
+these uh coding agents do not have like
+scheme based
+
+754
+00:18:18,230 --> 00:18:18,240
+scheme based
+ 
+
+755
+00:18:18,240 --> 00:18:21,430
+scheme based
+uh enablement of features. So um you
+
+756
+00:18:21,430 --> 00:18:21,440
+uh enablement of features. So um you
+ 
+
+757
+00:18:21,440 --> 00:18:23,029
+uh enablement of features. So um you
+know those were requests that we put
+
+758
+00:18:23,029 --> 00:18:23,039
+know those were requests that we put
+ 
+
+759
+00:18:23,039 --> 00:18:25,990
+know those were requests that we put
+into the vendors in order to help us uh
+
+760
+00:18:25,990 --> 00:18:26,000
+into the vendors in order to help us uh
+ 
+
+761
+00:18:26,000 --> 00:18:28,710
+into the vendors in order to help us uh
+be able to selectively deploy certain
+
+762
+00:18:28,710 --> 00:18:28,720
+be able to selectively deploy certain
+ 
+
+763
+00:18:28,720 --> 00:18:31,270
+be able to selectively deploy certain
+certain features for certain groups of
+
+764
+00:18:31,270 --> 00:18:31,280
+certain features for certain groups of
+ 
+
+765
+00:18:31,280 --> 00:18:34,070
+certain features for certain groups of
+users or constrain the high-risk
+
+766
+00:18:34,070 --> 00:18:34,080
+users or constrain the high-risk
+ 
+
+767
+00:18:34,080 --> 00:18:36,950
+users or constrain the high-risk
+features just to select groups of users
+
+768
+00:18:36,950 --> 00:18:36,960
+features just to select groups of users
+ 
+
+769
+00:18:36,960 --> 00:18:39,270
+features just to select groups of users
+and to even be able to test them before
+
+770
+00:18:39,270 --> 00:18:39,280
+and to even be able to test them before
+ 
+
+771
+00:18:39,280 --> 00:18:41,190
+and to even be able to test them before
+deployment.
+
+772
+00:18:41,190 --> 00:18:41,200
+deployment.
+ 
+
+773
+00:18:41,200 --> 00:18:45,190
+deployment.
+Um and again approved integrations and
+
+774
+00:18:45,190 --> 00:18:45,200
+Um and again approved integrations and
+ 
+
+775
+00:18:45,200 --> 00:18:47,750
+Um and again approved integrations and
+capability surfaces when you come to uh
+
+776
+00:18:47,750 --> 00:18:47,760
+capability surfaces when you come to uh
+ 
+
+777
+00:18:47,760 --> 00:18:51,830
+capability surfaces when you come to uh
+like being able to allow MCP tool MCP
+
+778
+00:18:51,830 --> 00:18:51,840
+like being able to allow MCP tool MCP
+ 
+
+779
+00:18:51,840 --> 00:18:55,270
+like being able to allow MCP tool MCP
+servers or tools um or being able to
+
+780
+00:18:55,270 --> 00:18:55,280
+servers or tools um or being able to
+ 
+
+781
+00:18:55,280 --> 00:18:57,669
+servers or tools um or being able to
+restrain the web search to certain
+
+782
+00:18:57,669 --> 00:18:57,679
+restrain the web search to certain
+ 
+
+783
+00:18:57,679 --> 00:19:00,870
+restrain the web search to certain
+domains uh allowed domains and maintain
+
+784
+00:19:00,870 --> 00:19:00,880
+domains uh allowed domains and maintain
+ 
+
+785
+00:19:00,880 --> 00:19:03,669
+domains uh allowed domains and maintain
+the same configuration as the enterprise
+
+786
+00:19:03,669 --> 00:19:03,679
+the same configuration as the enterprise
+ 
+
+787
+00:19:03,679 --> 00:19:06,070
+the same configuration as the enterprise
+um that's in place in the in the rest of
+
+788
+00:19:06,070 --> 00:19:06,080
+um that's in place in the in the rest of
+ 
+
+789
+00:19:06,080 --> 00:19:07,909
+um that's in place in the in the rest of
+the enterprise.
+
+790
+00:19:07,909 --> 00:19:07,919
+the enterprise.
+ 
+
+791
+00:19:07,919 --> 00:19:11,669
+the enterprise.
+We had to um we had to come up with um
+
+792
+00:19:11,669 --> 00:19:11,679
+We had to um we had to come up with um
+ 
+
+793
+00:19:11,679 --> 00:19:15,270
+We had to um we had to come up with um
+very um you know we had to come up with
+
+794
+00:19:15,270 --> 00:19:15,280
+very um you know we had to come up with
+ 
+
+795
+00:19:15,280 --> 00:19:18,870
+very um you know we had to come up with
+innovative ways of using our um existing
+
+796
+00:19:18,870 --> 00:19:18,880
+innovative ways of using our um existing
+ 
+
+797
+00:19:18,880 --> 00:19:21,990
+innovative ways of using our um existing
+tool set and where uh we were stretched
+
+798
+00:19:21,990 --> 00:19:22,000
+tool set and where uh we were stretched
+ 
+
+799
+00:19:22,000 --> 00:19:25,830
+tool set and where uh we were stretched
+we constantly worked with our vendors to
+
+800
+00:19:25,830 --> 00:19:25,840
+we constantly worked with our vendors to
+ 
+
+801
+00:19:25,840 --> 00:19:28,470
+we constantly worked with our vendors to
+um to for feature enhancements in the
+
+802
+00:19:28,470 --> 00:19:28,480
+um to for feature enhancements in the
+ 
+
+803
+00:19:28,480 --> 00:19:30,390
+um to for feature enhancements in the
+product. So, and we've se seen the
+
+804
+00:19:30,390 --> 00:19:30,400
+product. So, and we've se seen the
+ 
+
+805
+00:19:30,400 --> 00:19:32,549
+product. So, and we've se seen the
+vendors actually respond to these
+
+806
+00:19:32,549 --> 00:19:32,559
+vendors actually respond to these
+ 
+
+807
+00:19:32,559 --> 00:19:34,310
+vendors actually respond to these
+feature requests and we've seen
+
+808
+00:19:34,310 --> 00:19:34,320
+feature requests and we've seen
+ 
+
+809
+00:19:34,320 --> 00:19:36,870
+feature requests and we've seen
+significant uh improvements in the last
+
+810
+00:19:36,870 --> 00:19:36,880
+significant uh improvements in the last
+ 
+
+811
+00:19:36,880 --> 00:19:41,590
+significant uh improvements in the last
+few months.
+
+812
+00:19:41,590 --> 00:19:41,600
+
+ 
+
+813
+00:19:41,600 --> 00:19:44,789
+
+So, what enables AI to scale
+
+814
+00:19:44,789 --> 00:19:44,799
+So, what enables AI to scale
+ 
+
+815
+00:19:44,799 --> 00:19:47,750
+So, what enables AI to scale
+responsibly? I think fundamental thing
+
+816
+00:19:47,750 --> 00:19:47,760
+responsibly? I think fundamental thing
+ 
+
+817
+00:19:47,760 --> 00:19:49,029
+responsibly? I think fundamental thing
+uh and then these are the lessons
+
+818
+00:19:49,029 --> 00:19:49,039
+uh and then these are the lessons
+ 
+
+819
+00:19:49,039 --> 00:19:50,950
+uh and then these are the lessons
+learned from our journey. It is
+
+820
+00:19:50,950 --> 00:19:50,960
+learned from our journey. It is
+ 
+
+821
+00:19:50,960 --> 00:19:53,830
+learned from our journey. It is
+fundamentally exe executive sponsorship
+
+822
+00:19:53,830 --> 00:19:53,840
+fundamentally exe executive sponsorship
+ 
+
+823
+00:19:53,840 --> 00:19:56,150
+fundamentally exe executive sponsorship
+drives alignment. So it is really
+
+824
+00:19:56,150 --> 00:19:56,160
+drives alignment. So it is really
+ 
+
+825
+00:19:56,160 --> 00:20:02,390
+drives alignment. So it is really
+important for um you know to be able to
+
+826
+00:20:02,390 --> 00:20:02,400
+important for um you know to be able to
+ 
+
+827
+00:20:02,400 --> 00:20:05,510
+important for um you know to be able to
+update your leadership about the risks
+
+828
+00:20:05,510 --> 00:20:05,520
+update your leadership about the risks
+ 
+
+829
+00:20:05,520 --> 00:20:07,990
+update your leadership about the risks
+with with data like you with the
+
+830
+00:20:07,990 --> 00:20:08,000
+with with data like you with the
+ 
+
+831
+00:20:08,000 --> 00:20:12,150
+with with data like you with the
+visibility you get you u provide you
+
+832
+00:20:12,150 --> 00:20:12,160
+visibility you get you u provide you
+ 
+
+833
+00:20:12,160 --> 00:20:13,990
+visibility you get you u provide you
+provide an update to your leadership and
+
+834
+00:20:13,990 --> 00:20:14,000
+provide an update to your leadership and
+ 
+
+835
+00:20:14,000 --> 00:20:15,750
+provide an update to your leadership and
+you need to be able to make informed
+
+836
+00:20:15,750 --> 00:20:15,760
+you need to be able to make informed
+ 
+
+837
+00:20:15,760 --> 00:20:20,230
+you need to be able to make informed
+decisions with that sponsorship
+
+838
+00:20:20,230 --> 00:20:20,240
+
+ 
+
+839
+00:20:20,240 --> 00:20:22,789
+
+and shared ownership scales better than
+
+840
+00:20:22,789 --> 00:20:22,799
+and shared ownership scales better than
+ 
+
+841
+00:20:22,799 --> 00:20:26,549
+and shared ownership scales better than
+central control. So we um it it's really
+
+842
+00:20:26,549 --> 00:20:26,559
+central control. So we um it it's really
+ 
+
+843
+00:20:26,559 --> 00:20:29,350
+central control. So we um it it's really
+important to have that crossf functional
+
+844
+00:20:29,350 --> 00:20:29,360
+important to have that crossf functional
+ 
+
+845
+00:20:29,360 --> 00:20:31,830
+important to have that crossf functional
+alignment and the exi steering committee
+
+846
+00:20:31,830 --> 00:20:31,840
+alignment and the exi steering committee
+ 
+
+847
+00:20:31,840 --> 00:20:35,350
+alignment and the exi steering committee
+really helped us there. We um that what
+
+848
+00:20:35,350 --> 00:20:35,360
+really helped us there. We um that what
+ 
+
+849
+00:20:35,360 --> 00:20:37,990
+really helped us there. We um that what
+is critical is that cross functional
+
+850
+00:20:37,990 --> 00:20:38,000
+is critical is that cross functional
+ 
+
+851
+00:20:38,000 --> 00:20:41,029
+is critical is that cross functional
+alignment as well as a top-down um you
+
+852
+00:20:41,029 --> 00:20:41,039
+alignment as well as a top-down um you
+ 
+
+853
+00:20:41,039 --> 00:20:44,789
+alignment as well as a top-down um you
+know alignment on risk is is what helped
+
+854
+00:20:44,789 --> 00:20:44,799
+know alignment on risk is is what helped
+ 
+
+855
+00:20:44,799 --> 00:20:49,190
+know alignment on risk is is what helped
+us keep our governance model dynamic.
+
+856
+00:20:49,190 --> 00:20:49,200
+us keep our governance model dynamic.
+ 
+
+857
+00:20:49,200 --> 00:20:52,149
+us keep our governance model dynamic.
+Visibility is crucial in order to be
+
+858
+00:20:52,149 --> 00:20:52,159
+Visibility is crucial in order to be
+ 
+
+859
+00:20:52,159 --> 00:20:55,029
+Visibility is crucial in order to be
+able to govern. So whatever uh pathways
+
+860
+00:20:55,029 --> 00:20:55,039
+able to govern. So whatever uh pathways
+ 
+
+861
+00:20:55,039 --> 00:20:57,190
+able to govern. So whatever uh pathways
+you have in your environment to get that
+
+862
+00:20:57,190 --> 00:20:57,200
+you have in your environment to get that
+ 
+
+863
+00:20:57,200 --> 00:21:00,230
+you have in your environment to get that
+visibility, make sure um that you know
+
+864
+00:21:00,230 --> 00:21:00,240
+visibility, make sure um that you know
+ 
+
+865
+00:21:00,240 --> 00:21:02,870
+visibility, make sure um that you know
+you are leveraging that in order to uh
+
+866
+00:21:02,870 --> 00:21:02,880
+you are leveraging that in order to uh
+ 
+
+867
+00:21:02,880 --> 00:21:06,470
+you are leveraging that in order to uh
+get the data that you need to uh be able
+
+868
+00:21:06,470 --> 00:21:06,480
+get the data that you need to uh be able
+ 
+
+869
+00:21:06,480 --> 00:21:10,070
+get the data that you need to uh be able
+to share u that with your um cross
+
+870
+00:21:10,070 --> 00:21:10,080
+to share u that with your um cross
+ 
+
+871
+00:21:10,080 --> 00:21:13,110
+to share u that with your um cross
+functional teams and executive teams.
+
+872
+00:21:13,110 --> 00:21:13,120
+functional teams and executive teams.
+ 
+
+873
+00:21:13,120 --> 00:21:16,230
+functional teams and executive teams.
+And the most important thing is um last
+
+874
+00:21:16,230 --> 00:21:16,240
+And the most important thing is um last
+ 
+
+875
+00:21:16,240 --> 00:21:18,789
+And the most important thing is um last
+um you know I would say that it it's
+
+876
+00:21:18,789 --> 00:21:18,799
+um you know I would say that it it's
+ 
+
+877
+00:21:18,799 --> 00:21:21,350
+um you know I would say that it it's
+really important to focus on
+
+878
+00:21:21,350 --> 00:21:21,360
+really important to focus on
+ 
+
+879
+00:21:21,360 --> 00:21:23,270
+really important to focus on
+constraining the execution authority
+
+880
+00:21:23,270 --> 00:21:23,280
+constraining the execution authority
+ 
+
+881
+00:21:23,280 --> 00:21:26,870
+constraining the execution authority
+because you cannot stop the innovation
+
+882
+00:21:26,870 --> 00:21:26,880
+because you cannot stop the innovation
+ 
+
+883
+00:21:26,880 --> 00:21:29,270
+because you cannot stop the innovation
+you cannot stop AI adoption in the
+
+884
+00:21:29,270 --> 00:21:29,280
+you cannot stop AI adoption in the
+ 
+
+885
+00:21:29,280 --> 00:21:31,590
+you cannot stop AI adoption in the
+enterprise because uh if you did it'll
+
+886
+00:21:31,590 --> 00:21:31,600
+enterprise because uh if you did it'll
+ 
+
+887
+00:21:31,600 --> 00:21:36,230
+enterprise because uh if you did it'll
+go around you so and if you and if the
+
+888
+00:21:36,230 --> 00:21:36,240
+go around you so and if you and if the
+ 
+
+889
+00:21:36,240 --> 00:21:37,909
+go around you so and if you and if the
+other thing is it is going to impact
+
+890
+00:21:37,909 --> 00:21:37,919
+other thing is it is going to impact
+ 
+
+891
+00:21:37,919 --> 00:21:40,710
+other thing is it is going to impact
+your business. So it is really important
+
+892
+00:21:40,710 --> 00:21:40,720
+your business. So it is really important
+ 
+
+893
+00:21:40,720 --> 00:21:43,510
+your business. So it is really important
+to focus on constraining what the
+
+894
+00:21:43,510 --> 00:21:43,520
+to focus on constraining what the
+ 
+
+895
+00:21:43,520 --> 00:21:46,390
+to focus on constraining what the
+execution authority of the AI not
+
+896
+00:21:46,390 --> 00:21:46,400
+execution authority of the AI not
+ 
+
+897
+00:21:46,400 --> 00:21:49,990
+execution authority of the AI not
+restraining AI completely and governance
+
+898
+00:21:49,990 --> 00:21:50,000
+restraining AI completely and governance
+ 
+
+899
+00:21:50,000 --> 00:21:53,430
+restraining AI completely and governance
+must evolve at the same velocity as AI
+
+900
+00:21:53,430 --> 00:21:53,440
+must evolve at the same velocity as AI
+ 
+
+901
+00:21:53,440 --> 00:21:55,190
+must evolve at the same velocity as AI
+and you need to make sure that your
+
+902
+00:21:55,190 --> 00:21:55,200
+and you need to make sure that your
+ 
+
+903
+00:21:55,200 --> 00:21:57,909
+and you need to make sure that your
+processes whether it is review processes
+
+904
+00:21:57,909 --> 00:21:57,919
+processes whether it is review processes
+ 
+
+905
+00:21:57,919 --> 00:22:02,070
+processes whether it is review processes
+or your uh decision processes are able
+
+906
+00:22:02,070 --> 00:22:02,080
+or your uh decision processes are able
+ 
+
+907
+00:22:02,080 --> 00:22:04,630
+or your uh decision processes are able
+are dynamic and evolving at the same
+
+908
+00:22:04,630 --> 00:22:04,640
+are dynamic and evolving at the same
+ 
+
+909
+00:22:04,640 --> 00:22:07,190
+are dynamic and evolving at the same
+pace of the technology. So AI governance
+
+910
+00:22:07,190 --> 00:22:07,200
+pace of the technology. So AI governance
+ 
+
+911
+00:22:07,200 --> 00:22:09,590
+pace of the technology. So AI governance
+is not a roadblock to innovation. It
+
+912
+00:22:09,590 --> 00:22:09,600
+is not a roadblock to innovation. It
+ 
+
+913
+00:22:09,600 --> 00:22:12,470
+is not a roadblock to innovation. It
+really is the foundation to enable um
+
+914
+00:22:12,470 --> 00:22:12,480
+really is the foundation to enable um
+ 
+
+915
+00:22:12,480 --> 00:22:15,190
+really is the foundation to enable um
+innovation securely and responsibly.
+
+916
+00:22:15,190 --> 00:22:15,200
+innovation securely and responsibly.
+ 
+
+917
+00:22:15,200 --> 00:22:15,909
+innovation securely and responsibly.
+Thank you.
+
+918
+00:22:15,909 --> 00:22:15,919
+Thank you.
+ 
+
+919
+00:22:15,919 --> 00:22:18,230
+Thank you.
+>> Okay. Thanks very much. Let's get some
+
+920
+00:22:18,230 --> 00:22:18,240
+>> Okay. Thanks very much. Let's get some
+ 
+
+921
+00:22:18,240 --> 00:22:19,909
+>> Okay. Thanks very much. Let's get some
+questions.
+
+922
+00:22:19,909 --> 00:22:19,919
+questions.
+ 
+
+923
+00:22:19,919 --> 00:22:23,750
+questions.
+Chase, go ahead. Come on up.
+
+924
+00:22:23,750 --> 00:22:23,760
+Chase, go ahead. Come on up.
+ 
+
+925
+00:22:23,760 --> 00:22:25,590
+Chase, go ahead. Come on up.
+>> Uh thank you very much for a good talk.
+
+926
+00:22:25,590 --> 00:22:25,600
+>> Uh thank you very much for a good talk.
+ 
+
+927
+00:22:25,600 --> 00:22:27,270
+>> Uh thank you very much for a good talk.
+Uh couple of questions. And so when you
+
+928
+00:22:27,270 --> 00:22:27,280
+Uh couple of questions. And so when you
+ 
+
+929
+00:22:27,280 --> 00:22:30,310
+Uh couple of questions. And so when you
+talk about these um enterprise uh
+
+930
+00:22:30,310 --> 00:22:30,320
+talk about these um enterprise uh
+ 
+
+931
+00:22:30,320 --> 00:22:33,990
+talk about these um enterprise uh
+governance code agents, I'm thinking in
+
+932
+00:22:33,990 --> 00:22:34,000
+governance code agents, I'm thinking in
+ 
+
+933
+00:22:34,000 --> 00:22:35,590
+governance code agents, I'm thinking in
+terms of some agents that could
+
+934
+00:22:35,590 --> 00:22:35,600
+terms of some agents that could
+ 
+
+935
+00:22:35,600 --> 00:22:37,270
+terms of some agents that could
+potentially
+
+936
+00:22:37,270 --> 00:22:37,280
+potentially
+ 
+
+937
+00:22:37,280 --> 00:22:40,950
+potentially
+uh place uh trades for in 45 minutes
+
+938
+00:22:40,950 --> 00:22:40,960
+uh place uh trades for in 45 minutes
+ 
+
+939
+00:22:40,960 --> 00:22:43,270
+uh place uh trades for in 45 minutes
+they can lose half a million bucks or
+
+940
+00:22:43,270 --> 00:22:43,280
+they can lose half a million bucks or
+ 
+
+941
+00:22:43,280 --> 00:22:45,350
+they can lose half a million bucks or
+$500 million depending on the what
+
+942
+00:22:45,350 --> 00:22:45,360
+$500 million depending on the what
+ 
+
+943
+00:22:45,360 --> 00:22:47,669
+$500 million depending on the what
+happened with night. Are are those the
+
+944
+00:22:47,669 --> 00:22:47,679
+happened with night. Are are those the
+ 
+
+945
+00:22:47,679 --> 00:22:49,750
+happened with night. Are are those the
+kind of things that you are trying to
+
+946
+00:22:49,750 --> 00:22:49,760
+kind of things that you are trying to
+ 
+
+947
+00:22:49,760 --> 00:22:52,070
+kind of things that you are trying to
+avoid because that could be a lot more
+
+948
+00:22:52,070 --> 00:22:52,080
+avoid because that could be a lot more
+ 
+
+949
+00:22:52,080 --> 00:22:54,230
+avoid because that could be a lot more
+and if so how exactly are you
+
+950
+00:22:54,230 --> 00:22:54,240
+and if so how exactly are you
+ 
+
+951
+00:22:54,240 --> 00:22:58,230
+and if so how exactly are you
+controlling it? So um as I said we um
+
+952
+00:22:58,230 --> 00:22:58,240
+controlling it? So um as I said we um
+ 
+
+953
+00:22:58,240 --> 00:23:00,310
+controlling it? So um as I said we um
+you know based on our discovery we see
+
+954
+00:23:00,310 --> 00:23:00,320
+you know based on our discovery we see
+ 
+
+955
+00:23:00,320 --> 00:23:02,470
+you know based on our discovery we see
+what coding agents are deployed across
+
+956
+00:23:02,470 --> 00:23:02,480
+what coding agents are deployed across
+ 
+
+957
+00:23:02,480 --> 00:23:04,310
+what coding agents are deployed across
+our enterprise
+
+958
+00:23:04,310 --> 00:23:04,320
+our enterprise
+ 
+
+959
+00:23:04,320 --> 00:23:07,510
+our enterprise
+and we um
+
+960
+00:23:07,510 --> 00:23:07,520
+and we um
+ 
+
+961
+00:23:07,520 --> 00:23:09,990
+and we um
+ensure that we only allow the coding
+
+962
+00:23:09,990 --> 00:23:10,000
+ensure that we only allow the coding
+ 
+
+963
+00:23:10,000 --> 00:23:11,990
+ensure that we only allow the coding
+agents that are approved in the
+
+964
+00:23:11,990 --> 00:23:12,000
+agents that are approved in the
+ 
+
+965
+00:23:12,000 --> 00:23:16,630
+agents that are approved in the
+enterprise and we um we performed risk
+
+966
+00:23:16,630 --> 00:23:16,640
+enterprise and we um we performed risk
+ 
+
+967
+00:23:16,640 --> 00:23:19,590
+enterprise and we um we performed risk
+assessment for those coding agents that
+
+968
+00:23:19,590 --> 00:23:19,600
+assessment for those coding agents that
+ 
+
+969
+00:23:19,600 --> 00:23:21,510
+assessment for those coding agents that
+are approved in the enterprise and so we
+
+970
+00:23:21,510 --> 00:23:21,520
+are approved in the enterprise and so we
+ 
+
+971
+00:23:21,520 --> 00:23:23,750
+are approved in the enterprise and so we
+steer our users towards the approved
+
+972
+00:23:23,750 --> 00:23:23,760
+steer our users towards the approved
+ 
+
+973
+00:23:23,760 --> 00:23:24,710
+steer our users towards the approved
+platforms
+
+974
+00:23:24,710 --> 00:23:24,720
+platforms
+ 
+
+975
+00:23:24,720 --> 00:23:27,029
+platforms
+>> but that's manual right? That's going to
+
+976
+00:23:27,029 --> 00:23:27,039
+>> but that's manual right? That's going to
+ 
+
+977
+00:23:27,039 --> 00:23:30,230
+>> but that's manual right? That's going to
+be somewhat slower than uh the speed of
+
+978
+00:23:30,230 --> 00:23:30,240
+be somewhat slower than uh the speed of
+ 
+
+979
+00:23:30,240 --> 00:23:31,510
+be somewhat slower than uh the speed of
+AI.
+
+980
+00:23:31,510 --> 00:23:31,520
+AI.
+ 
+
+981
+00:23:31,520 --> 00:23:35,909
+AI.
+>> So it it it is not so it it it is
+
+982
+00:23:35,909 --> 00:23:35,919
+>> So it it it is not so it it it is
+ 
+
+983
+00:23:35,919 --> 00:23:39,590
+>> So it it it is not so it it it is
+you it it it is something that is your
+
+984
+00:23:39,590 --> 00:23:39,600
+you it it it is something that is your
+ 
+
+985
+00:23:39,600 --> 00:23:41,830
+you it it it is something that is your
+AI risk is dynamic and it is
+
+986
+00:23:41,830 --> 00:23:41,840
+AI risk is dynamic and it is
+ 
+
+987
+00:23:41,840 --> 00:23:43,750
+AI risk is dynamic and it is
+continuously evolving, right? So you
+
+988
+00:23:43,750 --> 00:23:43,760
+continuously evolving, right? So you
+ 
+
+989
+00:23:43,760 --> 00:23:46,870
+continuously evolving, right? So you
+need to your p the pace at which you
+
+990
+00:23:46,870 --> 00:23:46,880
+need to your p the pace at which you
+ 
+
+991
+00:23:46,880 --> 00:23:49,029
+need to your p the pace at which you
+perform your discovery the pace at which
+
+992
+00:23:49,029 --> 00:23:49,039
+perform your discovery the pace at which
+ 
+
+993
+00:23:49,039 --> 00:23:53,190
+perform your discovery the pace at which
+you you know uh surface up any anomalies
+
+994
+00:23:53,190 --> 00:23:53,200
+you you know uh surface up any anomalies
+ 
+
+995
+00:23:53,200 --> 00:23:56,630
+you you know uh surface up any anomalies
+or risks to your cross functional team
+
+996
+00:23:56,630 --> 00:23:56,640
+or risks to your cross functional team
+ 
+
+997
+00:23:56,640 --> 00:23:59,350
+or risks to your cross functional team
+and and your leadership needs to be
+
+998
+00:23:59,350 --> 00:23:59,360
+and and your leadership needs to be
+ 
+
+999
+00:23:59,360 --> 00:24:01,830
+and and your leadership needs to be
+dynamic. So you need to be having these
+
+1000
+00:24:01,830 --> 00:24:01,840
+dynamic. So you need to be having these
+ 
+
+1001
+00:24:01,840 --> 00:24:04,390
+dynamic. So you need to be having these
+conversations on a weekly or sometimes
+
+1002
+00:24:04,390 --> 00:24:04,400
+conversations on a weekly or sometimes
+ 
+
+1003
+00:24:04,400 --> 00:24:06,710
+conversations on a weekly or sometimes
+on a daily basis about what you see
+
+1004
+00:24:06,710 --> 00:24:06,720
+on a daily basis about what you see
+ 
+
+1005
+00:24:06,720 --> 00:24:09,510
+on a daily basis about what you see
+across the enterprise and make those
+
+1006
+00:24:09,510 --> 00:24:09,520
+across the enterprise and make those
+ 
+
+1007
+00:24:09,520 --> 00:24:11,190
+across the enterprise and make those
+decisions. If you need to shut something
+
+1008
+00:24:11,190 --> 00:24:11,200
+decisions. If you need to shut something
+ 
+
+1009
+00:24:11,200 --> 00:24:13,909
+decisions. If you need to shut something
+down, you need to be able to get, you
+
+1010
+00:24:13,909 --> 00:24:13,919
+down, you need to be able to get, you
+ 
+
+1011
+00:24:13,919 --> 00:24:15,909
+down, you need to be able to get, you
+know, quick alignment and and shut it
+
+1012
+00:24:15,909 --> 00:24:15,919
+know, quick alignment and and shut it
+ 
+
+1013
+00:24:15,919 --> 00:24:19,269
+know, quick alignment and and shut it
+down.
+
+1014
+00:24:19,269 --> 00:24:19,279
+
+ 
+
+1015
+00:24:19,279 --> 00:24:21,669
+
+>> Sure.
+
+1016
+00:24:21,669 --> 00:24:21,679
+>> Sure.
+ 
+
+1017
+00:24:21,679 --> 00:24:24,789
+>> Sure.
+>> One more question.
+
+1018
+00:24:24,789 --> 00:24:24,799
+>> One more question.
+ 
+
+1019
+00:24:24,799 --> 00:24:27,830
+>> One more question.
+>> Hi, thank you. Um, what technical
+
+1020
+00:24:27,830 --> 00:24:27,840
+>> Hi, thank you. Um, what technical
+ 
+
+1021
+00:24:27,840 --> 00:24:29,269
+>> Hi, thank you. Um, what technical
+controls have you put in place to
+
+1022
+00:24:29,269 --> 00:24:29,279
+controls have you put in place to
+ 
+
+1023
+00:24:29,279 --> 00:24:31,669
+controls have you put in place to
+actually constrain that execution
+
+1024
+00:24:31,669 --> 00:24:31,679
+actually constrain that execution
+ 
+
+1025
+00:24:31,679 --> 00:24:33,190
+actually constrain that execution
+authority that you mentioned in the last
+
+1026
+00:24:33,190 --> 00:24:33,200
+authority that you mentioned in the last
+ 
+
+1027
+00:24:33,200 --> 00:24:35,190
+authority that you mentioned in the last
+slide?
+
+1028
+00:24:35,190 --> 00:24:35,200
+slide?
+ 
+
+1029
+00:24:35,200 --> 00:24:38,870
+slide?
+So it depends really on the on the tool
+
+1030
+00:24:38,870 --> 00:24:38,880
+So it depends really on the on the tool
+ 
+
+1031
+00:24:38,880 --> 00:24:41,990
+So it depends really on the on the tool
+on the coding agent and what controls
+
+1032
+00:24:41,990 --> 00:24:42,000
+on the coding agent and what controls
+ 
+
+1033
+00:24:42,000 --> 00:24:45,590
+on the coding agent and what controls
+are available within um the the a the
+
+1034
+00:24:45,590 --> 00:24:45,600
+are available within um the the a the
+ 
+
+1035
+00:24:45,600 --> 00:24:48,950
+are available within um the the a the
+agent's control plane itself. Um so like
+
+1036
+00:24:48,950 --> 00:24:48,960
+agent's control plane itself. Um so like
+ 
+
+1037
+00:24:48,960 --> 00:24:51,350
+agent's control plane itself. Um so like
+um for example what we did for the
+
+1038
+00:24:51,350 --> 00:24:51,360
+um for example what we did for the
+ 
+
+1039
+00:24:51,360 --> 00:24:54,230
+um for example what we did for the
+browser execution pathways. So there
+
+1040
+00:24:54,230 --> 00:24:54,240
+browser execution pathways. So there
+ 
+
+1041
+00:24:54,240 --> 00:24:55,990
+browser execution pathways. So there
+there could be automated or they could
+
+1042
+00:24:55,990 --> 00:24:56,000
+there could be automated or they could
+ 
+
+1043
+00:24:56,000 --> 00:25:00,870
+there could be automated or they could
+be um uh manual execution. So for the
+
+1044
+00:25:00,870 --> 00:25:00,880
+be um uh manual execution. So for the
+ 
+
+1045
+00:25:00,880 --> 00:25:03,350
+be um uh manual execution. So for the
+for the automated ones we actually
+
+1046
+00:25:03,350 --> 00:25:03,360
+for the automated ones we actually
+ 
+
+1047
+00:25:03,360 --> 00:25:05,269
+for the automated ones we actually
+restrain them just to our internal
+
+1048
+00:25:05,269 --> 00:25:05,279
+restrain them just to our internal
+ 
+
+1049
+00:25:05,279 --> 00:25:10,950
+restrain them just to our internal
+domains and for the um uh for the uh
+
+1050
+00:25:10,950 --> 00:25:10,960
+domains and for the um uh for the uh
+ 
+
+1051
+00:25:10,960 --> 00:25:13,430
+domains and for the um uh for the uh
+manual browser pathways we basically
+
+1052
+00:25:13,430 --> 00:25:13,440
+manual browser pathways we basically
+ 
+
+1053
+00:25:13,440 --> 00:25:17,269
+manual browser pathways we basically
+ensure use using our other EDR tools we
+
+1054
+00:25:17,269 --> 00:25:17,279
+ensure use using our other EDR tools we
+ 
+
+1055
+00:25:17,279 --> 00:25:20,149
+ensure use using our other EDR tools we
+constrain or constrain them to just to
+
+1056
+00:25:20,149 --> 00:25:20,159
+constrain or constrain them to just to
+ 
+
+1057
+00:25:20,159 --> 00:25:23,110
+constrain or constrain them to just to
+the same to match what we had for the
+
+1058
+00:25:23,110 --> 00:25:23,120
+the same to match what we had for the
+ 
+
+1059
+00:25:23,120 --> 00:25:25,750
+the same to match what we had for the
+rest of the enterprise.
+
+1060
+00:25:25,750 --> 00:25:25,760
+rest of the enterprise.
+ 
+
+1061
+00:25:25,760 --> 00:25:30,279
+rest of the enterprise.
+So that's just one example. Yeah.
+

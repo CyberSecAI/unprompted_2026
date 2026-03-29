@@ -1,0 +1,6435 @@
+1
+00:00:05,520 --> 00:00:07,829
+
+Cool. Hi. Thank super happy to be here.
+
+2
+00:00:07,829 --> 00:00:07,839
+Cool. Hi. Thank super happy to be here.
+ 
+
+3
+00:00:07,839 --> 00:00:09,110
+Cool. Hi. Thank super happy to be here.
+This is way more people than I was
+
+4
+00:00:09,110 --> 00:00:09,120
+This is way more people than I was
+ 
+
+5
+00:00:09,120 --> 00:00:13,270
+This is way more people than I was
+expecting. Um I'm also I'm also really
+
+6
+00:00:13,270 --> 00:00:13,280
+expecting. Um I'm also I'm also really
+ 
+
+7
+00:00:13,280 --> 00:00:15,350
+expecting. Um I'm also I'm also really
+um shocked and delighted that uh the
+
+8
+00:00:15,350 --> 00:00:15,360
+um shocked and delighted that uh the
+ 
+
+9
+00:00:15,360 --> 00:00:17,109
+um shocked and delighted that uh the
+organizers put a talk about statistical
+
+10
+00:00:17,109 --> 00:00:17,119
+organizers put a talk about statistical
+ 
+
+11
+00:00:17,119 --> 00:00:19,189
+organizers put a talk about statistical
+evaluation of LLM's second on the
+
+12
+00:00:19,189 --> 00:00:19,199
+evaluation of LLM's second on the
+ 
+
+13
+00:00:19,199 --> 00:00:20,950
+evaluation of LLM's second on the
+program. Um hopefully I won't
+
+14
+00:00:20,950 --> 00:00:20,960
+program. Um hopefully I won't
+ 
+
+15
+00:00:20,960 --> 00:00:23,189
+program. Um hopefully I won't
+disappoint. So, okay. So, I'm Josh Saxs
+
+16
+00:00:23,189 --> 00:00:23,199
+disappoint. So, okay. So, I'm Josh Saxs
+ 
+
+17
+00:00:23,199 --> 00:00:25,269
+disappoint. So, okay. So, I'm Josh Saxs
+and I'm going to be talking about um how
+
+18
+00:00:25,269 --> 00:00:25,279
+and I'm going to be talking about um how
+ 
+
+19
+00:00:25,279 --> 00:00:27,670
+and I'm going to be talking about um how
+we evaluate uh autonomous systems for
+
+20
+00:00:27,670 --> 00:00:27,680
+we evaluate uh autonomous systems for
+ 
+
+21
+00:00:27,680 --> 00:00:30,550
+we evaluate uh autonomous systems for
+cyber defense. Um,
+
+22
+00:00:30,550 --> 00:00:30,560
+cyber defense. Um,
+ 
+
+23
+00:00:30,560 --> 00:00:33,670
+cyber defense. Um,
+okay. So, um, as of last Thursday, um,
+
+24
+00:00:33,670 --> 00:00:33,680
+okay. So, um, as of last Thursday, um,
+ 
+
+25
+00:00:33,680 --> 00:00:36,069
+okay. So, um, as of last Thursday, um,
+I'm I I'm at a startup that some friends
+
+26
+00:00:36,069 --> 00:00:36,079
+I'm I I'm at a startup that some friends
+ 
+
+27
+00:00:36,079 --> 00:00:38,549
+I'm I I'm at a startup that some friends
+and I co-founded. Um, before that, for
+
+28
+00:00:38,549 --> 00:00:38,559
+and I co-founded. Um, before that, for
+ 
+
+29
+00:00:38,559 --> 00:00:40,950
+and I co-founded. Um, before that, for
+about four years, I was, um, I was tech
+
+30
+00:00:40,950 --> 00:00:40,960
+about four years, I was, um, I was tech
+ 
+
+31
+00:00:40,960 --> 00:00:42,470
+about four years, I was, um, I was tech
+leading a lot of the AI security work at
+
+32
+00:00:42,470 --> 00:00:42,480
+leading a lot of the AI security work at
+ 
+
+33
+00:00:42,480 --> 00:00:45,030
+leading a lot of the AI security work at
+Meta. So, I I worked with the teams that
+
+34
+00:00:45,030 --> 00:00:45,040
+Meta. So, I I worked with the teams that
+ 
+
+35
+00:00:45,040 --> 00:00:47,510
+Meta. So, I I worked with the teams that
+are working on applying AI to the sort
+
+36
+00:00:47,510 --> 00:00:47,520
+are working on applying AI to the sort
+ 
+
+37
+00:00:47,520 --> 00:00:48,869
+are working on applying AI to the sort
+of broad range of security problems at
+
+38
+00:00:48,869 --> 00:00:48,879
+of broad range of security problems at
+ 
+
+39
+00:00:48,879 --> 00:00:51,029
+of broad range of security problems at
+Meta. I also worked on prompt injection
+
+40
+00:00:51,029 --> 00:00:51,039
+Meta. I also worked on prompt injection
+ 
+
+41
+00:00:51,039 --> 00:00:53,029
+Meta. I also worked on prompt injection
+defense and defending um, defending AI
+
+42
+00:00:53,029 --> 00:00:53,039
+defense and defending um, defending AI
+ 
+
+43
+00:00:53,039 --> 00:00:56,389
+defense and defending um, defending AI
+systems from from AI native attacks. um
+
+44
+00:00:56,389 --> 00:00:56,399
+systems from from AI native attacks. um
+ 
+
+45
+00:00:56,399 --> 00:00:57,750
+systems from from AI native attacks. um
+ancient history, you know, I sort of
+
+46
+00:00:57,750 --> 00:00:57,760
+ancient history, you know, I sort of
+ 
+
+47
+00:00:57,760 --> 00:01:02,470
+ancient history, you know, I sort of
+grew up in the hacker scene. Um okay, so
+
+48
+00:01:02,470 --> 00:01:02,480
+grew up in the hacker scene. Um okay, so
+ 
+
+49
+00:01:02,480 --> 00:01:06,550
+grew up in the hacker scene. Um okay, so
+echoing the the last talk. Um so as a so
+
+50
+00:01:06,550 --> 00:01:06,560
+echoing the the last talk. Um so as a so
+ 
+
+51
+00:01:06,560 --> 00:01:08,789
+echoing the the last talk. Um so as a so
+so I think probably we're all on the
+
+52
+00:01:08,789 --> 00:01:08,799
+so I think probably we're all on the
+ 
+
+53
+00:01:08,799 --> 00:01:11,350
+so I think probably we're all on the
+same page that um it's going to become
+
+54
+00:01:11,350 --> 00:01:11,360
+same page that um it's going to become
+ 
+
+55
+00:01:11,360 --> 00:01:14,550
+same page that um it's going to become
+much cheaper and much more easy to to do
+
+56
+00:01:14,550 --> 00:01:14,560
+much cheaper and much more easy to to do
+ 
+
+57
+00:01:14,560 --> 00:01:16,149
+much cheaper and much more easy to to do
+sophisticated cyber attacks going
+
+58
+00:01:16,149 --> 00:01:16,159
+sophisticated cyber attacks going
+ 
+
+59
+00:01:16,159 --> 00:01:17,749
+sophisticated cyber attacks going
+forwards, right? So um I think we can
+
+60
+00:01:17,749 --> 00:01:17,759
+forwards, right? So um I think we can
+ 
+
+61
+00:01:17,759 --> 00:01:20,230
+forwards, right? So um I think we can
+expect in the next few years um that
+
+62
+00:01:20,230 --> 00:01:20,240
+expect in the next few years um that
+ 
+
+63
+00:01:20,240 --> 00:01:22,550
+expect in the next few years um that
+attackers will go from manual laborers
+
+64
+00:01:22,550 --> 00:01:22,560
+attackers will go from manual laborers
+ 
+
+65
+00:01:22,560 --> 00:01:25,910
+attackers will go from manual laborers
+to managers of of AI agents that are
+
+66
+00:01:25,910 --> 00:01:25,920
+to managers of of AI agents that are
+ 
+
+67
+00:01:25,920 --> 00:01:27,910
+to managers of of AI agents that are
+doing attacks. Um this means that we
+
+68
+00:01:27,910 --> 00:01:27,920
+doing attacks. Um this means that we
+ 
+
+69
+00:01:27,920 --> 00:01:29,109
+doing attacks. Um this means that we
+have a big problem on our hands, right?
+
+70
+00:01:29,109 --> 00:01:29,119
+have a big problem on our hands, right?
+ 
+
+71
+00:01:29,119 --> 00:01:31,030
+have a big problem on our hands, right?
+So so there's many organizations that
+
+72
+00:01:31,030 --> 00:01:31,040
+So so there's many organizations that
+ 
+
+73
+00:01:31,040 --> 00:01:34,310
+So so there's many organizations that
+have um very few IT security staff at
+
+74
+00:01:34,310 --> 00:01:34,320
+have um very few IT security staff at
+ 
+
+75
+00:01:34,320 --> 00:01:35,990
+have um very few IT security staff at
+all. Um they're going to need autonomous
+
+76
+00:01:35,990 --> 00:01:36,000
+all. Um they're going to need autonomous
+ 
+
+77
+00:01:36,000 --> 00:01:37,429
+all. Um they're going to need autonomous
+cyber defenders. And then there's larger
+
+78
+00:01:37,429 --> 00:01:37,439
+cyber defenders. And then there's larger
+ 
+
+79
+00:01:37,439 --> 00:01:39,030
+cyber defenders. And then there's larger
+organizations also who I think are are
+
+80
+00:01:39,030 --> 00:01:39,040
+organizations also who I think are are
+ 
+
+81
+00:01:39,040 --> 00:01:40,390
+organizations also who I think are are
+really vulnerable. Um I think anybody
+
+82
+00:01:40,390 --> 00:01:40,400
+really vulnerable. Um I think anybody
+ 
+
+83
+00:01:40,400 --> 00:01:41,830
+really vulnerable. Um I think anybody
+who's worked in security has always felt
+
+84
+00:01:41,830 --> 00:01:41,840
+who's worked in security has always felt
+ 
+
+85
+00:01:41,840 --> 00:01:43,590
+who's worked in security has always felt
+understaffed. Um, so we're going to need
+
+86
+00:01:43,590 --> 00:01:43,600
+understaffed. Um, so we're going to need
+ 
+
+87
+00:01:43,600 --> 00:01:44,870
+understaffed. Um, so we're going to need
+to build we're going to need to get
+
+88
+00:01:44,870 --> 00:01:44,880
+to build we're going to need to get
+ 
+
+89
+00:01:44,880 --> 00:01:47,670
+to build we're going to need to get
+comfortable um with um the kind of
+
+90
+00:01:47,670 --> 00:01:47,680
+comfortable um with um the kind of
+ 
+
+91
+00:01:47,680 --> 00:01:49,190
+comfortable um with um the kind of
+proposition I'm suggesting on this
+
+92
+00:01:49,190 --> 00:01:49,200
+proposition I'm suggesting on this
+ 
+
+93
+00:01:49,200 --> 00:01:51,350
+proposition I'm suggesting on this
+slide, right? So an AI system completely
+
+94
+00:01:51,350 --> 00:01:51,360
+slide, right? So an AI system completely
+ 
+
+95
+00:01:51,360 --> 00:01:53,190
+slide, right? So an AI system completely
+autonomously making a dangerous decision
+
+96
+00:01:53,190 --> 00:01:53,200
+autonomously making a dangerous decision
+ 
+
+97
+00:01:53,200 --> 00:01:55,510
+autonomously making a dangerous decision
+like uh quarantining a production server
+
+98
+00:01:55,510 --> 00:01:55,520
+like uh quarantining a production server
+ 
+
+99
+00:01:55,520 --> 00:01:58,310
+like uh quarantining a production server
+because it looks compromised.
+
+100
+00:01:58,310 --> 00:01:58,320
+because it looks compromised.
+ 
+
+101
+00:01:58,320 --> 00:01:59,749
+because it looks compromised.
+Um we're going to need to get
+
+102
+00:01:59,749 --> 00:01:59,759
+Um we're going to need to get
+ 
+
+103
+00:01:59,759 --> 00:02:03,030
+Um we're going to need to get
+comfortable with AI systems um doing
+
+104
+00:02:03,030 --> 00:02:03,040
+comfortable with AI systems um doing
+ 
+
+105
+00:02:03,040 --> 00:02:05,670
+comfortable with AI systems um doing
+jobs that we only entrusted uh to humans
+
+106
+00:02:05,670 --> 00:02:05,680
+jobs that we only entrusted uh to humans
+ 
+
+107
+00:02:05,680 --> 00:02:07,429
+jobs that we only entrusted uh to humans
+in the past. Uh let's say there's some
+
+108
+00:02:07,429 --> 00:02:07,439
+in the past. Uh let's say there's some
+ 
+
+109
+00:02:07,439 --> 00:02:09,029
+in the past. Uh let's say there's some
+critical insider threat alert. We're
+
+110
+00:02:09,029 --> 00:02:09,039
+critical insider threat alert. We're
+ 
+
+111
+00:02:09,039 --> 00:02:10,710
+critical insider threat alert. We're
+going to need to trust an AI system when
+
+112
+00:02:10,710 --> 00:02:10,720
+going to need to trust an AI system when
+ 
+
+113
+00:02:10,720 --> 00:02:12,550
+going to need to trust an AI system when
+it says just trust me, bro. Uh, I
+
+114
+00:02:12,550 --> 00:02:12,560
+it says just trust me, bro. Uh, I
+ 
+
+115
+00:02:12,560 --> 00:02:13,670
+it says just trust me, bro. Uh, I
+investigated the alert. You don't have
+
+116
+00:02:13,670 --> 00:02:13,680
+investigated the alert. You don't have
+ 
+
+117
+00:02:13,680 --> 00:02:16,630
+investigated the alert. You don't have
+to worry about it. Um, and then we're
+
+118
+00:02:16,630 --> 00:02:16,640
+to worry about it. Um, and then we're
+ 
+
+119
+00:02:16,640 --> 00:02:17,430
+to worry about it. Um, and then we're
+ultimately going to have to get
+
+120
+00:02:17,430 --> 00:02:17,440
+ultimately going to have to get
+ 
+
+121
+00:02:17,440 --> 00:02:19,510
+ultimately going to have to get
+comfortable with um really sensitive
+
+122
+00:02:19,510 --> 00:02:19,520
+comfortable with um really sensitive
+ 
+
+123
+00:02:19,520 --> 00:02:22,309
+comfortable with um really sensitive
+actions, right? Like AI systems. Um,
+
+124
+00:02:22,309 --> 00:02:22,319
+actions, right? Like AI systems. Um,
+ 
+
+125
+00:02:22,319 --> 00:02:24,390
+actions, right? Like AI systems. Um,
+like imagine a hospital now that has,
+
+126
+00:02:24,390 --> 00:02:24,400
+like imagine a hospital now that has,
+ 
+
+127
+00:02:24,400 --> 00:02:26,710
+like imagine a hospital now that has,
+you know, two IT, you know, two IT
+
+128
+00:02:26,710 --> 00:02:26,720
+you know, two IT, you know, two IT
+ 
+
+129
+00:02:26,720 --> 00:02:28,949
+you know, two IT, you know, two IT
+security workers who can't possibly um
+
+130
+00:02:28,949 --> 00:02:28,959
+security workers who can't possibly um
+ 
+
+131
+00:02:28,959 --> 00:02:31,190
+security workers who can't possibly um
+cover the entire threat surface. Um,
+
+132
+00:02:31,190 --> 00:02:31,200
+cover the entire threat surface. Um,
+ 
+
+133
+00:02:31,200 --> 00:02:33,030
+cover the entire threat surface. Um,
+that hospital will need to be on need to
+
+134
+00:02:33,030 --> 00:02:33,040
+that hospital will need to be on need to
+ 
+
+135
+00:02:33,040 --> 00:02:35,670
+that hospital will need to be on need to
+be armed with um a team of AI agents,
+
+136
+00:02:35,670 --> 00:02:35,680
+be armed with um a team of AI agents,
+ 
+
+137
+00:02:35,680 --> 00:02:36,790
+be armed with um a team of AI agents,
+right, that's able to do things like
+
+138
+00:02:36,790 --> 00:02:36,800
+right, that's able to do things like
+ 
+
+139
+00:02:36,800 --> 00:02:38,470
+right, that's able to do things like
+quarantine the CTO's account when it
+
+140
+00:02:38,470 --> 00:02:38,480
+quarantine the CTO's account when it
+ 
+
+141
+00:02:38,480 --> 00:02:40,470
+quarantine the CTO's account when it
+looks like uh when it looks like it's
+
+142
+00:02:40,470 --> 00:02:40,480
+looks like uh when it looks like it's
+ 
+
+143
+00:02:40,480 --> 00:02:42,150
+looks like uh when it looks like it's
+compromised. patch a production
+
+144
+00:02:42,150 --> 00:02:42,160
+compromised. patch a production
+ 
+
+145
+00:02:42,160 --> 00:02:43,910
+compromised. patch a production
+codebase, shut down and compromise
+
+146
+00:02:43,910 --> 00:02:43,920
+codebase, shut down and compromise
+ 
+
+147
+00:02:43,920 --> 00:02:46,790
+codebase, shut down and compromise
+hosts. All that will have to have be um
+
+148
+00:02:46,790 --> 00:02:46,800
+hosts. All that will have to have be um
+ 
+
+149
+00:02:46,800 --> 00:02:48,309
+hosts. All that will have to have be um
+uh we'll have to we'll have to be able
+
+150
+00:02:48,309 --> 00:02:48,319
+uh we'll have to we'll have to be able
+ 
+
+151
+00:02:48,319 --> 00:02:49,670
+uh we'll have to we'll have to be able
+to trust agents to to take these kinds
+
+152
+00:02:49,670 --> 00:02:49,680
+to trust agents to to take these kinds
+ 
+
+153
+00:02:49,680 --> 00:02:52,309
+to trust agents to to take these kinds
+of sensitive decisions autonomously. Um
+
+154
+00:02:52,309 --> 00:02:52,319
+of sensitive decisions autonomously. Um
+ 
+
+155
+00:02:52,319 --> 00:02:53,589
+of sensitive decisions autonomously. Um
+and we have we have the additional
+
+156
+00:02:53,589 --> 00:02:53,599
+and we have we have the additional
+ 
+
+157
+00:02:53,599 --> 00:02:57,589
+and we have we have the additional
+problem that um that to actually verify
+
+158
+00:02:57,589 --> 00:02:57,599
+problem that um that to actually verify
+ 
+
+159
+00:02:57,599 --> 00:03:00,869
+problem that um that to actually verify
+that defensive autonomous systems work
+
+160
+00:03:00,869 --> 00:03:00,879
+that defensive autonomous systems work
+ 
+
+161
+00:03:00,879 --> 00:03:03,990
+that defensive autonomous systems work
+um requires that we somehow make sense
+
+162
+00:03:03,990 --> 00:03:04,000
+um requires that we somehow make sense
+ 
+
+163
+00:03:04,000 --> 00:03:06,149
+um requires that we somehow make sense
+of neural networks that have tens of
+
+164
+00:03:06,149 --> 00:03:06,159
+of neural networks that have tens of
+ 
+
+165
+00:03:06,159 --> 00:03:07,190
+of neural networks that have tens of
+billions of parameters that we don't
+
+166
+00:03:07,190 --> 00:03:07,200
+billions of parameters that we don't
+ 
+
+167
+00:03:07,200 --> 00:03:09,750
+billions of parameters that we don't
+fully understand. Right? So um you know
+
+168
+00:03:09,750 --> 00:03:09,760
+fully understand. Right? So um you know
+ 
+
+169
+00:03:09,760 --> 00:03:11,110
+fully understand. Right? So um you know
+we have two options, right? One is to
+
+170
+00:03:11,110 --> 00:03:11,120
+we have two options, right? One is to
+ 
+
+171
+00:03:11,120 --> 00:03:12,790
+we have two options, right? One is to
+one is mechanistic interpretability to
+
+172
+00:03:12,790 --> 00:03:12,800
+one is mechanistic interpretability to
+ 
+
+173
+00:03:12,800 --> 00:03:14,070
+one is mechanistic interpretability to
+sort of stare into the weight matrices
+
+174
+00:03:14,070 --> 00:03:14,080
+sort of stare into the weight matrices
+ 
+
+175
+00:03:14,080 --> 00:03:16,869
+sort of stare into the weight matrices
+of the neural networks and try to verify
+
+176
+00:03:16,869 --> 00:03:16,879
+of the neural networks and try to verify
+ 
+
+177
+00:03:16,879 --> 00:03:19,350
+of the neural networks and try to verify
+that they'll um correctly shut down the
+
+178
+00:03:19,350 --> 00:03:19,360
+that they'll um correctly shut down the
+ 
+
+179
+00:03:19,360 --> 00:03:21,270
+that they'll um correctly shut down the
+right production hosts um which may
+
+180
+00:03:21,270 --> 00:03:21,280
+right production hosts um which may
+ 
+
+181
+00:03:21,280 --> 00:03:24,229
+right production hosts um which may
+which may crash prod um or or or really
+
+182
+00:03:24,229 --> 00:03:24,239
+which may crash prod um or or or really
+ 
+
+183
+00:03:24,239 --> 00:03:26,869
+which may crash prod um or or or really
+the only real option is um to to
+
+184
+00:03:26,869 --> 00:03:26,879
+the only real option is um to to
+ 
+
+185
+00:03:26,879 --> 00:03:28,630
+the only real option is um to to
+understand these systems statistically
+
+186
+00:03:28,630 --> 00:03:28,640
+understand these systems statistically
+ 
+
+187
+00:03:28,640 --> 00:03:31,509
+understand these systems statistically
+and behaviorally.
+
+188
+00:03:31,509 --> 00:03:31,519
+and behaviorally.
+ 
+
+189
+00:03:31,519 --> 00:03:33,830
+and behaviorally.
+Um and so evaluation is like the big
+
+190
+00:03:33,830 --> 00:03:33,840
+Um and so evaluation is like the big
+ 
+
+191
+00:03:33,840 --> 00:03:36,550
+Um and so evaluation is like the big
+blocker I would say uh in in our field.
+
+192
+00:03:36,550 --> 00:03:36,560
+blocker I would say uh in in our field.
+ 
+
+193
+00:03:36,560 --> 00:03:39,190
+blocker I would say uh in in our field.
+Um, and this applies to every area of
+
+194
+00:03:39,190 --> 00:03:39,200
+Um, and this applies to every area of
+ 
+
+195
+00:03:39,200 --> 00:03:41,350
+Um, and this applies to every area of
+autonomy in in cyber security. So, it
+
+196
+00:03:41,350 --> 00:03:41,360
+autonomy in in cyber security. So, it
+ 
+
+197
+00:03:41,360 --> 00:03:43,270
+autonomy in in cyber security. So, it
+applies to autonomous code remediation.
+
+198
+00:03:43,270 --> 00:03:43,280
+applies to autonomous code remediation.
+ 
+
+199
+00:03:43,280 --> 00:03:44,550
+applies to autonomous code remediation.
+It applies to autonomous alert
+
+200
+00:03:44,550 --> 00:03:44,560
+It applies to autonomous alert
+ 
+
+201
+00:03:44,560 --> 00:03:46,070
+It applies to autonomous alert
+management. So, investigating and
+
+202
+00:03:46,070 --> 00:03:46,080
+management. So, investigating and
+ 
+
+203
+00:03:46,080 --> 00:03:47,670
+management. So, investigating and
+closing alerts, especially the most
+
+204
+00:03:47,670 --> 00:03:47,680
+closing alerts, especially the most
+ 
+
+205
+00:03:47,680 --> 00:03:50,149
+closing alerts, especially the most
+critical alerts. Um, managing access
+
+206
+00:03:50,149 --> 00:03:50,159
+critical alerts. Um, managing access
+ 
+
+207
+00:03:50,159 --> 00:03:51,670
+critical alerts. Um, managing access
+control, so making sure that we're
+
+208
+00:03:51,670 --> 00:03:51,680
+control, so making sure that we're
+ 
+
+209
+00:03:51,680 --> 00:03:52,710
+control, so making sure that we're
+neither underpermissioned or
+
+210
+00:03:52,710 --> 00:03:52,720
+neither underpermissioned or
+ 
+
+211
+00:03:52,720 --> 00:03:53,670
+neither underpermissioned or
+overpermissioned in a large
+
+212
+00:03:53,670 --> 00:03:53,680
+overpermissioned in a large
+ 
+
+213
+00:03:53,680 --> 00:03:55,990
+overpermissioned in a large
+organization. Um, cloud posture
+
+214
+00:03:55,990 --> 00:03:56,000
+organization. Um, cloud posture
+ 
+
+215
+00:03:56,000 --> 00:03:57,509
+organization. Um, cloud posture
+management, probably the list goes goes
+
+216
+00:03:57,509 --> 00:03:57,519
+management, probably the list goes goes
+ 
+
+217
+00:03:57,519 --> 00:03:59,910
+management, probably the list goes goes
+on here. Um, so we have a problem. So,
+
+218
+00:03:59,910 --> 00:03:59,920
+on here. Um, so we have a problem. So,
+ 
+
+219
+00:03:59,920 --> 00:04:01,270
+on here. Um, so we have a problem. So,
+we're a field in which we haven't taken
+
+220
+00:04:01,270 --> 00:04:01,280
+we're a field in which we haven't taken
+ 
+
+221
+00:04:01,280 --> 00:04:03,670
+we're a field in which we haven't taken
+evaluation all that seriously, I would
+
+222
+00:04:03,670 --> 00:04:03,680
+evaluation all that seriously, I would
+ 
+
+223
+00:04:03,680 --> 00:04:05,270
+evaluation all that seriously, I would
+say. Um and we're going to need to
+
+224
+00:04:05,270 --> 00:04:05,280
+say. Um and we're going to need to
+ 
+
+225
+00:04:05,280 --> 00:04:06,710
+say. Um and we're going to need to
+transition into becoming a field in
+
+226
+00:04:06,710 --> 00:04:06,720
+transition into becoming a field in
+ 
+
+227
+00:04:06,720 --> 00:04:09,350
+transition into becoming a field in
+which um we take it very seriously much
+
+228
+00:04:09,350 --> 00:04:09,360
+which um we take it very seriously much
+ 
+
+229
+00:04:09,360 --> 00:04:11,110
+which um we take it very seriously much
+like autonomous driving for example
+
+230
+00:04:11,110 --> 00:04:11,120
+like autonomous driving for example
+ 
+
+231
+00:04:11,120 --> 00:04:13,830
+like autonomous driving for example
+right so the majority of time or a
+
+232
+00:04:13,830 --> 00:04:13,840
+right so the majority of time or a
+ 
+
+233
+00:04:13,840 --> 00:04:15,589
+right so the majority of time or a
+significant amount of time in autonomous
+
+234
+00:04:15,589 --> 00:04:15,599
+significant amount of time in autonomous
+ 
+
+235
+00:04:15,599 --> 00:04:16,870
+significant amount of time in autonomous
+driving goes to verifying that the
+
+236
+00:04:16,870 --> 00:04:16,880
+driving goes to verifying that the
+ 
+
+237
+00:04:16,880 --> 00:04:18,789
+driving goes to verifying that the
+systems are safe right and in in the
+
+238
+00:04:18,789 --> 00:04:18,799
+systems are safe right and in in the
+ 
+
+239
+00:04:18,799 --> 00:04:19,670
+systems are safe right and in in the
+next few years we're going to have to
+
+240
+00:04:19,670 --> 00:04:19,680
+next few years we're going to have to
+ 
+
+241
+00:04:19,680 --> 00:04:20,949
+next few years we're going to have to
+move into that kind of modality within
+
+242
+00:04:20,949 --> 00:04:20,959
+move into that kind of modality within
+ 
+
+243
+00:04:20,959 --> 00:04:24,150
+move into that kind of modality within
+cyber security as well
+
+244
+00:04:24,150 --> 00:04:24,160
+cyber security as well
+ 
+
+245
+00:04:24,160 --> 00:04:26,469
+cyber security as well
+okay um so I'm going to start with the
+
+246
+00:04:26,469 --> 00:04:26,479
+okay um so I'm going to start with the
+ 
+
+247
+00:04:26,479 --> 00:04:28,790
+okay um so I'm going to start with the
+with the bad news um and then I want to
+
+248
+00:04:28,790 --> 00:04:28,800
+with the bad news um and then I want to
+ 
+
+249
+00:04:28,800 --> 00:04:30,390
+with the bad news um and then I want to
+talk about the sort of possible
+
+250
+00:04:30,390 --> 00:04:30,400
+talk about the sort of possible
+ 
+
+251
+00:04:30,400 --> 00:04:33,590
+talk about the sort of possible
+approaches to um evaluating autonomous
+
+252
+00:04:33,590 --> 00:04:33,600
+approaches to um evaluating autonomous
+ 
+
+253
+00:04:33,600 --> 00:04:36,310
+approaches to um evaluating autonomous
+AI cyber defense systems.
+
+254
+00:04:36,310 --> 00:04:36,320
+AI cyber defense systems.
+ 
+
+255
+00:04:36,320 --> 00:04:38,310
+AI cyber defense systems.
+Okay. So, so here's here's the here's
+
+256
+00:04:38,310 --> 00:04:38,320
+Okay. So, so here's here's the here's
+ 
+
+257
+00:04:38,320 --> 00:04:39,350
+Okay. So, so here's here's the here's
+the bad news. Here's the current
+
+258
+00:04:39,350 --> 00:04:39,360
+the bad news. Here's the current
+ 
+
+259
+00:04:39,360 --> 00:04:42,629
+the bad news. Here's the current
+situation. So, our um our current ground
+
+260
+00:04:42,629 --> 00:04:42,639
+situation. So, our um our current ground
+ 
+
+261
+00:04:42,639 --> 00:04:44,550
+situation. So, our um our current ground
+truth is just way too noisy uh to
+
+262
+00:04:44,550 --> 00:04:44,560
+truth is just way too noisy uh to
+ 
+
+263
+00:04:44,560 --> 00:04:46,629
+truth is just way too noisy uh to
+support the evaluations that we need.
+
+264
+00:04:46,629 --> 00:04:46,639
+support the evaluations that we need.
+ 
+
+265
+00:04:46,639 --> 00:04:48,469
+support the evaluations that we need.
+So, in in in classical machine learning
+
+266
+00:04:48,469 --> 00:04:48,479
+So, in in in classical machine learning
+ 
+
+267
+00:04:48,479 --> 00:04:49,909
+So, in in in classical machine learning
+for for folks here who have like sort of
+
+268
+00:04:49,909 --> 00:04:49,919
+for for folks here who have like sort of
+ 
+
+269
+00:04:49,919 --> 00:04:51,830
+for for folks here who have like sort of
+classical machine learning backgrounds,
+
+270
+00:04:51,830 --> 00:04:51,840
+classical machine learning backgrounds,
+ 
+
+271
+00:04:51,840 --> 00:04:54,710
+classical machine learning backgrounds,
+um you know, um our problem setting is
+
+272
+00:04:54,710 --> 00:04:54,720
+um you know, um our problem setting is
+ 
+
+273
+00:04:54,720 --> 00:04:56,710
+um you know, um our problem setting is
+one in which we have a transparent
+
+274
+00:04:56,710 --> 00:04:56,720
+one in which we have a transparent
+ 
+
+275
+00:04:56,720 --> 00:04:58,550
+one in which we have a transparent
+problem like we have an image and we
+
+276
+00:04:58,550 --> 00:04:58,560
+problem like we have an image and we
+ 
+
+277
+00:04:58,560 --> 00:05:00,469
+problem like we have an image and we
+want to know is there a cat or dog in
+
+278
+00:05:00,469 --> 00:05:00,479
+want to know is there a cat or dog in
+ 
+
+279
+00:05:00,479 --> 00:05:02,950
+want to know is there a cat or dog in
+this image, right? Um and we've
+
+280
+00:05:02,950 --> 00:05:02,960
+this image, right? Um and we've
+ 
+
+281
+00:05:02,960 --> 00:05:04,230
+this image, right? Um and we've
+developed a there's a bunch of classical
+
+282
+00:05:04,230 --> 00:05:04,240
+developed a there's a bunch of classical
+ 
+
+283
+00:05:04,240 --> 00:05:05,430
+developed a there's a bunch of classical
+sort of machine learning evaluation
+
+284
+00:05:05,430 --> 00:05:05,440
+sort of machine learning evaluation
+ 
+
+285
+00:05:05,440 --> 00:05:07,029
+sort of machine learning evaluation
+metrics that we've imported into cyber
+
+286
+00:05:07,029 --> 00:05:07,039
+metrics that we've imported into cyber
+ 
+
+287
+00:05:07,039 --> 00:05:09,029
+metrics that we've imported into cyber
+security uh that are sort of based on
+
+288
+00:05:09,029 --> 00:05:09,039
+security uh that are sort of based on
+ 
+
+289
+00:05:09,039 --> 00:05:10,629
+security uh that are sort of based on
+that premise that the ground truth is
+
+290
+00:05:10,629 --> 00:05:10,639
+that premise that the ground truth is
+ 
+
+291
+00:05:10,639 --> 00:05:12,390
+that premise that the ground truth is
+really transparent. So for so precision
+
+292
+00:05:12,390 --> 00:05:12,400
+really transparent. So for so precision
+ 
+
+293
+00:05:12,400 --> 00:05:15,909
+really transparent. So for so precision
+recall fcore uh rock curves area under
+
+294
+00:05:15,909 --> 00:05:15,919
+recall fcore uh rock curves area under
+ 
+
+295
+00:05:15,919 --> 00:05:17,670
+recall fcore uh rock curves area under
+rock area under precision recall all of
+
+296
+00:05:17,670 --> 00:05:17,680
+rock area under precision recall all of
+ 
+
+297
+00:05:17,680 --> 00:05:19,510
+rock area under precision recall all of
+this assumes uh that we have access to
+
+298
+00:05:19,510 --> 00:05:19,520
+this assumes uh that we have access to
+ 
+
+299
+00:05:19,520 --> 00:05:21,189
+this assumes uh that we have access to
+transparent labels and we're operating
+
+300
+00:05:21,189 --> 00:05:21,199
+transparent labels and we're operating
+ 
+
+301
+00:05:21,199 --> 00:05:24,390
+transparent labels and we're operating
+in an environment um in which um the
+
+302
+00:05:24,390 --> 00:05:24,400
+in an environment um in which um the
+ 
+
+303
+00:05:24,400 --> 00:05:27,670
+in an environment um in which um the
+truth is um of course in cyber security
+
+304
+00:05:27,670 --> 00:05:27,680
+truth is um of course in cyber security
+ 
+
+305
+00:05:27,680 --> 00:05:29,670
+truth is um of course in cyber security
+this just isn't the case. uh that's not
+
+306
+00:05:29,670 --> 00:05:29,680
+this just isn't the case. uh that's not
+ 
+
+307
+00:05:29,680 --> 00:05:31,510
+this just isn't the case. uh that's not
+the kind of discipline um that that we
+
+308
+00:05:31,510 --> 00:05:31,520
+the kind of discipline um that that we
+ 
+
+309
+00:05:31,520 --> 00:05:32,629
+the kind of discipline um that that we
+are that's not the kind of domain in
+
+310
+00:05:32,629 --> 00:05:32,639
+are that's not the kind of domain in
+ 
+
+311
+00:05:32,639 --> 00:05:35,189
+are that's not the kind of domain in
+which we're operating. Uh
+
+312
+00:05:35,189 --> 00:05:35,199
+which we're operating. Uh
+ 
+
+313
+00:05:35,199 --> 00:05:38,790
+which we're operating. Uh
+with respect to program security um
+
+314
+00:05:38,790 --> 00:05:38,800
+with respect to program security um
+ 
+
+315
+00:05:38,800 --> 00:05:40,629
+with respect to program security um
+an AI system may propose a patch to a
+
+316
+00:05:40,629 --> 00:05:40,639
+an AI system may propose a patch to a
+ 
+
+317
+00:05:40,639 --> 00:05:42,710
+an AI system may propose a patch to a
+critical program. Um how do we know if
+
+318
+00:05:42,710 --> 00:05:42,720
+critical program. Um how do we know if
+ 
+
+319
+00:05:42,720 --> 00:05:44,870
+critical program. Um how do we know if
+the patch works right all we really have
+
+320
+00:05:44,870 --> 00:05:44,880
+the patch works right all we really have
+ 
+
+321
+00:05:44,880 --> 00:05:45,909
+the patch works right all we really have
+you know we're up against sort of
+
+322
+00:05:45,909 --> 00:05:45,919
+you know we're up against sort of
+ 
+
+323
+00:05:45,919 --> 00:05:47,189
+you know we're up against sort of
+theoretical computer science problems
+
+324
+00:05:47,189 --> 00:05:47,199
+theoretical computer science problems
+ 
+
+325
+00:05:47,199 --> 00:05:48,629
+theoretical computer science problems
+like the halting problem and and and
+
+326
+00:05:48,629 --> 00:05:48,639
+like the halting problem and and and
+ 
+
+327
+00:05:48,639 --> 00:05:49,909
+like the halting problem and and and
+knowing whether it works and so so
+
+328
+00:05:49,909 --> 00:05:49,919
+knowing whether it works and so so
+ 
+
+329
+00:05:49,919 --> 00:05:51,430
+knowing whether it works and so so
+really we're using sort of heristics to
+
+330
+00:05:51,430 --> 00:05:51,440
+really we're using sort of heristics to
+ 
+
+331
+00:05:51,440 --> 00:05:52,950
+really we're using sort of heristics to
+to decide whether or not the patch works
+
+332
+00:05:52,950 --> 00:05:52,960
+to decide whether or not the patch works
+ 
+
+333
+00:05:52,960 --> 00:05:54,469
+to decide whether or not the patch works
+like passes the unit tests this sort of
+
+334
+00:05:54,469 --> 00:05:54,479
+like passes the unit tests this sort of
+ 
+
+335
+00:05:54,479 --> 00:05:57,510
+like passes the unit tests this sort of
+thing. um like what's malware, you know,
+
+336
+00:05:57,510 --> 00:05:57,520
+thing. um like what's malware, you know,
+ 
+
+337
+00:05:57,520 --> 00:05:59,029
+thing. um like what's malware, you know,
+and is a program malware, right? We're
+
+338
+00:05:59,029 --> 00:05:59,039
+and is a program malware, right? We're
+ 
+
+339
+00:05:59,039 --> 00:05:59,830
+and is a program malware, right? We're
+up against these same kind of
+
+340
+00:05:59,830 --> 00:05:59,840
+up against these same kind of
+ 
+
+341
+00:05:59,840 --> 00:06:01,749
+up against these same kind of
+theoretical problems and also more sort
+
+342
+00:06:01,749 --> 00:06:01,759
+theoretical problems and also more sort
+ 
+
+343
+00:06:01,759 --> 00:06:03,270
+theoretical problems and also more sort
+of ontological and epistemological
+
+344
+00:06:03,270 --> 00:06:03,280
+of ontological and epistemological
+ 
+
+345
+00:06:03,280 --> 00:06:04,390
+of ontological and epistemological
+problems of like, you know, the fact
+
+346
+00:06:04,390 --> 00:06:04,400
+problems of like, you know, the fact
+ 
+
+347
+00:06:04,400 --> 00:06:05,830
+problems of like, you know, the fact
+that many binaries are actually dual
+
+348
+00:06:05,830 --> 00:06:05,840
+that many binaries are actually dual
+ 
+
+349
+00:06:05,840 --> 00:06:08,710
+that many binaries are actually dual
+use. Um
+
+350
+00:06:08,710 --> 00:06:08,720
+use. Um
+ 
+
+351
+00:06:08,720 --> 00:06:12,950
+use. Um
+and um okay, so um actually, so in my
+
+352
+00:06:12,950 --> 00:06:12,960
+and um okay, so um actually, so in my
+ 
+
+353
+00:06:12,960 --> 00:06:14,870
+and um okay, so um actually, so in my
+experience actually building um
+
+354
+00:06:14,870 --> 00:06:14,880
+experience actually building um
+ 
+
+355
+00:06:14,880 --> 00:06:16,550
+experience actually building um
+autonomous systems for AI security, I've
+
+356
+00:06:16,550 --> 00:06:16,560
+autonomous systems for AI security, I've
+ 
+
+357
+00:06:16,560 --> 00:06:18,230
+autonomous systems for AI security, I've
+I've come up against this problem in
+
+358
+00:06:18,230 --> 00:06:18,240
+I've come up against this problem in
+ 
+
+359
+00:06:18,240 --> 00:06:20,550
+I've come up against this problem in
+many practical settings. So for example,
+
+360
+00:06:20,550 --> 00:06:20,560
+many practical settings. So for example,
+ 
+
+361
+00:06:20,560 --> 00:06:22,390
+many practical settings. So for example,
+um has anybody here actually tried to
+
+362
+00:06:22,390 --> 00:06:22,400
+um has anybody here actually tried to
+ 
+
+363
+00:06:22,400 --> 00:06:24,550
+um has anybody here actually tried to
+get ground truth and train a system to
+
+364
+00:06:24,550 --> 00:06:24,560
+get ground truth and train a system to
+ 
+
+365
+00:06:24,560 --> 00:06:27,909
+get ground truth and train a system to
+um follow up on alerts in a sock?
+
+366
+00:06:27,909 --> 00:06:27,919
+um follow up on alerts in a sock?
+ 
+
+367
+00:06:27,919 --> 00:06:29,510
+um follow up on alerts in a sock?
+Probably a few. So I I've spent a lot of
+
+368
+00:06:29,510 --> 00:06:29,520
+Probably a few. So I I've spent a lot of
+ 
+
+369
+00:06:29,520 --> 00:06:32,469
+Probably a few. So I I've spent a lot of
+time on this problem. Um so so when when
+
+370
+00:06:32,469 --> 00:06:32,479
+time on this problem. Um so so when when
+ 
+
+371
+00:06:32,479 --> 00:06:35,830
+time on this problem. Um so so when when
+you go and try to alert um uh AI
+
+372
+00:06:35,830 --> 00:06:35,840
+you go and try to alert um uh AI
+ 
+
+373
+00:06:35,840 --> 00:06:37,590
+you go and try to alert um uh AI
+investigation of of sock alerts and try
+
+374
+00:06:37,590 --> 00:06:37,600
+investigation of of sock alerts and try
+ 
+
+375
+00:06:37,600 --> 00:06:39,430
+investigation of of sock alerts and try
+to actually get ground truth on which
+
+376
+00:06:39,430 --> 00:06:39,440
+to actually get ground truth on which
+ 
+
+377
+00:06:39,440 --> 00:06:41,029
+to actually get ground truth on which
+alerts were actually worth investigating
+
+378
+00:06:41,029 --> 00:06:41,039
+alerts were actually worth investigating
+ 
+
+379
+00:06:41,039 --> 00:06:42,950
+alerts were actually worth investigating
+and which were false positives, uh
+
+380
+00:06:42,950 --> 00:06:42,960
+and which were false positives, uh
+ 
+
+381
+00:06:42,960 --> 00:06:43,990
+and which were false positives, uh
+you'll find that there's like a
+
+382
+00:06:43,990 --> 00:06:44,000
+you'll find that there's like a
+ 
+
+383
+00:06:44,000 --> 00:06:47,270
+you'll find that there's like a
+doubledigit disagreement rate uh between
+
+384
+00:06:47,270 --> 00:06:47,280
+doubledigit disagreement rate uh between
+ 
+
+385
+00:06:47,280 --> 00:06:48,870
+doubledigit disagreement rate uh between
+sock analysts, right? So, if you're
+
+386
+00:06:48,870 --> 00:06:48,880
+sock analysts, right? So, if you're
+ 
+
+387
+00:06:48,880 --> 00:06:51,189
+sock analysts, right? So, if you're
+trying to label a sock alert cat, like
+
+388
+00:06:51,189 --> 00:06:51,199
+trying to label a sock alert cat, like
+ 
+
+389
+00:06:51,199 --> 00:06:53,430
+trying to label a sock alert cat, like
+in in the fashion of cat versus dog, um
+
+390
+00:06:53,430 --> 00:06:53,440
+in in the fashion of cat versus dog, um
+ 
+
+391
+00:06:53,440 --> 00:06:54,790
+in in the fashion of cat versus dog, um
+you're going to see a ton of noise in
+
+392
+00:06:54,790 --> 00:06:54,800
+you're going to see a ton of noise in
+ 
+
+393
+00:06:54,800 --> 00:06:56,710
+you're going to see a ton of noise in
+those labels.
+
+394
+00:06:56,710 --> 00:06:56,720
+those labels.
+ 
+
+395
+00:06:56,720 --> 00:06:58,710
+those labels.
+Um if you're trying to build a system
+
+396
+00:06:58,710 --> 00:06:58,720
+Um if you're trying to build a system
+ 
+
+397
+00:06:58,720 --> 00:07:01,270
+Um if you're trying to build a system
+that automates access management, um and
+
+398
+00:07:01,270 --> 00:07:01,280
+that automates access management, um and
+ 
+
+399
+00:07:01,280 --> 00:07:04,070
+that automates access management, um and
+you want to know um who should really
+
+400
+00:07:04,070 --> 00:07:04,080
+you want to know um who should really
+ 
+
+401
+00:07:04,080 --> 00:07:05,670
+you want to know um who should really
+have access to that sensitive database
+
+402
+00:07:05,670 --> 00:07:05,680
+have access to that sensitive database
+ 
+
+403
+00:07:05,680 --> 00:07:07,830
+have access to that sensitive database
+table that has user messages in it, for
+
+404
+00:07:07,830 --> 00:07:07,840
+table that has user messages in it, for
+ 
+
+405
+00:07:07,840 --> 00:07:10,309
+table that has user messages in it, for
+example, um you'll find that access
+
+406
+00:07:10,309 --> 00:07:10,319
+example, um you'll find that access
+ 
+
+407
+00:07:10,319 --> 00:07:12,309
+example, um you'll find that access
+investigators will disagree at a double-
+
+408
+00:07:12,309 --> 00:07:12,319
+investigators will disagree at a double-
+ 
+
+409
+00:07:12,319 --> 00:07:13,830
+investigators will disagree at a double-
+digit rate, right, with respect to who
+
+410
+00:07:13,830 --> 00:07:13,840
+digit rate, right, with respect to who
+ 
+
+411
+00:07:13,840 --> 00:07:15,029
+digit rate, right, with respect to who
+should actually access what. So, if
+
+412
+00:07:15,029 --> 00:07:15,039
+should actually access what. So, if
+ 
+
+413
+00:07:15,039 --> 00:07:15,830
+should actually access what. So, if
+you're trying to train a machine
+
+414
+00:07:15,830 --> 00:07:15,840
+you're trying to train a machine
+ 
+
+415
+00:07:15,840 --> 00:07:17,350
+you're trying to train a machine
+learning system or evaluate its ability
+
+416
+00:07:17,350 --> 00:07:17,360
+learning system or evaluate its ability
+ 
+
+417
+00:07:17,360 --> 00:07:19,990
+learning system or evaluate its ability
+to automatically grant or deny access,
+
+418
+00:07:19,990 --> 00:07:20,000
+to automatically grant or deny access,
+ 
+
+419
+00:07:20,000 --> 00:07:21,510
+to automatically grant or deny access,
+um you're dealing with a ton of noise in
+
+420
+00:07:21,510 --> 00:07:21,520
+um you're dealing with a ton of noise in
+ 
+
+421
+00:07:21,520 --> 00:07:22,950
+um you're dealing with a ton of noise in
+your labels, which makes the evaluation
+
+422
+00:07:22,950 --> 00:07:22,960
+your labels, which makes the evaluation
+ 
+
+423
+00:07:22,960 --> 00:07:24,629
+your labels, which makes the evaluation
+problem very different than the problem
+
+424
+00:07:24,629 --> 00:07:24,639
+problem very different than the problem
+ 
+
+425
+00:07:24,639 --> 00:07:26,469
+problem very different than the problem
+of evaluating a computer system uh
+
+426
+00:07:26,469 --> 00:07:26,479
+of evaluating a computer system uh
+ 
+
+427
+00:07:26,479 --> 00:07:27,990
+of evaluating a computer system uh
+computer vision system that decides cat
+
+428
+00:07:27,990 --> 00:07:28,000
+computer vision system that decides cat
+ 
+
+429
+00:07:28,000 --> 00:07:30,150
+computer vision system that decides cat
+versus dog.
+
+430
+00:07:30,150 --> 00:07:30,160
+versus dog.
+ 
+
+431
+00:07:30,160 --> 00:07:32,070
+versus dog.
+Um so, I actually ran a little
+
+432
+00:07:32,070 --> 00:07:32,080
+Um so, I actually ran a little
+ 
+
+433
+00:07:32,080 --> 00:07:33,990
+Um so, I actually ran a little
+simulation for you guys uh to sort of
+
+434
+00:07:33,990 --> 00:07:34,000
+simulation for you guys uh to sort of
+ 
+
+435
+00:07:34,000 --> 00:07:35,749
+simulation for you guys uh to sort of
+try to demonstrate this this concept.
+
+436
+00:07:35,749 --> 00:07:35,759
+try to demonstrate this this concept.
+ 
+
+437
+00:07:35,759 --> 00:07:39,270
+try to demonstrate this this concept.
+Um, so if you so, so you should you
+
+438
+00:07:39,270 --> 00:07:39,280
+Um, so if you so, so you should you
+ 
+
+439
+00:07:39,280 --> 00:07:40,629
+Um, so if you so, so you should you
+should sort of track me down after this
+
+440
+00:07:40,629 --> 00:07:40,639
+should sort of track me down after this
+ 
+
+441
+00:07:40,639 --> 00:07:41,830
+should sort of track me down after this
+and I can tell you all the parameters of
+
+442
+00:07:41,830 --> 00:07:41,840
+and I can tell you all the parameters of
+ 
+
+443
+00:07:41,840 --> 00:07:43,589
+and I can tell you all the parameters of
+the simulation, but basically if you add
+
+444
+00:07:43,589 --> 00:07:43,599
+the simulation, but basically if you add
+ 
+
+445
+00:07:43,599 --> 00:07:45,909
+the simulation, but basically if you add
+like a 1% flip rate where you're
+
+446
+00:07:45,909 --> 00:07:45,919
+like a 1% flip rate where you're
+ 
+
+447
+00:07:45,919 --> 00:07:47,589
+like a 1% flip rate where you're
+flipping true positive to false positive
+
+448
+00:07:47,589 --> 00:07:47,599
+flipping true positive to false positive
+ 
+
+449
+00:07:47,599 --> 00:07:49,430
+flipping true positive to false positive
+and false positive to true positive in
+
+450
+00:07:49,430 --> 00:07:49,440
+and false positive to true positive in
+ 
+
+451
+00:07:49,440 --> 00:07:50,950
+and false positive to true positive in
+your labeled data with which you're
+
+452
+00:07:50,950 --> 00:07:50,960
+your labeled data with which you're
+ 
+
+453
+00:07:50,960 --> 00:07:52,469
+your labeled data with which you're
+using to evaluate your machine learning
+
+454
+00:07:52,469 --> 00:07:52,479
+using to evaluate your machine learning
+ 
+
+455
+00:07:52,479 --> 00:07:56,070
+using to evaluate your machine learning
+system, um, your ability to measure
+
+456
+00:07:56,070 --> 00:07:56,080
+system, um, your ability to measure
+ 
+
+457
+00:07:56,080 --> 00:07:57,110
+system, um, your ability to measure
+whether or not your system actually
+
+458
+00:07:57,110 --> 00:07:57,120
+whether or not your system actually
+ 
+
+459
+00:07:57,120 --> 00:07:58,710
+whether or not your system actually
+works just plummets as you as you add
+
+460
+00:07:58,710 --> 00:07:58,720
+works just plummets as you as you add
+ 
+
+461
+00:07:58,720 --> 00:08:01,589
+works just plummets as you as you add
+noise. Um so so in this simulation I'm
+
+462
+00:08:01,589 --> 00:08:01,599
+noise. Um so so in this simulation I'm
+ 
+
+463
+00:08:01,599 --> 00:08:02,710
+noise. Um so so in this simulation I'm
+imagining you have like a sort of
+
+464
+00:08:02,710 --> 00:08:02,720
+imagining you have like a sort of
+ 
+
+465
+00:08:02,720 --> 00:08:05,189
+imagining you have like a sort of
+perfect AI system uh that predicts for
+
+466
+00:08:05,189 --> 00:08:05,199
+perfect AI system uh that predicts for
+ 
+
+467
+00:08:05,199 --> 00:08:06,790
+perfect AI system uh that predicts for
+example whether or not a sock alert is a
+
+468
+00:08:06,790 --> 00:08:06,800
+example whether or not a sock alert is a
+ 
+
+469
+00:08:06,800 --> 00:08:09,270
+example whether or not a sock alert is a
+false positive. Um and as we add noise
+
+470
+00:08:09,270 --> 00:08:09,280
+false positive. Um and as we add noise
+ 
+
+471
+00:08:09,280 --> 00:08:11,670
+false positive. Um and as we add noise
+from you know.5% of the labels flipping
+
+472
+00:08:11,670 --> 00:08:11,680
+from you know.5% of the labels flipping
+ 
+
+473
+00:08:11,680 --> 00:08:14,710
+from you know.5% of the labels flipping
+to 3% of the label flipping um what we
+
+474
+00:08:14,710 --> 00:08:14,720
+to 3% of the label flipping um what we
+ 
+
+475
+00:08:14,720 --> 00:08:17,189
+to 3% of the label flipping um what we
+observe is that it so the system starts
+
+476
+00:08:17,189 --> 00:08:17,199
+observe is that it so the system starts
+ 
+
+477
+00:08:17,199 --> 00:08:19,350
+observe is that it so the system starts
+to look really inaccurate um and we sort
+
+478
+00:08:19,350 --> 00:08:19,360
+to look really inaccurate um and we sort
+ 
+
+479
+00:08:19,360 --> 00:08:21,029
+to look really inaccurate um and we sort
+of start to hit a noise ceiling around
+
+480
+00:08:21,029 --> 00:08:21,039
+of start to hit a noise ceiling around
+ 
+
+481
+00:08:21,039 --> 00:08:22,550
+of start to hit a noise ceiling around
+around above which we can't actually
+
+482
+00:08:22,550 --> 00:08:22,560
+around above which we can't actually
+ 
+
+483
+00:08:22,560 --> 00:08:25,510
+around above which we can't actually
+measure the system's ability to improve.
+
+484
+00:08:25,510 --> 00:08:25,520
+measure the system's ability to improve.
+ 
+
+485
+00:08:25,520 --> 00:08:27,350
+measure the system's ability to improve.
+Um, and I guess I would say overall that
+
+486
+00:08:27,350 --> 00:08:27,360
+Um, and I guess I would say overall that
+ 
+
+487
+00:08:27,360 --> 00:08:28,710
+Um, and I guess I would say overall that
+the sort of bad news here is that all of
+
+488
+00:08:28,710 --> 00:08:28,720
+the sort of bad news here is that all of
+ 
+
+489
+00:08:28,720 --> 00:08:30,469
+the sort of bad news here is that all of
+this uncertainty is just built into the
+
+490
+00:08:30,469 --> 00:08:30,479
+this uncertainty is just built into the
+ 
+
+491
+00:08:30,479 --> 00:08:31,909
+this uncertainty is just built into the
+environment when you're when you're when
+
+492
+00:08:31,909 --> 00:08:31,919
+environment when you're when you're when
+ 
+
+493
+00:08:31,919 --> 00:08:33,509
+environment when you're when you're when
+you're trying to build autonomous cyber
+
+494
+00:08:33,509 --> 00:08:33,519
+you're trying to build autonomous cyber
+ 
+
+495
+00:08:33,519 --> 00:08:35,509
+you're trying to build autonomous cyber
+defense systems. Um, so there these
+
+496
+00:08:35,509 --> 00:08:35,519
+defense systems. Um, so there these
+ 
+
+497
+00:08:35,519 --> 00:08:36,949
+defense systems. Um, so there these
+theoretical computer science problems
+
+498
+00:08:36,949 --> 00:08:36,959
+theoretical computer science problems
+ 
+
+499
+00:08:36,959 --> 00:08:38,469
+theoretical computer science problems
+like like the halting problem and state
+
+500
+00:08:38,469 --> 00:08:38,479
+like like the halting problem and state
+ 
+
+501
+00:08:38,479 --> 00:08:39,829
+like like the halting problem and state
+space explosion that makes it impossible
+
+502
+00:08:39,829 --> 00:08:39,839
+space explosion that makes it impossible
+ 
+
+503
+00:08:39,839 --> 00:08:41,589
+space explosion that makes it impossible
+to know whether or not a program is
+
+504
+00:08:41,589 --> 00:08:41,599
+to know whether or not a program is
+ 
+
+505
+00:08:41,599 --> 00:08:43,509
+to know whether or not a program is
+bug-free or whether or not a patch is
+
+506
+00:08:43,509 --> 00:08:43,519
+bug-free or whether or not a patch is
+ 
+
+507
+00:08:43,519 --> 00:08:45,590
+bug-free or whether or not a patch is
+going to crash prod. Um, there are these
+
+508
+00:08:45,590 --> 00:08:45,600
+going to crash prod. Um, there are these
+ 
+
+509
+00:08:45,600 --> 00:08:47,269
+going to crash prod. Um, there are these
+sort of societal problems of of of
+
+510
+00:08:47,269 --> 00:08:47,279
+sort of societal problems of of of
+ 
+
+511
+00:08:47,279 --> 00:08:49,430
+sort of societal problems of of of
+people disagreeing about about whether
+
+512
+00:08:49,430 --> 00:08:49,440
+people disagreeing about about whether
+ 
+
+513
+00:08:49,440 --> 00:08:51,910
+people disagreeing about about whether
+or not a binary is really malicious or
+
+514
+00:08:51,910 --> 00:08:51,920
+or not a binary is really malicious or
+ 
+
+515
+00:08:51,920 --> 00:08:53,750
+or not a binary is really malicious or
+not given many binaries are dual use.
+
+516
+00:08:53,750 --> 00:08:53,760
+not given many binaries are dual use.
+ 
+
+517
+00:08:53,760 --> 00:08:55,030
+not given many binaries are dual use.
+Um, and we're not going to we're not
+
+518
+00:08:55,030 --> 00:08:55,040
+Um, and we're not going to we're not
+ 
+
+519
+00:08:55,040 --> 00:08:57,030
+Um, and we're not going to we're not
+going to solve these problems um through
+
+520
+00:08:57,030 --> 00:08:57,040
+going to solve these problems um through
+ 
+
+521
+00:08:57,040 --> 00:08:58,389
+going to solve these problems um through
+more effort. We're always going to be
+
+522
+00:08:58,389 --> 00:08:58,399
+more effort. We're always going to be
+ 
+
+523
+00:08:58,399 --> 00:08:59,670
+more effort. We're always going to be
+operating in this very uncertain
+
+524
+00:08:59,670 --> 00:08:59,680
+operating in this very uncertain
+ 
+
+525
+00:08:59,680 --> 00:09:01,990
+operating in this very uncertain
+environment which um which begs the
+
+526
+00:09:01,990 --> 00:09:02,000
+environment which um which begs the
+ 
+
+527
+00:09:02,000 --> 00:09:02,949
+environment which um which begs the
+question, how are we going to ship
+
+528
+00:09:02,949 --> 00:09:02,959
+question, how are we going to ship
+ 
+
+529
+00:09:02,959 --> 00:09:05,750
+question, how are we going to ship
+systems that we can rely on uh which we
+
+530
+00:09:05,750 --> 00:09:05,760
+systems that we can rely on uh which we
+ 
+
+531
+00:09:05,760 --> 00:09:07,590
+systems that we can rely on uh which we
+can convince leaders of, which we can
+
+532
+00:09:07,590 --> 00:09:07,600
+can convince leaders of, which we can
+ 
+
+533
+00:09:07,600 --> 00:09:09,910
+can convince leaders of, which we can
+convince policy makers of uh that can
+
+534
+00:09:09,910 --> 00:09:09,920
+convince policy makers of uh that can
+ 
+
+535
+00:09:09,920 --> 00:09:11,910
+convince policy makers of uh that can
+actually manage the cyber security of
+
+536
+00:09:11,910 --> 00:09:11,920
+actually manage the cyber security of
+ 
+
+537
+00:09:11,920 --> 00:09:15,750
+actually manage the cyber security of
+organizations autonomously.
+
+538
+00:09:15,750 --> 00:09:15,760
+
+ 
+
+539
+00:09:15,760 --> 00:09:18,389
+
+Okay. Um so I think the good news is
+
+540
+00:09:18,389 --> 00:09:18,399
+Okay. Um so I think the good news is
+ 
+
+541
+00:09:18,399 --> 00:09:19,670
+Okay. Um so I think the good news is
+that I think that our framing has been
+
+542
+00:09:19,670 --> 00:09:19,680
+that I think that our framing has been
+ 
+
+543
+00:09:19,680 --> 00:09:21,990
+that I think that our framing has been
+really wrong in how we evaluate um
+
+544
+00:09:21,990 --> 00:09:22,000
+really wrong in how we evaluate um
+ 
+
+545
+00:09:22,000 --> 00:09:27,670
+really wrong in how we evaluate um
+autonomous cyber defense systems.
+
+546
+00:09:27,670 --> 00:09:27,680
+
+ 
+
+547
+00:09:27,680 --> 00:09:30,470
+
+Okay. So I don't know how many sort of
+
+548
+00:09:30,470 --> 00:09:30,480
+Okay. So I don't know how many sort of
+ 
+
+549
+00:09:30,480 --> 00:09:31,990
+Okay. So I don't know how many sort of
+classical ML people there are in the
+
+550
+00:09:31,990 --> 00:09:32,000
+classical ML people there are in the
+ 
+
+551
+00:09:32,000 --> 00:09:33,430
+classical ML people there are in the
+background but anybody who studied ML in
+
+552
+00:09:33,430 --> 00:09:33,440
+background but anybody who studied ML in
+ 
+
+553
+00:09:33,440 --> 00:09:34,630
+background but anybody who studied ML in
+college or has done a lot of machine
+
+554
+00:09:34,630 --> 00:09:34,640
+college or has done a lot of machine
+ 
+
+555
+00:09:34,640 --> 00:09:35,910
+college or has done a lot of machine
+learning is familiar with this concept
+
+556
+00:09:35,910 --> 00:09:35,920
+learning is familiar with this concept
+ 
+
+557
+00:09:35,920 --> 00:09:37,590
+learning is familiar with this concept
+of the oracle. Right. So this is the so
+
+558
+00:09:37,590 --> 00:09:37,600
+of the oracle. Right. So this is the so
+ 
+
+559
+00:09:37,600 --> 00:09:38,949
+of the oracle. Right. So this is the so
+I actually brought in a picture a real
+
+560
+00:09:38,949 --> 00:09:38,959
+I actually brought in a picture a real
+ 
+
+561
+00:09:38,959 --> 00:09:41,750
+I actually brought in a picture a real
+life picture of the oracle here. Um, so
+
+562
+00:09:41,750 --> 00:09:41,760
+life picture of the oracle here. Um, so
+ 
+
+563
+00:09:41,760 --> 00:09:43,990
+life picture of the oracle here. Um, so
+she so she sits there somewhere in the
+
+564
+00:09:43,990 --> 00:09:44,000
+she so she sits there somewhere in the
+ 
+
+565
+00:09:44,000 --> 00:09:45,590
+she so she sits there somewhere in the
+Mediterranean, right? And she's like
+
+566
+00:09:45,590 --> 00:09:45,600
+Mediterranean, right? And she's like
+ 
+
+567
+00:09:45,600 --> 00:09:48,230
+Mediterranean, right? And she's like
+she's like presented with objects and
+
+568
+00:09:48,230 --> 00:09:48,240
+she's like presented with objects and
+ 
+
+569
+00:09:48,240 --> 00:09:50,710
+she's like presented with objects and
+she labels them and those labels are
+
+570
+00:09:50,710 --> 00:09:50,720
+she labels them and those labels are
+ 
+
+571
+00:09:50,720 --> 00:09:53,430
+she labels them and those labels are
+true, right? So um you know on the left
+
+572
+00:09:53,430 --> 00:09:53,440
+true, right? So um you know on the left
+ 
+
+573
+00:09:53,440 --> 00:09:55,590
+true, right? So um you know on the left
+she's um
+
+574
+00:09:55,590 --> 00:09:55,600
+she's um
+ 
+
+575
+00:09:55,600 --> 00:09:58,230
+she's um
+uh she's she's labeling images as cat or
+
+576
+00:09:58,230 --> 00:09:58,240
+uh she's she's labeling images as cat or
+ 
+
+577
+00:09:58,240 --> 00:10:01,509
+uh she's she's labeling images as cat or
+airplane or banana. Um but um her
+
+578
+00:10:01,509 --> 00:10:01,519
+airplane or banana. Um but um her
+ 
+
+579
+00:10:01,519 --> 00:10:02,949
+airplane or banana. Um but um her
+process totally breaks down when when
+
+580
+00:10:02,949 --> 00:10:02,959
+process totally breaks down when when
+ 
+
+581
+00:10:02,959 --> 00:10:04,230
+process totally breaks down when when
+when we present her with these cyber
+
+582
+00:10:04,230 --> 00:10:04,240
+when we present her with these cyber
+ 
+
+583
+00:10:04,240 --> 00:10:05,990
+when we present her with these cyber
+security artifacts. [clears throat]
+
+584
+00:10:05,990 --> 00:10:06,000
+security artifacts. [clears throat]
+ 
+
+585
+00:10:06,000 --> 00:10:08,470
+security artifacts. [clears throat]
+Um but you know today when we measure
+
+586
+00:10:08,470 --> 00:10:08,480
+Um but you know today when we measure
+ 
+
+587
+00:10:08,480 --> 00:10:11,269
+Um but you know today when we measure
+the precision recall fcore rock curve of
+
+588
+00:10:11,269 --> 00:10:11,279
+the precision recall fcore rock curve of
+ 
+
+589
+00:10:11,279 --> 00:10:13,590
+the precision recall fcore rock curve of
+a of a of a security machine learning
+
+590
+00:10:13,590 --> 00:10:13,600
+a of a of a security machine learning
+ 
+
+591
+00:10:13,600 --> 00:10:15,110
+a of a of a security machine learning
+classifier we're assuming we have an
+
+592
+00:10:15,110 --> 00:10:15,120
+classifier we're assuming we have an
+ 
+
+593
+00:10:15,120 --> 00:10:16,790
+classifier we're assuming we have an
+oracle right so so this is the sort of
+
+594
+00:10:16,790 --> 00:10:16,800
+oracle right so so this is the sort of
+ 
+
+595
+00:10:16,800 --> 00:10:18,710
+oracle right so so this is the sort of
+evaluation model that we're using in
+
+596
+00:10:18,710 --> 00:10:18,720
+evaluation model that we're using in
+ 
+
+597
+00:10:18,720 --> 00:10:20,870
+evaluation model that we're using in
+evaluation autonomous evaluating cyber
+
+598
+00:10:20,870 --> 00:10:20,880
+evaluation autonomous evaluating cyber
+ 
+
+599
+00:10:20,880 --> 00:10:22,150
+evaluation autonomous evaluating cyber
+autonomous defense systems right now. So
+
+600
+00:10:22,150 --> 00:10:22,160
+autonomous defense systems right now. So
+ 
+
+601
+00:10:22,160 --> 00:10:23,910
+autonomous defense systems right now. So
+we we have sort of the ML system which
+
+602
+00:10:23,910 --> 00:10:23,920
+we we have sort of the ML system which
+ 
+
+603
+00:10:23,920 --> 00:10:25,990
+we we have sort of the ML system which
+could be an AI agent. It's just a black
+
+604
+00:10:25,990 --> 00:10:26,000
+could be an AI agent. It's just a black
+ 
+
+605
+00:10:26,000 --> 00:10:27,190
+could be an AI agent. It's just a black
+box. We're not we're not concerned about
+
+606
+00:10:27,190 --> 00:10:27,200
+box. We're not we're not concerned about
+ 
+
+607
+00:10:27,200 --> 00:10:29,910
+box. We're not we're not concerned about
+what's in the box and and and what it's
+
+608
+00:10:29,910 --> 00:10:29,920
+what's in the box and and and what it's
+ 
+
+609
+00:10:29,920 --> 00:10:32,310
+what's in the box and and and what it's
+doing is it's saying whether a security
+
+610
+00:10:32,310 --> 00:10:32,320
+doing is it's saying whether a security
+ 
+
+611
+00:10:32,320 --> 00:10:33,829
+doing is it's saying whether a security
+alert is a true positive or false
+
+612
+00:10:33,829 --> 00:10:33,839
+alert is a true positive or false
+ 
+
+613
+00:10:33,839 --> 00:10:36,069
+alert is a true positive or false
+positive. So it it outputs just a series
+
+614
+00:10:36,069 --> 00:10:36,079
+positive. So it it outputs just a series
+ 
+
+615
+00:10:36,079 --> 00:10:37,829
+positive. So it it outputs just a series
+of ones and zeros, right? So we sort of
+
+616
+00:10:37,829 --> 00:10:37,839
+of ones and zeros, right? So we sort of
+ 
+
+617
+00:10:37,839 --> 00:10:39,190
+of ones and zeros, right? So we sort of
+reduced its behavior to the to this
+
+618
+00:10:39,190 --> 00:10:39,200
+reduced its behavior to the to this
+ 
+
+619
+00:10:39,200 --> 00:10:40,870
+reduced its behavior to the to this
+series of ones and zeros. And then we
+
+620
+00:10:40,870 --> 00:10:40,880
+series of ones and zeros. And then we
+ 
+
+621
+00:10:40,880 --> 00:10:42,790
+series of ones and zeros. And then we
+have a set of labels. Now the labels are
+
+622
+00:10:42,790 --> 00:10:42,800
+have a set of labels. Now the labels are
+ 
+
+623
+00:10:42,800 --> 00:10:44,150
+have a set of labels. Now the labels are
+actually totally noisy and we can't
+
+624
+00:10:44,150 --> 00:10:44,160
+actually totally noisy and we can't
+ 
+
+625
+00:10:44,160 --> 00:10:46,069
+actually totally noisy and we can't
+trust them, right? The labels are like,
+
+626
+00:10:46,069 --> 00:10:46,079
+trust them, right? The labels are like,
+ 
+
+627
+00:10:46,079 --> 00:10:48,630
+trust them, right? The labels are like,
+you know, one one sock analyst who had a
+
+628
+00:10:48,630 --> 00:10:48,640
+you know, one one sock analyst who had a
+ 
+
+629
+00:10:48,640 --> 00:10:50,389
+you know, one one sock analyst who had a
+bad lunch, right, has decided that this
+
+630
+00:10:50,389 --> 00:10:50,399
+bad lunch, right, has decided that this
+ 
+
+631
+00:10:50,399 --> 00:10:51,990
+bad lunch, right, has decided that this
+this this this alert was not
+
+632
+00:10:51,990 --> 00:10:52,000
+this this this alert was not
+ 
+
+633
+00:10:52,000 --> 00:10:53,829
+this this this alert was not
+investigation worthy, right? Um so it's
+
+634
+00:10:53,829 --> 00:10:53,839
+investigation worthy, right? Um so it's
+ 
+
+635
+00:10:53,839 --> 00:10:55,269
+investigation worthy, right? Um so it's
+actually really noisy, but we assume
+
+636
+00:10:55,269 --> 00:10:55,279
+actually really noisy, but we assume
+ 
+
+637
+00:10:55,279 --> 00:10:56,630
+actually really noisy, but we assume
+that they are not noisy, right? Right.
+
+638
+00:10:56,630 --> 00:10:56,640
+that they are not noisy, right? Right.
+ 
+
+639
+00:10:56,640 --> 00:10:57,990
+that they are not noisy, right? Right.
+And then we can compute a bunch of
+
+640
+00:10:57,990 --> 00:10:58,000
+And then we can compute a bunch of
+ 
+
+641
+00:10:58,000 --> 00:10:59,990
+And then we can compute a bunch of
+summary statistics um which none of us
+
+642
+00:10:59,990 --> 00:11:00,000
+summary statistics um which none of us
+ 
+
+643
+00:11:00,000 --> 00:11:02,470
+summary statistics um which none of us
+actually trust very well in the field
+
+644
+00:11:02,470 --> 00:11:02,480
+actually trust very well in the field
+ 
+
+645
+00:11:02,480 --> 00:11:03,829
+actually trust very well in the field
+and and then and then we use those to
+
+646
+00:11:03,829 --> 00:11:03,839
+and and then and then we use those to
+ 
+
+647
+00:11:03,839 --> 00:11:04,949
+and and then and then we use those to
+present to our leadership and decide
+
+648
+00:11:04,949 --> 00:11:04,959
+present to our leadership and decide
+ 
+
+649
+00:11:04,959 --> 00:11:08,069
+present to our leadership and decide
+whether that system is worth deploying.
+
+650
+00:11:08,069 --> 00:11:08,079
+whether that system is worth deploying.
+ 
+
+651
+00:11:08,079 --> 00:11:11,269
+whether that system is worth deploying.
+Um so imagine how upset you'd be if you
+
+652
+00:11:11,269 --> 00:11:11,279
+Um so imagine how upset you'd be if you
+ 
+
+653
+00:11:11,279 --> 00:11:13,670
+Um so imagine how upset you'd be if you
+were an AI agent that has just generated
+
+654
+00:11:13,670 --> 00:11:13,680
+were an AI agent that has just generated
+ 
+
+655
+00:11:13,680 --> 00:11:15,990
+were an AI agent that has just generated
+100,000 tokens of thinking and tool
+
+656
+00:11:15,990 --> 00:11:16,000
+100,000 tokens of thinking and tool
+ 
+
+657
+00:11:16,000 --> 00:11:18,150
+100,000 tokens of thinking and tool
+calling and explanation of its behavior
+
+658
+00:11:18,150 --> 00:11:18,160
+calling and explanation of its behavior
+ 
+
+659
+00:11:18,160 --> 00:11:20,630
+calling and explanation of its behavior
+and information retrieval uh to finally
+
+660
+00:11:20,630 --> 00:11:20,640
+and information retrieval uh to finally
+ 
+
+661
+00:11:20,640 --> 00:11:22,150
+and information retrieval uh to finally
+produced a well explain explained
+
+662
+00:11:22,150 --> 00:11:22,160
+produced a well explain explained
+ 
+
+663
+00:11:22,160 --> 00:11:24,069
+produced a well explain explained
+decision about whether a sock alert was
+
+664
+00:11:24,069 --> 00:11:24,079
+decision about whether a sock alert was
+ 
+
+665
+00:11:24,079 --> 00:11:25,750
+decision about whether a sock alert was
+a false positive or true positive. and
+
+666
+00:11:25,750 --> 00:11:25,760
+a false positive or true positive. and
+ 
+
+667
+00:11:25,760 --> 00:11:27,829
+a false positive or true positive. and
+you reduced all that complexity and
+
+668
+00:11:27,829 --> 00:11:27,839
+you reduced all that complexity and
+ 
+
+669
+00:11:27,839 --> 00:11:30,069
+you reduced all that complexity and
+reasoning down to a single bit of of
+
+670
+00:11:30,069 --> 00:11:30,079
+reasoning down to a single bit of of
+ 
+
+671
+00:11:30,079 --> 00:11:32,150
+reasoning down to a single bit of of
+error information, right? Um so that's
+
+672
+00:11:32,150 --> 00:11:32,160
+error information, right? Um so that's
+ 
+
+673
+00:11:32,160 --> 00:11:33,509
+error information, right? Um so that's
+actually what we're often doing when we
+
+674
+00:11:33,509 --> 00:11:33,519
+actually what we're often doing when we
+ 
+
+675
+00:11:33,519 --> 00:11:35,509
+actually what we're often doing when we
+when we talk about evaluation of
+
+676
+00:11:35,509 --> 00:11:35,519
+when we talk about evaluation of
+ 
+
+677
+00:11:35,519 --> 00:11:37,190
+when we talk about evaluation of
+autonomous cyber defense systems. We're
+
+678
+00:11:37,190 --> 00:11:37,200
+autonomous cyber defense systems. We're
+ 
+
+679
+00:11:37,200 --> 00:11:38,550
+autonomous cyber defense systems. We're
+sort of reducing all that complexity
+
+680
+00:11:38,550 --> 00:11:38,560
+sort of reducing all that complexity
+ 
+
+681
+00:11:38,560 --> 00:11:40,949
+sort of reducing all that complexity
+down [music] um to a single bit of
+
+682
+00:11:40,949 --> 00:11:40,959
+down [music] um to a single bit of
+ 
+
+683
+00:11:40,959 --> 00:11:42,230
+down [music] um to a single bit of
+information which we don't actually like
+
+684
+00:11:42,230 --> 00:11:42,240
+information which we don't actually like
+ 
+
+685
+00:11:42,240 --> 00:11:43,269
+information which we don't actually like
+which we don't actually have a good
+
+686
+00:11:43,269 --> 00:11:43,279
+which we don't actually have a good
+ 
+
+687
+00:11:43,279 --> 00:11:46,630
+which we don't actually have a good
+label for. Imagine if we hired security
+
+688
+00:11:46,630 --> 00:11:46,640
+label for. Imagine if we hired security
+ 
+
+689
+00:11:46,640 --> 00:11:48,949
+label for. Imagine if we hired security
+engineers uh on the basis of these kinds
+
+690
+00:11:48,949 --> 00:11:48,959
+engineers uh on the basis of these kinds
+ 
+
+691
+00:11:48,959 --> 00:11:51,509
+engineers uh on the basis of these kinds
+of binary multiple choice tests and
+
+692
+00:11:51,509 --> 00:11:51,519
+of binary multiple choice tests and
+ 
+
+693
+00:11:51,519 --> 00:11:54,710
+of binary multiple choice tests and
+never never um interrogated their actual
+
+694
+00:11:54,710 --> 00:11:54,720
+never never um interrogated their actual
+ 
+
+695
+00:11:54,720 --> 00:11:55,829
+never never um interrogated their actual
+ability to reason under under
+
+696
+00:11:55,829 --> 00:11:55,839
+ability to reason under under
+ 
+
+697
+00:11:55,839 --> 00:11:56,949
+ability to reason under under
+uncertainty. That's sort of what we're
+
+698
+00:11:56,949 --> 00:11:56,959
+uncertainty. That's sort of what we're
+ 
+
+699
+00:11:56,959 --> 00:11:58,310
+uncertainty. That's sort of what we're
+doing with with AI systems. At least
+
+700
+00:11:58,310 --> 00:11:58,320
+doing with with AI systems. At least
+ 
+
+701
+00:11:58,320 --> 00:11:59,829
+doing with with AI systems. At least
+that's the sort of lingua frank in terms
+
+702
+00:11:59,829 --> 00:11:59,839
+that's the sort of lingua frank in terms
+ 
+
+703
+00:11:59,839 --> 00:12:01,670
+that's the sort of lingua frank in terms
+of how we talk about evaluation in our
+
+704
+00:12:01,670 --> 00:12:01,680
+of how we talk about evaluation in our
+ 
+
+705
+00:12:01,680 --> 00:12:04,710
+of how we talk about evaluation in our
+field.
+
+706
+00:12:04,710 --> 00:12:04,720
+
+ 
+
+707
+00:12:04,720 --> 00:12:06,870
+
+Okay. So here's the thesis of my talk.
+
+708
+00:12:06,870 --> 00:12:06,880
+Okay. So here's the thesis of my talk.
+ 
+
+709
+00:12:06,880 --> 00:12:08,629
+Okay. So here's the thesis of my talk.
+So I think these classical metrics that
+
+710
+00:12:08,629 --> 00:12:08,639
+So I think these classical metrics that
+ 
+
+711
+00:12:08,639 --> 00:12:11,509
+So I think these classical metrics that
+we typically use um I think they're
+
+712
+00:12:11,509 --> 00:12:11,519
+we typically use um I think they're
+ 
+
+713
+00:12:11,519 --> 00:12:13,110
+we typically use um I think they're
+important. I think we need them. I think
+
+714
+00:12:13,110 --> 00:12:13,120
+important. I think we need them. I think
+ 
+
+715
+00:12:13,120 --> 00:12:14,870
+important. I think we need them. I think
+we need to we need to acknowledge and
+
+716
+00:12:14,870 --> 00:12:14,880
+we need to we need to acknowledge and
+ 
+
+717
+00:12:14,880 --> 00:12:17,190
+we need to we need to acknowledge and
+sort of bake in how noisy they are in in
+
+718
+00:12:17,190 --> 00:12:17,200
+sort of bake in how noisy they are in in
+ 
+
+719
+00:12:17,200 --> 00:12:19,910
+sort of bake in how noisy they are in in
+how we evaluate our ML systems. Um but
+
+720
+00:12:19,910 --> 00:12:19,920
+how we evaluate our ML systems. Um but
+ 
+
+721
+00:12:19,920 --> 00:12:21,829
+how we evaluate our ML systems. Um but
+then I also think we need to really lean
+
+722
+00:12:21,829 --> 00:12:21,839
+then I also think we need to really lean
+ 
+
+723
+00:12:21,839 --> 00:12:23,990
+then I also think we need to really lean
+in to understanding how our agents are
+
+724
+00:12:23,990 --> 00:12:24,000
+in to understanding how our agents are
+ 
+
+725
+00:12:24,000 --> 00:12:25,829
+in to understanding how our agents are
+reasoning and behaving and evaluating
+
+726
+00:12:25,829 --> 00:12:25,839
+reasoning and behaving and evaluating
+ 
+
+727
+00:12:25,839 --> 00:12:28,150
+reasoning and behaving and evaluating
+that also as they make decisions. Um I
+
+728
+00:12:28,150 --> 00:12:28,160
+that also as they make decisions. Um I
+ 
+
+729
+00:12:28,160 --> 00:12:29,509
+that also as they make decisions. Um I
+think I think I think our mental model
+
+730
+00:12:29,509 --> 00:12:29,519
+think I think I think our mental model
+ 
+
+731
+00:12:29,519 --> 00:12:31,509
+think I think I think our mental model
+should be that that when we hire a
+
+732
+00:12:31,509 --> 00:12:31,519
+should be that that when we hire a
+ 
+
+733
+00:12:31,519 --> 00:12:34,069
+should be that that when we hire a
+security engineer, we're hiring them to
+
+734
+00:12:34,069 --> 00:12:34,079
+security engineer, we're hiring them to
+ 
+
+735
+00:12:34,079 --> 00:12:37,110
+security engineer, we're hiring them to
+make good well- validated decisions
+
+736
+00:12:37,110 --> 00:12:37,120
+make good well- validated decisions
+ 
+
+737
+00:12:37,120 --> 00:12:38,949
+make good well- validated decisions
+under the extreme uncertainty of our
+
+738
+00:12:38,949 --> 00:12:38,959
+under the extreme uncertainty of our
+ 
+
+739
+00:12:38,959 --> 00:12:41,430
+under the extreme uncertainty of our
+fields. And when we hire an AI agent,
+
+740
+00:12:41,430 --> 00:12:41,440
+fields. And when we hire an AI agent,
+ 
+
+741
+00:12:41,440 --> 00:12:42,870
+fields. And when we hire an AI agent,
+we're assessing their ability to do the
+
+742
+00:12:42,870 --> 00:12:42,880
+we're assessing their ability to do the
+ 
+
+743
+00:12:42,880 --> 00:12:45,990
+we're assessing their ability to do the
+same.
+
+744
+00:12:45,990 --> 00:12:46,000
+
+ 
+
+745
+00:12:46,000 --> 00:12:48,949
+
+Okay. So, here's how um in my own work,
+
+746
+00:12:48,949 --> 00:12:48,959
+Okay. So, here's how um in my own work,
+ 
+
+747
+00:12:48,959 --> 00:12:52,150
+Okay. So, here's how um in my own work,
+I've um operationalized this. Um I'd
+
+748
+00:12:52,150 --> 00:12:52,160
+I've um operationalized this. Um I'd
+ 
+
+749
+00:12:52,160 --> 00:12:53,509
+I've um operationalized this. Um I'd
+love to hear feedback after this talk
+
+750
+00:12:53,509 --> 00:12:53,519
+love to hear feedback after this talk
+ 
+
+751
+00:12:53,519 --> 00:12:54,790
+love to hear feedback after this talk
+just to hear if other folks are thinking
+
+752
+00:12:54,790 --> 00:12:54,800
+just to hear if other folks are thinking
+ 
+
+753
+00:12:54,800 --> 00:12:58,389
+just to hear if other folks are thinking
+in the same in in in the same direction.
+
+754
+00:12:58,389 --> 00:12:58,399
+in the same in in in the same direction.
+ 
+
+755
+00:12:58,399 --> 00:13:01,110
+in the same in in in the same direction.
+Okay. So, so we need to evaluate our
+
+756
+00:13:01,110 --> 00:13:01,120
+Okay. So, so we need to evaluate our
+ 
+
+757
+00:13:01,120 --> 00:13:02,389
+Okay. So, so we need to evaluate our
+agents as we move to deploy them
+
+758
+00:13:02,389 --> 00:13:02,399
+agents as we move to deploy them
+ 
+
+759
+00:13:02,399 --> 00:13:05,350
+agents as we move to deploy them
+autonomously as we would humans um who
+
+760
+00:13:05,350 --> 00:13:05,360
+autonomously as we would humans um who
+ 
+
+761
+00:13:05,360 --> 00:13:08,230
+autonomously as we would humans um who
+are deciding under uncertainty. Um, so
+
+762
+00:13:08,230 --> 00:13:08,240
+are deciding under uncertainty. Um, so
+ 
+
+763
+00:13:08,240 --> 00:13:09,750
+are deciding under uncertainty. Um, so
+we need to ask questions like how high
+
+764
+00:13:09,750 --> 00:13:09,760
+we need to ask questions like how high
+ 
+
+765
+00:13:09,760 --> 00:13:11,269
+we need to ask questions like how high
+quality are is the agent's reasoning
+
+766
+00:13:11,269 --> 00:13:11,279
+quality are is the agent's reasoning
+ 
+
+767
+00:13:11,279 --> 00:13:13,350
+quality are is the agent's reasoning
+process under complex ambiguous
+
+768
+00:13:13,350 --> 00:13:13,360
+process under complex ambiguous
+ 
+
+769
+00:13:13,360 --> 00:13:15,350
+process under complex ambiguous
+circumstances. Did the agent come to the
+
+770
+00:13:15,350 --> 00:13:15,360
+circumstances. Did the agent come to the
+ 
+
+771
+00:13:15,360 --> 00:13:16,710
+circumstances. Did the agent come to the
+same conclusions as our as our best
+
+772
+00:13:16,710 --> 00:13:16,720
+same conclusions as our as our best
+ 
+
+773
+00:13:16,720 --> 00:13:17,990
+same conclusions as our as our best
+security engineers in the last 10
+
+774
+00:13:17,990 --> 00:13:18,000
+security engineers in the last 10
+ 
+
+775
+00:13:18,000 --> 00:13:19,670
+security engineers in the last 10
+incidents? And if not, why not? And was
+
+776
+00:13:19,670 --> 00:13:19,680
+incidents? And if not, why not? And was
+ 
+
+777
+00:13:19,680 --> 00:13:21,590
+incidents? And if not, why not? And was
+the agent actually right? And actually,
+
+778
+00:13:21,590 --> 00:13:21,600
+the agent actually right? And actually,
+ 
+
+779
+00:13:21,600 --> 00:13:24,310
+the agent actually right? And actually,
+at least in my work, uh, many times we
+
+780
+00:13:24,310 --> 00:13:24,320
+at least in my work, uh, many times we
+ 
+
+781
+00:13:24,320 --> 00:13:25,590
+at least in my work, uh, many times we
+find that agents are actually right
+
+782
+00:13:25,590 --> 00:13:25,600
+find that agents are actually right
+ 
+
+783
+00:13:25,600 --> 00:13:28,310
+find that agents are actually right
+against human labelers.
+
+784
+00:13:28,310 --> 00:13:28,320
+against human labelers.
+ 
+
+785
+00:13:28,320 --> 00:13:30,550
+against human labelers.
+Um, in a very practical and formal
+
+786
+00:13:30,550 --> 00:13:30,560
+Um, in a very practical and formal
+ 
+
+787
+00:13:30,560 --> 00:13:32,550
+Um, in a very practical and formal
+sense, what this means is that we need
+
+788
+00:13:32,550 --> 00:13:32,560
+sense, what this means is that we need
+ 
+
+789
+00:13:32,560 --> 00:13:34,310
+sense, what this means is that we need
+to define a kind of interview protocol,
+
+790
+00:13:34,310 --> 00:13:34,320
+to define a kind of interview protocol,
+ 
+
+791
+00:13:34,320 --> 00:13:36,470
+to define a kind of interview protocol,
+uh, like a like a rubric for our agents.
+
+792
+00:13:36,470 --> 00:13:36,480
+uh, like a like a rubric for our agents.
+ 
+
+793
+00:13:36,480 --> 00:13:37,910
+uh, like a like a rubric for our agents.
+we need we need to define what good
+
+794
+00:13:37,910 --> 00:13:37,920
+we need we need to define what good
+ 
+
+795
+00:13:37,920 --> 00:13:39,110
+we need we need to define what good
+looks like not just in terms of the
+
+796
+00:13:39,110 --> 00:13:39,120
+looks like not just in terms of the
+ 
+
+797
+00:13:39,120 --> 00:13:40,870
+looks like not just in terms of the
+outcome but in terms of the process that
+
+798
+00:13:40,870 --> 00:13:40,880
+outcome but in terms of the process that
+ 
+
+799
+00:13:40,880 --> 00:13:41,829
+outcome but in terms of the process that
+they're taking to solve the highly
+
+800
+00:13:41,829 --> 00:13:41,839
+they're taking to solve the highly
+ 
+
+801
+00:13:41,839 --> 00:13:43,030
+they're taking to solve the highly
+ambiguous problems that we're going to
+
+802
+00:13:43,030 --> 00:13:43,040
+ambiguous problems that we're going to
+ 
+
+803
+00:13:43,040 --> 00:13:44,629
+ambiguous problems that we're going to
+need our agents to solve. So for
+
+804
+00:13:44,629 --> 00:13:44,639
+need our agents to solve. So for
+ 
+
+805
+00:13:44,639 --> 00:13:47,030
+need our agents to solve. So for
+example, did they did they you know
+
+806
+00:13:47,030 --> 00:13:47,040
+example, did they did they you know
+ 
+
+807
+00:13:47,040 --> 00:13:48,790
+example, did they did they you know
+let's say we're looking at agents uh in
+
+808
+00:13:48,790 --> 00:13:48,800
+let's say we're looking at agents uh in
+ 
+
+809
+00:13:48,800 --> 00:13:50,470
+let's say we're looking at agents uh in
+in an access management setting and
+
+810
+00:13:50,470 --> 00:13:50,480
+in an access management setting and
+ 
+
+811
+00:13:50,480 --> 00:13:52,310
+in an access management setting and
+we're asking did did they correctly
+
+812
+00:13:52,310 --> 00:13:52,320
+we're asking did did they correctly
+ 
+
+813
+00:13:52,320 --> 00:13:56,870
+we're asking did did they correctly
+grant access uh you know to a contractor
+
+814
+00:13:56,870 --> 00:13:56,880
+grant access uh you know to a contractor
+ 
+
+815
+00:13:56,880 --> 00:13:59,110
+grant access uh you know to a contractor
+uh you know with respect to a database
+
+816
+00:13:59,110 --> 00:13:59,120
+uh you know with respect to a database
+ 
+
+817
+00:13:59,120 --> 00:14:00,470
+uh you know with respect to a database
+table containing millions of user
+
+818
+00:14:00,470 --> 00:14:00,480
+table containing millions of user
+ 
+
+819
+00:14:00,480 --> 00:14:02,790
+table containing millions of user
+messages. Um we don't just want to ask
+
+820
+00:14:02,790 --> 00:14:02,800
+messages. Um we don't just want to ask
+ 
+
+821
+00:14:02,800 --> 00:14:03,670
+messages. Um we don't just want to ask
+did they make the right decision. We
+
+822
+00:14:03,670 --> 00:14:03,680
+did they make the right decision. We
+ 
+
+823
+00:14:03,680 --> 00:14:04,790
+did they make the right decision. We
+also want to ask did they gather the
+
+824
+00:14:04,790 --> 00:14:04,800
+also want to ask did they gather the
+ 
+
+825
+00:14:04,800 --> 00:14:06,069
+also want to ask did they gather the
+right evidence? Did they reason
+
+826
+00:14:06,069 --> 00:14:06,079
+right evidence? Did they reason
+ 
+
+827
+00:14:06,079 --> 00:14:07,430
+right evidence? Did they reason
+correctly from first principles about
+
+828
+00:14:07,430 --> 00:14:07,440
+correctly from first principles about
+ 
+
+829
+00:14:07,440 --> 00:14:09,269
+correctly from first principles about
+that evidence? Did they justify their
+
+830
+00:14:09,269 --> 00:14:09,279
+that evidence? Did they justify their
+ 
+
+831
+00:14:09,279 --> 00:14:10,310
+that evidence? Did they justify their
+decisions when explaining their
+
+832
+00:14:10,310 --> 00:14:10,320
+decisions when explaining their
+ 
+
+833
+00:14:10,320 --> 00:14:12,310
+decisions when explaining their
+decisions correctly? Uh did they explain
+
+834
+00:14:12,310 --> 00:14:12,320
+decisions correctly? Uh did they explain
+ 
+
+835
+00:14:12,320 --> 00:14:13,829
+decisions correctly? Uh did they explain
+clearly? Um much like we'd be
+
+836
+00:14:13,829 --> 00:14:13,839
+clearly? Um much like we'd be
+ 
+
+837
+00:14:13,839 --> 00:14:16,389
+clearly? Um much like we'd be
+interviewing a human. Um and and then we
+
+838
+00:14:16,389 --> 00:14:16,399
+interviewing a human. Um and and then we
+ 
+
+839
+00:14:16,399 --> 00:14:19,110
+interviewing a human. Um and and then we
+want to then we want to grade th those
+
+840
+00:14:19,110 --> 00:14:19,120
+want to then we want to grade th those
+ 
+
+841
+00:14:19,120 --> 00:14:21,189
+want to then we want to grade th those
+agent trajectories at scale u based on
+
+842
+00:14:21,189 --> 00:14:21,199
+agent trajectories at scale u based on
+ 
+
+843
+00:14:21,199 --> 00:14:22,470
+agent trajectories at scale u based on
+the rubric and a very well- definfined
+
+844
+00:14:22,470 --> 00:14:22,480
+the rubric and a very well- definfined
+ 
+
+845
+00:14:22,480 --> 00:14:24,629
+the rubric and a very well- definfined
+rubric protocol. Um and then because
+
+846
+00:14:24,629 --> 00:14:24,639
+rubric protocol. Um and then because
+ 
+
+847
+00:14:24,639 --> 00:14:26,870
+rubric protocol. Um and then because
+that doesn't scale, we we need to train
+
+848
+00:14:26,870 --> 00:14:26,880
+that doesn't scale, we we need to train
+ 
+
+849
+00:14:26,880 --> 00:14:28,790
+that doesn't scale, we we need to train
+um an AI system to actually automate
+
+850
+00:14:28,790 --> 00:14:28,800
+um an AI system to actually automate
+ 
+
+851
+00:14:28,800 --> 00:14:30,150
+um an AI system to actually automate
+that process of reviewing agent
+
+852
+00:14:30,150 --> 00:14:30,160
+that process of reviewing agent
+ 
+
+853
+00:14:30,160 --> 00:14:31,910
+that process of reviewing agent
+trajectories. Um and then once we
+
+854
+00:14:31,910 --> 00:14:31,920
+trajectories. Um and then once we
+ 
+
+855
+00:14:31,920 --> 00:14:34,389
+trajectories. Um and then once we
+deploy, we need to monitor um and see if
+
+856
+00:14:34,389 --> 00:14:34,399
+deploy, we need to monitor um and see if
+ 
+
+857
+00:14:34,399 --> 00:14:36,150
+deploy, we need to monitor um and see if
+the agent has gone off the rails. Um so
+
+858
+00:14:36,150 --> 00:14:36,160
+the agent has gone off the rails. Um so
+ 
+
+859
+00:14:36,160 --> 00:14:37,509
+the agent has gone off the rails. Um so
+here here's sort of a worked example of
+
+860
+00:14:37,509 --> 00:14:37,519
+here here's sort of a worked example of
+ 
+
+861
+00:14:37,519 --> 00:14:38,949
+here here's sort of a worked example of
+applying this to an access management
+
+862
+00:14:38,949 --> 00:14:38,959
+applying this to an access management
+ 
+
+863
+00:14:38,959 --> 00:14:41,829
+applying this to an access management
+system uh that monitors uh granting
+
+864
+00:14:41,829 --> 00:14:41,839
+system uh that monitors uh granting
+ 
+
+865
+00:14:41,839 --> 00:14:43,509
+system uh that monitors uh granting
+access to sensitive resources within a
+
+866
+00:14:43,509 --> 00:14:43,519
+access to sensitive resources within a
+ 
+
+867
+00:14:43,519 --> 00:14:45,509
+access to sensitive resources within a
+company. Um we look at some at at
+
+868
+00:14:45,509 --> 00:14:45,519
+company. Um we look at some at at
+ 
+
+869
+00:14:45,519 --> 00:14:47,430
+company. Um we look at some at at
+criteria like evidence gathering policy
+
+870
+00:14:47,430 --> 00:14:47,440
+criteria like evidence gathering policy
+ 
+
+871
+00:14:47,440 --> 00:14:49,509
+criteria like evidence gathering policy
+understanding first principles uh
+
+872
+00:14:49,509 --> 00:14:49,519
+understanding first principles uh
+ 
+
+873
+00:14:49,519 --> 00:14:52,069
+understanding first principles uh
+reasoning um whether the agent is is
+
+874
+00:14:52,069 --> 00:14:52,079
+reasoning um whether the agent is is
+ 
+
+875
+00:14:52,079 --> 00:14:53,910
+reasoning um whether the agent is is
+sort of outputting logs in an audit
+
+876
+00:14:53,910 --> 00:14:53,920
+sort of outputting logs in an audit
+ 
+
+877
+00:14:53,920 --> 00:14:55,590
+sort of outputting logs in an audit
+auditable way and decision and but also
+
+878
+00:14:55,590 --> 00:14:55,600
+auditable way and decision and but also
+ 
+
+879
+00:14:55,600 --> 00:14:57,110
+auditable way and decision and but also
+finally decision accuracy also but we
+
+880
+00:14:57,110 --> 00:14:57,120
+finally decision accuracy also but we
+ 
+
+881
+00:14:57,120 --> 00:14:58,790
+finally decision accuracy also but we
+but it's a sort of whole but basically
+
+882
+00:14:58,790 --> 00:14:58,800
+but it's a sort of whole but basically
+ 
+
+883
+00:14:58,800 --> 00:14:59,829
+but it's a sort of whole but basically
+you know what I'm arguing here is that
+
+884
+00:14:59,829 --> 00:14:59,839
+you know what I'm arguing here is that
+ 
+
+885
+00:14:59,839 --> 00:15:01,269
+you know what I'm arguing here is that
+we need a much more holistic approach
+
+886
+00:15:01,269 --> 00:15:01,279
+we need a much more holistic approach
+ 
+
+887
+00:15:01,279 --> 00:15:02,470
+we need a much more holistic approach
+than just looking at these summary
+
+888
+00:15:02,470 --> 00:15:02,480
+than just looking at these summary
+ 
+
+889
+00:15:02,480 --> 00:15:05,269
+than just looking at these summary
+statistics.
+
+890
+00:15:05,269 --> 00:15:05,279
+statistics.
+ 
+
+891
+00:15:05,279 --> 00:15:06,949
+statistics.
+Um you don't need a whole lot of samples
+
+892
+00:15:06,949 --> 00:15:06,959
+Um you don't need a whole lot of samples
+ 
+
+893
+00:15:06,959 --> 00:15:10,389
+Um you don't need a whole lot of samples
+to to calibrate an LLM judge uh to to do
+
+894
+00:15:10,389 --> 00:15:10,399
+to to calibrate an LLM judge uh to to do
+ 
+
+895
+00:15:10,399 --> 00:15:12,150
+to to calibrate an LLM judge uh to to do
+this sort of holistic rubric based
+
+896
+00:15:12,150 --> 00:15:12,160
+this sort of holistic rubric based
+ 
+
+897
+00:15:12,160 --> 00:15:14,870
+this sort of holistic rubric based
+analysis. Um, often time I mean I don't
+
+898
+00:15:14,870 --> 00:15:14,880
+analysis. Um, often time I mean I don't
+ 
+
+899
+00:15:14,880 --> 00:15:15,990
+analysis. Um, often time I mean I don't
+have time to go into the details of the
+
+900
+00:15:15,990 --> 00:15:16,000
+have time to go into the details of the
+ 
+
+901
+00:15:16,000 --> 00:15:17,189
+have time to go into the details of the
+statistical model I'm using here, but
+
+902
+00:15:17,189 --> 00:15:17,199
+statistical model I'm using here, but
+ 
+
+903
+00:15:17,199 --> 00:15:18,790
+statistical model I'm using here, but
+oftentimes a 100 samples is enough to
+
+904
+00:15:18,790 --> 00:15:18,800
+oftentimes a 100 samples is enough to
+ 
+
+905
+00:15:18,800 --> 00:15:21,350
+oftentimes a 100 samples is enough to
+get you started. Um, and once you once
+
+906
+00:15:21,350 --> 00:15:21,360
+get you started. Um, and once you once
+ 
+
+907
+00:15:21,360 --> 00:15:24,069
+get you started. Um, and once you once
+you have um the ability to judge uh an
+
+908
+00:15:24,069 --> 00:15:24,079
+you have um the ability to judge uh an
+ 
+
+909
+00:15:24,079 --> 00:15:26,310
+you have um the ability to judge uh an
+AI agent's ability to reason and decide
+
+910
+00:15:26,310 --> 00:15:26,320
+AI agent's ability to reason and decide
+ 
+
+911
+00:15:26,320 --> 00:15:29,910
+AI agent's ability to reason and decide
+under uncertainty um at scale um then it
+
+912
+00:15:29,910 --> 00:15:29,920
+under uncertainty um at scale um then it
+ 
+
+913
+00:15:29,920 --> 00:15:32,150
+under uncertainty um at scale um then it
+gives then it gives your team um a sort
+
+914
+00:15:32,150 --> 00:15:32,160
+gives then it gives your team um a sort
+ 
+
+915
+00:15:32,160 --> 00:15:33,670
+gives then it gives your team um a sort
+of hill to climb in terms of improving
+
+916
+00:15:33,670 --> 00:15:33,680
+of hill to climb in terms of improving
+ 
+
+917
+00:15:33,680 --> 00:15:35,110
+of hill to climb in terms of improving
+an agent to the point at which you can
+
+918
+00:15:35,110 --> 00:15:35,120
+an agent to the point at which you can
+ 
+
+919
+00:15:35,120 --> 00:15:36,870
+an agent to the point at which you can
+deploy it. Um so so typically the
+
+920
+00:15:36,870 --> 00:15:36,880
+deploy it. Um so so typically the
+ 
+
+921
+00:15:36,880 --> 00:15:38,389
+deploy it. Um so so typically the
+process that I've found works is like
+
+922
+00:15:38,389 --> 00:15:38,399
+process that I've found works is like
+ 
+
+923
+00:15:38,399 --> 00:15:41,350
+process that I've found works is like
+you define some bar um above which we'll
+
+924
+00:15:41,350 --> 00:15:41,360
+you define some bar um above which we'll
+ 
+
+925
+00:15:41,360 --> 00:15:43,030
+you define some bar um above which we'll
+deploy an agent uh that takes all these
+
+926
+00:15:43,030 --> 00:15:43,040
+deploy an agent uh that takes all these
+ 
+
+927
+00:15:43,040 --> 00:15:45,110
+deploy an agent uh that takes all these
+holistic dimensions into account. Um and
+
+928
+00:15:45,110 --> 00:15:45,120
+holistic dimensions into account. Um and
+ 
+
+929
+00:15:45,120 --> 00:15:47,030
+holistic dimensions into account. Um and
+then the team sort of hill climbs all of
+
+930
+00:15:47,030 --> 00:15:47,040
+then the team sort of hill climbs all of
+ 
+
+931
+00:15:47,040 --> 00:15:49,350
+then the team sort of hill climbs all of
+these criteria until we get above a bar
+
+932
+00:15:49,350 --> 00:15:49,360
+these criteria until we get above a bar
+ 
+
+933
+00:15:49,360 --> 00:15:50,550
+these criteria until we get above a bar
+and actually deploy the agent and and
+
+934
+00:15:50,550 --> 00:15:50,560
+and actually deploy the agent and and
+ 
+
+935
+00:15:50,560 --> 00:15:52,550
+and actually deploy the agent and and
+and sort of align that it's safe to
+
+936
+00:15:52,550 --> 00:15:52,560
+and sort of align that it's safe to
+ 
+
+937
+00:15:52,560 --> 00:15:54,710
+and sort of align that it's safe to
+deploy. Um and then once it's deployed
+
+938
+00:15:54,710 --> 00:15:54,720
+deploy. Um and then once it's deployed
+ 
+
+939
+00:15:54,720 --> 00:15:55,670
+deploy. Um and then once it's deployed
+you sort of monitor it and make sure
+
+940
+00:15:55,670 --> 00:15:55,680
+you sort of monitor it and make sure
+ 
+
+941
+00:15:55,680 --> 00:15:58,790
+you sort of monitor it and make sure
+it's at steady state.
+
+942
+00:15:58,790 --> 00:15:58,800
+it's at steady state.
+ 
+
+943
+00:15:58,800 --> 00:16:01,749
+it's at steady state.
+Um, so I think like I just want to
+
+944
+00:16:01,749 --> 00:16:01,759
+Um, so I think like I just want to
+ 
+
+945
+00:16:01,759 --> 00:16:04,150
+Um, so I think like I just want to
+emphasize at least at least in my work
+
+946
+00:16:04,150 --> 00:16:04,160
+emphasize at least at least in my work
+ 
+
+947
+00:16:04,160 --> 00:16:05,189
+emphasize at least at least in my work
+this kind of approach has really
+
+948
+00:16:05,189 --> 00:16:05,199
+this kind of approach has really
+ 
+
+949
+00:16:05,199 --> 00:16:08,310
+this kind of approach has really
+unblocked a lot of progress. Um, so you
+
+950
+00:16:08,310 --> 00:16:08,320
+unblocked a lot of progress. Um, so you
+ 
+
+951
+00:16:08,320 --> 00:16:09,269
+unblocked a lot of progress. Um, so you
+know you could be in this kind of
+
+952
+00:16:09,269 --> 00:16:09,279
+know you could be in this kind of
+ 
+
+953
+00:16:09,279 --> 00:16:13,030
+know you could be in this kind of
+dystopian world uh on on the left uh
+
+954
+00:16:13,030 --> 00:16:13,040
+dystopian world uh on on the left uh
+ 
+
+955
+00:16:13,040 --> 00:16:14,550
+dystopian world uh on on the left uh
+where you're just looking at accuracy,
+
+956
+00:16:14,550 --> 00:16:14,560
+where you're just looking at accuracy,
+ 
+
+957
+00:16:14,560 --> 00:16:17,509
+where you're just looking at accuracy,
+precision, recall and fcore. Um, and
+
+958
+00:16:17,509 --> 00:16:17,519
+precision, recall and fcore. Um, and
+ 
+
+959
+00:16:17,519 --> 00:16:18,949
+precision, recall and fcore. Um, and
+then when people sort of stare into
+
+960
+00:16:18,949 --> 00:16:18,959
+then when people sort of stare into
+ 
+
+961
+00:16:18,959 --> 00:16:20,310
+then when people sort of stare into
+these statistics they sort of get into
+
+962
+00:16:20,310 --> 00:16:20,320
+these statistics they sort of get into
+ 
+
+963
+00:16:20,320 --> 00:16:21,509
+these statistics they sort of get into
+disagreement about whether well is it
+
+964
+00:16:21,509 --> 00:16:21,519
+disagreement about whether well is it
+ 
+
+965
+00:16:21,519 --> 00:16:23,030
+disagreement about whether well is it
+the model that's wrong or are the labels
+
+966
+00:16:23,030 --> 00:16:23,040
+the model that's wrong or are the labels
+ 
+
+967
+00:16:23,040 --> 00:16:24,629
+the model that's wrong or are the labels
+wrong? The labels are really noisy which
+
+968
+00:16:24,629 --> 00:16:24,639
+wrong? The labels are really noisy which
+ 
+
+969
+00:16:24,639 --> 00:16:25,990
+wrong? The labels are really noisy which
+is basically always the case. or you
+
+970
+00:16:25,990 --> 00:16:26,000
+is basically always the case. or you
+ 
+
+971
+00:16:26,000 --> 00:16:27,110
+is basically always the case. or you
+could be in this different world, right,
+
+972
+00:16:27,110 --> 00:16:27,120
+could be in this different world, right,
+ 
+
+973
+00:16:27,120 --> 00:16:28,069
+could be in this different world, right,
+where you're looking at many different
+
+974
+00:16:28,069 --> 00:16:28,079
+where you're looking at many different
+ 
+
+975
+00:16:28,079 --> 00:16:29,350
+where you're looking at many different
+dimensions at once. All of which are
+
+976
+00:16:29,350 --> 00:16:29,360
+dimensions at once. All of which are
+ 
+
+977
+00:16:29,360 --> 00:16:31,030
+dimensions at once. All of which are
+somewhat noisy, but together give you a
+
+978
+00:16:31,030 --> 00:16:31,040
+somewhat noisy, but together give you a
+ 
+
+979
+00:16:31,040 --> 00:16:32,069
+somewhat noisy, but together give you a
+much more complete picture of whether
+
+980
+00:16:32,069 --> 00:16:32,079
+much more complete picture of whether
+ 
+
+981
+00:16:32,079 --> 00:16:34,949
+much more complete picture of whether
+your system is actually working.
+
+982
+00:16:34,949 --> 00:16:34,959
+your system is actually working.
+ 
+
+983
+00:16:34,959 --> 00:16:36,870
+your system is actually working.
+So, I've got three more minutes, so I'm
+
+984
+00:16:36,870 --> 00:16:36,880
+So, I've got three more minutes, so I'm
+ 
+
+985
+00:16:36,880 --> 00:16:37,829
+So, I've got three more minutes, so I'm
+just going to go pretty quickly through
+
+986
+00:16:37,829 --> 00:16:37,839
+just going to go pretty quickly through
+ 
+
+987
+00:16:37,839 --> 00:16:40,550
+just going to go pretty quickly through
+the last few slides. Just some practical
+
+988
+00:16:40,550 --> 00:16:40,560
+the last few slides. Just some practical
+ 
+
+989
+00:16:40,560 --> 00:16:44,310
+the last few slides. Just some practical
+um notes about process. So, um it should
+
+990
+00:16:44,310 --> 00:16:44,320
+um notes about process. So, um it should
+ 
+
+991
+00:16:44,320 --> 00:16:45,350
+um notes about process. So, um it should
+probably be obvious at this point this,
+
+992
+00:16:45,350 --> 00:16:45,360
+probably be obvious at this point this,
+ 
+
+993
+00:16:45,360 --> 00:16:46,949
+probably be obvious at this point this,
+but I believe this, but like you know,
+
+994
+00:16:46,949 --> 00:16:46,959
+but I believe this, but like you know,
+ 
+
+995
+00:16:46,959 --> 00:16:48,870
+but I believe this, but like you know,
+there's many like there's many teams
+
+996
+00:16:48,870 --> 00:16:48,880
+there's many like there's many teams
+ 
+
+997
+00:16:48,880 --> 00:16:50,069
+there's many like there's many teams
+right now in AI security that are
+
+998
+00:16:50,069 --> 00:16:50,079
+right now in AI security that are
+ 
+
+999
+00:16:50,079 --> 00:16:52,470
+right now in AI security that are
+operating with no no eval. Um this is
+
+1000
+00:16:52,470 --> 00:16:52,480
+operating with no no eval. Um this is
+ 
+
+1001
+00:16:52,480 --> 00:16:54,069
+operating with no no eval. Um this is
+this is a real dystopia, right? because
+
+1002
+00:16:54,069 --> 00:16:54,079
+this is a real dystopia, right? because
+ 
+
+1003
+00:16:54,079 --> 00:16:56,389
+this is a real dystopia, right? because
+then it's just all vibes. It's all
+
+1004
+00:16:56,389 --> 00:16:56,399
+then it's just all vibes. It's all
+ 
+
+1005
+00:16:56,399 --> 00:16:57,829
+then it's just all vibes. It's all
+engineers, you know, tweaking their
+
+1006
+00:16:57,829 --> 00:16:57,839
+engineers, you know, tweaking their
+ 
+
+1007
+00:16:57,839 --> 00:16:59,030
+engineers, you know, tweaking their
+agents and saying it works on their
+
+1008
+00:16:59,030 --> 00:16:59,040
+agents and saying it works on their
+ 
+
+1009
+00:16:59,040 --> 00:17:01,829
+agents and saying it works on their
+machine. Um, and it's very hard to ship
+
+1010
+00:17:01,829 --> 00:17:01,839
+machine. Um, and it's very hard to ship
+ 
+
+1011
+00:17:01,839 --> 00:17:03,430
+machine. Um, and it's very hard to ship
+if you have any level of rigor, right?
+
+1012
+00:17:03,430 --> 00:17:03,440
+if you have any level of rigor, right?
+ 
+
+1013
+00:17:03,440 --> 00:17:04,949
+if you have any level of rigor, right?
+So, it's much better to have an eval
+
+1014
+00:17:04,949 --> 00:17:04,959
+So, it's much better to have an eval
+ 
+
+1015
+00:17:04,959 --> 00:17:07,750
+So, it's much better to have an eval
+program. Um, and treat it as iterative.
+
+1016
+00:17:07,750 --> 00:17:07,760
+program. Um, and treat it as iterative.
+ 
+
+1017
+00:17:07,760 --> 00:17:09,029
+program. Um, and treat it as iterative.
+You're going to learn a lot as you start
+
+1018
+00:17:09,029 --> 00:17:09,039
+You're going to learn a lot as you start
+ 
+
+1019
+00:17:09,039 --> 00:17:11,829
+You're going to learn a lot as you start
+to evaluate your agents. Um, and you
+
+1020
+00:17:11,829 --> 00:17:11,839
+to evaluate your agents. Um, and you
+ 
+
+1021
+00:17:11,839 --> 00:17:13,350
+to evaluate your agents. Um, and you
+want to keep your leadership aligned
+
+1022
+00:17:13,350 --> 00:17:13,360
+want to keep your leadership aligned
+ 
+
+1023
+00:17:13,360 --> 00:17:15,590
+want to keep your leadership aligned
+with um, with the way you're evaluating.
+
+1024
+00:17:15,590 --> 00:17:15,600
+with um, with the way you're evaluating.
+ 
+
+1025
+00:17:15,600 --> 00:17:17,189
+with um, with the way you're evaluating.
+Um, and that makes it very easy to ship
+
+1026
+00:17:17,189 --> 00:17:17,199
+Um, and that makes it very easy to ship
+ 
+
+1027
+00:17:17,199 --> 00:17:17,990
+Um, and that makes it very easy to ship
+because once you're above your
+
+1028
+00:17:17,990 --> 00:17:18,000
+because once you're above your
+ 
+
+1029
+00:17:18,000 --> 00:17:18,949
+because once you're above your
+deployment bar that you've sort of
+
+1030
+00:17:18,949 --> 00:17:18,959
+deployment bar that you've sort of
+ 
+
+1031
+00:17:18,959 --> 00:17:19,909
+deployment bar that you've sort of
+aligned with leadership, you can
+
+1032
+00:17:19,909 --> 00:17:19,919
+aligned with leadership, you can
+ 
+
+1033
+00:17:19,919 --> 00:17:21,350
+aligned with leadership, you can
+actually ship the agent and monitor it
+
+1034
+00:17:21,350 --> 00:17:21,360
+actually ship the agent and monitor it
+ 
+
+1035
+00:17:21,360 --> 00:17:24,150
+actually ship the agent and monitor it
+monitor its behavior in production.
+
+1036
+00:17:24,150 --> 00:17:24,160
+monitor its behavior in production.
+ 
+
+1037
+00:17:24,160 --> 00:17:26,789
+monitor its behavior in production.
+Um this creates a lot of time. I would
+
+1038
+00:17:26,789 --> 00:17:26,799
+Um this creates a lot of time. I would
+ 
+
+1039
+00:17:26,799 --> 00:17:28,710
+Um this creates a lot of time. I would
+say it takes it takes at least 50% of a
+
+1040
+00:17:28,710 --> 00:17:28,720
+say it takes it takes at least 50% of a
+ 
+
+1041
+00:17:28,720 --> 00:17:30,549
+say it takes it takes at least 50% of a
+team's time to to do evaluation but you
+
+1042
+00:17:30,549 --> 00:17:30,559
+team's time to to do evaluation but you
+ 
+
+1043
+00:17:30,559 --> 00:17:33,270
+team's time to to do evaluation but you
+actually move like 10 times faster.
+
+1044
+00:17:33,270 --> 00:17:33,280
+actually move like 10 times faster.
+ 
+
+1045
+00:17:33,280 --> 00:17:35,350
+actually move like 10 times faster.
+Um last thing I'll say which would be a
+
+1046
+00:17:35,350 --> 00:17:35,360
+Um last thing I'll say which would be a
+ 
+
+1047
+00:17:35,360 --> 00:17:38,630
+Um last thing I'll say which would be a
+whole separate talk is that um
+
+1048
+00:17:38,630 --> 00:17:38,640
+whole separate talk is that um
+ 
+
+1049
+00:17:38,640 --> 00:17:41,430
+whole separate talk is that um
+we both um at the startup where I am but
+
+1050
+00:17:41,430 --> 00:17:41,440
+we both um at the startup where I am but
+ 
+
+1051
+00:17:41,440 --> 00:17:42,950
+we both um at the startup where I am but
+also at meta you know have done some
+
+1052
+00:17:42,950 --> 00:17:42,960
+also at meta you know have done some
+ 
+
+1053
+00:17:42,960 --> 00:17:44,070
+also at meta you know have done some
+really interesting experimentation
+
+1054
+00:17:44,070 --> 00:17:44,080
+really interesting experimentation
+ 
+
+1055
+00:17:44,080 --> 00:17:46,630
+really interesting experimentation
+around automatically optimizing agent
+
+1056
+00:17:46,630 --> 00:17:46,640
+around automatically optimizing agent
+ 
+
+1057
+00:17:46,640 --> 00:17:49,029
+around automatically optimizing agent
+architectures using using coding coding
+
+1058
+00:17:49,029 --> 00:17:49,039
+architectures using using coding coding
+ 
+
+1059
+00:17:49,039 --> 00:17:50,870
+architectures using using coding coding
+tools and prompt and genetic genetic
+
+1060
+00:17:50,870 --> 00:17:50,880
+tools and prompt and genetic genetic
+ 
+
+1061
+00:17:50,880 --> 00:17:52,230
+tools and prompt and genetic genetic
+algorithms that do prompt optimization.
+
+1062
+00:17:52,230 --> 00:17:52,240
+algorithms that do prompt optimization.
+ 
+
+1063
+00:17:52,240 --> 00:17:54,150
+algorithms that do prompt optimization.
+Once you have a really good evaluation,
+
+1064
+00:17:54,150 --> 00:17:54,160
+Once you have a really good evaluation,
+ 
+
+1065
+00:17:54,160 --> 00:17:56,950
+Once you have a really good evaluation,
+you can actually use AI coding tools and
+
+1066
+00:17:56,950 --> 00:17:56,960
+you can actually use AI coding tools and
+ 
+
+1067
+00:17:56,960 --> 00:17:59,029
+you can actually use AI coding tools and
+um LLMs to actually hill climb all of
+
+1068
+00:17:59,029 --> 00:17:59,039
+um LLMs to actually hill climb all of
+ 
+
+1069
+00:17:59,039 --> 00:18:00,789
+um LLMs to actually hill climb all of
+those metrics um while also being
+
+1070
+00:18:00,789 --> 00:18:00,799
+those metrics um while also being
+ 
+
+1071
+00:18:00,799 --> 00:18:02,950
+those metrics um while also being
+careful of overfitting.
+
+1072
+00:18:02,950 --> 00:18:02,960
+careful of overfitting.
+ 
+
+1073
+00:18:02,960 --> 00:18:07,110
+careful of overfitting.
+Okay, just summing up. Um
+
+1074
+00:18:07,110 --> 00:18:07,120
+Okay, just summing up. Um
+ 
+
+1075
+00:18:07,120 --> 00:18:08,549
+Okay, just summing up. Um
+okay, so we're we're under time pressure
+
+1076
+00:18:08,549 --> 00:18:08,559
+okay, so we're we're under time pressure
+ 
+
+1077
+00:18:08,559 --> 00:18:10,630
+okay, so we're we're under time pressure
+to to do this. I I think I think if you
+
+1078
+00:18:10,630 --> 00:18:10,640
+to to do this. I I think I think if you
+ 
+
+1079
+00:18:10,640 --> 00:18:11,830
+to to do this. I I think I think if you
+look at the pace of progress over the
+
+1080
+00:18:11,830 --> 00:18:11,840
+look at the pace of progress over the
+ 
+
+1081
+00:18:11,840 --> 00:18:13,110
+look at the pace of progress over the
+last couple years and extrapolate
+
+1082
+00:18:13,110 --> 00:18:13,120
+last couple years and extrapolate
+ 
+
+1083
+00:18:13,120 --> 00:18:15,830
+last couple years and extrapolate
+forward um it it sounds science fiction
+
+1084
+00:18:15,830 --> 00:18:15,840
+forward um it it sounds science fiction
+ 
+
+1085
+00:18:15,840 --> 00:18:17,830
+forward um it it sounds science fiction
+but it's quite reasonable to expect that
+
+1086
+00:18:17,830 --> 00:18:17,840
+but it's quite reasonable to expect that
+ 
+
+1087
+00:18:17,840 --> 00:18:20,870
+but it's quite reasonable to expect that
+there will be armies of um artificially
+
+1088
+00:18:20,870 --> 00:18:20,880
+there will be armies of um artificially
+ 
+
+1089
+00:18:20,880 --> 00:18:24,710
+there will be armies of um artificially
+general intelligent robots um scaling up
+
+1090
+00:18:24,710 --> 00:18:24,720
+general intelligent robots um scaling up
+ 
+
+1091
+00:18:24,720 --> 00:18:26,789
+general intelligent robots um scaling up
+um adversarial activity against all of
+
+1092
+00:18:26,789 --> 00:18:26,799
+um adversarial activity against all of
+ 
+
+1093
+00:18:26,799 --> 00:18:30,630
+um adversarial activity against all of
+our networks. um if we can't if if if we
+
+1094
+00:18:30,630 --> 00:18:30,640
+our networks. um if we can't if if if we
+ 
+
+1095
+00:18:30,640 --> 00:18:32,549
+our networks. um if we can't if if if we
+can't deploy autonomous systems that can
+
+1096
+00:18:32,549 --> 00:18:32,559
+can't deploy autonomous systems that can
+ 
+
+1097
+00:18:32,559 --> 00:18:34,230
+can't deploy autonomous systems that can
+make sensitive changes changes in our
+
+1098
+00:18:34,230 --> 00:18:34,240
+make sensitive changes changes in our
+ 
+
+1099
+00:18:34,240 --> 00:18:35,590
+make sensitive changes changes in our
+infrastructure with confidence and
+
+1100
+00:18:35,590 --> 00:18:35,600
+infrastructure with confidence and
+ 
+
+1101
+00:18:35,600 --> 00:18:37,590
+infrastructure with confidence and
+knowing they won't break stuff um we're
+
+1102
+00:18:37,590 --> 00:18:37,600
+knowing they won't break stuff um we're
+ 
+
+1103
+00:18:37,600 --> 00:18:39,029
+knowing they won't break stuff um we're
+going to be in serious trouble and and
+
+1104
+00:18:39,029 --> 00:18:39,039
+going to be in serious trouble and and
+ 
+
+1105
+00:18:39,039 --> 00:18:41,270
+going to be in serious trouble and and
+evaluation is in my mind um the main
+
+1106
+00:18:41,270 --> 00:18:41,280
+evaluation is in my mind um the main
+ 
+
+1107
+00:18:41,280 --> 00:18:45,750
+evaluation is in my mind um the main
+hard problem there
+
+1108
+00:18:45,750 --> 00:18:45,760
+
+ 
+
+1109
+00:18:45,760 --> 00:18:48,549
+
+um and just to restate my thesis um I
+
+1110
+00:18:48,549 --> 00:18:48,559
+um and just to restate my thesis um I
+ 
+
+1111
+00:18:48,559 --> 00:18:49,830
+um and just to restate my thesis um I
+think we just need to move towards this
+
+1112
+00:18:49,830 --> 00:18:49,840
+think we just need to move towards this
+ 
+
+1113
+00:18:49,840 --> 00:18:51,350
+think we just need to move towards this
+model in which we start treating agents
+
+1114
+00:18:51,350 --> 00:18:51,360
+model in which we start treating agents
+ 
+
+1115
+00:18:51,360 --> 00:18:53,270
+model in which we start treating agents
+as decision makers uncertainty as
+
+1116
+00:18:53,270 --> 00:18:53,280
+as decision makers uncertainty as
+ 
+
+1117
+00:18:53,280 --> 00:18:56,470
+as decision makers uncertainty as
+opposed to um as opposed to just just
+
+1118
+00:18:56,470 --> 00:18:56,480
+opposed to um as opposed to just just
+ 
+
+1119
+00:18:56,480 --> 00:18:57,750
+opposed to um as opposed to just just
+relying in these sort of oracle based
+
+1120
+00:18:57,750 --> 00:18:57,760
+relying in these sort of oracle based
+ 
+
+1121
+00:18:57,760 --> 00:19:00,470
+relying in these sort of oracle based
+statistics. Um, so I don't know if we
+
+1122
+00:19:00,470 --> 00:19:00,480
+statistics. Um, so I don't know if we
+ 
+
+1123
+00:19:00,480 --> 00:19:01,909
+statistics. Um, so I don't know if we
+have time for questions, but uh, yeah,
+
+1124
+00:19:01,909 --> 00:19:01,919
+have time for questions, but uh, yeah,
+ 
+
+1125
+00:19:01,919 --> 00:19:04,710
+have time for questions, but uh, yeah,
+thanks for having me and um, yeah, would
+
+1126
+00:19:04,710 --> 00:19:04,720
+thanks for having me and um, yeah, would
+ 
+
+1127
+00:19:04,720 --> 00:19:07,563
+thanks for having me and um, yeah, would
+love to talk to people afterwards.
+
+1128
+00:19:07,563 --> 00:19:07,573
+love to talk to people afterwards.
+ 
+
+1129
+00:19:07,573 --> 00:19:11,590
+love to talk to people afterwards.
+[applause]
+
+1130
+00:19:11,590 --> 00:19:11,600
+
+ 
+
+1131
+00:19:11,600 --> 00:19:12,630
+
+>> We've got a couple minutes for
+
+1132
+00:19:12,630 --> 00:19:12,640
+>> We've got a couple minutes for
+ 
+
+1133
+00:19:12,640 --> 00:19:14,630
+>> We've got a couple minutes for
+questions. Uh, we've got one in the back
+
+1134
+00:19:14,630 --> 00:19:14,640
+questions. Uh, we've got one in the back
+ 
+
+1135
+00:19:14,640 --> 00:19:19,990
+questions. Uh, we've got one in the back
+right behind you, Matt.
+
+1136
+00:19:19,990 --> 00:19:20,000
+
+ 
+
+1137
+00:19:20,000 --> 00:19:25,270
+
+So I here I wanted to ask you um have
+
+1138
+00:19:25,270 --> 00:19:25,280
+So I here I wanted to ask you um have
+ 
+
+1139
+00:19:25,280 --> 00:19:28,549
+So I here I wanted to ask you um have
+you looked at improving your LLM judge
+
+1140
+00:19:28,549 --> 00:19:28,559
+you looked at improving your LLM judge
+ 
+
+1141
+00:19:28,559 --> 00:19:31,990
+you looked at improving your LLM judge
+with negative uh judgments from the
+
+1142
+00:19:31,990 --> 00:19:32,000
+with negative uh judgments from the
+ 
+
+1143
+00:19:32,000 --> 00:19:33,990
+with negative uh judgments from the
+humans like when the humans disagree
+
+1144
+00:19:33,990 --> 00:19:34,000
+humans like when the humans disagree
+ 
+
+1145
+00:19:34,000 --> 00:19:35,909
+humans like when the humans disagree
+more with the judge? Has this worked
+
+1146
+00:19:35,909 --> 00:19:35,919
+more with the judge? Has this worked
+ 
+
+1147
+00:19:35,919 --> 00:19:38,710
+more with the judge? Has this worked
+better for you or worse? I'm really
+
+1148
+00:19:38,710 --> 00:19:38,720
+better for you or worse? I'm really
+ 
+
+1149
+00:19:38,720 --> 00:19:42,230
+better for you or worse? I'm really
+trying to save how many things I give to
+
+1150
+00:19:42,230 --> 00:19:42,240
+trying to save how many things I give to
+ 
+
+1151
+00:19:42,240 --> 00:19:44,870
+trying to save how many things I give to
+the engineers to grade because their
+
+1152
+00:19:44,870 --> 00:19:44,880
+the engineers to grade because their
+ 
+
+1153
+00:19:44,880 --> 00:19:47,430
+the engineers to grade because their
+time is very valuable. So uh so I'm
+
+1154
+00:19:47,430 --> 00:19:47,440
+time is very valuable. So uh so I'm
+ 
+
+1155
+00:19:47,440 --> 00:19:49,029
+time is very valuable. So uh so I'm
+asking if you've had any study of the
+
+1156
+00:19:49,029 --> 00:19:49,039
+asking if you've had any study of the
+ 
+
+1157
+00:19:49,039 --> 00:19:50,549
+asking if you've had any study of the
+negatives
+
+1158
+00:19:50,549 --> 00:19:50,559
+negatives
+ 
+
+1159
+00:19:50,559 --> 00:19:52,070
+negatives
+working better on your judge
+
+1160
+00:19:52,070 --> 00:19:52,080
+working better on your judge
+ 
+
+1161
+00:19:52,080 --> 00:19:54,070
+working better on your judge
+improvements.
+
+1162
+00:19:54,070 --> 00:19:54,080
+improvements.
+ 
+
+1163
+00:19:54,080 --> 00:19:55,990
+improvements.
+>> Yeah. Yeah. Yeah. We should I I think we
+
+1164
+00:19:55,990 --> 00:19:56,000
+>> Yeah. Yeah. Yeah. We should I I think we
+ 
+
+1165
+00:19:56,000 --> 00:19:59,750
+>> Yeah. Yeah. Yeah. We should I I think we
+should probably talk after um but yeah I
+
+1166
+00:19:59,750 --> 00:19:59,760
+should probably talk after um but yeah I
+ 
+
+1167
+00:19:59,760 --> 00:20:02,150
+should probably talk after um but yeah I
+mean basically my experience is I mean
+
+1168
+00:20:02,150 --> 00:20:02,160
+mean basically my experience is I mean
+ 
+
+1169
+00:20:02,160 --> 00:20:03,669
+mean basically my experience is I mean
+so I think you need a fairly complicated
+
+1170
+00:20:03,669 --> 00:20:03,679
+so I think you need a fairly complicated
+ 
+
+1171
+00:20:03,679 --> 00:20:05,830
+so I think you need a fairly complicated
+basian model in order to build in in
+
+1172
+00:20:05,830 --> 00:20:05,840
+basian model in order to build in in
+ 
+
+1173
+00:20:05,840 --> 00:20:07,350
+basian model in order to build in in
+order to do this kind of calibration and
+
+1174
+00:20:07,350 --> 00:20:07,360
+order to do this kind of calibration and
+ 
+
+1175
+00:20:07,360 --> 00:20:08,789
+order to do this kind of calibration and
+yeah it needs to take into account you
+
+1176
+00:20:08,789 --> 00:20:08,799
+yeah it needs to take into account you
+ 
+
+1177
+00:20:08,799 --> 00:20:10,070
+yeah it needs to take into account you
+know you need to discount you know you
+
+1178
+00:20:10,070 --> 00:20:10,080
+know you need to discount you know you
+ 
+
+1179
+00:20:10,080 --> 00:20:11,270
+know you need to discount you know you
+need to put sort of more uncertainty
+
+1180
+00:20:11,270 --> 00:20:11,280
+need to put sort of more uncertainty
+ 
+
+1181
+00:20:11,280 --> 00:20:12,870
+need to put sort of more uncertainty
+around labels that you have more
+
+1182
+00:20:12,870 --> 00:20:12,880
+around labels that you have more
+ 
+
+1183
+00:20:12,880 --> 00:20:14,870
+around labels that you have more
+disagreement about. is if you have a
+
+1184
+00:20:14,870 --> 00:20:14,880
+disagreement about. is if you have a
+ 
+
+1185
+00:20:14,880 --> 00:20:15,909
+disagreement about. is if you have a
+committee of three reviewers and they
+
+1186
+00:20:15,909 --> 00:20:15,919
+committee of three reviewers and they
+ 
+
+1187
+00:20:15,919 --> 00:20:17,029
+committee of three reviewers and they
+all disagree, you want to you want to
+
+1188
+00:20:17,029 --> 00:20:17,039
+all disagree, you want to you want to
+ 
+
+1189
+00:20:17,039 --> 00:20:19,110
+all disagree, you want to you want to
+wait those if you have three reviewers
+
+1190
+00:20:19,110 --> 00:20:19,120
+wait those if you have three reviewers
+ 
+
+1191
+00:20:19,120 --> 00:20:22,310
+wait those if you have three reviewers
+all agreeing strongly, you know, on um a
+
+1192
+00:20:22,310 --> 00:20:22,320
+all agreeing strongly, you know, on um a
+ 
+
+1193
+00:20:22,320 --> 00:20:23,750
+all agreeing strongly, you know, on um a
+given dimension of your evaluation,
+
+1194
+00:20:23,750 --> 00:20:23,760
+given dimension of your evaluation,
+ 
+
+1195
+00:20:23,760 --> 00:20:26,150
+given dimension of your evaluation,
+obviously those those get weighted more
+
+1196
+00:20:26,150 --> 00:20:26,160
+obviously those those get weighted more
+ 
+
+1197
+00:20:26,160 --> 00:20:27,669
+obviously those those get weighted more
+highly, right, than cases where you have
+
+1198
+00:20:27,669 --> 00:20:27,679
+highly, right, than cases where you have
+ 
+
+1199
+00:20:27,679 --> 00:20:28,870
+highly, right, than cases where you have
+more disagreement, which I think is what
+
+1200
+00:20:28,870 --> 00:20:28,880
+more disagreement, which I think is what
+ 
+
+1201
+00:20:28,880 --> 00:20:30,470
+more disagreement, which I think is what
+you're saying. So, I think basically yes
+
+1202
+00:20:30,470 --> 00:20:30,480
+you're saying. So, I think basically yes
+ 
+
+1203
+00:20:30,480 --> 00:20:31,830
+you're saying. So, I think basically yes
+is is my answer, but we should talk more
+
+1204
+00:20:31,830 --> 00:20:31,840
+is is my answer, but we should talk more
+ 
+
+1205
+00:20:31,840 --> 00:20:35,190
+is is my answer, but we should talk more
+afterwards.
+
+1206
+00:20:35,190 --> 00:20:35,200
+
+ 
+
+1207
+00:20:35,200 --> 00:20:36,630
+
+>> One more up front here. I'll I'll bring
+
+1208
+00:20:36,630 --> 00:20:36,640
+>> One more up front here. I'll I'll bring
+ 
+
+1209
+00:20:36,640 --> 00:20:40,070
+>> One more up front here. I'll I'll bring
+I'll bring it to you.
+
+1210
+00:20:40,070 --> 00:20:40,080
+I'll bring it to you.
+ 
+
+1211
+00:20:40,080 --> 00:20:43,190
+I'll bring it to you.
+Um, is there a material difference in
+
+1212
+00:20:43,190 --> 00:20:43,200
+Um, is there a material difference in
+ 
+
+1213
+00:20:43,200 --> 00:20:46,149
+Um, is there a material difference in
+some of the evaluation methods out there
+
+1214
+00:20:46,149 --> 00:20:46,159
+some of the evaluation methods out there
+ 
+
+1215
+00:20:46,159 --> 00:20:48,630
+some of the evaluation methods out there
+for models that are not in security
+
+1216
+00:20:48,630 --> 00:20:48,640
+for models that are not in security
+ 
+
+1217
+00:20:48,640 --> 00:20:51,750
+for models that are not in security
+work?
+
+1218
+00:20:51,750 --> 00:20:51,760
+
+ 
+
+1219
+00:20:51,760 --> 00:20:53,270
+
+>> Sorry, can can you add a little more?
+
+1220
+00:20:53,270 --> 00:20:53,280
+>> Sorry, can can you add a little more?
+ 
+
+1221
+00:20:53,280 --> 00:20:53,990
+>> Sorry, can can you add a little more?
+Yeah, go ahead.
+
+1222
+00:20:53,990 --> 00:20:54,000
+Yeah, go ahead.
+ 
+
+1223
+00:20:54,000 --> 00:20:56,470
+Yeah, go ahead.
+>> Yeah, so I'm familiar with evaluation
+
+1224
+00:20:56,470 --> 00:20:56,480
+>> Yeah, so I'm familiar with evaluation
+ 
+
+1225
+00:20:56,480 --> 00:20:59,830
+>> Yeah, so I'm familiar with evaluation
+for AI models that apply for different
+
+1226
+00:20:59,830 --> 00:20:59,840
+for AI models that apply for different
+ 
+
+1227
+00:20:59,840 --> 00:21:02,230
+for AI models that apply for different
+application set of data, right? Not for
+
+1228
+00:21:02,230 --> 00:21:02,240
+application set of data, right? Not for
+ 
+
+1229
+00:21:02,240 --> 00:21:03,990
+application set of data, right? Not for
+security work.
+
+1230
+00:21:03,990 --> 00:21:04,000
+security work.
+ 
+
+1231
+00:21:04,000 --> 00:21:07,190
+security work.
+So is can you apply those evaluation
+
+1232
+00:21:07,190 --> 00:21:07,200
+So is can you apply those evaluation
+ 
+
+1233
+00:21:07,200 --> 00:21:09,590
+So is can you apply those evaluation
+methods here or do you have to do
+
+1234
+00:21:09,590 --> 00:21:09,600
+methods here or do you have to do
+ 
+
+1235
+00:21:09,600 --> 00:21:12,310
+methods here or do you have to do
+materially different evaluation methods?
+
+1236
+00:21:12,310 --> 00:21:12,320
+materially different evaluation methods?
+ 
+
+1237
+00:21:12,320 --> 00:21:13,669
+materially different evaluation methods?
+That's the question. I mean I think
+
+1238
+00:21:13,669 --> 00:21:13,679
+That's the question. I mean I think
+ 
+
+1239
+00:21:13,679 --> 00:21:15,990
+That's the question. I mean I think
+basically
+
+1240
+00:21:15,990 --> 00:21:16,000
+basically
+ 
+
+1241
+00:21:16,000 --> 00:21:17,430
+basically
+I think in terms of like the the
+
+1242
+00:21:17,430 --> 00:21:17,440
+I think in terms of like the the
+ 
+
+1243
+00:21:17,440 --> 00:21:19,990
+I think in terms of like the the
+statistics that you use I think you I
+
+1244
+00:21:19,990 --> 00:21:20,000
+statistics that you use I think you I
+ 
+
+1245
+00:21:20,000 --> 00:21:21,190
+statistics that you use I think you I
+think basically you just need to use
+
+1246
+00:21:21,190 --> 00:21:21,200
+think basically you just need to use
+ 
+
+1247
+00:21:21,200 --> 00:21:23,350
+think basically you just need to use
+test textbook statistics but take this
+
+1248
+00:21:23,350 --> 00:21:23,360
+test textbook statistics but take this
+ 
+
+1249
+00:21:23,360 --> 00:21:24,710
+test textbook statistics but take this
+multi-dimensional approach that I'm
+
+1250
+00:21:24,710 --> 00:21:24,720
+multi-dimensional approach that I'm
+ 
+
+1251
+00:21:24,720 --> 00:21:25,590
+multi-dimensional approach that I'm
+describing where you're looking at the
+
+1252
+00:21:25,590 --> 00:21:25,600
+describing where you're looking at the
+ 
+
+1253
+00:21:25,600 --> 00:21:27,110
+describing where you're looking at the
+agent's ability to reason gather the
+
+1254
+00:21:27,110 --> 00:21:27,120
+agent's ability to reason gather the
+ 
+
+1255
+00:21:27,120 --> 00:21:29,750
+agent's ability to reason gather the
+right data you know um uh but I don't
+
+1256
+00:21:29,750 --> 00:21:29,760
+right data you know um uh but I don't
+ 
+
+1257
+00:21:29,760 --> 00:21:31,510
+right data you know um uh but I don't
+think there's any novelty in the math
+
+1258
+00:21:31,510 --> 00:21:31,520
+think there's any novelty in the math
+ 
+
+1259
+00:21:31,520 --> 00:21:34,149
+think there's any novelty in the math
+there but I think that um I think where
+
+1260
+00:21:34,149 --> 00:21:34,159
+there but I think that um I think where
+ 
+
+1261
+00:21:34,159 --> 00:21:36,070
+there but I think that um I think where
+the domain expertise comes in is
+
+1262
+00:21:36,070 --> 00:21:36,080
+the domain expertise comes in is
+ 
+
+1263
+00:21:36,080 --> 00:21:37,590
+the domain expertise comes in is
+understanding it's basically like where
+
+1264
+00:21:37,590 --> 00:21:37,600
+understanding it's basically like where
+ 
+
+1265
+00:21:37,600 --> 00:21:39,029
+understanding it's basically like where
+you want domain expertise is like if
+
+1266
+00:21:39,029 --> 00:21:39,039
+you want domain expertise is like if
+ 
+
+1267
+00:21:39,039 --> 00:21:41,669
+you want domain expertise is like if
+you're if you're deploying an autonomous
+
+1268
+00:21:41,669 --> 00:21:41,679
+you're if you're deploying an autonomous
+ 
+
+1269
+00:21:41,679 --> 00:21:43,430
+you're if you're deploying an autonomous
+system that patches your code and a
+
+1270
+00:21:43,430 --> 00:21:43,440
+system that patches your code and a
+ 
+
+1271
+00:21:43,440 --> 00:21:45,270
+system that patches your code and a
+human never looks at it. You want you
+
+1272
+00:21:45,270 --> 00:21:45,280
+human never looks at it. You want you
+ 
+
+1273
+00:21:45,280 --> 00:21:47,029
+human never looks at it. You want you
+want a lot of domain experts designing
+
+1274
+00:21:47,029 --> 00:21:47,039
+want a lot of domain experts designing
+ 
+
+1275
+00:21:47,039 --> 00:21:49,190
+want a lot of domain experts designing
+the evaluation like you want the same
+
+1276
+00:21:49,190 --> 00:21:49,200
+the evaluation like you want the same
+ 
+
+1277
+00:21:49,200 --> 00:21:50,870
+the evaluation like you want the same
+level of expertise as you'd have in
+
+1278
+00:21:50,870 --> 00:21:50,880
+level of expertise as you'd have in
+ 
+
+1279
+00:21:50,880 --> 00:21:52,870
+level of expertise as you'd have in
+terms of the people hiring your security
+
+1280
+00:21:52,870 --> 00:21:52,880
+terms of the people hiring your security
+ 
+
+1281
+00:21:52,880 --> 00:21:55,350
+terms of the people hiring your security
+staff I would say. So you want deep
+
+1282
+00:21:55,350 --> 00:21:55,360
+staff I would say. So you want deep
+ 
+
+1283
+00:21:55,360 --> 00:21:57,590
+staff I would say. So you want deep
+domain experts deciding what what the
+
+1284
+00:21:57,590 --> 00:21:57,600
+domain experts deciding what what the
+ 
+
+1285
+00:21:57,600 --> 00:21:59,750
+domain experts deciding what what the
+criteria in your rubric are but the
+
+1286
+00:21:59,750 --> 00:21:59,760
+criteria in your rubric are but the
+ 
+
+1287
+00:21:59,760 --> 00:22:03,880
+criteria in your rubric are but the
+actual statistics I think don't change.
+

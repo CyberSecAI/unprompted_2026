@@ -1,0 +1,3635 @@
+1
+00:00:05,920 --> 00:00:09,030
+
+Hi everyone, I'm Rowi. Um, we're a bit
+
+2
+00:00:09,030 --> 00:00:09,040
+Hi everyone, I'm Rowi. Um, we're a bit
+ 
+
+3
+00:00:09,040 --> 00:00:11,669
+Hi everyone, I'm Rowi. Um, we're a bit
+of a late start, but we'll start now.
+
+4
+00:00:11,669 --> 00:00:11,679
+of a late start, but we'll start now.
+ 
+
+5
+00:00:11,679 --> 00:00:14,709
+of a late start, but we'll start now.
+Uh, so welcome to my talk. It's a 20inut
+
+6
+00:00:14,709 --> 00:00:14,719
+Uh, so welcome to my talk. It's a 20inut
+ 
+
+7
+00:00:14,719 --> 00:00:17,990
+Uh, so welcome to my talk. It's a 20inut
+session about agent reconnaissance, what
+
+8
+00:00:17,990 --> 00:00:18,000
+session about agent reconnaissance, what
+ 
+
+9
+00:00:18,000 --> 00:00:20,070
+session about agent reconnaissance, what
+it actually mean, and how we were able
+
+10
+00:00:20,070 --> 00:00:20,080
+it actually mean, and how we were able
+ 
+
+11
+00:00:20,080 --> 00:00:23,269
+it actually mean, and how we were able
+to find thousands of agents and map down
+
+12
+00:00:23,269 --> 00:00:23,279
+to find thousands of agents and map down
+ 
+
+13
+00:00:23,279 --> 00:00:25,349
+to find thousands of agents and map down
+their capabilities.
+
+14
+00:00:25,349 --> 00:00:25,359
+their capabilities.
+ 
+
+15
+00:00:25,359 --> 00:00:27,429
+their capabilities.
+Let's start to dive in.
+
+16
+00:00:27,429 --> 00:00:27,439
+Let's start to dive in.
+ 
+
+17
+00:00:27,439 --> 00:00:29,429
+Let's start to dive in.
+Uh we'll overview different platforms in
+
+18
+00:00:29,429 --> 00:00:29,439
+Uh we'll overview different platforms in
+ 
+
+19
+00:00:29,439 --> 00:00:32,630
+Uh we'll overview different platforms in
+this talk. One of them would be um
+
+20
+00:00:32,630 --> 00:00:32,640
+this talk. One of them would be um
+ 
+
+21
+00:00:32,640 --> 00:00:35,910
+this talk. One of them would be um
+Microsoft Copilot Studio. We'll also
+
+22
+00:00:35,910 --> 00:00:35,920
+Microsoft Copilot Studio. We'll also
+ 
+
+23
+00:00:35,920 --> 00:00:39,430
+Microsoft Copilot Studio. We'll also
+overview agent builder by OpenAI, custom
+
+24
+00:00:39,430 --> 00:00:39,440
+overview agent builder by OpenAI, custom
+ 
+
+25
+00:00:39,440 --> 00:00:41,670
+overview agent builder by OpenAI, custom
+GPT by OpenAI
+
+26
+00:00:41,670 --> 00:00:41,680
+GPT by OpenAI
+ 
+
+27
+00:00:41,680 --> 00:00:45,110
+GPT by OpenAI
+and various AI middlewares, LLM runtimes
+
+28
+00:00:45,110 --> 00:00:45,120
+and various AI middlewares, LLM runtimes
+ 
+
+29
+00:00:45,120 --> 00:00:47,590
+and various AI middlewares, LLM runtimes
+and model context protocol servers that
+
+30
+00:00:47,590 --> 00:00:47,600
+and model context protocol servers that
+ 
+
+31
+00:00:47,600 --> 00:00:49,990
+and model context protocol servers that
+we find we found using open source
+
+32
+00:00:49,990 --> 00:00:50,000
+we find we found using open source
+ 
+
+33
+00:00:50,000 --> 00:00:52,470
+we find we found using open source
+intelligence.
+
+34
+00:00:52,470 --> 00:00:52,480
+intelligence.
+ 
+
+35
+00:00:52,480 --> 00:00:55,670
+intelligence.
+And what we found was kind of amazing.
+
+36
+00:00:55,670 --> 00:00:55,680
+And what we found was kind of amazing.
+ 
+
+37
+00:00:55,680 --> 00:00:58,869
+And what we found was kind of amazing.
+We found tens of thousands of agents
+
+38
+00:00:58,869 --> 00:00:58,879
+We found tens of thousands of agents
+ 
+
+39
+00:00:58,879 --> 00:01:01,189
+We found tens of thousands of agents
+just out there in the web. Out of them,
+
+40
+00:01:01,189 --> 00:01:01,199
+just out there in the web. Out of them,
+ 
+
+41
+00:01:01,199 --> 00:01:03,270
+just out there in the web. Out of them,
+thousands were unauthenticated. You
+
+42
+00:01:03,270 --> 00:01:03,280
+thousands were unauthenticated. You
+ 
+
+43
+00:01:03,280 --> 00:01:06,469
+thousands were unauthenticated. You
+could just get in and uh see what kind
+
+44
+00:01:06,469 --> 00:01:06,479
+could just get in and uh see what kind
+ 
+
+45
+00:01:06,479 --> 00:01:09,429
+could just get in and uh see what kind
+of information they have out there. And
+
+46
+00:01:09,429 --> 00:01:09,439
+of information they have out there. And
+ 
+
+47
+00:01:09,439 --> 00:01:11,350
+of information they have out there. And
+we've actually seen some incredible
+
+48
+00:01:11,350 --> 00:01:11,360
+we've actually seen some incredible
+ 
+
+49
+00:01:11,360 --> 00:01:13,910
+we've actually seen some incredible
+stuff like sensitive documents just out
+
+50
+00:01:13,910 --> 00:01:13,920
+stuff like sensitive documents just out
+ 
+
+51
+00:01:13,920 --> 00:01:17,510
+stuff like sensitive documents just out
+in the open or even a business tool with
+
+52
+00:01:17,510 --> 00:01:17,520
+in the open or even a business tool with
+ 
+
+53
+00:01:17,520 --> 00:01:20,230
+in the open or even a business tool with
+really high impact. Those things are
+
+54
+00:01:20,230 --> 00:01:20,240
+really high impact. Those things are
+ 
+
+55
+00:01:20,240 --> 00:01:23,590
+really high impact. Those things are
+extremely risky. So let's talk a little
+
+56
+00:01:23,590 --> 00:01:23,600
+extremely risky. So let's talk a little
+ 
+
+57
+00:01:23,600 --> 00:01:26,789
+extremely risky. So let's talk a little
+bit more about what agent recon actually
+
+58
+00:01:26,789 --> 00:01:26,799
+bit more about what agent recon actually
+ 
+
+59
+00:01:26,799 --> 00:01:30,630
+bit more about what agent recon actually
+means and why it matters. Well to start
+
+60
+00:01:30,630 --> 00:01:30,640
+means and why it matters. Well to start
+ 
+
+61
+00:01:30,640 --> 00:01:32,870
+means and why it matters. Well to start
+this conversation we need to understand
+
+62
+00:01:32,870 --> 00:01:32,880
+this conversation we need to understand
+ 
+
+63
+00:01:32,880 --> 00:01:36,630
+this conversation we need to understand
+that an agent is still an application.
+
+64
+00:01:36,630 --> 00:01:36,640
+that an agent is still an application.
+ 
+
+65
+00:01:36,640 --> 00:01:39,590
+that an agent is still an application.
+Um sure it's connected to an LLM. It has
+
+66
+00:01:39,590 --> 00:01:39,600
+Um sure it's connected to an LLM. It has
+ 
+
+67
+00:01:39,600 --> 00:01:41,749
+Um sure it's connected to an LLM. It has
+tools but it's still a traditional
+
+68
+00:01:41,749 --> 00:01:41,759
+tools but it's still a traditional
+ 
+
+69
+00:01:41,759 --> 00:01:44,069
+tools but it's still a traditional
+application and like every application
+
+70
+00:01:44,069 --> 00:01:44,079
+application and like every application
+ 
+
+71
+00:01:44,079 --> 00:01:46,230
+application and like every application
+it has breadcrumbs. It has discoverable
+
+72
+00:01:46,230 --> 00:01:46,240
+it has breadcrumbs. It has discoverable
+ 
+
+73
+00:01:46,240 --> 00:01:49,910
+it has breadcrumbs. It has discoverable
+resources. It has endpoints API. It can
+
+74
+00:01:49,910 --> 00:01:49,920
+resources. It has endpoints API. It can
+ 
+
+75
+00:01:49,920 --> 00:01:54,069
+resources. It has endpoints API. It can
+be embedded inside iframe. And so in the
+
+76
+00:01:54,069 --> 00:01:54,079
+be embedded inside iframe. And so in the
+ 
+
+77
+00:01:54,079 --> 00:01:56,950
+be embedded inside iframe. And so in the
+same way an application is discoverable,
+
+78
+00:01:56,950 --> 00:01:56,960
+same way an application is discoverable,
+ 
+
+79
+00:01:56,960 --> 00:01:59,030
+same way an application is discoverable,
+a agents are also discoverable through
+
+80
+00:01:59,030 --> 00:01:59,040
+a agents are also discoverable through
+ 
+
+81
+00:01:59,040 --> 00:02:03,190
+a agents are also discoverable through
+the web. It's a subset of web discovery.
+
+82
+00:02:03,190 --> 00:02:03,200
+the web. It's a subset of web discovery.
+ 
+
+83
+00:02:03,200 --> 00:02:06,389
+the web. It's a subset of web discovery.
+The second important thing is
+
+84
+00:02:06,389 --> 00:02:06,399
+The second important thing is
+ 
+
+85
+00:02:06,399 --> 00:02:09,589
+The second important thing is
+that agents are highly integrated in the
+
+86
+00:02:09,589 --> 00:02:09,599
+that agents are highly integrated in the
+ 
+
+87
+00:02:09,599 --> 00:02:11,350
+that agents are highly integrated in the
+enterprise.
+
+88
+00:02:11,350 --> 00:02:11,360
+enterprise.
+ 
+
+89
+00:02:11,360 --> 00:02:13,670
+enterprise.
+Um a lot of agents have credentials
+
+90
+00:02:13,670 --> 00:02:13,680
+Um a lot of agents have credentials
+ 
+
+91
+00:02:13,680 --> 00:02:15,990
+Um a lot of agents have credentials
+embedded in them. They're connected to
+
+92
+00:02:15,990 --> 00:02:16,000
+embedded in them. They're connected to
+ 
+
+93
+00:02:16,000 --> 00:02:18,309
+embedded in them. They're connected to
+different enterprise data sources. they
+
+94
+00:02:18,309 --> 00:02:18,319
+different enterprise data sources. they
+ 
+
+95
+00:02:18,319 --> 00:02:21,670
+different enterprise data sources. they
+can sometimes change um data inside the
+
+96
+00:02:21,670 --> 00:02:21,680
+can sometimes change um data inside the
+ 
+
+97
+00:02:21,680 --> 00:02:25,750
+can sometimes change um data inside the
+enterprise. So in a way agents are a
+
+98
+00:02:25,750 --> 00:02:25,760
+enterprise. So in a way agents are a
+ 
+
+99
+00:02:25,760 --> 00:02:28,550
+enterprise. So in a way agents are a
+gateway to your enterprise and that
+
+100
+00:02:28,550 --> 00:02:28,560
+gateway to your enterprise and that
+ 
+
+101
+00:02:28,560 --> 00:02:32,710
+gateway to your enterprise and that
+makes them extremely risky and so
+
+102
+00:02:32,710 --> 00:02:32,720
+makes them extremely risky and so
+ 
+
+103
+00:02:32,720 --> 00:02:36,309
+makes them extremely risky and so
+when we talk about discovery attackers
+
+104
+00:02:36,309 --> 00:02:36,319
+when we talk about discovery attackers
+ 
+
+105
+00:02:36,319 --> 00:02:40,390
+when we talk about discovery attackers
+make use of a of different issues. Um
+
+106
+00:02:40,390 --> 00:02:40,400
+make use of a of different issues. Um
+ 
+
+107
+00:02:40,400 --> 00:02:43,110
+make use of a of different issues. Um
+most of them are listed here. um they
+
+108
+00:02:43,110 --> 00:02:43,120
+most of them are listed here. um they
+ 
+
+109
+00:02:43,120 --> 00:02:45,190
+most of them are listed here. um they
+make use of common design patterns that
+
+110
+00:02:45,190 --> 00:02:45,200
+make use of common design patterns that
+ 
+
+111
+00:02:45,200 --> 00:02:47,350
+make use of common design patterns that
+I that are used when when creating
+
+112
+00:02:47,350 --> 00:02:47,360
+I that are used when when creating
+ 
+
+113
+00:02:47,360 --> 00:02:50,150
+I that are used when when creating
+resources that expose your uh your
+
+114
+00:02:50,150 --> 00:02:50,160
+resources that expose your uh your
+ 
+
+115
+00:02:50,160 --> 00:02:52,470
+resources that expose your uh your
+exposure. They make use of out of the
+
+116
+00:02:52,470 --> 00:02:52,480
+exposure. They make use of out of the
+ 
+
+117
+00:02:52,480 --> 00:02:55,990
+exposure. They make use of out of the
+box config because it decreases the the
+
+118
+00:02:55,990 --> 00:02:56,000
+box config because it decreases the the
+ 
+
+119
+00:02:56,000 --> 00:02:57,430
+box config because it decreases the the
+search space and we're going to talk
+
+120
+00:02:57,430 --> 00:02:57,440
+search space and we're going to talk
+ 
+
+121
+00:02:57,440 --> 00:03:00,229
+search space and we're going to talk
+about it. Uh they make use of uh
+
+122
+00:03:00,229 --> 00:03:00,239
+about it. Uh they make use of uh
+ 
+
+123
+00:03:00,239 --> 00:03:03,110
+about it. Uh they make use of uh
+platform security gaps. Um some
+
+124
+00:03:03,110 --> 00:03:03,120
+platform security gaps. Um some
+ 
+
+125
+00:03:03,120 --> 00:03:06,710
+platform security gaps. Um some
+platforms have known issues. Um and as
+
+126
+00:03:06,710 --> 00:03:06,720
+platforms have known issues. Um and as
+ 
+
+127
+00:03:06,720 --> 00:03:08,229
+platforms have known issues. Um and as
+we all know prompt injection for
+
+128
+00:03:08,229 --> 00:03:08,239
+we all know prompt injection for
+ 
+
+129
+00:03:08,239 --> 00:03:10,710
+we all know prompt injection for
+instance is not really a solvable
+
+130
+00:03:10,710 --> 00:03:10,720
+instance is not really a solvable
+ 
+
+131
+00:03:10,720 --> 00:03:12,949
+instance is not really a solvable
+problem as of now.
+
+132
+00:03:12,949 --> 00:03:12,959
+problem as of now.
+ 
+
+133
+00:03:12,959 --> 00:03:15,270
+problem as of now.
+And another thing and this has been true
+
+134
+00:03:15,270 --> 00:03:15,280
+And another thing and this has been true
+ 
+
+135
+00:03:15,280 --> 00:03:17,750
+And another thing and this has been true
+security for decades now. Security by
+
+136
+00:03:17,750 --> 00:03:17,760
+security for decades now. Security by
+ 
+
+137
+00:03:17,760 --> 00:03:20,790
+security for decades now. Security by
+obscurity doesn't really work.
+
+138
+00:03:20,790 --> 00:03:20,800
+obscurity doesn't really work.
+ 
+
+139
+00:03:20,800 --> 00:03:23,110
+obscurity doesn't really work.
+So let's start and overview the
+
+140
+00:03:23,110 --> 00:03:23,120
+So let's start and overview the
+ 
+
+141
+00:03:23,120 --> 00:03:26,070
+So let's start and overview the
+different platforms. Um we'll start by
+
+142
+00:03:26,070 --> 00:03:26,080
+different platforms. Um we'll start by
+ 
+
+143
+00:03:26,080 --> 00:03:29,110
+different platforms. Um we'll start by
+copilot studio. Now when you create a
+
+144
+00:03:29,110 --> 00:03:29,120
+copilot studio. Now when you create a
+ 
+
+145
+00:03:29,120 --> 00:03:31,270
+copilot studio. Now when you create a
+copilot studio resource, you're
+
+146
+00:03:31,270 --> 00:03:31,280
+copilot studio resource, you're
+ 
+
+147
+00:03:31,280 --> 00:03:33,110
+copilot studio resource, you're
+basically creating a website with an
+
+148
+00:03:33,110 --> 00:03:33,120
+basically creating a website with an
+ 
+
+149
+00:03:33,120 --> 00:03:34,949
+basically creating a website with an
+agent embedded in there connected to
+
+150
+00:03:34,949 --> 00:03:34,959
+agent embedded in there connected to
+ 
+
+151
+00:03:34,959 --> 00:03:37,670
+agent embedded in there connected to
+your enterprise resources and embedded
+
+152
+00:03:37,670 --> 00:03:37,680
+your enterprise resources and embedded
+ 
+
+153
+00:03:37,680 --> 00:03:40,390
+your enterprise resources and embedded
+inside a chat like you see over here.
+
+154
+00:03:40,390 --> 00:03:40,400
+inside a chat like you see over here.
+ 
+
+155
+00:03:40,400 --> 00:03:42,949
+inside a chat like you see over here.
+But under the hood, a URL is actually
+
+156
+00:03:42,949 --> 00:03:42,959
+But under the hood, a URL is actually
+ 
+
+157
+00:03:42,959 --> 00:03:45,910
+But under the hood, a URL is actually
+created and this URL is comprises of
+
+158
+00:03:45,910 --> 00:03:45,920
+created and this URL is comprises of
+ 
+
+159
+00:03:45,920 --> 00:03:47,830
+created and this URL is comprises of
+various components. Some of them have
+
+160
+00:03:47,830 --> 00:03:47,840
+various components. Some of them have
+ 
+
+161
+00:03:47,840 --> 00:03:52,390
+various components. Some of them have
+entropy, others have more pred more
+
+162
+00:03:52,390 --> 00:03:52,400
+entropy, others have more pred more
+ 
+
+163
+00:03:52,400 --> 00:03:54,630
+entropy, others have more pred more
+predictable. And let's just go over them
+
+164
+00:03:54,630 --> 00:03:54,640
+predictable. And let's just go over them
+ 
+
+165
+00:03:54,640 --> 00:03:56,630
+predictable. And let's just go over them
+one by one. And we'll start with the
+
+166
+00:03:56,630 --> 00:03:56,640
+one by one. And we'll start with the
+ 
+
+167
+00:03:56,640 --> 00:03:58,470
+one by one. And we'll start with the
+purple one that you see over here.
+
+168
+00:03:58,470 --> 00:03:58,480
+purple one that you see over here.
+ 
+
+169
+00:03:58,480 --> 00:04:01,110
+purple one that you see over here.
+That's the environment.
+
+170
+00:04:01,110 --> 00:04:01,120
+That's the environment.
+ 
+
+171
+00:04:01,120 --> 00:04:03,589
+That's the environment.
+Now, an environment is essentially a
+
+172
+00:04:03,589 --> 00:04:03,599
+Now, an environment is essentially a
+ 
+
+173
+00:04:03,599 --> 00:04:06,229
+Now, an environment is essentially a
+container for your tenants enterprise
+
+174
+00:04:06,229 --> 00:04:06,239
+container for your tenants enterprise
+ 
+
+175
+00:04:06,239 --> 00:04:09,190
+container for your tenants enterprise
+resources. And every tenant is created
+
+176
+00:04:09,190 --> 00:04:09,200
+resources. And every tenant is created
+ 
+
+177
+00:04:09,200 --> 00:04:11,270
+resources. And every tenant is created
+with a default environment. And like you
+
+178
+00:04:11,270 --> 00:04:11,280
+with a default environment. And like you
+ 
+
+179
+00:04:11,280 --> 00:04:12,949
+with a default environment. And like you
+can see over here, the default
+
+180
+00:04:12,949 --> 00:04:12,959
+can see over here, the default
+ 
+
+181
+00:04:12,959 --> 00:04:15,910
+can see over here, the default
+environment is always created with the
+
+182
+00:04:15,910 --> 00:04:15,920
+environment is always created with the
+ 
+
+183
+00:04:15,920 --> 00:04:18,229
+environment is always created with the
+prefix default followed by the tenant
+
+184
+00:04:18,229 --> 00:04:18,239
+prefix default followed by the tenant
+ 
+
+185
+00:04:18,239 --> 00:04:21,830
+prefix default followed by the tenant
+ID. How do we get this tenant ID? Well,
+
+186
+00:04:21,830 --> 00:04:21,840
+ID. How do we get this tenant ID? Well,
+ 
+
+187
+00:04:21,840 --> 00:04:24,950
+ID. How do we get this tenant ID? Well,
+turns out AD internal uh conducted a
+
+188
+00:04:24,950 --> 00:04:24,960
+turns out AD internal uh conducted a
+ 
+
+189
+00:04:24,960 --> 00:04:26,870
+turns out AD internal uh conducted a
+research and they found an undocumented
+
+190
+00:04:26,870 --> 00:04:26,880
+research and they found an undocumented
+ 
+
+191
+00:04:26,880 --> 00:04:29,510
+research and they found an undocumented
+Microsoft API that by giving it the
+
+192
+00:04:29,510 --> 00:04:29,520
+Microsoft API that by giving it the
+ 
+
+193
+00:04:29,520 --> 00:04:32,310
+Microsoft API that by giving it the
+domain, you can fetch back the tenant
+
+194
+00:04:32,310 --> 00:04:32,320
+domain, you can fetch back the tenant
+ 
+
+195
+00:04:32,320 --> 00:04:35,909
+domain, you can fetch back the tenant
+ID. So that's how we can resolve um the
+
+196
+00:04:35,909 --> 00:04:35,919
+ID. So that's how we can resolve um the
+ 
+
+197
+00:04:35,919 --> 00:04:38,390
+ID. So that's how we can resolve um the
+the the environment variable. Now what
+
+198
+00:04:38,390 --> 00:04:38,400
+the the environment variable. Now what
+ 
+
+199
+00:04:38,400 --> 00:04:40,150
+the the environment variable. Now what
+about this one? This is this is called
+
+200
+00:04:40,150 --> 00:04:40,160
+about this one? This is this is called
+ 
+
+201
+00:04:40,160 --> 00:04:43,030
+about this one? This is this is called
+the solution prefix. A solution prefix
+
+202
+00:04:43,030 --> 00:04:43,040
+the solution prefix. A solution prefix
+ 
+
+203
+00:04:43,040 --> 00:04:45,510
+the solution prefix. A solution prefix
+is actually created to create to um
+
+204
+00:04:45,510 --> 00:04:45,520
+is actually created to create to um
+ 
+
+205
+00:04:45,520 --> 00:04:48,870
+is actually created to create to um
+achieve uniqueness in u the agents that
+
+206
+00:04:48,870 --> 00:04:48,880
+achieve uniqueness in u the agents that
+ 
+
+207
+00:04:48,880 --> 00:04:51,110
+achieve uniqueness in u the agents that
+you create inside your environment. This
+
+208
+00:04:51,110 --> 00:04:51,120
+you create inside your environment. This
+ 
+
+209
+00:04:51,120 --> 00:04:53,189
+you create inside your environment. This
+solution prefix is essentially an alpha
+
+210
+00:04:53,189 --> 00:04:53,199
+solution prefix is essentially an alpha
+ 
+
+211
+00:04:53,199 --> 00:04:56,390
+solution prefix is essentially an alpha
+numeric string between the uh length of
+
+212
+00:04:56,390 --> 00:04:56,400
+numeric string between the uh length of
+ 
+
+213
+00:04:56,400 --> 00:04:59,350
+numeric string between the uh length of
+uh five and eight alpha numeric
+
+214
+00:04:59,350 --> 00:04:59,360
+uh five and eight alpha numeric
+ 
+
+215
+00:04:59,360 --> 00:05:00,950
+uh five and eight alpha numeric
+characters. So it has pretty high
+
+216
+00:05:00,950 --> 00:05:00,960
+characters. So it has pretty high
+ 
+
+217
+00:05:00,960 --> 00:05:04,070
+characters. So it has pretty high
+entropy. However, like I said earlier,
+
+218
+00:05:04,070 --> 00:05:04,080
+entropy. However, like I said earlier,
+ 
+
+219
+00:05:04,080 --> 00:05:06,469
+entropy. However, like I said earlier,
+most people is the default. And we found
+
+220
+00:05:06,469 --> 00:05:06,479
+most people is the default. And we found
+ 
+
+221
+00:05:06,479 --> 00:05:08,870
+most people is the default. And we found
+that the default uh the search space is
+
+222
+00:05:08,870 --> 00:05:08,880
+that the default uh the search space is
+ 
+
+223
+00:05:08,880 --> 00:05:11,510
+that the default uh the search space is
+is is kind of small. uh it comprises of
+
+224
+00:05:11,510 --> 00:05:11,520
+is is kind of small. uh it comprises of
+ 
+
+225
+00:05:11,520 --> 00:05:13,830
+is is kind of small. uh it comprises of
+the CR prefix followed by two to three
+
+226
+00:05:13,830 --> 00:05:13,840
+the CR prefix followed by two to three
+ 
+
+227
+00:05:13,840 --> 00:05:17,350
+the CR prefix followed by two to three
+alpha numeric strings. So it can be
+
+228
+00:05:17,350 --> 00:05:17,360
+alpha numeric strings. So it can be
+ 
+
+229
+00:05:17,360 --> 00:05:20,870
+alpha numeric strings. So it can be
+fuzzed but here's the thing um it's not
+
+230
+00:05:20,870 --> 00:05:20,880
+fuzzed but here's the thing um it's not
+ 
+
+231
+00:05:20,880 --> 00:05:22,790
+fuzzed but here's the thing um it's not
+the only thing that you need to that you
+
+232
+00:05:22,790 --> 00:05:22,800
+the only thing that you need to that you
+ 
+
+233
+00:05:22,800 --> 00:05:24,790
+the only thing that you need to that you
+need to find because it's also connected
+
+234
+00:05:24,790 --> 00:05:24,800
+need to find because it's also connected
+ 
+
+235
+00:05:24,800 --> 00:05:28,550
+need to find because it's also connected
+to um an agent.
+
+236
+00:05:28,550 --> 00:05:28,560
+to um an agent.
+ 
+
+237
+00:05:28,560 --> 00:05:30,310
+to um an agent.
+So we have to find like a solution
+
+238
+00:05:30,310 --> 00:05:30,320
+So we have to find like a solution
+ 
+
+239
+00:05:30,320 --> 00:05:33,110
+So we have to find like a solution
+prefix along with an agent.
+
+240
+00:05:33,110 --> 00:05:33,120
+prefix along with an agent.
+ 
+
+241
+00:05:33,120 --> 00:05:35,749
+prefix along with an agent.
+Well, turns out a lot of environment are
+
+242
+00:05:35,749 --> 00:05:35,759
+Well, turns out a lot of environment are
+ 
+
+243
+00:05:35,759 --> 00:05:39,110
+Well, turns out a lot of environment are
+created with some default bots or that
+
+244
+00:05:39,110 --> 00:05:39,120
+created with some default bots or that
+ 
+
+245
+00:05:39,120 --> 00:05:41,350
+created with some default bots or that
+are pretty much common. Copilot one,
+
+246
+00:05:41,350 --> 00:05:41,360
+are pretty much common. Copilot one,
+ 
+
+247
+00:05:41,360 --> 00:05:44,310
+are pretty much common. Copilot one,
+copilot two, one, two, three, test, AI,
+
+248
+00:05:44,310 --> 00:05:44,320
+copilot two, one, two, three, test, AI,
+ 
+
+249
+00:05:44,320 --> 00:05:46,950
+copilot two, one, two, three, test, AI,
+AI bot. And by finding just one of these
+
+250
+00:05:46,950 --> 00:05:46,960
+AI bot. And by finding just one of these
+ 
+
+251
+00:05:46,960 --> 00:05:48,230
+AI bot. And by finding just one of these
+along with the fuzzing that we did
+
+252
+00:05:48,230 --> 00:05:48,240
+along with the fuzzing that we did
+ 
+
+253
+00:05:48,240 --> 00:05:50,950
+along with the fuzzing that we did
+earlier, you can find a solution prefix.
+
+254
+00:05:50,950 --> 00:05:50,960
+earlier, you can find a solution prefix.
+ 
+
+255
+00:05:50,960 --> 00:05:53,430
+earlier, you can find a solution prefix.
+And once you found the solution prefix,
+
+256
+00:05:53,430 --> 00:05:53,440
+And once you found the solution prefix,
+ 
+
+257
+00:05:53,440 --> 00:05:55,350
+And once you found the solution prefix,
+you can basically enumerate and find
+
+258
+00:05:55,350 --> 00:05:55,360
+you can basically enumerate and find
+ 
+
+259
+00:05:55,360 --> 00:05:57,990
+you can basically enumerate and find
+different agents in this environment.
+
+260
+00:05:57,990 --> 00:05:58,000
+different agents in this environment.
+ 
+
+261
+00:05:58,000 --> 00:06:00,310
+different agents in this environment.
+And again, this is something every
+
+262
+00:06:00,310 --> 00:06:00,320
+And again, this is something every
+ 
+
+263
+00:06:00,320 --> 00:06:11,590
+And again, this is something every
+developer would do.
+
+264
+00:06:11,590 --> 00:06:11,600
+
+ 
+
+265
+00:06:11,600 --> 00:06:14,230
+
+mix it match by Atlassian database
+
+266
+00:06:14,230 --> 00:06:14,240
+mix it match by Atlassian database
+ 
+
+267
+00:06:14,240 --> 00:06:17,510
+mix it match by Atlassian database
+dashboard sandbox integration test dev
+
+268
+00:06:17,510 --> 00:06:17,520
+dashboard sandbox integration test dev
+ 
+
+269
+00:06:17,520 --> 00:06:19,189
+dashboard sandbox integration test dev
+prods
+
+270
+00:06:19,189 --> 00:06:19,199
+prods
+ 
+
+271
+00:06:19,199 --> 00:06:21,670
+prods
+on the industry but it's pretty easy to
+
+272
+00:06:21,670 --> 00:06:21,680
+on the industry but it's pretty easy to
+ 
+
+273
+00:06:21,680 --> 00:06:24,629
+on the industry but it's pretty easy to
+fuzz and using that approach we were
+
+274
+00:06:24,629 --> 00:06:24,639
+fuzz and using that approach we were
+ 
+
+275
+00:06:24,639 --> 00:06:26,710
+fuzz and using that approach we were
+able to find
+
+276
+00:06:26,710 --> 00:06:26,720
+able to find
+ 
+
+277
+00:06:26,720 --> 00:06:29,830
+able to find
+tens of thousands of those agents
+
+278
+00:06:29,830 --> 00:06:29,840
+tens of thousands of those agents
+ 
+
+279
+00:06:29,840 --> 00:06:32,629
+tens of thousands of those agents
+um taking a step further there uh we
+
+280
+00:06:32,629 --> 00:06:32,639
+um taking a step further there uh we
+ 
+
+281
+00:06:32,639 --> 00:06:35,510
+um taking a step further there uh we
+also to took leverage of uh uh power
+
+282
+00:06:35,510 --> 00:06:35,520
+also to took leverage of uh uh power
+ 
+
+283
+00:06:35,520 --> 00:06:38,230
+also to took leverage of uh uh power
+platform API and we're also able to
+
+284
+00:06:38,230 --> 00:06:38,240
+platform API and we're also able to
+ 
+
+285
+00:06:38,240 --> 00:06:40,309
+platform API and we're also able to
+figure out whether those agents require
+
+286
+00:06:40,309 --> 00:06:40,319
+figure out whether those agents require
+ 
+
+287
+00:06:40,319 --> 00:06:43,029
+figure out whether those agents require
+authentication or not and like you can
+
+288
+00:06:43,029 --> 00:06:43,039
+authentication or not and like you can
+ 
+
+289
+00:06:43,039 --> 00:06:46,469
+authentication or not and like you can
+see over here um
+
+290
+00:06:46,469 --> 00:06:46,479
+see over here um
+ 
+
+291
+00:06:46,479 --> 00:06:49,749
+see over here um
+you can also extend it um by by by using
+
+292
+00:06:49,749 --> 00:06:49,759
+you can also extend it um by by by using
+ 
+
+293
+00:06:49,759 --> 00:06:52,550
+you can also extend it um by by by using
+subdomain enumeration and expand the
+
+294
+00:06:52,550 --> 00:06:52,560
+subdomain enumeration and expand the
+ 
+
+295
+00:06:52,560 --> 00:06:53,990
+subdomain enumeration and expand the
+number of agent that you that you can
+
+296
+00:06:53,990 --> 00:06:54,000
+number of agent that you that you can
+ 
+
+297
+00:06:54,000 --> 00:06:58,230
+number of agent that you that you can
+find even more and that's that's
+
+298
+00:06:58,230 --> 00:06:58,240
+find even more and that's that's
+ 
+
+299
+00:06:58,240 --> 00:07:00,230
+find even more and that's that's
+just so you understand how much how much
+
+300
+00:07:00,230 --> 00:07:00,240
+just so you understand how much how much
+ 
+
+301
+00:07:00,240 --> 00:07:02,469
+just so you understand how much how much
+of a problem that is a internal actually
+
+302
+00:07:02,469 --> 00:07:02,479
+of a problem that is a internal actually
+ 
+
+303
+00:07:02,479 --> 00:07:05,430
+of a problem that is a internal actually
+had a website that by giving it a domain
+
+304
+00:07:05,430 --> 00:07:05,440
+had a website that by giving it a domain
+ 
+
+305
+00:07:05,440 --> 00:07:07,029
+had a website that by giving it a domain
+you could have fetched back the tenant
+
+306
+00:07:07,029 --> 00:07:07,039
+you could have fetched back the tenant
+ 
+
+307
+00:07:07,039 --> 00:07:09,350
+you could have fetched back the tenant
+ID and they had to turn it down because
+
+308
+00:07:09,350 --> 00:07:09,360
+ID and they had to turn it down because
+ 
+
+309
+00:07:09,360 --> 00:07:11,830
+ID and they had to turn it down because
+it was actually abused.
+
+310
+00:07:11,830 --> 00:07:11,840
+it was actually abused.
+ 
+
+311
+00:07:11,840 --> 00:07:14,629
+it was actually abused.
+Now let's move to the next platform.
+
+312
+00:07:14,629 --> 00:07:14,639
+Now let's move to the next platform.
+ 
+
+313
+00:07:14,639 --> 00:07:15,909
+Now let's move to the next platform.
+Now we're going to talk about agent
+
+314
+00:07:15,909 --> 00:07:15,919
+Now we're going to talk about agent
+ 
+
+315
+00:07:15,919 --> 00:07:18,790
+Now we're going to talk about agent
+builder by OpenAI. Agent Builder works
+
+316
+00:07:18,790 --> 00:07:18,800
+builder by OpenAI. Agent Builder works
+ 
+
+317
+00:07:18,800 --> 00:07:20,629
+builder by OpenAI. Agent Builder works
+in the same way that Copilot Studio
+
+318
+00:07:20,629 --> 00:07:20,639
+in the same way that Copilot Studio
+ 
+
+319
+00:07:20,639 --> 00:07:23,749
+in the same way that Copilot Studio
+works, but the only difference is that
+
+320
+00:07:23,749 --> 00:07:23,759
+works, but the only difference is that
+ 
+
+321
+00:07:23,759 --> 00:07:25,110
+works, but the only difference is that
+the developer is in charge of the
+
+322
+00:07:25,110 --> 00:07:25,120
+the developer is in charge of the
+ 
+
+323
+00:07:25,120 --> 00:07:27,350
+the developer is in charge of the
+deployment and that's exactly how it can
+
+324
+00:07:27,350 --> 00:07:27,360
+deployment and that's exactly how it can
+ 
+
+325
+00:07:27,360 --> 00:07:29,029
+deployment and that's exactly how it can
+create an create an attack surface
+
+326
+00:07:29,029 --> 00:07:29,039
+create an create an attack surface
+ 
+
+327
+00:07:29,039 --> 00:07:33,749
+create an create an attack surface
+because OpenAI recommends a bunch of um
+
+328
+00:07:33,749 --> 00:07:33,759
+because OpenAI recommends a bunch of um
+ 
+
+329
+00:07:33,759 --> 00:07:36,150
+because OpenAI recommends a bunch of um
+GitHub repo starter kits that have
+
+330
+00:07:36,150 --> 00:07:36,160
+GitHub repo starter kits that have
+ 
+
+331
+00:07:36,160 --> 00:07:38,469
+GitHub repo starter kits that have
+well-known names. So match that with the
+
+332
+00:07:38,469 --> 00:07:38,479
+well-known names. So match that with the
+ 
+
+333
+00:07:38,479 --> 00:07:40,309
+well-known names. So match that with the
+fact that most agents are also deployed
+
+334
+00:07:40,309 --> 00:07:40,319
+fact that most agents are also deployed
+ 
+
+335
+00:07:40,319 --> 00:07:43,749
+fact that most agents are also deployed
+using Versel and render
+
+336
+00:07:43,749 --> 00:07:43,759
+using Versel and render
+ 
+
+337
+00:07:43,759 --> 00:07:45,430
+using Versel and render
+and the cell space of the different
+
+338
+00:07:45,430 --> 00:07:45,440
+and the cell space of the different
+ 
+
+339
+00:07:45,440 --> 00:07:47,110
+and the cell space of the different
+addresses of the agents is pretty
+
+340
+00:07:47,110 --> 00:07:47,120
+addresses of the agents is pretty
+ 
+
+341
+00:07:47,120 --> 00:07:50,710
+addresses of the agents is pretty
+limited. Add that to the fact that um
+
+342
+00:07:50,710 --> 00:07:50,720
+limited. Add that to the fact that um
+ 
+
+343
+00:07:50,720 --> 00:07:52,309
+limited. Add that to the fact that um
+some of them also contain the branch
+
+344
+00:07:52,309 --> 00:07:52,319
+some of them also contain the branch
+ 
+
+345
+00:07:52,319 --> 00:07:53,909
+some of them also contain the branch
+name and you reduce the search the
+
+346
+00:07:53,909 --> 00:07:53,919
+name and you reduce the search the
+ 
+
+347
+00:07:53,919 --> 00:07:57,270
+name and you reduce the search the
+search space even more. um to check to
+
+348
+00:07:57,270 --> 00:07:57,280
+search space even more. um to check to
+ 
+
+349
+00:07:57,280 --> 00:07:58,629
+search space even more. um to check to
+check if if an agent exists, you
+
+350
+00:07:58,629 --> 00:07:58,639
+check if if an agent exists, you
+ 
+
+351
+00:07:58,639 --> 00:08:00,550
+check if if an agent exists, you
+basically need to call create session,
+
+352
+00:08:00,550 --> 00:08:00,560
+basically need to call create session,
+ 
+
+353
+00:08:00,560 --> 00:08:03,909
+basically need to call create session,
+receive receive the client secret um
+
+354
+00:08:03,909 --> 00:08:03,919
+receive receive the client secret um
+ 
+
+355
+00:08:03,919 --> 00:08:05,990
+receive receive the client secret um
+fetch check if it was verified or not.
+
+356
+00:08:05,990 --> 00:08:06,000
+fetch check if it was verified or not.
+ 
+
+357
+00:08:06,000 --> 00:08:08,150
+fetch check if it was verified or not.
+And if it was, you've got an agent out
+
+358
+00:08:08,150 --> 00:08:08,160
+And if it was, you've got an agent out
+ 
+
+359
+00:08:08,160 --> 00:08:11,510
+And if it was, you've got an agent out
+there.
+
+360
+00:08:11,510 --> 00:08:11,520
+
+ 
+
+361
+00:08:11,520 --> 00:08:15,189
+
+And as you can see over here, um we we
+
+362
+00:08:15,189 --> 00:08:15,199
+And as you can see over here, um we we
+ 
+
+363
+00:08:15,199 --> 00:08:16,629
+And as you can see over here, um we we
+were able to witness some of these
+
+364
+00:08:16,629 --> 00:08:16,639
+were able to witness some of these
+ 
+
+365
+00:08:16,639 --> 00:08:19,350
+were able to witness some of these
+agents and some of them had
+
+366
+00:08:19,350 --> 00:08:19,360
+agents and some of them had
+ 
+
+367
+00:08:19,360 --> 00:08:21,670
+agents and some of them had
+I think our
+
+368
+00:08:21,670 --> 00:08:21,680
+I think our
+ 
+
+369
+00:08:21,680 --> 00:08:30,790
+I think our
+screen is a problem.
+
+370
+00:08:30,790 --> 00:08:30,800
+
+ 
+
+371
+00:08:30,800 --> 00:08:32,389
+
+But essentially, we were able to see
+
+372
+00:08:32,389 --> 00:08:32,399
+But essentially, we were able to see
+ 
+
+373
+00:08:32,399 --> 00:08:35,269
+But essentially, we were able to see
+that um those agents might actually
+
+374
+00:08:35,269 --> 00:08:35,279
+that um those agents might actually
+ 
+
+375
+00:08:35,279 --> 00:08:36,870
+that um those agents might actually
+contain some confidential information
+
+376
+00:08:36,870 --> 00:08:36,880
+contain some confidential information
+ 
+
+377
+00:08:36,880 --> 00:08:40,389
+contain some confidential information
+that was not supposed to be there.
+
+378
+00:08:40,389 --> 00:08:40,399
+that was not supposed to be there.
+ 
+
+379
+00:08:40,399 --> 00:08:42,149
+that was not supposed to be there.
+Next, we're going to overview custom
+
+380
+00:08:42,149 --> 00:08:42,159
+Next, we're going to overview custom
+ 
+
+381
+00:08:42,159 --> 00:08:46,949
+Next, we're going to overview custom
+GPTs. Uh custom GPT is a way for uh
+
+382
+00:08:46,949 --> 00:08:46,959
+GPTs. Uh custom GPT is a way for uh
+ 
+
+383
+00:08:46,959 --> 00:08:50,230
+GPTs. Uh custom GPT is a way for uh
+enterprises connect to uh different uh
+
+384
+00:08:50,230 --> 00:08:50,240
+enterprises connect to uh different uh
+ 
+
+385
+00:08:50,240 --> 00:08:51,269
+enterprises connect to uh different uh
+different GPS with different
+
+386
+00:08:51,269 --> 00:08:51,279
+different GPS with different
+ 
+
+387
+00:08:51,279 --> 00:08:54,150
+different GPS with different
+capabilities. But the problem is that um
+
+388
+00:08:54,150 --> 00:08:54,160
+capabilities. But the problem is that um
+ 
+
+389
+00:08:54,160 --> 00:08:56,230
+capabilities. But the problem is that um
+it's by design but everyone can see it
+
+390
+00:08:56,230 --> 00:08:56,240
+it's by design but everyone can see it
+ 
+
+391
+00:08:56,240 --> 00:08:57,670
+it's by design but everyone can see it
+and by that you also increase your
+
+392
+00:08:57,670 --> 00:08:57,680
+and by that you also increase your
+ 
+
+393
+00:08:57,680 --> 00:09:00,310
+and by that you also increase your
+attack surface. So whenever you look at
+
+394
+00:09:00,310 --> 00:09:00,320
+attack surface. So whenever you look at
+ 
+
+395
+00:09:00,320 --> 00:09:03,990
+attack surface. So whenever you look at
+a different custom GPT you can see the
+
+396
+00:09:03,990 --> 00:09:04,000
+a different custom GPT you can see the
+ 
+
+397
+00:09:04,000 --> 00:09:06,150
+a different custom GPT you can see the
+different capabilities that it has from
+
+398
+00:09:06,150 --> 00:09:06,160
+different capabilities that it has from
+ 
+
+399
+00:09:06,160 --> 00:09:08,310
+different capabilities that it has from
+from the default tools. In this case you
+
+400
+00:09:08,310 --> 00:09:08,320
+from the default tools. In this case you
+ 
+
+401
+00:09:08,320 --> 00:09:10,150
+from the default tools. In this case you
+can see that it has Python browser and
+
+402
+00:09:10,150 --> 00:09:10,160
+can see that it has Python browser and
+ 
+
+403
+00:09:10,160 --> 00:09:14,310
+can see that it has Python browser and
+Deli. Um but it can also contain custom
+
+404
+00:09:14,310 --> 00:09:14,320
+Deli. Um but it can also contain custom
+ 
+
+405
+00:09:14,320 --> 00:09:17,509
+Deli. Um but it can also contain custom
+connectors such as this one that uh list
+
+406
+00:09:17,509 --> 00:09:17,519
+connectors such as this one that uh list
+ 
+
+407
+00:09:17,519 --> 00:09:19,190
+connectors such as this one that uh list
+all your Gmails. Now again this is by
+
+408
+00:09:19,190 --> 00:09:19,200
+all your Gmails. Now again this is by
+ 
+
+409
+00:09:19,200 --> 00:09:22,150
+all your Gmails. Now again this is by
+design. It's by no means
+
+410
+00:09:22,150 --> 00:09:22,160
+design. It's by no means
+ 
+
+411
+00:09:22,160 --> 00:09:24,949
+design. It's by no means
+uh traditional recon uh but it it gives
+
+412
+00:09:24,949 --> 00:09:24,959
+uh traditional recon uh but it it gives
+ 
+
+413
+00:09:24,959 --> 00:09:26,870
+uh traditional recon uh but it it gives
+an attacker a lot of information and you
+
+414
+00:09:26,870 --> 00:09:26,880
+an attacker a lot of information and you
+ 
+
+415
+00:09:26,880 --> 00:09:30,310
+an attacker a lot of information and you
+need to be aware of that.
+
+416
+00:09:30,310 --> 00:09:30,320
+need to be aware of that.
+ 
+
+417
+00:09:30,320 --> 00:09:34,150
+need to be aware of that.
+Next we uh overviewed using open source
+
+418
+00:09:34,150 --> 00:09:34,160
+Next we uh overviewed using open source
+ 
+
+419
+00:09:34,160 --> 00:09:36,710
+Next we uh overviewed using open source
+intelligence a bunch of AI medals and by
+
+420
+00:09:36,710 --> 00:09:36,720
+intelligence a bunch of AI medals and by
+ 
+
+421
+00:09:36,720 --> 00:09:40,070
+intelligence a bunch of AI medals and by
+that I mean LLM runtimes AI gateway
+
+422
+00:09:40,070 --> 00:09:40,080
+that I mean LLM runtimes AI gateway
+ 
+
+423
+00:09:40,080 --> 00:09:42,230
+that I mean LLM runtimes AI gateway
+model context protocol servers and we
+
+424
+00:09:42,230 --> 00:09:42,240
+model context protocol servers and we
+ 
+
+425
+00:09:42,240 --> 00:09:46,070
+model context protocol servers and we
+used various methods for that. So
+
+426
+00:09:46,070 --> 00:09:46,080
+used various methods for that. So
+ 
+
+427
+00:09:46,080 --> 00:09:49,110
+used various methods for that. So
+if you look at Shoddon for instance,
+
+428
+00:09:49,110 --> 00:09:49,120
+if you look at Shoddon for instance,
+ 
+
+429
+00:09:49,120 --> 00:09:51,030
+if you look at Shoddon for instance,
+this the right one? Yeah. Okay. If you
+
+430
+00:09:51,030 --> 00:09:51,040
+this the right one? Yeah. Okay. If you
+ 
+
+431
+00:09:51,040 --> 00:09:53,030
+this the right one? Yeah. Okay. If you
+look at Shoddon for instance and look
+
+432
+00:09:53,030 --> 00:09:53,040
+look at Shoddon for instance and look
+ 
+
+433
+00:09:53,040 --> 00:09:54,949
+look at Shoddon for instance and look
+and you look for the well- definfined
+
+434
+00:09:54,949 --> 00:09:54,959
+and you look for the well- definfined
+ 
+
+435
+00:09:54,959 --> 00:09:58,070
+and you look for the well- definfined
+MCP session ID, you will be able to find
+
+436
+00:09:58,070 --> 00:09:58,080
+MCP session ID, you will be able to find
+ 
+
+437
+00:09:58,080 --> 00:10:01,509
+MCP session ID, you will be able to find
+hundred of thousand of just open ser of
+
+438
+00:10:01,509 --> 00:10:01,519
+hundred of thousand of just open ser of
+ 
+
+439
+00:10:01,519 --> 00:10:03,590
+hundred of thousand of just open ser of
+open MCP servers. Some of them are
+
+440
+00:10:03,590 --> 00:10:03,600
+open MCP servers. Some of them are
+ 
+
+441
+00:10:03,600 --> 00:10:05,350
+open MCP servers. Some of them are
+authenticated, some of them are not, but
+
+442
+00:10:05,350 --> 00:10:05,360
+authenticated, some of them are not, but
+ 
+
+443
+00:10:05,360 --> 00:10:08,550
+authenticated, some of them are not, but
+they're just out out in the open. Um,
+
+444
+00:10:08,550 --> 00:10:08,560
+they're just out out in the open. Um,
+ 
+
+445
+00:10:08,560 --> 00:10:10,470
+they're just out out in the open. Um,
+another thing we we were able to find
+
+446
+00:10:10,470 --> 00:10:10,480
+another thing we we were able to find
+ 
+
+447
+00:10:10,480 --> 00:10:15,269
+another thing we we were able to find
+was using an HTML hash and we literally
+
+448
+00:10:15,269 --> 00:10:15,279
+was using an HTML hash and we literally
+ 
+
+449
+00:10:15,279 --> 00:10:20,069
+was using an HTML hash and we literally
+found um an opened copilot API got its
+
+450
+00:10:20,069 --> 00:10:20,079
+found um an opened copilot API got its
+ 
+
+451
+00:10:20,079 --> 00:10:23,590
+found um an opened copilot API got its
+swagger and it had an exposed endpoint
+
+452
+00:10:23,590 --> 00:10:23,600
+swagger and it had an exposed endpoint
+ 
+
+453
+00:10:23,600 --> 00:10:27,110
+swagger and it had an exposed endpoint
+of purge vector DB. Now I don't really
+
+454
+00:10:27,110 --> 00:10:27,120
+of purge vector DB. Now I don't really
+ 
+
+455
+00:10:27,120 --> 00:10:28,470
+of purge vector DB. Now I don't really
+know what they have in this vector DB
+
+456
+00:10:28,470 --> 00:10:28,480
+know what they have in this vector DB
+ 
+
+457
+00:10:28,480 --> 00:10:32,550
+know what they have in this vector DB
+but it shouldn't be public.
+
+458
+00:10:32,550 --> 00:10:32,560
+
+ 
+
+459
+00:10:32,560 --> 00:10:35,350
+
+Another interesting resource in GSO says
+
+460
+00:10:35,350 --> 00:10:35,360
+Another interesting resource in GSO says
+ 
+
+461
+00:10:35,360 --> 00:10:37,750
+Another interesting resource in GSO says
+are MCP registries. MCP registers
+
+462
+00:10:37,750 --> 00:10:37,760
+are MCP registries. MCP registers
+ 
+
+463
+00:10:37,760 --> 00:10:39,030
+are MCP registries. MCP registers
+contain a lot of information. They
+
+464
+00:10:39,030 --> 00:10:39,040
+contain a lot of information. They
+ 
+
+465
+00:10:39,040 --> 00:10:41,910
+contain a lot of information. They
+contain the backend URL. They contain
+
+466
+00:10:41,910 --> 00:10:41,920
+contain the backend URL. They contain
+ 
+
+467
+00:10:41,920 --> 00:10:44,870
+contain the backend URL. They contain
+different tools that the MCPU that are
+
+468
+00:10:44,870 --> 00:10:44,880
+different tools that the MCPU that are
+ 
+
+469
+00:10:44,880 --> 00:10:47,509
+different tools that the MCPU that are
+available in the MCPS in in in the JSON
+
+470
+00:10:47,509 --> 00:10:47,519
+available in the MCPS in in in the JSON
+ 
+
+471
+00:10:47,519 --> 00:10:52,550
+available in the MCPS in in in the JSON
+file. And again, it gives information
+
+472
+00:10:52,550 --> 00:10:52,560
+file. And again, it gives information
+ 
+
+473
+00:10:52,560 --> 00:10:54,389
+file. And again, it gives information
+about your services. This can be
+
+474
+00:10:54,389 --> 00:10:54,399
+about your services. This can be
+ 
+
+475
+00:10:54,399 --> 00:10:57,030
+about your services. This can be
+dangerous.
+
+476
+00:10:57,030 --> 00:10:57,040
+dangerous.
+ 
+
+477
+00:10:57,040 --> 00:10:59,190
+dangerous.
+Now, this is actually very interesting.
+
+478
+00:10:59,190 --> 00:10:59,200
+Now, this is actually very interesting.
+ 
+
+479
+00:10:59,200 --> 00:11:01,910
+Now, this is actually very interesting.
+Um,
+
+480
+00:11:01,910 --> 00:11:01,920
+Um,
+ 
+
+481
+00:11:01,920 --> 00:11:05,670
+Um,
+back links can also be used for that.
+
+482
+00:11:05,670 --> 00:11:05,680
+back links can also be used for that.
+ 
+
+483
+00:11:05,680 --> 00:11:07,350
+back links can also be used for that.
+uh as you can see in this example in
+
+484
+00:11:07,350 --> 00:11:07,360
+uh as you can see in this example in
+ 
+
+485
+00:11:07,360 --> 00:11:09,910
+uh as you can see in this example in
+copilot studio for example uh you can
+
+486
+00:11:09,910 --> 00:11:09,920
+copilot studio for example uh you can
+ 
+
+487
+00:11:09,920 --> 00:11:12,949
+copilot studio for example uh you can
+embed a copilot or an agent inside an
+
+488
+00:11:12,949 --> 00:11:12,959
+embed a copilot or an agent inside an
+ 
+
+489
+00:11:12,959 --> 00:11:15,269
+embed a copilot or an agent inside an
+iframe now once you do that you
+
+490
+00:11:15,269 --> 00:11:15,279
+iframe now once you do that you
+ 
+
+491
+00:11:15,279 --> 00:11:16,710
+iframe now once you do that you
+essentially created a backlink for your
+
+492
+00:11:16,710 --> 00:11:16,720
+essentially created a backlink for your
+ 
+
+493
+00:11:16,720 --> 00:11:20,389
+essentially created a backlink for your
+agent um so we use backlink search tools
+
+494
+00:11:20,389 --> 00:11:20,399
+agent um so we use backlink search tools
+ 
+
+495
+00:11:20,399 --> 00:11:21,030
+agent um so we use backlink search tools
+to search for
+
+496
+00:11:21,030 --> 00:11:21,040
+to search for
+ 
+
+497
+00:11:21,040 --> 00:11:23,350
+to search for
+copilotstudio.microsoft.com
+
+498
+00:11:23,350 --> 00:11:23,360
+copilotstudio.microsoft.com
+ 
+
+499
+00:11:23,360 --> 00:11:27,190
+copilotstudio.microsoft.com
+and that alone showed us 2500 open
+
+500
+00:11:27,190 --> 00:11:27,200
+and that alone showed us 2500 open
+ 
+
+501
+00:11:27,200 --> 00:11:29,110
+and that alone showed us 2500 open
+agents in the web and like I said
+
+502
+00:11:29,110 --> 00:11:29,120
+agents in the web and like I said
+ 
+
+503
+00:11:29,120 --> 00:11:30,630
+agents in the web and like I said
+earlier some of them were just un
+
+504
+00:11:30,630 --> 00:11:30,640
+earlier some of them were just un
+ 
+
+505
+00:11:30,640 --> 00:11:32,230
+earlier some of them were just un
+unauthenticated
+
+506
+00:11:32,230 --> 00:11:32,240
+unauthenticated
+ 
+
+507
+00:11:32,240 --> 00:11:35,910
+unauthenticated
+uh same thing with Amazon agents just
+
+508
+00:11:35,910 --> 00:11:35,920
+uh same thing with Amazon agents just
+ 
+
+509
+00:11:35,920 --> 00:11:40,150
+uh same thing with Amazon agents just
+out there in the open.
+
+510
+00:11:40,150 --> 00:11:40,160
+
+ 
+
+511
+00:11:40,160 --> 00:11:42,230
+
+Now, some notable challenges that we had
+
+512
+00:11:42,230 --> 00:11:42,240
+Now, some notable challenges that we had
+ 
+
+513
+00:11:42,240 --> 00:11:45,269
+Now, some notable challenges that we had
+when uh when we did this exercise, uh we
+
+514
+00:11:45,269 --> 00:11:45,279
+when uh when we did this exercise, uh we
+ 
+
+515
+00:11:45,279 --> 00:11:46,710
+when uh when we did this exercise, uh we
+had some issues with freight limiting
+
+516
+00:11:46,710 --> 00:11:46,720
+had some issues with freight limiting
+ 
+
+517
+00:11:46,720 --> 00:11:49,350
+had some issues with freight limiting
+that we solved. Uh some issues with
+
+518
+00:11:49,350 --> 00:11:49,360
+that we solved. Uh some issues with
+ 
+
+519
+00:11:49,360 --> 00:11:51,030
+that we solved. Uh some issues with
+headless browser finger uh
+
+520
+00:11:51,030 --> 00:11:51,040
+headless browser finger uh
+ 
+
+521
+00:11:51,040 --> 00:11:54,389
+headless browser finger uh
+fingerprinting and like uh I described
+
+522
+00:11:54,389 --> 00:11:54,399
+fingerprinting and like uh I described
+ 
+
+523
+00:11:54,399 --> 00:11:56,470
+fingerprinting and like uh I described
+earlier, we also had to reduce the
+
+524
+00:11:56,470 --> 00:11:56,480
+earlier, we also had to reduce the
+ 
+
+525
+00:11:56,480 --> 00:11:58,230
+earlier, we also had to reduce the
+search space for for some of the
+
+526
+00:11:58,230 --> 00:11:58,240
+search space for for some of the
+ 
+
+527
+00:11:58,240 --> 00:12:00,550
+search space for for some of the
+solution prefixes. Um, if you're
+
+528
+00:12:00,550 --> 00:12:00,560
+solution prefixes. Um, if you're
+ 
+
+529
+00:12:00,560 --> 00:12:02,870
+solution prefixes. Um, if you're
+interested to learn more, uh, I can talk
+
+530
+00:12:02,870 --> 00:12:02,880
+interested to learn more, uh, I can talk
+ 
+
+531
+00:12:02,880 --> 00:12:04,230
+interested to learn more, uh, I can talk
+about I can talk about after the
+
+532
+00:12:04,230 --> 00:12:04,240
+about I can talk about after the
+ 
+
+533
+00:12:04,240 --> 00:12:05,990
+about I can talk about after the
+session, but it's also important to note
+
+534
+00:12:05,990 --> 00:12:06,000
+session, but it's also important to note
+ 
+
+535
+00:12:06,000 --> 00:12:07,350
+session, but it's also important to note
+that we have an open source tool called
+
+536
+00:12:07,350 --> 00:12:07,360
+that we have an open source tool called
+ 
+
+537
+00:12:07,360 --> 00:12:09,430
+that we have an open source tool called
+Power Pawn and you can see the committee
+
+538
+00:12:09,430 --> 00:12:09,440
+Power Pawn and you can see the committee
+ 
+
+539
+00:12:09,440 --> 00:12:11,670
+Power Pawn and you can see the committee
+history over there. It's all out in the
+
+540
+00:12:11,670 --> 00:12:11,680
+history over there. It's all out in the
+ 
+
+541
+00:12:11,680 --> 00:12:15,190
+history over there. It's all out in the
+open. Um, now up until now we talked
+
+542
+00:12:15,190 --> 00:12:15,200
+open. Um, now up until now we talked
+ 
+
+543
+00:12:15,200 --> 00:12:17,590
+open. Um, now up until now we talked
+about discovery of agents, but why does
+
+544
+00:12:17,590 --> 00:12:17,600
+about discovery of agents, but why does
+ 
+
+545
+00:12:17,600 --> 00:12:18,949
+about discovery of agents, but why does
+it actually matters? Like what's the
+
+546
+00:12:18,949 --> 00:12:18,959
+it actually matters? Like what's the
+ 
+
+547
+00:12:18,959 --> 00:12:20,870
+it actually matters? Like what's the
+impact? You're going to say, "Okay, Roy,
+
+548
+00:12:20,870 --> 00:12:20,880
+impact? You're going to say, "Okay, Roy,
+ 
+
+549
+00:12:20,880 --> 00:12:23,030
+impact? You're going to say, "Okay, Roy,
+we have guardrails. Why why do we care?"
+
+550
+00:12:23,030 --> 00:12:23,040
+we have guardrails. Why why do we care?"
+ 
+
+551
+00:12:23,040 --> 00:12:26,150
+we have guardrails. Why why do we care?"
+Well, you do care because first of all,
+
+552
+00:12:26,150 --> 00:12:26,160
+Well, you do care because first of all,
+ 
+
+553
+00:12:26,160 --> 00:12:31,190
+Well, you do care because first of all,
+um, attackers can still keep on probing
+
+554
+00:12:31,190 --> 00:12:31,200
+um, attackers can still keep on probing
+ 
+
+555
+00:12:31,200 --> 00:12:33,110
+um, attackers can still keep on probing
+your agent and understand what kind of
+
+556
+00:12:33,110 --> 00:12:33,120
+your agent and understand what kind of
+ 
+
+557
+00:12:33,120 --> 00:12:35,350
+your agent and understand what kind of
+information it has, what's the knowledge
+
+558
+00:12:35,350 --> 00:12:35,360
+information it has, what's the knowledge
+ 
+
+559
+00:12:35,360 --> 00:12:38,790
+information it has, what's the knowledge
+source of it. Um, sometimes it's kind of
+
+560
+00:12:38,790 --> 00:12:38,800
+source of it. Um, sometimes it's kind of
+ 
+
+561
+00:12:38,800 --> 00:12:40,870
+source of it. Um, sometimes it's kind of
+easy. You just need to ask for it.
+
+562
+00:12:40,870 --> 00:12:40,880
+easy. You just need to ask for it.
+ 
+
+563
+00:12:40,880 --> 00:12:42,389
+easy. You just need to ask for it.
+Sometimes it has guardrails, sometimes
+
+564
+00:12:42,389 --> 00:12:42,399
+Sometimes it has guardrails, sometimes
+ 
+
+565
+00:12:42,399 --> 00:12:44,550
+Sometimes it has guardrails, sometimes
+it doesn't have guardrails, and attacks
+
+566
+00:12:44,550 --> 00:12:44,560
+it doesn't have guardrails, and attacks
+ 
+
+567
+00:12:44,560 --> 00:12:47,030
+it doesn't have guardrails, and attacks
+can also probe for the different tools
+
+568
+00:12:47,030 --> 00:12:47,040
+can also probe for the different tools
+ 
+
+569
+00:12:47,040 --> 00:12:49,110
+can also probe for the different tools
+that exist in your system. That is
+
+570
+00:12:49,110 --> 00:12:49,120
+that exist in your system. That is
+ 
+
+571
+00:12:49,120 --> 00:12:51,430
+that exist in your system. That is
+extremely risky. As you can see in this
+
+572
+00:12:51,430 --> 00:12:51,440
+extremely risky. As you can see in this
+ 
+
+573
+00:12:51,440 --> 00:12:54,230
+extremely risky. As you can see in this
+example, um to fetch the tools, we just
+
+574
+00:12:54,230 --> 00:12:54,240
+example, um to fetch the tools, we just
+ 
+
+575
+00:12:54,240 --> 00:12:57,350
+example, um to fetch the tools, we just
+have to ask for it and
+
+576
+00:12:57,350 --> 00:12:57,360
+have to ask for it and
+ 
+
+577
+00:12:57,360 --> 00:13:00,310
+have to ask for it and
+add a little bit more beef to basically
+
+578
+00:13:00,310 --> 00:13:00,320
+add a little bit more beef to basically
+ 
+
+579
+00:13:00,320 --> 00:13:01,910
+add a little bit more beef to basically
+confuse the different activations for
+
+580
+00:13:01,910 --> 00:13:01,920
+confuse the different activations for
+ 
+
+581
+00:13:01,920 --> 00:13:04,069
+confuse the different activations for
+the of the guardrails.
+
+582
+00:13:04,069 --> 00:13:04,079
+the of the guardrails.
+ 
+
+583
+00:13:04,079 --> 00:13:06,230
+the of the guardrails.
+It's not wallet proof and that's why
+
+584
+00:13:06,230 --> 00:13:06,240
+It's not wallet proof and that's why
+ 
+
+585
+00:13:06,240 --> 00:13:09,110
+It's not wallet proof and that's why
+your agent shouldn't be public unless
+
+586
+00:13:09,110 --> 00:13:09,120
+your agent shouldn't be public unless
+ 
+
+587
+00:13:09,120 --> 00:13:11,509
+your agent shouldn't be public unless
+intended to.
+
+588
+00:13:11,509 --> 00:13:11,519
+intended to.
+ 
+
+589
+00:13:11,519 --> 00:13:14,310
+intended to.
+Now, to help you with that, we created
+
+590
+00:13:14,310 --> 00:13:14,320
+Now, to help you with that, we created
+ 
+
+591
+00:13:14,320 --> 00:13:16,470
+Now, to help you with that, we created
+Power Pawn. PowerPoint is an open source
+
+592
+00:13:16,470 --> 00:13:16,480
+Power Pawn. PowerPoint is an open source
+ 
+
+593
+00:13:16,480 --> 00:13:19,030
+Power Pawn. PowerPoint is an open source
+tool that helps you assess the posture
+
+594
+00:13:19,030 --> 00:13:19,040
+tool that helps you assess the posture
+ 
+
+595
+00:13:19,040 --> 00:13:20,949
+tool that helps you assess the posture
+of your agents and identify whether
+
+596
+00:13:20,949 --> 00:13:20,959
+of your agents and identify whether
+ 
+
+597
+00:13:20,959 --> 00:13:23,509
+of your agents and identify whether
+they're public or not. Um, and it
+
+598
+00:13:23,509 --> 00:13:23,519
+they're public or not. Um, and it
+ 
+
+599
+00:13:23,519 --> 00:13:25,190
+they're public or not. Um, and it
+basically entails all of the information
+
+600
+00:13:25,190 --> 00:13:25,200
+basically entails all of the information
+ 
+
+601
+00:13:25,200 --> 00:13:27,750
+basically entails all of the information
+that I just showcased in this uh in this
+
+602
+00:13:27,750 --> 00:13:27,760
+that I just showcased in this uh in this
+ 
+
+603
+00:13:27,760 --> 00:13:31,030
+that I just showcased in this uh in this
+presentation and we'll go over different
+
+604
+00:13:31,030 --> 00:13:31,040
+presentation and we'll go over different
+ 
+
+605
+00:13:31,040 --> 00:13:35,750
+presentation and we'll go over different
+the different models that it has. Um
+
+606
+00:13:35,750 --> 00:13:35,760
+the different models that it has. Um
+ 
+
+607
+00:13:35,760 --> 00:13:37,910
+the different models that it has. Um
+so the first one is copilot studio
+
+608
+00:13:37,910 --> 00:13:37,920
+so the first one is copilot studio
+ 
+
+609
+00:13:37,920 --> 00:13:41,430
+so the first one is copilot studio
+hunter and like we like I showcase
+
+610
+00:13:41,430 --> 00:13:41,440
+hunter and like we like I showcase
+ 
+
+611
+00:13:41,440 --> 00:13:44,389
+hunter and like we like I showcase
+earlier you just give it the the the
+
+612
+00:13:44,389 --> 00:13:44,399
+earlier you just give it the the the
+ 
+
+613
+00:13:44,399 --> 00:13:47,350
+earlier you just give it the the the
+domain name of the given u of the given
+
+614
+00:13:47,350 --> 00:13:47,360
+domain name of the given u of the given
+ 
+
+615
+00:13:47,360 --> 00:13:49,350
+domain name of the given u of the given
+organization. It will find your tenant
+
+616
+00:13:49,350 --> 00:13:49,360
+organization. It will find your tenant
+ 
+
+617
+00:13:49,360 --> 00:13:53,350
+organization. It will find your tenant
+ID eventually will find uh the the the
+
+618
+00:13:53,350 --> 00:13:53,360
+ID eventually will find uh the the the
+ 
+
+619
+00:13:53,360 --> 00:13:55,590
+ID eventually will find uh the the the
+solution prefix and once it does that it
+
+620
+00:13:55,590 --> 00:13:55,600
+solution prefix and once it does that it
+ 
+
+621
+00:13:55,600 --> 00:13:57,829
+solution prefix and once it does that it
+will iterate through different agents in
+
+622
+00:13:57,829 --> 00:13:57,839
+will iterate through different agents in
+ 
+
+623
+00:13:57,839 --> 00:13:59,750
+will iterate through different agents in
+this environment one by one and if
+
+624
+00:13:59,750 --> 00:13:59,760
+this environment one by one and if
+ 
+
+625
+00:13:59,760 --> 00:14:01,910
+this environment one by one and if
+they're public it will also list out the
+
+626
+00:14:01,910 --> 00:14:01,920
+they're public it will also list out the
+ 
+
+627
+00:14:01,920 --> 00:14:06,949
+they're public it will also list out the
+different capabilities.
+
+628
+00:14:06,949 --> 00:14:06,959
+
+ 
+
+629
+00:14:06,959 --> 00:14:09,350
+
+Another model that we have is a agent
+
+630
+00:14:09,350 --> 00:14:09,360
+Another model that we have is a agent
+ 
+
+631
+00:14:09,360 --> 00:14:11,509
+Another model that we have is a agent
+builder hunter. Agent Builder Hunter
+
+632
+00:14:11,509 --> 00:14:11,519
+builder hunter. Agent Builder Hunter
+ 
+
+633
+00:14:11,519 --> 00:14:13,990
+builder hunter. Agent Builder Hunter
+receives a list of words basically your
+
+634
+00:14:13,990 --> 00:14:14,000
+receives a list of words basically your
+ 
+
+635
+00:14:14,000 --> 00:14:17,990
+receives a list of words basically your
+name of the agent and tries to identify
+
+636
+00:14:17,990 --> 00:14:18,000
+name of the agent and tries to identify
+ 
+
+637
+00:14:18,000 --> 00:14:20,389
+name of the agent and tries to identify
+whether if it's public or not and if it
+
+638
+00:14:20,389 --> 00:14:20,399
+whether if it's public or not and if it
+ 
+
+639
+00:14:20,399 --> 00:14:23,189
+whether if it's public or not and if it
+has any exposed endpoints.
+
+640
+00:14:23,189 --> 00:14:23,199
+has any exposed endpoints.
+ 
+
+641
+00:14:23,199 --> 00:14:24,870
+has any exposed endpoints.
+You can see over here it actually found
+
+642
+00:14:24,870 --> 00:14:24,880
+You can see over here it actually found
+ 
+
+643
+00:14:24,880 --> 00:14:31,430
+You can see over here it actually found
+some and found exposed MCP tools.
+
+644
+00:14:31,430 --> 00:14:31,440
+some and found exposed MCP tools.
+ 
+
+645
+00:14:31,440 --> 00:14:34,550
+some and found exposed MCP tools.
+Um another model is custom GPT enter
+
+646
+00:14:34,550 --> 00:14:34,560
+Um another model is custom GPT enter
+ 
+
+647
+00:14:34,560 --> 00:14:37,829
+Um another model is custom GPT enter
+where given a search term it showcases a
+
+648
+00:14:37,829 --> 00:14:37,839
+where given a search term it showcases a
+ 
+
+649
+00:14:37,839 --> 00:14:41,110
+where given a search term it showcases a
+different um different custom GPTs along
+
+650
+00:14:41,110 --> 00:14:41,120
+different um different custom GPTs along
+ 
+
+651
+00:14:41,120 --> 00:14:43,030
+different um different custom GPTs along
+with the capabilities whether if they're
+
+652
+00:14:43,030 --> 00:14:43,040
+with the capabilities whether if they're
+ 
+
+653
+00:14:43,040 --> 00:14:46,790
+with the capabilities whether if they're
+default or custom and last but not least
+
+654
+00:14:46,790 --> 00:14:46,800
+default or custom and last but not least
+ 
+
+655
+00:14:46,800 --> 00:14:49,910
+default or custom and last but not least
+LLM hound where given a search term that
+
+656
+00:14:49,910 --> 00:14:49,920
+LLM hound where given a search term that
+ 
+
+657
+00:14:49,920 --> 00:14:51,350
+LLM hound where given a search term that
+that you're looking for the name of your
+
+658
+00:14:51,350 --> 00:14:51,360
+that you're looking for the name of your
+ 
+
+659
+00:14:51,360 --> 00:14:54,310
+that you're looking for the name of your
+middleware um it will find AI middleares
+
+660
+00:14:54,310 --> 00:14:54,320
+middleware um it will find AI middleares
+ 
+
+661
+00:14:54,320 --> 00:14:56,389
+middleware um it will find AI middleares
+that again are just out there in the
+
+662
+00:14:56,389 --> 00:14:56,399
+that again are just out there in the
+ 
+
+663
+00:14:56,399 --> 00:15:00,150
+that again are just out there in the
+open you can use various shoddon filters
+
+664
+00:15:00,150 --> 00:15:00,160
+open you can use various shoddon filters
+ 
+
+665
+00:15:00,160 --> 00:15:02,310
+open you can use various shoddon filters
+such as such as MC CP and you can even
+
+666
+00:15:02,310 --> 00:15:02,320
+such as such as MC CP and you can even
+ 
+
+667
+00:15:02,320 --> 00:15:05,350
+such as such as MC CP and you can even
+give it your shoddon API key. Um and and
+
+668
+00:15:05,350 --> 00:15:05,360
+give it your shoddon API key. Um and and
+ 
+
+669
+00:15:05,360 --> 00:15:06,870
+give it your shoddon API key. Um and and
+as you can see in this particular
+
+670
+00:15:06,870 --> 00:15:06,880
+as you can see in this particular
+ 
+
+671
+00:15:06,880 --> 00:15:08,949
+as you can see in this particular
+example for probing, we were actually
+
+672
+00:15:08,949 --> 00:15:08,959
+example for probing, we were actually
+ 
+
+673
+00:15:08,959 --> 00:15:11,030
+example for probing, we were actually
+able to find
+
+674
+00:15:11,030 --> 00:15:11,040
+able to find
+ 
+
+675
+00:15:11,040 --> 00:15:15,910
+able to find
+port a swagger and a and um and a fully
+
+676
+00:15:15,910 --> 00:15:15,920
+port a swagger and a and um and a fully
+ 
+
+677
+00:15:15,920 --> 00:15:19,670
+port a swagger and a and um and a fully
+exposed MCP server.
+
+678
+00:15:19,670 --> 00:15:19,680
+exposed MCP server.
+ 
+
+679
+00:15:19,680 --> 00:15:22,230
+exposed MCP server.
+Now a couple of takeaways from this.
+
+680
+00:15:22,230 --> 00:15:22,240
+Now a couple of takeaways from this.
+ 
+
+681
+00:15:22,240 --> 00:15:25,110
+Now a couple of takeaways from this.
+Everything that I showed you, nothing of
+
+682
+00:15:25,110 --> 00:15:25,120
+Everything that I showed you, nothing of
+ 
+
+683
+00:15:25,120 --> 00:15:28,230
+Everything that I showed you, nothing of
+these was an actual was an actual zero
+
+684
+00:15:28,230 --> 00:15:28,240
+these was an actual was an actual zero
+ 
+
+685
+00:15:28,240 --> 00:15:30,550
+these was an actual was an actual zero
+day, right? It was you can even say that
+
+686
+00:15:30,550 --> 00:15:30,560
+day, right? It was you can even say that
+ 
+
+687
+00:15:30,560 --> 00:15:32,550
+day, right? It was you can even say that
+it was pretty basic but these things
+
+688
+00:15:32,550 --> 00:15:32,560
+it was pretty basic but these things
+ 
+
+689
+00:15:32,560 --> 00:15:34,470
+it was pretty basic but these things
+happen and if you want to reduce your
+
+690
+00:15:34,470 --> 00:15:34,480
+happen and if you want to reduce your
+ 
+
+691
+00:15:34,480 --> 00:15:36,310
+happen and if you want to reduce your
+the risk first of all don't make your
+
+692
+00:15:36,310 --> 00:15:36,320
+the risk first of all don't make your
+ 
+
+693
+00:15:36,320 --> 00:15:38,870
+the risk first of all don't make your
+agent public if you if you don't need to
+
+694
+00:15:38,870 --> 00:15:38,880
+agent public if you if you don't need to
+ 
+
+695
+00:15:38,880 --> 00:15:41,269
+agent public if you if you don't need to
+and don't use the default configuration
+
+696
+00:15:41,269 --> 00:15:41,279
+and don't use the default configuration
+ 
+
+697
+00:15:41,279 --> 00:15:43,110
+and don't use the default configuration
+default configuration are bad it reduces
+
+698
+00:15:43,110 --> 00:15:43,120
+default configuration are bad it reduces
+ 
+
+699
+00:15:43,120 --> 00:15:44,949
+default configuration are bad it reduces
+the the search space you you want to
+
+700
+00:15:44,949 --> 00:15:44,959
+the the search space you you want to
+ 
+
+701
+00:15:44,959 --> 00:15:47,430
+the the search space you you want to
+rely on the high on high entropy the
+
+702
+00:15:47,430 --> 00:15:47,440
+rely on the high on high entropy the
+ 
+
+703
+00:15:47,440 --> 00:15:50,150
+rely on the high on high entropy the
+second thing is um I highly recommend
+
+704
+00:15:50,150 --> 00:15:50,160
+second thing is um I highly recommend
+ 
+
+705
+00:15:50,160 --> 00:15:51,670
+second thing is um I highly recommend
+you to use open source tools such as
+
+706
+00:15:51,670 --> 00:15:51,680
+you to use open source tools such as
+ 
+
+707
+00:15:51,680 --> 00:15:53,990
+you to use open source tools such as
+power to identify whether you have uh
+
+708
+00:15:53,990 --> 00:15:54,000
+power to identify whether you have uh
+ 
+
+709
+00:15:54,000 --> 00:15:55,509
+power to identify whether you have uh
+public endpoints or not and if you
+
+710
+00:15:55,509 --> 00:15:55,519
+public endpoints or not and if you
+ 
+
+711
+00:15:55,519 --> 00:15:57,990
+public endpoints or not and if you
+shouldn't have close them down and I
+
+712
+00:15:57,990 --> 00:15:58,000
+shouldn't have close them down and I
+ 
+
+713
+00:15:58,000 --> 00:15:59,350
+shouldn't have close them down and I
+think that one Last thing that I'd like
+
+714
+00:15:59,350 --> 00:15:59,360
+think that one Last thing that I'd like
+ 
+
+715
+00:15:59,360 --> 00:16:02,150
+think that one Last thing that I'd like
+to add is you should add observability
+
+716
+00:16:02,150 --> 00:16:02,160
+to add is you should add observability
+ 
+
+717
+00:16:02,160 --> 00:16:04,470
+to add is you should add observability
+to your AI because you don't know what
+
+718
+00:16:04,470 --> 00:16:04,480
+to your AI because you don't know what
+ 
+
+719
+00:16:04,480 --> 00:16:07,590
+to your AI because you don't know what
+you don't know and that's just the way
+
+720
+00:16:07,590 --> 00:16:07,600
+you don't know and that's just the way
+ 
+
+721
+00:16:07,600 --> 00:16:09,269
+you don't know and that's just the way
+it is.
+
+722
+00:16:09,269 --> 00:16:09,279
+it is.
+ 
+
+723
+00:16:09,279 --> 00:16:11,509
+it is.
+Um, so that's it for me. I was Rowey. I
+
+724
+00:16:11,509 --> 00:16:11,519
+Um, so that's it for me. I was Rowey. I
+ 
+
+725
+00:16:11,519 --> 00:16:14,629
+Um, so that's it for me. I was Rowey. I
+work for Zenit as a staff engineer and
+
+726
+00:16:14,629 --> 00:16:14,639
+work for Zenit as a staff engineer and
+ 
+
+727
+00:16:14,639 --> 00:16:18,440
+work for Zenit as a staff engineer and
+yeah, it was fun.
+

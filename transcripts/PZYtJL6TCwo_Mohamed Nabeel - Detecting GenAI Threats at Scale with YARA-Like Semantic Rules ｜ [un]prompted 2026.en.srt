@@ -1,0 +1,4515 @@
+1
+00:00:06,080 --> 00:00:07,749
+
+All right.
+
+2
+00:00:07,749 --> 00:00:07,759
+All right.
+ 
+
+3
+00:00:07,759 --> 00:00:09,910
+All right.
+All right. Good afternoon everyone. It's
+
+4
+00:00:09,910 --> 00:00:09,920
+All right. Good afternoon everyone. It's
+ 
+
+5
+00:00:09,920 --> 00:00:12,150
+All right. Good afternoon everyone. It's
+great to be here. So today I'll be
+
+6
+00:00:12,150 --> 00:00:12,160
+great to be here. So today I'll be
+ 
+
+7
+00:00:12,160 --> 00:00:14,390
+great to be here. So today I'll be
+talking about our learning and
+
+8
+00:00:14,390 --> 00:00:14,400
+talking about our learning and
+ 
+
+9
+00:00:14,400 --> 00:00:17,510
+talking about our learning and
+experience of hunting for geni threats
+
+10
+00:00:17,510 --> 00:00:17,520
+experience of hunting for geni threats
+ 
+
+11
+00:00:17,520 --> 00:00:20,390
+experience of hunting for geni threats
+at scale using yara like signatures.
+
+12
+00:00:20,390 --> 00:00:20,400
+at scale using yara like signatures.
+ 
+
+13
+00:00:20,400 --> 00:00:22,790
+at scale using yara like signatures.
+Since uh previous talk was about to
+
+14
+00:00:22,790 --> 00:00:22,800
+Since uh previous talk was about to
+ 
+
+15
+00:00:22,800 --> 00:00:24,870
+Since uh previous talk was about to
+rules, I'm assuming you guys are
+
+16
+00:00:24,870 --> 00:00:24,880
+rules, I'm assuming you guys are
+ 
+
+17
+00:00:24,880 --> 00:00:27,429
+rules, I'm assuming you guys are
+familiar with it. Just to be sure, can
+
+18
+00:00:27,429 --> 00:00:27,439
+familiar with it. Just to be sure, can
+ 
+
+19
+00:00:27,439 --> 00:00:29,589
+familiar with it. Just to be sure, can
+you please raise your hand if you have
+
+20
+00:00:29,589 --> 00:00:29,599
+you please raise your hand if you have
+ 
+
+21
+00:00:29,599 --> 00:00:33,430
+you please raise your hand if you have
+heard about Yara or used Yara?
+
+22
+00:00:33,430 --> 00:00:33,440
+heard about Yara or used Yara?
+ 
+
+23
+00:00:33,440 --> 00:00:35,510
+heard about Yara or used Yara?
+All right. Awesome. So that's good. So I
+
+24
+00:00:35,510 --> 00:00:35,520
+All right. Awesome. So that's good. So I
+ 
+
+25
+00:00:35,520 --> 00:00:38,229
+All right. Awesome. So that's good. So I
+am with the right audience here. So as
+
+26
+00:00:38,229 --> 00:00:38,239
+am with the right audience here. So as
+ 
+
+27
+00:00:38,239 --> 00:00:40,869
+am with the right audience here. So as
+you probably know, Yara is the gold
+
+28
+00:00:40,869 --> 00:00:40,879
+you probably know, Yara is the gold
+ 
+
+29
+00:00:40,879 --> 00:00:43,350
+you probably know, Yara is the gold
+standard for identifying malware
+
+30
+00:00:43,350 --> 00:00:43,360
+standard for identifying malware
+ 
+
+31
+00:00:43,360 --> 00:00:46,069
+standard for identifying malware
+binaries and JavaScripts like scripts
+
+32
+00:00:46,069 --> 00:00:46,079
+binaries and JavaScripts like scripts
+ 
+
+33
+00:00:46,079 --> 00:00:48,630
+binaries and JavaScripts like scripts
+and it's being used everywhere including
+
+34
+00:00:48,630 --> 00:00:48,640
+and it's being used everywhere including
+ 
+
+35
+00:00:48,640 --> 00:00:51,910
+and it's being used everywhere including
+Palo. We detect millions of uh samples
+
+36
+00:00:51,910 --> 00:00:51,920
+Palo. We detect millions of uh samples
+ 
+
+37
+00:00:51,920 --> 00:00:56,069
+Palo. We detect millions of uh samples
+every day using Yara rules.
+
+38
+00:00:56,069 --> 00:00:56,079
+every day using Yara rules.
+ 
+
+39
+00:00:56,079 --> 00:00:58,389
+every day using Yara rules.
+But with the all the agents doing the
+
+40
+00:00:58,389 --> 00:00:58,399
+But with the all the agents doing the
+ 
+
+41
+00:00:58,399 --> 00:01:02,229
+But with the all the agents doing the
+work and geni being the mainstream now
+
+42
+00:01:02,229 --> 00:01:02,239
+work and geni being the mainstream now
+ 
+
+43
+00:01:02,239 --> 00:01:04,869
+work and geni being the mainstream now
+the new binary is natural language. It's
+
+44
+00:01:04,869 --> 00:01:04,879
+the new binary is natural language. It's
+ 
+
+45
+00:01:04,879 --> 00:01:11,350
+the new binary is natural language. It's
+no longer pees or scripts.
+
+46
+00:01:11,350 --> 00:01:11,360
+
+ 
+
+47
+00:01:11,360 --> 00:01:14,070
+
+Even though Jara is great, they are not
+
+48
+00:01:14,070 --> 00:01:14,080
+Even though Jara is great, they are not
+ 
+
+49
+00:01:14,080 --> 00:01:19,670
+Even though Jara is great, they are not
+good at detecting jai threats.
+
+50
+00:01:19,670 --> 00:01:19,680
+
+ 
+
+51
+00:01:19,680 --> 00:01:22,310
+
+That's where superara comes in. We built
+
+52
+00:01:22,310 --> 00:01:22,320
+That's where superara comes in. We built
+ 
+
+53
+00:01:22,320 --> 00:01:25,830
+That's where superara comes in. We built
+our library getting inspiration from
+
+54
+00:01:25,830 --> 00:01:25,840
+our library getting inspiration from
+ 
+
+55
+00:01:25,840 --> 00:01:28,550
+our library getting inspiration from
+Yara just like Yara so that you have
+
+56
+00:01:28,550 --> 00:01:28,560
+Yara just like Yara so that you have
+ 
+
+57
+00:01:28,560 --> 00:01:31,270
+Yara just like Yara so that you have
+very minimal learning curve but it can
+
+58
+00:01:31,270 --> 00:01:31,280
+very minimal learning curve but it can
+ 
+
+59
+00:01:31,280 --> 00:01:35,190
+very minimal learning curve but it can
+work to detect geni threats. So I'm
+
+60
+00:01:35,190 --> 00:01:35,200
+work to detect geni threats. So I'm
+ 
+
+61
+00:01:35,200 --> 00:01:37,350
+work to detect geni threats. So I'm
+going to walk you through what I mean by
+
+62
+00:01:37,350 --> 00:01:37,360
+going to walk you through what I mean by
+ 
+
+63
+00:01:37,360 --> 00:01:39,510
+going to walk you through what I mean by
+geni threats and show you some examples.
+
+64
+00:01:39,510 --> 00:01:39,520
+geni threats and show you some examples.
+ 
+
+65
+00:01:39,520 --> 00:01:41,190
+geni threats and show you some examples.
+The best way to learn something is
+
+66
+00:01:41,190 --> 00:01:41,200
+The best way to learn something is
+ 
+
+67
+00:01:41,200 --> 00:01:44,069
+The best way to learn something is
+through examples. So I'll be uh tossing
+
+68
+00:01:44,069 --> 00:01:44,079
+through examples. So I'll be uh tossing
+ 
+
+69
+00:01:44,079 --> 00:01:46,389
+through examples. So I'll be uh tossing
+in few examples and showing you how it
+
+70
+00:01:46,389 --> 00:01:46,399
+in few examples and showing you how it
+ 
+
+71
+00:01:46,399 --> 00:01:49,350
+in few examples and showing you how it
+works. And first the number one thread
+
+72
+00:01:49,350 --> 00:01:49,360
+works. And first the number one thread
+ 
+
+73
+00:01:49,360 --> 00:01:52,389
+works. And first the number one thread
+in genai is prompt injection and you
+
+74
+00:01:52,389 --> 00:01:52,399
+in genai is prompt injection and you
+ 
+
+75
+00:01:52,399 --> 00:01:56,710
+in genai is prompt injection and you
+guys are probably familiar with that and
+
+76
+00:01:56,710 --> 00:01:56,720
+guys are probably familiar with that and
+ 
+
+77
+00:01:56,720 --> 00:01:59,109
+guys are probably familiar with that and
+it can happen from multiple ways. Since
+
+78
+00:01:59,109 --> 00:01:59,119
+it can happen from multiple ways. Since
+ 
+
+79
+00:01:59,119 --> 00:02:00,870
+it can happen from multiple ways. Since
+I work in the web space I'm going to
+
+80
+00:02:00,870 --> 00:02:00,880
+I work in the web space I'm going to
+ 
+
+81
+00:02:00,880 --> 00:02:02,789
+I work in the web space I'm going to
+focus on the examples which I see
+
+82
+00:02:02,789 --> 00:02:02,799
+focus on the examples which I see
+ 
+
+83
+00:02:02,799 --> 00:02:05,749
+focus on the examples which I see
+day-to-day from the the overall internet
+
+84
+00:02:05,749 --> 00:02:05,759
+day-to-day from the the overall internet
+ 
+
+85
+00:02:05,759 --> 00:02:08,790
+day-to-day from the the overall internet
+web space. And these prompts can be
+
+86
+00:02:08,790 --> 00:02:08,800
+web space. And these prompts can be
+ 
+
+87
+00:02:08,800 --> 00:02:11,430
+web space. And these prompts can be
+delivered through uh query parameters or
+
+88
+00:02:11,430 --> 00:02:11,440
+delivered through uh query parameters or
+ 
+
+89
+00:02:11,440 --> 00:02:15,190
+delivered through uh query parameters or
+they could be uh uh delivered through
+
+90
+00:02:15,190 --> 00:02:15,200
+they could be uh uh delivered through
+ 
+
+91
+00:02:15,200 --> 00:02:18,390
+they could be uh uh delivered through
+hashes or it could be even through
+
+92
+00:02:18,390 --> 00:02:18,400
+hashes or it could be even through
+ 
+
+93
+00:02:18,400 --> 00:02:21,190
+hashes or it could be even through
+dynamically detonated into the browser
+
+94
+00:02:21,190 --> 00:02:21,200
+dynamically detonated into the browser
+ 
+
+95
+00:02:21,200 --> 00:02:24,390
+dynamically detonated into the browser
+itself and none of the uh firewall
+
+96
+00:02:24,390 --> 00:02:24,400
+itself and none of the uh firewall
+ 
+
+97
+00:02:24,400 --> 00:02:26,070
+itself and none of the uh firewall
+solution will not see it because it get
+
+98
+00:02:26,070 --> 00:02:26,080
+solution will not see it because it get
+ 
+
+99
+00:02:26,080 --> 00:02:28,309
+solution will not see it because it get
+to the browser and the browser itself
+
+100
+00:02:28,309 --> 00:02:28,319
+to the browser and the browser itself
+ 
+
+101
+00:02:28,319 --> 00:02:31,910
+to the browser and the browser itself
+calls the the LLM and gets the obuscated
+
+102
+00:02:31,910 --> 00:02:31,920
+calls the the LLM and gets the obuscated
+ 
+
+103
+00:02:31,920 --> 00:02:37,270
+calls the the LLM and gets the obuscated
+JavaScript and does the the bad stuff.
+
+104
+00:02:37,270 --> 00:02:37,280
+
+ 
+
+105
+00:02:37,280 --> 00:02:40,390
+
+So now enter into the new startup called
+
+106
+00:02:40,390 --> 00:02:40,400
+So now enter into the new startup called
+ 
+
+107
+00:02:40,400 --> 00:02:42,229
+So now enter into the new startup called
+safeinttel.ai.
+
+108
+00:02:42,229 --> 00:02:42,239
+safeinttel.ai.
+ 
+
+109
+00:02:42,239 --> 00:02:45,350
+safeinttel.ai.
+It's the rising new startup which takes
+
+110
+00:02:45,350 --> 00:02:45,360
+It's the rising new startup which takes
+ 
+
+111
+00:02:45,360 --> 00:02:47,910
+It's the rising new startup which takes
+any LLM and instantly convert into a
+
+112
+00:02:47,910 --> 00:02:47,920
+any LLM and instantly convert into a
+ 
+
+113
+00:02:47,920 --> 00:02:50,630
+any LLM and instantly convert into a
+safe LLM to use and they provide API
+
+114
+00:02:50,630 --> 00:02:50,640
+safe LLM to use and they provide API
+ 
+
+115
+00:02:50,640 --> 00:02:54,309
+safe LLM to use and they provide API
+access and their lead engineer adder
+
+116
+00:02:54,309 --> 00:02:54,319
+access and their lead engineer adder
+ 
+
+117
+00:02:54,319 --> 00:02:56,070
+access and their lead engineer adder
+decided that we need to have some
+
+118
+00:02:56,070 --> 00:02:56,080
+decided that we need to have some
+ 
+
+119
+00:02:56,080 --> 00:02:59,670
+decided that we need to have some
+solution to make sure that users do not
+
+120
+00:02:59,670 --> 00:02:59,680
+solution to make sure that users do not
+ 
+
+121
+00:02:59,680 --> 00:03:03,190
+solution to make sure that users do not
+misuse their query parameter based API.
+
+122
+00:03:03,190 --> 00:03:03,200
+misuse their query parameter based API.
+ 
+
+123
+00:03:03,200 --> 00:03:05,750
+misuse their query parameter based API.
+So she came up with this uh solution.
+
+124
+00:03:05,750 --> 00:03:05,760
+So she came up with this uh solution.
+ 
+
+125
+00:03:05,760 --> 00:03:08,229
+So she came up with this uh solution.
+She iterated multiple times and she
+
+126
+00:03:08,229 --> 00:03:08,239
+She iterated multiple times and she
+ 
+
+127
+00:03:08,239 --> 00:03:11,990
+She iterated multiple times and she
+developed this yara rule and as you can
+
+128
+00:03:11,990 --> 00:03:12,000
+developed this yara rule and as you can
+ 
+
+129
+00:03:12,000 --> 00:03:15,430
+developed this yara rule and as you can
+see she figured out it quickly get out
+
+130
+00:03:15,430 --> 00:03:15,440
+see she figured out it quickly get out
+ 
+
+131
+00:03:15,440 --> 00:03:18,550
+see she figured out it quickly get out
+of her hand. The number of op parameters
+
+132
+00:03:18,550 --> 00:03:18,560
+of her hand. The number of op parameters
+ 
+
+133
+00:03:18,560 --> 00:03:20,390
+of her hand. The number of op parameters
+started increasing and it became
+
+134
+00:03:20,390 --> 00:03:20,400
+started increasing and it became
+ 
+
+135
+00:03:20,400 --> 00:03:22,710
+started increasing and it became
+complicated. It became difficult to
+
+136
+00:03:22,710 --> 00:03:22,720
+complicated. It became difficult to
+ 
+
+137
+00:03:22,720 --> 00:03:25,030
+complicated. It became difficult to
+maintain to catch all the variance of
+
+138
+00:03:25,030 --> 00:03:25,040
+maintain to catch all the variance of
+ 
+
+139
+00:03:25,040 --> 00:03:28,710
+maintain to catch all the variance of
+prompt injections and worse yet it is
+
+140
+00:03:28,710 --> 00:03:28,720
+prompt injections and worse yet it is
+ 
+
+141
+00:03:28,720 --> 00:03:33,270
+prompt injections and worse yet it is
+prone to FP and FPN uh uh as well.
+
+142
+00:03:33,270 --> 00:03:33,280
+prone to FP and FPN uh uh as well.
+ 
+
+143
+00:03:33,280 --> 00:03:35,910
+prone to FP and FPN uh uh as well.
+So she was scratching her head and she
+
+144
+00:03:35,910 --> 00:03:35,920
+So she was scratching her head and she
+ 
+
+145
+00:03:35,920 --> 00:03:38,869
+So she was scratching her head and she
+was then came across this awesome
+
+146
+00:03:38,869 --> 00:03:38,879
+was then came across this awesome
+ 
+
+147
+00:03:38,879 --> 00:03:41,190
+was then came across this awesome
+library called Superior and she was able
+
+148
+00:03:41,190 --> 00:03:41,200
+library called Superior and she was able
+ 
+
+149
+00:03:41,200 --> 00:03:44,149
+library called Superior and she was able
+to write the same rule with just these
+
+150
+00:03:44,149 --> 00:03:44,159
+to write the same rule with just these
+ 
+
+151
+00:03:44,159 --> 00:03:47,830
+to write the same rule with just these
+two lines of code where you specify what
+
+152
+00:03:47,830 --> 00:03:47,840
+two lines of code where you specify what
+ 
+
+153
+00:03:47,840 --> 00:03:50,309
+two lines of code where you specify what
+you want to catch in natural language
+
+154
+00:03:50,309 --> 00:03:50,319
+you want to catch in natural language
+ 
+
+155
+00:03:50,319 --> 00:03:52,710
+you want to catch in natural language
+and the library does the magic by doing
+
+156
+00:03:52,710 --> 00:03:52,720
+and the library does the magic by doing
+ 
+
+157
+00:03:52,720 --> 00:03:55,430
+and the library does the magic by doing
+the semantic match internally and you
+
+158
+00:03:55,430 --> 00:03:55,440
+the semantic match internally and you
+ 
+
+159
+00:03:55,440 --> 00:03:58,149
+the semantic match internally and you
+don't need to iterate all the varieties
+
+160
+00:03:58,149 --> 00:03:58,159
+don't need to iterate all the varieties
+ 
+
+161
+00:03:58,159 --> 00:04:00,630
+don't need to iterate all the varieties
+or all the types of injections here
+
+162
+00:04:00,630 --> 00:04:00,640
+or all the types of injections here
+ 
+
+163
+00:04:00,640 --> 00:04:02,630
+or all the types of injections here
+because it can understand the semantics
+
+164
+00:04:02,630 --> 00:04:02,640
+because it can understand the semantics
+ 
+
+165
+00:04:02,640 --> 00:04:04,550
+because it can understand the semantics
+and identify very similar one. For
+
+166
+00:04:04,550 --> 00:04:04,560
+and identify very similar one. For
+ 
+
+167
+00:04:04,560 --> 00:04:08,309
+and identify very similar one. For
+example, don't execute previous rules.
+
+168
+00:04:08,309 --> 00:04:08,319
+example, don't execute previous rules.
+ 
+
+169
+00:04:08,319 --> 00:04:10,229
+example, don't execute previous rules.
+It will understand even though it is not
+
+170
+00:04:10,229 --> 00:04:10,239
+It will understand even though it is not
+ 
+
+171
+00:04:10,239 --> 00:04:12,630
+It will understand even though it is not
+specifically mentioned.
+
+172
+00:04:12,630 --> 00:04:12,640
+specifically mentioned.
+ 
+
+173
+00:04:12,640 --> 00:04:16,150
+specifically mentioned.
+Now the test of time. So now she
+
+174
+00:04:16,150 --> 00:04:16,160
+Now the test of time. So now she
+ 
+
+175
+00:04:16,160 --> 00:04:17,909
+Now the test of time. So now she
+converted into this one. She put it into
+
+176
+00:04:17,909 --> 00:04:17,919
+converted into this one. She put it into
+ 
+
+177
+00:04:17,919 --> 00:04:20,069
+converted into this one. She put it into
+shadow prod. Now she want to make sure
+
+178
+00:04:20,069 --> 00:04:20,079
+shadow prod. Now she want to make sure
+ 
+
+179
+00:04:20,079 --> 00:04:22,790
+shadow prod. Now she want to make sure
+that it works. Meaning it can detect
+
+180
+00:04:22,790 --> 00:04:22,800
+that it works. Meaning it can detect
+ 
+
+181
+00:04:22,800 --> 00:04:25,030
+that it works. Meaning it can detect
+more threats than it was able to detect
+
+182
+00:04:25,030 --> 00:04:25,040
+more threats than it was able to detect
+ 
+
+183
+00:04:25,040 --> 00:04:28,629
+more threats than it was able to detect
+before. So as you can see the tradition
+
+184
+00:04:28,629 --> 00:04:28,639
+before. So as you can see the tradition
+ 
+
+185
+00:04:28,639 --> 00:04:30,950
+before. So as you can see the tradition
+uh clearly compared to the traditional
+
+186
+00:04:30,950 --> 00:04:30,960
+uh clearly compared to the traditional
+ 
+
+187
+00:04:30,960 --> 00:04:33,189
+uh clearly compared to the traditional
+Yara rule the semantic Yara rule the
+
+188
+00:04:33,189 --> 00:04:33,199
+Yara rule the semantic Yara rule the
+ 
+
+189
+00:04:33,199 --> 00:04:36,629
+Yara rule the semantic Yara rule the
+super rule was able to detect more so
+
+190
+00:04:36,629 --> 00:04:36,639
+super rule was able to detect more so
+ 
+
+191
+00:04:36,639 --> 00:04:40,150
+super rule was able to detect more so
+she was happy about that and at the
+
+192
+00:04:40,150 --> 00:04:40,160
+she was happy about that and at the
+ 
+
+193
+00:04:40,160 --> 00:04:41,990
+she was happy about that and at the
+little expense of little bit of a higher
+
+194
+00:04:41,990 --> 00:04:42,000
+little expense of little bit of a higher
+ 
+
+195
+00:04:42,000 --> 00:04:43,990
+little expense of little bit of a higher
+expense because it need to do semantic
+
+196
+00:04:43,990 --> 00:04:44,000
+expense because it need to do semantic
+ 
+
+197
+00:04:44,000 --> 00:04:46,150
+expense because it need to do semantic
+matching but it's it's still cheaper
+
+198
+00:04:46,150 --> 00:04:46,160
+matching but it's it's still cheaper
+ 
+
+199
+00:04:46,160 --> 00:04:48,310
+matching but it's it's still cheaper
+compared to doing some kind of LLM
+
+200
+00:04:48,310 --> 00:04:48,320
+compared to doing some kind of LLM
+ 
+
+201
+00:04:48,320 --> 00:04:49,990
+compared to doing some kind of LLM
+because we have the habit of throwing
+
+202
+00:04:49,990 --> 00:04:50,000
+because we have the habit of throwing
+ 
+
+203
+00:04:50,000 --> 00:04:52,790
+because we have the habit of throwing
+the LLM to every problem. The problem is
+
+204
+00:04:52,790 --> 00:04:52,800
+the LLM to every problem. The problem is
+ 
+
+205
+00:04:52,800 --> 00:04:55,749
+the LLM to every problem. The problem is
+when you want to detect uh uh threats at
+
+206
+00:04:55,749 --> 00:04:55,759
+when you want to detect uh uh threats at
+ 
+
+207
+00:04:55,759 --> 00:04:57,990
+when you want to detect uh uh threats at
+uh scale when you have to iterate
+
+208
+00:04:57,990 --> 00:04:58,000
+uh scale when you have to iterate
+ 
+
+209
+00:04:58,000 --> 00:04:59,749
+uh scale when you have to iterate
+through millions of pages they don't
+
+210
+00:04:59,749 --> 00:04:59,759
+through millions of pages they don't
+ 
+
+211
+00:04:59,759 --> 00:05:01,350
+through millions of pages they don't
+work that's why you need to have
+
+212
+00:05:01,350 --> 00:05:01,360
+work that's why you need to have
+ 
+
+213
+00:05:01,360 --> 00:05:04,710
+work that's why you need to have
+solutions which works intermediate and
+
+214
+00:05:04,710 --> 00:05:04,720
+solutions which works intermediate and
+ 
+
+215
+00:05:04,720 --> 00:05:07,909
+solutions which works intermediate and
+so one thing she realized though there
+
+216
+00:05:07,909 --> 00:05:07,919
+so one thing she realized though there
+ 
+
+217
+00:05:07,919 --> 00:05:10,150
+so one thing she realized though there
+is still room to improve as you can see
+
+218
+00:05:10,150 --> 00:05:10,160
+is still room to improve as you can see
+ 
+
+219
+00:05:10,160 --> 00:05:11,749
+is still room to improve as you can see
+they were not able to identify row
+
+220
+00:05:11,749 --> 00:05:11,759
+they were not able to identify row
+ 
+
+221
+00:05:11,759 --> 00:05:16,390
+they were not able to identify row
+override so that's a valid uh limitation
+
+222
+00:05:16,390 --> 00:05:16,400
+override so that's a valid uh limitation
+ 
+
+223
+00:05:16,400 --> 00:05:19,350
+override so that's a valid uh limitation
+and she's right about it that's where we
+
+224
+00:05:19,350 --> 00:05:19,360
+and she's right about it that's where we
+ 
+
+225
+00:05:19,360 --> 00:05:22,150
+and she's right about it that's where we
+introduce various other conr contract
+
+226
+00:05:22,150 --> 00:05:22,160
+introduce various other conr contract
+ 
+
+227
+00:05:22,160 --> 00:05:25,029
+introduce various other conr contract
+which will make sure that you can even
+
+228
+00:05:25,029 --> 00:05:25,039
+which will make sure that you can even
+ 
+
+229
+00:05:25,039 --> 00:05:28,070
+which will make sure that you can even
+uh detect much harder injections. So
+
+230
+00:05:28,070 --> 00:05:28,080
+uh detect much harder injections. So
+ 
+
+231
+00:05:28,080 --> 00:05:32,710
+uh detect much harder injections. So
+specifically we support four types of
+
+232
+00:05:32,710 --> 00:05:32,720
+specifically we support four types of
+ 
+
+233
+00:05:32,720 --> 00:05:35,350
+specifically we support four types of
+construct. The string is very similar to
+
+234
+00:05:35,350 --> 00:05:35,360
+construct. The string is very similar to
+ 
+
+235
+00:05:35,360 --> 00:05:37,270
+construct. The string is very similar to
+the Yara rules that we already have
+
+236
+00:05:37,270 --> 00:05:37,280
+the Yara rules that we already have
+ 
+
+237
+00:05:37,280 --> 00:05:40,150
+the Yara rules that we already have
+seen. And similarity is the one that I
+
+238
+00:05:40,150 --> 00:05:40,160
+seen. And similarity is the one that I
+ 
+
+239
+00:05:40,160 --> 00:05:41,990
+seen. And similarity is the one that I
+showed you in the previous slide where
+
+240
+00:05:41,990 --> 00:05:42,000
+showed you in the previous slide where
+ 
+
+241
+00:05:42,000 --> 00:05:43,990
+showed you in the previous slide where
+you can do semantic similarity with any
+
+242
+00:05:43,990 --> 00:05:44,000
+you can do semantic similarity with any
+ 
+
+243
+00:05:44,000 --> 00:05:47,510
+you can do semantic similarity with any
+text. And then you can throw in any
+
+244
+00:05:47,510 --> 00:05:47,520
+text. And then you can throw in any
+ 
+
+245
+00:05:47,520 --> 00:05:50,469
+text. And then you can throw in any
+classifier which has either binary or
+
+246
+00:05:50,469 --> 00:05:50,479
+classifier which has either binary or
+ 
+
+247
+00:05:50,479 --> 00:05:54,150
+classifier which has either binary or
+multiclass classification and ask it to
+
+248
+00:05:54,150 --> 00:05:54,160
+multiclass classification and ask it to
+ 
+
+249
+00:05:54,160 --> 00:05:57,830
+multiclass classification and ask it to
+use it as a the rule uh
+
+250
+00:05:57,830 --> 00:05:57,840
+use it as a the rule uh
+ 
+
+251
+00:05:57,840 --> 00:05:59,830
+use it as a the rule uh
+uh condition and also you can write your
+
+252
+00:05:59,830 --> 00:05:59,840
+uh condition and also you can write your
+ 
+
+253
+00:05:59,840 --> 00:06:03,670
+uh condition and also you can write your
+own LLM prompt and ask it to use it as a
+
+254
+00:06:03,670 --> 00:06:03,680
+own LLM prompt and ask it to use it as a
+ 
+
+255
+00:06:03,680 --> 00:06:08,550
+own LLM prompt and ask it to use it as a
+detection engine. And as you can see the
+
+256
+00:06:08,550 --> 00:06:08,560
+detection engine. And as you can see the
+ 
+
+257
+00:06:08,560 --> 00:06:11,270
+detection engine. And as you can see the
+detection efficacy increases as you use
+
+258
+00:06:11,270 --> 00:06:11,280
+detection efficacy increases as you use
+ 
+
+259
+00:06:11,280 --> 00:06:13,430
+detection efficacy increases as you use
+these different models down the line but
+
+260
+00:06:13,430 --> 00:06:13,440
+these different models down the line but
+ 
+
+261
+00:06:13,440 --> 00:06:15,270
+these different models down the line but
+at the same time it also increases your
+
+262
+00:06:15,270 --> 00:06:15,280
+at the same time it also increases your
+ 
+
+263
+00:06:15,280 --> 00:06:18,710
+at the same time it also increases your
+time and cost. So just like in security
+
+264
+00:06:18,710 --> 00:06:18,720
+time and cost. So just like in security
+ 
+
+265
+00:06:18,720 --> 00:06:21,430
+time and cost. So just like in security
+we use defense in depth. Our
+
+266
+00:06:21,430 --> 00:06:21,440
+we use defense in depth. Our
+ 
+
+267
+00:06:21,440 --> 00:06:24,070
+we use defense in depth. Our
+recommendation here is to use a mix of
+
+268
+00:06:24,070 --> 00:06:24,080
+recommendation here is to use a mix of
+ 
+
+269
+00:06:24,080 --> 00:06:27,909
+recommendation here is to use a mix of
+these uh techniques so that you balance
+
+270
+00:06:27,909 --> 00:06:27,919
+these uh techniques so that you balance
+ 
+
+271
+00:06:27,919 --> 00:06:30,710
+these uh techniques so that you balance
+the efficacy and the detection cost and
+
+272
+00:06:30,710 --> 00:06:30,720
+the efficacy and the detection cost and
+ 
+
+273
+00:06:30,720 --> 00:06:33,749
+the efficacy and the detection cost and
+time so that you cover as many as threat
+
+274
+00:06:33,749 --> 00:06:33,759
+time so that you cover as many as threat
+ 
+
+275
+00:06:33,759 --> 00:06:35,430
+time so that you cover as many as threat
+possible but without breaking your
+
+276
+00:06:35,430 --> 00:06:35,440
+possible but without breaking your
+ 
+
+277
+00:06:35,440 --> 00:06:38,629
+possible but without breaking your
+wallet.
+
+278
+00:06:38,629 --> 00:06:38,639
+
+ 
+
+279
+00:06:38,639 --> 00:06:41,189
+
+All right. Now I'm going to demonstrate
+
+280
+00:06:41,189 --> 00:06:41,199
+All right. Now I'm going to demonstrate
+ 
+
+281
+00:06:41,199 --> 00:06:44,870
+All right. Now I'm going to demonstrate
+uh another example where we can use a
+
+282
+00:06:44,870 --> 00:06:44,880
+uh another example where we can use a
+ 
+
+283
+00:06:44,880 --> 00:06:46,550
+uh another example where we can use a
+layered approach. The defense in depth
+
+284
+00:06:46,550 --> 00:06:46,560
+layered approach. The defense in depth
+ 
+
+285
+00:06:46,560 --> 00:06:48,550
+layered approach. The defense in depth
+approach where you have multiple
+
+286
+00:06:48,550 --> 00:06:48,560
+approach where you have multiple
+ 
+
+287
+00:06:48,560 --> 00:06:51,670
+approach where you have multiple
+conditions hit to detect this popular
+
+288
+00:06:51,670 --> 00:06:51,680
+conditions hit to detect this popular
+ 
+
+289
+00:06:51,680 --> 00:06:54,550
+conditions hit to detect this popular
+click fix attack. Clickfic is not
+
+290
+00:06:54,550 --> 00:06:54,560
+click fix attack. Clickfic is not
+ 
+
+291
+00:06:54,560 --> 00:06:57,029
+click fix attack. Clickfic is not
+specifically gena thread but we have
+
+292
+00:06:57,029 --> 00:06:57,039
+specifically gena thread but we have
+ 
+
+293
+00:06:57,039 --> 00:07:00,230
+specifically gena thread but we have
+seen certain social engineering aspect
+
+294
+00:07:00,230 --> 00:07:00,240
+seen certain social engineering aspect
+ 
+
+295
+00:07:00,240 --> 00:07:02,469
+seen certain social engineering aspect
+to it and also we recently saw a few
+
+296
+00:07:02,469 --> 00:07:02,479
+to it and also we recently saw a few
+ 
+
+297
+00:07:02,479 --> 00:07:05,430
+to it and also we recently saw a few
+example where they using click fix to uh
+
+298
+00:07:05,430 --> 00:07:05,440
+example where they using click fix to uh
+ 
+
+299
+00:07:05,440 --> 00:07:07,909
+example where they using click fix to uh
+deliver agent skills to your computer
+
+300
+00:07:07,909 --> 00:07:07,919
+deliver agent skills to your computer
+ 
+
+301
+00:07:07,919 --> 00:07:11,909
+deliver agent skills to your computer
+malicious agent skills.
+
+302
+00:07:11,909 --> 00:07:11,919
+
+ 
+
+303
+00:07:11,919 --> 00:07:16,070
+
+So in this rule the super rule I have
+
+304
+00:07:16,070 --> 00:07:16,080
+So in this rule the super rule I have
+ 
+
+305
+00:07:16,080 --> 00:07:18,950
+So in this rule the super rule I have
+three at a high level three conditions
+
+306
+00:07:18,950 --> 00:07:18,960
+three at a high level three conditions
+ 
+
+307
+00:07:18,960 --> 00:07:22,309
+three at a high level three conditions
+here. So what it at a high level does is
+
+308
+00:07:22,309 --> 00:07:22,319
+here. So what it at a high level does is
+ 
+
+309
+00:07:22,319 --> 00:07:24,150
+here. So what it at a high level does is
+it will check whe the string is
+
+310
+00:07:24,150 --> 00:07:24,160
+it will check whe the string is
+ 
+
+311
+00:07:24,160 --> 00:07:26,790
+it will check whe the string is
+matching. If it matches it will say this
+
+312
+00:07:26,790 --> 00:07:26,800
+matching. If it matches it will say this
+ 
+
+313
+00:07:26,800 --> 00:07:29,110
+matching. If it matches it will say this
+is a clickfix attack and if not it will
+
+314
+00:07:29,110 --> 00:07:29,120
+is a clickfix attack and if not it will
+ 
+
+315
+00:07:29,120 --> 00:07:30,790
+is a clickfix attack and if not it will
+go to the similarity check which is
+
+316
+00:07:30,790 --> 00:07:30,800
+go to the similarity check which is
+ 
+
+317
+00:07:30,800 --> 00:07:34,629
+go to the similarity check which is
+slightly higher cost of uh doing it and
+
+318
+00:07:34,629 --> 00:07:34,639
+slightly higher cost of uh doing it and
+ 
+
+319
+00:07:34,639 --> 00:07:36,309
+slightly higher cost of uh doing it and
+if it doesn't match it will fall back to
+
+320
+00:07:36,309 --> 00:07:36,319
+if it doesn't match it will fall back to
+ 
+
+321
+00:07:36,319 --> 00:07:39,749
+if it doesn't match it will fall back to
+the classifier. So in this case uh we
+
+322
+00:07:39,749 --> 00:07:39,759
+the classifier. So in this case uh we
+ 
+
+323
+00:07:39,759 --> 00:07:42,629
+the classifier. So in this case uh we
+have fine tune a debert model and put it
+
+324
+00:07:42,629 --> 00:07:42,639
+have fine tune a debert model and put it
+ 
+
+325
+00:07:42,639 --> 00:07:44,550
+have fine tune a debert model and put it
+into the system so that it can detect
+
+326
+00:07:44,550 --> 00:07:44,560
+into the system so that it can detect
+ 
+
+327
+00:07:44,560 --> 00:07:47,029
+into the system so that it can detect
+these prompt injections.
+
+328
+00:07:47,029 --> 00:07:47,039
+these prompt injections.
+ 
+
+329
+00:07:47,039 --> 00:07:49,830
+these prompt injections.
+So three layers together and this
+
+330
+00:07:49,830 --> 00:07:49,840
+So three layers together and this
+ 
+
+331
+00:07:49,840 --> 00:07:52,070
+So three layers together and this
+experimental result shows how it works.
+
+332
+00:07:52,070 --> 00:07:52,080
+experimental result shows how it works.
+ 
+
+333
+00:07:52,080 --> 00:07:55,189
+experimental result shows how it works.
+As you can see 50% of the threads are
+
+334
+00:07:55,189 --> 00:07:55,199
+As you can see 50% of the threads are
+ 
+
+335
+00:07:55,199 --> 00:07:57,909
+As you can see 50% of the threads are
+detected by the simple Yara rule and the
+
+336
+00:07:57,909 --> 00:07:57,919
+detected by the simple Yara rule and the
+ 
+
+337
+00:07:57,919 --> 00:08:00,950
+detected by the simple Yara rule and the
+remaining roughly 45 to 48% of the
+
+338
+00:08:00,950 --> 00:08:00,960
+remaining roughly 45 to 48% of the
+ 
+
+339
+00:08:00,960 --> 00:08:02,629
+remaining roughly 45 to 48% of the
+threads are detected by the more
+
+340
+00:08:02,629 --> 00:08:02,639
+threads are detected by the more
+ 
+
+341
+00:08:02,639 --> 00:08:05,110
+threads are detected by the more
+expensive uh similarity and the
+
+342
+00:08:05,110 --> 00:08:05,120
+expensive uh similarity and the
+ 
+
+343
+00:08:05,120 --> 00:08:08,710
+expensive uh similarity and the
+classifier threads. So as you can see I
+
+344
+00:08:08,710 --> 00:08:08,720
+classifier threads. So as you can see I
+ 
+
+345
+00:08:08,720 --> 00:08:10,869
+classifier threads. So as you can see I
+mean one could if you used only the Jara
+
+346
+00:08:10,869 --> 00:08:10,879
+mean one could if you used only the Jara
+ 
+
+347
+00:08:10,879 --> 00:08:13,350
+mean one could if you used only the Jara
+rule you will be missing 50% of it. But
+
+348
+00:08:13,350 --> 00:08:13,360
+rule you will be missing 50% of it. But
+ 
+
+349
+00:08:13,360 --> 00:08:15,510
+rule you will be missing 50% of it. But
+if you used only for example the
+
+350
+00:08:15,510 --> 00:08:15,520
+if you used only for example the
+ 
+
+351
+00:08:15,520 --> 00:08:18,070
+if you used only for example the
+classifier you will be detecting most of
+
+352
+00:08:18,070 --> 00:08:18,080
+classifier you will be detecting most of
+ 
+
+353
+00:08:18,080 --> 00:08:20,230
+classifier you will be detecting most of
+them but it will be more expensive. You
+
+354
+00:08:20,230 --> 00:08:20,240
+them but it will be more expensive. You
+ 
+
+355
+00:08:20,240 --> 00:08:22,869
+them but it will be more expensive. You
+can reduce the cost almost by 50% by
+
+356
+00:08:22,869 --> 00:08:22,879
+can reduce the cost almost by 50% by
+ 
+
+357
+00:08:22,879 --> 00:08:27,110
+can reduce the cost almost by 50% by
+doing a defense in depth layer.
+
+358
+00:08:27,110 --> 00:08:27,120
+
+ 
+
+359
+00:08:27,120 --> 00:08:29,430
+
+All right. Another important pattern we
+
+360
+00:08:29,430 --> 00:08:29,440
+All right. Another important pattern we
+ 
+
+361
+00:08:29,440 --> 00:08:31,510
+All right. Another important pattern we
+all most of the time use is what is
+
+362
+00:08:31,510 --> 00:08:31,520
+all most of the time use is what is
+ 
+
+363
+00:08:31,520 --> 00:08:33,350
+all most of the time use is what is
+called this pre-filtering pattern.
+
+364
+00:08:33,350 --> 00:08:33,360
+called this pre-filtering pattern.
+ 
+
+365
+00:08:33,360 --> 00:08:35,029
+called this pre-filtering pattern.
+Instead of always going for the
+
+366
+00:08:35,029 --> 00:08:35,039
+Instead of always going for the
+ 
+
+367
+00:08:35,039 --> 00:08:37,190
+Instead of always going for the
+expensive approach where you can throw
+
+368
+00:08:37,190 --> 00:08:37,200
+expensive approach where you can throw
+ 
+
+369
+00:08:37,200 --> 00:08:40,070
+expensive approach where you can throw
+in an LM LLM as I mentioned before, you
+
+370
+00:08:40,070 --> 00:08:40,080
+in an LM LLM as I mentioned before, you
+ 
+
+371
+00:08:40,080 --> 00:08:42,630
+in an LM LLM as I mentioned before, you
+can pair LLM with a more cheap operation
+
+372
+00:08:42,630 --> 00:08:42,640
+can pair LLM with a more cheap operation
+ 
+
+373
+00:08:42,640 --> 00:08:45,269
+can pair LLM with a more cheap operation
+like string matching or even a semantic
+
+374
+00:08:45,269 --> 00:08:45,279
+like string matching or even a semantic
+ 
+
+375
+00:08:45,279 --> 00:08:48,389
+like string matching or even a semantic
+similarity. So the idea here is whenever
+
+376
+00:08:48,389 --> 00:08:48,399
+similarity. So the idea here is whenever
+ 
+
+377
+00:08:48,399 --> 00:08:50,790
+similarity. So the idea here is whenever
+you build rules, you come up with a
+
+378
+00:08:50,790 --> 00:08:50,800
+you build rules, you come up with a
+ 
+
+379
+00:08:50,800 --> 00:08:52,710
+you build rules, you come up with a
+string rule and match together with a
+
+380
+00:08:52,710 --> 00:08:52,720
+string rule and match together with a
+ 
+
+381
+00:08:52,720 --> 00:08:55,670
+string rule and match together with a
+classifier or similarity with LLM
+
+382
+00:08:55,670 --> 00:08:55,680
+classifier or similarity with LLM
+ 
+
+383
+00:08:55,680 --> 00:08:58,630
+classifier or similarity with LLM
+something similar to that. uh bend the
+
+384
+00:08:58,630 --> 00:08:58,640
+something similar to that. uh bend the
+ 
+
+385
+00:08:58,640 --> 00:09:01,190
+something similar to that. uh bend the
+cheaper rule with the strong uh more
+
+386
+00:09:01,190 --> 00:09:01,200
+cheaper rule with the strong uh more
+ 
+
+387
+00:09:01,200 --> 00:09:05,750
+cheaper rule with the strong uh more
+expensive one so that you are
+
+388
+00:09:05,750 --> 00:09:05,760
+expensive one so that you are
+ 
+
+389
+00:09:05,760 --> 00:09:07,910
+expensive one so that you are
+trying to balance the detection after
+
+390
+00:09:07,910 --> 00:09:07,920
+trying to balance the detection after
+ 
+
+391
+00:09:07,920 --> 00:09:11,190
+trying to balance the detection after
+pre-filtering it. And this way like in
+
+392
+00:09:11,190 --> 00:09:11,200
+pre-filtering it. And this way like in
+ 
+
+393
+00:09:11,200 --> 00:09:13,269
+pre-filtering it. And this way like in
+our experiments we saw actually it was
+
+394
+00:09:13,269 --> 00:09:13,279
+our experiments we saw actually it was
+ 
+
+395
+00:09:13,279 --> 00:09:16,310
+our experiments we saw actually it was
+almost 99% uh reduction in cost when you
+
+396
+00:09:16,310 --> 00:09:16,320
+almost 99% uh reduction in cost when you
+ 
+
+397
+00:09:16,320 --> 00:09:17,990
+almost 99% uh reduction in cost when you
+do that instead of just blindly throwing
+
+398
+00:09:17,990 --> 00:09:18,000
+do that instead of just blindly throwing
+ 
+
+399
+00:09:18,000 --> 00:09:22,230
+do that instead of just blindly throwing
+the the most expensive uh construct.
+
+400
+00:09:22,230 --> 00:09:22,240
+the the most expensive uh construct.
+ 
+
+401
+00:09:22,240 --> 00:09:24,310
+the the most expensive uh construct.
+So I'm going to demonstrate that using
+
+402
+00:09:24,310 --> 00:09:24,320
+So I'm going to demonstrate that using
+ 
+
+403
+00:09:24,320 --> 00:09:26,389
+So I'm going to demonstrate that using
+this uh real threat which we see
+
+404
+00:09:26,389 --> 00:09:26,399
+this uh real threat which we see
+ 
+
+405
+00:09:26,399 --> 00:09:30,070
+this uh real threat which we see
+increasingly with geni impersonating
+
+406
+00:09:30,070 --> 00:09:30,080
+increasingly with geni impersonating
+ 
+
+407
+00:09:30,080 --> 00:09:33,829
+increasingly with geni impersonating
+brand has been never been easier. So now
+
+408
+00:09:33,829 --> 00:09:33,839
+brand has been never been easier. So now
+ 
+
+409
+00:09:33,839 --> 00:09:35,509
+brand has been never been easier. So now
+with agents communicating with each
+
+410
+00:09:35,509 --> 00:09:35,519
+with agents communicating with each
+ 
+
+411
+00:09:35,519 --> 00:09:38,630
+with agents communicating with each
+other I'm sure we will see more uh
+
+412
+00:09:38,630 --> 00:09:38,640
+other I'm sure we will see more uh
+ 
+
+413
+00:09:38,640 --> 00:09:40,630
+other I'm sure we will see more uh
+attacks where agents will be
+
+414
+00:09:40,630 --> 00:09:40,640
+attacks where agents will be
+ 
+
+415
+00:09:40,640 --> 00:09:44,710
+attacks where agents will be
+impersonating the other agents.
+
+416
+00:09:44,710 --> 00:09:44,720
+
+ 
+
+417
+00:09:44,720 --> 00:09:46,230
+
+All right. So in this case we only have
+
+418
+00:09:46,230 --> 00:09:46,240
+All right. So in this case we only have
+ 
+
+419
+00:09:46,240 --> 00:09:47,990
+All right. So in this case we only have
+two rules. The first one is the
+
+420
+00:09:47,990 --> 00:09:48,000
+two rules. The first one is the
+ 
+
+421
+00:09:48,000 --> 00:09:51,110
+two rules. The first one is the
+classifier rule. uh it's the it acts as
+
+422
+00:09:51,110 --> 00:09:51,120
+classifier rule. uh it's the it acts as
+ 
+
+423
+00:09:51,120 --> 00:09:53,509
+classifier rule. uh it's the it acts as
+the pref filter and the second rule is
+
+424
+00:09:53,509 --> 00:09:53,519
+the pref filter and the second rule is
+ 
+
+425
+00:09:53,519 --> 00:09:57,430
+the pref filter and the second rule is
+the LLM rule. Uh the classifier is built
+
+426
+00:09:57,430 --> 00:09:57,440
+the LLM rule. Uh the classifier is built
+ 
+
+427
+00:09:57,440 --> 00:10:00,389
+the LLM rule. Uh the classifier is built
+from one of the openly available hugging
+
+428
+00:10:00,389 --> 00:10:00,399
+from one of the openly available hugging
+ 
+
+429
+00:10:00,399 --> 00:10:02,470
+from one of the openly available hugging
+phase fishing detector. So we just
+
+430
+00:10:02,470 --> 00:10:02,480
+phase fishing detector. So we just
+ 
+
+431
+00:10:02,480 --> 00:10:04,550
+phase fishing detector. So we just
+download that and plug it in. It works
+
+432
+00:10:04,550 --> 00:10:04,560
+download that and plug it in. It works
+ 
+
+433
+00:10:04,560 --> 00:10:07,430
+download that and plug it in. It works
+boom there and once
+
+434
+00:10:07,430 --> 00:10:07,440
+boom there and once
+ 
+
+435
+00:10:07,440 --> 00:10:09,190
+boom there and once
+it I mean the problem with the
+
+436
+00:10:09,190 --> 00:10:09,200
+it I mean the problem with the
+ 
+
+437
+00:10:09,200 --> 00:10:10,630
+it I mean the problem with the
+classifier as I will be showing in the
+
+438
+00:10:10,630 --> 00:10:10,640
+classifier as I will be showing in the
+ 
+
+439
+00:10:10,640 --> 00:10:13,750
+classifier as I will be showing in the
+next slide is it's false positive prone.
+
+440
+00:10:13,750 --> 00:10:13,760
+next slide is it's false positive prone.
+ 
+
+441
+00:10:13,760 --> 00:10:16,870
+next slide is it's false positive prone.
+So you can't
+
+442
+00:10:16,870 --> 00:10:16,880
+So you can't
+ 
+
+443
+00:10:16,880 --> 00:10:19,590
+So you can't
+use the classifier alone to detect it
+
+444
+00:10:19,590 --> 00:10:19,600
+use the classifier alone to detect it
+ 
+
+445
+00:10:19,600 --> 00:10:20,790
+use the classifier alone to detect it
+because it will be a lot of false
+
+446
+00:10:20,790 --> 00:10:20,800
+because it will be a lot of false
+ 
+
+447
+00:10:20,800 --> 00:10:22,949
+because it will be a lot of false
+positive and the customers will not be
+
+448
+00:10:22,949 --> 00:10:22,959
+positive and the customers will not be
+ 
+
+449
+00:10:22,959 --> 00:10:26,310
+positive and the customers will not be
+happy and you can still use it as a pref
+
+450
+00:10:26,310 --> 00:10:26,320
+happy and you can still use it as a pref
+ 
+
+451
+00:10:26,320 --> 00:10:28,630
+happy and you can still use it as a pref
+filter because it's it's okay to get few
+
+452
+00:10:28,630 --> 00:10:28,640
+filter because it's it's okay to get few
+ 
+
+453
+00:10:28,640 --> 00:10:30,710
+filter because it's it's okay to get few
+false positive as long as it has high
+
+454
+00:10:30,710 --> 00:10:30,720
+false positive as long as it has high
+ 
+
+455
+00:10:30,720 --> 00:10:33,509
+false positive as long as it has high
+recall and once you get those ones you
+
+456
+00:10:33,509 --> 00:10:33,519
+recall and once you get those ones you
+ 
+
+457
+00:10:33,519 --> 00:10:35,910
+recall and once you get those ones you
+can pass it to the second condition LLM.
+
+458
+00:10:35,910 --> 00:10:35,920
+can pass it to the second condition LLM.
+ 
+
+459
+00:10:35,920 --> 00:10:38,069
+can pass it to the second condition LLM.
+LLM is more expensive and timeconuming
+
+460
+00:10:38,069 --> 00:10:38,079
+LLM is more expensive and timeconuming
+ 
+
+461
+00:10:38,079 --> 00:10:40,630
+LLM is more expensive and timeconuming
+as as you can see each LLM operation on
+
+462
+00:10:40,630 --> 00:10:40,640
+as as you can see each LLM operation on
+ 
+
+463
+00:10:40,640 --> 00:10:43,430
+as as you can see each LLM operation on
+average took about 4.5 seconds compared
+
+464
+00:10:43,430 --> 00:10:43,440
+average took about 4.5 seconds compared
+ 
+
+465
+00:10:43,440 --> 00:10:45,190
+average took about 4.5 seconds compared
+to the classifier which is few
+
+466
+00:10:45,190 --> 00:10:45,200
+to the classifier which is few
+ 
+
+467
+00:10:45,200 --> 00:10:48,150
+to the classifier which is few
+milliseconds like half a seconds
+
+468
+00:10:48,150 --> 00:10:48,160
+milliseconds like half a seconds
+ 
+
+469
+00:10:48,160 --> 00:10:49,910
+milliseconds like half a seconds
+and
+
+470
+00:10:49,910 --> 00:10:49,920
+and
+ 
+
+471
+00:10:49,920 --> 00:10:52,550
+and
+the numbers tell you the story here like
+
+472
+00:10:52,550 --> 00:10:52,560
+the numbers tell you the story here like
+ 
+
+473
+00:10:52,560 --> 00:10:54,470
+the numbers tell you the story here like
+using this pre-filtering approach we
+
+474
+00:10:54,470 --> 00:10:54,480
+using this pre-filtering approach we
+ 
+
+475
+00:10:54,480 --> 00:10:57,750
+using this pre-filtering approach we
+went from hours to minutes to do it and
+
+476
+00:10:57,750 --> 00:10:57,760
+went from hours to minutes to do it and
+ 
+
+477
+00:10:57,760 --> 00:11:00,310
+went from hours to minutes to do it and
+this is only 10,000 think about like
+
+478
+00:11:00,310 --> 00:11:00,320
+this is only 10,000 think about like
+ 
+
+479
+00:11:00,320 --> 00:11:03,430
+this is only 10,000 think about like
+like usually at paral scale we process
+
+480
+00:11:03,430 --> 00:11:03,440
+like usually at paral scale we process
+ 
+
+481
+00:11:03,440 --> 00:11:06,069
+like usually at paral scale we process
+millions of URLs each day this will be a
+
+482
+00:11:06,069 --> 00:11:06,079
+millions of URLs each day this will be a
+ 
+
+483
+00:11:06,079 --> 00:11:08,630
+millions of URLs each day this will be a
+huge bottleneck if we just throw in the
+
+484
+00:11:08,630 --> 00:11:08,640
+huge bottleneck if we just throw in the
+ 
+
+485
+00:11:08,640 --> 00:11:10,550
+huge bottleneck if we just throw in the
+most expensive operation. And similarly,
+
+486
+00:11:10,550 --> 00:11:10,560
+most expensive operation. And similarly,
+ 
+
+487
+00:11:10,560 --> 00:11:13,350
+most expensive operation. And similarly,
+the cost, I calculated the cost for the
+
+488
+00:11:13,350 --> 00:11:13,360
+the cost, I calculated the cost for the
+ 
+
+489
+00:11:13,360 --> 00:11:17,190
+the cost, I calculated the cost for the
+Gemini 2.5 Pro for 10,000 uh 10 10k
+
+490
+00:11:17,190 --> 00:11:17,200
+Gemini 2.5 Pro for 10,000 uh 10 10k
+ 
+
+491
+00:11:17,200 --> 00:11:22,230
+Gemini 2.5 Pro for 10,000 uh 10 10k
+request, and it went from 750 to 13.5 by
+
+492
+00:11:22,230 --> 00:11:22,240
+request, and it went from 750 to 13.5 by
+ 
+
+493
+00:11:22,240 --> 00:11:24,389
+request, and it went from 750 to 13.5 by
+doing the pre-filtering.
+
+494
+00:11:24,389 --> 00:11:24,399
+doing the pre-filtering.
+ 
+
+495
+00:11:24,399 --> 00:11:26,389
+doing the pre-filtering.
+So, always do the pre-filtering before
+
+496
+00:11:26,389 --> 00:11:26,399
+So, always do the pre-filtering before
+ 
+
+497
+00:11:26,399 --> 00:11:28,949
+So, always do the pre-filtering before
+you do detections.
+
+498
+00:11:28,949 --> 00:11:28,959
+you do detections.
+ 
+
+499
+00:11:28,959 --> 00:11:31,829
+you do detections.
+And I barely scratched the surface of
+
+500
+00:11:31,829 --> 00:11:31,839
+And I barely scratched the surface of
+ 
+
+501
+00:11:31,839 --> 00:11:34,389
+And I barely scratched the surface of
+the what this library does. It actually
+
+502
+00:11:34,389 --> 00:11:34,399
+the what this library does. It actually
+ 
+
+503
+00:11:34,399 --> 00:11:38,389
+the what this library does. It actually
+has this flexible philosophy where every
+
+504
+00:11:38,389 --> 00:11:38,399
+has this flexible philosophy where every
+ 
+
+505
+00:11:38,399 --> 00:11:40,630
+has this flexible philosophy where every
+component in the library is pluggable
+
+506
+00:11:40,630 --> 00:11:40,640
+component in the library is pluggable
+ 
+
+507
+00:11:40,640 --> 00:11:44,230
+component in the library is pluggable
+and it follows the factory pattern and I
+
+508
+00:11:44,230 --> 00:11:44,240
+and it follows the factory pattern and I
+ 
+
+509
+00:11:44,240 --> 00:11:46,790
+and it follows the factory pattern and I
+didn't talk about the these special
+
+510
+00:11:46,790 --> 00:11:46,800
+didn't talk about the these special
+ 
+
+511
+00:11:46,800 --> 00:11:48,870
+didn't talk about the these special
+boxes like cleaners and chunkers
+
+512
+00:11:48,870 --> 00:11:48,880
+boxes like cleaners and chunkers
+ 
+
+513
+00:11:48,880 --> 00:11:50,389
+boxes like cleaners and chunkers
+whenever when you are dealing with like
+
+514
+00:11:50,389 --> 00:11:50,399
+whenever when you are dealing with like
+ 
+
+515
+00:11:50,399 --> 00:11:52,949
+whenever when you are dealing with like
+messy data like HTML you don't want to
+
+516
+00:11:52,949 --> 00:11:52,959
+messy data like HTML you don't want to
+ 
+
+517
+00:11:52,959 --> 00:11:55,030
+messy data like HTML you don't want to
+feed the whole data because it has a lot
+
+518
+00:11:55,030 --> 00:11:55,040
+feed the whole data because it has a lot
+ 
+
+519
+00:11:55,040 --> 00:11:57,430
+feed the whole data because it has a lot
+of fluff which agent doesn't want to see
+
+520
+00:11:57,430 --> 00:11:57,440
+of fluff which agent doesn't want to see
+ 
+
+521
+00:11:57,440 --> 00:12:00,630
+of fluff which agent doesn't want to see
+or any classifier or a semantic model
+
+522
+00:12:00,630 --> 00:12:00,640
+or any classifier or a semantic model
+ 
+
+523
+00:12:00,640 --> 00:12:02,790
+or any classifier or a semantic model
+want to see. So you need to clean it.
+
+524
+00:12:02,790 --> 00:12:02,800
+want to see. So you need to clean it.
+ 
+
+525
+00:12:02,800 --> 00:12:04,870
+want to see. So you need to clean it.
+There are we have provided from standard
+
+526
+00:12:04,870 --> 00:12:04,880
+There are we have provided from standard
+ 
+
+527
+00:12:04,880 --> 00:12:06,870
+There are we have provided from standard
+cleaners which will take the HTML remove
+
+528
+00:12:06,870 --> 00:12:06,880
+cleaners which will take the HTML remove
+ 
+
+529
+00:12:06,880 --> 00:12:09,030
+cleaners which will take the HTML remove
+all the decorations and get all the the
+
+530
+00:12:09,030 --> 00:12:09,040
+all the decorations and get all the the
+ 
+
+531
+00:12:09,040 --> 00:12:12,069
+all the decorations and get all the the
+meat from it and then chunkers because
+
+532
+00:12:12,069 --> 00:12:12,079
+meat from it and then chunkers because
+ 
+
+533
+00:12:12,079 --> 00:12:14,870
+meat from it and then chunkers because
+when you are working with especially
+
+534
+00:12:14,870 --> 00:12:14,880
+when you are working with especially
+ 
+
+535
+00:12:14,880 --> 00:12:17,350
+when you are working with especially
+uh generic kind of matching if you try
+
+536
+00:12:17,350 --> 00:12:17,360
+uh generic kind of matching if you try
+ 
+
+537
+00:12:17,360 --> 00:12:19,910
+uh generic kind of matching if you try
+to match the whole document with one
+
+538
+00:12:19,910 --> 00:12:19,920
+to match the whole document with one
+ 
+
+539
+00:12:19,920 --> 00:12:21,990
+to match the whole document with one
+phrase it's going to give you a very low
+
+540
+00:12:21,990 --> 00:12:22,000
+phrase it's going to give you a very low
+ 
+
+541
+00:12:22,000 --> 00:12:24,069
+phrase it's going to give you a very low
+score so you probably need to chunk it
+
+542
+00:12:24,069 --> 00:12:24,079
+score so you probably need to chunk it
+ 
+
+543
+00:12:24,079 --> 00:12:26,150
+score so you probably need to chunk it
+or chunk it by sentences chunk it by
+
+544
+00:12:26,150 --> 00:12:26,160
+or chunk it by sentences chunk it by
+ 
+
+545
+00:12:26,160 --> 00:12:28,230
+or chunk it by sentences chunk it by
+paragraphs or do overlapping chunking
+
+546
+00:12:28,230 --> 00:12:28,240
+paragraphs or do overlapping chunking
+ 
+
+547
+00:12:28,240 --> 00:12:29,829
+paragraphs or do overlapping chunking
+there are so many other chunking
+
+548
+00:12:29,829 --> 00:12:29,839
+there are so many other chunking
+ 
+
+549
+00:12:29,839 --> 00:12:31,750
+there are so many other chunking
+techniques you can use the good thing
+
+550
+00:12:31,750 --> 00:12:31,760
+techniques you can use the good thing
+ 
+
+551
+00:12:31,760 --> 00:12:33,430
+techniques you can use the good thing
+about the libraries. You can plug in
+
+552
+00:12:33,430 --> 00:12:33,440
+about the libraries. You can plug in
+ 
+
+553
+00:12:33,440 --> 00:12:35,670
+about the libraries. You can plug in
+your own chunkers and cleaners and get
+
+554
+00:12:35,670 --> 00:12:35,680
+your own chunkers and cleaners and get
+ 
+
+555
+00:12:35,680 --> 00:12:38,790
+your own chunkers and cleaners and get
+get it working the way you want and you
+
+556
+00:12:38,790 --> 00:12:38,800
+get it working the way you want and you
+ 
+
+557
+00:12:38,800 --> 00:12:40,949
+get it working the way you want and you
+don't need to change a thing in the
+
+558
+00:12:40,949 --> 00:12:40,959
+don't need to change a thing in the
+ 
+
+559
+00:12:40,959 --> 00:12:43,430
+don't need to change a thing in the
+rule. You just need to specify which
+
+560
+00:12:43,430 --> 00:12:43,440
+rule. You just need to specify which
+ 
+
+561
+00:12:43,440 --> 00:12:45,910
+rule. You just need to specify which
+chunker you used and then the rule
+
+562
+00:12:45,910 --> 00:12:45,920
+chunker you used and then the rule
+ 
+
+563
+00:12:45,920 --> 00:12:47,990
+chunker you used and then the rule
+engine will take care of it. And at the
+
+564
+00:12:47,990 --> 00:12:48,000
+engine will take care of it. And at the
+ 
+
+565
+00:12:48,000 --> 00:12:49,829
+engine will take care of it. And at the
+moment out of the box it supports these
+
+566
+00:12:49,829 --> 00:12:49,839
+moment out of the box it supports these
+ 
+
+567
+00:12:49,839 --> 00:12:51,750
+moment out of the box it supports these
+four kind of rules as I mentioned
+
+568
+00:12:51,750 --> 00:12:51,760
+four kind of rules as I mentioned
+ 
+
+569
+00:12:51,760 --> 00:12:55,509
+four kind of rules as I mentioned
+before. And even for these LLMs you can
+
+570
+00:12:55,509 --> 00:12:55,519
+before. And even for these LLMs you can
+ 
+
+571
+00:12:55,519 --> 00:12:58,949
+before. And even for these LLMs you can
+use any publicly available Gemini OpenAI
+
+572
+00:12:58,949 --> 00:12:58,959
+use any publicly available Gemini OpenAI
+ 
+
+573
+00:12:58,959 --> 00:13:02,310
+use any publicly available Gemini OpenAI
+kind of uh model or even you can host it
+
+574
+00:13:02,310 --> 00:13:02,320
+kind of uh model or even you can host it
+ 
+
+575
+00:13:02,320 --> 00:13:05,430
+kind of uh model or even you can host it
+locally on Oama and call it as well. As
+
+576
+00:13:05,430 --> 00:13:05,440
+locally on Oama and call it as well. As
+ 
+
+577
+00:13:05,440 --> 00:13:07,430
+locally on Oama and call it as well. As
+long as you follow the same interface
+
+578
+00:13:07,430 --> 00:13:07,440
+long as you follow the same interface
+ 
+
+579
+00:13:07,440 --> 00:13:09,990
+long as you follow the same interface
+the contract you can plug in any LLM.
+
+580
+00:13:09,990 --> 00:13:10,000
+the contract you can plug in any LLM.
+ 
+
+581
+00:13:10,000 --> 00:13:11,750
+the contract you can plug in any LLM.
+Similar for the classifier and similar
+
+582
+00:13:11,750 --> 00:13:11,760
+Similar for the classifier and similar
+ 
+
+583
+00:13:11,760 --> 00:13:17,110
+Similar for the classifier and similar
+for the uh similarity as well.
+
+584
+00:13:17,110 --> 00:13:17,120
+
+ 
+
+585
+00:13:17,120 --> 00:13:18,870
+
+All right, the best part of all is it's
+
+586
+00:13:18,870 --> 00:13:18,880
+All right, the best part of all is it's
+ 
+
+587
+00:13:18,880 --> 00:13:20,949
+All right, the best part of all is it's
+all open source. It's available in
+
+588
+00:13:20,949 --> 00:13:20,959
+all open source. It's available in
+ 
+
+589
+00:13:20,959 --> 00:13:23,750
+all open source. It's available in
+GitHub and you just need to go do pip
+
+590
+00:13:23,750 --> 00:13:23,760
+GitHub and you just need to go do pip
+ 
+
+591
+00:13:23,760 --> 00:13:26,150
+GitHub and you just need to go do pip
+install Sara. You will get it in your
+
+592
+00:13:26,150 --> 00:13:26,160
+install Sara. You will get it in your
+ 
+
+593
+00:13:26,160 --> 00:13:29,030
+install Sara. You will get it in your
+laptop or whatever device you are using
+
+594
+00:13:29,030 --> 00:13:29,040
+laptop or whatever device you are using
+ 
+
+595
+00:13:29,040 --> 00:13:32,069
+laptop or whatever device you are using
+with and I have website created here all
+
+596
+00:13:32,069 --> 00:13:32,079
+with and I have website created here all
+ 
+
+597
+00:13:32,079 --> 00:13:34,790
+with and I have website created here all
+wcoded and this website has all the
+
+598
+00:13:34,790 --> 00:13:34,800
+wcoded and this website has all the
+ 
+
+599
+00:13:34,800 --> 00:13:36,470
+wcoded and this website has all the
+information there. If you go to.org
+
+600
+00:13:36,470 --> 00:13:36,480
+information there. If you go to.org
+ 
+
+601
+00:13:36,480 --> 00:13:38,949
+information there. If you go to.org
+book, you will see uh not only the gith
+
+602
+00:13:38,949 --> 00:13:38,959
+book, you will see uh not only the gith
+ 
+
+603
+00:13:38,959 --> 00:13:41,750
+book, you will see uh not only the gith
+pub lib but also some cool examples and
+
+604
+00:13:41,750 --> 00:13:41,760
+pub lib but also some cool examples and
+ 
+
+605
+00:13:41,760 --> 00:13:43,910
+pub lib but also some cool examples and
+demos of uh different kind of things
+
+606
+00:13:43,910 --> 00:13:43,920
+demos of uh different kind of things
+ 
+
+607
+00:13:43,920 --> 00:13:46,790
+demos of uh different kind of things
+because I only demonstrated a very small
+
+608
+00:13:46,790 --> 00:13:46,800
+because I only demonstrated a very small
+ 
+
+609
+00:13:46,800 --> 00:13:51,190
+because I only demonstrated a very small
+uh part of the whole library.
+
+610
+00:13:51,190 --> 00:13:51,200
+
+ 
+
+611
+00:13:51,200 --> 00:13:53,269
+
+All right, that's it from me. If you
+
+612
+00:13:53,269 --> 00:13:53,279
+All right, that's it from me. If you
+ 
+
+613
+00:13:53,279 --> 00:13:54,629
+All right, that's it from me. If you
+have any questions, I would be happy to
+
+614
+00:13:54,629 --> 00:13:54,639
+have any questions, I would be happy to
+ 
+
+615
+00:13:54,639 --> 00:13:58,069
+have any questions, I would be happy to
+answer.
+
+616
+00:13:58,069 --> 00:13:58,079
+
+ 
+
+617
+00:13:58,079 --> 00:14:01,189
+
+>> All right, any questions?
+
+618
+00:14:01,189 --> 00:14:01,199
+>> All right, any questions?
+ 
+
+619
+00:14:01,199 --> 00:14:02,550
+>> All right, any questions?
+Okay, I'm going to start with Moon over
+
+620
+00:14:02,550 --> 00:14:02,560
+Okay, I'm going to start with Moon over
+ 
+
+621
+00:14:02,560 --> 00:14:08,389
+Okay, I'm going to start with Moon over
+here and then walk over here.
+
+622
+00:14:08,389 --> 00:14:08,399
+
+ 
+
+623
+00:14:08,399 --> 00:14:10,710
+
+Hey dude, I love Yara. I' I've shared
+
+624
+00:14:10,710 --> 00:14:10,720
+Hey dude, I love Yara. I' I've shared
+ 
+
+625
+00:14:10,720 --> 00:14:12,230
+Hey dude, I love Yara. I' I've shared
+rules for two decades. This is
+
+626
+00:14:12,230 --> 00:14:12,240
+rules for two decades. This is
+ 
+
+627
+00:14:12,240 --> 00:14:15,269
+rules for two decades. This is
+fantastic. Um, I had a qu. You're on to
+
+628
+00:14:15,269 --> 00:14:15,279
+fantastic. Um, I had a qu. You're on to
+ 
+
+629
+00:14:15,279 --> 00:14:17,269
+fantastic. Um, I had a qu. You're on to
+something in terms of like create a
+
+630
+00:14:17,269 --> 00:14:17,279
+something in terms of like create a
+ 
+
+631
+00:14:17,279 --> 00:14:19,269
+something in terms of like create a
+pre-processor, lower the cost, lower the
+
+632
+00:14:19,269 --> 00:14:19,279
+pre-processor, lower the cost, lower the
+ 
+
+633
+00:14:19,279 --> 00:14:21,030
+pre-processor, lower the cost, lower the
+lower the cost up front in terms of how
+
+634
+00:14:21,030 --> 00:14:21,040
+lower the cost up front in terms of how
+ 
+
+635
+00:14:21,040 --> 00:14:22,389
+lower the cost up front in terms of how
+many tokens I'm doing, the cost on the
+
+636
+00:14:22,389 --> 00:14:22,399
+many tokens I'm doing, the cost on the
+ 
+
+637
+00:14:22,399 --> 00:14:24,470
+many tokens I'm doing, the cost on the
+back in terms of my analyst time. Are
+
+638
+00:14:24,470 --> 00:14:24,480
+back in terms of my analyst time. Are
+ 
+
+639
+00:14:24,480 --> 00:14:26,470
+back in terms of my analyst time. Are
+you doing any like reverse validation of
+
+640
+00:14:26,470 --> 00:14:26,480
+you doing any like reverse validation of
+ 
+
+641
+00:14:26,480 --> 00:14:28,470
+you doing any like reverse validation of
+new classifiers or new rules to go this
+
+642
+00:14:28,470 --> 00:14:28,480
+new classifiers or new rules to go this
+ 
+
+643
+00:14:28,480 --> 00:14:30,069
+new classifiers or new rules to go this
+is a good rule, let's deploy it before
+
+644
+00:14:30,069 --> 00:14:30,079
+is a good rule, let's deploy it before
+ 
+
+645
+00:14:30,079 --> 00:14:31,990
+is a good rule, let's deploy it before
+you spend 1,300 bucks to find that
+
+646
+00:14:31,990 --> 00:14:32,000
+you spend 1,300 bucks to find that
+ 
+
+647
+00:14:32,000 --> 00:14:34,629
+you spend 1,300 bucks to find that
+answer? Reverse means could you
+
+648
+00:14:34,629 --> 00:14:34,639
+answer? Reverse means could you
+ 
+
+649
+00:14:34,639 --> 00:14:35,750
+answer? Reverse means could you
+elaborate more on?
+
+650
+00:14:35,750 --> 00:14:35,760
+elaborate more on?
+ 
+
+651
+00:14:35,760 --> 00:14:36,790
+elaborate more on?
+>> Excuse me, I can't hear you.
+
+652
+00:14:36,790 --> 00:14:36,800
+>> Excuse me, I can't hear you.
+ 
+
+653
+00:14:36,800 --> 00:14:38,230
+>> Excuse me, I can't hear you.
+>> Yeah. Could you elaborate more on that
+
+654
+00:14:38,230 --> 00:14:38,240
+>> Yeah. Could you elaborate more on that
+ 
+
+655
+00:14:38,240 --> 00:14:40,069
+>> Yeah. Could you elaborate more on that
+one? What do you mean by reversing?
+
+656
+00:14:40,069 --> 00:14:40,079
+one? What do you mean by reversing?
+ 
+
+657
+00:14:40,079 --> 00:14:42,629
+one? What do you mean by reversing?
+>> Uh like uh so if my analysts are
+
+658
+00:14:42,629 --> 00:14:42,639
+>> Uh like uh so if my analysts are
+ 
+
+659
+00:14:42,639 --> 00:14:45,110
+>> Uh like uh so if my analysts are
+deploying a new rules countermeasure
+
+660
+00:14:45,110 --> 00:14:45,120
+deploying a new rules countermeasure
+ 
+
+661
+00:14:45,120 --> 00:14:46,550
+deploying a new rules countermeasure
+before it goes through that part of my
+
+662
+00:14:46,550 --> 00:14:46,560
+before it goes through that part of my
+ 
+
+663
+00:14:46,560 --> 00:14:48,310
+before it goes through that part of my
+CI/CD platform is it's going to go look
+
+664
+00:14:48,310 --> 00:14:48,320
+CI/CD platform is it's going to go look
+ 
+
+665
+00:14:48,320 --> 00:14:50,069
+CI/CD platform is it's going to go look
+at all the malware we've ever looked at
+
+666
+00:14:50,069 --> 00:14:50,079
+at all the malware we've ever looked at
+ 
+
+667
+00:14:50,079 --> 00:14:51,509
+at all the malware we've ever looked at
+plus a whole collection of stuff that's
+
+668
+00:14:51,509 --> 00:14:51,519
+plus a whole collection of stuff that's
+ 
+
+669
+00:14:51,519 --> 00:14:53,829
+plus a whole collection of stuff that's
+like never block this. Um I would
+
+670
+00:14:53,829 --> 00:14:53,839
+like never block this. Um I would
+ 
+
+671
+00:14:53,839 --> 00:14:55,430
+like never block this. Um I would
+imagine that's a lot harder to do with
+
+672
+00:14:55,430 --> 00:14:55,440
+imagine that's a lot harder to do with
+ 
+
+673
+00:14:55,440 --> 00:14:56,949
+imagine that's a lot harder to do with
+classifiers, thus you're saying, "Hey,
+
+674
+00:14:56,949 --> 00:14:56,959
+classifiers, thus you're saying, "Hey,
+ 
+
+675
+00:14:56,959 --> 00:14:58,470
+classifiers, thus you're saying, "Hey,
+use an off-the-shelf one."
+
+676
+00:14:58,470 --> 00:14:58,480
+use an off-the-shelf one."
+ 
+
+677
+00:14:58,480 --> 00:15:00,470
+use an off-the-shelf one."
+>> Um but are you doing any custom ones?
+
+678
+00:15:00,470 --> 00:15:00,480
+>> Um but are you doing any custom ones?
+ 
+
+679
+00:15:00,480 --> 00:15:04,150
+>> Um but are you doing any custom ones?
+Yeah, I mean I mean there is probably I
+
+680
+00:15:04,150 --> 00:15:04,160
+Yeah, I mean I mean there is probably I
+ 
+
+681
+00:15:04,160 --> 00:15:07,829
+Yeah, I mean I mean there is probably I
+didn't explain it here like there is a
+
+682
+00:15:07,829 --> 00:15:07,839
+didn't explain it here like there is a
+ 
+
+683
+00:15:07,839 --> 00:15:09,509
+didn't explain it here like there is a
+part where you want to do some kind of
+
+684
+00:15:09,509 --> 00:15:09,519
+part where you want to do some kind of
+ 
+
+685
+00:15:09,519 --> 00:15:12,069
+part where you want to do some kind of
+finetuning. So probably you can see in
+
+686
+00:15:12,069 --> 00:15:12,079
+finetuning. So probably you can see in
+ 
+
+687
+00:15:12,079 --> 00:15:15,110
+finetuning. So probably you can see in
+the classify there's a threshold part
+
+688
+00:15:15,110 --> 00:15:15,120
+the classify there's a threshold part
+ 
+
+689
+00:15:15,120 --> 00:15:18,389
+the classify there's a threshold part
+but that threshold is decided based on
+
+690
+00:15:18,389 --> 00:15:18,399
+but that threshold is decided based on
+ 
+
+691
+00:15:18,399 --> 00:15:20,389
+but that threshold is decided based on
+the the ground truth you have in the
+
+692
+00:15:20,389 --> 00:15:20,399
+the the ground truth you have in the
+ 
+
+693
+00:15:20,399 --> 00:15:23,030
+the the ground truth you have in the
+CI/CD like you need to use some amount
+
+694
+00:15:23,030 --> 00:15:23,040
+CI/CD like you need to use some amount
+ 
+
+695
+00:15:23,040 --> 00:15:25,269
+CI/CD like you need to use some amount
+of known benign and non malicious to
+
+696
+00:15:25,269 --> 00:15:25,279
+of known benign and non malicious to
+ 
+
+697
+00:15:25,279 --> 00:15:27,829
+of known benign and non malicious to
+finetune it and yeah I would put it in
+
+698
+00:15:27,829 --> 00:15:27,839
+finetune it and yeah I would put it in
+ 
+
+699
+00:15:27,839 --> 00:15:29,910
+finetune it and yeah I would put it in
+shadow before just like in Yara rule
+
+700
+00:15:29,910 --> 00:15:29,920
+shadow before just like in Yara rule
+ 
+
+701
+00:15:29,920 --> 00:15:32,470
+shadow before just like in Yara rule
+that's what we do we put usually in uh
+
+702
+00:15:32,470 --> 00:15:32,480
+that's what we do we put usually in uh
+ 
+
+703
+00:15:32,480 --> 00:15:34,550
+that's what we do we put usually in uh
+for about one week in shadow pro because
+
+704
+00:15:34,550 --> 00:15:34,560
+for about one week in shadow pro because
+ 
+
+705
+00:15:34,560 --> 00:15:36,310
+for about one week in shadow pro because
+you never know what you get from the
+
+706
+00:15:36,310 --> 00:15:36,320
+you never know what you get from the
+ 
+
+707
+00:15:36,320 --> 00:15:38,949
+you never know what you get from the
+real field and if it's all good we
+
+708
+00:15:38,949 --> 00:15:38,959
+real field and if it's all good we
+ 
+
+709
+00:15:38,959 --> 00:15:42,389
+real field and if it's all good we
+enable it in Absolutely. Thank you.
+
+710
+00:15:42,389 --> 00:15:42,399
+enable it in Absolutely. Thank you.
+ 
+
+711
+00:15:42,399 --> 00:15:49,749
+enable it in Absolutely. Thank you.
+>> All right.
+
+712
+00:15:49,749 --> 00:15:49,759
+
+ 
+
+713
+00:15:49,759 --> 00:15:54,389
+
+>> I'll do Carl first and then over to you.
+
+714
+00:15:54,389 --> 00:15:54,399
+>> I'll do Carl first and then over to you.
+ 
+
+715
+00:15:54,399 --> 00:15:55,749
+>> I'll do Carl first and then over to you.
+>> Yeah. I just had a quick question.
+
+716
+00:15:55,749 --> 00:15:55,759
+>> Yeah. I just had a quick question.
+ 
+
+717
+00:15:55,759 --> 00:15:57,749
+>> Yeah. I just had a quick question.
+Architecturally, can you explain why you
+
+718
+00:15:57,749 --> 00:15:57,759
+Architecturally, can you explain why you
+ 
+
+719
+00:15:57,759 --> 00:16:00,550
+Architecturally, can you explain why you
+decided to make a new format with Super
+
+720
+00:16:00,550 --> 00:16:00,560
+decided to make a new format with Super
+ 
+
+721
+00:16:00,560 --> 00:16:02,710
+decided to make a new format with Super
+Yara instead of extending the modularity
+
+722
+00:16:02,710 --> 00:16:02,720
+Yara instead of extending the modularity
+ 
+
+723
+00:16:02,720 --> 00:16:05,670
+Yara instead of extending the modularity
+that Yara already has? Like Yara has PE
+
+724
+00:16:05,670 --> 00:16:05,680
+that Yara already has? Like Yara has PE
+ 
+
+725
+00:16:05,680 --> 00:16:08,550
+that Yara already has? Like Yara has PE
+analysis that's an an imported module.
+
+726
+00:16:08,550 --> 00:16:08,560
+analysis that's an an imported module.
+ 
+
+727
+00:16:08,560 --> 00:16:10,629
+analysis that's an an imported module.
+uh would that work here or is this
+
+728
+00:16:10,629 --> 00:16:10,639
+uh would that work here or is this
+ 
+
+729
+00:16:10,639 --> 00:16:12,150
+uh would that work here or is this
+fundamentally changing something about
+
+730
+00:16:12,150 --> 00:16:12,160
+fundamentally changing something about
+ 
+
+731
+00:16:12,160 --> 00:16:13,189
+fundamentally changing something about
+Yara?
+
+732
+00:16:13,189 --> 00:16:13,199
+Yara?
+ 
+
+733
+00:16:13,199 --> 00:16:15,350
+Yara?
+>> I mean it follows the same philosophy. I
+
+734
+00:16:15,350 --> 00:16:15,360
+>> I mean it follows the same philosophy. I
+ 
+
+735
+00:16:15,360 --> 00:16:17,590
+>> I mean it follows the same philosophy. I
+mean princ in principle we should be
+
+736
+00:16:17,590 --> 00:16:17,600
+mean princ in principle we should be
+ 
+
+737
+00:16:17,600 --> 00:16:19,829
+mean princ in principle we should be
+able to extend it as well but the
+
+738
+00:16:19,829 --> 00:16:19,839
+able to extend it as well but the
+ 
+
+739
+00:16:19,839 --> 00:16:23,110
+able to extend it as well but the
+friction is high and
+
+740
+00:16:23,110 --> 00:16:23,120
+friction is high and
+ 
+
+741
+00:16:23,120 --> 00:16:24,629
+friction is high and
+in principle we should be able to do it
+
+742
+00:16:24,629 --> 00:16:24,639
+in principle we should be able to do it
+ 
+
+743
+00:16:24,639 --> 00:16:26,870
+in principle we should be able to do it
+but yeah we didn't go in that avenue but
+
+744
+00:16:26,870 --> 00:16:26,880
+but yeah we didn't go in that avenue but
+ 
+
+745
+00:16:26,880 --> 00:16:28,949
+but yeah we didn't go in that avenue but
+it's uh we follow the same footstep of
+
+746
+00:16:28,949 --> 00:16:28,959
+it's uh we follow the same footstep of
+ 
+
+747
+00:16:28,959 --> 00:16:31,189
+it's uh we follow the same footstep of
+Vara making it a all open source no
+
+748
+00:16:31,189 --> 00:16:31,199
+Vara making it a all open source no
+ 
+
+749
+00:16:31,199 --> 00:16:32,949
+Vara making it a all open source no
+string at edge anyone should be able to
+
+750
+00:16:32,949 --> 00:16:32,959
+string at edge anyone should be able to
+ 
+
+751
+00:16:32,959 --> 00:16:35,590
+string at edge anyone should be able to
+use it.
+
+752
+00:16:35,590 --> 00:16:35,600
+use it.
+ 
+
+753
+00:16:35,600 --> 00:16:38,069
+use it.
+Um, so that's pretty cool. I didn't know
+
+754
+00:16:38,069 --> 00:16:38,079
+Um, so that's pretty cool. I didn't know
+ 
+
+755
+00:16:38,079 --> 00:16:41,030
+Um, so that's pretty cool. I didn't know
+about this. Uh, Super Yara, I'm a data
+
+756
+00:16:41,030 --> 00:16:41,040
+about this. Uh, Super Yara, I'm a data
+ 
+
+757
+00:16:41,040 --> 00:16:42,310
+about this. Uh, Super Yara, I'm a data
+scientist, so I'm going to ask a more
+
+758
+00:16:42,310 --> 00:16:42,320
+scientist, so I'm going to ask a more
+ 
+
+759
+00:16:42,320 --> 00:16:45,269
+scientist, so I'm going to ask a more
+data sciency question. Um, so what do
+
+760
+00:16:45,269 --> 00:16:45,279
+data sciency question. Um, so what do
+ 
+
+761
+00:16:45,279 --> 00:16:48,710
+data sciency question. Um, so what do
+you use uh for routing? Like how do you
+
+762
+00:16:48,710 --> 00:16:48,720
+you use uh for routing? Like how do you
+ 
+
+763
+00:16:48,720 --> 00:16:52,710
+you use uh for routing? Like how do you
+decide when uh to use the ML versus the
+
+764
+00:16:52,710 --> 00:16:52,720
+decide when uh to use the ML versus the
+ 
+
+765
+00:16:52,720 --> 00:16:55,430
+decide when uh to use the ML versus the
+language model? Do you can you customize
+
+766
+00:16:55,430 --> 00:16:55,440
+language model? Do you can you customize
+ 
+
+767
+00:16:55,440 --> 00:16:58,150
+language model? Do you can you customize
+that? Is it like thresholds or is it
+
+768
+00:16:58,150 --> 00:16:58,160
+that? Is it like thresholds or is it
+ 
+
+769
+00:16:58,160 --> 00:16:58,790
+that? Is it like thresholds or is it
+other stuff?
+
+770
+00:16:58,790 --> 00:16:58,800
+other stuff?
+ 
+
+771
+00:16:58,800 --> 00:17:00,150
+other stuff?
+>> Yeah, that that's a very good question.
+
+772
+00:17:00,150 --> 00:17:00,160
+>> Yeah, that that's a very good question.
+ 
+
+773
+00:17:00,160 --> 00:17:02,790
+>> Yeah, that that's a very good question.
+Actually I forgot to mention the the
+
+774
+00:17:02,790 --> 00:17:02,800
+Actually I forgot to mention the the
+ 
+
+775
+00:17:02,800 --> 00:17:05,750
+Actually I forgot to mention the the
+engine is optimized to uh execute the
+
+776
+00:17:05,750 --> 00:17:05,760
+engine is optimized to uh execute the
+ 
+
+777
+00:17:05,760 --> 00:17:08,630
+engine is optimized to uh execute the
+cheapest possible rule first if it is or
+
+778
+00:17:08,630 --> 00:17:08,640
+cheapest possible rule first if it is or
+ 
+
+779
+00:17:08,640 --> 00:17:11,110
+cheapest possible rule first if it is or
+condition and if it is and condition of
+
+780
+00:17:11,110 --> 00:17:11,120
+condition and if it is and condition of
+ 
+
+781
+00:17:11,120 --> 00:17:13,669
+condition and if it is and condition of
+course you'll have to execute both uh
+
+782
+00:17:13,669 --> 00:17:13,679
+course you'll have to execute both uh
+ 
+
+783
+00:17:13,679 --> 00:17:16,870
+course you'll have to execute both uh
+rules and for LLM for specifically it's
+
+784
+00:17:16,870 --> 00:17:16,880
+rules and for LLM for specifically it's
+ 
+
+785
+00:17:16,880 --> 00:17:19,429
+rules and for LLM for specifically it's
+all customizable you can have any type
+
+786
+00:17:19,429 --> 00:17:19,439
+all customizable you can have any type
+ 
+
+787
+00:17:19,439 --> 00:17:22,390
+all customizable you can have any type
+of LLM you just need to wrap around your
+
+788
+00:17:22,390 --> 00:17:22,400
+of LLM you just need to wrap around your
+ 
+
+789
+00:17:22,400 --> 00:17:24,949
+of LLM you just need to wrap around your
+LLM call inside the interface provided
+
+790
+00:17:24,949 --> 00:17:24,959
+LLM call inside the interface provided
+ 
+
+791
+00:17:24,959 --> 00:17:27,029
+LLM call inside the interface provided
+as long as you meet the contract you
+
+792
+00:17:27,029 --> 00:17:27,039
+as long as you meet the contract you
+ 
+
+793
+00:17:27,039 --> 00:17:29,270
+as long as you meet the contract you
+should be able to use any LLM and the
+
+794
+00:17:29,270 --> 00:17:29,280
+should be able to use any LLM and the
+ 
+
+795
+00:17:29,280 --> 00:17:31,750
+should be able to use any LLM and the
+way I usually decide is I start with the
+
+796
+00:17:31,750 --> 00:17:31,760
+way I usually decide is I start with the
+ 
+
+797
+00:17:31,760 --> 00:17:33,350
+way I usually decide is I start with the
+most powerful one because I want to get
+
+798
+00:17:33,350 --> 00:17:33,360
+most powerful one because I want to get
+ 
+
+799
+00:17:33,360 --> 00:17:35,590
+most powerful one because I want to get
+it working and then I lower the version
+
+800
+00:17:35,590 --> 00:17:35,600
+it working and then I lower the version
+ 
+
+801
+00:17:35,600 --> 00:17:37,590
+it working and then I lower the version
+and try to get it working for the lowest
+
+802
+00:17:37,590 --> 00:17:37,600
+and try to get it working for the lowest
+ 
+
+803
+00:17:37,600 --> 00:17:39,590
+and try to get it working for the lowest
+version I can use so that it will be
+
+804
+00:17:39,590 --> 00:17:39,600
+version I can use so that it will be
+ 
+
+805
+00:17:39,600 --> 00:17:43,270
+version I can use so that it will be
+cheaper to deploy at at scale.
+
+806
+00:17:43,270 --> 00:17:43,280
+cheaper to deploy at at scale.
+ 
+
+807
+00:17:43,280 --> 00:17:45,270
+cheaper to deploy at at scale.
+>> Okay.
+
+808
+00:17:45,270 --> 00:17:45,280
+>> Okay.
+ 
+
+809
+00:17:45,280 --> 00:17:48,549
+>> Okay.
+Oh, one more question.
+
+810
+00:17:48,549 --> 00:17:48,559
+Oh, one more question.
+ 
+
+811
+00:17:48,559 --> 00:17:52,390
+Oh, one more question.
+>> There you go, Toby.
+
+812
+00:17:52,390 --> 00:17:52,400
+
+ 
+
+813
+00:17:52,400 --> 00:17:55,029
+
+Following on that question, uh I'm
+
+814
+00:17:55,029 --> 00:17:55,039
+Following on that question, uh I'm
+ 
+
+815
+00:17:55,039 --> 00:17:56,789
+Following on that question, uh I'm
+really curious.
+
+816
+00:17:56,789 --> 00:17:56,799
+really curious.
+ 
+
+817
+00:17:56,799 --> 00:17:59,909
+really curious.
+Does your uh matcher stop once it's
+
+818
+00:17:59,909 --> 00:17:59,919
+Does your uh matcher stop once it's
+ 
+
+819
+00:17:59,919 --> 00:18:02,150
+Does your uh matcher stop once it's
+found an initial pattern match or does
+
+820
+00:18:02,150 --> 00:18:02,160
+found an initial pattern match or does
+ 
+
+821
+00:18:02,160 --> 00:18:03,990
+found an initial pattern match or does
+it continue going and comparing all of
+
+822
+00:18:03,990 --> 00:18:04,000
+it continue going and comparing all of
+ 
+
+823
+00:18:04,000 --> 00:18:05,909
+it continue going and comparing all of
+the values that you've got in this uh
+
+824
+00:18:05,909 --> 00:18:05,919
+the values that you've got in this uh
+ 
+
+825
+00:18:05,919 --> 00:18:07,830
+the values that you've got in this uh
+the pattern?
+
+826
+00:18:07,830 --> 00:18:07,840
+the pattern?
+ 
+
+827
+00:18:07,840 --> 00:18:11,430
+the pattern?
+>> Uh we can right now it goes through like
+
+828
+00:18:11,430 --> 00:18:11,440
+>> Uh we can right now it goes through like
+ 
+
+829
+00:18:11,440 --> 00:18:13,990
+>> Uh we can right now it goes through like
+especially if you do the chunking and
+
+830
+00:18:13,990 --> 00:18:14,000
+especially if you do the chunking and
+ 
+
+831
+00:18:14,000 --> 00:18:15,909
+especially if you do the chunking and
+use it, it'll go through all the chunks
+
+832
+00:18:15,909 --> 00:18:15,919
+use it, it'll go through all the chunks
+ 
+
+833
+00:18:15,919 --> 00:18:17,990
+use it, it'll go through all the chunks
+and get the value.
+
+834
+00:18:17,990 --> 00:18:18,000
+and get the value.
+ 
+
+835
+00:18:18,000 --> 00:18:19,830
+and get the value.
+How is it selecting which is the correct
+
+836
+00:18:19,830 --> 00:18:19,840
+How is it selecting which is the correct
+ 
+
+837
+00:18:19,840 --> 00:18:21,350
+How is it selecting which is the correct
+match at that point or is it just giving
+
+838
+00:18:21,350 --> 00:18:21,360
+match at that point or is it just giving
+ 
+
+839
+00:18:21,360 --> 00:18:23,350
+match at that point or is it just giving
+you the results of all of the matches?
+
+840
+00:18:23,350 --> 00:18:23,360
+you the results of all of the matches?
+ 
+
+841
+00:18:23,360 --> 00:18:26,390
+you the results of all of the matches?
+>> Uh it'll get the best match out of all
+
+842
+00:18:26,390 --> 00:18:26,400
+>> Uh it'll get the best match out of all
+ 
+
+843
+00:18:26,400 --> 00:18:28,230
+>> Uh it'll get the best match out of all
+like if it match multiple ones it will
+
+844
+00:18:28,230 --> 00:18:28,240
+like if it match multiple ones it will
+ 
+
+845
+00:18:28,240 --> 00:18:30,150
+like if it match multiple ones it will
+identify the multiple ones it identify
+
+846
+00:18:30,150 --> 00:18:30,160
+identify the multiple ones it identify
+ 
+
+847
+00:18:30,160 --> 00:18:34,150
+identify the multiple ones it identify
+the chunks and return it. Okay. Yeah.
+
+848
+00:18:34,150 --> 00:18:34,160
+the chunks and return it. Okay. Yeah.
+ 
+
+849
+00:18:34,160 --> 00:18:36,870
+the chunks and return it. Okay. Yeah.
+And it's very similar to Yara in in Yara
+
+850
+00:18:36,870 --> 00:18:36,880
+And it's very similar to Yara in in Yara
+ 
+
+851
+00:18:36,880 --> 00:18:38,230
+And it's very similar to Yara in in Yara
+as well. It'll go through everything
+
+852
+00:18:38,230 --> 00:18:38,240
+as well. It'll go through everything
+ 
+
+853
+00:18:38,240 --> 00:18:40,070
+as well. It'll go through everything
+like when you even have a Yara rule it
+
+854
+00:18:40,070 --> 00:18:40,080
+like when you even have a Yara rule it
+ 
+
+855
+00:18:40,080 --> 00:18:41,590
+like when you even have a Yara rule it
+will go through the whole document and
+
+856
+00:18:41,590 --> 00:18:41,600
+will go through the whole document and
+ 
+
+857
+00:18:41,600 --> 00:18:43,590
+will go through the whole document and
+identify all the matches. Similarly
+
+858
+00:18:43,590 --> 00:18:43,600
+identify all the matches. Similarly
+ 
+
+859
+00:18:43,600 --> 00:18:46,789
+identify all the matches. Similarly
+it'll be the same here.
+
+860
+00:18:46,789 --> 00:18:46,799
+it'll be the same here.
+ 
+
+861
+00:18:46,799 --> 00:18:48,710
+it'll be the same here.
+All right,
+
+862
+00:18:48,710 --> 00:18:48,720
+All right,
+ 
+
+863
+00:18:48,720 --> 00:18:49,909
+All right,
+one more. Okay,
+
+864
+00:18:49,909 --> 00:18:49,919
+one more. Okay,
+ 
+
+865
+00:18:49,919 --> 00:18:51,590
+one more. Okay,
+>> so you're saying you are generating all
+
+866
+00:18:51,590 --> 00:18:51,600
+>> so you're saying you are generating all
+ 
+
+867
+00:18:51,600 --> 00:18:54,630
+>> so you're saying you are generating all
+the coring atoms up front just like Yara
+
+868
+00:18:54,630 --> 00:18:54,640
+the coring atoms up front just like Yara
+ 
+
+869
+00:18:54,640 --> 00:18:56,310
+the coring atoms up front just like Yara
+does and then running the conditioners
+
+870
+00:18:56,310 --> 00:18:56,320
+does and then running the conditioners
+ 
+
+871
+00:18:56,320 --> 00:18:57,750
+does and then running the conditioners
+condition after it.
+
+872
+00:18:57,750 --> 00:18:57,760
+condition after it.
+ 
+
+873
+00:18:57,760 --> 00:18:58,310
+condition after it.
+>> Yeah.
+
+874
+00:18:58,310 --> 00:18:58,320
+>> Yeah.
+ 
+
+875
+00:18:58,320 --> 00:18:58,710
+>> Yeah.
+>> Okay.
+
+876
+00:18:58,710 --> 00:18:58,720
+>> Okay.
+ 
+
+877
+00:18:58,720 --> 00:18:59,830
+>> Okay.
+>> Yeah. And the
+
+878
+00:18:59,830 --> 00:18:59,840
+>> Yeah. And the
+ 
+
+879
+00:18:59,840 --> 00:19:01,029
+>> Yeah. And the
+>> repeat the question please.
+
+880
+00:19:01,029 --> 00:19:01,039
+>> repeat the question please.
+ 
+
+881
+00:19:01,039 --> 00:19:01,669
+>> repeat the question please.
+>> Sorry.
+
+882
+00:19:01,669 --> 00:19:01,679
+>> Sorry.
+ 
+
+883
+00:19:01,679 --> 00:19:03,590
+>> Sorry.
+>> I was asking if he is running the AO
+
+884
+00:19:03,590 --> 00:19:03,600
+>> I was asking if he is running the AO
+ 
+
+885
+00:19:03,600 --> 00:19:05,909
+>> I was asking if he is running the AO
+coric basically is he generating all the
+
+886
+00:19:05,909 --> 00:19:05,919
+coric basically is he generating all the
+ 
+
+887
+00:19:05,919 --> 00:19:07,669
+coric basically is he generating all the
+atoms and then having those be submitted
+
+888
+00:19:07,669 --> 00:19:07,679
+atoms and then having those be submitted
+ 
+
+889
+00:19:07,679 --> 00:19:08,789
+atoms and then having those be submitted
+to the conditionals.
+
+890
+00:19:08,789 --> 00:19:08,799
+to the conditionals.
+ 
+
+891
+00:19:08,799 --> 00:19:11,990
+to the conditionals.
+>> Yeah. And also these mo models and LLMs
+
+892
+00:19:11,990 --> 00:19:12,000
+>> Yeah. And also these mo models and LLMs
+ 
+
+893
+00:19:12,000 --> 00:19:13,590
+>> Yeah. And also these mo models and LLMs
+are preloaded so that it doesn't get
+
+894
+00:19:13,590 --> 00:19:13,600
+are preloaded so that it doesn't get
+ 
+
+895
+00:19:13,600 --> 00:19:15,270
+are preloaded so that it doesn't get
+loaded every time you run the Lara. it
+
+896
+00:19:15,270 --> 00:19:15,280
+loaded every time you run the Lara. it
+ 
+
+897
+00:19:15,280 --> 00:19:17,029
+loaded every time you run the Lara. it
+would be very expensive to do it. So you
+
+898
+00:19:17,029 --> 00:19:17,039
+would be very expensive to do it. So you
+ 
+
+899
+00:19:17,039 --> 00:19:19,510
+would be very expensive to do it. So you
+initialize it and it will be in the the
+
+900
+00:19:19,510 --> 00:19:19,520
+initialize it and it will be in the the
+ 
+
+901
+00:19:19,520 --> 00:19:23,909
+initialize it and it will be in the the
+global memory and you the rule runs uh
+
+902
+00:19:23,909 --> 00:19:23,919
+global memory and you the rule runs uh
+ 
+
+903
+00:19:23,919 --> 00:19:28,280
+global memory and you the rule runs uh
+referring to those ones in the memory.
+

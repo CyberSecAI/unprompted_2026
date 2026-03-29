@@ -1,0 +1,4295 @@
+1
+00:00:06,080 --> 00:00:08,150
+
+Today we will present bindary shield
+
+2
+00:00:08,150 --> 00:00:08,160
+Today we will present bindary shield
+ 
+
+3
+00:00:08,160 --> 00:00:10,310
+Today we will present bindary shield
+cross service threat intelligence in LLM
+
+4
+00:00:10,310 --> 00:00:10,320
+cross service threat intelligence in LLM
+ 
+
+5
+00:00:10,320 --> 00:00:12,549
+cross service threat intelligence in LLM
+services.
+
+6
+00:00:12,549 --> 00:00:12,559
+services.
+ 
+
+7
+00:00:12,559 --> 00:00:14,789
+services.
+Uh little bit about ourself. I am war
+
+8
+00:00:14,789 --> 00:00:14,799
+Uh little bit about ourself. I am war
+ 
+
+9
+00:00:14,799 --> 00:00:16,470
+Uh little bit about ourself. I am war
+skill and today I will uh we will be
+
+10
+00:00:16,470 --> 00:00:16,480
+skill and today I will uh we will be
+ 
+
+11
+00:00:16,480 --> 00:00:18,470
+skill and today I will uh we will be
+presenting uh bindary shield and my
+
+12
+00:00:18,470 --> 00:00:18,480
+presenting uh bindary shield and my
+ 
+
+13
+00:00:18,480 --> 00:00:20,310
+presenting uh bindary shield and my
+colleague is Natalia Sak. She is a
+
+14
+00:00:20,310 --> 00:00:20,320
+colleague is Natalia Sak. She is a
+ 
+
+15
+00:00:20,320 --> 00:00:23,269
+colleague is Natalia Sak. She is a
+software engineering at Microsoft.
+
+16
+00:00:23,269 --> 00:00:23,279
+software engineering at Microsoft.
+ 
+
+17
+00:00:23,279 --> 00:00:27,189
+software engineering at Microsoft.
+So let's uh jump to the problem. So many
+
+18
+00:00:27,189 --> 00:00:27,199
+So let's uh jump to the problem. So many
+ 
+
+19
+00:00:27,199 --> 00:00:30,150
+So let's uh jump to the problem. So many
+organization has multiple services such
+
+20
+00:00:30,150 --> 00:00:30,160
+organization has multiple services such
+ 
+
+21
+00:00:30,160 --> 00:00:32,549
+organization has multiple services such
+as for instance in case of Microsoft we
+
+22
+00:00:32,549 --> 00:00:32,559
+as for instance in case of Microsoft we
+ 
+
+23
+00:00:32,559 --> 00:00:36,470
+as for instance in case of Microsoft we
+have uh Azure AI foundry GitHub copilot
+
+24
+00:00:36,470 --> 00:00:36,480
+have uh Azure AI foundry GitHub copilot
+ 
+
+25
+00:00:36,480 --> 00:00:38,150
+have uh Azure AI foundry GitHub copilot
+and M3 co-i co c co c co c co c co c co
+
+26
+00:00:38,150 --> 00:00:38,160
+and M3 co-i co c co c co c co c co c co
+ 
+
+27
+00:00:38,160 --> 00:00:39,510
+and M3 co-i co c co c co c co c co c co
+c co c co c co c co c co-pilot and these
+
+28
+00:00:39,510 --> 00:00:39,520
+c co c co c co c co c co-pilot and these
+ 
+
+29
+00:00:39,520 --> 00:00:41,910
+c co c co c co c co c co-pilot and these
+services operate in a siloed way for
+
+30
+00:00:41,910 --> 00:00:41,920
+services operate in a siloed way for
+ 
+
+31
+00:00:41,920 --> 00:00:44,069
+services operate in a siloed way for
+instance there is no information signal
+
+32
+00:00:44,069 --> 00:00:44,079
+instance there is no information signal
+ 
+
+33
+00:00:44,079 --> 00:00:47,270
+instance there is no information signal
+from one service to another service so
+
+34
+00:00:47,270 --> 00:00:47,280
+from one service to another service so
+ 
+
+35
+00:00:47,280 --> 00:00:49,270
+from one service to another service so
+and uh this makes the threat
+
+36
+00:00:49,270 --> 00:00:49,280
+and uh this makes the threat
+ 
+
+37
+00:00:49,280 --> 00:00:51,590
+and uh this makes the threat
+intelligence between one service to
+
+38
+00:00:51,590 --> 00:00:51,600
+intelligence between one service to
+ 
+
+39
+00:00:51,600 --> 00:00:54,310
+intelligence between one service to
+another service uh a very complicated
+
+40
+00:00:54,310 --> 00:00:54,320
+another service uh a very complicated
+ 
+
+41
+00:00:54,320 --> 00:00:56,549
+another service uh a very complicated
+problem and
+
+42
+00:00:56,549 --> 00:00:56,559
+problem and
+ 
+
+43
+00:00:56,559 --> 00:00:59,110
+problem and
+The problem is that the the data between
+
+44
+00:00:59,110 --> 00:00:59,120
+The problem is that the the data between
+ 
+
+45
+00:00:59,120 --> 00:01:01,349
+The problem is that the the data between
+these services cannot be shared. So this
+
+46
+00:01:01,349 --> 00:01:01,359
+these services cannot be shared. So this
+ 
+
+47
+00:01:01,359 --> 00:01:05,350
+these services cannot be shared. So this
+is the key key problem
+
+48
+00:01:05,350 --> 00:01:05,360
+is the key key problem
+ 
+
+49
+00:01:05,360 --> 00:01:08,710
+is the key key problem
+and we need a cross service cross
+
+50
+00:01:08,710 --> 00:01:08,720
+and we need a cross service cross
+ 
+
+51
+00:01:08,720 --> 00:01:11,510
+and we need a cross service cross
+service uh boundary thread correlation
+
+52
+00:01:11,510 --> 00:01:11,520
+service uh boundary thread correlation
+ 
+
+53
+00:01:11,520 --> 00:01:14,070
+service uh boundary thread correlation
+uh that respects user privacy because we
+
+54
+00:01:14,070 --> 00:01:14,080
+uh that respects user privacy because we
+ 
+
+55
+00:01:14,080 --> 00:01:16,070
+uh that respects user privacy because we
+cannot just share the raw prompt from
+
+56
+00:01:16,070 --> 00:01:16,080
+cannot just share the raw prompt from
+ 
+
+57
+00:01:16,080 --> 00:01:18,870
+cannot just share the raw prompt from
+one service to another service and uh
+
+58
+00:01:18,870 --> 00:01:18,880
+one service to another service and uh
+ 
+
+59
+00:01:18,880 --> 00:01:21,749
+one service to another service and uh
+the system at the same time also need to
+
+60
+00:01:21,749 --> 00:01:21,759
+the system at the same time also need to
+ 
+
+61
+00:01:21,759 --> 00:01:24,149
+the system at the same time also need to
+be robust against minor perturbations
+
+62
+00:01:24,149 --> 00:01:24,159
+be robust against minor perturbations
+ 
+
+63
+00:01:24,159 --> 00:01:25,749
+be robust against minor perturbations
+against such attacks like prompt
+
+64
+00:01:25,749 --> 00:01:25,759
+against such attacks like prompt
+ 
+
+65
+00:01:25,759 --> 00:01:28,070
+against such attacks like prompt
+injection attacks.
+
+66
+00:01:28,070 --> 00:01:28,080
+injection attacks.
+ 
+
+67
+00:01:28,080 --> 00:01:31,109
+injection attacks.
+And now if an adversary finds one
+
+68
+00:01:31,109 --> 00:01:31,119
+And now if an adversary finds one
+ 
+
+69
+00:01:31,119 --> 00:01:32,950
+And now if an adversary finds one
+effective prompt transaction attack, it
+
+70
+00:01:32,950 --> 00:01:32,960
+effective prompt transaction attack, it
+ 
+
+71
+00:01:32,960 --> 00:01:34,950
+effective prompt transaction attack, it
+can spread across all all of the
+
+72
+00:01:34,950 --> 00:01:34,960
+can spread across all all of the
+ 
+
+73
+00:01:34,960 --> 00:01:38,710
+can spread across all all of the
+services of a of an organization.
+
+74
+00:01:38,710 --> 00:01:38,720
+services of a of an organization.
+ 
+
+75
+00:01:38,720 --> 00:01:41,510
+services of a of an organization.
+So let's discuss how we can solve uh
+
+76
+00:01:41,510 --> 00:01:41,520
+So let's discuss how we can solve uh
+ 
+
+77
+00:01:41,520 --> 00:01:44,390
+So let's discuss how we can solve uh
+this this problem. So here is the uh
+
+78
+00:01:44,390 --> 00:01:44,400
+this this problem. So here is the uh
+ 
+
+79
+00:01:44,400 --> 00:01:46,550
+this this problem. So here is the uh
+let's say the highle architecture of
+
+80
+00:01:46,550 --> 00:01:46,560
+let's say the highle architecture of
+ 
+
+81
+00:01:46,560 --> 00:01:48,469
+let's say the highle architecture of
+binary shield. So let's say we have an
+
+82
+00:01:48,469 --> 00:01:48,479
+binary shield. So let's say we have an
+ 
+
+83
+00:01:48,479 --> 00:01:50,710
+binary shield. So let's say we have an
+attacker and attacker is sending the
+
+84
+00:01:50,710 --> 00:01:50,720
+attacker and attacker is sending the
+ 
+
+85
+00:01:50,720 --> 00:01:53,670
+attacker and attacker is sending the
+prompt injection to uh similar prompt
+
+86
+00:01:53,670 --> 00:01:53,680
+prompt injection to uh similar prompt
+ 
+
+87
+00:01:53,680 --> 00:01:56,630
+prompt injection to uh similar prompt
+transaction to multiple services. So for
+
+88
+00:01:56,630 --> 00:01:56,640
+transaction to multiple services. So for
+ 
+
+89
+00:01:56,640 --> 00:01:59,109
+transaction to multiple services. So for
+instance in this case we have uh service
+
+90
+00:01:59,109 --> 00:01:59,119
+instance in this case we have uh service
+ 
+
+91
+00:01:59,119 --> 00:02:02,069
+instance in this case we have uh service
+one service 2 service 3 and attacker is
+
+92
+00:02:02,069 --> 00:02:02,079
+one service 2 service 3 and attacker is
+ 
+
+93
+00:02:02,079 --> 00:02:06,149
+one service 2 service 3 and attacker is
+is sending prompt p1 p2 p3 across all
+
+94
+00:02:06,149 --> 00:02:06,159
+is sending prompt p1 p2 p3 across all
+ 
+
+95
+00:02:06,159 --> 00:02:09,029
+is sending prompt p1 p2 p3 across all
+these services and let's suppose uh the
+
+96
+00:02:09,029 --> 00:02:09,039
+these services and let's suppose uh the
+ 
+
+97
+00:02:09,039 --> 00:02:11,510
+these services and let's suppose uh the
+service uh three is able to detect this
+
+98
+00:02:11,510 --> 00:02:11,520
+service uh three is able to detect this
+ 
+
+99
+00:02:11,520 --> 00:02:13,430
+service uh three is able to detect this
+prompt uh that this is a prompt
+
+100
+00:02:13,430 --> 00:02:13,440
+prompt uh that this is a prompt
+ 
+
+101
+00:02:13,440 --> 00:02:17,430
+prompt uh that this is a prompt
+injection attack and uh for and and each
+
+102
+00:02:17,430 --> 00:02:17,440
+injection attack and uh for and and each
+ 
+
+103
+00:02:17,440 --> 00:02:19,910
+injection attack and uh for and and each
+prompt has two parts basically in terms
+
+104
+00:02:19,910 --> 00:02:19,920
+prompt has two parts basically in terms
+ 
+
+105
+00:02:19,920 --> 00:02:23,110
+prompt has two parts basically in terms
+of threat correlation one is private uh
+
+106
+00:02:23,110 --> 00:02:23,120
+of threat correlation one is private uh
+ 
+
+107
+00:02:23,120 --> 00:02:24,949
+of threat correlation one is private uh
+which which are the protected logs for
+
+108
+00:02:24,949 --> 00:02:24,959
+which which are the protected logs for
+ 
+
+109
+00:02:24,959 --> 00:02:28,150
+which which are the protected logs for
+instance the user privacy uh user user
+
+110
+00:02:28,150 --> 00:02:28,160
+instance the user privacy uh user user
+ 
+
+111
+00:02:28,160 --> 00:02:31,750
+instance the user privacy uh user user
+queries and the prompts those are the uh
+
+112
+00:02:31,750 --> 00:02:31,760
+queries and the prompts those are the uh
+ 
+
+113
+00:02:31,760 --> 00:02:34,390
+queries and the prompts those are the uh
+that part of the uh the user query is
+
+114
+00:02:34,390 --> 00:02:34,400
+that part of the uh the user query is
+ 
+
+115
+00:02:34,400 --> 00:02:36,470
+that part of the uh the user query is
+private and the other part other other
+
+116
+00:02:36,470 --> 00:02:36,480
+private and the other part other other
+ 
+
+117
+00:02:36,480 --> 00:02:39,350
+private and the other part other other
+part is the metadata for instance region
+
+118
+00:02:39,350 --> 00:02:39,360
+part is the metadata for instance region
+ 
+
+119
+00:02:39,360 --> 00:02:42,150
+part is the metadata for instance region
+of the query what tools are called uh
+
+120
+00:02:42,150 --> 00:02:42,160
+of the query what tools are called uh
+ 
+
+121
+00:02:42,160 --> 00:02:45,990
+of the query what tools are called uh
+during uh execution of this query so in
+
+122
+00:02:45,990 --> 00:02:46,000
+during uh execution of this query so in
+ 
+
+123
+00:02:46,000 --> 00:02:47,750
+during uh execution of this query so in
+the next step what bindary shield does
+
+124
+00:02:47,750 --> 00:02:47,760
+the next step what bindary shield does
+ 
+
+125
+00:02:47,760 --> 00:02:50,949
+the next step what bindary shield does
+in the first step we remove the pi uh
+
+126
+00:02:50,949 --> 00:02:50,959
+in the first step we remove the pi uh
+ 
+
+127
+00:02:50,959 --> 00:02:53,350
+in the first step we remove the pi uh
+personal identifiers for instance in the
+
+128
+00:02:53,350 --> 00:02:53,360
+personal identifiers for instance in the
+ 
+
+129
+00:02:53,360 --> 00:02:57,030
+personal identifiers for instance in the
+query let's say if we have um uh uh uh
+
+130
+00:02:57,030 --> 00:02:57,040
+query let's say if we have um uh uh uh
+ 
+
+131
+00:02:57,040 --> 00:02:59,110
+query let's say if we have um uh uh uh
+uh social security numbers or any any
+
+132
+00:02:59,110 --> 00:02:59,120
+uh social security numbers or any any
+ 
+
+133
+00:02:59,120 --> 00:03:02,949
+uh social security numbers or any any
+any anything which is u uh personally uh
+
+134
+00:03:02,949 --> 00:03:02,959
+any anything which is u uh personally uh
+ 
+
+135
+00:03:02,959 --> 00:03:04,710
+any anything which is u uh personally uh
+which can identify a person. So we
+
+136
+00:03:04,710 --> 00:03:04,720
+which can identify a person. So we
+ 
+
+137
+00:03:04,720 --> 00:03:08,790
+which can identify a person. So we
+remove it and uh in the second step we
+
+138
+00:03:08,790 --> 00:03:08,800
+remove it and uh in the second step we
+ 
+
+139
+00:03:08,800 --> 00:03:11,110
+remove it and uh in the second step we
+generate the embeddings from this pi
+
+140
+00:03:11,110 --> 00:03:11,120
+generate the embeddings from this pi
+ 
+
+141
+00:03:11,120 --> 00:03:13,270
+generate the embeddings from this pi
+redacted text.
+
+142
+00:03:13,270 --> 00:03:13,280
+redacted text.
+ 
+
+143
+00:03:13,280 --> 00:03:15,110
+redacted text.
+In the third uh step we do the
+
+144
+00:03:15,110 --> 00:03:15,120
+In the third uh step we do the
+ 
+
+145
+00:03:15,120 --> 00:03:17,430
+In the third uh step we do the
+quantization which is basically we we
+
+146
+00:03:17,430 --> 00:03:17,440
+quantization which is basically we we
+ 
+
+147
+00:03:17,440 --> 00:03:20,309
+quantization which is basically we we
+are project uh we are um uh we are
+
+148
+00:03:20,309 --> 00:03:20,319
+are project uh we are um uh we are
+ 
+
+149
+00:03:20,319 --> 00:03:21,670
+are project uh we are um uh we are
+taking the embeddings and we are
+
+150
+00:03:21,670 --> 00:03:21,680
+taking the embeddings and we are
+ 
+
+151
+00:03:21,680 --> 00:03:24,630
+taking the embeddings and we are
+converting into just uh 01 binary
+
+152
+00:03:24,630 --> 00:03:24,640
+converting into just uh 01 binary
+ 
+
+153
+00:03:24,640 --> 00:03:27,030
+converting into just uh 01 binary
+quantization. And in the final step we
+
+154
+00:03:27,030 --> 00:03:27,040
+quantization. And in the final step we
+ 
+
+155
+00:03:27,040 --> 00:03:29,589
+quantization. And in the final step we
+add the differential privacy with the by
+
+156
+00:03:29,589 --> 00:03:29,599
+add the differential privacy with the by
+ 
+
+157
+00:03:29,599 --> 00:03:31,110
+add the differential privacy with the by
+the differential privacy means we
+
+158
+00:03:31,110 --> 00:03:31,120
+the differential privacy means we
+ 
+
+159
+00:03:31,120 --> 00:03:35,750
+the differential privacy means we
+randomly flip bits uh from this uh uh
+
+160
+00:03:35,750 --> 00:03:35,760
+randomly flip bits uh from this uh uh
+ 
+
+161
+00:03:35,760 --> 00:03:38,390
+randomly flip bits uh from this uh uh
+from the quantized embeddings to add
+
+162
+00:03:38,390 --> 00:03:38,400
+from the quantized embeddings to add
+ 
+
+163
+00:03:38,400 --> 00:03:42,070
+from the quantized embeddings to add
+noise and uh in the final and then we
+
+164
+00:03:42,070 --> 00:03:42,080
+noise and uh in the final and then we
+ 
+
+165
+00:03:42,080 --> 00:03:44,710
+noise and uh in the final and then we
+have we attach the system meta data such
+
+166
+00:03:44,710 --> 00:03:44,720
+have we attach the system meta data such
+ 
+
+167
+00:03:44,720 --> 00:03:49,110
+have we attach the system meta data such
+as the uh how long this story uh takes
+
+168
+00:03:49,110 --> 00:03:49,120
+as the uh how long this story uh takes
+ 
+
+169
+00:03:49,120 --> 00:03:51,670
+as the uh how long this story uh takes
+to execute uh the region of the query.
+
+170
+00:03:51,670 --> 00:03:51,680
+to execute uh the region of the query.
+ 
+
+171
+00:03:51,680 --> 00:03:54,149
+to execute uh the region of the query.
+So those those are the parts in the in
+
+172
+00:03:54,149 --> 00:03:54,159
+So those those are the parts in the in
+ 
+
+173
+00:03:54,159 --> 00:03:56,229
+So those those are the parts in the in
+this fingerprint which are related to
+
+174
+00:03:56,229 --> 00:03:56,239
+this fingerprint which are related to
+ 
+
+175
+00:03:56,239 --> 00:03:58,710
+this fingerprint which are related to
+system metadata and finally we announce
+
+176
+00:03:58,710 --> 00:03:58,720
+system metadata and finally we announce
+ 
+
+177
+00:03:58,720 --> 00:04:01,190
+system metadata and finally we announce
+it to the service one and uh service uh
+
+178
+00:04:01,190 --> 00:04:01,200
+it to the service one and uh service uh
+ 
+
+179
+00:04:01,200 --> 00:04:02,869
+it to the service one and uh service uh
+two remember that the attack was
+
+180
+00:04:02,869 --> 00:04:02,879
+two remember that the attack was
+ 
+
+181
+00:04:02,879 --> 00:04:06,710
+two remember that the attack was
+detected in uh P3. So in this way uh the
+
+182
+00:04:06,710 --> 00:04:06,720
+detected in uh P3. So in this way uh the
+ 
+
+183
+00:04:06,720 --> 00:04:09,830
+detected in uh P3. So in this way uh the
+binary shield is able to correlate
+
+184
+00:04:09,830 --> 00:04:09,840
+binary shield is able to correlate
+ 
+
+185
+00:04:09,840 --> 00:04:11,750
+binary shield is able to correlate
+threat from one service to another
+
+186
+00:04:11,750 --> 00:04:11,760
+threat from one service to another
+ 
+
+187
+00:04:11,760 --> 00:04:16,710
+threat from one service to another
+service in a privacy preserving way.
+
+188
+00:04:16,710 --> 00:04:16,720
+
+ 
+
+189
+00:04:16,720 --> 00:04:19,509
+
+Next uh a quick evaluation of the
+
+190
+00:04:19,509 --> 00:04:19,519
+Next uh a quick evaluation of the
+ 
+
+191
+00:04:19,519 --> 00:04:23,749
+Next uh a quick evaluation of the
+results. Um so on the x-axis we have the
+
+192
+00:04:23,749 --> 00:04:23,759
+results. Um so on the x-axis we have the
+ 
+
+193
+00:04:23,759 --> 00:04:25,670
+results. Um so on the x-axis we have the
+bindary shield privacy budget and on the
+
+194
+00:04:25,670 --> 00:04:25,680
+bindary shield privacy budget and on the
+ 
+
+195
+00:04:25,680 --> 00:04:27,909
+bindary shield privacy budget and on the
+y-axis we have the accuracy the which is
+
+196
+00:04:27,909 --> 00:04:27,919
+y-axis we have the accuracy the which is
+ 
+
+197
+00:04:27,919 --> 00:04:30,390
+y-axis we have the accuracy the which is
+the threat correlation accuracy and as
+
+198
+00:04:30,390 --> 00:04:30,400
+the threat correlation accuracy and as
+ 
+
+199
+00:04:30,400 --> 00:04:33,830
+the threat correlation accuracy and as
+we can and uh the idea over here is that
+
+200
+00:04:33,830 --> 00:04:33,840
+we can and uh the idea over here is that
+ 
+
+201
+00:04:33,840 --> 00:04:38,390
+we can and uh the idea over here is that
+the um as we decrease the privacy budget
+
+202
+00:04:38,390 --> 00:04:38,400
+the um as we decrease the privacy budget
+ 
+
+203
+00:04:38,400 --> 00:04:40,790
+the um as we decrease the privacy budget
+we add more noise and the detection
+
+204
+00:04:40,790 --> 00:04:40,800
+we add more noise and the detection
+ 
+
+205
+00:04:40,800 --> 00:04:42,870
+we add more noise and the detection
+accuracy goes to zero. For instance, uh
+
+206
+00:04:42,870 --> 00:04:42,880
+accuracy goes to zero. For instance, uh
+ 
+
+207
+00:04:42,880 --> 00:04:45,110
+accuracy goes to zero. For instance, uh
+at roughly around
+
+208
+00:04:45,110 --> 00:04:45,120
+at roughly around
+ 
+
+209
+00:04:45,120 --> 00:04:50,070
+at roughly around
+0.5, we have 0% uh accuracy which is due
+
+210
+00:04:50,070 --> 00:04:50,080
+0.5, we have 0% uh accuracy which is due
+ 
+
+211
+00:04:50,080 --> 00:04:52,710
+0.5, we have 0% uh accuracy which is due
+to because we add uh we we flipped
+
+212
+00:04:52,710 --> 00:04:52,720
+to because we add uh we we flipped
+ 
+
+213
+00:04:52,720 --> 00:04:55,110
+to because we add uh we we flipped
+almost all the bits uh in the quantizer
+
+214
+00:04:55,110 --> 00:04:55,120
+almost all the bits uh in the quantizer
+ 
+
+215
+00:04:55,120 --> 00:04:58,150
+almost all the bits uh in the quantizer
+embings and as we increase the privacy
+
+216
+00:04:58,150 --> 00:04:58,160
+embings and as we increase the privacy
+ 
+
+217
+00:04:58,160 --> 00:05:00,790
+embings and as we increase the privacy
+budget, we are adding less noise and we
+
+218
+00:05:00,790 --> 00:05:00,800
+budget, we are adding less noise and we
+ 
+
+219
+00:05:00,800 --> 00:05:03,749
+budget, we are adding less noise and we
+we can see that the bindary shield
+
+220
+00:05:03,749 --> 00:05:03,759
+we can see that the bindary shield
+ 
+
+221
+00:05:03,759 --> 00:05:05,909
+we can see that the bindary shield
+fingerprints are achieving the accuracy
+
+222
+00:05:05,909 --> 00:05:05,919
+fingerprints are achieving the accuracy
+ 
+
+223
+00:05:05,919 --> 00:05:08,870
+fingerprints are achieving the accuracy
+closer to the denser embeddings. And um
+
+224
+00:05:08,870 --> 00:05:08,880
+closer to the denser embeddings. And um
+ 
+
+225
+00:05:08,880 --> 00:05:11,830
+closer to the denser embeddings. And um
+so and here is another benefit of uh
+
+226
+00:05:11,830 --> 00:05:11,840
+so and here is another benefit of uh
+ 
+
+227
+00:05:11,840 --> 00:05:14,310
+so and here is another benefit of uh
+using uh the binary shield that it's
+
+228
+00:05:14,310 --> 00:05:14,320
+using uh the binary shield that it's
+ 
+
+229
+00:05:14,320 --> 00:05:17,110
+using uh the binary shield that it's
+significant faster as compared to uh
+
+230
+00:05:17,110 --> 00:05:17,120
+significant faster as compared to uh
+ 
+
+231
+00:05:17,120 --> 00:05:20,150
+significant faster as compared to uh
+just using the uh uh the the floating
+
+232
+00:05:20,150 --> 00:05:20,160
+just using the uh uh the the floating
+ 
+
+233
+00:05:20,160 --> 00:05:23,590
+just using the uh uh the the floating
+point embeddings. And uh on the x-axis
+
+234
+00:05:23,590 --> 00:05:23,600
+point embeddings. And uh on the x-axis
+ 
+
+235
+00:05:23,600 --> 00:05:27,430
+point embeddings. And uh on the x-axis
+over here we have the uh uh cop size,
+
+236
+00:05:27,430 --> 00:05:27,440
+over here we have the uh uh cop size,
+ 
+
+237
+00:05:27,440 --> 00:05:29,350
+over here we have the uh uh cop size,
+the data set size and the y-axis we have
+
+238
+00:05:29,350 --> 00:05:29,360
+the data set size and the y-axis we have
+ 
+
+239
+00:05:29,360 --> 00:05:31,830
+the data set size and the y-axis we have
+the search time. And as we can see the
+
+240
+00:05:31,830 --> 00:05:31,840
+the search time. And as we can see the
+ 
+
+241
+00:05:31,840 --> 00:05:35,350
+the search time. And as we can see the
+data set size is increasing. uh the the
+
+242
+00:05:35,350 --> 00:05:35,360
+data set size is increasing. uh the the
+ 
+
+243
+00:05:35,360 --> 00:05:37,830
+data set size is increasing. uh the the
+search uh the dense embedding has a
+
+244
+00:05:37,830 --> 00:05:37,840
+search uh the dense embedding has a
+ 
+
+245
+00:05:37,840 --> 00:05:40,870
+search uh the dense embedding has a
+significant overhead uh for for threat
+
+246
+00:05:40,870 --> 00:05:40,880
+significant overhead uh for for threat
+ 
+
+247
+00:05:40,880 --> 00:05:43,029
+significant overhead uh for for threat
+correlation and at the same time the
+
+248
+00:05:43,029 --> 00:05:43,039
+correlation and at the same time the
+ 
+
+249
+00:05:43,039 --> 00:05:47,029
+correlation and at the same time the
+binding shield h is uh 36x faster in
+
+250
+00:05:47,029 --> 00:05:47,039
+binding shield h is uh 36x faster in
+ 
+
+251
+00:05:47,039 --> 00:05:49,510
+binding shield h is uh 36x faster in
+terms of threat correlation and uh so
+
+252
+00:05:49,510 --> 00:05:49,520
+terms of threat correlation and uh so
+ 
+
+253
+00:05:49,520 --> 00:05:52,230
+terms of threat correlation and uh so
+the the key takeaway is that by binding
+
+254
+00:05:52,230 --> 00:05:52,240
+the the key takeaway is that by binding
+ 
+
+255
+00:05:52,240 --> 00:05:55,830
+the the key takeaway is that by binding
+shield provides semantics speed privacy
+
+256
+00:05:55,830 --> 00:05:55,840
+shield provides semantics speed privacy
+ 
+
+257
+00:05:55,840 --> 00:05:58,550
+shield provides semantics speed privacy
+and uh now I will hand over to my
+
+258
+00:05:58,550 --> 00:05:58,560
+and uh now I will hand over to my
+ 
+
+259
+00:05:58,560 --> 00:06:00,150
+and uh now I will hand over to my
+colleague Nati she will walk through all
+
+260
+00:06:00,150 --> 00:06:00,160
+colleague Nati she will walk through all
+ 
+
+261
+00:06:00,160 --> 00:06:02,790
+colleague Nati she will walk through all
+the steps in detail uh in her demo thank
+
+262
+00:06:02,790 --> 00:06:02,800
+the steps in detail uh in her demo thank
+ 
+
+263
+00:06:02,800 --> 00:06:03,670
+the steps in detail uh in her demo thank
+you
+
+264
+00:06:03,670 --> 00:06:03,680
+you
+ 
+
+265
+00:06:03,680 --> 00:06:05,749
+you
+>> awesome Awesome. Thanks, Wares. Uh, so
+
+266
+00:06:05,749 --> 00:06:05,759
+>> awesome Awesome. Thanks, Wares. Uh, so
+ 
+
+267
+00:06:05,759 --> 00:06:08,230
+>> awesome Awesome. Thanks, Wares. Uh, so
+before I dive straight into the code,
+
+268
+00:06:08,230 --> 00:06:08,240
+before I dive straight into the code,
+ 
+
+269
+00:06:08,240 --> 00:06:10,230
+before I dive straight into the code,
+uh, just to kind of summarize what Wars
+
+270
+00:06:10,230 --> 00:06:10,240
+uh, just to kind of summarize what Wars
+ 
+
+271
+00:06:10,240 --> 00:06:12,870
+uh, just to kind of summarize what Wars
+went through, uh, we really need the
+
+272
+00:06:12,870 --> 00:06:12,880
+went through, uh, we really need the
+ 
+
+273
+00:06:12,880 --> 00:06:15,830
+went through, uh, we really need the
+ability to correlate related prompt
+
+274
+00:06:15,830 --> 00:06:15,840
+ability to correlate related prompt
+ 
+
+275
+00:06:15,840 --> 00:06:19,110
+ability to correlate related prompt
+injections through unrelated products or
+
+276
+00:06:19,110 --> 00:06:19,120
+injections through unrelated products or
+ 
+
+277
+00:06:19,120 --> 00:06:21,189
+injections through unrelated products or
+services without revealing any customer
+
+278
+00:06:21,189 --> 00:06:21,199
+services without revealing any customer
+ 
+
+279
+00:06:21,199 --> 00:06:23,749
+services without revealing any customer
+content. So that's kind of the goal. Um,
+
+280
+00:06:23,749 --> 00:06:23,759
+content. So that's kind of the goal. Um,
+ 
+
+281
+00:06:23,759 --> 00:06:26,550
+content. So that's kind of the goal. Um,
+Wars kind of walk through like the what,
+
+282
+00:06:26,550 --> 00:06:26,560
+Wars kind of walk through like the what,
+ 
+
+283
+00:06:26,560 --> 00:06:29,749
+Wars kind of walk through like the what,
+so what it is. Um, and in this next
+
+284
+00:06:29,749 --> 00:06:29,759
+so what it is. Um, and in this next
+ 
+
+285
+00:06:29,759 --> 00:06:35,029
+so what it is. Um, and in this next
+part, uh, when it loads,
+
+286
+00:06:35,029 --> 00:06:35,039
+
+ 
+
+287
+00:06:35,039 --> 00:06:37,510
+
+um, I'll give it a second. Um, I'm going
+
+288
+00:06:37,510 --> 00:06:37,520
+um, I'll give it a second. Um, I'm going
+ 
+
+289
+00:06:37,520 --> 00:06:39,909
+um, I'll give it a second. Um, I'm going
+to walk through a demo of how you
+
+290
+00:06:39,909 --> 00:06:39,919
+to walk through a demo of how you
+ 
+
+291
+00:06:39,919 --> 00:06:41,430
+to walk through a demo of how you
+actually implement these, some of the
+
+292
+00:06:41,430 --> 00:06:41,440
+actually implement these, some of the
+ 
+
+293
+00:06:41,440 --> 00:06:43,430
+actually implement these, some of the
+trade-offs and choices you make when
+
+294
+00:06:43,430 --> 00:06:43,440
+trade-offs and choices you make when
+ 
+
+295
+00:06:43,440 --> 00:06:46,309
+trade-offs and choices you make when
+implementing this. Um, and then also
+
+296
+00:06:46,309 --> 00:06:46,319
+implementing this. Um, and then also
+ 
+
+297
+00:06:46,319 --> 00:06:48,309
+implementing this. Um, and then also
+using these fingerprints, how you might
+
+298
+00:06:48,309 --> 00:06:48,319
+using these fingerprints, how you might
+ 
+
+299
+00:06:48,319 --> 00:06:55,270
+using these fingerprints, how you might
+apply that to your product suite. Um,
+
+300
+00:06:55,270 --> 00:06:55,280
+
+ 
+
+301
+00:06:55,280 --> 00:07:04,309
+
+one second.
+
+302
+00:07:04,309 --> 00:07:04,319
+
+ 
+
+303
+00:07:04,319 --> 00:07:08,309
+
+Why this is
+
+304
+00:07:08,309 --> 00:07:08,319
+
+ 
+
+305
+00:07:08,319 --> 00:07:11,589
+
+okay? Great. So, like I mentioned uh in
+
+306
+00:07:11,589 --> 00:07:11,599
+okay? Great. So, like I mentioned uh in
+ 
+
+307
+00:07:11,599 --> 00:07:13,029
+okay? Great. So, like I mentioned uh in
+act one, we're going to actually build
+
+308
+00:07:13,029 --> 00:07:13,039
+act one, we're going to actually build
+ 
+
+309
+00:07:13,039 --> 00:07:14,710
+act one, we're going to actually build
+the fingerprint. So, the four-step
+
+310
+00:07:14,710 --> 00:07:14,720
+the fingerprint. So, the four-step
+ 
+
+311
+00:07:14,720 --> 00:07:16,790
+the fingerprint. So, the four-step
+sequence uh that Warus described, and
+
+312
+00:07:16,790 --> 00:07:16,800
+sequence uh that Warus described, and
+ 
+
+313
+00:07:16,800 --> 00:07:18,469
+sequence uh that Warus described, and
+we're going to go step by step what this
+
+314
+00:07:18,469 --> 00:07:18,479
+we're going to go step by step what this
+ 
+
+315
+00:07:18,479 --> 00:07:21,670
+we're going to go step by step what this
+means.
+
+316
+00:07:21,670 --> 00:07:21,680
+
+ 
+
+317
+00:07:21,680 --> 00:07:24,230
+
+So the first step is to remove all
+
+318
+00:07:24,230 --> 00:07:24,240
+So the first step is to remove all
+ 
+
+319
+00:07:24,240 --> 00:07:26,550
+So the first step is to remove all
+personally identifiable information from
+
+320
+00:07:26,550 --> 00:07:26,560
+personally identifiable information from
+ 
+
+321
+00:07:26,560 --> 00:07:29,670
+personally identifiable information from
+the prompt. So in this example here we
+
+322
+00:07:29,670 --> 00:07:29,680
+the prompt. So in this example here we
+ 
+
+323
+00:07:29,680 --> 00:07:32,230
+the prompt. So in this example here we
+have my name is John Smith. We strip
+
+324
+00:07:32,230 --> 00:07:32,240
+have my name is John Smith. We strip
+ 
+
+325
+00:07:32,240 --> 00:07:34,070
+have my name is John Smith. We strip
+that name away and we replace it with
+
+326
+00:07:34,070 --> 00:07:34,080
+that name away and we replace it with
+ 
+
+327
+00:07:34,080 --> 00:07:36,469
+that name away and we replace it with
+kind of a holder. We do that for all
+
+328
+00:07:36,469 --> 00:07:36,479
+kind of a holder. We do that for all
+ 
+
+329
+00:07:36,479 --> 00:07:38,150
+kind of a holder. We do that for all
+things like social security numbers,
+
+330
+00:07:38,150 --> 00:07:38,160
+things like social security numbers,
+ 
+
+331
+00:07:38,160 --> 00:07:40,230
+things like social security numbers,
+emails, etc. And we just redact all of
+
+332
+00:07:40,230 --> 00:07:40,240
+emails, etc. And we just redact all of
+ 
+
+333
+00:07:40,240 --> 00:07:42,070
+emails, etc. And we just redact all of
+that information. So that's the first
+
+334
+00:07:42,070 --> 00:07:42,080
+that information. So that's the first
+ 
+
+335
+00:07:42,080 --> 00:07:44,790
+that information. So that's the first
+step of the pipeline.
+
+336
+00:07:44,790 --> 00:07:44,800
+step of the pipeline.
+ 
+
+337
+00:07:44,800 --> 00:07:47,510
+step of the pipeline.
+We uh just to kind of call this out in
+
+338
+00:07:47,510 --> 00:07:47,520
+We uh just to kind of call this out in
+ 
+
+339
+00:07:47,520 --> 00:07:49,749
+We uh just to kind of call this out in
+our implementation we use a open- source
+
+340
+00:07:49,749 --> 00:07:49,759
+our implementation we use a open- source
+ 
+
+341
+00:07:49,759 --> 00:07:51,749
+our implementation we use a open- source
+library called Procedto. Uh but there
+
+342
+00:07:51,749 --> 00:07:51,759
+library called Procedto. Uh but there
+ 
+
+343
+00:07:51,759 --> 00:07:55,589
+library called Procedto. Uh but there
+are many different ways uh to do this.
+
+344
+00:07:55,589 --> 00:07:55,599
+are many different ways uh to do this.
+ 
+
+345
+00:07:55,599 --> 00:07:58,390
+are many different ways uh to do this.
+The next step is we translate uh these
+
+346
+00:07:58,390 --> 00:07:58,400
+The next step is we translate uh these
+ 
+
+347
+00:07:58,400 --> 00:08:01,270
+The next step is we translate uh these
+strings these words into embeddings. So
+
+348
+00:08:01,270 --> 00:08:01,280
+strings these words into embeddings. So
+ 
+
+349
+00:08:01,280 --> 00:08:03,189
+strings these words into embeddings. So
+vectors that capture the semantic
+
+350
+00:08:03,189 --> 00:08:03,199
+vectors that capture the semantic
+ 
+
+351
+00:08:03,199 --> 00:08:07,110
+vectors that capture the semantic
+meaning uh in long lists of numbers. So
+
+352
+00:08:07,110 --> 00:08:07,120
+meaning uh in long lists of numbers. So
+ 
+
+353
+00:08:07,120 --> 00:08:10,070
+meaning uh in long lists of numbers. So
+we take this redacted prompt, we feed it
+
+354
+00:08:10,070 --> 00:08:10,080
+we take this redacted prompt, we feed it
+ 
+
+355
+00:08:10,080 --> 00:08:13,189
+we take this redacted prompt, we feed it
+into an embedding model. We used uh text
+
+356
+00:08:13,189 --> 00:08:13,199
+into an embedding model. We used uh text
+ 
+
+357
+00:08:13,199 --> 00:08:15,830
+into an embedding model. We used uh text
+embedding three large from open AAI. Um
+
+358
+00:08:15,830 --> 00:08:15,840
+embedding three large from open AAI. Um
+ 
+
+359
+00:08:15,840 --> 00:08:17,510
+embedding three large from open AAI. Um
+but to reduce cost there are many
+
+360
+00:08:17,510 --> 00:08:17,520
+but to reduce cost there are many
+ 
+
+361
+00:08:17,520 --> 00:08:20,070
+but to reduce cost there are many
+different implementations of this. Um
+
+362
+00:08:20,070 --> 00:08:20,080
+different implementations of this. Um
+ 
+
+363
+00:08:20,080 --> 00:08:23,270
+different implementations of this. Um
+and in the output we get long lists of
+
+364
+00:08:23,270 --> 00:08:23,280
+and in the output we get long lists of
+ 
+
+365
+00:08:23,280 --> 00:08:26,869
+and in the output we get long lists of
+floatingoint numbers.
+
+366
+00:08:26,869 --> 00:08:26,879
+floatingoint numbers.
+ 
+
+367
+00:08:26,879 --> 00:08:29,430
+floatingoint numbers.
+Um the next step the third step is to
+
+368
+00:08:29,430 --> 00:08:29,440
+Um the next step the third step is to
+ 
+
+369
+00:08:29,440 --> 00:08:31,589
+Um the next step the third step is to
+quantize it. So what we're doing here is
+
+370
+00:08:31,589 --> 00:08:31,599
+quantize it. So what we're doing here is
+ 
+
+371
+00:08:31,599 --> 00:08:34,790
+quantize it. So what we're doing here is
+we're compressing this long list of uh
+
+372
+00:08:34,790 --> 00:08:34,800
+we're compressing this long list of uh
+ 
+
+373
+00:08:34,800 --> 00:08:37,269
+we're compressing this long list of uh
+long floatingoint numbers into just
+
+374
+00:08:37,269 --> 00:08:37,279
+long floatingoint numbers into just
+ 
+
+375
+00:08:37,279 --> 00:08:39,750
+long floatingoint numbers into just
+zeros and ones. So we're reducing the
+
+376
+00:08:39,750 --> 00:08:39,760
+zeros and ones. So we're reducing the
+ 
+
+377
+00:08:39,760 --> 00:08:41,509
+zeros and ones. So we're reducing the
+amount of memory it takes up which leads
+
+378
+00:08:41,509 --> 00:08:41,519
+amount of memory it takes up which leads
+ 
+
+379
+00:08:41,519 --> 00:08:45,190
+amount of memory it takes up which leads
+to efficiency gains and it also uh makes
+
+380
+00:08:45,190 --> 00:08:45,200
+to efficiency gains and it also uh makes
+ 
+
+381
+00:08:45,200 --> 00:08:48,949
+to efficiency gains and it also uh makes
+the the pipeline more one way. So we're
+
+382
+00:08:48,949 --> 00:08:48,959
+the the pipeline more one way. So we're
+ 
+
+383
+00:08:48,959 --> 00:08:51,750
+the the pipeline more one way. So we're
+intentionally losing information that's
+
+384
+00:08:51,750 --> 00:08:51,760
+intentionally losing information that's
+ 
+
+385
+00:08:51,760 --> 00:08:54,070
+intentionally losing information that's
+kind of encapsulated by these long
+
+386
+00:08:54,070 --> 00:08:54,080
+kind of encapsulated by these long
+ 
+
+387
+00:08:54,080 --> 00:08:57,030
+kind of encapsulated by these long
+floatingoint numbers to make it more
+
+388
+00:08:57,030 --> 00:08:57,040
+floatingoint numbers to make it more
+ 
+
+389
+00:08:57,040 --> 00:08:59,430
+floatingoint numbers to make it more
+difficult for an adversary to reverse
+
+390
+00:08:59,430 --> 00:08:59,440
+difficult for an adversary to reverse
+ 
+
+391
+00:08:59,440 --> 00:09:01,670
+difficult for an adversary to reverse
+engineer this pipeline and ultimately
+
+392
+00:09:01,670 --> 00:09:01,680
+engineer this pipeline and ultimately
+ 
+
+393
+00:09:01,680 --> 00:09:03,509
+engineer this pipeline and ultimately
+gain any private information from the
+
+394
+00:09:03,509 --> 00:09:03,519
+gain any private information from the
+ 
+
+395
+00:09:03,519 --> 00:09:07,509
+gain any private information from the
+users.
+
+396
+00:09:07,509 --> 00:09:07,519
+
+ 
+
+397
+00:09:07,519 --> 00:09:10,389
+
+And then the last step is uh adding
+
+398
+00:09:10,389 --> 00:09:10,399
+And then the last step is uh adding
+ 
+
+399
+00:09:10,399 --> 00:09:12,630
+And then the last step is uh adding
+differential privacy and essentially
+
+400
+00:09:12,630 --> 00:09:12,640
+differential privacy and essentially
+ 
+
+401
+00:09:12,640 --> 00:09:15,509
+differential privacy and essentially
+injecting noise into this list of
+
+402
+00:09:15,509 --> 00:09:15,519
+injecting noise into this list of
+ 
+
+403
+00:09:15,519 --> 00:09:18,070
+injecting noise into this list of
+integers. So what this means it's
+
+404
+00:09:18,070 --> 00:09:18,080
+integers. So what this means it's
+ 
+
+405
+00:09:18,080 --> 00:09:20,230
+integers. So what this means it's
+controlled by this value called epsil
+
+406
+00:09:20,230 --> 00:09:20,240
+controlled by this value called epsil
+ 
+
+407
+00:09:20,240 --> 00:09:23,590
+controlled by this value called epsil
+epsilon. And when epsilon is large the
+
+408
+00:09:23,590 --> 00:09:23,600
+epsilon. And when epsilon is large the
+ 
+
+409
+00:09:23,600 --> 00:09:25,670
+epsilon. And when epsilon is large the
+bits don't change. So that means that
+
+410
+00:09:25,670 --> 00:09:25,680
+bits don't change. So that means that
+ 
+
+411
+00:09:25,680 --> 00:09:27,509
+bits don't change. So that means that
+there's very little privacy but high
+
+412
+00:09:27,509 --> 00:09:27,519
+there's very little privacy but high
+ 
+
+413
+00:09:27,519 --> 00:09:30,230
+there's very little privacy but high
+utility. And then the inverse is also
+
+414
+00:09:30,230 --> 00:09:30,240
+utility. And then the inverse is also
+ 
+
+415
+00:09:30,240 --> 00:09:32,550
+utility. And then the inverse is also
+true. When epsilon is small the bits are
+
+416
+00:09:32,550 --> 00:09:32,560
+true. When epsilon is small the bits are
+ 
+
+417
+00:09:32,560 --> 00:09:34,470
+true. When epsilon is small the bits are
+more random. So there's a lot of privacy
+
+418
+00:09:34,470 --> 00:09:34,480
+more random. So there's a lot of privacy
+ 
+
+419
+00:09:34,480 --> 00:09:36,710
+more random. So there's a lot of privacy
+but very little utility.
+
+420
+00:09:36,710 --> 00:09:36,720
+but very little utility.
+ 
+
+421
+00:09:36,720 --> 00:09:38,949
+but very little utility.
+And just to double click here, epsilon
+
+422
+00:09:38,949 --> 00:09:38,959
+And just to double click here, epsilon
+ 
+
+423
+00:09:38,959 --> 00:09:40,949
+And just to double click here, epsilon
+should be kind of a function of your
+
+424
+00:09:40,949 --> 00:09:40,959
+should be kind of a function of your
+ 
+
+425
+00:09:40,959 --> 00:09:43,829
+should be kind of a function of your
+organization. We don't particularly make
+
+426
+00:09:43,829 --> 00:09:43,839
+organization. We don't particularly make
+ 
+
+427
+00:09:43,839 --> 00:09:45,910
+organization. We don't particularly make
+a recommendation of what epsilon should
+
+428
+00:09:45,910 --> 00:09:45,920
+a recommendation of what epsilon should
+ 
+
+429
+00:09:45,920 --> 00:09:48,070
+a recommendation of what epsilon should
+be, but rather it should be kind of
+
+430
+00:09:48,070 --> 00:09:48,080
+be, but rather it should be kind of
+ 
+
+431
+00:09:48,080 --> 00:09:50,949
+be, but rather it should be kind of
+contingent on your own use case, how
+
+432
+00:09:50,949 --> 00:09:50,959
+contingent on your own use case, how
+ 
+
+433
+00:09:50,959 --> 00:09:52,870
+contingent on your own use case, how
+compliant uh the data is that you're
+
+434
+00:09:52,870 --> 00:09:52,880
+compliant uh the data is that you're
+ 
+
+435
+00:09:52,880 --> 00:09:55,269
+compliant uh the data is that you're
+working with um and kind of a close
+
+436
+00:09:55,269 --> 00:09:55,279
+working with um and kind of a close
+ 
+
+437
+00:09:55,279 --> 00:09:57,030
+working with um and kind of a close
+collaboration with your legal teams to
+
+438
+00:09:57,030 --> 00:09:57,040
+collaboration with your legal teams to
+ 
+
+439
+00:09:57,040 --> 00:10:00,710
+collaboration with your legal teams to
+understand um what level of privacy you
+
+440
+00:10:00,710 --> 00:10:00,720
+understand um what level of privacy you
+ 
+
+441
+00:10:00,720 --> 00:10:02,630
+understand um what level of privacy you
+need to attain before you can look at
+
+442
+00:10:02,630 --> 00:10:02,640
+need to attain before you can look at
+ 
+
+443
+00:10:02,640 --> 00:10:04,790
+need to attain before you can look at
+these fingerprints and share them in a
+
+444
+00:10:04,790 --> 00:10:04,800
+these fingerprints and share them in a
+ 
+
+445
+00:10:04,800 --> 00:10:08,230
+these fingerprints and share them in a
+safe manner.
+
+446
+00:10:08,230 --> 00:10:08,240
+
+ 
+
+447
+00:10:08,240 --> 00:10:11,430
+
+Um, and then all I'm doing here, um, is
+
+448
+00:10:11,430 --> 00:10:11,440
+Um, and then all I'm doing here, um, is
+ 
+
+449
+00:10:11,440 --> 00:10:13,509
+Um, and then all I'm doing here, um, is
+stringing together those four steps. So,
+
+450
+00:10:13,509 --> 00:10:13,519
+stringing together those four steps. So,
+ 
+
+451
+00:10:13,519 --> 00:10:15,670
+stringing together those four steps. So,
+we're creating the fingerprint. I'm just
+
+452
+00:10:15,670 --> 00:10:15,680
+we're creating the fingerprint. I'm just
+ 
+
+453
+00:10:15,680 --> 00:10:18,550
+we're creating the fingerprint. I'm just
+going to go a little faster. Um, and
+
+454
+00:10:18,550 --> 00:10:18,560
+going to go a little faster. Um, and
+ 
+
+455
+00:10:18,560 --> 00:10:21,590
+going to go a little faster. Um, and
+then just to make it super concrete, um,
+
+456
+00:10:21,590 --> 00:10:21,600
+then just to make it super concrete, um,
+ 
+
+457
+00:10:21,600 --> 00:10:24,230
+then just to make it super concrete, um,
+I've created a list of four prompts. So,
+
+458
+00:10:24,230 --> 00:10:24,240
+I've created a list of four prompts. So,
+ 
+
+459
+00:10:24,240 --> 00:10:26,710
+I've created a list of four prompts. So,
+we have three kind of variations of the
+
+460
+00:10:26,710 --> 00:10:26,720
+we have three kind of variations of the
+ 
+
+461
+00:10:26,720 --> 00:10:29,430
+we have three kind of variations of the
+canonical ignore all system instruction
+
+462
+00:10:29,430 --> 00:10:29,440
+canonical ignore all system instruction
+ 
+
+463
+00:10:29,440 --> 00:10:31,829
+canonical ignore all system instruction
+prompt, uh, which we call like a prompt
+
+464
+00:10:31,829 --> 00:10:31,839
+prompt, uh, which we call like a prompt
+ 
+
+465
+00:10:31,839 --> 00:10:33,269
+prompt, uh, which we call like a prompt
+injection. and it could potentially
+
+466
+00:10:33,269 --> 00:10:33,279
+injection. and it could potentially
+ 
+
+467
+00:10:33,279 --> 00:10:36,230
+injection. and it could potentially
+override uh the intended behavior of
+
+468
+00:10:36,230 --> 00:10:36,240
+override uh the intended behavior of
+ 
+
+469
+00:10:36,240 --> 00:10:39,269
+override uh the intended behavior of
+your system. And then one benign prompt.
+
+470
+00:10:39,269 --> 00:10:39,279
+your system. And then one benign prompt.
+ 
+
+471
+00:10:39,279 --> 00:10:41,190
+your system. And then one benign prompt.
+So what is the weather in Seattle? It's
+
+472
+00:10:41,190 --> 00:10:41,200
+So what is the weather in Seattle? It's
+ 
+
+473
+00:10:41,200 --> 00:10:44,069
+So what is the weather in Seattle? It's
+not something that we would assume to be
+
+474
+00:10:44,069 --> 00:10:44,079
+not something that we would assume to be
+ 
+
+475
+00:10:44,079 --> 00:10:45,829
+not something that we would assume to be
+um malicious and is very different from
+
+476
+00:10:45,829 --> 00:10:45,839
+um malicious and is very different from
+ 
+
+477
+00:10:45,839 --> 00:10:48,790
+um malicious and is very different from
+those three prompts.
+
+478
+00:10:48,790 --> 00:10:48,800
+those three prompts.
+ 
+
+479
+00:10:48,800 --> 00:10:53,509
+those three prompts.
+Um so I'm going to kind of show a matrix
+
+480
+00:10:53,509 --> 00:10:53,519
+Um so I'm going to kind of show a matrix
+ 
+
+481
+00:10:53,519 --> 00:10:56,470
+Um so I'm going to kind of show a matrix
+here. Um, and what I'm trying to
+
+482
+00:10:56,470 --> 00:10:56,480
+here. Um, and what I'm trying to
+ 
+
+483
+00:10:56,480 --> 00:10:58,550
+here. Um, and what I'm trying to
+demonstrate here is that prompts that
+
+484
+00:10:58,550 --> 00:10:58,560
+demonstrate here is that prompts that
+ 
+
+485
+00:10:58,560 --> 00:11:00,389
+demonstrate here is that prompts that
+are similar
+
+486
+00:11:00,389 --> 00:11:00,399
+are similar
+ 
+
+487
+00:11:00,399 --> 00:11:02,949
+are similar
+are ultimately more similar
+
+488
+00:11:02,949 --> 00:11:02,959
+are ultimately more similar
+ 
+
+489
+00:11:02,959 --> 00:11:05,750
+are ultimately more similar
+fingerprints. So, if this system is to
+
+490
+00:11:05,750 --> 00:11:05,760
+fingerprints. So, if this system is to
+ 
+
+491
+00:11:05,760 --> 00:11:08,150
+fingerprints. So, if this system is to
+work, we want to be able to correlate
+
+492
+00:11:08,150 --> 00:11:08,160
+work, we want to be able to correlate
+ 
+
+493
+00:11:08,160 --> 00:11:09,829
+work, we want to be able to correlate
+related prompts that are very very
+
+494
+00:11:09,829 --> 00:11:09,839
+related prompts that are very very
+ 
+
+495
+00:11:09,839 --> 00:11:13,110
+related prompts that are very very
+similar, i.e. uh capture maybe like a
+
+496
+00:11:13,110 --> 00:11:13,120
+similar, i.e. uh capture maybe like a
+ 
+
+497
+00:11:13,120 --> 00:11:15,110
+similar, i.e. uh capture maybe like a
+spray attack of related prompt
+
+498
+00:11:15,110 --> 00:11:15,120
+spray attack of related prompt
+ 
+
+499
+00:11:15,120 --> 00:11:17,590
+spray attack of related prompt
+injections and we don't want to catch
+
+500
+00:11:17,590 --> 00:11:17,600
+injections and we don't want to catch
+ 
+
+501
+00:11:17,600 --> 00:11:19,509
+injections and we don't want to catch
+like benign prompts or things that are
+
+502
+00:11:19,509 --> 00:11:19,519
+like benign prompts or things that are
+ 
+
+503
+00:11:19,519 --> 00:11:22,150
+like benign prompts or things that are
+very dissimilar. So to walk through this
+
+504
+00:11:22,150 --> 00:11:22,160
+very dissimilar. So to walk through this
+ 
+
+505
+00:11:22,160 --> 00:11:25,350
+very dissimilar. So to walk through this
+diagram, uh the original uh variant one
+
+506
+00:11:25,350 --> 00:11:25,360
+diagram, uh the original uh variant one
+ 
+
+507
+00:11:25,360 --> 00:11:27,110
+diagram, uh the original uh variant one
+and variant two were all of those
+
+508
+00:11:27,110 --> 00:11:27,120
+and variant two were all of those
+ 
+
+509
+00:11:27,120 --> 00:11:29,110
+and variant two were all of those
+related prompts of ignore all system
+
+510
+00:11:29,110 --> 00:11:29,120
+related prompts of ignore all system
+ 
+
+511
+00:11:29,120 --> 00:11:31,910
+related prompts of ignore all system
+instructions. And you can see that the
+
+512
+00:11:31,910 --> 00:11:31,920
+instructions. And you can see that the
+ 
+
+513
+00:11:31,920 --> 00:11:34,069
+instructions. And you can see that the
+we call it hamming distance like the
+
+514
+00:11:34,069 --> 00:11:34,079
+we call it hamming distance like the
+ 
+
+515
+00:11:34,079 --> 00:11:37,110
+we call it hamming distance like the
+distance between these fingerprints
+
+516
+00:11:37,110 --> 00:11:37,120
+distance between these fingerprints
+ 
+
+517
+00:11:37,120 --> 00:11:39,670
+distance between these fingerprints
+um is much lower. So it's like a lighter
+
+518
+00:11:39,670 --> 00:11:39,680
+um is much lower. So it's like a lighter
+ 
+
+519
+00:11:39,680 --> 00:11:43,030
+um is much lower. So it's like a lighter
+color. Whereas the difference between
+
+520
+00:11:43,030 --> 00:11:43,040
+color. Whereas the difference between
+ 
+
+521
+00:11:43,040 --> 00:11:44,949
+color. Whereas the difference between
+the benign prompts and the original
+
+522
+00:11:44,949 --> 00:11:44,959
+the benign prompts and the original
+ 
+
+523
+00:11:44,959 --> 00:11:47,590
+the benign prompts and the original
+variant one variant two this lower row
+
+524
+00:11:47,590 --> 00:11:47,600
+variant one variant two this lower row
+ 
+
+525
+00:11:47,600 --> 00:11:50,870
+variant one variant two this lower row
+and this um the row the column to the
+
+526
+00:11:50,870 --> 00:11:50,880
+and this um the row the column to the
+ 
+
+527
+00:11:50,880 --> 00:11:53,509
+and this um the row the column to the
+right hand side uh they have much higher
+
+528
+00:11:53,509 --> 00:11:53,519
+right hand side uh they have much higher
+ 
+
+529
+00:11:53,519 --> 00:11:55,350
+right hand side uh they have much higher
+distances. So the fingerprints are
+
+530
+00:11:55,350 --> 00:11:55,360
+distances. So the fingerprints are
+ 
+
+531
+00:11:55,360 --> 00:11:57,670
+distances. So the fingerprints are
+farther away. So it's easier to
+
+532
+00:11:57,670 --> 00:11:57,680
+farther away. So it's easier to
+ 
+
+533
+00:11:57,680 --> 00:12:02,949
+farther away. So it's easier to
+understand that they're different.
+
+534
+00:12:02,949 --> 00:12:02,959
+
+ 
+
+535
+00:12:02,959 --> 00:12:05,350
+
+Um so that's the how like that's how you
+
+536
+00:12:05,350 --> 00:12:05,360
+Um so that's the how like that's how you
+ 
+
+537
+00:12:05,360 --> 00:12:08,389
+Um so that's the how like that's how you
+might create a fingerprint. Um, and the
+
+538
+00:12:08,389 --> 00:12:08,399
+might create a fingerprint. Um, and the
+ 
+
+539
+00:12:08,399 --> 00:12:10,230
+might create a fingerprint. Um, and the
+last kind of step that I want to walk
+
+540
+00:12:10,230 --> 00:12:10,240
+last kind of step that I want to walk
+ 
+
+541
+00:12:10,240 --> 00:12:12,389
+last kind of step that I want to walk
+through is what it actually means to
+
+542
+00:12:12,389 --> 00:12:12,399
+through is what it actually means to
+ 
+
+543
+00:12:12,399 --> 00:12:14,389
+through is what it actually means to
+integrate this into your product suite.
+
+544
+00:12:14,389 --> 00:12:14,399
+integrate this into your product suite.
+ 
+
+545
+00:12:14,399 --> 00:12:16,629
+integrate this into your product suite.
+So, to just give like a brief overview
+
+546
+00:12:16,629 --> 00:12:16,639
+So, to just give like a brief overview
+ 
+
+547
+00:12:16,639 --> 00:12:20,069
+So, to just give like a brief overview
+first, um, for any sort of company or
+
+548
+00:12:20,069 --> 00:12:20,079
+first, um, for any sort of company or
+ 
+
+549
+00:12:20,079 --> 00:12:22,310
+first, um, for any sort of company or
+organization that has more than one
+
+550
+00:12:22,310 --> 00:12:22,320
+organization that has more than one
+ 
+
+551
+00:12:22,320 --> 00:12:25,430
+organization that has more than one
+product, um, it's very likely that your
+
+552
+00:12:25,430 --> 00:12:25,440
+product, um, it's very likely that your
+ 
+
+553
+00:12:25,440 --> 00:12:26,949
+product, um, it's very likely that your
+safety stack is going to start to
+
+554
+00:12:26,949 --> 00:12:26,959
+safety stack is going to start to
+ 
+
+555
+00:12:26,959 --> 00:12:29,750
+safety stack is going to start to
+diverge. So ultimately it would be great
+
+556
+00:12:29,750 --> 00:12:29,760
+diverge. So ultimately it would be great
+ 
+
+557
+00:12:29,760 --> 00:12:32,389
+diverge. So ultimately it would be great
+if as security and safety practitioners
+
+558
+00:12:32,389 --> 00:12:32,399
+if as security and safety practitioners
+ 
+
+559
+00:12:32,399 --> 00:12:34,389
+if as security and safety practitioners
+all of the products had all of the best
+
+560
+00:12:34,389 --> 00:12:34,399
+all of the products had all of the best
+ 
+
+561
+00:12:34,399 --> 00:12:36,550
+all of the products had all of the best
+practices and all look the same. But
+
+562
+00:12:36,550 --> 00:12:36,560
+practices and all look the same. But
+ 
+
+563
+00:12:36,560 --> 00:12:40,629
+practices and all look the same. But
+unfortunately given uh like dev velocity
+
+564
+00:12:40,629 --> 00:12:40,639
+unfortunately given uh like dev velocity
+ 
+
+565
+00:12:40,639 --> 00:12:42,870
+unfortunately given uh like dev velocity
+um and different customer requirements,
+
+566
+00:12:42,870 --> 00:12:42,880
+um and different customer requirements,
+ 
+
+567
+00:12:42,880 --> 00:12:44,629
+um and different customer requirements,
+different regulatory requirements,
+
+568
+00:12:44,629 --> 00:12:44,639
+different regulatory requirements,
+ 
+
+569
+00:12:44,639 --> 00:12:46,470
+different regulatory requirements,
+different regions you're deploying in.
+
+570
+00:12:46,470 --> 00:12:46,480
+different regions you're deploying in.
+ 
+
+571
+00:12:46,480 --> 00:12:48,790
+different regions you're deploying in.
+It's very likely that as an organization
+
+572
+00:12:48,790 --> 00:12:48,800
+It's very likely that as an organization
+ 
+
+573
+00:12:48,800 --> 00:12:51,030
+It's very likely that as an organization
+you're going to end up with a very messy
+
+574
+00:12:51,030 --> 00:12:51,040
+you're going to end up with a very messy
+ 
+
+575
+00:12:51,040 --> 00:12:53,350
+you're going to end up with a very messy
+situation very quickly where you have
+
+576
+00:12:53,350 --> 00:12:53,360
+situation very quickly where you have
+ 
+
+577
+00:12:53,360 --> 00:12:55,190
+situation very quickly where you have
+many products with different safety
+
+578
+00:12:55,190 --> 00:12:55,200
+many products with different safety
+ 
+
+579
+00:12:55,200 --> 00:12:58,550
+many products with different safety
+stacks. And if a attack is caught by one
+
+580
+00:12:58,550 --> 00:12:58,560
+stacks. And if a attack is caught by one
+ 
+
+581
+00:12:58,560 --> 00:13:00,710
+stacks. And if a attack is caught by one
+product, it might not be caught by all
+
+582
+00:13:00,710 --> 00:13:00,720
+product, it might not be caught by all
+ 
+
+583
+00:13:00,720 --> 00:13:02,949
+product, it might not be caught by all
+products. So this is kind of what we're
+
+584
+00:13:02,949 --> 00:13:02,959
+products. So this is kind of what we're
+ 
+
+585
+00:13:02,959 --> 00:13:05,430
+products. So this is kind of what we're
+trying to solve here.
+
+586
+00:13:05,430 --> 00:13:05,440
+trying to solve here.
+ 
+
+587
+00:13:05,440 --> 00:13:08,550
+trying to solve here.
+Um we implement a couple things. One is
+
+588
+00:13:08,550 --> 00:13:08,560
+Um we implement a couple things. One is
+ 
+
+589
+00:13:08,560 --> 00:13:10,710
+Um we implement a couple things. One is
+a registry which Warus kind of talked
+
+590
+00:13:10,710 --> 00:13:10,720
+a registry which Warus kind of talked
+ 
+
+591
+00:13:10,720 --> 00:13:13,030
+a registry which Warus kind of talked
+about. And the key thing here is that we
+
+592
+00:13:13,030 --> 00:13:13,040
+about. And the key thing here is that we
+ 
+
+593
+00:13:13,040 --> 00:13:16,629
+about. And the key thing here is that we
+publish fingerprints. So if we identify
+
+594
+00:13:16,629 --> 00:13:16,639
+publish fingerprints. So if we identify
+ 
+
+595
+00:13:16,639 --> 00:13:19,670
+publish fingerprints. So if we identify
+a attack, we're going to fingerprint it
+
+596
+00:13:19,670 --> 00:13:19,680
+a attack, we're going to fingerprint it
+ 
+
+597
+00:13:19,680 --> 00:13:22,310
+a attack, we're going to fingerprint it
+and we're going to broadcast it to all
+
+598
+00:13:22,310 --> 00:13:22,320
+and we're going to broadcast it to all
+ 
+
+599
+00:13:22,320 --> 00:13:24,790
+and we're going to broadcast it to all
+of the services. So all services will
+
+600
+00:13:24,790 --> 00:13:24,800
+of the services. So all services will
+ 
+
+601
+00:13:24,800 --> 00:13:26,790
+of the services. So all services will
+now be able to catch that same attack.
+
+602
+00:13:26,790 --> 00:13:26,800
+now be able to catch that same attack.
+ 
+
+603
+00:13:26,800 --> 00:13:28,790
+now be able to catch that same attack.
+So if an adversary has one prompt
+
+604
+00:13:28,790 --> 00:13:28,800
+So if an adversary has one prompt
+ 
+
+605
+00:13:28,800 --> 00:13:31,750
+So if an adversary has one prompt
+injection that's very effective or small
+
+606
+00:13:31,750 --> 00:13:31,760
+injection that's very effective or small
+ 
+
+607
+00:13:31,760 --> 00:13:33,670
+injection that's very effective or small
+perturbations that are very effective of
+
+608
+00:13:33,670 --> 00:13:33,680
+perturbations that are very effective of
+ 
+
+609
+00:13:33,680 --> 00:13:36,150
+perturbations that are very effective of
+that one prompt injection and it sprays
+
+610
+00:13:36,150 --> 00:13:36,160
+that one prompt injection and it sprays
+ 
+
+611
+00:13:36,160 --> 00:13:38,710
+that one prompt injection and it sprays
+it against your entire suite with this
+
+612
+00:13:38,710 --> 00:13:38,720
+it against your entire suite with this
+ 
+
+613
+00:13:38,720 --> 00:13:40,150
+it against your entire suite with this
+registry, you should be able to
+
+614
+00:13:40,150 --> 00:13:40,160
+registry, you should be able to
+ 
+
+615
+00:13:40,160 --> 00:13:43,430
+registry, you should be able to
+effectively publish.
+
+616
+00:13:43,430 --> 00:13:43,440
+effectively publish.
+ 
+
+617
+00:13:43,440 --> 00:13:45,829
+effectively publish.
+Um and then to kind of demonstrate this
+
+618
+00:13:45,829 --> 00:13:45,839
+Um and then to kind of demonstrate this
+ 
+
+619
+00:13:45,839 --> 00:13:47,670
+Um and then to kind of demonstrate this
+point, I've created three different
+
+620
+00:13:47,670 --> 00:13:47,680
+point, I've created three different
+ 
+
+621
+00:13:47,680 --> 00:13:51,350
+point, I've created three different
+services. Um so here to demonstrate that
+
+622
+00:13:51,350 --> 00:13:51,360
+services. Um so here to demonstrate that
+ 
+
+623
+00:13:51,360 --> 00:13:53,190
+services. Um so here to demonstrate that
+idea of like we have different safety
+
+624
+00:13:53,190 --> 00:13:53,200
+idea of like we have different safety
+ 
+
+625
+00:13:53,200 --> 00:13:57,350
+idea of like we have different safety
+stacks each service alpha beta and gamma
+
+626
+00:13:57,350 --> 00:13:57,360
+stacks each service alpha beta and gamma
+ 
+
+627
+00:13:57,360 --> 00:13:59,110
+stacks each service alpha beta and gamma
+they have different block lists.
+
+628
+00:13:59,110 --> 00:13:59,120
+they have different block lists.
+ 
+
+629
+00:13:59,120 --> 00:14:01,910
+they have different block lists.
+Hopefully in your production systems you
+
+630
+00:14:01,910 --> 00:14:01,920
+Hopefully in your production systems you
+ 
+
+631
+00:14:01,920 --> 00:14:04,470
+Hopefully in your production systems you
+have more sophisticated uh ways of
+
+632
+00:14:04,470 --> 00:14:04,480
+have more sophisticated uh ways of
+ 
+
+633
+00:14:04,480 --> 00:14:07,269
+have more sophisticated uh ways of
+catching malicious activity. Um but to
+
+634
+00:14:07,269 --> 00:14:07,279
+catching malicious activity. Um but to
+ 
+
+635
+00:14:07,279 --> 00:14:09,350
+catching malicious activity. Um but to
+kind of like make it very succinct we
+
+636
+00:14:09,350 --> 00:14:09,360
+kind of like make it very succinct we
+ 
+
+637
+00:14:09,360 --> 00:14:11,110
+kind of like make it very succinct we
+have three different block lists for
+
+638
+00:14:11,110 --> 00:14:11,120
+have three different block lists for
+ 
+
+639
+00:14:11,120 --> 00:14:13,189
+have three different block lists for
+three different services and they catch
+
+640
+00:14:13,189 --> 00:14:13,199
+three different services and they catch
+ 
+
+641
+00:14:13,199 --> 00:14:15,990
+three different services and they catch
+different things. So uh the first
+
+642
+00:14:15,990 --> 00:14:16,000
+different things. So uh the first
+ 
+
+643
+00:14:16,000 --> 00:14:18,389
+different things. So uh the first
+service alpha is able to catch the
+
+644
+00:14:18,389 --> 00:14:18,399
+service alpha is able to catch the
+ 
+
+645
+00:14:18,399 --> 00:14:20,470
+service alpha is able to catch the
+pattern ignore all previous instructions
+
+646
+00:14:20,470 --> 00:14:20,480
+pattern ignore all previous instructions
+ 
+
+647
+00:14:20,480 --> 00:14:24,389
+pattern ignore all previous instructions
+but service gamma is not able to.
+
+648
+00:14:24,389 --> 00:14:24,399
+but service gamma is not able to.
+ 
+
+649
+00:14:24,399 --> 00:14:27,269
+but service gamma is not able to.
+Um and to tie this all together um I'm
+
+650
+00:14:27,269 --> 00:14:27,279
+Um and to tie this all together um I'm
+ 
+
+651
+00:14:27,279 --> 00:14:29,590
+Um and to tie this all together um I'm
+just going to open up just like some
+
+652
+00:14:29,590 --> 00:14:29,600
+just going to open up just like some
+ 
+
+653
+00:14:29,600 --> 00:14:32,069
+just going to open up just like some
+print statements. Um so what I did here
+
+654
+00:14:32,069 --> 00:14:32,079
+print statements. Um so what I did here
+ 
+
+655
+00:14:32,079 --> 00:14:36,150
+print statements. Um so what I did here
+is I fed all four prompts remember those
+
+656
+00:14:36,150 --> 00:14:36,160
+is I fed all four prompts remember those
+ 
+
+657
+00:14:36,160 --> 00:14:38,389
+is I fed all four prompts remember those
+um original the two variants and then
+
+658
+00:14:38,389 --> 00:14:38,399
+um original the two variants and then
+ 
+
+659
+00:14:38,399 --> 00:14:41,189
+um original the two variants and then
+the benign through all three services.
+
+660
+00:14:41,189 --> 00:14:41,199
+the benign through all three services.
+ 
+
+661
+00:14:41,199 --> 00:14:43,750
+the benign through all three services.
+Um, and only in service alpha was I
+
+662
+00:14:43,750 --> 00:14:43,760
+Um, and only in service alpha was I
+ 
+
+663
+00:14:43,760 --> 00:14:46,389
+Um, and only in service alpha was I
+actually able to catch that ignore all
+
+664
+00:14:46,389 --> 00:14:46,399
+actually able to catch that ignore all
+ 
+
+665
+00:14:46,399 --> 00:14:48,949
+actually able to catch that ignore all
+system instructions. So what's supposed
+
+666
+00:14:48,949 --> 00:14:48,959
+system instructions. So what's supposed
+ 
+
+667
+00:14:48,959 --> 00:14:51,269
+system instructions. So what's supposed
+to happen here is then service alpha
+
+668
+00:14:51,269 --> 00:14:51,279
+to happen here is then service alpha
+ 
+
+669
+00:14:51,279 --> 00:14:53,670
+to happen here is then service alpha
+fingerprints that prompt and it
+
+670
+00:14:53,670 --> 00:14:53,680
+fingerprints that prompt and it
+ 
+
+671
+00:14:53,680 --> 00:14:56,629
+fingerprints that prompt and it
+broadcasts to service beta and gamma and
+
+672
+00:14:56,629 --> 00:14:56,639
+broadcasts to service beta and gamma and
+ 
+
+673
+00:14:56,639 --> 00:14:59,910
+broadcasts to service beta and gamma and
+now all services are able to catch that
+
+674
+00:14:59,910 --> 00:14:59,920
+now all services are able to catch that
+ 
+
+675
+00:14:59,920 --> 00:15:02,470
+now all services are able to catch that
+same variant of prompt injections. So
+
+676
+00:15:02,470 --> 00:15:02,480
+same variant of prompt injections. So
+ 
+
+677
+00:15:02,480 --> 00:15:05,110
+same variant of prompt injections. So
+the next time that the adversary kind of
+
+678
+00:15:05,110 --> 00:15:05,120
+the next time that the adversary kind of
+ 
+
+679
+00:15:05,120 --> 00:15:07,509
+the next time that the adversary kind of
+sprays that attack, now all of the
+
+680
+00:15:07,509 --> 00:15:07,519
+sprays that attack, now all of the
+ 
+
+681
+00:15:07,519 --> 00:15:09,750
+sprays that attack, now all of the
+services have that same capability of
+
+682
+00:15:09,750 --> 00:15:09,760
+services have that same capability of
+ 
+
+683
+00:15:09,760 --> 00:15:12,069
+services have that same capability of
+catching the attack without having to
+
+684
+00:15:12,069 --> 00:15:12,079
+catching the attack without having to
+ 
+
+685
+00:15:12,079 --> 00:15:15,030
+catching the attack without having to
+rehaul their entire safety stacks.
+
+686
+00:15:15,030 --> 00:15:15,040
+rehaul their entire safety stacks.
+ 
+
+687
+00:15:15,040 --> 00:15:16,710
+rehaul their entire safety stacks.
+I think that is time and that's all I
+
+688
+00:15:16,710 --> 00:15:16,720
+I think that is time and that's all I
+ 
+
+689
+00:15:16,720 --> 00:15:18,629
+I think that is time and that's all I
+have. Um, we're happy to answer any
+
+690
+00:15:18,629 --> 00:15:18,639
+have. Um, we're happy to answer any
+ 
+
+691
+00:15:18,639 --> 00:15:25,990
+have. Um, we're happy to answer any
+questions. Now,
+
+692
+00:15:25,990 --> 00:15:26,000
+
+ 
+
+693
+00:15:26,000 --> 00:15:27,590
+
+uh, I have a Slack question about
+
+694
+00:15:27,590 --> 00:15:27,600
+uh, I have a Slack question about
+ 
+
+695
+00:15:27,600 --> 00:15:29,030
+uh, I have a Slack question about
+whether the components of this are going
+
+696
+00:15:29,030 --> 00:15:29,040
+whether the components of this are going
+ 
+
+697
+00:15:29,040 --> 00:15:31,910
+whether the components of this are going
+to be open sourced. So I'll start there.
+
+698
+00:15:31,910 --> 00:15:31,920
+to be open sourced. So I'll start there.
+ 
+
+699
+00:15:31,920 --> 00:15:35,030
+to be open sourced. So I'll start there.
+So uh right now the paper is available.
+
+700
+00:15:35,030 --> 00:15:35,040
+So uh right now the paper is available.
+ 
+
+701
+00:15:35,040 --> 00:15:37,509
+So uh right now the paper is available.
+Um it didn't take me too long to make
+
+702
+00:15:37,509 --> 00:15:37,519
+Um it didn't take me too long to make
+ 
+
+703
+00:15:37,519 --> 00:15:39,350
+Um it didn't take me too long to make
+the notebook with cloud code. So I would
+
+704
+00:15:39,350 --> 00:15:39,360
+the notebook with cloud code. So I would
+ 
+
+705
+00:15:39,360 --> 00:15:41,910
+the notebook with cloud code. So I would
+uh start there but we are uh we we can
+
+706
+00:15:41,910 --> 00:15:41,920
+uh start there but we are uh we we can
+ 
+
+707
+00:15:41,920 --> 00:15:43,750
+uh start there but we are uh we we can
+definitely look into open sourcing this.
+
+708
+00:15:43,750 --> 00:15:43,760
+definitely look into open sourcing this.
+ 
+
+709
+00:15:43,760 --> 00:15:48,949
+definitely look into open sourcing this.
+>> Cool. Uh mic on mic on its way.
+
+710
+00:15:48,949 --> 00:15:48,959
+>> Cool. Uh mic on mic on its way.
+ 
+
+711
+00:15:48,959 --> 00:15:51,350
+>> Cool. Uh mic on mic on its way.
+>> When you are quanti quantizing your
+
+712
+00:15:51,350 --> 00:15:51,360
+>> When you are quanti quantizing your
+ 
+
+713
+00:15:51,360 --> 00:15:52,870
+>> When you are quanti quantizing your
+embeddings you are converting them to
+
+714
+00:15:52,870 --> 00:15:52,880
+embeddings you are converting them to
+ 
+
+715
+00:15:52,880 --> 00:15:54,550
+embeddings you are converting them to
+zeros and ones. It seems you are losing
+
+716
+00:15:54,550 --> 00:15:54,560
+zeros and ones. It seems you are losing
+ 
+
+717
+00:15:54,560 --> 00:15:57,110
+zeros and ones. It seems you are losing
+a lot of semantics there. Um how do you
+
+718
+00:15:57,110 --> 00:15:57,120
+a lot of semantics there. Um how do you
+ 
+
+719
+00:15:57,120 --> 00:15:59,509
+a lot of semantics there. Um how do you
+address that? And on your privacy budget
+
+720
+00:15:59,509 --> 00:15:59,519
+address that? And on your privacy budget
+ 
+
+721
+00:15:59,519 --> 00:16:00,870
+address that? And on your privacy budget
+side, every time you create a
+
+722
+00:16:00,870 --> 00:16:00,880
+side, every time you create a
+ 
+
+723
+00:16:00,880 --> 00:16:02,470
+side, every time you create a
+fingerprint, you are consuming some of
+
+724
+00:16:02,470 --> 00:16:02,480
+fingerprint, you are consuming some of
+ 
+
+725
+00:16:02,480 --> 00:16:04,230
+fingerprint, you are consuming some of
+your privacy budget. How do you refresh
+
+726
+00:16:04,230 --> 00:16:04,240
+your privacy budget. How do you refresh
+ 
+
+727
+00:16:04,240 --> 00:16:06,389
+your privacy budget. How do you refresh
+that?
+
+728
+00:16:06,389 --> 00:16:06,399
+that?
+ 
+
+729
+00:16:06,399 --> 00:16:09,749
+that?
+>> Okay. Uh great question. So first to
+
+730
+00:16:09,749 --> 00:16:09,759
+>> Okay. Uh great question. So first to
+ 
+
+731
+00:16:09,759 --> 00:16:11,829
+>> Okay. Uh great question. So first to
+answer your question, so this is um
+
+732
+00:16:11,829 --> 00:16:11,839
+answer your question, so this is um
+ 
+
+733
+00:16:11,839 --> 00:16:14,230
+answer your question, so this is um
+definitely we are losing semantics. But
+
+734
+00:16:14,230 --> 00:16:14,240
+definitely we are losing semantics. But
+ 
+
+735
+00:16:14,240 --> 00:16:16,389
+definitely we are losing semantics. But
+for instance, if you say uh if you see
+
+736
+00:16:16,389 --> 00:16:16,399
+for instance, if you say uh if you see
+ 
+
+737
+00:16:16,399 --> 00:16:18,389
+for instance, if you say uh if you see
+that the embeddings are usually like
+
+738
+00:16:18,389 --> 00:16:18,399
+that the embeddings are usually like
+ 
+
+739
+00:16:18,399 --> 00:16:20,470
+that the embeddings are usually like
+they have a high dimensions for instance
+
+740
+00:16:20,470 --> 00:16:20,480
+they have a high dimensions for instance
+ 
+
+741
+00:16:20,480 --> 00:16:24,550
+they have a high dimensions for instance
+768 dimension or let's say uh 30s 84 or
+
+742
+00:16:24,550 --> 00:16:24,560
+768 dimension or let's say uh 30s 84 or
+ 
+
+743
+00:16:24,560 --> 00:16:26,550
+768 dimension or let's say uh 30s 84 or
+something like that for text open
+
+744
+00:16:26,550 --> 00:16:26,560
+something like that for text open
+ 
+
+745
+00:16:26,560 --> 00:16:28,629
+something like that for text open
+embedding model. So there is a lot of
+
+746
+00:16:28,629 --> 00:16:28,639
+embedding model. So there is a lot of
+ 
+
+747
+00:16:28,639 --> 00:16:30,949
+embedding model. So there is a lot of
+information which is encoded into 01
+
+748
+00:16:30,949 --> 00:16:30,959
+information which is encoded into 01
+ 
+
+749
+00:16:30,959 --> 00:16:33,350
+information which is encoded into 01
+information. Even still if we let's say
+
+750
+00:16:33,350 --> 00:16:33,360
+information. Even still if we let's say
+ 
+
+751
+00:16:33,360 --> 00:16:35,910
+information. Even still if we let's say
+convert it into 0 and one. So there is
+
+752
+00:16:35,910 --> 00:16:35,920
+convert it into 0 and one. So there is
+ 
+
+753
+00:16:35,920 --> 00:16:38,069
+convert it into 0 and one. So there is
+still lot of semantic information which
+
+754
+00:16:38,069 --> 00:16:38,079
+still lot of semantic information which
+ 
+
+755
+00:16:38,079 --> 00:16:40,710
+still lot of semantic information which
+is very useful for detecting attacks and
+
+756
+00:16:40,710 --> 00:16:40,720
+is very useful for detecting attacks and
+ 
+
+757
+00:16:40,720 --> 00:16:43,590
+is very useful for detecting attacks and
+that what we uh observed in our
+
+758
+00:16:43,590 --> 00:16:43,600
+that what we uh observed in our
+ 
+
+759
+00:16:43,600 --> 00:16:47,269
+that what we uh observed in our
+evaluations. So we have um and the to to
+
+760
+00:16:47,269 --> 00:16:47,279
+evaluations. So we have um and the to to
+ 
+
+761
+00:16:47,279 --> 00:16:52,069
+evaluations. So we have um and the to to
+your point to u uh the privacy budget uh
+
+762
+00:16:52,069 --> 00:16:52,079
+your point to u uh the privacy budget uh
+ 
+
+763
+00:16:52,079 --> 00:16:54,470
+your point to u uh the privacy budget uh
+that is we also vary it and then we see
+
+764
+00:16:54,470 --> 00:16:54,480
+that is we also vary it and then we see
+ 
+
+765
+00:16:54,480 --> 00:16:56,389
+that is we also vary it and then we see
+for instance the utility for instance if
+
+766
+00:16:56,389 --> 00:16:56,399
+for instance the utility for instance if
+ 
+
+767
+00:16:56,399 --> 00:16:59,829
+for instance the utility for instance if
+we uh flip so many bits the utility will
+
+768
+00:16:59,829 --> 00:16:59,839
+we uh flip so many bits the utility will
+ 
+
+769
+00:16:59,839 --> 00:17:02,870
+we uh flip so many bits the utility will
+go down to zero. So definitely like uh
+
+770
+00:17:02,870 --> 00:17:02,880
+go down to zero. So definitely like uh
+ 
+
+771
+00:17:02,880 --> 00:17:06,230
+go down to zero. So definitely like uh
+there is a trade-off uh we if we consume
+
+772
+00:17:06,230 --> 00:17:06,240
+there is a trade-off uh we if we consume
+ 
+
+773
+00:17:06,240 --> 00:17:08,390
+there is a trade-off uh we if we consume
+uh uh less budget uh let's say if we
+
+774
+00:17:08,390 --> 00:17:08,400
+uh uh less budget uh let's say if we
+ 
+
+775
+00:17:08,400 --> 00:17:10,710
+uh uh less budget uh let's say if we
+have a lower privacy budget we will be
+
+776
+00:17:10,710 --> 00:17:10,720
+have a lower privacy budget we will be
+ 
+
+777
+00:17:10,720 --> 00:17:13,029
+have a lower privacy budget we will be
+adding more noise and uh this is a
+
+778
+00:17:13,029 --> 00:17:13,039
+adding more noise and uh this is a
+ 
+
+779
+00:17:13,039 --> 00:17:15,189
+adding more noise and uh this is a
+trade-off uh which we have observed and
+
+780
+00:17:15,189 --> 00:17:15,199
+trade-off uh which we have observed and
+ 
+
+781
+00:17:15,199 --> 00:17:17,110
+trade-off uh which we have observed and
+that's what Natly mentioned that we do
+
+782
+00:17:17,110 --> 00:17:17,120
+that's what Natly mentioned that we do
+ 
+
+783
+00:17:17,120 --> 00:17:19,829
+that's what Natly mentioned that we do
+not uh specify any particular budget for
+
+784
+00:17:19,829 --> 00:17:19,839
+not uh specify any particular budget for
+ 
+
+785
+00:17:19,839 --> 00:17:22,309
+not uh specify any particular budget for
+this threat correlation uh and it
+
+786
+00:17:22,309 --> 00:17:22,319
+this threat correlation uh and it
+ 
+
+787
+00:17:22,319 --> 00:17:24,549
+this threat correlation uh and it
+depends uh on the organization they can
+
+788
+00:17:24,549 --> 00:17:24,559
+depends uh on the organization they can
+ 
+
+789
+00:17:24,559 --> 00:17:26,789
+depends uh on the organization they can
+work with their privacy teams to uh
+
+790
+00:17:26,789 --> 00:17:26,799
+work with their privacy teams to uh
+ 
+
+791
+00:17:26,799 --> 00:17:29,110
+work with their privacy teams to uh
+basically uh come up with that
+
+792
+00:17:29,110 --> 00:17:29,120
+basically uh come up with that
+ 
+
+793
+00:17:29,120 --> 00:17:32,390
+basically uh come up with that
+particular epsilon number uh for the
+
+794
+00:17:32,390 --> 00:17:32,400
+particular epsilon number uh for the
+ 
+
+795
+00:17:32,400 --> 00:17:35,029
+particular epsilon number uh for the
+noise.
+
+796
+00:17:35,029 --> 00:17:35,039
+noise.
+ 
+
+797
+00:17:35,039 --> 00:17:37,190
+noise.
+>> Uh great talk and I have a question. So
+
+798
+00:17:37,190 --> 00:17:37,200
+>> Uh great talk and I have a question. So
+ 
+
+799
+00:17:37,200 --> 00:17:38,710
+>> Uh great talk and I have a question. So
+I feel like right now you're just like
+
+800
+00:17:38,710 --> 00:17:38,720
+I feel like right now you're just like
+ 
+
+801
+00:17:38,720 --> 00:17:42,870
+I feel like right now you're just like
+catching the prompt uh um um like um one
+
+802
+00:17:42,870 --> 00:17:42,880
+catching the prompt uh um um like um one
+ 
+
+803
+00:17:42,880 --> 00:17:44,710
+catching the prompt uh um um like um one
+by one like whack-a-ole. I was wondering
+
+804
+00:17:44,710 --> 00:17:44,720
+by one like whack-a-ole. I was wondering
+ 
+
+805
+00:17:44,720 --> 00:17:47,110
+by one like whack-a-ole. I was wondering
+if there's if it's possible once we we
+
+806
+00:17:47,110 --> 00:17:47,120
+if there's if it's possible once we we
+ 
+
+807
+00:17:47,120 --> 00:17:49,909
+if there's if it's possible once we we
+find you find like a prompt that's u um
+
+808
+00:17:49,909 --> 00:17:49,919
+find you find like a prompt that's u um
+ 
+
+809
+00:17:49,919 --> 00:17:52,070
+find you find like a prompt that's u um
+like evil and you can like generate
+
+810
+00:17:52,070 --> 00:17:52,080
+like evil and you can like generate
+ 
+
+811
+00:17:52,080 --> 00:17:54,470
+like evil and you can like generate
+variants using large models and then so
+
+812
+00:17:54,470 --> 00:17:54,480
+variants using large models and then so
+ 
+
+813
+00:17:54,480 --> 00:17:56,230
+variants using large models and then so
+you can like put them in the registry.
+
+814
+00:17:56,230 --> 00:17:56,240
+you can like put them in the registry.
+ 
+
+815
+00:17:56,240 --> 00:17:57,909
+you can like put them in the registry.
+Uh so instead of like having to catch
+
+816
+00:17:57,909 --> 00:17:57,919
+Uh so instead of like having to catch
+ 
+
+817
+00:17:57,919 --> 00:17:59,669
+Uh so instead of like having to catch
+them one by one, you can like generate
+
+818
+00:17:59,669 --> 00:17:59,679
+them one by one, you can like generate
+ 
+
+819
+00:17:59,679 --> 00:18:01,669
+them one by one, you can like generate
+variance and like prevent them uh ahead
+
+820
+00:18:01,669 --> 00:18:01,679
+variance and like prevent them uh ahead
+ 
+
+821
+00:18:01,679 --> 00:18:04,789
+variance and like prevent them uh ahead
+of the time.
+
+822
+00:18:04,789 --> 00:18:04,799
+of the time.
+ 
+
+823
+00:18:04,799 --> 00:18:06,870
+of the time.
+>> Yeah, I have a couple thoughts there. So
+
+824
+00:18:06,870 --> 00:18:06,880
+>> Yeah, I have a couple thoughts there. So
+ 
+
+825
+00:18:06,880 --> 00:18:10,310
+>> Yeah, I have a couple thoughts there. So
+the point of uh the fingerprint being
+
+826
+00:18:10,310 --> 00:18:10,320
+the point of uh the fingerprint being
+ 
+
+827
+00:18:10,320 --> 00:18:13,270
+the point of uh the fingerprint being
+fuzzy also like remember in the demo I
+
+828
+00:18:13,270 --> 00:18:13,280
+fuzzy also like remember in the demo I
+ 
+
+829
+00:18:13,280 --> 00:18:16,470
+fuzzy also like remember in the demo I
+created two variants of the same prompt.
+
+830
+00:18:16,470 --> 00:18:16,480
+created two variants of the same prompt.
+ 
+
+831
+00:18:16,480 --> 00:18:18,630
+created two variants of the same prompt.
+Yes, you can and should definitely
+
+832
+00:18:18,630 --> 00:18:18,640
+Yes, you can and should definitely
+ 
+
+833
+00:18:18,640 --> 00:18:21,270
+Yes, you can and should definitely
+generate your own synthetic data, but
+
+834
+00:18:21,270 --> 00:18:21,280
+generate your own synthetic data, but
+ 
+
+835
+00:18:21,280 --> 00:18:24,070
+generate your own synthetic data, but
+ultimately this technique uh captures
+
+836
+00:18:24,070 --> 00:18:24,080
+ultimately this technique uh captures
+ 
+
+837
+00:18:24,080 --> 00:18:26,390
+ultimately this technique uh captures
+like a ring around the original prompts.
+
+838
+00:18:26,390 --> 00:18:26,400
+like a ring around the original prompts.
+ 
+
+839
+00:18:26,400 --> 00:18:28,630
+like a ring around the original prompts.
+It would catch small perturbations that
+
+840
+00:18:28,630 --> 00:18:28,640
+It would catch small perturbations that
+ 
+
+841
+00:18:28,640 --> 00:18:30,789
+It would catch small perturbations that
+you would end up getting from that like
+
+842
+00:18:30,789 --> 00:18:30,799
+you would end up getting from that like
+ 
+
+843
+00:18:30,799 --> 00:18:32,390
+you would end up getting from that like
+whack-a-ole situation, if that makes
+
+844
+00:18:32,390 --> 00:18:32,400
+whack-a-ole situation, if that makes
+ 
+
+845
+00:18:32,400 --> 00:18:34,789
+whack-a-ole situation, if that makes
+sense. So, we're not catching um
+
+846
+00:18:34,789 --> 00:18:34,799
+sense. So, we're not catching um
+ 
+
+847
+00:18:34,799 --> 00:18:36,870
+sense. So, we're not catching um
+verbatim prompts one by one. We're
+
+848
+00:18:36,870 --> 00:18:36,880
+verbatim prompts one by one. We're
+ 
+
+849
+00:18:36,880 --> 00:18:39,110
+verbatim prompts one by one. We're
+capturing the prompt you want to catch
+
+850
+00:18:39,110 --> 00:18:39,120
+capturing the prompt you want to catch
+ 
+
+851
+00:18:39,120 --> 00:18:41,350
+capturing the prompt you want to catch
+and then small perturbations as well.
+
+852
+00:18:41,350 --> 00:18:41,360
+and then small perturbations as well.
+ 
+
+853
+00:18:41,360 --> 00:18:42,789
+and then small perturbations as well.
+And you can kind of adjust your
+
+854
+00:18:42,789 --> 00:18:42,799
+And you can kind of adjust your
+ 
+
+855
+00:18:42,799 --> 00:18:45,430
+And you can kind of adjust your
+threshold as needed if you want to kind
+
+856
+00:18:45,430 --> 00:18:45,440
+threshold as needed if you want to kind
+ 
+
+857
+00:18:45,440 --> 00:18:49,669
+threshold as needed if you want to kind
+of catch a wider range.
+
+858
+00:18:49,669 --> 00:18:49,679
+
+ 
+
+859
+00:18:49,679 --> 00:18:53,640
+
+Thanks very much. Awesome.
+

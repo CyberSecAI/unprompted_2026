@@ -1,0 +1,1835 @@
+1
+00:00:06,080 --> 00:00:08,310
+
+So, as a quick uh update, we're going to
+
+2
+00:00:08,310 --> 00:00:08,320
+So, as a quick uh update, we're going to
+ 
+
+3
+00:00:08,320 --> 00:00:10,549
+So, as a quick uh update, we're going to
+be about 30 to 40 minutes late and catch
+
+4
+00:00:10,549 --> 00:00:10,559
+be about 30 to 40 minutes late and catch
+ 
+
+5
+00:00:10,559 --> 00:00:12,390
+be about 30 to 40 minutes late and catch
+up after lunch.
+
+6
+00:00:12,390 --> 00:00:12,400
+up after lunch.
+ 
+
+7
+00:00:12,400 --> 00:00:15,270
+up after lunch.
+So the reason for that once the slides
+
+8
+00:00:15,270 --> 00:00:15,280
+So the reason for that once the slides
+ 
+
+9
+00:00:15,280 --> 00:00:20,150
+So the reason for that once the slides
+come up is the committee accepted a
+
+10
+00:00:20,150 --> 00:00:20,160
+come up is the committee accepted a
+ 
+
+11
+00:00:20,160 --> 00:00:23,029
+come up is the committee accepted a
+presentation from Zenity
+
+12
+00:00:23,029 --> 00:00:23,039
+presentation from Zenity
+ 
+
+13
+00:00:23,039 --> 00:00:25,109
+presentation from Zenity
+and Zenity due to the situation of the
+
+14
+00:00:25,109 --> 00:00:25,119
+and Zenity due to the situation of the
+ 
+
+15
+00:00:25,119 --> 00:00:26,950
+and Zenity due to the situation of the
+airspace in Israel being closed could
+
+16
+00:00:26,950 --> 00:00:26,960
+airspace in Israel being closed could
+ 
+
+17
+00:00:26,960 --> 00:00:28,790
+airspace in Israel being closed could
+not be here
+
+18
+00:00:28,790 --> 00:00:28,800
+not be here
+ 
+
+19
+00:00:28,800 --> 00:00:30,470
+not be here
+and
+
+20
+00:00:30,470 --> 00:00:30,480
+and
+ 
+
+21
+00:00:30,480 --> 00:00:34,069
+and
+I decided that is not cool
+
+22
+00:00:34,069 --> 00:00:34,079
+I decided that is not cool
+ 
+
+23
+00:00:34,079 --> 00:00:38,229
+I decided that is not cool
+and also I kind of felt that they made a
+
+24
+00:00:38,229 --> 00:00:38,239
+and also I kind of felt that they made a
+ 
+
+25
+00:00:38,239 --> 00:00:41,030
+and also I kind of felt that they made a
+major release today and I want this
+
+26
+00:00:41,030 --> 00:00:41,040
+major release today and I want this
+ 
+
+27
+00:00:41,040 --> 00:00:42,869
+major release today and I want this
+conference to not be buried behind in
+
+28
+00:00:42,869 --> 00:00:42,879
+conference to not be buried behind in
+ 
+
+29
+00:00:42,879 --> 00:00:44,470
+conference to not be buried behind in
+history of what happened two weeks ago
+
+30
+00:00:44,470 --> 00:00:44,480
+history of what happened two weeks ago
+ 
+
+31
+00:00:44,480 --> 00:00:47,350
+history of what happened two weeks ago
+or a month ago. So I talked to the CTO
+
+32
+00:00:47,350 --> 00:00:47,360
+or a month ago. So I talked to the CTO
+ 
+
+33
+00:00:47,360 --> 00:00:50,950
+or a month ago. So I talked to the CTO
+of Zenit, Mikuel Bulgouli said, would
+
+34
+00:00:50,950 --> 00:00:50,960
+of Zenit, Mikuel Bulgouli said, would
+ 
+
+35
+00:00:50,960 --> 00:00:53,270
+of Zenit, Mikuel Bulgouli said, would
+you trust me a competitor? We're not
+
+36
+00:00:53,270 --> 00:00:53,280
+you trust me a competitor? We're not
+ 
+
+37
+00:00:53,280 --> 00:00:54,950
+you trust me a competitor? We're not
+directly compet competing, but he's my
+
+38
+00:00:54,950 --> 00:00:54,960
+directly compet competing, but he's my
+ 
+
+39
+00:00:54,960 --> 00:00:56,950
+directly compet competing, but he's my
+competitor in the AI security space.
+
+40
+00:00:56,950 --> 00:00:56,960
+competitor in the AI security space.
+ 
+
+41
+00:00:56,960 --> 00:00:58,470
+competitor in the AI security space.
+Would you trust me to go up with some of
+
+42
+00:00:58,470 --> 00:00:58,480
+Would you trust me to go up with some of
+ 
+
+43
+00:00:58,480 --> 00:01:00,869
+Would you trust me to go up with some of
+your slides and just presented
+
+44
+00:01:00,869 --> 00:01:00,879
+your slides and just presented
+ 
+
+45
+00:01:00,879 --> 00:01:02,389
+your slides and just presented
+PowerPoint karaoke without ever seeing
+
+46
+00:01:02,389 --> 00:01:02,399
+PowerPoint karaoke without ever seeing
+ 
+
+47
+00:01:02,399 --> 00:01:04,469
+PowerPoint karaoke without ever seeing
+them before?
+
+48
+00:01:04,469 --> 00:01:04,479
+them before?
+ 
+
+49
+00:01:04,479 --> 00:01:06,390
+them before?
+And
+
+50
+00:01:06,390 --> 00:01:06,400
+And
+ 
+
+51
+00:01:06,400 --> 00:01:09,030
+And
+I have never seen these slides before.
+
+52
+00:01:09,030 --> 00:01:09,040
+I have never seen these slides before.
+ 
+
+53
+00:01:09,040 --> 00:01:10,870
+I have never seen these slides before.
+And I'm going to try to rush this so
+
+54
+00:01:10,870 --> 00:01:10,880
+And I'm going to try to rush this so
+ 
+
+55
+00:01:10,880 --> 00:01:12,789
+And I'm going to try to rush this so
+we're not way way behind and Aaron won't
+
+56
+00:01:12,789 --> 00:01:12,799
+we're not way way behind and Aaron won't
+ 
+
+57
+00:01:12,799 --> 00:01:14,870
+we're not way way behind and Aaron won't
+kill me too badly.
+
+58
+00:01:14,870 --> 00:01:14,880
+kill me too badly.
+ 
+
+59
+00:01:14,880 --> 00:01:17,510
+kill me too badly.
+But I hope you guys will forgive me for
+
+60
+00:01:17,510 --> 00:01:17,520
+But I hope you guys will forgive me for
+ 
+
+61
+00:01:17,520 --> 00:01:19,109
+But I hope you guys will forgive me for
+whatever I do wrong here and what I
+
+62
+00:01:19,109 --> 00:01:19,119
+whatever I do wrong here and what I
+ 
+
+63
+00:01:19,119 --> 00:01:22,630
+whatever I do wrong here and what I
+don't understand. And also please Aaron
+
+64
+00:01:22,630 --> 00:01:22,640
+don't understand. And also please Aaron
+ 
+
+65
+00:01:22,640 --> 00:01:24,550
+don't understand. And also please Aaron
+has a microphone and when I don't
+
+66
+00:01:24,550 --> 00:01:24,560
+has a microphone and when I don't
+ 
+
+67
+00:01:24,560 --> 00:01:26,550
+has a microphone and when I don't
+understand a slide or you understand it
+
+68
+00:01:26,550 --> 00:01:26,560
+understand a slide or you understand it
+ 
+
+69
+00:01:26,560 --> 00:01:28,469
+understand a slide or you understand it
+differently, just walk say I understand
+
+70
+00:01:28,469 --> 00:01:28,479
+differently, just walk say I understand
+ 
+
+71
+00:01:28,479 --> 00:01:30,070
+differently, just walk say I understand
+this differently. Let's present this
+
+72
+00:01:30,070 --> 00:01:30,080
+this differently. Let's present this
+ 
+
+73
+00:01:30,080 --> 00:01:31,990
+this differently. Let's present this
+together. Now think about this for a
+
+74
+00:01:31,990 --> 00:01:32,000
+together. Now think about this for a
+ 
+
+75
+00:01:32,000 --> 00:01:33,109
+together. Now think about this for a
+minute because I know you're all very
+
+76
+00:01:33,109 --> 00:01:33,119
+minute because I know you're all very
+ 
+
+77
+00:01:33,119 --> 00:01:35,429
+minute because I know you're all very
+shy people and Americans therefore
+
+78
+00:01:35,429 --> 00:01:35,439
+shy people and Americans therefore
+ 
+
+79
+00:01:35,439 --> 00:01:37,670
+shy people and Americans therefore
+polite. So if somebody would just raise
+
+80
+00:01:37,670 --> 00:01:37,680
+polite. So if somebody would just raise
+ 
+
+81
+00:01:37,680 --> 00:01:40,789
+polite. So if somebody would just raise
+their hand. Where's Dan? Dango.
+
+82
+00:01:40,789 --> 00:01:40,799
+their hand. Where's Dan? Dango.
+ 
+
+83
+00:01:40,799 --> 00:01:42,230
+their hand. Where's Dan? Dango.
+>> Okay. So you're the first one to raise
+
+84
+00:01:42,230 --> 00:01:42,240
+>> Okay. So you're the first one to raise
+ 
+
+85
+00:01:42,240 --> 00:01:43,590
+>> Okay. So you're the first one to raise
+your hand when I get something wrong on
+
+86
+00:01:43,590 --> 00:01:43,600
+your hand when I get something wrong on
+ 
+
+87
+00:01:43,600 --> 00:01:45,510
+your hand when I get something wrong on
+the third slide. So everybody else feels
+
+88
+00:01:45,510 --> 00:01:45,520
+the third slide. So everybody else feels
+ 
+
+89
+00:01:45,520 --> 00:01:47,109
+the third slide. So everybody else feels
+comfortable stepping in. Let's run
+
+90
+00:01:47,109 --> 00:01:47,119
+comfortable stepping in. Let's run
+ 
+
+91
+00:01:47,119 --> 00:01:49,910
+comfortable stepping in. Let's run
+through this. Please fix from Zenity
+
+92
+00:01:49,910 --> 00:01:49,920
+through this. Please fix from Zenity
+ 
+
+93
+00:01:49,920 --> 00:01:53,749
+through this. Please fix from Zenity
+Labs. My competition and awesome people.
+
+94
+00:01:53,749 --> 00:01:53,759
+Labs. My competition and awesome people.
+ 
+
+95
+00:01:53,759 --> 00:01:56,310
+Labs. My competition and awesome people.
+Agentics browsers. Agentic browsers are
+
+96
+00:01:56,310 --> 00:01:56,320
+Agentics browsers. Agentic browsers are
+ 
+
+97
+00:01:56,320 --> 00:01:57,910
+Agentics browsers. Agentic browsers are
+everywhere.
+
+98
+00:01:57,910 --> 00:01:57,920
+everywhere.
+ 
+
+99
+00:01:57,920 --> 00:01:59,590
+everywhere.
+No, but seriously, browsers are coming
+
+100
+00:01:59,590 --> 00:01:59,600
+No, but seriously, browsers are coming
+ 
+
+101
+00:01:59,600 --> 00:02:02,149
+No, but seriously, browsers are coming
+in. They are the next agent to perhaps
+
+102
+00:02:02,149 --> 00:02:02,159
+in. They are the next agent to perhaps
+ 
+
+103
+00:02:02,159 --> 00:02:03,670
+in. They are the next agent to perhaps
+explode after coding agents now
+
+104
+00:02:03,670 --> 00:02:03,680
+explode after coding agents now
+ 
+
+105
+00:02:03,680 --> 00:02:06,230
+explode after coding agents now
+everybody's using. and they bring with
+
+106
+00:02:06,230 --> 00:02:06,240
+everybody's using. and they bring with
+ 
+
+107
+00:02:06,240 --> 00:02:09,910
+everybody's using. and they bring with
+them also quite significant risks
+
+108
+00:02:09,910 --> 00:02:09,920
+them also quite significant risks
+ 
+
+109
+00:02:09,920 --> 00:02:11,910
+them also quite significant risks
+and comet is the one that Zenity in this
+
+110
+00:02:11,910 --> 00:02:11,920
+and comet is the one that Zenity in this
+ 
+
+111
+00:02:11,920 --> 00:02:15,030
+and comet is the one that Zenity in this
+particular case looked at and they are
+
+112
+00:02:15,030 --> 00:02:15,040
+particular case looked at and they are
+ 
+
+113
+00:02:15,040 --> 00:02:16,790
+particular case looked at and they are
+essentially saying look we're not saying
+
+114
+00:02:16,790 --> 00:02:16,800
+essentially saying look we're not saying
+ 
+
+115
+00:02:16,800 --> 00:02:18,390
+essentially saying look we're not saying
+this is majorly innovative but prompt
+
+116
+00:02:18,390 --> 00:02:18,400
+this is majorly innovative but prompt
+ 
+
+117
+00:02:18,400 --> 00:02:20,790
+this is majorly innovative but prompt
+injections are evolving all the time and
+
+118
+00:02:20,790 --> 00:02:20,800
+injections are evolving all the time and
+ 
+
+119
+00:02:20,800 --> 00:02:22,630
+injections are evolving all the time and
+it's something a little bit different in
+
+120
+00:02:22,630 --> 00:02:22,640
+it's something a little bit different in
+ 
+
+121
+00:02:22,640 --> 00:02:23,670
+it's something a little bit different in
+the way they're trying to look at this
+
+122
+00:02:23,670 --> 00:02:23,680
+the way they're trying to look at this
+ 
+
+123
+00:02:23,680 --> 00:02:25,030
+the way they're trying to look at this
+here from my understanding of looking at
+
+124
+00:02:25,030 --> 00:02:25,040
+here from my understanding of looking at
+ 
+
+125
+00:02:25,040 --> 00:02:26,550
+here from my understanding of looking at
+this slide right now but they're saying
+
+126
+00:02:26,550 --> 00:02:26,560
+this slide right now but they're saying
+ 
+
+127
+00:02:26,560 --> 00:02:28,390
+this slide right now but they're saying
+there is the user intent and the
+
+128
+00:02:28,390 --> 00:02:28,400
+there is the user intent and the
+ 
+
+129
+00:02:28,400 --> 00:02:31,510
+there is the user intent and the
+attacker's intent right and if we can
+
+130
+00:02:31,510 --> 00:02:31,520
+attacker's intent right and if we can
+ 
+
+131
+00:02:31,520 --> 00:02:33,270
+attacker's intent right and if we can
+create intent collision where we say
+
+132
+00:02:33,270 --> 00:02:33,280
+create intent collision where we say
+ 
+
+133
+00:02:33,280 --> 00:02:36,150
+create intent collision where we say
+something that looks like it's the users
+
+134
+00:02:36,150 --> 00:02:36,160
+something that looks like it's the users
+ 
+
+135
+00:02:36,160 --> 00:02:38,630
+something that looks like it's the users
+I'm I'm guessing that's kind of like a
+
+136
+00:02:38,630 --> 00:02:38,640
+I'm I'm guessing that's kind of like a
+ 
+
+137
+00:02:38,640 --> 00:02:41,430
+I'm I'm guessing that's kind of like a
+um data and control plane run running
+
+138
+00:02:41,430 --> 00:02:41,440
+um data and control plane run running
+ 
+
+139
+00:02:41,440 --> 00:02:43,030
+um data and control plane run running
+thingy, but I'm not sure exactly what
+
+140
+00:02:43,030 --> 00:02:43,040
+thingy, but I'm not sure exactly what
+ 
+
+141
+00:02:43,040 --> 00:02:45,509
+thingy, but I'm not sure exactly what
+they meant here. That means we can make
+
+142
+00:02:45,509 --> 00:02:45,519
+they meant here. That means we can make
+ 
+
+143
+00:02:45,519 --> 00:02:47,910
+they meant here. That means we can make
+the agent do things we did not intend it
+
+144
+00:02:47,910 --> 00:02:47,920
+the agent do things we did not intend it
+ 
+
+145
+00:02:47,920 --> 00:02:52,150
+the agent do things we did not intend it
+to do. Dan, you ready? And what they did
+
+146
+00:02:52,150 --> 00:02:52,160
+to do. Dan, you ready? And what they did
+ 
+
+147
+00:02:52,160 --> 00:02:54,150
+to do. Dan, you ready? And what they did
+essentially is create a payload that I'm
+
+148
+00:02:54,150 --> 00:02:54,160
+essentially is create a payload that I'm
+ 
+
+149
+00:02:54,160 --> 00:02:55,750
+essentially is create a payload that I'm
+going to read this off the slide, but
+
+150
+00:02:55,750 --> 00:02:55,760
+going to read this off the slide, but
+ 
+
+151
+00:02:55,760 --> 00:02:56,710
+going to read this off the slide, but
+I'm going to act as if I'm not by
+
+152
+00:02:56,710 --> 00:02:56,720
+I'm going to act as if I'm not by
+ 
+
+153
+00:02:56,720 --> 00:02:58,229
+I'm going to act as if I'm not by
+looking at you once in a while. It hides
+
+154
+00:02:58,229 --> 00:02:58,239
+looking at you once in a while. It hides
+ 
+
+155
+00:02:58,239 --> 00:03:01,589
+looking at you once in a while. It hides
+in the calendar invite. It rewrites the
+
+156
+00:03:01,589 --> 00:03:01,599
+in the calendar invite. It rewrites the
+ 
+
+157
+00:03:01,599 --> 00:03:03,830
+in the calendar invite. It rewrites the
+accept button with our their
+
+158
+00:03:03,830 --> 00:03:03,840
+accept button with our their
+ 
+
+159
+00:03:03,840 --> 00:03:05,990
+accept button with our their
+instructions and abuses comment
+
+160
+00:03:05,990 --> 00:03:06,000
+instructions and abuses comment
+ 
+
+161
+00:03:06,000 --> 00:03:09,110
+instructions and abuses comment
+internals with system reminders. I'm
+
+162
+00:03:09,110 --> 00:03:09,120
+internals with system reminders. I'm
+ 
+
+163
+00:03:09,120 --> 00:03:10,309
+internals with system reminders. I'm
+waiting for you to step in and tell me
+
+164
+00:03:10,309 --> 00:03:10,319
+waiting for you to step in and tell me
+ 
+
+165
+00:03:10,319 --> 00:03:13,270
+waiting for you to step in and tell me
+I'm wrong at any point. Okay. So, the
+
+166
+00:03:13,270 --> 00:03:13,280
+I'm wrong at any point. Okay. So, the
+ 
+
+167
+00:03:13,280 --> 00:03:14,869
+I'm wrong at any point. Okay. So, the
+first attack they're doing, I guess, is
+
+168
+00:03:14,869 --> 00:03:14,879
+first attack they're doing, I guess, is
+ 
+
+169
+00:03:14,879 --> 00:03:18,229
+first attack they're doing, I guess, is
+a system file system Xfill, right? Yes.
+
+170
+00:03:18,229 --> 00:03:18,239
+a system file system Xfill, right? Yes.
+ 
+
+171
+00:03:18,239 --> 00:03:19,670
+a system file system Xfill, right? Yes.
+Everybody with me?
+
+172
+00:03:19,670 --> 00:03:19,680
+Everybody with me?
+ 
+
+173
+00:03:19,680 --> 00:03:20,790
+Everybody with me?
+>> Awesome. I'm not doing a very good job,
+
+174
+00:03:20,790 --> 00:03:20,800
+>> Awesome. I'm not doing a very good job,
+ 
+
+175
+00:03:20,800 --> 00:03:23,190
+>> Awesome. I'm not doing a very good job,
+so help me out by cheering me on. Okay.
+
+176
+00:03:23,190 --> 00:03:23,200
+so help me out by cheering me on. Okay.
+ 
+
+177
+00:03:23,200 --> 00:03:25,589
+so help me out by cheering me on. Okay.
+Appreciate it. Okay. Thank you. Thank
+
+178
+00:03:25,589 --> 00:03:25,599
+Appreciate it. Okay. Thank you. Thank
+ 
+
+179
+00:03:25,599 --> 00:03:28,070
+Appreciate it. Okay. Thank you. Thank
+you. I am stressed out a little bit. So
+
+180
+00:03:28,070 --> 00:03:28,080
+you. I am stressed out a little bit. So
+ 
+
+181
+00:03:28,080 --> 00:03:30,710
+you. I am stressed out a little bit. So
+the attacker sends a calendar invite
+
+182
+00:03:30,710 --> 00:03:30,720
+the attacker sends a calendar invite
+ 
+
+183
+00:03:30,720 --> 00:03:32,949
+the attacker sends a calendar invite
+right and we can see Google calendar on
+
+184
+00:03:32,949 --> 00:03:32,959
+right and we can see Google calendar on
+ 
+
+185
+00:03:32,959 --> 00:03:35,190
+right and we can see Google calendar on
+the screen and you can see there is an
+
+186
+00:03:35,190 --> 00:03:35,200
+the screen and you can see there is an
+ 
+
+187
+00:03:35,200 --> 00:03:37,350
+the screen and you can see there is an
+interview with Tamir. Uh what else can I
+
+188
+00:03:37,350 --> 00:03:37,360
+interview with Tamir. Uh what else can I
+ 
+
+189
+00:03:37,360 --> 00:03:39,670
+interview with Tamir. Uh what else can I
+see on this slide with uh some
+
+190
+00:03:39,670 --> 00:03:39,680
+see on this slide with uh some
+ 
+
+191
+00:03:39,680 --> 00:03:41,509
+see on this slide with uh some
+information there and some invitations
+
+192
+00:03:41,509 --> 00:03:41,519
+information there and some invitations
+ 
+
+193
+00:03:41,519 --> 00:03:43,750
+information there and some invitations
+going to the team and to okay moving
+
+194
+00:03:43,750 --> 00:03:43,760
+going to the team and to okay moving
+ 
+
+195
+00:03:43,760 --> 00:03:48,309
+going to the team and to okay moving
+from this slide and there is essentially
+
+196
+00:03:48,309 --> 00:03:48,319
+from this slide and there is essentially
+ 
+
+197
+00:03:48,319 --> 00:03:50,550
+from this slide and there is essentially
+comet in the background where say accept
+
+198
+00:03:50,550 --> 00:03:50,560
+comet in the background where say accept
+ 
+
+199
+00:03:50,560 --> 00:03:52,630
+comet in the background where say accept
+the meeting help me prepare for it and
+
+200
+00:03:52,630 --> 00:03:52,640
+the meeting help me prepare for it and
+ 
+
+201
+00:03:52,640 --> 00:03:54,390
+the meeting help me prepare for it and
+I'm imagining the denity team now saying
+
+202
+00:03:54,390 --> 00:03:54,400
+I'm imagining the denity team now saying
+ 
+
+203
+00:03:54,400 --> 00:03:55,990
+I'm imagining the denity team now saying
+you know what I'm going to go make
+
+204
+00:03:55,990 --> 00:03:56,000
+you know what I'm going to go make
+ 
+
+205
+00:03:56,000 --> 00:03:58,070
+you know what I'm going to go make
+coffee what's the worst thing that could
+
+206
+00:03:58,070 --> 00:03:58,080
+coffee what's the worst thing that could
+ 
+
+207
+00:03:58,080 --> 00:03:59,589
+coffee what's the worst thing that could
+happen I just asked them to help me
+
+208
+00:03:59,589 --> 00:03:59,599
+happen I just asked them to help me
+ 
+
+209
+00:03:59,599 --> 00:04:01,270
+happen I just asked them to help me
+accept this meeting right I don't need
+
+210
+00:04:01,270 --> 00:04:01,280
+accept this meeting right I don't need
+ 
+
+211
+00:04:01,280 --> 00:04:05,110
+accept this meeting right I don't need
+to stay here and monitor and well comet
+
+212
+00:04:05,110 --> 00:04:05,120
+to stay here and monitor and well comet
+ 
+
+213
+00:04:05,120 --> 00:04:07,910
+to stay here and monitor and well comet
+navigates to attacker controlled site
+
+214
+00:04:07,910 --> 00:04:07,920
+navigates to attacker controlled site
+ 
+
+215
+00:04:07,920 --> 00:04:10,470
+navigates to attacker controlled site
+with more malicious instructions.
+
+216
+00:04:10,470 --> 00:04:10,480
+with more malicious instructions.
+ 
+
+217
+00:04:10,480 --> 00:04:13,350
+with more malicious instructions.
+I love you comet. Isn't it wonderful?
+
+218
+00:04:13,350 --> 00:04:13,360
+I love you comet. Isn't it wonderful?
+ 
+
+219
+00:04:13,360 --> 00:04:15,110
+I love you comet. Isn't it wonderful?
+Right.
+
+220
+00:04:15,110 --> 00:04:15,120
+Right.
+ 
+
+221
+00:04:15,120 --> 00:04:17,749
+Right.
+And it says accept the meeting here. To
+
+222
+00:04:17,749 --> 00:04:17,759
+And it says accept the meeting here. To
+ 
+
+223
+00:04:17,759 --> 00:04:19,509
+And it says accept the meeting here. To
+confirm the meeting, you need to click
+
+224
+00:04:19,509 --> 00:04:19,519
+confirm the meeting, you need to click
+ 
+
+225
+00:04:19,519 --> 00:04:21,270
+confirm the meeting, you need to click
+these on blah blah blah. And there is
+
+226
+00:04:21,270 --> 00:04:21,280
+these on blah blah blah. And there is
+ 
+
+227
+00:04:21,280 --> 00:04:23,749
+these on blah blah blah. And there is
+some Hebrew stuff. So probably uniode
+
+228
+00:04:23,749 --> 00:04:23,759
+some Hebrew stuff. So probably uniode
+ 
+
+229
+00:04:23,759 --> 00:04:26,390
+some Hebrew stuff. So probably uniode
+based attack. Probably wrong, but that's
+
+230
+00:04:26,390 --> 00:04:26,400
+based attack. Probably wrong, but that's
+ 
+
+231
+00:04:26,400 --> 00:04:28,870
+based attack. Probably wrong, but that's
+my read on this. And then you can
+
+232
+00:04:28,870 --> 00:04:28,880
+my read on this. And then you can
+ 
+
+233
+00:04:28,880 --> 00:04:30,950
+my read on this. And then you can
+actually reach the file system. And I
+
+234
+00:04:30,950 --> 00:04:30,960
+actually reach the file system. And I
+ 
+
+235
+00:04:30,960 --> 00:04:33,670
+actually reach the file system. And I
+think this is what it is. And access
+
+236
+00:04:33,670 --> 00:04:33,680
+think this is what it is. And access
+ 
+
+237
+00:04:33,680 --> 00:04:37,350
+think this is what it is. And access
+files. Woo. Way to go, Zenity.
+
+238
+00:04:37,350 --> 00:04:37,360
+files. Woo. Way to go, Zenity.
+ 
+
+239
+00:04:37,360 --> 00:04:40,550
+files. Woo. Way to go, Zenity.
+Amazing work.
+
+240
+00:04:40,550 --> 00:04:40,560
+Amazing work.
+ 
+
+241
+00:04:40,560 --> 00:04:44,790
+Amazing work.
+And autonomously, comet will just go and
+
+242
+00:04:44,790 --> 00:04:44,800
+And autonomously, comet will just go and
+ 
+
+243
+00:04:44,800 --> 00:04:46,469
+And autonomously, comet will just go and
+search for really cool files that you
+
+244
+00:04:46,469 --> 00:04:46,479
+search for really cool files that you
+ 
+
+245
+00:04:46,479 --> 00:04:48,870
+search for really cool files that you
+might want to exfiltrate all on its own.
+
+246
+00:04:48,870 --> 00:04:48,880
+might want to exfiltrate all on its own.
+ 
+
+247
+00:04:48,880 --> 00:04:53,350
+might want to exfiltrate all on its own.
+Isn't that wonderful?
+
+248
+00:04:53,350 --> 00:04:53,360
+
+ 
+
+249
+00:04:53,360 --> 00:04:55,510
+
+And then it would actually exfiltrate it
+
+250
+00:04:55,510 --> 00:04:55,520
+And then it would actually exfiltrate it
+ 
+
+251
+00:04:55,520 --> 00:04:57,270
+And then it would actually exfiltrate it
+to the attacker because no demo is ever
+
+252
+00:04:57,270 --> 00:04:57,280
+to the attacker because no demo is ever
+ 
+
+253
+00:04:57,280 --> 00:04:58,790
+to the attacker because no demo is ever
+complete unless you show that Xfill
+
+254
+00:04:58,790 --> 00:04:58,800
+complete unless you show that Xfill
+ 
+
+255
+00:04:58,800 --> 00:05:01,030
+complete unless you show that Xfill
+happened or CMD popped up depending on
+
+256
+00:05:01,030 --> 00:05:01,040
+happened or CMD popped up depending on
+ 
+
+257
+00:05:01,040 --> 00:05:03,270
+happened or CMD popped up depending on
+what you're demoing, right?
+
+258
+00:05:03,270 --> 00:05:03,280
+what you're demoing, right?
+ 
+
+259
+00:05:03,280 --> 00:05:04,950
+what you're demoing, right?
+The second attack is actually with one
+
+260
+00:05:04,950 --> 00:05:04,960
+The second attack is actually with one
+ 
+
+261
+00:05:04,960 --> 00:05:07,510
+The second attack is actually with one
+password where once again we start with
+
+262
+00:05:07,510 --> 00:05:07,520
+password where once again we start with
+ 
+
+263
+00:05:07,520 --> 00:05:09,189
+password where once again we start with
+a calendar invite. Everybody clear on
+
+264
+00:05:09,189 --> 00:05:09,199
+a calendar invite. Everybody clear on
+ 
+
+265
+00:05:09,199 --> 00:05:10,790
+a calendar invite. Everybody clear on
+that, right? That happens in every
+
+266
+00:05:10,790 --> 00:05:10,800
+that, right? That happens in every
+ 
+
+267
+00:05:10,800 --> 00:05:13,909
+that, right? That happens in every
+single stage here. And what do we write
+
+268
+00:05:13,909 --> 00:05:13,919
+single stage here. And what do we write
+ 
+
+269
+00:05:13,919 --> 00:05:16,070
+single stage here. And what do we write
+here? Accept the meeting and prepare for
+
+270
+00:05:16,070 --> 00:05:16,080
+here? Accept the meeting and prepare for
+ 
+
+271
+00:05:16,080 --> 00:05:17,830
+here? Accept the meeting and prepare for
+it. Same thing. But something else
+
+272
+00:05:17,830 --> 00:05:17,840
+it. Same thing. But something else
+ 
+
+273
+00:05:17,840 --> 00:05:19,909
+it. Same thing. But something else
+happens in the background as the
+
+274
+00:05:19,909 --> 00:05:19,919
+happens in the background as the
+ 
+
+275
+00:05:19,919 --> 00:05:21,590
+happens in the background as the
+attacker intent and the user intent
+
+276
+00:05:21,590 --> 00:05:21,600
+attacker intent and the user intent
+ 
+
+277
+00:05:21,600 --> 00:05:24,150
+attacker intent and the user intent
+collide. And they apparently log into
+
+278
+00:05:24,150 --> 00:05:24,160
+collide. And they apparently log into
+ 
+
+279
+00:05:24,160 --> 00:05:26,390
+collide. And they apparently log into
+one password. And one password usually
+
+280
+00:05:26,390 --> 00:05:26,400
+one password. And one password usually
+ 
+
+281
+00:05:26,400 --> 00:05:28,070
+one password. And one password usually
+does not let me do that. It requires the
+
+282
+00:05:28,070 --> 00:05:28,080
+does not let me do that. It requires the
+ 
+
+283
+00:05:28,080 --> 00:05:29,350
+does not let me do that. It requires the
+master password. I feel a little bit
+
+284
+00:05:29,350 --> 00:05:29,360
+master password. I feel a little bit
+ 
+
+285
+00:05:29,360 --> 00:05:31,270
+master password. I feel a little bit
+cheated that you can just log in. I mean
+
+286
+00:05:31,270 --> 00:05:31,280
+cheated that you can just log in. I mean
+ 
+
+287
+00:05:31,280 --> 00:05:33,110
+cheated that you can just log in. I mean
+what's what's wrong here? Is there
+
+288
+00:05:33,110 --> 00:05:33,120
+what's what's wrong here? Is there
+ 
+
+289
+00:05:33,120 --> 00:05:36,390
+what's what's wrong here? Is there
+preferential treatment and
+
+290
+00:05:36,390 --> 00:05:36,400
+preferential treatment and
+ 
+
+291
+00:05:36,400 --> 00:05:39,029
+preferential treatment and
+they are catching the request
+
+292
+00:05:39,029 --> 00:05:39,039
+they are catching the request
+ 
+
+293
+00:05:39,039 --> 00:05:40,790
+they are catching the request
+and boom they're managing the account
+
+294
+00:05:40,790 --> 00:05:40,800
+and boom they're managing the account
+ 
+
+295
+00:05:40,800 --> 00:05:43,350
+and boom they're managing the account
+and doing things to it
+
+296
+00:05:43,350 --> 00:05:43,360
+and doing things to it
+ 
+
+297
+00:05:43,360 --> 00:05:45,189
+and doing things to it
+that oh this is pretty cool. So I don't
+
+298
+00:05:45,189 --> 00:05:45,199
+that oh this is pretty cool. So I don't
+ 
+
+299
+00:05:45,199 --> 00:05:47,029
+that oh this is pretty cool. So I don't
+think it's necessarily an attack but the
+
+300
+00:05:47,029 --> 00:05:47,039
+think it's necessarily an attack but the
+ 
+
+301
+00:05:47,039 --> 00:05:48,790
+think it's necessarily an attack but the
+one password autocomplete is apparently
+
+302
+00:05:48,790 --> 00:05:48,800
+one password autocomplete is apparently
+ 
+
+303
+00:05:48,800 --> 00:05:51,270
+one password autocomplete is apparently
+turned on and once that happens they are
+
+304
+00:05:51,270 --> 00:05:51,280
+turned on and once that happens they are
+ 
+
+305
+00:05:51,280 --> 00:05:52,550
+turned on and once that happens they are
+just in and they could do whatever they
+
+306
+00:05:52,550 --> 00:05:52,560
+just in and they could do whatever they
+ 
+
+307
+00:05:52,560 --> 00:05:55,270
+just in and they could do whatever they
+want and they have the emergency kit
+
+308
+00:05:55,270 --> 00:05:55,280
+want and they have the emergency kit
+ 
+
+309
+00:05:55,280 --> 00:05:56,469
+want and they have the emergency kit
+here and a lot of other things they
+
+310
+00:05:56,469 --> 00:05:56,479
+here and a lot of other things they
+ 
+
+311
+00:05:56,479 --> 00:05:57,350
+here and a lot of other things they
+probably would have said really
+
+312
+00:05:57,350 --> 00:05:57,360
+probably would have said really
+ 
+
+313
+00:05:57,360 --> 00:05:58,790
+probably would have said really
+technical smart things about that I'm
+
+314
+00:05:58,790 --> 00:05:58,800
+technical smart things about that I'm
+ 
+
+315
+00:05:58,800 --> 00:06:01,590
+technical smart things about that I'm
+just blah blingy on and the conclusions
+
+316
+00:06:01,590 --> 00:06:01,600
+just blah blingy on and the conclusions
+ 
+
+317
+00:06:01,600 --> 00:06:04,870
+just blah blingy on and the conclusions
+agentic browsers are untrusted entities
+
+318
+00:06:04,870 --> 00:06:04,880
+agentic browsers are untrusted entities
+ 
+
+319
+00:06:04,880 --> 00:06:08,550
+agentic browsers are untrusted entities
+I think we can agree to that awesome Dan
+
+320
+00:06:08,550 --> 00:06:08,560
+I think we can agree to that awesome Dan
+ 
+
+321
+00:06:08,560 --> 00:06:09,830
+I think we can agree to that awesome Dan
+I'm preparing you you're coming up here
+
+322
+00:06:09,830 --> 00:06:09,840
+I'm preparing you you're coming up here
+ 
+
+323
+00:06:09,840 --> 00:06:11,270
+I'm preparing you you're coming up here
+to say two words on this in a second
+
+324
+00:06:11,270 --> 00:06:11,280
+to say two words on this in a second
+ 
+
+325
+00:06:11,280 --> 00:06:13,510
+to say two words on this in a second
+before we call you up so step up already
+
+326
+00:06:13,510 --> 00:06:13,520
+before we call you up so step up already
+ 
+
+327
+00:06:13,520 --> 00:06:14,950
+before we call you up so step up already
+because we don't have a lot of Just come
+
+328
+00:06:14,950 --> 00:06:14,960
+because we don't have a lot of Just come
+ 
+
+329
+00:06:14,960 --> 00:06:16,790
+because we don't have a lot of Just come
+here. Stop changing your presentation
+
+330
+00:06:16,790 --> 00:06:16,800
+here. Stop changing your presentation
+ 
+
+331
+00:06:16,800 --> 00:06:20,309
+here. Stop changing your presentation
+last minute. Okay. Logged in. The
+
+332
+00:06:20,309 --> 00:06:20,319
+last minute. Okay. Logged in. The
+ 
+
+333
+00:06:20,319 --> 00:06:23,350
+last minute. Okay. Logged in. The
+browser is acting under your identity.
+
+334
+00:06:23,350 --> 00:06:23,360
+browser is acting under your identity.
+ 
+
+335
+00:06:23,360 --> 00:06:27,270
+browser is acting under your identity.
+Right. Okay. And third is the browser
+
+336
+00:06:27,270 --> 00:06:27,280
+Right. Okay. And third is the browser
+ 
+
+337
+00:06:27,280 --> 00:06:29,670
+Right. Okay. And third is the browser
+security model. Think again. We need to
+
+338
+00:06:29,670 --> 00:06:29,680
+security model. Think again. We need to
+ 
+
+339
+00:06:29,680 --> 00:06:33,270
+security model. Think again. We need to
+do better as an industry. And with that,
+
+340
+00:06:33,270 --> 00:06:33,280
+do better as an industry. And with that,
+ 
+
+341
+00:06:33,280 --> 00:06:35,909
+do better as an industry. And with that,
+this is Zenity Labs. This is their link.
+
+342
+00:06:35,909 --> 00:06:35,919
+this is Zenity Labs. This is their link.
+ 
+
+343
+00:06:35,919 --> 00:06:38,710
+this is Zenity Labs. This is their link.
+You can look at what they do. These uh
+
+344
+00:06:38,710 --> 00:06:38,720
+You can look at what they do. These uh
+ 
+
+345
+00:06:38,720 --> 00:06:40,550
+You can look at what they do. These uh
+mother somethings compete with me,
+
+346
+00:06:40,550 --> 00:06:40,560
+mother somethings compete with me,
+ 
+
+347
+00:06:40,560 --> 00:06:42,309
+mother somethings compete with me,
+although not in exactly the same things.
+
+348
+00:06:42,309 --> 00:06:42,319
+although not in exactly the same things.
+ 
+
+349
+00:06:42,319 --> 00:06:44,309
+although not in exactly the same things.
+So don't like them too much.
+
+350
+00:06:44,309 --> 00:06:44,319
+So don't like them too much.
+ 
+
+351
+00:06:44,319 --> 00:06:46,150
+So don't like them too much.
+But they're truly awesome people. They
+
+352
+00:06:46,150 --> 00:06:46,160
+But they're truly awesome people. They
+ 
+
+353
+00:06:46,160 --> 00:06:47,990
+But they're truly awesome people. They
+constantly release good research and
+
+354
+00:06:47,990 --> 00:06:48,000
+constantly release good research and
+ 
+
+355
+00:06:48,000 --> 00:06:49,350
+constantly release good research and
+they were the first ones to actually do
+
+356
+00:06:49,350 --> 00:06:49,360
+they were the first ones to actually do
+ 
+
+357
+00:06:49,360 --> 00:06:52,390
+they were the first ones to actually do
+a zero-click attack in this space and it
+
+358
+00:06:52,390 --> 00:06:52,400
+a zero-click attack in this space and it
+ 
+
+359
+00:06:52,400 --> 00:06:53,909
+a zero-click attack in this space and it
+was a real one, not one that marketing
+
+360
+00:06:53,909 --> 00:06:53,919
+was a real one, not one that marketing
+ 
+
+361
+00:06:53,919 --> 00:06:57,029
+was a real one, not one that marketing
+claimed was zero click. So everybody, I
+
+362
+00:06:57,029 --> 00:06:57,039
+claimed was zero click. So everybody, I
+ 
+
+363
+00:06:57,039 --> 00:06:59,029
+claimed was zero click. So everybody, I
+apolog I apologize to them for my uh
+
+364
+00:06:59,029 --> 00:06:59,039
+apolog I apologize to them for my uh
+ 
+
+365
+00:06:59,039 --> 00:07:00,469
+apolog I apologize to them for my uh
+PowerPoint karaoke of this presentation,
+
+366
+00:07:00,469 --> 00:07:00,479
+PowerPoint karaoke of this presentation,
+ 
+
+367
+00:07:00,479 --> 00:07:05,000
+PowerPoint karaoke of this presentation,
+but let's give Zenity a hand.
+

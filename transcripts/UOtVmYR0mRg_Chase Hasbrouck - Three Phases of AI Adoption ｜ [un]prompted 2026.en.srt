@@ -1,0 +1,5995 @@
+1
+00:00:00,000 --> 00:00:05,269
+
+Over
+
+2
+00:00:05,269 --> 00:00:05,279
+
+ 
+
+3
+00:00:05,279 --> 00:00:06,070
+
+to you, Chase.
+
+4
+00:00:06,070 --> 00:00:06,080
+to you, Chase.
+ 
+
+5
+00:00:06,080 --> 00:00:07,909
+to you, Chase.
+>> Hey, good morning everybody. I'm uh
+
+6
+00:00:07,909 --> 00:00:07,919
+>> Hey, good morning everybody. I'm uh
+ 
+
+7
+00:00:07,919 --> 00:00:09,589
+>> Hey, good morning everybody. I'm uh
+Lieutenant Colonel Chase Hazbrook from
+
+8
+00:00:09,589 --> 00:00:09,599
+Lieutenant Colonel Chase Hazbrook from
+ 
+
+9
+00:00:09,599 --> 00:00:11,830
+Lieutenant Colonel Chase Hazbrook from
+US Army Cyber Command. Um going to talk
+
+10
+00:00:11,830 --> 00:00:11,840
+US Army Cyber Command. Um going to talk
+ 
+
+11
+00:00:11,840 --> 00:00:14,070
+US Army Cyber Command. Um going to talk
+to you today about three phases of
+
+12
+00:00:14,070 --> 00:00:14,080
+to you today about three phases of
+ 
+
+13
+00:00:14,080 --> 00:00:16,550
+to you today about three phases of
+enterprise AI adoption or the subtitle
+
+14
+00:00:16,550 --> 00:00:16,560
+enterprise AI adoption or the subtitle
+ 
+
+15
+00:00:16,560 --> 00:00:18,310
+enterprise AI adoption or the subtitle
+which I should have made the main title
+
+16
+00:00:18,310 --> 00:00:18,320
+which I should have made the main title
+ 
+
+17
+00:00:18,320 --> 00:00:20,870
+which I should have made the main title
+which is you know how I for two years
+
+18
+00:00:20,870 --> 00:00:20,880
+which is you know how I for two years
+ 
+
+19
+00:00:20,880 --> 00:00:22,870
+which is you know how I for two years
+tried to drag government cyber security
+
+20
+00:00:22,870 --> 00:00:22,880
+tried to drag government cyber security
+ 
+
+21
+00:00:22,880 --> 00:00:25,269
+tried to drag government cyber security
+personnel into using chat bots and
+
+22
+00:00:25,269 --> 00:00:25,279
+personnel into using chat bots and
+ 
+
+23
+00:00:25,279 --> 00:00:27,509
+personnel into using chat bots and
+largely failed. So we'll talk about that
+
+24
+00:00:27,509 --> 00:00:27,519
+largely failed. So we'll talk about that
+ 
+
+25
+00:00:27,519 --> 00:00:29,269
+largely failed. So we'll talk about that
+today.
+
+26
+00:00:29,269 --> 00:00:29,279
+today.
+ 
+
+27
+00:00:29,279 --> 00:00:32,790
+today.
+Uh so disclaimer right up front. Um I'm
+
+28
+00:00:32,790 --> 00:00:32,800
+Uh so disclaimer right up front. Um I'm
+ 
+
+29
+00:00:32,800 --> 00:00:35,190
+Uh so disclaimer right up front. Um I'm
+here on my own personal dime. The views
+
+30
+00:00:35,190 --> 00:00:35,200
+here on my own personal dime. The views
+ 
+
+31
+00:00:35,200 --> 00:00:36,870
+here on my own personal dime. The views
+expressed in this presentation are my
+
+32
+00:00:36,870 --> 00:00:36,880
+expressed in this presentation are my
+ 
+
+33
+00:00:36,880 --> 00:00:39,110
+expressed in this presentation are my
+own personal observations. Uh they do
+
+34
+00:00:39,110 --> 00:00:39,120
+own personal observations. Uh they do
+ 
+
+35
+00:00:39,120 --> 00:00:41,430
+own personal observations. Uh they do
+not represent any official positions of
+
+36
+00:00:41,430 --> 00:00:41,440
+not represent any official positions of
+ 
+
+37
+00:00:41,440 --> 00:00:43,750
+not represent any official positions of
+the US Army, Army Cyber Command or the
+
+38
+00:00:43,750 --> 00:00:43,760
+the US Army, Army Cyber Command or the
+ 
+
+39
+00:00:43,760 --> 00:00:46,310
+the US Army, Army Cyber Command or the
+Department of War. So I wrote this
+
+40
+00:00:46,310 --> 00:00:46,320
+Department of War. So I wrote this
+ 
+
+41
+00:00:46,320 --> 00:00:48,310
+Department of War. So I wrote this
+presentation and turned it in uh long
+
+42
+00:00:48,310 --> 00:00:48,320
+presentation and turned it in uh long
+ 
+
+43
+00:00:48,320 --> 00:00:51,510
+presentation and turned it in uh long
+before the events of last week. Uh so
+
+44
+00:00:51,510 --> 00:00:51,520
+before the events of last week. Uh so
+ 
+
+45
+00:00:51,520 --> 00:00:55,350
+before the events of last week. Uh so
+please please um I have no special
+
+46
+00:00:55,350 --> 00:00:55,360
+please please um I have no special
+ 
+
+47
+00:00:55,360 --> 00:00:58,150
+please please um I have no special
+insight or understanding into the events
+
+48
+00:00:58,150 --> 00:00:58,160
+insight or understanding into the events
+ 
+
+49
+00:00:58,160 --> 00:01:00,150
+insight or understanding into the events
+of last week. If you want to use your 30
+
+50
+00:01:00,150 --> 00:01:00,160
+of last week. If you want to use your 30
+ 
+
+51
+00:01:00,160 --> 00:01:01,910
+of last week. If you want to use your 30
+seconds to ask me a question on the
+
+52
+00:01:01,910 --> 00:01:01,920
+seconds to ask me a question on the
+ 
+
+53
+00:01:01,920 --> 00:01:03,830
+seconds to ask me a question on the
+events of last week. Uh I will give you
+
+54
+00:01:03,830 --> 00:01:03,840
+events of last week. Uh I will give you
+ 
+
+55
+00:01:03,840 --> 00:01:06,469
+events of last week. Uh I will give you
+an answer uh that may not be to your
+
+56
+00:01:06,469 --> 00:01:06,479
+an answer uh that may not be to your
+ 
+
+57
+00:01:06,479 --> 00:01:08,149
+an answer uh that may not be to your
+liking. So if you want to have a better
+
+58
+00:01:08,149 --> 00:01:08,159
+liking. So if you want to have a better
+ 
+
+59
+00:01:08,159 --> 00:01:09,429
+liking. So if you want to have a better
+discussion on that topic, maybe come
+
+60
+00:01:09,429 --> 00:01:09,439
+discussion on that topic, maybe come
+ 
+
+61
+00:01:09,439 --> 00:01:10,710
+discussion on that topic, maybe come
+find me after and we can talk about it
+
+62
+00:01:10,710 --> 00:01:10,720
+find me after and we can talk about it
+ 
+
+63
+00:01:10,720 --> 00:01:13,429
+find me after and we can talk about it
+after. Okay.
+
+64
+00:01:13,429 --> 00:01:13,439
+after. Okay.
+ 
+
+65
+00:01:13,439 --> 00:01:15,429
+after. Okay.
+All right. So who's this guy who's
+
+66
+00:01:15,429 --> 00:01:15,439
+All right. So who's this guy who's
+ 
+
+67
+00:01:15,439 --> 00:01:16,710
+All right. So who's this guy who's
+standing in front of you? Why should you
+
+68
+00:01:16,710 --> 00:01:16,720
+standing in front of you? Why should you
+ 
+
+69
+00:01:16,720 --> 00:01:18,469
+standing in front of you? Why should you
+listen to him today? I find this is
+
+70
+00:01:18,469 --> 00:01:18,479
+listen to him today? I find this is
+ 
+
+71
+00:01:18,479 --> 00:01:20,230
+listen to him today? I find this is
+relevant context to share with people.
+
+72
+00:01:20,230 --> 00:01:20,240
+relevant context to share with people.
+ 
+
+73
+00:01:20,240 --> 00:01:23,510
+relevant context to share with people.
+Um, so I joined the army 2006, did a
+
+74
+00:01:23,510 --> 00:01:23,520
+Um, so I joined the army 2006, did a
+ 
+
+75
+00:01:23,520 --> 00:01:25,510
+Um, so I joined the army 2006, did a
+bunch of IT management stuff. I went to
+
+76
+00:01:25,510 --> 00:01:25,520
+bunch of IT management stuff. I went to
+ 
+
+77
+00:01:25,520 --> 00:01:28,789
+bunch of IT management stuff. I went to
+Iraq and uh helped set up a bunch of uh
+
+78
+00:01:28,789 --> 00:01:28,799
+Iraq and uh helped set up a bunch of uh
+ 
+
+79
+00:01:28,799 --> 00:01:31,270
+Iraq and uh helped set up a bunch of uh
+network management, IT management, uh,
+
+80
+00:01:31,270 --> 00:01:31,280
+network management, IT management, uh,
+ 
+
+81
+00:01:31,280 --> 00:01:32,710
+network management, IT management, uh,
+calling people when satellite
+
+82
+00:01:32,710 --> 00:01:32,720
+calling people when satellite
+ 
+
+83
+00:01:32,720 --> 00:01:33,990
+calling people when satellite
+communication systems are down, that
+
+84
+00:01:33,990 --> 00:01:34,000
+communication systems are down, that
+ 
+
+85
+00:01:34,000 --> 00:01:36,710
+communication systems are down, that
+kind of thing. Um, was going to get out
+
+86
+00:01:36,710 --> 00:01:36,720
+kind of thing. Um, was going to get out
+ 
+
+87
+00:01:36,720 --> 00:01:38,870
+kind of thing. Um, was going to get out
+and then, oh hey, the army is deciding
+
+88
+00:01:38,870 --> 00:01:38,880
+and then, oh hey, the army is deciding
+ 
+
+89
+00:01:38,880 --> 00:01:41,910
+and then, oh hey, the army is deciding
+to stand up cyber as a actual
+
+90
+00:01:41,910 --> 00:01:41,920
+to stand up cyber as a actual
+ 
+
+91
+00:01:41,920 --> 00:01:44,789
+to stand up cyber as a actual
+operational branch. This is this sounds
+
+92
+00:01:44,789 --> 00:01:44,799
+operational branch. This is this sounds
+ 
+
+93
+00:01:44,799 --> 00:01:46,230
+operational branch. This is this sounds
+interesting and relevant. So I
+
+94
+00:01:46,230 --> 00:01:46,240
+interesting and relevant. So I
+ 
+
+95
+00:01:46,240 --> 00:01:49,910
+interesting and relevant. So I
+interviewed and I joined in 2014 and
+
+96
+00:01:49,910 --> 00:01:49,920
+interviewed and I joined in 2014 and
+ 
+
+97
+00:01:49,920 --> 00:01:52,789
+interviewed and I joined in 2014 and
+essentially helped stand up army's cyber
+
+98
+00:01:52,789 --> 00:01:52,799
+essentially helped stand up army's cyber
+ 
+
+99
+00:01:52,799 --> 00:01:55,190
+essentially helped stand up army's cyber
+branch from the ground up. We can talk
+
+100
+00:01:55,190 --> 00:01:55,200
+branch from the ground up. We can talk
+ 
+
+101
+00:01:55,200 --> 00:01:56,230
+branch from the ground up. We can talk
+about that later if you want to talk
+
+102
+00:01:56,230 --> 00:01:56,240
+about that later if you want to talk
+ 
+
+103
+00:01:56,240 --> 00:01:57,109
+about that later if you want to talk
+about that. That's not what this
+
+104
+00:01:57,109 --> 00:01:57,119
+about that. That's not what this
+ 
+
+105
+00:01:57,119 --> 00:01:59,590
+about that. That's not what this
+presentation is about. Um did a lot of
+
+106
+00:01:59,590 --> 00:01:59,600
+presentation is about. Um did a lot of
+ 
+
+107
+00:01:59,600 --> 00:02:01,510
+presentation is about. Um did a lot of
+things there mostly tactical level
+
+108
+00:02:01,510 --> 00:02:01,520
+things there mostly tactical level
+ 
+
+109
+00:02:01,520 --> 00:02:03,670
+things there mostly tactical level
+incident response going up to enterprise
+
+110
+00:02:03,670 --> 00:02:03,680
+incident response going up to enterprise
+ 
+
+111
+00:02:03,680 --> 00:02:05,990
+incident response going up to enterprise
+level instant response. Um kind of
+
+112
+00:02:05,990 --> 00:02:06,000
+level instant response. Um kind of
+ 
+
+113
+00:02:06,000 --> 00:02:08,389
+level instant response. Um kind of
+culminated where I ran the army's uh
+
+114
+00:02:08,389 --> 00:02:08,399
+culminated where I ran the army's uh
+ 
+
+115
+00:02:08,399 --> 00:02:11,190
+culminated where I ran the army's uh
+Solar Winds Orion instant response and
+
+116
+00:02:11,190 --> 00:02:11,200
+Solar Winds Orion instant response and
+ 
+
+117
+00:02:11,200 --> 00:02:14,150
+Solar Winds Orion instant response and
+run has kind of a vague context. So,
+
+118
+00:02:14,150 --> 00:02:14,160
+run has kind of a vague context. So,
+ 
+
+119
+00:02:14,160 --> 00:02:16,390
+run has kind of a vague context. So,
+let's just leave it at ran andor
+
+120
+00:02:16,390 --> 00:02:16,400
+let's just leave it at ran andor
+ 
+
+121
+00:02:16,400 --> 00:02:18,869
+let's just leave it at ran andor
+assisted andor did technical direction
+
+122
+00:02:18,869 --> 00:02:18,879
+assisted andor did technical direction
+ 
+
+123
+00:02:18,879 --> 00:02:21,830
+assisted andor did technical direction
+andor briefed a lot of people andor
+
+124
+00:02:21,830 --> 00:02:21,840
+andor briefed a lot of people andor
+ 
+
+125
+00:02:21,840 --> 00:02:23,589
+andor briefed a lot of people andor
+talked to a lot of senior
+
+126
+00:02:23,589 --> 00:02:23,599
+talked to a lot of senior
+ 
+
+127
+00:02:23,599 --> 00:02:25,110
+talked to a lot of senior
+representatives about what did and did
+
+128
+00:02:25,110 --> 00:02:25,120
+representatives about what did and did
+ 
+
+129
+00:02:25,120 --> 00:02:27,830
+representatives about what did and did
+not happen. Um, moved on from that,
+
+130
+00:02:27,830 --> 00:02:27,840
+not happen. Um, moved on from that,
+ 
+
+131
+00:02:27,840 --> 00:02:30,229
+not happen. Um, moved on from that,
+wanted to expand and do other things.
+
+132
+00:02:30,229 --> 00:02:30,239
+wanted to expand and do other things.
+ 
+
+133
+00:02:30,239 --> 00:02:33,270
+wanted to expand and do other things.
+Um, the army very graciously allowed me
+
+134
+00:02:33,270 --> 00:02:33,280
+Um, the army very graciously allowed me
+ 
+
+135
+00:02:33,280 --> 00:02:36,150
+Um, the army very graciously allowed me
+to spend some time doing other stuff. So
+
+136
+00:02:36,150 --> 00:02:36,160
+to spend some time doing other stuff. So
+ 
+
+137
+00:02:36,160 --> 00:02:38,949
+to spend some time doing other stuff. So
+I spent three months at DARPA as a DARPA
+
+138
+00:02:38,949 --> 00:02:38,959
+I spent three months at DARPA as a DARPA
+ 
+
+139
+00:02:38,959 --> 00:02:40,630
+I spent three months at DARPA as a DARPA
+fellow as part of their service chiefs
+
+140
+00:02:40,630 --> 00:02:40,640
+fellow as part of their service chiefs
+ 
+
+141
+00:02:40,640 --> 00:02:43,830
+fellow as part of their service chiefs
+fellows program in 2022 where I had a
+
+142
+00:02:43,830 --> 00:02:43,840
+fellows program in 2022 where I had a
+ 
+
+143
+00:02:43,840 --> 00:02:46,229
+fellows program in 2022 where I had a
+very very small part in the AI cyber
+
+144
+00:02:46,229 --> 00:02:46,239
+very very small part in the AI cyber
+ 
+
+145
+00:02:46,239 --> 00:02:48,229
+very very small part in the AI cyber
+challenge and by means by small part I
+
+146
+00:02:48,229 --> 00:02:48,239
+challenge and by means by small part I
+ 
+
+147
+00:02:48,239 --> 00:02:49,750
+challenge and by means by small part I
+mean I got coffee for the people who
+
+148
+00:02:49,750 --> 00:02:49,760
+mean I got coffee for the people who
+ 
+
+149
+00:02:49,760 --> 00:02:51,750
+mean I got coffee for the people who
+doing the actual work while uh they did
+
+150
+00:02:51,750 --> 00:02:51,760
+doing the actual work while uh they did
+ 
+
+151
+00:02:51,760 --> 00:02:53,910
+doing the actual work while uh they did
+most of the work. Um I also did a little
+
+152
+00:02:53,910 --> 00:02:53,920
+most of the work. Um I also did a little
+ 
+
+153
+00:02:53,920 --> 00:02:56,390
+most of the work. Um I also did a little
+bit of consulting with task force Lima
+
+154
+00:02:56,390 --> 00:02:56,400
+bit of consulting with task force Lima
+ 
+
+155
+00:02:56,400 --> 00:02:58,070
+bit of consulting with task force Lima
+which if those of you who don't know was
+
+156
+00:02:58,070 --> 00:02:58,080
+which if those of you who don't know was
+ 
+
+157
+00:02:58,080 --> 00:03:00,229
+which if those of you who don't know was
+CDAO's initial attempt to get their
+
+158
+00:03:00,229 --> 00:03:00,239
+CDAO's initial attempt to get their
+ 
+
+159
+00:03:00,239 --> 00:03:01,830
+CDAO's initial attempt to get their
+hands around what is this thing called
+
+160
+00:03:01,830 --> 00:03:01,840
+hands around what is this thing called
+ 
+
+161
+00:03:01,840 --> 00:03:03,509
+hands around what is this thing called
+chat GPT and why does everybody care
+
+162
+00:03:03,509 --> 00:03:03,519
+chat GPT and why does everybody care
+ 
+
+163
+00:03:03,519 --> 00:03:06,309
+chat GPT and why does everybody care
+about it? Um, and then from there I came
+
+164
+00:03:06,309 --> 00:03:06,319
+about it? Um, and then from there I came
+ 
+
+165
+00:03:06,319 --> 00:03:08,949
+about it? Um, and then from there I came
+back to Army Cyber and I'm kind of in a
+
+166
+00:03:08,949 --> 00:03:08,959
+back to Army Cyber and I'm kind of in a
+ 
+
+167
+00:03:08,959 --> 00:03:11,190
+back to Army Cyber and I'm kind of in a
+dual role now. My day job I run
+
+168
+00:03:11,190 --> 00:03:11,200
+dual role now. My day job I run
+ 
+
+169
+00:03:11,200 --> 00:03:12,869
+dual role now. My day job I run
+forensics and malware analysis for the
+
+170
+00:03:12,869 --> 00:03:12,879
+forensics and malware analysis for the
+ 
+
+171
+00:03:12,879 --> 00:03:14,390
+forensics and malware analysis for the
+Army. That's my role at Army Cyber
+
+172
+00:03:14,390 --> 00:03:14,400
+Army. That's my role at Army Cyber
+ 
+
+173
+00:03:14,400 --> 00:03:16,790
+Army. That's my role at Army Cyber
+Command. Um, but I also continue to work
+
+174
+00:03:16,790 --> 00:03:16,800
+Command. Um, but I also continue to work
+ 
+
+175
+00:03:16,800 --> 00:03:19,589
+Command. Um, but I also continue to work
+with DARPA and I advise on emerging
+
+176
+00:03:19,589 --> 00:03:19,599
+with DARPA and I advise on emerging
+ 
+
+177
+00:03:19,599 --> 00:03:21,509
+with DARPA and I advise on emerging
+technologies and things and periodically
+
+178
+00:03:21,509 --> 00:03:21,519
+technologies and things and periodically
+ 
+
+179
+00:03:21,519 --> 00:03:24,470
+technologies and things and periodically
+I run uh workshops and other discussion
+
+180
+00:03:24,470 --> 00:03:24,480
+I run uh workshops and other discussion
+ 
+
+181
+00:03:24,480 --> 00:03:27,110
+I run uh workshops and other discussion
+forums about emerging tech. Uh so last
+
+182
+00:03:27,110 --> 00:03:27,120
+forums about emerging tech. Uh so last
+ 
+
+183
+00:03:27,120 --> 00:03:29,270
+forums about emerging tech. Uh so last
+year we did some stuff looking at
+
+184
+00:03:29,270 --> 00:03:29,280
+year we did some stuff looking at
+ 
+
+185
+00:03:29,280 --> 00:03:32,710
+year we did some stuff looking at
+digital identity and the LLM scaling and
+
+186
+00:03:32,710 --> 00:03:32,720
+digital identity and the LLM scaling and
+ 
+
+187
+00:03:32,720 --> 00:03:34,949
+digital identity and the LLM scaling and
+then this year we are specifically doing
+
+188
+00:03:34,949 --> 00:03:34,959
+then this year we are specifically doing
+ 
+
+189
+00:03:34,959 --> 00:03:35,990
+then this year we are specifically doing
+something very similar to this
+
+190
+00:03:35,990 --> 00:03:36,000
+something very similar to this
+ 
+
+191
+00:03:36,000 --> 00:03:37,750
+something very similar to this
+conference where we're looking at AI
+
+192
+00:03:37,750 --> 00:03:37,760
+conference where we're looking at AI
+ 
+
+193
+00:03:37,760 --> 00:03:40,789
+conference where we're looking at AI
+security.
+
+194
+00:03:40,789 --> 00:03:40,799
+
+ 
+
+195
+00:03:40,799 --> 00:03:43,830
+
+Okay. So, so what? So, yeah, I could
+
+196
+00:03:43,830 --> 00:03:43,840
+Okay. So, so what? So, yeah, I could
+ 
+
+197
+00:03:43,840 --> 00:03:45,990
+Okay. So, so what? So, yeah, I could
+come up here. I could demo the new MCP
+
+198
+00:03:45,990 --> 00:03:46,000
+come up here. I could demo the new MCP
+ 
+
+199
+00:03:46,000 --> 00:03:47,670
+come up here. I could demo the new MCP
+server for GEDra and the 10 different
+
+200
+00:03:47,670 --> 00:03:47,680
+server for GEDra and the 10 different
+ 
+
+201
+00:03:47,680 --> 00:03:49,509
+server for GEDra and the 10 different
+forks of it and we could have a really
+
+202
+00:03:49,509 --> 00:03:49,519
+forks of it and we could have a really
+ 
+
+203
+00:03:49,519 --> 00:03:52,229
+forks of it and we could have a really
+good and interesting talk about uh what
+
+204
+00:03:52,229 --> 00:03:52,239
+good and interesting talk about uh what
+ 
+
+205
+00:03:52,239 --> 00:03:54,630
+good and interesting talk about uh what
+it means when you have uh unlimited
+
+206
+00:03:54,630 --> 00:03:54,640
+it means when you have uh unlimited
+ 
+
+207
+00:03:54,640 --> 00:03:56,550
+it means when you have uh unlimited
+tokens in compute and you can throw them
+
+208
+00:03:56,550 --> 00:03:56,560
+tokens in compute and you can throw them
+ 
+
+209
+00:03:56,560 --> 00:03:58,390
+tokens in compute and you can throw them
+as a reverse engineering workflow
+
+210
+00:03:58,390 --> 00:03:58,400
+as a reverse engineering workflow
+ 
+
+211
+00:03:58,400 --> 00:03:59,910
+as a reverse engineering workflow
+against a bunch of stuff. That would be
+
+212
+00:03:59,910 --> 00:03:59,920
+against a bunch of stuff. That would be
+ 
+
+213
+00:03:59,920 --> 00:04:02,630
+against a bunch of stuff. That would be
+a really fun talk. Um, unfortunately, I
+
+214
+00:04:02,630 --> 00:04:02,640
+a really fun talk. Um, unfortunately, I
+ 
+
+215
+00:04:02,640 --> 00:04:04,390
+a really fun talk. Um, unfortunately, I
+can't give you that talk today because a
+
+216
+00:04:04,390 --> 00:04:04,400
+can't give you that talk today because a
+ 
+
+217
+00:04:04,400 --> 00:04:06,550
+can't give you that talk today because a
+lot of what we've learned from that, I'm
+
+218
+00:04:06,550 --> 00:04:06,560
+lot of what we've learned from that, I'm
+ 
+
+219
+00:04:06,560 --> 00:04:08,149
+lot of what we've learned from that, I'm
+not certain whether I'm even allowed to
+
+220
+00:04:08,149 --> 00:04:08,159
+not certain whether I'm even allowed to
+ 
+
+221
+00:04:08,159 --> 00:04:10,470
+not certain whether I'm even allowed to
+tell you about it. So instead, I'm just
+
+222
+00:04:10,470 --> 00:04:10,480
+tell you about it. So instead, I'm just
+ 
+
+223
+00:04:10,480 --> 00:04:13,030
+tell you about it. So instead, I'm just
+going to talk to you kind of my past few
+
+224
+00:04:13,030 --> 00:04:13,040
+going to talk to you kind of my past few
+ 
+
+225
+00:04:13,040 --> 00:04:15,509
+going to talk to you kind of my past few
+years about what I've done, the pain
+
+226
+00:04:15,509 --> 00:04:15,519
+years about what I've done, the pain
+ 
+
+227
+00:04:15,519 --> 00:04:18,789
+years about what I've done, the pain
+points I've had in trying to get both my
+
+228
+00:04:18,789 --> 00:04:18,799
+points I've had in trying to get both my
+ 
+
+229
+00:04:18,799 --> 00:04:22,150
+points I've had in trying to get both my
+internal technical team uh adopting
+
+230
+00:04:22,150 --> 00:04:22,160
+internal technical team uh adopting
+ 
+
+231
+00:04:22,160 --> 00:04:25,110
+internal technical team uh adopting
+various uh AI chatbot agents and things
+
+232
+00:04:25,110 --> 00:04:25,120
+various uh AI chatbot agents and things
+ 
+
+233
+00:04:25,120 --> 00:04:27,430
+various uh AI chatbot agents and things
+and also broadly because I was kind of
+
+234
+00:04:27,430 --> 00:04:27,440
+and also broadly because I was kind of
+ 
+
+235
+00:04:27,440 --> 00:04:29,270
+and also broadly because I was kind of
+like the power user who got drafted
+
+236
+00:04:29,270 --> 00:04:29,280
+like the power user who got drafted
+ 
+
+237
+00:04:29,280 --> 00:04:31,030
+like the power user who got drafted
+into, hey, you're really smart at this
+
+238
+00:04:31,030 --> 00:04:31,040
+into, hey, you're really smart at this
+ 
+
+239
+00:04:31,040 --> 00:04:32,710
+into, hey, you're really smart at this
+stuff, so why don't you come and like
+
+240
+00:04:32,710 --> 00:04:32,720
+stuff, so why don't you come and like
+ 
+
+241
+00:04:32,720 --> 00:04:34,150
+stuff, so why don't you come and like
+help on the enterprise side with
+
+242
+00:04:34,150 --> 00:04:34,160
+help on the enterprise side with
+ 
+
+243
+00:04:34,160 --> 00:04:35,830
+help on the enterprise side with
+enterprise adoption because we've rolled
+
+244
+00:04:35,830 --> 00:04:35,840
+enterprise adoption because we've rolled
+ 
+
+245
+00:04:35,840 --> 00:04:37,510
+enterprise adoption because we've rolled
+out this new tool and nobody's using it.
+
+246
+00:04:37,510 --> 00:04:37,520
+out this new tool and nobody's using it.
+ 
+
+247
+00:04:37,520 --> 00:04:40,070
+out this new tool and nobody's using it.
+Help us. Um so I can also talk a little
+
+248
+00:04:40,070 --> 00:04:40,080
+Help us. Um so I can also talk a little
+ 
+
+249
+00:04:40,080 --> 00:04:43,270
+Help us. Um so I can also talk a little
+bit about that and uh some of the things
+
+250
+00:04:43,270 --> 00:04:43,280
+bit about that and uh some of the things
+ 
+
+251
+00:04:43,280 --> 00:04:46,230
+bit about that and uh some of the things
+we've learned um from AI adoption from
+
+252
+00:04:46,230 --> 00:04:46,240
+we've learned um from AI adoption from
+ 
+
+253
+00:04:46,240 --> 00:04:51,189
+we've learned um from AI adoption from
+the army cyber perspective.
+
+254
+00:04:51,189 --> 00:04:51,199
+
+ 
+
+255
+00:04:51,199 --> 00:04:53,270
+
+All right. So but before I get started
+
+256
+00:04:53,270 --> 00:04:53,280
+All right. So but before I get started
+ 
+
+257
+00:04:53,280 --> 00:04:55,590
+All right. So but before I get started
+let me set the stage a little bit. So
+
+258
+00:04:55,590 --> 00:04:55,600
+let me set the stage a little bit. So
+ 
+
+259
+00:04:55,600 --> 00:04:59,990
+let me set the stage a little bit. So
+the army is big really really big very
+
+260
+00:04:59,990 --> 00:05:00,000
+the army is big really really big very
+ 
+
+261
+00:05:00,000 --> 00:05:02,870
+the army is big really really big very
+very large. Um we have over a million
+
+262
+00:05:02,870 --> 00:05:02,880
+very large. Um we have over a million
+ 
+
+263
+00:05:02,880 --> 00:05:06,469
+very large. Um we have over a million
+people when you count uh active duty
+
+264
+00:05:06,469 --> 00:05:06,479
+people when you count uh active duty
+ 
+
+265
+00:05:06,479 --> 00:05:08,550
+people when you count uh active duty
+uniformed as well as national guard and
+
+266
+00:05:08,550 --> 00:05:08,560
+uniformed as well as national guard and
+ 
+
+267
+00:05:08,560 --> 00:05:10,710
+uniformed as well as national guard and
+army reserve as well as all of the
+
+268
+00:05:10,710 --> 00:05:10,720
+army reserve as well as all of the
+ 
+
+269
+00:05:10,720 --> 00:05:13,350
+army reserve as well as all of the
+civilians. We are comfortably over a
+
+270
+00:05:13,350 --> 00:05:13,360
+civilians. We are comfortably over a
+ 
+
+271
+00:05:13,360 --> 00:05:16,230
+civilians. We are comfortably over a
+million. And also those guard and
+
+272
+00:05:16,230 --> 00:05:16,240
+million. And also those guard and
+ 
+
+273
+00:05:16,240 --> 00:05:18,390
+million. And also those guard and
+reserve people are also part- timerrs.
+
+274
+00:05:18,390 --> 00:05:18,400
+reserve people are also part- timerrs.
+ 
+
+275
+00:05:18,400 --> 00:05:20,870
+reserve people are also part- timerrs.
+So if you work in an enterprise where a
+
+276
+00:05:20,870 --> 00:05:20,880
+So if you work in an enterprise where a
+ 
+
+277
+00:05:20,880 --> 00:05:22,710
+So if you work in an enterprise where a
+third of your million plus workforce is
+
+278
+00:05:22,710 --> 00:05:22,720
+third of your million plus workforce is
+ 
+
+279
+00:05:22,720 --> 00:05:25,029
+third of your million plus workforce is
+part- timerrs and doing security
+
+280
+00:05:25,029 --> 00:05:25,039
+part- timerrs and doing security
+ 
+
+281
+00:05:25,039 --> 00:05:26,230
+part- timerrs and doing security
+controls of that, please come talk to
+
+282
+00:05:26,230 --> 00:05:26,240
+controls of that, please come talk to
+ 
+
+283
+00:05:26,240 --> 00:05:27,350
+controls of that, please come talk to
+me. I'd be interested to know how you're
+
+284
+00:05:27,350 --> 00:05:27,360
+me. I'd be interested to know how you're
+ 
+
+285
+00:05:27,360 --> 00:05:30,310
+me. I'd be interested to know how you're
+handling that challenge. Um second point
+
+286
+00:05:30,310 --> 00:05:30,320
+handling that challenge. Um second point
+ 
+
+287
+00:05:30,320 --> 00:05:32,790
+handling that challenge. Um second point
+this is a extremely specialized
+
+288
+00:05:32,790 --> 00:05:32,800
+this is a extremely specialized
+ 
+
+289
+00:05:32,800 --> 00:05:36,230
+this is a extremely specialized
+workforce. We we don't have members of
+
+290
+00:05:36,230 --> 00:05:36,240
+workforce. We we don't have members of
+ 
+
+291
+00:05:36,240 --> 00:05:39,830
+workforce. We we don't have members of
+technical staff, right? We we have lots
+
+292
+00:05:39,830 --> 00:05:39,840
+technical staff, right? We we have lots
+ 
+
+293
+00:05:39,840 --> 00:05:41,830
+technical staff, right? We we have lots
+and lots of people who are drafted into
+
+294
+00:05:41,830 --> 00:05:41,840
+and lots of people who are drafted into
+ 
+
+295
+00:05:41,840 --> 00:05:45,830
+and lots of people who are drafted into
+very specialized discrete roles where
+
+296
+00:05:45,830 --> 00:05:45,840
+very specialized discrete roles where
+ 
+
+297
+00:05:45,840 --> 00:05:47,749
+very specialized discrete roles where
+everything is drafted up according to a
+
+298
+00:05:47,749 --> 00:05:47,759
+everything is drafted up according to a
+ 
+
+299
+00:05:47,759 --> 00:05:49,350
+everything is drafted up according to a
+plan and everybody's expected to follow
+
+300
+00:05:49,350 --> 00:05:49,360
+plan and everybody's expected to follow
+ 
+
+301
+00:05:49,360 --> 00:05:51,990
+plan and everybody's expected to follow
+the plan and you will follow this
+
+302
+00:05:51,990 --> 00:05:52,000
+the plan and you will follow this
+ 
+
+303
+00:05:52,000 --> 00:05:54,070
+the plan and you will follow this
+ascending timeline of you will do this
+
+304
+00:05:54,070 --> 00:05:54,080
+ascending timeline of you will do this
+ 
+
+305
+00:05:54,080 --> 00:05:56,070
+ascending timeline of you will do this
+at this point in your career, this point
+
+306
+00:05:56,070 --> 00:05:56,080
+at this point in your career, this point
+ 
+
+307
+00:05:56,080 --> 00:05:58,870
+at this point in your career, this point
+in your career career and so on. So it's
+
+308
+00:05:58,870 --> 00:05:58,880
+in your career career and so on. So it's
+ 
+
+309
+00:05:58,880 --> 00:06:01,430
+in your career career and so on. So it's
+just very specialized and I'll talk a
+
+310
+00:06:01,430 --> 00:06:01,440
+just very specialized and I'll talk a
+ 
+
+311
+00:06:01,440 --> 00:06:03,270
+just very specialized and I'll talk a
+little more about this later about you
+
+312
+00:06:03,270 --> 00:06:03,280
+little more about this later about you
+ 
+
+313
+00:06:03,280 --> 00:06:05,830
+little more about this later about you
+know where do LLMs where does that fit
+
+314
+00:06:05,830 --> 00:06:05,840
+know where do LLMs where does that fit
+ 
+
+315
+00:06:05,840 --> 00:06:08,790
+know where do LLMs where does that fit
+in that story and then most importantly
+
+316
+00:06:08,790 --> 00:06:08,800
+in that story and then most importantly
+ 
+
+317
+00:06:08,800 --> 00:06:11,350
+in that story and then most importantly
+getting new stuff is really really hard.
+
+318
+00:06:11,350 --> 00:06:11,360
+getting new stuff is really really hard.
+ 
+
+319
+00:06:11,360 --> 00:06:15,029
+getting new stuff is really really hard.
+So in I'm going to broadly characterize
+
+320
+00:06:15,029 --> 00:06:15,039
+So in I'm going to broadly characterize
+ 
+
+321
+00:06:15,039 --> 00:06:16,790
+So in I'm going to broadly characterize
+the Silicon Valley community as in many
+
+322
+00:06:16,790 --> 00:06:16,800
+the Silicon Valley community as in many
+ 
+
+323
+00:06:16,800 --> 00:06:18,950
+the Silicon Valley community as in many
+cases you just get an API key and you
+
+324
+00:06:18,950 --> 00:06:18,960
+cases you just get an API key and you
+ 
+
+325
+00:06:18,960 --> 00:06:20,309
+cases you just get an API key and you
+spin it up and like you're good to go
+
+326
+00:06:20,309 --> 00:06:20,319
+spin it up and like you're good to go
+ 
+
+327
+00:06:20,319 --> 00:06:21,270
+spin it up and like you're good to go
+and you're using it now in your
+
+328
+00:06:21,270 --> 00:06:21,280
+and you're using it now in your
+ 
+
+329
+00:06:21,280 --> 00:06:23,749
+and you're using it now in your
+enterprise. Good go. Uh that is
+
+330
+00:06:23,749 --> 00:06:23,759
+enterprise. Good go. Uh that is
+ 
+
+331
+00:06:23,759 --> 00:06:26,230
+enterprise. Good go. Uh that is
+absolutely not how it works for us. So
+
+332
+00:06:26,230 --> 00:06:26,240
+absolutely not how it works for us. So
+ 
+
+333
+00:06:26,240 --> 00:06:27,590
+absolutely not how it works for us. So
+uh we have this thing called the
+
+334
+00:06:27,590 --> 00:06:27,600
+uh we have this thing called the
+ 
+
+335
+00:06:27,600 --> 00:06:29,909
+uh we have this thing called the
+authority to operate. Um but before the
+
+336
+00:06:29,909 --> 00:06:29,919
+authority to operate. Um but before the
+ 
+
+337
+00:06:29,919 --> 00:06:32,230
+authority to operate. Um but before the
+authority to operate is the procurement.
+
+338
+00:06:32,230 --> 00:06:32,240
+authority to operate is the procurement.
+ 
+
+339
+00:06:32,240 --> 00:06:34,790
+authority to operate is the procurement.
+So multi-year enterprise procurement
+
+340
+00:06:34,790 --> 00:06:34,800
+So multi-year enterprise procurement
+ 
+
+341
+00:06:34,800 --> 00:06:36,390
+So multi-year enterprise procurement
+cycle those of you working in large
+
+342
+00:06:36,390 --> 00:06:36,400
+cycle those of you working in large
+ 
+
+343
+00:06:36,400 --> 00:06:38,150
+cycle those of you working in large
+enterprises are very familiar with the
+
+344
+00:06:38,150 --> 00:06:38,160
+enterprises are very familiar with the
+ 
+
+345
+00:06:38,160 --> 00:06:40,390
+enterprises are very familiar with the
+multi-year enterprise procurement cycle.
+
+346
+00:06:40,390 --> 00:06:40,400
+multi-year enterprise procurement cycle.
+ 
+
+347
+00:06:40,400 --> 00:06:42,070
+multi-year enterprise procurement cycle.
+Um what we have which is a little
+
+348
+00:06:42,070 --> 00:06:42,080
+Um what we have which is a little
+ 
+
+349
+00:06:42,080 --> 00:06:44,950
+Um what we have which is a little
+different is our enterprise security
+
+350
+00:06:44,950 --> 00:06:44,960
+different is our enterprise security
+ 
+
+351
+00:06:44,960 --> 00:06:47,110
+different is our enterprise security
+workflow actually doesn't really execute
+
+352
+00:06:47,110 --> 00:06:47,120
+workflow actually doesn't really execute
+ 
+
+353
+00:06:47,120 --> 00:06:50,469
+workflow actually doesn't really execute
+till after the procurement workflow. Um
+
+354
+00:06:50,469 --> 00:06:50,479
+till after the procurement workflow. Um
+ 
+
+355
+00:06:50,479 --> 00:06:53,670
+till after the procurement workflow. Um
+and sometimes they can disagree. So we
+
+356
+00:06:53,670 --> 00:06:53,680
+and sometimes they can disagree. So we
+ 
+
+357
+00:06:53,680 --> 00:06:55,749
+and sometimes they can disagree. So we
+have definitely had security products
+
+358
+00:06:55,749 --> 00:06:55,759
+have definitely had security products
+ 
+
+359
+00:06:55,759 --> 00:06:58,550
+have definitely had security products
+where 2 years of procurement then 2
+
+360
+00:06:58,550 --> 00:06:58,560
+where 2 years of procurement then 2
+ 
+
+361
+00:06:58,560 --> 00:07:00,150
+where 2 years of procurement then 2
+years of accreditation and then after
+
+362
+00:07:00,150 --> 00:07:00,160
+years of accreditation and then after
+ 
+
+363
+00:07:00,160 --> 00:07:02,070
+years of accreditation and then after
+that everybody has changed out and the
+
+364
+00:07:02,070 --> 00:07:02,080
+that everybody has changed out and the
+ 
+
+365
+00:07:02,080 --> 00:07:03,749
+that everybody has changed out and the
+new people are like yeah we don't think
+
+366
+00:07:03,749 --> 00:07:03,759
+new people are like yeah we don't think
+ 
+
+367
+00:07:03,759 --> 00:07:05,589
+new people are like yeah we don't think
+that's safe anymore so you don't get to
+
+368
+00:07:05,589 --> 00:07:05,599
+that's safe anymore so you don't get to
+ 
+
+369
+00:07:05,599 --> 00:07:07,510
+that's safe anymore so you don't get to
+have that thing so four years down the
+
+370
+00:07:07,510 --> 00:07:07,520
+have that thing so four years down the
+ 
+
+371
+00:07:07,520 --> 00:07:10,230
+have that thing so four years down the
+drain. Just just keep that in mind. Um
+
+372
+00:07:10,230 --> 00:07:10,240
+drain. Just just keep that in mind. Um
+ 
+
+373
+00:07:10,240 --> 00:07:11,670
+drain. Just just keep that in mind. Um
+one thing I'm not going to talk about
+
+374
+00:07:11,670 --> 00:07:11,680
+one thing I'm not going to talk about
+ 
+
+375
+00:07:11,680 --> 00:07:14,710
+one thing I'm not going to talk about
+today is classification requirements. So
+
+376
+00:07:14,710 --> 00:07:14,720
+today is classification requirements. So
+ 
+
+377
+00:07:14,720 --> 00:07:16,550
+today is classification requirements. So
+all of this stuff is fractal because
+
+378
+00:07:16,550 --> 00:07:16,560
+all of this stuff is fractal because
+ 
+
+379
+00:07:16,560 --> 00:07:18,950
+all of this stuff is fractal because
+everything I'm talking about is just for
+
+380
+00:07:18,950 --> 00:07:18,960
+everything I'm talking about is just for
+ 
+
+381
+00:07:18,960 --> 00:07:22,390
+everything I'm talking about is just for
+using them on unclassified systems or
+
+382
+00:07:22,390 --> 00:07:22,400
+using them on unclassified systems or
+ 
+
+383
+00:07:22,400 --> 00:07:24,870
+using them on unclassified systems or
+unclassified uh up to what we currently
+
+384
+00:07:24,870 --> 00:07:24,880
+unclassified uh up to what we currently
+ 
+
+385
+00:07:24,880 --> 00:07:26,390
+unclassified uh up to what we currently
+call kuy which is controlled
+
+386
+00:07:26,390 --> 00:07:26,400
+call kuy which is controlled
+ 
+
+387
+00:07:26,400 --> 00:07:28,710
+call kuy which is controlled
+unclassified information which is still
+
+388
+00:07:28,710 --> 00:07:28,720
+unclassified information which is still
+ 
+
+389
+00:07:28,720 --> 00:07:31,909
+unclassified information which is still
+unclassified but sensitive. Um once you
+
+390
+00:07:31,909 --> 00:07:31,919
+unclassified but sensitive. Um once you
+ 
+
+391
+00:07:31,919 --> 00:07:34,469
+unclassified but sensitive. Um once you
+start getting into uh classification
+
+392
+00:07:34,469 --> 00:07:34,479
+start getting into uh classification
+ 
+
+393
+00:07:34,479 --> 00:07:36,710
+start getting into uh classification
+secret and above then everything
+
+394
+00:07:36,710 --> 00:07:36,720
+secret and above then everything
+ 
+
+395
+00:07:36,720 --> 00:07:39,110
+secret and above then everything
+multiplies by an order of magnitude but
+
+396
+00:07:39,110 --> 00:07:39,120
+multiplies by an order of magnitude but
+ 
+
+397
+00:07:39,120 --> 00:07:40,790
+multiplies by an order of magnitude but
+I can't even talk about what that
+
+398
+00:07:40,790 --> 00:07:40,800
+I can't even talk about what that
+ 
+
+399
+00:07:40,800 --> 00:07:43,110
+I can't even talk about what that
+entails. So just understand I am leaving
+
+400
+00:07:43,110 --> 00:07:43,120
+entails. So just understand I am leaving
+ 
+
+401
+00:07:43,120 --> 00:07:48,150
+entails. So just understand I am leaving
+classification stuff out of this today.
+
+402
+00:07:48,150 --> 00:07:48,160
+
+ 
+
+403
+00:07:48,160 --> 00:07:51,029
+
+Okay. So I will call phase one broadly
+
+404
+00:07:51,029 --> 00:07:51,039
+Okay. So I will call phase one broadly
+ 
+
+405
+00:07:51,039 --> 00:07:54,390
+Okay. So I will call phase one broadly
+the research preview stage. Um so this
+
+406
+00:07:54,390 --> 00:07:54,400
+the research preview stage. Um so this
+ 
+
+407
+00:07:54,400 --> 00:07:58,390
+the research preview stage. Um so this
+was 2023. Uh I was just coming back from
+
+408
+00:07:58,390 --> 00:07:58,400
+was 2023. Uh I was just coming back from
+ 
+
+409
+00:07:58,400 --> 00:08:01,909
+was 2023. Uh I was just coming back from
+DARPA at home. I am sitting playing
+
+410
+00:08:01,909 --> 00:08:01,919
+DARPA at home. I am sitting playing
+ 
+
+411
+00:08:01,919 --> 00:08:03,909
+DARPA at home. I am sitting playing
+around with um and I'm sure everybody
+
+412
+00:08:03,909 --> 00:08:03,919
+around with um and I'm sure everybody
+ 
+
+413
+00:08:03,919 --> 00:08:05,909
+around with um and I'm sure everybody
+else in the room is probably doing the
+
+414
+00:08:05,909 --> 00:08:05,919
+else in the room is probably doing the
+ 
+
+415
+00:08:05,919 --> 00:08:08,950
+else in the room is probably doing the
+same messing around with chat GT and
+
+416
+00:08:08,950 --> 00:08:08,960
+same messing around with chat GT and
+ 
+
+417
+00:08:08,960 --> 00:08:10,629
+same messing around with chat GT and
+like writing really cool notes on
+
+418
+00:08:10,629 --> 00:08:10,639
+like writing really cool notes on
+ 
+
+419
+00:08:10,639 --> 00:08:12,790
+like writing really cool notes on
+LinkedIn about oh hey there's this cool
+
+420
+00:08:12,790 --> 00:08:12,800
+LinkedIn about oh hey there's this cool
+ 
+
+421
+00:08:12,800 --> 00:08:14,869
+LinkedIn about oh hey there's this cool
+thing called code interpreter that just
+
+422
+00:08:14,869 --> 00:08:14,879
+thing called code interpreter that just
+ 
+
+423
+00:08:14,879 --> 00:08:16,150
+thing called code interpreter that just
+came out and it could do all your data
+
+424
+00:08:16,150 --> 00:08:16,160
+came out and it could do all your data
+ 
+
+425
+00:08:16,160 --> 00:08:18,790
+came out and it could do all your data
+analysis for you mostly kind of if you
+
+426
+00:08:18,790 --> 00:08:18,800
+analysis for you mostly kind of if you
+ 
+
+427
+00:08:18,800 --> 00:08:21,189
+analysis for you mostly kind of if you
+don't care about accuracy. Yeah. U so it
+
+428
+00:08:21,189 --> 00:08:21,199
+don't care about accuracy. Yeah. U so it
+ 
+
+429
+00:08:21,199 --> 00:08:23,189
+don't care about accuracy. Yeah. U so it
+was really good. So I'm messing around
+
+430
+00:08:23,189 --> 00:08:23,199
+was really good. So I'm messing around
+ 
+
+431
+00:08:23,199 --> 00:08:26,070
+was really good. So I'm messing around
+doing that at home and then at work I'm
+
+432
+00:08:26,070 --> 00:08:26,080
+doing that at home and then at work I'm
+ 
+
+433
+00:08:26,080 --> 00:08:28,469
+doing that at home and then at work I'm
+seeing all the the memos. Uh so Space
+
+434
+00:08:28,469 --> 00:08:28,479
+seeing all the the memos. Uh so Space
+ 
+
+435
+00:08:28,479 --> 00:08:30,230
+seeing all the the memos. Uh so Space
+Force was first with the official memo
+
+436
+00:08:30,230 --> 00:08:30,240
+Force was first with the official memo
+ 
+
+437
+00:08:30,240 --> 00:08:32,550
+Force was first with the official memo
+that came out that said there will be no
+
+438
+00:08:32,550 --> 00:08:32,560
+that came out that said there will be no
+ 
+
+439
+00:08:32,560 --> 00:08:34,949
+that came out that said there will be no
+enterprise use of AI period. Do not use
+
+440
+00:08:34,949 --> 00:08:34,959
+enterprise use of AI period. Do not use
+ 
+
+441
+00:08:34,959 --> 00:08:37,589
+enterprise use of AI period. Do not use
+any AI tools. Um most of the other
+
+442
+00:08:37,589 --> 00:08:37,599
+any AI tools. Um most of the other
+ 
+
+443
+00:08:37,599 --> 00:08:41,029
+any AI tools. Um most of the other
+services uh informally or formally went
+
+444
+00:08:41,029 --> 00:08:41,039
+services uh informally or formally went
+ 
+
+445
+00:08:41,039 --> 00:08:43,909
+services uh informally or formally went
+along with that. Um so what did that
+
+446
+00:08:43,909 --> 00:08:43,919
+along with that. Um so what did that
+ 
+
+447
+00:08:43,919 --> 00:08:47,670
+along with that. Um so what did that
+mean? So in practice you had 95% of your
+
+448
+00:08:47,670 --> 00:08:47,680
+mean? So in practice you had 95% of your
+ 
+
+449
+00:08:47,680 --> 00:08:49,750
+mean? So in practice you had 95% of your
+workforce who already didn't care about
+
+450
+00:08:49,750 --> 00:08:49,760
+workforce who already didn't care about
+ 
+
+451
+00:08:49,760 --> 00:08:51,590
+workforce who already didn't care about
+AI or thought it was going to take their
+
+452
+00:08:51,590 --> 00:08:51,600
+AI or thought it was going to take their
+ 
+
+453
+00:08:51,600 --> 00:08:53,190
+AI or thought it was going to take their
+jobs or just hated it on general
+
+454
+00:08:53,190 --> 00:08:53,200
+jobs or just hated it on general
+ 
+
+455
+00:08:53,200 --> 00:08:54,870
+jobs or just hated it on general
+principles and so they were very happy
+
+456
+00:08:54,870 --> 00:08:54,880
+principles and so they were very happy
+ 
+
+457
+00:08:54,880 --> 00:08:58,230
+principles and so they were very happy
+to not use AI. And then you had the 5%
+
+458
+00:08:58,230 --> 00:08:58,240
+to not use AI. And then you had the 5%
+ 
+
+459
+00:08:58,240 --> 00:09:01,190
+to not use AI. And then you had the 5%
+of power users like myself, like my
+
+460
+00:09:01,190 --> 00:09:01,200
+of power users like myself, like my
+ 
+
+461
+00:09:01,200 --> 00:09:03,350
+of power users like myself, like my
+team, uh, who were very interested in
+
+462
+00:09:03,350 --> 00:09:03,360
+team, uh, who were very interested in
+ 
+
+463
+00:09:03,360 --> 00:09:05,590
+team, uh, who were very interested in
+seeing, you know, testing what it could
+
+464
+00:09:05,590 --> 00:09:05,600
+seeing, you know, testing what it could
+ 
+
+465
+00:09:05,600 --> 00:09:08,230
+seeing, you know, testing what it could
+do from nason states. And so you had a
+
+466
+00:09:08,230 --> 00:09:08,240
+do from nason states. And so you had a
+ 
+
+467
+00:09:08,240 --> 00:09:11,110
+do from nason states. And so you had a
+lot of this shadow security work going
+
+468
+00:09:11,110 --> 00:09:11,120
+lot of this shadow security work going
+ 
+
+469
+00:09:11,120 --> 00:09:13,829
+lot of this shadow security work going
+on where people would be like, yeah,
+
+470
+00:09:13,829 --> 00:09:13,839
+on where people would be like, yeah,
+ 
+
+471
+00:09:13,839 --> 00:09:16,710
+on where people would be like, yeah,
+okay, I'm going to run home so I can go
+
+472
+00:09:16,710 --> 00:09:16,720
+okay, I'm going to run home so I can go
+ 
+
+473
+00:09:16,720 --> 00:09:19,590
+okay, I'm going to run home so I can go
+throw this into uh AI Studio and see
+
+474
+00:09:19,590 --> 00:09:19,600
+throw this into uh AI Studio and see
+ 
+
+475
+00:09:19,600 --> 00:09:21,990
+throw this into uh AI Studio and see
+what I get and then come back. Um, now
+
+476
+00:09:21,990 --> 00:09:22,000
+what I get and then come back. Um, now
+ 
+
+477
+00:09:22,000 --> 00:09:24,070
+what I get and then come back. Um, now
+no actual sensitive information was
+
+478
+00:09:24,070 --> 00:09:24,080
+no actual sensitive information was
+ 
+
+479
+00:09:24,080 --> 00:09:26,310
+no actual sensitive information was
+passed, but if you're just asking
+
+480
+00:09:26,310 --> 00:09:26,320
+passed, but if you're just asking
+ 
+
+481
+00:09:26,320 --> 00:09:27,590
+passed, but if you're just asking
+questions about a capability, you can
+
+482
+00:09:27,590 --> 00:09:27,600
+questions about a capability, you can
+ 
+
+483
+00:09:27,600 --> 00:09:29,350
+questions about a capability, you can
+get a lot of good information to relate
+
+484
+00:09:29,350 --> 00:09:29,360
+get a lot of good information to relate
+ 
+
+485
+00:09:29,360 --> 00:09:31,750
+get a lot of good information to relate
+back to things. So, we were absolutely
+
+486
+00:09:31,750 --> 00:09:31,760
+back to things. So, we were absolutely
+ 
+
+487
+00:09:31,760 --> 00:09:34,870
+back to things. So, we were absolutely
+doing a lot of that. Um, so that's mid
+
+488
+00:09:34,870 --> 00:09:34,880
+doing a lot of that. Um, so that's mid
+ 
+
+489
+00:09:34,880 --> 00:09:38,150
+doing a lot of that. Um, so that's mid
+2023. Going into late 2023, um, we got a
+
+490
+00:09:38,150 --> 00:09:38,160
+2023. Going into late 2023, um, we got a
+ 
+
+491
+00:09:38,160 --> 00:09:41,509
+2023. Going into late 2023, um, we got a
+new capability called Camo GPT. So, uh,
+
+492
+00:09:41,509 --> 00:09:41,519
+new capability called Camo GPT. So, uh,
+ 
+
+493
+00:09:41,519 --> 00:09:42,870
+new capability called Camo GPT. So, uh,
+those of you who are Air Force may have
+
+494
+00:09:42,870 --> 00:09:42,880
+those of you who are Air Force may have
+ 
+
+495
+00:09:42,880 --> 00:09:45,430
+those of you who are Air Force may have
+heard of Nipper GPT. Uh, that got a
+
+496
+00:09:45,430 --> 00:09:45,440
+heard of Nipper GPT. Uh, that got a
+ 
+
+497
+00:09:45,440 --> 00:09:47,590
+heard of Nipper GPT. Uh, that got a
+little bit more press. Um, not going to
+
+498
+00:09:47,590 --> 00:09:47,600
+little bit more press. Um, not going to
+ 
+
+499
+00:09:47,600 --> 00:09:48,870
+little bit more press. Um, not going to
+talk about that today because I'm not as
+
+500
+00:09:48,870 --> 00:09:48,880
+talk about that today because I'm not as
+ 
+
+501
+00:09:48,880 --> 00:09:50,310
+talk about that today because I'm not as
+familiar with that. We were primarily
+
+502
+00:09:50,310 --> 00:09:50,320
+familiar with that. We were primarily
+ 
+
+503
+00:09:50,320 --> 00:09:52,630
+familiar with that. We were primarily
+using camo which was the army's version.
+
+504
+00:09:52,630 --> 00:09:52,640
+using camo which was the army's version.
+ 
+
+505
+00:09:52,640 --> 00:09:54,949
+using camo which was the army's version.
+Uh so this was accredited for use. It
+
+506
+00:09:54,949 --> 00:09:54,959
+Uh so this was accredited for use. It
+ 
+
+507
+00:09:54,959 --> 00:09:57,269
+Uh so this was accredited for use. It
+went through the whole atto cycle in
+
+508
+00:09:57,269 --> 00:09:57,279
+went through the whole atto cycle in
+ 
+
+509
+00:09:57,279 --> 00:09:59,990
+went through the whole atto cycle in
+record time in late 2023. This was
+
+510
+00:09:59,990 --> 00:10:00,000
+record time in late 2023. This was
+ 
+
+511
+00:10:00,000 --> 00:10:02,630
+record time in late 2023. This was
+amazing. So now we no longer had to do
+
+512
+00:10:02,630 --> 00:10:02,640
+amazing. So now we no longer had to do
+ 
+
+513
+00:10:02,640 --> 00:10:05,670
+amazing. So now we no longer had to do
+the the dance of go to the unapproved
+
+514
+00:10:05,670 --> 00:10:05,680
+the the dance of go to the unapproved
+ 
+
+515
+00:10:05,680 --> 00:10:07,030
+the the dance of go to the unapproved
+tool that we're not supposed to use and
+
+516
+00:10:07,030 --> 00:10:07,040
+tool that we're not supposed to use and
+ 
+
+517
+00:10:07,040 --> 00:10:09,110
+tool that we're not supposed to use and
+ask it questions and then come back and
+
+518
+00:10:09,110 --> 00:10:09,120
+ask it questions and then come back and
+ 
+
+519
+00:10:09,120 --> 00:10:11,910
+ask it questions and then come back and
+then translate that into Kuey. Uh now we
+
+520
+00:10:11,910 --> 00:10:11,920
+then translate that into Kuey. Uh now we
+ 
+
+521
+00:10:11,920 --> 00:10:13,590
+then translate that into Kuey. Uh now we
+can just go to this tool and actually
+
+522
+00:10:13,590 --> 00:10:13,600
+can just go to this tool and actually
+ 
+
+523
+00:10:13,600 --> 00:10:16,470
+can just go to this tool and actually
+ask it questions with Kuey relevant data
+
+524
+00:10:16,470 --> 00:10:16,480
+ask it questions with Kuey relevant data
+ 
+
+525
+00:10:16,480 --> 00:10:20,389
+ask it questions with Kuey relevant data
+and get answers back. Um however this
+
+526
+00:10:20,389 --> 00:10:20,399
+and get answers back. Um however this
+ 
+
+527
+00:10:20,399 --> 00:10:22,150
+and get answers back. Um however this
+was insufficient. Why? Why was this
+
+528
+00:10:22,150 --> 00:10:22,160
+was insufficient. Why? Why was this
+ 
+
+529
+00:10:22,160 --> 00:10:25,269
+was insufficient. Why? Why was this
+insufficient? Uh well three reasons. One
+
+530
+00:10:25,269 --> 00:10:25,279
+insufficient? Uh well three reasons. One
+ 
+
+531
+00:10:25,279 --> 00:10:29,350
+insufficient? Uh well three reasons. One
+the models were just not good. Um for
+
+532
+00:10:29,350 --> 00:10:29,360
+the models were just not good. Um for
+ 
+
+533
+00:10:29,360 --> 00:10:32,470
+the models were just not good. Um for
+those of you who have used uh Llama 270
+
+534
+00:10:32,470 --> 00:10:32,480
+those of you who have used uh Llama 270
+ 
+
+535
+00:10:32,480 --> 00:10:34,470
+those of you who have used uh Llama 270
+uh it is it was good for its time. It
+
+536
+00:10:34,470 --> 00:10:34,480
+uh it is it was good for its time. It
+ 
+
+537
+00:10:34,480 --> 00:10:36,870
+uh it is it was good for its time. It
+still remains you know a good LLM. But
+
+538
+00:10:36,870 --> 00:10:36,880
+still remains you know a good LLM. But
+ 
+
+539
+00:10:36,880 --> 00:10:38,630
+still remains you know a good LLM. But
+when you're at home and your people are
+
+540
+00:10:38,630 --> 00:10:38,640
+when you're at home and your people are
+ 
+
+541
+00:10:38,640 --> 00:10:42,630
+when you're at home and your people are
+using uh GPT for Turbo or I think Gemini
+
+542
+00:10:42,630 --> 00:10:42,640
+using uh GPT for Turbo or I think Gemini
+ 
+
+543
+00:10:42,640 --> 00:10:45,910
+using uh GPT for Turbo or I think Gemini
+Pro had just come out at that point. um
+
+544
+00:10:45,910 --> 00:10:45,920
+Pro had just come out at that point. um
+ 
+
+545
+00:10:45,920 --> 00:10:48,310
+Pro had just come out at that point. um
+going stepping back from that to the
+
+546
+00:10:48,310 --> 00:10:48,320
+going stepping back from that to the
+ 
+
+547
+00:10:48,320 --> 00:10:51,910
+going stepping back from that to the
+limitations of Llama 2 uh are a lot. So
+
+548
+00:10:51,910 --> 00:10:51,920
+limitations of Llama 2 uh are a lot. So
+ 
+
+549
+00:10:51,920 --> 00:10:53,750
+limitations of Llama 2 uh are a lot. So
+that's mostly for your power users who
+
+550
+00:10:53,750 --> 00:10:53,760
+that's mostly for your power users who
+ 
+
+551
+00:10:53,760 --> 00:10:55,190
+that's mostly for your power users who
+are just turning up their nose at the
+
+552
+00:10:55,190 --> 00:10:55,200
+are just turning up their nose at the
+ 
+
+553
+00:10:55,200 --> 00:10:58,230
+are just turning up their nose at the
+thing. Um for your more general users,
+
+554
+00:10:58,230 --> 00:10:58,240
+thing. Um for your more general users,
+ 
+
+555
+00:10:58,240 --> 00:11:00,710
+thing. Um for your more general users,
+the bigger issue we had was um on the
+
+556
+00:11:00,710 --> 00:11:00,720
+the bigger issue we had was um on the
+ 
+
+557
+00:11:00,720 --> 00:11:04,230
+the bigger issue we had was um on the
+front end. So uh often not thought about
+
+558
+00:11:04,230 --> 00:11:04,240
+front end. So uh often not thought about
+ 
+
+559
+00:11:04,240 --> 00:11:05,829
+front end. So uh often not thought about
+but there's probably just as much work
+
+560
+00:11:05,829 --> 00:11:05,839
+but there's probably just as much work
+ 
+
+561
+00:11:05,839 --> 00:11:07,509
+but there's probably just as much work
+that goes into the models on the back
+
+562
+00:11:07,509 --> 00:11:07,519
+that goes into the models on the back
+ 
+
+563
+00:11:07,519 --> 00:11:09,910
+that goes into the models on the back
+end for the AI developing companies as
+
+564
+00:11:09,910 --> 00:11:09,920
+end for the AI developing companies as
+ 
+
+565
+00:11:09,920 --> 00:11:11,990
+end for the AI developing companies as
+goes into the front end of how you're
+
+566
+00:11:11,990 --> 00:11:12,000
+goes into the front end of how you're
+ 
+
+567
+00:11:12,000 --> 00:11:13,350
+goes into the front end of how you're
+operating with those models and
+
+568
+00:11:13,350 --> 00:11:13,360
+operating with those models and
+ 
+
+569
+00:11:13,360 --> 00:11:15,910
+operating with those models and
+operating around them. So the two big
+
+570
+00:11:15,910 --> 00:11:15,920
+operating around them. So the two big
+ 
+
+571
+00:11:15,920 --> 00:11:19,269
+operating around them. So the two big
+things that you know chat GPT had um
+
+572
+00:11:19,269 --> 00:11:19,279
+things that you know chat GPT had um
+ 
+
+573
+00:11:19,279 --> 00:11:23,670
+things that you know chat GPT had um
+Gemini had uh others had um were
+
+574
+00:11:23,670 --> 00:11:23,680
+Gemini had uh others had um were
+ 
+
+575
+00:11:23,680 --> 00:11:27,190
+Gemini had uh others had um were
+document parsing and web browsing. So uh
+
+576
+00:11:27,190 --> 00:11:27,200
+document parsing and web browsing. So uh
+ 
+
+577
+00:11:27,200 --> 00:11:29,590
+document parsing and web browsing. So uh
+the tool we had did not have those
+
+578
+00:11:29,590 --> 00:11:29,600
+the tool we had did not have those
+ 
+
+579
+00:11:29,600 --> 00:11:32,630
+the tool we had did not have those
+tools. So explaining to a general user,
+
+580
+00:11:32,630 --> 00:11:32,640
+tools. So explaining to a general user,
+ 
+
+581
+00:11:32,640 --> 00:11:34,470
+tools. So explaining to a general user,
+okay, so you want to extract information
+
+582
+00:11:34,470 --> 00:11:34,480
+okay, so you want to extract information
+ 
+
+583
+00:11:34,480 --> 00:11:36,870
+okay, so you want to extract information
+from a PDF, that's a great use case, but
+
+584
+00:11:36,870 --> 00:11:36,880
+from a PDF, that's a great use case, but
+ 
+
+585
+00:11:36,880 --> 00:11:38,790
+from a PDF, that's a great use case, but
+first you need to open it up and you
+
+586
+00:11:38,790 --> 00:11:38,800
+first you need to open it up and you
+ 
+
+587
+00:11:38,800 --> 00:11:40,870
+first you need to open it up and you
+need to copy and paste all of the f
+
+588
+00:11:40,870 --> 00:11:40,880
+need to copy and paste all of the f
+ 
+
+589
+00:11:40,880 --> 00:11:43,110
+need to copy and paste all of the f
+stuff out of it into a text file and
+
+590
+00:11:43,110 --> 00:11:43,120
+stuff out of it into a text file and
+ 
+
+591
+00:11:43,120 --> 00:11:44,870
+stuff out of it into a text file and
+then upload the text file because oh,
+
+592
+00:11:44,870 --> 00:11:44,880
+then upload the text file because oh,
+ 
+
+593
+00:11:44,880 --> 00:11:46,710
+then upload the text file because oh,
+you can't also paste into the clipboard
+
+594
+00:11:46,710 --> 00:11:46,720
+you can't also paste into the clipboard
+ 
+
+595
+00:11:46,720 --> 00:11:48,710
+you can't also paste into the clipboard
+because the little box only accepts, you
+
+596
+00:11:48,710 --> 00:11:48,720
+because the little box only accepts, you
+ 
+
+597
+00:11:48,720 --> 00:11:50,790
+because the little box only accepts, you
+know, 400 something characters. So you
+
+598
+00:11:50,790 --> 00:11:50,800
+know, 400 something characters. So you
+ 
+
+599
+00:11:50,800 --> 00:11:52,710
+know, 400 something characters. So you
+have to actually upload a text file and
+
+600
+00:11:52,710 --> 00:11:52,720
+have to actually upload a text file and
+ 
+
+601
+00:11:52,720 --> 00:11:54,949
+have to actually upload a text file and
+by this point you have lost 95% of the
+
+602
+00:11:54,949 --> 00:11:54,959
+by this point you have lost 95% of the
+ 
+
+603
+00:11:54,959 --> 00:11:57,509
+by this point you have lost 95% of the
+general user community. Um, also web
+
+604
+00:11:57,509 --> 00:11:57,519
+general user community. Um, also web
+ 
+
+605
+00:11:57,519 --> 00:11:59,990
+general user community. Um, also web
+browsing like that was not a not a
+
+606
+00:11:59,990 --> 00:12:00,000
+browsing like that was not a not a
+ 
+
+607
+00:12:00,000 --> 00:12:02,949
+browsing like that was not a not a
+thing. So there was no way to say, "Hey,
+
+608
+00:12:02,949 --> 00:12:02,959
+thing. So there was no way to say, "Hey,
+ 
+
+609
+00:12:02,959 --> 00:12:04,470
+thing. So there was no way to say, "Hey,
+go search the internet and get context
+
+610
+00:12:04,470 --> 00:12:04,480
+go search the internet and get context
+ 
+
+611
+00:12:04,480 --> 00:12:06,790
+go search the internet and get context
+on this." It was just limited to general
+
+612
+00:12:06,790 --> 00:12:06,800
+on this." It was just limited to general
+ 
+
+613
+00:12:06,800 --> 00:12:09,190
+on this." It was just limited to general
+knowledge retrieval. So again, two
+
+614
+00:12:09,190 --> 00:12:09,200
+knowledge retrieval. So again, two
+ 
+
+615
+00:12:09,200 --> 00:12:11,110
+knowledge retrieval. So again, two
+things made it largely unusable for
+
+616
+00:12:11,110 --> 00:12:11,120
+things made it largely unusable for
+ 
+
+617
+00:12:11,120 --> 00:12:13,670
+things made it largely unusable for
+anything but a research preview. And
+
+618
+00:12:13,670 --> 00:12:13,680
+anything but a research preview. And
+ 
+
+619
+00:12:13,680 --> 00:12:16,069
+anything but a research preview. And
+then finally, availability. Um, all of
+
+620
+00:12:16,069 --> 00:12:16,079
+then finally, availability. Um, all of
+ 
+
+621
+00:12:16,079 --> 00:12:19,030
+then finally, availability. Um, all of
+this stuff was best effort. uh these
+
+622
+00:12:19,030 --> 00:12:19,040
+this stuff was best effort. uh these
+ 
+
+623
+00:12:19,040 --> 00:12:21,030
+this stuff was best effort. uh these
+there was lots of resources that were
+
+624
+00:12:21,030 --> 00:12:21,040
+there was lots of resources that were
+ 
+
+625
+00:12:21,040 --> 00:12:22,790
+there was lots of resources that were
+put into it but fundamentally it was
+
+626
+00:12:22,790 --> 00:12:22,800
+put into it but fundamentally it was
+ 
+
+627
+00:12:22,800 --> 00:12:24,949
+put into it but fundamentally it was
+still um a bunch of GPUs that were
+
+628
+00:12:24,949 --> 00:12:24,959
+still um a bunch of GPUs that were
+ 
+
+629
+00:12:24,959 --> 00:12:27,190
+still um a bunch of GPUs that were
+running in somebody's server farm
+
+630
+00:12:27,190 --> 00:12:27,200
+running in somebody's server farm
+ 
+
+631
+00:12:27,200 --> 00:12:29,509
+running in somebody's server farm
+somewhere in the world. Um it was not
+
+632
+00:12:29,509 --> 00:12:29,519
+somewhere in the world. Um it was not
+ 
+
+633
+00:12:29,519 --> 00:12:31,910
+somewhere in the world. Um it was not
+being hosted with cloud hosted data
+
+634
+00:12:31,910 --> 00:12:31,920
+being hosted with cloud hosted data
+ 
+
+635
+00:12:31,920 --> 00:12:35,350
+being hosted with cloud hosted data
+centers or at least if it was it wasn't
+
+636
+00:12:35,350 --> 00:12:35,360
+centers or at least if it was it wasn't
+ 
+
+637
+00:12:35,360 --> 00:12:36,550
+centers or at least if it was it wasn't
+you know there wasn't a lot of resource
+
+638
+00:12:36,550 --> 00:12:36,560
+you know there wasn't a lot of resource
+ 
+
+639
+00:12:36,560 --> 00:12:39,350
+you know there wasn't a lot of resource
+being put to that. So in many cases you
+
+640
+00:12:39,350 --> 00:12:39,360
+being put to that. So in many cases you
+ 
+
+641
+00:12:39,360 --> 00:12:41,990
+being put to that. So in many cases you
+would hit availability timeouts or if
+
+642
+00:12:41,990 --> 00:12:42,000
+would hit availability timeouts or if
+ 
+
+643
+00:12:42,000 --> 00:12:44,629
+would hit availability timeouts or if
+you were trying to do anything big um
+
+644
+00:12:44,629 --> 00:12:44,639
+you were trying to do anything big um
+ 
+
+645
+00:12:44,639 --> 00:12:46,150
+you were trying to do anything big um
+especially once we started experimenting
+
+646
+00:12:46,150 --> 00:12:46,160
+especially once we started experimenting
+ 
+
+647
+00:12:46,160 --> 00:12:49,110
+especially once we started experimenting
+with rag type stuff um we were getting
+
+648
+00:12:49,110 --> 00:12:49,120
+with rag type stuff um we were getting
+ 
+
+649
+00:12:49,120 --> 00:12:51,590
+with rag type stuff um we were getting
+uh query responses back in hours versus
+
+650
+00:12:51,590 --> 00:12:51,600
+uh query responses back in hours versus
+ 
+
+651
+00:12:51,600 --> 00:12:53,829
+uh query responses back in hours versus
+minutes which clearly didn't help very
+
+652
+00:12:53,829 --> 00:12:53,839
+minutes which clearly didn't help very
+ 
+
+653
+00:12:53,839 --> 00:12:56,150
+minutes which clearly didn't help very
+much. So yeah that's where things stood
+
+654
+00:12:56,150 --> 00:12:56,160
+much. So yeah that's where things stood
+ 
+
+655
+00:12:56,160 --> 00:12:59,430
+much. So yeah that's where things stood
+for us in 2023.
+
+656
+00:12:59,430 --> 00:12:59,440
+for us in 2023.
+ 
+
+657
+00:12:59,440 --> 00:13:03,670
+for us in 2023.
+Okay. Uh 2024 hey got a new platform
+
+658
+00:13:03,670 --> 00:13:03,680
+Okay. Uh 2024 hey got a new platform
+ 
+
+659
+00:13:03,680 --> 00:13:05,750
+Okay. Uh 2024 hey got a new platform
+it's using commercial APIs. It's
+
+660
+00:13:05,750 --> 00:13:05,760
+it's using commercial APIs. It's
+ 
+
+661
+00:13:05,760 --> 00:13:06,949
+it's using commercial APIs. It's
+reliable. It's got all the frontier
+
+662
+00:13:06,949 --> 00:13:06,959
+reliable. It's got all the frontier
+ 
+
+663
+00:13:06,959 --> 00:13:09,910
+reliable. It's got all the frontier
+models. Problem solved, right?
+
+664
+00:13:09,910 --> 00:13:09,920
+models. Problem solved, right?
+ 
+
+665
+00:13:09,920 --> 00:13:13,269
+models. Problem solved, right?
+Yeah. No tokens. So, uh, hey, guess
+
+666
+00:13:13,269 --> 00:13:13,279
+Yeah. No tokens. So, uh, hey, guess
+ 
+
+667
+00:13:13,279 --> 00:13:16,069
+Yeah. No tokens. So, uh, hey, guess
+what? You put a premium shop in my
+
+668
+00:13:16,069 --> 00:13:16,079
+what? You put a premium shop in my
+ 
+
+669
+00:13:16,079 --> 00:13:17,670
+what? You put a premium shop in my
+enterprise platform. And I'm so excited
+
+670
+00:13:17,670 --> 00:13:17,680
+enterprise platform. And I'm so excited
+ 
+
+671
+00:13:17,680 --> 00:13:21,190
+enterprise platform. And I'm so excited
+about this. Thank you. Um, so we all got
+
+672
+00:13:21,190 --> 00:13:21,200
+about this. Thank you. Um, so we all got
+ 
+
+673
+00:13:21,200 --> 00:13:24,870
+about this. Thank you. Um, so we all got
+a bunch of tokens to use. And for
+
+674
+00:13:24,870 --> 00:13:24,880
+a bunch of tokens to use. And for
+ 
+
+675
+00:13:24,880 --> 00:13:27,030
+a bunch of tokens to use. And for
+bureaucratic political reasons, there
+
+676
+00:13:27,030 --> 00:13:27,040
+bureaucratic political reasons, there
+ 
+
+677
+00:13:27,040 --> 00:13:30,230
+bureaucratic political reasons, there
+was no designation of power users versus
+
+678
+00:13:30,230 --> 00:13:30,240
+was no designation of power users versus
+ 
+
+679
+00:13:30,240 --> 00:13:32,069
+was no designation of power users versus
+normal users. So, everybody got one
+
+680
+00:13:32,069 --> 00:13:32,079
+normal users. So, everybody got one
+ 
+
+681
+00:13:32,079 --> 00:13:35,509
+normal users. So, everybody got one
+allocation of tokens. And without naming
+
+682
+00:13:35,509 --> 00:13:35,519
+allocation of tokens. And without naming
+ 
+
+683
+00:13:35,519 --> 00:13:38,310
+allocation of tokens. And without naming
+the provider, um the provider basically
+
+684
+00:13:38,310 --> 00:13:38,320
+the provider, um the provider basically
+ 
+
+685
+00:13:38,320 --> 00:13:40,710
+the provider, um the provider basically
+took the generalized API cost that you
+
+686
+00:13:40,710 --> 00:13:40,720
+took the generalized API cost that you
+ 
+
+687
+00:13:40,720 --> 00:13:44,069
+took the generalized API cost that you
+could get through uh your AWS's or your
+
+688
+00:13:44,069 --> 00:13:44,079
+could get through uh your AWS's or your
+ 
+
+689
+00:13:44,079 --> 00:13:46,710
+could get through uh your AWS's or your
+Azures and they just multiplied that by
+
+690
+00:13:46,710 --> 00:13:46,720
+Azures and they just multiplied that by
+ 
+
+691
+00:13:46,720 --> 00:13:48,310
+Azures and they just multiplied that by
+a factor of 10 to get their profit
+
+692
+00:13:48,310 --> 00:13:48,320
+a factor of 10 to get their profit
+ 
+
+693
+00:13:48,320 --> 00:13:51,829
+a factor of 10 to get their profit
+margin and they sold that back to us. So
+
+694
+00:13:51,829 --> 00:13:51,839
+margin and they sold that back to us. So
+ 
+
+695
+00:13:51,839 --> 00:13:54,470
+margin and they sold that back to us. So
+equivalently uh what happens is for
+
+696
+00:13:54,470 --> 00:13:54,480
+equivalently uh what happens is for
+ 
+
+697
+00:13:54,480 --> 00:13:56,550
+equivalently uh what happens is for
+general use office use case you know
+
+698
+00:13:56,550 --> 00:13:56,560
+general use office use case you know
+ 
+
+699
+00:13:56,560 --> 00:13:58,550
+general use office use case you know
+mostly fine for the average user who's
+
+700
+00:13:58,550 --> 00:13:58,560
+mostly fine for the average user who's
+ 
+
+701
+00:13:58,560 --> 00:14:01,189
+mostly fine for the average user who's
+asking you know summarize this two-page
+
+702
+00:14:01,189 --> 00:14:01,199
+asking you know summarize this two-page
+ 
+
+703
+00:14:01,199 --> 00:14:03,990
+asking you know summarize this two-page
+document fine help me draft this three
+
+704
+00:14:03,990 --> 00:14:04,000
+document fine help me draft this three
+ 
+
+705
+00:14:04,000 --> 00:14:06,790
+document fine help me draft this three
+paragraph email fine but for my
+
+706
+00:14:06,790 --> 00:14:06,800
+paragraph email fine but for my
+ 
+
+707
+00:14:06,800 --> 00:14:09,269
+paragraph email fine but for my
+forensics guys who are like okay I've
+
+708
+00:14:09,269 --> 00:14:09,279
+forensics guys who are like okay I've
+ 
+
+709
+00:14:09,279 --> 00:14:12,949
+forensics guys who are like okay I've
+got a 20page log file and I want you to
+
+710
+00:14:12,949 --> 00:14:12,959
+got a 20page log file and I want you to
+ 
+
+711
+00:14:12,959 --> 00:14:14,310
+got a 20page log file and I want you to
+I'm going to put that in there and then
+
+712
+00:14:14,310 --> 00:14:14,320
+I'm going to put that in there and then
+ 
+
+713
+00:14:14,320 --> 00:14:15,829
+I'm going to put that in there and then
+I want you to compare it to this other
+
+714
+00:14:15,829 --> 00:14:15,839
+I want you to compare it to this other
+ 
+
+715
+00:14:15,839 --> 00:14:17,990
+I want you to compare it to this other
+20page log file from 3 days ago and I
+
+716
+00:14:17,990 --> 00:14:18,000
+20page log file from 3 days ago and I
+ 
+
+717
+00:14:18,000 --> 00:14:19,829
+20page log file from 3 days ago and I
+want you to diff it and look for you
+
+718
+00:14:19,829 --> 00:14:19,839
+want you to diff it and look for you
+ 
+
+719
+00:14:19,839 --> 00:14:21,910
+want you to diff it and look for you
+know not just diffs, but actual like
+
+720
+00:14:21,910 --> 00:14:21,920
+know not just diffs, but actual like
+ 
+
+721
+00:14:21,920 --> 00:14:24,870
+know not just diffs, but actual like
+meaningful differences. Um, yeah, you do
+
+722
+00:14:24,870 --> 00:14:24,880
+meaningful differences. Um, yeah, you do
+ 
+
+723
+00:14:24,880 --> 00:14:26,470
+meaningful differences. Um, yeah, you do
+that once and okay, half your quote is
+
+724
+00:14:26,470 --> 00:14:26,480
+that once and okay, half your quote is
+ 
+
+725
+00:14:26,480 --> 00:14:28,790
+that once and okay, half your quote is
+gone for the month. So, we we brought
+
+726
+00:14:28,790 --> 00:14:28,800
+gone for the month. So, we we brought
+ 
+
+727
+00:14:28,800 --> 00:14:31,189
+gone for the month. So, we we brought
+this up as a problem and they said, "Oh,
+
+728
+00:14:31,189 --> 00:14:31,199
+this up as a problem and they said, "Oh,
+ 
+
+729
+00:14:31,199 --> 00:14:32,949
+this up as a problem and they said, "Oh,
+we acknowledge this is a problem and
+
+730
+00:14:32,949 --> 00:14:32,959
+we acknowledge this is a problem and
+ 
+
+731
+00:14:32,959 --> 00:14:35,110
+we acknowledge this is a problem and
+here is the process for how you fix it.
+
+732
+00:14:35,110 --> 00:14:35,120
+here is the process for how you fix it.
+ 
+
+733
+00:14:35,120 --> 00:14:36,949
+here is the process for how you fix it.
+You ask for more tokens and this
+
+734
+00:14:36,949 --> 00:14:36,959
+You ask for more tokens and this
+ 
+
+735
+00:14:36,959 --> 00:14:39,910
+You ask for more tokens and this
+requires seven signatures and seven
+
+736
+00:14:39,910 --> 00:14:39,920
+requires seven signatures and seven
+ 
+
+737
+00:14:39,920 --> 00:14:42,310
+requires seven signatures and seven
+justifications for very high ranking
+
+738
+00:14:42,310 --> 00:14:42,320
+justifications for very high ranking
+ 
+
+739
+00:14:42,320 --> 00:14:44,550
+justifications for very high ranking
+people who don't understand what an LLM
+
+740
+00:14:44,550 --> 00:14:44,560
+people who don't understand what an LLM
+ 
+
+741
+00:14:44,560 --> 00:14:47,590
+people who don't understand what an LLM
+is." So yeah, in practice the the
+
+742
+00:14:47,590 --> 00:14:47,600
+is." So yeah, in practice the the
+ 
+
+743
+00:14:47,600 --> 00:14:50,069
+is." So yeah, in practice the the
+process was uh let's let's call it
+
+744
+00:14:50,069 --> 00:14:50,079
+process was uh let's let's call it
+ 
+
+745
+00:14:50,079 --> 00:14:51,990
+process was uh let's let's call it
+effectively impossible.
+
+746
+00:14:51,990 --> 00:14:52,000
+effectively impossible.
+ 
+
+747
+00:14:52,000 --> 00:14:54,870
+effectively impossible.
+So fundamentally we were still using
+
+748
+00:14:54,870 --> 00:14:54,880
+So fundamentally we were still using
+ 
+
+749
+00:14:54,880 --> 00:14:57,670
+So fundamentally we were still using
+camo GPT for what we could. We were
+
+750
+00:14:57,670 --> 00:14:57,680
+camo GPT for what we could. We were
+ 
+
+751
+00:14:57,680 --> 00:14:59,750
+camo GPT for what we could. We were
+burning our tokens by like day one or
+
+752
+00:14:59,750 --> 00:14:59,760
+burning our tokens by like day one or
+ 
+
+753
+00:14:59,760 --> 00:15:02,389
+burning our tokens by like day one or
+two and then everybody was still going
+
+754
+00:15:02,389 --> 00:15:02,399
+two and then everybody was still going
+ 
+
+755
+00:15:02,399 --> 00:15:03,829
+two and then everybody was still going
+and using AI studio though we don't talk
+
+756
+00:15:03,829 --> 00:15:03,839
+and using AI studio though we don't talk
+ 
+
+757
+00:15:03,839 --> 00:15:06,870
+and using AI studio though we don't talk
+about that. All right so we're caught up
+
+758
+00:15:06,870 --> 00:15:06,880
+about that. All right so we're caught up
+ 
+
+759
+00:15:06,880 --> 00:15:09,750
+about that. All right so we're caught up
+to today right phase three fancy
+
+760
+00:15:09,750 --> 00:15:09,760
+to today right phase three fancy
+ 
+
+761
+00:15:09,760 --> 00:15:11,670
+to today right phase three fancy
+enterprise agreements. Those of you
+
+762
+00:15:11,670 --> 00:15:11,680
+enterprise agreements. Those of you
+ 
+
+763
+00:15:11,680 --> 00:15:14,150
+enterprise agreements. Those of you
+might know genai.mill just rolled out.
+
+764
+00:15:14,150 --> 00:15:14,160
+might know genai.mill just rolled out.
+ 
+
+765
+00:15:14,160 --> 00:15:17,829
+might know genai.mill just rolled out.
+It's the DoDwide AI platform. Uh several
+
+766
+00:15:17,829 --> 00:15:17,839
+It's the DoDwide AI platform. Uh several
+ 
+
+767
+00:15:17,839 --> 00:15:19,750
+It's the DoDwide AI platform. Uh several
+major AI enterprise platforms are
+
+768
+00:15:19,750 --> 00:15:19,760
+major AI enterprise platforms are
+ 
+
+769
+00:15:19,760 --> 00:15:21,670
+major AI enterprise platforms are
+connecting to it. So now if you're a
+
+770
+00:15:21,670 --> 00:15:21,680
+connecting to it. So now if you're a
+ 
+
+771
+00:15:21,680 --> 00:15:24,069
+connecting to it. So now if you're a
+worker within the department, you can
+
+772
+00:15:24,069 --> 00:15:24,079
+worker within the department, you can
+ 
+
+773
+00:15:24,079 --> 00:15:26,629
+worker within the department, you can
+just go to genai.mill and you can hit
+
+774
+00:15:26,629 --> 00:15:26,639
+just go to genai.mill and you can hit
+ 
+
+775
+00:15:26,639 --> 00:15:29,350
+just go to genai.mill and you can hit
+what's there and use the enterprise
+
+776
+00:15:29,350 --> 00:15:29,360
+what's there and use the enterprise
+ 
+
+777
+00:15:29,360 --> 00:15:31,829
+what's there and use the enterprise
+versions. So not somebody's like
+
+778
+00:15:31,829 --> 00:15:31,839
+versions. So not somebody's like
+ 
+
+779
+00:15:31,839 --> 00:15:33,670
+versions. So not somebody's like
+self-wrapped, self-hosted, you know,
+
+780
+00:15:33,670 --> 00:15:33,680
+self-wrapped, self-hosted, you know,
+ 
+
+781
+00:15:33,680 --> 00:15:35,350
+self-wrapped, self-hosted, you know,
+hey, we're just wrapping the API with
+
+782
+00:15:35,350 --> 00:15:35,360
+hey, we're just wrapping the API with
+ 
+
+783
+00:15:35,360 --> 00:15:37,110
+hey, we're just wrapping the API with
+our own custom web front end, but the
+
+784
+00:15:37,110 --> 00:15:37,120
+our own custom web front end, but the
+ 
+
+785
+00:15:37,120 --> 00:15:39,829
+our own custom web front end, but the
+actual has the good UI front end that
+
+786
+00:15:39,829 --> 00:15:39,839
+actual has the good UI front end that
+ 
+
+787
+00:15:39,839 --> 00:15:42,870
+actual has the good UI front end that
+these tools have developed. So that's
+
+788
+00:15:42,870 --> 00:15:42,880
+these tools have developed. So that's
+ 
+
+789
+00:15:42,880 --> 00:15:45,189
+these tools have developed. So that's
+what's coming. Um so now we're into
+
+790
+00:15:45,189 --> 00:15:45,199
+what's coming. Um so now we're into
+ 
+
+791
+00:15:45,199 --> 00:15:48,069
+what's coming. Um so now we're into
+culture challenges right so one of the
+
+792
+00:15:48,069 --> 00:15:48,079
+culture challenges right so one of the
+ 
+
+793
+00:15:48,079 --> 00:15:50,470
+culture challenges right so one of the
+problems we have in the army is uh this
+
+794
+00:15:50,470 --> 00:15:50,480
+problems we have in the army is uh this
+ 
+
+795
+00:15:50,480 --> 00:15:52,150
+problems we have in the army is uh this
+thing called what I call the silo reflex
+
+796
+00:15:52,150 --> 00:15:52,160
+thing called what I call the silo reflex
+ 
+
+797
+00:15:52,160 --> 00:15:53,990
+thing called what I call the silo reflex
+which is whenever a new technology comes
+
+798
+00:15:53,990 --> 00:15:54,000
+which is whenever a new technology comes
+ 
+
+799
+00:15:54,000 --> 00:15:57,990
+which is whenever a new technology comes
+out we put it in a box and we say okay
+
+800
+00:15:57,990 --> 00:15:58,000
+out we put it in a box and we say okay
+ 
+
+801
+00:15:58,000 --> 00:16:00,069
+out we put it in a box and we say okay
+Joe you're really smart at this new tech
+
+802
+00:16:00,069 --> 00:16:00,079
+Joe you're really smart at this new tech
+ 
+
+803
+00:16:00,079 --> 00:16:03,030
+Joe you're really smart at this new tech
+so you're the box guy anytime any
+
+804
+00:16:03,030 --> 00:16:03,040
+so you're the box guy anytime any
+ 
+
+805
+00:16:03,040 --> 00:16:04,470
+so you're the box guy anytime any
+questions come up about the box any
+
+806
+00:16:04,470 --> 00:16:04,480
+questions come up about the box any
+ 
+
+807
+00:16:04,480 --> 00:16:05,829
+questions come up about the box any
+generals want know have questions about
+
+808
+00:16:05,829 --> 00:16:05,839
+generals want know have questions about
+ 
+
+809
+00:16:05,839 --> 00:16:07,590
+generals want know have questions about
+the box I'm gonna say Joe's the smart
+
+810
+00:16:07,590 --> 00:16:07,600
+the box I'm gonna say Joe's the smart
+ 
+
+811
+00:16:07,600 --> 00:16:09,269
+the box I'm gonna say Joe's the smart
+guy in the box and he's gonna answer all
+
+812
+00:16:09,269 --> 00:16:09,279
+guy in the box and he's gonna answer all
+ 
+
+813
+00:16:09,279 --> 00:16:11,030
+guy in the box and he's gonna answer all
+your questions for you and that's fine
+
+814
+00:16:11,030 --> 00:16:11,040
+your questions for you and that's fine
+ 
+
+815
+00:16:11,040 --> 00:16:13,590
+your questions for you and that's fine
+like that's that's a starting point that
+
+816
+00:16:13,590 --> 00:16:13,600
+like that's that's a starting point that
+ 
+
+817
+00:16:13,600 --> 00:16:15,030
+like that's that's a starting point that
+you have to do that like you know back
+
+818
+00:16:15,030 --> 00:16:15,040
+you have to do that like you know back
+ 
+
+819
+00:16:15,040 --> 00:16:17,350
+you have to do that like you know back
+in the day there was the computer guy
+
+820
+00:16:17,350 --> 00:16:17,360
+in the day there was the computer guy
+ 
+
+821
+00:16:17,360 --> 00:16:18,629
+in the day there was the computer guy
+and anytime anybody had any questions
+
+822
+00:16:18,629 --> 00:16:18,639
+and anytime anybody had any questions
+ 
+
+823
+00:16:18,639 --> 00:16:19,829
+and anytime anybody had any questions
+about computers it was like go talk to
+
+824
+00:16:19,829 --> 00:16:19,839
+about computers it was like go talk to
+ 
+
+825
+00:16:19,839 --> 00:16:21,030
+about computers it was like go talk to
+Joe he's a computer guy he'll answer
+
+826
+00:16:21,030 --> 00:16:21,040
+Joe he's a computer guy he'll answer
+ 
+
+827
+00:16:21,040 --> 00:16:24,069
+Joe he's a computer guy he'll answer
+your computer box questions um I was the
+
+828
+00:16:24,069 --> 00:16:24,079
+your computer box questions um I was the
+ 
+
+829
+00:16:24,079 --> 00:16:26,629
+your computer box questions um I was the
+cyber guy for a long time I was the guy
+
+830
+00:16:26,629 --> 00:16:26,639
+cyber guy for a long time I was the guy
+ 
+
+831
+00:16:26,639 --> 00:16:28,550
+cyber guy for a long time I was the guy
+who owned the cyber box and people ask
+
+832
+00:16:28,550 --> 00:16:28,560
+who owned the cyber box and people ask
+ 
+
+833
+00:16:28,560 --> 00:16:29,990
+who owned the cyber box and people ask
+me questions about the cyberbox and I
+
+834
+00:16:29,990 --> 00:16:30,000
+me questions about the cyberbox and I
+ 
+
+835
+00:16:30,000 --> 00:16:31,509
+me questions about the cyberbox and I
+would say yes I can tell you lots of
+
+836
+00:16:31,509 --> 00:16:31,519
+would say yes I can tell you lots of
+ 
+
+837
+00:16:31,519 --> 00:16:33,910
+would say yes I can tell you lots of
+cool things about the cyber box
+
+838
+00:16:33,910 --> 00:16:33,920
+cool things about the cyber box
+ 
+
+839
+00:16:33,920 --> 00:16:36,550
+cool things about the cyber box
+is this a good idea uh it's it's always
+
+840
+00:16:36,550 --> 00:16:36,560
+is this a good idea uh it's it's always
+ 
+
+841
+00:16:36,560 --> 00:16:38,150
+is this a good idea uh it's it's always
+a good idea to start the question is do
+
+842
+00:16:38,150 --> 00:16:38,160
+a good idea to start the question is do
+ 
+
+843
+00:16:38,160 --> 00:16:41,030
+a good idea to start the question is do
+you need to progress past that um in
+
+844
+00:16:41,030 --> 00:16:41,040
+you need to progress past that um in
+ 
+
+845
+00:16:41,040 --> 00:16:44,389
+you need to progress past that um in
+many cases maybe you like so you know
+
+846
+00:16:44,389 --> 00:16:44,399
+many cases maybe you like so you know
+ 
+
+847
+00:16:44,399 --> 00:16:47,829
+many cases maybe you like so you know
+space or um these are technologies that
+
+848
+00:16:47,829 --> 00:16:47,839
+space or um these are technologies that
+ 
+
+849
+00:16:47,839 --> 00:16:49,189
+space or um these are technologies that
+it's okay that you probably leave it in
+
+850
+00:16:49,189 --> 00:16:49,199
+it's okay that you probably leave it in
+ 
+
+851
+00:16:49,199 --> 00:16:50,710
+it's okay that you probably leave it in
+a box and you just have a specialist who
+
+852
+00:16:50,710 --> 00:16:50,720
+a box and you just have a specialist who
+ 
+
+853
+00:16:50,720 --> 00:16:51,829
+a box and you just have a specialist who
+comes and talks to you about it.
+
+854
+00:16:51,829 --> 00:16:51,839
+comes and talks to you about it.
+ 
+
+855
+00:16:51,839 --> 00:16:53,189
+comes and talks to you about it.
+Obviously if you're in the space force
+
+856
+00:16:53,189 --> 00:16:53,199
+Obviously if you're in the space force
+ 
+
+857
+00:16:53,199 --> 00:16:54,470
+Obviously if you're in the space force
+not so much space but if you're in the
+
+858
+00:16:54,470 --> 00:16:54,480
+not so much space but if you're in the
+ 
+
+859
+00:16:54,480 --> 00:16:57,670
+not so much space but if you're in the
+army we don't do too much with space as
+
+860
+00:16:57,670 --> 00:16:57,680
+army we don't do too much with space as
+ 
+
+861
+00:16:57,680 --> 00:16:59,990
+army we don't do too much with space as
+affecting the whole enterprise. So you
+
+862
+00:16:59,990 --> 00:17:00,000
+affecting the whole enterprise. So you
+ 
+
+863
+00:17:00,000 --> 00:17:01,829
+affecting the whole enterprise. So you
+can probably safely leave that in a box.
+
+864
+00:17:01,829 --> 00:17:01,839
+can probably safely leave that in a box.
+ 
+
+865
+00:17:01,839 --> 00:17:05,270
+can probably safely leave that in a box.
+Um things like GPS and computers uh
+
+866
+00:17:05,270 --> 00:17:05,280
+Um things like GPS and computers uh
+ 
+
+867
+00:17:05,280 --> 00:17:06,549
+Um things like GPS and computers uh
+those clearly should not have been in
+
+868
+00:17:06,549 --> 00:17:06,559
+those clearly should not have been in
+ 
+
+869
+00:17:06,559 --> 00:17:07,510
+those clearly should not have been in
+the box and those should have been
+
+870
+00:17:07,510 --> 00:17:07,520
+the box and those should have been
+ 
+
+871
+00:17:07,520 --> 00:17:09,669
+the box and those should have been
+generalized as soon as possible. So the
+
+872
+00:17:09,669 --> 00:17:09,679
+generalized as soon as possible. So the
+ 
+
+873
+00:17:09,679 --> 00:17:11,189
+generalized as soon as possible. So the
+faster we can get those out there, the
+
+874
+00:17:11,189 --> 00:17:11,199
+faster we can get those out there, the
+ 
+
+875
+00:17:11,199 --> 00:17:14,390
+faster we can get those out there, the
+better. Um, cyber still kind of figuring
+
+876
+00:17:14,390 --> 00:17:14,400
+better. Um, cyber still kind of figuring
+ 
+
+877
+00:17:14,400 --> 00:17:16,309
+better. Um, cyber still kind of figuring
+out how much the whole enterprise needs
+
+878
+00:17:16,309 --> 00:17:16,319
+out how much the whole enterprise needs
+ 
+
+879
+00:17:16,319 --> 00:17:17,829
+out how much the whole enterprise needs
+to be part of that versus just a
+
+880
+00:17:17,829 --> 00:17:17,839
+to be part of that versus just a
+ 
+
+881
+00:17:17,839 --> 00:17:20,230
+to be part of that versus just a
+specialized in the box thing. Drones is
+
+882
+00:17:20,230 --> 00:17:20,240
+specialized in the box thing. Drones is
+ 
+
+883
+00:17:20,240 --> 00:17:22,630
+specialized in the box thing. Drones is
+a little newer of a tech same battle.
+
+884
+00:17:22,630 --> 00:17:22,640
+a little newer of a tech same battle.
+ 
+
+885
+00:17:22,640 --> 00:17:24,870
+a little newer of a tech same battle.
+We're battling that right now where do
+
+886
+00:17:24,870 --> 00:17:24,880
+We're battling that right now where do
+ 
+
+887
+00:17:24,880 --> 00:17:27,590
+We're battling that right now where do
+we have a drone core that is the people
+
+888
+00:17:27,590 --> 00:17:27,600
+we have a drone core that is the people
+ 
+
+889
+00:17:27,600 --> 00:17:29,270
+we have a drone core that is the people
+who do just the drones and they're the
+
+890
+00:17:29,270 --> 00:17:29,280
+who do just the drones and they're the
+ 
+
+891
+00:17:29,280 --> 00:17:31,270
+who do just the drones and they're the
+drone experts for everybody or do we
+
+892
+00:17:31,270 --> 00:17:31,280
+drone experts for everybody or do we
+ 
+
+893
+00:17:31,280 --> 00:17:33,270
+drone experts for everybody or do we
+push drones out to all of our fighting
+
+894
+00:17:33,270 --> 00:17:33,280
+push drones out to all of our fighting
+ 
+
+895
+00:17:33,280 --> 00:17:35,190
+push drones out to all of our fighting
+forces and say you guys are all going to
+
+896
+00:17:35,190 --> 00:17:35,200
+forces and say you guys are all going to
+ 
+
+897
+00:17:35,200 --> 00:17:36,549
+forces and say you guys are all going to
+be drone experts now because that's the
+
+898
+00:17:36,549 --> 00:17:36,559
+be drone experts now because that's the
+ 
+
+899
+00:17:36,559 --> 00:17:39,110
+be drone experts now because that's the
+future of war fighting. Uh, again, still
+
+900
+00:17:39,110 --> 00:17:39,120
+future of war fighting. Uh, again, still
+ 
+
+901
+00:17:39,120 --> 00:17:40,710
+future of war fighting. Uh, again, still
+figuring that out. So, you know, the
+
+902
+00:17:40,710 --> 00:17:40,720
+figuring that out. So, you know, the
+ 
+
+903
+00:17:40,720 --> 00:17:42,549
+figuring that out. So, you know, the
+takeaway is AI. Is this going to look
+
+904
+00:17:42,549 --> 00:17:42,559
+takeaway is AI. Is this going to look
+ 
+
+905
+00:17:42,559 --> 00:17:45,669
+takeaway is AI. Is this going to look
+more like VR or more like PCs? I would
+
+906
+00:17:45,669 --> 00:17:45,679
+more like VR or more like PCs? I would
+ 
+
+907
+00:17:45,679 --> 00:17:48,150
+more like VR or more like PCs? I would
+say last year it's definitely tipping
+
+908
+00:17:48,150 --> 00:17:48,160
+say last year it's definitely tipping
+ 
+
+909
+00:17:48,160 --> 00:17:49,909
+say last year it's definitely tipping
+more in the PC direction. Before that,
+
+910
+00:17:49,909 --> 00:17:49,919
+more in the PC direction. Before that,
+ 
+
+911
+00:17:49,919 --> 00:17:52,230
+more in the PC direction. Before that,
+you can make a case for either side. Um,
+
+912
+00:17:52,230 --> 00:17:52,240
+you can make a case for either side. Um,
+ 
+
+913
+00:17:52,240 --> 00:17:53,350
+you can make a case for either side. Um,
+but that's interesting. I'm not sure how
+
+914
+00:17:53,350 --> 00:17:53,360
+but that's interesting. I'm not sure how
+ 
+
+915
+00:17:53,360 --> 00:17:56,070
+but that's interesting. I'm not sure how
+it's going to play out.
+
+916
+00:17:56,070 --> 00:17:56,080
+it's going to play out.
+ 
+
+917
+00:17:56,080 --> 00:17:58,150
+it's going to play out.
+All right. So, overall what I've talked
+
+918
+00:17:58,150 --> 00:17:58,160
+All right. So, overall what I've talked
+ 
+
+919
+00:17:58,160 --> 00:18:00,150
+All right. So, overall what I've talked
+about today is this is the pattern,
+
+920
+00:18:00,150 --> 00:18:00,160
+about today is this is the pattern,
+ 
+
+921
+00:18:00,160 --> 00:18:02,710
+about today is this is the pattern,
+right? You have an access problem. We
+
+922
+00:18:02,710 --> 00:18:02,720
+right? You have an access problem. We
+ 
+
+923
+00:18:02,720 --> 00:18:04,150
+right? You have an access problem. We
+solved the access problem. We solved
+
+924
+00:18:04,150 --> 00:18:04,160
+solved the access problem. We solved
+ 
+
+925
+00:18:04,160 --> 00:18:07,029
+solved the access problem. We solved
+that by centralization. Uh then we moved
+
+926
+00:18:07,029 --> 00:18:07,039
+that by centralization. Uh then we moved
+ 
+
+927
+00:18:07,039 --> 00:18:10,549
+that by centralization. Uh then we moved
+on to cost problems. Uh we solved that
+
+928
+00:18:10,549 --> 00:18:10,559
+on to cost problems. Uh we solved that
+ 
+
+929
+00:18:10,559 --> 00:18:14,070
+on to cost problems. Uh we solved that
+by enterprise agreements and now we're
+
+930
+00:18:14,070 --> 00:18:14,080
+by enterprise agreements and now we're
+ 
+
+931
+00:18:14,080 --> 00:18:15,669
+by enterprise agreements and now we're
+on phase three which is a cult culture
+
+932
+00:18:15,669 --> 00:18:15,679
+on phase three which is a cult culture
+ 
+
+933
+00:18:15,679 --> 00:18:18,549
+on phase three which is a cult culture
+problem. What is going to solve this?
+
+934
+00:18:18,549 --> 00:18:18,559
+problem. What is going to solve this?
+ 
+
+935
+00:18:18,559 --> 00:18:22,310
+problem. What is going to solve this?
+Like what are we going to learn? um how
+
+936
+00:18:22,310 --> 00:18:22,320
+Like what are we going to learn? um how
+ 
+
+937
+00:18:22,320 --> 00:18:23,669
+Like what are we going to learn? um how
+are we going to figure out that a lot of
+
+938
+00:18:23,669 --> 00:18:23,679
+are we going to figure out that a lot of
+ 
+
+939
+00:18:23,679 --> 00:18:26,549
+are we going to figure out that a lot of
+the requirements documents, you know,
+
+940
+00:18:26,549 --> 00:18:26,559
+the requirements documents, you know,
+ 
+
+941
+00:18:26,559 --> 00:18:27,909
+the requirements documents, you know,
+going back to that original like
+
+942
+00:18:27,909 --> 00:18:27,919
+going back to that original like
+ 
+
+943
+00:18:27,919 --> 00:18:30,230
+going back to that original like
+four-year requirement discussion we had
+
+944
+00:18:30,230 --> 00:18:30,240
+four-year requirement discussion we had
+ 
+
+945
+00:18:30,240 --> 00:18:32,150
+four-year requirement discussion we had
+before, a lot of our requirements
+
+946
+00:18:32,150 --> 00:18:32,160
+before, a lot of our requirements
+ 
+
+947
+00:18:32,160 --> 00:18:34,630
+before, a lot of our requirements
+documents right now, they exist as
+
+948
+00:18:34,630 --> 00:18:34,640
+documents right now, they exist as
+ 
+
+949
+00:18:34,640 --> 00:18:38,070
+documents right now, they exist as
+people's chat histories on various LLM
+
+950
+00:18:38,070 --> 00:18:38,080
+people's chat histories on various LLM
+ 
+
+951
+00:18:38,080 --> 00:18:40,710
+people's chat histories on various LLM
+platforms. So how do we extract the
+
+952
+00:18:40,710 --> 00:18:40,720
+platforms. So how do we extract the
+ 
+
+953
+00:18:40,720 --> 00:18:42,710
+platforms. So how do we extract the
+knowledge out of those chat histories
+
+954
+00:18:42,710 --> 00:18:42,720
+knowledge out of those chat histories
+ 
+
+955
+00:18:42,720 --> 00:18:45,190
+knowledge out of those chat histories
+and actually get it from the operators
+
+956
+00:18:45,190 --> 00:18:45,200
+and actually get it from the operators
+ 
+
+957
+00:18:45,200 --> 00:18:46,950
+and actually get it from the operators
+down at the lower technical levels and
+
+958
+00:18:46,950 --> 00:18:46,960
+down at the lower technical levels and
+ 
+
+959
+00:18:46,960 --> 00:18:48,630
+down at the lower technical levels and
+get it to the enterprise procurement
+
+960
+00:18:48,630 --> 00:18:48,640
+get it to the enterprise procurement
+ 
+
+961
+00:18:48,640 --> 00:18:50,549
+get it to the enterprise procurement
+folks so they can understand these are
+
+962
+00:18:50,549 --> 00:18:50,559
+folks so they can understand these are
+ 
+
+963
+00:18:50,559 --> 00:18:52,549
+folks so they can understand these are
+the types of questions people are asking
+
+964
+00:18:52,549 --> 00:18:52,559
+the types of questions people are asking
+ 
+
+965
+00:18:52,559 --> 00:18:54,070
+the types of questions people are asking
+and we need to take those questions and
+
+966
+00:18:54,070 --> 00:18:54,080
+and we need to take those questions and
+ 
+
+967
+00:18:54,080 --> 00:18:55,510
+and we need to take those questions and
+we need to wrap them in some kind of
+
+968
+00:18:55,510 --> 00:18:55,520
+we need to wrap them in some kind of
+ 
+
+969
+00:18:55,520 --> 00:18:57,750
+we need to wrap them in some kind of
+tool that the rest of the enterprise can
+
+970
+00:18:57,750 --> 00:18:57,760
+tool that the rest of the enterprise can
+ 
+
+971
+00:18:57,760 --> 00:19:00,150
+tool that the rest of the enterprise can
+broadly be familiar with.
+
+972
+00:19:00,150 --> 00:19:00,160
+broadly be familiar with.
+ 
+
+973
+00:19:00,160 --> 00:19:03,190
+broadly be familiar with.
+All right, that's my talk. So I'm
+
+974
+00:19:03,190 --> 00:19:03,200
+All right, that's my talk. So I'm
+ 
+
+975
+00:19:03,200 --> 00:19:05,510
+All right, that's my talk. So I'm
+retiring October 26 and I'm exploring
+
+976
+00:19:05,510 --> 00:19:05,520
+retiring October 26 and I'm exploring
+ 
+
+977
+00:19:05,520 --> 00:19:06,870
+retiring October 26 and I'm exploring
+what's next. So please feel free to come
+
+978
+00:19:06,870 --> 00:19:06,880
+what's next. So please feel free to come
+ 
+
+979
+00:19:06,880 --> 00:19:07,909
+what's next. So please feel free to come
+out and talk to me about any of that
+
+980
+00:19:07,909 --> 00:19:07,919
+out and talk to me about any of that
+ 
+
+981
+00:19:07,919 --> 00:19:08,710
+out and talk to me about any of that
+today. Thank you.
+
+982
+00:19:08,710 --> 00:19:08,720
+today. Thank you.
+ 
+
+983
+00:19:08,720 --> 00:19:10,549
+today. Thank you.
+>> All right. First of all, I I don't think
+
+984
+00:19:10,549 --> 00:19:10,559
+>> All right. First of all, I I don't think
+ 
+
+985
+00:19:10,559 --> 00:19:13,190
+>> All right. First of all, I I don't think
+your slides are up. Uh shared, right?
+
+986
+00:19:13,190 --> 00:19:13,200
+your slides are up. Uh shared, right?
+ 
+
+987
+00:19:13,200 --> 00:19:13,750
+your slides are up. Uh shared, right?
+>> What's up?
+
+988
+00:19:13,750 --> 00:19:13,760
+>> What's up?
+ 
+
+989
+00:19:13,760 --> 00:19:15,270
+>> What's up?
+>> You haven't shared your slides.
+
+990
+00:19:15,270 --> 00:19:15,280
+>> You haven't shared your slides.
+ 
+
+991
+00:19:15,280 --> 00:19:16,950
+>> You haven't shared your slides.
+>> I will share I will share the slides in
+
+992
+00:19:16,950 --> 00:19:16,960
+>> I will share I will share the slides in
+ 
+
+993
+00:19:16,960 --> 00:19:17,669
+>> I will share I will share the slides in
+the Slack.
+
+994
+00:19:17,669 --> 00:19:17,679
+the Slack.
+ 
+
+995
+00:19:17,679 --> 00:19:19,430
+the Slack.
+>> Okay. Yes. Great. Um there's a thread
+
+996
+00:19:19,430 --> 00:19:19,440
+>> Okay. Yes. Great. Um there's a thread
+ 
+
+997
+00:19:19,440 --> 00:19:21,190
+>> Okay. Yes. Great. Um there's a thread
+for that. All right. Questions? Any
+
+998
+00:19:21,190 --> 00:19:21,200
+for that. All right. Questions? Any
+ 
+
+999
+00:19:21,200 --> 00:19:23,669
+for that. All right. Questions? Any
+questions? Okay. Any other questions
+
+1000
+00:19:23,669 --> 00:19:23,679
+questions? Okay. Any other questions
+ 
+
+1001
+00:19:23,679 --> 00:19:27,750
+questions? Okay. Any other questions
+before?
+
+1002
+00:19:27,750 --> 00:19:27,760
+
+ 
+
+1003
+00:19:27,760 --> 00:19:29,990
+
+>> Is our cy our cyber thinking about
+
+1004
+00:19:29,990 --> 00:19:30,000
+>> Is our cy our cyber thinking about
+ 
+
+1005
+00:19:30,000 --> 00:19:31,190
+>> Is our cy our cyber thinking about
+extending those capabilities to the
+
+1006
+00:19:31,190 --> 00:19:31,200
+extending those capabilities to the
+ 
+
+1007
+00:19:31,200 --> 00:19:33,029
+extending those capabilities to the
+reserve component because we're not on
+
+1008
+00:19:33,029 --> 00:19:33,039
+reserve component because we're not on
+ 
+
+1009
+00:19:33,039 --> 00:19:34,710
+reserve component because we're not on
+nipper.
+
+1010
+00:19:34,710 --> 00:19:34,720
+nipper.
+ 
+
+1011
+00:19:34,720 --> 00:19:36,230
+nipper.
+are
+
+1012
+00:19:36,230 --> 00:19:36,240
+are
+ 
+
+1013
+00:19:36,240 --> 00:19:39,669
+are
+geni.m mill or what?
+
+1014
+00:19:39,669 --> 00:19:39,679
+geni.m mill or what?
+ 
+
+1015
+00:19:39,679 --> 00:19:43,350
+geni.m mill or what?
+>> Yeah. So, jai.mill is available to
+
+1016
+00:19:43,350 --> 00:19:43,360
+>> Yeah. So, jai.mill is available to
+ 
+
+1017
+00:19:43,360 --> 00:19:46,950
+>> Yeah. So, jai.mill is available to
+everybody in the dood. Um, now the act
+
+1018
+00:19:46,950 --> 00:19:46,960
+everybody in the dood. Um, now the act
+ 
+
+1019
+00:19:46,960 --> 00:19:48,950
+everybody in the dood. Um, now the act
+the problem of getting people onto
+
+1020
+00:19:48,950 --> 00:19:48,960
+the problem of getting people onto
+ 
+
+1021
+00:19:48,960 --> 00:19:51,190
+the problem of getting people onto
+nipper so that they can access that tool
+
+1022
+00:19:51,190 --> 00:19:51,200
+nipper so that they can access that tool
+ 
+
+1023
+00:19:51,200 --> 00:19:53,750
+nipper so that they can access that tool
+which only lives on nipper is still
+
+1024
+00:19:53,750 --> 00:19:53,760
+which only lives on nipper is still
+ 
+
+1025
+00:19:53,760 --> 00:19:55,510
+which only lives on nipper is still
+absolutely a challenge. I completely
+
+1026
+00:19:55,510 --> 00:19:55,520
+absolutely a challenge. I completely
+ 
+
+1027
+00:19:55,520 --> 00:19:58,230
+absolutely a challenge. I completely
+understand that. Um, there are tools for
+
+1028
+00:19:58,230 --> 00:19:58,240
+understand that. Um, there are tools for
+ 
+
+1029
+00:19:58,240 --> 00:20:01,430
+understand that. Um, there are tools for
+this. Uh, we do have uh Azure virtual
+
+1030
+00:20:01,430 --> 00:20:01,440
+this. Uh, we do have uh Azure virtual
+ 
+
+1031
+00:20:01,440 --> 00:20:03,110
+this. Uh, we do have uh Azure virtual
+desktop. Uh, we have some mobile tools
+
+1032
+00:20:03,110 --> 00:20:03,120
+desktop. Uh, we have some mobile tools
+ 
+
+1033
+00:20:03,120 --> 00:20:04,710
+desktop. Uh, we have some mobile tools
+that are coming out. We have some BYOD
+
+1034
+00:20:04,710 --> 00:20:04,720
+that are coming out. We have some BYOD
+ 
+
+1035
+00:20:04,720 --> 00:20:08,310
+that are coming out. We have some BYOD
+tools coming out. Um I am not the
+
+1036
+00:20:08,310 --> 00:20:08,320
+tools coming out. Um I am not the
+ 
+
+1037
+00:20:08,320 --> 00:20:10,630
+tools coming out. Um I am not the
+program manager for those tools. Uh it
+
+1038
+00:20:10,630 --> 00:20:10,640
+program manager for those tools. Uh it
+ 
+
+1039
+00:20:10,640 --> 00:20:12,710
+program manager for those tools. Uh it
+is something that is thought about but
+
+1040
+00:20:12,710 --> 00:20:12,720
+is something that is thought about but
+ 
+
+1041
+00:20:12,720 --> 00:20:13,909
+is something that is thought about but
+fully acknowledge that there are
+
+1042
+00:20:13,909 --> 00:20:13,919
+fully acknowledge that there are
+ 
+
+1043
+00:20:13,919 --> 00:20:16,470
+fully acknowledge that there are
+absolutely challenges for garden reserve
+
+1044
+00:20:16,470 --> 00:20:16,480
+absolutely challenges for garden reserve
+ 
+
+1045
+00:20:16,480 --> 00:20:18,390
+absolutely challenges for garden reserve
+that are probably not being met as well
+
+1046
+00:20:18,390 --> 00:20:18,400
+that are probably not being met as well
+ 
+
+1047
+00:20:18,400 --> 00:20:22,230
+that are probably not being met as well
+as they could.
+
+1048
+00:20:22,230 --> 00:20:22,240
+
+ 
+
+1049
+00:20:22,240 --> 00:20:25,430
+
+>> Hey, it's John Fage. I teach uh I'm over
+
+1050
+00:20:25,430 --> 00:20:25,440
+>> Hey, it's John Fage. I teach uh I'm over
+ 
+
+1051
+00:20:25,440 --> 00:20:26,630
+>> Hey, it's John Fage. I teach uh I'm over
+here Chase.
+
+1052
+00:20:26,630 --> 00:20:26,640
+here Chase.
+ 
+
+1053
+00:20:26,640 --> 00:20:27,430
+here Chase.
+>> Okay.
+
+1054
+00:20:27,430 --> 00:20:27,440
+>> Okay.
+ 
+
+1055
+00:20:27,440 --> 00:20:29,350
+>> Okay.
+>> I teach at a local university malware
+
+1056
+00:20:29,350 --> 00:20:29,360
+>> I teach at a local university malware
+ 
+
+1057
+00:20:29,360 --> 00:20:31,590
+>> I teach at a local university malware
+analysis. So from your perspective and
+
+1058
+00:20:31,590 --> 00:20:31,600
+analysis. So from your perspective and
+ 
+
+1059
+00:20:31,600 --> 00:20:35,110
+analysis. So from your perspective and
+including AI. So, any advice on what
+
+1060
+00:20:35,110 --> 00:20:35,120
+including AI. So, any advice on what
+ 
+
+1061
+00:20:35,120 --> 00:20:38,230
+including AI. So, any advice on what
+you're looking for in future
+
+1062
+00:20:38,230 --> 00:20:38,240
+you're looking for in future
+ 
+
+1063
+00:20:38,240 --> 00:20:40,870
+you're looking for in future
+uh military folks when it comes to
+
+1064
+00:20:40,870 --> 00:20:40,880
+uh military folks when it comes to
+ 
+
+1065
+00:20:40,880 --> 00:20:44,789
+uh military folks when it comes to
+malware and AI?
+
+1066
+00:20:44,789 --> 00:20:44,799
+malware and AI?
+ 
+
+1067
+00:20:44,799 --> 00:20:47,029
+malware and AI?
+So, I would say uh what we're looking
+
+1068
+00:20:47,029 --> 00:20:47,039
+So, I would say uh what we're looking
+ 
+
+1069
+00:20:47,039 --> 00:20:51,110
+So, I would say uh what we're looking
+for primarily is people who are not just
+
+1070
+00:20:51,110 --> 00:20:51,120
+for primarily is people who are not just
+ 
+
+1071
+00:20:51,120 --> 00:20:53,270
+for primarily is people who are not just
+solving challenges in a vacuum but
+
+1072
+00:20:53,270 --> 00:20:53,280
+solving challenges in a vacuum but
+ 
+
+1073
+00:20:53,280 --> 00:20:56,070
+solving challenges in a vacuum but
+understand um how to take those
+
+1074
+00:20:56,070 --> 00:20:56,080
+understand um how to take those
+ 
+
+1075
+00:20:56,080 --> 00:20:58,149
+understand um how to take those
+technical challenges and relate them
+
+1076
+00:20:58,149 --> 00:20:58,159
+technical challenges and relate them
+ 
+
+1077
+00:20:58,159 --> 00:21:01,909
+technical challenges and relate them
+back to uh key problems that people are
+
+1078
+00:21:01,909 --> 00:21:01,919
+back to uh key problems that people are
+ 
+
+1079
+00:21:01,919 --> 00:21:03,669
+back to uh key problems that people are
+having. Right? This isn't a thing that's
+
+1080
+00:21:03,669 --> 00:21:03,679
+having. Right? This isn't a thing that's
+ 
+
+1081
+00:21:03,679 --> 00:21:06,870
+having. Right? This isn't a thing that's
+new to AI in general. Um, this is a
+
+1082
+00:21:06,870 --> 00:21:06,880
+new to AI in general. Um, this is a
+ 
+
+1083
+00:21:06,880 --> 00:21:09,510
+new to AI in general. Um, this is a
+problem that's okay, you wrote a
+
+1084
+00:21:09,510 --> 00:21:09,520
+problem that's okay, you wrote a
+ 
+
+1085
+00:21:09,520 --> 00:21:11,430
+problem that's okay, you wrote a
+technical report, you solved some
+
+1086
+00:21:11,430 --> 00:21:11,440
+technical report, you solved some
+ 
+
+1087
+00:21:11,440 --> 00:21:14,549
+technical report, you solved some
+things, great, but why is that useful?
+
+1088
+00:21:14,549 --> 00:21:14,559
+things, great, but why is that useful?
+ 
+
+1089
+00:21:14,559 --> 00:21:17,270
+things, great, but why is that useful?
+What is what is the so what of that? Um,
+
+1090
+00:21:17,270 --> 00:21:17,280
+What is what is the so what of that? Um,
+ 
+
+1091
+00:21:17,280 --> 00:21:19,430
+What is what is the so what of that? Um,
+and AI could potentially help you with
+
+1092
+00:21:19,430 --> 00:21:19,440
+and AI could potentially help you with
+ 
+
+1093
+00:21:19,440 --> 00:21:20,710
+and AI could potentially help you with
+that with some degree, but you have to
+
+1094
+00:21:20,710 --> 00:21:20,720
+that with some degree, but you have to
+ 
+
+1095
+00:21:20,720 --> 00:21:21,990
+that with some degree, but you have to
+have enough of the level of
+
+1096
+00:21:21,990 --> 00:21:22,000
+have enough of the level of
+ 
+
+1097
+00:21:22,000 --> 00:21:24,230
+have enough of the level of
+understanding to be able to go back to
+
+1098
+00:21:24,230 --> 00:21:24,240
+understanding to be able to go back to
+ 
+
+1099
+00:21:24,240 --> 00:21:26,390
+understanding to be able to go back to
+the chatbot and say, "Okay, help me boil
+
+1100
+00:21:26,390 --> 00:21:26,400
+the chatbot and say, "Okay, help me boil
+ 
+
+1101
+00:21:26,400 --> 00:21:28,310
+the chatbot and say, "Okay, help me boil
+this down for a non-technical
+
+1102
+00:21:28,310 --> 00:21:28,320
+this down for a non-technical
+ 
+
+1103
+00:21:28,320 --> 00:21:31,110
+this down for a non-technical
+stakeholder who doesn't need seven pages
+
+1104
+00:21:31,110 --> 00:21:31,120
+stakeholder who doesn't need seven pages
+ 
+
+1105
+00:21:31,120 --> 00:21:33,909
+stakeholder who doesn't need seven pages
+of here's all the methods I decompiled
+
+1106
+00:21:33,909 --> 00:21:33,919
+of here's all the methods I decompiled
+ 
+
+1107
+00:21:33,919 --> 00:21:35,590
+of here's all the methods I decompiled
+and here's what they do and here's the
+
+1108
+00:21:35,590 --> 00:21:35,600
+and here's what they do and here's the
+ 
+
+1109
+00:21:35,600 --> 00:21:37,750
+and here's what they do and here's the
+hooks they have and here's uh what the
+
+1110
+00:21:37,750 --> 00:21:37,760
+hooks they have and here's uh what the
+ 
+
+1111
+00:21:37,760 --> 00:21:39,350
+hooks they have and here's uh what the
+processes it affects." They just need to
+
+1112
+00:21:39,350 --> 00:21:39,360
+processes it affects." They just need to
+ 
+
+1113
+00:21:39,360 --> 00:21:41,830
+processes it affects." They just need to
+know like can I turn the thing back on
+
+1114
+00:21:41,830 --> 00:21:41,840
+know like can I turn the thing back on
+ 
+
+1115
+00:21:41,840 --> 00:21:43,350
+know like can I turn the thing back on
+or do I have to wait for two more days
+
+1116
+00:21:43,350 --> 00:21:43,360
+or do I have to wait for two more days
+ 
+
+1117
+00:21:43,360 --> 00:21:44,710
+or do I have to wait for two more days
+before I can turn the thing back on. So,
+
+1118
+00:21:44,710 --> 00:21:44,720
+before I can turn the thing back on. So,
+ 
+
+1119
+00:21:44,720 --> 00:21:46,470
+before I can turn the thing back on. So,
+as long as you can, you know, think
+
+1120
+00:21:46,470 --> 00:21:46,480
+as long as you can, you know, think
+ 
+
+1121
+00:21:46,480 --> 00:21:48,149
+as long as you can, you know, think
+about how you can translate it in that
+
+1122
+00:21:48,149 --> 00:21:48,159
+about how you can translate it in that
+ 
+
+1123
+00:21:48,159 --> 00:21:50,950
+about how you can translate it in that
+perspective. Um, obviously this depends
+
+1124
+00:21:50,950 --> 00:21:50,960
+perspective. Um, obviously this depends
+ 
+
+1125
+00:21:50,960 --> 00:21:52,310
+perspective. Um, obviously this depends
+on if you're looking more at senior
+
+1126
+00:21:52,310 --> 00:21:52,320
+on if you're looking more at senior
+ 
+
+1127
+00:21:52,320 --> 00:21:54,310
+on if you're looking more at senior
+roles or at junior roles, but um, yes,
+
+1128
+00:21:54,310 --> 00:21:54,320
+roles or at junior roles, but um, yes,
+ 
+
+1129
+00:21:54,320 --> 00:21:55,270
+roles or at junior roles, but um, yes,
+that's kind of where I would go with
+
+1130
+00:21:55,270 --> 00:21:55,280
+that's kind of where I would go with
+ 
+
+1131
+00:21:55,280 --> 00:21:55,830
+that's kind of where I would go with
+that.
+
+1132
+00:21:55,830 --> 00:21:55,840
+that.
+ 
+
+1133
+00:21:55,840 --> 00:21:57,909
+that.
+>> Great. Thanks.
+
+1134
+00:21:57,909 --> 00:21:57,919
+>> Great. Thanks.
+ 
+
+1135
+00:21:57,919 --> 00:22:01,110
+>> Great. Thanks.
+>> Um, with regard to the AI being sort of
+
+1136
+00:22:01,110 --> 00:22:01,120
+>> Um, with regard to the AI being sort of
+ 
+
+1137
+00:22:01,120 --> 00:22:03,190
+>> Um, with regard to the AI being sort of
+centralized, can you talk a little bit
+
+1138
+00:22:03,190 --> 00:22:03,200
+centralized, can you talk a little bit
+ 
+
+1139
+00:22:03,200 --> 00:22:06,390
+centralized, can you talk a little bit
+more, uh, how you handle fine-tuning or
+
+1140
+00:22:06,390 --> 00:22:06,400
+more, uh, how you handle fine-tuning or
+ 
+
+1141
+00:22:06,400 --> 00:22:09,110
+more, uh, how you handle fine-tuning or
+specialized model for individual
+
+1142
+00:22:09,110 --> 00:22:09,120
+specialized model for individual
+ 
+
+1143
+00:22:09,120 --> 00:22:11,909
+specialized model for individual
+departments and specialized teams? Do
+
+1144
+00:22:11,909 --> 00:22:11,919
+departments and specialized teams? Do
+ 
+
+1145
+00:22:11,919 --> 00:22:13,909
+departments and specialized teams? Do
+those get housed in the same centralized
+
+1146
+00:22:13,909 --> 00:22:13,919
+those get housed in the same centralized
+ 
+
+1147
+00:22:13,919 --> 00:22:15,669
+those get housed in the same centralized
+location?
+
+1148
+00:22:15,669 --> 00:22:15,679
+location?
+ 
+
+1149
+00:22:15,679 --> 00:22:18,470
+location?
+>> So, we haven't seen a lot of benefit to
+
+1150
+00:22:18,470 --> 00:22:18,480
+>> So, we haven't seen a lot of benefit to
+ 
+
+1151
+00:22:18,480 --> 00:22:20,390
+>> So, we haven't seen a lot of benefit to
+uh fine-tuning models or specializing
+
+1152
+00:22:20,390 --> 00:22:20,400
+uh fine-tuning models or specializing
+ 
+
+1153
+00:22:20,400 --> 00:22:22,390
+uh fine-tuning models or specializing
+models yet. Our procurement cycles are
+
+1154
+00:22:22,390 --> 00:22:22,400
+models yet. Our procurement cycles are
+ 
+
+1155
+00:22:22,400 --> 00:22:25,029
+models yet. Our procurement cycles are
+so long that um by the time you
+
+1156
+00:22:25,029 --> 00:22:25,039
+so long that um by the time you
+ 
+
+1157
+00:22:25,039 --> 00:22:26,470
+so long that um by the time you
+successfully fine-tune or specialize a
+
+1158
+00:22:26,470 --> 00:22:26,480
+successfully fine-tune or specialize a
+ 
+
+1159
+00:22:26,480 --> 00:22:27,990
+successfully fine-tune or specialize a
+model, the general model has advanced
+
+1160
+00:22:27,990 --> 00:22:28,000
+model, the general model has advanced
+ 
+
+1161
+00:22:28,000 --> 00:22:29,190
+model, the general model has advanced
+long enough that you're not getting the
+
+1162
+00:22:29,190 --> 00:22:29,200
+long enough that you're not getting the
+ 
+
+1163
+00:22:29,200 --> 00:22:31,029
+long enough that you're not getting the
+advantages from the fine-tuned or
+
+1164
+00:22:31,029 --> 00:22:31,039
+advantages from the fine-tuned or
+ 
+
+1165
+00:22:31,039 --> 00:22:33,750
+advantages from the fine-tuned or
+specialized models. Um that might change
+
+1166
+00:22:33,750 --> 00:22:33,760
+specialized models. Um that might change
+ 
+
+1167
+00:22:33,760 --> 00:22:36,789
+specialized models. Um that might change
+in the future. Um but right now I would
+
+1168
+00:22:36,789 --> 00:22:36,799
+in the future. Um but right now I would
+ 
+
+1169
+00:22:36,799 --> 00:22:38,789
+in the future. Um but right now I would
+say more of the value comes not from
+
+1170
+00:22:38,789 --> 00:22:38,799
+say more of the value comes not from
+ 
+
+1171
+00:22:38,799 --> 00:22:40,710
+say more of the value comes not from
+providing the fine-tuned or specialized
+
+1172
+00:22:40,710 --> 00:22:40,720
+providing the fine-tuned or specialized
+ 
+
+1173
+00:22:40,720 --> 00:22:43,110
+providing the fine-tuned or specialized
+model but from providing an actual
+
+1174
+00:22:43,110 --> 00:22:43,120
+model but from providing an actual
+ 
+
+1175
+00:22:43,120 --> 00:22:44,710
+model but from providing an actual
+bespoke
+
+1176
+00:22:44,710 --> 00:22:44,720
+bespoke
+ 
+
+1177
+00:22:44,720 --> 00:22:47,669
+bespoke
+uh workflow and task that is relevant
+
+1178
+00:22:47,669 --> 00:22:47,679
+uh workflow and task that is relevant
+ 
+
+1179
+00:22:47,679 --> 00:22:50,470
+uh workflow and task that is relevant
+and legible to procurement. So I'm not
+
+1180
+00:22:50,470 --> 00:22:50,480
+and legible to procurement. So I'm not
+ 
+
+1181
+00:22:50,480 --> 00:22:52,470
+and legible to procurement. So I'm not
+giving you a fancy model. I'm completing
+
+1182
+00:22:52,470 --> 00:22:52,480
+giving you a fancy model. I'm completing
+ 
+
+1183
+00:22:52,480 --> 00:22:54,390
+giving you a fancy model. I'm completing
+this task for you and it's done and you
+
+1184
+00:22:54,390 --> 00:22:54,400
+this task for you and it's done and you
+ 
+
+1185
+00:22:54,400 --> 00:22:55,270
+this task for you and it's done and you
+don't have to worry about asking
+
+1186
+00:22:55,270 --> 00:22:55,280
+don't have to worry about asking
+ 
+
+1187
+00:22:55,280 --> 00:22:57,909
+don't have to worry about asking
+chatbots how to do it.
+
+1188
+00:22:57,909 --> 00:22:57,919
+chatbots how to do it.
+ 
+
+1189
+00:22:57,919 --> 00:23:03,110
+chatbots how to do it.
+>> Any other questions?
+
+1190
+00:23:03,110 --> 00:23:03,120
+
+ 
+
+1191
+00:23:03,120 --> 00:23:04,870
+
+All right, very good, Chase. Thanks very
+
+1192
+00:23:04,870 --> 00:23:04,880
+All right, very good, Chase. Thanks very
+ 
+
+1193
+00:23:04,880 --> 00:23:06,789
+All right, very good, Chase. Thanks very
+much.
+
+1194
+00:23:06,789 --> 00:23:06,799
+much.
+ 
+
+1195
+00:23:06,799 --> 00:23:09,110
+much.
+And uh thank you for your service. I'm
+
+1196
+00:23:09,110 --> 00:23:09,120
+And uh thank you for your service. I'm
+ 
+
+1197
+00:23:09,120 --> 00:23:12,549
+And uh thank you for your service. I'm
+sure you hear that all the time. So,
+
+1198
+00:23:12,549 --> 00:23:12,559
+sure you hear that all the time. So,
+ 
+
+1199
+00:23:12,559 --> 00:23:16,280
+sure you hear that all the time. So,
+all right. Thanks very again.
+
