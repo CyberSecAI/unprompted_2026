@@ -3,17 +3,17 @@
 ## Meta Key Insights
 *Overarching strategic themes synthesized from recurring topics across multiple conference sessions.*
 
-- **[AI-Enhanced Developer Security](./META_INSIGHTS.md)**: Synthesized themes on Threat Modeling, Just-in-Time Context, and Secure "Vibe Coding."
-- **[Autonomous Vulnerability Research](./META_AVR_AUTONOMOUS_VULN_RESEARCH.md)**: AI engines finding zero-days at scale in critical software.
-- **[The Blue Team Pivot](./META_BLUE_TEAM_PIVOT.md)**: Rebuilding security teams and incident response around AI reasoning.
-- **[Governance, Risk & Compliance (GRC) for AI](./META_GRC_FOR_AI.md)**: Corporate policy, fingerprints, and scaling governance without stifling innovation.
-- **[Architecting Secure Agentic Systems](./META_AGENTIC_SECURITY.md)**: Identity, capability-based auth, and robust personal AI infrastructure.
-- **[Prompt Injection & Semantic Attacks](./META_SEMANTIC_ATTACKS.md)**: Textual obfuscation, hidden payloads in images, and subverting KYC pipelines.
-- **[Measuring AI Security Efficacy](./META_METRICS_AND_EVAL.md)**: Moving beyond "vibes" to quantifiable accuracy measurements and benchmarking.
-- **[Economic & Timeline Collapse](./META_TIMELINE_COLLAPSE.md)**: 8-minute exploits and the dramatically falling cost of zero-day weaponization.
-- **[Semantic Detection & Threat Hunting](./META_SEMANTIC_THREAT_HUNTING.md)**: Using YARA-like semantic rules and deception engineering to hunt GenAI threats.
-- **[The Technical Transition: ML vs. LLMs](./META_ML_VS_LLM.md)**: Comparing traditional ML models with modern LLMs for security classification and detection.
-- **[Interpretability & "Glass-Box" Security](./META_INTERPRETABILITY.md)**: Opening the black box of model reasoning to provide security guarantees.
+- **[AI-Enhanced Developer Security](./meta/META_INSIGHTS.md)**: Synthesized themes on Threat Modeling, Just-in-Time Context, and Secure "Vibe Coding."
+- **[Autonomous Vulnerability Research](./meta/META_AVR_AUTONOMOUS_VULN_RESEARCH.md)**: AI engines finding zero-days at scale in critical software.
+- **[The Blue Team Pivot](./meta/META_BLUE_TEAM_PIVOT.md)**: Rebuilding security teams and incident response around AI reasoning.
+- **[Governance, Risk & Compliance (GRC) for AI](./meta/META_GRC_FOR_AI.md)**: Corporate policy, fingerprints, and scaling governance without stifling innovation.
+- **[Architecting Secure Agentic Systems](./meta/META_AGENTIC_SECURITY.md)**: Identity, capability-based auth, and robust personal AI infrastructure.
+- **[Prompt Injection & Semantic Attacks](./meta/META_SEMANTIC_ATTACKS.md)**: Textual obfuscation, hidden payloads in images, and subverting KYC pipelines.
+- **[Measuring AI Security Efficacy](./meta/META_METRICS_AND_EVAL.md)**: Moving beyond "vibes" to quantifiable accuracy measurements and benchmarking.
+- **[Economic & Timeline Collapse](./meta/META_TIMELINE_COLLAPSE.md)**: 8-minute exploits and the dramatically falling cost of zero-day weaponization.
+- **[Semantic Detection & Threat Hunting](./meta/META_SEMANTIC_THREAT_HUNTING.md)**: Using YARA-like semantic rules and deception engineering to hunt GenAI threats.
+- **[The Technical Transition: ML vs. LLMs](./meta/META_ML_VS_LLM.md)**: Comparing traditional ML models with modern LLMs for security classification and detection.
+- **[Interpretability & "Glass-Box" Security](./meta/META_INTERPRETABILITY.md)**: Opening the black box of model reasoning to provide security guarantees.
 
 ## Individual Talk Insights
 *Key Insights from each talk, with links to original video and transcript*
