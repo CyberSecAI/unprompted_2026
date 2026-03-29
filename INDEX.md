@@ -15,6 +15,9 @@
 - **[The Technical Transition: ML vs. LLMs](./META_ML_VS_LLM.md)**: Comparing traditional ML models with modern LLMs for security classification and detection.
 - **[Interpretability & "Glass-Box" Security](./META_INTERPRETABILITY.md)**: Opening the black box of model reasoning to provide security guarantees.
 
+## Individual Talk Insights
+*Key Insights from each talk, with links to original video and transcript*
+
 | Video ID | Title | Key Insights | Transcript | Video |
 | --- | --- | --- | --- | --- |
 | `1sd26pWhfmg` | Nicholas Carlini - Black-hat LLMs | [Insights](./insights/1sd26pWhfmg_Nicholas_Carlini_Black-hat_LLMs.md) | [Transcript](./transcripts/1sd26pWhfmg_Nicholas%20Carlini%20-%20Black-hat%20LLMs%20%EF%BD%9C%20%5Bun%5Dprompted%202026.en.srt) | [YouTube](https://www.youtube.com/watch?v=1sd26pWhfmg) |
