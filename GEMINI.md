@@ -9,7 +9,7 @@ This project captures and organizes knowledge from the **[un]prompted 2026** con
 - **Output**: 
   - `insights/`: Per-talk structured Markdown summaries.
   - `meta/`: Synthesized thematic insights across multiple sessions.
-  - `INDEX.md`: Master directory.
+  - `README.md`: Master directory.
 
 ## Directory Structure
 
@@ -17,11 +17,11 @@ This project captures and organizes knowledge from the **[un]prompted 2026** con
 - `insights/`: Individual talk insights (Summary, Takeaway, 6-8 topics).
 - `meta/`: Meta-insights synthesizing recurring conference themes.
 - `scripts/`: Automation and maintenance scripts.
-- `INDEX.md`: Main conference index.
+- `README.md`: Main conference index.
 
 ## Key Scripts
 
-- `scripts/generate_index.py`: Regenerates `INDEX.md` from available transcripts and insights.
+- `scripts/generate_index.py`: Regenerates `README.md` from available transcripts and insights.
 - `scripts/find_missing.py`: Utility to verify 1:1 mapping between transcripts and insights.
 
 ## Usage & Workflows
@@ -33,7 +33,7 @@ yt-dlp --write-auto-sub --write-sub --skip-download --sub-format vtt --convert-s
 ```
 
 ### 2. Updating the Index
-Run the indexer to refresh `INDEX.md`:
+Run the indexer to refresh `README.md`:
 ```bash
 python3 scripts/generate_index.py
 ```

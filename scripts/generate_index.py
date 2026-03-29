@@ -26,7 +26,7 @@ id_to_insight = {get_video_id(f): f for f in insights}
 
 all_ids = sorted(id_to_transcript.keys())
 
-with open('INDEX.md', 'w', encoding='utf-8') as f:
+with open('README.md', 'w', encoding='utf-8') as f:
     f.write('# [un]prompted 2026 Conference Index\n\n')
     
     f.write('## Meta Key Insights\n')
@@ -72,4 +72,4 @@ with open('INDEX.md', 'w', encoding='utf-8') as f:
         
         f.write(f"| `{vid}` | {title} | {insight_link} | {transcript_link} | {video_link} |\n")
 
-print("INDEX.md generated successfully.")
+print("README.md generated successfully.")
