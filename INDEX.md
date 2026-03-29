@@ -1,6 +1,8 @@
 # [un]prompted 2026 Conference Index
 
 ## Meta Key Insights
+*Overarching strategic themes synthesized from recurring topics across multiple conference sessions.*
+
 - **[AI-Enhanced Developer Security](./META_INSIGHTS.md)**: Synthesized themes on Threat Modeling, Just-in-Time Context, and Secure "Vibe Coding."
 - **[Autonomous Vulnerability Research](./META_AVR_AUTONOMOUS_VULN_RESEARCH.md)**: AI engines finding zero-days at scale in critical software.
 - **[The Blue Team Pivot](./META_BLUE_TEAM_PIVOT.md)**: Rebuilding security teams and incident response around AI reasoning.
